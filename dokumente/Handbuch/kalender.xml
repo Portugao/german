@@ -51,4 +51,40 @@
     <para>Homepage: <ulink
     url="http://noc.postnuke.com/projects/postcalendar/">http://noc.postnuke.com/projects/postcalendar/</ulink>.</para>
   </section>
+
+  <section id="eventia">
+    <title>Eventia<indexterm>
+        <primary>Eventia</primary>
+      </indexterm><indexterm>
+        <primary>pnEventia</primary>
+      </indexterm><indexterm>
+        <primary>Kalender</primary>
+
+        <secondary>Eventia</secondary>
+      </indexterm><indexterm>
+        <primary>Kalender</primary>
+
+        <secondary>pnEventia</secondary>
+      </indexterm></title>
+
+    <para>Eventia ist ein Postnuke-Modul zur Verwaltung von Trainings oder
+    Kursen für Schulungsanbieter. Die meisten Kalender entsprechen nicht den
+    Anforderungen einer Business-Site, sondern sind eher für LanGroups oder
+    ähnliches geeignet. Eventia füllt diese Lücke. </para>
+
+    <para>Es kann Übersichten zu Kursen anzeigen und verwalten. Der Besucher
+    kann sich online zu einem Kurs anmelden, hierbei wird eine
+    Bestätigungsmail, eine Informationsmail an den Anbieter und ggf. ein
+    Eintrag in der Eventia-Datenbank vorgenommen. Dabei können Kurse als
+    "öffentlich" (keine Anmeldung nötig) oder "belegt" (keine Anmeldung mehr
+    möglich) gekennzeichnet werden. </para>
+
+    <para>Seit der ersten Veröffentlichung ist Eventia sehr positiv
+    aufgenommen worden und eine Menge Verbesserungs- und
+    Erweiterungsvorschlägen wurden bereits in den Folgeversionen
+    verwirklicht.</para>
+
+    <para>Homepage: <ulink
+    url="http://www.pneventia.de">http://www.pneventia.de</ulink>.</para>
+  </section>
 </chapter>
