@@ -102,7 +102,7 @@
               ab der Professional-Version 2.09. Um sich bei älteren Versionen
               zu behelfen, ist es möglich, eins Stammverzeichnis von PostNuke
               eine Datei namens <filename>personal_config.php</filename> mit
-              folgendem Inhalt anzulegen: </para>
+              folgendem Inhalt anzulegen:</para>
 
               <programlisting>&lt;?php
 $_SERVER['HTTP_HOST'] = 'www.example.com';
@@ -1204,6 +1204,126 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     <para>In beiden Fällen muss auf die <filename>config.php</filename>
     geachtet werden: Nicht mit der Version der lokalen Installation
     überschreiben!</para>
+
+    <procedure>
+      <step>
+        <para>Vor der Aktualisierung EIN BACKUP VON DATENBANK UND FILESYSTEM
+        MACHEN! Das kann nicht oft genug gesagt werden. Wenn es ein Problem
+        mit dem Upgrade Prozess gibt, hilft ein Backup in zwei Punkten.
+        Erstens, man kann zurück zu einem pre-upgrade gehen und die Seite kann
+        mit dem alten Code weiterarbeiten. Zweitens, dem Entwickler Team kann
+        unter Umständen eine Kopie der Datenbank helfen, das Problem zu
+        beheben.<warning>
+            <para>Erst starten, wenn Backups angelegt wurden!</para>
+          </warning></para>
+      </step>
+
+      <step>
+        <para>Vor der Aktualisierung bei der Seite mit dem Admin Login
+        anmelden. Dieser Schritt ist wichtig, da beim Update eine ganze Reihe
+        an 'Schlüsselmodulen' (Admin, Blocks und Modules) aktualisiert
+        werden.</para>
+      </step>
+
+      <step>
+        <para>Sicherstellen, dass auf der Seite das ExtraLite Theme
+        eingestellt ist - sowohl als generelles Seitentheme als auch ggfs. als
+        benutzerbezogenenes Theme im Profil. Alle anderen Themes in diesem
+        Release sind Xanthia Themes die eine Initialisation vom Adminbereich
+        aus verlangen.</para>
+      </step>
+
+      <step>
+        <para>Eine Kopie der <filename>config.php</filename> anlegen und
+        sicher aufheben</para>
+      </step>
+
+      <step>
+        <para>Bei Aktualisierungen von früheren Versionen, die bereits Xanthia
+        und pnRender enthalten haben, sicherstellen, dass alle Verzeichnisse
+        <filename>cache</filename> und <filename>compile</filename> in
+        <filename>pnTemp</filename> leer sind.</para>
+      </step>
+
+      <step>
+        <para>Alle Dateien in der PostNuke Distribution löschen. ALLE! Ein
+        Backup von den Dateien wird eine gute Idee sein - insbesondere falls
+        zusätzliche Module installiert sind.</para>
+      </step>
+
+      <step>
+        <para>Die <filename>config.php</filename> die ein paar Schritte zuvor
+        gespeichert wurde in das PostNuke Hauptverzeichnis kopieren (das
+        Verzeichniss mit der config.php und der config-old.php). Sie wird
+        während des Upgradeprozesses benötigt werden.</para>
+      </step>
+
+      <step>
+        <para>Bei diesem Schritt kontrollieren, dass die Zugriffsrechte für
+        die <filename>config-old.php</filename> und die
+        <filename>config.php</filename> 666 sind - Dies wird benötigt, um PHP
+        das Überschreiben dieser Dateien zu erlauben. Nach der Installation
+        können die Zugriffsrechte wieder auf 644 gesetzt werden.</para>
+      </step>
+
+      <step>
+        <para>Bei Aktualisierungen früheren Version vor .750 müssen auch noch
+        neue Eintragungen in der config.php vorgenommen werden. Folgende
+        Zeilen direkt unter $pnconfig['encoded'] einfügen:</para>
+
+        <programlisting>$pnconfig['pconnect'] = '0';
+$pnconfig['temp'] = 'pnTemp';</programlisting>
+
+        <para>zusätzlich die folgende Zeilen unterhalb $pndebug['debug_sql'] =
+        0; einfügen:</para>
+
+        <programlisting>$pndebug['pagerendertime'] = 0;</programlisting>
+      </step>
+
+      <step>
+        <para>Bei Aktualisierungen von früheren Versionen als .723 die
+        <filename>install.php</filename> mit Ihrem Browser öffnen um den
+        Installationsprozess zu starten. Die exakte Url hängt von der
+        jeweiligen Domain ab, aber wenn die Seite zum Beispiel
+        <systemitem>http://www.example.com</systemitem> ist und PostNuke in
+        das Verzeichniss <filename>pn</filename> installiert wurde lautet die
+        URL
+        <systemitem>http:www.example.com/pn/install.php</systemitem>.</para>
+      </step>
+
+      <step>
+        <para>Den Anweisungen des Installations-Skriptes folgen und wenn nach
+        einer neuen Installation oder nach einem Ugrade gefragt wird 'Upgrade'
+        auswählen und die Version der PostNuke (oder andere Nuke Variante) von
+        welcher aktualisiert werden soll auswählen. Der Rest von dem Prozess
+        sollte automatisch gehen.</para>
+      </step>
+
+      <step>
+        <para>Wenn die Installation abgeschlossen ist müssen die persönlichen
+        Module wieder hochgeladen werden.</para>
+      </step>
+
+      <step>
+        <para>Nachdem, wie bereits gesagt, eine Reihe an Schlüsselmodulen (und
+        insbesondere das 'Modules' Modul) aktualisert wurden, muss nun zur
+        weiteren Aktualisierung manuell in die Modul-Administration gewechselt
+        werden. Die direkte URL lautet, mit dem Beispiel von oben,
+        <systemitem>http:www.example.com/pn/index.php?module=Modules&amp;type=admin</systemitem>.
+        Das ist nötig um das Administrationsmenü zu aktualisieren. Um die
+        aktualisierten Module einzubinden, die Modulliste neu erzeugen und
+        jeweils upgraden und aktualisieren.</para>
+      </step>
+
+      <step>
+        <para>Das neue Administrationsmenü erlaubt es, Kategorien anzulegen.
+        Während eines Upgrades sind diese Kategorien definiert aber nicht
+        sortiert - darum sind alle Module in der 3rd Party Kategorie zu
+        finden. In der Konfiguration des Admin-Moduls kann jedes Modul in eine
+        Kategorie eingeordnet werden, Kategorien können auch umbenannt,
+        erstellt und gelöscht werden.</para>
+      </step>
+    </procedure>
   </section>
 
   <section id="installfaq">
