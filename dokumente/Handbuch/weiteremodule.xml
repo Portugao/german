@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$" status="draft">
+<chapter lang="de-DE" revision="$Revision$ $Date$"
+         status="draft">
   <!-- $Id$-->
 
   <chapterinfo>
@@ -19,9 +20,9 @@
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
     Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
     Funktion durchsucht einen Texte nach bestimmten Schlüsselworten und
-    verknüpft dieses mit einem Link.Soll zum Beipiel in allen Artikeln
+    verknüpft dieses mit einem Link. Soll zum Beipiel in allen Artikeln
     automatisch das Wort 'PostNuke' mit dem Link www.post-nuke.net verknüpft
-    werden, sind folgende Schritt nötig:</para>
+    werden, sind folgende Schritte nötig:</para>
 
     <bridgehead>Installation &amp; Konfiguration</bridgehead>
 
@@ -31,7 +32,7 @@
         <guisubmenu>Module</guisubmenu>
 
         <guimenuitem>Liste neu generieren</guimenuitem>
-      </menuchoice> muß zuerst die Autolinks initialisiert und aktiviert
+      </menuchoice> muß zuerst das Modul Autolinks initialisiert und aktiviert
     werden.</para>
 
     <para>Um dann Autolinks für ein bestimmtes Modul zu aktivieren, auf
@@ -39,13 +40,13 @@
         <guimenu>Administration</guimenu>
 
         <guimenuitem>Module</guimenuitem>
-      </menuchoice> gehen und klicken auf <guimenuitem>neu
-    erzeugen</guimenuitem> klicken. Danach kann man innerhalb des Moduls, das
-    man ausgewählt hat, auf <guimenuitem>editieren</guimenuitem> gehen und
-    dort dann <guimenuitem>Autolink</guimenuitem> anwählen. Wenn man das bei
-    allen Modulen gemacht hat, bei denen man Autolinks hinzufügen möchte, geht
-    man auf <guimenuitem>Autolink Konfiguration Updaten</guimenuitem> und
-    startet ein Update der Datenbank.</para>
+      </menuchoice> gehen und auf <guimenuitem>neu erzeugen</guimenuitem>
+    klicken. Danach kann man innerhalb des Moduls, das man ausgewählt hat, auf
+    <guimenuitem>editieren</guimenuitem> gehen und dort dann
+    <guimenuitem>Autolink</guimenuitem> anwählen. Wenn man das bei allen
+    Modulen gemacht hat, bei denen man Autolinks hinzufügen möchte, geht man
+    auf <guimenuitem>Autolink Konfiguration Updaten</guimenuitem> und startet
+    ein Update der Datenbank.</para>
 
     <important>
       <para>Man muss diese Funktion für jedes Modul bei der
@@ -102,7 +103,7 @@
         <term>Kommentar</term>
 
         <listitem>
-          <para>Diese ist nur für den Administrator sichtbar.</para>
+          <para>Dieses ist nur für den Administrator sichtbar.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -186,7 +187,7 @@
     <para><literal>Stats:: /// ::</literal></para>
 
     <para>wenn man z.B. den Zugriff auf die Statistik für unregistrierte
-    Benutzer verhindern möchte, ein (wichtig!) Benutzerrecht</para>
+    Benutzer verhindern möchte, müsste man ein (wichtig!) Benutzerrecht</para>
 
     <para><literal>unregistrierte | Stats:: | .* | keines</literal></para>
 
