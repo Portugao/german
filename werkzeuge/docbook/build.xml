@@ -586,6 +586,7 @@
 		<mkdir dir="${install.home}"/>
 		<mkdir dir="${install.programs.home}"/>
 		<get src="${programs.fop.download}${programs.fop.file}"                  dest="${install.programs.home}/${programs.fop.file}"          verbose="true"  usetimestamp="true"/>
+		<get src="${programs.superfop.download}${programs.superfop.file}"        dest="${install.programs.home}/${programs.superfop.file}"     verbose="true"  usetimestamp="true"/>
 		<get src="${programs.saxon.download}${programs.saxon.file}"              dest="${install.programs.home}/${programs.saxon.file}"        verbose="true"  usetimestamp="true"/>
 		<get src="${programs.resolver.download}${programs.resolver.file}"        dest="${install.programs.home}/${programs.resolver.file}"     verbose="true"  usetimestamp="true"/>
 		<get src="${programs.xerces-j.download}${programs.xerces-j.file}"        dest="${install.programs.home}/${programs.xerces-j.file}"     verbose="true"  usetimestamp="true"/>
@@ -604,6 +605,9 @@
 		<unzip src="${install.programs.home}/${programs.xerces-j.file}"      dest="${programs.home}/${programs.xerces-j.unzip}"     overwrite="false" />
 		<unzip src="${install.programs.home}/${programs.docbook-xsl.file}"   dest="${programs.home}/${programs.docbook-xsl.unzip}"  overwrite="false" />
 		<unzip src="${install.programs.home}/${programs.docbook-dtd.file}"   dest="${programs.home}/${programs.docbook-dtd.unzip}"  overwrite="false" />
+
+		<mkdir dir="${superfop.home}"/>
+		<copy file="${install.programs.home}/${programs.superfop.file}" todir="${superfop.home}" />
 	</target>
 
 <!-- ==========================================================================================	
