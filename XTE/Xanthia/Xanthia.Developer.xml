@@ -1,94 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="Xanthia.Devel" lang="en-US"
+<chapter id="Xanthia.Devel" lang="de-DE"
          revision="$Revision$ $Date$"
          status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
-    <authorgroup>
-      <author>
-        <firstname>Mark</firstname>
-
-        <surname>West</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-
-          <orgdiv>Development Team</orgdiv>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Simon</firstname>
-
-        <surname>Birtwistle</surname>
-
-        <affiliation>
-          <orgname>Postnuke</orgname>
-
-          <orgdiv>pnCorps</orgdiv>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Larry</firstname>
-
-        <othername>E.</othername>
-
-        <surname>Masters</surname>
-
-        <affiliation>
-          <jobtitle>Xanthia Theme Engine Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-
-          <orgdiv>Development Team</orgdiv>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Jörg</firstname>
-
-        <surname>Napp</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-
-          <orgdiv>Development Team</orgdiv>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Steffen</firstname>
-
-        <surname>Voss</surname>
-
-        <affiliation>
-          <jobtitle>German Translation</jobtitle>
-
-          <orgname><ulink
-          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
-        </affiliation>
-      </author>
-    </authorgroup>
-
     <releaseinfo>$Revision$</releaseinfo>
-
-    <edition>prerelease</edition>
-
-    <keywordset>
-      <keyword>Smarty</keyword>
-
-      <keyword>Theme</keyword>
-
-      <keyword>Xanthia</keyword>
-    </keywordset>
   </chapterinfo>
 
   <title>Xanthia für Theme-Entwickler</title>
