@@ -233,16 +233,60 @@
     <para>Die <emphasis role="bold">Instanz</emphasis> besteht aus zwei
     Teilen, deren Bedeutung von der jeweiligen Komponente abhängt. Die
     einzelnen Teile sind durch den Doppelpunkt voneinander getrennt. Der
-    Ausdruck, der ausgewertet wird, ist ein regulärer Ausdruck:</para>
+    Ausdruck, der ausgewertet wird, ist ein regulärer Ausdruck. Damit mag der
+    eine oder andere nichts anfangen, aber mal kurz:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para><command>*</command> steht für eine beliebige Wiederholung (auch
+        keine)</para>
+      </listitem>
+
+      <listitem>
+        <para><command>.</command> beschreibt ein beliebiges Zeichen</para>
+      </listitem>
+
+      <listitem>
+        <para><command>^</command> steht für den Beginn, <command>$</command>
+        für das Ende</para>
+      </listitem>
+
+      <listitem>
+        <para>| ist eine Auswahl aus mehreren Möglichkeiten</para>
+      </listitem>
+    </itemizedlist>
 
     <para>Beispiele:</para>
 
-    <para>^Haupt* = Alles was mit "Haupt" beginnt, also Hauptmenü,
-    Hauptauswahl, Hauptmann.</para>
+    <variablelist>
+      <varlistentry>
+        <term><citation><command>^<replaceable>Haupt</replaceable>*</command></citation></term>
 
-    <para>(x|y|z) = x oder y oder z als Ganzes</para>
+        <listitem>
+          <para>Alles was mit "<replaceable>Haupt</replaceable>" beginnt, also
+          <replaceable>Haupt</replaceable>menü,
+          <replaceable>Haupt</replaceable>auswahl,
+          <replaceable>Haupt</replaceable>mann.</para>
+        </listitem>
+      </varlistentry>
 
-    <para>.* = alles</para>
+      <varlistentry>
+        <term><command>(<replaceable>x</replaceable>|<replaceable>y</replaceable>|<replaceable>z</replaceable>)</command></term>
+
+        <listitem>
+          <para><replaceable>x </replaceable>oder <replaceable>y</replaceable>
+          oder <replaceable>z</replaceable> als Ganzes</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><command>.*</command></term>
+
+        <listitem>
+          <para>alles</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
 
     <bridgehead>Vorgehensweise bei der Berechtigungsvergabe</bridgehead>
 
