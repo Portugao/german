@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="Installation" lang="de-DE" status="draft">
+<chapter id="installation" lang="de-DE" status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
@@ -472,7 +472,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <para>Für die Installation müssen die Zugriffsberechtiung für die
         Dateien <filename>config.php</filename> und
         <filename>config-old.php</filename> so sein, dass der Webserver diese
-        neu schreiben ann. Bei LINUX-Systemen heisst das, dass man sie auf
+        neu schreiben kann. Bei LINUX-Systemen heisst das, dass man sie auf
         chmod 666 setzen muss.</para>
       </step>
 
@@ -1042,288 +1042,261 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </indexterm></title>
 
     <para>PostNuke unterstützt das Upgrade von allen früheren Versionen und
-    einer Anzahl anderer *Nuke Derivate wie
-    <application>PHPNuke</application><indexterm>
+    einer Anzahl anderer Nuke-Derivate wie <application>z.B.
+    PHPNuke</application><indexterm>
         <primary>PHP-Nuke</primary>
       </indexterm> und <application>MyPHPNuke</application><indexterm>
         <primary>MyPHPNuke</primary>
-      </indexterm>. Sollte vorher eine Version von
-    <application>PHPNuke</application> installiert gewesen sein, so läßt sich
-    dieses auf PostNuke upgraden, solange es höchstens <application>PHPNuke
-    5.4</application> war - bei allen neueren Versionen von PHPNuke wird das
-    Upgrade-Skript nicht funktionieren. Weiterhin wird das Upgrade von
-    MyPHPNuke 1.8.7 und 1.8.8 unterstützt. Bei einem Upgrade sind auf jeden
-    Fall auch eventuell zusätzlich installierte Module zu berücksichtigen -
-    gerade bei grösseren Installationen sollte ein Upgrade immer zuerst lokal
-    getestet werden.</para>
+      </indexterm>.</para>
 
-    <warning>
-      <para>Bevor mit dem Upgrade begonnen wird, ein Backup anlegen. Nur mit
-      einem vollständigen Backup (Datenbank und Filesystem) kann im
-      Problemfall der Ursprungszustand wiederhergestellt werden!</para>
-    </warning>
+    <para>Bei einem Upgrade sind auf jeden Fall auch eventuell zusätzlich
+    installierte Module zu berücksichtigen - gerade bei grösseren
+    Installationen sollte ein Upgrade immer zuerst lokal getestet
+    werden.</para>
 
-    <para>Da aber der Teufel im Detail steckt, sollte ein Update
-    <emphasis>niemals</emphasis> direkt auf einer Live-Seite durchgeführt
-    werden. Stets sollte eine Testmigration vorausgehen.</para>
+    <bridgehead>Vor der Installation</bridgehead>
 
-    <para>Man stelle sich die folgenden Fragen:</para>
+    <para>Vor der Installation sollte man sich überlegen, welche Module und
+    Blöcke man überhaupt einsetzt , und welche von will man überhaupt
+    weiterhin nutzen ihnen will. Alles, was man jetzt rauschmeisst, muss man
+    nicht mehr updaten.</para>
 
-    <itemizedlist>
-      <listitem>
-        <para>Welche Module und Blöcke setzt man überhaupt ein?</para>
-      </listitem>
+    <para>Wenn man diese Liste zusammengetragen hat, muss man feststellen, ob
+    es für diese Module bzw. Blöcke Versionen gibt, die mit der neuen
+    PostNuke-Version zusammenarbeiten. Gute Anlaufstellen für diese Informaton
+    ist zum einen die Homepage des Moduls (festzustellen oftmals über das
+    Credits-Modul der laufenden PostNuke-Version), aber auch die Foren bei
+    <ulink url="http://forums.postnuke.com">http://forums.postnuke.com</ulink>
+    und <ulink
+    url="http://www.post-nuke.net">http://www.post-nuke.net</ulink>.</para>
 
-      <listitem>
-        <para>Welche von ihnen will man überhaupt weiterhin nutzen oder ist
-        man sich ihrer über? (Merke: Alles, was man jetzt rauschmeisst, muß
-        man nicht mehr updaten)</para>
-      </listitem>
-    </itemizedlist>
+    <para>Falls nicht, muss man sich überlegen, ob man das Modul bzw. den
+    Block selber umbauen möchte. Bei derartigen Modulen oder Blöcken, die
+    nicht an den aktuellen Stand der Entwicklung angepasst werden, muss man
+    sich aber auch fragen, ob der Autor auf Sicherheitsprobleme, Fehler etc.
+    reagiert. Meist ist es dann besser, ob man auf diese Module bzw. Blöcke zu
+    verzichten, oder ähnliche Module zu suchen, die den gleichen Zweck
+    erfüllen.</para>
 
-    <para>Wenn man diese Liste zusammengetragen hat kann man sich an den
-    nächsten Schritt machen</para>
+    <section>
+      <title>Das Upgrade von älteren PostNuke-Versionen</title>
 
-    <itemizedlist>
-      <listitem>
-        <para>Gibt es für diese Module bzw. Blöcke Versionen die mit der neuen
-        PostNuke-Version zusammenarbeiten?</para>
-      </listitem>
+      <warning>
+        <para>Bevor mit dem Upgrade begonnen wird, ein Backup anlegen.</para>
 
-      <listitem>
-        <para>Wenn nein: Will man sie immer noch benutzen? Dann selber umbauen
-        bzw. jemanden finden. Oder aber: Gibt es ähnliche Module die den
-        gleichen Zweck erfüllen? Migieren ist zu 90% einfacher als
-        umschreiben</para>
-      </listitem>
-    </itemizedlist>
+        <para>Das kann nicht oft genug gesagt werden. Nur mit einem
+        <emphasis>vollständigen Backup</emphasis> (Datenbank und Dateisystem)
+        kann im Problemfall der Ursprungszustand wiederhergestellt werden!
+        Wenn es ein Problem mit dem Upgrade Prozess gibt, hilft ein Backup in
+        zwei Punkten. Erstens kann man zurück zu einem pre-upgrade gehen und
+        die Seite kann mit dem alten Code weiterarbeiten. Zweitens kann dem
+        Entwicklerteam unter Umständen eine Kopie der Datenbank helfen, das
+        Problem zu beheben.</para>
+      </warning>
 
-    <para>Jetzt geht es daran das Update einmal testweise auf einem Testserver
-    durchzuspielen. Am einfachsten geht dies durch die lokale Installation
-    eines Web-Servers. Auf diesen lokalen Server kommt nun:</para>
+      <procedure>
+        <step>
+          <para>Vor der Aktualisierung bei der Seite mit dem Admin Login
+          anmelden. Dieser Schritt ist wichtig, da beim Update eine ganze
+          Reihe an Schlüsselmodulen (unter anderem Admin, Blocks und Modules)
+          aktualisiert werden.</para>
+        </step>
 
-    <itemizedlist>
-      <listitem>
-        <para>Das aktuelle PostNuke-Paket</para>
-      </listitem>
+        <step>
+          <para>Sicherstellen, dass auf der Seite das
+          <emphasis>ExtraLite</emphasis> Theme eingestellt ist - sowohl als
+          generelles Seitentheme als auch ggfs. als benutzerbezogenenes Theme
+          im Profil des Administrators. Alle anderen Themes in diesem Release
+          von PostNuke .760 sind Xanthia-Themes die eine Initialisierung vom
+          Adminbereich aus verlangen.</para>
+        </step>
 
-      <listitem>
-        <para>Eine <filename>config.php</filename>, in der die Daten des
-        lokalen MySQL-Servers eingetragen sind</para>
-      </listitem>
+        <step>
+          <para>Eine Kopie der <filename>config.php</filename> anlegen und
+          sicher aufheben</para>
+        </step>
 
-      <listitem>
-        <para>Sämtliche Module, die sich auf dem Live-Server im Einsatz
-        befinden</para>
-      </listitem>
+        <step>
+          <para>Ist in der laufenden PostNuke-Version bereits Xanthia und
+          pnRender enthalten, so sollte man die Verzeichnisse
+          <filename>pnRender_cache</filename>, <filename>pnRender_compile,
+          <filename>Xanthia_cache</filename></filename> und
+          <filename>Xanthis_compile</filename> in <filename>pnTemp</filename>
+          leeren.</para>
+        </step>
 
-      <listitem>
-        <para>Das Theme, das auf dem Live-Server eingesetzt wird</para>
-      </listitem>
-    </itemizedlist>
+        <step>
+          <para><emphasis>Alle</emphasis> Dateien der laufenden
+          PostNuke-Version löschen. Vorher sicherstellen, dass wirklich ein
+          Backup vorhanden ist!</para>
+        </step>
 
-    <para>Mittels <application>phpMyAdmin</application> oder ähnlichen Tools
-    kopiert man die Datenbank des Web-Servers auf den lokalen Server.</para>
+        <step>
+          <para>Die aktuelle PostNuke-Version auf den Server kopieren.</para>
+        </step>
 
-    <para>Jetzt kann die Installation via <filename>install.php</filename>
-    aufgerufen werden. Den Anweisungen des Skriptes folgen und bei der Frage
-    <guimenu>New install</guimenu> bzw. <guimenu>Upgrade</guimenu> den Punkt
-    <guimenu>Upgrade</guimenu> wählen und die bisherigen Nuke-Version angeben.
-    Der Rest der Installation sollte automatisch bzw. wie bei einer
-    Neuinstallation ablaufen. Anschließend sollte alles wieder funktionieren.
-    Falls dies nicht der Fall ist, muss man Schritt für Schritt nach dem
-    Fehler suchen. Dies passiert bequem offline, ohne den Betrieb der
-    Live-Seite zu stören. Wenn es sich dabei tatsächlich um PostNuke-Fehler
-    handelt, so sollten diese übrigens im Forum oder (besser) im Bug-Tracker
-    des NOC gemeldet werden.</para>
+        <step>
+          <para>Die <filename>config.php</filename>, die ein paar Schritte
+          zuvor gespeichert wurde, in das PostNuke Hauptverzeichnis kopieren
+          (das Verzeichnis mit der <filename>config.php</filename> und der
+          <filename>config-old.php</filename>). Sie wird während des
+          Upgradeprozesses benötigt.</para>
+        </step>
 
-    <para>Nachdem man so zumindest die wirklich wichtigen Dinge zum Laufen
-    gebracht hat gehts weiter im Text:</para>
+        <step>
+          <para>Für das Upgrade müssen die Zugriffsberechtiung für die Dateien
+          <filename>config.php</filename> und
+          <filename>config-old.php</filename> so sein, dass der Webserver
+          diese neu schreiben kann. Bei LINUX-Systemen heisst das, dass man
+          sie auf chmod 666 setzen muss. Nach dem Upgrade können die
+          Zugriffsrechte wieder auf 644 gesetzt werden.</para>
+        </step>
 
-    <para>An der alten Version vorgenommene Modifikationen</para>
+        <step>
+          <para>Bei Aktualisierungen von PostNuke-Version älter als .750
+          müssen auch noch neue Eintragungen in der
+          <filename>config.php</filename> vorgenommen werden. Folgende Zeilen
+          direkt unter $pnconfig['encoded'] einfügen:</para>
 
-    <itemizedlist>
-      <listitem>
-        <para>Was von den alten Änderungen ist nunmehr überflüssig?</para>
-      </listitem>
-
-      <listitem>
-        <para>Was muß wieder modifiziert werden?</para>
-      </listitem>
-
-      <listitem>
-        <para>Was muß evtl. zusätzlich geändert werden?</para>
-      </listitem>
-    </itemizedlist>
-
-    <para>Wenn alles läuft, daran denken, die install.php sowie das gesamte
-    install-Verzeichnis zu löschen!</para>
-
-    <para>Irgendwann ist man dann hoffentlich soweit das man den Testserver
-    vollständig auf das neue System umgestellt und alle erforderlichen
-    Anpassungen vorgenommen hat. Nachdem man nun eine lauffähige Version lokal
-    hat, geht es darum, diese auch auf dem Server zur Verfügung zu
-    stellen.</para>
-
-    <para>War der 'live' Server während dieser Phase offline ist der Rest
-    schnell erledigt. Dateien und Datenbank auf den 'live' Server spiegeln und
-    wieder online gehen.</para>
-
-    <para>War der 'live' Server während dieser Phase online weil man seinen
-    Nutzern keine unbestimmte - aber bestimmt längerfristige- Offlinezeit
-    zumuten will oder kann wird es nochmal ein wenig komplizier:</para>
-
-    <procedure>
-      <step>
-        <para>'Live' Server offline nehmen</para>
-      </step>
-
-      <step>
-        <para>Updates wie zuvor geprobt vornehmen.</para>
-      </step>
-
-      <step>
-        <para>"Live"-Server online nehmen</para>
-      </step>
-    </procedure>
-
-    <para>Es ist empfehlenswert, für die Zeit des Uploads eine Seite zu
-    schalten, die auf den kurzfristigen Ausfall hinweist. Nachdem die Dateien
-    hochgeladen wurden und die Datenbank von lokal wieder auf den Live-Server
-    gebracht wurde, kann dieser wieder online gehen.</para>
-
-    <para>Optimal ist es natürlich, die neue Version auf dem Live-Server in
-    ein Parallelverzeichnis zu kopieren, und auch die Datenbank nicht über die
-    bestehende zu schreiben (gegebenenfalls einen neuen Präfix vergeben). Auf
-    diese Art hat man immer noch eine lauffähige Version des Live-Servers zu
-    Hand. Die meisten Provider bieten es an, das Verzeichnis, auf das die
-    Seite zeigt, frei zu wählen. Wenn die Daten oben sind, muss man also per
-    Administrationsmenü des Providers als Startverzeichnis das mit der neuen
-    Installation anwählen.</para>
-
-    <para>In beiden Fällen muss auf die <filename>config.php</filename>
-    geachtet werden: Nicht mit der Version der lokalen Installation
-    überschreiben!</para>
-
-    <procedure>
-      <step>
-        <para>Vor der Aktualisierung EIN BACKUP VON DATENBANK UND FILESYSTEM
-        MACHEN! Das kann nicht oft genug gesagt werden. Wenn es ein Problem
-        mit dem Upgrade Prozess gibt, hilft ein Backup in zwei Punkten.
-        Erstens, man kann zurück zu einem pre-upgrade gehen und die Seite kann
-        mit dem alten Code weiterarbeiten. Zweitens, dem Entwickler Team kann
-        unter Umständen eine Kopie der Datenbank helfen, das Problem zu
-        beheben.<warning>
-            <para>Erst starten, wenn Backups angelegt wurden!</para>
-          </warning></para>
-      </step>
-
-      <step>
-        <para>Vor der Aktualisierung bei der Seite mit dem Admin Login
-        anmelden. Dieser Schritt ist wichtig, da beim Update eine ganze Reihe
-        an 'Schlüsselmodulen' (Admin, Blocks und Modules) aktualisiert
-        werden.</para>
-      </step>
-
-      <step>
-        <para>Sicherstellen, dass auf der Seite das ExtraLite Theme
-        eingestellt ist - sowohl als generelles Seitentheme als auch ggfs. als
-        benutzerbezogenenes Theme im Profil. Alle anderen Themes in diesem
-        Release sind Xanthia Themes die eine Initialisation vom Adminbereich
-        aus verlangen.</para>
-      </step>
-
-      <step>
-        <para>Eine Kopie der <filename>config.php</filename> anlegen und
-        sicher aufheben</para>
-      </step>
-
-      <step>
-        <para>Bei Aktualisierungen von früheren Versionen, die bereits Xanthia
-        und pnRender enthalten haben, sicherstellen, dass alle Verzeichnisse
-        <filename>cache</filename> und <filename>compile</filename> in
-        <filename>pnTemp</filename> leer sind.</para>
-      </step>
-
-      <step>
-        <para>Alle Dateien in der PostNuke Distribution löschen. ALLE! Ein
-        Backup von den Dateien wird eine gute Idee sein - insbesondere falls
-        zusätzliche Module installiert sind.</para>
-      </step>
-
-      <step>
-        <para>Die <filename>config.php</filename> die ein paar Schritte zuvor
-        gespeichert wurde in das PostNuke Hauptverzeichnis kopieren (das
-        Verzeichniss mit der config.php und der config-old.php). Sie wird
-        während des Upgradeprozesses benötigt werden.</para>
-      </step>
-
-      <step>
-        <para>Bei diesem Schritt kontrollieren, dass die Zugriffsrechte für
-        die <filename>config-old.php</filename> und die
-        <filename>config.php</filename> 666 sind - Dies wird benötigt, um PHP
-        das Überschreiben dieser Dateien zu erlauben. Nach der Installation
-        können die Zugriffsrechte wieder auf 644 gesetzt werden.</para>
-      </step>
-
-      <step>
-        <para>Bei Aktualisierungen früheren Version vor .750 müssen auch noch
-        neue Eintragungen in der config.php vorgenommen werden. Folgende
-        Zeilen direkt unter $pnconfig['encoded'] einfügen:</para>
-
-        <programlisting>$pnconfig['pconnect'] = '0';
+          <programlisting>$pnconfig['pconnect'] = '0';
 $pnconfig['temp'] = 'pnTemp';</programlisting>
 
-        <para>zusätzlich die folgende Zeilen unterhalb $pndebug['debug_sql'] =
-        0; einfügen:</para>
+          <para>zusätzlich die folgende Zeilen unterhalb $pndebug['debug_sql']
+          = 0; einfügen:</para>
 
-        <programlisting>$pndebug['pagerendertime'] = 0;</programlisting>
-      </step>
+          <programlisting>$pndebug['pagerendertime'] = 0;</programlisting>
+        </step>
+      </procedure>
 
-      <step>
-        <para>Bei Aktualisierungen von früheren Versionen als .723 die
-        <filename>install.php</filename> mit Ihrem Browser öffnen um den
-        Installationsprozess zu starten. Die exakte Url hängt von der
-        jeweiligen Domain ab, aber wenn die Seite zum Beispiel
-        <systemitem>http://www.example.com</systemitem> ist und PostNuke in
-        das Verzeichniss <filename>pn</filename> installiert wurde lautet die
-        URL
-        <systemitem>http:www.example.com/pn/install.php</systemitem>.</para>
-      </step>
+      <para>Ist die laufende Version älter als PostNuke .723, so wird das
+      Upgrade über die <filename>install.php</filename> vorgenommen. Starten
+      Sie den Upgradeprozess, indem Sie die <filename>install.php</filename>
+      mit Ihrem Browser öffnen. Die exakte Url hängt von der jeweiligen Domain
+      ab, aber wenn die Seite zum Beispiel
+      <systemitem>http://www.example.com</systemitem> ist und PostNuke in das
+      Verzeichniss <filename>pn</filename> installiert wurde lautet die URL
+      <systemitem>http:www.example.com/pn/install.php</systemitem>. Den
+      Anweisungen des Installations-Skriptes folgen, und wenn nach einer neuen
+      Installation oder nach einem Ugrade gefragt wird, 'Upgrade' auswählen
+      und die Version der PostNuke, von welcher aktualisiert werden soll,
+      auswählen. Der Rest von dem Prozess sollte automatisch gehen.</para>
 
-      <step>
-        <para>Den Anweisungen des Installations-Skriptes folgen und wenn nach
-        einer neuen Installation oder nach einem Ugrade gefragt wird 'Upgrade'
-        auswählen und die Version der PostNuke (oder andere Nuke Variante) von
-        welcher aktualisiert werden soll auswählen. Der Rest von dem Prozess
-        sollte automatisch gehen.</para>
-      </step>
+      <para>Ist die laufende PostNuke-Version mindestens die Version .723, so
+      ist ein Aufruf der <filename>install.php</filename> nicht
+      notwendig.</para>
 
-      <step>
-        <para>Wenn die Installation abgeschlossen ist müssen die persönlichen
-        Module wieder hochgeladen werden.</para>
-      </step>
+      <para>Zu diesem Zeitpunkt sollten die zusätzlich installierten Module
+      (aus dem Backup) wieder hochgeladen werden.</para>
 
-      <step>
-        <para>Nachdem, wie bereits gesagt, eine Reihe an Schlüsselmodulen (und
-        insbesondere das 'Modules' Modul) aktualisert wurden, muss nun zur
-        weiteren Aktualisierung manuell in die Modul-Administration gewechselt
-        werden. Die direkte URL lautet, mit dem Beispiel von oben,
-        <systemitem>http:www.example.com/pn/index.php?module=Modules&amp;type=admin</systemitem>.
-        Das ist nötig um das Administrationsmenü zu aktualisieren. Um die
-        aktualisierten Module einzubinden, die Modulliste neu erzeugen und
-        jeweils upgraden und aktualisieren.</para>
-      </step>
+      <para>Nachdem, wie bereits gesagt, eine Reihe an Schlüsselmodulen (und
+      insbesondere das 'Modules' Modul) aktualisert wurden, muss nun zur
+      weiteren Aktualisierung <emphasis>manuell in die Modul-Administration
+      gewechselt</emphasis> werden. Die direkte URL lautet, mit dem Beispiel
+      von oben,
+      <systemitem>http:www.example.com/pn/index.php?module=Modules&amp;type=admin</systemitem>.
+      Das ist nötig um das Administrationsmenü zu aktualisieren. Um die
+      aktualisierten Module einzubinden, die Modulliste neu erzeugen und
+      jeweils upgraden und aktualisieren.</para>
 
-      <step>
-        <para>Das neue Administrationsmenü erlaubt es, Kategorien anzulegen.
-        Während eines Upgrades sind diese Kategorien definiert aber nicht
-        sortiert - darum sind alle Module in der 3rd Party Kategorie zu
-        finden. In der Konfiguration des Admin-Moduls kann jedes Modul in eine
-        Kategorie eingeordnet werden, Kategorien können auch umbenannt,
-        erstellt und gelöscht werden.</para>
-      </step>
-    </procedure>
+      <para>Das neue Administrationsmenü erlaubt es, Kategorien anzulegen.
+      Während eines Upgrades sind diese Kategorien definiert aber nicht
+      sortiert - darum sind alle Module in der 3rd Party Kategorie zu finden.
+      In der Konfiguration des Admin-Moduls kann jedes Modul in eine Kategorie
+      eingeordnet werden, Kategorien können auch umbenannt, erstellt und
+      gelöscht werden.</para>
+    </section>
+
+    <section>
+      <title>Testmigration</title>
+
+      <para>Der Teufel steckt im Detail &mdash; aus diesem Grund sollte ein
+      Update <emphasis>niemals</emphasis> direkt auf einer Live-Seite
+      durchgeführt werden. Stets sollte eine Testmigration vorausgehen. Am
+      einfachsten geht dies durch die lokale Installation eines Web-Servers,
+      wie unter <xref linkend="lokaleinstallation" /> beschrieben. Auf diesen
+      lokalen Server kommt nun:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Das derzeit laufende PostNuke-Paket</para>
+        </listitem>
+
+        <listitem>
+          <para>Eine <filename>config.php</filename>, in der die Daten des
+          lokalen MySQL-Servers eingetragen sind</para>
+        </listitem>
+
+        <listitem>
+          <para>Sämtliche Module, die sich auf dem Live-Server im Einsatz
+          befinden</para>
+        </listitem>
+
+        <listitem>
+          <para>Das Theme, das auf dem Live-Server eingesetzt wird</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Mittels <application>phpMyAdmin</application> oder ähnlichen Tools
+      kopiert man die Datenbank des Web-Servers auf den lokalen Server.</para>
+
+      <para>Jetzt kann man das Update wie oben beschrieben starten.
+      Anschließend sollte alles wieder funktionieren. Falls dies nicht der
+      Fall ist, muss man Schritt für Schritt nach dem Fehler suchen. Dies
+      passiert bequem offline, ohne den Betrieb der Live-Seite zu stören. Wenn
+      es sich dabei tatsächlich um PostNuke-Fehler handelt, so sollten diese
+      übrigens im Forum oder (besser) im Bug-Tracker des NOC gemeldet
+      werden.</para>
+
+      <para>Nachdem man so zumindest die wirklich wichtigen Dinge zum Laufen
+      gebracht hat, muss man sich überlegen, welche Modifikationen
+      gegebenenfalls an der alten Version vorgenommen wurden. Was von den
+      alten Änderungen ist nunmehr überflüssig, was muss wieder oder sogar
+      zusätzlich geändert werden? Irgendwann ist man dann hoffentlich soweit
+      das man den Testserver vollständig auf das neue System umgestellt und
+      alle erforderlichen Anpassungen vorgenommen hat. Nachdem man nun eine
+      lauffähige Version lokal hat, geht es darum, diese auch auf dem Server
+      zur Verfügung zu stellen.</para>
+
+      <para>War der Live-Server während dieser Phase offline, so ist der Rest
+      schnell erledigt. Die Dateien und die Datenbank werden auf den
+      Live-Server aufgespielt und man kann wieder online gehen. Wollte oder
+      konnte man hingegen seinen Nutzern keine unbestimmte &mdash; aber
+      bestimmt längerfristige &mdash; Offlinezeit zumuten, und der der
+      Live-Server war während dieser Phase online, wird es nochmal ein wenig
+      komplizier:</para>
+
+      <procedure>
+        <step>
+          <para>'Live' Server offline nehmen</para>
+        </step>
+
+        <step>
+          <para>Updates wie zuvor geprobt vornehmen.</para>
+        </step>
+
+        <step>
+          <para>"Live"-Server online nehmen</para>
+        </step>
+      </procedure>
+
+      <para>Es ist empfehlenswert, für die Zeit des Uploads eine Seite zu
+      schalten, die auf den kurzfristigen Ausfall hinweist. Nachdem die
+      Dateien hochgeladen wurden und die Datenbank von lokal wieder auf den
+      Live-Server gebracht wurde, kann dieser wieder online gehen.</para>
+
+      <para>Optimal ist es natürlich, die neue Version auf dem Live-Server in
+      ein Parallelverzeichnis zu kopieren, und auch die Datenbank nicht über
+      die bestehende zu schreiben (gegebenenfalls einen neuen Präfix
+      vergeben). Auf diese Art hat man immer noch eine lauffähige Version des
+      Live-Servers zu Hand. Die meisten Provider bieten es an, das
+      Verzeichnis, auf das die Seite zeigt, frei zu wählen. Wenn die Daten
+      oben sind, muss man also per Administrationsmenü des Providers als
+      Startverzeichnis das mit der neuen Installation anwählen.</para>
+
+      <para>In beiden Fällen muss auf die <filename>config.php</filename>
+      geachtet werden: Nicht mit der Version der lokalen Installation
+      überschreiben!</para>
+    </section>
   </section>
 
   <section id="installfaq">
