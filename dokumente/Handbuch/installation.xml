@@ -15,18 +15,97 @@
     </indexterm></title>
 
   <section id="vorderinstallation">
-    <title>Vor der Installation</title>
+    <title>Installationsvoraussetzungen</title>
 
     <para>Für die erfolgreiche Installation von PostNuke wird ein
-    funktionierender Webserver mit <ulink
-    url="http://www.php.net/">PHP</ulink> und eine Datenbank benötigt. Durch
-    die Benutzung der Datenbankabstraktion <ulink
-    url="http://adodb.sourceforge.net/">ADOdb</ulink> soll PostNuke in Zukunft
-    mit einer Vielzahl Datenbanksysteme funktionieren - zur Zeit empfiehlt
-    sich nur die Benutzung von <ulink
-    url="http://www.mysql.com/">MySQL</ulink> , da vor allem Modul von
-    Dritt-Anbietern oft noch nicht vollkommen auf ADOdb umgestellt
-    sind.</para>
+    funktionierender Webserver mit PHP und eine Datenbank benötigt. Die
+    Voraussetzungen sind im Einzelnen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Webserver<indexterm>
+            <primary>Webserver</primary>
+          </indexterm></term>
+
+        <listitem>
+          <para>PostNuke selbst ist es egal, welcher Webserver auf welcher
+          Plattform zum Einsatz kommt. Emfehlenswert ist der Einsatz des
+          <ulink url="http://httpd.apache.org/">Apache</ulink> Webservers, da
+          einige Tricks bestimmte Webserver-Module voraussetzen, die nur der
+          Apache bietet. Insbesondere muß für den Einsatz von &ldquor;kurzen
+          URLs&rdquor; das Modul mod_rewrite aktiviert sein.</para>
+
+          <warning>
+            <para>Damit die Links in PostNuke korrekt funktionieren, muss der
+            Web-Server die Umgebungsvariable <varname>HTTP_HOST</varname>
+            setzen. Der Web-Server <ulink
+            url="http://www.omnicron.ca/">OmniHTTPd</ulink> macht dies erst ab
+            der Professional-Version 2.09. Um sich bei älteren Versionen zu
+            behelfen, ist es möglich, eins Stammverzeichnis von PostNuke eine
+            Datei namens <filename>personal_config.php</filename> mit
+            folgendem Inhalt anzulegen:</para>
+
+            <programlisting>&lt;?php
+$_SERVER['HTTP_HOST'] = 'www.example.com';
+?&gt;</programlisting>
+
+            <para>Für den Betrieb einer PostNuke-Seite ist der Apache
+            Web-Server dem OmniHTTPd auf jeden Fall vorzuziehen.</para>
+          </warning>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>PHP<indexterm>
+            <primary>PHP</primary>
+          </indexterm></term>
+
+        <listitem>
+          <para>PostNuke besteht aus einer Reihe an PHP-Skripten. Eine <ulink
+          url="http://www.php.net/">PHP-Unterstützung</ulink> ist also
+          notwendig. Die Mindestversion ist PHP 4.1 Mit bestimmten Versionen
+          von PHP (vor allem 4.2.3) sind im Zusammenspiel mit PostNuke Fehler
+          berichtet worden. </para>
+
+          <para>PostNuke .760 läuft auch unter PHP 5. </para>
+
+          <para>In der PHP-Umgebung müssen mindestens 8MB für die Skripte zur
+          Verfügung stehen. Allerdings kommt es auch hier schon zu einigen
+          Problemen, zum Beispiel mit XExpress und PostCalendar. Wer auf
+          Nummer sicher gehen will, sollte auf mindestens 16MB achten.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Datenbank<indexterm>
+            <primary>Datenbank</primary>
+          </indexterm><indexterm>
+            <primary>MySQL</primary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Alle Inhalte von PostNuke werden in einer Datenbank
+          gespeichert. Es empfiehlt sich die Verwendung von MySQL, da dies die
+          Datenbank ist, mit der die Entwickler derzeit testen. MySQL ist aber
+          die Datenbank, die von den meisten Providern ohnehin eingesetzt
+          wird.</para>
+
+          <para>Prinzipiell ist es auch möglich, PostNuke auch mit einem
+          anderen Datenbanksystem als MySQL zu installieren, da die
+          Datenbankzugriffe über die datenbankunabhängige Schnittstelle <ulink
+          url="http://adodb.sourceforge.net/">ADOdb</ulink><indexterm>
+              <primary>ADOdb</primary>
+            </indexterm> nutzen. Allerdings ist die Datenbankunabhängigkeit
+          momentan noch kein Designziel von PostNuke, und so muss man sich auf
+          eigene Experimente verlassen. Eventuell hat das jeweilige
+          Datenbanksystem spezielle Eigenarten, die zusätzlich berücksichtigt
+          werden müssen (z.B. keine LEFT JOINS in Oracle). Generell gilt die
+          Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
+          ADOdb-konform ausgeführt sind. Vor allem Module von Dritt-Anbietern
+          sind oft noch nicht vollkommen auf ADOdb umgestellt.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
 
     <section id="providerwahl">
       <title>Auswahl eines geeigneten Providers<indexterm>
@@ -35,110 +114,21 @@
           <secondary>Providerwahl</secondary>
         </indexterm></title>
 
-      <para>Zur besseren Auswahl eines geeigneten Providers sind die
-      notwendigen Voraussetzungen für PostNuke schnell
-      zusammengestellt:</para>
-
-      <variablelist>
-        <varlistentry>
-          <term>PHP<indexterm>
-              <primary>PHP</primary>
-            </indexterm></term>
-
-          <listitem>
-            <para>PostNuke besteht aus einer Reihe an PHP-Skripten. Eine
-            PHP-Unterstützung ist also notwendig. Die Mindestversion ist PHP
-            4.1 Mit bestimmten Versionen von PHP (vor allem 4.2.3) sind im
-            Zusammenspiel mit PostNuke Fehler berichtet worden; allerdings hat
-            man als Kunde im allgemeinen keinen Einfluß auf die eingesetzte
-            PHP-Version. Man sollt allerdings darauf achten, dass der
-            safe_mode nicht eingeschaltet ist, da dieses Sicherheitsfeature
-            von PHP Uploads erfolgreich verhindert. Damit lassen sich z.B. die
-            meisten Gallerien nicht betreiben.</para>
-
-            <para>In der PHP-Umgebung müssen mindestens 8MB für die Skripte
-            zur Verfügung stehen. Allerdings kommt es auch hier schon zu
-            einigen Problemen, zum Beispiel mit XExpress und PostCalendar. Wer
-            auf Nummer sicher gehen will, sollte auf mindestens 16MB
-            achten.</para>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>Datenbank<indexterm>
-              <primary>Datenbank</primary>
-            </indexterm><indexterm>
-              <primary>MySQL</primary>
-            </indexterm></term>
-
-          <listitem>
-            <para>Alle Inhalte von PostNuke werden in einer Datenbank
-            gespeichert. Obwohl PostNuke durch die Verwendung der
-            ADOdb-Bibliotheken theoretisch unabhängig von der verwendeten
-            Datenbank ist, empfiehlt sich die Verwendung von MySQL, da einige
-            ältere Module von Drittentwicklern noch nicht komplett auf ADOdb
-            umgestellt sind. MySQL ist aber die Datenbank, die von den meisten
-            Providern ohnehin eingesetzt wird.</para>
-
-            <note>
-              <para>Prinzipiell ist es auch möglich, PostNuke auch mit einem
-              anderen Datenbanksystem als MySQL zu installieren, da die
-              Datenbankzugriffe über die datenbankunabhängige Schnittstelle
-              ADOdb<indexterm>
-                  <primary>ADOdb</primary>
-                </indexterm> nutzen. Allerdings ist die
-              Datenbankunabhängigkeit momentan noch kein designziel von
-              PostNuke gewesen, und so muss man sich auf eigene Experimente
-              verlassen. Eventuell hat das jeweilige Datenbanksystem spezielle
-              Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B.
-              keine LEFT JOINS in Oracle). Generell gilt die
-              Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
-              ADOdb-konform ausgeführt sind. Das pnForum läuft beispielsweise
-              auch in einer Oracle-Installation.</para>
-            </note>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>Webserver<indexterm>
-              <primary>Webserver</primary>
-            </indexterm></term>
-
-          <listitem>
-            <para>PostNuke selbst ist es egal, welcher Webserver auf welcher
-            Plattform zum Einsatz kommt. Emfehlenswert ist der Einsatz des
-            Apache Webservers, da einige Tricks (z.B. die sogenannten
-            &ldquor;kurzen URLs&rdquor;) bestimmte Webserver-Module
-            voraussetzen, die nur der Apache bietet. Insbesondere muß für den
-            Einsatz von &ldquor;kurzen URLs&rdquor; das Modul mod_rewrite
-            aktiviert sein.</para>
-
-            <warning>
-              <para>Damit die Links in PostNuke korrekt funktionieren, muss
-              der Web-Server die Umgebungsvariable
-              <varname>HTTP_HOST</varname> setzen. Der Web-Server <ulink
-              url="http://www.omnicron.ca/">OmniHTTPd</ulink> macht dies erst
-              ab der Professional-Version 2.09. Um sich bei älteren Versionen
-              zu behelfen, ist es möglich, eins Stammverzeichnis von PostNuke
-              eine Datei namens <filename>personal_config.php</filename> mit
-              folgendem Inhalt anzulegen:</para>
-
-              <programlisting>&lt;?php
-$_SERVER['HTTP_HOST'] = 'www.example.com';
-?&gt;</programlisting>
-
-              <para>Für den Betrieb einer PostNuke-Seite ist der Apache
-              Web-Server dem OmniHTTPd auf jeden Fall vorzuziehen.</para>
-            </warning>
-          </listitem>
-        </varlistentry>
-      </variablelist>
-
       <para>Erfüllt ein Webspace<indexterm>
           <primary>Webspace</primary>
-        </indexterm>-Angebot diese Voraussetzungen, so ist der Rest meist nur
-      eine Frage des Preises. Wie oft, gilt auch in diesem Bereich &ldquor;you
-      get what you pay for&rdquor;...</para>
+        </indexterm>-Angebot die oben aufgeführten Voraussetzungen, so ist der
+      Rest meist nur eine Frage des Preises. Wie oft, gilt auch in diesem
+      Bereich &ldquor;you get what you pay for&rdquor;...</para>
+
+      <para>Man sollte allerdings darauf achten, dass der Provider die
+      Software auf dem jeweils aktuellen Stand hält und so ein proaktives
+      Fehlermanagement betreibt. Bei PHP ist es sinnvoll, dass der <ulink
+      url="http://php.net/features.safe-mode">safe_mode</ulink><indexterm>
+          <primary>safe_mode</primary>
+        </indexterm> nicht eingeschaltet ist, da dieses Sicherheitsfeature von
+      PHP Uploads erfolgreich verhindert. Damit lassen sich z.B. die meisten
+      Gallerien nicht betreiben. Mehr zum safe_mode findet man im Anhang.
+      </para>
 
       <para>Darüber hinaus müssen natürlich die folgenden Überlegungen
       angestellt werden:</para>
@@ -240,7 +230,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       <step>
         <para>Herunterladen der aktuellen Version von PostNuke und der
         aktuellen Sprachdatei als ZIP-Archiv von <ulink
-        url="http://www.post-nuke.net/">http://www.post-nuke.net</ulink>.<indexterm>
+        url="http://www.post-nuke.net">http://www.post-nuke.net</ulink>.<indexterm>
             <primary>Download</primary>
 
             <secondary>Grundpaket</secondary>
@@ -255,40 +245,44 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <para>Überprüfen der Prüfsummen.<indexterm>
             <primary>md5</primary>
           </indexterm><indexterm>
+            <primary>SHA1</primary>
+          </indexterm><indexterm>
             <primary>Prüfsumme</primary>
           </indexterm> Um zu überprüfen, ob es sich wirklich um unveränderte
-        Archive handelt, sollte nach dem Download unbedingt die md5-Prüfsumme
-        des Archivs mit der auf den verschiedenen Webseiten
+        Archive handelt, sollte nach dem Download unbedingt die Prüfsummen
+        (md5 und SHA1) des Archivs mit der auf den verschiedenen Webseiten
         (http://www.post-nuke.net und http://www.postnuke.com) angegebenen
-        Prüfsumme vergleichen. Bei LINUX-Systemen gehört das Programm
-        <command>md5sum</command> in jeder Distribution enthalten sein. Für
-        Windows gibt es unzählige Implementationen; am besten man sucht bei
-        google nach <command>md5sum.exe</command> oder
-        <command>md5.exe</command>. Bequem ist <ulink
-        url="http://winmd5sum.solidblue.ca/">winMd5Sum</ulink> von SolidBlue,
-        welches die md5-Prüfsumme per Drag&amp;Dop anzeigt und vergleichen
-        kann.</para>
+        Prüfsumme vergleichen. </para>
+
+        <para>Bei LINUX-Systemen gehört das Programm <command>md5sum</command>
+        in jeder Distribution enthalten sein. Für Windows gibt es unzählige
+        Implementationen; am besten man sucht bei google nach
+        <command>md5sum.exe</command> oder <command>md5.exe</command>. Bequem
+        ist <ulink url="http://winmd5sum.solidblue.ca/">winMd5Sum</ulink> von
+        SolidBlue, welches die md5-Prüfsumme per Drag&amp;Dop anzeigt und
+        vergleichen kann.</para>
 
         <note>
-          <para>Der md5-Algorithmus ist ein Verfahren zur Berechnung einer
-          Prüfsumme einer Datei. Diese Verfahren ist im <ulink
-          url="http://www.ietf.org/rfc/rfc1321.txt">RFC 1321</ulink>
-          beschrieben. Die Prüfsummen sind daher für Windows-, LINUX- und
-          andere Systeme identisch.</para>
+          <para>Die md5- und SHA1-Algorithmem sind Verfahren zur Berechnung
+          einer Prüfsumme einer Datei. Die Verfahren sind im <ulink
+          url="http://www.ietf.org/rfc/rfc1321.txt">RFC 1321</ulink> (md5)
+          bzw. <ulink url="http://www.ietf.org/rfc/rfc3174.txt">RFC
+          3174</ulink> (SHA1) beschrieben. Die Prüfsummen sind für Windows-,
+          LINUX- und andere Systeme identisch.</para>
 
-          <para>Man kann die md5-Prüfsumme benutzen, um herauszufinden, ob
-          sich eine Datei geändert hat. Dazu muss man die Prüfsumme berechnen
-          und notieren. Später kann man die Prüfsumme dann erneut berechnen.
-          Ist sie unverändert, dann ist die Wahrscheinlichkeit sehr groß, dass
+          <para>Man kann die Prüfsummen benutzen, um herauszufinden, ob sich
+          eine Datei geändert hat. Dazu muss man die Prüfsumme berechnen und
+          notieren. Später kann man die Prüfsumme dann erneut berechnen. Ist
+          sie unverändert, dann ist die Wahrscheinlichkeit sehr groß, dass
           sich auch die Datei nicht verändert hat.</para>
 
           <para>Die korrekte Prüfsumme bestätigt allerdings nur, dass der
-          Inhalt einer Datei unverändert ist, nicht aber, dass sie vom
-          angegebenen Absender stammen. Es könnte jemand den Inhalt der Datei
-          manipulieren, eine dazu passende Prüfsumme erzeugen und beides
-          weiterschicken. Daher ist es sinnvoll, die Prüfsumme sowohl auf
-          www.post-nuke.net wie auch auf www.postnuke.com zu
-          vergleichen.</para>
+          Inhalt einer Datei seit der Prüfsummenbildung unverändert ist, nicht
+          aber, dass sie vom angegebenen Absender stammen. Es könnte jemand
+          den Inhalt der Datei manipulieren, eine dazu passende Prüfsumme
+          erzeugen und beides veröffentlichen. Daher ist es sinnvoll, die
+          Prüfsummen sowohl auf www.post-nuke.net wie auch auf
+          www.postnuke.com zu vergleichen.</para>
         </note>
       </step>
 
@@ -309,16 +303,16 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <screenshot>
           <mediaobject>
-            <textobject>
-              <para>Die Verzeichnisstruktur nach dem Entpacken. Die beiden
-              markierten <filename>html</filename>-Verzeichnisse müssen
-              ineinander kopiert werden.</para>
-            </textobject>
-
             <imageobject>
               <imagedata align="center" fileref="dateistruktur.gif"
                          format="GIF" />
             </imageobject>
+
+            <caption>
+              <para>Die Verzeichnisstruktur nach dem Entpacken. Die beiden
+              markierten <filename>html</filename>-Verzeichnisse müssen
+              ineinander kopiert werden.</para>
+            </caption>
           </mediaobject>
         </screenshot>
       </step>
@@ -337,8 +331,8 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </indexterm></filename> und die <filename>config-old.php<indexterm>
         <primary>config-old.php</primary>
       </indexterm></filename>, die im Laufe der Installation vom System
-    automatisch geschrieben wird. Alle anderen Dateien sind Systemdateien, und
-    müssen nicht geändert werden.</para>
+    automatisch geschrieben werden. Alle anderen Dateien sind Systemdateien
+    und müssen nicht geändert werden.</para>
 
     <para>Das <filename class="directory">/docs<indexterm>
         <primary>Verzeichnisse</primary>
@@ -367,7 +361,21 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     Blöcke<indexterm>
         <primary>Blöcke</primary>
       </indexterm>. Weitere Blöcke befinden sind in den jeweiligen
-    Modulverzeichnissen.</para>
+    Modulverzeichnissen. Bibliotheken von Drittanbietern, wie z.B. die
+    Datenbankschnittstelle ADOdb<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>ADOdb</secondary>
+      </indexterm> <indexterm>
+        <primary>ADOdb</primary>
+      </indexterm> und die Template-Engine Smarty <indexterm>
+        <primary>Smarty</primary>
+      </indexterm><indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>Smarty</secondary>
+      </indexterm> befinden sich in Unterverzeichnissen von <filename
+    class="directory">classes</filename>. </para>
 
     <para>Für die Installation ist das <filename
     class="directory">/install<indexterm>
@@ -405,14 +413,6 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <secondary>modules</secondary>
       </indexterm></filename>-Verzeichnis.</para>
 
-    <para>In <filename class="directory">/pnadodb<indexterm>
-        <primary>Verzeichnisse</primary>
-
-        <secondary>pnadodb</secondary>
-      </indexterm></filename> liegen die Dateien, die für die
-    Datenbankzugriffe verantwortlich sind und dafür sorgen, dass PostNuke mit
-    verschiedenen Datenbanksystemen zusammenarbeiten kann.</para>
-
     <para>Temporäre Dateien werden unter <filename
     class="directory">/pnTemp<indexterm>
         <primary>Verzeichnisse</primary>
@@ -425,27 +425,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <primary>Verzeichnisse</primary>
 
         <secondary>themes</secondary>
-      </indexterm></filename> werden die Layouts abgelegt. Einige
+      </indexterm></filename> werden die Layouts (Themes) abgelegt. Einige
     Beispielthemes sind im Basispaket enthalten. Weitere Themes können selbst
-    erstellt oder auf verschiedenen Websites heruntergeladen werden. Zum
-    Beispiel <ulink
-    url="http://www.cms-themes.de">http://www.cms-themes.de</ulink>.</para>
+    erstellt oder auf verschiedenen Websites heruntergeladen werden.</para>
   </section>
 
   <section id="systeminstallation">
     <title>Installation des Systems</title>
-
-    <para role="info">Die Installation ist eigentlich sehr einfach und man
-    wird, ähnlich der Installation eines Programmes, Schritt für Schritt nach
-    den Daten gefragt, die notwendig sind. Zum Abschluss ist die Seite so
-    eingerichtet, dass sie bereits komplett funktionsfähig ist.</para>
-
-    <para>Selbstverständlich führen auch bei der PostNuke-Installation viele
-    Wege nach Rom, so unterscheidet es sich, ob die Installation via FTP auf
-    den Server geladen wird oder ob ein Shell-Zugang besteht und das Archiv
-    online entpackt wird. Aber, wie bereits in den Grundlagen erwähnt möchten
-    wir hier alles so einfach wie möglich halten und somit erkläre wir den (in
-    unseren Augen) gebräuchlichsten Weg.</para>
 
     <bridgehead>Upload der Dateien<indexterm>
         <primary>Upload</primary>
@@ -457,7 +443,10 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
     <para>Nachdem die Dateien, wie oben beschrieben, in entpackter Form auf
     dem heimischen PC vorliegen, müssen diese auf den Webspace hochgeladen
-    werden. Dies funktioniert überlicherweise mit einem FTP-Programm.</para>
+    werden. Dies funktioniert überlicherweise mit einem FTP-Programm. Auf dem
+    eigenen PC werden die Dateien einfach an die betreffende Position kopiert.
+    Eventuell besteht auch ein Shell-Zugang und das Archiv wird online
+    entpackt. </para>
 
     <tip>
       <para>Ein sehr gutes Programm ist z. B. <ulink
@@ -473,9 +462,12 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         Lediglich den Inhalt dieses Verzeichnisses wird hochgeladen, der
         Ordner <filename>Phoenix-SQL<indexterm>
             <primary>Phoenix-SQL</primary>
-          </indexterm></filename> braucht nicht upgeloadet werden! Das
-        Hochspielen kann einige Zeit in Anspruch nehmen, da es sich um einige
-        hundert Dateien handelt, also nicht die Nerven verlieren.</para>
+          </indexterm></filename> wird nicht benötigt! Das Hochspielen kann
+        einige Zeit in Anspruch nehmen, da es sich um einige hundert Dateien
+        handelt, also nicht die Nerven verlieren. Unbedingt ist darauf zu
+        achten, dass bei der Benutzung von FTP die Dateien im korrekten Modus
+        hochgeladen werden &mdash; PHP-Dateien als Text, Bilder usw. binär.
+        </para>
       </step>
 
       <step>
@@ -485,6 +477,17 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         nur dessen Inhalt. Sonst muss die Seite über <systemitem
         class="systemname">http://www.example.com/html/</systemitem>
         angesprochen werden, was unpraktisch ist.</para>
+      </step>
+
+      <step>
+        <para>Damit der Web-Server die Dateien ausliefern kann, müssen die
+        Berechtigungen entsprechend gesetzt sein. Bei einem gehosteten
+        Webangebot ist die Konfiguration üblicherweise korrekt. Kann der
+        Webserver auf die Dateien nicht zugreifen, erhält man bei der
+        Installation eine Fehlermeldung wie <computeroutput>Warning: Failed
+        opening '/....../install.php' for inclusion
+        (include_path='.:/usr/share/php') in Unknown on line
+        0</computeroutput>.</para>
       </step>
 
       <step>
@@ -574,7 +577,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       Anwender in ein Verzeichnis schreiben, so lautet die Berechtigung 777:
       Lesen (4), Schreiben (2) und in das Verzeichnis wechseln (1).</para>
 
-      <para>Die Berechtigungen lassen sich mit den LIXUX-Befehl
+      <para>Die Berechtigungen lassen sich mit den LINUX-Befehl
       <command>chmod</command> einstellen. Die meisten grafischen
       FTP-Programme erlauben dies, indem man die Datei mit der rechten
       Maustaste anklickt.</para>
@@ -589,9 +592,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     <bridgehead>Installation</bridgehead>
 
     <para>So weit, so gut, jetzt liegen die Dateien auf dem Server und es
-    folgt die eigentliche Installation. Darüber legt PostNuke die notwendigen
-    Tabellen in der Datenbank an, richtet einen Benutzer ein und leitet dann
-    auf die fertige Seite weiter:</para>
+    folgt die eigentliche Installation. Die Installation ist eigentlich sehr
+    einfach und man wird, ähnlich der Installation eines Programmes, Schritt
+    für Schritt nach den Daten gefragt, die notwendig sind. Darüber legt
+    PostNuke die notwendigen Tabellen in der Datenbank an, richtet einen
+    Benutzer ein und leitet dann auf die fertige Seite weiter. Zum Abschluss
+    ist die Seite so eingerichtet, dass sie bereits komplett funktionsfähig
+    ist.</para>
 
     <procedure>
       <step>
@@ -599,15 +606,6 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         class="systemname">http://www.example.com/install.php</systemitem>.<indexterm>
             <primary>install.php</primary>
           </indexterm></para>
-
-        <warning>
-          <para>Erhält man den Fehler <computeroutput>Warning: Failed opening
-          '/....../install.php' for inclusion
-          (include_path='.:/usr/share/php') in Unknown on line
-          0</computeroutput>, so haben die Dateien hat die falschen
-          Benutzerrechte. Die Berechtigungen müssen so gesetzt sein, dass der
-          Webserver alle Dateien lesen kann.</para>
-        </warning>
       </step>
 
       <step>
@@ -626,9 +624,14 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </step>
 
       <step>
-        <para>PostNuke ist unter der Gnu General Public License lizensiert.
-        Diese Lizenzvereinbarung ist im nächsten Schritt zu
-        akzeptieren.</para>
+        <para>PostNuke ist unter der GNU General Public License<indexterm>
+            <primary>GPL</primary>
+          </indexterm><indexterm>
+            <primary>GNU General Public License</primary>
+
+            <see>GPL</see>
+          </indexterm> lizensiert. Diese Lizenzvereinbarung ist im nächsten
+        Schritt zu akzeptieren.</para>
 
         <mediaobject>
           <imageobject>
@@ -657,16 +660,16 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <variablelist>
           <varlistentry>
-            <term>Datenbank Host<indexterm>
+            <term>Datenbank-Server<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
 
-                <tertiary>Host</tertiary>
+                <tertiary>Server</tertiary>
               </indexterm><indexterm>
                 <primary>Datenbank</primary>
 
-                <secondary>Host</secondary>
+                <secondary>Server</secondary>
               </indexterm></term>
 
             <listitem>
@@ -675,7 +678,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Benutzer<indexterm>
+            <term>Name des Datenbank-Benutzers<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
@@ -693,7 +696,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Passwort<indexterm>
+            <term>Passwort des Datenbank-Benutzers<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
@@ -711,7 +714,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Name<indexterm>
+            <term>Name der Datenbank<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
@@ -729,7 +732,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           </varlistentry>
 
           <varlistentry>
-            <term>Table Prefix<indexterm>
+            <term>Tabellenpräfix<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
@@ -754,7 +757,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Typ<indexterm>
+            <term>Datenbank <indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Datenbank</secondary>
@@ -886,7 +889,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <variablelist>
           <varlistentry>
-            <term>Admin-Login<indexterm>
+            <term>Benutzername des Administrators<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Admin</secondary>
@@ -895,12 +898,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
               </indexterm></term>
 
             <listitem>
-              <para>Loginname des Administrators</para>
+              <para>Mit diesem Namen meldet sich der Administrator später
+              an.</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Name<indexterm>
+            <term>Vollständiger Name des Administratirs<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Admin</secondary>
@@ -909,12 +913,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
               </indexterm></term>
 
             <listitem>
-              <para>vollständiger Name des Administrators</para>
+              <para>Der vollständiger Name wird z.B. als Autor in den News
+              gezeigt</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Passwort<indexterm>
+            <term>Kennwort des Administrators<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Admin</secondary>
@@ -923,22 +928,15 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
               </indexterm></term>
 
             <listitem>
-              <para>Passwort für den Administrator-Zugang</para>
+              <para>Mit diesem Kennwort meldet sich der Administrator später
+              an. Zur Vermeidung von Tippfehlern (das Passwort wird ja nicht
+              im Klartext angezeigt) muss das Kennwort zwei mal eingegeben
+              werden.</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Passwort (Bestätigung)</term>
-
-            <listitem>
-              <para>Nochmals das Passwort für den Administrator-Zugang zur
-              Vermeidung von Tippfehlern (das Passwort wird ja nicht im
-              Klartext angezeigt)</para>
-            </listitem>
-          </varlistentry>
-
-          <varlistentry>
-            <term>Admin-Email<indexterm>
+            <term>E-Mail-Adresse des Administrators<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Admin</secondary>
@@ -947,12 +945,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
               </indexterm></term>
 
             <listitem>
-              <para>vollständige E-Mail-Adresse des Admins eingeben</para>
+              <para>Die vollständige E-Mail-Adresse des Administrators. An
+              diese Adresse werden Fehlerberichte usw. gesendet.</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-URL<indexterm>
+            <term>Website des Administrators<indexterm>
                 <primary>Installation</primary>
 
                 <secondary>Admin</secondary>
@@ -962,7 +961,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
             <listitem>
               <para>Website des Administrators, in aller Regel die Adresse der
-              neuen Seite</para>
+              neuen Seite bzw. die Adresse der Agentur.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1026,65 +1025,60 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
       <step>
         <para>Wenn die PostNuke-Seite erscheint, war die Installation
-        erfolgreich - in diesem Fall sollten zum Abschluss der Installation
-        unbedingt ein paar Dinge gelöscht werden:</para>
+        erfolgreich &mdash; in diesem Fall sollten zum Abschluss der
+        Installation unbedingt ein paar Dinge geändert werden:</para>
 
-        <caution>
-          <itemizedlist>
-            <listitem>
-              <para>Das gesamte Verzeichnis <filename>/install</filename> und
-              die <filename>install.php</filename> auf dem Webspace muß
-              gelöscht werden.<indexterm>
-                  <primary>Installation</primary>
+        <itemizedlist>
+          <listitem>
+            <para>Die Rechte für die <filename>config.php</filename> und
+            <filename>config-old.php</filename> sollten wieder zurück auf 644
+            gesetzt werden.<indexterm>
+                <primary>Installation</primary>
 
-                  <secondary><filename>install.php</filename></secondary>
-                </indexterm><indexterm>
-                  <primary>Installation</primary>
+                <secondary><filename>config.php</filename></secondary>
+              </indexterm><indexterm>
+                <primary>Installation</primary>
 
-                  <secondary><filename>install</filename>-Verzeichnis</secondary>
-                </indexterm></para>
-            </listitem>
+                <secondary><filename>config-old.php</filename></secondary>
+              </indexterm><indexterm>
+                <primary><filename>config.php</filename></primary>
+              </indexterm> (<filename>pnTemp</filename> und die
+            Unterverzeichnisse bleiben bei den eingestellten Rechten).</para>
+          </listitem>
 
-            <listitem>
-              <para>Die Rechte für die <filename>config.php</filename> und
-              <filename>config-old.php</filename> sollten wieder zurück auf
-              644 gesetzt werden.<indexterm>
-                  <primary>Installation</primary>
+          <listitem>
+            <para>Das gesamte Verzeichnis <filename>/install</filename> und
+            die <filename>install.php</filename> auf dem Webspace muß gelöscht
+            werden.<indexterm>
+                <primary>Installation</primary>
 
-                  <secondary><filename>config.php</filename></secondary>
-                </indexterm><indexterm>
-                  <primary>Installation</primary>
+                <secondary><filename>install.php</filename></secondary>
+              </indexterm><indexterm>
+                <primary>Installation</primary>
 
-                  <secondary><filename>config-old.php</filename></secondary>
-                </indexterm><indexterm>
-                  <primary><filename>config.php</filename></primary>
-                </indexterm> (<filename>pnTemp</filename> und die
-              Unterverzeichnisse bleiben bei den eingestellten
-              Rechten).</para>
-            </listitem>
-          </itemizedlist>
-        </caution>
+                <secondary><filename>install</filename>-Verzeichnis</secondary>
+              </indexterm> Immer wieder kommt es vor, dass der
+            <filename>install</filename>-Ordner nicht gelöscht wird. Das
+            bedeutet, dass <emphasis>jeder</emphasis> die Installationsroutine
+            erneut aufrufen und eine gänzlich andere Seite installieren kann.
+            "Nebenbei" kann er auch noch die Datenbank-Zugangsdaten erspähen.
+            Es ist daher sehr wichtig für die Sicherheit, den
+            <filename>install</filename>-Ordner zu entfernen.</para>
 
-        <warning>
-          <para>Immer wieder kommt es vor, dass der
-          <filename>install</filename>-Ordner nicht gelöscht wird. Das
-          bedeutete in früheren Versionen, dass <emphasis>jeder</emphasis> die
-          Installationsroutine erneut aufrufen und eine gänzlich andere Seite
-          installieren kann. "Nebenbei" kann er auch noch die
-          Datenbank-Zugangsdaten erspähen. Es ist daher sehr wichtig für die
-          Sicherheit, den <filename>install</filename>-Ordner zu
-          entfernen.</para>
-        </warning>
+            <para>Seit Version .750 ist es nicht mehr möglich, die
+            Administration aufzurufen, solange die Installationsdateien noch
+            vorhanden sind.</para>
 
-        <para>Seit Version .750 ist es nicht mehr möglich, die Administration
-        aufzurufen, solange die Installationsdateien noch vorhanden
-        sind.</para>
-
-        <mediaobject>
-          <imageobject>
-            <imagedata align="center" fileref="install12.gif" format="GIF" />
-          </imageobject>
-        </mediaobject>
+            <screenshot>
+              <mediaobject>
+                <imageobject>
+                  <imagedata align="center" fileref="install12.gif"
+                             format="GIF" />
+                </imageobject>
+              </mediaobject>
+            </screenshot>
+          </listitem>
+        </itemizedlist>
       </step>
     </procedure>
   </section>
@@ -1111,12 +1105,12 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     Installationen sollte ein Upgrade immer zuerst lokal getestet
     werden.</para>
 
-    <bridgehead>Vor der Installation</bridgehead>
+    <bridgehead>Vor dem Upgrade</bridgehead>
 
-    <para>Vor der Installation sollte man sich überlegen, welche Module und
-    Blöcke man überhaupt einsetzt , und welche von will man überhaupt
-    weiterhin nutzen ihnen will. Alles, was man jetzt rauschmeisst, muss man
-    nicht mehr updaten.</para>
+    <para>Vor dem Upgrade sollte man sich überlegen, welche Module und Blöcke
+    man überhaupt einsetzt , und welche von will man überhaupt weiterhin
+    nutzen ihnen will. Alles, was man jetzt rauschmeisst, muss man nicht mehr
+    updaten.</para>
 
     <para>Wenn man diese Liste zusammengetragen hat, muss man feststellen, ob
     es für diese Module bzw. Blöcke Versionen gibt, die mit der neuen
@@ -1153,7 +1147,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
       <procedure>
         <step>
-          <para>Vor der Aktualisierung bei der Seite mit dem Admin Login
+          <para>Vor der Aktualisierung bei der Seite als Administrator
           anmelden. Dieser Schritt ist wichtig, da beim Update eine ganze
           Reihe an Schlüsselmodulen (unter anderem Admin, Blocks und Modules)
           aktualisiert werden.</para>
@@ -1164,8 +1158,8 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           <emphasis>ExtraLite</emphasis> Theme eingestellt ist - sowohl als
           generelles Seitentheme als auch ggfs. als benutzerbezogenenes Theme
           im Profil des Administrators. Alle anderen Themes in diesem Release
-          von PostNuke .760 sind Xanthia-Themes die eine Initialisierung vom
-          Adminbereich aus verlangen.</para>
+          von PostNuke .760 sind Xanthia-Themes, die zuvor eine
+          Initialisierung vom Adminbereich aus verlangen.</para>
         </step>
 
         <step>
@@ -1175,17 +1169,23 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <step>
           <para>Ist in der laufenden PostNuke-Version bereits Xanthia und
-          pnRender enthalten, so sollte man die Verzeichnisse
-          <filename>pnRender_cache</filename>, <filename>pnRender_compile,
-          <filename>Xanthia_cache</filename></filename> und
-          <filename>Xanthis_compile</filename> in <filename>pnTemp</filename>
-          leeren.</para>
+          pnRender enthalten, so sollte man die Verzeichnisse <filename
+          class="directory">pnRender_cache</filename>, <filename
+          class="directory">pnRender_compiled, <filename
+          class="directory">Xanthia_cache</filename></filename> und <filename
+          class="directory">Xanthia_compiled</filename> in <filename
+          class="directory">pnTemp</filename> leeren.</para>
         </step>
 
         <step>
           <para><emphasis>Alle</emphasis> Dateien der laufenden
           PostNuke-Version löschen. Vorher sicherstellen, dass wirklich ein
-          Backup vorhanden ist!</para>
+          Backup vorhanden ist! Das Löschen ist sinnvoll, da viele Module in
+          völlig neuen Versionen daherkommen, und der früher übliche Prefix
+          <filename class="directory">NS-</filename> vor einem
+          Modulverzeichnis ist nicht mehr vorhanden. Mit dem Löschen ist man
+          sicher, dass sich alte und neue Versionen nicht ins Gehege kommen.
+          </para>
         </step>
 
         <step>
@@ -1196,17 +1196,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           <para>Die <filename>config.php</filename>, die ein paar Schritte
           zuvor gespeichert wurde, in das PostNuke Hauptverzeichnis kopieren
           (das Verzeichnis mit der <filename>config.php</filename> und der
-          <filename>config-old.php</filename>). Sie wird während des
-          Upgradeprozesses benötigt.</para>
-        </step>
-
-        <step>
-          <para>Für das Upgrade müssen die Zugriffsberechtiung für die Dateien
-          <filename>config.php</filename> und
-          <filename>config-old.php</filename> so sein, dass der Webserver
-          diese neu schreiben kann. Bei LINUX-Systemen heisst das, dass man
-          sie auf chmod 666 setzen muss. Nach dem Upgrade können die
-          Zugriffsrechte wieder auf 644 gesetzt werden.</para>
+          <filename>config-old.php</filename>). </para>
         </step>
 
         <step>
@@ -1226,10 +1216,16 @@ $pnconfig['temp'] = 'pnTemp';</programlisting>
       </procedure>
 
       <para>Ist die laufende Version älter als PostNuke .723, so wird das
-      Upgrade über die <filename>install.php</filename> vorgenommen. Starten
-      Sie den Upgradeprozess, indem Sie die <filename>install.php</filename>
-      mit Ihrem Browser öffnen. Die exakte Url hängt von der jeweiligen Domain
-      ab, aber wenn die Seite zum Beispiel
+      Upgrade über die <filename>install.php</filename> vorgenommen. Hierfür
+      müssen die Zugriffsberechtigungen für die Dateien
+      <filename>config.php</filename> und <filename>config-old.php</filename>
+      so sein, dass der Webserver diese neu schreiben kann. Bei LINUX-Systemen
+      heisst das, dass man sie auf chmod 666 setzen muss. Nach dem Upgrade
+      können die Zugriffsrechte wieder auf 644 gesetzt werden.</para>
+
+      <para>Starten Sie den Upgradeprozess, indem Sie die
+      <filename>install.php</filename> mit Ihrem Browser öffnen. Die exakte
+      Url hängt von der jeweiligen Domain ab, aber wenn die Seite zum Beispiel
       <systemitem>http://www.example.com</systemitem> ist und PostNuke in das
       Verzeichniss <filename>pn</filename> installiert wurde lautet die URL
       <systemitem>http:www.example.com/pn/install.php</systemitem>. Den
@@ -1239,8 +1235,8 @@ $pnconfig['temp'] = 'pnTemp';</programlisting>
       auswählen. Der Rest von dem Prozess sollte automatisch gehen.</para>
 
       <para>Ist die laufende PostNuke-Version mindestens die Version .723, so
-      ist ein Aufruf der <filename>install.php</filename> nicht
-      notwendig.</para>
+      ist ein Aufruf der <filename>install.php</filename> nicht notwendig. Man
+      kann also direkt auf der neuen Seite arbeiten.</para>
 
       <para>Zu diesem Zeitpunkt sollten die zusätzlich installierten Module
       (aus dem Backup) wieder hochgeladen werden.</para>
@@ -1260,7 +1256,7 @@ $pnconfig['temp'] = 'pnTemp';</programlisting>
       sortiert - darum sind alle Module in der 3rd Party Kategorie zu finden.
       In der Konfiguration des Admin-Moduls kann jedes Modul in eine Kategorie
       eingeordnet werden, Kategorien können auch umbenannt, erstellt und
-      gelöscht werden.</para>
+      gelöscht werden. Mehr dazu im nächsten Kapitel.</para>
     </section>
 
     <section>
@@ -1367,8 +1363,7 @@ $pnconfig['temp'] = 'pnTemp';</programlisting>
   </section>
 
   <section id="configphp">
-    <title>Was sind die Daten in der
-    <filename>config.php</filename>?<indexterm>
+    <title>Die Daten in der <filename>config.php</filename><indexterm>
         <primary><filename>config.php</filename></primary>
       </indexterm><indexterm>
         <primary>Verbindungsdaten</primary>
@@ -1441,6 +1436,26 @@ $pnconfig['temp']        = 'pnTemp'; <co id="configphp.pntemp" /></programlistin
 
       <callout arearefs="configphp.pntemp">
         <para>Postition des temporären PostNuke-Verzeichnisses</para>
+
+        <para>Das PostNuke Verzeichnis für tempöräre Dateien wurde von den
+        Postnuke Entwicklern eingeführt, um für alle Teile des Systems ein
+        beschreibbares Verzeichnis anzubieten. Hierfür dient das im
+        Hauptverzeichnis der Site befindlichen Verzeichnis
+        <filename>/pnTemp</filename>. Die Zugriffsrechte auf dieses
+        Verzeichnis sowie auf alle Unterverzeichnisse müssen auf "schreibbar
+        für alle" - unter Linux auf 777 - gesetzt werden.</para>
+
+        <important>
+          <para>Um Direktzugriffe auf pnTemp zu verhindern, liegt eine
+          entsprechende <filename>.htaccess</filename>-Datei in diesem
+          Verzeichnis.</para>
+
+          <para>Aus Sicherheitsgründen empfehlen wir Webmastern,
+          <filename>pnTemp</filename> ausserhalb des Postnuke
+          Hauptverzeichnisses zu lagern. Hierfür wird das bestehende
+          <filename>pnTemp</filename>-Verzeichnis verschoben und die neue Lage
+          in der <filename>config.php</filename> eingetragen.</para>
+        </important>
       </callout>
     </calloutlist>
 
@@ -1468,39 +1483,5 @@ $pndebug['pagerendertime'] = 0; <co id="configphp.pagerendertime" /></programlis
         Erstellung der Seite benötigt wurde.</para>
       </callout>
     </calloutlist>
-  </section>
-
-  <section id="pntemp">
-    <title>Das PostNuke Verzeichnis für temporäre Dateien
-    (<filename>pnTemp</filename>)<indexterm>
-        <primary>pnTemp</primary>
-      </indexterm><indexterm>
-        <secondary>Temporärdateien</secondary>
-
-        <see>pnTemp</see>
-      </indexterm></title>
-
-    <para>Das PostNuke Verzeichnis für tempöräre Dateien wurde von den
-    Postnuke Entwicklern eingeführt, um für alle Teile des Systems ein
-    beschreibbares Verzeichnis anzubieten. Hierfür dient das im
-    Hauptverzeichnis der Site befindlichen Verzeichnis
-    <filename>/pnTemp</filename>.</para>
-
-    <para>Die Zugriffsrechte auf dieses Verzeichnis sowie auf alle
-    Unterverzeichnisse müssen auf "schreibbar für alle" - unter Linux auf 777
-    - gesetzt werden.</para>
-
-    <important>
-      <para>Um Direktzugriffe auf pnTemp zu verhindern, liegt eine
-      entsprechende <filename>.htaccess</filename>-Datei in diesem
-      Verzeichnis.</para>
-
-      <para>Aus Sicherheitsgründen empfehlen wir Webmastern,
-      <filename>pnTemp</filename> ausserhalb des Postnuke Hauptverzeichnisses
-      zu lagern. Hierfür wird das bestehende
-      <filename>pnTemp</filename>-Verzeichnis verschoben und die neue Lage in
-      der <filename>config.php</filename> eingetragen (vgl. <link
-      linkend="configphp.pntemp">hier</link>).</para>
-    </important>
   </section>
 </chapter>
