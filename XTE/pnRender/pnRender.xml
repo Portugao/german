@@ -44,6 +44,19 @@
           <orgname>PostNuke</orgname>
         </affiliation>
       </author>
+
+      <author>
+        <firstname>Steffen</firstname>
+
+        <surname>Voss</surname>
+
+        <affiliation>
+          <jobtitle>German Translation</jobtitle>
+
+          <orgname><ulink
+          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
+        </affiliation>
+      </author>
     </authorgroup>
 
     <releaseinfo>$Revision$</releaseinfo>
@@ -95,9 +108,9 @@
     <edition>prerelease</edition>
 
     <abstract>
-      <para>This document describes the how Smarty support in PostNuke is
-      supposed to work. This document is in alpha, and as such the description
-      of pnRender is likely to change.</para>
+      <para>In diesem Dokument wird der Smarty-Support von Postnuke erklärt.
+      Da es noch in der Alphaphase ist, wird es noch zu Änderungen
+      kommen.</para>
     </abstract>
 
     <abstract>
