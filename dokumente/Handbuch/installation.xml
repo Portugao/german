@@ -65,9 +65,9 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           url="http://www.php.net/">PHP-Unterstützung</ulink> ist also
           notwendig. Die Mindestversion ist PHP 4.1 Mit bestimmten Versionen
           von PHP (vor allem 4.2.3) sind im Zusammenspiel mit PostNuke Fehler
-          berichtet worden. </para>
+          berichtet worden.</para>
 
-          <para>PostNuke .760 läuft auch unter PHP 5. </para>
+          <para>PostNuke .760 läuft auch unter PHP 5.</para>
 
           <para>In der PHP-Umgebung müssen mindestens 8MB für die Skripte zur
           Verfügung stehen. Allerdings kommt es auch hier schon zu einigen
@@ -127,8 +127,8 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           <primary>safe_mode</primary>
         </indexterm> nicht eingeschaltet ist, da dieses Sicherheitsfeature von
       PHP Uploads erfolgreich verhindert. Damit lassen sich z.B. die meisten
-      Gallerien nicht betreiben. Mehr zum safe_mode findet man im Anhang.
-      </para>
+      Gallerien nicht betreiben. Mehr zum safe_mode findet man im
+      Anhang.</para>
 
       <para>Darüber hinaus müssen natürlich die folgenden Überlegungen
       angestellt werden:</para>
@@ -252,7 +252,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         Archive handelt, sollte nach dem Download unbedingt die Prüfsummen
         (md5 und SHA1) des Archivs mit der auf den verschiedenen Webseiten
         (http://www.post-nuke.net und http://www.postnuke.com) angegebenen
-        Prüfsumme vergleichen. </para>
+        Prüfsumme vergleichen.</para>
 
         <para>Bei LINUX-Systemen gehört das Programm <command>md5sum</command>
         in jeder Distribution enthalten sein. Für Windows gibt es unzählige
@@ -260,7 +260,10 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <command>md5sum.exe</command> oder <command>md5.exe</command>. Bequem
         ist <ulink url="http://winmd5sum.solidblue.ca/">winMd5Sum</ulink> von
         SolidBlue, welches die md5-Prüfsumme per Drag&amp;Dop anzeigt und
-        vergleichen kann.</para>
+        vergleichen kann. Weitere gute Programme sind <ulink
+        url="http://www.jonelo.de/java/jacksum/">Jacksum</ulink> (in Java und
+        damit Plattformunabhängig) und <ulink
+        url="http://www.paehl.de/">DPASHA</ulink> (für Windows). </para>
 
         <note>
           <para>Die md5- und SHA1-Algorithmem sind Verfahren zur Berechnung
@@ -375,7 +378,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <secondary>Smarty</secondary>
       </indexterm> befinden sich in Unterverzeichnissen von <filename
-    class="directory">classes</filename>. </para>
+    class="directory">classes</filename>.</para>
 
     <para>Für die Installation ist das <filename
     class="directory">/install<indexterm>
@@ -446,7 +449,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     werden. Dies funktioniert überlicherweise mit einem FTP-Programm. Auf dem
     eigenen PC werden die Dateien einfach an die betreffende Position kopiert.
     Eventuell besteht auch ein Shell-Zugang und das Archiv wird online
-    entpackt. </para>
+    entpackt.</para>
 
     <tip>
       <para>Ein sehr gutes Programm ist z. B. <ulink
@@ -466,8 +469,8 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         einige Zeit in Anspruch nehmen, da es sich um einige hundert Dateien
         handelt, also nicht die Nerven verlieren. Unbedingt ist darauf zu
         achten, dass bei der Benutzung von FTP die Dateien im korrekten Modus
-        hochgeladen werden &mdash; PHP-Dateien als Text, Bilder usw. binär.
-        </para>
+        hochgeladen werden &mdash; PHP-Dateien als Text, Bilder usw.
+        binär.</para>
       </step>
 
       <step>
@@ -1184,8 +1187,8 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           völlig neuen Versionen daherkommen, und der früher übliche Prefix
           <filename class="directory">NS-</filename> vor einem
           Modulverzeichnis ist nicht mehr vorhanden. Mit dem Löschen ist man
-          sicher, dass sich alte und neue Versionen nicht ins Gehege kommen.
-          </para>
+          sicher, dass sich alte und neue Versionen nicht ins Gehege
+          kommen.</para>
         </step>
 
         <step>
@@ -1196,7 +1199,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           <para>Die <filename>config.php</filename>, die ein paar Schritte
           zuvor gespeichert wurde, in das PostNuke Hauptverzeichnis kopieren
           (das Verzeichnis mit der <filename>config.php</filename> und der
-          <filename>config-old.php</filename>). </para>
+          <filename>config-old.php</filename>).</para>
         </step>
 
         <step>
