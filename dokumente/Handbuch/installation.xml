@@ -241,7 +241,7 @@
           Prüfsumme einer Datei. Diese Verfahren ist im <ulink
           url="http://www.ietf.org/rfc/rfc1321.txt">RFC 1321</ulink>
           beschrieben. Die Prüfsummen sind daher für Windows-, LINUX- und
-          andere Systeme identisch. </para>
+          andere Systeme identisch.</para>
 
           <para>Man kann die md5-Prüfsumme benutzen, um herauszufinden, ob
           sich eine Datei geändert hat. Dazu muss man die Prüfsumme berechnen
@@ -254,8 +254,8 @@
           angegebenen Absender stammen. Es könnte jemand den Inhalt der Datei
           manipulieren, eine dazu passende Prüfsumme erzeugen und beides
           weiterschicken. Daher ist es sinnvoll, die Prüfsumme sowohl auf
-          www.post-nuke.net wie auch auf www.postnuke.com zu vergleichen.
-          </para>
+          www.post-nuke.net wie auch auf www.postnuke.com zu
+          vergleichen.</para>
         </note>
       </step>
 
@@ -341,7 +341,7 @@
         Dateien <filename>config.php</filename> und
         <filename>config-old.php</filename> so sein, dass der Webserver diese
         neu schreiben ann. Bei LINUX-Systemen heisst das, dass man sie auf
-        chmod 666 setzen muss. </para>
+        chmod 666 setzen muss.</para>
       </step>
 
       <step>
@@ -1080,19 +1080,17 @@
     <para>In diesem Abschnitt werden einige der häufigsten Fragen bei der
     Installation geklärt:</para>
 
-    <section>
-      <title>Was sind meine Verbindungsdaten in der config.php?<indexterm>
-          <primary><filename>config.php</filename></primary>
-        </indexterm><indexterm>
-          <primary>Verbindungsdaten</primary>
-        </indexterm></title>
+    <bridgehead>Was sind meine Verbindungsdaten in der config.php?<indexterm>
+        <primary><filename>config.php</filename></primary>
+      </indexterm><indexterm>
+        <primary>Verbindungsdaten</primary>
+      </indexterm></bridgehead>
 
-      <para>Normalerweise wird die config.php bei der Installation automatisch
-      erzeugt und muss nicht manuell bearbeitet werden. Sollte dies trotzdem
-      einmal notwendig sein, sollten folgende Angaben ausgefüllt
-      werden:</para>
+    <para>Normalerweise wird die config.php bei der Installation automatisch
+    erzeugt und muss nicht manuell bearbeitet werden. Sollte dies trotzdem
+    einmal notwendig sein, sollten folgende Angaben ausgefüllt werden:</para>
 
-      <programlisting>$pnconfig['dbtype'] = 'mysql'; <co id="configphp.dbtype" />
+    <programlisting>$pnconfig['dbtype'] = 'mysql'; <co id="configphp.dbtype" />
 $pnconfig['dbtabletype'] = 'myisam'; <co id="configphp.dbtabletype" />
 $pnconfig['dbhost'] = 'localhost'; <co id="configphp.dbhost" />
 $pnconfig['dbuname'] = 'cm9vdA=='; <co id="configphp.dbuname" />
@@ -1104,100 +1102,122 @@ $pnconfig['encoded'] = '1'; <co id="configphp.encoded" />
 $pnconfig['pconnect'] = '0'; <co id="configphp.pconnect" />
 $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
 
-      <calloutlist>
-        <callout arearefs="configphp.dbtype">
-          <para>Typ der Datenbank</para>
-        </callout>
+    <calloutlist>
+      <callout arearefs="configphp.dbtype">
+        <para>Typ der Datenbank</para>
+      </callout>
 
-        <callout arearefs="configphp.dbtabletype">
-          <para>Tabellentyp der Datenbank</para>
-        </callout>
+      <callout arearefs="configphp.dbtabletype">
+        <para>Tabellentyp der Datenbank</para>
+      </callout>
 
-        <callout arearefs="configphp.dbhost">
-          <para>MySQL Datenbankserver</para>
-        </callout>
+      <callout arearefs="configphp.dbhost">
+        <para>MySQL Datenbankserver</para>
+      </callout>
 
-        <callout arearefs="configphp.dbuname">
-          <para>MySQL Datenbankbenutzer</para>
-        </callout>
+      <callout arearefs="configphp.dbuname">
+        <para>MySQL Datenbankbenutzer</para>
+      </callout>
 
-        <callout arearefs="configphp.dbpass">
-          <para>MySQL Datenbankpasswort</para>
-        </callout>
+      <callout arearefs="configphp.dbpass">
+        <para>MySQL Datenbankpasswort</para>
+      </callout>
 
-        <callout arearefs="configphp.dbname">
-          <para>MySQL Datenbankname</para>
-        </callout>
+      <callout arearefs="configphp.dbname">
+        <para>MySQL Datenbankname</para>
+      </callout>
 
-        <callout arearefs="configphp.system">
-          <para>0 für Unix/Linux, 1 für Windows</para>
-        </callout>
+      <callout arearefs="configphp.system">
+        <para>0 für Unix/Linux, 1 für Windows</para>
+      </callout>
 
-        <callout arearefs="configphp.prefix">
-          <para>MySQL Tabellenprefix</para>
-        </callout>
+      <callout arearefs="configphp.prefix">
+        <para>MySQL Tabellenprefix</para>
+      </callout>
 
-        <callout arearefs="configphp.encoded">
-          <para>0 für unkodierten, 1 für kodierten Benutzernamen/-passwort.
-          Die Daten sind Base_64 kodiert - um manuell eine
-          Benutzername/Passwort-Kombination von Klartext in Base_64 zu
-          wandeln, kann man sich mit dem PostNuke Swiss Army Knife Tool
-          behelfen.</para>
-        </callout>
+      <callout arearefs="configphp.encoded">
+        <para>0 für unkodierten, 1 für kodierten Benutzernamen/-passwort. Die
+        Daten sind Base_64 kodiert - um manuell eine
+        Benutzername/Passwort-Kombination von Klartext in Base_64 zu wandeln,
+        kann man sich mit dem PostNuke Swiss Army Knife Tool behelfen.</para>
+      </callout>
 
-        <callout arearefs="configphp.pconnect">
-          <para>Entscheidet darüber, ob sogenannte "Persistente
-          Datenbankverbindungen" genutzt werden. Unter Umständen kann damit
-          die Leistung erhöht werden. Mehr dazu in der <ulink
-          url="http://www.php.net/manual/de/features.persistent-connections.php">PHP-Dokumentation</ulink>.</para>
-        </callout>
+      <callout arearefs="configphp.pconnect">
+        <para>Entscheidet darüber, ob sogenannte "Persistente
+        Datenbankverbindungen" genutzt werden. Unter Umständen kann damit die
+        Leistung erhöht werden. Mehr dazu in der <ulink
+        url="http://www.php.net/manual/de/features.persistent-connections.php">PHP-Dokumentation</ulink>.</para>
+      </callout>
 
-        <callout arearefs="configphp.pntemp">
-          <para>Postition des temporären PostNuke-Verzeichnisses</para>
-        </callout>
-      </calloutlist>
-    </section>
+      <callout arearefs="configphp.pntemp">
+        <para>Postition des temporären PostNuke-Verzeichnisses</para>
+      </callout>
+    </calloutlist>
 
-    <section>
-      <title>Ist es möglich, PostNuke auch mit einem anderen Datenbanksystem
-      als MySQL zu installieren?<indexterm>
-          <primary>MySQL</primary>
-        </indexterm><indexterm>
-          <primary>Datenbank</primary>
-        </indexterm></title>
+    <bridgehead>Ist es möglich, PostNuke auch mit einem anderen
+    Datenbanksystem als MySQL zu installieren?<indexterm>
+        <primary>MySQL</primary>
+      </indexterm><indexterm>
+        <primary>Datenbank</primary>
+      </indexterm></bridgehead>
 
-      <para>Prinzipiell sollte es schon funktionieren, via ADOdb<indexterm>
-          <primary>ADOdb</primary>
-        </indexterm> auch andere Datenbanken zu nutzen (das pnForum läuft
-      beispielsweise auch in einer Oracle-Installation). Eventuell hat das
-      jeweilige Datenbanksystem aber spezielle Eigenarten, die zusätzlich
-      berücksichtigt werden müssen (z.B. keine LEFT JOINS in Oracle). Generell
-      gilt die Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
-      ADOdb-konform ausgeführt sind.</para>
-    </section>
+    <para>Prinzipiell sollte es schon funktionieren, via ADOdb<indexterm>
+        <primary>ADOdb</primary>
+      </indexterm> auch andere Datenbanken zu nutzen (das pnForum läuft
+    beispielsweise auch in einer Oracle-Installation). Eventuell hat das
+    jeweilige Datenbanksystem aber spezielle Eigenarten, die zusätzlich
+    berücksichtigt werden müssen (z.B. keine LEFT JOINS in Oracle). Generell
+    gilt die Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
+    ADOdb-konform ausgeführt sind.</para>
 
-    <section>
-      <title>Kann ich meine Site einfach in anderes Verzeichnis
-      verschieben?<indexterm>
-          <primary>Installation</primary>
+    <bridgehead>Kann ich meine Site einfach in anderes Verzeichnis
+    verschieben?</bridgehead>
 
-          <secondary>Verschieben der Installation</secondary>
-        </indexterm></title>
+    <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in der
+    Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach in
+    einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann den
+    Dump zurückspielen.</para>
 
-      <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in
-      der Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach
-      in einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann
-      den Dump zurückspielen.</para>
-    </section>
+    <bridgehead>Folgender Fehler tritt bei der Installation auf: Warning:
+    Failed opening '/....../install.php' for inclusion
+    (include_path='.:/usr/share/php') in Unknown on line 0</bridgehead>
 
-    <section>
-      <title>Folgender Fehler tritt bei der Installation auf: Warning: Failed
-      opening '/....../install.php' for inclusion
-      (include_path='.:/usr/share/php') in Unknown on line 0</title>
+    <para>Die Dateien hat noch die falschen Benutzerrechte mit dem
+    Linux-Befehl <command>chown</command> sollte man dem Webserver alle
+    Dateien überlassen.</para>
+  </section>
 
-      <para>Die Dateien hat noch die falschen Benutzerrechte mit dem
-      Linux-Befehl <command>chown</command> sollte man dem Webserver alle
-      Dateien überlassen.</para>
-    </section>
+  <section id="pntemp">
+    <title>Das PostNuke Verzeichnis für temporäre Dateien
+    (<filename>pnTemp</filename>)<indexterm>
+        <primary>pnTemp</primary>
+      </indexterm><indexterm>
+        <secondary>Temporärdateien</secondary>
+
+        <see>pnTemp</see>
+      </indexterm></title>
+
+    <para>Das PostNuke Verzeichnis für tempöräre Dateien wurde von den
+    Postnuke Entwicklern eingeführt, um für alle Teile des Systems ein
+    beschreibbares Verzeichnis anzubieten. Hierfür dient das im
+    Hauptverzeichnis der Site befindlichen Verzeichnis
+    <filename>/pnTemp</filename>.</para>
+
+    <para>Die Zugriffsrechte auf dieses Verzeichnis sowie auf alle
+    Unterverzeichnisse müssen auf "schreibbar für alle" - unter Linux auf 777
+    - gesetzt werden.</para>
+
+    <important>
+      <para>Um Direktzugriffe auf pnTemp zu verhindern, liegt eine
+      entsprechende <filename>.htaccess</filename>-Datei in diesem
+      Verzeichnis. </para>
+
+      <para>Aus Sicherheitsgründen empfehlen wir Webmastern,
+      <filename>pnTemp</filename> ausserhalb des Postnuke Hauptverzeichnisses
+      zu lagern. Hierfür wird das bestehende
+      <filename>pnTemp</filename>-Verzeichnis verschoben und die neue Lage in
+      der <filename>config.php</filename> eingetragen (vgl. <link
+      linkend="configphp.pntemp">hier</link>).</para>
+    </important>
   </section>
 </chapter>
