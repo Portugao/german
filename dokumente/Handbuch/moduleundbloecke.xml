@@ -63,6 +63,18 @@
     erklärt werden. Diese Funktionen gelten für alle Module innerhalb von
     PostNuke.</para>
 
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="moduladmin.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Die Moduladministration</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+
     <bridgehead>Modulinstallation<indexterm>
         <primary>Module</primary>
 
@@ -72,23 +84,27 @@
     <para>Module bestehen normalerweise aus mehreren Dateien (Funktionen,
     Grafiken, Sprachdateien usw.), die zusammen in einem Verzeichnis liegen,
     das den Namen des Moduls trägt. Dieses Verzeichnis muss ins Verzeichnis
-    <filename>/modules</filename> auf dem Webserver kopiert werden.</para>
+    <filename>/modules</filename> auf dem Webserver kopiert werden. </para>
 
     <para>Die Installation / Konfiguration der Module erfolgt im
     Administrationsbereich über den Menüpunkt 'Module':</para>
 
     <variablelist>
       <varlistentry>
-        <term>anzeigen</term>
+        <term>Alle anzeigen</term>
 
         <listitem>
           <para>zeigt eine Liste aller auf der Seite vorhanden Module mitsamt
-          ihren jeweiligen Einstellungen an</para>
+          ihren jeweiligen Einstellungen an. Über die Buchstaben erreicht man
+          die Module mit dem betreffenden Anfangsbuchstaben recht schnell.
+          Darüber hinaus kann man in dem Dropdown-Feld auswählen, ob man alle
+          Module, oder nur solche mit einem bestimmten Status sehen möchte.
+          </para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>erneut erzeugen</term>
+        <term>Neu erzeugen</term>
 
         <listitem>
           <para>baut die Modulliste auf Grundlage der Verzeichnisinformationen
@@ -102,102 +118,173 @@
       </varlistentry>
     </variablelist>
 
+    <para>Ein Modul kann unterschiedliche Stati haben:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Nicht Initialisiert</term>
+
+        <listitem>
+          <para>Dies ist der erste Zustand eines Moduls nach dem Hochladen.
+          Das Modul ist zwar im Dateisystem vorhanden, es befinden sich aber
+          keine Informationen in der PostNuke-Datenbank. </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Inaktiv</term>
+
+        <listitem>
+          <para>Nach dem Initialisieren, bei dem die Datenbankinformationen
+          erzeugt werden, ist ein Modul zunächst inaktiv. </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Aktiv</term>
+
+        <listitem>
+          <para>Diese Module sind bereit zum Einsatz</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dateien fehlen</term>
+
+        <listitem>
+          <para>Ein initialisiertes Modul, dessen Dateien im Dateisystem
+          fehlen. </para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Neue Version installiert</term>
+
+        <listitem>
+          <para>Zu diesem Modul ist eine neue Version installiert worden, die
+          nun initialisiert werden muss. </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
     <para>Die Konfiguration im Detail:</para>
 
     <variablelist>
       <varlistentry>
-        <term>initialisieren</term>
+        <term>Initialisieren</term>
 
         <listitem>
-          <para>damit werden die für das Modul erforderlichen
-          Datenbanktabellen und Variablen im System erzeugt. Module müssen in
-          aller Regel initialisiert werden, bevor man mit ihnen arbeiten
-          kann</para>
+          <para>Beim Initialisieren werden die für das Modul erforderlichen
+          Datenbanktabellen und Variablen im System erzeugt. Module müssen
+          stets initialisiert werden, bevor man mit ihnen arbeiten
+          kann.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>aktivieren</term>
+        <term>Aktivieren</term>
 
         <listitem>
-          <para>nach der Initialisierung kann ein Modul aktiviert werden,
-          damit PostNuke darauf zugreifen kann</para>
+          <para>Nach der Initialisierung kann ein Modul aktiviert werden,
+          damit PostNuke darauf zugreifen kann.</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>editieren</term>
+        <term>Deaktivieren</term>
+
+        <listitem>
+          <para>Hiermit wird ein Modul deaktiviert, d.h. es ist für Benutzer
+          nicht mehr nutzbar, obwohl alle Einstellungen noch im System
+          vorhanden sind. Das Deaktivieren löscht weder Moduldateien, noch
+          entsprechende Tabellen bzw. Variablen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Entfernen</term>
+
+        <listitem>
+          <para>Entfernt ein deaktiviertes Modul vollständig, d.h. die
+          entsprechenden Datenbanktabellen und Modulvariablen werden gelöscht.
+          Das entsprechende Modulverzeichnis in <filename
+          class="directory">/modules</filename> bleibt allerdings bestehen.
+          </para>
+
+          <caution>
+            <para>Es gibt keine Sicherheitsabfrage beim Entfernen!</para>
+          </caution>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Upgraden</term>
+
+        <listitem>
+          <para>Diese Funktion integriert neue Tabellen bzw. Variablen,
+          nachdem eine neue Modulversion eingespielt wurde. Nach dem Upgraden
+          muss das Modul erneut aktiviert werden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Hooks</term>
+
+        <listitem>
+          <para>Hiermit können die im System vorhandenen "Hooks"
+          modulspezifisch aktiviert werden. Mehr dazu in <xref
+          linkend="hooksaktivieren" /></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Editieren</term>
 
         <listitem>
           <para>Hier können folgende Einstellungen vorgenommen werden:</para>
 
           <variablelist>
             <varlistentry>
-              <term>Name</term>
+              <term>Neuer Name</term>
 
               <listitem>
-                <para>Der Name wird für den Menüblock benutzt, wenn "Module
-                anzeigen" aktiviert ist.</para>
+                <para>Der Name, unter dem das Modul benutzt wird. Modulen kann
+                damit ein zweiter Name gegeben werden, der passender ist (z.B.
+                "Mitglieder" statt "Member_List"). Innerhalb des Systems
+                werden dann alle Links entsprechend abgebildet, also in diesem
+                Falle
+                <systemitem>http://www.example.com/index.php?module=Mitglieder</systemitem>
+                statt
+                <systemitem>http://www.example.com/index.php?module=Member_List</systemitem>.
+                Diese Abbildung funktioniert aber nur für API-konforme Module,
+                der Zugriff hingegen ist auf jeden Fall über den Alias-Namen
+                möglich.</para>
               </listitem>
             </varlistentry>
 
             <varlistentry>
-              <term>Beschreibung</term>
+              <term>Neue Beschreibung</term>
 
               <listitem>
-                <para>Auch diese wird für den Menüblock benutzt. Sie wird
-                angezeigt, wenn der Mauszeiger über dem Link verweilt.</para>
-              </listitem>
-            </varlistentry>
-
-            <varlistentry>
-              <term>Aktiviere...</term>
-
-              <listitem>
-                <para>Hiermit können die im System vorhandenen "Hooks"
-                modulspezifisch aktiviert werden. Vereinfacht gesagt, sind
-                Hooks eine Möglichkeit, die Ausgabe eines Moduls zu verändern.
-                Die Autolinks sind z.B. als Hook realisiert.</para>
+                <para>Die Beschreibung wird für den Menüblock benutzt. Sie
+                wird angezeigt, wenn der Mauszeiger über dem Link
+                verweilt.</para>
               </listitem>
             </varlistentry>
           </variablelist>
-        </listitem>
-      </varlistentry>
 
-      <varlistentry>
-        <term>deaktivieren</term>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata align="center" fileref="modul_alias.gif"
+                           format="GIF" />
+              </imageobject>
 
-        <listitem>
-          <para>hiermit wird ein Modul deaktiviert, d.h. es ist für Benutzer
-          nicht mehr nutzbar obwohl alle Einstellungen noch im System
-          vorhanden sind. Das deaktivieren löscht weder Moduldateien, noch
-          entsprechende Tabellen bzw. Variablen</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>upgraden</term>
-
-        <listitem>
-          <para>diese Funktion integriert neue Tabellen/Variablen wenn eine
-          neue Modulversion eingespielt wurde. Nach dem Upgraden muss das
-          Modul erneut aktiviert werden</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>entfernen</term>
-
-        <listitem>
-          <para>entfernt ein Modul vollständig, d.h. die entsprechenden
-          Datenbanktabellen und Modulvariablen werden gelöscht. Das
-          entsprechende Modulverzeichnis in <filename
-          class="directory">/modules</filename> bleibt allerdings bestehen.
-          Vor dem entfernen muss ein Modul deaktiviert werden.</para>
-
-          <caution>
-            <para>Es gibt keine Sicherheitsabfrage beim Entfernen!</para>
-          </caution>
+              <caption>
+                <para>Ein Alias-Name für die Mitgliederliste</para>
+              </caption>
+            </mediaobject>
+          </screenshot>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -271,11 +358,14 @@
     <para>Erstmal kann man die Adminsitration über <systemitem
     class="systemname">http://www.example.com/admin.php</systemitem>
     erreichen. Sollte auch das nicht mehr gehen, kann evtl. das Swiss Army
-    Knife Tool helfen. Das ist vor allem bei vermurksten Themes der Fall. Als
-    dritte Möglichkeit kann man natürlich auch manuell die DB bearbeiten: Alle
-    Tables des Moduls löschen, alle dazugehörigen Variablen in
-    <command>$prefix_module_vars</command> entfernen und in der
-    <filename>$prefix_modules</filename> das Modul löschen.</para>
+    Knife Tool helfen. Das ist vor allem bei fehlerhaften Themes der Fall. Als
+    dritte Möglichkeit kann man natürlich auch manuell die Datenbank
+    bearbeiten: Alle Tabellesn des Moduls löschen, alle dazugehörigen
+    Variablen in der Tabelle
+    <varname><replaceable>prefix</replaceable>_module_vars</varname> entfernen
+    und in anschleißend der Tabelle
+    <varname><replaceable>prefix</replaceable>_modules</varname> das Modul
+    löschen.</para>
 
     <section id="hooksaktivieren">
       <title>Hooks für ein Modul aktivieren<indexterm>
@@ -312,13 +402,13 @@
       usw.</para>
 
       <para>Damit ein solches Hook-Modul aktiv wird, muss es für ein anderes
-      aktiviert werden. Dies geschieht unter <guimenuitem>Modul
-      editieren</guimenuitem> in der Modul-Administration.</para>
+      aktiviert werden. Dies geschieht unter <guimenuitem>Hooks</guimenuitem>
+      in der Modul-Administration.</para>
 
       <para>Beispiel: Um <replaceable>Autolinks</replaceable> für die
       <replaceable>News</replaceable> zu aktivieren, sucht man
       <replaceable>News</replaceable> in der Modulverwaltung heraus und klickt
-      auf <guimenuitem>editieren</guimenuitem>. Dort klickt man
+      auf <guimenuitem>Hooks</guimenuitem>. Dort klickt man
       <guimenuitem>aktiviere <replaceable>Autolinks</replaceable> für dieses
       Modul</guimenuitem> an. Fortan stehen die Autolinks in den News zur
       Verfügung.</para>
