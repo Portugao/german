@@ -1,10 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="Xanthia.User" lang="de-DE"
          revision="$Revision$ $Date$"
          status="draft">
   <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+  </chapterinfo>
 
   <title>Administrationshandbuch</title>
 
@@ -24,7 +28,7 @@
           die zusammen mit dem Inhalt die fertige Seite ergeben. Templates
           bestehen aus normalem HTML in das Smarty-Tags eingebettet werden.
           Diese eingebetteten Tags werden dann durch dynamische Inhalte
-          ersetzt. Dazu kÃ¶nnen auch einfache Logik-Elemente wie Schleifen und
+          ersetzt. Dazu können auch einfache Logik-Elemente wie Schleifen und
           Bedingungen benutzt werden</para>
         </listitem>
       </varlistentry>
@@ -33,8 +37,8 @@
         <term><glossterm>Zonen</glossterm> (engl: "Theme Zones")</term>
 
         <listitem>
-          <para>Themes kÃ¶nnen in mehrere Zonen unterteilt werden. In jede Zone
-          kÃ¶nnen sowohl BlÃ¶cke als auch Modul-Inhalte geladen werden. Wenn man
+          <para>Themes können in mehrere Zonen unterteilt werden. In jede Zone
+          können sowohl Blöcke als auch Modul-Inhalte geladen werden. Wenn man
           sich die vorhandenen Xanthia-Themes betrachtet, kann man
           feststellen, dass zum Beispiel das News-Artikel-Template die
           themearticle-Funktion ersetzt hat.</para>
@@ -50,9 +54,9 @@
 
         <listitem>
           <para><glossterm>Block-Zonen</glossterm> definieren die Bereiche,
-          denen BlÃ¶cke zugeordnet werden kÃ¶nnen. Blockzonen kÃ¶nnen dort im
-          Theme positioniert werden, wo BlÃ¶cke angezeigt werden sollen. Dazu
-          mÃ¼ssen die entsprechenden Tags in das Theme eingebaut werden.</para>
+          denen Blöcke zugeordnet werden können. Blockzonen können dort im
+          Theme positioniert werden, wo Blöcke angezeigt werden sollen. Dazu
+          müssen die entsprechenden Tags in das Theme eingebaut werden.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -77,7 +81,7 @@
       </mediaobject>
     </screenshot>
 
-    <para>Die verschiedenen Optionen von Xanthia lassen sich Ã¼ber die
+    <para>Die verschiedenen Optionen von Xanthia lassen sich über die
     Checkboxen ein- und ausschalten:</para>
 
     <variablelist>
@@ -85,11 +89,11 @@
         <term>Use Visual Block Editor</term>
 
         <listitem>
-          <para>Damit lÃ¤ÃŸt sich der visuelle Block-Editor aktiveren. Mit
-          diesem Tool hat der Admin die volle Kontrolle Ã¼ber die Blocks und
+          <para>Damit läßt sich der visuelle Block-Editor aktiveren. Mit
+          diesem Tool hat der Admin die volle Kontrolle über die Blocks und
           kann sie beim Surfen durch die Site aktiveren/deaktivieren und
-          verschieben. Dazu mÃ¼ssen die BlÃ¶cke in der normalen Blockverwaltung
-          einfach eingeschaltet sein. Die Steuerung lÃ¤uft dann Ã¼ber
+          verschieben. Dazu müssen die Blöcke in der normalen Blockverwaltung
+          einfach eingeschaltet sein. Die Steuerung läuft dann über
           JavaSkript-Popups ab.</para>
         </listitem>
       </varlistentry>
@@ -99,8 +103,8 @@
 
         <listitem>
           <para>Mit der XTE haben endlich die Kurzen URLs ihren Weg in den
-          Postnuke Core gefunden. Ãœber diese Einstellung lassen sie sich
-          aktivieren. Dazu muÃŸ allerdings noch eine htaccess-Datei aus dem
+          Postnuke Core gefunden. Über diese Einstellung lassen sie sich
+          aktivieren. Dazu muß allerdings noch eine htaccess-Datei aus dem
           Verzeichnis modules\Xanthia\pndocs\short_urls ins Hauptverzeichnis
           der Site kopiert werden.</para>
 
@@ -116,10 +120,10 @@
         <term>Extension to use for short URLs (excluding .)</term>
 
         <listitem>
-          <para>Die Dateiendung, die die Kurzen URLs benutzen sollen muÃŸ hier
-          - ohne . - angegeben werden. Es stehen 3 LÃ¶sungen fÃ¼r die
-          Dateiendungen zur VerfÃ¼gung: htm, html, phtml - je nachdem, welche
-          htaccess benutzt wird.WÃ¤hrend der Installation darf unter
+          <para>Die Dateiendung, die die Kurzen URLs benutzen sollen muß hier
+          - ohne . - angegeben werden. Es stehen 3 Lösungen für die
+          Dateiendungen zur Verfügung: htm, html, phtml - je nachdem, welche
+          htaccess benutzt wird.Während der Installation darf unter
           Administration/Einstellungen kein Xanthia-Theme als Site-Theme
           eingestellt sein.</para>
         </listitem>
@@ -129,7 +133,7 @@
         <term>Enable Caching</term>
 
         <listitem>
-          <para>Aktiviert das Caching von Xanthia-Seiten. Caching erhÃ¶ht die
+          <para>Aktiviert das Caching von Xanthia-Seiten. Caching erhöht die
           Performance der Site ungemein, weil die Inhalte der gechachten
           Seiten nicht mehr aus der Datenbank bezogen, sondern aus dem
           Filesystem gelesen werden.</para>
@@ -141,8 +145,8 @@
 
         <listitem>
           <para>Aktiviert, raubt diese Option etwas Performance, wenn aber das
-          Caching eingeschaltet ist, wÃ¼rden Ã„nderungen an den Templates nicht
-          Ã¼bernommen. Wenn aber keine Ã„nderungen an den Templates mehr
+          Caching eingeschaltet ist, würden Änderungen an den Templates nicht
+          übernommen. Wenn aber keine Änderungen an den Templates mehr
           anstehen, sollte sie ausgeschaltet werden.</para>
         </listitem>
       </varlistentry>
@@ -151,8 +155,8 @@
         <term>Force Recompile of Templates</term>
 
         <listitem>
-          <para>Durch diese Funktion wÃ¼rden Templates in jedem Fall neu
-          kompiliert - das Caching wÃ¤re effektlos.</para>
+          <para>Durch diese Funktion würden Templates in jedem Fall neu
+          kompiliert - das Caching wäre effektlos.</para>
         </listitem>
       </varlistentry>
 
@@ -197,9 +201,9 @@
         <term>Use Trim Whitespace Filter</term>
 
         <listitem>
-          <para>Durch diese Option werden alle Ã¼berflÃ¼ssigen Leerzeichen aus
+          <para>Durch diese Option werden alle überflüssigen Leerzeichen aus
           dem HTML-SourceCode gefiltert, bevor Inhalte an den Browser gegeben
-          werden. Dadurch sinkt die Performance leicht, es mÃ¼ssen aber weniger
+          werden. Dadurch sinkt die Performance leicht, es müssen aber weniger
           Daten an den Client geliefert werden.</para>
         </listitem>
       </varlistentry>
@@ -223,12 +227,12 @@
       Namen des Themes gesammelt. Dieses Verzeichnis wird dann in das
       Verzeichnis /themes kopiert. Ruft man nun die Xanthia Theme
       Administration (<guimenuitem>View Themes</guimenuitem>) auf, so
-      erscheint eine Tabelle mit allen verfÃ¼gbaren Xanthia-Themes. "Normale"
-      Themes werden hier nicht aufgefÃ¼hrt.</para>
+      erscheint eine Tabelle mit allen verfügbaren Xanthia-Themes. "Normale"
+      Themes werden hier nicht aufgeführt.</para>
 
       <para>Mit "<guimenuitem>add Theme</guimenuitem>" kann das neue Theme
-      hinzugefÃ¼gt werden. Das Theme wird nun als aktiv angezeigt und kann in
-      den Site-Einstellungen als Theme ausgewÃ¤hlt werden.</para>
+      hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und kann in
+      den Site-Einstellungen als Theme ausgewählt werden.</para>
 
       <screenshot>
         <mediaobject>
@@ -252,10 +256,10 @@
     <section id="Xanthia.User.ConfigThemes.Editing">
       <title>Bearbeiten von Themes</title>
 
-      <para>Nachdem ein neues Theme hinzugefÃ¼gt wurde, kann es bearbeitet
+      <para>Nachdem ein neues Theme hinzugefügt wurde, kann es bearbeitet
       werden, indem man "<guimenuitem>edit theme</guimenuitem>" in der
-      Theme-Ãœbersicht auswÃ¤hlt. Es steht nun verschiedene Funktionen zur
-      VerfÃ¼gung: <guimenuitem>Block Zones</guimenuitem>, <guimenuitem>Theme
+      Theme-Übersicht auswählt. Es steht nun verschiedene Funktionen zur
+      Verfügung: <guimenuitem>Block Zones</guimenuitem>, <guimenuitem>Theme
       Zones</guimenuitem>, <guimenuitem>Theme Templates,</guimenuitem>
       T<guimenuitem>heme Colors</guimenuitem>, <guimenuitem>Theme
       Settings</guimenuitem>, und <guimenuitem>Block
@@ -265,30 +269,30 @@
         <title>Block-Zonen</title>
 
         <para>Block Zonen definieren die Bereiche in einem Theme, in dem
-        BlÃ¶cke angezeigt werden sollen. Unter diesem MenÃ¼punkt kann man
-        ersehen, welche Block-Zonen zur VerfÃ¼gung stehen und wie sie heiÃŸen.
-        Dieses MenÃ¼ wird sehr wenig gebraucht werden. Nur wenn komplette
-        Block-Zonen ein- und ausgeschaltet werden sollen, muÃŸ man das hier
-        tun. Um eine Block-Zone hinzuzufÃ¼gen mÃ¼ssen zwei Schritte eingehalten
+        Blöcke angezeigt werden sollen. Unter diesem Menüpunkt kann man
+        ersehen, welche Block-Zonen zur Verfügung stehen und wie sie heißen.
+        Dieses Menü wird sehr wenig gebraucht werden. Nur wenn komplette
+        Block-Zonen ein- und ausgeschaltet werden sollen, muß man das hier
+        tun. Um eine Block-Zone hinzuzufügen müssen zwei Schritte eingehalten
         werden:</para>
 
         <orderedlist>
           <listitem>
-            <para>Block-Zone hinzufÃ¼gen. Um dies zu tun, muÃŸ man am unteren
-            Ende der Ãœbersicht das Tag und den Namen der Zone definieren. Zum
+            <para>Block-Zone hinzufügen. Um dies zu tun, muß man am unteren
+            Ende der Übersicht das Tag und den Namen der Zone definieren. Zum
             Beispiel: "Tutorial Test Block" und TUTORIAL. Diese Block-Zone
-            kann dann in den Templates positioniert werden. BlÃ¶cke, die dieser
+            kann dann in den Templates positioniert werden. Blöcke, die dieser
             Zone zugeordnet werden, werden dann dort angezeigt.</para>
           </listitem>
 
           <listitem>
-            <para>Im Theme muÃŸ - wie gesagt - an der richtigen Stelle das Tag
-            zum Aufrufen der Zone eingefÃ¼gt werden. In diesem Fall wÃ¤re das
+            <para>Im Theme muß - wie gesagt - an der richtigen Stelle das Tag
+            zum Aufrufen der Zone eingefügt werden. In diesem Fall wäre das
             das Tag Code: &lt;!--[$TUTORIAL]--&gt;</para>
           </listitem>
         </orderedlist>
 
-        <para>Auf umgekehrte Art kÃ¶nnen Block-Zonen jederzeit auch wieder aus
+        <para>Auf umgekehrte Art können Block-Zonen jederzeit auch wieder aus
         dem Theme entfernt werden. Die Themes aus dem Xanthia-Paket oder dem
         Postnuke .8 Paket enthalten eine Reihe vorkonfigurierter
         Block-Zonen.</para>
@@ -318,32 +322,32 @@
         <para><glossterm>Theme-Zonen</glossterm> stellen die einzelnen
         Bereiche eines Themes dar, aus denen es zusammengesetzt ist. Jeder
         einzelnen Zone ist ein eigenes <glossterm>Template</glossterm>
-        (Vorlage) zugeordnet, das fÃ¼r die Darstellung dieser Zone verwendet
+        (Vorlage) zugeordnet, das für die Darstellung dieser Zone verwendet
         wird.</para>
 
         <para>Einige <glossterm>Theme-Zonen</glossterm> sind notwendig und
-        kÃ¶nnen entsprechend nicht entfernt werden. Andere, zusÃ¤tzliche und
+        können entsprechend nicht entfernt werden. Andere, zusätzliche und
         optionale <glossterm>Theme-Zonen</glossterm> (<glossterm>Addon Theme
-        Zones</glossterm>) kÃ¶nnen hingegen jederzeit deaktiviert und gelÃ¶scht
-        werden. Mittels der Auswahl <guimenu>configure</guimenu> kÃ¶nnen den
+        Zones</glossterm>) können hingegen jederzeit deaktiviert und gelöscht
+        werden. Mittels der Auswahl <guimenu>configure</guimenu> können den
         einzelnen Zonen <glossterm>Templates</glossterm> zugewiesen
         werden.</para>
 
-        <para>NatÃ¼rlich kÃ¶nnen auch neue Theme-Zonen erstellt werden. Auf
-        diesem Weg kann man unterschiedlichen Modulen ein eigenstÃ¤ndiges
+        <para>Natürlich können auch neue Theme-Zonen erstellt werden. Auf
+        diesem Weg kann man unterschiedlichen Modulen ein eigenständiges
         Aussehen zuweisen.</para>
 
-        <para>Um eine Theme-Zone zu erstellen, muss zunÃ¤chst ein Template
+        <para>Um eine Theme-Zone zu erstellen, muss zunächst ein Template
         erstellt werden, das im <glossterm>pnTemplates</glossterm>-Verzeichnis
         des Themes abgelegt wird. Sodann ist der Link <guimenu>Add New
-        Theme</guimenu> (neues Theme hinzufÃ¼gen) am oberen Rand des
-        Theme-Zonen MenÃ¼s zu wÃ¤hlen. Dadurch erhÃ¤lt man ein Formular, in dem
-        folgende Felder ausgefÃ¼llt werden mÃ¼ssen:<variablelist>
+        Theme</guimenu> (neues Theme hinzufügen) am oberen Rand des
+        Theme-Zonen Menüs zu wählen. Dadurch erhält man ein Formular, in dem
+        folgende Felder ausgefüllt werden müssen:<variablelist>
             <varlistentry>
               <term>Zone Name</term>
 
               <listitem>
-                <para>Hier wird der Name fÃ¼r die Theme-Zone angegeben. Er kann
+                <para>Hier wird der Name für die Theme-Zone angegeben. Er kann
                 z.B. als Kurzbeschreibung der Zone dienen. Jede Zone sollte
                 einen eindeutigen, d.h. nicht mehrfach verwendeten Namen
                 bekommen.</para>
@@ -357,7 +361,7 @@
                 <para>Die Zonenbeschreibung (<glossterm>Zone
                 Label</glossterm>) wird auf Grundlage der Auswahl in der drop
                 down-Liste automatisch erstellt. Die vorgegebene Zuweisung
-                sollte nicht verÃ¤ndert werden.</para>
+                sollte nicht verändert werden.</para>
               </listitem>
             </varlistentry>
 
@@ -365,8 +369,8 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>Beim Erstellen der Vorlage fÃ¼r ein Modul
-                (<glossterm>module template</glossterm>) ist zunÃ¤chst das
+                <para>Beim Erstellen der Vorlage für ein Modul
+                (<glossterm>module template</glossterm>) ist zunächst das
                 Modul zu bestimmen, dem die Vorlage zugewiesen werden
                 soll.</para>
               </listitem>
@@ -383,10 +387,10 @@
             </varlistentry>
           </variablelist></para>
 
-        <para>Nachdem die vorgegebenen Felder ausgefÃ¼llt wurden, ist die
+        <para>Nachdem die vorgegebenen Felder ausgefüllt wurden, ist die
         Erstellung der Vorlage mit <guimenuitem>submit</guimenuitem>
-        (<glossterm>einreichen</glossterm>) zu bestÃ¤tigen. Danach ist die neue
-        Vorlage fÃ¼r das Theme verfÃ¼gbar.</para>
+        (<glossterm>einreichen</glossterm>) zu bestätigen. Danach ist die neue
+        Vorlage für das Theme verfügbar.</para>
 
         <screenshot>
           <mediaobject>
@@ -410,35 +414,35 @@
       <section id="Xanthia.ThemeEditing.ThemeTemplates">
         <title>Theme-Templates</title>
 
-        <para>In diesem MenÃ¼ werden die Themen-, Modul- und Block-Templates
+        <para>In diesem Menü werden die Themen-, Modul- und Block-Templates
         angezeigt, die bereits festgelegt worden sind. Mittels des
-        <guimenu>EDIT</guimenu>-Links, der ein Bearbeitungsfenster Ã¶ffnet,
+        <guimenu>EDIT</guimenu>-Links, der ein Bearbeitungsfenster öffnet,
         kann ein Template bearbeitet werden</para>
 
         <caution>
           <para>Immer wenn die Templates neugeladen werden (reload templates),
-          gehen alle vorgenommenen VerÃ¤nderungen verloren. <remark>In
-          zukÃ¼nftigen Versionen von Xanthia wird es die MÃ¶glichkeit geben, die
+          gehen alle vorgenommenen Veränderungen verloren. <remark>In
+          zukünftigen Versionen von Xanthia wird es die Möglichkeit geben, die
           Zeitstempel der Dateien auf dem Server mit denen der Templates in
           der Datenbank zu vergleichen. Zeigt der Vergleich, dass die Version
           einer Vorlage im Dateisystem aktueller ist als die in der Datenbank,
-          wird es dem Benutzer mÃ¶glich sein, die in der Datenbank gespeicherte
+          wird es dem Benutzer möglich sein, die in der Datenbank gespeicherte
           Version zu aktualisieren. Ergibt der Vergleich, dass die
           Datenbank-Version der Vorlage hingegen neuer ist, kann diese zwar
-          immer noch Ã¼berschrieben werden, jedoch erhÃ¤lt man zusÃ¤tzlich die
-          MÃ¶glichkeit, die Vorlage aus der Datenbank auf seinem eigenen,
+          immer noch überschrieben werden, jedoch erhält man zusätzlich die
+          Möglichkeit, die Vorlage aus der Datenbank auf seinem eigenen,
           lokalen Rechner zu sichern. </remark></para>
         </caution>
 
         <para>Die meisten Templates funktionieren nur, wenn sie einer
         bestimmten Zone zugeordnet werden, sind also nicht austauschbar. Eine
         Block-Zone ist zum Beispiel nicht sehr gut geeignet, um als Vorlage
-        fÃ¼r einen News-Artikel verwendet zu werden. Andersherum ist dies
-        natÃ¼rlich genauso.</para>
+        für einen News-Artikel verwendet zu werden. Andersherum ist dies
+        natürlich genauso.</para>
 
-        <para>Alle Themes benÃ¶tigen ein Template fÃ¼r die linke Seitenbox (Left
-        Sidebox/left blocks), ein Template fÃ¼r die Master-Zone, ein Template
-        fÃ¼r News-Artikel und ein Template fÃ¼r den OpenTable.</para>
+        <para>Alle Themes benötigen ein Template für die linke Seitenbox (Left
+        Sidebox/left blocks), ein Template für die Master-Zone, ein Template
+        für News-Artikel und ein Template für den OpenTable.</para>
 
         <screenshot>
           <mediaobject>
@@ -464,25 +468,25 @@
 
         <para>Die Farben eines Xanthia-Themes werden durch die
         <emphasis>colour palette</emphasis> (Farbpalette) in der
-        <glossterm>Theme Colours</glossterm>-Auswahl des AdministrationsmenÃ¼s
+        <glossterm>Theme Colours</glossterm>-Auswahl des Administrationsmenüs
         von Xanthia bestimmt. Mit Hilfe der Paletten ist es dem Designer eines
-        Themes mÃ¶glich, einem Theme verschiedene Farb-Sets zuzuordnen.</para>
+        Themes möglich, einem Theme verschiedene Farb-Sets zuzuordnen.</para>
 
-        <para>Damit mehrere Farbpaletten zugleich verwendet werden kÃ¶nnen,
-        mÃ¼ssen die <glossterm>dynamic stylesheets</glossterm> aktiviert sein.
+        <para>Damit mehrere Farbpaletten zugleich verwendet werden können,
+        müssen die <glossterm>dynamic stylesheets</glossterm> aktiviert sein.
         Von den Standard-Themes, die im Grundpaket von Xanthia enthalten sind,
-        unterstÃ¼tzt allein pnDefault die dynamic stylesheets.</para>
+        unterstützt allein pnDefault die dynamic stylesheets.</para>
 
         <para>Ein Farbschema (colour scheme) wird durch den Link
         <guimenuitem>Use Palette</guimenuitem> aktiviert.</para>
 
         <para>Die Farben einer Palette werden durch den
-        <guimenuitem>Configure</guimenuitem>-Link verÃ¤ndert. Dieser Link ruft
+        <guimenuitem>Configure</guimenuitem>-Link verändert. Dieser Link ruft
         einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
-        Farbbereich des Themes, der verÃ¤ndert werden soll, wird mit den
-        AuswahlknÃ¶pfen am oberen Rand des Editors (color1, color2) festgelegt.
+        Farbbereich des Themes, der verändert werden soll, wird mit den
+        Auswahlknöpfen am oberen Rand des Editors (color1, color2) festgelegt.
         Ist dies geschehen, kann die neue Farbe mit der Maus in der
-        Farbpalette ausgewÃ¤hlt werden.</para>
+        Farbpalette ausgewählt werden.</para>
 
         <para>Durch ein Eingabe-Feld am unteren Bildschirmrand kann die
         Palette umbenannt werden.</para>
@@ -492,10 +496,10 @@
         findenden Link <guimenuitem>submit these colors</guimenuitem>
         gespeichert.</para>
 
-        <para>Es ist mÃ¶glich, eigene Farbpaletten fÃ¼r Themes zu erstellen.
+        <para>Es ist möglich, eigene Farbpaletten für Themes zu erstellen.
         Durch den Link <guimenuitem>Add Theme Colour Palette</guimenuitem>
         wird der bereits bekannte visuelle Editor aufgerufen - allerdings mit
-        dem Unterschied, dass beim Erstellen einer neuen Palette zunÃ¤chst
+        dem Unterschied, dass beim Erstellen einer neuen Palette zunächst
         keine Farbzuweisungen vorhanden sind.</para>
 
         <screenshot>
@@ -521,14 +525,14 @@
         <title>Theme-Einstellungen (theme settings)</title>
 
         <para><emphasis>Theme-Variablen</emphasis> (theme variables) sind an
-        ein Theme gebundene KonfigurationsmÃ¶glichkeiten. Sie werden von der
-        Theme-Engine gespeichert und kÃ¶nnen vom Administrator der Seite Ã¼ber
-        das AdministrationsmenÃ¼ von Xanthia aktualisiert werden.</para>
+        ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden von der
+        Theme-Engine gespeichert und können vom Administrator der Seite über
+        das Administrationsmenü von Xanthia aktualisiert werden.</para>
 
-        <para>Die EinsatzmÃ¶glichkeiten dieser Variablen sind vielschichtig und
+        <para>Die Einsatzmöglichkeiten dieser Variablen sind vielschichtig und
         variieren von Theme zu Theme. Beispiele dieser Variablen sind die
-        Seitenbreite, Parameter fÃ¼r die linken und rechten BlÃ¶cke,
-        SchriftgrÃ¶ÃŸen und weitere, die vom gewÃ¤hlten Theme abhÃ¤ngig sind.
+        Seitenbreite, Parameter für die linken und rechten Blöcke,
+        Schriftgrößen und weitere, die vom gewählten Theme abhängig sind.
         Bestimmte Einstelloptionen, wie etwa die top links und bottom links,
         werden durch die Werte 0 und 1 ein-, bzw. ausgeschaltet.</para>
 
@@ -554,20 +558,20 @@
       <section id="Xanthia.User.BlockControl">
         <title>Block-Kontrolle (block control)</title>
 
-        <para>Xanthia ermÃ¶glicht es, BlÃ¶cke in AbhÃ¤ngigkeit von Modulen
-        darzustellen. Jedem Modul kÃ¶nnen somit verschiedene BlÃ¶cke zugewiesen
-        werden (und einzelne BlÃ¶cke kÃ¶nnen je nach Modul an- bzw. abgeschaltet
-        werden). Dies ermÃ¶glicht einen unglaublichen Gestaltungsspielraum des
-        Erscheinungsbildes der BlÃ¶cke auf der Seite. Im Block Control
-        AdministrationsmenÃ¼ kÃ¶nnen die im Theme verfÃ¼gbaren Block-Zonen
+        <para>Xanthia ermöglicht es, Blöcke in Abhängigkeit von Modulen
+        darzustellen. Jedem Modul können somit verschiedene Blöcke zugewiesen
+        werden (und einzelne Blöcke können je nach Modul an- bzw. abgeschaltet
+        werden). Dies ermöglicht einen unglaublichen Gestaltungsspielraum des
+        Erscheinungsbildes der Blöcke auf der Seite. Im Block Control
+        Administrationsmenü können die im Theme verfügbaren Block-Zonen
         festgelegt werden,</para>
 
-        <para>Um die Block Control zu verwenden, muss zunÃ¤chst im MenÃ¼
+        <para>Um die Block Control zu verwenden, muss zunächst im Menü
         <menuchoice>
             <guimenu>Administration</guimenu>
 
             <guimenuitem>Blocks</guimenuitem>
-          </menuchoice> der Block erstellt werden, der hinzugefÃ¼gt werden
+          </menuchoice> der Block erstellt werden, der hinzugefügt werden
         soll.</para>
 
         <sidebar>
@@ -575,8 +579,8 @@
             <para>Die Positionsangaben in der Block Administration
             beeinflussen ein Xanthia Theme lediglich dadurch, dass sie die
             Ausgangsposition eines Blocks bei der Installation eines neuen
-            Themes definieren. Danach Ã¼bernimmt die Theme Engine die Kontrolle
-            Ã¼ber die Platzierung der BlÃ¶cke.</para>
+            Themes definieren. Danach übernimmt die Theme Engine die Kontrolle
+            über die Platzierung der Blöcke.</para>
 
             <para><remark>Further integration is needed here to effectively
             present the value and usage of the block postion. But this is
@@ -585,29 +589,29 @@
           </note>
         </sidebar>
 
-        <para>Um einen Block zu einem Modul hinzuzufÃ¼gen, mÃ¼ssen das Modul,
+        <para>Um einen Block zu einem Modul hinzuzufügen, müssen das Modul,
         dem der Block zugeordnet werden soll und der zuzuordnende Block aus
-        den beiden Listenfeldern ausgewÃ¤hlt werden. Durch den Link
+        den beiden Listenfeldern ausgewählt werden. Durch den Link
         <guimenuitem>add</guimenuitem> wird der Block dann zugewiesen. Es ist
-        mÃ¶glich, einem Modul gleichzeitig mehrere BlÃ¶cke zuzuordnen. NatÃ¼rlich
-        kann man BlÃ¶cke auch jederzeit wieder entfernen. Dazu dient der Link
+        möglich, einem Modul gleichzeitig mehrere Blöcke zuzuordnen. Natürlich
+        kann man Blöcke auch jederzeit wieder entfernen. Dazu dient der Link
         <guimenuitem>remove</guimenuitem> in der Reihe des Blocks, der
-        gelÃ¶scht werden soll. Die Zuordnung des Blocks zu den restlichen
+        gelöscht werden soll. Die Zuordnung des Blocks zu den restlichen
         Modulen ist davon nicht betroffen, das Entfernen eines Blocks gilt
-        also jeweils nur fÃ¼r das ausgewÃ¤hlte Modul.</para>
+        also jeweils nur für das ausgewählte Modul.</para>
 
         <para>Nachdem ein Block einem Modul zugeordnet wurde, kann man
-        bestimmen, welche der mÃ¶glichen <emphasis>block positions</emphasis>
-        der Block einnehmen soll. Diese Auswahl wird Ã¼ber die drop down-Box in
+        bestimmen, welche der möglichen <emphasis>block positions</emphasis>
+        der Block einnehmen soll. Diese Auswahl wird über die drop down-Box in
         der <guimenuitem>Position</guimenuitem>-Spalte festgelegt. Die
-        AuswahlmÃ¶glichkeiten in dieser Box entsprechen den Block-Zonen, die im
-        AdministrationsmenÃ¼ Block-Zonen bestimmt wurden. Die vertikale
-        Anordnung der BlÃ¶cke kann dabei Ã¼ber die Pfeilsymbole (hoch/runter) in
+        Auswahlmöglichkeiten in dieser Box entsprechen den Block-Zonen, die im
+        Administrationsmenü Block-Zonen bestimmt wurden. Die vertikale
+        Anordnung der Blöcke kann dabei über die Pfeilsymbole (hoch/runter) in
         der Liste festgelegt werden.</para>
 
         <para>Die alphabetische Liste dient der einfacheren Navigation. Durch
         Anklicken eines Buchstabens werden nur die Module angezeigt, deren
-        Namen mit dem ausgewÃ¤hlten Buchstaben beginnen. Der Link mit dem
+        Namen mit dem ausgewählten Buchstaben beginnen. Der Link mit dem
         Sternchen ruft eine Liste aller Module ab.</para>
 
         <screenshot>
@@ -636,22 +640,22 @@
 
     <warning>
       <para>Ein Theme, das man entwickelt, sollte niemals im aktivierten
-      Zustand bearbeitet werden! Um die VerÃ¤nderungen nachzuvollziehen, sollte
+      Zustand bearbeitet werden! Um die Veränderungen nachzuvollziehen, sollte
       auf die Option <guimenuitem>theme preview</guimenuitem>
       (<command>index.php?theme=<replaceable>yourtheme</replaceable></command>)
-      zurÃ¼ckgegriffen werden.</para>
+      zurückgegriffen werden.</para>
     </warning>
 
     <section id="Xanthia.User.ModuleTemplates">
       <title>Custom Module Templates</title>
 
-      <para>Xanthia ermÃ¶glicht es der Seite unterschiedliche, modulbasierte
-      Templates zuzuweisen. In AbhÃ¤ngigkeit vom aktiven Modul, kann die Seite
+      <para>Xanthia ermöglicht es der Seite unterschiedliche, modulbasierte
+      Templates zuzuweisen. In Abhängigkeit vom aktiven Modul, kann die Seite
       somit ein verschiedenes Design erhalten. Einem Modul kann allerdings
       jeweils nur ein Template zugeordnet werden.</para>
 
-      <para>Im Folgenden werden die Schritte erklÃ¤rt, um modulspezifische
-      Templates zu erstellen. Alle wichtigen MenÃ¼s befinden sich unter
+      <para>Im Folgenden werden die Schritte erklärt, um modulspezifische
+      Templates zu erstellen. Alle wichtigen Menüs befinden sich unter
       <menuchoice>
           <guimenu>Administration</guimenu>
 
@@ -664,30 +668,30 @@
 
       <procedure>
         <step>
-          <title>Ein neues Template fÃ¼r ein Modul erstellen.</title>
+          <title>Ein neues Template für ein Modul erstellen.</title>
 
-          <para>WÃ¤hle <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
               <guimenuitem>New Module Template</guimenuitem>
-            </menuchoice> aus und erstelle ein neues Template fÃ¼r das Modul
+            </menuchoice> aus und erstelle ein neues Template für das Modul
           (siehe auch <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
-          Obwohl der Name fÃ¼r das Template frei bestimmt werden kann,
+          Obwohl der Name für das Template frei bestimmt werden kann,
           empfiehlt es sich, den Namen des Moduls zu verwenden, dem das
-          Template zugeordnet wird. Als Grundlage fÃ¼r die Erstellung eines
+          Template zugeordnet wird. Als Grundlage für die Erstellung eines
           neuen Templates bietet sich die master.htm des Themes an. Den
           html-code dieser Datei kann man in das Text-Feld kopieren, das den
-          html-code fÃ¼r das neue Template in der Datenbank ablegt.</para>
+          html-code für das neue Template in der Datenbank ablegt.</para>
         </step>
 
         <step>
-          <title>Eine neue Theme Zone hinzufÃ¼gen</title>
+          <title>Eine neue Theme Zone hinzufügen</title>
 
-          <para>WÃ¤hle <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Zones</guimenu>
 
               <guimenuitem>Add New Zone</guimenuitem>
-            </menuchoice> aus und fÃ¼lle die vorgegebenen Felder (gemÃ¤ÃŸ den
+            </menuchoice> aus und fülle die vorgegebenen Felder (gemäß den
           Beschreibungen) aus ...</para>
 
           <variablelist>
@@ -695,7 +699,7 @@
               <term>Zone Name</term>
 
               <listitem>
-                <para>Hier kann ein Name eigener Wahl (der nicht bereits fÃ¼r
+                <para>Hier kann ein Name eigener Wahl (der nicht bereits für
                 ein andere Zone verwendet wurde) vergeben werden.</para>
               </listitem>
             </varlistentry>
@@ -704,7 +708,7 @@
               <term>Zone Label</term>
 
               <listitem>
-                <para>Dies wird durch die nÃ¤chste Option bestimmt.</para>
+                <para>Dies wird durch die nächste Option bestimmt.</para>
               </listitem>
             </varlistentry>
 
@@ -712,7 +716,7 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>Hier ist das Modul auszuwÃ¤hlen, dem ein neues Template
+                <para>Hier ist das Modul auszuwählen, dem ein neues Template
                 zugeordnet werden soll</para>
               </listitem>
             </varlistentry>
@@ -721,7 +725,7 @@
               <term>New skin for block</term>
 
               <listitem>
-                <para>Hier sollte nichts verÃ¤ndert werden..</para>
+                <para>Hier sollte nichts verändert werden..</para>
               </listitem>
             </varlistentry>
           </variablelist>
@@ -730,34 +734,34 @@
         <step>
           <title>Zone konfigurieren</title>
 
-          <para>Wen die Seite nach der Eingabe der Ã„nderungen neu aufgebaut
-          wird, ist die soeben erstellte Zone zunÃ¤chst inaktiv und ihr ist
-          kein Template zugewiesen. <emphasis role="bold">ZunÃ¤chst</emphasis>
-          muss die Zone konfiguriert werden, bevor sie im nÃ¤chsten Schritt
+          <para>Wen die Seite nach der Eingabe der Änderungen neu aufgebaut
+          wird, ist die soeben erstellte Zone zunächst inaktiv und ihr ist
+          kein Template zugewiesen. <emphasis role="bold">Zunächst</emphasis>
+          muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
           aktiviert werden kann.</para>
 
-          <para>WÃ¤hle <guimenuitem>Configure</guimenuitem>. Man erhÃ¤lt eine
+          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
           drop down-Liste mit Modul Templates (sollten in der Liste auch Block
           Templates erscheinen bedeutet dies, dass im vorherigen Menu "New
-          Skin for Block" entgegen der Beschreibung verÃ¤ndert wurde). WÃ¤hle
+          Skin for Block" entgegen der Beschreibung verändert wurde). Wähle
           nun aus der Liste das Template aus, das dem Modul zugeordnet werden
-          soll und bestÃ¤tige die Ã„nderungen.</para>
+          soll und bestätige die Änderungen.</para>
         </step>
 
         <step>
           <title>Die Zone aktivieren</title>
 
-          <para>Nachdem die vorherigen Eingaben bestÃ¤tigt wurden und die Seite
-          neu geladen wurde, sind der zuvor erstellten Zone die ausgewÃ¤hlten
+          <para>Nachdem die vorherigen Eingaben bestätigt wurden und die Seite
+          neu geladen wurde, sind der zuvor erstellten Zone die ausgewählten
           Templates zugewiesen. Nun muss die Zone lediglich noch
           <guimenuitem>aktiviert</guimenuitem> werden.</para>
         </step>
 
         <step>
-          <title>Die VerÃ¤nderungen testen</title>
+          <title>Die Veränderungen testen</title>
 
           <para>Rufe nun das Modul auf, fdem das soeben erstellte Template
-          zugewiesen wurde. Die Seite sollte nun das neue Design fÃ¼r das Modul
+          zugewiesen wurde. Die Seite sollte nun das neue Design für das Modul
           verwenden.</para>
         </step>
       </procedure>
@@ -766,14 +770,14 @@
     <section id="Xanthia.User.CommonTasks.BlockTemplates">
       <title>Custom Block Templates</title>
 
-      <para>Neben der MÃ¶glichkeit mit Hilfe von Xanthia Modul-Templates zu
+      <para>Neben der Möglichkeit mit Hilfe von Xanthia Modul-Templates zu
       erstellen, kann man auch jedem einzelnen Block ein eigenes Template
-      zuweisen. Dabei kÃ¶nnen soviele Block Templates erstellen, wie man mag.
-      Jedem Block kann ferner in AbhÃ¤ngigkeit vom gewÃ¤hlten Modul ein
+      zuweisen. Dabei können soviele Block Templates erstellen, wie man mag.
+      Jedem Block kann ferner in Abhängigkeit vom gewählten Modul ein
       unterschiedliches Template zugewiesen werden..</para>
 
-      <para>Folgende Schritte erlÃ¤utern, wie man mit Xanthia Templates fÃ¼r
-      BlÃ¶cke erstellt. Auch hier befinden sich alle relevanten MenÃ¼s unter
+      <para>Folgende Schritte erläutern, wie man mit Xanthia Templates für
+      Blöcke erstellt. Auch hier befinden sich alle relevanten Menüs unter
       <menuchoice>
           <guimenu>Administration</guimenu>
 
@@ -786,28 +790,28 @@
 
       <procedure>
         <step>
-          <title>Ein neues Template fÃ¼r den Block erstellen.</title>
+          <title>Ein neues Template für den Block erstellen.</title>
 
-          <para>WÃ¤hle <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
               <guimenuitem>New Block Template</guimenuitem>
-            </menuchoice> an und erstelle ein neues Template fÃ¼r den Block
+            </menuchoice> an und erstelle ein neues Template für den Block
           (siehe <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
           Obwohl der Name frei vergeben werden kann, empfiehlt es sich den
-          Namen des Blocks zu verwenden, fÃ¼r den man das Template erstellt.
+          Namen des Blocks zu verwenden, für den man das Template erstellt.
           Als Ausgangsbasis kann man den html-code der Dateien rsblock.htm
           oder lsblock.htm in das Text-Feld kopieren.</para>
         </step>
 
         <step>
-          <title>Eine neue Theme Zone hinzufÃ¼gen</title>
+          <title>Eine neue Theme Zone hinzufügen</title>
 
-          <para>WÃ¤hle <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Zones</guimenu>
 
               <guimenuitem>Add New Zone</guimenuitem>
-            </menuchoice> aus und fÃ¼lle die Felder gemÃ¤ÃŸ der Beschreibung
+            </menuchoice> aus und fülle die Felder gemäß der Beschreibung
           aus.</para>
 
           <variablelist>
@@ -823,7 +827,7 @@
               <term>Zone Label</term>
 
               <listitem>
-                <para>Wird durch die nÃ¤chste Option automatisch
+                <para>Wird durch die nächste Option automatisch
                 festgelegt.</para>
               </listitem>
             </varlistentry>
@@ -832,7 +836,7 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>Sollte nicht verÃ¤ndert werden!</para>
+                <para>Sollte nicht verändert werden!</para>
               </listitem>
             </varlistentry>
 
@@ -840,7 +844,7 @@
               <term>New skin for block</term>
 
               <listitem>
-                <para>Hier wird der Block ausgewÃ¤hlt, fÃ¼r den man das Template
+                <para>Hier wird der Block ausgewählt, für den man das Template
                 erstellt.</para>
               </listitem>
             </varlistentry>
@@ -850,59 +854,59 @@
         <step>
           <title>Zone konfigurieren</title>
 
-          <para>Wen die Seite nach der Eingabe der Ã„nderungen neu aufgebaut
-          wird, ist die soeben erstellte Zone zunÃ¤chst inaktiv und ihr ist
-          kein Template zugewiesen. <emphasis role="bold">ZunÃ¤chst</emphasis>
-          muss die Zone konfiguriert werden, bevor sie im nÃ¤chsten Schritt
+          <para>Wen die Seite nach der Eingabe der Änderungen neu aufgebaut
+          wird, ist die soeben erstellte Zone zunächst inaktiv und ihr ist
+          kein Template zugewiesen. <emphasis role="bold">Zunächst</emphasis>
+          muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
           aktiviert werden kann.</para>
 
-          <para>WÃ¤hle <guimenuitem>Configure</guimenuitem>. Man erhÃ¤lt eine
-          drop down-Liste mit Block Templates. WÃ¤hle das zu verwendende
-          Template aus der Liste aus und bestÃ¤tige die Eingabe.</para>
+          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
+          drop down-Liste mit Block Templates. Wähle das zu verwendende
+          Template aus der Liste aus und bestätige die Eingabe.</para>
         </step>
 
         <step>
           <title>Die Zone aktivieren</title>
 
-          <para>Nachdem die vorherigen Eingaben bestÃ¤tigt wurden und die Seite
-          neu geladen wurde, sind der zuvor erstellten Zone die ausgewÃ¤hlten
+          <para>Nachdem die vorherigen Eingaben bestätigt wurden und die Seite
+          neu geladen wurde, sind der zuvor erstellten Zone die ausgewählten
           Templates zugewiesen. Nun muss die Zone lediglich noch
           <guimenuitem>aktiviert</guimenuitem> werden.</para>
         </step>
 
         <step>
-          <title>Die Ã„nderungen Ã¼berprÃ¼fen</title>
+          <title>Die Änderungen überprüfen</title>
 
-          <para>ÃœberprÃ¼fe nun, ob der Block, dem ein neues Template zugewiesen
-          wurde, dieses auch tatsÃ¤chlich verwendet.</para>
+          <para>Überprüfe nun, ob der Block, dem ein neues Template zugewiesen
+          wurde, dieses auch tatsächlich verwendet.</para>
         </step>
       </procedure>
 
-      <para>Um verschiedenen BlÃ¶cken in einem Modul eigene Templates
-      zuzuweisen, muss man nur die soeben beschriebenen Schritte fÃ¼r jeden
+      <para>Um verschiedenen Blöcken in einem Modul eigene Templates
+      zuzuweisen, muss man nur die soeben beschriebenen Schritte für jeden
       weiteren Block wiederholen. Die Anzahl der Block-Templates, die man
-      erstellt, bleibt einem selbst Ã¼berlassen. Einer neuen Zone kann
+      erstellt, bleibt einem selbst überlassen. Einer neuen Zone kann
       allerdings immer nur ein Template zugewiesen werden.</para>
 
       <para>Um einem Block im Zusammenhang mit einem bestimmten Modul ein
       anderes Template zuzuweisen, muss der Visual Block Editor aktiviert
-      werden. Rufe dazu folgendes MenÃ¼ auf: <menuchoice>
+      werden. Rufe dazu folgendes Menü auf: <menuchoice>
           <guimenu>Xanthia</guimenu>
 
           <guimenuitem>Configure Xanthia</guimenuitem>
         </menuchoice>.</para>
 
-      <para>WÃ¤hle nun das Modul aus, bei dem die VerÃ¤nderung des Designs eines
+      <para>Wähle nun das Modul aus, bei dem die Veränderung des Designs eines
       Blocks vorgenommen werden soll. Mittels des entsprechenden Icons kann
-      das Fenster des Visual Block Editor geÃ¶ffnet werden. WÃ¤hle das Template
-      aus der drop down-Liste und bestÃ¤tige die Auswahl mit
+      das Fenster des Visual Block Editor geöffnet werden. Wähle das Template
+      aus der drop down-Liste und bestätige die Auswahl mit
       <guimenuitem>submit</guimenuitem>. Dieser Block muss in den
-      vorangegangen Schritten natÃ¼rlich bereits bestimmt worden sein. (I will
+      vorangegangen Schritten natürlich bereits bestimmt worden sein. (I will
       be adding the ability to Xanthia later to allow this to work even if you
       have not set the block in the above steps.)</para>
 
-      <para>Das Template eines Blocks kann auch Ã¼ber das MenÃ¼
-      <guimenuitem>Block Control</guimenuitem> verÃ¤ndert werden: <menuchoice>
+      <para>Das Template eines Blocks kann auch über das Menü
+      <guimenuitem>Block Control</guimenuitem> verändert werden: <menuchoice>
           <guimenu>Xanthia</guimenu>
 
           <guisubmenu>View Themes</guisubmenu>
@@ -916,13 +920,13 @@
 
     <section id="Xanthia.User.CommonTasks.BlockZones">
       <title>Eine Block-Zone einem Template zuordnen und in der Block Control
-      verfÃ¼gbar machen.</title>
+      verfügbar machen.</title>
 
       <procedure>
         <step>
-          <title>Block-Zonen Administration auswÃ¤hlen</title>
+          <title>Block-Zonen Administration auswählen</title>
 
-          <para>Das entscheidende MenÃ¼ befindet sich hier: <menuchoice>
+          <para>Das entscheidende Menü befindet sich hier: <menuchoice>
               <guimenu>Administration</guimenu>
 
               <guisubmenu>Xanthia</guisubmenu>
@@ -938,7 +942,7 @@
         <step>
           <title>Eine Block-Zone erstellen</title>
 
-          <para>FÃ¼lle hier alle Felder am unteren Rand des Fensters
+          <para>Fülle hier alle Felder am unteren Rand des Fensters
           aus.</para>
 
           <variablelist>
@@ -962,13 +966,13 @@
             </varlistentry>
           </variablelist>
 
-          <para>BestÃ¤tige die Eingaben mit
+          <para>Bestätige die Eingaben mit
           <guimenuitem>submit</guimenuitem>.</para>
         </step>
 
         <step>
-          <para>In den Templates der Seite kann die neue Block-Zone nun Ã¼ber
-          folgendes Tag eingefÃ¼gt werden: <markup>&lt;!--[$TAGTOUSEINTHEME
+          <para>In den Templates der Seite kann die neue Block-Zone nun über
+          folgendes Tag eingefügt werden: <markup>&lt;!--[$TAGTOUSEINTHEME
           ]--&gt; </markup></para>
         </step>
       </procedure>
@@ -977,11 +981,11 @@
     <section id="Xanthia.User.CommonTasks.ShortURLs">
       <title>Implementierung der Short URLs</title>
 
-      <para>Die bisher nur als Addon verfÃ¼gbare ShortUrls-Erweiterung fÃ¼r
-      Postnuke ist in Xanthia integriert. Die ShortURLs benÃ¶tigen einen
-      Webserver mit einer "URL rewriting engine" - fÃ¼r den in der Regel
-      verwendeten Apache-Webserver lautet diese mod_rewrite. FÃ¼r andere
-      Webserver sind passende rewrite engines ebenfalls verfÃ¼gbar.</para>
+      <para>Die bisher nur als Addon verfügbare ShortUrls-Erweiterung für
+      Postnuke ist in Xanthia integriert. Die ShortURLs benötigen einen
+      Webserver mit einer "URL rewriting engine" - für den in der Regel
+      verwendeten Apache-Webserver lautet diese mod_rewrite. Für andere
+      Webserver sind passende rewrite engines ebenfalls verfügbar.</para>
 
       <section id="Xanthia.User.CommonTasks.ShortURLs.How">
         <title>Wie funktioniert es?</title>
@@ -1041,7 +1045,7 @@
   </section>
 
   <section id="Xanthia.User.FAQ">
-    <title>FAQ - hÃ¤ufig gestellte Fragen</title>
+    <title>FAQ - häufig gestellte Fragen</title>
 
     <qandaset>
       <qandadiv>
@@ -1055,10 +1059,10 @@
           </question>
 
           <answer>
-            <para>Dieser Fehler zeigt an, daÃŸ Xanthia kein passendes Template
-            gefunden hat. Kontrolliere, daÃŸ sich das Template in dem Template
+            <para>Dieser Fehler zeigt an, daß Xanthia kein passendes Template
+            gefunden hat. Kontrolliere, daß sich das Template in dem Template
             Ordner des eingesetzten Themes befindet. Nutze das "Swiss Army
-            Knife Tool fÃ¼r PostNuke" (PSAK), das unter <ulink
+            Knife Tool für PostNuke" (PSAK), das unter <ulink
             url="http://post-nuke.net/Downloads+index-req-viewdownload-cid-1.html">http://www.post-nuke.net</ulink>
             zum Download angeboten wird, um ein funktionierendes Theme
             einzustellen.</para>
@@ -1076,11 +1080,11 @@
             sobald du eine passende <filename>.htaccess</filename> auf dem
             Server erstellt hast. (Siehe auch <xref
             linkend="Xanthia.User.CommonTasks.ShortURLs.How" />). Wenn Xanthia
-            initialisiert wird, Ã¼berprÃ¼ft es, ob das re-write Modul auf dem
+            initialisiert wird, überprüft es, ob das re-write Modul auf dem
             Server gestartet ist, aber wenn Xanthia einmal initialisert wurde,
-            gibt es keine MÃ¶glichkeit, diese ÃœberprÃ¼fung zu wiederholen. Wenn
-            die ÃœberprÃ¼fung falsch verlief, muÃŸt du die Datenbank direkt (via
-            phpMyAdmin oder etwas Ã„hnlichem) bearbeiten: In der Tabelle
+            gibt es keine Möglichkeit, diese Überprüfung zu wiederholen. Wenn
+            die Überprüfung falsch verlief, mußt du die Datenbank direkt (via
+            phpMyAdmin oder etwas Ähnlichem) bearbeiten: In der Tabelle
             <filename><replaceable>&lt;prefix&gt;</replaceable>_module_vars</filename>
             befindet sich die Variable pn_modname = Xanthia pn_name
             =shorturlsok. Wenn dieser Wert auf 0 gesetzt ist, setze ihn auf
@@ -1090,7 +1094,7 @@
       </qandadiv>
 
       <qandadiv>
-        <title>BlÃ¶cke und Block-Anordnungen</title>
+        <title>Blöcke und Block-Anordnungen</title>
 
         <qandaentry>
           <question>
@@ -1099,7 +1103,7 @@
           </question>
 
           <answer>
-            <para>StandardmÃ¤ÃŸig werden alle BlÃ¶cke auf allen Seiten angezeigt.
+            <para>Standardmäßig werden alle Blöcke auf allen Seiten angezeigt.
             Um den center Block zu deaktivieren, gehe zur <menuchoice>
                 <guimenu>Administration</guimenu>
 
@@ -1110,11 +1114,11 @@
                 <guisubmenu>Edit Theme</guisubmenu>
 
                 <guimenuitem>Block Control</guimenuitem>
-              </menuchoice> und lÃ¶sche die BlÃ¶cke aus der Liste des Moduls,
-            die du nicht angezeigt bekommen mÃ¶chtest. Oder gehe zum visual
-            block administration in der Xanthia Konfiguration und lÃ¶sche die
-            BlÃ¶cke, indem zu jedes Modul aufrufst und diejenigen, die du fÃ¼r
-            dieses Modul nicht haben mÃ¶chtest, deaktivierst.</para>
+              </menuchoice> und lösche die Blöcke aus der Liste des Moduls,
+            die du nicht angezeigt bekommen möchtest. Oder gehe zum visual
+            block administration in der Xanthia Konfiguration und lösche die
+            Blöcke, indem zu jedes Modul aufrufst und diejenigen, die du für
+            dieses Modul nicht haben möchtest, deaktivierst.</para>
           </answer>
         </qandaentry>
 
@@ -1133,30 +1137,30 @@
 
         <qandaentry>
           <question>
-            <para>Wie kann ich einen neuen Block so einstellen, daÃŸ er auf
+            <para>Wie kann ich einen neuen Block so einstellen, daß er auf
             allen Seiten angezeigt wird?</para>
           </question>
 
           <answer>
-            <para>Im Moment ist das nur mÃ¶glich, indem man nach Erstellen des
-            Blocks, diesen Block fÃ¼r jedes einzelne Modul aktivert. Wenn ein
-            Theme initialisiert wird, werden standardmÃ¤ÃŸig alle BlÃ¶cke in
-            allen Modulen angezeigt. Danach muÃŸ man das fÃ¼r neue BlÃ¶cke
+            <para>Im Moment ist das nur möglich, indem man nach Erstellen des
+            Blocks, diesen Block für jedes einzelne Modul aktivert. Wenn ein
+            Theme initialisiert wird, werden standardmäßig alle Blöcke in
+            allen Modulen angezeigt. Danach muß man das für neue Blöcke
             manuell einstellen. Dieses wird aber in zukunftigen Xanthia
-            VerÃ¶ffentlichungen verbessert!</para>
+            Veröffentlichungen verbessert!</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>Ich mÃ¶chte die rechten BlÃ¶cke on der News Startseite
+            <para>Ich möchte die rechten Blöcke on der News Startseite
             angezeigt bekommen, aber nicht beim Aufruf eines Artikels. Wie
             kann ich das erreichen?</para>
           </question>
 
           <answer>
             <para>Durch die Architektur des .7x News Moduls wurde ein kleiner
-            Hack in die aktuelle Xanthia VerÃ¶ffentlichung eingefÃ¼gt worden.
+            Hack in die aktuelle Xanthia Veröffentlichung eingefügt worden.
             Unter <menuchoice>
                 <guimenu>Administration</guimenu>
 
@@ -1169,11 +1173,11 @@
                 <guimenuitem>Theme Settings</guimenuitem>
               </menuchoice> siehst du eine Option "<guimenuitem>Show right
             blocks in news module (only for .7x)"</guimenuitem>. Diese Option
-            schaltet die rechten BlÃ¶cke im News - Modul an und aus.</para>
+            schaltet die rechten Blöcke im News - Modul an und aus.</para>
 
             <para>Diese Option ist in den .7x Versionen notwendig, da das News
-            Modul hier seinen eigenen rechten BlÃ¶cke hat. Diese wird in der .8
-            VerÃ¶ffentlichung nicht mehr sein!</para>
+            Modul hier seinen eigenen rechten Blöcke hat. Diese wird in der .8
+            Veröffentlichung nicht mehr sein!</para>
           </answer>
         </qandaentry>
       </qandadiv>
@@ -1183,13 +1187,13 @@
 
         <qandaentry>
           <question>
-            <para>Ich mÃ¶chte, daÃŸ die Startseite ein anderes Layout hat, als
-            andere Seiten. Wie kann ich das Layout des Moduls Ã¤ndern, das als
+            <para>Ich möchte, daß die Startseite ein anderes Layout hat, als
+            andere Seiten. Wie kann ich das Layout des Moduls ändern, das als
             Start-Modul gesetzt ist?</para>
           </question>
 
           <answer>
-            <para>Das ist hier erklÃ¤rt: <xref
+            <para>Das ist hier erklärt: <xref
             linkend="Xanthia.User.ModuleTemplates" /></para>
           </answer>
         </qandaentry>
@@ -1218,15 +1222,15 @@
 
         <qandaentry>
           <question>
-            <para>Ist es mÃ¶glich, dynanamische Ausgabefilter anzugeben, die
+            <para>Ist es möglich, dynanamische Ausgabefilter anzugeben, die
             Xanthia beachtet?</para>
           </question>
 
           <answer>
-            <para>Im Moment gibt es keine MÃ¶glichkeit, Filter wie "kopiere
-            dies in ein Verzeichnis und aktiviere es im Amin-MenÃ¼" einzufÃ¼gen.
+            <para>Im Moment gibt es keine Möglichkeit, Filter wie "kopiere
+            dies in ein Verzeichnis und aktiviere es im Amin-Menü" einzufügen.
             Das kann man aber in der theme.php einstellen. Wenn die engine
-            initialisiert ist, fÃ¼ge folgendes ein:</para>
+            initialisiert ist, füge folgendes ein:</para>
 
             <programlisting>$engine-&gt;load_filter('&lt;filtertype&gt;', '&lt;filtername&gt;');</programlisting>
           </answer>
@@ -1234,19 +1238,19 @@
       </qandadiv>
 
       <qandadiv>
-        <title>KompatibilitÃ¤t</title>
+        <title>Kompatibilität</title>
 
         <qandaentry>
           <question>
-            <para>Kann ich ein Envolution Theme fÃ¼r Xanthia nehmen?</para>
+            <para>Kann ich ein Envolution Theme für Xanthia nehmen?</para>
           </question>
 
           <answer>
             <para>Envolution Themes arbeiten nicht mit Xanthia zusammen
-            seitdem ein GroÃŸteil des Codes bearbeitet wurde, um weitere
-            Funktionen einzubauen. Es ist jedoch recht einfach mÃ¶glich, diese
-            Themes fÃ¼r Xanthia zu konvertieren, da die Struktur den Encompass
-            Themes sehr Ã¤hnlich ist.</para>
+            seitdem ein Großteil des Codes bearbeitet wurde, um weitere
+            Funktionen einzubauen. Es ist jedoch recht einfach möglich, diese
+            Themes für Xanthia zu konvertieren, da die Struktur den Encompass
+            Themes sehr ähnlich ist.</para>
           </answer>
         </qandaentry>
 
@@ -1266,16 +1270,16 @@
 
         <qandaentry>
           <question>
-            <para>Ich habe gehÃ¶rt, daÃŸ Xanthia Themes wesentlich langsamer
+            <para>Ich habe gehört, daß Xanthia Themes wesentlich langsamer
             laufen als traditionelle Themes?</para>
           </question>
 
           <answer>
-            <para>Es ist wahr, daÃŸ Xanthia RC2 nicht auf Schnelligkeit
-            ausgelegt wurde. Aber viele Ã„nderungen wurden im Laufe der Zeit
-            durchgefÃ¼hrt, um die Performance zu verbessern. Diese beinhalteten
+            <para>Es ist wahr, daß Xanthia RC2 nicht auf Schnelligkeit
+            ausgelegt wurde. Aber viele Änderungen wurden im Laufe der Zeit
+            durchgeführt, um die Performance zu verbessern. Diese beinhalteten
             eine starke Abnahme der Datenbank Anfragen. Tests haben gezeigt,
-            daÃŸ die aktuelle VerÃ¶ffentlichung fast so schnell ist wie ein
+            daß die aktuelle Veröffentlichung fast so schnell ist wie ein
             traditionelles Theme.</para>
           </answer>
         </qandaentry>
@@ -1287,10 +1291,10 @@
     <title>Der "Xanthia/Display module in a block" Block</title>
 
     <para>Im Xanthia-Grundpaket ist der Block "Display module in a block"
-    enthalten. Mit diesem Block lÃ¤sst sich die Ausgabe jeder "GUI function"
+    enthalten. Mit diesem Block lässt sich die Ausgabe jeder "GUI function"
     eines API konformen Moduls ausgeben.</para>
 
-    <para>Dies lÃ¤sst sich am Beispiel des Moduls Pagesetter demonstrieren.
+    <para>Dies lässt sich am Beispiel des Moduls Pagesetter demonstrieren.
     Dazu nimmt man die Pagesetter URL
     <command>index.php?module=<replaceable>pagesetter</replaceable>&amp;func=<replaceable>viewpub</replaceable>&amp;tid=<replaceable>7</replaceable>&amp;pid=<replaceable>24</replaceable></command>
     und teit sie in ihre Komponenten auf.</para>
@@ -1301,7 +1305,7 @@
 
         <listitem>
           <para>Dies ist der Eingangspunkt. Alle API konformen Module benutzen
-          index.php als Eingangspunkt. FÃ¼r alle nicht API konformen Module
+          index.php als Eingangspunkt. Für alle nicht API konformen Module
           (die modules.php als Eingangspunkt verwenden) kann der Block nicht
           verwendet werden.</para>
         </listitem>
@@ -1311,7 +1315,7 @@
         <term><command>module=<replaceable>pagesetter</replaceable></command></term>
 
         <listitem>
-          <para>Dies ist der Name des Moduls. Man wÃ¤hlt in im ersten Kasten
+          <para>Dies ist der Name des Moduls. Man wählt in im ersten Kasten
           der Blockkonfiguration aus.</para>
         </listitem>
       </varlistentry>
@@ -1322,7 +1326,7 @@
         <listitem>
           <para>Dies ist der Name der Funktion und wird im zweiten Kasten der
           Blockkonfiguration eingegeben. Dabei reicht der Name der Funktion -
-          im gewÃ¤hlten Beispiel ist dies viewpub</para>
+          im gewählten Beispiel ist dies viewpub</para>
         </listitem>
       </varlistentry>
 
@@ -1331,21 +1335,21 @@
 
         <listitem>
           <para>(der Rest) - dies sind die Argumente (arguments), die an die
-          Funktion Ã¼bergeben werden. Man gibt sie im dritten Kasten ein. Den
-          Rest der URL Ã¼bernimmt man bis auf das &amp;-Zeichen vollstÃ¤ndig. Im
+          Funktion übergeben werden. Man gibt sie im dritten Kasten ein. Den
+          Rest der URL übernimmt man bis auf das &amp;-Zeichen vollständig. Im
           vorliegenden Beispiel ist dies: tid=7&amp;pid=24.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
     <para>Wie gesagt, dieser Block funktioniert nur mit API konformen Modulen
-    (also jenen, die Ã¼ber die index.php aufgerufen werden, z.B.
+    (also jenen, die über die index.php aufgerufen werden, z.B.
     <command>index.php?module=<replaceable>&lt;modname&gt;</replaceable></command>).
-    Der Grund dafÃ¼r ist, dass Ã¤ltere Module den Header und Footer der Seite
-    eigenstÃ¤ndig ausgeben. Somit kann man bei diesen Modulen nicht an die
+    Der Grund dafür ist, dass ältere Module den Header und Footer der Seite
+    eigenständig ausgeben. Somit kann man bei diesen Modulen nicht an die
     reine Ausgabe der Module gelangen.</para>
 
     <para>In PostNuke .8 werden alle Module pnAPI konform sein. In Hinblick
-    darauf wurde der vorliegende Block Xanthia bereits hinzugefÃ¼gt.</para>
+    darauf wurde der vorliegende Block Xanthia bereits hinzugefügt.</para>
   </section>
 </chapter>
