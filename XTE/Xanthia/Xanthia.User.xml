@@ -10,10 +10,10 @@
     <releaseinfo>$Revision$</releaseinfo>
   </chapterinfo>
 
-  <title>Administrationshandbuch</title>
+  <title>Xanthia Administration</title>
 
   <section id="Xanthia.User.Terms">
-    <title>Xanthia Terminologie</title>
+    <title>Terminologie</title>
 
     <para>An dieser Stelle folgen einige Definitionen wichtiger Begriffe im
     Zusammenhang mit Xanthia.</para>
@@ -23,37 +23,32 @@
         <term>Templates</term>
 
         <listitem>
-          <para>Templates sind die Dateien, die die Layoutelement eines Themes
-          / Moduls enthalten. Jedes Theme ist in mehrere Templates aufgeteilt,
-          die zusammen mit dem Inhalt die fertige Seite ergeben. Templates
-          bestehen aus normalem HTML in das Smarty-Tags eingebettet werden.
-          Diese eingebetteten Tags werden dann durch dynamische Inhalte
-          ersetzt. Dazu können auch einfache Logik-Elemente wie Schleifen und
-          Bedingungen benutzt werden</para>
+          <para><glossterm>Templates</glossterm> sind die Dateien, die die
+          Layoutelement eines Themes / Moduls enthalten. Jedes Theme ist in
+          mehrere Templates aufgeteilt, die zusammen mit dem Inhalt die
+          fertige Seite ergeben. Templates bestehen aus normalem HTML in das
+          Smarty-Tags eingebettet werden. Diese eingebetteten Tags werden dann
+          durch dynamische Inhalte ersetzt. Dazu können auch einfache
+          Logik-Elemente wie Schleifen und Bedingungen benutzt werden</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term><glossterm>Zonen</glossterm> (engl: "Theme Zones")</term>
+        <term><glossterm>Themezonen</glossterm></term>
 
         <listitem>
-          <para>Themes können in mehrere Zonen unterteilt werden. In jede Zone
-          können sowohl Blöcke als auch Modul-Inhalte geladen werden. Wenn man
-          sich die vorhandenen Xanthia-Themes betrachtet, kann man
-          feststellen, dass zum Beispiel das News-Artikel-Template die
-          themearticle-Funktion ersetzt hat.</para>
-
-          <para><glossterm>Theme-Zonen</glossterm> unterteilen das Theme. Jede
-          Zone stellt einen bestimmten Bereich des Themes dar. Zu jeder
-          Theme-Zone gibt es ein Template.</para>
+          <para><glossterm>Themezonen</glossterm> werden eingesetzt, um
+          verschiedenen Blöcken oder Modulen ein bestimmtes aussehen zu geben.
+          Jeder Themezone ist ein Template zugeordnet, die Themezone wiederum
+          einem Block oder einem Modul. </para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>Block Zones</term>
+        <term>Blockzonen</term>
 
         <listitem>
-          <para><glossterm>Block-Zonen</glossterm> definieren die Bereiche,
+          <para><glossterm>Blockzonen</glossterm> definieren die Bereiche,
           denen Blöcke zugeordnet werden können. Blockzonen können dort im
           Theme positioniert werden, wo Blöcke angezeigt werden sollen. Dazu
           müssen die entsprechenden Tags in das Theme eingebaut werden.</para>
