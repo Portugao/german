@@ -10,7 +10,8 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Interaktion mit dem Besucher: Umfragen, Foren usw.</title>
+  <title>Interaktion mit dem Besucher: Umfragen, Foren, Kontaktformular
+  usw.</title>
 
   <section id="reviews">
     <title>Reviews (Rezensionen)<indexterm>
@@ -405,12 +406,249 @@
         <primary>Kontaktformular</primary>
       </indexterm></title>
 
-    <para>Formicula erlaubt das flexible Erstellen von Kontaktformularen aller
-    Art. Wird ein neues Textfeld benötigt oder eine Dropdownliste? Alles dank
-    pnRender-Templates keine Problem. Dazu können beliebig viele
-    Kontaktadressen verwaltet und dem Besucher angeboten werden. Homepage:
-    <ulink
-    url="http://snowbankih.tzo.com">http://snowbankih.tzo.com</ulink>.</para>
+    <para>Mit Formicula kann man beliebig viele Kontaktformulare mit beliebig
+    vielen Eingabefeldern erzeugen (zumindest beliebig viele, solange der
+    Speicher ausreicht). Wird ein neues Textfeld benötigt oder eine
+    Dropdownliste? Alles dank pnRender-Templates keine Problem. Dazu können
+    beliebig viele Kontaktadressen verwaltet und dem Besucher angeboten
+    werden.</para>
+
+    <bridgehead>Installation</bridgehead>
+
+    <procedure>
+      <step>
+        <para>Falls noch nicht geschehen, erst einmal auf die aktuelle
+        PostNuke Version updaten (0.726-1 im Augenblick, 11.02.04)</para>
+      </step>
+
+      <step>
+        <para>XTE (Xanthia Theming Engine) inkl. pnRender installieren
+        (Download von http://www.post-nuke.net oder anderen PN Seiten)</para>
+      </step>
+
+      <step>
+        <para>Formicula auspacken und ins modules Verzeichnis kopieren.</para>
+      </step>
+
+      <step>
+        <para>Im Adminbereich die Modulliste neu erstellen, Formicula
+        initialisieren und aktivieren.</para>
+      </step>
+
+      <step>
+        <para>Jetzt kann man die Kontaktinformationen (Name/Betreff und
+        Emailadresse) in der Formicula Administration eingeben.</para>
+      </step>
+    </procedure>
+
+    <para>Link im Menü hinzufügen: {formicula} ([formicula] funktioniert
+    nicht) oder: index.php?module=formicula&amp;func=main</para>
+
+    <para>Falls notwendig, kann man auch noch die Sprachdateien
+    anpassen.</para>
+
+    <para>Falls Dir das Seitenlayout nicht gefällt: Alle Templates dazu liegen
+    in /pntemplates und können angepasst werden. Formicula benutzt
+    schliesslich pnRender....</para>
+
+    <bridgehead>Templates</bridgehead>
+
+    <para>Die Templates haben folgende Namen:</para>
+
+    <para>Das Formular mit den Eingabefeldern: #_userform.html</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Bestätigungsseite nach dem Verschicken</term>
+
+        <listitem>
+          <para><filename>#_userconfirm.html</filename></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Fehlerseite</term>
+
+        <listitem>
+          <para><filename>#_usererror.html</filename></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Bestätigungsmail an den User (Textformat)</term>
+
+        <listitem>
+          <para><filename>#_usermail.txt</filename></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Bestätigungsmail an den User (HTML-Format)</term>
+
+        <listitem>
+          <para><filename>#_usermail.html</filename></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Mail an den Kontakt (Textformat)</term>
+
+        <listitem>
+          <para>#_adminmail.txt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Mail an den Kontakt (HTML-Format)</term>
+
+        <listitem>
+          <para>#_adminmail.html</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <tip>
+      <para>Das Mailformat kann im Template vorgegeben werden oder man lässt
+      den User entscheiden. Im Beispiel 0_userform.html z.B. steht</para>
+
+      <programlisting>&lt;select name='userformat'&gt;
+&lt;option value='html'&gt;&lt;!--[ pnml name='_FOR_HTMLMAIL' ]--&gt;&lt;/option&gt;
+&lt;option value='plain'&gt;&lt;!--[ pnml name='_FOR_TEXTMAIL' ]--&gt;&lt;/option&gt;
+&lt;/select&gt;</programlisting>
+
+      <para>Will man das Format fest vorgeben, benutzt man ein verstecktes
+      Feld:</para>
+
+      <programlisting>&lt;input type='hidden' name='userformat' value='html'&gt;</programlisting>
+
+      <para>Analog zu 'userformat' gibt es auch 'adminformat'. Als Werte sind
+      z.Zt. nur 'html' oder 'plain' zulässig, standard ist 'plain', also
+      reiner Text ohne Formatierungen.</para>
+    </tip>
+
+    <para>Das '#' gibt immer die Nummer des Formular an</para>
+
+    <para>Ein bestimmtes Formular wird mit dem Parameter form in der URL
+    aufgerufen:</para>
+
+    <para><userinput>&amp;form=#</userinput></para>
+
+    <para>Ein Link zu Formular 1 sieht dann folgendermassen aus:</para>
+
+    <para><userinput>index.php?module=formicula&amp;func=main&amp;form=1</userinput></para>
+
+    <para>Im Formicula Paket befinden sich zwei Beispiele 0 und 1. 0 ist ein
+    normales Kontaktformular, 1 ist ein Formular für eine Onlinebewerbung mit
+    zusätzlichen Feldern.</para>
+
+    <para>Wenn der Parameter form fehlt, ist der Standardwert 0. Will man
+    Formicula nur mit einem Formular benutzen, würde also ein Link im Menü so
+    aussehen können:{formicula}</para>
+
+    <bridgehead>Benutzerdefinierte Felder</bridgehead>
+
+    <para>Es können so viele benutzerdefinierte Felder hinzugefügt werden, wie
+    notwendig sind. Damit kann man auch umfangreich Onlinebewerbungsformulare
+    erstellen.</para>
+
+    <para>Dazu sind einige Angaben notwendig:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>numFields (verstecktes Feld.)</term>
+
+        <listitem>
+          <para>Anzahl der benutzerdefinierten Felder</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>custom#name (verstecktes Feld)</term>
+
+        <listitem>
+          <para>Name des Eingabefeldes</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>custom#mandatory (verstecktes Feld)</term>
+
+        <listitem>
+          <para>auf 1 setzen, wenn es sich um ein Mussfeld handelt. Formicula
+          überprüft dies dann und bringt eine Fehlermeldung, falls das Feld
+          leer ist.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>custom#data (ein Eingabefeld)</term>
+
+        <listitem>
+          <para>die Daten</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Beispiel:</para>
+
+    <programlisting>
+&lt;tr width='100%'&gt;
+  &lt;td width='50%' align='right'&gt;
+    &lt;!--[ pnml name='_ONLINEAPPLYAS' html=1 ]--&gt;&amp;nbsp;&lt;span style="color: red;"&gt;*&lt;/span&gt;
+  &lt;/td&gt;
+  &lt;td width='50%' align='left'&gt;
+    &lt;input type='hidden' name='custom0name' value='&lt;!--[ pnml name='_ONLINEAPPLYAS' ]--&gt;'&gt;
+    &lt;input type='hidden' name='custom0mandatory' value=1&gt;
+    &lt;input type='text' name='custom0data' size='40' maxlength='80' value=''&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr width='100%'&gt;
+  &lt;td width='50%' align='right'&gt;
+    &lt;!--[ pnml name='_ONLINESTREET' html=1 ]--&gt;&amp;nbsp;&lt;span style="color: red;"&gt;*&lt;/span&gt;
+  &lt;/td&gt;
+  &lt;td width='50%' align='left'&gt;
+    &lt;input type='hidden' name='custom1name' value='&lt;!--[ pnml name='_ONLINESTREET' ]--&gt;'&gt;
+    &lt;input type='hidden' name='custom1mandatory' value=1&gt;
+    &lt;input type='text' name='custom1data' size='40' maxlength='40' value=''&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+</programlisting>
+
+    <para>Dies erstellt zwei benutzerdefinierte Felder 0 and 1, beides sind
+    Mussfelder. Das heißt man braucht auch noch:</para>
+
+    <programlisting>&lt;input type='hidden' name='numFields' value=2&gt;</programlisting>
+
+    <para>Bitte beachten: Die Nummerierung der benutzerdefinerten Felder
+    beginnt bei 0!</para>
+
+    <bridgehead>Zugriffsrechte</bridgehead>
+
+    <para>Um auf ein Formular zugreifen zu können braucht man das Recht zu
+    kommentieren (COMMENT).</para>
+
+    <para>Unregistered | formicula:: | .* | kommentieren</para>
+
+    <para>gibt z.B. allen unregistrierten Benutzer das Recht, alle vorhandenen
+    Formulare zu benutzen und alle vorhandenen Kontakte zu benutzen.</para>
+
+    <para>Unregistered | formicula:: | 0:: | kommentieren</para>
+
+    <para>gibt allen unregistrierten User, das Formular 0 mit allen
+    existierenden Kontakten zu benutzen.</para>
+
+    <para>Users | formicula:: | 1:(2|3): | kommentieren</para>
+
+    <para>Erlaubt allen Mitgliedern der Gruppe User, Formular 1 zu benutzen
+    und die Kontakte 2 und 3 anzuschreiben.</para>
+
+    <bridgehead>Links</bridgehead>
+
+    <para><ulink url="'http://www.snowbankih.tzo.com'">SnowbankIH
+    Webseite</ulink></para>
+
+    <para><ulink
+    url="'http://www.snowbankih.tzo.com/modules.php?op=modload&amp;name=phpBB_14&amp;file=index&amp;action=viewforum&amp;forum=5'">Supportforum</ulink></para>
   </section>
 
   <section id="pntresmailer">
