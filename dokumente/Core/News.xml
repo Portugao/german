@@ -323,6 +323,135 @@
     werden wollen.</para>
   </section>
 
+  <section remap="h3">
+    <title>XMLRPC - Postnuke ferngesteuert</title>
+
+    <para>Wer keine Lust hat, seine Artikel auf der Site in HTML-Form-Feldern
+    zu editieren, kann seit dem Release von Postnuke .722 auch externe
+    Clients, wie zum Beispiel <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-119.html">w.Bloggar</ulink>
+    benutzen. w.Bloggar sieht aus wie ein ganz normaler Window Text-Editor
+    oder ein einfacher HTML-Editor. Es gibt jede Formatierungs-Funktion +
+    Preview, die man brauchen könnte. Dazu gibt es für die älteren Versionen
+    von w.Bloggar einen deutschen Spellchecker - läßt sich also vermuten, daß
+    dieses Feature auch bald für die 3.00 zur Verfügung stehen sollte.</para>
+
+    <para>Zu den Einstellungen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Username &amp; Passwort</term>
+
+        <listitem>
+          <para>von der Site</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>BlogTool</term>
+
+        <listitem>
+          <para>Custom</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Host</term>
+
+        <listitem>
+          <para>www.meineSite.de</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Page</term>
+
+        <listitem>
+          <para>xmlrpc.php - liegt die Site im Unterverzeichnis a la
+          www.meineSite.de/<emphasis
+          role="underline">html</emphasis>/index.php, trägt man hier den Pfad
+          mit ein: /html/xmlrpc.php - nicht also schon beim Host</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Nach Bestätigung mit <emphasis>Okay</emphasis> startet der Editor.
+    Als erstes muß jetzt noch ein den Settings "Auto-Convert Extended
+    Characters" ausgeschaltet werden. - Jetzt ist w.Bloggar fertig für Deinen
+    ersten Post Nachdem man den Beitrag zuende geschrieben und formartiert
+    wählt man ein Topic aus (die hat sich w.Bloggar nämlich schon vorher von
+    der Site gezogen) und veröffentlicht den Beitrag mit <emphasis
+    role="bold">Post.</emphasis> Dann liegt der gerade geschriebene Beitrag
+    zur Veröffentlichung auf der Site bereit. Leider muß nämlich noch etwas
+    nacheditiert werden:</para>
+
+    <note>
+      <para>In der derzeitigen Version des Moduls werden den Überschriften
+      immer noch ein * vorangesetzt. Die Datei modules/xmlrpc/api/blogger.php
+      hat einen Bug in Zeile 506: statt $title = "*"; sollte dort $title = "";
+      stehen, sonst hat jede Überschrift ein "*" zu Beginn. Das wird beim
+      nächsten Release gefixt sein.</para>
+    </note>
+
+    <para>Zusätzlich werden die Artikel nicht automatisch in die zwei
+    HTML-Felder verteilt. Da das mit copy+paste aber schnell erledigt ist,
+    sollte das kein Problem sein. Außerdem gibt es eine gehackte XMLRPC.php,
+    mit der dies erledigt ist: http://www.post-nuke.net/Article506.htm</para>
+
+    <para><guimenuitem>Post</guimenuitem> Veröffentlicht bei Adminrechten die
+    Beiträge automatisch auf der Startseite - <guisubmenu>Post +
+    Publish</guisubmenu> veröffentlicht den Artikel aber nicht auf der
+    Startseite.</para>
+
+    <para>Über den Button <guimenuitem>Posts</guimenuitem> lassen sich die
+    schon vorhandenen Posts auswählen und editieren.</para>
+
+    <para>Auf <ulink
+    url="http://www.portalzine.de">http://www.portalzine.de</ulink> gibt es
+    eine Ergängung zu w.bloggar, sodass auch PostNuke als Ziel erscheint (Ist
+    zwar "bloß" Kosmetik, aber nett!)</para>
+
+    <bridgehead>Weitere Clients</bridgehead>
+
+    <variablelist>
+      <varlistentry>
+        <term>Blog-buddy</term>
+
+        <listitem>
+          <para><ulink
+          url="http://blogbuddy.sourceforge.net/">Blog-buddy</ulink> hat zwar
+          nicht den gleich großen Funktionsumfang, würde aber vollkommen
+          ausreichen. Das Erstellen von neuen Posts funktioniert, das Ändern
+          bestehender leider nicht. Immerhin besser als der Browser.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>mozblog</term>
+
+        <listitem>
+          <para><ulink url="http://mozblog.mozdev.org/">mozblog</ulink> ist
+          eine Ergänzung zum Browser Mozilla, die ein eigenes Fenster im
+          unteren Bildschirmbereich des Browsers öffnet. Im oberen kann man
+          Browsen, im untern bloggen. Eigentlich ideal, leider ist das Teil
+          relativ buggy, einen Versuch ist es aber alle mal wert. Ich habe
+          mozblog allerdings nicht zum Laufen bekommen d.h. er kann sich
+          offenbar nicht mit PN verbinden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dreamweaver</term>
+
+        <listitem>
+          <para>Es gibt auch die Möglichkeit Dreamweaver als Client zu
+          benutzen. Nicht gerade die LowCost Variante - nur der Komplettierung
+          wegen</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+
   <section remap="h4">
     <title>Kommentare</title>
 
