@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$" status="draft">
+<chapter id="benutzerundrechteverwaltung" lang="de-DE" status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
@@ -17,7 +17,7 @@
   Berechtigungssystems ist ein Verständnis über die sich ergebenden
   Zusammenhänge sehr wichtig.</para>
 
-  <section>
+  <section id="benutzerverwaltung">
     <title>Benutzerverwaltung</title>
 
     <para>Üblicherweise registrieren Benutzer sich selbst und sind dann dem
@@ -63,7 +63,7 @@
       </varlistentry>
     </variablelist>
 
-    <section>
+    <section id="mitgliederliste">
       <title>Mitgliederliste</title>
 
       <para>Die Mitgliederliste zeigt eine alphabetische Auflistung aller
@@ -83,7 +83,7 @@
       ansonsten nicht überlagert werden kann.</para>
     </section>
 
-    <section>
+    <section id="benutzeranmailen">
       <title>Benutzer anmailen</title>
 
       <para>Hier können gezielt einzelne User oder alle registrierten User
@@ -104,7 +104,7 @@
       <emphasis>versenden</emphasis> die Nachricht abschicken.</para>
     </section>
 
-    <section>
+    <section id="loginblock">
       <title>Der "User's Login"-Block</title>
 
       <para>Hiermit können sich registrierte Benutzer anmelden. Für noch nicht
@@ -115,7 +115,7 @@
       über <systemitem>&lt;PostNuke&gt;/user.php</systemitem> anmelden.</para>
     </section>
 
-    <section>
+    <section id="onlineblock">
       <title>Der "Online"-Block</title>
 
       <para>Dieser Block zeigt an, wie viele Nutzer bzw. Gäste gerade online
@@ -123,7 +123,7 @@
       private Nachrichten man hat.</para>
     </section>
 
-    <section>
+    <section id="custombox">
       <title>Der "User's Custom Box"-Block</title>
 
       <para>Der Inhalt dieses Blocks kann vom Anwender selbst bestimmt werden
@@ -131,7 +131,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="gruppenverwaltung">
     <title>Gruppenverwaltung</title>
 
     <para>Die Gruppen dienen in PostNuke in erster Linie zur Verwaltung der
@@ -195,7 +195,7 @@
     </variablelist>
   </section>
 
-  <section>
+  <section id="zugriffsrechte">
     <title>Zugriffsrechte (Permissions)</title>
 
     <para>Das Berechtigungssystem erlaubt Administratoren die Inhalte ihrer

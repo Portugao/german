@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="kalender" lang="de_DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -13,7 +15,7 @@
   <para>Mit Hilfe eines Kalenders lassen sich die Besucher über Termine usw.
   auf dem laufenden halten.</para>
 
-  <section>
+  <section id="postcalendar">
     <title>PostCalendar</title>
 
     <para>PostCalendar ist ein umfangreiches Kalender-Modul, dass sich über

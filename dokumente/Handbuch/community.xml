@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="community" lang="de-DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -57,7 +58,7 @@
   <filename>docs/previouscredits.txt</filename> im
   PostNuke-Verzeichnis.</para>
 
-  <section>
+  <section id="wirueberuns">
     <title>Wir über uns</title>
 
     <bridgehead>Was ist post-nuke.net?</bridgehead>
@@ -125,7 +126,7 @@
     versorgt.</para>
   </section>
 
-  <section>
+  <section id="knigge">
     <title>Der post-nuke.net-Knigge</title>
 
     <subtitle>Eine kleine Liste von wichtigen Regeln, die jeder beachten
@@ -266,7 +267,7 @@
     Moderatoren kann Dein Account gesperrt werden.</para>
   </section>
 
-  <section>
+  <section id="postnukeev">
     <title>Der PostNuke e.V.</title>
 
     <para>Am 1.6.2003 haben wir unter dem Namen "PostNuke e.V." einen Verein

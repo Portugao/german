@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<appendix>
+<appendix id="statsreset" lang="de_DE" status="draft">
+  <!-- $Id$-->
+
   <appendixinfo>
     <releaseinfo>$Revision$</releaseinfo>
 

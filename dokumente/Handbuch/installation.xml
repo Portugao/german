@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="Installation" lang="de-DE" revision="$Revision$"
-         status="draft">
+<chapter id="Installation" lang="de-DE" status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
@@ -13,7 +12,7 @@
 
   <title>Installation</title>
 
-  <section>
+  <section id="vorderinstallation">
     <title>Vor der Installation</title>
 
     <para>Für die erfolgreiche Installation von PostNuke wird ein
@@ -27,7 +26,7 @@
     Dritt-Anbietern oft noch nicht vollkommen auf ADOdb umgestellt
     sind.</para>
 
-    <section>
+    <section id="providerwahl">
       <title>Auswahl eines geeigneten Providers</title>
 
       <para>Zur besseren Auswahl eines geeigneten Providers sind die
@@ -136,7 +135,7 @@
       </tip>
     </section>
 
-    <section>
+    <section id="lokaleinstallation">
       <title>Installation auf dem heimischen Rechner</title>
 
       <para>Um PostNuke ausgiebig testen zu können, empfiehlt sich die
@@ -159,7 +158,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="systeminstallation">
     <title>Installation des Systems</title>
 
     <para role="info"><emphasis>Dieser Text wurde uns freundlicherweise von
@@ -582,7 +581,7 @@
     </procedure>
   </section>
 
-  <section>
+  <section id="upgrade">
     <title>Upgrade</title>
 
     <para>PostNuke unterstützt das Upgrade von allen früheren Versionen und
@@ -746,7 +745,7 @@
     überschreiben!</para>
   </section>
 
-  <section>
+  <section id="installfaq">
     <title>FAQ - Fragen &amp; Antworten</title>
 
     <para>In diesem Abschnitt werden einige der häufigsten Fragen bei der
@@ -847,22 +846,6 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       der Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach
       in einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann
       den Dump zurückspielen.</para>
-    </section>
-
-    <section>
-      <title>Was macht man wenn die PostNuke Installation durch die
-      Installation eines neuen Blocks/Modules so gestört wird, das man nicht
-      mehr in das Block- oder Module-Administratormenü gelangt? Kann man das
-      irgendwie reparieren?</title>
-
-      <para>Erstmal kann man die Adminsitration über <systemitem
-      class="systemname">http://www.example.com/admin.php</systemitem>
-      erreichen. Sollte auch das nicht mehr gehen, kann evtl. das Swiss Army
-      Knife Tool helfen. Das ist vor allem bei vermurksten Themes der Fall.
-      Als dritte Möglichkeit kann man natürlich auch manuell die DB
-      bearbeiten: Alle Tables des Moduls löschen, alle dazugehörigen Variablen
-      in <command>$prefix_module_vars</command> entfernen und in der
-      <filename>$prefix_modules</filename> das Modul löschen.</para>
     </section>
 
     <section>

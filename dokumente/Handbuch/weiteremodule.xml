@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="weiteremodule" lang="de-DE" status="draft">
   <!-- $Id$-->
 
   <chapterinfo>
@@ -13,7 +12,7 @@
 
   <title>Weitere Module</title>
 
-  <section>
+  <section id="downloads">
     <title>Downloads</title>
 
     <para>In diesem Administrationsbereich werden die Downloads in die
@@ -262,7 +261,7 @@
     'Speichern' klicken, um die Änderungen zu speichern.</para>
   </section>
 
-  <section>
+  <section id="weblinks">
     <title>Web Links</title>
 
     <para>Um die Links besser zu gliedern, können Kategorien und
@@ -346,7 +345,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="faq">
     <title>FAQ</title>
 
     <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
@@ -412,7 +411,7 @@
     Kategorie sehen können, dann wählt man einfach 'alle'.</para>
   </section>
 
-  <section>
+  <section id="autolinks">
     <title>Autolinks</title>
 
     <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
@@ -531,7 +530,7 @@
     </important>
   </section>
 
-  <section>
+  <section id="ephemeridis">
     <title>Ephemeriden</title>
 
     <para>Tja, ein nicht ganz einfach zu übersetzendes Wort. Ephemeriden sind
@@ -555,7 +554,7 @@
     "Core/Ephemerids" angezeigt.</para>
   </section>
 
-  <section>
+  <section id="quotes">
     <title>Zitate</title>
 
     <para>Im Modul Zitate können Zitate eingetragen werden, die dann zufällig

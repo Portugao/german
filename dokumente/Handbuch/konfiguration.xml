@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="grundkonfiguration" lang="de_DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -14,7 +16,7 @@
   Konfiguration der Seite. Typischerweise wird diese einmal angepasst und dann
   nicht so schnell wieder angefasst...</para>
 
-  <section>
+  <section id="settings">
     <title>Einstellungen</title>
 
     <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw.) werden
@@ -408,7 +410,7 @@
     </screenshot>
   </section>
 
-  <section>
+  <section id="language">
     <title>Sprachkonfiguration</title>
 
     <para>PostNuke ist von Hause aus in der Lage, mehrsprachig zu
@@ -465,7 +467,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="mailer">
     <title>Mailer</title>
 
     <para>Normalerweise verlässt sich PostNuke beim versenden von Mails
@@ -647,8 +649,7 @@
     </important>
   </section>
 
-  <section id="wysiwyg" lang="de-DE" revision="$Revision$"
-           status="draft">
+  <section id="wysiwyg">
     <title>TypeTool &mdash; der grafische Editor</title>
 
     <para>Man kann in PostNuke einen graphischen Editor systemweit aktivieren
@@ -1165,7 +1166,7 @@
     <markup>&lt;P&gt;</markup>-Tag.</para>
   </section>
 
-  <section>
+  <section id="adminmessages">
     <title>Admin Messages</title>
 
     <para>Die Admin Messages sind Meldungen, die im zugehörigen Block

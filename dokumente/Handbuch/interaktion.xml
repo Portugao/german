@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="interaktion" lang="de_DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -10,7 +12,7 @@
 
   <title>Interaktion mit dem Besucher: Umfragen, Foren usw.</title>
 
-  <section>
+  <section id="reviews">
     <title>Reviews (Bewertungen)</title>
 
     <para>PostNuke erlaubt es, Bewertungen auf der Site zu haben. Mit diesem
@@ -46,8 +48,8 @@
     man die Bearbeitung des Reviews abbrechen will.</para>
   </section>
 
-  <section>
-    <title>Umfragen</title>
+  <section id="polls">
+    <title>Umfragen (Polls)</title>
 
     <para>In diesem Modul kann man ganz einfach Umfragen erstellen, bestehende
     Umfragen löschen oder ändern.</para>
@@ -100,7 +102,7 @@
     abstimmen. Ältere Umfragen stehen über den Link zur Verfügung.</para>
   </section>
 
-  <section>
+  <section id="pnESP">
     <title>pnESP</title>
 
     <para>Das eingebaute <ulink
@@ -197,7 +199,7 @@
     Verfügung.</para>
   </section>
 
-  <section>
+  <section id="pnforum">
     <title>pnForum (phpBB_14)</title>
 
     <para>Das pnForum ist aus phpBB 1.4 hervorgegangen - diese Wurzeln sind
@@ -225,7 +227,7 @@
     empfiehlt das Team PostNuke pnForum. Wer also eine neue Site einrichtet,
     sollte gleich zu pnForum greifen.</para>
 
-    <section>
+    <section id="pnforum.permissions">
       <title>Zugriffsrechte: phpBB_14</title>
 
       <para>Bei den Zugriffsberechtigungen im Administrationsbereich kann man
@@ -344,7 +346,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="formicula">
     <title>Formicula (Kontaktformular)</title>
 
     <para>Formicula erlaubt das flexible Erstellen von Kontaktformularen aller
@@ -355,7 +357,7 @@
     url="http://snowbankih.tzo.com">http://snowbankih.tzo.com</ulink>.</para>
   </section>
 
-  <section>
+  <section id="pntresmailer">
     <title>pnTresMailer (Newsletter-Versand)</title>
 
     <para>Als einziges PostNuke Newsletter-Module in aktiver Entwicklung muss

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="ueberpostnuke" lang="de-DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Was ist PostNuke?</title>
+  <title>Über PostNuke</title>
 
-  <section>
+  <section id="wasistpostnuke">
     <title>Was ist PostNuke?</title>
 
     <para>PostNuke ist ein Content Management System (<acronym>CMS</acronym>).
@@ -204,8 +205,8 @@
     jeglicher Größenordnung dar.</para>
   </section>
 
-  <section>
-    <title>Open Source / Open Development</title>
+  <section id="opensource">
+    <title>Open Source und Open Development</title>
 
     <para>PostNuke ist ein frei verfügbares System, veröffentlicht unter der
     GNU General Public License (GPL). Es darf von jedem kostenfrei eingesetzt

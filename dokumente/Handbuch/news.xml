@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="newsverwaltung" lang="de-DE" status="draft">
   <!-- $Id$-->
 
   <chapterinfo>
@@ -19,7 +18,7 @@
   <emphasis>Story</emphasis> bezeichnet &mdash; gemeint ist aber stets das
   Gleiche!</para>
 
-  <section>
+  <section id="topics">
     <title>Topics</title>
 
     <para>Themenbereiche helfen, die Beiträge nach Themen zu ordnen.</para>
@@ -64,7 +63,7 @@
     gearbeitet...</para>
   </section>
 
-  <section>
+  <section id="beitraghinzufuegen">
     <title>Beitrag hinzufügen</title>
 
     <para>Der Bereich Beiträge ist eigentlich sehr intuitiv bedienbar. Es
@@ -292,7 +291,7 @@
     </procedure>
   </section>
 
-  <section>
+  <section id="submitnews">
     <title>Submit News</title>
 
     <para>'Submit News' ist eine weitere Möglichkeit, Beiträge einzugeben. Der
@@ -306,7 +305,7 @@
     welchem Text auf neueingegangene Beiträge aufmerksam gemacht wird.</para>
   </section>
 
-  <section>
+  <section id="xmlrpc">
     <title>XMLRPC - PostNuke ferngesteuert</title>
 
     <para>Wer keine Lust hat, seine Artikel auf der Site in HTML-Form-Feldern
@@ -428,7 +427,7 @@
     </variablelist>
   </section>
 
-  <section>
+  <section id="kommentare">
     <title>Kommentare</title>
 
     <para>Kommentare erlauben den Usern, mit Ihrer Website zu interagieren.
@@ -474,26 +473,26 @@
     wird auch von vielen anderen Modulen benutzt.</para>
   </section>
 
-  <section>
+  <section id="mewsbloecke">
     <title>Blöcke für die Nachrichtenverwaltung</title>
 
     <para>Rund um die News gibt es eine Reihe an Blöcken, die die jeweiligen
     Überschriften nach verschiedenen Kategorien anzeigen.</para>
 
-    <section>
+    <section id="storytitlesblock">
       <title>Core/Story Titles</title>
 
       <para>Es werden die Überschriften der Beiträge angezeigt. Dabei hat man
       viele Möglichkeiten, die Beiträge zu filtern</para>
     </section>
 
-    <section>
+    <section id="bigstoryblock">
       <title>Core/Today's Big Story</title>
 
       <para>Der heute am häufigsten gelesene Beitrag</para>
     </section>
 
-    <section>
+    <section id="categoriesblock">
       <title>Core/Categories Menü</title>
 
       <para>Dieser Block bietet eine Navigation, um über die angelegten
@@ -503,7 +502,7 @@
       Außerdem wird das Datum des aktuellsten Artikels angegeben.</para>
     </section>
 
-    <section>
+    <section id="topicsblock">
       <title>Core/Topics Menü</title>
 
       <para>Eine Navigation, um über verschiedene Topics zu navigieren. Es
@@ -511,7 +510,7 @@
       das Datum des aktuellsten Artikels angegeben.</para>
     </section>
 
-    <section>
+    <section id="pastarticlesblock">
       <title>Core/Past Articles</title>
 
       <para>Dieser Block bietet einen Direktzugriff auf alte Beiträge der
@@ -526,10 +525,10 @@
     </section>
   </section>
 
-  <section>
+  <section id="news.permissions">
     <title>Zugriffsrechte</title>
 
-    <section>
+    <section id="news.permissions.stories">
       <title>Stories</title>
 
       <para>Für den Bereich 'News' ist in erster Linie 'Stories::Story'
@@ -586,7 +585,7 @@
       </itemizedlist>
     </section>
 
-    <section>
+    <section id="news.permissions.topics">
       <title>Topics</title>
 
       <para>Für den Bereich 'Topics' ist in erster Linie 'Topics::Topic'
@@ -614,7 +613,7 @@
     </section>
   </section>
 
-  <section>
+  <section id="rss">
     <title>Externe News einbinden: Der "RSS Newsfeed"-Block</title>
 
     <para>Manche Seiten bieten Fremdinhalte im RSS Format an. Diese Inhalte
@@ -697,8 +696,8 @@
       PostNuke .8 wird ein überarbeitetes RSS-Modul auf Basis von <ulink
       url="http://magpierss.sourceforge.net/">MagpieRSS</ulink> beinhalten. Um
       bereits jetzt den aktuellen Standard RSS 2.0 verwenden zu können, kann
-      man einen PHP-Block mit einem entsprechenden PHP-Skript verwenden.
-      </para>
+      man einen PHP-Block mit einem entsprechenden PHP-Skript
+      verwenden.</para>
     </tip>
   </section>
 </chapter>

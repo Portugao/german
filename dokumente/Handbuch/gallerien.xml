@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="galerien" lang="de_DE" status="draft">
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
     <date>$Date$</date>
   </chapterinfo>
 
+  <!-- $Id$ -->
+
   <title>Galerien</title>
 
-  <section>
+  <section id="photoshare">
     <title>Photoshare</title>
 
     <para>Aus der Not geboren, auch im safe_mode eine Galerie mit PostNuke

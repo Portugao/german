@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE part PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<part>
+<part id="module" lang="de_DE" status="draft">
+  <!-- $Id$-->
+
   <title>Module für verschiedene Einsatzzwecke</title>
 
   <xi:include href="news.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="statistik" lang="de-DE" status="draft">
   <!-- $Id$-->
 
   <chapterinfo>
@@ -13,7 +12,7 @@
 
   <title>Statistische Informationen: Was den Webmaster interessiert</title>
 
-  <section>
+  <section id="stats">
     <title>Statistik</title>
 
     <para>Das Statistik-Modul informiert über die Anzahl der Zugriffe.</para>
@@ -46,7 +45,7 @@
     SQL-Skript.</para>
   </section>
 
-  <section>
+  <section id="referer">
     <title>HTTP-Referer</title>
 
     <para>Wenn man diese Liste aktiviert, wird einem angezeigt, von wo aus die
@@ -72,7 +71,7 @@
     anzeigen...</para>
   </section>
 
-  <section>
+  <section id="statistics">
     <title>Das "Statistics"-Modul von Craig R. Saunders</title>
 
     <para>Von Craig R. Saunders (ColdRolledSteel) satmmt das

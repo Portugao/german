@@ -54,7 +54,7 @@
   BESCHRIEBENEN RECHTE UNTER DER VORAUSSETZUNGEIN, DASS SIE SICH MIT DIESEN
   VERTRAGSBEDINGUNGEN EINVERSTANDEN ERKLÄREN.</para>
 
-  <section>
+  <section id="ccpl.definitionen">
     <title>Definitionen</title>
 
     <orderedlist>
@@ -132,7 +132,7 @@
     </orderedlist>
   </section>
 
-  <section>
+  <section id="ccpl.urheberrecht">
     <title>Schranken des Urheberrechts</title>
 
     <para>Diese Lizenz lässt sämtliche Befugnisse unberührt, die sich aus den
@@ -141,7 +141,7 @@
     ergeben.</para>
   </section>
 
-  <section>
+  <section id="ccpl.lizenzierung">
     <title>Lizenzierung</title>
 
     <para>Unter den Bedingungen dieses Lizenzvertrages räumt Ihnen der
@@ -180,7 +180,7 @@
     umfasst.</para>
   </section>
 
-  <section>
+  <section id="ccpl.beschraenkungen">
     <title>Beschränkungen</title>
 
     <para>Die Einräumung der Nutzungsrechte gemäß Ziffer 3 erfolgt
@@ -264,7 +264,7 @@
     </orderedlist>
   </section>
 
-  <section>
+  <section id="ccpl.gewaehrleistung">
     <title>Gewährleistung</title>
 
     <para>Sofern dies von den Vertragsparteien nicht anderweitig schriftlich
@@ -278,14 +278,14 @@
     Vorschriften.</para>
   </section>
 
-  <section>
+  <section id="ccpl.haftung">
     <title>Haftung</title>
 
     <para>Über die in Ziffer 5 genannte Gewährleistung hinaus haftet Ihnen der
     Lizenzgeber nur für Vorsatz und grobe Fahrlässigkeit.</para>
   </section>
 
-  <section>
+  <section id="ccpl.ende">
     <title>Vertragsende</title>
 
     <orderedlist>
@@ -314,7 +314,7 @@
     </orderedlist>
   </section>
 
-  <section>
+  <section id="ccpl.schlussbestimmungen">
     <title>Schlussbestimmungen</title>
 
     <orderedlist>

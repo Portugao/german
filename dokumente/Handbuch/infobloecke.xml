@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="menues" lang="de_DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -10,7 +12,7 @@
 
   <title>Menüs und Infoblöcke</title>
 
-  <section>
+  <section id="genericmenu">
     <title>Core/Generic menu</title>
 
     <para>Dies ist der wesentliche Navigationsblock.</para>
@@ -133,7 +135,7 @@
       </varlistentry>
     </variablelist>
 
-    <section>
+    <section id="genericmenupermissions">
       <title>Zugriffsrechte für das Hauptmenü</title>
 
       <para>Ein gutes Beispiel für die Anwendung des PostNuke
@@ -241,13 +243,13 @@
     </section>
   </section>
 
-  <section>
+  <section id="weiterebloecke">
     <title>Weitere Blöcke</title>
 
     <para>Mit den hier aufgezählten Blöcken lassen sich Menüs, Informationen
     usw. anzeigen.</para>
 
-    <section>
+    <section id="buttonlinkblock">
       <title>Core/Button Link Block</title>
 
       <para>Mit vorhanden Grafiken kann hier einfach eine Navigation mit
@@ -255,14 +257,14 @@
       88x31 Buttons sammeln.</para>
     </section>
 
-    <section>
+    <section id="plaintextblock">
       <title>Core/Plain Text</title>
 
-      <para>Eine einfache Möglichkeit, Text in einem Block darzustellen.
-      </para>
+      <para>Eine einfache Möglichkeit, Text in einem Block
+      darzustellen.</para>
     </section>
 
-    <section>
+    <section id="htmlblock">
       <title>Core/HTML</title>
 
       <para>Dieser Block lädt als Inhalt die angegebenen HTML-Tags.</para>
@@ -279,14 +281,14 @@
       </tip>
     </section>
 
-    <section>
+    <section id="fileincludeblock">
       <title>Core/Simple File Include</title>
 
       <para>Dieser Block lädt als Inhalt eine vorgebene Datei (z.B.
       PHP)</para>
     </section>
 
-    <section>
+    <section id="phpscriptblock">
       <title>Core/PHP Script</title>
 
       <para>Dieser Block lädt als Inhalt eine vorgebene PHP-Datei.</para>
@@ -310,7 +312,7 @@
       </important>
     </section>
 
-    <section>
+    <section id="searchblock">
       <title>Core/Search Box</title>
 
       <para>Ein Block der eine Suchfunktion anbietet. Bei aktiviertem Block

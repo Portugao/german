@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$ $Date$"
-         status="draft">
+<chapter id="statischeseiten" lang="de-DE" status="draft">
   <!-- $Id$-->
 
   <chapterinfo>
@@ -21,7 +20,7 @@
   Modulen von dritter Seite, die weitaus komfortablere Möglichkeiten
   bieten.</para>
 
-  <section>
+  <section id="sections">
     <title>Sektionen</title>
 
     <para>Die Sektionen sind eine Art 'Themenschwerpunkte'. Sie stellen
@@ -40,7 +39,7 @@
     werden.</para>
   </section>
 
-  <section>
+  <section id="paged">
     <title>PagEd</title>
 
     <para>Mit PagEd lassen sich grosse Mengen News oder News-ähnlicher
@@ -56,7 +55,7 @@
     url="http://canvas.anubix.net">http://canvas.anubix.net</ulink>.</para>
   </section>
 
-  <section>
+  <section id="xexpress">
     <title>XExpress (vormals Content Express)</title>
 
     <para>Vorbemerkung: Diese Anleitung geht von einer korrekt installieren
@@ -748,7 +747,7 @@
     hatte, sollte man den Linktext eingeben. Klick auf 'Okay' - Fertig.</para>
   </section>
 
-  <section>
+  <section id="pagesetter">
     <title>Pagesetter</title>
 
     <para>Für die, denen die Modulprogrammierung eine Nummer zu hoch ist, die
@@ -895,7 +894,7 @@
     url="http://www.elfisk.dk/">http://www.elfisk.dk/</ulink>.</para>
   </section>
 
-  <section>
+  <section id="externeapplikationen">
     <title>Bestehende Seiten und andere Applikationen einbinden</title>
 
     <para>Wenn eine Homepage bereits seit einiger Zeit läuft, so haben sich

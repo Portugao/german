@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter lang="de-DE" revision="$Revision$" status="draft">
+<chapter id="ersteschritte" lang="de-DE" status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
@@ -19,7 +19,7 @@
   <para>Die Installation ist erfolgreich verlaufen und man stehen vor der
   fertig funktionierenden Seite. Klasse!</para>
 
-  <section>
+  <section id="einloggen">
     <title>Einloggen</title>
 
     <para>Jetzt ist man endlich soweit, sich das erste Mal auf der eigenen
@@ -106,7 +106,7 @@
       </mediaobject>
     </screenshot>
 
-    <section>
+    <section id="willkommensnachricht">
       <title>Willkommensnachricht löschen</title>
 
       <para>Jetzt steht uns noch die Willkommensnachricht im Weg. Diese ist
@@ -135,7 +135,7 @@
       </screenshot>
     </section>
 
-    <section>
+    <section id="eigenewillkommensnachricht">
       <title>Eigene Willkommens-Nachricht</title>
 
       <para>Weil wir gerade dabei sind, hier kann man gleich noch einen

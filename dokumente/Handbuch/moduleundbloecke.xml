@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter>
+<chapter id="moduleundbloecke" lang="de_DE" status="draft">
+  <!-- $Id$ -->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -39,7 +41,7 @@
     </mediaobject>
   </screenshot>
 
-  <section>
+  <section id="moduladministration">
     <title>Moduladministration</title>
 
     <para>Da für die optimale Konfiguration von PostNuke ein Grundverständnis
@@ -241,10 +243,23 @@
     <para>Damit die Upgrade-Funktionalität auch wirklich verlässlich
     funktioniert sollte auf jeden Fall mindestens die Version .726 installiert
     sein. Mit älteren Versionen kann es unter Umständen Probleme geben.</para>
+
+    <bridgehead>Was macht man, wenn die PostNuke Installation durch die
+    Installation eines neuen Blocks/Modules so gestört wird, dass man nicht
+    mehr in das Block- oder Module-Administratormenü gelangt?</bridgehead>
+
+    <para>Erstmal kann man die Adminsitration über <systemitem
+    class="systemname">http://www.example.com/admin.php</systemitem>
+    erreichen. Sollte auch das nicht mehr gehen, kann evtl. das Swiss Army
+    Knife Tool helfen. Das ist vor allem bei vermurksten Themes der Fall. Als
+    dritte Möglichkeit kann man natürlich auch manuell die DB bearbeiten: Alle
+    Tables des Moduls löschen, alle dazugehörigen Variablen in
+    <command>$prefix_module_vars</command> entfernen und in der
+    <filename>$prefix_modules</filename> das Modul löschen.</para>
   </section>
 
-  <section>
-    <title>Blöcke</title>
+  <section id="Blockadministration">
+    <title>Blockadministration</title>
 
     <para>Über den Punkt <guimenuitem>Blöcke</guimenuitem> in der
     Administration werden die Blöcke verwaltet. Zunächst werden die bereits
