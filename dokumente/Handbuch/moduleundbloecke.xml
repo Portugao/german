@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Module und Blöcke</title>
 
   <para>PostNuke kann in seinem Funktionsumfang durch sogennante Module
@@ -9,7 +15,8 @@
   einige Module integriert. Der Administrator kann entscheiden, welche er auf
   seiner Seite einsetzen, deaktiveren oder auch ggfs. löschen möchte.
   Weiterhin gibt es zahlreiche Downloadquellen für zusätzliche Module (z.B.
-  <ulink url="http://mods.postnuke.com/index.php">mods.PostNuke.com</ulink>
+  <ulink
+  url="http://mods.postnuke.com/index.php">http://mods.postnuke.com</ulink>
   oder unsere <ulink
   url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulsammlung</ulink>).</para>
 
@@ -111,8 +118,8 @@
               <term>Name</term>
 
               <listitem>
-                <para>Der Name wird für den Menüblock benutzt, wenn 'Module
-                anzeigen' aktiviert ist.</para>
+                <para>Der Name wird für den Menüblock benutzt, wenn "Module
+                anzeigen" aktiviert ist.</para>
               </listitem>
             </varlistentry>
 
@@ -129,7 +136,7 @@
               <term>Aktiviere...</term>
 
               <listitem>
-                <para>Hiermit können die im System vorhandenen 'Hooks'
+                <para>Hiermit können die im System vorhandenen "Hooks"
                 modulspezifisch aktiviert werden. Vereinfacht gesagt, sind
                 Hooks eine Möglichkeit, die Ausgabe eines Moduls zu verändern.
                 Die Autolinks sind z.B. als Hook realisiert.</para>
@@ -166,9 +173,9 @@
         <listitem>
           <para>entfernt ein Modul vollständig, d.h. die entsprechenden
           Datenbanktabellen und Modulvariablen werden gelöscht. Das
-          entsprechende Modulverzeichnis in /modules bleibt allerdings
-          bestehen. Vor dem entfernen muss ein Modul deaktiviert
-          werden.</para>
+          entsprechende Modulverzeichnis in <filename
+          class="directory">/modules</filename> bleibt allerdings bestehen.
+          Vor dem entfernen muss ein Modul deaktiviert werden.</para>
 
           <caution>
             <para>Es gibt keine Sicherheitsabfrage beim Entfernen!</para>
@@ -190,7 +197,7 @@
       </step>
 
       <step>
-        <para>Dokumentation des Moduls lesen. - evtl. verlangt es nach
+        <para>Dokumentation des Moduls lesen: Eventuell verlangt es nach
         geändertem Vorgehen.</para>
       </step>
 
@@ -221,7 +228,8 @@
       </step>
 
       <step>
-        <para>und danach noch mal 'aktivieren' - Fertig</para>
+        <para>und danach noch mal
+        <guimenuitem>aktivieren</guimenuitem>.</para>
       </step>
 
       <step>
@@ -361,7 +369,8 @@
     <bridgehead>Wie kann ich bei meinem Modul dafür sorgen, daß die rechten
     Blöcke angezeigt werden?</bridgehead>
 
-    <para>Bei den Modulen kann man durch setzen von $index = 1; festlegen, ob
-    die rechten Blöcke angezeigt werden sollen oder nicht.</para>
+    <para>Bei den Modulen kann man durch Setzen von <command>$index =
+    1;</command> festlegen, ob die rechten Blöcke angezeigt werden sollen oder
+    nicht.</para>
   </section>
 </chapter>
