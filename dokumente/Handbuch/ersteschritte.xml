@@ -16,13 +16,13 @@
   url="http://www.andylanger.de">Andy Langer</ulink> zur Verfügung
   gestellt.</para>
 
-  <para>Die Installation ist erfolgreich verlaufen und wir stehen vor der
+  <para>Die Installation ist erfolgreich verlaufen und man stehen vor der
   fertig funktionierenden Seite. Klasse!</para>
 
   <section>
     <title>Einloggen</title>
 
-    <para>Jetzt sind wir endlich soweit, uns das erste Mal auf der eigenen
+    <para>Jetzt ist man endlich soweit, sich das erste Mal auf der eigenen
     Seite einzuloggen. Das geht auf der rechten Seite mit dem vorher
     festgelegten Nutzernamen und Passwort für den Administrator.</para>
 
@@ -72,20 +72,18 @@
 
     <bridgehead>Abmeldung</bridgehead>
 
-    <para>Fangen wir zur Abwechslung mal von unten an. Denn der ist eigentlich
-    selbsterklärend und am schnellsten erklärt. Damit meldet man sich von der
-    Seite wieder ab.</para>
+    <para>Damit meldet man sich von der Seite wieder ab.</para>
 
     <bridgehead>Einstellungen</bridgehead>
 
-    <para>Darüber kann man einige prsönliche Dinge einstellen, die das
+    <para>Darüber kann man einige persönliche Dinge einstellen, die das
     Aussehen der Seite betreffen. Außerdem kann man ein eigenes Profil
     anlegen, das andere Nutzer der Seite dann aufrufen können. Alles, was man
     hier einstellt, betrifft nur den aktuellen Nutzernamen, haben also für
     alle anderen Anwender keine Auswirkungen.</para>
 
-    <para>Ich denke, am einfachsten ist es, wenn man sich alle Punkte mal
-    durchschaut. Sollte etwas unklar sein, läßt man am besten die
+    <para>Am einfachsten ist es, wenn man sich alle Punkte einmal durchschaut.
+    Sollte etwas unklar sein, läßt man am besten die
     Standardeinstellung.</para>
 
     <bridgehead>Administration</bridgehead>
@@ -115,12 +113,12 @@
       eine so genannte <emphasis role="bold">Admin Message</emphasis>. Wie
       bereits oben erwähnt gibt es verschiedene Möglichkeiten, Text auf die
       Seite zu bekommen, unter anderem eben diese. Um diesen Text loszuwerden,
-      gehst Du auf <guimenu>Administration</guimenu>, dann auf
+      geht man auf <guimenu>Administration</guimenu>, dann auf
       <guimenuitem>Admin Messages</guimenuitem>. Hier kommt jetzt eine Liste
       mit allen aktiven Nachrichten des Administrators und darunter die
       Möglichkeit, eigene zu schreiben.</para>
 
-      <para>Jetzt gehst Du bei der entsprechenden Zeile auf
+      <para>Jetzt geht man bei der entsprechenden Zeile auf
       <guibutton>löschen</guibutton>, bestätigst das noch und weg ist
       sie.</para>
 
@@ -140,9 +138,9 @@
     <section>
       <title>Eigene Willkommens-Nachricht</title>
 
-      <para>Weil wir gerade dabei sind, kannst Du gleich noch einen eigenen
-      Willkommens-Text schreiben. Dazu gibst Du im Formular unten einen Titel
-      und eine Nachricht ein, z. B.</para>
+      <para>Weil wir gerade dabei sind, hier kann man gleich noch einen
+      eigenen Willkommens-Text schreiben. Dazu gibt man im Formular unten
+      einen Titel und eine Nachricht ein, z. B.</para>
 
       <variablelist>
         <varlistentry>
