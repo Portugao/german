@@ -10,7 +10,9 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Module für statische Seiten</title>
+  <title>Module für statische Seiten<indexterm>
+      <primary>Statische Seiten</primary>
+    </indexterm></title>
 
   <para>Bei PostNuke versteht man unter "statischen Seiten" Seiten, die
   &ndash; im Gegensatz zu den News &ndash; keiner Tagesaktualität unterworfen
@@ -21,7 +23,13 @@
   bieten.</para>
 
   <section id="sections">
-    <title>Sektionen</title>
+    <title>Sektionen<indexterm>
+        <primary>Sektionen</primary>
+      </indexterm><indexterm>
+        <primary>Sections</primary>
+
+        <see>Sektionen</see>
+      </indexterm></title>
 
     <para>Die Sektionen sind eine Art 'Themenschwerpunkte'. Sie stellen
     größere Artikel dar, die einem Schwerpunktbereich zugeteilt sind.</para>
@@ -40,7 +48,9 @@
   </section>
 
   <section id="paged">
-    <title>PagEd</title>
+    <title>PagEd<indexterm>
+        <primary>PagEd</primary>
+      </indexterm></title>
 
     <para>Mit PagEd lassen sich grosse Mengen News oder News-ähnlicher
     Beiträge bequem verwalten. Die vorgegebenen Eingabemasken nehmen den
@@ -56,7 +66,13 @@
   </section>
 
   <section id="xexpress">
-    <title>XExpress (vormals Content Express)</title>
+    <title>XExpress (vormals Content Express)<indexterm>
+        <primary>Xexpress</primary>
+      </indexterm><indexterm>
+        <primary>Content Express</primary>
+
+        <see>Xexpress</see>
+      </indexterm></title>
 
     <para>Vorbemerkung: Diese Anleitung geht von einer korrekt installieren
     Version von Content Express mit der deutschen Sprachdatei aus. Die zur
@@ -109,7 +125,11 @@
     einzelnd anzusteuern. Das verkompliziert die Administration aber in den
     meisten Fällen unnötig.</para>
 
-    <bridgehead>Block einrichten</bridgehead>
+    <bridgehead>Block einrichten<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Block</secondary>
+      </indexterm></bridgehead>
 
     <para>Da die Möglichkeiten mit dem Menu-Express-Block wesentlich
     ausgereifter sind, als mit dem normalen Menüblock, ist als erstes das
@@ -230,7 +250,11 @@
     <para>Der <emphasis role="bold">Linkname</emphasis> ist einfach das, was
     in dem Block steht (siehe Bsp. oben).</para>
 
-    <bridgehead>Modul Konfigurieren</bridgehead>
+    <bridgehead>Modul Konfigurieren<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Konfiguration</secondary>
+      </indexterm></bridgehead>
 
     <para>Nächster Schritt ist die Konfiguration von Content Express.
     Entsprechend der Aufteilung in 3 Untermodule gibt es hier auch 3
@@ -442,7 +466,11 @@
       </varlistentry>
     </variablelist>
 
-    <bridgehead>Beitrag veröffentlichen</bridgehead>
+    <bridgehead>Beitrag veröffentlichen<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Beiträge veröffentlichen</secondary>
+      </indexterm></bridgehead>
 
     <para>Um nun einen ersten Beitrag zu veröffentlichen, erscheint bei Klick
     auf 'Artikel anzeigen' ein Webformular, mit dem der Beitrag editiert
@@ -561,7 +589,11 @@
     den Beitrag ändern, über 'löschen' löschen - die anderen Funktionen werden
     später erklärt.</para>
 
-    <bridgehead>Menüpunkt einrichten</bridgehead>
+    <bridgehead>Menüpunkt einrichten<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Menü</secondary>
+      </indexterm></bridgehead>
 
     <para>Der gerade eingegebene Beitrag ist für den normalen User noch nicht
     zu erreichen, da es keinen Link zu ihm gibt. Diesen legt man unter
@@ -706,7 +738,11 @@
     <para><emphasis role="bold">Fertig:</emphasis> Der erste Beitrag wurde
     erstellt und im Menüblock verlinkt.</para>
 
-    <bridgehead>Bild einbinden</bridgehead>
+    <bridgehead>Bild einbinden<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Bilder einbinden</secondary>
+      </indexterm></bridgehead>
 
     <para>Um ein Bild in einen Beitrag einzubinden, findet man unter <emphasis
     role="bold">Media Manager</emphasis> den Media Upload. Klickt man hier auf
@@ -734,7 +770,11 @@
     werden. Nun kann auch der Beitrag wieder gepostet werden und das Bild
     erscheint fortan im Text.</para>
 
-    <bridgehead>Artikel untereinander Verknüpfen</bridgehead>
+    <bridgehead>Artikel untereinander Verknüpfen<indexterm>
+        <primary>Xexpress</primary>
+
+        <secondary>Artikel verlinken</secondary>
+      </indexterm></bridgehead>
 
     <para>Einen Link zu einem anderen Artikel in einen Text einzufügen ist mit
     Content Express sehr einfach gelöst.</para>
@@ -748,7 +788,9 @@
   </section>
 
   <section id="pagesetter">
-    <title>Pagesetter</title>
+    <title>Pagesetter<indexterm>
+        <primary>Pagesetter</primary>
+      </indexterm></title>
 
     <para>Für die, denen die Modulprogrammierung eine Nummer zu hoch ist, die
     aber trotzdem gerne ein eigenes kleines Modul basteln möchten, mit dem man
@@ -895,7 +937,11 @@
   </section>
 
   <section id="externeapplikationen">
-    <title>Bestehende Seiten und andere Applikationen einbinden</title>
+    <title>Bestehende Seiten und andere Applikationen einbinden<indexterm>
+        <primary>HTML-Seiten</primary>
+      </indexterm><indexterm>
+        <primary>Applikationen</primary>
+      </indexterm></title>
 
     <para>Wenn eine Homepage bereits seit einiger Zeit läuft, so haben sich
     sicherlich bereits etliche Dokumente etc. angesammelt, die bei einer
@@ -911,7 +957,9 @@
     es nicht aus, sie im PostNuke-Design anzuzeigen. Vielmehr müssen auch z.B.
     die Benutzerverwaltung, die Suchfunktionen usw. integriert werden.</para>
 
-    <bridgehead>Static_Docs</bridgehead>
+    <bridgehead>Static_Docs<indexterm>
+        <primary>Static_Docs</primary>
+      </indexterm></bridgehead>
 
     <para>Von Simon Wunderlin stammt ein hervorragendes Modul, mit dem man
     alle Arten von Dokumenten einbinden kann. <ulink
@@ -929,13 +977,17 @@
     PHP- und cgi-Skripten ist vorhanden. Hier muß aber gegebenenfalls das
     jeweilige Skript entsprechend angepasst werden.</para>
 
-    <bridgehead>Framebrowser</bridgehead>
+    <bridgehead>Framebrowser<indexterm>
+        <primary>Framebrowser</primary>
+      </indexterm></bridgehead>
 
     <para>Framebrowser war eine Möglichkeit, Seiten in einem IFrame anzeigen
     zu lassen. Framebrowser wird nicht mehr weiterentwickelt, die Nachfolge
     hat PostWrap angetreten.</para>
 
-    <bridgehead>PostWrap</bridgehead>
+    <bridgehead>PostWrap<indexterm>
+        <primary>PostWrap</primary>
+      </indexterm></bridgehead>
 
     <para>Mit <ulink
     url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-59.html">Postwrap</ulink>
@@ -946,7 +998,9 @@
     sondern eben auch die Ausgabe von anderen Skripten - gleich, ob es sich
     dabei um PHP-Skripte oder CGIs handelt.</para>
 
-    <bridgehead>blank.php</bridgehead>
+    <bridgehead><filename>blank.php</filename><indexterm>
+        <primary>blank.php</primary>
+      </indexterm></bridgehead>
 
     <para>Dies ist die Methode für 'Selbermacher'. Folgendes Skript zeigt eine
     Seite im PostNuke-Design an:</para>
@@ -980,12 +1034,14 @@ if(function_exists('session_write_close')){
 }
 ?&gt;</programlisting>
 
-    <para>Diese Datei legt man z.B. als <filename>foobar.php</filename> in das
+    <para>Diese Datei legt man z.B. als <filename>blank.php</filename> in das
     Stammverzeichnis von PostNuke. Ein Aufruf von
-    <systemitem>http://url.meiner.seite/foobar.php</systemitem> genügt dann,
-    um die Seite aufzurufen.</para>
+    <systemitem>http://www.example.com/blank.php</systemitem> genügt dann, um
+    die Seite aufzurufen.</para>
 
-    <bridgehead>PostNuke_frame</bridgehead>
+    <bridgehead>PostNuke_frame<indexterm>
+        <primary>PostNuke_frame</primary>
+      </indexterm></bridgehead>
 
     <para>Eine Weiterentwicklung der blank.php ist <ulink
     url="http://sf.net/projects/lottasophie">PostNuke_frame</ulink>. Mit Hilfe

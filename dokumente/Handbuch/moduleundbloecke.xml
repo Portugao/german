@@ -10,7 +10,11 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Module und Blöcke</title>
+  <title>Module und Blöcke<indexterm>
+      <primary>Module</primary>
+    </indexterm><indexterm>
+      <primary>Blöcke</primary>
+    </indexterm></title>
 
   <para>PostNuke kann in seinem Funktionsumfang durch sogennante Module
   erweitert werden. In der Standardauslieferung von PostNuke sind bereits
@@ -42,7 +46,15 @@
   </screenshot>
 
   <section id="moduladministration">
-    <title>Moduladministration</title>
+    <title>Moduladministration<indexterm>
+        <primary>Module</primary>
+
+        <secondary>Administration</secondary>
+      </indexterm><indexterm>
+        <primary>Module</primary>
+
+        <secondary>Verwaltung</secondary>
+      </indexterm></title>
 
     <para>Da für die optimale Konfiguration von PostNuke ein Grundverständnis
     über die Funktions- und Arbeitsweise der Module von grosser Bedeutung ist,
@@ -51,7 +63,11 @@
     erklärt werden. Diese Funktionen gelten für alle Module innerhalb von
     PostNuke.</para>
 
-    <bridgehead>Modulinstallation</bridgehead>
+    <bridgehead>Modulinstallation<indexterm>
+        <primary>Module</primary>
+
+        <secondary>Installation</secondary>
+      </indexterm></bridgehead>
 
     <para>Module bestehen normalerweise aus mehreren Dateien (Funktionen,
     Grafiken, Sprachdateien usw.), die zusammen in einem Verzeichnis liegen,
@@ -186,7 +202,11 @@
       </varlistentry>
     </variablelist>
 
-    <bridgehead>Modul Upgrade</bridgehead>
+    <bridgehead>Modul Upgrade<indexterm>
+        <primary>Module</primary>
+
+        <secondary>Upgrade</secondary>
+      </indexterm></bridgehead>
 
     <para>Beim Upgrade von Module sollten einige Schritte beachtet
     werden:</para>
@@ -259,14 +279,22 @@
   </section>
 
   <section id="Blockadministration">
-    <title>Blockadministration</title>
+    <title>Blockadministration<indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Administration</secondary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Verwaltung</secondary>
+      </indexterm></title>
 
     <para>Über den Punkt <guimenuitem>Blöcke</guimenuitem> in der
     Administration werden die Blöcke verwaltet. Zunächst werden die bereits
     bestehenden Blöcke aufgelistet. Zu jedem Block ist angegeben, an welcher
     Stelle er erscheint (d.h. sowohl die 'Rangfolge' als auch in welcher
     'Leiste'), wie er heißt, von welchem Modul er bereitgestellt wird, und ob
-    er aktiv ist. </para>
+    er aktiv ist.</para>
 
     <screenshot>
       <mediaobject>

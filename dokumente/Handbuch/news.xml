@@ -10,7 +10,9 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Die News-Verwaltung in PostNuke</title>
+  <title>Die News-Verwaltung in PostNuke<indexterm>
+      <primary>News</primary>
+    </indexterm></title>
 
   <para>Eine zentrale Funktionalität von PostNuke ist die Verwaltung aktueller
   Informationen. Diese Informationen werden mal als <emphasis>News</emphasis>,
@@ -19,7 +21,11 @@
   Gleiche!</para>
 
   <section id="topics">
-    <title>Topics</title>
+    <title>Topics<indexterm>
+        <primary>Topics</primary>
+      </indexterm><indexterm>
+        <primary>Kategorien</primary>
+      </indexterm></title>
 
     <para>Themenbereiche helfen, die Beiträge nach Themen zu ordnen.</para>
 
@@ -64,7 +70,13 @@
   </section>
 
   <section id="beitraghinzufuegen">
-    <title>Beitrag hinzufügen</title>
+    <title>Beitrag hinzufügen<indexterm>
+        <primary>Beitrag hinzufügen</primary>
+      </indexterm><indexterm>
+        <primary>News</primary>
+
+        <secondary>Beitrag hinzufügen</secondary>
+      </indexterm></title>
 
     <para>Der Bereich Beiträge ist eigentlich sehr intuitiv bedienbar. Es
     handelt sich dabei um die zentrale Newserfassung des Systems. Die hier
@@ -256,7 +268,11 @@
     </tip>
 
     <bridgehead>Wie kann ich beim Schreiben von Artikeln Bilder
-    einbinden?</bridgehead>
+    einbinden?<indexterm>
+        <primary>News</primary>
+
+        <secondary>Bilder einbinden</secondary>
+      </indexterm></bridgehead>
 
     <para>Leider bietet PostNuke von Hause aus keine Möglichkeit, Bilder in
     Artikel einzubinden und diese auch gleich, also beim Schreiben eines
@@ -292,7 +308,13 @@
   </section>
 
   <section id="submitnews">
-    <title>Submit News</title>
+    <title>Submit News<indexterm>
+        <primary>News</primary>
+
+        <secondary>Submit News</secondary>
+      </indexterm><indexterm>
+        <primary>Submit News</primary>
+      </indexterm></title>
 
     <para>'Submit News' ist eine weitere Möglichkeit, Beiträge einzugeben. Der
     Hauptunterschied zur Funktion 'Beitrag hinzufügen' besteht darin, dass
@@ -306,17 +328,25 @@
   </section>
 
   <section id="xmlrpc">
-    <title>XMLRPC - PostNuke ferngesteuert</title>
+    <title>XMLRPC - PostNuke ferngesteuert<indexterm>
+        <primary>News</primary>
+
+        <secondary>XMLRPC</secondary>
+      </indexterm><indexterm>
+        <primary>XMLRPC</primary>
+      </indexterm></title>
 
     <para>Wer keine Lust hat, seine Artikel auf der Site in HTML-Form-Feldern
     zu editieren, kann seit dem Release von PostNuke .722 auch externe
     Clients, wie zum Beispiel <ulink
-    url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-119.html">w.Bloggar</ulink>
-    benutzen. w.Bloggar sieht aus wie ein ganz normaler Window Text-Editor
-    oder ein einfacher HTML-Editor. Es gibt jede Formatierungs-Funktion +
-    Preview, die man brauchen könnte. Dazu gibt es für die älteren Versionen
-    von w.Bloggar einen deutschen Spellchecker - läßt sich also vermuten, daß
-    dieses Feature auch bald für die 3.00 zur Verfügung stehen sollte.</para>
+    url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-119.html">w.Bloggar</ulink><indexterm>
+        <primary>w.bloggar</primary>
+      </indexterm> benutzen. w.Bloggar sieht aus wie ein ganz normaler Window
+    Text-Editor oder ein einfacher HTML-Editor. Es gibt jede
+    Formatierungs-Funktion + Preview, die man brauchen könnte. Dazu gibt es
+    für die älteren Versionen von w.Bloggar einen deutschen Spellchecker -
+    läßt sich also vermuten, daß dieses Feature auch bald für die 3.00 zur
+    Verfügung stehen sollte.</para>
 
     <para>Zu den Einstellungen:</para>
 
@@ -390,7 +420,9 @@
 
     <variablelist>
       <varlistentry>
-        <term>Blog-buddy</term>
+        <term>Blog-buddy<indexterm>
+            <primary>Blog-Buddy</primary>
+          </indexterm></term>
 
         <listitem>
           <para><ulink
@@ -402,7 +434,9 @@
       </varlistentry>
 
       <varlistentry>
-        <term>mozblog</term>
+        <term>mozblog<indexterm>
+            <primary>mozblog</primary>
+          </indexterm></term>
 
         <listitem>
           <para><ulink url="http://mozblog.mozdev.org/">mozblog</ulink> ist
@@ -416,7 +450,9 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Dreamweaver</term>
+        <term>Dreamweaver<indexterm>
+            <primary>Dreamweaver</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Es gibt auch die Möglichkeit Dreamweaver als Client zu
@@ -428,7 +464,13 @@
   </section>
 
   <section id="kommentare">
-    <title>Kommentare</title>
+    <title>Kommentare<indexterm>
+        <primary>News</primary>
+
+        <secondary>Kommentare</secondary>
+      </indexterm><indexterm>
+        <primary>Kommentare</primary>
+      </indexterm></title>
 
     <para>Kommentare erlauben den Usern, mit Ihrer Website zu interagieren.
     Wenn ein User einen Artikel liest zu dem er etwas hinzufügen will oder
@@ -474,26 +516,60 @@
   </section>
 
   <section id="mewsbloecke">
-    <title>Blöcke für die Nachrichtenverwaltung</title>
+    <title>Blöcke für die Nachrichtenverwaltung<indexterm>
+        <primary>News</primary>
+
+        <secondary>Blöcke</secondary>
+      </indexterm></title>
 
     <para>Rund um die News gibt es eine Reihe an Blöcken, die die jeweiligen
     Überschriften nach verschiedenen Kategorien anzeigen.</para>
 
     <section id="storytitlesblock">
-      <title>Core/Story Titles</title>
+      <title>Core/Story Titles<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Story Titles</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Story Titles</secondary>
+        </indexterm></title>
 
       <para>Es werden die Überschriften der Beiträge angezeigt. Dabei hat man
       viele Möglichkeiten, die Beiträge zu filtern</para>
     </section>
 
     <section id="bigstoryblock">
-      <title>Core/Today's Big Story</title>
+      <title>Core/Today's Big Story<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Today's Big Story</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Today's Big Story</secondary>
+        </indexterm></title>
 
       <para>Der heute am häufigsten gelesene Beitrag</para>
     </section>
 
     <section id="categoriesblock">
-      <title>Core/Categories Menü</title>
+      <title>Core/Categories Menü<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Categories Menü</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Categories Menü</secondary>
+        </indexterm></title>
 
       <para>Dieser Block bietet eine Navigation, um über die angelegten
       Kategorien zu navigieren.</para>
@@ -503,7 +579,17 @@
     </section>
 
     <section id="topicsblock">
-      <title>Core/Topics Menü</title>
+      <title>Core/Topics Menü<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Topics Menü</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Topics Menü</secondary>
+        </indexterm></title>
 
       <para>Eine Navigation, um über verschiedene Topics zu navigieren. Es
       werden nur Topics angezeigt, in denen Artikel existieren. Außerdem wird
@@ -511,7 +597,17 @@
     </section>
 
     <section id="pastarticlesblock">
-      <title>Core/Past Articles</title>
+      <title>Core/Past Articles<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Past Articles</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Past Articles</secondary>
+        </indexterm></title>
 
       <para>Dieser Block bietet einen Direktzugriff auf alte Beiträge der
       Seite an. Die Anzahl der Artikel kann über die Blockadministration
@@ -519,17 +615,47 @@
     </section>
 
     <section>
-      <title>Core/Story Related Links</title>
+      <title>Core/Story Related Links<indexterm>
+          <primary>News</primary>
+
+          <secondary>Blöcke</secondary>
+
+          <tertiary>Related Links</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Related Links</secondary>
+        </indexterm></title>
 
       <para>Block für verwandte Links (nur in der Artikelansicht)</para>
     </section>
   </section>
 
   <section id="news.permissions">
-    <title>Zugriffsrechte</title>
+    <title>Zugriffsrechte<indexterm>
+        <primary>News</primary>
+
+        <secondary>Zugriffsrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>News</secondary>
+      </indexterm></title>
 
     <section id="news.permissions.stories">
-      <title>Stories</title>
+      <title>Stories<indexterm>
+          <primary>News</primary>
+
+          <secondary>Zugriffsrechte</secondary>
+
+          <tertiary>Stories</tertiary>
+        </indexterm><indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>News</secondary>
+
+          <tertiary>Stories</tertiary>
+        </indexterm></title>
 
       <para>Für den Bereich 'News' ist in erster Linie 'Stories::Story'
       interessant ('Stories::Category' wird lediglich für die Administration
@@ -586,7 +712,19 @@
     </section>
 
     <section id="news.permissions.topics">
-      <title>Topics</title>
+      <title>Topics<indexterm>
+          <primary>News</primary>
+
+          <secondary>Zugriffsrechte</secondary>
+
+          <tertiary>Topics</tertiary>
+        </indexterm><indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>News</secondary>
+
+          <tertiary>Topics</tertiary>
+        </indexterm></title>
 
       <para>Für den Bereich 'Topics' ist in erster Linie 'Topics::Topic'
       interessant ('Topics::Related' wird lediglich für die Administration der
@@ -614,7 +752,23 @@
   </section>
 
   <section id="rss">
-    <title>Externe News einbinden: Der "RSS Newsfeed"-Block</title>
+    <title>Externe News einbinden: Der "RSS Newsfeed"-Block<indexterm>
+        <primary>News</primary>
+
+        <secondary>RSS</secondary>
+      </indexterm><indexterm>
+        <primary>News</primary>
+
+        <secondary>Blöcke</secondary>
+
+        <tertiary>RSS</tertiary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>RSS</secondary>
+      </indexterm><indexterm>
+        <primary>RSS</primary>
+      </indexterm></title>
 
     <para>Manche Seiten bieten Fremdinhalte im RSS Format an. Diese Inhalte
     kann man in die eigene Seite einbinden. Die Nachrichten werden nicht
@@ -694,10 +848,11 @@
     <tip>
       <para>Die Blöcke verstehen nur RSS-Feeds im (älteren) Standard RSS 0.92.
       PostNuke .8 wird ein überarbeitetes RSS-Modul auf Basis von <ulink
-      url="http://magpierss.sourceforge.net/">MagpieRSS</ulink> beinhalten. Um
-      bereits jetzt den aktuellen Standard RSS 2.0 verwenden zu können, kann
-      man einen PHP-Block mit einem entsprechenden PHP-Skript
-      verwenden.</para>
+      url="http://magpierss.sourceforge.net/">MagpieRSS<indexterm>
+          <primary>MagpieRSS</primary>
+        </indexterm></ulink> beinhalten. Um bereits jetzt den aktuellen
+      Standard RSS 2.0 verwenden zu können, kann man einen PHP-Block mit einem
+      entsprechenden PHP-Skript verwenden.</para>
     </tip>
   </section>
 </chapter>

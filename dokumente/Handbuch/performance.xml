@@ -10,7 +10,9 @@
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>Performance</title>
+  <title>Performance<indexterm>
+      <primary>Performance</primary>
+    </indexterm></title>
 
   <para>Neben einer guten Anbindung und einer schnellen Datenbank kann man die
   Performance von PostNuke mit ein paar kleinen Eingriffen weiter
@@ -37,7 +39,9 @@
   </section>
 
   <section id="indexfelder">
-    <title>Setzen weiterer Index-Felder</title>
+    <title>Setzen weiterer Index-Felder<indexterm>
+        <primary>Datenbank</primary>
+      </indexterm></title>
 
     <para>Gerade für grössere Installationen sind die Indexfelder der
     PostNuke-Datenbank noch nicht optimal ausgeschöpft, durch hinzufügen

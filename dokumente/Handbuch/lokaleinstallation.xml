@@ -10,7 +10,11 @@
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>Installation auf dem heimischen Rechner</title>
+  <title>Installation auf dem heimischen Rechner<indexterm>
+      <primary>Installation</primary>
+
+      <secondary>Lokale Installation</secondary>
+    </indexterm></title>
 
   <para>Um PostNuke ausgiebig testen zu können, empfiehlt sich die
   Installation auf dem heimischen PC. Wenn man nicht die oben angesprochene
@@ -18,7 +22,9 @@
 
   <variablelist>
     <varlistentry>
-      <term>Einen Web-Server</term>
+      <term>Einen Web-Server<indexterm>
+          <primary>Apache</primary>
+        </indexterm></term>
 
       <listitem>
         <para>Üblicherweise wird man Apache nehmen, da dieser unter der GPL
@@ -40,7 +46,9 @@
     </varlistentry>
 
     <varlistentry>
-      <term>PHP</term>
+      <term>PHP<indexterm>
+          <primary>PHP</primary>
+        </indexterm></term>
 
       <listitem>
         <para>PHP bekommt man bei <ulink
@@ -81,7 +89,9 @@ phpinfo()
 
     <varlistentry>
       <term>Eine von PostNuke unterstützte Datenbank, vorzugsweise
-      MySQL</term>
+      MySQL<indexterm>
+          <primary>MySQL</primary>
+        </indexterm></term>
 
       <listitem>
         <para>Die aktuelle Version von MySQL bekommt man unter <ulink
@@ -98,7 +108,9 @@ phpinfo()
     </varlistentry>
 
     <varlistentry>
-      <term>phpMyAdmin</term>
+      <term>phpMyAdmin<indexterm>
+          <primary>phpMyAdmin</primary>
+        </indexterm></term>
 
       <listitem>
         <para>phpMyAdmin ist ein Administrationstool für MySQL - Download

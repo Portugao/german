@@ -4,16 +4,18 @@
 <chapter id="themes" lang="de_DE" status="draft">
   <!-- $Id$-->
 
-  <title>Themes</title>
+  <title>Themes<indexterm>
+      <primary>Themes</primary>
+    </indexterm></title>
 
   <para>Themes bestimmen das Aussehen einer PostNuke-Installation. Sie
   bestehen aus einem Verzeichnis und mindestens der
   <filename>theme.php</filename>-Datei. Desweiteren gibt es ein Verzeichnis
   für die verwendeten Bilder und eines für die Style-Sheet-Dateien.
-  Darüberhinaus können Themes weitere Dateien enthalten. </para>
+  Darüberhinaus können Themes weitere Dateien enthalten.</para>
 
   <para>Über das Theme lassen such die Farben, das Layout, Schriftarten usw.
-  anpassen. </para>
+  anpassen.</para>
 
   <para>Wenn man möchte, kann man dem Anwender auch die Wahl zwischen allen
   installieren Themes lassen. Diese Funktion läßt sich in den Einstellungen
@@ -36,30 +38,40 @@
   erkennen. Öffne die theme.php in einem Editor und such die Funktion
   "themearticle".</para>
 
-  <para>PN .6x Themes: </para>
+  <para>PN .6x Themes:</para>
 
   <programlisting>function themearticle ($aid, $informant, $datetime... ...$topicimage, $topictext)</programlisting>
 
-  <para>PN .7.0.x .71 and .711 Themes: </para>
+  <para>PN .7.0.x .71 and .711 Themes:</para>
 
   <programlisting>function themearticle ($_deprecated, $_deprecated... ...$links, $info, $preformat)</programlisting>
 
-  <para>Es gibt mittlerweile drei verschiedene Arten von Themes: </para>
+  <para>Es gibt mittlerweile drei verschiedene Arten von Themes:</para>
 
   <variablelist>
     <varlistentry>
-      <term>"traditionelle" Themes</term>
+      <term>"traditionelle" Themes<indexterm>
+          <primary>Themes</primary>
+
+          <secondary>traditionelle</secondary>
+        </indexterm></term>
 
       <listitem>
         <para>Dieses sind Themes, in denen das Aussehen und die Logik in der
         <filename>theme.php</filename> bestimmt werden. Die meisten Themes
         fallen in diese Kategorie, allerdings ist das Anpassen eines solchen
-        Themes relativ aufwändig. </para>
+        Themes relativ aufwändig.</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>Autothemes</term>
+      <term>Autothemes<indexterm>
+          <primary>Themes</primary>
+
+          <secondary>Autotheme</secondary>
+        </indexterm><indexterm>
+          <primary>Autotheme</primary>
+        </indexterm></term>
 
       <listitem>
         <para>AutoTheme ist ein Theme System, das nicht nur für PostNuke,
@@ -68,7 +80,7 @@
         "Schablonen" eingesetzt werden. AutoTheme gibt es in zwei Varianten:
         "AutoTheme Lite" steht kostenlos zum Download zur Verfügung,
         wohingegen die Vollversion in unterschiedlichen Lizenzierungen als
-        kommerzielle Software vertrieben wird. </para>
+        kommerzielle Software vertrieben wird.</para>
 
         <para>AutoTheme stammt von Shawn McKenzie (AbraCadaver), die Homepage
         ist <ulink
@@ -77,12 +89,18 @@
     </varlistentry>
 
     <varlistentry>
-      <term>Xanthia</term>
+      <term>Xanthia<indexterm>
+          <primary>Themes</primary>
+
+          <secondary>Xanthia</secondary>
+        </indexterm><indexterm>
+          <primary>Xanthia</primary>
+        </indexterm></term>
 
       <listitem>
         <para>Xanthia ist die neue offizielle Theme-Engine von PostNuke. Auch
         hier werden Templates (also Schablonen) benutzt, um das Seitenlayout
-        zu definieren. </para>
+        zu definieren.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -10,13 +10,21 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Kalender</title>
+  <title>Kalender<indexterm>
+      <primary>Kalender</primary>
+    </indexterm></title>
 
   <para>Mit Hilfe eines Kalenders lassen sich die Besucher über Termine usw.
   auf dem laufenden halten.</para>
 
   <section id="postcalendar">
-    <title>PostCalendar</title>
+    <title>PostCalendar<indexterm>
+        <primary>PostCalendar</primary>
+      </indexterm><indexterm>
+        <primary>Kalender</primary>
+
+        <secondary>PostCalendar</secondary>
+      </indexterm></title>
 
     <para>PostCalendar ist ein umfangreiches Kalender-Modul, dass sich über
     Templates bequem anpassen lässt. Dabei stehen neben verschiedenen

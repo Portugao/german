@@ -10,7 +10,9 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Installation</title>
+  <title>Installation<indexterm>
+      <primary>Installation</primary>
+    </indexterm></title>
 
   <section id="vorderinstallation">
     <title>Vor der Installation</title>
@@ -27,7 +29,11 @@
     sind.</para>
 
     <section id="providerwahl">
-      <title>Auswahl eines geeigneten Providers</title>
+      <title>Auswahl eines geeigneten Providers<indexterm>
+          <primary>Installation</primary>
+
+          <secondary>Providerwahl</secondary>
+        </indexterm></title>
 
       <para>Zur besseren Auswahl eines geeigneten Providers sind die
       notwendigen Voraussetzungen für PostNuke schnell
@@ -35,7 +41,9 @@
 
       <variablelist>
         <varlistentry>
-          <term>PHP</term>
+          <term>PHP<indexterm>
+              <primary>PHP</primary>
+            </indexterm></term>
 
           <listitem>
             <para>PostNuke besteht aus einer Reihe an PHP-Skripten. Eine
@@ -51,7 +59,9 @@
         </varlistentry>
 
         <varlistentry>
-          <term>Datenbank</term>
+          <term>Datenbank<indexterm>
+              <primary>Datenbank</primary>
+            </indexterm></term>
 
           <listitem>
             <para>Alle Inhalte von PostNuke werden in einer Datenbank
@@ -65,7 +75,9 @@
         </varlistentry>
 
         <varlistentry>
-          <term>Webserver</term>
+          <term>Webserver<indexterm>
+              <primary>Webserver</primary>
+            </indexterm></term>
 
           <listitem>
             <para>PostNuke selbst ist es egal, welcher Webserver auf welcher
@@ -79,9 +91,11 @@
         </varlistentry>
       </variablelist>
 
-      <para>Erfüllt ein Webspace-Angebot diese Voraussetzungen, so ist der
-      Rest meist nur eine Frage des Preises. Wie oft, gilt auch in diesem
-      Bereich &ldquor;you get what you pay for&rdquor;...</para>
+      <para>Erfüllt ein Webspace<indexterm>
+          <primary>Webspace</primary>
+        </indexterm>-Angebot diese Voraussetzungen, so ist der Rest meist nur
+      eine Frage des Preises. Wie oft, gilt auch in diesem Bereich &ldquor;you
+      get what you pay for&rdquor;...</para>
 
       <para>Darüber hinaus müssen natürlich die folgenden Überlegungen
       angestellt werden:</para>
@@ -108,7 +122,15 @@
       Providerwahl</ulink>".</para>
 
       <tip>
-        <para><emphasis>Kostenloser Webspace?</emphasis></para>
+        <para><emphasis>Kostenloser Webspace?<indexterm>
+            <primary>Tripod</primary>
+          </indexterm><indexterm>
+            <primary>Lycos</primary>
+          </indexterm><indexterm>
+            <primary>Webspace</primary>
+
+            <secondary>kostenloser</secondary>
+          </indexterm></emphasis></para>
 
         <para>Eigentlich ist das Free-Hosting-Paket von Lycos/Tripod ja eine
         tolle Sache. 50MB Speicherplatz, PHP und MySQL kostenlos &ndash;
@@ -144,10 +166,11 @@
 
       <tip>
         <para>Wer Wert auf eine "Ein-Klick-Lösung" legt, sollte sich <ulink
-        url="http://www.apachefriends.org/de/">XAMPP</ulink> ansehen. XAMPP
-        ist eine Distribution von Apache, MySQL, PHP und Perl, die es
-        ermöglicht diese Programme auf sehr einfache Weise zu
-        installieren.</para>
+        url="http://www.apachefriends.org/de/">XAMPP</ulink><indexterm>
+            <primary>XAMPP</primary>
+          </indexterm> ansehen. XAMPP ist eine Distribution von Apache, MySQL,
+        PHP und Perl, die es ermöglicht diese Programme auf sehr einfache
+        Weise zu installieren.</para>
 
         <para>Zur Zeit gibt es drei XAMPP-Distributionen:Für Windows, Linux
         und Solaris. Der Download ist aber recht groß. Wer keine Lust auf den
@@ -177,7 +200,9 @@
     wir hier alles so einfach wie möglich halten und somit erkläre wir den (in
     unseren Augen) gebräuchlichsten Weg.</para>
 
-    <bridgehead>Download und Entpacken der notwendigen Dateien</bridgehead>
+    <bridgehead>Download und Entpacken der notwendigen Dateien<indexterm>
+        <primary>Download</primary>
+      </indexterm></bridgehead>
 
     <para>Zunächst einmal besorgen wir uns die aktuelle
     PostNuke-Version.</para>
@@ -186,14 +211,24 @@
       <step>
         <para>Herunterladen der aktuellen Version von PostNuke und der
         aktuellen Sprachdatei als ZIP-Archiv von <ulink
-        url="http://www.post-nuke.net/">http://www.post-nuke.net</ulink>.</para>
+        url="http://www.post-nuke.net/">http://www.post-nuke.net</ulink>.<indexterm>
+            <primary>Download</primary>
+
+            <secondary>Grundpaket</secondary>
+          </indexterm><indexterm>
+            <primary>Download</primary>
+
+            <secondary>Sprachpaket</secondary>
+          </indexterm></para>
       </step>
 
       <step>
         <para>Entpacken der Archive. Für Anwender von Windows XP ist die
         ZIP-Fähigkeit im System eingebaut, für andere gibt es z. B. <ulink
-        url="http://www.7-zip.org/">7-ZIP</ulink> oder ähnliche Programme, die
-        das Archiv entpacken.</para>
+        url="http://www.7-zip.org/">7-ZIP<indexterm>
+            <primary>7-ZIP</primary>
+          </indexterm></ulink> oder ähnliche Programme, die das Archiv
+        entpacken.</para>
       </step>
 
       <step>
@@ -224,7 +259,13 @@
       </step>
     </procedure>
 
-    <bridgehead>Upload der Dateien</bridgehead>
+    <bridgehead>Upload der Dateien<indexterm>
+        <primary>Upload</primary>
+      </indexterm><indexterm>
+        <primary>Installation</primary>
+
+        <secondary>Upload</secondary>
+      </indexterm></bridgehead>
 
     <para>Nachdem nun die Dateien in entpackter Form auf dem heimischen PC
     vorliegen, müssen diese auf den Webspace hochgeladen werden. Dies
@@ -232,18 +273,21 @@
 
     <tip>
       <para>Ein sehr gutes Programm ist z. B. <ulink
-      url="http://filezilla.sourceforge.net/">FileZilla</ulink>, das unter der
-      GPL erhältlich ist und auch auf deutsch verfügbar ist.</para>
+      url="http://filezilla.sourceforge.net/">FileZilla<indexterm>
+          <primary>FileZilla</primary>
+        </indexterm></ulink>, das unter der GPL erhältlich ist und auch auf
+      deutsch verfügbar ist.</para>
     </tip>
 
     <procedure>
       <step>
         <para>Die notwendigen Dateien liegen unter <filename>/html</filename>.
         Lediglich den Inhalt dieses Verzeichnisses wird hochgeladen, der
-        Ordner <filename>Phoenix-SQL</filename> braucht nicht upgeloadet
-        werden! Das Hochspielen kann einige Zeit in Anspruch nehmen, da es
-        sich um einige hundert Dateien handelt, also nicht die Nerven
-        verlieren.</para>
+        Ordner <filename>Phoenix-SQL<indexterm>
+            <primary>Phoenix-SQL</primary>
+          </indexterm></filename> braucht nicht upgeloadet werden! Das
+        Hochspielen kann einige Zeit in Anspruch nehmen, da es sich um einige
+        hundert Dateien handelt, also nicht die Nerven verlieren.</para>
       </step>
 
       <step>
@@ -272,12 +316,18 @@
     <procedure>
       <step>
         <para>Start der Installation über <systemitem
-        class="systemname">http://www.example.com/install.php</systemitem>.</para>
+        class="systemname">http://www.example.com/install.php</systemitem>.<indexterm>
+            <primary>install.php</primary>
+          </indexterm></para>
       </step>
 
       <step>
         <para>Zunächst wählt man die Sprache aus. Hierbei handelt es sich um
-        die Sprache des Installationsprogramms.</para>
+        die Sprache des Installationsprogramms.<indexterm>
+            <primary>Installation</primary>
+
+            <secondary>Aufrufen</secondary>
+          </indexterm></para>
 
         <mediaobject>
           <imageobject>
@@ -306,7 +356,17 @@
 
         <variablelist>
           <varlistentry>
-            <term>Datenbank Host</term>
+            <term>Datenbank Host<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Host</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Host</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>URL des Datenbankservers</para>
@@ -314,7 +374,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Benutzer</term>
+            <term>Datenbank Benutzer<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Benutzer</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Benutzer</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>Benutzer der Datenbank</para>
@@ -322,7 +392,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Passwort</term>
+            <term>Datenbank Passwort<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Passwort</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Passwort</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>Passwort für die Datenbank</para>
@@ -330,7 +410,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Name</term>
+            <term>Datenbank Name<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Name</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Name</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>Name der Datenbank</para>
@@ -338,7 +428,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Table Prefix</term>
+            <term>Table Prefix<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Präfix</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Präfix</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>Falls mehrere Installationen in einer Datenbank geplant
@@ -353,7 +453,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank Typ</term>
+            <term>Datenbank Typ<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Typ</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Typ</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>Typ des Datenbanksystems auswählen (z.B. mysql)</para>
@@ -361,7 +471,17 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Datenbank-Tabellen-Typ</term>
+            <term>Datenbank-Tabellen-Typ<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Datenbank</secondary>
+
+                <tertiary>Tabellentyp</tertiary>
+              </indexterm><indexterm>
+                <primary>Datenbank</primary>
+
+                <secondary>Tabellentyp</secondary>
+              </indexterm></term>
 
             <listitem>
               <para>MyISAM oder INNODB</para>
@@ -369,19 +489,27 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Intranet</term>
+            <term>Intranet<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Intranet-Option</secondary>
+              </indexterm><indexterm>
+                <primary>Intranet-Option</primary>
+              </indexterm></term>
 
             <listitem>
-              <para>Die "Intranet"-Option muss nur bei Installationen ohne
-              "vollqualifizierten" Domainnamen angewählt werden. Beispiele für
-              "qualifizierte" Domainnamen sind
+              <para>Die "Intranet"-Option muss nur bei Installationen
+              <emphasis>ohne qualifizierten Domainnamen</emphasis> angewählt
+              werden. Beispiele für qualifizierte Domainnamen sind
               <systemitem>www.postnuke.com</systemitem> und
               <systemitem>www.example.com</systemitem>, aber auch z.B.
-              127.0.0.1 - Beispiele für "unqualifizierte" Domainnamen sind
+              <systemitem class="ipaddress">127.0.0.1</systemitem> - Beispiele
+              für "unqualifizierte" Domainnamen sind
               <systemitem>localhost</systemitem> und
-              <systemitem>rechnername</systemitem>. Wenn dieser Parameter
-              nicht richtig gesetzt wird, ist unter Umständen kein Login
-              möglich!</para>
+              <systemitem>rechnername</systemitem>. </para>
+
+              <para>Wenn dieser Parameter nicht richtig gesetzt wird, ist
+              unter Umständen kein Login möglich!</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -411,7 +539,17 @@
         <para>Im nächsten Schritt fragt PostNuke, ob es eine neue Datenbank
         anlegen soll oder nicht. In der Regel lassen die wenigsten Provider
         das zu, also kann man die Standard-Antwort (im unteren Kästchen kein
-        Haken) nutzen.</para>
+        Haken) nutzen.<indexterm>
+            <primary>Installation</primary>
+
+            <secondary>Datenbank</secondary>
+
+            <tertiary>Anlegen</tertiary>
+          </indexterm><indexterm>
+            <primary>Datenbank</primary>
+
+            <secondary>Anlegen</secondary>
+          </indexterm></para>
 
         <mediaobject>
           <imageobject>
@@ -445,7 +583,13 @@
 
         <variablelist>
           <varlistentry>
-            <term>Admin-Login</term>
+            <term>Admin-Login<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Admin</secondary>
+
+                <tertiary>Login</tertiary>
+              </indexterm></term>
 
             <listitem>
               <para>Loginname des Administrators</para>
@@ -453,7 +597,13 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Name</term>
+            <term>Admin-Name<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Admin</secondary>
+
+                <tertiary>Name</tertiary>
+              </indexterm></term>
 
             <listitem>
               <para>vollständiger Name des Administrators</para>
@@ -461,7 +611,13 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Passwort</term>
+            <term>Admin-Passwort<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Admin</secondary>
+
+                <tertiary>Passwort</tertiary>
+              </indexterm></term>
 
             <listitem>
               <para>Passwort für den Administrator-Zugang</para>
@@ -479,7 +635,13 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-Email</term>
+            <term>Admin-Email<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Admin</secondary>
+
+                <tertiary>E-Mail</tertiary>
+              </indexterm></term>
 
             <listitem>
               <para>vollständige E-Mail-Adresse des Admins eingeben</para>
@@ -487,7 +649,13 @@
           </varlistentry>
 
           <varlistentry>
-            <term>Admin-URL</term>
+            <term>Admin-URL<indexterm>
+                <primary>Installation</primary>
+
+                <secondary>Admin</secondary>
+
+                <tertiary>URL</tertiary>
+              </indexterm></term>
 
             <listitem>
               <para>Website des Administrators, in aller Regel die Adresse der
@@ -552,13 +720,31 @@
             <listitem>
               <para>Das gesamte Verzeichnis <filename>/install</filename> und
               die <filename>install.php</filename> auf dem Webspace muß
-              gelöscht werden.</para>
+              gelöscht werden.<indexterm>
+                  <primary>Installation</primary>
+
+                  <secondary><filename>install.php</filename></secondary>
+                </indexterm><indexterm>
+                  <primary>Installation</primary>
+
+                  <secondary><filename>install</filename>-Verzeichnis</secondary>
+                </indexterm></para>
             </listitem>
 
             <listitem>
               <para>Die Rechte für die <filename>config.php</filename> und
               <filename>config-old.php</filename> sollten wieder zurück auf
-              644 gesetzt werden.</para>
+              644 gesetzt werden.<indexterm>
+                  <primary>Installation</primary>
+
+                  <secondary><filename>config.php</filename></secondary>
+                </indexterm><indexterm>
+                  <primary>Installation</primary>
+
+                  <secondary><filename>config-old.php</filename></secondary>
+                </indexterm><indexterm>
+                  <primary><filename>config.php</filename></primary>
+                </indexterm></para>
             </listitem>
           </itemizedlist>
         </caution>
@@ -582,11 +768,21 @@
   </section>
 
   <section id="upgrade">
-    <title>Upgrade</title>
+    <title>Upgrade<indexterm>
+        <primary>Installation</primary>
+
+        <secondary>Upgrade</secondary>
+      </indexterm><indexterm>
+        <primary>Upgrade</primary>
+      </indexterm></title>
 
     <para>PostNuke unterstützt das Upgrade von allen früheren Versionen und
-    einer Anzahl anderer *Nuke Derivate wie <application>PHPNuke</application>
-    und <application>MyPHPNuke</application>. Sollte vorher eine Version von
+    einer Anzahl anderer *Nuke Derivate wie
+    <application>PHPNuke</application><indexterm>
+        <primary>PHP-Nuke</primary>
+      </indexterm> und <application>MyPHPNuke</application><indexterm>
+        <primary>MyPHPNuke</primary>
+      </indexterm>. Sollte vorher eine Version von
     <application>PHPNuke</application> installiert gewesen sein, so läßt sich
     dieses auf PostNuke upgraden, solange es höchstens <application>PHPNuke
     5.4</application> war - bei allen neueren Versionen von PHPNuke wird das
@@ -752,7 +948,11 @@
     Installation geklärt:</para>
 
     <section>
-      <title>Was sind meine Verbindungsdaten in der config.php?</title>
+      <title>Was sind meine Verbindungsdaten in der config.php?<indexterm>
+          <primary><filename>config.php</filename></primary>
+        </indexterm><indexterm>
+          <primary>Verbindungsdaten</primary>
+        </indexterm></title>
 
       <para>Normalerweise wird die config.php bei der Installation automatisch
       erzeugt und muss nicht manuell bearbeitet werden. Sollte dies trotzdem
@@ -827,20 +1027,29 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
 
     <section>
       <title>Ist es möglich, PostNuke auch mit einem anderen Datenbanksystem
-      als MySQL zu installieren?</title>
+      als MySQL zu installieren?<indexterm>
+          <primary>MySQL</primary>
+        </indexterm><indexterm>
+          <primary>Datenbank</primary>
+        </indexterm></title>
 
-      <para>Prinzipiell sollte es schon funktionieren, via ADOdb auch andere
-      Datenbanken zu nutzen (das pnForum läuft beispielsweise auch in einer
-      Oracle-Installation). Eventuell hat das jeweilige Datenbanksystem aber
-      spezielle Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B.
-      keine LEFT JOINS in Oracle). Generell gilt die Datenbank-Unabhängigkeit
-      natürlich auch nur für die Module, die ADOdb-konform ausgeführt
-      sind.</para>
+      <para>Prinzipiell sollte es schon funktionieren, via ADOdb<indexterm>
+          <primary>ADOdb</primary>
+        </indexterm> auch andere Datenbanken zu nutzen (das pnForum läuft
+      beispielsweise auch in einer Oracle-Installation). Eventuell hat das
+      jeweilige Datenbanksystem aber spezielle Eigenarten, die zusätzlich
+      berücksichtigt werden müssen (z.B. keine LEFT JOINS in Oracle). Generell
+      gilt die Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
+      ADOdb-konform ausgeführt sind.</para>
     </section>
 
     <section>
       <title>Kann ich meine Site einfach in anderes Verzeichnis
-      verschieben?</title>
+      verschieben?<indexterm>
+          <primary>Installation</primary>
+
+          <secondary>Verschieben der Installation</secondary>
+        </indexterm></title>
 
       <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in
       der Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach

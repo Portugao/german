@@ -10,7 +10,11 @@
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>Statistiken zurücksetzen</title>
+  <title>Statistiken zurücksetzen<indexterm>
+      <primary>Statistik</primary>
+
+      <secondary>Zurücksetzen</secondary>
+    </indexterm></title>
 
   <para>Um die Statistiken auf 0 zurückzusetzen, führt man folgendes Skript
   auf der Datenbank aus (z.B. mit phpMyAdmin)</para>

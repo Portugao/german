@@ -2,7 +2,13 @@
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <appendix id="ccpl">
-  <title>Lizenzbestimmungen des PostNuke-Handbuchs</title>
+  <title>Lizenzbestimmungen des PostNuke-Handbuchs<indexterm>
+      <primary>Lizenz</primary>
+
+      <secondary>Creative Commons</secondary>
+    </indexterm><indexterm>
+      <primary>Creative Commons Lizenz</primary>
+    </indexterm></title>
 
   <subtitle>Creative Commons Legal Code</subtitle>
 

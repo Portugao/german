@@ -10,10 +10,18 @@
 
   <!-- $Id$ -->
 
-  <title>Galerien</title>
+  <title>Galerien<indexterm>
+      <primary>Galerien</primary>
+    </indexterm></title>
 
   <section id="photoshare">
-    <title>Photoshare</title>
+    <title>Photoshare<indexterm>
+        <primary>Galerien</primary>
+
+        <secondary>Photoshare</secondary>
+      </indexterm><indexterm>
+        <primary>Photoshare</primary>
+      </indexterm></title>
 
     <para>Aus der Not geboren, auch im safe_mode eine Galerie mit PostNuke
     betreiben zu können, hat Photoshare mittlerweile eine treue Fangemeinde

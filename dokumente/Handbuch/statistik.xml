@@ -10,14 +10,30 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Statistische Informationen: Was den Webmaster interessiert</title>
+  <title>Statistische Informationen: Was den Webmaster interessiert<indexterm>
+      <primary>Statistik</primary>
+    </indexterm></title>
 
   <section id="stats">
-    <title>Statistik</title>
+    <title>Statistik<indexterm>
+        <primary>Statistik</primary>
+      </indexterm><indexterm>
+        <primary>Stats</primary>
+
+        <see>Statistik</see>
+      </indexterm></title>
 
     <para>Das Statistik-Modul informiert über die Anzahl der Zugriffe.</para>
 
-    <bridgehead>Zugriffsrechte</bridgehead>
+    <bridgehead>Zugriffsrechte<indexterm>
+        <primary>Statistik</primary>
+
+        <secondary>Zugriffsrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>Statistik</secondary>
+      </indexterm></bridgehead>
 
     <para>Bei den Zugriffsrechten kann man sich durch einen Klick auf
     'Komponente' bzw. 'Instanz' alle im System hinterlegten
@@ -35,7 +51,11 @@
     Leserecht bei den Gruppen (unregistrierte | .* | .* | lesen) ansonsten
     nicht überlagert werden kann.</para>
 
-    <bridgehead>Statistik zurücksetzen</bridgehead>
+    <bridgehead>Statistik zurücksetzen<indexterm>
+        <primary>Statistik</primary>
+
+        <secondary>Zurücksetzen</secondary>
+      </indexterm></bridgehead>
 
     <para>Unter Umständen kann es sinnvoll sein, die Statistik wieder
     zurückzusetzen, z.B. nachdem eine Seite ausgiebig offline getestet wurde,
@@ -46,7 +66,13 @@
   </section>
 
   <section id="referer">
-    <title>HTTP-Referer</title>
+    <title>HTTP-Referer<indexterm>
+        <primary>Referer</primary>
+      </indexterm><indexterm>
+        <primary>HTTP-Referer</primary>
+
+        <see>Referer</see>
+      </indexterm></title>
 
     <para>Wenn man diese Liste aktiviert, wird einem angezeigt, von wo aus die
     User auf die Site zugreifen.</para>
@@ -72,7 +98,9 @@
   </section>
 
   <section id="statistics">
-    <title>Das "Statistics"-Modul von Craig R. Saunders</title>
+    <title>Das "Statistics"-Modul von Craig R. Saunders<indexterm>
+        <primary>Statistics</primary>
+      </indexterm></title>
 
     <para>Von Craig R. Saunders (ColdRolledSteel) satmmt das
     "Statistics"-Modul, welches sowohl das native "Stats", als auch das

@@ -10,10 +10,14 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>E-Commerce mit PostNuke: Banner, Shop und CRM</title>
+  <title>E-Commerce<indexterm>
+      <primary>E-Commerce</primary>
+    </indexterm> mit PostNuke: Banner, Shop und CRM</title>
 
   <section id="banner">
-    <title>Banner</title>
+    <title>Banner<indexterm>
+        <primary>Banner</primary>
+      </indexterm></title>
 
     <para>Viele Websites nutzen die Möglichkeiten von Bannern, um die
     Betriebskosten der Webseite teilweise zu refinanzieren.</para>
@@ -24,12 +28,14 @@
     <tip>
       <para>Das PostNuke-eigene Bannersystem ist nicht sondrlich komfortabel.
       Eine weitaus bessere Bannerverwaltung bietet <ulink
-      url="http://phpadsnew.sourceforge.net/">phpAdsNew</ulink>. Dieses System
-      ist zwar nicht in PostNuke eingebunden, es stellt für die
-      Banner-Integration aber ein kleines HTML-Snippet zur Verfügung &mdash;
-      und das kann dann in einem entsprechenden PostNuke-Block angezeigt
-      werden. Die gesamte Verwaltung läuft dabei also über das externe
-      Programm, die Anzeige erfolgt innerhalb von PostNuke.</para>
+      url="http://phpadsnew.sourceforge.net/">phpAdsNew</ulink><indexterm>
+          <primary>phpAdsNew</primary>
+        </indexterm>. Dieses System ist zwar nicht in PostNuke eingebunden, es
+      stellt für die Banner-Integration aber ein kleines HTML-Snippet zur
+      Verfügung &mdash; und das kann dann in einem entsprechenden
+      PostNuke-Block angezeigt werden. Die gesamte Verwaltung läuft dabei also
+      über das externe Programm, die Anzeige erfolgt innerhalb von
+      PostNuke.</para>
     </tip>
 
     <screenshot>
@@ -229,7 +235,13 @@
   </section>
 
   <section id="pncommerce">
-    <title>pnCommerce &mdash; das Shopsystem für PostNuke</title>
+    <title>pnCommerce &mdash; das Shopsystem für PostNuke<indexterm>
+        <primary>pnCommerce</primary>
+      </indexterm><indexterm>
+        <primary>Shop</primary>
+      </indexterm><indexterm>
+        <primary>Web-Shop</primary>
+      </indexterm></title>
 
     <para>pncommerce ist ein vollintegriertes eCommerce-System. Es benutzt als
     eines der ersten großen Module pnRender und bietet damit umfangreiche
@@ -354,13 +366,23 @@
 
   <section id="brocrm">
     <title>BroCRM &mdash; Customer Relationship Management mit
-    PostNuke</title>
+    PostNuke<indexterm>
+        <primary>BroCRM</primary>
+      </indexterm><indexterm>
+        <primary>CRM</primary>
+
+        <see>Customer Relationship Management</see>
+      </indexterm><indexterm>
+        <primary>Customer Relationship Management</primary>
+      </indexterm></title>
 
     <para>BroCRM ist ein Customer Relationship Management System und bietet
     alle grundlegenden Funktionen für die betriebswirtschaftlichen Bedürfnisse
     von Gewerbetreibenden, Ingenieurbüros und Werbeagenturen.</para>
 
-    <bridgehead>Was ist ein CRM-System?</bridgehead>
+    <bridgehead>Was ist ein <abbrev>CRM</abbrev>-System?<indexterm>
+        <primary>Customer Relationship Management</primary>
+      </indexterm></bridgehead>
 
     <para>CRM-Software integriert die Bereiche Marketing, Vertrieb, Service.
     Der große Vorteil in der Integration dieser verschiedenen Bereiche in ein

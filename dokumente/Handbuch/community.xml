@@ -12,7 +12,9 @@
 
   <title>Community</title>
 
-  <bridgehead>Die Entwickler- und Support-Communities</bridgehead>
+  <bridgehead>Die Entwickler- und Support-Communities<indexterm>
+      <primary>Support</primary>
+    </indexterm></bridgehead>
 
   <para>Die <emphasis role="bold">internationale PostNuke Community</emphasis>
   versammelt sich natürlich auf der <ulink
@@ -25,7 +27,9 @@
   spezielle rechtliche Probleme des Landes und Erfahrungen aus dem Support an
   die internationale Entwicklung herangetragen.</para>
 
-  <bridgehead>NOC - Treffpunkt für Modulentwickler</bridgehead>
+  <bridgehead>NOC - Treffpunkt für Modulentwickler<indexterm>
+      <primary>NOC</primary>
+    </indexterm></bridgehead>
 
   <para>Es existieren dazu eine Vielzahl Seiten, die sich zum Beispiel mit den
   PostNuke-Themes oder der Modulentwicklung beschäftigen. Um die verstreuten
@@ -48,7 +52,9 @@
     </imageobject>
   </mediaobject>
 
-  <bridgehead>Wer steht hinter PostNuke</bridgehead>
+  <bridgehead>Wer steht hinter PostNuke<indexterm>
+      <primary>Entwickler</primary>
+    </indexterm></bridgehead>
 
   <para>Wie die meisten anderen erfolgreichen Open Source-Projekte auch ist
   PostNuke das Ergebnis der Zusammenarbeit unterschiedlicher Menschen aus
@@ -61,7 +67,9 @@
   <section id="wirueberuns">
     <title>Wir über uns</title>
 
-    <bridgehead>Was ist post-nuke.net?</bridgehead>
+    <bridgehead>Was ist post-nuke.net?<indexterm>
+        <primary>www.post-nuke.net</primary>
+      </indexterm></bridgehead>
 
     <para>Ziel dieser Community ist die Förderung der Entwicklung des Content
     Management Systems PostNuke. Er wird insbesondere erfüllt durch die
@@ -127,7 +135,9 @@
   </section>
 
   <section id="knigge">
-    <title>Der post-nuke.net-Knigge</title>
+    <title>Der post-nuke.net-Knigge<indexterm>
+        <primary>Knigge</primary>
+      </indexterm></title>
 
     <subtitle>Eine kleine Liste von wichtigen Regeln, die jeder beachten
     sollte</subtitle>
@@ -230,13 +240,19 @@
     Signaturen erschweren das Lesen der Beiträge. In der Signatur sollten
     ebenfalls keine externe Bilder/Skripte verlinkt werden.</para>
 
-    <bridgehead>Topic-Bumping</bridgehead>
+    <bridgehead>Topic-Bumping<indexterm>
+        <primary>Topic-Bumping</primary>
+      </indexterm></bridgehead>
 
     <para>Bitte mindestens 24h warten bevor man selbst auf eigene Fragen
     antwortet, um sie wieder an die erste Stelle in der Themenansicht zu
     bringen. Der Mindestabstand zwischen zwei Bumps ist ebenfalls 24h.</para>
 
-    <bridgehead>Posten von Code</bridgehead>
+    <bridgehead>Posten von Code<indexterm>
+        <primary>Code</primary>
+
+        <secondary>Im Forum</secondary>
+      </indexterm></bridgehead>
 
     <para>Wenn Code gepostet werden soll, diesen bitte immer in [code]-Blöcke
     einschließen.</para>
@@ -268,7 +284,9 @@
   </section>
 
   <section id="postnukeev">
-    <title>Der PostNuke e.V.</title>
+    <title>Der PostNuke e.V.<indexterm>
+        <primary>PostNuke e.V.</primary>
+      </indexterm></title>
 
     <para>Am 1.6.2003 haben wir unter dem Namen "PostNuke e.V." einen Verein
     zur Förderung von Postnuke gegründet. "Wir" das sind:</para>
@@ -329,6 +347,10 @@
 
     <para>Die Vereinsziele sind in unserer <ulink
     url="http://post-nuke.net/Downloads+index-req-getit-lid-36.html">Satzung</ulink>
-    ausführlich beschrieben.</para>
+    <indexterm>
+        <primary>PostNuke e.V.</primary>
+
+        <secondary>Satzung</secondary>
+      </indexterm>ausführlich beschrieben.</para>
   </section>
 </chapter>

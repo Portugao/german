@@ -13,7 +13,9 @@
   <title>Weitere Module</title>
 
   <section id="downloads">
-    <title>Downloads</title>
+    <title>Downloads<indexterm>
+        <primary>Downloads</primary>
+      </indexterm></title>
 
     <para>In diesem Administrationsbereich werden die Downloads in die
     Datenbank eingetragen.</para>
@@ -262,7 +264,13 @@
   </section>
 
   <section id="weblinks">
-    <title>Web Links</title>
+    <title>Web Links<indexterm>
+        <primary>Web Links</primary>
+      </indexterm><indexterm>
+        <primary>Links-Modul</primary>
+
+        <see>Web Links</see>
+      </indexterm></title>
 
     <para>Um die Links besser zu gliedern, können Kategorien und
     Unterkategorien angelegt werden. So bleibt die Seite auch mit vielen Links
@@ -346,7 +354,9 @@
   </section>
 
   <section id="faq">
-    <title>FAQ</title>
+    <title>FAQ<indexterm>
+        <primary>FAQ</primary>
+      </indexterm></title>
 
     <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
     Man versteht darunter Informationen, die zusammengestellt werden, damit
@@ -412,7 +422,9 @@
   </section>
 
   <section id="autolinks">
-    <title>Autolinks</title>
+    <title>Autolinks<indexterm>
+        <primary>Autolinks</primary>
+      </indexterm></title>
 
     <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
@@ -531,7 +543,9 @@
   </section>
 
   <section id="ephemeridis">
-    <title>Ephemeriden</title>
+    <title>Ephemeriden<indexterm>
+        <primary>Ephemeriden</primary>
+      </indexterm></title>
 
     <para>Tja, ein nicht ganz einfach zu übersetzendes Wort. Ephemeriden sind
     tagesabhängige Informationen, mit denen die Seite interessanter gestaltet
@@ -555,7 +569,13 @@
   </section>
 
   <section id="quotes">
-    <title>Zitate</title>
+    <title>Zitate<indexterm>
+        <primary>Zitate</primary>
+      </indexterm><indexterm>
+        <primary>Quotes</primary>
+
+        <see>Zitate</see>
+      </indexterm></title>
 
     <para>Im Modul Zitate können Zitate eingetragen werden, die dann zufällig
     auf der Website im 'Quotes'-Block (einzurichten in Administration-Blöcke)

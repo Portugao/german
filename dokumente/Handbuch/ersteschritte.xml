@@ -20,7 +20,13 @@
   fertig funktionierenden Seite. Klasse!</para>
 
   <section id="einloggen">
-    <title>Einloggen</title>
+    <title>Einloggen<indexterm>
+        <primary>Anmelden</primary>
+
+        <see>Einloggen</see>
+      </indexterm><indexterm>
+        <primary>Einloggen</primary>
+      </indexterm></title>
 
     <para>Jetzt ist man endlich soweit, sich das erste Mal auf der eigenen
     Seite einzuloggen. Das geht auf der rechten Seite mit dem vorher
@@ -63,18 +69,26 @@
         </imageobject>
 
         <caption>
-          <para>Das Administrationsmenü</para>
+          <para>Nach dem Anmelden</para>
         </caption>
       </mediaobject>
     </screenshot>
 
     <para>Mit denen werden wir uns jetzt etwas näher befassen.</para>
 
-    <bridgehead>Abmeldung</bridgehead>
+    <bridgehead>Abmeldung<indexterm>
+        <primary>Abmelden</primary>
+
+        <see>Ausloggen</see>
+      </indexterm><indexterm>
+        <primary>Ausloggen</primary>
+      </indexterm></bridgehead>
 
     <para>Damit meldet man sich von der Seite wieder ab.</para>
 
-    <bridgehead>Einstellungen</bridgehead>
+    <bridgehead>Einstellungen<indexterm>
+        <primary>Einstellungen</primary>
+      </indexterm></bridgehead>
 
     <para>Darüber kann man einige persönliche Dinge einstellen, die das
     Aussehen der Seite betreffen. Außerdem kann man ein eigenes Profil
@@ -101,7 +115,7 @@
         </imageobject>
 
         <caption>
-          <para>Vor dem Anmelden</para>
+          <para>Das Administrationsmenü</para>
         </caption>
       </mediaobject>
     </screenshot>

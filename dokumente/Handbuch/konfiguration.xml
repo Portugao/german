@@ -10,14 +10,26 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Grundkonfiguration</title>
+  <title>Grundkonfiguration<indexterm>
+      <primary>Konfiguration</primary>
+    </indexterm><indexterm>
+      <primary>Installation</primary>
+
+      <secondary>Konfiguration</secondary>
+    </indexterm></title>
 
   <para>In diesem Abschnitt beschäftigen wir uns mit der grundlegenden
   Konfiguration der Seite. Typischerweise wird diese einmal angepasst und dann
   nicht so schnell wieder angefasst...</para>
 
   <section id="settings">
-    <title>Einstellungen</title>
+    <title>Einstellungen<indexterm>
+        <primary>Einstellungen</primary>
+      </indexterm><indexterm>
+        <primary>Settings</primary>
+
+        <see>Einstellungen</see>
+      </indexterm></title>
 
     <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw.) werden
     bei PostNuke an zentraler Stelle eingestellt. Diese Daten sind im Punkt
@@ -25,7 +37,11 @@
 
     <variablelist>
       <varlistentry>
-        <term>Name</term>
+        <term>Name<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Name</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Name der Website</para>
@@ -33,7 +49,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Logo (Druckansicht)</term>
+        <term>Logo (Druckansicht)<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Logo</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Name einer Bilddatei in <filename>/images</filename> das
@@ -43,7 +63,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Slogan</term>
+        <term>Slogan<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Slogan</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Slogan, der im Seitentitel und in einigen Themes angezeigt
@@ -52,7 +76,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Meta Keywords</term>
+        <term>Meta Keywords<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Meta Keywords</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Für Suchmaschinen wie Google, Fireball etc. können hier
@@ -61,7 +89,13 @@
       </varlistentry>
 
       <varlistentry>
-        <term>MetaKeywords dynamisch erzeugen</term>
+        <term>MetaKeywords dynamisch erzeugen<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Meta Keywords</secondary>
+
+            <tertiary>Automatisch erzeugen</tertiary>
+          </indexterm></term>
 
         <listitem>
           <para>Keywords werden dynamisch aus dem Seiteninhalt erzeugt, führt
@@ -71,7 +105,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Startdatum</term>
+        <term>Startdatum<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Startdatum</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf der
@@ -80,7 +118,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Administrator E-Mail</term>
+        <term>Administrator E-Mail<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Administrator-E-Mail</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Kontaktadresse für alle Admin-Mails des Systems</para>
@@ -88,7 +130,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Standard-Theme der Seite</term>
+        <term>Standard-Theme der Seite<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Standard-Theme</secondary>
+          </indexterm><indexterm>
+            <primary>Themes</primary>
+
+            <secondary>Standard</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Auswahl des Themes, mit dem unregistrierte Benutzer die
@@ -97,7 +147,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Dürfen Benutzer Theme individuell einstellen?</term>
+        <term>Dürfen Benutzer Theme individuell einstellen?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Theme</secondary>
+          </indexterm><indexterm>
+            <primary>Themes</primary>
+
+            <secondary>Benutzer dürfen Theme einstellen</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
@@ -106,7 +164,17 @@
       </varlistentry>
 
       <varlistentry>
-        <term>lokales Zeitformat (de_DE)</term>
+        <term>lokales Zeitformat (de_DE)<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Zeit</secondary>
+
+            <tertiary>Format</tertiary>
+          </indexterm><indexterm>
+            <primary>Zeit</primary>
+
+            <secondary>Format</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Einstellung des Zeitformates, für Deutschland sollte 'de_DE'
@@ -115,7 +183,17 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Zeitzone (GMT+1)</term>
+        <term>Zeitzone (GMT+1)<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Zeit</secondary>
+
+            <tertiary>Zeitzone</tertiary>
+          </indexterm><indexterm>
+            <primary>Zeit</primary>
+
+            <secondary>Zeitzone</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Einstellung der Zeitzone, Deutschland ist in GMT+1</para>
@@ -123,7 +201,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Startseite</term>
+        <term>Startseite<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Startseite</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Angabe des Moduls mit dem PostNuke startet, in aller Regel
@@ -132,7 +214,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Artikel im Adminmenü</term>
+        <term>Artikel im Adminmenü<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Artikel im Adminmenü</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Artikel im Adminmenü</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Anzahl der angezeigten Artikel auf der
@@ -141,7 +231,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Beiträge auf der Startseite</term>
+        <term>Beiträge auf der Startseite<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Beiträge auf Startseite</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Beiträge auf Startseite</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Anzahl der Artikel auf der Homepage. Die Anzahl der
@@ -152,7 +250,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Reihenfolge der News</term>
+        <term>Reihenfolge der News<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Reihenfolge der News</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Reihenfolge</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Auswahl, ob die Beiträge nach ihrer ID oder nach Datum
@@ -161,7 +267,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>rechte Blöcke in Beiträgen anzeigen?</term>
+        <term>rechte Blöcke in Beiträgen anzeigen?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Rechte Blöcke in Beiträgen</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Rechte Blöcke</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Hier kann bestimmt werden, ob die rechten Blöcke in Beiträgen
@@ -170,7 +284,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Newspager anzeigen</term>
+        <term>Newspager anzeigen<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Newspager</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Newspager</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Hiermit wird bestimmt, ob auf der Übersichtsseite der News ein
@@ -180,7 +302,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Icons im Adminmenü?</term>
+        <term>Icons im Adminmenü?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Icons im Adminmenü</secondary>
+          </indexterm><indexterm>
+            <primary>Adminmenü</primary>
+
+            <secondary>Icons</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Die Links im Adminbereich könnten entweder als Text oder als
@@ -189,7 +319,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Fehlermeldungen via E-Mail senden</term>
+        <term>Fehlermeldungen via E-Mail senden<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Fehlermeldungen per Mail</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Hier kann eingestellt werden, ob bei fehlenden Seiten 'keine'
@@ -200,7 +334,14 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Fehlermeldungen mit error.php erzeugen</term>
+        <term>Fehlermeldungen mit error.php erzeugen<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Fehlermeldungen mit
+            <filename>error.php</filename></secondary>
+          </indexterm><indexterm>
+            <primary><filename>error.php</filename></primary>
+          </indexterm></term>
 
         <listitem>
           <para>bei einem Apache Webserver können Fehlermeldungen individuell
@@ -214,7 +355,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>pnAntiCracker aktivieren?</term>
+        <term>pnAntiCracker aktivieren?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>pnAntiCracker</secondary>
+          </indexterm><indexterm>
+            <primary>pnAntiCracker</primary>
+          </indexterm><indexterm>
+            <primary>Sicherheit</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Der "Anti Cracker" ist ein machanismus, der mögliche Angriffe
@@ -230,7 +379,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Unterstützung für pre-.72x-Module</term>
+        <term>Unterstützung für pre-.72x-Module<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Legacy-Support</secondary>
+          </indexterm><indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Unterstützung für pre-.72x-Module</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Bestimmte Funktionen sind von den PostNuke-Entwicklern als
@@ -244,7 +401,19 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Standardgruppe für Benutzer</term>
+        <term>Standardgruppe für Benutzer<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Standardgruppe für Benutzer</secondary>
+          </indexterm><indexterm>
+            <primary>Benutzerverwaltung</primary>
+
+            <secondary>Standardgruppe für Benutzer</secondary>
+          </indexterm><indexterm>
+            <primary>Gruppenverwaltung</primary>
+
+            <secondary>Standardgruppe für Benutzer</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Registrierte Benutzer werden automatisch einer bestimmten
@@ -255,7 +424,13 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Sprache der Website</term>
+        <term>Sprache der Website<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Sprache der Website</secondary>
+          </indexterm><indexterm>
+            <primary>Sprache</primary>
+          </indexterm></term>
 
         <listitem>
           <para>unregistrierte Benutzer sehen die Website in der eingestellten
@@ -265,7 +440,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Kompression aktivieren</term>
+        <term>Kompression aktivieren<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Kompression</secondary>
+          </indexterm><indexterm>
+            <primary>Kompression</primary>
+          </indexterm><indexterm>
+            <primary>gzip-Kompression</primary>
+          </indexterm></term>
 
         <listitem>
           <para>aktiviert die <systemitem
@@ -279,7 +462,13 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Fuss-Zeile</term>
+        <term>Fuss-Zeile<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Fusszeile</secondary>
+          </indexterm><indexterm>
+            <primary>Fusszeile</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Die Fuss-Zeile wird unter jeder PostNuke-Seite dargestellt und
@@ -290,7 +479,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Backend Titel</term>
+        <term>Backend Titel<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Backend</secondary>
+
+            <tertiary>Titel</tertiary>
+          </indexterm><indexterm>
+            <primary>RSS</primary>
+          </indexterm></term>
 
         <listitem>
           <para>PostNuke erzeugt automatisch eine Datei, die es anderen
@@ -300,7 +497,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Backend Sprache</term>
+        <term>Backend Sprache<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Backend</secondary>
+
+            <tertiary>Sprache</tertiary>
+          </indexterm><indexterm>
+            <primary>RSS</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Angabe der Sprache der Backend-Informationen</para>
@@ -308,7 +513,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Sicherheitslevel</term>
+        <term>Sicherheitslevel<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Sicherheitslevel</secondary>
+          </indexterm><indexterm>
+            <primary>Sicherheit</primary>
+          </indexterm><indexterm>
+            <primary>Cookies</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Einstellung zur Speicherung der Benutzeranmeldung in einem
@@ -336,7 +549,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Intranet</term>
+        <term>Intranet<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Intranet-Option</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>PostNuke ist darauf ausgerichtet in einer 'fully qualified
@@ -348,7 +565,21 @@
       </varlistentry>
 
       <varlistentry>
-        <term>in Beiträgen erlaubte HTML-Tags</term>
+        <term>in Beiträgen erlaubte HTML-Tags<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Erlaubte HTML-Tags</secondary>
+          </indexterm><indexterm>
+            <primary>HTML</primary>
+
+            <secondary>erlaubte Tags</secondary>
+          </indexterm><indexterm>
+            <primary>Typetool</primary>
+
+            <secondary>erlaubte Tags</secondary>
+          </indexterm><indexterm>
+            <primary>Sicherheit</primary>
+          </indexterm></term>
 
         <listitem>
           <para>Angabe, ob und wenn ja welche HTML-Tags in Beiträgen erlaubt
@@ -388,7 +619,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Eingebette HTML-Entitäten in normale Zeichen wandeln</term>
+        <term>Eingebette HTML-Entitäten in normale Zeichen wandeln<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Entitäten</secondary>
+          </indexterm></term>
 
         <listitem>
           <para>Solange keine multi-byte Unterstützung benötigt wird, sollte
@@ -411,7 +646,15 @@
   </section>
 
   <section id="language">
-    <title>Sprachkonfiguration</title>
+    <title>Sprachkonfiguration<indexterm>
+        <primary>Einstellungen</primary>
+
+        <secondary>Sprache</secondary>
+
+        <seealso>Sprachkonfiguration</seealso>
+      </indexterm><indexterm>
+        <primary>Sprachkonfiguration</primary>
+      </indexterm></title>
 
     <para>PostNuke ist von Hause aus in der Lage, mehrsprachig zu
     funktionieren. Diese Merhrsprachigkeit besteht darin, dass man zum einen
@@ -421,7 +664,17 @@
     auszuwählen.</para>
 
     <para>Um das jetzt auf der eigenen Seite zu machen braucht man erstmal die
-    Sprachdatei, am besten wieder von <ulink
+    Sprachdatei<indexterm>
+        <primary>Sprachkonfiguration</primary>
+
+        <secondary>Sprachpaket</secondary>
+      </indexterm><indexterm>
+        <primary>Sprachpaket</primary>
+      </indexterm><indexterm>
+        <primary>Sprachdatei</primary>
+
+        <see>Sprachpaket</see>
+      </indexterm>, am besten wieder von <ulink
     url="http://www.postnuke.com/">http://www.postnuke.com</ulink> oder von
     <ulink url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach
     das gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles,
@@ -455,7 +708,11 @@
     oder man verwendet den "Languages"-Block zum Umschalten.</para>
 
     <section>
-      <title>Der "Languages"-Block</title>
+      <title>Der "Languages"-Block<indexterm>
+          <primary>Sprachkonfiguration</primary>
+
+          <secondary>Sprachauswahl</secondary>
+        </indexterm></title>
 
       <para>Dieser Block zeigt die Auswahl für die Sprache des Benutzers an.
       Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
@@ -468,7 +725,9 @@
   </section>
 
   <section id="mailer">
-    <title>Mailer</title>
+    <title>Mailer<indexterm>
+        <primary>Mailer</primary>
+      </indexterm></title>
 
     <para>Normalerweise verlässt sich PostNuke beim versenden von Mails
     einfach auf das in der <filename>php.ini</filename> konfigurierbare
@@ -479,7 +738,11 @@
     Mailer-Modul auch z.b. SMTP-Server nutzen. Dahinter steckt technisch der
     <ulink url="http://phpmailer.sourceforge.net/">PHPMailer</ulink>.</para>
 
-    <bridgehead>Mail-Konfiguration einstellen</bridgehead>
+    <bridgehead>Mail-Konfiguration einstellen<indexterm>
+        <primary>Mailer</primary>
+
+        <secondary>Konfiguration</secondary>
+      </indexterm></bridgehead>
 
     <para>Für die Konfiguration des Mailer-Moduls stehen folgende Einsellungen
     zur Verfügung:</para>
@@ -503,7 +766,9 @@
             </varlistentry>
 
             <varlistentry>
-              <term>Sendmail</term>
+              <term>Sendmail<indexterm>
+                  <primary>sendmail</primary>
+                </indexterm></term>
 
               <listitem>
                 <para>Benutzt ein installiertes sendmail, um Mails zu
@@ -512,7 +777,9 @@
             </varlistentry>
 
             <varlistentry>
-              <term>QMail</term>
+              <term>QMail<indexterm>
+                  <primary>qmail</primary>
+                </indexterm></term>
 
               <listitem>
                 <para>Benützt einen installierten qmail-MTA, um Mails zu
@@ -521,7 +788,9 @@
             </varlistentry>
 
             <varlistentry>
-              <term>SMTP</term>
+              <term>SMTP<indexterm>
+                  <primary>SMTP</primary>
+                </indexterm></term>
 
               <listitem>
                 <para>Hiermit kann ein externer SMTP-Server angegeben werden,
@@ -635,7 +904,11 @@
       </varlistentry>
     </variablelist>
 
-    <bridgehead>Mail-Konfiguration testen</bridgehead>
+    <bridgehead>Mail-Konfiguration testen<indexterm>
+        <primary>Mailer</primary>
+
+        <secondary>Testen</secondary>
+      </indexterm></bridgehead>
 
     <para>Hiermit läßt sich eine Mail an einen beliebigen Empfänger
     verschicken, um das korrekte Funktionieren des Mailer-Moduls zu
@@ -650,7 +923,13 @@
   </section>
 
   <section id="wysiwyg">
-    <title>TypeTool &mdash; der grafische Editor</title>
+    <title>TypeTool &mdash; der grafische Editor<indexterm>
+        <primary>Typetool</primary>
+      </indexterm><indexterm>
+        <primary>WYSIWYG-Editor</primary>
+
+        <see>Typetool</see>
+      </indexterm></title>
 
     <para>Man kann in PostNuke einen graphischen Editor systemweit aktivieren
     bzw. deaktivieren. Der Editor befindet sich noch in einer frühen Phase,
@@ -681,7 +960,15 @@
 
     <para>Der Editor wird angezeigt, wenn der entsprechende Benutzer
     zumindestens eine 'kommentieren' Berechtigung für die 'WYSIWYG'-Komponente
-    (ggfs. verbunden mit dem Modulnamen als Instanz) besitzt:</para>
+    (ggfs. verbunden mit dem Modulnamen als Instanz) besitzt:<indexterm>
+        <primary>Typetool</primary>
+
+        <secondary>Zugriffsrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>Typetool</secondary>
+      </indexterm></para>
 
     <para>GROUP | WYSIWYG:: | MOD_NAME:: | comment</para>
 
@@ -1167,13 +1454,19 @@
   </section>
 
   <section id="adminmessages">
-    <title>Admin Messages</title>
+    <title>Admin Messages<indexterm>
+        <primary>Admin Messages</primary>
+      </indexterm><indexterm>
+        <primary>Wilkommensnachricht</primary>
+
+        <see>Admin Messages</see>
+      </indexterm></title>
 
     <para>Die Admin Messages sind Meldungen, die im zugehörigen Block
     angezeigt werden. Dieser wird typischerweise so platziert, dass er auf der
     Hauptseite immer oberhalb der Beiträge angezeigt wird. Damit sind die
     Admin Messages immer sichtbar. Dies ist praktisch, wenn man seinen
-    Besuchern etwas mitteilen möchte. </para>
+    Besuchern etwas mitteilen möchte.</para>
 
     <tip>
       <para>Es ist durchaus möglich, mehr als eine Admin Message
@@ -1191,7 +1484,7 @@
 
     <para>Sind bereits Mitteilungen geschrieben, erscheinen diese ganz oben
     und können direkt editiert oder gelöscht werden. Während der Installation
-    wird eine Standard-Nachricht angelegt, die wir nun löschen. </para>
+    wird eine Standard-Nachricht angelegt, die wir nun löschen.</para>
 
     <bridgehead>Willkommensnachricht löschen</bridgehead>
 
@@ -1221,7 +1514,7 @@
 
     <para>Weil wir gerade dabei sind, hier kann man gleich noch einen eigenen
     Willkommens-Text schreiben. Dazu füllt man einfach die Felder darunter
-    aus. </para>
+    aus.</para>
 
     <para>Zunächst sollte man einen <emphasis role="bold">Titel</emphasis>
     eintragen. Im nächsten Feld trägt man den <emphasis

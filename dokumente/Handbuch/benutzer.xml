@@ -18,7 +18,9 @@
   Zusammenhänge sehr wichtig.</para>
 
   <section id="benutzerverwaltung">
-    <title>Benutzerverwaltung</title>
+    <title>Benutzerverwaltung<indexterm>
+        <primary>Benutzerverwaltung</primary>
+      </indexterm></title>
 
     <para>Üblicherweise registrieren Benutzer sich selbst und sind dann dem
     System bekannt. Über den Menüpunkt <menuchoice>
@@ -64,12 +66,18 @@
     </variablelist>
 
     <section id="mitgliederliste">
-      <title>Mitgliederliste</title>
+      <title>Mitgliederliste<indexterm>
+          <primary>Mitgliederliste</primary>
+        </indexterm></title>
 
       <para>Die Mitgliederliste zeigt eine alphabetische Auflistung aller
       registrierten Mitglieder.</para>
 
-      <bridgehead>Zugriffsrechte</bridgehead>
+      <bridgehead>Zugriffsrechte<indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>Mitgliederliste</secondary>
+        </indexterm></bridgehead>
 
       <para>Für das Modul Mitgliederliste gilt die Komponente 'Members_List::'
       wenn man z.B. den Zugriff auf die Mitgliederliste für unregistrierte
@@ -84,7 +92,11 @@
     </section>
 
     <section id="benutzeranmailen">
-      <title>Benutzer anmailen</title>
+      <title>Benutzer anmailen<indexterm>
+          <primary>Benutzer anmailen</primary>
+
+          <seealso>Mailer</seealso>
+        </indexterm></title>
 
       <para>Hier können gezielt einzelne User oder alle registrierten User
       angemailt werden.</para>
@@ -105,7 +117,11 @@
     </section>
 
     <section id="loginblock">
-      <title>Der "User's Login"-Block</title>
+      <title>Der "User's Login"-Block<indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Login</secondary>
+        </indexterm></title>
 
       <para>Hiermit können sich registrierte Benutzer anmelden. Für noch nicht
       registrierte Benutzer steht ein Informationstext und ein Link zur
@@ -116,7 +132,11 @@
     </section>
 
     <section id="onlineblock">
-      <title>Der "Online"-Block</title>
+      <title>Der "Online"-Block<indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Online</secondary>
+        </indexterm></title>
 
       <para>Dieser Block zeigt an, wie viele Nutzer bzw. Gäste gerade online
       sind, unter welchem Namen man selbst angemeldet ist, und wie viele
@@ -124,7 +144,11 @@
     </section>
 
     <section id="custombox">
-      <title>Der "User's Custom Box"-Block</title>
+      <title>Der "User's Custom Box"-Block<indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>User's Custom Box</secondary>
+        </indexterm></title>
 
       <para>Der Inhalt dieses Blocks kann vom Anwender selbst bestimmt werden
       (z.B. Lieblingslinks).</para>
@@ -132,7 +156,9 @@
   </section>
 
   <section id="gruppenverwaltung">
-    <title>Gruppenverwaltung</title>
+    <title>Gruppenverwaltung<indexterm>
+        <primary>Gruppenverwaltung</primary>
+      </indexterm></title>
 
     <para>Die Gruppen dienen in PostNuke in erster Linie zur Verwaltung der
     Berechtigungen. In der Standard-Auslieferung von PostNuke gibt es zunächst
@@ -162,7 +188,9 @@
         <para>Bei Upgrades von älteren Version von PostNuke, PHPNuke oder
         myPHPNuke werden zusätzlich Gruppen gemäß den alten Autorenrechten
         eingerichtet, allerdings müssen die Rechte neu zugewiesen
-        werden.</para>
+        werden.<indexterm>
+            <primary>Update</primary>
+          </indexterm></para>
       </note>Zur individuellen Verwaltung kann man unter <menuchoice>
         <guimenu>Administration</guimenu>
 
@@ -196,7 +224,9 @@
   </section>
 
   <section id="zugriffsrechte">
-    <title>Zugriffsrechte (Permissions)</title>
+    <title>Zugriffsrechte (Permissions)<indexterm>
+        <primary>Zugriffsrechte</primary>
+      </indexterm></title>
 
     <para>Das Berechtigungssystem erlaubt Administratoren die Inhalte ihrer
     Seite zu schützen und den Zugang zu allen Bereich individuell
@@ -253,14 +283,22 @@
     diese an - wenn also eine Zeile Adminberechtigung einräumt kann dies nicht
     durch eine spätere Zeile eingeschränkt werden!</para>
 
-    <para>Die <emphasis role="bold">Komponente</emphasis> ist vorgegeben, z.B.
-    Menublock:: oder Onlineblock::.</para>
+    <para>Die <emphasis role="bold">Komponente<indexterm>
+        <primary>Komponente</primary>
 
-    <para>Die <emphasis role="bold">Instanz</emphasis> besteht aus zwei
-    Teilen, deren Bedeutung von der jeweiligen Komponente abhängt. Die
-    einzelnen Teile sind durch den Doppelpunkt voneinander getrennt. Der
-    Ausdruck, der ausgewertet wird, ist ein regulärer Ausdruck. Damit mag der
-    eine oder andere nichts anfangen, aber mal kurz:</para>
+        <see>Zugriffsrechte</see>
+      </indexterm></emphasis> ist vorgegeben, z.B. Menublock:: oder
+    Onlineblock::.</para>
+
+    <para>Die <emphasis role="bold">Instanz<indexterm>
+        <primary>Instanz</primary>
+
+        <see>Zugriffsrechte</see>
+      </indexterm></emphasis> besteht aus zwei Teilen, deren Bedeutung von der
+    jeweiligen Komponente abhängt. Die einzelnen Teile sind durch den
+    Doppelpunkt voneinander getrennt. Der Ausdruck, der ausgewertet wird, ist
+    ein regulärer Ausdruck. Damit mag der eine oder andere nichts anfangen,
+    aber mal kurz:</para>
 
     <itemizedlist>
       <listitem>
@@ -427,10 +465,28 @@
       ihre Reihenfolge in der Liste) nicht ändert, sollte das allerdings nicht
       passieren... Wenn man sich trotz aller Warnungen einmal selber
       ausgesperrt hat, kann das PostNuke Swiss Army Knife Tool die
-      Berechtigungen wieder auf den Standard zurücksetzen.</para>
+      Berechtigungen wieder auf den Standard zurücksetzen.<indexterm>
+          <primary>Sicherheit</primary>
+        </indexterm></para>
     </warning>
 
-    <bridgehead>Benutzer oder Gruppenrechte?</bridgehead>
+    <bridgehead>Benutzer oder Gruppenrechte?<indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>Gruppebnrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>Benutzerrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Benutzerrechte</primary>
+
+        <see>Zugriffsrechte</see>
+      </indexterm><indexterm>
+        <primary>Gruppenrechte</primary>
+
+        <see>Zugriffsrechte</see>
+      </indexterm></bridgehead>
 
     <para>Eines vorweg: die Rechte sind in beiden fällen die Gleichen.
     Einziger Unterschied besteht in der Rangfolge der Rechte:

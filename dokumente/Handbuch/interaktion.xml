@@ -13,7 +13,13 @@
   <title>Interaktion mit dem Besucher: Umfragen, Foren usw.</title>
 
   <section id="reviews">
-    <title>Reviews (Bewertungen)</title>
+    <title>Reviews (Bewertungen)<indexterm>
+        <primary>Reviews</primary>
+
+        <see>Bewertungen</see>
+      </indexterm><indexterm>
+        <primary>Bewertungen</primary>
+      </indexterm></title>
 
     <para>PostNuke erlaubt es, Bewertungen auf der Site zu haben. Mit diesem
     Modul werden die Bewertungen verwaltet.</para>
@@ -49,7 +55,13 @@
   </section>
 
   <section id="polls">
-    <title>Umfragen (Polls)</title>
+    <title>Umfragen (Polls)<indexterm>
+        <primary>Umfragen</primary>
+      </indexterm><indexterm>
+        <primary>Polls</primary>
+
+        <see>Umfragen</see>
+      </indexterm></title>
 
     <para>In diesem Modul kann man ganz einfach Umfragen erstellen, bestehende
     Umfragen löschen oder ändern.</para>
@@ -84,7 +96,15 @@
     man Kommentare für Umfragen freigeben kann. Die Änderungen werden mit
     'übertragen' gesichert.</para>
 
-    <bridgehead>Zugriffsrechte</bridgehead>
+    <bridgehead>Zugriffsrechte<indexterm>
+        <primary>Umfragen</primary>
+
+        <secondary>Zugriffsrechte</secondary>
+      </indexterm><indexterm>
+        <primary>Zugriffsrechte</primary>
+
+        <secondary>Umfragen</secondary>
+      </indexterm></bridgehead>
 
     <para>Standardmäßig sind die Polls für die unregistrierten User nicht
     zugänglich - wer das ändern will, muß die Polls entsprechend
@@ -96,19 +116,32 @@
     Kommentare einzustellen, daß anonyme User nicht kommentieren dürfen, sonst
     kann der böswillige Besucher damit natürlich Schabernack treiben.</para>
 
-    <bridgehead>Core/Display poll Block</bridgehead>
+    <bridgehead>Der "Display Poll"-Block<indexterm>
+        <primary>Umfragen</primary>
+
+        <secondary>Block</secondary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Display Poll</secondary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Umfragenl</secondary>
+      </indexterm></bridgehead>
 
     <para>In diesem Block ist die aktuelle Umfrage zu sehen und man kann
     abstimmen. Ältere Umfragen stehen über den Link zur Verfügung.</para>
   </section>
 
   <section id="pnESP">
-    <title>pnESP</title>
+    <title>pnESP<indexterm>
+        <primary>pnESP</primary>
+      </indexterm></title>
 
-    <para>Das eingebaute <ulink
-    url="http://www.post-nuke.net/Content-PostNuke%20Handbuch-44-91-75.html">
-    Umfrage-Modul</ulink> von PostNuke weist einige Schwächen auf.
-    Vielseitiger einzusetzen ist das 'PostNuke Easy Survey Package' <ulink
+    <para>Das eingebaute <link linkend="polls">Umfrage-Modul</link> von
+    PostNuke weist einige Schwächen auf. Vielseitiger einzusetzen ist das
+    'PostNuke Easy Survey Package' <ulink
     url="http://pnesp.sf.net">pnESP</ulink>.</para>
 
     <para>pnESP ist ein Modul zum Gestalten, Veröffentlichen und Auswerten von
@@ -200,7 +233,13 @@
   </section>
 
   <section id="pnforum">
-    <title>pnForum (phpBB_14)</title>
+    <title>pnForum (phpBB_14)<indexterm>
+        <primary>pnForum</primary>
+      </indexterm><indexterm>
+        <primary>phpBB_14</primary>
+
+        <see>pnForum</see>
+      </indexterm></title>
 
     <para>Das pnForum ist aus phpBB 1.4 hervorgegangen - diese Wurzeln sind
     mittlerweile aber kaum noch zu erkennen. Zum einen hat sich phpBB mit der
@@ -228,7 +267,19 @@
     sollte gleich zu pnForum greifen.</para>
 
     <section id="pnforum.permissions">
-      <title>Zugriffsrechte: phpBB_14</title>
+      <title>Zugriffsrechte: phpBB_14<indexterm>
+          <primary>pnForum</primary>
+
+          <secondary>Zugriffsrechte</secondary>
+        </indexterm><indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>pnForum</secondary>
+        </indexterm><indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>phpBB_14</secondary>
+        </indexterm></title>
 
       <para>Bei den Zugriffsberechtigungen im Administrationsbereich kann man
       durch einen Klick auf "Komponente" bzw. "Instanz" eine Auflistung aller
@@ -347,7 +398,11 @@
   </section>
 
   <section id="formicula">
-    <title>Formicula (Kontaktformular)</title>
+    <title>Formicula (Kontaktformular)<indexterm>
+        <primary>Formicula</primary>
+      </indexterm><indexterm>
+        <primary>Kontaktformular</primary>
+      </indexterm></title>
 
     <para>Formicula erlaubt das flexible Erstellen von Kontaktformularen aller
     Art. Wird ein neues Textfeld benötigt oder eine Dropdownliste? Alles dank
@@ -358,7 +413,11 @@
   </section>
 
   <section id="pntresmailer">
-    <title>pnTresMailer (Newsletter-Versand)</title>
+    <title>pnTresMailer (Newsletter-Versand)<indexterm>
+        <primary>pnTresMailer</primary>
+      </indexterm><indexterm>
+        <primary>Newsletter</primary>
+      </indexterm></title>
 
     <para>Als einziges PostNuke Newsletter-Module in aktiver Entwicklung muss
     man sich schnell mit pnTresMailer anfreunden. Das fällt aber auch gar

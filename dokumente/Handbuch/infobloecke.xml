@@ -13,7 +13,17 @@
   <title>Menüs und Infoblöcke</title>
 
   <section id="genericmenu">
-    <title>Core/Generic menu</title>
+    <title>Core/Generic menu<indexterm>
+        <primary>Menü</primary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Generic Menu</secondary>
+      </indexterm><indexterm>
+        <primary>Blöcke</primary>
+
+        <secondary>Menüblock</secondary>
+      </indexterm></title>
 
     <para>Dies ist der wesentliche Navigationsblock.</para>
 
@@ -136,7 +146,27 @@
     </variablelist>
 
     <section id="genericmenupermissions">
-      <title>Zugriffsrechte für das Hauptmenü</title>
+      <title>Zugriffsrechte für das Hauptmenü<indexterm>
+          <primary>Zugriffsrechte</primary>
+
+          <secondary>Menüblock</secondary>
+        </indexterm><indexterm>
+          <primary>Menüblock</primary>
+
+          <secondary>Zugriffsrechte</secondary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Generic Menu</secondary>
+
+          <tertiary>Zugriffsrechte</tertiary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Menüblock</secondary>
+
+          <tertiary>Zugriffsrechte</tertiary>
+        </indexterm></title>
 
       <para>Ein gutes Beispiel für die Anwendung des PostNuke
       Berechtigunssystems liefert das Hauptmenü.</para>
@@ -250,7 +280,13 @@
     usw. anzeigen.</para>
 
     <section id="buttonlinkblock">
-      <title>Core/Button Link Block</title>
+      <title>Core/Button Link Block<indexterm>
+          <primary>Button Link Block</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Button Link</secondary>
+        </indexterm></title>
 
       <para>Mit vorhanden Grafiken kann hier einfach eine Navigation mit
       Buttons erstellt werden. Außerdem lassen sich damit auch die beliebten
@@ -258,14 +294,26 @@
     </section>
 
     <section id="plaintextblock">
-      <title>Core/Plain Text</title>
+      <title>Core/Plain Text<indexterm>
+          <primary>Plain text Block</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Plain Text</secondary>
+        </indexterm></title>
 
       <para>Eine einfache Möglichkeit, Text in einem Block
       darzustellen.</para>
     </section>
 
     <section id="htmlblock">
-      <title>Core/HTML</title>
+      <title>Core/HTML<indexterm>
+          <primary>HTML-Block</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>HTML-Block</secondary>
+        </indexterm></title>
 
       <para>Dieser Block lädt als Inhalt die angegebenen HTML-Tags.</para>
 
@@ -282,14 +330,26 @@
     </section>
 
     <section id="fileincludeblock">
-      <title>Core/Simple File Include</title>
+      <title>Core/Simple File Include<indexterm>
+          <primary>File Include Block</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>File Include</secondary>
+        </indexterm></title>
 
       <para>Dieser Block lädt als Inhalt eine vorgebene Datei (z.B.
       PHP)</para>
     </section>
 
     <section id="phpscriptblock">
-      <title>Core/PHP Script</title>
+      <title>Core/PHP Script<indexterm>
+          <primary>PHP Skript Block</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>PHP Skript</secondary>
+        </indexterm></title>
 
       <para>Dieser Block lädt als Inhalt eine vorgebene PHP-Datei.</para>
 
@@ -313,7 +373,19 @@
     </section>
 
     <section id="searchblock">
-      <title>Core/Search Box</title>
+      <title>Core/Search Box<indexterm>
+          <primary>Search Box</primary>
+        </indexterm><indexterm>
+          <primary>Suchbox</primary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Search Box</secondary>
+        </indexterm><indexterm>
+          <primary>Blöcke</primary>
+
+          <secondary>Suchbox</secondary>
+        </indexterm></title>
 
       <para>Ein Block der eine Suchfunktion anbietet. Bei aktiviertem Block
       kann man in der Blockadministration auf 'editieren' klicken, um die

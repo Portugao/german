@@ -10,7 +10,9 @@
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>Was ist der safe_mode?</title>
+  <title>Was ist der safe_mode?<indexterm>
+      <primary>safe_mode</primary>
+    </indexterm></title>
 
   <para>Der safe_mode ist eine Möglichkeit, sich beim Shared Hosting vor
   Angriffen von anderen Kunden (nicht von außen!) zu schützen. Mehr
@@ -66,7 +68,9 @@
 
   <itemizedlist>
     <listitem>
-      <para>CGI-Version von PHP bekommen:</para>
+      <para>CGI-Version von PHP bekommen:<indexterm>
+          <primary>PHP</primary>
+        </indexterm></para>
 
       <orderedlist>
         <listitem>
@@ -116,9 +120,11 @@
     </listitem>
 
     <listitem>
-      <para>Apache anweisen, diese PHP-Version zu nutzen - Jetzt muss man noch
-      dem Apache mitteilen, dass ab sofort diese PHP-Version zu benutzen ist.
-      Das geschieht mit einer <filename>.htaccess</filename>-Datei im
+      <para>Apache<indexterm>
+          <primary>Apache</primary>
+        </indexterm> anweisen, diese PHP-Version zu nutzen - Jetzt muss man
+      noch dem Apache mitteilen, dass ab sofort diese PHP-Version zu benutzen
+      ist. Das geschieht mit einer <filename>.htaccess</filename>-Datei im
       Stammverzeichnis der Webpräsenz mit dem folgenden
       Inhalt:<programlisting># Einen neuen MIME-Typ definieren 
 AddType application/cgi-php .php 
