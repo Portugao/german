@@ -24,7 +24,7 @@
     mit einer Vielzahl Datenbanksysteme funktionieren - zur Zeit empfiehlt
     sich nur die Benutzung von <ulink
     url="http://www.mysql.com/">MySQL</ulink> , da vor allem Modul von
-    Dritt-Anbietern oft noch nicht vollkommen auf ADOdb umgestellt
+    Dritt-Anbietern oft noch nicht vollkommen auf ADODB umgestellt
     sind.</para>
 
     <section>
@@ -118,8 +118,8 @@
         zufriedenstellend zum Laufen. Das Werbegerümpel, was im http-header(!)
         eingebunden ist und die etwas seltsame php4u-Umgebung werfen so einige
         Probleme im Betrieb der Seite auf. Einzige Lösung: einen gescheiten
-        Provider suchen. Wenn Du Dich davon aber nicht abschrecken läßt, und
-        es trotzdem versuchen möchtest, helfen Die die folgenden Links
+        Provider suchen. Wenn man sich davon aber nicht abschrecken läßt, und
+        es trotzdem versuchen möchte, helfen die folgenden Links
         weiter:</para>
 
         <itemizedlist>
@@ -155,11 +155,12 @@
             laufen zu bekommen ist, findet man unter
             http://httpd.apache.org/docs/windows.html.</para>
 
-            <para>Starte die Installation wie bei jedem anderen Programm,
-            lasse den Installationspfad am besten so wie er ist. Starte deinen
-            Webbrowser und gib Sie als URL <systemitem
+            <para>Die Installation startet man wie bei jedem anderen Programm,
+            den Installationspfad lässt man am besten so wie er ist. Nach
+            Abschluß der Installation startet man dann den Webbrowser und gib
+            als URL <systemitem
             class="systemname">http://localhost/</systemitem> ein. Wenn alles
-            richtig gemacht worden ist, dann siehst du jetzt eine Seite, auf
+            richtig gemacht worden ist, dann sieht man jetzt eine Seite, auf
             der steht, dass der Apache Webserver erfolgreich installiert
             wurde.</para>
           </listitem>
@@ -176,10 +177,10 @@
             bzw. http://www.php.net/manual/en/install.apache2.php (für Apache
             2).</para>
 
-            <para>PHP kann auf zwei Arten installieren, als Modul und als
+            <para>PHP kann man auf zwei Arten installieren, als Modul und als
             CGI-Sprache. Empfehlenswert ist es, PHP als Modul von Apache zu
-            installieren. Entpacke das PHP Paket, und installiere es in das
-            vorgegebene Verzeichnis. Zur Konfiguration des Apache-Servers ist
+            installieren. Das PHP Paket entpacken und in das vorgegebene
+            Verzeichnis installieren. Zur Konfiguration des Apache-Servers ist
             es dann noch notwendig die <filename>httpd.conf</filename>-Datei
             zu editieren, und nach<programlisting>#AddHandler type-map var</programlisting>folgende
             Zeilen hinzuzufügen:<programlisting>#AddHandler type-map var
@@ -188,20 +189,18 @@
 ScriptAlias /php/ "c:/php/"
 AddType application/x-httpd-php .php
 AddType application/x-httpd-php-source .phps
-Action application/x-httpd-php /php/php.exe</programlisting>Dann müsstest du
-            den oberen Abschnitt sehen, mach die #-Zeichen am Anfang weg, so
-            das das ganze dann aussieht wie hier oben. Speicher und schliesse
-            die <filename>httpd.conf</filename>. Nach dieser Änderung ist ein
-            Neustart des Apache notwendig.</para>
+Action application/x-httpd-php /php/php.exe</programlisting>Nun speichert und
+            schliesst man die <filename>httpd.conf</filename>. Nach dieser
+            Änderung ist ein Neustart des Apache notwendig.</para>
 
             <para>Alle Dateien, die in dem Verzeichnis
             <filename>htdocs</filename> im Apache Programmordner liegen und
             auf ".php" enden werden vom Apache Server nun als PHP-Skripte
-            interpretiert. Um dies zu testen, erstellst du eine Datei
+            interpretiert. Um dies zu testen, erstellt man eine Datei
             <filename>phpinfo.php</filename> mit folgendem
             Code:<programlisting>&lt;?php
 phpinfo()
-?&gt;</programlisting>Diese speicherst du dann im Apache
+?&gt;</programlisting>Diese speichert man dann im Apache
             <filename>/htdocs</filename>-Verzeichnis ab. Ruft man nun unter
             <filename>http://localhost/phpinfo.php</filename> das Skript auf
             sollten einige Informationen von PHP angezeigt werden.</para>
@@ -215,14 +214,14 @@ phpinfo()
           <listitem>
             <para>Die aktuelle Version von MySQL bekommt man unter <ulink
             url="http://www.mysql.de/downloads/index.html">http://www.mysql.de/downloads/index.html</ulink>.
-            Wenn du die richtige Version downgeloadet hast, ist auch diese
-            Installation einfach. Zunächst installierst du MySQL in den
-            angegebenen Pfad (C:mysql), dann startest du im MySQL-Ordner /bin
+            Wenn man die richtige Version downgeloadet hat, ist auch diese
+            Installation einfach. Zunächst installiert man MySQL in den
+            angegebenen Pfad (C:mysql), dann startet man im MySQL-Ordner /bin
             das Programm winmysqladmin.exe, gibst dort einen Usernamen und ein
             Passwort ein (merken, wichtig für Datenbankaktionen) und lässt es
             laufen. Von nun an wird dieses Programm auch in Autostart bei
             jedem Hochfahren gestartet. Falls dies nicht nötig oder
-            unerwünscht ist, lösche den Eintrag aus "Autostart".</para>
+            unerwünscht ist, löscht man den Eintrag aus "Autostart".</para>
           </listitem>
         </varlistentry>
 
@@ -230,20 +229,19 @@ phpinfo()
           <term>phpMyAdmin</term>
 
           <listitem>
-            <para>phpMyAdmin ist ein Administrationstool für MySQL, mit ihm
-            kann man auf Datenbanken direkt über den Webbrowser zugreifen -
-            Download unter <ulink
+            <para>phpMyAdmin ist ein Administrationstool für MySQL - Download
+            unter <ulink
             url="http://www.phpmyadmin.net/">http://phpmyadmin.sourceforge.net</ulink>.
             Mit ihm kann man sehr leicht auf Datenbanken zugreifen (erstellen,
-            ändern und löschen). Entpacke das Paket in das Apache
+            ändern und löschen). Man entpackt das Paket in das Apache
             /htdocs-Verzeichnis. Dort werden auch in Zukunft alle Websiten und
-            PHP-Programme gespeichert. Nach dem Entpacken findest du dort eine
-            Datei Names confic.inc.php, öffne diese, und editiere die
-            gewünschten Variablen. Du benötigen auf jeden Fall deinen
-            MySQL-Usernamen und das Passwort. Nach dem editieren speicherst du
+            PHP-Programme gespeichert. Nach dem Entpacken findet man dort eine
+            Datei Names confic.inc.php, diese öffnen, und die gewünschten
+            Variablen editieren. Man benötigen auf jeden Fall den
+            MySQL-Usernamen und das Passwort. Nach dem editieren speichert man
             das ganze, und gehst mit dem Browser auf folgende URL:
-            <filename>http://localhost/phpMyAdmin/index.php</filename>
-            Solltest du jetzt etwas buntes sehen, dann waren deine Bemühungen
+            <filename>http://localhost/phpMyAdmin/index.php</filename>. Wenn
+            man jetzt etwas buntes sieht, dann waren die Bemühungen
             erfolgreich.</para>
           </listitem>
         </varlistentry>
@@ -259,8 +257,8 @@ phpinfo()
         <para>Zur Zeit gibt es drei XAMPP-Distributionen:Für Windows, Linux
         und Solaris. Der Download ist aber mit fast 60 MB sehr groß, wer kein
         DSL hat kann eine CD für 5 Euro bestellen. Nach der denkbar einfachen
-        Installation unter Windows liefen alle Module die bei mir zum Einsatz
-        kommen problemlos.</para>
+        Installation unter Windows liefen alle Module, die hier zum Einsatz
+        kommen, problemlos.</para>
       </tip>
     </section>
   </section>
@@ -279,10 +277,10 @@ phpinfo()
 
     <para>Selbstverständlich führen auch bei der PostNuke-Installation viele
     Wege nach Rom, so unterscheidet es sich, ob die Installation via FTP auf
-    den Server geladen wird, oder ob ein Shell-Zugang besteht und das Archiv
-    online entpackt wird etc. Aber, wie bereits in den Grundlagen erwähnt
-    möchte ich hier alles so einfach wie möglich halten und somit erkläre ich
-    den - in meinen Augen - gebräuchlichsten Weg.</para>
+    den Server geladen wird oder ob ein Shell-Zugang besteht und das Archiv
+    online entpackt wird. Aber, wie bereits in den Grundlagen erwähnt möchten
+    wir hier alles so einfach wie möglich halten und somit erkläre wir den (in
+    unseren Augen) gebräuchlichsten Weg.</para>
 
     <bridgehead>Download und Entpacken der notwendigen Dateien</bridgehead>
 
@@ -314,7 +312,7 @@ phpinfo()
             <textobject>
               <para>Die Verzeichnisstruktur nach dem Entpacken. Die beiden
               markierten <filename>html</filename>-Verzeichnisse müssen
-              ineinanderkopiert werden.</para>
+              ineinander kopiert werden.</para>
             </textobject>
 
             <imageobject>
@@ -355,7 +353,7 @@ phpinfo()
 
       <step>
         <para>Wichtig beim Aufspielen ist, dass die Dateien da landen, wo
-        später auf die Seite zugegriffen wird. Soll heissen, dass am Besten
+        später auf die Seite zugegriffen wird. Soll heissen, dass am besten
         nicht der Ordner <filename>/html/</filename> aufgespielt wird, sondern
         nur dessen Inhalt. Sonst muss die Seite über <systemitem
         class="systemname">http://www.deinedomain.de/html/</systemitem>
@@ -407,8 +405,8 @@ phpinfo()
 
       <step>
         <para>Im nächsten Schritt fragt PostNuke die Daten für den
-        Datenbankzugriff ab. Die bekommst Du von Deinem Provider bzw. wenn Du
-        einen eigenen Server mit eigener Datenbank benutzt, kennst Du ja die
+        Datenbankzugriff ab. Die bekommt man von seinem Provider bzw. wenn man
+        einen eigenen Server mit eigener Datenbank benutzt, kennt man ja die
         Einstellungen.</para>
 
         <variablelist>
@@ -498,11 +496,11 @@ phpinfo()
       </step>
 
       <step>
-        <para>Nach dem Klick auf <guimenu>Submit</guimenu> gibt Dir PostNuke
-        nochmal eine Zusammenfassung der Daten. Wenn diese korrekt sind,
-        kannst Du wählen, ob es sich um eine neue Installation oder ein
-        Upgrade handelt. Wir gehen hier natürlich von einer neuen Installation
-        aus und klicken auf <guimenu>Install</guimenu>.</para>
+        <para>Nach dem Klick auf <guimenu>Submit</guimenu> gibt PostNuke
+        nochmal eine Zusammenfassung der Daten aus. Wenn diese korrekt sind,
+        kann man wählen, ob es sich um eine neue Installation oder ein Upgrade
+        handelt. Man geht hier natürlich von einer neuen Installation aus und
+        klicken auf <guimenu>Install</guimenu>.</para>
 
         <mediaobject>
           <imageobject>
@@ -514,7 +512,7 @@ phpinfo()
       <step>
         <para>Im nächsten Schritt fragt PostNuke, ob es eine neue Datenbank
         anlegen soll oder nicht. In der Regel lassen die wenigsten Provider
-        das zu, also kannst Du die Standard-Antwort (im unteren Kästchen kein
+        das zu, also kann man die Standard-Antwort (im unteren Kästchen kein
         Haken) nutzen.</para>
 
         <mediaobject>
@@ -524,9 +522,9 @@ phpinfo()
         </mediaobject>
 
         <tip>
-          <para>bei Root-Zugang zum Datenbank-Server kann die Erstellung einer
+          <para>Bei Root-Zugang zum Datenbank-Server kann die Erstellung einer
           Datenbank gewählt werden, bei gehosteten Seiten ist dies in der
-          Regel nicht möglich</para>
+          Regel nicht möglich.</para>
         </tip>
       </step>
 
@@ -545,7 +543,7 @@ phpinfo()
         <para>Weiter geht es damit, dass die Daten für den Administrator
         abgefragt werden. Dieser kann alles verändern, was die Seite betrifft.
         Aussehen, Einstellungen, Artikel hinzufügen oder löschen etc. Das
-        Passwort solltest Du also nicht verlieren...</para>
+        Passwort sollte man also nicht verlieren...</para>
 
         <variablelist>
           <varlistentry>
@@ -657,17 +655,18 @@ phpinfo()
           werden.</para>
 
           <para>Die Rechte für die <filename>config.php</filename> und
-          <filename>config-old.php</filename> sollten wieder zurück auf 664
+          <filename>config-old.php</filename> sollten wieder zurück auf 644
           gesetzt werden.</para>
         </caution>
       </step>
 
       <step>
-        <para>Wenn Du jetzt nicht zu schnell warst, hast Du Dein FTP-Programm
-        noch auf. Das brauchst Du noch, denn wie Dir sicher auffällt steht als
-        Reminder auf der Seite, dass Du die <filename>install.php</filename>
-        und den <filename>install</filename>-Ordner aus Sicherheitsgründen
-        löschen sollst, also bietet es sich an, das jetzt zu tun.</para>
+        <para>Wenn man jetzt nicht zu schnell war, hat man sein FTP-Programm
+        noch auf. Das braucht man noch, denn wie einem sicher auffallen wird
+        steht als Reminder auf der Seite, dass man die
+        <filename>install.php</filename> und den
+        <filename>install</filename>-Ordner aus Sicherheitsgründen löschen
+        soll, also bietet es sich an, das jetzt zu tun.</para>
 
         <warning>
           <para>Immer wieder kommt es vor, dass der
@@ -712,22 +711,22 @@ phpinfo()
     <emphasis>niemals</emphasis> direkt auf einer Live-Seite durchgeführt
     werden. Stets sollte eine Testmigration vorausgehen.</para>
 
-    <para>Stelle Dir die folgenden Fragen:</para>
+    <para>Man stelle sich die folgenden Fragen:</para>
 
     <itemizedlist>
       <listitem>
-        <para>Welche Module und Blöcke setze ich überhaupt ein?</para>
+        <para>Welche Module und Blöcke setz man überhaupt ein?</para>
       </listitem>
 
       <listitem>
-        <para>Welche von ihnen will ich überhaupt weiterhin nutzen oder bin
-        ich ihrer über? (Merke: Alles was man jetzt rauschmeißt muß man nicht
-        mehr updaten)</para>
+        <para>Welche von ihnen will man überhaupt weiterhin nutzen oder ist
+        man sich ihrer über? (Merke: Alles was man jetzt rauschmeißt muß man
+        nicht mehr updaten)</para>
       </listitem>
     </itemizedlist>
 
-    <para>Wenn diese Liste zusammengetragen hat kann man sich an den nächsten
-    Schritt machen</para>
+    <para>Wenn man diese Liste zusammengetragen hat kann man sich an den
+    nächsten Schritt machen</para>
 
     <itemizedlist>
       <listitem>
@@ -736,7 +735,7 @@ phpinfo()
       </listitem>
 
       <listitem>
-        <para>Wenn nein: Will ich sie immer noch benutzen? Dann selber umbauen
+        <para>Wenn nein: Will man sie immer noch benutzen? Dann selber umbauen
         bzw. jemanden finden. Oder aber: Gibt es ähnliche Module die den
         gleichen Zweck erfüllen? Migieren ist zu 90% einfacher als
         umschreiben</para>
@@ -758,7 +757,7 @@ phpinfo()
       </listitem>
 
       <listitem>
-        <para>sämtliche Module, die sich auf dem Live-Server im Einsatz
+        <para>Sämtliche Module, die sich auf dem Live-Server im Einsatz
         befinden</para>
       </listitem>
 
@@ -793,7 +792,7 @@ phpinfo()
       </listitem>
 
       <listitem>
-        <para>Was muß wieder modifiziert werden</para>
+        <para>Was muß wieder modifiziert werden?</para>
       </listitem>
 
       <listitem>
@@ -806,7 +805,7 @@ phpinfo()
 
     <para>Irgendwann ist man dann hoffentlich soweit das man den Testserver
     vollständig auf das neue System umgestellt und alle erforderlichen
-    Anpasungen vorgenommen sind. Nachdem man nun eine lauffähige Version lokal
+    Anpassungen vorgenommen hat. Nachdem man nun eine lauffähige Version lokal
     hat, geht es darum, diese auch auf dem Server zur Verfügung zu
     stellen.</para>
 
@@ -957,8 +956,8 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       <title>Obwohl ich das deutsche Sprachpaket eingespielt habe, bleibt die
       Site englisch.</title>
 
-      <para>Überprüfe, ob die Usereinstellungen nicht noch auf englisch
-      gesetzt sind. Das umzuschalten reicht der Aufruf von
+      <para>Überprüfe, ob die Usereinstellungen noch auf englisch gesetzt
+      sind. Zum Umschalten reicht der Aufruf von
       <filename>http://www.deineseite.de/index.php?newlang=deu</filename></para>
     </section>
 
