@@ -182,9 +182,11 @@ IDs sind noch nicht vergeben-->
           Vermutung besteht, dass eine PostNuke Installation gehackt wurde,
           zuerst die obigen Punkte noch einmal durchgehen und dann mit dem
           PostNuke-Team in Verbindung setzen. Wenn Sicherheitsprobleme erkannt
-          werden, bitte an <email>security@postnuke.com</email> wenden. Einen
-          unabhängigen Überblick über bekannte Probleme der verschiedenen
-          Versionen liefert der <ulink
+          werden, bitte an den PostNuke Security-Tracker über das Webinterface
+          <ulink
+          url="http://news.postnuke.com/index.php?module=vpContact">http://news.postnuke.com/index.php?module=vpContact</ulink>
+          wenden. Einen unabhängigen Überblick über bekannte Probleme der
+          verschiedenen Versionen liefert der <ulink
           url="http://www.securitytracker.com/archives/target/1275.html">SecurityTracker</ulink>.</para>
         </listitem>
 
