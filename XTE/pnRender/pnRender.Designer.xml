@@ -46,6 +46,19 @@
           <orgname>PostNuke</orgname>
         </affiliation>
       </author>
+
+      <author>
+        <firstname>Steffen</firstname>
+
+        <surname>Voss</surname>
+
+        <affiliation>
+          <jobtitle>German Translation</jobtitle>
+
+          <orgname><ulink
+          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
+        </affiliation>
+      </author>
     </authorgroup>
 
     <releaseinfo>$Revision$</releaseinfo>
@@ -61,123 +74,124 @@
     </keywordset>
   </chapterinfo>
 
-  <title>pnRender for template designers</title>
+  <title>pnRender für Template-Designer</title>
 
   <section id="pnrender.tempdev.intro">
-    <title>Introduction</title>
+    <title>Einleitung</title>
 
-    <para>This section describes how to design templates. A lot of material in
-    this section is taken from the <ulink
+    <para>Dieses Kapitel führt in das Template-Disgn ein. Ein Großteil des
+    Materials stammt von der <ulink
     url="http://pnc.snowbankih.tzo.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=4">pnCommerce
-    Website</ulink>. Templates can be created using any html editor adding in
-    some non-html tags to it. They describe how smarty will replace them with
-    the right data. This short introduction is does not cover all of
-    everything that Smarty is able to do, however browse <ulink
-    url="http://smarty.php.net">their site</ulink> and take a closer
-    look.</para>
+    Website</ulink>. </para>
+
+    <para>Templates können mit allen gängigen HTML-Editoren bearbeitet werden.
+    In das verbereitete HTML werden dann die nicht-HTML-Tags eingefügt. Sie
+    geben vor, wie die Smarty-Engine die Inhalte einbauen soll. Dieses
+    Einführung kann natürlich nicht alle Möglichkeiten von Smarty abdecken.
+    Dazu kann man auf der <ulink url="???">Smarty-Homepage</ulink> mehr
+    lesen.</para>
 
     <blockquote>
       <attribution><ulink url="http://smarty.php.net/crashcourse.php">Smarty
       Crash Course</ulink></attribution>
 
-      <para>Take note that all of the functionality of Smarty (modifiers,
-      functions, etc.) deal exclusively with the presentation of content. This
-      is an important aspect of separating your presentation layer. All
-      application/business logic should reside in your application, whereas
-      all presentation-related matters should be handled by the templates.
-      This is the paradigm Smarty was built upon.</para>
+      <para>Zu beachten ist, dass alle Funktionen von Smarty (Modifier,
+      Functionen, usw.) sich nur auf die Darstellung des Inhaltes beziehen.
+      Dadurch wird die Logik vom Layout getrennt. Jegliche Logik sollte in der
+      Application liegen, das Layout sollte ausschließlich in den Templates
+      festgelegt werden. Aus diesem Motiv wurde Smarty entwickelt.</para>
     </blockquote>
   </section>
 
   <section id="pnrender.tempdev.basics">
-    <title>Template basics</title>
+    <title>Grundlegendes zu Template</title>
 
     <section id="pnrender.tempdev.basics.delimiters">
-      <title>Delimiters</title>
+      <title>Trennsymbole</title>
 
-      <para>All Smarty template tags are enclosed within <emphasis
-      role="bold">delimiters</emphasis>. The standard Smarty delimiters are
-      <markup>{</markup> and <markup>}</markup>. These are changed to
-      <markup>&lt;!--[</markup> and <markup>]--&gt;</markup> in pnRender,
-      because some people using Dreamweaver had a problem with the original
-      tags. It was suggested that tags similar to Autotheme are used. The
-      decision was made to use <markup>&lt;!--[</markup>
-      <markup>]--&gt;</markup> to allow themes to be edited in Dreamweaver
-      without distorting the page.</para>
+      <para>Alle Smarty-Tags sind von <emphasis
+      role="bold">Trennsymbolen</emphasis>. Standartmäßig ist das in Smarty
+      <markup>{</markup> und <markup>}</markup>. Diese wurden für pnRender in
+      <markup>&lt;!--[</markup> und <markup>]--&gt;</markup> geändert, weil
+      zum Beispiel Dreamweaver-benutzer Probleme mit den Originaltags haben.
+      Es gab den Vorschlag das gleiche Format wie in Autotheme zu wählen.
+      Entschieden hat sich das pnCore-Team für <markup>&lt;!--[</markup>
+      <markup>]--&gt;</markup> weil die Tags von Dreamweaver so für
+      HTML-Kommentare gehalten werden und eine Bearbeitung möglich
+      wird.</para>
 
-      <para>As Smarty uses template compiling, the tags are removed in the
-      compiled templates and replaced with php tags, so although the tags are
-      significantly longer, to noticeable no performance loss should be
-      noticed. The only overhead will be the first time the page is hit after
-      that it just uses the compiled versions which will mean that there will
-      be no difference with the delimiters used.</para>
+      <para>Da Smarty die Templates kompiliert, werden die Tags durch php
+      ersetzt - dadurch bleibt der Performanceverlust auf Grund der deutlich
+      längeren Tags unmerklich. Nur beim ersten Parsen der Seite entsteht eine
+      Zusatzlast, wenn die komplierte Version erstellt wird.</para>
     </section>
 
     <section id="pnrender.tempdev.basics.variables">
-      <title>Variables</title>
+      <title>Variablen</title>
 
-      <para>Variables that are assigned from a module are referenced by
-      preceding them with a dollar sign $.</para>
+      <para>Variables, die vom Modul zur Verfügung gestellt werden, müssen mit
+      einem $ angegeben werden.</para>
 
       <example>
-        <title>Using variables in a template</title>
+        <title>Die Benutzung von Variablen</title>
 
         <programlisting>&lt;!--[$name]--&gt;</programlisting>
       </example>
 
-      <para>So it's very easy. For an associative array, "dot notation" is
-      used:</para>
+      <para>Für assoziative Array wird die Punkt-Notiation verwendet:</para>
 
       <example>
-        <title>Using associative arrays in a template</title>
+        <title>Die Benutzung von Arrays</title>
 
         <programlisting>&lt;!--[$arrayname.index]--&gt;</programlisting>
       </example>
     </section>
 
     <section id="pnrender.tempdev.basics.modifiers">
-      <title>Modifiers</title>
+      <title>Modifier</title>
 
-      <para>Smarty has a feature called <emphasis>variable
-      modifiers</emphasis> that can alter the content of assigned variables
-      from within the template. Modifiers can be chained together on one
-      variable, making this feature quite flexible.</para>
+      <para>Smarty bietet die Möglichkeit sogenannte Modifier auf Variablen
+      anzuwenden. So können die Inhalte noch im Template angepaßt werden. Da
+      Modifier hintereinander gehängt werden können, ist dieses System sehr
+      flexibel.</para>
 
       <example>
-        <title>Modifiers</title>
+        <title>Modifier</title>
 
         <programlisting format="linespecific">&lt;!--[$name|pnvarprepfordisplay]--&gt;</programlisting>
 
-        <para>In this example, the <command
-        moreinfo="none">pnvarprepfordisplay</command> modifier is applied to
-        the variable.</para>
+        <para>In diesem Beispiel wird die Funktion <command
+        moreinfo="none">pnvarprepfordisplay</command> auf die Variable
+        angewandt.</para>
       </example>
     </section>
 
     <section id="pnrender.tempdev.basics.functions">
-      <title>Functions</title>
+      <title>Funktionen</title>
 
-      <para>Smarty also has template <emphasis>functions</emphasis> that can
-      carry out tasks. Functions are processed and displayed by enclosing the
-      function and its attributes into delimiters: <programlisting
-      format="linespecific">&lt;!--[funcname attr1="val" attr2="val"]--&gt;</programlisting>An
-      example of the usage of functions is the inclusion of other templates
-      from within a template using the include function. A module may have
-      many templates with the same header and footer information. These can
-      managed as separate templates and includes in each template.</para>
+      <para>Smarty bietet desweiteren Funktionen für verschiedene Aufgaben.
+      Funktionen werden zusammen mit den nötigen Attributen aufgerufen:
+      <programlisting format="linespecific">&lt;!--[funcname attr1="val" attr2="val"]--&gt;</programlisting></para>
+
+      <para></para>
+
+      <para>Ein Beispiel für die Benutzung von Funktionen ist die Einbindung
+      andere Templates. Wenn zum Beispiel ein Modul viele verschiedene Seiten
+      immer mit dem gleichen Seitenkopf aufrufen sollen, kann dies mit
+      Includes gelöst werden</para>
 
       <example>
-        <title>Including Another File</title>
+        <title>Einbinden eines anderen Templates</title>
 
         <programlisting format="linespecific">&lt;!--[include file="example_admin_menu.htm"]--&gt;</programlisting>
 
-        <para>This way a common menu is included in the pages.</para>
+        <para>So werden üblicherweise Dateien eingebunden.</para>
       </example>
 
-      <para>The global tags are for example function calls that return data
-      from the PostNuke or a module's core. You can use them in every
-      template. A simple example is pnml, it displays the content of a
-      language specific define:</para>
+      <para>Mit einigen Funktionen lassen sich auch Daten vom Postnuke-Core
+      abrufen. Ein sehr einfaches Beispiel dafür ist pnml
+      (Postnuke-Multilanguage), durch dessen Aufruf Sprach-Definitionen
+      geladen werden können:</para>
 
       <example>
         <title>Internationalization</title>
@@ -187,17 +201,16 @@
     </section>
 
     <section id="pnrender.tempdev.basics.flowcontrol">
-      <title>Flow Control</title>
+      <title>Ablaufkontrolle</title>
 
-      <para>There are also loops to show items lists for example or
-      if-then-else statements to control the flow of information.</para>
+      <para>In Smarty sind aber auch Schleifen und Bedingungen möglich, die
+      den Ablauf des Seitenaufbaus kontrollieren.</para>
 
       <section>
         <title>If-Then</title>
 
-        <para>To display things according to a condition, for example to
-        display an item in bold according to a boolean variable, use the
-        following tags:</para>
+        <para>Inhalte in Abhängigkeit von bestimmten Bedingungen anzuzeigen
+        geht mit folgenden Tags:</para>
 
         <programlisting format="linespecific">...
 &lt;!--[if $bold]--&gt;  
@@ -207,25 +220,36 @@
 &lt;!--[/if]--&gt;
 ...</programlisting>
 
-        <para>This shows the name in bold then the variable
-        <varname>bold</varname> is set to true, and in normal font otherwise.
-        These if-then tags have many different conditional qualifiers like: ==
-        (equal), != (not equal), &gt; (greater), &lt; (smaller), &lt;=
-        (smaller or equal), &gt;= (greater or equal), ... For further
-        information, please visit <ulink
-        url="http://smarty.php.net/manual/en/language.builtin.functions.php">this
-        page</ulink>.</para>
+        <para>In diesem Fall soll der Inhalt der Variable $name fettgedruckt
+        angezeigt werden, wenn die Variable $bold wahr (true) ist, sonst soll
+        er normal angezeigt werden. If-Then Abfragen können mit verschiedenen
+        Bedingungen erstellt werden: </para>
+
+        <para>== (gleich)</para>
+
+        <para>!= (nicht gleich)</para>
+
+        <para>&gt; (größer)</para>
+
+        <para>&lt; (kleiner)</para>
+
+        <para>&lt;= (kleiner oder gleich)</para>
+
+        <para>&gt;= (größer oder gleich)</para>
+
+        <para>Mehr Informationen gibt es auf der <ulink
+        url="http://smarty.php.net/manual/en/language.builtin.functions.php">Smarty-Homepage</ulink>.</para>
       </section>
 
       <section>
-        <title>Loops</title>
+        <title>Schleifen</title>
 
-        <para>How can we show a previously unknown amount of items? This is
-        very simple: Smarty facilitates a convenient way to loop over arrays
-        of data with the section function. Here's an example:</para>
+        <para>Wie kann man nun eine unbekannte Menge Inhalte anzeigen? Sehr
+        einfach: Smarty ermöglicht die Behandlung von Arrays durch Schleifen.
+        Zum Beispiel:</para>
 
         <example>
-          <title><command>foreach</command>-Loop</title>
+          <title><command>foreach</command>-Schleife</title>
 
           <programlisting>...
 &lt;!--[foreach item=item from=$items]--&gt;
@@ -234,8 +258,8 @@
 ...</programlisting>
         </example>
 
-        <para>The <command>foreach</command> loop works much like PHP's
-        foreach-loop.</para>
+        <para>Die <command>foreach</command> Schleife funktioniert wie die PHP
+        foreach-Schleife.</para>
       </section>
     </section>
   </section>
@@ -243,22 +267,22 @@
   <section id="pnrender.tempdev.plugins">
     <title>Plugins</title>
 
-    <para>pnRender ships with some plugins (functions as well as modifiers) ,
-    providing template developers with access to PostNuke-specific functions.
-    When you have worked with the PostNuke API, most of these plugins will
-    look familiar to you.</para>
+    <para>pnRender wird mit einigen Plugins (sowohl Modifiern als auch
+    Funktionen) ausgeliefert, um den Temeplatedesignern Zugriff auf
+    Postnuke-eigene Funktionen zu ermöglichen. Wer schon einmal mit der
+    Postnuke-API gearbeitet hat, wird sich hier leicht zurecht finden.</para>
 
     <tip>
-      <para>The PostNuke development team are looking forward for further
-      suggestions for plugins. Please submit your suggestions at the <ulink
+      <para>Das pnCore-Team freut sich über weitere Vorschläge für Plugins.
+      Wünsche sind am Besten auf der <ulink
       url="http://noc.postnuke.com/tracker/?atid=104&amp;group_id=5&amp;func=browse">Feature
-      Requests page</ulink> of the PostNuke NOC.</para>
+      Requests Seite</ulink> im Postnuke NOC abzugeben.</para>
     </tip>
 
-    <para>A module developer may provide additional plugins to allow access to
-    functions the module provides from the templates.</para>
+    <para>Modulentwickler können aber auch eigene Plugins mit ihren Modulen
+    anbieten.</para>
 
-    <para>All of these plugins are used just like any native Smarty
-    plugin.</para>
+    <para>All diese Plugins werden genau wie die nativen Smarty plugins
+    benutzt.</para>
   </section>
 </chapter>
