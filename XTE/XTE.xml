@@ -125,39 +125,32 @@
     </keywordset>
   </bookinfo>
 
-  <xi:include href="XTE.Intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="file:/C:/dedocs/XTE/XTE.Intro.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
   <xi:include href="XTE.Install.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-  <part id="XTE.Xanthia">
-    <title>Xanthia</title>
+  <xi:include href="Xanthia/Xanthia.User.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-    <xi:include href="Xanthia/Xanthia.User.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Xanthia/Xanthia.Developer.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-    <xi:include href="Xanthia/Xanthia.Developer.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-  </part>
+  <xi:include href="pnRender/pnRender.Developer.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-  <part id="XTE.pnRender">
-    <title>pnRender</title>
-
-    <xi:include href="pnRender/pnRender.Developer.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-
-    <xi:include href="pnRender/pnRender.Designer.xml"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
-  </part>
+  <xi:include href="pnRender/pnRender.Designer.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
   <xi:include href="pnTemp/pnTemp.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
   <xi:include href="pnRender/pnRender.Reference.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-  <xi:include href="XTE.News.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="XTE.News.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 
   <xi:include href="Xanthia/Xanthia.Credits.xml"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
 </book>
