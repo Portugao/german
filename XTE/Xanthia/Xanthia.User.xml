@@ -694,7 +694,7 @@
               <term>Zone Name</term>
 
               <listitem>
-                <para>Ein Name eigener Wahl </para>
+                <para>Ein Name eigener Wahl</para>
               </listitem>
             </varlistentry>
 
@@ -1161,46 +1161,46 @@
 
         <qandaentry>
           <question>
-            <para>Wie want the start page to look different from other pages.
-            How can I change the layout of the module which is set as the
-            starting-module?</para>
+            <para>Ich möchte, daß die Startseite ein anderes Layout hat, als
+            andere Seiten. Wie kann ich das Layout des Moduls ändern, das als
+            Start-Modul gesetzt ist?</para>
           </question>
 
           <answer>
-            <para>This is explained in <xref
+            <para>Das ist hier erklärt: <xref
             linkend="Xanthia.User.ModuleTemplates" /></para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>I activated a Xanthia theme, and now my news show up in two
-            columns...</para>
+            <para>Ich habe ein Xanthia Theme eingestellt und nun erscheinen
+            meine News in zwei Spalten...</para>
           </question>
 
           <answer>
-            <para>Take a look under
+            <para>Schau unter
             <guimenu>Administration</guimenu><guisubmenu>Xanthia</guisubmenu><guisubmenu>View
             Themes</guisubmenu><guisubmenu>Edit
-            Theme</guisubmenu><guimenuitem>Theme Settings</guimenuitem> for
-            the <guimenuitem>indexcol</guimenuitem> theme setting. This
-            controls the number of columns. As the theme settings are defined
-            on a per theme basis the language files, in some themes aren't as
-            clear as they could be.</para>
+            Theme</guisubmenu><guimenuitem>Theme Settings</guimenuitem> nach
+            der <guimenuitem>indexcol</guimenuitem> theme setting. Diese
+            stellt die Anzahl der Spalten ein. As the theme settings are
+            defined on a per theme basis the language files, in some themes
+            aren't as clear as they could be.</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>Is it possible to dynamically add output filters and have
-            Xanthia recognize them?</para>
+            <para>Ist es möglich, dynanamische Ausgabefilter anzugeben, die
+            Xanthia beachtet?</para>
           </question>
 
           <answer>
-            <para>At this moment, we have no possibility to add filters like
-            "copy them to a directory, and activate them im an admin menu".
-            You should be able add this into theme.php. After the engine is
-            initialised add</para>
+            <para>Im Moment gibt es keine Möglichkeit, Filter wie "kopiere
+            dies in ein Verzeichnis und aktiviere es im Amin-Menü" einzufügen.
+            Das kann man aber in der theme.php einstellen. Wenn die engine
+            initialisiert ist, füge folgendes ein:</para>
 
             <programlisting>$engine-&gt;load_filter('&lt;filtertype&gt;', '&lt;filtername&gt;');</programlisting>
           </answer>
@@ -1212,24 +1212,25 @@
 
         <qandaentry>
           <question>
-            <para>Do Envolution themes work in Xanthia?</para>
+            <para>Kann ich ein Envolution Theme für Xanthia nehmen?</para>
           </question>
 
           <answer>
-            <para>Envolution themes do not work in Xanthia since alot of the
-            code has been rewritten to have a lot more features. You should be
-            able to convert these themes to XTE very quickly though since the
-            structure is simiar to Encompass themes.</para>
+            <para>Envolution Themes arbeiten nicht mit Xanthia zusammen
+            seitdem ein Großteil des Codes bearbeitet wurde, um weitere
+            Funktionen einzubauen. Es ist jedoch recht einfach möglich, diese
+            Themes für Xanthia zu konvertieren, da die Struktur den Encompass
+            Themes sehr ähnlich ist.</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>Can AutoTheme coexist with Xanthia?</para>
+            <para>Kann ich AutoTheme neben Xanthia betreiben?</para>
           </question>
 
           <answer>
-            <para>Yes it can. No problems there at all.</para>
+            <para>Ja. Es treten keinerlei Probleme auf.</para>
           </answer>
         </qandaentry>
       </qandadiv>
@@ -1239,16 +1240,17 @@
 
         <qandaentry>
           <question>
-            <para>I've heard that Xanthia Themes are much slower that
-            traditional themes?</para>
+            <para>Ich habe gehört, daß Xanthia Themes wesentlich langsamer
+            laufen als traditionelle Themes?</para>
           </question>
 
           <answer>
-            <para>In fact Xanthia RC2 was not optimized for speed. A lot of
-            changes were made since then to improve performance. These include
-            a dramatic decrease of the number of database calls. Tests have
-            shown that the current release is as almost as fast as a
-            traditional theme.</para>
+            <para>Es ist war, daß Xanthia RC2 nicht auf Schnelligkeit
+            ausgelegt wurde. Aber viele Änderungen wurden im Laufe der Zeit
+            durchgeführt, um die Performance zu verbessern. Diese beinhalteten
+            eine starke Abnahme der Datenbank Anfragen. Tests haben gezeigt,
+            daß die aktuelle Veröffentlichung fast so schnell ist wie ein
+            traditionelles Theme.</para>
           </answer>
         </qandaentry>
       </qandadiv>
