@@ -46,7 +46,7 @@
     einzelne Seite neu angefasst werden muss. Zum Lieferumfang von PostNuke
     gehören dazu mehrere <emphasis role="bold">Themes</emphasis>. Diese dienen
     in erster Linie zum Testen dieser Funktionalität. Außerdem kann man anhand
-    dieser Beispiel auch für das Erstellen eigener Layouts die Systematik
+    dieser Beispiele auch für das Erstellen eigener Layouts die Systematik
     abgucken. Um einer Seite ein eigenes Gesicht zu geben, wird man um die
     Erstellung eines eigenen Themes nicht umhin kommen. Es gibt <ulink
     url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-3.html">mehrere
@@ -56,7 +56,7 @@
     überlassen. Im Verzeichnis <filename>/theme</filename> befinden sie die
     Unterverzeichnisse für die verschiedenen auswählbaren Layouts.</para>
 
-    <bridgehead>Funktionsumfang erweitern mit Modulen</bridgehead>
+    <bridgehead>Funktionsumfang mit Modulen erweitern</bridgehead>
 
     <para>Wie bereits erwähnt, lässt sich der Funktionsumfang einer
     PostNuke-Site über die Einbindung von Erweiterungen, den Modulen beliebig
@@ -106,7 +106,7 @@
     bei <ulink url="http://forums.postnuke.com/">forums.PostNuke.com</ulink>
     gepostet werden. Es wird aber davon abgeraten, an den mitgelieferten
     Dateien Änderungen vorzunehmen, da diese bei zukünftigen Updates entweder
-    verloren gingen oder nicht auf den aktuellsten Stand gebracht werden
+    verloren gehen oder nicht auf den aktuellsten Stand gebracht werden
     können. Da PostNuke noch 'alpha' ist, stehen bis zum offiziellen ersten
     Release noch einige größere Umstellungen an, die auf jeden Fall
     nachvollzogen werden sollten.</para>
@@ -131,7 +131,7 @@
           lesen</emphasis> - es ist viel Zeit und Anstrengung in das
           Dokumentationsprojekt geflossen und viele Fragen rund um die
           Installation und den Betrieb einer PostNuke-Seite werden dort
-          beantwortet. Insbesondere die Zugriffsrechte und erlaubte HTML-Tags
+          beantwortet. Insbesondere die Zugriffsrechte und erlaubten HTML-Tags
           sollten mit Bedacht eingestellt werden. Wenn nach dem Lesen der
           Dokumentation noch Fragen offen sind, sollten die Foren nach
           Lösungen durchsucht werden bzw. (im richtigen Forum) entsprechende
