@@ -4,7 +4,7 @@
 <chapter>
   <title>Grundkonfiguration</title>
 
-  <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw) werden
+  <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw.) werden
   bei PostNuke an zentraler Stelle eingestellt. Diese Daten sind im Punkt
   <guimenu>Einstellungen</guimenu> zusammengefasst:</para>
 
@@ -50,7 +50,7 @@
 
       <listitem>
         <para>Keywords werden dynamisch aus dem Seiteninhalt erzeugt, führt
-        allerdings zu einem Performance-Verlust da die Seite an Umfang
+        allerdings zu einem Performance-Verlust da die Seiten an Umfang
         zunehmen.</para>
       </listitem>
     </varlistentry>
@@ -68,7 +68,7 @@
       <term>Administrator E-Mail</term>
 
       <listitem>
-        <para>Kontaktadresse für alles Admin-Mail des Systems</para>
+        <para>Kontaktadresse für alle Admin-Mails des Systems</para>
       </listitem>
     </varlistentry>
 
@@ -148,8 +148,8 @@
       <term>rechte Blöcke in Beiträgen anzeigen?</term>
 
       <listitem>
-        <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
-        Theme einstellen können</para>
+        <para>Hier kann bestimmt werden, ob die rechten Blöcke in Beiträgen
+        angezeigt werden sollen</para>
       </listitem>
     </varlistentry>
 
