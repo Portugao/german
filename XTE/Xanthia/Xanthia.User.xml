@@ -1027,7 +1027,7 @@
 
     <qandaset>
       <qandadiv>
-        <title>Errors</title>
+        <title>Fehler</title>
 
         <qandaentry>
           <question>
@@ -1037,12 +1037,14 @@
           </question>
 
           <answer>
-            <para>The error indicates that Xanthia didn't find a template for
-            a given zone. Check that template is present in the templates
-            directory for your theme. Use the "PostNuke Swiss Army Knife"
-            (PSAK) tool available from <ulink
-            url="http://downloads.postnuke.com">http://downloads.postnuke.com</ulink>
-            to change back to a known good theme.</para>
+            <para>Dieser Fehler zeit an, daß Xanthia keinThe error indicates
+            that Xanthia didn't find a template for a given zone. Check that
+            template is present in the templates directory for your theme.
+            Nutze das "Swiss Army Knife Tool für PostNuke" (PSAK), das unter
+            <ulink
+            url="http://post-nuke.net/Downloads+index-req-viewdownload-cid-1.html">http://www.post-nuke.net</ulink>
+            zum Download angeboten wird, um ein funktionierendes Theme
+            einzustellen.</para>
           </answer>
         </qandaentry>
 
@@ -1070,17 +1072,17 @@
       </qandadiv>
 
       <qandadiv>
-        <title>Blocks and Block Placement</title>
+        <title>Blöcke und Block-Anordnungen</title>
 
         <qandaentry>
           <question>
-            <para>I activated a Xanthia theme, and now all right and center
-            blocks show up on all pages!</para>
+            <para>Ich habe ein Xanthia Theme eingestellt und nun sind alle
+            rechten und center Blocks auf jeder Seite zu sehen!</para>
           </question>
 
           <answer>
-            <para>By default all blocks show on all pages. To remove the
-            centre block you need to go to <menuchoice>
+            <para>Standardmäßig werden alle Blöcke auf allen Seiten angezeigt.
+            Um den center Block zu deaktivieren, gehe zur <menuchoice>
                 <guimenu>Administration</guimenu>
 
                 <guisubmenu>Xanthia</guisubmenu>
@@ -1090,52 +1092,54 @@
                 <guisubmenu>Edit Theme</guisubmenu>
 
                 <guimenuitem>Block Control</guimenuitem>
-              </menuchoice> and delete the blocks you do not want to appear
-            from the list under the module. Or turn on visual block
-            administration in the xanthia configuration page and remove the
-            blocks by visiting each module in turn and removing the ones you
-            don't want.</para>
+              </menuchoice> und lösche die Blöcke aus der Liste des Moduls,
+            die du nicht angezeigt bekommen möchtest. Oder gehe zum visual
+            block administration in der Xanthia Konfiguration und lösche die
+            Blöcke, indem zu jedes Modul aufrufst und diejenigen, die du für
+            dieses Modul nicht haben möchtest, deaktivierst.</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>I added a new Block in the Block Administration, but it
-            doesn't show up on any page</para>
+            <para>Ich habe gerade einen neuen Block erstellt, aber dieser wird
+            auf keiner Seite angezeigt.</para>
           </question>
 
           <answer>
-            <para>This is the same issue as above. Use <guimenuitem>Block
-            Control</guimenuitem> or the Visual Block Editor to enable the
-            block.</para>
+            <para>Das ist das selbe Problem wie oben. Gehe zur
+            <guimenuitem>Block Control</guimenuitem> oder nutze den Visual
+            Block Editor um den Block zu aktivieren.</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>How do you add a block to the new zone and have it appear on
-            all pages? The current way only appears to allow adding it to
-            individual modules one at a time.</para>
+            <para>Wie kann ich einen neuen Block so einstellen, daß er auf
+            allen Seiten angezeigt wird?</para>
           </question>
 
           <answer>
-            <para>The only to do it currently to to add it to each module.
-            When a theme is initialised all blocks are added to all modules by
-            default. But after this blocks need adding to each module
-            manually. This will be fxed in future releases</para>
+            <para>Im Moment ist das nur möglich, indem man nach Erstellen des
+            Blocks, diesen Block für jedes einzelne Modul aktivert. Wenn ein
+            Theme initialisiert wird, werden standardmäßig alle Blöcke in
+            allen Modulen angezeigt. Danach muß man das für neue Blöcke
+            manuell einstellen. Dieses wird aber in zukunftigen Xanthia
+            Veröffentlichungen verbessert!</para>
           </answer>
         </qandaentry>
 
         <qandaentry>
           <question>
-            <para>I want to show right blocks on the News start page, but not
-            on the article pages. How do I achive this?</para>
+            <para>Ich möchte die rechten Blöcke on der News Startseite
+            angezeigt bekommen, aber nicht beim Aufruf eines Artikels. Wie
+            kann ich das erreichen?</para>
           </question>
 
           <answer>
-            <para>Due to the architecture of the .7x News module there is
-            small hack in place in the current release of Xanthia. If you look
-            under <menuchoice>
+            <para>Durch die Architektur des .7x News Moduls wurde ein kleiner
+            Hack in die aktuelle Xanthia Veröffentlichung eingefügt worden.
+            Unter <menuchoice>
                 <guimenu>Administration</guimenu>
 
                 <guisubmenu>Xanthia</guisubmenu>
@@ -1145,13 +1149,13 @@
                 <guisubmenu>Edit Theme</guisubmenu>
 
                 <guimenuitem>Theme Settings</guimenuitem>
-              </menuchoice>, you'll see an option labelled <guimenuitem>Show
-            right blocks in news module (only for .7x)</guimenuitem>. This
-            will turn on of off the right column for the news module.</para>
+              </menuchoice> siehst du eine Option "<guimenuitem>Show right
+            blocks in news module (only for .7x)"</guimenuitem>. Diese Option
+            schaltet die rechten Blöcke im News - Modul an und aus.</para>
 
-            <para>This option is necessary as the .7x news module has it's own
-            internal hard-coded right blocks. The necessity for this willl be
-            removed for PostNuke .8.</para>
+            <para>Diese Option ist in den .7x Versionen notwendig, da das News
+            Modul hier seinen eigenen rechten Blöcke hat. Diese wird in der .8
+            Veröffentlichung nicht mehr sein!</para>
           </answer>
         </qandaentry>
       </qandadiv>
@@ -1208,7 +1212,7 @@
       </qandadiv>
 
       <qandadiv>
-        <title>Compatibility</title>
+        <title>Kompatibilität</title>
 
         <qandaentry>
           <question>
@@ -1236,7 +1240,7 @@
       </qandadiv>
 
       <qandadiv>
-        <title>General</title>
+        <title>Sonstiges</title>
 
         <qandaentry>
           <question>
