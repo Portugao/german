@@ -40,10 +40,10 @@
     Kategorie: Fussball Kategorie: Kommentar</para>
 
     <para>Bei PostNuke sind die Kategorien allerdings unabhängig von den
-    Rubriken (d.h. man könnte "Fußball" auch unter "Politik" setzen --
+    Rubriken (d.h. man könnte "Fußball" auch unter "Politik" setzen &mdash;
     PostNuke verhindert das nicht; das kann nur der gesunde Menschenverstand).
-    Die Kategorien sind nicht fest -- wenn man, um beim Sport zu bleiben, das
-    erste Mal über Kuhfladenweitwurf schreibt, muss man die Kategorie neu
+    Die Kategorien sind nicht fest &mdash; wenn man, um beim Sport zu bleiben,
+    das erste Mal über Kuhfladenweitwurf schreibt, muss man die Kategorie neu
     einrichten. Tatsächlich werden die Kategorien bei PostNuke über die
     Artikel mit verwaltet.</para>
 
@@ -368,14 +368,6 @@
     zur Veröffentlichung auf der Site bereit. Leider muß nämlich noch etwas
     nacheditiert werden:</para>
 
-    <note>
-      <para>In der derzeitigen Version des Moduls werden den Überschriften
-      immer noch ein * vorangesetzt. Die Datei modules/xmlrpc/api/blogger.php
-      hat einen Bug in Zeile 506: statt $title = "*"; sollte dort $title = "";
-      stehen, sonst hat jede Überschrift ein "*" zu Begin. Das wird beim
-      nächsten Release gefixt sein.</para>
-    </note>
-
     <para>Zusätzlich werden die Artikel nicht automatisch in die zwei
     HTML-Felder verteilt. Da das mit copy+paste aber schnell erledigt ist,
     sollte das kein Problem sein. Außerdem gibt es eine <ulink
@@ -444,15 +436,6 @@
     etwas anzumerken hat, dann kann er einen Kommentar schreiben, der in der
     Datenbank gespeichert und mit dem Artikel angezeigt wird.</para>
 
-    <para>Die Einstellung für Kommentare entscheidet, wie PostNuke mit den
-    Artikeln umgeht:</para>
-
-    <mediaobject>
-      <imageobject>
-        <imagedata align="center" fileref="kommentare.gif" format="GIF" />
-      </imageobject>
-    </mediaobject>
-
     <important>
       <para>Hier geht es ausschließlich um die Kommentare zu den News. Andere
       Module (z.B. Reviews, My_eGallery) bringen gegebenenfalls ihr eigenes
@@ -461,6 +444,15 @@
       (EZComments) geben, welches eine einheitliche Kommentarfunktion für alle
       Module ermöglicht.</para>
     </important>
+
+    <para>Die Einstellung für Kommentare entscheidet, wie PostNuke mit den
+    Artikeln umgeht:</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="kommentare.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
 
     <para>Durch die Wahl der <emphasis>Moderation</emphasis> legt man fest, ob
     nur der Administrator oder auch der Benutzer oder keine Moderation
@@ -538,7 +530,7 @@
     <title>Zugriffsrechte</title>
 
     <section>
-      <title>Zugriffsrechte: Stories</title>
+      <title>Stories</title>
 
       <para>Für den Bereich 'News' ist in erster Linie 'Stories::Story'
       interessant ('Stories::Category' wird lediglich für die Administration
@@ -595,7 +587,7 @@
     </section>
 
     <section>
-      <title>Zugriffsrechte: Topics</title>
+      <title>Topics</title>
 
       <para>Für den Bereich 'Topics' ist in erster Linie 'Topics::Topic'
       interessant ('Topics::Related' wird lediglich für die Administration der

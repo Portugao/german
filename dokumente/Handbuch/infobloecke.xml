@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Menüs und Infoblöcke</title>
 
   <section>
@@ -63,65 +69,57 @@
           Kurzform [Modul:Datei] bzw. {Modul:Funktion} verwenden. Dabei
           gilt:</para>
 
+          <bridgehead>die "alte" Art der Adressierung </bridgehead>
+
+          <para>Diese wird z.B. für die Module News, Downloads, FAQ, Reviews,
+          Search usw. benutzt. </para>
+
           <variablelist>
             <varlistentry>
-              <term>die "alte" Art der Adressierung (z.B. für die Module News,
-              Downloads, FAQ, Reviews, Search usw.)</term>
+              <term><userinput>[<replaceable>Modul</replaceable>]</userinput></term>
 
               <listitem>
-                <variablelist>
-                  <varlistentry>
-                    <term><userinput>[<replaceable>Modul</replaceable>]</userinput></term>
-
-                    <listitem>
-                      <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=index</systemitem></para>
-                    </listitem>
-                  </varlistentry>
-
-                  <varlistentry>
-                    <term><userinput>[<replaceable>Modul</replaceable>:<replaceable>Datei</replaceable>]</userinput></term>
-
-                    <listitem>
-                      <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=<replaceable>Datei</replaceable></systemitem></para>
-                    </listitem>
-                  </varlistentry>
-                </variablelist>
+                <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=index</systemitem></para>
               </listitem>
             </varlistentry>
 
             <varlistentry>
-              <term>die "neue" Art der Adressierung (z.B. für die Module
-              ContentExpress, pnAddressBook, PostCalendar usw.)</term>
+              <term><userinput>[<replaceable>Modul</replaceable>:<replaceable>Datei</replaceable>]</userinput></term>
 
               <listitem>
-                <variablelist>
-                  <varlistentry>
-                    <term><userinput>{<replaceable>Modul</replaceable>}</userinput></term>
-
-                    <listitem>
-                      <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=main</systemitem></para>
-                    </listitem>
-                  </varlistentry>
-
-                  <varlistentry>
-                    <term><userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>}</userinput></term>
-
-                    <listitem>
-                      <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=<replaceable>Funktion</replaceable></systemitem></para>
-                    </listitem>
-                  </varlistentry>
-                </variablelist>
+                <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=<replaceable>Datei</replaceable></systemitem></para>
               </listitem>
             </varlistentry>
           </variablelist>
 
-          <para>Der dafür zustängige Code schaut nur, ob das <emphasis
-          role="bold">erste</emphasis> Zeichen [ oder { ist, und geht davon
-          aus, dass das <emphasis role="bold">letzte</emphasis> Zeichen die
-          entsprechende schließende Klammer ist. Evtl. notwendige zusätzliche
-          Parameter müssen also <emphasis role="bold">in</emphasis> die
-          Klammer und nicht dahinter! Man kann auch z.B. mit
-          "{Modul:Funktion&amp;sid=1}" noch weitere Daten übergeben</para>
+          <bridgehead>die "neue" Art der Adressierung </bridgehead>
+
+          <para>Diese ist für alle pnAPI-konformen Module zu benutzen, also
+          z.B. für ContentExpress, pnAddressBook, PostCalendar usw.</para>
+
+          <variablelist>
+            <varlistentry>
+              <term><userinput>{<replaceable>Modul</replaceable>}</userinput></term>
+
+              <listitem>
+                <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=main</systemitem></para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term><userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>}</userinput></term>
+
+              <listitem>
+                <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=<replaceable>Funktion</replaceable></systemitem></para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+          <para>Eventuell notwendige zusätzliche Parameter müssen <emphasis
+          role="bold">in</emphasis> die Klammer und nicht dahinter! Man kann
+          auch z.B. mit
+          <userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>&amp;<replaceable>sid</replaceable>=<replaceable>1</replaceable>}</userinput>
+          noch weitere Daten übergeben</para>
         </listitem>
       </varlistentry>
 
@@ -139,13 +137,7 @@
       <title>Zugriffsrechte für das Hauptmenü</title>
 
       <para>Ein gutes Beispiel für die Anwendung des PostNuke
-      Berechtigunssystems liefert das Hauptmenü. Als kurze Vorbemerkung sollte
-      erwähnt werden, daß ".*" einen regulären Ausdruck darstellt. Damit mag
-      der eine oder andere nichts anfangen, aber mal kurz:</para>
-
-      <para>der . beschreibt ein beliebiges Zeichen</para>
-
-      <para>der * steht für eine beliebige Wiederholung (auch keine)</para>
+      Berechtigunssystems liefert das Hauptmenü.</para>
 
       <para>Nehmen wir einmal an, wir hätten einen Menü-Block mit dem Namen
       <guimenu>Hauptmenü</guimenu> und den Punkten
@@ -306,17 +298,6 @@
       <para>Es besteht auch die Möglichkeit, ein Suchfunktion direkt in das
       Theme einzubauen.</para>
     </section>
-
-    <section>
-      <title>Core/Languages</title>
-
-      <para>Dieser Block zeigt die Auswahl für die Sprache des Benutzers an.
-      Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
-      jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
-      Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis,
-      die auch in der Funktion "languagelist", die in der Datei
-      modules/NS-languages/api.php definiert wird, enthalten sind.</para>
-    </section>
   </section>
 
   <section>
@@ -331,31 +312,26 @@
 
     <para>Um das jetzt auf der eigenen Seite zu machen braucht man erstmal die
     Sprachdatei, am besten wieder von <ulink
-    url="http://www.postnuke.com/">www.PostNuke.com</ulink> oder von <ulink
-    url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach das
-    gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles, was
-    sich unter <emphasis role="bold">/html/</emphasis> befindet per FTP auf
-    den Server spielen. Dabei fällt vermutlich auf, dass zu jedem Modul ein
-    Ordner "lang" oder "pnlang" existiert, in den dann ein Ordner namens
-    <emphasis role="bold">"deu"</emphasis> kopiert wird. Darin befinden sich
-    dann die entsprechenden Sprachdateien.</para>
-
-    <para>Wenn alles hochkopiert ist, kann man seine Seite aufmachen und hat
-    dann links unten <emphasis role="bold">"Language"</emphasis>. Dort wählt
-    man <emphasis role="bold">"German"</emphasis> aus und schon erscheint die
-    Seite auf deutsch. Selbstverständlich nur die Menüs, die existierenden
-    Texte bleiben auf Englisch.</para>
+    url="http://www.postnuke.com/">http://www.postnuke.com</ulink> oder von
+    <ulink url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach
+    das gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles,
+    was sich unter <filename class="directory">/html/</filename> befindet per
+    FTP auf den Server spielen. Dabei fällt vermutlich auf, dass zu jedem
+    Modul ein Verzeichnis <filename class="directory">lang</filename> oder
+    <filename class="directory">pnlang</filename> existiert, in den dann ein
+    Verzeichnis namens <filename class="directory">deu</filename> kopiert
+    wird. Darin befinden sich dann die entsprechenden Sprachdateien.</para>
 
     <para>Das Sprachen-Modul ist in erster Linie an Übersetzer gerichtet.
-    Einzig der Punkt '<emphasis role="bold">Sprach-Konfiguration</emphasis>'
-    ist für den 'normalen' Betrieb von Interesse: Dort wird die
-    Standardsprache der Website eingestellt.</para>
+    Einzig der Punkt <guimenuitem>Sprach-Konfiguration</guimenuitem> ist für
+    den "normalen" Betrieb von Interesse: Dort wird die Standardsprache der
+    Website eingestellt.</para>
 
     <para>Sollen mehrere Sprachen unterstützt werden, kann man dort auch
-    <emphasis role="bold">ML</emphasis> (multilanguage) aktivieren. Mit
-    <emphasis role="bold">Flaggen</emphasis> kann man dem User ermöglichen,
-    seine Sprache im entsprechenden Block über die Landesflagge (anstelle
-    eines Pulldownmenü) auszuwählen.</para>
+    <guimenuitem>ML</guimenuitem> (multilanguage) aktivieren. Mit
+    <guimenuitem>Flaggen</guimenuitem> kann man dem User ermöglichen, seine
+    Sprache im entsprechenden Block über die Landesflagge (anstelle eines
+    Pulldownmenü) auszuwählen.</para>
 
     <para>Wer internationale Sprachdateien sucht, sollte einmal in unsere
     <ulink url="Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
@@ -363,6 +339,18 @@
 
     <remark>Oben haben wir bereits die Sprachdatei mit installiert. Hier wird
     beschrieben, wie man weitere Sprachen installieren kann.</remark>
+
+    <section>
+      <title>Core/Languages</title>
+
+      <para>Dieser Block zeigt die Auswahl für die Sprache des Benutzers an.
+      Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
+      jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
+      Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis,
+      die auch in der Funktion <function>languagelist</function>, die in der
+      Datei <filename>modules/NS-languages/api.php</filename> definiert wird,
+      enthalten sind.</para>
+    </section>
   </section>
 
   <section>
