@@ -19,7 +19,7 @@
   aber eine ganze Reihe sehr fruchtbarer <emphasis role="bold">nationaler
   Communities</emphasis> wie <ulink
   url="http://www.post-nuke.net">post-nuke.net</ulink>. Die nationalen Teams
-  widmen sich vor allem dem User-Support in der eigenen Sprache. Es werden sie
+  widmen sich vor allem dem User-Support in der eigenen Sprache. Es werden die
   jeweiligen Sprachdateien für PostNuke gepflegt und spezielle rechtliche
   Probleme des Landes und Erfahrungen aus dem Support an die internationale
   Entwicklung herangetragen.</para>
@@ -52,7 +52,7 @@
   <para>Wie die meisten anderen erfolgreichen OpenSource-Projekte auch ist
   PostNuke das Ergebnis der Zusammenarbeit unterschiedlicher Menschen aus
   unterschiedlichen Ländern, versteut über den ganzen Erdball. Die Namen
-  derer, die mitgeholgen haben, PostNuke zu entwickeln findet man in den
+  derer, die mitgeholfen haben, PostNuke zu entwickeln findet man in den
   Dateien <filename>docs/CREDITS.txt</filename> und
   <filename>docs/previouscredits.txt</filename> im
   PostNuke-Verzeichnis.</para>
@@ -71,7 +71,7 @@
 
     <para>Wir glauben, dass eine große Benutzergruppe wie die
     deutschsprachigen PostNuke-Anwender einen muttersprachlichen Support
-    brauchen. Dieser vereinfacht den Einstieg, da trotz der weiten Verbreitung
+    braucht. Dieser vereinfacht den Einstieg, da trotz der weiten Verbreitung
     von Englischkenntnissen die Sprachbarriere viele potentielle Benutzer
     behindern kann.</para>
 
@@ -192,7 +192,7 @@
       <listitem>
         <para>gegebenenfalls Fehlermeldungen zitiert, Screenshots
         bereitgestellt, Links zur Seite bzw. eventuell den entsprechenden
-        Dateien gepostest und/oder Angaben zur genutzten PostNuke-Version,
+        Dateien gepostet und/oder Angaben zur genutzten PostNuke-Version,
         bereits installierten Modulen und der benutzten Serverkonfiguration
         gemacht werden.</para>
       </listitem>
