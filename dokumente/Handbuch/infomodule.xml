@@ -38,7 +38,7 @@
     Nachricht nicht angezeigt werden, aber auch nicht gelöscht werden, wählt
     einfach 'Nein'.</para>
 
-    <para><emphasis role="bold">Mit Wer diese Nachricht sehen soll</emphasis>
+    <para>Mit<emphasis role="bold"> Wer diese Nachricht sehen soll</emphasis>
     kann die Zielgruppe dieser Nachricht ausgewählt werden: Im Dropdownmenü
     werden die Benutzergruppen angezeigt, aus denen ihr auswählen
     könnt.</para>
@@ -118,12 +118,12 @@
     die bereits im Internet zu erreichen sind. Eine Upload-Funktion ist bisher
     nur mit Download-Modulen anderer Modulentwickler möglich. Auch lassen sich
     bisher nur Haupt- und Unterkategorien anlegen - eine weitere Verzweigung
-    ist noch nicht möglicht.</para>
+    ist noch nicht möglich.</para>
 
     <para>Zu beachten ist, dass hier effektiv nur Verweise eingetragen werden.
     Die entsprechenden Dateien müssen sich bereits auf einem Internetserver
     befinden. Zum Hochladen der Daten benutzen sie in aller Regel ein
-    FTP-Programm. Als Alternative gibt es das Modul UpDownloads, das auch das
+    FTP-Programm. Als Alternative gibt es das Modul UpDownload, das auch das
     Hochladen der Dateien ermöglicht.</para>
 
     <bridgehead>Kategorien anlegen, ändern und löschen</bridgehead>
@@ -162,7 +162,7 @@
     <para>Um eine <emphasis role="bold">Kategorie zu verändern</emphasis> oder
     zu löschen, die entsprechende Kategorie aus dem Pulldownmenü auswählen.
     Auf 'ändern' klicken. Die Kategorie wird angezeigt und man kann Änderungen
-    vornehmen. Auml;nderungen könnnen auf diese Weise auch für alle
+    vornehmen. Änderungen könnnen auf diese Weise auch für alle
     Unterkategorien vorgenommen werden.</para>
 
     <para>Die Kategorie kann man '<emphasis role="bold">löschen</emphasis>',
@@ -185,7 +185,7 @@
         <term>Name</term>
 
         <listitem>
-          <para>Name des Programms. Das kann der dateiname sein, besser ist es
+          <para>Name des Programms. Das kann der Dateiname sein, besser ist es
           aber vielleicht, einen beschreibenden Titel zu wählen.</para>
         </listitem>
       </varlistentry>
@@ -278,7 +278,7 @@
     Anzeige ignoriert.</para>
 
     <para><emphasis role="bold">Abstimmungsliste löschen</emphasis>: User
-    können über Downloads abstimmen, hiermit wird die die Abstimmung
+    können über Downloads abstimmen, hiermit wird die Abstimmung
     zurückgesetzt.</para>
 
     <para><emphasis role="bold">Defekten Link melden</emphasis>: Wenn ein
@@ -298,15 +298,15 @@
     des Links zu kommen, den Sie dann editieren können, um den Fehler zu
     beheben. Ist der Downloadlink jedoch in Ordnung, so wählen sie Ignorieren,
     um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählen
-    Sie 'Löschen', um diesen Download aus der Datenbank zu entfemen.</para>
+    Sie 'Löschen', um diesen Download aus der Datenbank zu entfernen.</para>
 
     <para><emphasis role="bold">Wichtig</emphasis>: Es wird nicht nach einer
-    Bestätigung für den Löschvorgangs gefragt. überprüfen Sie, ob Sie den
+    Bestätigung für den Löschvorgang gefragt. Überprüfen Sie, ob Sie den
     Downloadlink wirklich löschen wollen.</para>
 
     <para><emphasis role="bold">gemeldete Änderungswünsche</emphasis>: User
-    können Sie auch benachrichtigen, wenn ein Link nicht mehr dem neusten
-    Stand ist. Hier wird angezeigt, wie viele und welche Anderungswünsche
+    können Sie auch benachrichtigen, wenn ein Link nicht mehr auf dem neusten
+    Stand ist. Hier wird angezeigt, wie viele und welche Änderungswünsche
     vorhanden sind. Klicken Sie auf editieren, wenn Sie den Link verändern
     wollen.</para>
 
@@ -342,7 +342,7 @@
     über den Download geht. In der Statuszeile des Browsersfensters wird der
     Link angezeigt, in dem auch ID=Nummer steht. Diese Nummer ist die ID des
     Links. Wenn diese eingegeben wird, kann man anschließend alle
-    Informationen Ändern, die beim Hinzufügen des Links eingetragen wurden.
+    Informationen ändern, die beim Hinzufügen des Links eingetragen wurden.
     Klicken auf 'Hinzufügen' speichert die Änderungen.</para>
 
     <para>Unter 'Download Konfiguration' können Sie wählen, ob es
@@ -371,7 +371,7 @@
         <term>URL</term>
 
         <listitem>
-          <para>z. Bsp- http://www.einefirma.de/</para>
+          <para>z. B. http://www.einefirma.de/</para>
         </listitem>
       </varlistentry>
 
@@ -412,7 +412,7 @@
     Anzeige ignoriert.</para>
 
     <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der Tat
-    basieren beide auf der selben Codabasis).</para>
+    basieren beide auf der selben Codebasis).</para>
 
     <para>Jeder Nutzer kann (nach Berechtigung) Links für die Datenbank
     vorschlagen, über vorhandene Links abstimmen oder 'tote Links'
@@ -430,14 +430,14 @@
 
     <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
     Man versteht darunter Informationen, die zusammengestellt werden, damit
-    der Betrieber einer Seite nicht dauernd die gleichen Fragen beantworten
+    der Betreiber einer Seite nicht dauernd die gleichen Fragen beantworten
     muss (z.B. 'Wie kann ich das BIOS neu aufspielen?') Diese Antwort müssten
     die Hersteller bestimmt 100-mal am Tag geben. Also stellt man
     entsprechende FAQs ins Netz, die die User erst einmal durchsuchen können,
     wenn sie Probleme haben.</para>
 
     <para><emphasis role="bold">Um die FAQs zu nutzen, legen sie zunächst eine
-    oder mehrere Kategorien ein. Die eingetragene Kategorie speichern sie wie
+    oder mehrere Kategorien an. Die eingetragene Kategorie speichern sie wie
     gewohnt.</emphasis></para>
 
     <para>Wollen Sie innerhalb einer Kategorie noch Unterkategorien einsetzen,
