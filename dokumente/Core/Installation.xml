@@ -1074,6 +1074,30 @@ phpinfo()
             (<markup>href='index.php'</markup>) <emphasis role="bold">Wichtig:
             Parameter nur freigeben, wenn unbedingt
             erforderlich!</emphasis></para>
+
+            <tip>
+              <title>Freigabe von HTML mit/ohne Parametern</title>
+
+              <para>Viele mögen sich wundern, was es in der Administration -
+              Einstellungen im Bereich erlaubt HTML-Tags mit der
+              Unterscheidung 'mit' und 'ohne' Parametern auf sich hat. Am
+              Beispiel eines XSS Exploits kann man das recht einfach
+              darlegen:</para>
+
+              <para>Folgender Programmcode hat mit/ohne Parameter ziemlich
+              unterschiedliche Auswirkungen:</para>
+
+              <para><literal><userinput>&lt;b
+              onMouseOver="alert(document.location);"&gt;Dieser Text ist beim
+              Überfahren mit der Maus
+              gefährlich&lt;/b&gt;</userinput></literal></para>
+
+              <para><literal><userinput>&lt;i
+              onClick="alert(document.location);"&gt;Dieser Text ist beim
+              Klicken&lt;/i&gt;</userinput></literal></para>
+
+              <para>Also: Aufpassen bei der Freigabe von Tags!</para>
+            </tip>
           </listitem>
         </varlistentry>
 
