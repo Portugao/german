@@ -13,14 +13,14 @@
   <title>Einführung</title>
 
   <para>Xanthia (XTE = Xanthia Templating Engine) ist das Layout-System, das
-  mit Postnuke .8 offiziell Bestandteil des Basis-Pakets ist. Es gibt eine
-  Version, die auch mit Postnuke .726 funktioniert. Dieses System ermöglicht
-  die Benutzung von Themes, die die erweiterten Funktionen von Xanthia nutzen,
-  und es bietet eine größere Flexibilität im Theme Design. Das XTE-Paket
-  besteht aus Xanthia und pnRender. Xanthia ist für das generelle Layout der
-  Seite zuständig, währen pnRender der Teil des Systems ist, der die
-  Xanthia-Funktionen den Modulen zur Verfügung stellt. Xanthia basiert auf der
-  Smarty Templating Engine, die in der Dokumentation folgendermaßen
+  mit PostNuke .750 und .8 offiziell Bestandteil des Basis-Pakets ist. Es gibt
+  eine Version, die auch mit PostNuke .726 funktioniert. Dieses System
+  ermöglicht die Benutzung von Themes, die die erweiterten Funktionen von
+  Xanthia nutzen, und es bietet eine größere Flexibilität im Themedesign. Das
+  XTE-Paket besteht aus Xanthia und pnRender. Xanthia ist für das generelle
+  Layout der Seite zuständig, währen pnRender der Teil des Systems ist, der
+  die Xanthia-Funktionen den Modulen zur Verfügung stellt. Xanthia basiert auf
+  der Smarty Templating Engine, die in der Dokumentation folgendermaßen
   beschrieben wird:</para>
 
   <blockquote>
@@ -54,15 +54,15 @@
   </blockquote>
 
   <para>Das System trennt also das Layout von der Applikations-Logik
-  (Datenbankabfragen, Funktionen...), das bedeutet, dass jedes Theme aus einer
-  Reihe Templates (Text-Dateien) besteht, die direkt mit jedem HTML-Editor zu
-  bearbeiten sind. Eingebettet in das HTML sind Tags, die später die Inhalte
-  einfügen oder einfache Template-Logik. Die Tags sind so formatiert, dass sie
-  als HTML-Kommentare von den Editoren erkannt werden. Diese überzeugenden
-  Argumente für eine zentrale Templating Engine haben das Postnuke
-  Entwicklerteam davon überzeugt, ein solches System in den Postnuke-Kern zu
-  integrieren. Als Vorlage für die Postnuke-Smarty-Implementierung diente das
-  pnRender-System von <ulink
+  (Datenbankabfragen, Funktionen, ...), das bedeutet, dass jedes Theme aus
+  einer Reihe Templates (Text-Dateien) besteht, die direkt mit jedem
+  HTML-Editor zu bearbeiten sind. Eingebettet in das HTML sind Tags, die
+  später die Inhalte einfügen oder einfache Template-Logik. Die Tags sind so
+  formatiert, dass sie als HTML-Kommentare von den Editoren erkannt werden.
+  Diese überzeugenden Argumente für eine zentrale Templating Engine haben das
+  Postnuke Entwicklerteam davon überzeugt, ein solches System in den
+  Postnuke-Kern zu integrieren. Als Vorlage für die
+  Postnuke-Smarty-Implementierung diente das pnRender-System von <ulink
   url="http://www.envolution.com/">Envolution</ulink>. Inzwischen wurde der
   Quelltext aber komplett überarbeitet und neu geschrieben. pnRender ist eine
   Unterklasse (Subclass) von Smarty, so dass Smarty-Kenner pnRender so
