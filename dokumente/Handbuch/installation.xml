@@ -55,6 +55,12 @@
             safe_mode nicht eingeschaltet ist, da dieses Sicherheitsfeature
             von PHP Uploads erfolgreich verhindert. Damit lassen sich z.B. die
             meisten Gallerien nicht betreiben.</para>
+
+            <para>In der PHP-Umgebung müssen mindestens 8MB für die Skripte
+            zur Verfügung stehen. Allerdings kommt es auch hier schon zu
+            einigen Problemen, zum Beispiel mit XExpress und PostCalendar. Wer
+            auf Nummer sicher gehen will, sollte auf mindestens 16MB
+            achten.</para>
           </listitem>
         </varlistentry>
 
