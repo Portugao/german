@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<book lang="en-US">
+<book lang="de-DE">
   <title>Smarty Support in PostNuke</title>
 
   <bookinfo>
     <authorgroup>
       <author>
-        <firstname>JÃ¶rg</firstname>
+        <firstname>Jörg</firstname>
 
         <surname>Napp</surname>
 
@@ -45,7 +45,7 @@
         </affiliation>
       </author>
 
-      <author>
+      <othercredit>
         <firstname>Steffen</firstname>
 
         <surname>Voss</surname>
@@ -56,60 +56,18 @@
           <orgname><ulink
           url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
         </affiliation>
-      </author>
+      </othercredit>
     </authorgroup>
 
     <releaseinfo>$Revision$</releaseinfo>
 
     <date>$Date$</date>
 
-    <revhistory>
-      <revision>
-        <revnumber>0.3</revnumber>
-
-        <date>28. Feb. 2004</date>
-
-        <revdescription>
-          <para>Split up the Guide in separate parts.</para>
-        </revdescription>
-      </revision>
-
-      <revision>
-        <revnumber>0.3</revnumber>
-
-        <date>05. October 2003</date>
-
-        <revdescription>
-          <para>A lot of corrections</para>
-        </revdescription>
-      </revision>
-
-      <revision>
-        <revnumber>0.2</revnumber>
-
-        <date>22. September 2003</date>
-
-        <revdescription>
-          <para>included Smarty basics</para>
-        </revdescription>
-      </revision>
-
-      <revision>
-        <revnumber>0.1</revnumber>
-
-        <date>15. September 2003</date>
-
-        <revdescription>
-          <para>Initial version</para>
-        </revdescription>
-      </revision>
-    </revhistory>
-
     <edition>prerelease</edition>
 
     <abstract>
-      <para>In diesem Dokument wird der Smarty-Support von Postnuke erklÃ¤rt.
-      Da es noch in der Alphaphase ist, wird es noch zu Ã„nderungen
+      <para>In diesem Dokument wird der Smarty-Support von Postnuke erklärt.
+      Da es noch in der Alphaphase ist, wird es noch zu Änderungen
       kommen.</para>
     </abstract>
 
@@ -122,7 +80,7 @@
     <copyright>
       <year>2003</year>
 
-      <holder>JÃ¶rg Napp</holder>
+      <holder>Jörg Napp</holder>
     </copyright>
 
     <legalnotice>
