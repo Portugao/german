@@ -32,40 +32,24 @@
       schon von der API erzeugt werden.</para>
     </tip>
 
-    <section id="pnrender.moddev.basic.module">
-      <title>pnRender in einem einfachen Modul</title>
+    <para>Hier ein kurzes Beispiel für den Einsatz von pnRender:</para>
 
-      <para>Hier ein kurzes Beispiel für den Einsatz von pnRender in einem
-      einfachen Modul:</para>
-
-      <programlisting>$output =&amp; new pnRender(); 
+    <programlisting>$output =&amp; new pnRender('MeinModul'); 
 $output-&gt;assign('bspVariable', $irgendeinWert); 
 return $output-&gt;fetch('index.htm');</programlisting>
-    </section>
 
-    <section id="pnrender.moddev.basic.hook">
-      <title>pnRender in einem Hook Module</title>
+    <para>In einem Block würde das so aussehen:</para>
 
-      <para>Wenn pnRender in einem Hook-Modul benutzt wird, muß der Name des
-      Moduls übergeben werden, damit das System weiß, zu welchen Modul welche
-      Ausgaben gehören. Das ist wichtig, da Hooks sich ja in die Ausgaben
-      anderer Module einklinken.</para>
-
-      <programlisting>$output =&amp; new pnRender('MeinHookModul'); 
-$output-&gt;assign('bspVariable', $irgendeinWert);
-return $output-&gt;fetch('index.htm');</programlisting>
-    </section>
-
-    <section id="pnrender.moddev.basic.blocks">
-      <title>pnRender in einem Block</title>
-
-      <para>Auch in Blöcken muss der Modulname übergeben werden:</para>
-
-      <programlisting>$output =&amp; new pnRender('MeinModul'); 
+    <programlisting>$output =&amp; new pnRender('MeinModul'); 
 $output-&gt;assign('bspVariable', $irgendeinWert); 
 $row['content'] = $output-&gt;fetch('meinblock_template.htm'); 
 return themesideblock($row);</programlisting>
-    </section>
+
+    <note>
+      <para>Bei pnRender-Versionen von RC3 war die Übergabe des Modulnamens
+      nicht verpflichtend. Dies ist nun geändert worden, sodass der Modulname
+      bei jeder Initialisierung von pnRender anzugeben ist.</para>
+    </note>
   </section>
 
   <section id="pnrender.moddev.files">
@@ -95,7 +79,7 @@ return themesideblock($row);</programlisting>
 
         <imageobject>
           <imagedata fileref="pnRender.ModuleDirectoryStructure.gif"
-                     format="JPG" />
+                     format="GIF" />
         </imageobject>
 
         <textobject>
@@ -130,7 +114,7 @@ return themesideblock($row);</programlisting>
 
         <imageobject>
           <imagedata fileref="pnRender.ThemeDirectoryStructure.gif"
-                     format="JPG" />
+                     format="GIF" />
         </imageobject>
 
         <textobject>
