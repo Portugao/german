@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="pnrender.moddev" lang="en-US"
+         revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <authorgroup>
+      <author>
+        <firstname>Jörg</firstname>
+
+        <surname>Napp</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Mark</firstname>
+
+        <surname>West</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+
+    <keywordset>
+      <keyword>Smarty</keyword>
+
+      <keyword>pnRender</keyword>
+
+      <keyword>Xanthia</keyword>
+    </keywordset>
+  </chapterinfo>
+
+  <title>pnRender for module developers</title>
+
+  <para>In this Section, we will have a very basic look at the pnRender
+  concepts for module developers.</para>
+
+  <section id="pnrender.moddev.basic">
+    <title>Basic Usage</title>
+
+    <para>The basic concepts of Smarty are quite simple: In a Module or Block
+    variables are assigned for use in the template. After this, the template
+    is fetched and its contents returned to the PostNuke core. The variables
+    assigned get replaced by the appropriate values, and this way the page is
+    built.</para>
+
+    <tip>
+      <title>Associative arrays</title>
+
+      <para>Instead of passing name/value pairs, associative arrays containing
+      the name/value pairs can be assigned to the template. This is very handy
+      when this kind of array is already delivered by the API.</para>
+    </tip>
+
+    <section id="pnrender.moddev.basic.module">
+      <title>In an ordinary Module</title>
+
+      <para>Here is a simple example of how to use pnRender in a
+      module:</para>
+
+      <programlisting>$output =&amp; new pnRender(); 
+$output-&gt;assign('holder', $somevar); 
+return $output-&gt;fetch('index.htm');</programlisting>
+    </section>
+
+    <section id="pnrender.moddev.basic.hook">
+      <title>In a Hook Module</title>
+
+      <para>To use pnRender in a hook module, the Module name needs to be
+      passed to pnRender:</para>
+
+      <programlisting>$output =&amp; new pnRender('MyHookModule'); 
+$output-&gt;assign('holder', $somevar); 
+return $output-&gt;fetch('index.htm');</programlisting>
+    </section>
+
+    <section id="pnrender.moddev.basic.blocks">
+      <title>In a block</title>
+
+      <para>To use pnRender in a block, the Module name needs to be passed to
+      pnRender:</para>
+
+      <programlisting>$output =&amp; new pnRender('MyModule'); 
+$output-&gt;assign('holder', $somevar); 
+$row['content'] = $output-&gt;fetch('myblock_template.htm'); 
+return themesideblock($row);</programlisting>
+    </section>
+  </section>
+
+  <section id="pnrender.moddev.files">
+    <title>Location of files</title>
+
+    <para>Any templates for the module are kept under the
+    <filename>pntemplates</filename> directory inside the modules
+    directory.</para>
+
+    <para>Additional Smarty plugins can be kept in the
+    <filename>plugins</filename> subdirectory of the
+    <filename>pntemplates</filename> directory. For more about plugins, see
+    the <olink targetdoc="pnRender.Reference.xml"
+    targetptr="pnrender.tempdev.plugins">Plugin Reference</olink>.</para>
+
+    <para>Config files can be kept in the <filename>config</filename>
+    subdirectory of the <filename>pntemplates</filename> directory. For more
+    information abou config files, see <ulink
+    url="http://smarty.php.net/manual/en/config.files.php">the Smarty
+    documentation</ulink>.</para>
+
+    <screenshot>
+      <mediaobject>
+        <objectinfo>
+          <title>The Location of Files</title>
+        </objectinfo>
+
+        <imageobject>
+          <imagedata fileref="pnRender.ModuleDirectoryStructure.gif"
+                     format="JPG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>File structure in the module's directory</phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+
+  <section id="pnrender.moddev.themetemplates">
+    <title>Theme Specific templates</title>
+
+    <para>For theme designers, it is possible to provide additional templates
+    for a module. If such a template exists, it is used instead of the generic
+    one the module provides.</para>
+
+    <para>The theme specific are kept inside the theme directory under
+    <filename>templates/<replaceable>&lt;modulename&gt;</replaceable></filename>.
+    Under this directory, there might exist a plugins and a config directory
+    to keep plugins and config files.</para>
+
+    <screenshot>
+      <mediaobject>
+        <objectinfo>
+          <title>Layout for theme specific templates</title>
+        </objectinfo>
+
+        <imageobject>
+          <imagedata fileref="pnRender.ThemeDirectoryStructure.gif"
+                     format="JPG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Layout for theme specific templates</phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+
+  <section id="pnrender.moddev.caching">
+    <title>Caching</title>
+
+    <para>From the Smarty documentation:</para>
+
+    <blockquote>
+      <attribution><ulink
+      url="http://smarty.php.net/manual/en/caching.php">The Smarty
+      documentation</ulink></attribution>
+
+      <para>Caching is used to speed up a call to display() or fetch() by
+      saving its output to a file. If a cached version of the call is
+      available, that is displayed instead of regenerating the output. Caching
+      can speed things up tremendously, especially templates with longer
+      computation times. Since the output of display() or fetch() is cached,
+      one cache file could conceivably be made up of several template files,
+      config files, etc.</para>
+    </blockquote>
+
+    <para>Using the pnRender administration panel, the administrator of a
+    PostNuke site can decide if they wish to use caching. This default value
+    set here may be overwritten by a developer using the
+    <command>caching</command> property of the pnRender object. Developers
+    might choose not to cache contents which tend to change often (e.g. output
+    on administration pages), so <command>caching</command> can be set to
+    <command>false</command>. On the other hand, <command>caching</command>
+    must never be set to <command>true</command>, as this would break the
+    control of the site administrator.</para>
+
+    <section id="pnrender.moddev.caching.display">
+      <title>Displaying with caching</title>
+
+      <para>Each page displaying a unique data set (such as an item) must pass
+      a cache ID unique to this content. For an item, this is typically the
+      item ID. This is needed so that the caching mechanism knowns wether or
+      not the contents has already been cached.</para>
+
+      <programlisting role="example">// Return the output that has been generated by this function
+// note that for caching reasons you must pass a cache ID. 
+// The item ID is appropriate for this.
+return $pnRender-&gt;Fetch('example_user_display.htm', $tid);</programlisting>
+
+      <important>
+        <para>If a single page contains different content which is dependent
+        on individual permissions, you must not cache this page. Otherwise, it
+        is possible that one user with extensive permissions looks at this
+        page first, causing it to be cached. If another user with fewer
+        permissions views this page afterwards, the contents are delivered
+        from the cache, so that this user sees items he has no permissions
+        to.</para>
+
+        <para>The PostNuke developers are searching for ways to avoid this
+        issue.</para>
+      </important>
+    </section>
+
+    <section id="pnrender.moddev.caching.proctime">
+      <title>Saving process time</title>
+
+      <para>Using the is_cached method of the pnRender object, it is possible
+      to find out if a page has already been cached. This can be used to
+      significially reduce processing time, avoid database queries
+      a.s.o.</para>
+
+      <programlisting role="example">/**
+ * display item
+ * This is a standard function to provide detailed informtion on a single item
+ * available from the module.
+ */
+function Example_user_display($args)
+{
+    $tid = pnVarCleanFromInput('tid');
+[...]
+//do security checking here
+[...]
+
+    $pnRender = new pnRender();
+
+    // check out if the contents are cached.
+    if ($pnRender-&gt;is_cached('example_user_display.htm', $tid)) {
+       return $pnRender-&gt;fetch('example_user_display.htm', $tid);
+    }
+
+[...]
+// a lot of processing
+[...]
+
+    // note that for caching reasons you must pass a cache ID. 
+    // The item ID is appropriate for this.
+    return $pnRender-&gt;Fetch('example_user_display.htm', $tid);
+}</programlisting>
+
+      <para>It can be seen that is_cached is queried very early in the code to
+      avoid unnecessary processing time.</para>
+    </section>
+
+    <section id="pnrender.moddev.caching.clearing">
+      <title>Clearing the cache</title>
+
+      <para>If an item gets modified, deleted or added, then any cached pages
+      which reference this item must be deleted. Otherwise, outdated content
+      could be delivered to the browser.</para>
+
+      <programlisting role="example">function Example_admin_update($args)
+{
+[...]
+    if(pnModAPIFunc('Example',
+                    'admin',
+                    'update',
+                    array('tid'    =&gt; $tid,
+                          'name'   =&gt; $name,
+                          'number' =&gt; $number))) {
+        // Success
+        pnSessionSetVar('statusmsg', pnVarPrepHTMLDisplay(_EXAMPLEUPDATED));
+
+        // the item has been modified, so we clear the cache of the overview
+        // pages and the detail page
+        $pnRender =&amp; new pnRender();
+        $pnRender-&gt;clear_cache('example_user_row.htm', $tid);
+        $pnRender-&gt;clear_cache('example_user_display.htm', $tid);
+    }
+
+    // This function generated no output, and so now it is complete we redirect
+    // the user to an appropriate page for them to carry on their work
+    pnRedirect(pnModURL('Example', 'admin', 'view'));
+
+    // Return
+    return true;
+}</programlisting>
+
+      <para>It can be seen that all relevant cached pages are cleared.</para>
+    </section>
+  </section>
+</chapter>

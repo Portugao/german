@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="pnrender.intro" lang="en-US"
+         revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <authorgroup>
+      <author>
+        <firstname>Jörg</firstname>
+
+        <surname>Napp</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Mark</firstname>
+
+        <surname>West</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+
+    <keywordset>
+      <keyword>Smarty</keyword>
+
+      <keyword>pnRender</keyword>
+
+      <keyword>Xanthia</keyword>
+    </keywordset>
+  </chapterinfo>
+
+  <title>Introduction</title>
+
+  <section id="pnrender.intro.whatis">
+    <title>What is Smarty?</title>
+
+    <para>From the Smarty Documentation:</para>
+
+    <blockquote>
+      <attribution><ulink
+      url="http://smarty.php.net/manual/en/what.is.smarty.php">The Smarty
+      Documentation</ulink></attribution>
+
+      <para>Smarty is a template engine for PHP.</para>
+
+      <para>More specifically, it facilitates a manageable way to separate
+      application logic and content from its presentation. This is best
+      described in a situation where the application programmer and the
+      template designer play different roles, or in most cases are not the
+      same person. For example, let's say you are creating a web page that is
+      displaying a newspaper article. The article headline, tagline, author
+      and body are content elements, they contain no information about how
+      they will be presented. They are passed into Smarty by the application,
+      then the template designer edits the templates and uses a combination of
+      HTML tags and template tags to format the presentation of these elements
+      (HTML tables, background colors, font sizes, style sheets, etc.) One day
+      the programmer needs to change the way the article content is retrieved
+      (a change in application logic.) This change does not affect the
+      template designer, the content will still arrive in the template exactly
+      the same. Likewise, if the template designer wants to completely
+      redesign the templates, this requires no changes to the application
+      logic. Therefore, the programmer can make changes to the application
+      logic without the need to restructure templates, and the template
+      designer can make changes to templates without breaking application
+      logic.</para>
+    </blockquote>
+
+    <para>Smarty makes it possible to seperate layout and code, which will
+    lead to better code with less bugs.</para>
+  </section>
+
+  <section id="pnrender.intro.smartypn">
+    <title>Smarty Support in PostNuke</title>
+
+    <para>The advantages of using a template engine have convinced the
+    PostNuke developers to provide access to a template engine in the core.
+    Smarty has been chosen to be this template engine. The original source of
+    the implementation of Smarty now found in PostNuke, called <emphasis
+    role="bold">pnRender</emphasis>, was originally developed for <ulink
+    url="http://www.envolution.com/">Envolution</ulink>, but has undergone a
+    complete rewrite.</para>
+
+    <para>pnRender now is a subclass of Smarty, so that developers familiar to
+    Smarty can use pnRender as they would use Smarty.</para>
+  </section>
+
+  <section id="pnrender.intro.avail">
+    <title>Availability</title>
+
+    <para>pnRender is available as part of the PostNuke core in PostNuke
+    .8.</para>
+
+    <para>pnRender is available as an add-on to PostNuke .726</para>
+  </section>
+</chapter>
