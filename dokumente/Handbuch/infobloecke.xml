@@ -63,59 +63,57 @@
           Kurzform [Modul:Datei] bzw. {Modul:Funktion} verwenden. Dabei
           gilt:</para>
 
-          <informaltable frame="all">
-            <tgroup cols="3">
-              <colspec colname="url" colwidth="25%" />
+          <variablelist>
+            <varlistentry>
+              <term>die "alte" Art der Adressierung (z.B. für die Module News,
+              Downloads, FAQ, Reviews, Search usw.)</term>
 
-              <colspec colname="link" colwidth="35%" />
+              <listitem>
+                <variablelist>
+                  <varlistentry>
+                    <term><userinput>[<replaceable>Modul</replaceable>]</userinput></term>
 
-              <colspec colname="rem" colwidth="40%" />
+                    <listitem>
+                      <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=index</systemitem></para>
+                    </listitem>
+                  </varlistentry>
 
-              <thead>
-                <row>
-                  <entry>Als URL eingegeben</entry>
+                  <varlistentry>
+                    <term><userinput>[<replaceable>Modul</replaceable>:<replaceable>Datei</replaceable>]</userinput></term>
 
-                  <entry>entstehender Link</entry>
+                    <listitem>
+                      <para><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=<replaceable>Datei</replaceable></systemitem></para>
+                    </listitem>
+                  </varlistentry>
+                </variablelist>
+              </listitem>
+            </varlistentry>
 
-                  <entry>Anmerkung</entry>
-                </row>
-              </thead>
+            <varlistentry>
+              <term>die "neue" Art der Adressierung (z.B. für die Module
+              ContentExpress, pnAddressBook, PostCalendar usw.)</term>
 
-              <tbody>
-                <row>
-                  <entry><userinput>[<replaceable>Modul</replaceable>]</userinput></entry>
+              <listitem>
+                <variablelist>
+                  <varlistentry>
+                    <term><userinput>{<replaceable>Modul</replaceable>}</userinput></term>
 
-                  <entry><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=index</systemitem></entry>
+                    <listitem>
+                      <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=main</systemitem></para>
+                    </listitem>
+                  </varlistentry>
 
-                  <entry morerows="1">die "alte" Art der Adressierung (z.B.
-                  für die Module News, Downloads, FAQ, Reviews, Search
-                  usw.)</entry>
-                </row>
+                  <varlistentry>
+                    <term><userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>}</userinput></term>
 
-                <row>
-                  <entry><userinput>[<replaceable>Modul</replaceable>:<replaceable>Datei</replaceable>]</userinput></entry>
-
-                  <entry><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=<replaceable>Datei</replaceable></systemitem></entry>
-                </row>
-
-                <row>
-                  <entry><userinput>{<replaceable>Modul</replaceable>}</userinput></entry>
-
-                  <entry><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=main</systemitem></entry>
-
-                  <entry morerows="1">die "neue" Art der Adressierung (z.B.
-                  für die Module ContentExpress, pnAddressBook, PostCalendar
-                  usw.)</entry>
-                </row>
-
-                <row>
-                  <entry><userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>}</userinput></entry>
-
-                  <entry><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=<replaceable>Funktion</replaceable></systemitem></entry>
-                </row>
-              </tbody>
-            </tgroup>
-          </informaltable>
+                    <listitem>
+                      <para><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=<replaceable>Funktion</replaceable></systemitem></para>
+                    </listitem>
+                  </varlistentry>
+                </variablelist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
 
           <para>Der dafür zustängige Code schaut nur, ob das <emphasis
           role="bold">erste</emphasis> Zeichen [ oder { ist, und geht davon
