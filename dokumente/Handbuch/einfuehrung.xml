@@ -12,6 +12,92 @@
 
   <title>Über PostNuke</title>
 
+  <section id="cms">
+    <title>Was ist ein Content Management System
+    (<acronym>CMS</acronym>)<indexterm>
+        <primary>CMS</primary>
+
+        <see>Content Management System</see>
+      </indexterm><indexterm>
+        <primary>Content Management System</primary>
+      </indexterm>?</title>
+
+    <para>Bei PostNuke handelt es sich um ein sogenanntes Content Management
+    System (<acronym>CMS</acronym>) &mdash; einem System zur Verwaltung von
+    Online-Inhalten. Im Gegensatz zur Publikation mit herkömmlichen,
+    statischen Internetseiten, muss beim Redakteur kein ausgeprägtes Wissen um
+    die verschiedenen Internet-Technologien wie <acronym>HTML</acronym> zur
+    Formatierung der Inhalte und <acronym>FTP</acronym> zum Hochladen der
+    Seiten und der enthaltenen Grafiken.</para>
+
+    <para>Ein Paket aus <acronym>PHP</acronym>-Skripten, die Hand in Hand
+    arbeiten, übernehmen zum Beispiel die Sorge für das immer gleiche Aussehen
+    des Layouts und schützen vor unerlaubtem Zugriff. Alle Änderungen an den
+    Inhalten können bequem über den Browser und deswegen von jedem
+    internetfähigen Arbeitsplatz vorgenommen werden.</para>
+
+    <para>Durch diese Trennung von Technik und Inhalten wird zwar der einzelne
+    Redakteur entlastet, es fällt aber zusätzlicher administrativer Aufwand
+    an, der mit einem größeren Hintergrundwissen verbunden ist. Der
+    Administrator sollte einen gewissen Einblick in Datenbanken, HTML, PHP und
+    Sicherheitsfragen haben. Diese Fähigkeiten erleichtern den Einstieg und
+    lassen PostNuke erst sein komplettes Potential ausschöpfen. Zu bedenken
+    ist auch die Notwendigkeit zu Updates mdash; egal welches CMS eingesetzt
+    wird mdash; es sollte immer auf dem aktuellsten Stand gehalten werden, da
+    mit jeder neuen Version auch Sicherheitslücken geschlossen werden
+    können.</para>
+
+    <bridgehead>Auswahl eines CMS<indexterm>
+        <primary>Content Management System</primary>
+
+        <secondary>Auswahl</secondary>
+      </indexterm></bridgehead>
+
+    <para>Sicherlich darf man von keinem CMS erwarten, dass es zugleich eine
+    eierlegende Woll-Milch-Sau und so einfach wie ein Lichtschalter zu
+    bedienen ist. Etwas Einarbeitung ist bei jedem System nötig. Oft sind die
+    Programme in wenigen Minuten installiert und dank mitgelieferter Layouts
+    in Null-Komma-Nichts die ersten eigene Inhalte veröffentlicht mdash; damit
+    hätte man aber nur einen Bruchteil der Möglichkeiten genutzt und oft wären
+    Statische Seiten dann doch einfacher zu pflegen.</para>
+
+    <para>Hat man sich nun für den Einsatz eines CMS entschieden &mdash; sei
+    es nun aus tatsächlicher Notwendigkeit oder persönlichem Interesse &mdash;
+    stehen eine Vielzahl Kandidaten zur Auswahl. Bei der Auswahl sollten
+    verschiedene Geschichtspunkte eine Rolle spielen &mdash; Die Anzahl der
+    Features sollte dabei nur einer sein. Wichtiger noch ist die Community,
+    die sich um die Entwicklung und den Support des Systems kümmert.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Wie aktiv ist die internationale Community?</para>
+      </listitem>
+
+      <listitem>
+        <para>Gibt es eine deutsche Community? Wie aktiv ist die?</para>
+      </listitem>
+
+      <listitem>
+        <para>Gibt es ausreichend (deutsche) Dokumentation?</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>In einem Support-Forum anzufragen, welches System denn das Beste
+    wäre, kann man sich sparen. Der Auswahlprozess ist bei den Benutzern schon
+    abgeschlossen &mdash; sie haben sich ihr System ausgesucht und werden
+    immer ihr eigenes im besseren Licht darstellen. Das und seine Stärken
+    kennen sie am Besten. Mit den Schwächen hat man gelernt umzugehen.</para>
+
+    <para>Beim Feature-Vergleich kann die Website <ulink
+    url="http://www.cmsmatrix.org">http://www.cmsmatrix.org</ulink> helfen.
+    Obwohl die Daten hier nicht besonders umfangreich sind, kann man sich
+    schon mal anschauen, ob denn das eine oder andere wichtige Feature
+    überhaupt in einem CMS enthalten ist. Bei <ulink
+    url="http://www.opensourcecms.com">http://www.opensourcecms.com</ulink>
+    kann man sich dann einige Systeme anschauen. Sogar der Admin-Zugang lässt
+    sich dort testen.</para>
+  </section>
+
   <section id="wasistpostnuke">
     <title>Was ist PostNuke?</title>
 
@@ -22,7 +108,7 @@
 
         <see>Content Management System</see>
       </indexterm>), geschrieben in PHP und lizenziert unter der GNU General
-    Public License (GPL). </para>
+    Public License (GPL).</para>
 
     <para>Mit PostNuke können Website-Inhalte mit Hilfe eines Browsers
     verwaltet werden. PostNuke ist für all jene gedacht, die eine Lösung
@@ -41,25 +127,96 @@
       </imageobject>
     </mediaobject>
 
+    <bridgehead>Was spricht für PostNuke?</bridgehead>
+
+    <para>PostNuke leidet zu Unrecht unter einem schlechten Ruf - es sei
+    unsicher, Resourcen fressend und nicht für den professionellen Einsatz
+    geeignet. Dieser Ruf resultierte aus der Tatsachen, dass all diese
+    Vorurteile auf PHPNuke zutreffen und PostNuke eine Weiterentwicklung von
+    PHPNuke<indexterm>
+        <primary>PHPNuke</primary>
+      </indexterm> ist. Im Jahr 2001 tat sich eine unzufriedene Gruppe von
+    PHPNuke-Benutzern zusammen und führte unter dem neuen Namen PostNuke die
+    Entwicklung selbst weiter. Bis heute hat sich PostNuke äußerlich zwar noch
+    nicht allzu sehr, innerlich dafür umso mehr von PHPNuke und seinen
+    Schwächen verabschiedet.</para>
+
+    <para>In PostNuke ist kaum mehr eine Originalzeile PHPNuke-Code zu finden
+    und verfügt mittlerweile um einen robusten Kern, der mit
+    <acronym>API</acronym>, eigenem Rechtesystem und einem effektiven
+    Sicherheitsmanagement inzwischen keine bekannten Sicherheitslücken mehr
+    aufweist. In der Vergangenheit wurden auftretende Probleme innerhalb von
+    kürzester Zeit beseitigt.</para>
+
+    <para>Die Postnuke-Entwicklung ist natürlich an einer besseren Performance
+    des Gesamtsystems interessiert. Probleme treten hier durch die
+    Datenbank-Anbindung auf: Für umfangreiche Seiten müssen viele
+    Datenbankabfragen auf einmal bearbeitet werden. Bei vielen Besuchern auf
+    der Seite, kann es da auch mal eng werden. Das ist allerdings ein Problem,
+    das alle CMSe haben. Hier bringt vor allem Caching Verbesserungen. Die
+    dynamisch erzeugten Seiten werden hierbei für eine bestimmte Zeit statisch
+    auf dem Server zwischengespeichert und stehen dadurch sehr schnell und
+    ohne Datenbankabfragen zur Verfügung.</para>
+
+    <para>Das Projektes ist eindeutig auf dem professionellen Einsatz
+    ausgerichtet. Ein großer Schritt in diese Richtung war die Einführung des
+    Layoutsystems &ldquor;Xanthia&#8223; für PostNuke .726 &mdash; damals noch
+    als Zusatzmodul. Xanthia ermöglicht es, das Aussehen von kompatiblen
+    Modulen komplett an die eigenen Bedürfnisse selbst anzupassen. Während
+    PHPNuke ausschließlich auf mySQL-Datenbanken läuft, soll PostNuke
+    zukünftig auch auf anderen Systemen wie MSSQL oder Oracle laufen.</para>
+
+    <para>Hinter PostNuke steht eine große internationale und eine
+    ausgesprochen starke deutsche Community. Einige der Hauptentwickler sind
+    unter <ulink
+    url="http://www.post-nuke.net">http://www.post-nuke.net</ulink> als
+    PostNuke e.V.<indexterm>
+        <primary>PostNuke e.V.</primary>
+      </indexterm> organisiert. Der Verein kümmert sich aber nicht nur um die
+    Entwicklung, sondern auch um die deutschsprachige Dokumentation und den
+    Support im Forum, in dem man Antworten oft innerhalb weniger Minuten
+    erhält. Im August 2004 hat der Verein das erste europäsiche
+    Postnuke-Treffen in Stuttgart veranstaltet. Dort trafen sich Entwickler
+    aus Deutschland, England, Belgien, Dänemark und Bayern und arbeiteten 2
+    Tage lang an der Zukunft ihres Systems.</para>
+  </section>
+
+  <section>
+    <title>Wie funktioniert PostNuke?</title>
+
+    <para>Um zu verstehen, wie PostNuke funktioniert, sollte man sich vor
+    Augen führen, dass die Entwickler viel Wert darauf legen, jegliche Teil
+    des System dort ausführen zu lassen, wo es hingehört: Die Inhalte &mdash;
+    die puren Texte also &mdash; sind in der Datenbank abgelegt und nehmen
+    dort durch die Trennung von Layout sehr wenig Platz weg. Das Layout wird
+    über sogenannte &ldquor;Themes&rdquor; festgelegt. Die einzelnen
+    Funktionen werden über Module hinzugefügt. Auf diese Art lässt sich
+    individuell ein maßgeschneidertes System zusammenstellen. Diese Module
+    bieten dann die Möglichkeit News zu veröffentlichen, Kommentare zu
+    hinterlassen, Gästebücher, Kalender usw. zu führen. Außerdem ist PostNuke
+    in der Lage mit mehreren Sprachen zu operieren. Dazu muss der Webmaster
+    einfach die zusätzlichen Sprachpakete hochladen.</para>
+
     <bridgehead>Funktionsumfang mit Modulen erweitern</bridgehead>
 
     <para>Der Funktionsumfang einer PostNuke-Site lässt sich über die
     Einbindung von Erweiterungen, den <emphasis>Modulen</emphasis><indexterm>
         <primary>Module</primary>
       </indexterm> beliebig festlegen. Es gibt zum Beispiel die Möglichkeit
-    Artikel, Links, Downloads, FAQs, Bildergalerien, Foren etc. einzubinden.In
-    der Basisinstallation sind schon eine Reihe Module enthalten, deren
-    Entwicklung noch aus PHPNuke-Zeiten übernotmmen und mittlerweile dem
-    PostNuke-System angepasst wurden. Dazu gehört vor allem das Newssystem,
-    die Weblinks, das Download-Modul usw. Diese Module zu benutzen ist
-    allerdings nicht Pflicht - bereits jetzt gibt es eine große Anzahl an
-    <ulink
-    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulen
-    von Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
-    über die Verwaltung von Bildersammlungen bis hin zu ganzen Webshops
-    reichen. Zum Teil wurden damit auch Alternativen zu den mitgelieferten
-    Modulen geschaffen, die mit einem weit größeren Funktionsumfang
-    aufwarten.</para>
+    Artikel, Links, Downloads, FAQs, Bildergalerien, Foren etc. einzubinden.
+    In der Basisinstallation sind schon eine Reihe Module enthalten, Dazu
+    gehört vor allem das Newssystem, die Weblinks, das Download-Modul usw.
+    Außerdem gibt eine Vielzahl an Modulen, die nicht zum Kernsystem gehören,
+    aber von den privaten Homepages der jeweiligen Programmierer
+    heruntergeladen werden können. Hier stehen Anwendungen zur Auswahl., die
+    von einem einfachen Feedbackformular über Bildersammlungen, Kalender,
+    Foren, Gästebüchern usw. bis hin zu ganzen Webshops reichen. Zum Teil
+    wurden damit auch Alternativen zu den mitgelieferten Modulen geschaffen,
+    die mit einem weit größeren Funktionsumfang aufwarten.</para>
+
+    <para>In unseren <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulhinweisen</ulink>
+    findet man einige dieser Module.</para>
 
     <para>Da die PostNuke-Entwickler sich bisher auf die Überarbeitung des
     Basissystems konzentriert haben, wurden vor allem der Funktionsumfang der
@@ -224,12 +381,12 @@
   </section>
 
   <section id="opensource">
-    <title>Open Source und Open Development</title>
-
-    <para><indexterm>
+    <title>Open Source und Open Development<indexterm>
         <primary>Open Source</primary>
-      </indexterm>PostNuke ist ein frei verfügbares System, veröffentlicht
-    unter der GNU General Public License<indexterm>
+      </indexterm></title>
+
+    <para>PostNuke ist ein frei verfügbares System, veröffentlicht unter der
+    GNU General Public License<indexterm>
         <primary>GNU General Public License</primary>
       </indexterm> (<acronym>GPL<indexterm>
         <primary>GPL</primary>
