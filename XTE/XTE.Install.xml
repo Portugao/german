@@ -40,7 +40,8 @@
         <term>XTE Theme Pack</term>
 
         <listitem>
-          <para>Theme Paket mit einigen Standard-Themes</para>
+          <para>Theme Paket mit Xanthia-Versionen einiger
+          Standard-Themes</para>
         </listitem>
       </varlistentry>
 
@@ -111,12 +112,12 @@
 
       <step>
         <para>Als ersten pnRender initialisieren und aktivieren. pnRender muß
-        <emphasis>vor</emphasis> Xanthia aktiviert werden, weil pnRender
-        einige Einstellungen für Smarty vornimmt..</para>
+        <emphasis>vor</emphasis> Xanthia aktiviert werden, da pnRender einige
+        Einstellungen für Smarty vornimmt..</para>
       </step>
 
       <step>
-        <para>Zurück in der Administrations-Übersicht checken, ob pnRender
+        <para>Zurück in der Administrations-Übersicht überprüfen, ob pnRender
         tatsächlich verfügbar ist (Icon mit Glühbirne).</para>
       </step>
 
@@ -138,15 +139,19 @@
       <step>
         <para>Zum Schluß müssen noch die Rechte der
         <filename>config.php</filename> wieder zurück auf 644 gesetzt werden.
-        (<emphasis>Die Rechte für die Verzeichnis pnTemp usw. bleiben aber auf
-        777</emphasis>)</para>
+        (<emphasis>Die Rechte für das Verzeichnis <filename>pnTemp</filename>
+        und dessen Unterverzeichnisse bleiben aber auf 777</emphasis>)</para>
       </step>
     </procedure>
 
     <sidebar>
       <caution>
-        <para>Während der Installation darf unter Administration/Einstellungen
-        kein Xanthia-Theme als Site-Theme eingestellt sein.</para>
+        <para>Während der Installation des Theme Packs darf unter <menuchoice>
+            <guimenu>Administration</guimenu>
+
+            <guimenu>Einstellungen</guimenu>
+          </menuchoice> kein Xanthia-Theme als Standardtheme eingestellt
+        sein.</para>
       </caution>
     </sidebar>
   </section>
