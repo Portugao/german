@@ -430,12 +430,12 @@
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
     Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
     Funktion durchsucht einen Text nach bestimmten Schlüsselwörtern und
-    verknüpft dieses mit einem Link. </para>
+    verknüpft dieses mit einem Link.</para>
 
     <para>Die Autolinks sind ein Hook und müssen daher, wie unter <olink
     targetdoc="Handbuch"
     targetptr="hooksaktivieren">Moduladministration</olink> beschrieben, für
-    andere Module aktiviert werden. </para>
+    andere Module aktiviert werden.</para>
 
     <para>In der <guimenu>Autolinks Konfiguration</guimenu> kann man
     einstellen, ob ein Link nur beim ersten Auftreten eines Wortes in einem
@@ -517,7 +517,7 @@
     </important>
   </section>
 
-  <section>
+  <section id="censor">
     <title>Censor (Wörter zensieren)<indexterm>
         <primary>Censor-Modul</primary>
 
@@ -528,8 +528,8 @@
 
     <para>Die Zensurfunktion ermöglicht es, bestimmte unerwünschte Worte aus
     dem Beitrag zu filtern und durch <computeroutput>*****</computeroutput> zu
-    ersetzen. Die Zensur kann auch vollständig ausser Kraft gesetzt werden.
-    </para>
+    ersetzen. Die Zensur kann auch vollständig ausser Kraft gesetzt
+    werden.</para>
   </section>
 
   <section id="ephemeridis">

@@ -106,8 +106,12 @@
     </varlistentry>
   </variablelist>
 
-  <section>
-    <title>Traditionelle Themes</title>
+  <section id="traditionellethemes">
+    <title>Traditionelle Themes<indexterm>
+        <primary>Themes</primary>
+
+        <secondary>traditionelle</secondary>
+      </indexterm></title>
 
     <para>TBD</para>
   </section>
@@ -474,451 +478,446 @@
     <section id="Xanthia.User.ConfigThemes">
       <title>Installation und Konfiguration von Xanthia Themes</title>
 
-        <bridgehead  id="Xanthia.User.ConfigThemes.Adding">Themes installieren</bridgehead>
-
-        <caution>
-          <para>Wenn ein Xanthia Theme installiert werden soll, stelle bitte
-          vorher ein Nicht-Xanthia-Theme als Standard Theme ein. Dieses kann
-          sowohl ein mitgeliefertes als auch ein anderes funktionierendes
-          Theme sein.</para>
-        </caution>
-
-        <para>Xanthia Theme-Templates sind immer in einem Verzeichnis mit dem
-        Namen des Themes gesammelt. Dieses Verzeichnis wird dann in das
-        Verzeichnis /themes kopiert. Ruft man nun die Xanthia Theme
-        Administration (<guimenuitem>Themes anzeigen</guimenuitem>) auf, so
-        erscheint eine Tabelle mit allen verfügbaren Xanthia-Themes. "Normale"
-        Themes werden hier nicht aufgeführt.</para>
-
-        <para>Mit "<guimenuitem>Theme hinzufügen</guimenuitem>" kann das neue
-        Theme hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und
-        kann in den Site-Einstellungen als Theme ausgewählt werden.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.ViewThemes.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Der "<guimenuitem>Themes anzeigen</guimenuitem>"
-              Bildschirm in Xanthia</phrase>
-            </textobject>
-          </mediaobject>
-        </screenshot>
-    
-
-      
-        <bridgehead  id="Xanthia.User.ConfigThemes.Editing">Bearbeiten von Themes</bridgehead>
-            <indexterm><primary>Xanthia</primary>
-
-            <secondary>Themes bearbeiten</secondary>
-          </indexterm>
-
-        <para>Nachdem ein neues Theme hinzugefügt wurde, kann es bearbeitet
-        werden, indem man "<guimenuitem>Theme editieren</guimenuitem>" in der
-        Theme-Übersicht auswählt. Es steht nun verschiedene Funktionen zur
-        Verfügung: <guimenuitem>Block Zones</guimenuitem>, <guimenuitem>Theme
-        Zones</guimenuitem>, <guimenuitem>Theme Templates,</guimenuitem>
-        T<guimenuitem>heme Farben</guimenuitem>, <guimenuitem>Theme
-        Einstellungen</guimenuitem>, und <guimenuitem>Block
-        Kontrolle</guimenuitem>.</para>
-
-        <bridgehead id="Xanthia.User.BlockZones">Block-Zonen</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Blockzonen</secondary>
-        </indexterm>
-
-        <para>Block Zonen definieren die Bereiche in einem Theme, in dem
-        Blöcke angezeigt werden sollen. Unter diesem Menüpunkt kann man
-        ersehen, welche Block-Zonen zur Verfügung stehen und wie sie heißen.
-        Dieses Menü wird sehr wenig gebraucht werden. Nur wenn komplette
-        Block-Zonen ein- und ausgeschaltet werden sollen, muß man das hier
-        tun. Um eine Block-Zone hinzuzufügen müssen zwei Schritte eingehalten
-        werden:</para>
-
-        <orderedlist>
-          <listitem>
-            <para>Block-Zone hinzufügen. Um dies zu tun, muß man am unteren
-            Ende der Übersicht das Tag und den Namen der Zone definieren. Zum
-            Beispiel: "Tutorial Test Block" und TUTORIAL. Diese Block-Zone
-            kann dann in den Templates positioniert werden. Blöcke, die dieser
-            Zone zugeordnet werden, werden dann dort angezeigt.</para>
-          </listitem>
-
-          <listitem>
-            <para>Im Theme muß - wie gesagt - an der richtigen Stelle das Tag
-            zum Aufrufen der Zone eingefügt werden. In diesem Fall wäre das
-            das Tag Code: &lt;!--[$TUTORIAL]--&gt;</para>
-          </listitem>
-        </orderedlist>
-
-        <para>Auf umgekehrte Art können Block-Zonen jederzeit auch wieder aus
-        dem Theme entfernt werden. Die Themes aus dem Xanthia-Paket oder dem
-        Postnuke .8 Paket enthalten eine Reihe vorkonfigurierter
-        Block-Zonen.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.BlockZones.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthias <guimenuitem>Block
-              Zonen</guimenuitem>-Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthias <guimenuitem>Block
-              Zonen</guimenuitem>-Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-
-        <bridgehead id="Xanthia.User.ThemeZones">Theme-Zonen</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Themezonen</secondary>
-        </indexterm>
-
-        <para><glossterm>Theme-Zonen</glossterm> stellen die einzelnen
-        Bereiche eines Themes dar, aus denen es zusammengesetzt ist. Jeder
-        einzelnen Zone ist ein eigenes <glossterm>Template</glossterm>
-        (Vorlage) zugeordnet, das für die Darstellung dieser Zone verwendet
-        wird.</para>
-
-        <para>Einige <glossterm>Theme-Zonen</glossterm> sind notwendig und
-        können entsprechend nicht entfernt werden. Andere, zusätzliche und
-        optionale <glossterm>Theme-Zonen</glossterm> (<glossterm>Addon Theme
-        Zones</glossterm>) können hingegen jederzeit deaktiviert und gelöscht
-        werden. Mittels der Auswahl <guimenu>configure</guimenu> können den
-        einzelnen Zonen <glossterm>Templates</glossterm> zugewiesen
-        werden.</para>
-
-        <para>Natürlich können auch neue Theme-Zonen erstellt werden. Auf
-        diesem Weg kann man unterschiedlichen Modulen ein eigenständiges
-        Aussehen zuweisen.</para>
-
-        <para>Um eine Theme-Zone zu erstellen, muss zunächst ein Template
-        erstellt werden, das im <glossterm>pnTemplates</glossterm>-Verzeichnis
-        des Themes abgelegt wird. Sodann ist der Link <guimenu>neue Zone
-        hinzufügen</guimenu> am oberen Rand des Theme-Zonen Menüs zu wählen.
-        Dadurch erhält man ein Formular, in dem folgende Felder ausgefüllt
-        werden müssen:<variablelist>
-            <varlistentry>
-              <term>Zone Name</term>
-
-              <listitem>
-                <para>Hier wird der Name für die Theme-Zone angegeben. Er kann
-                z.B. als Kurzbeschreibung der Zone dienen. Jede Zone sollte
-                einen eindeutigen, d.h. nicht mehrfach verwendeten Namen
-                bekommen.</para>
-              </listitem>
-            </varlistentry>
-
-            <varlistentry>
-              <term>Zone Label</term>
-
-              <listitem>
-                <para>Die Zonenbeschreibung (<glossterm>Zone
-                Label</glossterm>) wird auf Grundlage der Auswahl in der drop
-                down-Liste automatisch erstellt. Die vorgegebene Zuweisung
-                sollte nicht verändert werden.</para>
-              </listitem>
-            </varlistentry>
-
-            <varlistentry>
-              <term>neues Master for module</term>
-
-              <listitem>
-                <para>Beim Erstellen der Vorlage für ein Modul
-                (<glossterm>module template</glossterm>) ist zunächst das
-                Modul zu bestimmen, dem die Vorlage zugewiesen werden
-                soll.</para>
-              </listitem>
-            </varlistentry>
-
-            <varlistentry>
-              <term>Neuer Skin for block</term>
-
-              <listitem>
-                <para>Unter diesem Auswahlpunkt wird ein Block bestimmt, dem
-                eine neue Block-Vorlage (<glossterm>block
-                template</glossterm>) zugeordnet wird.</para>
-              </listitem>
-            </varlistentry>
-          </variablelist></para>
-
-        <para>Nachdem die vorgegebenen Felder ausgefüllt wurden, ist die
-        Erstellung der Vorlage mit <guimenuitem>bestätigen</guimenuitem>
-        abzuschicken. Danach ist die neue Vorlage für das Theme
-        verfügbar.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.ThemeZones.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthias <guimenuitem>Theme Zonen</guimenuitem>
-              Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthias <guimenuitem>Theme Zonen</guimenuitem>
-              Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-
-        <bridgehead
-        id="Xanthia.ThemeEditing.ThemeTemplates">Theme-Templates</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Theme-Templates</secondary>
-        </indexterm>
-
-        <para>In diesem Menü werden die Themen-, Modul- und Block-Templates
-        angezeigt, die bereits festgelegt worden sind. Mittels des
-        <guimenu>EDITIEREN</guimenu>-Links, der ein Bearbeitungsfenster
-        öffnet, kann ein Template bearbeitet werden</para>
-
-        <caution>
-          <para>Immer wenn die Templates neugeladen werden (reload templates),
-          gehen alle vorgenommenen Veränderungen verloren. <remark>In
-          zukünftigen Versionen von Xanthia wird es die Möglichkeit geben, die
-          Zeitstempel der Dateien auf dem Server mit denen der Templates in
-          der Datenbank zu vergleichen. Zeigt der Vergleich, dass die Version
-          einer Vorlage im Dateisystem aktueller ist als die in der Datenbank,
-          wird es dem Benutzer möglich sein, die in der Datenbank gespeicherte
-          Version zu aktualisieren. Ergibt der Vergleich, dass die
-          Datenbank-Version der Vorlage hingegen neuer ist, kann diese zwar
-          immer noch überschrieben werden, jedoch erhält man zusätzlich die
-          Möglichkeit, die Vorlage aus der Datenbank auf seinem eigenen,
-          lokalen Rechner zu sichern. </remark></para>
-        </caution>
-
-        <para>Die meisten Templates funktionieren nur, wenn sie einer
-        bestimmten Zone zugeordnet werden, sind also nicht austauschbar. Eine
-        Block-Zone ist zum Beispiel nicht sehr gut geeignet, um als Vorlage
-        für einen News-Artikel verwendet zu werden. Andersherum ist dies
-        natürlich genauso.</para>
-
-        <para>Alle Themes benötigen ein Template für die linke Seitenbox (Left
-        Sidebox/left blocks), ein Template für die Master-Zone, ein Template
-        für News-Artikel und ein Template für den OpenTable.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.ThemeTemplates.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthias <guimenuitem>Theme Templates</guimenuitem>
-              Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthias <guimenuitem>Theme Templates</guimenuitem>
-              Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-
-        <bridgehead id="Xanthia.User.ThemeColors">Theme-Farben</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Theme-Farben</secondary>
-        </indexterm>
-
-        <para>Die Farben eines Xanthia-Themes werden durch die
-        <emphasis>colour palette</emphasis> (Farbpalette) in der
-        <glossterm>Theme Colours</glossterm>-Auswahl des Administrationsmenüs
-        von Xanthia bestimmt. Mit Hilfe der Paletten ist es dem Designer eines
-        Themes möglich, einem Theme verschiedene Farb-Sets zuzuordnen.</para>
-
-        <para>Damit mehrere Farbpaletten zugleich verwendet werden können,
-        müssen die <glossterm>dynamic stylesheets</glossterm> aktiviert sein.
-        Von den Standard-Themes, die im Grundpaket von Xanthia enthalten sind,
-        unterstützt allein pnDefault die dynamic stylesheets.</para>
-
-        <para>Ein Farbschema wird durch den Link <guimenuitem>Use
-        Palette</guimenuitem> aktiviert.</para>
-
-        <para>Die Farben einer Palette werden durch den
-        <guimenuitem>konfigurieren</guimenuitem>-Link verändert. Dieser Link
-        ruft einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
-        Farbbereich des Themes, der verändert werden soll, wird mit den
-        Auswahlknöpfen am oberen Rand des Editors (color1, color2) festgelegt.
-        Ist dies geschehen, kann die neue Farbe mit der Maus in der
-        Farbpalette ausgewählt werden.</para>
-
-        <para>Durch ein Eingabe-Feld am unteren Bildschirmrand kann die
-        Palette umbenannt werden.</para>
-
-        <para>Ist die Auswahl der Farben abgeschlossen, werden die neuen
-        Einstellungen durch den ebenfalls am unteren Bildschirmrand zu
-        findenden Link <guimenuitem>Submit these colors</guimenuitem>
-        gespeichert.</para>
-
-        <para>Es ist möglich, eigene Farbpaletten für Themes zu erstellen.
-        Durch den Link <guimenuitem>Neue Theme Farbpalette
-        hinzufügen</guimenuitem> wird der bereits bekannte visuelle Editor
-        aufgerufen - allerdings mit dem Unterschied, dass beim Erstellen einer
-        neuen Palette zunächst keine Farbzuweisungen vorhanden sind.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.ThemeColors.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthias <guimenuitem>Theme Farben</guimenuitem>
-              Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthias <guimenuitem>Theme Farben</guimenuitem>
-              Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-
-        <bridgehead
-        id="Xanthia.User.ThemeSettings">Theme-Einstellungen</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Theme-Einstellungen</secondary>
-        </indexterm>
-
-        <para><emphasis>Theme-Variablen</emphasis> (Allgemeine Einstellungen)
-        sind an ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden
-        von der Theme-Engine gespeichert und können vom Administrator der
-        Seite über das Administrationsmenü von Xanthia aktualisiert
-        werden.</para>
-
-        <para>Die Einsatzmöglichkeiten dieser Variablen sind vielschichtig und
-        variieren von Theme zu Theme. Beispiele dieser Variablen sind die
-        Seitenbreite, Parameter für die linken und rechten Blöcke,
-        Schriftgrößen und weitere, die vom gewählten Theme abhängig sind.
-        Bestimmte Einstelloptionen, wie etwa die top links und bottom links,
-        werden durch die Werte 0 und 1 ein-, bzw. ausgeschaltet.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.ThemeSettings.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthias <guimenuitem>Theme Einstellungen
-              </guimenuitem>Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthias <guimenuitem>Theme Einstellungen
-              </guimenuitem>Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-
-        <bridgehead
-        id="Xanthia.User.BlockControl">Block-Kontrolle</bridgehead>
-
-        <indexterm>
-          <primary>Xanthia</primary>
-
-          <secondary>Block-Kontrolle</secondary>
-        </indexterm>
-
-        <para>Xanthia ermöglicht es, Blöcke in Abhängigkeit von Modulen
-        darzustellen. Jedem Modul können somit verschiedene Blöcke zugewiesen
-        werden (und einzelne Blöcke können je nach Modul an- bzw. abgeschaltet
-        werden). Dies ermöglicht einen unglaublichen Gestaltungsspielraum des
-        Erscheinungsbildes der Blöcke auf der Seite. Im Block Control
-        Administrationsmenü können die im Theme verfügbaren Block-Zonen
-        festgelegt werden,</para>
-
-        <para>Um die Block Control zu verwenden, muss zunächst im Menü
-        <menuchoice>
-            <guimenu>Administration</guimenu>
-
-            <guimenuitem>Blocks</guimenuitem>
-          </menuchoice> der Block erstellt werden, der hinzugefügt werden
-        soll.</para>
-
-        <note>
-          <para>Die Positionsangaben in der Block Administration beeinflussen
-          ein Xanthia Theme lediglich dadurch, dass sie die Ausgangsposition
-          eines Blocks bei der Installation eines neuen Themes definieren.
-          Danach übernimmt die Theme Engine die Kontrolle über die Platzierung
-          der Blöcke.</para>
-
-          <para><remark>Diese Werte sind für spätere Integrationen hier
-          erforderlich, um effektiv die Block-Position zu repräsentieren. Aber
-          das ist derzeit noch nicht möglich ohne die Modularität des
-          Theme-Systems aufzugeben</remark></para>
-        </note>
-
-        <para>Um einen Block zu einem Modul hinzuzufügen, müssen das Modul,
-        dem der Block zugeordnet werden soll und der zuzuordnende Block aus
-        den beiden Listenfeldern ausgewählt werden. Durch den Link
-        <guimenuitem>Add</guimenuitem> wird der Block dann zugewiesen. Es ist
-        möglich, einem Modul gleichzeitig mehrere Blöcke zuzuordnen. Natürlich
-        kann man Blöcke auch jederzeit wieder entfernen. Dazu dient der Link
-        <guimenuitem>entfernen</guimenuitem> in der Reihe des Blocks, der
-        gelöscht werden soll. Die Zuordnung des Blocks zu den restlichen
-        Modulen ist davon nicht betroffen, das Entfernen eines Blocks gilt
-        also jeweils nur für das ausgewählte Modul.</para>
-
-        <para>Nachdem ein Block einem Modul zugeordnet wurde, kann man
-        bestimmen, welche der möglichen <emphasis>block positions</emphasis>
-        der Block einnehmen soll. Diese Auswahl wird über die drop down-Box in
-        der <guimenuitem>Position</guimenuitem>-Spalte festgelegt. Die
-        Auswahlmöglichkeiten in dieser Box entsprechen den Block-Zonen, die im
-        Administrationsmenü Block-Zonen bestimmt wurden. Die vertikale
-        Anordnung der Blöcke kann dabei über die Pfeilsymbole (hoch/runter) in
-        der Liste festgelegt werden.</para>
-
-        <para>Die alphabetische Liste dient der einfacheren Navigation. Durch
-        Anklicken eines Buchstabens werden nur die Module angezeigt, deren
-        Namen mit dem ausgewählten Buchstaben beginnen. Der Link mit dem
-        Sternchen ruft eine Liste aller Module ab.</para>
-
-        <screenshot>
-          <mediaobject>
-            <imageobject>
-              <imagedata fileref="Xanthia.BlockControl.jpg" format="JPG" />
-            </imageobject>
-
-            <textobject>
-              <phrase>Xanthia's <guimenuitem>Block Control</guimenuitem>
-              Bildschirm</phrase>
-            </textobject>
-
-            <caption>
-              <para>Xanthia's <guimenuitem>Block Control</guimenuitem>
-              Bildschirm</para>
-            </caption>
-          </mediaobject>
-        </screenshot>
-      </section>
- 
+      <bridgehead id="Xanthia.User.ConfigThemes.Adding">Themes
+      installieren</bridgehead>
+
+      <caution>
+        <para>Wenn ein Xanthia Theme installiert werden soll, stelle bitte
+        vorher ein Nicht-Xanthia-Theme als Standard Theme ein. Dieses kann
+        sowohl ein mitgeliefertes als auch ein anderes funktionierendes Theme
+        sein.</para>
+      </caution>
+
+      <para>Xanthia Theme-Templates sind immer in einem Verzeichnis mit dem
+      Namen des Themes gesammelt. Dieses Verzeichnis wird dann in das
+      Verzeichnis /themes kopiert. Ruft man nun die Xanthia Theme
+      Administration (<guimenuitem>Themes anzeigen</guimenuitem>) auf, so
+      erscheint eine Tabelle mit allen verfügbaren Xanthia-Themes. "Normale"
+      Themes werden hier nicht aufgeführt.</para>
+
+      <para>Mit "<guimenuitem>Theme hinzufügen</guimenuitem>" kann das neue
+      Theme hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und
+      kann in den Site-Einstellungen als Theme ausgewählt werden.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.ViewThemes.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Der "<guimenuitem>Themes anzeigen</guimenuitem>"
+            Bildschirm in Xanthia</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead id="Xanthia.User.ConfigThemes.Editing">Bearbeiten von
+      Themes</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Themes bearbeiten</secondary>
+      </indexterm>
+
+      <para>Nachdem ein neues Theme hinzugefügt wurde, kann es bearbeitet
+      werden, indem man "<guimenuitem>Theme editieren</guimenuitem>" in der
+      Theme-Übersicht auswählt. Es steht nun verschiedene Funktionen zur
+      Verfügung: <guimenuitem>Block Zones</guimenuitem>, <guimenuitem>Theme
+      Zones</guimenuitem>, <guimenuitem>Theme Templates,</guimenuitem>
+      T<guimenuitem>heme Farben</guimenuitem>, <guimenuitem>Theme
+      Einstellungen</guimenuitem>, und <guimenuitem>Block
+      Kontrolle</guimenuitem>.</para>
+
+      <bridgehead id="Xanthia.User.BlockZones">Block-Zonen</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Blockzonen</secondary>
+      </indexterm>
+
+      <para>Block Zonen definieren die Bereiche in einem Theme, in dem Blöcke
+      angezeigt werden sollen. Unter diesem Menüpunkt kann man ersehen, welche
+      Block-Zonen zur Verfügung stehen und wie sie heißen. Dieses Menü wird
+      sehr wenig gebraucht werden. Nur wenn komplette Block-Zonen ein- und
+      ausgeschaltet werden sollen, muß man das hier tun. Um eine Block-Zone
+      hinzuzufügen müssen zwei Schritte eingehalten werden:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Block-Zone hinzufügen. Um dies zu tun, muß man am unteren Ende
+          der Übersicht das Tag und den Namen der Zone definieren. Zum
+          Beispiel: "Tutorial Test Block" und TUTORIAL. Diese Block-Zone kann
+          dann in den Templates positioniert werden. Blöcke, die dieser Zone
+          zugeordnet werden, werden dann dort angezeigt.</para>
+        </listitem>
+
+        <listitem>
+          <para>Im Theme muß - wie gesagt - an der richtigen Stelle das Tag
+          zum Aufrufen der Zone eingefügt werden. In diesem Fall wäre das das
+          Tag Code: &lt;!--[$TUTORIAL]--&gt;</para>
+        </listitem>
+      </orderedlist>
+
+      <para>Auf umgekehrte Art können Block-Zonen jederzeit auch wieder aus
+      dem Theme entfernt werden. Die Themes aus dem Xanthia-Paket oder dem
+      Postnuke .8 Paket enthalten eine Reihe vorkonfigurierter
+      Block-Zonen.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.BlockZones.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthias <guimenuitem>Block
+            Zonen</guimenuitem>-Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthias <guimenuitem>Block
+            Zonen</guimenuitem>-Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead id="Xanthia.User.ThemeZones">Theme-Zonen</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Themezonen</secondary>
+      </indexterm>
+
+      <para><glossterm>Theme-Zonen</glossterm> stellen die einzelnen Bereiche
+      eines Themes dar, aus denen es zusammengesetzt ist. Jeder einzelnen Zone
+      ist ein eigenes <glossterm>Template</glossterm> (Vorlage) zugeordnet,
+      das für die Darstellung dieser Zone verwendet wird.</para>
+
+      <para>Einige <glossterm>Theme-Zonen</glossterm> sind notwendig und
+      können entsprechend nicht entfernt werden. Andere, zusätzliche und
+      optionale <glossterm>Theme-Zonen</glossterm> (<glossterm>Addon Theme
+      Zones</glossterm>) können hingegen jederzeit deaktiviert und gelöscht
+      werden. Mittels der Auswahl <guimenu>configure</guimenu> können den
+      einzelnen Zonen <glossterm>Templates</glossterm> zugewiesen
+      werden.</para>
+
+      <para>Natürlich können auch neue Theme-Zonen erstellt werden. Auf diesem
+      Weg kann man unterschiedlichen Modulen ein eigenständiges Aussehen
+      zuweisen.</para>
+
+      <para>Um eine Theme-Zone zu erstellen, muss zunächst ein Template
+      erstellt werden, das im <glossterm>pnTemplates</glossterm>-Verzeichnis
+      des Themes abgelegt wird. Sodann ist der Link <guimenu>neue Zone
+      hinzufügen</guimenu> am oberen Rand des Theme-Zonen Menüs zu wählen.
+      Dadurch erhält man ein Formular, in dem folgende Felder ausgefüllt
+      werden müssen:<variablelist>
+          <varlistentry>
+            <term>Zone Name</term>
+
+            <listitem>
+              <para>Hier wird der Name für die Theme-Zone angegeben. Er kann
+              z.B. als Kurzbeschreibung der Zone dienen. Jede Zone sollte
+              einen eindeutigen, d.h. nicht mehrfach verwendeten Namen
+              bekommen.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Zone Label</term>
+
+            <listitem>
+              <para>Die Zonenbeschreibung (<glossterm>Zone Label</glossterm>)
+              wird auf Grundlage der Auswahl in der drop down-Liste
+              automatisch erstellt. Die vorgegebene Zuweisung sollte nicht
+              verändert werden.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>neues Master for module</term>
+
+            <listitem>
+              <para>Beim Erstellen der Vorlage für ein Modul
+              (<glossterm>module template</glossterm>) ist zunächst das Modul
+              zu bestimmen, dem die Vorlage zugewiesen werden soll.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Neuer Skin for block</term>
+
+            <listitem>
+              <para>Unter diesem Auswahlpunkt wird ein Block bestimmt, dem
+              eine neue Block-Vorlage (<glossterm>block template</glossterm>)
+              zugeordnet wird.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist></para>
+
+      <para>Nachdem die vorgegebenen Felder ausgefüllt wurden, ist die
+      Erstellung der Vorlage mit <guimenuitem>bestätigen</guimenuitem>
+      abzuschicken. Danach ist die neue Vorlage für das Theme
+      verfügbar.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.ThemeZones.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthias <guimenuitem>Theme Zonen</guimenuitem>
+            Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthias <guimenuitem>Theme Zonen</guimenuitem>
+            Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead
+      id="Xanthia.ThemeEditing.ThemeTemplates">Theme-Templates</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Theme-Templates</secondary>
+      </indexterm>
+
+      <para>In diesem Menü werden die Themen-, Modul- und Block-Templates
+      angezeigt, die bereits festgelegt worden sind. Mittels des
+      <guimenu>EDITIEREN</guimenu>-Links, der ein Bearbeitungsfenster öffnet,
+      kann ein Template bearbeitet werden</para>
+
+      <caution>
+        <para>Immer wenn die Templates neugeladen werden (reload templates),
+        gehen alle vorgenommenen Veränderungen verloren. <remark>In
+        zukünftigen Versionen von Xanthia wird es die Möglichkeit geben, die
+        Zeitstempel der Dateien auf dem Server mit denen der Templates in der
+        Datenbank zu vergleichen. Zeigt der Vergleich, dass die Version einer
+        Vorlage im Dateisystem aktueller ist als die in der Datenbank, wird es
+        dem Benutzer möglich sein, die in der Datenbank gespeicherte Version
+        zu aktualisieren. Ergibt der Vergleich, dass die Datenbank-Version der
+        Vorlage hingegen neuer ist, kann diese zwar immer noch überschrieben
+        werden, jedoch erhält man zusätzlich die Möglichkeit, die Vorlage aus
+        der Datenbank auf seinem eigenen, lokalen Rechner zu sichern.
+        </remark></para>
+      </caution>
+
+      <para>Die meisten Templates funktionieren nur, wenn sie einer bestimmten
+      Zone zugeordnet werden, sind also nicht austauschbar. Eine Block-Zone
+      ist zum Beispiel nicht sehr gut geeignet, um als Vorlage für einen
+      News-Artikel verwendet zu werden. Andersherum ist dies natürlich
+      genauso.</para>
+
+      <para>Alle Themes benötigen ein Template für die linke Seitenbox (Left
+      Sidebox/left blocks), ein Template für die Master-Zone, ein Template für
+      News-Artikel und ein Template für den OpenTable.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.ThemeTemplates.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthias <guimenuitem>Theme Templates</guimenuitem>
+            Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthias <guimenuitem>Theme Templates</guimenuitem>
+            Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead id="Xanthia.User.ThemeColors">Theme-Farben</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Theme-Farben</secondary>
+      </indexterm>
+
+      <para>Die Farben eines Xanthia-Themes werden durch die <emphasis>colour
+      palette</emphasis> (Farbpalette) in der <glossterm>Theme
+      Colours</glossterm>-Auswahl des Administrationsmenüs von Xanthia
+      bestimmt. Mit Hilfe der Paletten ist es dem Designer eines Themes
+      möglich, einem Theme verschiedene Farb-Sets zuzuordnen.</para>
+
+      <para>Damit mehrere Farbpaletten zugleich verwendet werden können,
+      müssen die <glossterm>dynamic stylesheets</glossterm> aktiviert sein.
+      Von den Standard-Themes, die im Grundpaket von Xanthia enthalten sind,
+      unterstützt allein pnDefault die dynamic stylesheets.</para>
+
+      <para>Ein Farbschema wird durch den Link <guimenuitem>Use
+      Palette</guimenuitem> aktiviert.</para>
+
+      <para>Die Farben einer Palette werden durch den
+      <guimenuitem>konfigurieren</guimenuitem>-Link verändert. Dieser Link
+      ruft einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
+      Farbbereich des Themes, der verändert werden soll, wird mit den
+      Auswahlknöpfen am oberen Rand des Editors (color1, color2) festgelegt.
+      Ist dies geschehen, kann die neue Farbe mit der Maus in der Farbpalette
+      ausgewählt werden.</para>
+
+      <para>Durch ein Eingabe-Feld am unteren Bildschirmrand kann die Palette
+      umbenannt werden.</para>
+
+      <para>Ist die Auswahl der Farben abgeschlossen, werden die neuen
+      Einstellungen durch den ebenfalls am unteren Bildschirmrand zu findenden
+      Link <guimenuitem>Submit these colors</guimenuitem> gespeichert.</para>
+
+      <para>Es ist möglich, eigene Farbpaletten für Themes zu erstellen. Durch
+      den Link <guimenuitem>Neue Theme Farbpalette hinzufügen</guimenuitem>
+      wird der bereits bekannte visuelle Editor aufgerufen - allerdings mit
+      dem Unterschied, dass beim Erstellen einer neuen Palette zunächst keine
+      Farbzuweisungen vorhanden sind.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.ThemeColors.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthias <guimenuitem>Theme Farben</guimenuitem>
+            Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthias <guimenuitem>Theme Farben</guimenuitem>
+            Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead
+      id="Xanthia.User.ThemeSettings">Theme-Einstellungen</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Theme-Einstellungen</secondary>
+      </indexterm>
+
+      <para><emphasis>Theme-Variablen</emphasis> (Allgemeine Einstellungen)
+      sind an ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden von
+      der Theme-Engine gespeichert und können vom Administrator der Seite über
+      das Administrationsmenü von Xanthia aktualisiert werden.</para>
+
+      <para>Die Einsatzmöglichkeiten dieser Variablen sind vielschichtig und
+      variieren von Theme zu Theme. Beispiele dieser Variablen sind die
+      Seitenbreite, Parameter für die linken und rechten Blöcke, Schriftgrößen
+      und weitere, die vom gewählten Theme abhängig sind. Bestimmte
+      Einstelloptionen, wie etwa die top links und bottom links, werden durch
+      die Werte 0 und 1 ein-, bzw. ausgeschaltet.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.ThemeSettings.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthias <guimenuitem>Theme Einstellungen
+            </guimenuitem>Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthias <guimenuitem>Theme Einstellungen
+            </guimenuitem>Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+
+      <bridgehead id="Xanthia.User.BlockControl">Block-Kontrolle</bridgehead>
+
+      <indexterm>
+        <primary>Xanthia</primary>
+
+        <secondary>Block-Kontrolle</secondary>
+      </indexterm>
+
+      <para>Xanthia ermöglicht es, Blöcke in Abhängigkeit von Modulen
+      darzustellen. Jedem Modul können somit verschiedene Blöcke zugewiesen
+      werden (und einzelne Blöcke können je nach Modul an- bzw. abgeschaltet
+      werden). Dies ermöglicht einen unglaublichen Gestaltungsspielraum des
+      Erscheinungsbildes der Blöcke auf der Seite. Im Block Control
+      Administrationsmenü können die im Theme verfügbaren Block-Zonen
+      festgelegt werden,</para>
+
+      <para>Um die Block Control zu verwenden, muss zunächst im Menü
+      <menuchoice>
+          <guimenu>Administration</guimenu>
+
+          <guimenuitem>Blocks</guimenuitem>
+        </menuchoice> der Block erstellt werden, der hinzugefügt werden
+      soll.</para>
+
+      <note>
+        <para>Die Positionsangaben in der Block Administration beeinflussen
+        ein Xanthia Theme lediglich dadurch, dass sie die Ausgangsposition
+        eines Blocks bei der Installation eines neuen Themes definieren.
+        Danach übernimmt die Theme Engine die Kontrolle über die Platzierung
+        der Blöcke.</para>
+
+        <para><remark>Diese Werte sind für spätere Integrationen hier
+        erforderlich, um effektiv die Block-Position zu repräsentieren. Aber
+        das ist derzeit noch nicht möglich ohne die Modularität des
+        Theme-Systems aufzugeben</remark></para>
+      </note>
+
+      <para>Um einen Block zu einem Modul hinzuzufügen, müssen das Modul, dem
+      der Block zugeordnet werden soll und der zuzuordnende Block aus den
+      beiden Listenfeldern ausgewählt werden. Durch den Link
+      <guimenuitem>Add</guimenuitem> wird der Block dann zugewiesen. Es ist
+      möglich, einem Modul gleichzeitig mehrere Blöcke zuzuordnen. Natürlich
+      kann man Blöcke auch jederzeit wieder entfernen. Dazu dient der Link
+      <guimenuitem>entfernen</guimenuitem> in der Reihe des Blocks, der
+      gelöscht werden soll. Die Zuordnung des Blocks zu den restlichen Modulen
+      ist davon nicht betroffen, das Entfernen eines Blocks gilt also jeweils
+      nur für das ausgewählte Modul.</para>
+
+      <para>Nachdem ein Block einem Modul zugeordnet wurde, kann man
+      bestimmen, welche der möglichen <emphasis>block positions</emphasis> der
+      Block einnehmen soll. Diese Auswahl wird über die drop down-Box in der
+      <guimenuitem>Position</guimenuitem>-Spalte festgelegt. Die
+      Auswahlmöglichkeiten in dieser Box entsprechen den Block-Zonen, die im
+      Administrationsmenü Block-Zonen bestimmt wurden. Die vertikale Anordnung
+      der Blöcke kann dabei über die Pfeilsymbole (hoch/runter) in der Liste
+      festgelegt werden.</para>
+
+      <para>Die alphabetische Liste dient der einfacheren Navigation. Durch
+      Anklicken eines Buchstabens werden nur die Module angezeigt, deren Namen
+      mit dem ausgewählten Buchstaben beginnen. Der Link mit dem Sternchen
+      ruft eine Liste aller Module ab.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="Xanthia.BlockControl.jpg" format="JPG" />
+          </imageobject>
+
+          <textobject>
+            <phrase>Xanthia's <guimenuitem>Block Control</guimenuitem>
+            Bildschirm</phrase>
+          </textobject>
+
+          <caption>
+            <para>Xanthia's <guimenuitem>Block Control</guimenuitem>
+            Bildschirm</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+    </section>
 
     <section id="Xanthia.User.CommonTasks">
       <title>Allgemeine Aufgaben für Xanthia Themen</title>
@@ -1385,11 +1384,11 @@
               <para>Diese Option wird in der Konfiguration erst angezeigt,
               sobald du eine passende <filename>.htaccess</filename> auf dem
               Server erstellt hast. (Siehe auch <xref
-              linkend="Xanthia.User.CommonTasks.ShortURLs" />). Wenn
-              Xanthia initialisiert wird, überprüft es, ob das re-write Modul
-              auf dem Server gestartet ist, aber wenn Xanthia einmal
-              initialisert wurde, gibt es keine Möglichkeit, diese Überprüfung
-              zu wiederholen. Wenn die Überprüfung falsch verlief, mußt du die
+              linkend="Xanthia.User.CommonTasks.ShortURLs" />). Wenn Xanthia
+              initialisiert wird, überprüft es, ob das re-write Modul auf dem
+              Server gestartet ist, aber wenn Xanthia einmal initialisert
+              wurde, gibt es keine Möglichkeit, diese Überprüfung zu
+              wiederholen. Wenn die Überprüfung falsch verlief, mußt du die
               Datenbank direkt (via phpMyAdmin oder etwas Ähnlichem)
               bearbeiten: In der Tabelle
               <filename><replaceable>&lt;prefix&gt;</replaceable>_module_vars</filename>
@@ -1654,7 +1653,13 @@
   </section>
 
   <section>
-    <title>Autothemes</title>
+    <title id="autotheme">Autothemes<indexterm>
+        <primary>Themes</primary>
+
+        <secondary>Autotheme</secondary>
+      </indexterm><indexterm>
+        <primary>Autotheme</primary>
+      </indexterm></title>
 
     <para>TBD</para>
   </section>

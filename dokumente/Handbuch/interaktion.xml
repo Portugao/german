@@ -445,7 +445,7 @@
     url="http://canvas.anubix.net">http://canvas.anubix.net</ulink>.</para>
   </section>
 
-  <section>
+  <section id="ratings">
     <title>Ratings (Bewertungen)<indexterm>
         <primary>Ratings</primary>
 
@@ -460,6 +460,6 @@
     targetptr="hooksaktivieren">Moduladministration</olink> beschreiben. Im
     Ratings-Modul selbst werden globale Einstellungen vorgenommen. So wird die
     Darstellung der Bewertungen (Sterne oder Schulnoten) bestimmt und die
-    Möglichkeiten zur Abstimmung beschränkt. </para>
+    Möglichkeiten zur Abstimmung beschränkt.</para>
   </section>
 </chapter>
