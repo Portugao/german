@@ -38,12 +38,12 @@
     <para>Die PostNuke-Kategorien sind die Kategorien unterhalb des Topics.
     Kategorie: Fussball Kategorie: Kommentar</para>
 
-    <para>Bei PostNuke sidn die Kategorien allerdings unabhängig von den
-    Rubriken sind (d.h. Du könntest "Fußball" auch unter "Politik" setzen --
+    <para>Bei PostNuke sind die Kategorien allerdings unabhängig von den
+    Rubriken (d.h. Du könntest "Fußball" auch unter "Politik" setzen --
     PostNuke verhindert das nicht; das kann nur der gesunde Menschenverstand).
     Die Kategorien sind nicht fest -- wenn Du, um beim Sport zu bleiben, das
     erste Mal über Kuhfladenweitwurf schreibst, mußt Du die Kategorie neu
-    einrichten. Tatsächlich werden die Kategorein bei PostNuke über die
+    einrichten. Tatsächlich werden die Kategorien bei PostNuke über die
     Artikel mit verwaltet.</para>
 
     <para>Es handelt sich bei "Topics" und "Categories" also nicht um eine
@@ -84,9 +84,9 @@
     man den <emphasis>Beitrag Text</emphasis> ein, in dem der Teil des
     Artikels (Einleitung oder Zusammenfassung) geschrieben wird, der auf der
     Startseite angezeigt werden soll. Im Bereich <emphasis>erweiterter
-    Text</emphasis> trägt man dann den Rest des Artikels ein. Nat. sind hier
-    auch Links und Images möglich, wenn man die freigeschaltet hat. Der User
-    kann diesen Text lesen, wenn er unterhalb der Einleitung auf
+    Text</emphasis> trägt man dann den Rest des Artikels ein. Natürlich sind
+    hier auch Links und Images möglich, wenn man die freigeschaltet hat. Der
+    User kann diesen Text lesen, wenn er unterhalb der Einleitung auf
     <emphasis>weiterlesen</emphasis> klickt.</para>
 
     <para>Schließlich läßt sich noch eine <emphasis>Anmerkung</emphasis>
@@ -94,13 +94,6 @@
     <emphasis>Beitrag zeitgesteuert</emphasis> erscheinen soll. Am Ende wählt
     man jetzt noch, ob man sich die Beitragsvorschau anzeigen lassen möchte,
     oder ob der Beitrag freigegeben werden soll.</para>
-
-    <para>Zunächst gibt man den Titel und den Beitrags-Text ein, in dem der
-    Teil des Artikels (Einleitung oder Zusammenfassung) geschrieben wird, der
-    auf der Übersichtsseite angezeigt werden soll. Im Bereich 'erweiterter
-    Text' trägt man dann den Rest des Artikels ein (sofern vorhanden).
-    Natürlich sind hier auch Links usw. möglich. Der User kann diesen Text
-    lesen, wenn er unterhalb der Einleitung auf Weiterlesen klickt.</para>
 
     <mediaobject>
       <imageobject>
@@ -116,9 +109,8 @@
 
         <listitem>
           <para>Die Topics haben einen eigenen Administrationspunkt. Wählt man
-          kein spezifisches Thema aus, so erschenit statt des Symbols für das
-          Thema das Browsersymbol für eine nicht gefundene Grafik!
-          einordnen.</para>
+          kein spezifisches Thema aus, so erscheint statt des Symbols für das
+          Thema das Browsersymbol für eine nicht gefundene Grafik!</para>
         </listitem>
       </varlistentry>
 
@@ -199,9 +191,9 @@
           nur dann, wenn sich der Nutzer die Seite auf deutsch anzeigen lässt.
           Diese Auswahl hat natürlich nur bei mehrsprachigen Seiten Wirkung.
           Wird die Option 'alle' gewählt, wird der Beitrag bei jeder
-          Spracheiustellung angezeigt. Damit wird die allgemeine
+          Spracheinstellung angezeigt. Damit wird die allgemeine
           Spracheinstellung der Seite nicht verändert. Diese erfolgt über
-          einen gesonderten Administrationspunkt</para>
+          einen gesonderten Administrationspunkt.</para>
         </listitem>
       </varlistentry>
 
@@ -282,7 +274,7 @@
         Bilder hochzuladen. Während FTP immer funktionieren sollte, kommen die
         meisten Upload-Module nicht damit klar, wenn PHP im "safe_mode" läuft.
         Zum Upload der Bilder kann man natürlich auch eine der zahlreichen
-        Gallerie-Module für PostNuke (z.B. my_eGallery) benutzen.</para>
+        Galerie-Module für PostNuke (z.B. my_eGallery) benutzen.</para>
       </step>
 
       <step>
@@ -291,8 +283,8 @@
         <para>Befindet sich das Bild auf dem Server, so wird es mit dem
         img-Tag eingebunden: <markup>&lt;img src="bilder/foobar.jpg"
         alt="foobar" width="100" height"150"&gt;</markup>. Wenn der Upload
-        über eine Gallerie erfolgt, wäre es natürlich hilfreich, wenn diese
-        Gallerie einen Hook zur Verfügung stellt, der den Tag selbständig
+        über eine Galerie erfolgt, wäre es natürlich hilfreich, wenn diese
+        Galerie einen Hook zur Verfügung stellt, der den Tag selbständig
         einfügt (also z.B. aus {Bild19} wird ein img-Tag, der auf das Bild
         Nummer 19 verweist)</para>
       </step>
@@ -369,9 +361,9 @@
     <para>Nach Bestätigung mit <emphasis>Okay</emphasis> startet der Editor.
     Als erstes muß jetzt noch ein den Settings "Auto-Convert Extended
     Characters" ausgeschaltet werden. - Jetzt ist w.Bloggar fertig für Deinen
-    ersten Post Nachdem man den Beitrag zuende geschrieben und formartiert
-    wählt man ein Topic aus (die hat sich w.Bloggar nämlich schon vorher von
-    der Site gezogen) und veröffentlicht den Beitrag mit <emphasis
+    ersten Post. Nachdem man den Beitrag zuende geschrieben und formartiert
+    hat, wählt man ein Topic aus (die hat sich w.Bloggar nämlich schon vorher
+    von der Site gezogen) und veröffentlicht den Beitrag mit <emphasis
     role="bold">Post.</emphasis> Dann liegt der gerade geschriebene Beitrag
     zur Veröffentlichung auf der Site bereit. Leider muß nämlich noch etwas
     nacheditiert werden:</para>
@@ -380,7 +372,7 @@
       <para>In der derzeitigen Version des Moduls werden den Überschriften
       immer noch ein * vorangesetzt. Die Datei modules/xmlrpc/api/blogger.php
       hat einen Bug in Zeile 506: statt $title = "*"; sollte dort $title = "";
-      stehen, sonst hat jede Überschrift ein "*" zu Beginn. Das wird beim
+      stehen, sonst hat jede Überschrift ein "*" zu Begin. Das wird beim
       nächsten Release gefixt sein.</para>
     </note>
 
@@ -390,7 +382,7 @@
     url="http://www.post-nuke.net/Article506.htm">erweiterte
     <filename>XMLRPC.php</filename></ulink>, mit der dies erledigt ist.</para>
 
-    <para><guimenuitem>Post</guimenuitem> Veröffentlicht bei Adminrechten die
+    <para><guimenuitem>Post</guimenuitem> veröffentlicht bei Adminrechten die
     Beiträge automatisch auf der Startseite - <guisubmenu>Post +
     Publish</guisubmenu> veröffentlicht den Artikel aber nicht auf der
     Startseite.</para>
@@ -448,7 +440,7 @@
     <title>Kommentare</title>
 
     <para>Kommentare erlauben den Usern, mit Ihrer Website zu interagieren.
-    Wenn ein üser einen Artikel liest zu dem er etwas hinzufügen will oder
+    Wenn ein User einen Artikel liest zu dem er etwas hinzufügen will oder
     etwas anzumerken hat, dann kann er einen Kommentar schreiben, der in der
     Datenbank gespeichert und mit dem Artikel angezeigt wird.</para>
 
@@ -512,7 +504,7 @@
     <section>
       <title>Core/Categories Menü</title>
 
-      <para>Dieser Block beitet eine Navigation, um über die angelegten
+      <para>Dieser Block bietet eine Navigation, um über die angelegten
       Kategorien zu navigieren.</para>
 
       <para>Es werden nur Kategorien angezeigt, in denen Artikel existieren.
@@ -528,7 +520,7 @@
     </section>
 
     <section>
-      <title>Core/Past Articies</title>
+      <title>Core/Past Articles</title>
 
       <para>Dieser Block bietet einen Direktzugriff auf alte Beiträge der
       Seite an. Die Anzahl der Artikel kann über die Blockadministration
