@@ -613,4 +613,92 @@
       - am besten in der Topicadministration nachschauen!</para>
     </section>
   </section>
+
+  <section>
+    <title>Externe News einbinden: Der "RSS Newsfeed"-Block</title>
+
+    <para>Manche Seiten bieten Fremdinhalte im RSS Format an. Diese Inhalte
+    kann man in die eigene Seite einbinden. Die Nachrichten werden nicht
+    Bestandteil der eigenen Seite. Man sieht die Überschriften der Artikel und
+    wird durch einen Klick auf die andere Seite geleitet.</para>
+
+    <para>Möglich wird das durch die Unterstützung des sogenannten
+    RSS/RDF-Formats.</para>
+
+    <para>Bei der Einbindung fremder Schlagzeilen müssen die Urheberrechte
+    beachtet werden!</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>RSS File URL:</term>
+
+        <listitem>
+          <para>Hier geben Sie die URL der Nachrichtenquelle ein, z.B.
+          http://www.post-nuke.net/backend.php</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Seitenbild anzeigen:</term>
+
+        <listitem>
+          <para>?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Seitensuche anzeigen:</term>
+
+        <listitem>
+          <para>?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung anzeigen:</term>
+
+        <listitem>
+          <para>?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Alternative Seitenanzeige aktivieren:</term>
+
+        <listitem>
+          <para>?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Inhalte aktualisieren:</term>
+
+        <listitem>
+          <para>Die Nachrichten werden nicht ständig abgefragt; vielmehr wird
+          eine lokale Kopie angelegt. Diese Kopie veraltet natürlich nach
+          einiger Zeit. Aus diesem Grund kann man hiermit eine automatische
+          Aktivierung einstellen. Welche Zeit hier eingestellt wird, hängt
+          davon ab, wie häufig die eingebundene Seite ihre Nachrichten
+          aktualisiert.</para>
+
+          <para>PostNuke selbst kann als 'Quelle' für entsprechende
+          Schlagzeilen dienen. Dazu dient die Datei backend.php.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Core/RSS Extra</bridgehead>
+
+    <para>Ein alternatives Format für Fremdinhalte. Siehe beim
+    RSS-Block.</para>
+
+    <tip>
+      <para>Die Blöcke verstehen nur RSS-Feeds im (älteren) Standard RSS 0.92.
+      PostNuke .8 wird ein überarbeitetes RSS-Modul auf Basis von <ulink
+      url="http://magpierss.sourceforge.net/">MagpieRSS</ulink> beinhalten. Um
+      bereits jetzt den aktuellen Standard RSS 2.0 verwenden zu können, kann
+      man einen PHP-Block mit einem entsprechenden PHP-Skript verwenden.
+      </para>
+    </tip>
+  </section>
 </chapter>

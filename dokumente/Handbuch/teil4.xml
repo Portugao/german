@@ -9,17 +9,17 @@
   <xi:include href="statischeseiten.xml"
               xmlns:xi="http://www.w3.org/2003/XInclude" />
 
-  <xi:include href="infomodule.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
-
-  <xi:include href="kalender.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
-
   <xi:include href="interaktion.xml"
               xmlns:xi="http://www.w3.org/2003/XInclude" />
 
+  <xi:include href="gallerien.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="kalender.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="kommerz.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="statistik.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
   <xi:include href="weiteremodule.xml"
               xmlns:xi="http://www.w3.org/2003/XInclude" />
-
-  <xi:include href="bloecke.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
-
-  <xi:include href="gallerien.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </part>

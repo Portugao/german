@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$-->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Statistische Informationen: Was den Webmaster interessiert</title>
+
+  <section>
+    <title>Statistik</title>
+
+    <para>Das Statistik-Modul informiert über die Anzahl der Zugriffe.</para>
+
+    <bridgehead>Zugriffsrechte</bridgehead>
+
+    <para>Bei den Zugriffsrechten kann man sich durch einen Klick auf
+    'Komponente' bzw. 'Instanz' alle im System hinterlegten
+    Berechtigungsschemata anzeigen. Für das Modul Statistik gilt die
+    Komponente 'Stats::' Beispiel:</para>
+
+    <para><literal>Stats:: /// ::</literal></para>
+
+    <para>wenn man z.B. den Zugriff auf die Statistik für unregistrierte
+    Benutzer verhindern möchte, müsste man ein (wichtig!) Benutzerrecht</para>
+
+    <para><literal>unregistrierte | Stats:: | .* | keines</literal></para>
+
+    <para>anlegen. Es muss ein Benutzerrecht gewählt werden, da das allgemeine
+    Leserecht bei den Gruppen (unregistrierte | .* | .* | lesen) ansonsten
+    nicht überlagert werden kann.</para>
+
+    <bridgehead>Statistik zurücksetzen</bridgehead>
+
+    <para>Unter Umständen kann es sinnvoll sein, die Statistik wieder
+    zurückzusetzen, z.B. nachdem eine Seite ausgiebig offline getestet wurde,
+    und man den Zähler wirklich bei 0 starten lassen möchte. Es gibt derzeit
+    keine "einfache" Lösung dafür, man muss sich also damit begnügen, die
+    Datenbank manuell zu editieren. Im Anhang findet man ein entsprechendes
+    SQL-Skript.</para>
+  </section>
+
+  <section>
+    <title>HTTP-Referer</title>
+
+    <para>Wenn man diese Liste aktiviert, wird einem angezeigt, von wo aus die
+    User auf die Site zugreifen.</para>
+
+    <para>Dies ist auf stark besuchten Seiten eine sehr schnell wachsende
+    Liste, deren Länge man begrenzen kann. In der Liste werden die Anzahl der
+    Zugriffe von einer bestimmten Seite aus, die aufrufende URL und die
+    prozentualen Aufrufe von dieser Seite angezeigt. Mit 'Löschen' kann man
+    die Liste zurücksetzen. Hierbei wird allerdings nicht gefragt, ob man
+    wirklich die Liste löschen will.</para>
+
+    <para>Unter 'Gesamt' steht die Summe der Aufrufe</para>
+
+    <para>Unter 'HTTP Referer Konfigurieren' kann man auswählen, ob diese
+    Funktion genutzt werden soll und wie viele Einträge in der Liste
+    aufgenommen werden. Klicken Sie auf 'Speichern' um Änderungen zu
+    übernehmen.</para>
+
+    <para>Die Referer-Information stehen nur zur Verfügung, wenn die Besucher
+    direkt auf PostNuke-Seiten zugreifen. Wenn man hingegen über eine
+    'Intro'-Seite geführt wird, werden die Referer eben diese Intro-Seite
+    anzeigen...</para>
+  </section>
+
+  <section>
+    <title>Das "Statistics"-Modul von Craig R. Saunders</title>
+
+    <para>Von Craig R. Saunders (ColdRolledSteel) satmmt das
+    "Statistics"-Modul, welches sowohl das native "Stats", als auch das
+    "Referer" Module von PostNuke ersetzen kann. Die jeweils aktuelle Version
+    gibt es auf <ulink url="???">http://www.mtrad.com/</ulink>.</para>
+  </section>
+</chapter>

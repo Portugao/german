@@ -14,4 +14,8 @@
 
   <xi:include href="lokaleinstallation.xml"
               xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="gpl.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="ccpl.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
 </part>

@@ -850,15 +850,6 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
     </section>
 
     <section>
-      <title>Obwohl ich das deutsche Sprachpaket eingespielt habe, bleibt die
-      Site englisch.</title>
-
-      <para>Überprüfe, ob die Usereinstellungen noch auf englisch gesetzt
-      sind. Zum Umschalten reicht der Aufruf von
-      <filename>http://www.example.com/index.php?newlang=deu</filename></para>
-    </section>
-
-    <section>
       <title>Was macht man wenn die PostNuke Installation durch die
       Installation eines neuen Blocks/Modules so gestört wird, das man nicht
       mehr in das Block- oder Module-Administratormenü gelangt? Kann man das

@@ -14,6 +14,405 @@
   <title>Weitere Module</title>
 
   <section>
+    <title>Downloads</title>
+
+    <para>In diesem Administrationsbereich werden die Downloads in die
+    Datenbank eingetragen.</para>
+
+    <bridgehead>Was kann das Download-Modul?</bridgehead>
+
+    <para>PostNuke unterstützt das Anbieten von Downloads. Dabei lassen sich
+    Dateien beliebigen Formates und Herkunft verwalten. Diese Downloads kann
+    man in Kategorien und Unterkategorien unterteilen, um es dem User
+    einfacher zu machen die Dateien zu finden, an denen er Interesse
+    hat.</para>
+
+    <para>Es können bis jetzt aber nur Links zu Downloads eingefügt werden,
+    die bereits im Internet zu erreichen sind. Eine Upload-Funktion ist bisher
+    nur mit Download-Modulen anderer Modulentwickler möglich. Auch lassen sich
+    bisher nur Haupt- und Unterkategorien anlegen - eine weitere Verzweigung
+    ist noch nicht möglich.</para>
+
+    <para>Zu beachten ist, dass hier effektiv nur Verweise eingetragen werden.
+    Die entsprechenden Dateien müssen sich bereits auf einem Internetserver
+    befinden. Zum Hochladen der Daten benutzt man in aller Regel ein
+    FTP-Programm. Als Alternative gibt es das Modul UpDownload, das auch das
+    Hochladen der Dateien ermöglicht.</para>
+
+    <bridgehead>Kategorien anlegen, ändern und löschen</bridgehead>
+
+    <para>Alle Downloads werden in Kategorien und Unterkategorien verwaltet.
+    Bevor der erste Download eingetragen werden kann, muß mindestens eine
+    Hauptkategorie eingetragen werden.</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Neue Hauptkategorie hinzufügen</term>
+
+        <listitem>
+          <para>Hier trägt man eine neue Kategorie inkl. Beschreibung in die
+          Downloadliste ein. Hierzu muss man natürlich Name und
+          Kurzbeschreibung (255 Zeichen) angeben. Auf 'hinzufügen' klicken, um
+          diesen Eintrag der Datenbank hinzuzufügen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Unterkategorie hinzuzufügen</term>
+
+        <listitem>
+          <para>Um eine Unterkategorie hinzuzufügen, den Namen der
+          'Unterkategorie' eintragen und aus dem Pulldownmenü die
+          Hauptkategorie unterhalb der diese erscheinen soll angeben. Es ist
+          möglich, eine Unterkategorie unterhalb einer Unterkategorie
+          anzulegen, indem man aus der Liste die
+          'Hauptkategorie/Unterkategorie' auswählt. Auf 'hinzufügen' klicken,
+          um die Unterkategorie anzulegen.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Um eine <emphasis role="bold">Kategorie zu verändern</emphasis> oder
+    zu löschen, die entsprechende Kategorie aus dem Pulldownmenü auswählen.
+    Auf 'ändern' klicken. Die Kategorie wird angezeigt und man kann Änderungen
+    vornehmen. Änderungen könnnen auf diese Weise auch für alle
+    Unterkategorien vorgenommen werden.</para>
+
+    <para>Die Kategorie kann man '<emphasis role="bold">löschen</emphasis>',
+    wenn man sie zunächst auswählt und dann auf der nächsten Seite auf
+    'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
+    Unterkategorien und die darin enthaltenen Links.</para>
+
+    <para>Die Dateien werden natürlich nicht aus dem File-System
+    gelöscht.</para>
+
+    <bridgehead>Downloads eintragen, ändern und löschen</bridgehead>
+
+    <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, können Downloads
+    hinzugefügt werden. Hierzu auf <emphasis role="bold">Download
+    hinzufügen</emphasis> klicken. Folgende Felder werden einem Download
+    zugewiesen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>Name des Programms. Das kann der Dateiname sein, besser ist es
+          aber vielleicht, einen beschreibenden Titel zu wählen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dateipfad</term>
+
+        <listitem>
+          <para>Pfad des Programms, entwerder relativ
+          (<filename>downloads/datei.zip</filename>) oder absolut
+          <systemitem>http://www.example.com/downloads/datei.zip</systemitem>)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kategorie</term>
+
+        <listitem>
+          <para>Kategorie, in der der Downioad angezeigt werden soll</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung</term>
+
+        <listitem>
+          <para>Beschreibung der Funktion der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Nicht unbedingt notwendig, aber oft interessant, sind die folgenden
+    Angaben:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name Autor</term>
+
+        <listitem>
+          <para>Autor der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>E-Mail Autor</term>
+
+        <listitem>
+          <para>Email des Autors der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dateigröße</term>
+
+        <listitem>
+          <para>Größe der Datei in Bytes, die entsprechende KB bzw. MB Zahl
+          wird berechnet. Unter Windows erhalten Sie die Größe einer Datei,
+          indem sie mit einem Rechtsklick auf die entsprechende Datei das
+          Fenster 'Eigenschaften' aufrufen, Linux- oder Unix-Anwender benutzen
+          ls -l</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Version</term>
+
+        <listitem>
+          <para>Version der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Homepage</term>
+
+        <listitem>
+          <para>Homepage der Datei oder des Autors</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Hits</term>
+
+        <listitem>
+          <para>Anzahl der bisherigen Downloads der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Man muss nicht alle Felder ausfüllen, leere Felder werden in der
+    Anzeige ignoriert.</para>
+
+    <para><emphasis role="bold">Abstimmungsliste löschen</emphasis>: User
+    können über Downloads abstimmen, hiermit wird die Abstimmung
+    zurückgesetzt.</para>
+
+    <para><emphasis role="bold">Defekten Link melden</emphasis>: Wenn ein
+    Anwender einen defekten Link findet, kann er das durch einen Klick auf
+    'Defekten Link melden' diesen dem Administrator melden. Der Administrator
+    wird benachrichtigt und bekommt unter <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guimenuitem>Downloads</guimenuitem>
+      </menuchoice> eine Liste mit der Anzahl der defekt gemeldeten Links
+    angezeigt.</para>
+
+    <para>Klickt man auf 'Defekt gemeldete Downloads' erhält man die komplette
+    Liste.</para>
+
+    <para>In diesem Menü kann man 'Editieren' wählen um zu den Einstellungen
+    des Links zu kommen, in denen man dann editieren kann, um den Fehler zu
+    beheben. Ist der Downloadlink jedoch in Ordnung, so wählt man Ignorieren,
+    um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählt man
+    'Löschen', um diesen Download aus der Datenbank zu entfernen.</para>
+
+    <para><emphasis role="bold">Wichtig</emphasis>: Es wird nicht nach einer
+    Bestätigung für den Löschvorgang gefragt. Überprüfen Sie, ob Sie den
+    Downloadlink wirklich löschen wollen.</para>
+
+    <para><emphasis role="bold">gemeldete Änderungswünsche</emphasis>: User
+    können auch benachrichtigen, wenn ein Link nicht mehr auf dem neusten
+    Stand ist. Hier wird angezeigt, wie viele und welche Änderungswünsche
+    vorhanden sind. Auf editieren klicken, wenn man den Link verändern
+    will.</para>
+
+    <para><emphasis role="bold">Downloads überprüfen</emphasis>: Auf
+    'Downloads überprüfen' klicken, wenn man alle Downloads überprüfen will.
+    Man gelangt zu einem weiteren Dialog, auf dem weitere Optionen offen
+    stehen. Entweder wählt man dann 'alle Downloads überprüfen' (dies kann
+    einige Zeit dauern, besonders, wenn viele Downloads vorhanden sind) oder
+    man überprüft nur eine Kategorie oder sogar nur eine der Unterkategorien.
+    Dazu klickt man auf die Kategorie bzw die Unterkategorie, die man
+    überprüfen will.</para>
+
+    <para>Wenn die Überprüfung abgeschlossen ist, öffnet sich ein Fenster, in
+    dem das Ergebnis der Prüfung angezeigt wird. Wenn die Downloads ok sind,
+    erscheint neben dem entsprechenden Listeneintrag ein 'OK'. Wird ein Fehler
+    festgestellt, so erscheint 'Fehler' neben der entsprechenden Datei und man
+    erhält die Möglichkeit diesen Downloadlink zu löschen oder zu
+    editieren.</para>
+
+    <para>Auf 'Ändern' klicken, um Änderungen vorzunehmen oder auf 'Löschen',
+    um den Link zu löschen. Um eine Kategorie zu verändern oder zu löschen,
+    wählt man die Kategorie vom Pulldownmenü. Dann auf 'ändern' klicken. Die
+    Kategorie wird angezeigt und man kann Änderungen vornehmen. Die Änderungen
+    werden dann auch für alle Unterkategorien vorgenommen. Die Kategorie kann
+    man 'löschen', wenn man sie zunächst auswählt und dann auf der nächsten
+    Seite auf 'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
+    Unterkategorien und die darin enthaltenen Links. Die Dateien werden
+    natürlich nicht von Ihrem System gelöscht.</para>
+
+    <para>Um einen <emphasis role="bold">Downloadlink zu 'ändern'</emphasis>,
+    die Download ID eingeben, die auch angezeigt wird, wenn man mit der Maus
+    über den Download geht. In der Statuszeile des Browsersfensters wird der
+    Link angezeigt, in dem auch ID=Nummer steht. Diese Nummer ist die ID des
+    Links. Wenn diese eingegeben wird, kann man anschließend alle
+    Informationen ändern, die beim Hinzufügen des Links eingetragen wurden.
+    Klicken auf 'Hinzufügen' speichert die Änderungen.</para>
+
+    <para>Unter 'Download Konfiguration' kann man wählen, ob es
+    unregistrierten Benutzern erlaubt ist, neue Downloads vorzuschlagen. Auf
+    'Speichern' klicken, um die Änderungen zu speichern.</para>
+  </section>
+
+  <section>
+    <title>Web Links</title>
+
+    <para>Um die Links besser zu gliedern, können Kategorien und
+    Unterkategorien angelegt werden. So bleibt die Seite auch mit vielen Links
+    übersichtlich gegliedert.</para>
+
+    <tip>
+      <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der
+      Tat basieren beide auf der selben Codebasis).</para>
+    </tip>
+
+    <para>Folgende Felder werden einem Web Link zugewiesen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Seitentitel</term>
+
+        <listitem>
+          <para>Name des Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>URL</term>
+
+        <listitem>
+          <para>z. B. <systemitem>http://www.example.com/</systemitem></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kategorie</term>
+
+        <listitem>
+          <para>Kategorie, in der der Link angezeigt werden soll</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung</term>
+
+        <listitem>
+          <para>Beschreibung des Inhalts der Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>Autor des Links</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>E-Mail</term>
+
+        <listitem>
+          <para>E-Mail des Autors der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Man muss nicht alle Felder ausfüllen, leere Felder werden in der
+    Anzeige ignoriert.</para>
+
+    <para>Jeder Nutzer kann (nach Berechtigung) Links für die Datenbank
+    vorschlagen, über vorhandene Links abstimmen oder 'tote Links'
+    (fehlerhafte Adressen) melden. Diese werden durch die Funktionen 'Lösche
+    Link-Abstimmungen', 'Tote Links', 'Linkänderungs-Wünsche' und 'Links
+    prüfen' bearbeiten.</para>
+
+    <para>Letzte Funktion überprüft alle vorhandenen Links auf ihre Gültigkeit
+    (Linkchecker) und erleichtert somit die Administration in diesem
+    Bereich.</para>
+
+    <section>
+      <title>Der "Latest Web Links"-Block</title>
+
+      <para>Block mit den neuesten Einträgen der Link-Datenbank</para>
+    </section>
+  </section>
+
+  <section>
+    <title>FAQ</title>
+
+    <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
+    Man versteht darunter Informationen, die zusammengestellt werden, damit
+    der Betreiber einer Seite nicht dauernd die gleichen Fragen beantworten
+    muss (z.B. 'Wie kann ich das BIOS neu aufspielen?') Diese Antwort müssten
+    die Hersteller bestimmt 100-mal am Tag geben. Also stellt man
+    entsprechende FAQs ins Netz, die die User erst einmal durchsuchen können,
+    wenn sie Probleme haben.</para>
+
+    <para><emphasis role="bold">Um die FAQs zu nutzen, legt man zunächst eine
+    oder mehrere Kategorien an. Die eingetragene Kategorie speichert man wie
+    gewohnt.</emphasis></para>
+
+    <para>Will man innerhalb einer Kategorie noch Unterkategorien einsetzen,
+    so wählt man einfach rechts die übergeordnete Hauptkategorie oder 'Neue
+    Hauptkategorie'.</para>
+
+    <para>Fragen können direkt über den FAQ-Link im Hauptmenü gestellt werden.
+    Beim Klicken des Links wird der User auf eine neue Seite gebracht, wo der
+    User die Frage stellen, seine Emailadresse eintragen und die Frage einer
+    Kategorie zuordnen kann oder 'unsicher', wenn er keine passende Kategorie
+    findet und eine generelle Frage stellen möchte. Danach schickt der User
+    die Frage ab.</para>
+
+    <para>Der Administrator wird über offen stehende Fragen im Contentbereich
+    informiert.</para>
+
+    <para>Als Administrator geht man zur <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guimenuitem>FAQ</guimenuitem>
+      </menuchoice> um die folgenden Funktionen zu erreichen:</para>
+
+    <para><emphasis role="bold">Unbeantwortete Fragen ansehen</emphasis> gibt
+    eine Liste mit offenen Fragen aus. Der Administrator kann die Fragen
+    beantworten oder löschen. Um die Fragen zu beantworten, auf '<emphasis
+    role="bold">Beantworten</emphasis>' klicken und die Antwort auf die Frage
+    eingeben.</para>
+
+    <para>Falls nötig, eine Kategorie für die Frage/Antwort auswählen und dann
+    auf '<emphasis role="bold">Speichern</emphasis>' drücken. Die
+    Frage/Antwort wird dann in die FAQ eingetragen. Wenn man die Frage
+    '<emphasis role="bold">löscht</emphasis>', wird man zur Bestätigung des
+    Löschvorgangs aufgefordert. Man kann den Löschvorgang abbrechen.</para>
+
+    <para>Wenn FAQ-Kategorien existieren, werden diese oben auf dem FAQ Modul
+    Fenster angezeigt. Man kann die Kategorien editieren (Titel,
+    Spracheinstellung oder Inhalt) oder löschen.</para>
+
+    <para>Löscht man eine Kategorie, werden alle Unterkategorien und alle
+    Fragen/Antworten gelöscht, wenn man dieses mit 'Ja' bestätigt. Bei 'Nein'
+    bricht man den Löschvorgang ab.</para>
+
+    <para>Nach dem Editieren einer Kategorie kann man über 'Speichern' die
+    Einträge sichern.</para>
+
+    <para>Im unteren Bereich der Seite kann man auch eine neue Frage eintragen
+    und diese innerhalb der FAQ speichern.</para>
+
+    <para>Mit der Sprache wählt man, für welche Sprache die FAQ Kategorie
+    angezeigt werden sollen. Sollen alle User die Fragen und Antworten dieser
+    Kategorie sehen können, dann wählt man einfach 'alle'.</para>
+  </section>
+
+  <section>
     <title>Autolinks</title>
 
     <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
@@ -170,38 +569,5 @@
 
     <para>Der Block "Quotes/Random Quote" zeigt dann ein zufälliges Zitat aus
     der Zitatedatenbank an.</para>
-  </section>
-
-  <section>
-    <title>Statistik</title>
-
-    <para>Das Statistik-Modul informiert über die Anzahl der Zugriffe.</para>
-
-    <bridgehead>Zugriffsrechte</bridgehead>
-
-    <para>Bei den Zugriffsrechten kann man sich durch einen Klick auf
-    'Komponente' bzw. 'Instanz' alle im System hinterlegten
-    Berechtigungsschemata anzeigen. Für das Modul Statistik gilt die
-    Komponente 'Stats::' Beispiel:</para>
-
-    <para><literal>Stats:: /// ::</literal></para>
-
-    <para>wenn man z.B. den Zugriff auf die Statistik für unregistrierte
-    Benutzer verhindern möchte, müsste man ein (wichtig!) Benutzerrecht</para>
-
-    <para><literal>unregistrierte | Stats:: | .* | keines</literal></para>
-
-    <para>anlegen. Es muss ein Benutzerrecht gewählt werden, da das allgemeine
-    Leserecht bei den Gruppen (unregistrierte | .* | .* | lesen) ansonsten
-    nicht überlagert werden kann.</para>
-
-    <bridgehead>Statistik zurücksetzen</bridgehead>
-
-    <para>Unter Umständen kann es sinnvoll sein, die Statistik wieder
-    zurückzusetzen, z.B. nachdem eine Seite ausgiebig offline getestet wurde,
-    und man den Zähler wirklich bei 0 starten lassen möchte. Es gibt derzeit
-    keine "einfache" Lösung dafür, man muss sich also damit begnügen, die
-    Datenbank manuell zu editieren. Im Anhang findet man ein entsprechendes
-    SQL-Skript.</para>
   </section>
 </chapter>

@@ -58,7 +58,7 @@
     <para>Da die PostNuke-Entwickler sich bisher auf die Überarbeitung des
     Basissystems konzentriert haben, wurden vor allem der Funktionsumfang der
     mitgelieferten Module etwas vernachlässigt. Technisch sind sie aber alle
-    auf dem aktuellsten Stand. </para>
+    auf dem aktuellsten Stand.</para>
 
     <bridgehead>Permissions steuern die Zugriffsrechte der User</bridgehead>
 
@@ -99,7 +99,8 @@
     wird, ist es bereits sehr stabil und voll supported. Fehlermeldungen
     können im <ulink url="http://www.post-nuke.net/phpBB_14.htm">Forum von
     post-nuke.net</ulink> oder aber auch direkt in den englischen Foren bei
-    <ulink url="http://forums.postnuke.com/">forums.PostNuke.com</ulink>
+    <ulink
+    url="http://forums.postnuke.com/">http://forums.postnuke.com</ulink>
     gepostet werden. Es wird aber davon abgeraten, an den mitgelieferten
     Dateien Änderungen vorzunehmen, da diese bei zukünftigen Updates entweder
     verloren gehen oder nicht auf den aktuellsten Stand gebracht werden
@@ -209,12 +210,12 @@
     <para>PostNuke ist ein frei verfügbares System, veröffentlicht unter der
     GNU General Public License (GPL). Es darf von jedem kostenfrei eingesetzt
     werden, gleich ob privat oder kommerziell, ob große Firma oder kleiner
-    Verein. </para>
+    Verein.</para>
 
     <para>Die Grundidee hinter Open Source ist einfach: <emphasis>Wenn jeder
     ein Programm ändern, verbessern und diese Anpassungen allen anderen
     Nutzern zur Verfügung stellen kann, entwickelt sich die Software
-    weiter.</emphasis> </para>
+    weiter.</emphasis></para>
 
     <para>Jeder kann sie verbessern, jeder kann sie anpassen, jeder kann
     Fehler bereinigen. Hierdurch wird ein Entwicklungstempo erreicht, das dem
@@ -227,6 +228,6 @@
     des Systems garantiert. Mit zeitweise mehr als 120 Entwicklern in fünf
     Kontinenten, mehr als 35 unterstützten Sprachen und unzähligen
     Modulentwicklern beweist PostNuke deutlich die Leistungsfähigkeit einer
-    Open-Source-Entwicklung. </para>
+    Open-Source-Entwicklung.</para>
   </section>
 </chapter>

@@ -103,6 +103,32 @@
       <emphasis>Nachricht</emphasis> kann man über
       <emphasis>versenden</emphasis> die Nachricht abschicken.</para>
     </section>
+
+    <section>
+      <title>Der "User's Login"-Block</title>
+
+      <para>Hiermit können sich registrierte Benutzer anmelden. Für noch nicht
+      registrierte Benutzer steht ein Informationstext und ein Link zur
+      Registrierung zur Verfügung.</para>
+
+      <para>Wenn Sie dieser Block nicht aktiviert ist, kann man sich dennoch
+      über <systemitem>&lt;PostNuke&gt;/user.php</systemitem> anmelden.</para>
+    </section>
+
+    <section>
+      <title>Der "Online"-Block</title>
+
+      <para>Dieser Block zeigt an, wie viele Nutzer bzw. Gäste gerade online
+      sind, unter welchem Namen man selbst angemeldet ist, und wie viele
+      private Nachrichten man hat.</para>
+    </section>
+
+    <section>
+      <title>Der "User's Custom Box"-Block</title>
+
+      <para>Der Inhalt dieses Blocks kann vom Anwender selbst bestimmt werden
+      (z.B. Lieblingslinks).</para>
+    </section>
   </section>
 
   <section>
