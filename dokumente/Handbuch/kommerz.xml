@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Kommerz mit PostNuke: Banner, Shop und CRM</title>
+
+  <section>
+    <title>Banner</title>
+
+    <para>Viele Websites nutzen die Möglichkeiten von Bannern, um die
+    Betriebskosten der Webseite teilweise zu refinanzieren.</para>
+
+    <para>PostNuke hat ein eingebautes System, welches die Darstellung und die
+    Verwaltung von Bannern unterstützt.</para>
+
+    <tip>
+      <para>Das PostNuke-eigene Bannersystem ist nicht sondrlich komfortabel.
+      Eine weitaus bessere Bannerverwaltung bietet <ulink
+      url="http://phpadsnew.sourceforge.net/">phpAdsNew</ulink>. Dieses System
+      ist zwar nicht in PostNuke eingebunden, es stellt für die
+      Banner-Integration aber ein kleines HTML-Snippet zur Verfügung &mdash;
+      und das kann dann in einem entsprechenden PostNuke-Block angezeigt
+      werden. Die gesamte Verwaltung läuft dabei also über das externe
+      Programm, die Anzeige erfolgt innerhalb von PostNuke.</para>
+    </tip>
+
+    <para>Um einen Banner auf seiner Website zu platzieren, muss man zunächst
+    einmal einen <emphasis role="bold">Kunden</emphasis> anlegen, den man dann
+    mit dem Banner verknüpft. Hierzu trägt man in die freien Felder dieses
+    Fensters den Kundennamen, Ansprechpartner, E-Mailadresse, Kundenlogin,
+    Kundenpasswort, weitere Informationen (nur sichtbar für den Admin im
+    Bannermodul) ein und klicken auf 'Kunden anlegen'.</para>
+
+    <para><guimenuitem>Banner hinzufügen</guimenuitem> kann man erst, wenn ein
+    Kunde angelegt wurde. Zunächst wählt man den 'Kunden' aus dem
+    Dropdown-Menü aus und trägt die Anzahl der gekauften Impressions
+    (Banneraufrufe) ein (0=unendlich). Dann die URL im Format
+    <systemitem>http://www.firma.de/images/banners/bannerl.gif</systemitem>,
+    wo das Banner abgelegt ist und zuletzt trägt man die URL, an die der User
+    bei Klick auf das Banner umgeleitet werden soll, ein.</para>
+
+    <para>Zum Abschluß klickt man auf <guimenuitem>Banner
+    hinzufügen</guimenuitem>, um dieses Banner zu speichern.</para>
+
+    <para><emphasis role="bold">'derzeit aktive Banner'</emphasis></para>
+
+    <para>In dieser Liste werden alle aktiven Banner, alle abgelaufenen Banner
+    (Anzahl der gekauften Impressionen erreicht) und eine Liste aller
+    eingetragenen Kunden angezeigt.</para>
+
+    <para>Unter <emphasis role="bold">'aktive Banner'</emphasis> werden die
+    Impressionen, die verbleibenden Impressionen, die prozentuale Anzahl der
+    Klicks, der Kundenname und die Möglichkeit diesen Eintrag zu editieren
+    oder zu löschen angezeigt.</para>
+
+    <para>Unter <emphasis role="bold">'abgelaufene Banner'</emphasis> werden
+    die bezahlten Impressionen, die prozentuale Anzahl der Klicks, das
+    Aktivierungsdatum des Banners und die Möglichkeit diesen Eintrag zu
+    editieren oder zu löschen angezeigt.</para>
+
+    <para><emphasis role="bold">'Banner Kunde'</emphasis> enthält die
+    Information über die Anzahl der Banner, die ein Kunde hat, sowie die
+    Möglichkeit diesen Eintrag zu editieren oder zu löschen.</para>
+
+    <para><emphasis role="bold">'Banner Konfiguration'</emphasis> Hier wählt
+    man aus, ob Banner für diese Website aktiviert werden sollen. Steht hier
+    ein 'Nein', werden auch bereits definierte Banner nicht angezeigt.</para>
+
+    <para><emphasis role="bold">Wichtig</emphasis>: Die Anzeige von Bannern
+    muss vom jeweiligen Layout unterstützt werden. Erkennen kann man das am
+    Aufruf der zuständigen Funktion <emphasis>pnBannerDisplay();</emphasis> -
+    Die muß irgendwo in der theme.php stehen.</para>
+
+    <para>Die Kunden können über den Link
+    <systemitem>http://www.ihre-firma.de/banners.php?op=login</systemitem> auf
+    ihre Bannerstatistik zugreifen. Dieser Account dient ausschließlich der
+    Abfrage 'derzeit aktive Banner' der Bannerstatistik und ist <emphasis>kein
+    Zugang, um sich auf der Seite anzumelden</emphasis>.</para>
+
+    <para>Das Interface für den Bannerkunden umfasst die folgenden
+    Daten:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Banner ID</term>
+
+        <listitem>
+          <para>ID des Banners auf Ihrer Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Impressionen</term>
+
+        <listitem>
+          <para>Anzahl, wie oft das Banner den Usern gezeigt worden ist</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Impressionen insgesamt</term>
+
+        <listitem>
+          <para>Anzahl der gezeigten Banner gesamt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>verbleibende Impressionen</term>
+
+        <listitem>
+          <para>Anzahl der verbleibenden Bannerpräsentationen, wenn ein Kunde
+          eine bestimmte Anzahl gekauft hat (0=unendlich)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Klicks</term>
+
+        <listitem>
+          <para>Anzahl der Klicks auf das Banner von dieser Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Klicks %</term>
+
+        <listitem>
+          <para>prozentuale Klicks auf diese Banner</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Funktionen : Email Stats</term>
+
+        <listitem>
+          <para>sendet die Statistik an die im Kundeninfo gespeicherte
+          Emailadresse</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Funktionen : Ändere URL</term>
+
+        <listitem>
+          <para>Ändern der Webadresse, auf die die User geleitet werden, wenn
+          sie auf das Banner klicken</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Sollten die Banner trotz eingeschalteter Funktion nicht angezeigt
+    werden, kann es sein, dass die Bannerfunktion im Theme nicht definiert
+    ist.</para>
+
+    <para>Die Standardgrößen von Bannern wie sie von <ulink
+    url="http://www.iab.net/iab_banner_standards/bannersizes.html">IAB Ad
+    Standards</ulink> definiert werden:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>468 x 60 (Full Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>234 x 60 (Half Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 90 (Button 1)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 60 (Button 2)</para>
+      </listitem>
+
+      <listitem>
+        <para>88 x 31 (Micro Bar)</para>
+      </listitem>
+
+      <listitem>
+        <para>160 x 600 (Wide Skyscraper)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 600 (Skyscraper)</para>
+      </listitem>
+
+      <listitem>
+        <para>125 x 125 (Square Button)</para>
+      </listitem>
+
+      <listitem>
+        <para>180 x 50 (Rectangle)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 240 (Vertical Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>300 x 250 (Medium Rectangle)</para>
+      </listitem>
+
+      <listitem>
+        <para>250 x 250 (Square Pop-up)</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>pnCommerce &mdash; das Shopsystem für PostNuke</title>
+
+    <para>pncommerce ist ein vollintegriertes eCommerce-System. Es benutzt als
+    eines der ersten großen Module pnRender und bietet damit umfangreiche
+    Möglichkeiten, das Layout aller Seiten den eigenen Bedürfnissen
+    anzupassen. Man kann das Modul durch eigene Plugins für Versand- und
+    Zahlungsmethoden erweitern, z.Zt. werden u.a. PayPal und 2checkout.com für
+    Onlinezahlungen unterstützt, Verisign ist als kommerzielles Plugin
+    ebenfalls erhätlich. Es können beliebig viele Artikelgruppen und Artikel
+    verwaltet werden, die auch durch das PostNuke-Permissionsystem geschützt
+    werden können. Integriert sind ferner eine einfache Auftrags- und
+    Lagerbestandsverwaltung. Für die Präsentation stehen diverse Blöcke zur
+    Verfügung, Kunden können (sofern EZComments installiert ist) Artikel
+    kommentieren.</para>
+
+    <para>Für die Zukunft ist eine Anbindung an BroCRM geplant und die
+    Möglichkeit, einen Artikelstammsatz um beliebige Datenfelder zu erweitern
+    ("custom properties"), was die Möglichkeiten stark erweitern wird.
+    Ausserdem befindet sich gerade ein flexibel konfigurierbarer Bezahlvorgang
+    in der Entwicklung.</para>
+
+    <para>Neben anderen Möglichkeiten bietet pnCommerce bereits jetzt:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Kategorien und unlimitierte Unterkategorien</para>
+      </listitem>
+
+      <listitem>
+        <para>Vorlagen pro Kategorie auswählbar</para>
+      </listitem>
+
+      <listitem>
+        <para>Bilder, inkl. Vorschaubilder, für Kategorien und Artikel: Die
+        Bilder werden über das Administrationsmenü hochgeladen. Sofern
+        ImageMagik oder GD installiert ist, werden die Vorschaubilder
+        automatisch erstellt.</para>
+      </listitem>
+
+      <listitem>
+        <para>Mehrsprachiges Userinterface (Zur Zeit englisch, deutsch)</para>
+      </listitem>
+
+      <listitem>
+        <para>Modulares Bezahlsystem mit vielen vorgefertigten Modulen,
+        z.B.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Kreditkarte</para>
+          </listitem>
+
+          <listitem>
+            <para>Scheck</para>
+          </listitem>
+
+          <listitem>
+            <para>2checkout</para>
+          </listitem>
+
+          <listitem>
+            <para>Rechnung</para>
+          </listitem>
+
+          <listitem>
+            <para>Bankeinzug</para>
+          </listitem>
+
+          <listitem>
+            <para>Überweisung</para>
+          </listitem>
+
+          <listitem>
+            <para>Kundenspezifische Zahlung (der Käufer bittet um Kontakt mit
+            dem Shopbesitzer um eine Zahlung zu vereinbaren)</para>
+          </listitem>
+
+          <listitem>
+            <para>PayPal</para>
+          </listitem>
+
+          <listitem>
+            <para>nach Vereinbarung</para>
+          </listitem>
+
+          <listitem>
+            <para>flexible Bezahlart (generische Bezahlart, sie ermöglicht es
+            beliebige einfache Bezahlarten zu simulieren)</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Modulares Versandsystem</para>
+      </listitem>
+
+      <listitem>
+        <para>Vorbereitet für den deutschen Markt</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Unterstützung für das europäische Steuersystem (z.B. MwSt
+            ist im Preis enthalten und wird nicht wie im amerikanischen System
+            später auf den Preis aufgerechnet)</para>
+          </listitem>
+
+          <listitem>
+            <para>Käufer muss den AGB sowie dem Fernabsatzgesetz oder anderen
+            Regeln zustimmen (optional)</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Auftragsmodifikatoren für Artikel und Bestellungen, um z.B.
+        Rabatte abzuziehen oder für das US Steuersystem</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Die Homepage von pnCommerce lautet <ulink
+    url="http://www.pncommerce.de">http://www.pncommerce.de</ulink>.</para>
+  </section>
+
+  <section>
+    <title>BroCRM &mdash; Customer Relationship Management mit
+    PostNuke</title>
+
+    <para>BroCRM ist ein Customer Relationship Management System und bietet
+    alle grundlegenden Funktionen für die betriebswirtschaftlichen Bedürfnisse
+    von Gewerbetreibenden, Ingenieurbüros und Werbeagenturen.</para>
+
+    <bridgehead>Was ist ein CRM-System?</bridgehead>
+
+    <para>CRM-Software integriert die Bereiche Marketing, Vertrieb, Service.
+    Der große Vorteil in der Integration dieser verschiedenen Bereiche in ein
+    einziges Software-System liegt darin, dass Daten nicht redundant in
+    verschiedenen Datenbanken gespeichert werden müssen und dadurch die
+    verschiedenen Abteilungen in Unternehmen auf denselben Daten aufbauen
+    können und die für sie interessanten Auswertungen aus dem selben
+    Informationskanal beziehen können. So entsteht eine Verkettung aller zuvor
+    getrennt arbeitender Bereiche und eine viel bessere Möglichkeit, auf
+    Bedürfnisse von (potenziellen) Kunden einzugehen.</para>
+
+    <bridgehead>Was bietet BroCRM im Einzelnen?</bridgehead>
+
+    <itemizedlist>
+      <listitem>
+        <para>Adressverwaltung (Firmen, Kunden und Lieferanten)</para>
+      </listitem>
+
+      <listitem>
+        <para>Kontaktverwaltung (Ansprechpartner)</para>
+      </listitem>
+
+      <listitem>
+        <para>Projektverwaltung (Dokumentation, Deckungsbeitragsrechnung,
+        Aufgaben)</para>
+      </listitem>
+
+      <listitem>
+        <para>Kampangenverwaltung (Aufgaben, Serienbriefe und -email)</para>
+      </listitem>
+
+      <listitem>
+        <para>Ressourcenverwaltung (Mitarbeiter, Freie Mitarbeiter, Sachgüter,
+        Zeitkonto)</para>
+      </listitem>
+
+      <listitem>
+        <para>Aufgabenverwaltung (Vergabe und Überwachung von Aufgaben)</para>
+      </listitem>
+
+      <listitem>
+        <para>Dokumentenverwaltung</para>
+      </listitem>
+
+      <listitem>
+        <para>Zeiterfassung (Stempeluhr, Zeitkonto)</para>
+      </listitem>
+
+      <listitem>
+        <para>Korrespondenz (Brief, EMail)</para>
+      </listitem>
+
+      <listitem>
+        <para>Automatische Erzeugung von PDF-Dokumenten</para>
+      </listitem>
+
+      <listitem>
+        <para>Import- / Export-Schnittstellen (XML, CSV, Outlook)</para>
+      </listitem>
+
+      <listitem>
+        <para>u.v.m.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>BroCRM unterstützt den Verkauf, ist einfach zu bedienen, läuft
+    komplett im Internet und Intranet, kommt ohne Arbeitsplatz-Administrierung
+    aus und bietet völlig neue Chancen bezüglich Mobilität, Flexibilität. Alle
+    Anwender arbeiten immer auf den sekundenaktuellen Daten, ob in einer
+    Filiale, im Homeoffice oder unterwegs im Hotel. </para>
+
+    <para>BroCRM findet man unter <ulink
+    url="http://www.brodel.de/">http://www.brodel.de/</ulink>.</para>
+  </section>
+</chapter>
