@@ -37,6 +37,11 @@
 
     <bridgehead>Informationen</bridgehead>
 
+    <para>Hier werden allgemeine Informationen über die Website gespeichert,
+    die an verschiedenen Stellen benutzt werden. So wird der Name der Seite
+    für den Titel benutzt, die Mail-Adresse des Administrators dient als
+    Absendeadresse bei Massenmailings usw. </para>
+
     <variablelist>
       <varlistentry>
         <term>Name der Website<indexterm>
@@ -46,7 +51,7 @@
           </indexterm></term>
 
         <listitem>
-          <para>Name der Website</para>
+          <para>Name der Website.</para>
         </listitem>
       </varlistentry>
 
@@ -60,7 +65,7 @@
         <listitem>
           <para>Name einer Bilddatei in <filename>/images</filename> das
           <emphasis>für die Druckansicht</emphasis> verwendet wird (das
-          normale Seitenlogo wird in aller Regel im Theme definiert)</para>
+          normale Seitenlogo wird in aller Regel im Theme definiert).</para>
         </listitem>
       </varlistentry>
 
@@ -73,7 +78,7 @@
 
         <listitem>
           <para>Slogan, der im Seitentitel und in einigen Themes angezeigt
-          wird</para>
+          wird.</para>
         </listitem>
       </varlistentry>
 
@@ -86,7 +91,7 @@
 
         <listitem>
           <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf der
-          Statistikseite angezeigt</para>
+          Statistikseite angezeigt.</para>
         </listitem>
       </varlistentry>
 
@@ -98,7 +103,7 @@
           </indexterm></term>
 
         <listitem>
-          <para>Kontaktadresse für alle Admin-Mails des Systems</para>
+          <para>Kontaktadresse für alle Admin-Mails des Systems.</para>
         </listitem>
       </varlistentry>
 
@@ -111,7 +116,7 @@
 
         <listitem>
           <para>Hiermit wird die Seite deaktiviert; nur ein angemeldeter
-          Administrator hat noch Zugriff</para>
+          Administrator hat noch Zugriff.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -507,6 +512,10 @@
 
     <bridgehead>Backend-Konfiguration</bridgehead>
 
+    <para>Über die backend.php können andere Seiten die News im RSS-Format
+    abgreifen. Diese Konfigurationsmöglichkeiten beziehen sich auf diese
+    Möglichkeit.</para>
+
     <variablelist>
       <varlistentry>
         <term>Backend Titel<indexterm>
@@ -619,26 +628,6 @@
 
         <listitem>
           <para></para>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-
-    <bridgehead>Intranet-Betrieb</bridgehead>
-
-    <variablelist>
-      <varlistentry>
-        <term>Intranet<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>Intranet-Option</secondary>
-          </indexterm></term>
-
-        <listitem>
-          <para>PostNuke ist darauf ausgerichtet in einer 'fully qualified
-          domain' Umgebung, d.h. als normale Domain (und nicht z.b. als
-          <systemitem class="systemname">localhost</systemitem>) zu laufen.
-          Bei Angabe von 'Ja' werden einige Sicherheitseinstellungen von
-          PostNuke ausser Kraft gesetzt. Dies ist nicht empfohlen!</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -1719,7 +1708,7 @@
       </varlistentry>
     </variablelist>
 
-    <para>Ist alles fertig, klickt man einfach auf hinzufügen. </para>
+    <para>Ist alles fertig, klickt man einfach auf hinzufügen.</para>
 
     <bridgehead>Beispiel</bridgehead>
 
