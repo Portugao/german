@@ -1,82 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="pnrender.moddev" lang="en-US"
+<chapter id="pnrender.moddev" lang="de-DE"
          revision="$Revision$ $Date$"
          status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
-    <authorgroup>
-      <author>
-        <firstname>JÃ¶rg</firstname>
-
-        <surname>Napp</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Mark</firstname>
-
-        <surname>West</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Steffen</firstname>
-
-        <surname>Voss</surname>
-
-        <affiliation>
-          <jobtitle>German Translation</jobtitle>
-
-          <orgname><ulink
-          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
-        </affiliation>
-      </author>
-    </authorgroup>
-
     <releaseinfo>$Revision$</releaseinfo>
-
-    <date>$Date$</date>
-
-    <keywordset>
-      <keyword>Smarty</keyword>
-
-      <keyword>pnRender</keyword>
-
-      <keyword>Xanthia Modul Entwicklung</keyword>
-    </keywordset>
   </chapterinfo>
 
-  <title>pnRender fÃ¼r Modulentwickler</title>
+  <title>pnRender für Modulentwickler</title>
 
-  <para>Dieses Kapitel befaÃŸt sich mit den grundsÃ¤tzlichen Konzepten, die
+  <para>Dieses Kapitel befaßt sich mit den grundsätzlichen Konzepten, die
   Modulentwickler bei ihrer Arbeit beachten sollten.</para>
 
   <section id="pnrender.moddev.basic">
     <title>Wie funktioniert pnRender in Modulen?</title>
 
     <para>Die Idee hinter Smarty ist sehr einfach: Im Modul oder im Block
-    werden Variablen befÃ¼llt, diese werden dann an das Postnuke-System
-    Ã¼bergeben und dann in das Layout eingefÃ¼gt. So wird aus Templates und
-    Variablen die Seite aufgebaut. </para>
+    werden Variablen befüllt, diese werden dann an das Postnuke-System
+    übergeben und dann in das Layout eingefügt. So wird aus Templates und
+    Variablen die Seite aufgebaut.</para>
 
     <tip>
       <title>Assoziative Arrays</title>
 
-      <para>Statt einfacher Variable/Wert-Paare kÃ¶nnen auch assziative Arrays
-      an das Template Ã¼bergeben werden. Das kann in einigen FÃ¤llen ganz
+      <para>Statt einfacher Variable/Wert-Paare können auch assziative Arrays
+      an das Template übergeben werden. Das kann in einigen Fällen ganz
       praktisch sein, wenn es sich dabei zum Beispiel um Arrays handelt, die
       schon von der API erzeugt werden.</para>
     </tip>
@@ -84,7 +35,7 @@
     <section id="pnrender.moddev.basic.module">
       <title>pnRender in einem einfachen Modul</title>
 
-      <para>Hier ein kurzes Beispiel fÃ¼r den Einsatz von pnRender in einem
+      <para>Hier ein kurzes Beispiel für den Einsatz von pnRender in einem
       einfachen Modul:</para>
 
       <programlisting>$output =&amp; new pnRender(); 
@@ -95,9 +46,9 @@ return $output-&gt;fetch('index.htm');</programlisting>
     <section id="pnrender.moddev.basic.hook">
       <title>pnRender in einem Hook Module</title>
 
-      <para>Wenn pnRender in einem Hook-Modul benutzt wird, muÃŸ der Name des
-      Moduls Ã¼bergeben werden, damit das System weiÃŸ zu welchen Modul welche
-      Ausgaben gehÃ¶ren. Das ist wichtig, da Hooks sich ja in die Ausgaben
+      <para>Wenn pnRender in einem Hook-Modul benutzt wird, muß der Name des
+      Moduls übergeben werden, damit das System weiß zu welchen Modul welche
+      Ausgaben gehören. Das ist wichtig, da Hooks sich ja in die Ausgaben
       anderer Module einklinken.</para>
 
       <programlisting>$output =&amp; new pnRender('MeinHookModul'); 
@@ -108,7 +59,7 @@ return $output-&gt;fetch('index.htm');</programlisting>
     <section id="pnrender.moddev.basic.blocks">
       <title>pnRender in einem Block</title>
 
-      <para>Auch in BlÃ¶cken mit der Modulname Ã¼bergeben werden:</para>
+      <para>Auch in Blöcken mit der Modulname übergeben werden:</para>
 
       <programlisting>$output =&amp; new pnRender('MeinModul'); 
 $output-&gt;assign('bspVariable', $irgendeinWert); 
@@ -123,8 +74,8 @@ return themesideblock($row);</programlisting>
     <para>Modul-Templates werden im Verzeichnis jedes Moduls im
     Unterverzeichnis <filename>pntemplates</filename> gespeichert.</para>
 
-    <para>ZusÃ¤tzliche Smarty-<olink targetdoc="pnRender.Reference.xml"
-    targetptr="pnrender.tempdev.plugins">Plugins</olink> mÃ¼ssen im
+    <para>Zusätzliche Smarty-<olink targetdoc="pnRender.Reference.xml"
+    targetptr="pnrender.tempdev.plugins">Plugins</olink> müssen im
     Unterverzeichnis <filename>plugins</filename> von
     <filename>pntemplates</filename> abgelegt werden.</para>
 
@@ -132,9 +83,9 @@ return themesideblock($row);</programlisting>
     von <filename>pntemplates</filename> gespeichert:
     <filename>config</filename></para>
 
-    <para>Mehr Informationen zu mÃ¶glichen Konfigurationen gibt es in der
-    <ulink url="http://smarty.php.net/manual/en/config.files.php">Smarty
-    dokumentation</ulink>.</para>
+    <para>Mehr Informationen zu möglichen Konfigurationen gibt es in der
+    <ulink
+    url="http://smarty.php.net/manual/en/config.files.php">Smarty-Dokumentation</ulink>.</para>
 
     <screenshot>
       <mediaobject>
@@ -157,24 +108,24 @@ return themesideblock($row);</programlisting>
   <section id="pnrender.moddev.themetemplates">
     <title>Theme-spezifische Templates</title>
 
-    <para>FÃ¼r Theme-Disgner gibt es die MÃ¶glichkeit zusammen mit dem Theme
-    Templates fÃ¼r verschiedene Module vorzubereiten. Wenn ein solches
-    Theme-abhÃ¤ngiges Modul-Template existiert, wird dieses statt des Originals
+    <para>Für Theme-Disgner gibt es die Möglichkeit zusammen mit dem Theme
+    Templates für verschiedene Module vorzubereiten. Wenn ein solches
+    Theme-abhängiges Modul-Template existiert, wird dieses statt des Originals
     benutzt. Das bedeutet, dass Theme-Designer nicht nur das generelle Layout
-    bestimmen kÃ¶nnen. Es ist auch mÃ¶glich, dass sie festlegen wie in ihrem
+    bestimmen können. Es ist auch möglich, dass sie festlegen wie in ihrem
     Theme zum Beispiel die News oder der Kalender aussehen sollen.</para>
 
     <para>Diese Modul-Templates liegen dann zusammen mit dem Rest des Themes
-    in einem Verzeichnis. Dort muÃŸ dann nur ein Unterverzeichnis fÃ¼r die
+    in einem Verzeichnis. Dort muß dann nur ein Unterverzeichnis für die
     Modultemplates eingerichtet werden
     <filename>templates/<replaceable>&lt;modulename&gt;</replaceable></filename>.
-    Auch hier kÃ¶nnen wiederum Unterverzeichnisse fÃ¼r Configs und Plugins
+    Auch hier können wiederum Unterverzeichnisse für Configs und Plugins
     erstellt werden.</para>
 
     <screenshot>
       <mediaobject>
         <objectinfo>
-          <title>LayoutabhÃ¤ngige Modultemplates</title>
+          <title>Layoutabhängige Modultemplates</title>
         </objectinfo>
 
         <imageobject>
@@ -183,7 +134,7 @@ return themesideblock($row);</programlisting>
         </imageobject>
 
         <textobject>
-          <phrase>Verzeichnisstruktur fÃ¼r Modultemplates im Theme</phrase>
+          <phrase>Verzeichnisstruktur für Modultemplates im Theme</phrase>
         </textobject>
       </mediaobject>
     </screenshot>
@@ -204,45 +155,45 @@ return themesideblock($row);</programlisting>
       Ausgabe in einer Datei zu beschleunigen. Falls eine gecachte Version des
       Aufrufs existiert, wird diese ausgegeben, anstatt die Ausgabe neu zu
       generieren. Caching kann die Performance vor allem dann deutlich
-      verbessern, wenn Templates lÃ¤ngere Rechenzeit beanspruchen. Weil die
+      verbessern, wenn Templates längere Rechenzeit beanspruchen. Weil die
       Ausgabe von <command>display()</command> und <command>fetch()</command>
       gecached wird, kann ein Cache verschiedene Templates,
       Konfigurationsdateien usw. enthalten.</para>
     </blockquote>
 
-    <para>Zum einen kann der Site-Administrator entscheiden, ob Ã¼berhaupt
+    <para>Zum einen kann der Site-Administrator entscheiden, ob überhaupt
     Caching auf seiner Site eingesetzt werden soll. Diese Einstellung kann
-    aber vom Modulentwickler "Ã¼bergangen" werden, indem er den caching-Wert im
+    aber vom Modulentwickler "übergangen" werden, indem er den caching-Wert im
     pnRender Objekt selbst setzt. Er kann <command>caching</command> zum
     Beispiel auf <command>false</command> setzen, wenn er die Inhalte aus
-    bestimmten grÃ¼nden nicht gecacht haben will. Auf <command>true</command>
-    kann man den Wert auch setzen, das wÃ¼rde dann aber dem Administrator den
-    EinfluÃŸ auf das Caching entziehen.</para>
+    bestimmten gründen nicht gecacht haben will. Auf <command>true</command>
+    kann man den Wert auch setzen, das würde dann aber dem Administrator den
+    Einfluß auf das Caching entziehen.</para>
 
     <section id="pnrender.moddev.caching.display">
       <title>Ausgaben mit Caching</title>
 
       <para>Jede anzuzeigende einzelne Seite muss eine eigene Cache-ID
-      bekommen. Das wird in den meisten FÃ¤llen einfach die ID des Inhalts sein
-      (News-Artikel-ID, Download-ID...) - so weiss das System, ob fÃ¼r diesen
+      bekommen. Das wird in den meisten Fällen einfach die ID des Inhalts sein
+      (News-Artikel-ID, Download-ID...) - so weiss das System, ob für diesen
       Inhalt schon eine gecachte Seite vorliegt oder nicht.</para>
 
       <programlisting role="example">return $pnRender-&gt;Fetch('example_user_display.htm', $tid);</programlisting>
 
       <important>
-        <para>Wenn eine Seite verschiedene Inhalte fÃ¼r Benutzer mit
-        verschiedenen Zugriffsrechten enthÃ¤lt, sollte diese Seite nicht
+        <para>Wenn eine Seite verschiedene Inhalte für Benutzer mit
+        verschiedenen Zugriffsrechten enthält, sollte diese Seite nicht
         gecacht werden. Es kann sonst sein, dass den Usern immer wieder die
         Seite angezeigt wird, die mit den Rechten des ersten Users erzeugt
         wurde.</para>
 
-        <para>Die Postnuke-Entwickler arbeiten aber an einer LÃ¶sung fÃ¼r dieses
+        <para>Die Postnuke-Entwickler arbeiten aber an einer Lösung für dieses
         Problem.</para>
       </important>
     </section>
 
     <section id="pnrender.moddev.caching.proctime">
-      <title>Performance erhÃ¶hen</title>
+      <title>Performance erhöhen</title>
 
       <para>Bei der Anwendung der <command>is_cached</command> Methode auf das
       pnRender Objekt, kann man herausfinden, ob die Seite schon gecacht ist.
@@ -275,15 +226,15 @@ function Example_user_display($args)
     return $pnRender-&gt;Fetch('example_user_display.htm', $tid);
 }</programlisting>
 
-      <para><command>is_cached</command> sollte so frÃ¼h wie mÃ¶glich im Code
-      aufgerufen werden, um unnÃ¶tige Arbeit zu ersparen.</para>
+      <para><command>is_cached</command> sollte so früh wie möglich im Code
+      aufgerufen werden, um unnötige Arbeit zu ersparen.</para>
     </section>
 
     <section id="pnrender.moddev.caching.clearing">
-      <title>Cache lÃ¶schen</title>
+      <title>Cache löschen</title>
 
-      <para>Wenn Inhalte verÃ¤ndert, gelÃ¶scht oder hinzugefÃ¼gt werden, mÃ¼ssen
-      alle relevanten, gecachten Seiten gelÃ¶scht werden. Andernfalls kÃ¶nnten
+      <para>Wenn Inhalte verändert, gelöscht oder hinzugefügt werden, müssen
+      alle relevanten, gecachten Seiten gelöscht werden. Andernfalls könnten
       veraltete Daten an den Browser geschickt werden.</para>
 
       <programlisting role="example">function Example_admin_update($args)
@@ -298,7 +249,7 @@ function Example_user_display($args)
         // Update Erfolgreich? Dann:
         pnSessionSetVar('statusmsg', pnVarPrepHTMLDisplay(_EXAMPLEUPDATED));
 
-        // Ãœbersicht &amp; Seite im Cache lÃ¶schen
+        // Übersicht &amp; Seite im Cache löschen
         $pnRender =&amp; new pnRender();
         $pnRender-&gt;clear_cache('example_user_row.htm', $tid);
         $pnRender-&gt;clear_cache('example_user_display.htm', $tid);
@@ -311,8 +262,8 @@ function Example_user_display($args)
     return true;
 }</programlisting>
 
-      <para>In diesem Beispiel kann man ersehen, wie alle abhÃ¤ngigen Seiten
-      gelÃ¶scht werden kÃ¶nnen.</para>
+      <para>In diesem Beispiel kann man ersehen, wie alle abhängigen Seiten
+      gelöscht werden können.</para>
     </section>
   </section>
 </chapter>

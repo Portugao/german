@@ -1,93 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="pnrender.tempdev" lang="en-US"
+<chapter id="pnrender.tempdev" lang="de-DE"
          revision="$Revision$ $Date$"
          status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
-    <authorgroup>
-      <author>
-        <firstname>JÃ¶rg</firstname>
-
-        <surname>Napp</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Patrick</firstname>
-
-        <surname>Cornelissen</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>pnCommerce Team</orgname>
-        </affiliation>
-
-        <contrib>Patrick contributed main parts of the Template
-        documentation</contrib>
-      </author>
-
-      <author>
-        <firstname>Mark</firstname>
-
-        <surname>West</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-        </affiliation>
-      </author>
-
-      <author>
-        <firstname>Steffen</firstname>
-
-        <surname>Voss</surname>
-
-        <affiliation>
-          <jobtitle>German Translation</jobtitle>
-
-          <orgname><ulink
-          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
-        </affiliation>
-      </author>
-    </authorgroup>
-
     <releaseinfo>$Revision$</releaseinfo>
-
-    <date>$Date$</date>
-
-    <keywordset>
-      <keyword>Smarty</keyword>
-
-      <keyword>pnRender</keyword>
-
-      <keyword>Xanthia</keyword>
-    </keywordset>
   </chapterinfo>
 
-  <title>pnRender fÃ¼r Template-Designer</title>
+  <title>pnRender für Template-Designer</title>
 
   <section id="pnrender.tempdev.intro">
     <title>Einleitung</title>
 
-    <para>Dieses Kapitel fÃ¼hrt in das Template-Disgn ein. Ein GroÃŸteil des
+    <para>Dieses Kapitel führt in das Template-Disgn ein. Ein Großteil des
     Materials stammt von der <ulink
     url="http://pnc.snowbankih.tzo.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=4">pnCommerce
-    Website</ulink>. </para>
+    Website</ulink>.</para>
 
-    <para>Templates kÃ¶nnen mit allen gÃ¤ngigen HTML-Editoren bearbeitet werden.
-    In das verbereitete HTML werden dann die nicht-HTML-Tags eingefÃ¼gt. Sie
+    <para>Templates können mit allen gängigen HTML-Editoren bearbeitet werden.
+    In das verbereitete HTML werden dann die nicht-HTML-Tags eingefügt. Sie
     geben vor, wie die Smarty-Engine die Inhalte einbauen soll. Dieses
-    EinfÃ¼hrung kann natÃ¼rlich nicht alle MÃ¶glichkeiten von Smarty abdecken.
+    Einführung kann natürlich nicht alle Möglichkeiten von Smarty abdecken.
     Dazu kann man auf der <ulink url="???">Smarty-Homepage</ulink> mehr
     lesen.</para>
 
@@ -98,7 +34,7 @@
       <para>Zu beachten ist, dass alle Funktionen von Smarty (Modifier,
       Functionen, usw.) sich nur auf die Darstellung des Inhaltes beziehen.
       Dadurch wird die Logik vom Layout getrennt. Jegliche Logik sollte in der
-      Application liegen, das Layout sollte ausschlieÃŸlich in den Templates
+      Application liegen, das Layout sollte ausschließlich in den Templates
       festgelegt werden. Aus diesem Motiv wurde Smarty entwickelt.</para>
     </blockquote>
   </section>
@@ -110,26 +46,26 @@
       <title>Trennsymbole</title>
 
       <para>Alle Smarty-Tags sind von <emphasis
-      role="bold">Trennsymbolen</emphasis>. StandartmÃ¤ÃŸig ist das in Smarty
-      <markup>{</markup> und <markup>}</markup>. Diese wurden fÃ¼r pnRender in
-      <markup>&lt;!--[</markup> und <markup>]--&gt;</markup> geÃ¤ndert, weil
+      role="bold">Trennsymbolen</emphasis>. Standartmäßig ist das in Smarty
+      <markup>{</markup> und <markup>}</markup>. Diese wurden für pnRender in
+      <markup>&lt;!--[</markup> und <markup>]--&gt;</markup> geändert, weil
       zum Beispiel Dreamweaver-benutzer Probleme mit den Originaltags haben.
-      Es gab den Vorschlag das gleiche Format wie in Autotheme zu wÃ¤hlen.
-      Entschieden hat sich das pnCore-Team fÃ¼r <markup>&lt;!--[</markup>
-      <markup>]--&gt;</markup> weil die Tags von Dreamweaver so fÃ¼r
-      HTML-Kommentare gehalten werden und eine Bearbeitung mÃ¶glich
+      Es gab den Vorschlag das gleiche Format wie in Autotheme zu wählen.
+      Entschieden hat sich das pnCore-Team für <markup>&lt;!--[</markup>
+      <markup>]--&gt;</markup> weil die Tags von Dreamweaver so für
+      HTML-Kommentare gehalten werden und eine Bearbeitung möglich
       wird.</para>
 
       <para>Da Smarty die Templates kompiliert, werden die Tags durch php
       ersetzt - dadurch bleibt der Performanceverlust auf Grund der deutlich
-      lÃ¤ngeren Tags unmerklich. Nur beim ersten Parsen der Seite entsteht eine
+      längeren Tags unmerklich. Nur beim ersten Parsen der Seite entsteht eine
       Zusatzlast, wenn die komplierte Version erstellt wird.</para>
     </section>
 
     <section id="pnrender.tempdev.basics.variables">
       <title>Variablen</title>
 
-      <para>Variables, die vom Modul zur VerfÃ¼gung gestellt werden, mÃ¼ssen mit
+      <para>Variables, die vom Modul zur Verfügung gestellt werden, müssen mit
       einem $ angegeben werden.</para>
 
       <example>
@@ -138,7 +74,7 @@
         <programlisting>&lt;!--[$name]--&gt;</programlisting>
       </example>
 
-      <para>FÃ¼r assoziative Array wird die Punkt-Notiation verwendet:</para>
+      <para>Für assoziative Array wird die Punkt-Notiation verwendet:</para>
 
       <example>
         <title>Die Benutzung von Arrays</title>
@@ -150,9 +86,9 @@
     <section id="pnrender.tempdev.basics.modifiers">
       <title>Modifier</title>
 
-      <para>Smarty bietet die MÃ¶glichkeit sogenannte Modifier auf Variablen
-      anzuwenden. So kÃ¶nnen die Inhalte noch im Template angepaÃŸt werden. Da
-      Modifier hintereinander gehÃ¤ngt werden kÃ¶nnen, ist dieses System sehr
+      <para>Smarty bietet die Möglichkeit sogenannte Modifier auf Variablen
+      anzuwenden. So können die Inhalte noch im Template angepaßt werden. Da
+      Modifier hintereinander gehängt werden können, ist dieses System sehr
       flexibel.</para>
 
       <example>
@@ -169,29 +105,27 @@
     <section id="pnrender.tempdev.basics.functions">
       <title>Funktionen</title>
 
-      <para>Smarty bietet desweiteren Funktionen fÃ¼r verschiedene Aufgaben.
-      Funktionen werden zusammen mit den nÃ¶tigen Attributen aufgerufen:
+      <para>Smarty bietet desweiteren Funktionen für verschiedene Aufgaben.
+      Funktionen werden zusammen mit den nötigen Attributen aufgerufen:
       <programlisting format="linespecific">&lt;!--[funcname attr1="val" attr2="val"]--&gt;</programlisting></para>
 
-      <para></para>
-
-      <para>Ein Beispiel fÃ¼r die Benutzung von Funktionen ist die Einbindung
+      <para>Ein Beispiel für die Benutzung von Funktionen ist die Einbindung
       andere Templates. Wenn zum Beispiel ein Modul viele verschiedene Seiten
       immer mit dem gleichen Seitenkopf aufrufen sollen, kann dies mit
-      Includes gelÃ¶st werden</para>
+      Includes gelöst werden</para>
 
       <example>
         <title>Einbinden eines anderen Templates</title>
 
         <programlisting format="linespecific">&lt;!--[include file="example_admin_menu.htm"]--&gt;</programlisting>
 
-        <para>So werden Ã¼blicherweise Dateien eingebunden.</para>
+        <para>So werden üblicherweise Dateien eingebunden.</para>
       </example>
 
       <para>Mit einigen Funktionen lassen sich auch Daten vom Postnuke-Core
-      abrufen. Ein sehr einfaches Beispiel dafÃ¼r ist pnml
+      abrufen. Ein sehr einfaches Beispiel dafür ist pnml
       (Postnuke-Multilanguage), durch dessen Aufruf Sprach-Definitionen
-      geladen werden kÃ¶nnen:</para>
+      geladen werden können:</para>
 
       <example>
         <title>Internationalization</title>
@@ -203,13 +137,13 @@
     <section id="pnrender.tempdev.basics.flowcontrol">
       <title>Ablaufkontrolle</title>
 
-      <para>In Smarty sind aber auch Schleifen und Bedingungen mÃ¶glich, die
+      <para>In Smarty sind aber auch Schleifen und Bedingungen möglich, die
       den Ablauf des Seitenaufbaus kontrollieren.</para>
 
       <section>
         <title>If-Then</title>
 
-        <para>Inhalte in AbhÃ¤ngigkeit von bestimmten Bedingungen anzuzeigen
+        <para>Inhalte in Abhängigkeit von bestimmten Bedingungen anzuzeigen
         geht mit folgenden Tags:</para>
 
         <programlisting format="linespecific">...
@@ -222,20 +156,20 @@
 
         <para>In diesem Fall soll der Inhalt der Variable $name fettgedruckt
         angezeigt werden, wenn die Variable $bold wahr (true) ist, sonst soll
-        er normal angezeigt werden. If-Then Abfragen kÃ¶nnen mit verschiedenen
-        Bedingungen erstellt werden: </para>
+        er normal angezeigt werden. If-Then Abfragen können mit verschiedenen
+        Bedingungen erstellt werden:</para>
 
         <para>== (gleich)</para>
 
         <para>!= (nicht gleich)</para>
 
-        <para>&gt; (grÃ¶ÃŸer)</para>
+        <para>&gt; (größer)</para>
 
         <para>&lt; (kleiner)</para>
 
         <para>&lt;= (kleiner oder gleich)</para>
 
-        <para>&gt;= (grÃ¶ÃŸer oder gleich)</para>
+        <para>&gt;= (größer oder gleich)</para>
 
         <para>Mehr Informationen gibt es auf der <ulink
         url="http://smarty.php.net/manual/en/language.builtin.functions.php">Smarty-Homepage</ulink>.</para>
@@ -245,7 +179,7 @@
         <title>Schleifen</title>
 
         <para>Wie kann man nun eine unbekannte Menge Inhalte anzeigen? Sehr
-        einfach: Smarty ermÃ¶glicht die Behandlung von Arrays durch Schleifen.
+        einfach: Smarty ermöglicht die Behandlung von Arrays durch Schleifen.
         Zum Beispiel:</para>
 
         <example>
@@ -269,17 +203,17 @@
 
     <para>pnRender wird mit einigen Plugins (sowohl Modifiern als auch
     Funktionen) ausgeliefert, um den Temeplatedesignern Zugriff auf
-    Postnuke-eigene Funktionen zu ermÃ¶glichen. Wer schon einmal mit der
+    Postnuke-eigene Funktionen zu ermöglichen. Wer schon einmal mit der
     Postnuke-API gearbeitet hat, wird sich hier leicht zurecht finden.</para>
 
     <tip>
-      <para>Das pnCore-Team freut sich Ã¼ber weitere VorschlÃ¤ge fÃ¼r Plugins.
-      WÃ¼nsche sind am Besten auf der <ulink
+      <para>Das pnCore-Team freut sich über weitere Vorschläge für Plugins.
+      Wünsche sind am Besten auf der <ulink
       url="http://noc.postnuke.com/tracker/?atid=104&amp;group_id=5&amp;func=browse">Feature
       Requests Seite</ulink> im Postnuke NOC abzugeben.</para>
     </tip>
 
-    <para>Modulentwickler kÃ¶nnen aber auch eigene Plugins mit ihren Modulen
+    <para>Modulentwickler können aber auch eigene Plugins mit ihren Modulen
     anbieten.</para>
 
     <para>All diese Plugins werden genau wie die nativen Smarty plugins
