@@ -516,7 +516,7 @@ $themeinfo['xhtmlsupport'] = 0;
     <para>Eigene Plugins können in /themes/YOURTHEME/plugins abgelegt
     werden.</para>
 
-    <section>
+    <section id="Xanthia.themecodes">
       <title>Xanthia Theme Codes</title>
 
       <para>Basiert auf PiterPanV2 Theme</para>

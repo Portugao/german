@@ -10,7 +10,7 @@
 
   <title>Xanthia Danksagungen</title>
 
-  <section>
+  <section id="Xanthia.Credits.Xanthia">
     <title>Xanthia Danksagungen</title>
 
     <para>Ein spezielles Danke an <personname>
@@ -63,7 +63,7 @@
       </personname>(<email>cino@envolution.it</email>).</para>
   </section>
 
-  <section>
+  <section id="Xanthia.Credits.Documentation">
     <title>Dokumentations Danksagungen</title>
 
     <para>Dank an <personname>

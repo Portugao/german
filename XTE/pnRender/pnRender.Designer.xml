@@ -140,7 +140,7 @@
       <para>In Smarty sind aber auch Schleifen und Bedingungen möglich, die
       den Ablauf des Seitenaufbaus kontrollieren.</para>
 
-      <section>
+      <section id="pnrender.tempdev.basic.ifthen">
         <title>If-Then</title>
 
         <para>Inhalte in Abhängigkeit von bestimmten Bedingungen anzuzeigen
@@ -176,7 +176,7 @@
         url="http://smarty.php.net/manual/de/language.builtin.functions.php">Smarty-Homepage</ulink>.</para>
       </section>
 
-      <section>
+      <section id="pnrender.tempdev.basics.loops">
         <title>Schleifen</title>
 
         <para>Wie kann man nun eine unbekannte Menge Inhalte anzeigen? Sehr
