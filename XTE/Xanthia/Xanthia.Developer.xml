@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Xanthia.Devel" lang="en-US"
+         revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <authorgroup>
+      <author>
+        <firstname>Mark</firstname>
+
+        <surname>West</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+
+          <orgdiv>Development Team</orgdiv>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Simon</firstname>
+
+        <surname>Birtwistle</surname>
+
+        <affiliation>
+          <orgname>Postnuke</orgname>
+
+          <orgdiv>pnCorps</orgdiv>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Larry</firstname>
+
+        <othername>E.</othername>
+
+        <surname>Masters</surname>
+
+        <affiliation>
+          <jobtitle>Xanthia Theme Engine Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+
+          <orgdiv>Development Team</orgdiv>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Jörg</firstname>
+
+        <surname>Napp</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+
+          <orgdiv>Development Team</orgdiv>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+    <authorgroup>
+      <corpauthor>Steffen Voß</corpauthor>
+
+      <othercredit>
+        <lineage>German Translation</lineage>
+      </othercredit>
+    </authorgroup>
+
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <edition>prerelease</edition>
+
+    <keywordset>
+      <keyword>Smarty</keyword>
+
+      <keyword>Theme</keyword>
+
+      <keyword>Xanthia</keyword>
+    </keywordset>
+  </chapterinfo>
+
+  <title>Xanthia für Theme-Entwickler</title>
+
+  <section id="Xanthia.Devel.Anatomy">
+    <title>Aufbau eines Themes</title>
+
+    <para>In diesem Kapitel wenden wir uns der Entwicklung eines Xanthia
+    Themes zu; Als erstes We will now look at the makeup of Xanthia theme; Als
+    erstes schauen wir uns die Struktur von Themes sowie deren
+    Hauptbestandteile an und bestimmen ein paar der wichtigsten Begriffe. Dann
+    schauen wir uns die einzelnen Dateien genauer an und klären, welche Rolle
+    sie für das Theme spielen.</para>
+
+    <section id="Xanthia.Devel.xaninfo">
+      <title>xaninfo.php</title>
+
+      <para>In der Administration von Xanthia kann man sich die Credits jedes
+      installierten Themes anschauen. Diese Informationen stammen aus der
+      Datei xaninfo.php. xaninfo.php ist in Struktur und Inhalt so ähnlich
+      aufgebaut wie die pnversion.php, die jedem Postnuke Modul beliegt. Die
+      xaninfo.php könnte zum Beispiel so aussehen:</para>
+
+      <programlisting>&lt;?php
+$themeinfo['name'] = 'SeaBreeze';
+$themeinfo['author'] = 'Vanessa Haakenson';
+$themeinfo['download'] = 'http://www.designs4nuke.com';
+$themeinfo['api'] = 'Xanthia2.0';
+$themeinfo['xhtmlsupport'] = 0; 
+?&gt;</programlisting>
+
+      <para>Wie man sieht, wird hier ein php array mit einigen Elementen
+      gefüllt. Die ersten drei Felder sollten sich selbst erklären. Das vierte
+      Feld ("api") wird sich evtl. bei zukünftigen Xanthia-Versionen
+      verändern. Zur Zeit ist hier aber nur die Einstellung "Xanthia2.0"
+      möglich. Das letzte Feld ("xhtmlsupport") kommt ins Spiel, wenn ab
+      Postnuke .8 dem System die Vorgabe des HTML doctype möglich ist. Wenn
+      das Theme korrektes XHTML ausgibt, kann hier der Wert 1 gesetzt
+      werden.</para>
+    </section>
+
+    <section id="Xanthia.Devel.xaninit">
+      <title>xaninit.php</title>
+
+      <para>Die Xanthia Templating Engine speichert Werte für die Theme
+      Konfiguration, Templates, Paletten, Zonen und Blöcke in der Datenbank,
+      deshalb müssen mit dieser Datei alle relevanten Daten zur Verfügung
+      gestellt werden.</para>
+
+      <para>Eine solche Datei zu erzeugen ist recht einfach. Sie besteht aus
+      einer Reihe Funktionen, die das Layout, die Blockzonen, die Paletten die
+      zugehörigen Templates und einige Variablen erzeugen. Der einfachste Weg
+      so eine Datei zu erzeugen ist es, eine bestehende Datei aus einem
+      anderen Theme zu kopieren und zu bearbeiten. Alle
+      Initialisierungsskripte in den mitgelieferten Themes sind dokumentiert,
+      um diese Arbeit zu erleichtern.</para>
+
+      <section id="Xanthia.Devel.CreatePalette">
+        <title>CreatePalette</title>
+
+        <para>Diese Funktion erzeugt die Farbdefintionen für das Layout. Jedes
+        Theme muß zumindest eine Palette enthalten, wenn keine dynamischen
+        Stylesheets benutzt werden. Sollen statische Stylesheets benutzt
+        werden, dann ist die Palette eine Kopie des Farbschemas, das in den
+        StyleSheets benutzt wird. Bei dynamischen StyleSheets kann das Theme
+        mehrere Paletten haben.</para>
+      </section>
+
+      <section id="Xanthia.Devel.CreateThemeVar">
+        <title>CreateThemeVar</title>
+
+        <para>Mit dieser Funktion werden Layoutvariablen festgelegt. Mit
+        diesen Variablen können dann verschiedene Aspekte des Layouts (z.B.
+        Breite 750px oder 100%) kontrolliert werden. Alle diese Variablen
+        stehen dann global in allen Templates zur Verfügung. Themevariablen
+        werden wie normale Smarty-Variablen benutzt. Zum Beispiel die Variable
+        für die Seitebreite wäre dann &lt;!--[$pagewidth]--&gt;.</para>
+      </section>
+
+      <section id="Xanthia.DevelCreateThemeTemplate">
+        <title>CreateThemeTemplate</title>
+
+        <para>Diese Funktion erzeugt ein neues Template und lädt es in die
+        Datenbank. Jedes Template bekommt ein Label, durch das die Quell-Datei
+        des Templates geladen werden und in die Datenbank geschoben werden
+        kann. Templates gibt es für das Theme, für Blocks und Module. Theme
+        Templates werden Themezonen zugeordnet, genau wie Block Templates
+        Blockzonen zugewiesen werden. Modultemplates ermöglichen es, jedem
+        Modul ein eigenes Look&amp;Feel zu geben.</para>
+      </section>
+
+      <section id="Xanthia.Devel.BlockZones">
+        <title>Block Zones</title>
+
+        <para>Die Blockzonen werden durch den Aufruf von pnModGetVar
+        festgelegt. Zur Zeit wird noch daran gearbeitet diese Aufgabe zu
+        vereinfachen. Zur Zeit wird empfohlen in jedem Theme die gleichen
+        Blockzonen zu definieren, auch wenn sie nicht genutzt werden. Der
+        Site-Admin kann dann Zonen so hinzufügen, wie er es braucht.</para>
+
+        <para>Jede Zone trägt normalerweise ein Z als ersten Buchstaben
+        (Präfix) um anzuzeigen, dass es sich um eine Zone handelt. Jede Zone
+        verweist auf ein template. Dazu wird ebenfalls der normale Smarty
+        Variablenaufruf genutzt. Zum Beispiel für die Zone ZUPPERTOP gilt dann
+        der Aufruf <markup>&lt;!--[$ZUPPERTOP]--&gt;</markup>.</para>
+      </section>
+
+      <section id="Xanthia.Devel.CreateThemeZone">
+        <title>CreateThemeZone</title>
+
+        <para>Diese Funktion erzeugt die Themezonen. Jede Zone sollte einen
+        selbsterklärenden Namen bekommen. Dann werden Label, Zonentyp und
+        Status eingestellt.</para>
+
+        <para>Der selbsterklärenden Namen ist eine Sprachkonstante, um
+        Mehrsprachige Sites zuzulassen. Eine Reihe Zonen werden von von
+        Xanthia schon zur Verfügung gestellt. Zusätzliche Zonen können im
+        Verzeichnis
+        <filename>lang/<replaceable>&lt;sprach-code&gt;</replaceable>/xaninit.php</filename>
+        angelegt werden. Das Label ist die Kurzbezeichnung durch die
+        normalerweise auf die Zone verwiesen wird. Der Zonentyp ist entweder 0
+        (obligatorisch) oder 1(zusätzlich). Der Status ist entweder 0(inaktiv)
+        oder 1(aktiv). Der Templatetyp ist entweder "block", "theme" oder
+        "module". Zu jeder Themezone gibt es normalerweise ein
+        Template.</para>
+      </section>
+    </section>
+
+    <section id="Xanthia.Devel.theme">
+      <title>theme.php</title>
+
+      <para>Wie beim alten Layout-System von Postnuke, handelt es sich bei der
+      theme.php um das Herzstück des Layouts. Hier fängt das System an die
+      Ausgaben zu generieren. Anders aber als bei der alten theme.php braucht
+      diese Datei nicht verändert zu werden. Jedes Xanthia-Theme funktioniert
+      mit der gleichen themes.php. </para>
+
+      <para>Fortgeschrittene Theme-Entwickler können sie aber bearbeiten um
+      zusätzliche Smarty-Funktionen wie zum Beispiel Ausgaben-Filter, Vor- und
+      Nachfilter in ihr Theme zu integrieren. </para>
+    </section>
+
+    <section id="Xanthia.Devel.master">
+      <title>master.htm</title>
+
+      <para>Master.htm ist das Haupttemplate. Mit diesem Template beginnt die
+      Layout Generierung, es umfasst das komplette Layout in das dann die
+      anderen Templates für die Blockzonen usw. integriert werden, bevor sie
+      an den Browser geschickt werden. Dieses Template kann mit jedem
+      HTML-Editor bearbeitet werden.</para>
+    </section>
+
+    <section id="Xanthia.Devel.News">
+      <title>News templates</title>
+
+      <para>Diese Templates kontrollieren das Aussehen der News in PostNuke
+      .726. Ab PostNuke .8 werden diese Templates nicht mehr benötigt, da die
+      News nicht mehr über das Theme, sondern wie alle Module über die eigenen
+      Templates definiert werden.</para>
+
+      <section id="Xanthia.Devel.NewsIndex">
+        <title>News-index.htm</title>
+
+        <para>Dieses Template dient der Steuerung der Ausgaben in der
+        Übersicht auf der Startseite oder in den Newslisten. Im klassischen
+        Layoutsystem hat das die themeindex Funktion übernommen.</para>
+      </section>
+
+      <section id="Xanthia.Devel.NewsArticle">
+        <title>News-article.htm</title>
+
+        <para>Dieses Template steuert die Ausgabe der Artikelansicht - wie
+        bisher die themearticle Funktion.</para>
+      </section>
+
+      <section id="Xanthia.DevelNewsIndex2">
+        <title>News-index2.htm</title>
+
+        <para>Mit diesem Template lassen sich News im 2-spaltenlayout
+        erzeugen. </para>
+      </section>
+    </section>
+
+    <section id="Xanthia.DevelBlockTemplates">
+      <title>Block Templates</title>
+
+      <para>Die Blocktemplates kontrollieren das Aussehen der einzelnen Blöcke
+      und Blockzonen. Jedes Blocktemplate erhält einen Blocktitel in der
+      Titelvariablen. Die Blockinhalte werden dann über die Inhaltsvariable
+      eingebaut.</para>
+
+      <section id="Xanthia.Devel.lsblock">
+        <title>lsblock.htm and rsblock.htm</title>
+
+        <para>Diese Templates sind die klassischen rechten und linken
+        Blöcke.</para>
+      </section>
+
+      <section id="Xanthia.Devel.ccblock">
+        <title>ccblock.htm</title>
+
+        <para>Dieses Template steuert die mittleren Blöcke.</para>
+      </section>
+    </section>
+  </section>
+
+  <section>
+    <title>Layout des Themes</title>
+
+    <remark>Dieses Kapitel enthält nur knappe Informationen und muß noch
+    überarbeitet werden -- jn</remark>
+
+    <note>
+      <para>Das Mastertemplate umfasst das komplette Layout ohne den von
+      Postnuke generierten Inhalt. Das war in Xanthia-Versionen vor
+      ReleaseCandidate 3 anders. Die alten Themes könnten also angepasst
+      werden müssen.</para>
+    </note>
+
+    <para>Die obligatorischen Templates liegen im Verzeichnis:
+    <filename>themes/<replaceable>&lt;themename&gt;</replaceable>/templates/</filename></para>
+
+    <para>Dazu gehören:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para><filename>botcenter.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>master.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>News-article.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>News-article2.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>News-index.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>News-index2.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>table1.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>table2.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>topcenter.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>topcenter2.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>prep-inblock.htm dieses wird nicht in der
+        Xanthia-Administration angezeigt</filename></para>
+      </listitem>
+    </itemizedlist>
+
+    <para><remark>Ob diese alle obligatorisch sind muss noch geklärt werden -
+    vor allem die letzten drei -- jn</remark></para>
+
+    <para>Außerdem können eigene Templates gegen die oben genannten
+    augetauscht werden. Zum Beispiel könnte in einer eigenen
+    <filename>News-article.htm</filename> Code enthalten sein, der dafür
+    sorgt, dass die Topic-Bilder abwechselnd rechts und links angezeigt
+    werden.</para>
+
+    <para>Eigene Modultemplates liegen in
+    <filename>themes/<replaceable>&lt;themename&gt;</replaceable>/templates/modules</filename>.</para>
+
+    <para>Das könnten z.B, sein:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para><filename>custom_news.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>custom_admin.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>custom_etc.htm </filename></para>
+      </listitem>
+
+      <listitem>
+        <para>etc...</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Eigene Blocklayouts liegen in
+    <filename>themes/<replaceable>&lt;themename&gt;</replaceable>/templates/blocks</filename>.</para>
+
+    <para>Das umfasst die folgenden obligatorischen Templates:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para><filename>lsblock.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>mainmenu.htm</filename></para>
+      </listitem>
+
+      <listitem>
+        <para><filename>rsblock.htm </filename></para>
+      </listitem>
+    </itemizedlist>
+
+    <para>es können hier aber auch eigene Blocklayouts gespeichert
+    werden.</para>
+
+    <para>Modulspezifische Templates funktionieren nur ab Postnuke .8 oder bei
+    Modulen, die pnRender benutzen. Xanthia sucht in diesem Fall nach
+    Modullayouts im Theme und bevorzugt diese dann vor denen im
+    Modulverzeichnis:</para>
+
+    <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/modules/<replaceable>&lt;modulename&gt;</replaceable>/</filename>
+    </para>
+
+    <para>Für Blöck gilt dasselbe: Die Themetemplates habe vorrang vor den
+    Blockeigenen Layouts, wenn sie hier liegen:</para>
+
+    <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/blocks/<replaceable>&lt;blockname&gt;</replaceable>/</filename></para>
+  </section>
+
+  <section id="Xanthia.Devel.Building">
+    <title>Eigene Themes erstellen</title>
+
+    <para>Das Standard-Theme pnDefault eigenet sich hervorragend als
+    Ausgangspunkt eigener Themeentwicklungen.</para>
+
+    <para>Am Anfang sollte man sich eine Arbeitskopie von pnDefault auf dem
+    eigenen Rechner anlegen:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Die wichtigesten Templates (<filename>master.htm</filename>,
+        <filename>lsblock.htm</filename> und <filename>rsblock.htm</filename>)
+        können nun lokal mit einem HTML-Editor (Von Notepad zu Dreamweaver)
+        bearbeitet und dann auf den Server geladen werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Dann kann man in der Xanthia-Administration auf <menuchoice>
+            <guimenu>Administration</guimenu>
+
+            <guisubmenu>Xanthia</guisubmenu>
+
+            <guisubmenu>View Themes</guisubmenu>
+
+            <guimenuitem>Reload templates</guimenuitem>
+          </menuchoice> klicken, um die Templates neu einzulesen. Dazu müssen
+        die Optionen <guimenuitem>Check for updates to templates</guimenuitem>
+        und <guimenuitem>Force compile</guimenuitem> unter <menuchoice>
+            <guimenu>Administration</guimenu>
+
+            <guisubmenu>Xanthia</guisubmenu>
+
+            <guimenuitem>Configure Xanthia</guimenuitem>
+          </menuchoice> eingeschaltet sein.</para>
+      </listitem>
+
+      <listitem>
+        <para>Nun sollten die Änderungen auf der Site zu sehen sein<note>
+            <para>Die Funktion <guimenuitem>Reload templates</guimenuitem>
+            muss nach jeder Änderung an den Templates angeklickt werden.
+            Änderungen an den CSS Dateien aber zum Beispiel werden natürlich
+            sofort übernommen.</para>
+          </note></para>
+      </listitem>
+
+      <listitem>
+        <para>Wenn für bestimmte Module eigene Layouts erzeugt werden sollen,
+        muß ein Unterverzeichnis /modules im Theme-Verzeichnis angelegt
+        werden, in dem dann die entsprechenden Haupttemplates liegen. Diese
+        werden dann in der Xanthia-Administration <emphasis>module
+        template</emphasis> angezeigt.<note>
+            <para>Templates können auch in der Xanthia-Administration geändert
+            werden, da diese Änderungen aber nur in die Datenbank und nicht in
+            die Dateien übernommen werden, sind alle Anpassungen rückgängig
+            gemacht wenn <guimenuitem>reload templates</guimenuitem> geklickt
+            wird. Deswegen sollte die oben beschriebene Variante benutzt
+            werden. Die Änderungen über die Administration sind aber ganz
+            hilfreich, wenn man schnell kleinere Änderungen ausprobieren und
+            ggf. rückgängig machen will.</para>
+          </note></para>
+      </listitem>
+
+      <listitem>
+        <para>pnDefault nutzt dynamische StyleSheet (style.php) in denen die
+        Farben und die Schriftgrößen über die Administration angepaßt werden.
+        Die leere style.css kann für eigene Anpassungen genutzt werden.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Für das Bearbeiten der Dateien sollten Editoren mit
+    Syntax-Highlightning benutzt werden, damit kleine Fehler im Quelltext
+    leichter auffallen und beseitigt werden können, bevor die Dateien
+    hochgeladen werden. Außerdem sollten die gängigen W3C Standards (xhtml,
+    css, accessibility) für Webdesign bekannt sein. Zum Beispiel:</para>
+
+    <para><itemizedlist>
+        <listitem>
+          <para>Veraltete Tags wie <markup>&lt;font&gt;</markup>,
+          <markup>&lt;b&gt;</markup>, <markup>&lt;i&gt;</markup> sollten nicht
+          mehr benutzt werden dafür gibt es die StyleSheets (CSS).</para>
+        </listitem>
+
+        <listitem>
+          <para>Alle einteiligen Tags sollten in XHTML-Notation genutzt
+          werden. Zum Beispiel: <markup>&lt;br /&gt;</markup> und
+          <markup>&lt;img src="" /&gt;</markup></para>
+        </listitem>
+
+        <listitem>
+          <para>Alle Tags sollten klein geschrieben werden</para>
+        </listitem>
+
+        <listitem>
+          <para>Alle Attribute sollten in Anführungszeichen stehen. Zum
+          Beispiel <markup>ist &lt;input type="text"....&gt;</markup> besser
+          als <markup>&lt;input type=text...&gt;</markup></para>
+        </listitem>
+
+        <listitem>
+          <para>Alle Attribut/Wert-Paare sollten korrekt benutzt werden. Zum
+          Beispiel <markup>&lt;input type="radio" ....
+          checked="checked"&gt;</markup> nicht: <markup>&lt;input
+          type="radio".... checked&gt;</markup></para>
+        </listitem>
+
+        <listitem>
+          <para>Tabellen sind keine Layoutelemente. Dafür gibt es DIV und
+          CSS</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <section id="Xanthia.Devel.DynCSS">
+      <title>Dynamische Stylesheets</title>
+
+      <para>Um Dynamische Stylesheets zu benutzen, sollte folgender Eintrag
+      ganz oben in der master.htm vor dem schließenden head Tag
+      <markup>&lt;/head&gt; eingefügt werden</markup>:</para>
+
+      <programlisting>&lt;!--[include_php file="$themepath/style/style.php"]--&gt;</programlisting>
+    </section>
+  </section>
+
+  <section id="Xanthia.plugins">
+    <title>Plugins Referenz</title>
+
+    <para>Eine komplette Liste alle XTE-Plugins mit einer
+    Entwickler-Dokumentation gibt es online unter <ulink
+    url="http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/">http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/</ulink>
+    (engl.)</para>
+
+    <para>Unter /modules/Xanthia/plugins/ liegen alle verfügbaren Plugins
+    </para>
+
+    <para>Eigene Plugins können in /themes/YOURTHEME/plugins abgelegt
+    werden.</para>
+  </section>
+</chapter>
