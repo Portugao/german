@@ -675,14 +675,14 @@
 
         <see>Sprachpaket</see>
       </indexterm>, am besten wieder von <ulink
-    url="http://www.postnuke.com/">http://www.postnuke.com</ulink> oder von
-    <ulink url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach
-    das gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles,
-    was sich unter <filename class="directory">/html/</filename> befindet per
-    FTP auf den Server spielen. Dabei fällt vermutlich auf, dass zu jedem
-    Modul ein Verzeichnis <filename class="directory">lang</filename> oder
-    <filename class="directory">pnlang</filename> existiert, in den dann ein
-    Verzeichnis namens <filename class="directory">deu</filename> kopiert
+    url="http://www.postnuke.com">http://www.postnuke.com</ulink> oder von
+    <ulink url="http://www.pncommunity.de">http://www.pncommunity.de</ulink>.
+    Danach das gleiche Spiel wie beim Installieren von PostNuke: Entpacken und
+    alles, was sich unter <filename class="directory">/html/</filename>
+    befindet per FTP auf den Server spielen. Dabei fällt vermutlich auf, dass
+    zu jedem Modul ein Verzeichnis <filename class="directory">lang</filename>
+    oder <filename class="directory">pnlang</filename> existiert, in den dann
+    ein Verzeichnis namens <filename class="directory">deu</filename> kopiert
     wird. Darin befinden sich dann die entsprechenden Sprachdateien.</para>
 
     <para>Das Sprachen-Modul ist in erster Linie an Übersetzer gerichtet.
@@ -697,7 +697,8 @@
     Pulldownmenü) auszuwählen.</para>
 
     <para>Wer internationale Sprachdateien sucht, sollte einmal in unsere
-    <ulink url="Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
+    <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
     schauen, ob die gesuchte Sprache dabei ist.</para>
 
     <para>Bleibt die Sprache der Seite englisch, obwohl ein anderes

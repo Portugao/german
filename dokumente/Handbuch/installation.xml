@@ -184,13 +184,9 @@
   <section id="systeminstallation">
     <title>Installation des Systems</title>
 
-    <para role="info"><emphasis>Dieser Text wurde uns freundlicherweise von
-    <ulink url="http://www.andylanger.de">Andy Langer</ulink> zur Verfügung
-    gestellt.</emphasis></para>
-
-    <para>Die Installation ist eigentlich sehr einfach und der User wird,
-    ähnlich der Installation eines Programmes, Schritt für Schritt nach den
-    Daten gefragt, die notwendig sind. Zum Abschluss ist die Seite so
+    <para role="info">Die Installation ist eigentlich sehr einfach und man
+    wird, ähnlich der Installation eines Programmes, Schritt für Schritt nach
+    den Daten gefragt, die notwendig sind. Zum Abschluss ist die Seite so
     eingerichtet, dass sie bereits komplett funktionsfähig ist.</para>
 
     <para>Selbstverständlich führen auch bei der PostNuke-Installation viele
@@ -220,6 +216,47 @@
 
             <secondary>Sprachpaket</secondary>
           </indexterm></para>
+      </step>
+
+      <step>
+        <para>Überprüfen der Prüfsummen.<indexterm>
+            <primary>md5</primary>
+          </indexterm><indexterm>
+            <primary>Prüfsumme</primary>
+          </indexterm> Um zu überprüfen, ob es sich wirklich um unveränderte
+        Archive handelt, sollte nach dem Download unbedingt die md5-Prüfsumme
+        des Archivs mit der auf den verschiedenen Webseiten
+        (http://www.post-nuke.net und http://www.postnuke.com) angegebenen
+        Prüfsumme vergleichen. Bei LINUX-Systemen gehört das Programm
+        <command>md5sum</command> in jeder Distribution enthalten sein. Für
+        Windows gibt es unzählige Implementationen; am besten man sucht bei
+        google nach <command>md5sum.exe</command> oder
+        <command>md5.exe</command>. Bequem ist <ulink
+        url="http://winmd5sum.solidblue.ca/">winMd5Sum</ulink> von SolidBlue,
+        welches die md5-Prüfsumme per Drag&amp;Dop anzeigt und vergleichen
+        kann.</para>
+
+        <note>
+          <para>Der md5-Algorithmus ist ein Verfahren zur Berechnung einer
+          Prüfsumme einer Datei. Diese Verfahren ist im <ulink
+          url="http://www.ietf.org/rfc/rfc1321.txt">RFC 1321</ulink>
+          beschrieben. Die Prüfsummen sind daher für Windows-, LINUX- und
+          andere Systeme identisch. </para>
+
+          <para>Man kann die md5-Prüfsumme benutzen, um herauszufinden, ob
+          sich eine Datei geändert hat. Dazu muss man die Prüfsumme berechnen
+          und notieren. Später kann man die Prüfsumme dann erneut berechnen.
+          Ist sie unverändert, dann ist die Wahrscheinlichkeit sehr groß, dass
+          sich auch die Datei nicht verändert hat.</para>
+
+          <para>Die korrekte Prüfsumme bestätigt allerdings nur, dass der
+          Inhalt einer Datei unverändert ist, nicht aber, dass sie vom
+          angegebenen Absender stammen. Es könnte jemand den Inhalt der Datei
+          manipulieren, eine dazu passende Prüfsumme erzeugen und beides
+          weiterschicken. Daher ist es sinnvoll, die Prüfsumme sowohl auf
+          www.post-nuke.net wie auch auf www.postnuke.com zu vergleichen.
+          </para>
+        </note>
       </step>
 
       <step>
@@ -300,11 +337,103 @@
       </step>
 
       <step>
-        <para>Bei Linux/Unix-Systemen Zugriffsberechtiung für
-        <filename>config.php</filename> und
-        <filename>config-old.php</filename> auf chmod 666 setzen</para>
+        <para>Für die Installation müssen die Zugriffsberechtiung für die
+        Dateien <filename>config.php</filename> und
+        <filename>config-old.php</filename> so sein, dass der Webserver diese
+        neu schreiben ann. Bei LINUX-Systemen heisst das, dass man sie auf
+        chmod 666 setzen muss. </para>
+      </step>
+
+      <step>
+        <para>Auch über die Installation hinaus benötigt der Web-Server einen
+        Schreibzugriff auf das Verzeichnis <filename>pnTemp</filename> und
+        alle Unterverzeichnisse hiervon
+        (<filename>pnTemp/pnRender_compiled</filename>,
+        <filename>pnTemp/pnRender_cache</filename>,
+        <filename><filename>pnTemp/Xanthia_compiled</filename>,
+        pnTemp/Xanthia_cache</filename>, und
+        <filename><filename>pnTemp/Xanthia_config</filename></filename>). Bei
+        LINUX-Systemen heisst das, dass man sie auf chmod 777 setzen
+        muss.</para>
       </step>
     </procedure>
+
+    <tip>
+      <title>Das Berechtgungssystem unter LINUX</title>
+
+      <para>LINUX kennt drei Gruppen von Anwendern für eine Datei oder ein
+      Verzeichnis:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Der Eigentümer (owner)</para>
+        </listitem>
+
+        <listitem>
+          <para>Die Gruppe (group)</para>
+        </listitem>
+
+        <listitem>
+          <para>Alle weiteren (others)</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Die Berechtigung, die den drei Gruppen zuweisen kann,
+      lauten:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>das Recht, die Datei zu Lesen bzw. sich die Dateien im
+          Verzeichnis anzeigen lassen (<token>r</token>)</para>
+        </listitem>
+
+        <listitem>
+          <para>das Recht die Datei zu verändern bzw. Dateien im Verzeichnis
+          erstellen (<token>w</token>)</para>
+        </listitem>
+
+        <listitem>
+          <para>das Recht die Datei auszufüren bzw. in das Verzeichnis
+          wechseln (<token>x</token>)</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Den Rechten sind Werte zugeordet worden:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><token>r</token> = 4</para>
+        </listitem>
+
+        <listitem>
+          <para><token>w</token> = 2</para>
+        </listitem>
+
+        <listitem>
+          <para><token>x</token> = 1</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Durch Addition der jeweiligen Werte und hintereinanderschreiben
+      erhält man den chmod-Wert.</para>
+
+      <para>Soll der Eigentümer eine Datei lesen und verändern können, alle
+      weiteren nur lesen, so lautet der Wert 644: Lesen (4) und Schreiben (2)
+      für den Besitzer, Lesen (4) für die Gruppe und den Rest. Sollen alle
+      Anwender in ein Verzeichnis schreiben, so lautet die Berechtigung 777:
+      Lesen (4), Schreiben (2) und in das Verzeichnis wechseln (1).</para>
+
+      <para>Die Berechtigungen lassen sich mit den LIXUX-Befehl
+      <command>chmod</command> einstellen. Die meisten grafischen
+      FTP-Programme erlauben dies, indem man die Datei mit der rechten
+      Maustaste anklickt.</para>
+
+      <para>Achtung: Ein FTP-Programm zeigt die Berechtigungen aus der Sicht
+      des FTP-Benutzers an; dieser ist der Eigentümer der via FTP
+      hochgeladenen Dateien. Der FTP-Benutzer ist in aller Regel nicht
+      identisch mit der Benutzerkennung, unter der der Web-Server läuft. Aus
+      diesem Grunde gehört der Webserver zu der Gruppe "others".</para>
+    </tip>
 
     <bridgehead>Installation</bridgehead>
 
@@ -500,13 +629,15 @@
             <listitem>
               <para>Die "Intranet"-Option muss nur bei Installationen
               <emphasis>ohne qualifizierten Domainnamen</emphasis> angewählt
-              werden. Beispiele für qualifizierte Domainnamen sind
+              werden. Es werden dann einige Sicherheitseinstellungen von
+              PostNuke ausser Kraft gesetzt. Dies ist nicht empfohlen!
+              Beispiele für qualifizierte Domainnamen sind
               <systemitem>www.postnuke.com</systemitem> und
               <systemitem>www.example.com</systemitem>, aber auch z.B.
               <systemitem class="ipaddress">127.0.0.1</systemitem> - Beispiele
               für "unqualifizierte" Domainnamen sind
               <systemitem>localhost</systemitem> und
-              <systemitem>rechnername</systemitem>. </para>
+              <systemitem>rechnername</systemitem>.</para>
 
               <para>Wenn dieser Parameter nicht richtig gesetzt wird, ist
               unter Umständen kein Login möglich!</para>
@@ -744,7 +875,9 @@
                   <secondary><filename>config-old.php</filename></secondary>
                 </indexterm><indexterm>
                   <primary><filename>config.php</filename></primary>
-                </indexterm></para>
+                </indexterm> (<filename>pnTemp</filename> und die
+              Unterverzeichnisse bleiben bei den eingestellten
+              Rechten).</para>
             </listitem>
           </itemizedlist>
         </caution>

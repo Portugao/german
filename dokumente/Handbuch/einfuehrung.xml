@@ -15,28 +15,25 @@
   <section id="wasistpostnuke">
     <title>Was ist PostNuke?</title>
 
-    <para>PostNuke ist ein Content Management System<indexterm>
+    <para>PostNuke ist ein mehrsprachiges Content Management System<indexterm>
         <primary>Content Management System</primary>
       </indexterm> (<acronym>CMS</acronym><indexterm>
         <primary>CMS</primary>
 
         <see>Content Management System</see>
-      </indexterm>). Das bedeutet, dass PostNuke Inhalte von Design und
-    Technik trennt. Die Inhalte einer Internetpräsenz können via Browser
-    verwaltet werden. Es gibt zum Beispiel die Möglichkeit Artikel, Links,
-    Downloads, FAQs, Bildergalerien, Foren etc. einzubinden. Durch die klare
-    Gliederung in Form, Funktion, Inhalt und Gestaltung hilft PostNuke die
-    Kosten einer Website zu reduzieren.</para>
+      </indexterm>), geschrieben in PHP und lizenziert unter der GNU General
+    Public License (GPL). </para>
+
+    <para>Mit PostNuke können Website-Inhalte mit Hilfe eines Browsers
+    verwaltet werden. PostNuke ist für all jene gedacht, die eine Lösung
+    brauchen, um Inhalte unkompliziert und ohne HTML-Kenntnisse ins Internet
+    zu bringen. Durch die klare Gliederung in Form, Funktion, Inhalt und
+    Gestaltung hilft PostNuke die Kosten einer Website zu reduzieren.</para>
 
     <para>PostNuke ist modular aufgebaut - es gibt wichtige Funktionen, die
     vom so genannten Core angeboten und von den zusätzlichen Modulen genutzt
     werden. Dadurch kann der Leistungsumfang individuell angepasst und nahezu
     beliebig erweitert werden.</para>
-
-    <para>Das System von PostNuke basiert auf Modularität. Es gibt eine
-    zentrale Einheit, den '<emphasis role="bold">Core</emphasis>', der per API
-    verschiedene standardisierte Zugriffe auf die Datenbank und die anderen
-    Teile des Systems bietet.</para>
 
     <mediaobject>
       <imageobject>
@@ -49,12 +46,14 @@
     <para>Der Funktionsumfang einer PostNuke-Site lässt sich über die
     Einbindung von Erweiterungen, den <emphasis>Modulen</emphasis><indexterm>
         <primary>Module</primary>
-      </indexterm> beliebig festlegen. In der Basisinstallation sind schon
-    eine Reihe Module enthalten, deren Entwicklung noch aus PHPNuke-Zeiten
-    übernommen und mittlerweile dem PostNuke-System angepasst wurden. Dazu
-    gehört vor allem das Newssystem, die Weblinks, das Download-Modul usw.
-    Diese Module zu benutzen ist allerdings nicht Pflicht - bereits jetzt gibt
-    es eine große Anzahl an <ulink
+      </indexterm> beliebig festlegen. Es gibt zum Beispiel die Möglichkeit
+    Artikel, Links, Downloads, FAQs, Bildergalerien, Foren etc. einzubinden.In
+    der Basisinstallation sind schon eine Reihe Module enthalten, deren
+    Entwicklung noch aus PHPNuke-Zeiten übernotmmen und mittlerweile dem
+    PostNuke-System angepasst wurden. Dazu gehört vor allem das Newssystem,
+    die Weblinks, das Download-Modul usw. Diese Module zu benutzen ist
+    allerdings nicht Pflicht - bereits jetzt gibt es eine große Anzahl an
+    <ulink
     url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulen
     von Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
     über die Verwaltung von Bildersammlungen bis hin zu ganzen Webshops

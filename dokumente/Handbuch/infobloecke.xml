@@ -10,10 +10,10 @@
     <date>$Date$</date>
   </chapterinfo>
 
-  <title>Menüs und Infoblöcke</title>
+  <title>Die wichtigsten Blöcke</title>
 
   <section id="genericmenu">
-    <title>Core/Generic menu<indexterm>
+    <title>Core/Generic menu &mdash; Der wichtigste Navigationsblock<indexterm>
         <primary>Menü</primary>
       </indexterm><indexterm>
         <primary>Blöcke</primary>
@@ -25,10 +25,10 @@
         <secondary>Menüblock</secondary>
       </indexterm></title>
 
-    <para>Dies ist der wesentliche Navigationsblock.</para>
-
-    <para>Neben den für alle Blöcke verfügbaren Einstellungen Titel, Position
-    und Sprache bietet es die folgenden Einstellungsmöglichkeiten:</para>
+    <para>Dieser Block ist die am häufigsten eingesetzte Methode, um ein Menü
+    zu erzeugen. Neben den für alle Blöcke verfügbaren Einstellungen Titel,
+    Position und Sprache bietet er die folgenden
+    Einstellungsmöglichkeiten:</para>
 
     <variablelist>
       <varlistentry>

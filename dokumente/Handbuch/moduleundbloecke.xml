@@ -276,6 +276,57 @@
     Tables des Moduls löschen, alle dazugehörigen Variablen in
     <command>$prefix_module_vars</command> entfernen und in der
     <filename>$prefix_modules</filename> das Modul löschen.</para>
+
+    <section>
+      <title>Hooks für ein Modul aktivieren<indexterm>
+          <primary>Module</primary>
+
+          <secondary>Hooks</secondary>
+        </indexterm><indexterm>
+          <primary>Hooks</primary>
+        </indexterm></title>
+
+      <para>Vereinfacht gesagt, sind Hooks eine Möglichkeit, die Ausgabe eines
+      Moduls zu verändern. Einige Hooks (sogenannte
+      <emphasis>Transform-Hooks</emphasis><indexterm>
+          <primary>Transform-Hooks</primary>
+
+          <see>Hooks</see>
+        </indexterm><indexterm>
+          <primary>Hooks</primary>
+
+          <secondary>Transform-Hooks</secondary>
+        </indexterm>) verändern die Ausgabe, so wandet der "Autolinks"-Hook
+      bestimmte Begriffe in Links um, der bbcode-Hook wandelt textuelle in
+      grafische Smilies. Andere Hooks (sogenannte
+      <emphasis>Display-Hooks<indexterm>
+          <primary>Display-Hooks</primary>
+
+          <see>Hooks</see>
+        </indexterm></emphasis><indexterm>
+          <primary>Hooks</primary>
+
+          <secondary>Display-Hooks</secondary>
+        </indexterm>) hängen etwas an die Ausgabe an: EZComments fügt an die
+      Ausgabe ein Kommentarfeld an, Ratings eine Bewertungsfunktion usw.
+      </para>
+
+      <para>Damit ein solches Hook-Modul aktiv wird, muss es für ein anderes
+      aktiviert werden. Dies geschieht unter <guimenuitem>Modul
+      editieren</guimenuitem> in der Modul-Administration. </para>
+
+      <para>Beispiel: Um <replaceable>Autolinks</replaceable> für die
+      <replaceable>News</replaceable> zu aktivieren, sucht man
+      <replaceable>News</replaceable> in der Modulverwaltung heraus und klickt
+      auf <guimenuitem>editieren</guimenuitem>. Dort klickt man
+      <guimenuitem>aktiviere <replaceable>Autolinks</replaceable> für dieses
+      Modul</guimenuitem> an. Fortan stehen die Autolinks in den News zur
+      Verfügung.</para>
+
+      <note>
+        <para>Nicht alle Module unterstützen alle Arten von Hooks. </para>
+      </note>
+    </section>
   </section>
 
   <section id="Blockadministration">
