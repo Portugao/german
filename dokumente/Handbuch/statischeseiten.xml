@@ -63,7 +63,7 @@
     Version von Content Express mit der deutschen Sprachdatei aus. Die zur
     Zeit der Erstellung aktuelle Version von Content Express ist die 1.2.6.0.
     Da das Projekt mittlerweile in <emphasis role="bold">XExpress</emphasis>
-    umbenannt wurde, benutze ich aber dem nächsten Update dieser Anleitung den
+    umbenannt wurde, benutze ich ab dem nächsten Update dieser Anleitung den
     neuen Namen.</para>
 
     <para>Die Projekthomepage für XExpress befindet sich bei <ulink
@@ -99,7 +99,7 @@
 
         <listitem>
           <para>bietet Ansätze einer Medien-Sammlung - Dieser Teil des Moduls
-          ist zur Zeit am wenigsten Ausgereif und entsprechend
+          ist zur Zeit am wenigsten ausgereif und entsprechend
           unkomfortabel</para>
         </listitem>
       </varlistentry>
@@ -108,8 +108,8 @@
     <para>Aus dieser Konstellation erklärt sich auch die komplexe Bedienung
     dieses Moduls, das eigentlich vielmehr ein Modulsammlung ist. Zusätzlich
     bietet zum Beispiel Menü-Express die Möglichkeit mehrere Menüblöcke
-    einzelnd anzusteuern. Das kompliziert die Administration in dem meisten
-    Fällen unnötig.</para>
+    einzelnd anzusteuern. Das verkompliziert die Administration aber in den
+    meisten Fällen unnötig.</para>
 
     <bridgehead>Block einrichten</bridgehead>
 
@@ -683,9 +683,9 @@
         <term>Aktiv</term>
 
         <listitem>
-          <para>oll der Link sichbar sein, oder soll der erstmal nur 'intern'
-          bleiben? Häkchen setzen, da der Beitrag ja gleich sichtbar sein
-          soll.</para>
+          <para>Soll der Link sichtbar sein, oder soll der erstmal nur
+          'intern' bleiben? Häkchen setzen, da der Beitrag ja gleich sichtbar
+          sein soll.</para>
         </listitem>
       </varlistentry>
 
@@ -711,21 +711,21 @@
     <bridgehead>Bild einbinden</bridgehead>
 
     <para>Um ein Bild in einen Beitrag einzubinden, findet man unter <emphasis
-    role="bold">Media Manager</emphasis> den Media Upload. Klickt man hier
-    auch 'Durchsuchen' kann man lokal das gewünschte Bild auswählen. Nach
-    Klick auf 'Medien-Archiv erneuern' wird das Bild hochgeladen - Das dauert
-    einen Moment in dem man nicht wirklich sieht, daß etwas passiert. Ist der
-    Upload jedoch fertig, erscheint eine unscheinbare Nachricht:
-    'Medien-Archiv erneuert'.</para>
+    role="bold">Media Manager</emphasis> den Media Upload. Klickt man hier auf
+    'Durchsuchen' kann man lokal das gewünschte Bild auswählen. Nach Klick auf
+    'Medien-Archiv erneuern' wird das Bild hochgeladen - Das dauert einen
+    Moment in dem man nicht wirklich sieht, daß etwas passiert. Ist der Upload
+    jedoch fertig, erscheint eine unscheinbare Nachricht: 'Medien-Archiv
+    erneuert'.</para>
 
     <para>Achtung: Ist das Grafikformat nicht in den Mime-Types zugelassen,
-    ist das Bild zu groß, oder ist das Verzeichnis schriebgeschützt, kann der
+    ist das Bild zu groß, oder ist das Verzeichnis schreibgeschützt, kann der
     Upload nicht funktionieren.</para>
 
     <para>Bei Klick auf 'Seiteninhalt anzeigen' erscheint die Übersicht der
-    Artikel mit dem eben erstellten Beitrag. Der soll jetzt 'editiert' werden.
-    Also klickt man rechts neben dem Titel des Beitrages auf 'Editieren'. Der
-    Beitrag erscheint, mit allen Einstellungen.</para>
+    Artikel mit dem ebend erstellten Beitrag. Der soll jetzt 'editiert'
+    werden. Also klickt man rechts neben dem Titel des Beitrages auf
+    'Editieren'. Der Beitrag erscheint, mit allen Einstellungen.</para>
 
     <para>Der Cursor sollte an die Stelle gesetzt werden, an der das Bild
     eingefügt werden soll. Dann klickt man auf den Editor-Button für 'Bild
@@ -902,7 +902,7 @@
     <para>Wenn eine Homepage bereits seit einiger Zeit läuft, so haben sich
     sicherlich bereits etliche Dokumente etc. angesammelt, die bei einer
     Umstellung auf PostNuke erhalten bleiben sollen. Vielleicht ist auch
-    bereits die eine oder andere Web-Anwendung wie Forum, Gästebuch o.ä. Im
+    bereits die eine oder andere Web-Anwendung wie Forum, Gästebuch o.ä. im
     Einsatz. Um diese beizubehalten, gibt es mehrere Module.</para>
 
     <para>Man sollte aber beachten, dass dies alles keine echte Einbindung
