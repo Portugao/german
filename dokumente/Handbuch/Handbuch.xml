@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <book lang="de-DE" revision="$Revision$" status="draft">
@@ -39,7 +39,7 @@
       <author>
         <firstname>Bernd</firstname>
 
-        <surname>Heitmann-Müller</surname>
+        <surname>Heitmann-MÃ¼ller</surname>
       </author>
 
       <author>
@@ -55,7 +55,7 @@
       </author>
 
       <author>
-        <firstname>Jörg</firstname>
+        <firstname>JÃ¶rg</firstname>
 
         <surname>Napp</surname>
       </author>
@@ -63,13 +63,13 @@
       <author>
         <firstname>Klaus</firstname>
 
-        <surname>Petzold</surname>
+        <surname>Petzka</surname>
       </author>
 
       <author>
         <firstname>Steffen</firstname>
 
-        <surname>Voß</surname>
+        <surname>VoÃŸ</surname>
       </author>
     </authorgroup>
 
