@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="XTE.Install" lang="en-US"
+         revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$-->
+
+  <title>XTE Installation</title>
+
+  <para>Xanthia benötigt zum Betrieb sowohl das Xanthia- als auch das
+  pnRender-Modul, beide Module sind im Postnuke .8 Paket enthalten. Hier muß
+  nichts mehr zusätzlich installiert werden - die folgende Anleitung bezieht
+  sich also rein auf Postnuke .726.</para>
+
+  <para>Für den die Benutzung unter Postnuke .726 muß zunächst das
+  Xanthia/pnRender-Paket herunterladen - die Xanthia-Versionen der meisten
+  Standard-Themes sind in dem Xanthia-Theme-Paket enthalten.</para>
+
+  <tip>
+    <para>Auf der Downloadseite (<ulink
+    url="http://download.postnuke.com/pafiledb.php?action=category&amp;id=54">http://download.postnuke.com/pafiledb.php?action=category&amp;id=54</ulink>)gibt
+    es drei Pakete:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>XTE</term>
+
+        <listitem>
+          <para>Das Basispaket mit Xanthia, pnRender und einigen Core-Dateien,
+          die aktualisiert werden müssen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>XTE Theme Pack</term>
+
+        <listitem>
+          <para>Theme Paket mit einigen Standard-Themes</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Example Module</term>
+
+        <listitem>
+          <para>Äquivalent zum Template-Modul aus .726. Tatsächlich handelt es
+          sich nur um das Template-Modul, umgestellt auf XTE. Da das Wort
+          "Template" mit der XTE eine andere Bedeutung bekommen hat, ist im
+          Zuge der XTE-Umstellung der Name des Modul in "Example Module"
+          geändert worden. Es ist für Modulentwickler gedacht, die wissen
+          wollen, wie man für die XTE entwickelt. Für Nicht-Modulentwickler
+          ist dieses Modul bedeutungslos.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </tip>
+
+  <section id="XTE.Install.726">
+    <title>Installation unter PostNuke .726</title>
+
+    <para>Folgende Schritte müssen bei der Installation von Xanthia/pnRender
+    eingehalten werden:</para>
+
+    <procedure>
+      <step>
+        <para>Backup der kompletten Seite erstellen (Dateien + Datenbank) -
+        sicher ist sicher</para>
+      </step>
+
+      <step>
+        <para>Hochladen aller Dateien, die im Paket enthalten sind, in das
+        Hauptverzeichnis der Site. Zum Teil werden die Dateien in vorhandenen
+        Verzeichnissen abgelegt (z.B. <filename>includes</filename>,
+        <filename>modules</filename> usw.). Einige Dateien werden dabei von
+        neuen Versionen überschrieben und einige Verzeichnisse (z.B.
+        <filename>pnTemp</filename>) werden neu angelegt.</para>
+      </step>
+
+      <step>
+        <para>Das Verzeichnis <filename>pnTemp</filename> und alle
+        Unterverzeichnisse müssen volle Schreib- / Lesenrechte besitzen
+        (Linux: chmod 777) - das läßt sich mit gängigen FTP-Clients oder per
+        Shell-Zugriff anpassen.</para>
+      </step>
+
+      <step>
+        <para>Auch die <filename>config.php</filename> mußt für die Zeit der
+        Installation voll zugreifbar sein.</para>
+      </step>
+
+      <step>
+        <para>Einloggen als Admin.</para>
+      </step>
+
+      <step>
+        <para>Aufrufen von <menuchoice>
+            <guimenu>Administration</guimenu>
+
+            <guimenuitem>Module</guimenuitem>
+
+            <guimenuitem>erneut erzeugen</guimenuitem>
+          </menuchoice> - danach sollten die zwei neuen Module
+        <emphasis>Xanthia</emphasis> und <emphasis>pnRender</emphasis> in der
+        Liste erscheinen.</para>
+      </step>
+
+      <step>
+        <para>Als ersten pnRender initialisieren und aktivieren. pnRender muß
+        <emphasis>vor</emphasis> Xanthia aktiviert werden, weil pnRender
+        einige Einstellungen für Smarty vornimmt..</para>
+      </step>
+
+      <step>
+        <para>Zurück in der Administrations-Übersicht checken, ob pnRender
+        tatsächlich verfügbar ist (Icon mit Glühbirne).</para>
+      </step>
+
+      <step>
+        <para>Wieder in der Modul-Liste Xanthia initialisieren und
+        aktivieren.</para>
+      </step>
+
+      <step>
+        <para>In der Adminstration sollte nun auch das Icon für Xanthia
+        (Griechische Büste) erscheinen.</para>
+      </step>
+
+      <step>
+        <para>Wenn das alles so geklappt hat, muß auf dem Webspace das
+        Installations-Verzeichnis gelöscht werden.</para>
+      </step>
+
+      <step>
+        <para>Zum Schluß müssen noch die Rechte der
+        <filename>config.php</filename> wieder zurück auf 644 gesetzt werden.
+        (<emphasis>Die Rechte für die Verzeichnis pnTemp usw. bleiben aber auf
+        777</emphasis>)</para>
+      </step>
+    </procedure>
+
+    <sidebar>
+      <caution>
+        <para>Während der Installation darf unter Administration/Einstellungen
+        kein Xanthia-Theme als Site-Theme eingestellt sein.</para>
+      </caution>
+    </sidebar>
+  </section>
+</chapter>

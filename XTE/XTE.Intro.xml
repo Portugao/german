@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<preface id="Xanthia.Intro" lang="en-US"
+         revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <title>Einführung</title>
+
+  <para>Xanthia (XTE = Xanthia Templating Engine) ist das Layout-System, das
+  mit Postnuke .8 offiziell Bestandteil des Basis-Pakets ist. Es gibt eine
+  Version, die auch mit Postnuke .726 funktioniert. Dieses System ermöglicht
+  die Benutzung von Themes, die die erweiterten Funktionen von Xanthia nutzen,
+  und es bietet eine größere Flexibilität im Theme Design. Das XTE-Paket
+  besteht aus Xanthia und pnRender. Xanthia ist für das generelle Layout der
+  Seite zuständig, währen pnRender der Teil des Systems ist, der die
+  Xanthia-Funktionen den Modulen zur Verfügung stellt. Xanthia basiert auf der
+  Smarty Templating Engine, die in der Dokumentation folgendermaßen
+  beschrieben wird:</para>
+
+  <blockquote>
+    <attribution><ulink
+    url="http://smarty.php.net/manual/de/what.is.smarty.php">Smarty
+    Dokumentation</ulink></attribution>
+
+    <para>Smarty ist eine Template-Engine für PHP. Genauer gesagt erlaubt es
+    die einfache Trennung von Applikations-Logik und Design/Ausgabe. Dies ist
+    vor allem wünschenswert, wenn der Applikationsentwickler nicht die selbe
+    Person ist wie der Designer. Nehmen wir zum Beispiel eine Webseite die
+    Zeitungsartikel ausgibt. Der Titel, die Einführung, der Author und der
+    Inhalt selbst enthalten keine Informationen darüber wie sie dargestellt
+    werden sollen. Also werden sie von der Applikation an Smarty übergeben,
+    damit der Designer in den Templates mit einer Kombination von HTML- und
+    Template-Tags die Ausgabe (Tabellen, Hintergrundfarben, Schriftgrössen,
+    Stylesheets, etc.) gestalten kann. Falls nun die Applikation eines Tages
+    angepasst werden muss, ist dies für den Designer nicht von Belang, da die
+    Inhalte immer noch genau gleich übergeben werden. Genauso kann der
+    Designer die Ausgabe der Daten beliebig verändern, ohne dass eine Änderung
+    der Applikation vorgenommen werden muss. Somit können der Programmierer
+    die Applikations-Logik und der Designer die Ausgabe frei anpassen, ohne
+    sich dabei in die Quere zu kommen.</para>
+
+    <para>Was Smarty nicht kann: Smarty versucht nicht die gesamte Logik aus
+    dem Template zu verbannen. Solange die verwendete Logik ausschließlich für
+    die Ausgabe verwendet wird, kann sie auch im Template eingebettet werden.
+    Ein Tip: versuchen Sie Applikations-Logik aus dem Template und
+    Präsentations-Logik aus der Applikation herauszuhalten. Nur so bleibt die
+    Applikation auf absehbere Zeit gut skalier- und wartbar.</para>
+  </blockquote>
+
+  <para>Das System trennt also das Layout von der Applikations-Logik
+  (Datenbankabfragen, Funktionen...), das bedeutet, dass jedes Theme aus einer
+  Reihe Templates (Text-Dateien) besteht, die direkt mit jedem HTML-Editor zu
+  bearbeiten sind. Eingebettet in das HTML sind Tags, die später die Inhalte
+  einfügen oder einfache Template-Logik. Die Tags sind so formatiert, dass sie
+  als HTML-Kommentare von den Editoren erkannt werden. Diese überzeugenden
+  Argumente für eine zentrale Templating Engine haben das Postnuke
+  Entwicklerteam davon überzeugt, ein solches System in den Postnuke-Kern zu
+  integrieren. Als Vorlage für die Postnuke-Smarty-Implementierung diente das
+  pnRender-System von <ulink url="???">Envolution</ulink>. Inzwischen wurde
+  der Quelltext aber komplett überarbeitet und neu geschrieben. pnRender ist
+  eine Unterklasse (Subclass) von Smarty, so dass Smarty-Kenner pnRender so
+  benutzen können wie Smarty.</para>
+</preface>
