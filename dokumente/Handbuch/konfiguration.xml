@@ -23,7 +23,7 @@
   nicht so schnell wieder angefasst...</para>
 
   <section id="settings">
-    <title>Einstellungen<indexterm>
+    <title>Einstellungen (Settings)<indexterm>
         <primary>Einstellungen</primary>
       </indexterm><indexterm>
         <primary>Settings</primary>
@@ -33,11 +33,13 @@
 
     <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw.) werden
     bei PostNuke an zentraler Stelle eingestellt. Diese Daten sind im Punkt
-    <guimenu>Einstellungen</guimenu> zusammengefasst:</para>
+    <guimenu>Settings</guimenu> zusammengefasst:</para>
+
+    <bridgehead>Informationen</bridgehead>
 
     <variablelist>
       <varlistentry>
-        <term>Name<indexterm>
+        <term>Name der Website<indexterm>
             <primary>Einstellungen</primary>
 
             <secondary>Name</secondary>
@@ -76,6 +78,48 @@
       </varlistentry>
 
       <varlistentry>
+        <term>Startdatum<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Startdatum</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf der
+          Statistikseite angezeigt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Administrator E-Mail<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Administrator-E-Mail</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Kontaktadresse für alle Admin-Mails des Systems</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Seite komplett deaktivieren<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Seite deaktivieren</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Hiermit wird die Seite deaktiviert; nur ein angemeldeter
+          Administrator hat noch Zugriff</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Meta Tags</bridgehead>
+
+    <variablelist>
+      <varlistentry>
         <term>Meta Keywords<indexterm>
             <primary>Einstellungen</primary>
 
@@ -103,32 +147,11 @@
           zunehmen.</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
-      <varlistentry>
-        <term>Startdatum<indexterm>
-            <primary>Einstellungen</primary>
+    <bridgehead>Themes</bridgehead>
 
-            <secondary>Startdatum</secondary>
-          </indexterm></term>
-
-        <listitem>
-          <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf der
-          Statistikseite angezeigt</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>Administrator E-Mail<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>Administrator-E-Mail</secondary>
-          </indexterm></term>
-
-        <listitem>
-          <para>Kontaktadresse für alle Admin-Mails des Systems</para>
-        </listitem>
-      </varlistentry>
-
+    <variablelist>
       <varlistentry>
         <term>Standard-Theme der Seite<indexterm>
             <primary>Einstellungen</primary>
@@ -160,6 +183,26 @@
         <listitem>
           <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
           Theme einstellen können</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>ML Einstellungen</bridgehead>
+
+    <variablelist>
+      <varlistentry>
+        <term>Sprache der Website<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Sprache der Website</secondary>
+          </indexterm><indexterm>
+            <primary>Sprache</primary>
+          </indexterm></term>
+
+        <listitem>
+          <para>unregistrierte Benutzer sehen die Website in der eingestellten
+          Sprache. Wenn Multilangual-Unterstützung aktiviert ist, kann die
+          Sprache darüberhinaus individuell eingestellt werden</para>
         </listitem>
       </varlistentry>
 
@@ -199,7 +242,11 @@
           <para>Einstellung der Zeitzone, Deutschland ist in GMT+1</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>Startseite</bridgehead>
+
+    <variablelist>
       <varlistentry>
         <term>Startseite<indexterm>
             <primary>Einstellungen</primary>
@@ -213,6 +260,34 @@
         </listitem>
       </varlistentry>
 
+      <varlistentry>
+        <term>Start function Type</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Start function</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Argumente für Start Function</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>News-Einstellungen</bridgehead>
+
+    <variablelist>
       <varlistentry>
         <term>Artikel im Adminmenü<indexterm>
             <primary>Einstellungen</primary>
@@ -284,7 +359,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Newspager anzeigen<indexterm>
+        <term>Pager für Newsbeiträge anzeigen<indexterm>
             <primary>Einstellungen</primary>
 
             <secondary>Newspager</secondary>
@@ -300,26 +375,13 @@
           Beiträge auswählen kann.</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>Error Reporting</bridgehead>
+
+    <variablelist>
       <varlistentry>
-        <term>Icons im Adminmenü?<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>Icons im Adminmenü</secondary>
-          </indexterm><indexterm>
-            <primary>Adminmenü</primary>
-
-            <secondary>Icons</secondary>
-          </indexterm></term>
-
-        <listitem>
-          <para>Die Links im Adminbereich könnten entweder als Text oder als
-          Icons angezeigt werden</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>Fehlermeldungen via E-Mail senden<indexterm>
+        <term>error.php Meldungen via E-Mail senden<indexterm>
             <primary>Einstellungen</primary>
 
             <secondary>Fehlermeldungen per Mail</secondary>
@@ -334,13 +396,15 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Fehlermeldungen mit error.php erzeugen<indexterm>
+        <term>Douglas Adams Zitate in error.php<indexterm>
             <primary>Einstellungen</primary>
 
             <secondary>Fehlermeldungen mit
             <filename>error.php</filename></secondary>
           </indexterm><indexterm>
             <primary><filename>error.php</filename></primary>
+          </indexterm><indexterm>
+            <primary><filename>Douglas Adams</filename></primary>
           </indexterm></term>
 
         <listitem>
@@ -353,33 +417,13 @@
           <programlisting>ErrorDocument 404 http://www.deineseite.de/error.php?op=404</programlisting>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>Sonstiges</bridgehead>
+
+    <variablelist>
       <varlistentry>
-        <term>pnAntiCracker aktivieren?<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>pnAntiCracker</secondary>
-          </indexterm><indexterm>
-            <primary>pnAntiCracker</primary>
-          </indexterm><indexterm>
-            <primary>Sicherheit</primary>
-          </indexterm></term>
-
-        <listitem>
-          <para>Der "Anti Cracker" ist ein machanismus, der mögliche Angriffe
-          auf die Seite erkennt. In einem solchen Fall wird der Zugriff auf
-          die angeforderte Ressource unterbunden und der Administrator mittels
-          einer Mail über den potentiellen Angiffsversuch informiert.</para>
-
-          <caution>
-            <para>Auch wenn es dabei des öfteren zu Fehlalarmen kommt, sollte
-            dies unbedingt aktiviert sein.</para>
-          </caution>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>Unterstützung für pre-.72x-Module<indexterm>
+        <term>legacy-Unterstützung aktivieren<indexterm>
             <primary>Einstellungen</primary>
 
             <secondary>Legacy-Support</secondary>
@@ -397,45 +441,6 @@
           benötigt (das erkennt man daran, dass es plötzlich zu "undefined
           function"-Fehlermeldungen kommt), so kann man diese Unterstützung
           einschaltet.</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>Standardgruppe für Benutzer<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>Standardgruppe für Benutzer</secondary>
-          </indexterm><indexterm>
-            <primary>Benutzerverwaltung</primary>
-
-            <secondary>Standardgruppe für Benutzer</secondary>
-          </indexterm><indexterm>
-            <primary>Gruppenverwaltung</primary>
-
-            <secondary>Standardgruppe für Benutzer</secondary>
-          </indexterm></term>
-
-        <listitem>
-          <para>Registrierte Benutzer werden automatisch einer bestimmten
-          Gruppe zugeordnet. Die Standardeinstellung <systemitem
-          class="groupname">Users</systemitem> sollte nicht geändert
-          werden</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
-        <term>Sprache der Website<indexterm>
-            <primary>Einstellungen</primary>
-
-            <secondary>Sprache der Website</secondary>
-          </indexterm><indexterm>
-            <primary>Sprache</primary>
-          </indexterm></term>
-
-        <listitem>
-          <para>unregistrierte Benutzer sehen die Website in der eingestellten
-          Sprache. Wenn Multilangual-Unterstützung aktiviert ist, kann die
-          Sprache darüberhinaus individuell eingestellt werden</para>
         </listitem>
       </varlistentry>
 
@@ -462,6 +467,27 @@
       </varlistentry>
 
       <varlistentry>
+        <term>Icons im Adminmenü?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Icons im Adminmenü</secondary>
+          </indexterm><indexterm>
+            <primary>Adminmenü</primary>
+
+            <secondary>Icons</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Die Links im Adminbereich könnten entweder als Text oder als
+          Icons angezeigt werden</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Fuß-Nachricht</bridgehead>
+
+    <variablelist>
+      <varlistentry>
         <term>Fuss-Zeile<indexterm>
             <primary>Einstellungen</primary>
 
@@ -477,7 +503,11 @@
           erlaubt)</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>Backend-Konfiguration</bridgehead>
+
+    <variablelist>
       <varlistentry>
         <term>Backend Titel<indexterm>
             <primary>Einstellungen</primary>
@@ -511,7 +541,11 @@
           <para>Angabe der Sprache der Backend-Informationen</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>Sicherheitsoptionen</bridgehead>
+
+    <variablelist>
       <varlistentry>
         <term>Sicherheitslevel<indexterm>
             <primary>Einstellungen</primary>
@@ -549,6 +583,50 @@
       </varlistentry>
 
       <varlistentry>
+        <term>Referer bei print.php prüfen</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>pnAntiCracker aktivieren?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>pnAntiCracker</secondary>
+          </indexterm><indexterm>
+            <primary>pnAntiCracker</primary>
+          </indexterm><indexterm>
+            <primary>Sicherheit</primary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Der "Anti Cracker" ist ein machanismus, der mögliche Angriffe
+          auf die Seite erkennt. In einem solchen Fall wird der Zugriff auf
+          die angeforderte Ressource unterbunden und der Administrator mittels
+          einer Mail über den potentiellen Angiffsversuch informiert.</para>
+
+          <caution>
+            <para>Auch wenn es dabei des öfteren zu Fehlalarmen kommt, sollte
+            dies unbedingt aktiviert sein.</para>
+          </caution>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Session-Cookies auch für unregistrierte Benutzer setzen</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Intranet-Betrieb</bridgehead>
+
+    <variablelist>
+      <varlistentry>
         <term>Intranet<indexterm>
             <primary>Einstellungen</primary>
 
@@ -563,7 +641,11 @@
           PostNuke ausser Kraft gesetzt. Dies ist nicht empfohlen!</para>
         </listitem>
       </varlistentry>
+    </variablelist>
 
+    <bridgehead>HTML Optionen</bridgehead>
+
+    <variablelist>
       <varlistentry>
         <term>in Beiträgen erlaubte HTML-Tags<indexterm>
             <primary>Einstellungen</primary>
@@ -645,6 +727,40 @@
     </screenshot>
   </section>
 
+  <section id="adminconfig">
+    <title>Konfiguration des Administrationsbereichs<indexterm>
+        <primary>Einstellungen</primary>
+
+        <secondary>Administrationsbereich</secondary>
+
+        <seealso>Administrationsbereich</seealso>
+      </indexterm><indexterm>
+        <primary>Administrationsbereich</primary>
+      </indexterm></title>
+
+    <para>Auch das Aussehen des Administrationsbereichs lässt sich anpassen.
+    Über das Symbol <guimenuitem>Admin</guimenuitem> erreicht man die
+    betreffenden Einstellungsmöglichkeiten. Zunächst lassen sich hier
+    Kategorien &mdash; als die "Reiter" im Menü &mdash; löschen und anlegen.
+    Über den Punkt <guimenuitem>Konfiguration modifizieren</guimenuitem> kann
+    man dann zum einen die Module den Reitern zuordnen, zum anderen die Art
+    der Ansicht (Symbole oder nur Text, Module pro Seite etc.) festlegen. Hier
+    wrd auch festgelegt, in welche Kategorie neu hinzukommende Module
+    automatisch eingefügt werden.</para>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="adminconfig.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Die Konfiguration des Administrationsbereichs</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+  </section>
+
   <section id="language">
     <title>Sprachkonfiguration<indexterm>
         <primary>Einstellungen</primary>
@@ -663,7 +779,8 @@
     und dem Besucher die Möglichkeit geben, aus den verfügbaren Sprachen seine
     auszuwählen.</para>
 
-    <para>Um das jetzt auf der eigenen Seite zu machen braucht man erstmal die
+    <para>Um das jetzt auf der eigenen Seite zu machen braucht man, sofern
+    dies nicht schon bei der Installation geschehen ist, erstmal die
     Sprachdatei<indexterm>
         <primary>Sprachkonfiguration</primary>
 
@@ -674,32 +791,47 @@
         <primary>Sprachdatei</primary>
 
         <see>Sprachpaket</see>
-      </indexterm>, am besten wieder von <ulink
-    url="http://www.postnuke.com">http://www.postnuke.com</ulink> oder von
-    <ulink url="http://www.pncommunity.de">http://www.pncommunity.de</ulink>.
-    Danach das gleiche Spiel wie beim Installieren von PostNuke: Entpacken und
-    alles, was sich unter <filename class="directory">/html/</filename>
-    befindet per FTP auf den Server spielen. Dabei fällt vermutlich auf, dass
-    zu jedem Modul ein Verzeichnis <filename class="directory">lang</filename>
-    oder <filename class="directory">pnlang</filename> existiert, in den dann
-    ein Verzeichnis namens <filename class="directory">deu</filename> kopiert
-    wird. Darin befinden sich dann die entsprechenden Sprachdateien.</para>
+      </indexterm>. Das offizielle PostNuke-Sprachenprojekt stellt unter
+    <ulink
+    url="http://noc.postnuke.com/projects/pnlanguages/">http://noc.postnuke.com/projects/pnlanguages/</ulink>
+    Sprachdateien zur Verfügung. Sollte eine gesuchte Sprache dort nicht
+    vorhanden sein, so hilft eventuell unsere <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
+    weiter. Danach das gleiche Spiel wie beim Installieren von PostNuke:
+    Entpacken und alles, was sich unter <filename
+    class="directory">/html/</filename> befindet per FTP auf den Server
+    spielen. Dabei fällt vermutlich auf, dass zu jedem Modul ein Verzeichnis
+    <filename class="directory">lang</filename> oder <filename
+    class="directory">pnlang</filename> existiert, in den dann ein Verzeichnis
+    namens <filename class="directory">deu</filename> kopiert wird. Darin
+    befinden sich dann die entsprechenden Sprachdateien.</para>
 
-    <para>Das Sprachen-Modul ist in erster Linie an Übersetzer gerichtet.
+    <para>Die Konfiguration der Standardsprache erfolgt über das
+    Languages-Modul. Dieses ist nach einer frischen Installation zunächst
+    deaktiviert und muss vor der Verwendung initialisiert und aktiviert
+    werden. Das Modul selbst ist in erster Linie an Übersetzer gerichtet.
     Einzig der Punkt <guimenuitem>Sprach-Konfiguration</guimenuitem> ist für
-    den "normalen" Betrieb von Interesse: Dort wird die Standardsprache der
+    den normalen Betrieb von Interesse: Dort wird die Standardsprache der
     Website eingestellt.</para>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="languages.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Nur dieser Bereich des Sprachmoduls is für den Administrator
+          relevant!</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
 
     <para>Sollen mehrere Sprachen unterstützt werden, kann man dort auch
     <guimenuitem>ML</guimenuitem> (multilanguage) aktivieren. Mit
-    <guimenuitem>Flaggen</guimenuitem> kann man dem User ermöglichen, seine
-    Sprache im entsprechenden Block über die Landesflagge (anstelle eines
-    Pulldownmenü) auszuwählen.</para>
-
-    <para>Wer internationale Sprachdateien sucht, sollte einmal in unsere
-    <ulink
-    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
-    schauen, ob die gesuchte Sprache dabei ist.</para>
+    <guimenuitem>Flaggen</guimenuitem> kann man dem Anwender ermöglichen,
+    seine Sprache im entsprechenden Block über die Landesflagge (anstelle
+    eines Pulldownmenü) auszuwählen.</para>
 
     <para>Bleibt die Sprache der Seite englisch, obwohl ein anderes
     Sprachpaket eingespielt wurde und die Standardsprache umgestellt wurde, so
@@ -808,7 +940,7 @@
         <term>Default Character Set</term>
 
         <listitem>
-          <para>Standard ist default:iso-8859-1</para>
+          <para>Standard ist iso-8859-1</para>
         </listitem>
       </varlistentry>
 
@@ -905,6 +1037,18 @@
       </varlistentry>
     </variablelist>
 
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="mailer.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Die Konfiguration des Mail-Moduls</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+
     <bridgehead>Mail-Konfiguration testen<indexterm>
         <primary>Mailer</primary>
 
@@ -977,16 +1121,16 @@
     <para>auf diese Art und Weise ist er für unregistrierte Benutzer erst
     einmal nicht verfügbar. Sollen auch sie Zugriff haben gilt:</para>
 
-    <para>unregistrierte (Gruppe) | typetool:: | .* | kommentieren </para>
+    <para>unregistrierte (Gruppe) | typetool:: | .* | kommentieren</para>
 
     <para>unregistrierte (Gruppe) | .* | .* | lesen</para>
 
     <para>Falls dagegen nur Admins Zugriff auf den Editor haben sollen, lauten
     die Berechtigungen:</para>
 
-    <para>Admins | .* | .* | administrieren </para>
+    <para>Admins | .* | .* | administrieren</para>
 
-    <para>alle Gruppen | typetool:: | .* | keines </para>
+    <para>alle Gruppen | typetool:: | .* | keines</para>
 
     <para>Users | .* | .* | kommentieren</para>
 
@@ -1527,42 +1671,69 @@
     role="bold">Inhalt</emphasis> ein, der auch wieder mit
     (freigegebenen)HTML-Befehlen formatiert werden kann. Nun wählt man wieder
     eine <emphasis role="bold">Sprache</emphasis>. Nur wenn 'alle' ausgewählt
-    wird, können auch alle User diese Nachricht sehen. Wählt man z.B.
-    'Englisch', können nur User den Beitrag lesen, die auch Englisch als
-    Sprache gewählt haben. Um diese Nachricht zu <emphasis
-    role="bold">aktivieren</emphasis>, setzt man den Button auf 'Ja'. Soll die
-    Nachricht nicht angezeigt werden, aber auch nicht gelöscht werden, wählt
-    man einfach 'Nein'.</para>
+    wird, können auch alle Anwender diese Nachricht sehen, undabhängig von der
+    eingestellten Sprache. Wählt man z.B. 'Englisch', können nur User den
+    Anwender lesen, die auch Englisch als Sprache gewählt haben. Um diese
+    Nachricht zu <emphasis role="bold">aktivieren</emphasis>, setzt man den
+    Button auf 'Ja'. Soll die Nachricht nicht angezeigt werden, aber auch
+    nicht gelöscht werden, wählt man einfach 'Nein'.</para>
 
     <para>Mit<emphasis role="bold"> Wer diese Nachricht sehen soll</emphasis>
-    kann die Zielgruppe dieser Nachricht ausgewählt werden: Im Dropdownmenü
-    werden die Benutzergruppen angezeigt, aus denen man auswählen kann.</para>
+    kann die Zielgruppe dieser Nachricht ausgewählt werden:</para>
 
-    <itemizedlist>
-      <listitem>
-        <para>Allen Besuchern: Alle Besucher der Seite bekommen die Nachricht
-        angezeigt</para>
-      </listitem>
+    <variablelist>
+      <varlistentry>
+        <term>Alle Besuchern</term>
 
-      <listitem>
-        <para>Nur registrierte Besucher: Nur Besucher, die sich auf der Seite
-        registriert haben und angemeldet sind bekommen die Nachricht
-        angezeigt.</para>
-      </listitem>
+        <listitem>
+          <para>Alle Besucher der Seite bekommen die Nachricht
+          angezeigt</para>
+        </listitem>
+      </varlistentry>
 
-      <listitem>
-        <para>Nur anonyme Besucher: Nur Besucher, die sich bisher nicht auf
-        der Seite registriert haben bekommen die Nachricht angezeigt.</para>
-      </listitem>
+      <varlistentry>
+        <term>Nur registrierte Besucher</term>
 
-      <listitem>
-        <para>Nur Administratoren: Nur Mitglieder der Administratoren-Gruppe
-        bekommen die Nachricht angezeigt.</para>
-      </listitem>
-    </itemizedlist>
+        <listitem>
+          <para>Nur Besucher, die sich auf der Seite registriert haben und
+          angemeldet sind bekommen die Nachricht angezeigt.</para>
+        </listitem>
+      </varlistentry>
 
-    <para>Ist alles fertig, klickt man einfach auf hinzufügen.
-    Beispiel;</para>
+      <varlistentry>
+        <term>Nur anonyme Besucher</term>
+
+        <listitem>
+          <para>Nur Besucher, die sich bisher nicht auf der Seite registriert
+          haben bekommen die Nachricht angezeigt.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Nur Administratoren</term>
+
+        <listitem>
+          <para>Nur Mitglieder der Administratoren-Gruppe bekommen die
+          Nachricht angezeigt.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Ist alles fertig, klickt man einfach auf hinzufügen. </para>
+
+    <bridgehead>Beispiel</bridgehead>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="adminmessage.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Eine neue Nachricht des Administrators</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
 
     <variablelist>
       <varlistentry>
@@ -1574,18 +1745,18 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Nachricht</term>
-
-        <listitem>
-          <para>Toll dass Du da bist, ich bin ja so glücklich!</para>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry>
         <term>Sprache</term>
 
         <listitem>
           <para>Deutsch</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Nachricht</term>
+
+        <listitem>
+          <para>Toll, dass Du da bist, ich bin ja so glücklich!</para>
         </listitem>
       </varlistentry>
 
