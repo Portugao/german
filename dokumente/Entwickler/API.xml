@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<book id="Administration" lang="de-DE" revision="$Revision$"
+<book id="API" lang="de-DE" revision="$Revision$"
       status="draft">
-
+  <!-- $Id$ -->
   <title>Die PostNuke API</title>
 
   <preface>
@@ -46,53 +46,53 @@
 
   <chapter>
   	<title>Die einzelnen Bereiche der API</title>
-  	
+
   	<para>Die PostNuke API ist in eine Anzahl von Bereichen unterteilt, die sich wie folgt gliedern:</para>
-  	
+
   	<subtitle>Users (Benutzer)</subtitle>
-  	
+
   	<para>Dieser Bereich deckt alles ab was auf der Postnuke Seite die Benutzer (verwaltung) betrifft. Bestätigung das ein Benutzer angemeldet ist, Benutzer spezifische Einstellungen oder einen Benutzer in das PostNuke System einloggen sind ein paar Beispiele der Funktionen dieses Bereiches.</para>
-  	
+
   	<subtitle>Modules (Module)</subtitle>
-  	
+
   	<para>In diesem Bereich dreht sich alles um die Module. Kontrollieren ob ein bestimmtes Modul verfügbar ist, Modul spezifische Paratmeter einstellen, oder das laden einer in eine spezielle Modul API sind Beispiele dafür.</para>
-  	
+
   	<subtitle>Sicherheit (Security)</subtitle>
-  	
+
   	<para>Der Bereich steuert alles was mit der Sicherheit des PostNuke System zu tun hat. Überpüfung ob ein Benutzer die erforderlichen recht hat für ein Aktion und generieren von eindeutigen Anfrage-Identifikations-Schlüsseln und Attacken vorzubeugen sind einige der Funktionen dieses Bereiches.</para>
-  	
+
   	<subtitle>Sessions</subtitle>
-  	
+
   	<para>Der Bereich regelt alles im zusammenhang mit den HPPT Sessions. Er steuert die Session Variablen, erstellt die Session Cookies für den Webbrowser des Benutzers und initialisiert die PHP Einstellungen um dir richtigen eingebauten (aktivierten) Sicherheits-Einstellungen zu benutzen. Dies sind einige Beispiele diese Bereiches.</para>
-  	
+
   	<subtitle>Variablen (Variables)</subtitle>
-  	
+
   	<para>Dieser Bereich steuert die Handhabung von Variablen. Benutzer Eingaben entfernen und reparieren, richtige Informationen an die Datenbank weitergeben und das sicherstellen das Dateinamen keine System schädigenden Zeichen haben sind einige der Beispiele.</para>
-  	
+
   	<subtitle>Ausgabe (Output)</subtitle>
-  	
+
   	<para>Dieser Berich deckt alles ab was mit der Ausgabe des PostNuke Systems zu tun hat. Erstellen von Tabellen Informationen, eine DropDown List in ein Formular setzen und die Druckausgabe einer Datei sind einige der Aufgaben dieses Bereiches.</para>
-  	
+
   	<subtitle>Datenbank (Database)</subtitle>
-  	
+
   	<para>Dieser Berich deckt alles Datenbank spezifische ab. Das initialisieren der Datenbankverbindung, Datenbankabfrage und eine List der Tabellen die die Datenbank enthält werden z.B. hierüber gesteuert und ansprechbar gemacht.</para>
-  	
+
   	<subtitle>Verschiedenes (Miscellaneous)</subtitle>
-  	
+
   	<para>Dieser Bereich enthält die Anzahl der restlichen Funktionen die keiner bestimmten Gruppe zugeordnet werden können. ein bestimmtes Theme für einen Benutzer laden, Status Nachtichten erhalten und HTTP Redircts zu anderen Seiten herstellen sind hier einige Beispiele.</para>
   </chapter>
-  
+
   <chapter>
     <title>Hinweise zur Programmierung mit der API</title>
-    
+
   	<subtitle>Die Benutzung von <emphasis>void</emphasis></subtitle>
-  	
+
   	<para>In der gesamten API Referenz wird ein Typ <emphasis>void</emphasis> speziell bei wiederkehrenden Werten genutzt. PHP hat von sich aus keinen Typ <emphasis>void</emphasis>, er wird in diesem Dokument genutzt um einen nicht gesetzten Wert zu bezeichnen. Es ist sehr wichtig für das weitere lesen und verstehen dieser Dokumentaition, das Sie den Unterschied verstehen. Der <emphasis>void</emphasis> Parameter wird genutzt vom Ausnahme Handling System auf den die PostNuke API Funktionen nutzen.</para>
-  	
+
   	<para>Ein Beispiel:</para>
-  	
+
   	<para><emphasis role="bold">pnModAPIFunc()</emphasis> nimmt Parameter des Modulnames, des Typ`s und Funktion auf und stellt dann fest welche aktuelle Modul Funktion aufgerufen werden soll, dann wird die Modul Funktion aufgerufen und der Rückgabe-Wert wird als eigener Rückgabewert zurückgegeben. Das Problem dabei ist, das, wenn <emphasis role="bold">pnModAPIFunc()</emphasis> falsch zurückgegeben oder die entprechende Funktion nicht gefunden wird, der Entwickler dann nicht mehr unterscheiden kann zwischen einer gefundenen Funktion die selber falsch zurückgegeben wird. void Rückgabewetre können jedoch mit der PHP <emphasis role="bold">isset()</emphasis> Funktion überprüft werden, wie die folgende Anschauung zeigt: </para>
-  	
+
   	<programlisting>$articles = pnModAPIFunc('News', 'user', 'getarticles');
     if (!isset($articles) &amp;&amp; pnExceptionMajor() != PN_NO_EXCEPTION) {
     // pnModAPIFunc() failed
@@ -106,7 +106,7 @@
     }</programlisting>
   	<para> Durch die gesame PostNuke API Referenz hindurch sind die Rückgabe Werte von <emphasis>void</emphasis> und <emphasis>false</emphasis> verschieden. <emphasis>false</emphasis> wird zurückgeben wenn eine API Funktion korrekt arbeitet und eine Negative Antwort gibt, <emphasis>void</emphasis> wird zurückgegeben wenn ein API Aufruf Probleme bereitet und eine Ausnahme dadurch hervorgerufen wird. Hinweis: Dies ist eine generelle Regel, es gibt aber wie bei allen Regeln auch hier einige wenige Ausnahmen. Auf diese Ausnahmen wird jedoch in der weiteren Dokumentation hingewiesen.</para>
   </chapter>
-  
+
   <chapter>
   	<title>Die API Referenz</title>
   	<listitem><para>pnBlockGetInfo - Block Informationen abrufen</para></listitem>
