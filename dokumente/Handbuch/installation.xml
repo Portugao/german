@@ -93,6 +93,24 @@
             voraussetzen, die nur der Apache bietet. Insbesondere muß für den
             Einsatz von &ldquor;kurzen URLs&rdquor; das Modul mod_rewrite
             aktiviert sein.</para>
+
+            <warning>
+              <para>Damit die Links in PostNuke korrekt funktionieren, muss
+              der Web-Server die Umgebungsvariable
+              <varname>HTTP_HOST</varname> setzen. Der Web-Server <ulink
+              url="http://www.omnicron.ca/">OmniHTTPd</ulink> macht dies erst
+              ab der Professional-Version 2.09. Um sich bei älteren Versionen
+              zu behelfen, ist es möglich, eins Stammverzeichnis von PostNuke
+              eine Datei namens <filename>personal_config.php</filename> mit
+              folgendem Inhalt anzulegen: </para>
+
+              <programlisting>&lt;?php
+$_SERVER['HTTP_HOST'] = 'www.example.com';
+?&gt;</programlisting>
+
+              <para>Für den Betrieb einer PostNuke-Seite ist der Apache
+              Web-Server dem OmniHTTPd auf jeden Fall vorzuziehen.</para>
+            </warning>
           </listitem>
         </varlistentry>
       </variablelist>
