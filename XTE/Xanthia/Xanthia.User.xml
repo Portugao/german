@@ -726,34 +726,37 @@
         </step>
 
         <step>
-          <title>Configure Zone</title>
+          <title>Zone konfigurieren</title>
 
-          <para>When page refreshes after you commit changes in above step you
-          will see that the zone you created is now inactive and has no
-          template assigned. You must <emphasis role="bold">first</emphasis>
-          configure this zone before activating.</para>
+          <para>Wen die Seite nach der Eingabe der Änderungen neu aufgebaut
+          wird, ist die soeben erstellte Zone zunächst inaktiv und ihr ist
+          kein Template zugewiesen. <emphasis role="bold">Zunächst</emphasis>
+          muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
+          aktiviert werden kann.</para>
 
-          <para>Click <guimenuitem>Configure</guimenuitem>. You will have a
-          drop down list of module templates (if block templates show up, you
-          didn't leave "New Sikn for Block" unset un the last step). Choose
-          the template from the list to use for this module and submit the
-          changes.</para>
+          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
+          drop down list mit Modul Templates (sollten in der Liste auch Block
+          Templates erscheinen bedeutet dies, dass im vorherigen Menu "New
+          Skin for Block" entgegen der Beschreibung verändert wurde). Wähle
+          nun aus der Liste das Template aus, das dem Modul zugeordnet werden
+          soll und bestätige die Änderungen.</para>
         </step>
 
         <step>
-          <title>Activate this zone</title>
+          <title>Die Zone aktivieren</title>
 
-          <para>When page refreshes after you commit changes in above step you
-          will see that the zone you created now shows the template you
-          assigned. Now you must activate this zone by clicking on
-          <guimenuitem>activate</guimenuitem>.</para>
+          <para>Nachdem die vorherigen Eingaben bestätigt wurden und die Seite
+          neu geladen wurde, sind der zuvor erstellten Zone die ausgewählten
+          Templates zugewiesen. Nun muss die Zone lediglich noch
+          <guimenuitem>aktiviert</guimenuitem> werden.</para>
         </step>
 
         <step>
-          <title>Test your changes</title>
+          <title>Die Veränderungen testen</title>
 
-          <para>Go to the module you have created the template for. Your site
-          should now use a different design.</para>
+          <para>Wähle nun das Modul an, für das soeben ein neues Template
+          erstellt worden ist . Die Seite sollte das neue Design für das Modul
+          verwenden.</para>
         </step>
       </procedure>
     </section>
@@ -761,13 +764,15 @@
     <section id="Xanthia.User.CommonTasks.BlockTemplates">
       <title>Custom Block Templates</title>
 
-      <para>As with module templates, Xanthia provides the possibility to use
-      different templates for each block. You can create as many block
-      templates as you like. Each block can have a different template in each
-      module also.</para>
+      <para>Neben der Möglichkeit mit Hilfe von Xanthia Modul Templates zu
+      erstellen, kann man auch jedem einzelnen Block ein eigenes Template
+      zuweisen. Dabei kann soviele Block Templates erstellen, wie man mag.
+      Dabei kann einem Block in Abhängigkeit vom gewählten Modul ein
+      unterschiedliches Template zugewiesen werden..</para>
 
-      <para>Here are the steps for creating a block specific template in
-      Xanthia. Again, all relevant menu items are located in <menuchoice>
+      <para>Folgende Schritte erläutern, wie man mit Xanthia Templates für
+      Blöcke erstellt. Auch hier befinden sich alle relevanten Menüs unter
+      <menuchoice>
           <guimenu>Administration</guimenu>
 
           <guisubmenu>Xanthia</guisubmenu>
@@ -779,36 +784,36 @@
 
       <procedure>
         <step>
-          <title>Create a new template for the block</title>
+          <title>Ein neues Template für den Block erstellen.</title>
 
-          <para>Enter <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
               <guimenuitem>New Block Template</guimenuitem>
-            </menuchoice> and create a new template for the Block (see<xref
-          linkend="Xanthia.ThemeEditing.ThemeTemplates" />). Altough you can
-          name it whatever you like, we recommend to name it after the block
-          you are creating it for. You can copy and paste your current
-          rsblock.htm or lsblock.htm in the New Block Template text area to
-          have a basis to start wth.</para>
+            </menuchoice> an und erstelle ein neues Template für den Block
+          (siehe <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
+          Obwohl der Name frei vergeben werden kann, empfiehlt es sich den
+          Namen des Blocks zu verwenden, für den man das Template erstellt.
+          Als Ausgangsbasis kann man den html-code der Dateien rsblock.htm
+          oder lsblock.htm in das Text-Feld kopieren.</para>
         </step>
 
         <step>
-          <title>Add a new Theme Zone</title>
+          <title>Eine neue Theme Zone hinzufügen</title>
 
-          <para>Enter <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Zones</guimenu>
 
               <guimenuitem>Add New Zone</guimenuitem>
-            </menuchoice> and fill in the required fields as decribed
-          ...</para>
+            </menuchoice> aus und fülle die Felder gemäß der Beschreibung
+          aus.</para>
 
           <variablelist>
             <varlistentry>
               <term>Zone Name</term>
 
               <listitem>
-                <para>This is a unique name of your choosing</para>
+                <para>Ein Name eigener Wahl</para>
               </listitem>
             </varlistentry>
 
@@ -816,8 +821,8 @@
               <term>Zone Label</term>
 
               <listitem>
-                <para>this will be automatically set when you choose the next
-                option.</para>
+                <para>Wird durch die nächste Option automatisch
+                festgelegt.</para>
               </listitem>
             </varlistentry>
 
@@ -825,7 +830,7 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>Leave this unset.</para>
+                <para>Sollte nicht verändert werden!</para>
               </listitem>
             </varlistentry>
 
@@ -833,59 +838,65 @@
               <term>New skin for block</term>
 
               <listitem>
-                <para>Choose the block you created it for.</para>
+                <para>Hier wird der Block ausgewählt, für den man das Template
+                erstellt.</para>
               </listitem>
             </varlistentry>
           </variablelist>
         </step>
 
         <step>
-          <title>Configure Zone</title>
+          <title>Zone konfigurieren</title>
 
-          <para>When page refreshes after you commit changes in above step you
-          will see that the zone you created is now inactive and has no
-          template assigned. You must <emphasis role="bold">first</emphasis>
-          configure this zone before activating.</para>
+          <para>Wen die Seite nach der Eingabe der Änderungen neu aufgebaut
+          wird, ist die soeben erstellte Zone zunächst inaktiv und ihr ist
+          kein Template zugewiesen. <emphasis role="bold">Zunächst</emphasis>
+          muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
+          aktiviert werden kann.</para>
 
-          <para>Click <guimenuitem>Configure</guimenuitem>. You will have a
-          drop down list of block templates. Choose the template from the list
-          to use for this block and submit the changes.</para>
+          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
+          drop down list mit Block Templates. Wähle das zu verwendende
+          Template aus der Liste aus und bestätige die Eingabe.</para>
         </step>
 
         <step>
           <title>Activate this zone</title>
 
-          <para>When page refreshes after you commit changes in above step you
-          will see that the zone you created now shows the template you
-          assigned. Now you must activate this zone by clicking on
-          <guimenuitem>activate</guimenuitem>.</para>
+          <para>Nachdem die vorherigen Eingaben bestätigt wurden und die Seite
+          neu geladen wurde, sind der zuvor erstellten Zone die ausgewählten
+          Templates zugewiesen. Nun muss die Zone lediglich noch
+          <guimenuitem>aktiviert</guimenuitem> werden.</para>
         </step>
 
         <step>
-          <title>Test your changes</title>
+          <title>Die Änderungen überprüfen</title>
 
-          <para>Verify that the block you have created the template for now
-          uses this template.</para>
+          <para>Überprüfe nun, ob der Block, dem ein neues Template zugewiesen
+          wurde, dieses auch tatsächlich verwendet.</para>
         </step>
       </procedure>
 
-      <para>To assign different templates depending on the current module, you
-      go thru the steps above creating as many block templates as you like.
-      But you can only set one template for the new zone.</para>
+      <para>Um verschiedenen Blöcken in einem Modul eigene Templates
+      zuzuweisen, muss man nur die soeben beschriebenen Schritte für jeden
+      weiteren Block wiederholen. Die Anzahl der Block Templates, die man
+      erstellt, bleibt einem selbst überlassen. Einer neuen Zone kann
+      allerdings immer nur ein Template zugewiesen werden.</para>
 
-      <para>To set a different template for a block that will show in a
-      specific Module you must activate the Visual Block Editor in <menuchoice>
+      <para>Um einem Block im Zusammenhang mit einem bestimmten Modul ein
+      anderes Template zuzuweisen, muss der Visual Block Editor aktiviert
+      werden. Rufe dazu folgendes Menü auf: <menuchoice>
           <guimenu>Xanthia</guimenu>
 
           <guimenuitem>Configure Xanthia</guimenuitem>
         </menuchoice>.</para>
 
-      <para>Now, go to the module where you want to change the Block Template.
-      Click on the icon to open he Visual Block Editor window. Choose a
-      Template from the drop down list and click submit. Remember you must
-      have this block already set in the above step for this to work. (I will
-      be adding the ability to Xanthia later to allow this to work even if you
-      have not set the block in the above steps.)</para>
+      <para>Wähle nun das Modul aus, bei dem die Veränderung des Designs eines
+      Blocks vorgenommen werden soll. Mittels des entsprechenden icons kann
+      das Fenster des Visual Block Editor geöffnet werden. Wähle das Template
+      aus der drop down-Liste und bestätige die Auswahl mit "submit". Remember
+      you must have this block already set in the above step for this to work.
+      (I will be adding the ability to Xanthia later to allow this to work
+      even if you have not set the block in the above steps.)</para>
 
       <para>You can also use Block Control to change the Template for a block:
       <menuchoice>
@@ -901,14 +912,14 @@
     </section>
 
     <section id="Xanthia.User.CommonTasks.BlockZones">
-      <title>add a Block Zone to your templates and make it available to Block
-      Control</title>
+      <title>Eine Block Zone einem Template zuordnen und in der Block Control
+      verfügbar machen.</title>
 
       <procedure>
         <step>
-          <title>Enter the Block Zones Administration</title>
+          <title> Block Zonen Administration auswählen</title>
 
-          <para>Click on <menuchoice>
+          <para>dieses findet sich hier: <menuchoice>
               <guimenu>Administration</guimenu>
 
               <guisubmenu>Xanthia</guisubmenu>
@@ -917,21 +928,22 @@
 
               <guisubmenu>Edit Theme</guisubmenu>
 
-              <guimenuitem>Block Zones</guimenuitem>
+              <guimenuitem>Block Zones </guimenuitem>
             </menuchoice></para>
         </step>
 
         <step>
-          <title>Create a new Block Zone</title>
+          <title>Eine Block Zone erstellen</title>
 
-          <para>Fill in the fields at the bottom of the table.</para>
+          <para>Fülle alle Felder am unteren Rand des Block Zonen
+          Administration aus.</para>
 
           <variablelist>
             <varlistentry>
               <term>zone description</term>
 
               <listitem>
-                <para>This can be named whatever you want.</para>
+                <para>Hier kann ein beliebiger Name verwendet werden.</para>
               </listitem>
             </varlistentry>
 
@@ -939,19 +951,20 @@
               <term>tag to use in theme</term>
 
               <listitem>
-                <para>This is the tag as you will use it in your theme do not
-                use the <markup>&lt;!--[$NAME]--&gt;</markup> just put the
-                text there.</para>
+                <para>Mit diesem tag kann der Block in das Theme eingebunden
+                werden. Hier wird nur der reine Text eingegeben, nicht die
+                ganze Variable <markup>&lt;!--[$NAME]--&gt;</markup>.</para>
               </listitem>
             </varlistentry>
           </variablelist>
 
-          <para>Click on Submit.</para>
+          <para> Bestätige die Eingaben mit Submit.</para>
         </step>
 
         <step>
-          <para>Modify you templates to use this new Zone using the
-          <markup>&lt;!--[$TAGTOUSEINTHEME ]--&gt;</markup></para>
+          <para>In den Templates der Seite kann die neue Block Zone nun über
+          folgendes Tag eingefügt werden: <markup>&lt;!--[$TAGTOUSEINTHEME
+          ]--&gt; </markup></para>
         </step>
       </procedure>
     </section>
@@ -1247,7 +1260,7 @@
           </question>
 
           <answer>
-            <para>Es ist war, daß Xanthia RC2 nicht auf Schnelligkeit
+            <para>Es ist wahr, daß Xanthia RC2 nicht auf Schnelligkeit
             ausgelegt wurde. Aber viele Änderungen wurden im Laufe der Zeit
             durchgeführt, um die Performance zu verbessern. Diese beinhalteten
             eine starke Abnahme der Datenbank Anfragen. Tests haben gezeigt,
