@@ -18,7 +18,7 @@
   <section id="pnrender.moddev.basic">
     <title>Wie funktioniert pnRender in Modulen?</title>
 
-    <para>Die Idee hinter Smarty ist sehr einfach: Im Modul oder im Block
+    <para>Die Idee hinter pnRender ist sehr einfach: Im Modul oder im Block
     werden Variablen befüllt, diese werden dann an das Postnuke-System
     übergeben und dann in das Layout eingefügt. So wird aus Templates und
     Variablen die Seite aufgebaut.</para>
@@ -47,7 +47,7 @@ return $output-&gt;fetch('index.htm');</programlisting>
       <title>pnRender in einem Hook Module</title>
 
       <para>Wenn pnRender in einem Hook-Modul benutzt wird, muß der Name des
-      Moduls übergeben werden, damit das System weiß zu welchen Modul welche
+      Moduls übergeben werden, damit das System weiß, zu welchen Modul welche
       Ausgaben gehören. Das ist wichtig, da Hooks sich ja in die Ausgaben
       anderer Module einklinken.</para>
 
@@ -59,7 +59,7 @@ return $output-&gt;fetch('index.htm');</programlisting>
     <section id="pnrender.moddev.basic.blocks">
       <title>pnRender in einem Block</title>
 
-      <para>Auch in Blöcken mit der Modulname übergeben werden:</para>
+      <para>Auch in Blöcken muss der Modulname übergeben werden:</para>
 
       <programlisting>$output =&amp; new pnRender('MeinModul'); 
 $output-&gt;assign('bspVariable', $irgendeinWert); 
@@ -108,7 +108,7 @@ return themesideblock($row);</programlisting>
   <section id="pnrender.moddev.themetemplates">
     <title>Theme-spezifische Templates</title>
 
-    <para>Für Theme-Disgner gibt es die Möglichkeit zusammen mit dem Theme
+    <para>Für Theme-Designer gibt es die Möglichkeit zusammen mit dem Theme
     Templates für verschiedene Module vorzubereiten. Wenn ein solches
     Theme-abhängiges Modul-Template existiert, wird dieses statt des Originals
     benutzt. Das bedeutet, dass Theme-Designer nicht nur das generelle Layout
@@ -147,7 +147,7 @@ return themesideblock($row);</programlisting>
 
     <blockquote>
       <attribution><ulink
-      url="http://smarty.php.net/manual/en/caching.php">Smarty
+      url="http://smarty.php.net/manual/de/caching.php">Smarty
       Dokumentation</ulink></attribution>
 
       <para>Caching wird verwendet, um <command>display()</command> oder
@@ -193,7 +193,7 @@ return themesideblock($row);</programlisting>
     </section>
 
     <section id="pnrender.moddev.caching.proctime">
-      <title>Performance erhöhen</title>
+      <title>Mittels Caching die Performance erhöhen</title>
 
       <para>Bei der Anwendung der <command>is_cached</command> Methode auf das
       pnRender Objekt, kann man herausfinden, ob die Seite schon gecacht ist.
@@ -202,8 +202,8 @@ return themesideblock($row);</programlisting>
 
       <programlisting role="example">/**
  * display item
- * Dies ist die Standartfunktion mit der man detailierte Informationen zu einem bestimmten Inhalt
- * vom Modul aufrufen kann.
+ * Dies ist die Standardfunktion, mit der man detailierte Informationen 
+ * zu einem bestimmten Inhalt vom Modul aufrufen kann.
  */
 function Example_user_display($args)
 {
