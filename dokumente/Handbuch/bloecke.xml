@@ -28,7 +28,7 @@
         </listitem>
 
         <listitem>
-          <para>Die Größe ist auf auf 64k beschrankt.</para>
+          <para>Die Größe ist auf auf 64k beschränkt.</para>
         </listitem>
 
         <listitem>
@@ -42,7 +42,7 @@
     <title>Core/Plain Text</title>
 
     <para>Eine einfache Möglichkeit, Text in einem Block darzustellen.
-    Komfortabler geht es mit den Administrative Messaages.</para>
+    Komfortabler geht es mit den Administrative Messages.</para>
   </section>
 
   <section>
@@ -131,7 +131,7 @@
     Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
     jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
     Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis, die
-    auch in der Funktion "languagelist", die in der Dateiei
+    auch in der Funktion "languagelist", die in der Datei
     modules/NS-languages/api.php definiert wird, enthalten sind.</para>
   </section>
 
