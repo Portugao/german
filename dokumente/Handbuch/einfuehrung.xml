@@ -79,7 +79,7 @@
     auf dem aktuellsten Stand. Die Module befinden sich im Verzeichnis
     /modules</para>
 
-    <bridgehead>Permissions steuern die Zugriffsrecht der User</bridgehead>
+    <bridgehead>Permissions steuern die Zugriffsrechte der User</bridgehead>
 
     <para>'Technisch auf dem aktuellsten Stand' bedeutet vor allem auch, dass
     sie in das Permission-System integriert wurden. PostNuke bietet ein System
@@ -101,9 +101,9 @@
 
     <para>Obwohl PostNuke derzeit offiziell noch als alpha-Software eingestuft
     wird, ist es bereits sehr stabil und voll supported. Fehlermeldungen
-    können hier im <ulink url="http://www.post-nuke.net/phpBB_14.htm">Forum
-    von post-nuke.net</ulink> oder aber auch direkt in den englischen Foren
-    bei <ulink url="http://forums.postnuke.com/">forums.PostNuke.com</ulink>
+    können im <ulink url="http://www.post-nuke.net/phpBB_14.htm">Forum von
+    post-nuke.net</ulink> oder aber auch direkt in den englischen Foren bei
+    <ulink url="http://forums.postnuke.com/">forums.PostNuke.com</ulink>
     gepostet werden. Es wird aber davon abgeraten, an den mitgelieferten
     Dateien Änderungen vorzunehmen, da diese bei zukünftigen Updates entweder
     verloren gehen oder nicht auf den aktuellsten Stand gebracht werden
@@ -229,7 +229,7 @@
     Open-Source-Projekte sind übrigens Mozilla (Grundlage der Netscapebrowser)
     oder Linux (ein alternatives Betriebssystem).</para>
 
-    <para>PostNuke ist geschrieben in PHP und lizensiert unter der GNU General
+    <para>PostNuke ist geschrieben in PHP und lizenziert unter der GNU General
     Public License. Als Open Source / Open Development Projekt arbeiten an
     PostNuke weltweit eine Vielzahl von Entwicklern. Mit zeitweise mehr als
     120 Entwicklern in fünf Kontinenten, mehr als 35 unterstützten Sprachen
