@@ -1,71 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Administration" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Entwicklerdokumentation</title>
 
-  <sect1>
+  <section>
     <title>Modul Entwicklung</title>
 
     <para>-todo-</para>
 
-    <sect2>
+    <section>
       <title>admin.php</title>
 
       <para>-todo-</para>
-    </sect2>
+    </section>
 
-    <sect2>
+    <section>
       <title>Suchfunktion</title>
 
       <para>-todo-</para>
-    </sect2>
+    </section>
 
-    <sect2>
+    <section>
       <title>Benutzermenü</title>
 
       <para>-todo-</para>
-    </sect2>
+    </section>
 
-    <sect2>
+    <section>
       <title>Blöcke</title>
 
       <para>-todo-</para>
-    </sect2>
+    </section>
 
-    <sect2>
+    <section>
       <title>Hooks</title>
 
       <para>-todo-</para>
-    </sect2>
+    </section>
 
-    <sect2>
+    <section>
       <title>Smartifikation</title>
 
       <para>-todo-</para>
-    </sect2>
-  </sect1>
+    </section>
+  </section>
 
-  <sect1>
+  <section>
     <title>Richtlinien für die Programmierung</title>
 
     <para>-todo-</para>
-  </sect1>
+  </section>
 
-  <sect1>
+  <section>
     <title>pnAPI</title>
 
     <para>-todo-</para>
-  </sect1>
+  </section>
 
-  <sect1>
+  <section>
     <title>pnADODB</title>
 
     <para>-todo-</para>
-  </sect1>
+  </section>
 
-  <sect1>
+  <section>
     <title>phpxref für Postnuke .726</title>
 
     <para>PHP Cross Reference für PostNuke .726 gibt es <ulink
     url="???">hier</ulink>.</para>
-  </sect1>
+  </section>
 </chapter>
