@@ -1652,8 +1652,8 @@
     </section>
   </section>
 
-  <section>
-    <title id="autotheme">Autothemes<indexterm>
+  <section id="autotheme">
+    <title>Autothemes<indexterm>
         <primary>Themes</primary>
 
         <secondary>Autotheme</secondary>
