@@ -402,23 +402,24 @@ $themeinfo['xhtmlsupport'] = 0;
 
             <guisubmenu>Xanthia</guisubmenu>
 
-            <guisubmenu>View Themes</guisubmenu>
+            <guisubmenu>Themes anzeigen</guisubmenu>
 
-            <guimenuitem>Reload templates</guimenuitem>
+            <guimenuitem>Templates neu laden</guimenuitem>
           </menuchoice> klicken, um die Templates neu einzulesen. Dazu müssen
-        die Optionen <guimenuitem>Check for updates to templates</guimenuitem>
-        und <guimenuitem>Force compile</guimenuitem> unter <menuchoice>
+        die Optionen <guimenuitem>auf aktualisierte Templates
+        prüfen</guimenuitem> und <guimenuitem>erneutes Kompilieren der
+        Templates erzwingen</guimenuitem> unter <menuchoice>
             <guimenu>Administration</guimenu>
 
             <guisubmenu>Xanthia</guisubmenu>
 
-            <guimenuitem>Configure Xanthia</guimenuitem>
+            <guimenuitem>Xanthia konfigurieren</guimenuitem>
           </menuchoice> eingeschaltet sein.</para>
       </listitem>
 
       <listitem>
         <para>Nun sollten die Änderungen auf der Site zu sehen sein<note>
-            <para>Die Funktion <guimenuitem>Reload templates</guimenuitem>
+            <para>Die Funktion <guimenuitem>Templates neu laden</guimenuitem>
             muss nach jeder Änderung an den Templates angeklickt werden.
             Änderungen an den CSS Dateien aber zum Beispiel werden natürlich
             sofort übernommen.</para>
@@ -434,11 +435,11 @@ $themeinfo['xhtmlsupport'] = 0;
             <para>Templates können auch in der Xanthia-Administration geändert
             werden, da diese Änderungen aber nur in die Datenbank und nicht in
             die Dateien übernommen werden, sind alle Anpassungen rückgängig
-            gemacht wenn <guimenuitem>reload templates</guimenuitem> geklickt
-            wird. Deswegen sollte die oben beschriebene Variante benutzt
-            werden. Die Änderungen über die Administration sind aber ganz
-            hilfreich, wenn man schnell kleinere Änderungen ausprobieren und
-            ggf. rückgängig machen will.</para>
+            gemacht wenn <guimenuitem>Templates neu laden</guimenuitem>
+            geklickt wird. Deswegen sollte die oben beschriebene Variante
+            benutzt werden. Die Änderungen über die Administration sind aber
+            ganz hilfreich, wenn man schnell kleinere Änderungen ausprobieren
+            und ggf. rückgängig machen will.</para>
           </note></para>
       </listitem>
 

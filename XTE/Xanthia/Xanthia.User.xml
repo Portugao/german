@@ -40,7 +40,7 @@
           <para><glossterm>Themezonen</glossterm> werden eingesetzt, um
           verschiedenen Blöcken oder Modulen ein bestimmtes aussehen zu geben.
           Jeder Themezone ist ein Template zugeordnet, die Themezone wiederum
-          einem Block oder einem Modul. </para>
+          einem Block oder einem Modul.</para>
         </listitem>
       </varlistentry>
 
@@ -67,11 +67,12 @@
         </objectinfo>
 
         <imageobject>
-          <imagedata fileref="Xanthia.AdminMenu.jpg" format="JPG" />
+          <imagedata align="right" fileref="Xanthia.AdminMenu.jpg"
+                     format="JPG" />
         </imageobject>
 
         <textobject>
-          <phrase>The Xanthia Configuration Screen</phrase>
+          <phrase>Der Xanthia Konfiguration Bildschirm</phrase>
         </textobject>
       </mediaobject>
     </screenshot>
@@ -81,7 +82,7 @@
 
     <variablelist>
       <varlistentry>
-        <term>Use Visual Block Editor</term>
+        <term>Visual Block Editor benutzen</term>
 
         <listitem>
           <para>Damit läßt sich der visuelle Block-Editor aktiveren. Mit
@@ -94,7 +95,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Use Short URLs</term>
+        <term>Short URLs aktivieren</term>
 
         <listitem>
           <para>Mit der XTE haben endlich die Kurzen URLs ihren Weg in den
@@ -104,15 +105,15 @@
           der Site kopiert werden.</para>
 
           <tip>
-            <para>You will see the items related to short URLs only if a
-            .htaccess file is in your PostNuke root directory and your web
-            server is capable of rewriting URLs.</para>
+            <para>Die Inhalte bezüglich short URLs sind nur dann sichtbar wenn
+            eine .htaccess-Datei im PostNuke root directory liegt und der
+            WebServer Rewriting-URLs verarbeiten kann.</para>
           </tip>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>Extension to use for short URLs (excluding .)</term>
+        <term>Erweiterung für short URLs (ohne .)</term>
 
         <listitem>
           <para>Die Dateiendung, die die Kurzen URLs benutzen sollen muß hier
@@ -125,7 +126,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Enable Caching</term>
+        <term>Caching nutzen</term>
 
         <listitem>
           <para>Aktiviert das Caching von Xanthia-Seiten. Caching erhöht die
@@ -136,7 +137,16 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Check for updated Version of Templates</term>
+        <term>Module die vom caching ausgenommen sind</term>
+
+        <listitem>
+          <para>Hier sind die Module zu erfassen die explizit nicht gecacht
+          werden sollen (durch Komma getrennt.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>auf aktualisierte Templates prüfen</term>
 
         <listitem>
           <para>Aktiviert, raubt diese Option etwas Performance, wenn aber das
@@ -147,7 +157,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Force Recompile of Templates</term>
+        <term>erneutes Kompilieren derTemplates erzwingen</term>
 
         <listitem>
           <para>Durch diese Funktion würden Templates in jedem Fall neu
@@ -156,7 +166,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>How long to Cache Pages</term>
+        <term>Dauer für das Caching</term>
 
         <listitem>
           <para>Wie viele Sekunden sollen die Seiten gecacht werden?</para>
@@ -164,36 +174,38 @@
       </varlistentry>
 
       <varlistentry>
-        <term>Store Templates in Database</term>
+        <term>Templates in die Datenbank schreiben</term>
 
         <listitem>
-          <para>Option, um das Template in der PostNuke Datenbak zu
+          <para>Option, um das Template in der PostNuke Datenbank zu
           speichern.</para>
 
-          <para>When you decide not to store the templates in the database,
-          you lose the online editing of templates but reduce database load
-          during a page compile. This makes the theme development cycle easier
-          as you don't have to worry about templates in the db and on the file
-          system. Unless you are in the process of theme development, we
-          recommend to store templates in the database.</para>
+          <para>Wenn man sich dafür entscheidet die Templates nicht in der
+          Datenbank zu speichern verliert man zwar die Möglichkeit das
+          Template laufend "Online" zu editieren, aber auf der anderen Seite
+          reduziert man die Datenbankzugriffe während der Seitenkomilierung.
+          Wir empfehlen während der Theme-Entwicklung Templates in der
+          Datenbank zu speichern.</para>
 
           <note>
-            <para>Smarty only accesses templates from the database on the
-            first visit to the page. Then it will not access the database or
-            even check the database again because it uses the compiled
-            templates. Anytime a change is made to a template, either by
-            reloading templates, or modifying them through the web panel the
-            old version of the compiled template is deleted. This is the
-            <emphasis>only</emphasis> time that Smarty will access the
-            database to get the uncompiled template again. The way Xanthia is
-            coded it passes a timestamp back to Smarty so it tricks smarty
-            into thinking the template has not been modified.</para>
+            <para>Beim ersten Zugriff auf eine Seite erfolgen
+            Datenbankzugriffe auf die gepeicherten Templates . Danach erfolgt
+            kein Zugriff oder Abgleich mehr, sondern es werden die
+            kompilierten Templates genutzt. Jedesmal wenn ein Template
+            verändert oder eine Template neu geladen oder durch das
+            Online-Editing modifiziert wird, dann wird die "alte" Version des
+            Kompilierten Templates gelöscht. Dies ist der einzige Zeitpunkt wo
+            Smarty erneut auf die Datenbank zugreift um die unkompilierte
+            Version des Templates neu zu laden. Xanthia ist ansonsten so
+            programmiert das es Smarty einen "Zeitstempel" (timestamp)
+            zurückliefert, so daß Smarty das Template als nicht geändert
+            ansieht.</para>
           </note>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>Use Trim Whitespace Filter</term>
+        <term>trimwhitespace Ausgabefilter</term>
 
         <listitem>
           <para>Durch diese Option werden alle überflüssigen Leerzeichen aus
@@ -221,13 +233,13 @@
       <para>Xanthia Theme-Templates sind immer in einem Verzeichnis mit dem
       Namen des Themes gesammelt. Dieses Verzeichnis wird dann in das
       Verzeichnis /themes kopiert. Ruft man nun die Xanthia Theme
-      Administration (<guimenuitem>View Themes</guimenuitem>) auf, so
+      Administration (<guimenuitem>Themes anzeigen</guimenuitem>) auf, so
       erscheint eine Tabelle mit allen verfügbaren Xanthia-Themes. "Normale"
       Themes werden hier nicht aufgeführt.</para>
 
-      <para>Mit "<guimenuitem>add Theme</guimenuitem>" kann das neue Theme
-      hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und kann in
-      den Site-Einstellungen als Theme ausgewählt werden.</para>
+      <para>Mit "<guimenuitem>Theme hinzufügen</guimenuitem>" kann das neue
+      Theme hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und
+      kann in den Site-Einstellungen als Theme ausgewählt werden.</para>
 
       <screenshot>
         <mediaobject>
@@ -236,13 +248,13 @@
           </imageobject>
 
           <textobject>
-            <phrase>The "<guimenuitem>View Themes</guimenuitem>" Bildschirm in
-            Xanthia</phrase>
+            <phrase>Der "<guimenuitem>Themes anzeigen</guimenuitem>"
+            Bildschirm in Xanthia</phrase>
           </textobject>
 
           <caption>
-            <para>The "<guimenuitem>View Themes</guimenuitem>" Bildschirm in
-            Xanthia</para>
+            <para>Der "<guimenuitem>Themes anzeigen</guimenuitem>" Bildschirm
+            in Xanthia</para>
           </caption>
         </mediaobject>
       </screenshot>
@@ -252,13 +264,13 @@
       <title>Bearbeiten von Themes</title>
 
       <para>Nachdem ein neues Theme hinzugefügt wurde, kann es bearbeitet
-      werden, indem man "<guimenuitem>edit theme</guimenuitem>" in der
+      werden, indem man "<guimenuitem>Theme editieren</guimenuitem>" in der
       Theme-Übersicht auswählt. Es steht nun verschiedene Funktionen zur
       Verfügung: <guimenuitem>Block Zones</guimenuitem>, <guimenuitem>Theme
       Zones</guimenuitem>, <guimenuitem>Theme Templates,</guimenuitem>
-      T<guimenuitem>heme Colors</guimenuitem>, <guimenuitem>Theme
-      Settings</guimenuitem>, und <guimenuitem>Block
-      Control</guimenuitem>.</para>
+      T<guimenuitem>heme Farben</guimenuitem>, <guimenuitem>Theme
+      Einstellungen</guimenuitem>, und <guimenuitem>Block
+      Kontrolle</guimenuitem>.</para>
 
       <section id="Xanthia.User.BlockZones">
         <title>Block-Zonen</title>
@@ -334,10 +346,10 @@
 
         <para>Um eine Theme-Zone zu erstellen, muss zunächst ein Template
         erstellt werden, das im <glossterm>pnTemplates</glossterm>-Verzeichnis
-        des Themes abgelegt wird. Sodann ist der Link <guimenu>Add New
-        Theme</guimenu> (neues Theme hinzufügen) am oberen Rand des
-        Theme-Zonen Menüs zu wählen. Dadurch erhält man ein Formular, in dem
-        folgende Felder ausgefüllt werden müssen:<variablelist>
+        des Themes abgelegt wird. Sodann ist der Link <guimenu>neue Zone
+        hinzufügen</guimenu> am oberen Rand des Theme-Zonen Menüs zu wählen.
+        Dadurch erhält man ein Formular, in dem folgende Felder ausgefüllt
+        werden müssen:<variablelist>
             <varlistentry>
               <term>Zone Name</term>
 
@@ -361,7 +373,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New master for module</term>
+              <term>neues Master for module</term>
 
               <listitem>
                 <para>Beim Erstellen der Vorlage für ein Modul
@@ -372,7 +384,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New skin for block</term>
+              <term>Neuer Skin for block</term>
 
               <listitem>
                 <para>Unter diesem Auswahlpunkt wird ein Block bestimmt, dem
@@ -383,9 +395,9 @@
           </variablelist></para>
 
         <para>Nachdem die vorgegebenen Felder ausgefüllt wurden, ist die
-        Erstellung der Vorlage mit <guimenuitem>submit</guimenuitem>
-        (<glossterm>einreichen</glossterm>) zu bestätigen. Danach ist die neue
-        Vorlage für das Theme verfügbar.</para>
+        Erstellung der Vorlage mit <guimenuitem>bestätigen</guimenuitem>
+        abzuschicken. Danach ist die neue Vorlage für das Theme
+        verfügbar.</para>
 
         <screenshot>
           <mediaobject>
@@ -411,8 +423,8 @@
 
         <para>In diesem Menü werden die Themen-, Modul- und Block-Templates
         angezeigt, die bereits festgelegt worden sind. Mittels des
-        <guimenu>EDIT</guimenu>-Links, der ein Bearbeitungsfenster öffnet,
-        kann ein Template bearbeitet werden</para>
+        <guimenu>EDITIEREN</guimenu>-Links, der ein Bearbeitungsfenster
+        öffnet, kann ein Template bearbeitet werden</para>
 
         <caution>
           <para>Immer wenn die Templates neugeladen werden (reload templates),
@@ -459,7 +471,7 @@
       </section>
 
       <section id="Xanthia.User.ThemeColors">
-        <title>Theme-Farben (theme colors)</title>
+        <title>Theme-Farben</title>
 
         <para>Die Farben eines Xanthia-Themes werden durch die
         <emphasis>colour palette</emphasis> (Farbpalette) in der
@@ -472,12 +484,12 @@
         Von den Standard-Themes, die im Grundpaket von Xanthia enthalten sind,
         unterstützt allein pnDefault die dynamic stylesheets.</para>
 
-        <para>Ein Farbschema (colour scheme) wird durch den Link
-        <guimenuitem>Use Palette</guimenuitem> aktiviert.</para>
+        <para>Ein Farbschema wird durch den Link <guimenuitem>Use
+        Palette</guimenuitem> aktiviert.</para>
 
         <para>Die Farben einer Palette werden durch den
-        <guimenuitem>Configure</guimenuitem>-Link verändert. Dieser Link ruft
-        einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
+        <guimenuitem>konfigurieren</guimenuitem>-Link verändert. Dieser Link
+        ruft einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
         Farbbereich des Themes, der verändert werden soll, wird mit den
         Auswahlknöpfen am oberen Rand des Editors (color1, color2) festgelegt.
         Ist dies geschehen, kann die neue Farbe mit der Maus in der
@@ -488,14 +500,14 @@
 
         <para>Ist die Auswahl der Farben abgeschlossen, werden die neuen
         Einstellungen durch den ebenfalls am unteren Bildschirmrand zu
-        findenden Link <guimenuitem>submit these colors</guimenuitem>
+        findenden Link <guimenuitem>Submit these colors</guimenuitem>
         gespeichert.</para>
 
         <para>Es ist möglich, eigene Farbpaletten für Themes zu erstellen.
-        Durch den Link <guimenuitem>Add Theme Colour Palette</guimenuitem>
-        wird der bereits bekannte visuelle Editor aufgerufen - allerdings mit
-        dem Unterschied, dass beim Erstellen einer neuen Palette zunächst
-        keine Farbzuweisungen vorhanden sind.</para>
+        Durch den Link <guimenuitem>Neue Theme Farbpalette
+        hinzufügen</guimenuitem> wird der bereits bekannte visuelle Editor
+        aufgerufen - allerdings mit dem Unterschied, dass beim Erstellen einer
+        neuen Palette zunächst keine Farbzuweisungen vorhanden sind.</para>
 
         <screenshot>
           <mediaobject>
@@ -505,24 +517,25 @@
 
             <textobject>
               <phrase>Xanthias <guimenuitem>Theme Farben</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
-              <para>Xanthias <guimenuitem>Theme Farben</guimenuitem> (theme
-              colors) Bildschirm</para>
+              <para>Xanthias <guimenuitem>Theme Farben</guimenuitem>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
       </section>
 
       <section id="Xanthia.User.ThemeSettings">
-        <title>Theme-Einstellungen (theme settings)</title>
+        <title>Theme-Einstellungen</title>
 
-        <para><emphasis>Theme-Variablen</emphasis> (theme variables) sind an
-        ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden von der
-        Theme-Engine gespeichert und können vom Administrator der Seite über
-        das Administrationsmenü von Xanthia aktualisiert werden.</para>
+        <para><emphasis>Theme-Variablen</emphasis> (Allgemeine Einstellungen)
+        sind an ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden
+        von der Theme-Engine gespeichert und können vom Administrator der
+        Seite über das Administrationsmenü von Xanthia aktualisiert
+        werden.</para>
 
         <para>Die Einsatzmöglichkeiten dieser Variablen sind vielschichtig und
         variieren von Theme zu Theme. Beispiele dieser Variablen sind die
@@ -543,15 +556,15 @@
             </textobject>
 
             <caption>
-              <para>Xanthias <guimenuitem>Theme Einstellungen (theme
-              settings)</guimenuitem> Bildschirm</para>
+              <para>Xanthias <guimenuitem>Theme Einstellungen
+              </guimenuitem>Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
       </section>
 
       <section id="Xanthia.User.BlockControl">
-        <title>Block-Kontrolle (block control)</title>
+        <title>Block-Kontrolle</title>
 
         <para>Xanthia ermöglicht es, Blöcke in Abhängigkeit von Modulen
         darzustellen. Jedem Modul können somit verschiedene Blöcke zugewiesen
@@ -577,20 +590,20 @@
             Themes definieren. Danach übernimmt die Theme Engine die Kontrolle
             über die Platzierung der Blöcke.</para>
 
-            <para><remark>Further integration is needed here to effectively
-            present the value and usage of the block postion. But this is
-            diifficult to achieve while keeping the modualrity of the theming
-            system</remark></para>
+            <para><remark>Diese Werte sind für spätere Integrationen hier
+            erforderlich, um effektiv die Block-Position zu repräsentieren.
+            Aber das ist derzeit noch nicht möglich ohne die Modularität des
+            Theme-Systems aufzugeben</remark></para>
           </note>
         </sidebar>
 
         <para>Um einen Block zu einem Modul hinzuzufügen, müssen das Modul,
         dem der Block zugeordnet werden soll und der zuzuordnende Block aus
         den beiden Listenfeldern ausgewählt werden. Durch den Link
-        <guimenuitem>add</guimenuitem> wird der Block dann zugewiesen. Es ist
+        <guimenuitem>Add</guimenuitem> wird der Block dann zugewiesen. Es ist
         möglich, einem Modul gleichzeitig mehrere Blöcke zuzuordnen. Natürlich
         kann man Blöcke auch jederzeit wieder entfernen. Dazu dient der Link
-        <guimenuitem>remove</guimenuitem> in der Reihe des Blocks, der
+        <guimenuitem>entfernen</guimenuitem> in der Reihe des Blocks, der
         gelöscht werden soll. Die Zuordnung des Blocks zu den restlichen
         Modulen ist davon nicht betroffen, das Entfernen eines Blocks gilt
         also jeweils nur für das ausgewählte Modul.</para>
@@ -631,18 +644,18 @@
   </section>
 
   <section id="Xanthia.User.CommonTasks">
-    <title>Common Tasks for Xanthia themes</title>
+    <title>Allgemeine Aufgaben für Xanthia Themen</title>
 
     <warning>
       <para>Ein Theme, das man entwickelt, sollte niemals im aktivierten
       Zustand bearbeitet werden! Um die Veränderungen nachzuvollziehen, sollte
-      auf die Option <guimenuitem>theme preview</guimenuitem>
+      auf die Option <guimenuitem>Theme anzeigen</guimenuitem>
       (<command>index.php?theme=<replaceable>yourtheme</replaceable></command>)
       zurückgegriffen werden.</para>
     </warning>
 
     <section id="Xanthia.User.ModuleTemplates">
-      <title>Custom Module Templates</title>
+      <title>Benutzerdefinierte Modul-Templates</title>
 
       <para>Xanthia ermöglicht es der Seite unterschiedliche, modulbasierte
       Templates zuzuweisen. In Abhängigkeit vom aktiven Modul, kann die Seite
@@ -656,9 +669,9 @@
 
           <guisubmenu>Xanthia</guisubmenu>
 
-          <guisubmenu>View Themes</guisubmenu>
+          <guisubmenu>Themes anzeigen</guisubmenu>
 
-          <guimenuitem>Edit Theme</guimenuitem>
+          <guimenuitem>Theme editieren</guimenuitem>
         </menuchoice>.</para>
 
       <procedure>
@@ -668,7 +681,7 @@
           <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
-              <guimenuitem>New Module Template</guimenuitem>
+              <guimenuitem>Neues Modul Template</guimenuitem>
             </menuchoice> aus und erstelle ein neues Template für das Modul
           (siehe auch <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
           Obwohl der Name für das Template frei bestimmt werden kann,
@@ -683,9 +696,9 @@
           <title>Eine neue Theme Zone hinzufügen</title>
 
           <para>Wähle <menuchoice>
-              <guimenu>Theme Zones</guimenu>
+              <guimenu>Theme Zonen</guimenu>
 
-              <guimenuitem>Add New Zone</guimenuitem>
+              <guimenuitem>Neue Zone hinzufügen</guimenuitem>
             </menuchoice> aus und fülle die vorgegebenen Felder (gemäß den
           Beschreibungen) aus ...</para>
 
@@ -708,7 +721,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New master for module</term>
+              <term>Neues Master für Modul</term>
 
               <listitem>
                 <para>Hier ist das Modul auszuwählen, dem ein neues Template
@@ -717,7 +730,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New skin for block</term>
+              <term>Neuer Skin für Block</term>
 
               <listitem>
                 <para>Hier sollte nichts verändert werden..</para>
@@ -735,12 +748,12 @@
           muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
           aktiviert werden kann.</para>
 
-          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
-          drop down-Liste mit Modul Templates (sollten in der Liste auch Block
-          Templates erscheinen bedeutet dies, dass im vorherigen Menu "New
-          Skin for Block" entgegen der Beschreibung verändert wurde). Wähle
-          nun aus der Liste das Template aus, das dem Modul zugeordnet werden
-          soll und bestätige die Änderungen.</para>
+          <para>Wähle <guimenuitem>konfigurieren</guimenuitem>. Man erhält
+          eine drop down-Liste mit Modul Templates (sollten in der Liste auch
+          Block Templates erscheinen bedeutet dies, dass im vorherigen Menu
+          "Neuer Skin für Block" entgegen der Beschreibung verändert wurde).
+          Wähle nun aus der Liste das Template aus, das dem Modul zugeordnet
+          werden soll und bestätige die Änderungen.</para>
         </step>
 
         <step>
@@ -755,7 +768,7 @@
         <step>
           <title>Die Veränderungen testen</title>
 
-          <para>Rufe nun das Modul auf, fdem das soeben erstellte Template
+          <para>Rufe nun das Modul auf, dem das soeben erstellte Template
           zugewiesen wurde. Die Seite sollte nun das neue Design für das Modul
           verwenden.</para>
         </step>
@@ -763,7 +776,7 @@
     </section>
 
     <section id="Xanthia.User.CommonTasks.BlockTemplates">
-      <title>Custom Block Templates</title>
+      <title>Benutzerdefinierte Block-Templates</title>
 
       <para>Neben der Möglichkeit mit Hilfe von Xanthia Modul-Templates zu
       erstellen, kann man auch jedem einzelnen Block ein eigenes Template
@@ -778,9 +791,9 @@
 
           <guisubmenu>Xanthia</guisubmenu>
 
-          <guisubmenu>View Themes</guisubmenu>
+          <guisubmenu>Themes anzeigen</guisubmenu>
 
-          <guimenuitem>Edit Theme</guimenuitem>
+          <guimenuitem>Theme editieren</guimenuitem>
         </menuchoice>.</para>
 
       <procedure>
@@ -790,7 +803,7 @@
           <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
-              <guimenuitem>New Block Template</guimenuitem>
+              <guimenuitem>Neues Block Template</guimenuitem>
             </menuchoice> an und erstelle ein neues Template für den Block
           (siehe <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
           Obwohl der Name frei vergeben werden kann, empfiehlt es sich den
@@ -828,7 +841,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New master for module</term>
+              <term>Neuer Master für Modul</term>
 
               <listitem>
                 <para>Sollte nicht verändert werden!</para>
@@ -836,7 +849,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>New skin for block</term>
+              <term>Neuer Skin für Block</term>
 
               <listitem>
                 <para>Hier wird der Block ausgewählt, für den man das Template
@@ -855,7 +868,7 @@
           muss die Zone konfiguriert werden, bevor sie im nächsten Schritt
           aktiviert werden kann.</para>
 
-          <para>Wähle <guimenuitem>Configure</guimenuitem>. Man erhält eine
+          <para>Wähle <guimenuitem>konfigure</guimenuitem>. Man erhält eine
           drop down-Liste mit Block Templates. Wähle das zu verwendende
           Template aus der Liste aus und bestätige die Eingabe.</para>
         </step>
@@ -888,25 +901,23 @@
       werden. Rufe dazu folgendes Menü auf: <menuchoice>
           <guimenu>Xanthia</guimenu>
 
-          <guimenuitem>Configure Xanthia</guimenuitem>
+          <guimenuitem>Xanthia konfigurieren</guimenuitem>
         </menuchoice>.</para>
 
       <para>Wähle nun das Modul aus, bei dem die Veränderung des Designs eines
       Blocks vorgenommen werden soll. Mittels des entsprechenden Icons kann
       das Fenster des Visual Block Editor geöffnet werden. Wähle das Template
       aus der drop down-Liste und bestätige die Auswahl mit
-      <guimenuitem>submit</guimenuitem>. Dieser Block muss in den
-      vorangegangen Schritten natürlich bereits bestimmt worden sein. (I will
-      be adding the ability to Xanthia later to allow this to work even if you
-      have not set the block in the above steps.)</para>
+      <guimenuitem>übertragen</guimenuitem>. Dieser Block muss in den
+      vorangegangen Schritten natürlich bereits bestimmt worden sein.</para>
 
       <para>Das Template eines Blocks kann auch über das Menü
       <guimenuitem>Block Control</guimenuitem> verändert werden: <menuchoice>
           <guimenu>Xanthia</guimenu>
 
-          <guisubmenu>View Themes</guisubmenu>
+          <guisubmenu>Themes anzeigen</guisubmenu>
 
-          <guisubmenu>Edit Theme</guisubmenu>
+          <guisubmenu>Theme editieren</guisubmenu>
 
           <guimenuitem>Block Control</guimenuitem>
         </menuchoice><remark> This needs review, as I can't find it in Block
@@ -926,9 +937,9 @@
 
               <guisubmenu>Xanthia</guisubmenu>
 
-              <guisubmenu>View Themes</guisubmenu>
+              <guisubmenu>Themes anzeigen</guisubmenu>
 
-              <guisubmenu>Edit Theme</guisubmenu>
+              <guisubmenu>Theme editieren</guisubmenu>
 
               <guimenuitem>Block Zones</guimenuitem>
             </menuchoice></para>
@@ -942,7 +953,7 @@
 
           <variablelist>
             <varlistentry>
-              <term>zone description</term>
+              <term>Zonen Beschreibung</term>
 
               <listitem>
                 <para>Hier kann ein beliebiger (eindeutiger) Name verwendet
@@ -951,7 +962,7 @@
             </varlistentry>
 
             <varlistentry>
-              <term>tag to use in theme</term>
+              <term>in Theme zu verwendendes Tag</term>
 
               <listitem>
                 <para>Mit diesem tag kann der Block in das Theme eingebunden
@@ -962,7 +973,7 @@
           </variablelist>
 
           <para>Bestätige die Eingaben mit
-          <guimenuitem>submit</guimenuitem>.</para>
+          <guimenuitem>übertragen</guimenuitem>.</para>
         </step>
 
         <step>
@@ -985,56 +996,53 @@
       <section id="Xanthia.User.CommonTasks.ShortURLs.How">
         <title>Wie funktioniert es?</title>
 
-        <para>Short URLs works by taking the generated output and replacing
-        each url found in this output with a given shorter url based on some
-        simple pattern matching rules. The output provided to the browser now
-        contains these shortend URLs. This is half the job done. The web
-        server now need to translate these shortend URLs back into full urls
-        used by the postnuke engine. This job is done by the rewrite engine.
-        For apache a .htaccess file is placed in the PostNuke root. The
-        .htaccess contains a mirror image of the patterns used earlier in the
-        process.</para>
+        <para>Short URLs funktioniert dergestalt das die generierten "langen"
+        und mit Variablen gebildeten URL's durch eine einfache, "kurze"
+        (short) und für Suchmaschinen verfolgbare URL's ersetzt werden. Der
+        Browser unterstützt nunmehr diese "kurzen" URL's . Damit ist aber nur
+        die erste Hälfte des Jobs getan. Der Webserver setzt diese Short URLs
+        wieder in die die notwendigen URLs für die PostNuke-Engine um. Dies
+        erledigt die Rewrite Engine. Für den Apache Webserver wird die
+        .htaccess-Datei im PostNuke root - Verzeichnis abgelegt. Die
+        .htaccess-Datei enthält ein Abbild des Regelwerkes, welches für die
+        Umschreibung (Rewrite) notwendig ist.</para>
 
-        <para>Rules are provided for a number of common modules e.g My
-        eGallery, pnPHPBB2 etc. as well as general rules for all other
-        modules. In addtion a number of url extension schemes are provided to
-        suit the preferences of the site administrator.</para>
+        <para>Diese Regeln unterstützen viele der der allgemeinen Module, wie
+        z.B. My eGallery, pnPHPBB2 etc., genauso wie allgemeine Regeln für
+        alle anderen Module. Außerdem werden einige URL-Erweiterungen
+        unterstützt die von dem jeweiligen Administrator bevorzugt
+        werden.</para>
 
-        <para>The specific implementation in Xanthia differs from other
-        implementations by making full use of the smarty templating
-        architecture on which XTE is built. Smarty provides a fearture called
-        outputfilters. Output filters act on the templated output when it is
-        executed. This filter type is ideal for the implementation of short
-        urls and as such short urls are a smarty output filter in XTE.</para>
+        <para>Die Xanthia spezifische Implementierung unterscheidet sich von
+        anderen Implementierungen durch die vollständige Nutzung der Smarty
+        Templating Architecture. Smarty unterstützte Output filters. Output
+        filters arbeiten auf der Basis des durch Templates zum
+        Ausführungszeitpunkt generierten Outputs. Dieser Filtertyp ist ideal
+        für die Implementierung von Short URLs.</para>
       </section>
 
       <section id="Xanthia.User.CommonTasks.ShortURLs.Implementing">
         <title>Implementing Short URLs</title>
 
-        <para>Firstly ensure that your web server has a rewrite engine
-        available. If using a rewrite engine other than apaches mod_rewrite
-        then the rewrite engines script file will need to be built. If using
-        apaches mod_rewrite then place the <filename>.htaccess</filename> file
-        for the chosen naming scheme into the PostNuke root. These files can
-        be found in <filename>modules/Xanthia/pndocs/short_urls</filename>.
-        Pick the <filename>.htaccess</filename> file for your chosen extension
-        and place this in the PostNuke root directory.</para>
+        <para>Zunächst ist festzustellen, ob auf dem Webserver die Rewrite
+        Engine verfügbar ist. Wenn eine andere Rewrite Engine als Apaches
+        mod_rewrite benutzt wird, dann ist eine Rewrite Engines Script - Datei
+        zu schreiben . Nutzt man Apaches mod_rewrite dann ist die
+        <filename>dem gewünschten Namenschema folgende .htaccess</filename> -
+        Datei in das PostNuke root - Verzeichnis zu kopieren. Diese Dateien
+        findet man in dem Verzeichnis
+        <filename>modules/Xanthia/pndocs/short_urls</filename>. Hier wird die
+        <filename>.htaccess</filename> - Datei für die gewünschte
+        Dateierweiterung ausgewählt und in das PostNuke root - Verzeichnis
+        kopiert.</para>
 
-        <para>Under Xanthia\pndocs\short_urls p Short urls will now work if
-        typed into the browser so you can test at this point prior to getting
-        PN to generate short urls. Now go into the xanthia admin panel and
-        you'll have the option to configure shorts urls. Adding your chosen
-        extension and enabled short urls.</para>
+        <para>Nunmehr können über die Administration (Xanthia/Xanthia
+        konfigurieren) die Short URLs konfiguriert werden. Die gewünschte
+        Dateierweiterung ist anzugeben die Short URLs zu aktivieren.</para>
 
-        <para>Next test the rewrite engine is functioning by visiting
-        http:///yoursiteurl/user.html (or your chosen extension). If the
-        rewrite engine is functioning then you will, in effect, be going to
-        user.php.</para>
-
-        <para>If the rewrite engine is functoning correctly then go to the
-        Xanthia admin panel (administration-&gt;Xanthia). Select the configure
-        Xanthia option and then enter your chosen extension and then enable
-        the short urls option.</para>
+        <para>Durch http:///yoursiteurl/user.html (oder die gewählte
+        Dateierweiterung) kann die Rewrite Engine getestet werden. Wenn Sie
+        funktioniert wird man zur user.php weitergeleitet.</para>
       </section>
     </section>
   </section>
@@ -1104,9 +1112,9 @@
 
                 <guisubmenu>Xanthia</guisubmenu>
 
-                <guisubmenu>View Themes</guisubmenu>
+                <guisubmenu>Themes anzeigen</guisubmenu>
 
-                <guisubmenu>Edit Theme</guisubmenu>
+                <guisubmenu>Theme editieren</guisubmenu>
 
                 <guimenuitem>Block Control</guimenuitem>
               </menuchoice> und lösche die Blöcke aus der Liste des Moduls,
@@ -1161,11 +1169,11 @@
 
                 <guisubmenu>Xanthia</guisubmenu>
 
-                <guisubmenu>View Themes</guisubmenu>
+                <guisubmenu>Themes anzeigen</guisubmenu>
 
-                <guisubmenu>Edit Theme</guisubmenu>
+                <guisubmenu>Theme editieren</guisubmenu>
 
-                <guimenuitem>Theme Settings</guimenuitem>
+                <guimenuitem>Theme Einstellungen</guimenuitem>
               </menuchoice> siehst du eine Option "<guimenuitem>Show right
             blocks in news module (only for .7x)"</guimenuitem>. Diese Option
             schaltet die rechten Blöcke im News - Modul an und aus.</para>
@@ -1205,11 +1213,11 @@
 
                 <guisubmenu>Xanthia</guisubmenu>
 
-                <guisubmenu>View Themes</guisubmenu>
+                <guisubmenu>Themes anzeigen</guisubmenu>
 
-                <guisubmenu>Edit Theme</guisubmenu>
+                <guisubmenu>Theme editieren</guisubmenu>
 
-                <guimenuitem>Theme Settings</guimenuitem>
+                <guimenuitem>Theme Einstellungen</guimenuitem>
               </menuchoice> nach der <guimenuitem>indexcol</guimenuitem> theme
             setting. Diese stellt die Anzahl der Spalten ein.</para>
           </answer>
