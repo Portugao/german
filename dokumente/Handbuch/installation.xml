@@ -1133,6 +1133,13 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     verzichten, oder ähnliche Module zu suchen, die den gleichen Zweck
     erfüllen.</para>
 
+    <warning>
+      <para>Manchmal trifft man auf Module, die PostNuke-Tabellen durch das
+      Hinzufügen von Feldern o.ä. verändern. Sollte ein solches Modul im
+      Einsatz sein, kann keine Garantie gegeben werden, dass ein Upgrade
+      funktioniert.</para>
+    </warning>
+
     <section>
       <title>Das Upgrade von älteren PostNuke-Versionen</title>
 
