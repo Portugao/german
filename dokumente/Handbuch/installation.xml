@@ -67,6 +67,8 @@
         <varlistentry>
           <term>Datenbank<indexterm>
               <primary>Datenbank</primary>
+            </indexterm><indexterm>
+              <primary>MySQL</primary>
             </indexterm></term>
 
           <listitem>
@@ -77,6 +79,22 @@
             ältere Module von Drittentwicklern noch nicht komplett auf ADOdb
             umgestellt sind. MySQL ist aber die Datenbank, die von den meisten
             Providern ohnehin eingesetzt wird.</para>
+
+            <note>
+              <title>Ist es möglich, PostNuke auch mit einem anderen
+              Datenbanksystem als MySQL zu installieren?</title>
+
+              <para>Prinzipiell sollte es schon funktionieren, via
+              ADOdb<indexterm>
+                  <primary>ADOdb</primary>
+                </indexterm> auch andere Datenbanken zu nutzen (das pnForum
+              läuft beispielsweise auch in einer Oracle-Installation).
+              Eventuell hat das jeweilige Datenbanksystem aber spezielle
+              Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B.
+              keine LEFT JOINS in Oracle). Generell gilt die
+              Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
+              ADOdb-konform ausgeführt sind.</para>
+            </note>
           </listitem>
         </varlistentry>
 
@@ -580,6 +598,15 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         class="systemname">http://www.example.com/install.php</systemitem>.<indexterm>
             <primary>install.php</primary>
           </indexterm></para>
+
+        <warning>
+          <para>Erhält man den Fehler <computeroutput>Warning: Failed opening
+          '/....../install.php' for inclusion
+          (include_path='.:/usr/share/php') in Unknown on line
+          0</computeroutput>, so haben die Dateien hat die falschen
+          Benutzerrechte. Die Berechtigungen müssen so gesetzt sein, dass der
+          Webserver alle Dateien lesen kann.</para>
+        </warning>
       </step>
 
       <step>
@@ -598,13 +625,25 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </step>
 
       <step>
+        <para>PostNuke ist unter der Gnu General Public License lizensiert.
+        Diese Lizenzvereinbarung ist im nächsten Schritt zu
+        akzeptieren.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata align="center" fileref="install02.gif" format="GIF" />
+          </imageobject>
+        </mediaobject>
+      </step>
+
+      <step>
         <para>Nach dem Akzeptieren der Lizenz folgt eine Überprüfung der
         Zugriffsrechte. Sollte PostNuke dabei auffallen, dass etwas nicht
         stimmt, gibt es Hinweise. Wenn alles passt, sieht es so aus:</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install02.gif" format="GIF" />
+            <imagedata align="center" fileref="install03.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
@@ -779,7 +818,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install03.gif" format="GIF" />
+            <imagedata align="center" fileref="install04.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
@@ -793,7 +832,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install04.gif" format="GIF" />
+            <imagedata align="center" fileref="install05.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
@@ -816,7 +855,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install05.gif" format="GIF" />
+            <imagedata align="center" fileref="install06.gif" format="GIF" />
           </imageobject>
         </mediaobject>
 
@@ -833,7 +872,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install06.gif" format="GIF" />
+            <imagedata align="center" fileref="install07.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
@@ -929,19 +968,30 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install07.gif" format="GIF" />
+            <imagedata align="center" fileref="install08.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
 
       <step>
-        <para>Jetzt werden noch die entsprechenden Nutzer-Tabellen angelegt,
-        die Credits gezeigt und dann ist die Installation auch schon
-        abgeschlossen.</para>
+        <para>Jetzt werden noch die entsprechenden Nutzer-Tabellen
+        angelegt.</para>
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install08.gif" format="GIF" />
+            <imagedata align="center" fileref="install09.gif" format="GIF" />
+          </imageobject>
+        </mediaobject>
+      </step>
+
+      <step>
+        <para>Nachdem nun noch die Credits angezeigtwerden, ist die
+        Installation auch schon abgeschlossen. Unten im Bild gibt es einen
+        Link zur neu eingerichteten Seite.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata align="center" fileref="install10.gif" format="GIF" />
           </imageobject>
         </mediaobject>
       </step>
@@ -954,7 +1004,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
 
         <mediaobject>
           <imageobject>
-            <imagedata align="center" fileref="install09.gif" format="GIF" />
+            <imagedata align="center" fileref="install11.gif" format="GIF" />
           </imageobject>
         </mediaobject>
 
@@ -1028,6 +1078,12 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         <para>Seit Version .750 ist es nicht mehr möglich, die Administration
         aufzurufen, solange die Installationsdateien noch vorhanden
         sind.</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata align="center" fileref="install12.gif" format="GIF" />
+          </imageobject>
+        </mediaobject>
       </step>
     </procedure>
   </section>
@@ -1297,35 +1353,43 @@ $pnconfig['temp'] = 'pnTemp';</programlisting>
       geachtet werden: Nicht mit der Version der lokalen Installation
       überschreiben!</para>
     </section>
+
+    <section>
+      <title>Kann ich meine Site einfach in anderes Verzeichnis
+      verschieben?</title>
+
+      <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in
+      der Datenbank sollte es keine Probleme geben. Die kann man aber einfach
+      in einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann
+      den Dump zurückspielen.</para>
+    </section>
   </section>
 
-  <section id="installfaq">
-    <title>FAQ - Fragen &amp; Antworten</title>
-
-    <para>In diesem Abschnitt werden einige der häufigsten Fragen bei der
-    Installation geklärt:</para>
-
-    <bridgehead>Was sind meine Verbindungsdaten in der config.php?<indexterm>
+  <section id="configphp">
+    <title>Was sind die Daten in der
+    <filename>config.php</filename>?<indexterm>
         <primary><filename>config.php</filename></primary>
       </indexterm><indexterm>
         <primary>Verbindungsdaten</primary>
-      </indexterm></bridgehead>
+      </indexterm></title>
 
-    <para>Normalerweise wird die config.php bei der Installation automatisch
-    erzeugt und muss nicht manuell bearbeitet werden. Sollte dies trotzdem
-    einmal notwendig sein, sollten folgende Angaben ausgefüllt werden:</para>
+    <para>Normalerweise wird die <filename>config.php</filename> bei der
+    Installation automatisch erzeugt und muss nicht manuell bearbeitet werden.
+    Sollte dies trotzdem einmal notwendig sein, sollten folgende Angaben
+    ausgefüllt werden:</para>
 
-    <programlisting>$pnconfig['dbtype'] = 'mysql'; <co id="configphp.dbtype" />
-$pnconfig['dbtabletype'] = 'myisam'; <co id="configphp.dbtabletype" />
-$pnconfig['dbhost'] = 'localhost'; <co id="configphp.dbhost" />
-$pnconfig['dbuname'] = 'cm9vdA=='; <co id="configphp.dbuname" />
-$pnconfig['dbpass'] = ''; <co id="configphp.dbpass" />
-$pnconfig['dbname'] = 'Phoenix'; <co id="configphp.dbname" />
-$pnconfig['system'] = '0'; <co id="configphp.system" />
-$pnconfig['prefix'] = 'nuke'; <co id="configphp.prefix" />
-$pnconfig['encoded'] = '1'; <co id="configphp.encoded" />
-$pnconfig['pconnect'] = '0'; <co id="configphp.pconnect" />
-$pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
+    <programlisting>$pnconfig['dbtype']      = 'mysql'; <co
+        id="configphp.dbtype" /> 
+$pnconfig['dbtabletype'] = 'myisam'; <co id="configphp.dbtabletype" /> 
+$pnconfig['dbhost']      = 'database.example.com'; <co id="configphp.dbhost" /> 
+$pnconfig['dbuname']     = 'ZGF0YWJhc2VfdXNlcg=='; <co id="configphp.dbuname" /> 
+$pnconfig['dbpass']      = 'MTIzNDU2'; <co id="configphp.dbpass" /> 
+$pnconfig['dbname']      = 'postnuke'; <co id="configphp.dbname" /> 
+$pnconfig['system']      = '0'; <co id="configphp.system" /> 
+$pnconfig['prefix']      = 'pn'; <co id="configphp.prefix" /> 
+$pnconfig['encoded']     = '1'; <co id="configphp.encoded" /> 
+$pnconfig['pconnect']    = '0'; <co id="configphp.pconnect" /> 
+$pnconfig['temp']        = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
 
     <calloutlist>
       <callout arearefs="configphp.dbtype">
@@ -1361,8 +1425,8 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       </callout>
 
       <callout arearefs="configphp.encoded">
-        <para>0 für unkodierten, 1 für kodierten Benutzernamen/-passwort. Die
-        Daten sind Base_64 kodiert - um manuell eine
+        <para>0 für unkodierten, 1 für kodierten Benutzernamen und -passwort.
+        Die Daten sind Base_64 kodiert - um manuell eine
         Benutzername/Passwort-Kombination von Klartext in Base_64 zu wandeln,
         kann man sich mit dem PostNuke Swiss Army Knife Tool behelfen.</para>
       </callout>
@@ -1379,37 +1443,30 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       </callout>
     </calloutlist>
 
-    <bridgehead>Ist es möglich, PostNuke auch mit einem anderen
-    Datenbanksystem als MySQL zu installieren?<indexterm>
-        <primary>MySQL</primary>
-      </indexterm><indexterm>
-        <primary>Datenbank</primary>
-      </indexterm></bridgehead>
+    <para>Neben diesen Verbindungsangaben findet man in der
+    <filename>config.php</filename> noch drei weitere Werte, die zur
+    Fehlersuche gedacht sind. Im Normalfall sollten alle dieser Werte auf 0
+    gesetzt werden. </para>
 
-    <para>Prinzipiell sollte es schon funktionieren, via ADOdb<indexterm>
-        <primary>ADOdb</primary>
-      </indexterm> auch andere Datenbanken zu nutzen (das pnForum läuft
-    beispielsweise auch in einer Oracle-Installation). Eventuell hat das
-    jeweilige Datenbanksystem aber spezielle Eigenarten, die zusätzlich
-    berücksichtigt werden müssen (z.B. keine LEFT JOINS in Oracle). Generell
-    gilt die Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
-    ADOdb-konform ausgeführt sind.</para>
+    <programlisting>$pndebug['debug']          = 0; <co id="configphp.debug" /> 
+$pndebug['debug_sql']      = 0; <co id="configphp.debugsql" /> 
+$pndebug['pagerendertime'] = 0; <co id="configphp.pagerendertime" /></programlisting>
 
-    <bridgehead>Kann ich meine Site einfach in anderes Verzeichnis
-    verschieben?</bridgehead>
+    <calloutlist>
+      <callout arearefs="configphp.debug">
+        <para>Gibt an, ob das Debugger-Fenster aktiv ist</para>
+      </callout>
 
-    <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in der
-    Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach in
-    einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann den
-    Dump zurückspielen.</para>
+      <callout arearefs="configphp.debugsql">
+        <para>Gibt an, ob im Debuggerfenster auch die SQL-Befehle angezeigt
+        werden</para>
+      </callout>
 
-    <bridgehead>Folgender Fehler tritt bei der Installation auf: Warning:
-    Failed opening '/....../install.php' for inclusion
-    (include_path='.:/usr/share/php') in Unknown on line 0</bridgehead>
-
-    <para>Die Dateien hat noch die falschen Benutzerrechte mit dem
-    Linux-Befehl <command>chown</command> sollte man dem Webserver alle
-    Dateien überlassen.</para>
+      <callout arearefs="configphp.pagerendertime">
+        <para>Gibt an, ob in der Fußzeile die Zeit angezeigt wird, die zur
+        Erstellung der Seite benötigt wurde.</para>
+      </callout>
+    </calloutlist>
   </section>
 
   <section id="pntemp">
