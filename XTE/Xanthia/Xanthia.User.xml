@@ -224,7 +224,7 @@
       Verzeichnis /themes kopiert. Ruft man nun die Xanthia Theme
       Administration (<guimenuitem>View Themes</guimenuitem>) auf, so
       erscheint eine Tabelle mit allen verfügbaren Xanthia-Themes. "Normale"
-      Themes werden hier nicht aufgeführt. </para>
+      Themes werden hier nicht aufgeführt.</para>
 
       <para>Mit "<guimenuitem>add Theme</guimenuitem>" kann das neue Theme
       hinzugefügt werden. Das Theme wird nun als aktiv angezeigt und kann in
@@ -237,12 +237,12 @@
           </imageobject>
 
           <textobject>
-            <phrase>The "<guimenuitem>View Themes</guimenuitem>" Screen in
+            <phrase>The "<guimenuitem>View Themes</guimenuitem>" Bildschirm in
             Xanthia</phrase>
           </textobject>
 
           <caption>
-            <para>The "<guimenuitem>View Themes</guimenuitem>" Screen in
+            <para>The "<guimenuitem>View Themes</guimenuitem>" Bildschirm in
             Xanthia</para>
           </caption>
         </mediaobject>
@@ -301,46 +301,52 @@
 
             <textobject>
               <phrase>Xanthia's <guimenuitem>Block Zones</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
               <para>Xanthia's <guimenuitem>Block Zones</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
       </section>
 
       <section id="Xanthia.User.ThemeZones">
-        <title><guimenuitem>Theme Zones</guimenuitem></title>
+        <title><guimenuitem>Theme Zones </guimenuitem></title>
 
-        <para>Theme zones define the <emphasis>areas that are used to
-        construct the theme</emphasis>. Each different zone implements a
-        different part of the theme and has an assoicated template that is
-        used to display that zone.</para>
+        <para><glossterm>Theme-Zonen</glossterm> stellen die einzelnen
+        Bereiche eines Themes dar, aus denen es zusammengesetzt ist. Jeder
+        einzelnen Zone ist ein eigenes <glossterm>Template</glossterm>
+        (Vorlage) zugeordnet, das für die Darstellung dieser Zone verwendet
+        wird.</para>
 
-        <para>There are some <emphasis>required</emphasis> Theme zones which
-        cannot be removed, others are <emphasis>Addon</emphasis> Theme Zones
-        and can be deactivated or removed. You can assign a template to a zone
-        using the <guimenuitem>configure</guimenuitem> option.</para>
+        <para>Einige <glossterm>Theme-Zonen</glossterm> sind notwendig und
+        können entsprechend nicht entfernt werden. Andere, zusätzliche und
+        optionale <glossterm>Theme-Zonen</glossterm> (<glossterm>Addon Theme
+        Zones</glossterm>) können hingegen jederzeit deaktiviert und gelöscht
+        werden. Mittels der Auswahl <guimenu>configure</guimenu> können den
+        einzelnen Zonen <glossterm>Templates</glossterm> zugewiesen
+        werden.</para>
 
-        <para>You can as well create new Theme Zones. This way you can provide
-        a different look for different modules.</para>
+        <para>Natürlich können auch neue Theme-Zonen erstellt werden. Auf
+        diesem Weg kann man unterschiedlichen Modulen ein eigenständiges
+        Aussehen zuweisen.</para>
 
-        <para>To create a theme zone, you must first create a template,
-        placing it in the pnTemplates directory of your theme, and then click
-        the <guimenu>Add New Theme Zone</guimenu> link at the top of the theme
-        zones table. This brings up the theme zone form where you must fill in
-        the following fields:</para>
-
-        <para><variablelist>
+        <para>Um eine Theme-Zone zu erstellen, muss zunächst ein Template
+        erstellt werden, das im <glossterm>pnTemplates</glossterm>-Verzeichnis
+        des Themes abgelegt wird. Sodann ist der Link <guimenu>Add New
+        Theme</guimenu> (neues Theme hinzufügen) am oberen Rand des
+        Theme-Zonen Menüs zu wählen. Dadurch erhält man ein Formular, in dem
+        folgende Felder ausgefüllt werden müssen:<variablelist>
             <varlistentry>
               <term>Zone Name</term>
 
               <listitem>
-                <para>This is a unique name you want to use for this Theme
-                Zone it could be a short description if you like.</para>
+                <para>Hier wird der Name für die Theme Zone angegeben. Er kann
+                z.B. als Kurzbeschreibung der Zone dienen. Jede Zone sollte
+                einen eindeutigen und nicht mehrfach verwendeten Namen
+                bekommen.</para>
               </listitem>
             </varlistentry>
 
@@ -348,9 +354,10 @@
               <term>Zone Label</term>
 
               <listitem>
-                <para>When you select a module or a block from the dropdown
-                Zone Label is filled in for you automatically, you should not
-                change this field.</para>
+                <para>Die Zonenbeschreibung (<glossterm>Zone
+                Label</glossterm>) wird auf Grundlage der Auswahl in der
+                dropdown-Liste automatisch erstellt. Die vorgegebene Zuweisung
+                sollte nicht verändert werden.</para>
               </listitem>
             </varlistentry>
 
@@ -358,8 +365,10 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>When creating a module template, choose the module you
-                are creating a new template for.</para>
+                <para>Beim Erstellen der Vorlage für ein Modul
+                (<glossterm>module template</glossterm>) ist zunächst das
+                Modul zu bestimmen, dem die Vorlage zugewiesen werden
+                soll.</para>
               </listitem>
             </varlistentry>
 
@@ -367,12 +376,17 @@
               <term>New skin for block</term>
 
               <listitem>
-                <para>When creating a block template, choose the block you
-                created it for.</para>
+                <para>Unter diesem Auswahlpunkt wird ein Block bestimmt, dem
+                eine neue Block-Vorlage (<glossterm>block
+                template</glossterm>) zugeordnet wird.</para>
               </listitem>
             </varlistentry>
-          </variablelist>Fill in these details and click submit, you will now
-        be able to use this zone in your theme.</para>
+          </variablelist></para>
+
+        <para>Nachdem die vorgegebenen Felder ausgefüllt wurden, ist die
+        Erstellung der Vorlage mit submit (<glossterm>einreichen</glossterm>)
+        zu bestätigen. Danach ist die neue Vorlage für das Theme
+        verfügbar.</para>
 
         <screenshot>
           <mediaobject>
@@ -382,12 +396,12 @@
 
             <textobject>
               <phrase>Xanthia's <guimenuitem>Theme Zones</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
               <para>Xanthia's <guimenuitem>Theme Zones</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
@@ -396,33 +410,35 @@
       <section id="Xanthia.ThemeEditing.ThemeTemplates">
         <title>Theme Templates</title>
 
-        <para>In this menu you see the theme, module and block templates
-        already defined. You can edit a template by clicking on an
-        <guimenuitem>EDIT</guimenuitem> link, which brings you to an editor
-        field. The <guimenuitem>Reload Template</guimenuitem> link will
-        refresh the stored template with the one from the file system. All
-        changes made in the edit screen will get lost this way.</para>
+        <para>In diesem Menü werden die Themen-, Modul- und Block-Templates
+        angezeigt, die bereits festgelegt worden sind. Mittels des
+        <guimenu>EDIT</guimenu>-Links, der ein Bearbeitungsfenster öffnet,
+        kann ein Template bearbeitet werden</para>
 
         <caution>
-          <para>Whenever you reload your templates, all changes made to them
-          are lost. <remark>A future version of Xanthia will have the
-          functionality to compare the timestamp of the files on the server to
-          the one in the database for the template, and if the one on in the
-          file system is newer it will allow a user to update the old template
-          in the DB. If not it will allow the user a choice to overwrite the
-          template in the database with the old one from the server or
-          download the template from the DB and keep a copy of it locally on
-          their development machine.</remark></para>
+          <para>Immer wenn die Templates neugeladen werden (reload templates),
+          gehen alle vorgenommenen Veränderungen verloren. <remark>In
+          zukünftigen Versionen wird es die Möglichkeit geben, die Zeitstempel
+          der Dateien auf dem Server mit denen der Templates in der Datenbank
+          zu vergleichen. Zeigt der Vergleich, dass die Version einer Vorlage
+          im Dateisystem aktueller ist als die in der Datenbank, wird es dem
+          Benutzer möglich sein, die in der Datenbank gespeicherte Version zu
+          aktualisieren. Ergibt der Vergleich, dass die Datenbank-Version der
+          Vorlage hingegen neuer ist, kann diese zwar immer noch überschrieben
+          werden, jedoch erhält man zusätzlich die Möglichkeit, die Vorlage
+          aus der Datenbank auf seinem eigenen, lokalen Rechner zu sichern.
+          </remark></para>
         </caution>
 
-        <para>Most templates will only be effective when assigned to a
-        particular zone and are not interchangable e.g. A block zones template
-        will not function very well if used as a a template for a news article
-        and vice versa.</para>
+        <para>Die meisten Templates funktionieren nur, wenn sie einer
+        bestimmten Zone zugeordnet werden, sind also nicht austauschbar. Eine
+        Block-Zone ist zum Beispiel nicht sehr gut geeignet, um als Vorlage
+        für einen News-Artikel verwendet zu werden. Andersherum ist dies
+        natürlich genauso.</para>
 
-        <para>All themes require a Left Sidebox (or left blocks) template, a
-        Master Zone template, a News-article template, a News-index template,
-        and the OpenTable templates.</para>
+        <para>Alle Themen benötigen ein Template für die linke Seitenbox (Left
+        Sidebox/left blocks), ein Template für die Master-Zone, ein Template
+        für News-Artikel und ein Template für den OpenTable.</para>
 
         <screenshot>
           <mediaobject>
@@ -432,12 +448,12 @@
 
             <textobject>
               <phrase>Xanthia's <guimenuitem>Theme Templates</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
               <para>Xanthia's <guimenuitem>Theme Templates</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
@@ -446,36 +462,41 @@
       <section id="Xanthia.User.ThemeColors">
         <title>Theme Colors</title>
 
-        <para>Each Xanthia theme's colours are defined by a <emphasis>colour
-        palette</emphasis> in this section of the Xanthia administration menu.
-        Palettes allow the theme developer to provide multiple colour sets for
-        a theme.The aim is to use the same layout, but a different colour
-        scheme, thus allowing to vary the look of your theme easily, without
-        having to modify theme files.</para>
+        <para>Die Farben eines Xanthia-Themes werden durch die
+        <emphasis>colour palette</emphasis> (Farbpalette) in der
+        <glossterm>Theme Colours</glossterm>-Auswahl des Administrationsmenüs
+        von Xanthia bestimmt. Mit Hilfe der Paletten ist es dem Designer des
+        Themes möglich, einem Theme verschiedene Farb-Sets zuzuordnen.</para>
 
-        <para>For multiple palettes to be effective in a theme the theme must
-        use dynamic stylesheets. Only one theme shipped in the XTE theme pack
-        implements dynamic stylesheets - pnDefault.</para>
+        <para>Damit mehrere Farbpaletten zugleich verwendet werden können,
+        müssen die <glossterm>dynamic stylesheets</glossterm> aktiviert sein.
+        Von den Standard-Themes, die im Grundpaket von Xanthia enthalten sind,
+        unterstützt allein pnDefault die dynamic stylesheets.</para>
 
-        <para>You can select which color scheme to use by clicking on any
-        <guimenuitem>Use Palette</guimenuitem> link.</para>
+        <para>Ein Farbschema (colour scheme) wird durch den Link
+        <guimenuitem>Use Palette</guimenuitem> aktiviert.</para>
 
-        <para>To change the colors a palette uses, click on a
-        <guimenuitem>Configure</guimenuitem> link. You are presented a visual
-        palette editor. To change a color, first select which part you want to
-        change the color on by clicking the control-button at the top. Then,
-        click on the color you want in the colorcube on right to select a
-        color.</para>
+        <para>Die Farben einer Palette werden durch den
+        <guimenuitem>Configure</guimenuitem>-Link verändert. Dieser Link ruft
+        einen visuellen Editor auf. Dieser funktioniert wie folgt: Der
+        Farbbereich des Themes, der verändert werden soll, wird mit den
+        Auswahlknöpfen am oberen Rand des Editors (color1, color2) festgelegt.
+        Ist dies geschehen, kann die neue Farbe mit der Maus in der
+        Farbpalette ausgewählt werden.</para>
 
-        <para>The name of the current palette can be changed using the filed
-        at the bottom of the screen as well. When you have completed your
-        color selction click the submit these colors at the bottom of the page
-        to save your changes.</para>
+        <para>Durch ein Eingabe-Feld am unteren Bildschirmrand kann die
+        Palette umbenannt werden.</para>
 
-        <para>It is possible to create your own colour palettes for themes;
-        this can be done by using the <guimenuitem>Add Theme Colour
-        Palette</guimenuitem> link. You are taken to the same visual palette
-        editor as before, but this time with an empty palette.</para>
+        <para>Ist die Auswahl der Farben abgeschlossen, werden die neuen
+        Einstellungen durch den ebenfalls am unteren Bildschirmrand zu
+        findenden Link <guimenuitem>submit these colors</guimenuitem>
+        gespeichert.</para>
+
+        <para>Es ist möglich, eigene Farbpaletten für Themes zu erstellen.
+        Durch den Link <guimenuitem>Add Theme Colour Palette</guimenuitem>
+        wird der bereits bekannte visuelle Editor aufgerufen, allerdings mit
+        dem Unterschied, dass beim Erstellen einer neuen Palette zunächst
+        keine Farbzuweisungen vorhanden sind.</para>
 
         <screenshot>
           <mediaobject>
@@ -490,7 +511,7 @@
 
             <caption>
               <para>Xanthia's <guimenuitem>Theme Colors</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
@@ -499,18 +520,17 @@
       <section id="Xanthia.User.ThemeSettings">
         <title>Theme Settings</title>
 
-        <para><emphasis>Theme variables</emphasis> provide a repository for
-        theme specific configuration variables to be stored by the theme
-        engine and updated by the site administrator from the Xanthia admin
-        panel.</para>
+        <para><emphasis>Theme-Variablen</emphasis> (theme variables) sind an
+        ein Theme gebundene Konfigurationsmöglichkeiten. Sie werden von der
+        Theme Engine gespeichert und können vom Administrator der Seite über
+        das Xanthia Administrationsmenü aktualisiert werden.</para>
 
-        <para>The potential uses of these variables are wide ranging and will
-        vary from theme to theme, but it can include page width parameters,
-        left and right block parameters, text sizes, and others depending on
-        your theme. Certain options, such as top_links and bottom_links,
-        require a setting of either 1 (On) or 0 (Off).</para>
-
-        <para>All theme variables are available in each template.</para>
+        <para>Der Einsatzmöglichkeiten dieser Variablen sind vielschichtig und
+        variieren von Theme zu Theme. Beispiel dieser Variablen sind die
+        Seitenbreite, Parameter für die linken und rechten Blöcke,
+        Schriftgrößen und andere, die vom gewählten Theme abhängig sind.
+        Bestimmte Einstelloptionen, wie etwa die top links und bottom links,
+        werden durch die Werte 0 und 1 ein-, bzw. ausgeschaltet.</para>
 
         <screenshot>
           <mediaobject>
@@ -520,12 +540,12 @@
 
             <textobject>
               <phrase>Xanthia's <guimenuitem>Theme Settings</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
               <para>Xanthia's <guimenuitem>Theme Settings</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
@@ -534,27 +554,28 @@
       <section id="Xanthia.User.BlockControl">
         <title>Block Control</title>
 
-        <para>Xanthia gives the option of specifying which blocks appear when
-        viewing certain modules, on a module-by-module basis. This allows
-        incredible customisation of the appearance of block on your site's
-        pages. The block control administration area also gives you the full
-        selection of block areas as available in your theme.</para>
+        <para>Xanthia ermöglicht es, Blöcke in Abhängigkeit von Modulen
+        darzustellen. Jedem Modul können somit verschiedene Blöcke zugewiesen
+        werden. Dies ermöglicht einen unglaublichen Gestaltungsspielraum des
+        Erscheinungsbildes der Blöcke auf der Seite. Im Block Control
+        Administrationsmenü können die im Theme verfügbaren Block-Zonen
+        festgelegt werden,</para>
 
-        <para>To use block control, you must first create the block you wish
-        to add in <menuchoice>
+        <para>Um die Block Control zu verwenden, muss zunächst im Menü
+        <menuchoice>
             <guimenu>Administration</guimenu>
 
             <guimenuitem>Blocks</guimenuitem>
-          </menuchoice>. Once this is done, the block will become visible in
-        the list of blocks to assign to modules in the Block Control
-        area.</para>
+          </menuchoice> der Block erstellt werden, der hinzugefügt werden
+        soll.</para>
 
         <sidebar>
           <note>
-            <para>The positions in the Block Administration affect a Xanthia
-            theme only insofar as they provide the initial positions of blocks
-            when a theme is installed. After this the theme engine controls
-            the block positioning.</para>
+            <para>Die Positionsangaben in der Block Administration
+            beeinflussen ein Xanthia Theme lediglich dadurch, dass sie die
+            Ausgangsposition eines Blocks bei der Installation eines neuen
+            Themes definieren. Danach übernimmt die Theme Engine die Kontrolle
+            über die Plazierung der Blöcke.</para>
 
             <para><remark>Further integration is needed here to effectively
             present the value and usage of the block postion. But this is
@@ -563,28 +584,30 @@
           </note>
         </sidebar>
 
-        <para>To <emphasis>add</emphasis> a block to a module, select the
-        module you wish to add the block to and the block ifself from the
-        list, then click <guimenuitem>add</guimenuitem>, and the block will be
-        added to that module. You can select multiple blocks at the same time
-        to be added to a module. Blocks can be <emphasis>removed</emphasis>
-        for a specific module at any time by clicking the
-        <guimenuitem>remove</guimenuitem> link in the row of the block you
-        wish to delete. This will not delete the block from all modules; just
-        prevent it from displaying for the particular block you remove it
-        from.</para>
+        <para>Um einen Block zu einem Modul hinzuzufügen, müssen das Modul,
+        dem der Block zugeordnet werden soll und der zuzuordnende Block aus
+        den beiden Listenfeldern ausgewählt werden. Durch den Link
+        <guimenuitem>add</guimenuitem> wird der Block dann zugewiesen. Es ist
+        möglich, einem Modul gleichzeitig mehrere Blöcke zuzuordnen. Natürlich
+        kann man Blöcke auch jederzeit wieder entfernen. Dazu dient der Link
+        <guimenuitem>remove</guimenuitem> in der Reihe des Blocks, der
+        gelöscht werden soll. Die Zuordnung des Blocks zu den restlichen
+        Modulen ist davon nicht betroffen, das Entfernen eines Blocks gilt
+        also jeweils nur für das ausgewählte Modul.</para>
 
-        <para>You can then choose which of the <emphasis>block
-        positions</emphasis> you want the block to appear in by selecting from
-        the drop down box in the <guimenuitem>Position</guimenuitem> column.
-        The values contained in this drop down box are the Block Zones that
-        are configured in the Block Zones administration. The
-        <emphasis>vertical order</emphasis> of the blocks in each position is
-        configured through the up and down arrows in the list.</para>
+        <para>Nachdem ein Block einem Modul zugeordnet wurde, kann man
+        bestimmen, welche der möglichen <emphasis>block positions</emphasis>
+        der Block einnehmen soll. Diese Auswahl wird über die (drop down) Box
+        in der <guimenuitem>Position</guimenuitem> Spalte festgelegt. Die
+        Auswahlmöglichkeiten in dieser Box entsprechen den Block-Zonen, die im
+        Adminstrationsmenü Block-Zonen bestimmt wurden. Die vertikale
+        Anordnung der Blöcke kann dabei über die Pfeilsymbole (hoch/runter) in
+        der Liste festgelegt werden.</para>
 
-        <para>For easier navigation you find an alphabetic link list. If you
-        click on a letter, only Modules beginning with this letter are shown.
-        If you click on the asterik link, all modules are shown.</para>
+        <para>Die alphabetische Liste dient der einfacheren Navigation. Durch
+        Anklicken eines Buchstabens werden nur die Module angezeigt, deren
+        Namen mit dem ausgewählten Buchstaben beginnen. Der Link mit dem
+        Sternchen ruft eine Liste aller Module ab.</para>
 
         <screenshot>
           <mediaobject>
@@ -594,12 +617,12 @@
 
             <textobject>
               <phrase>Xanthia's <guimenuitem>Block Control</guimenuitem>
-              Screen</phrase>
+              Bildschirm</phrase>
             </textobject>
 
             <caption>
               <para>Xanthia's <guimenuitem>Block Control</guimenuitem>
-              Screen</para>
+              Bildschirm</para>
             </caption>
           </mediaobject>
         </screenshot>
@@ -611,20 +634,24 @@
     <title>Common Tasks for Xanthia themes</title>
 
     <warning>
-      <para><emphasis>Never</emphasis> develop a theme as the active theme!
-      Always use the built in <guimenuitem>theme preview</guimenuitem> option
-      (<command>index.php?theme=<replaceable>yourtheme</replaceable></command>).</para>
+      <para>Ein Theme, das man entwickelt, sollte niemals im aktivierten
+      Zustand bearbeitet werden! Um die Veränderungen nachzuvollziehen, sollte
+      auf die Option <guimenuitem>theme preview</guimenuitem>
+      (<command>index.php?theme=<replaceable>yourtheme</replaceable></command>)
+      zurückgegriffen werden.</para>
     </warning>
 
     <section id="Xanthia.User.ModuleTemplates">
       <title>Custom Module Templates</title>
 
-      <para>Xanthia provides the possibility to use different templates for
-      the page depending on the currently active module. You can only have one
-      Module Template active at time for a specific module.</para>
+      <para>Xanthia ermöglicht es der Seite unterschiedliche, modulbasierte
+      Templates zuzuweisen. In Abhängigkeit vom aktiven Modul, kann die Seite
+      somit ein verschiedenes Design erhalten. Einem Modul kann allerdings
+      jeweils nur ein Template zugeordnet werden.</para>
 
-      <para>Here are the steps for creating a module specific template in
-      Xanthia. All relevant menu items are located in <menuchoice>
+      <para>Im Folgenden werden die Schritte erklärt, um modulspezifische
+      Templates zu erstellen. Alle wichtigen Menüs befinden sich unter
+      <menuchoice>
           <guimenu>Administration</guimenu>
 
           <guisubmenu>Xanthia</guisubmenu>
@@ -636,36 +663,38 @@
 
       <procedure>
         <step>
-          <title>Create a new template for the module</title>
+          <title>Ein neues Template für ein Modul erstellen.</title>
 
-          <para>Enter <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Templates</guimenu>
 
               <guimenuitem>New Module Template</guimenuitem>
-            </menuchoice> and create a new template for the module (see<xref
-          linkend="Xanthia.ThemeEditing.ThemeTemplates" />). Altough you can
-          name it whatever you like, we recommend to name it after the module
-          you are creating it for. You can copy and paste your current
-          master.htm text into the New Module Template text area to have a
-          basis to start with.</para>
+            </menuchoice> aus und erstelle ein neues Template für das Modul
+          (siehe auch <xref linkend="Xanthia.ThemeEditing.ThemeTemplates" />).
+          Obwohl der Name für das Template frei bestimmt werden kann,
+          empfiehlt es sich, den Namen des Moduls zu verwenden, dem das
+          Template zugeordnet wird. Als Grundlage für die Erstellung eines
+          neuen Templates bietet sich die master.htm des Themes an. Den
+          html-code dieser Datei kann man in das Text-Feld kopieren, das den
+          html-code für das neue Template in der Datenbank ablegt.</para>
         </step>
 
         <step>
-          <title>Add a new Theme Zone</title>
+          <title>Eine neue Theme Zone hinzufügen</title>
 
-          <para>Enter <menuchoice>
+          <para>Wähle <menuchoice>
               <guimenu>Theme Zones</guimenu>
 
               <guimenuitem>Add New Zone</guimenuitem>
-            </menuchoice> and fill in the required fields as decribed
-          ...</para>
+            </menuchoice> aus und fülle die vorgegebenen Felder (gemäß den
+          Beschreibungen) aus ...</para>
 
           <variablelist>
             <varlistentry>
               <term>Zone Name</term>
 
               <listitem>
-                <para>This is a unique name of your choosing</para>
+                <para>Ein Name eigener Wahl </para>
               </listitem>
             </varlistentry>
 
@@ -673,7 +702,7 @@
               <term>Zone Label</term>
 
               <listitem>
-                <para>his will be set when you choose the next option</para>
+                <para>Dies wird durch die nächste Option bestimmt.</para>
               </listitem>
             </varlistentry>
 
@@ -681,8 +710,8 @@
               <term>New master for module</term>
 
               <listitem>
-                <para>Choose the module you are creating a new template
-                for.</para>
+                <para>Hier ist das Modul auszuwählen, dem ein neues Template
+                zugeordnet werden soll</para>
               </listitem>
             </varlistentry>
 
@@ -690,7 +719,7 @@
               <term>New skin for block</term>
 
               <listitem>
-                <para>Leave this unset.</para>
+                <para>Hier sollte nichts verändert werden..</para>
               </listitem>
             </varlistentry>
           </variablelist>
