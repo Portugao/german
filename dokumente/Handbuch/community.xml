@@ -16,27 +16,27 @@
   <para>Die <emphasis role="bold">internationale PostNuke Community</emphasis>
   versammelt sich natürlich auf der <ulink
   url="http://www.postnuke.com/">offiziellen Homepage</ulink>. Daneben gibt es
-  aber eine ganze Reihe sehr fruchtbarer <emphasis role="bold">nationaler
+  aber eine ganze Reihe <emphasis role="bold">nationaler
   Communities</emphasis> wie <ulink
-  url="http://www.post-nuke.net">post-nuke.net</ulink>. Die nationalen Teams
-  widmen sich vor allem dem User-Support in der eigenen Sprache. Es werden die
-  jeweiligen Sprachdateien für PostNuke gepflegt und spezielle rechtliche
-  Probleme des Landes und Erfahrungen aus dem Support an die internationale
-  Entwicklung herangetragen.</para>
+  url="http://www.post-nuke.net">http://www.post-nuke.net</ulink>. Die
+  nationalen Teams widmen sich vor allem dem Anwendersupport in der eigenen
+  Sprache. Es werden die jeweiligen Sprachdateien für PostNuke gepflegt und
+  spezielle rechtliche Probleme des Landes und Erfahrungen aus dem Support an
+  die internationale Entwicklung herangetragen.</para>
 
   <bridgehead>NOC - Treffpunkt für Modulentwickler</bridgehead>
 
-  <para>Es existieren dazu eine Vielzahl Sites, die sich zum Beispiel mit den
+  <para>Es existieren dazu eine Vielzahl Seiten, die sich zum Beispiel mit den
   PostNuke-Themes oder der Modulentwicklung beschäftigen. Um die verstreuten
   Modulentwickler zusammen zu führen, wurde das <ulink
   url="http://noc.postnuke.com/">PostNuke NOC</ulink> eingerichtet. Hier
   können Projekte ähnlich SourceForge organisiert und koordiniert
   werden.</para>
 
-  <bridgehead>User 2 User Support</bridgehead>
+  <bridgehead>Support von Anwender zu Anwender</bridgehead>
 
   <para>Nicht zu vergessen sind natürlich auch die hunderte <ulink
-  url="http://www.post-nuke.net/modules.php?op=modload&amp;name=Web_Links&amp;file=index&amp;req=viewlink&amp;cid=1">User</ulink>,
+  url="http://www.post-nuke.net/modules.php?op=modload&amp;name=Web_Links&amp;file=index&amp;req=viewlink&amp;cid=1">Anwender</ulink>,
   die PostNuke schon in <emphasis role="bold">Produktivumgebungen</emphasis>
   für ihre Zwecke einsetzen und oft auf Anfrage gerne die eine oder andere
   Detailösung verraten.</para>
@@ -123,13 +123,6 @@
     aus erster Hand. Diese Informationen werden in den News verarbeitet, die
     unsere User mit dem nötigen Überblick über die Möglichkeiten ihres Systems
     versorgt.</para>
-
-    <bridgehead>Internationale Dokumentationsarbeit</bridgehead>
-
-    <para>Sowohl das erwähnte PostNuke Handbuch als auch die Dev-Dokumentation
-    wird unter 'GNU Free Documentation License' veröffentlicht. Das ermöglicht
-    eine rechtlich unproblematische Übersetzung für fremdsprachige
-    Dokumentationsprojekte.</para>
   </section>
 
   <section>
@@ -139,8 +132,8 @@
     sollte</subtitle>
 
     <para><emphasis>Besonderer Dank an dieser Stelle an Sascha Carlin (itst)
-    von <ulink url="http://www.phpbb.de">phpbb.de</ulink> für die freundliche
-    Genehmigung, den <ulink
+    von <ulink url="http://www.phpbb.de">http://www.phpbb.de</ulink> für die
+    freundliche Genehmigung, den <ulink
     url="http://www.phpbb.de/doku/kb/artikel.php?artikel=knigge">phpbb-Knigge</ulink>
     als Vorlage benutzen zu können.</emphasis></para>
 
@@ -271,5 +264,70 @@
     <para>Auch wenn es nicht schön ist, es muss sein: bei wiederholtem
     Missachten unseren kleines Knigges und entsprechenden Hinweisen der
     Moderatoren kann Dein Account gesperrt werden.</para>
+  </section>
+
+  <section>
+    <title>Der PostNuke e.V.</title>
+
+    <para>Am 1.6.2003 haben wir unter dem Namen "PostNuke e.V." einen Verein
+    zur Förderung von Postnuke gegründet. "Wir" das sind:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>erster Vorsitzender Andreas Krapohl (larsneo)</para>
+      </listitem>
+
+      <listitem>
+        <para>zweiter Vorsitzender Steffen Voß (ArschMitOhren)</para>
+      </listitem>
+
+      <listitem>
+        <para>Beisitzer Immo Fietz (Immof)</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Weitere Gründungsmitglieder sind</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Jörg Napp (jn)</para>
+      </listitem>
+
+      <listitem>
+        <para>Alexander Bergmann (chasm)</para>
+      </listitem>
+
+      <listitem>
+        <para>Bernd Heitmann Müller (Bernd)</para>
+      </listitem>
+
+      <listitem>
+        <para>Sebastian Frey (traveller)</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Die Idee zur Gründung eines Fördervereins ist Anfang des Jahres 2003
+    entstanden, um PostNuke im deutschsprachigen Raum besser vertreten zu
+    können. Gerade in Hinblick auf die anhaltende Diskussionen rund um
+    Software-Patente und Rechtswirksamkeit der GPL war es uns ein Anliegen,
+    zusammen mit der internationalen Projektleitung eine entsprechende
+    Institution aufzubauen.</para>
+
+    <para>Grundlage war der Wunsch nach innen den Zusammenhalt zu stärken, die
+    Zusammenarbeit nationaler und internationaler Entwickler zu fördern und
+    nach außen professioneller auftreten zu können.</para>
+
+    <para>Sowohl das Amtsgericht Charlottenburg als auch die IHK Berlin
+    konnten davon überzeugt werden, dass es nicht nur Leute gibt, die verrückt
+    genug sind quasi ehrenamtlich und unter einer Open Source Lizenz ein
+    vollwertiges Content Management System zu entwickeln und zu supporten,
+    sondern auch noch welche, die zur Förderung des CMS und zur Vertretung der
+    Entwickler einen Verein gründen - am 21. Januar 2004 wurde "PostNuke e.V."
+    unter der Registernummer 23108Nz beim Amtsgericht Charlottenburg in das
+    Vereinsregister eingetragen.</para>
+
+    <para>Die Vereinsziele sind in unserer <ulink
+    url="http://post-nuke.net/Downloads+index-req-getit-lid-36.html">Satzung</ulink>
+    ausführlich beschrieben.</para>
   </section>
 </chapter>
