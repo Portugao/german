@@ -6,5 +6,84 @@
 
   <title>Themes</title>
 
-  <para>TBD</para>
+  <para>Themes bestimmen das Aussehen einer PostNuke-Installation. Sie
+  bestehen aus einem Verzeichnis und mindestens der
+  <filename>theme.php</filename>-Datei. Desweiteren gibt es ein Verzeichnis
+  für die verwendeten Bilder und eines für die Style-Sheet-Dateien.
+  Darüberhinaus können Themes weitere Dateien enthalten. </para>
+
+  <para>Über das Theme lassen such die Farben, das Layout, Schriftarten usw.
+  anpassen. </para>
+
+  <para>Wenn man möchte, kann man dem Anwender auch die Wahl zwischen allen
+  installieren Themes lassen. Diese Funktion läßt sich in den Einstellungen
+  ein- uns ausschalten.</para>
+
+  <para>Es gibt hunderte von Themes. Über die offizielle Postnuke-Homepage
+  aber auch über andere Seiten kannst Du sie finden. Es gibt auch "Themes
+  Packs", Zusammenstellungen von dutzenden Themes. Aber Vorsicht! Auch wenn
+  sie als ".7x kompatible" ausgezeichnet sind, muß das nicht für alle
+  stimmen.</para>
+
+  <para>Themes funktionieren nicht auf jeder Postnuke-Version. Zum Beispiel
+  tun einige nur unter .6x ihre Arbeit, während andere nur unter .7x arbeiten.
+  Zum Teil funktionieren die Themes auch nur bei Systemen neuer als .71x.
+  Damit die Angelegenheit nicht allzu einfach wird, kann man den Themes von
+  außen nicht einfach ansehen, für welche Version sie gemacht sind. Dazu muß
+  man leider in den Quelltext schauen und wissen, nach was man suchen muss.
+  Den Unterschied zwischen .6x und .7x Themes ist leicht zu erkennen
+  speziellere Anpassungen für einzelne Versionen lassen sich nicht so einfach
+  erkennen. Öffne die theme.php in einem Editor und such die Funktion
+  "themearticle".</para>
+
+  <para>PN .6x Themes: </para>
+
+  <programlisting>function themearticle ($aid, $informant, $datetime... ...$topicimage, $topictext)</programlisting>
+
+  <para>PN .7.0.x .71 and .711 Themes: </para>
+
+  <programlisting>function themearticle ($_deprecated, $_deprecated... ...$links, $info, $preformat)</programlisting>
+
+  <para>Es gibt mittlerweile drei verschiedene Arten von Themes: </para>
+
+  <variablelist>
+    <varlistentry>
+      <term>"traditionelle" Themes</term>
+
+      <listitem>
+        <para>Dieses sind Themes, in denen das Aussehen und die Logik in der
+        <filename>theme.php</filename> bestimmt werden. Die meisten Themes
+        fallen in diese Kategorie, allerdings ist das Anpassen eines solchen
+        Themes relativ aufwändig. </para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Autothemes</term>
+
+      <listitem>
+        <para>AutoTheme ist ein Theme System, das nicht nur für PostNuke,
+        sondern auch für MD-Pro, PHP-Nuke, und eNvolution verfügbar ist.
+        AutoTheme benutzt zur Definition des Layouts HTML-Dateien, die als
+        "Schablonen" eingesetzt werden. AutoTheme gibt es in zwei Varianten:
+        "AutoTheme Lite" steht kostenlos zum Download zur Verfügung,
+        wohingegen die Vollversion in unterschiedlichen Lizenzierungen als
+        kommerzielle Software vertrieben wird. </para>
+
+        <para>AutoTheme stammt von Shawn McKenzie (AbraCadaver), die Homepage
+        ist <ulink
+        url="http://spidean.mckenzies.net">http://spidean.mckenzies.net</ulink></para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Xanthia</term>
+
+      <listitem>
+        <para>Xanthia ist die neue offizielle Theme-Engine von PostNuke. Auch
+        hier werden Templates (also Schablonen) benutzt, um das Seitenlayout
+        zu definieren. </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
 </chapter>
