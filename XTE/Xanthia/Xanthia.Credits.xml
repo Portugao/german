@@ -4,71 +4,71 @@
 <appendix id="Xanthia.Credits" lang="en-US"
           revision="$Revision$ $Date$"
           status="draft">
-  <title>Xanthia Credits</title>
+  <title>Xanthia Danksagungen</title>
 
   <section>
-    <title>Xanthia Credits</title>
+    <title>Xanthia Danksagungen</title>
 
-    <para>Special thanks to <personname>
+    <para>Ein spezielles Danke an <personname>
         <firstname>Brian K.</firstname>
 
-        <surname>Virgin</surname>
-      </personname> the original author of Encompass from which Xanthia was
-    created. It has been a great module and inspiration of CE.</para>
+        <surname>Virgin den ursprünglichen Autor von</surname>
+      </personname>Encompass aus dem Xanthia hervorgegangen ist. Du hast ein
+    großartiges Modul und eine Inspiration geschaffen.</para>
 
-    <para>Special thanks to <personname>
+    <para>Spezieller Dank auch an <personname>
         <firstname>Gregory</firstname>
 
         <surname>Remington</surname>
       </personname>aka <personname>
         <othername>mediatech</othername>
-      </personname>for all the great suggestions to make Xanthia leap to the
-    "next level".</para>
+      </personname>für alle die großartigen Vorschläge, die Xanthia mächtig
+    voran gebracht haben.</para>
 
-    <para>Thanks to <personname>
+    <para>Dank an <personname>
         <firstname>Craig R.</firstname>
 
         <surname>Saunders</surname>
       </personname>(<personname>
         <othername>ColdRolledSteel</othername>
-      </personname>) from <ulink
-    url="http://www.mtrad.com">http://www.mtrad.com</ulink> for his work on
-    short urls.</para>
+      </personname>) von <ulink
+    url="http://www.mtrad.com">http://www.mtrad.com</ulink> für seine Arbeit
+    an den Kurzen URLs.</para>
 
-    <para>Credit to <personname>
+    <para><personname>
         <firstname>Martin</firstname>
 
         <surname>Anderson</surname>
-      </personname>for further work on short urls implementation and
-    assoicated rewrite rules.</para>
+      </personname>soll an dieser Stelle für seine weitere Arbeit an den
+    kurzen URLs erwähnt werden.</para>
 
-    <para>Credit to <personname>
+    <para>Erwähnt werden soll auch <personname>
         <othername>CHTEKK</othername>
-      </personname> from <ulink
-    url="http://www.longitekk.com/">http://www.longitekk.com/</ulink> for
-    further work on short urls development and providing the concept of the
-    configurable short urls extension</para>
+      </personname>von <ulink
+    url="http://www.longitekk.com/">http://www.longitekk.com/</ulink> für
+    seine Arbeit an den kurzen URLs und die Entwicklung eines Konzepts für
+    erweiterbare KurzURLs</para>
 
-    <para>Credit to the original authors of the envolution NoMoreBlocks module
-    - Written by: <personname>
+    <para>Dank an den ursprünglichen Autor von Envolutions NoMoreBlocks Modul
+    - <personname>
         <othername>ZXvision</othername>
       </personname>(<email>zxvision@envolution.it</email>), <personname>
         <othername>TiMax</othername>
-      </personname>(<email>timax@envolution.it</email>) and <personname>
+      </personname>(<email>timax@envolution.it</email>) und <personname>
         <othername>Cino</othername>
       </personname>(<email>cino@envolution.it</email>).</para>
   </section>
 
   <section>
-    <title>Documentation Credits</title>
+    <title>Dokumentations Danksagungen</title>
 
-    <para>Credit to <personname>
+    <para>Dank an <personname>
         <firstname>Jino</firstname>
 
         <surname>Choi</surname>
       </personname>(<personname>
-        <othername>noborders</othername>
-      </personname>for his suggestions, tutorials, questions and answers in
-    the support forum.</para>
+        <othername>noborders)</othername>
+      </personname>für seine Vorschläge, Tutorials, Fragen &amp; Antworten im
+    Support Forum.</para>
   </section>
 </appendix>
