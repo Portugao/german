@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
+<!-- 
+     $Id$
+	 
+	 ANT-basierte DocBook-Umgebung
+	 (c) 2004 Jörg Napp
+-->
 
 <!-- Set the base directory to the location of the xml files -->
 <project name="DocBook environment" basedir="." default="all">
@@ -698,5 +704,35 @@
 		<delete file="${install.programs.home}/${programs.docbook-xsl.file}" />
 		<delete file="${install.programs.home}/${programs.docbook-dtd.file}" />
 	</target>		
+
+<!-- ==========================================================================================	
+     Goodies
+     ========================================================================================== -->
+	 <target name="ttfreader"
+	         description="creates a font metric files from a TTF file">
+		<path id="fop.ttfreader.classpath">
+			<pathelement path="${fop.home}/build/fop.jar"/>
+			<pathelement path="${fop.home}/lib/avalon-framework-cvs-20020806.jar"/>
+			<pathelement path="${fop.home}/lib/xml-apis.jar"/>
+			<pathelement path="${fop.home}/lib/xercesImpl-2.2.1.jar"/>
+			<pathelement path="${fop.home}/lib/xalan-2.4.1.jar"/>
+		</path>
+		<basename property="font.basename" file="${font}" suffix="ttf" />
+		<java classname="org.apache.fop.fonts.apps.TTFReader" fork="yes" failonerror="true">
+			<classpath refid="fop.ttfreader.classpath"/>
+
+			<!-- We want WinANSI encoding, as this will give correct searching, copying etc -->
+			<arg value="-enc"/>
+			<arg value="ansi"/>
+
+			<!-- font file -->
+			<arg value="${font}"/>
+			
+			<!-- output -->
+			<arg value="${custom.home.fo}/fonts/${font.basename}.xml"/>
+		</java>
+		<copy file="${font}" todir="${custom.home.fo}/fonts" />
+	</target>
+	
 </project>
 
