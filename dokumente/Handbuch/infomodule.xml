@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Weitere Info-Module</title>
 
   <section>
@@ -195,7 +201,7 @@
         <listitem>
           <para>Pfad des Programms, entwerder relativ
           (<filename>downloads/datei.zip</filename>) oder absolut
-          <systemitem>http://www.beispiel.de/downloads/datei.zip</systemitem>)</para>
+          <systemitem>http://www.example.com/downloads/datei.zip</systemitem>)</para>
         </listitem>
       </varlistentry>
 
@@ -353,8 +359,14 @@
 
     <para>Um die Links besser zu gliedern, können Kategorien und
     Unterkategorien angelegt werden. So bleibt die Seite auch mit vielen Links
-    übersichtlich gegliedert. Folgende Felder werden einem Web Link
-    zugewiesen:</para>
+    übersichtlich gegliedert. </para>
+
+    <tip>
+      <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der
+      Tat basieren beide auf der selben Codebasis).</para>
+    </tip>
+
+    <para>Folgende Felder werden einem Web Link zugewiesen:</para>
 
     <variablelist>
       <varlistentry>
@@ -369,7 +381,7 @@
         <term>URL</term>
 
         <listitem>
-          <para>z. B. http://www.einefirma.de/</para>
+          <para>z. B. <systemitem>http://www.example.com/</systemitem></para>
         </listitem>
       </varlistentry>
 
@@ -408,9 +420,6 @@
 
     <para>Man muss nicht alle Felder ausfüllen, leere Felder werden in der
     Anzeige ignoriert.</para>
-
-    <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der Tat
-    basieren beide auf der selben Codebasis).</para>
 
     <para>Jeder Nutzer kann (nach Berechtigung) Links für die Datenbank
     vorschlagen, über vorhandene Links abstimmen oder 'tote Links'

@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Interaktion mit dem Besucher: Umfragen, Foren usw.</title>
 
   <section>
@@ -10,16 +16,16 @@
     <para>PostNuke erlaubt es, Bewertungen auf der Site zu haben. Mit diesem
     Modul werden die Bewertungen verwaltet.</para>
 
-    <para>Zunächst gibt man einen Titel ein, z.B. 'Wir brauchen Ihre
-    Bewertungen '. Als nächstes gibt man eine 'Beschreibung' der Bewertungen
+    <para>Zunächst gibt man einen Titel ein, z.B. "Wir brauchen Ihre
+    Bewertungen". Als nächstes gibt man eine 'Beschreibung' der Bewertungen
     ein, z.B.:</para>
 
-    <para>'<emphasis>Dieser Bereich enthält Bewertungen folgender Themen:
+    <para>"<citation>Dieser Bereich enthält Bewertungen folgender Themen:
     Gaststätten, DVDs, CDs, Bücher, Artikel, Kleidung, Veranstaltungen in
     unserer Stadt, Sportveranstaltungen,..... Haben Sie also letztlich in
     einem schrecklichen Restaurant gegessen oder waren bei einer tollen
     Veranstaltung, teilen Sie uns einfach Ihre Meinung mit, indem Sie eine
-    Bewertung schreiben.</emphasis>'</para>
+    Bewertung schreiben.</citation>"</para>
 
     <para>Es kann zu einer Bewertung ein Bild angezeigt werden, welches aber
     nicht größer als 150x150 Pixel sein sollte. Das Bild muss in
@@ -46,8 +52,8 @@
     <para>In diesem Modul kann man ganz einfach Umfragen erstellen, bestehende
     Umfragen löschen oder ändern.</para>
 
-    <para>Oben auf der Seite wird zunächst die Möglichkeit gegeben, '<emphasis
-    role="bold">Umfragen zu ändern'</emphasis>. Durch einen Klick darauf
+    <para>Oben auf der Seite wird zunächst die Möglichkeit gegeben,
+    <guimenuitem>Umfragen zu ändern</guimenuitem>. Durch einen Klick darauf
     bekommt man eine Liste angezeigt, in der alle bestehenden Umfragen
     eingetragen sind. Hinter jedem Eintrag kann man auswählen, ob man die
     Umfrage 'editieren' oder 'löschen' will.</para>

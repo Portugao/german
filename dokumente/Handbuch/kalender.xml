@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Kalender</title>
 
   <para>Mit Hilfe eines Kalenders lassen sich die Besucher über Termine usw.
@@ -33,6 +39,6 @@
     die Zugriffsrechte hält.</para>
 
     <para>Homepage: <ulink
-    url="http://noc.postnuke.com/projects/postcalendar/">http://noc.PostNuke.com/projects/postcalendar/</ulink>.</para>
+    url="http://noc.postnuke.com/projects/postcalendar/">http://noc.postnuke.com/projects/postcalendar/</ulink>.</para>
   </section>
 </chapter>

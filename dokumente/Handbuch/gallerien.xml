@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Galerien</title>
 
   <section>
@@ -27,7 +33,7 @@
 
     <para>Wer grosse Mengen Bilder importieren will, kann die Dateien zuvor
     per FTP hochladen und dann über einen eigenen Dialog importieren. Jedes
-    Bild kann mit einem Titel und einer Beschreiung versehen werden.</para>
+    Bild kann mit einem Titel und einer Beschreibung versehen werden.</para>
 
     <para>Homepage: <ulink
     url="http://www.elfisk.dk">http://www.elfisk.dk</ulink></para>

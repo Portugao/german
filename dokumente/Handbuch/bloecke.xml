@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Blöcke</title>
 
   <para>Nahezu jedes Modul bringt seine eigenen Blöcke mit. Der Inhalt wird
@@ -73,7 +79,7 @@
         <term>Seitenbild anzeigen:</term>
 
         <listitem>
-          <para></para>
+          <para>?</para>
         </listitem>
       </varlistentry>
 
@@ -81,7 +87,7 @@
         <term>Seitensuche anzeigen:</term>
 
         <listitem>
-          <para></para>
+          <para>?</para>
         </listitem>
       </varlistentry>
 
@@ -89,7 +95,7 @@
         <term>Beschreibung anzeigen:</term>
 
         <listitem>
-          <para></para>
+          <para>?</para>
         </listitem>
       </varlistentry>
 
@@ -97,7 +103,7 @@
         <term>Alternative Seitenanzeige aktivieren:</term>
 
         <listitem>
-          <para></para>
+          <para>?</para>
         </listitem>
       </varlistentry>
 
