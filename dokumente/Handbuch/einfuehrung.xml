@@ -29,15 +29,52 @@
 
     <para>Das System von PostNuke basiert auf Modularität. Es gibt eine
     zentrale Einheit, den '<emphasis role="bold">Core</emphasis>', der per API
-    (pnAPI, pnHTML usw.) verschiedene standardisierte Zugriffe auf die
-    Datenbank und die anderen Teile des Systems bietet. Die dazugehörigen
-    Dateien befinden sind im Pfad /include.</para>
+    verschiedene standardisierte Zugriffe auf die Datenbank und die anderen
+    Teile des Systems bietet.</para>
 
     <mediaobject>
       <imageobject>
         <imagedata align="center" fileref="postnukeSystem.gif" format="GIF" />
       </imageobject>
     </mediaobject>
+
+    <bridgehead>Funktionsumfang mit Modulen erweitern</bridgehead>
+
+    <para>Der Funktionsumfang einer PostNuke-Site lässt sich über die
+    Einbindung von Erweiterungen, den <emphasis>Modulen</emphasis> beliebig
+    festlegen. In der Basisinstallation sind schon eine Reihe Module
+    enthalten, deren Entwicklung noch aus PHPNuke-Zeiten übernommen und
+    mittlerweile dem PostNuke-System angepasst wurden. Dazu gehört vor allem
+    das Newssystem, die Weblinks, das Download-Modul usw. Diese Module zu
+    benutzen ist allerdings nicht Pflicht - bereits jetzt gibt es eine große
+    Anzahl an <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulen
+    von Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
+    über die Verwaltung von Bildersammlungen bis hin zu ganzen Webshops
+    reichen. Zum Teil wurden damit auch Alternativen zu den mitgelieferten
+    Modulen geschaffen, die mit einem weit größeren Funktionsumfang
+    aufwarten.</para>
+
+    <para>Da die PostNuke-Entwickler sich bisher auf die Überarbeitung des
+    Basissystems konzentriert haben, wurden vor allem der Funktionsumfang der
+    mitgelieferten Module etwas vernachlässigt. Technisch sind sie aber alle
+    auf dem aktuellsten Stand. </para>
+
+    <bridgehead>Permissions steuern die Zugriffsrechte der User</bridgehead>
+
+    <para>PostNuke bietet ein System von <emphasis
+    role="bold">Zugriffsrechten</emphasis>, das es ermöglicht, Anwendern oder
+    Usergruppen gezielt Zugriffsrecht zu geben oder zu entziehen. Diese Rechte
+    werden in der Adminstration online verwaltet.</para>
+
+    <bridgehead>Webseiten internationalisieren durch beliebig viele
+    Sprachpakete</bridgehead>
+
+    <para>Um verschiedene Zielgruppen ansprechen zu können bietet PostNuke die
+    Möglichkeit, die Website mehrsprachig zu betreiben. Über einfache
+    Sprachpakete, werden alle Ausgaben des Systems oder der Module in vielen
+    verschiedenen <emphasis role="bold">Sprachen</emphasis> parallel
+    möglich.</para>
 
     <bridgehead>Themes - Layout getrennt von den Inhalten</bridgehead>
 
@@ -55,47 +92,6 @@
     festgelegt werden - des Weiteren kann man die Auswahl auch den Anwendern
     überlassen. Im Verzeichnis <filename>/theme</filename> befinden sie die
     Unterverzeichnisse für die verschiedenen auswählbaren Layouts.</para>
-
-    <bridgehead>Funktionsumfang mit Modulen erweitern</bridgehead>
-
-    <para>Wie bereits erwähnt, lässt sich der Funktionsumfang einer
-    PostNuke-Site über die Einbindung von Erweiterungen, den Modulen beliebig
-    festlegen. In der Basisinstallation sind schon eine Reihe Module
-    enthalten, deren Entwicklung noch aus PHPNuke-Zeiten übernommen und
-    mittlerweile dem PostNuke-System angepasst wurden. Dazu gehört vor allem
-    das Newssystem, die Weblinks, das Download-Modul usw. Diese Module zu
-    benutzen ist allerdings nicht Pflicht - bereits jetzt gibt es eine große
-    Anzahl an <ulink
-    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulen
-    von Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
-    über die Verwaltung von Bildersammlungen bis hin zu ganzen Webshops
-    reichen. Zum Teil wurden damit auch Alternativen zu den mitgelieferten
-    Modulen geschaffen, die mit einem weit größeren Funktionsumfang
-    aufwarten.</para>
-
-    <para>Da die PostNuke-Entwickler sich bisher auf die Überarbeitung des
-    Basissystems konzentriert haben, wurden vor allem der Funktionsumfang der
-    mitgelieferten Module etwas vernachlässigt. Technisch sind sie aber alle
-    auf dem aktuellsten Stand. Die Module befinden sich im Verzeichnis
-    /modules</para>
-
-    <bridgehead>Permissions steuern die Zugriffsrechte der User</bridgehead>
-
-    <para>'Technisch auf dem aktuellsten Stand' bedeutet vor allem auch, dass
-    sie in das Permission-System integriert wurden. PostNuke bietet ein System
-    von <emphasis role="bold">Zugriffsrechten</emphasis>, das es ermöglicht,
-    Anwendern oder Usergruppen gezielt Zugriffsrecht zu geben oder zu
-    entziehen. Diese Rechte werden in der Adminstration online
-    verwaltet.</para>
-
-    <bridgehead>Webseiten internationalisieren durch beliebig viele
-    Sprachpakete</bridgehead>
-
-    <para>Um verschiedene Zielgruppen ansprechen zu können bietet PostNuke die
-    Möglichkeit, die Website mehrsprachig zu betreiben. Über einfache
-    Sprachpakete, werden alle Ausgaben des Systems oder der Module in vielen
-    verschiedenen <emphasis role="bold">Sprachen</emphasis> parallel
-    möglich.</para>
 
     <bridgehead>Wie stabil ist PostNuke?</bridgehead>
 
@@ -163,7 +159,7 @@
         </listitem>
 
         <listitem>
-          <para>In sog. <emphasis role="bold">'shared hosts' Umgebungen mit
+          <para>In sog. <emphasis role="bold">"shared hosts" Umgebungen mit
           Shell-Accounts </emphasis>können unter Umständen die
           Konfigurationsdaten von anderen Benutzern eingesehen werden - es
           gibt nahezu nichts, was PostNuke dagegen unternehmen kann.</para>
@@ -178,7 +174,7 @@
           PostNuke-Team in Verbindung setzen. Wenn Sicherheitsprobleme erkannt
           werden, bitte an den PostNuke Security-Tracker über das Webinterface
           <ulink
-          url="http://news.postnuke.com/index.php?module=vpContact">http://news.PostNuke.com/index.php?module=vpContact</ulink>
+          url="http://news.postnuke.com/index.php?module=vpContact">http://news.postnuke.com/index.php?module=vpContact</ulink>
           wenden. Einen unabhängigen Überblick über bekannte Probleme der
           verschiedenen Versionen liefert der <ulink
           url="http://www.securitytracker.com/archives/target/1275.html">SecurityTracker</ulink>.</para>
@@ -211,32 +207,26 @@
     <title>Open Source / Open Development</title>
 
     <para>PostNuke ist ein frei verfügbares System, veröffentlicht unter der
-    GPL. Es darf von jedem kostenfrei eingesetzt werden, gleich ob privat oder
-    kommerziell, ob große Firma oder kleiner Verein. Die Grundidee hinter Open
-    Source ist einfach:</para>
+    GNU General Public License (GPL). Es darf von jedem kostenfrei eingesetzt
+    werden, gleich ob privat oder kommerziell, ob große Firma oder kleiner
+    Verein. </para>
 
-    <para><emphasis>Wenn jeder ein Programm ändern, verbessern und diese
-    Anpassungen allen anderen Nutzern zur Verfügung stellen kann, entwickelt
-    sich die Software weiter.</emphasis> Jeder kann sie verbessern, jeder kann
-    sie anpassen, jeder kann Fehler bereinigen. Hierdurch wird ein
-    Entwicklungstempo erreicht, das dem der herkömmlichen Softwareentwicklung
-    weit überlegen ist. Dass keine Lizenzkosten anfallen, mag auf den ersten
-    Blick sonderbar erscheinen, ist aber durchaus nicht unüblich. Auch PHP und
-    MySQL (die technische Basis des Systems) werden unter diesem Lizenzmodell
-    zur Verfügung gestellt und daher von allen großen Providern unterstützt.
-    Wie auch PHP und MySQL ist PostNuke unter GPL veröffentlicht, was auch
-    eine weiterhin freie Nutzung des Systems garantiert. Weitere bekannte
-    Open-Source-Projekte sind übrigens Mozilla (Grundlage der Netscapebrowser)
-    oder Linux (ein alternatives Betriebssystem).</para>
+    <para>Die Grundidee hinter Open Source ist einfach: <emphasis>Wenn jeder
+    ein Programm ändern, verbessern und diese Anpassungen allen anderen
+    Nutzern zur Verfügung stellen kann, entwickelt sich die Software
+    weiter.</emphasis> </para>
 
-    <para>PostNuke ist geschrieben in PHP und lizenziert unter der GNU General
-    Public License. Als Open Source / Open Development Projekt arbeiten an
-    PostNuke weltweit eine Vielzahl von Entwicklern. Mit zeitweise mehr als
-    120 Entwicklern in fünf Kontinenten, mehr als 35 unterstützten Sprachen
-    und unzähligen Modulentwicklern beweist PostNuke deutlich die
-    Leistungsfähigkeit einer Open Source Entwicklung. Nähere Informationen zum
-    Team finden sich auf der <ulink
-    url="http://noc.postnuke.com/projects/postnuke/">PostNuke NOC
-    Projektseite</ulink>.</para>
+    <para>Jeder kann sie verbessern, jeder kann sie anpassen, jeder kann
+    Fehler bereinigen. Hierdurch wird ein Entwicklungstempo erreicht, das dem
+    der herkömmlichen Softwareentwicklung weit überlegen ist. Dass keine
+    Lizenzkosten anfallen, mag auf den ersten Blick sonderbar erscheinen, ist
+    aber durchaus nicht unüblich. Auch PHP und MySQL (die technische Basis des
+    Systems) werden unter diesem Lizenzmodell zur Verfügung gestellt und daher
+    von allen großen Providern unterstützt. Wie auch PHP und MySQL ist
+    PostNuke unter GPL veröffentlicht, was auch eine weiterhin freie Nutzung
+    des Systems garantiert. Mit zeitweise mehr als 120 Entwicklern in fünf
+    Kontinenten, mehr als 35 unterstützten Sprachen und unzähligen
+    Modulentwicklern beweist PostNuke deutlich die Leistungsfähigkeit einer
+    Open-Source-Entwicklung. </para>
   </section>
 </chapter>
