@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!-- 
+	 This file lists the download sources of the files included in this release 
+
+     Explanation of the fields:
+      - description  - A short description of the program
+	  - homepage     - The main page where to get more information on the program
+	  - download     - The download address minus the file name
+	  - file         - The file to download
+	  - directory    - The directory of the unpacked file
+	  - unzip        - The directory to unzip
+	  
+	 The information in this file is used to automatically update the docbook
+	 environment, but as well to inform the environment about the actual file
+	 paths of the tools. 
+-->
+
+<programs>
+<!-- ==========================================================================================	
+     Information on downloadable files needed
+     ========================================================================================== -->
+	<ant>
+		<description>Apache ANT</description>
+		<homepage>http://ant.apache.org/</homepage>
+		<download>http://www.apache.org/dist/ant/binaries/</download>
+		<file>apache-ant-1.6.1-bin</file>
+		<suffix>zip</suffix>
+		<unzip>.</unzip>
+	</ant>
+	
+	<fop>
+		<description>Apache FOP</description>
+		<homepage>http://xml.apache.org/fop/</homepage>
+		<download>http://www.apache.org/dist/xml/fop/</download>
+		<file>fop-0.20.5-bin.zip</file>
+		<directory>fop-0.20.5</directory>
+		<unzip>.</unzip>
+	</fop>
+	
+	<superfop>
+		<description>patched FOP to aviod error "FOP complains about duplicate ids"</description>
+		<homepage>http://trieloff.net/docbook/archive/000365.html</homepage>
+		<download>http://trieloff.net/docbook/distfiles/XML-Flatener/</download>
+		<file>superfop.jar</file>
+		<directory>superfop</directory>
+		<unzip>.</unzip>
+	</superfop>
+
+	<saxon>
+		<description>Michael Kay's Saxon</description>
+		<homepage>http://saxon.sourceforge.net/</homepage>
+		<download>http://easynews.dl.sourceforge.net/sourceforge/saxon/</download>
+		<file>saxon6_5_3.zip</file>
+		<directory>saxon6_5_3</directory>
+		<unzip>saxon6_5_3</unzip>
+	</saxon>
+
+	<resolver>
+		<description>the Apache XML Commons Resolver</description>
+		<homepage>http://xml.apache.org/commons/components/resolver/index.html</homepage>
+		<download>http://www.apache.org/dist/xml/commons/</download>
+		<file>xml-commons-resolver-1.1.zip</file>
+		<directory>xml-commons-resolver-1.1</directory>
+		<unzip>.</unzip>
+	</resolver>
+	
+	<xerces-j>
+		<description>Apache Xerces XML parser</description>
+		<homepage>http://xml.apache.org/xerces2-j/</homepage>
+		<download>http://www.apache.org/dist/xml/xerces-j/</download>
+		<file>Xerces-J-bin.2.6.2.zip</file>
+		<directory>xerces-2_6_2</directory>
+		<unzip>.</unzip>
+	</xerces-j>
+	
+	<docbook-xsl>
+		<description>the DocBook XSL Stylesheets.</description>
+		<homepage>http://docbook.sourceforge.net/</homepage>
+		<download>http://easynews.dl.sourceforge.net/sourceforge/docbook/</download>
+		<file>docbook-xsl-1.65.1.zip</file>
+		<directory>docbook-xsl-1.65.1</directory>
+		<unzip>.</unzip>
+	</docbook-xsl>
+
+	<docbook-dtd>
+		<description>the DocBook DTD</description>
+		<homepage>http://www.docbook.org/</homepage>
+		<download>http://www.docbook.org/xml/4.2/</download>
+		<file>docbook-xml-4.2.zip</file>
+		<directory>docbook-xml-4.2</directory>
+		<unzip>docbook-xml-4.2</unzip>
+	</docbook-dtd>
+	
+<!-- ==========================================================================================	
+     Information on custom files (not downloadable, they come with the DocBook environment)
+     ========================================================================================== -->
+	<fonts>
+		<description>True Type Fonts</description>
+		<homepage></homepage>
+		<download></download>
+		<file>fonts.zip</file>
+		<directory>fonts</directory>
+		<unzip>fo</unzip>
+	</fonts>
+	
+	<hyph>
+		<description>hyphtenation Patterns</description>
+		<homepage></homepage>
+		<download></download>
+		<file>hyph.zip</file>
+		<directory>hyph</directory>
+		<unzip>fo</unzip>
+	</hyph>
+	
+	<graphics>
+		<description>Icons for DocBook</description>
+		<homepage></homepage>
+		<download></download>
+		<file>graphics.zip</file>
+		<directory>graphics</directory>
+		<unzip>.</unzip>
+	</graphics>
+	
+	<stylesheets>
+		<description>XSL Stylesheets for DocBook</description>
+		<homepage></homepage>
+		<download></download>
+		<file>stylesheets.zip</file>
+		<directory>stylesheets</directory>
+		<unzip>.</unzip>
+	</stylesheets>
+	
+	<catalogs>
+		<description>Catalog files</description>
+		<homepage></homepage>
+		<download></download>
+		<file>catalogs.zip</file>
+		<directory>catalogs</directory>
+		<unzip>.</unzip>
+	</catalogs>
+
+	<fo>
+		<description>FO files</description>
+		<homepage></homepage>
+		<download></download>
+		<file>fo.zip</file>
+		<directory>fo</directory>
+		<unzip>.</unzip>
+	</fo>
+</programs>
