@@ -1,75 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
-<chapter id="pnTemp" lang="en-US"
+<chapter id="pnTemp" lang="de-DE"
          revision="$Revision$ $Date$"
          status="draft">
   <!-- $Id$ -->
 
   <chapterinfo>
-    <authorgroup>
-      <author>
-        <firstname>JÃ¶rg</firstname>
-
-        <surname>Napp</surname>
-
-        <affiliation>
-          <jobtitle>Developer</jobtitle>
-
-          <orgname>PostNuke</orgname>
-        </affiliation>
-      </author>
-    </authorgroup>
-
     <releaseinfo>$Revision$</releaseinfo>
-
-    <date>$Date$</date>
-
-    <revhistory>
-      <revision>
-        <revnumber>0.3</revnumber>
-
-        <date>28. Feb 2004</date>
-
-        <revdescription>
-          <para>DocBook split for better re-use</para>
-        </revdescription>
-      </revision>
-
-      <revision>
-        <revnumber>0.2</revnumber>
-
-        <date>07. October 2003</date>
-
-        <revdescription>
-          <para>corrections and added IDs to tags</para>
-        </revdescription>
-      </revision>
-
-      <revision>
-        <revnumber>0.1</revnumber>
-
-        <date>15. September 2003</date>
-
-        <revdescription>
-          <para>Initial version</para>
-        </revdescription>
-      </revision>
-    </revhistory>
-
-    <keywordset>
-      <keyword>pnTemp</keyword>
-    </keywordset>
   </chapterinfo>
 
-  <title>Das PostNuke Verzeichnis fÃ¼r temporÃ¤re Dateien
+  <title>Das PostNuke Verzeichnis für temporäre Dateien
   (<filename>pnTemp</filename>)</title>
 
   <section id="pntemp.introduction">
     <title>Einleitung</title>
 
-    <para>Das PostNuke Verzeichnis fÃ¼r tempÃ¶rÃ¤re Dateien wurde von den
-    Postnuke Entwicklern eingefÃ¼hrt, um fÃ¼r alle Teile des Systems ein
+    <para>Das PostNuke Verzeichnis für tempöräre Dateien wurde von den
+    Postnuke Entwicklern eingeführt, um für alle Teile des Systems ein
     beschreibbares Verzeichnis anzubieten.</para>
   </section>
 
@@ -88,7 +36,7 @@
       <title>Dateinamen</title>
 
       <para>Modulentwickler sollten ihren Modulnamen in die Dateinamen
-      integrieren, damit es keine Konflikte zwischen den temporÃ¤ren Dateien
+      integrieren, damit es keine Konflikte zwischen den temporären Dateien
       verschiedener Module kommmt. Das Modul "Beispiel" sollte zum Beispiel
       folgende Dateinamen benutzen <filename>Beispiel_temp1</filename>,
       <filename>Beispiel_temp2</filename> usw.</para>
@@ -99,29 +47,29 @@
 
       <para>Braucht ein Modul ein eigenes Verzeichnis in pnTemp, sollte der
       Modulentwickler bedenken, es bei der Initialisierung anzulegen und bei
-      LÃ¶schung des Moduls auch das Verzeichnis samt Inhalten zu lÃ¶schen.
+      Löschung des Moduls auch das Verzeichnis samt Inhalten zu löschen.
       Benannte werden sollten diese Verzeichnisse nach der gleichen Konvention
       wie die Dateien in Punkt 2.2.</para>
     </section>
 
     <section id="pntemp.uses.deletion">
-      <title>automatisches LÃ¶schen</title>
+      <title>automatisches Löschen</title>
 
-      <para>Kurz gesagt: Eine automatsiche LÃ¶schung von temporÃ¤ren Dateien
+      <para>Kurz gesagt: Eine automatsiche Löschung von temporären Dateien
       wird nicht stattfinden.</para>
 
-      <para>Es gibt keine automatische AufrÃ¤umfunktion. Jeder Modulentwickler
-      muss also selbst darauf achten, was im temporÃ¤ren Verzeichnis passiert.
+      <para>Es gibt keine automatische Aufräumfunktion. Jeder Modulentwickler
+      muss also selbst darauf achten, was im temporären Verzeichnis passiert.
       Auf der anderen Seite hat er dadurch die Sicherheit, dass die Dateien
-      dort stets zur VerfÃ¼gung stehen.</para>
+      dort stets zur Verfügung stehen.</para>
     </section>
 
     <section id="pntemp.uses.webaccess">
       <title>Browserzugriff auf pnTemp</title>
 
-      <para>Dateien, die in pnTemp abgelegt sind, kÃ¶nnen nicht von aussen
+      <para>Dateien, die in pnTemp abgelegt sind, können nicht von aussen
       aufgerufen werden. Bilder, Dokumente usw, die von aussen erreichbar sein
-      sollen, dÃ¼rfen also keinesfalls hier gelagert werden.</para>
+      sollen, dürfen also keinesfalls hier gelagert werden.</para>
     </section>
   </section>
 
@@ -129,22 +77,22 @@
     <title>Einrichten von pnTemp</title>
 
     <para>Bei der Installation wird im Hauptverzeichnis der Site das
-    Verzeichnis<filename>/pnTemp</filename> angelegt. Danach mÃ¼ssen die
-    Zugriffsrechte fÃ¼r diesen und die Unterverzeichnisse auf "schreibbar fÃ¼r
+    Verzeichnis<filename>/pnTemp</filename> angelegt. Danach müssen die
+    Zugriffsrechte für diesen und die Unterverzeichnisse auf "schreibbar für
     alle" - unter Linux auf 777 - gesetzt werden.</para>
 
     <para>Die Lage des Verzeichnisses kann auch in der
     <filename>config.php</filename> eingestellt werden. Da das
-    ADODB-Zugriffcaching ein temporÃ¤res Verzeichnis benÃ¶tigt, muÃŸ das
+    ADODB-Zugriffcaching ein temporäres Verzeichnis benötigt, muß das
     Verzeichnis schon bei der Installation auffindbar und beschreibbar
     sein.</para>
 
-    <para>Aus SicherheitsgrÃ¼nden empfehlen wir Webmastern pnTemp ausserhalb
+    <para>Aus Sicherheitsgründen empfehlen wir Webmastern pnTemp ausserhalb
     des Postnuke Hauptverzeichnisses zu lagern (genau wie die
     <filename>config.php)</filename></para>
 
     <para>Um Zugriffe zu verhindern liegt eine <filename>.htaccess</filename>
     im Verzeichnis <filename>pnTemp</filename>, die den Zugriff
-    beschrÃ¤nkt.</para>
+    beschränkt.</para>
   </section>
 </chapter>
