@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<appendix id="Xanthia.Credits" lang="en-US"
+          revision="$Revision$ $Date$"
+          status="draft">
+  <title>Xanthia Credits</title>
+
+  <section>
+    <title>Xanthia Credits</title>
+
+    <para>Special thanks to <personname>
+        <firstname>Brian K.</firstname>
+
+        <surname>Virgin</surname>
+      </personname> the original author of Encompass from which Xanthia was
+    created. It has been a great module and inspiration of CE.</para>
+
+    <para>Special thanks to <personname>
+        <firstname>Gregory</firstname>
+
+        <surname>Remington</surname>
+      </personname>aka <personname>
+        <othername>mediatech</othername>
+      </personname>for all the great suggestions to make Xanthia leap to the
+    "next level".</para>
+
+    <para>Thanks to <personname>
+        <firstname>Craig R.</firstname>
+
+        <surname>Saunders</surname>
+      </personname>(<personname>
+        <othername>ColdRolledSteel</othername>
+      </personname>) from <ulink
+    url="http://www.mtrad.com">http://www.mtrad.com</ulink> for his work on
+    short urls.</para>
+
+    <para>Credit to <personname>
+        <firstname>Martin</firstname>
+
+        <surname>Anderson</surname>
+      </personname>for further work on short urls implementation and
+    assoicated rewrite rules.</para>
+
+    <para>Credit to <personname>
+        <othername>CHTEKK</othername>
+      </personname> from <ulink
+    url="http://www.longitekk.com/">http://www.longitekk.com/</ulink> for
+    further work on short urls development and providing the concept of the
+    configurable short urls extension</para>
+
+    <para>Credit to the original authors of the envolution NoMoreBlocks module
+    - Written by: <personname>
+        <othername>ZXvision</othername>
+      </personname>(<email>zxvision@envolution.it</email>), <personname>
+        <othername>TiMax</othername>
+      </personname>(<email>timax@envolution.it</email>) and <personname>
+        <othername>Cino</othername>
+      </personname>(<email>cino@envolution.it</email>).</para>
+  </section>
+
+  <section>
+    <title>Documentation Credits</title>
+
+    <para>Credit to <personname>
+        <firstname>Jino</firstname>
+
+        <surname>Choi</surname>
+      </personname>(<personname>
+        <othername>noborders</othername>
+      </personname>for his suggestions, tutorials, questions and answers in
+    the support forum.</para>
+  </section>
+</appendix>
