@@ -63,7 +63,7 @@
       </varlistentry>
 
       <varlistentry>
-        <term>erneut erzeuge</term>
+        <term>erneut erzeugen</term>
 
         <listitem>
           <para>baut die Modulliste auf Grundlage der Verzeichnisinformationen
@@ -315,7 +315,7 @@
         <term>Neuer Block</term>
 
         <listitem>
-          <para>Hieer wird ein neuer Block angelegt. Die Funktion des Blocks
+          <para>Hier wird ein neuer Block angelegt. Die Funktion des Blocks
           wird über ein Pulldownmenü festgelegt. Nach dem Klick auf
           'Erstellen' wird der Block angelegt. Natürlich läßt er sich später
           auch noch ändern, indem man in der Übersicht auf 'Editieren'
@@ -359,9 +359,9 @@
     </variablelist>
 
     <bridgehead>Wie kann ich bei meinem Modul dafür sorgen, daß die rechten
-    Blocks angezeigt werden?</bridgehead>
+    Blöcke angezeigt werden?</bridgehead>
 
     <para>Bei den Modulen kann man durch setzen von $index = 1; festlegen, ob
-    die rechten Blocks angezeigt werden sollen oder nicht.</para>
+    die rechten Blöcke angezeigt werden sollen oder nicht.</para>
   </section>
 </chapter>
