@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$-->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Module für statische Seiten</title>
+
+  <para>Bei PostNuke versteht man unter "statischen Seiten" Seiten, die
+  &ndash; im Gegensatz zu den News &ndash; keiner Tagesaktualität unterworfen
+  sind. Dies sind Seiten wie eine allgemeine Vorstellung oder ein Impressum.
+  PostNuke stellt für derartige Inhalte das "Sections"-Modul zur Verfügung. Da
+  dieses Modul durchaus einige Defizite aufweist, gibt es eine Reihe an
+  Modulen von dritter Seite, die weitaus komfortablere Möglichkeiten
+  bieten.</para>
+
+  <section>
+    <title>Sektionen</title>
+
+    <para>Die Sektionen sind eine Art 'Themenschwerpunkte'. Sie stellen
+    größere Artikel dar, die einem Schwerpunktbereich zugeteilt sind.</para>
+
+    <para>Die Sektionen können auch über mehrere Seiten gehen, dann wird der
+    Seitenumbruch im Text durch den Befehl <markup>&lt;!--
+    pagebreak--&gt;</markup> erzeugt. Natürlich können auch HTML-Befehle zur
+    Formatierung benutzt werden.</para>
+
+    <para>Beim ersten Aufruf sehen Sie lediglich die Möglichkeit, eine neue
+    Sektion anzulegen. dazu geben Sie einen Titel an, sowie der Name einer
+    Grafik, die in <filename>images/sections/</filename> liegen muß.</para>
+
+    <para>Ist eine Sektion angelegt, so können dazu auch Artikel angelegt
+    werden.</para>
+  </section>
+
+  <section>
+    <title>PagEd</title>
+
+    <para>Mit PagEd lassen sich grosse Mengen News oder News-ähnlicher
+    Beiträge bequem verwalten. Die vorgegebenen Eingabemasken nehmen den
+    Redakteuren die Layoutarbeit weitestgehend ab. PagEd arbeitet mit
+    Photoshare als Bilderverwaltung zusammen und bietet eine ganze Reihe
+    interessanter Features wie Media-Uploads, Related Links etc. Ausserdem
+    lassen sich Artikel untereinander einfach verlinken.</para>
+
+    <para>PagEd wird unter der Leitung von Øivind Skau ständig
+    weiterentwickelt und verfügt über eine aktive Fan-Gemeinde. Die Homepage
+    ist <ulink
+    url="http://canvas.anubix.net">http://canvas.anubix.net</ulink>.</para>
+  </section>
+
+  <section>
+    <title>XExpress (vormals Content Express)</title>
+
+    <para>Vorbemerkung: Diese Anleitung geht von einer korrekt installieren
+    Version von Content Express mit der deutschen Sprachdatei aus. Die zur
+    Zeit der Erstellung aktuelle Version von Content Express ist die 1.2.6.0.
+    Da das Projekt mittlerweile in <emphasis role="bold">XExpress</emphasis>
+    umbenannt wurde, benutze ich aber dem nächsten Update dieser Anleitung den
+    neuen Namen.</para>
+
+    <para>Die Projekthomepage für XExpress befindet sich bei <ulink
+    url="http://xexpress.sourceforge.net/">sourceforge.net</ulink></para>
+
+    <para>Die deutsche Übersetzung zur aktuellen Version 1.2.6.0 findet sich
+    <ulink url="#">hier</ulink> bei <ulink
+    url="http://pncommunity.de">pncommunity.de</ulink></para>
+
+    <para>Content Express besteht aus drei Teilen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Menu Express</term>
+
+        <listitem>
+          <para>biete alle Funktionen zur Erstellung einer Umfangreichen
+          Site-Navigation</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Content Express</term>
+
+        <listitem>
+          <para>erweitert ein bestehendes PostNuke-System über erweiterte
+          Content Management Möglichkeiten</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Media Express</term>
+
+        <listitem>
+          <para>bietet Ansätze einer Medien-Sammlung - Dieser Teil des Moduls
+          ist zur Zeit am wenigsten Ausgereif und entsprechend
+          unkomfortabel</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Aus dieser Konstellation erklärt sich auch die komplexe Bedienung
+    dieses Moduls, das eigentlich vielmehr ein Modulsammlung ist. Zusätzlich
+    bietet zum Beispiel Menü-Express die Möglichkeit mehrere Menüblöcke
+    einzelnd anzusteuern. Das kompliziert die Administration in dem meisten
+    Fällen unnötig.</para>
+
+    <bridgehead>Block einrichten</bridgehead>
+
+    <para>Da die Möglichkeiten mit dem Menu-Express-Block wesentlich
+    ausgereifter sind, als mit dem normalen Menüblock, ist als erstes das
+    CE-Menüblock einzuschalten. In der Administration unter 'Blöcke' fügt man
+    einen neuen Block (CE / Menu Block) ein:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Titel</term>
+
+        <listitem>
+          <para>Blocktitel, frei wählbar</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Position</term>
+
+        <listitem>
+          <para>Rechts, Links, Center... , frei wählbar</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sprache</term>
+
+        <listitem>
+          <para>Alle, wenn die Site nicht mehrsprachig ist</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dynamische Menü-Erweiterungen anschalten</term>
+
+        <listitem>
+          <para>Menü klappt bei Unterpunkten auf</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Inhalte aktualisieren (nur bei externen Blockinhalten)</term>
+
+        <listitem>
+          <para>egal, weil keine externe Blockinhalte vorliegen</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Nun sollen natürlich auch hier nur berechtigte User die Links zu den
+    Einstellungen oder der Administration sehen. Dazu müssen folgende Rechte
+    angepaßt werden. - Die Recht für den MenuBlock braucht man dann ja nicht
+    mehr:</para>
+
+    <informaltable frame="none">
+      <tgroup cols="4">
+        <colspec colname="c1" colwidth="25*" />
+
+        <colspec colname="c2" colwidth="25*" />
+
+        <colspec colname="c3" colwidth="25*" />
+
+        <colspec colname="c4" colwidth="25*" />
+
+        <tbody>
+          <row>
+            <entry><para>User</para></entry>
+
+            <entry><para>MenuExpress::Menu</para></entry>
+
+            <entry><para>2:Administration:3</para></entry>
+
+            <entry><para>keines</para></entry>
+          </row>
+
+          <row>
+            <entry><para>unregistrierte (Gruppe)</para></entry>
+
+            <entry><para>MenuExpress::Menu</para></entry>
+
+            <entry><para>2:(Administration|Mein Account|Logout|News
+            einreichen):(3|4|5|6)</para></entry>
+
+            <entry><para>keines</para></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+
+    <para>Seit dem Update auf 1.2.6.0 hat sich an dieser Stelle gändert, daß
+    man bei der Instanz</para>
+
+    <orderedlist>
+      <listitem>
+        <para>die Block ID angeben muß</para>
+      </listitem>
+
+      <listitem>
+        <para>den Linknamen</para>
+      </listitem>
+
+      <listitem>
+        <para>die LinkID</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Nach dem Schema: Block ID:Link name:Link ID<emphasis
+    role="bold">-</emphasis></para>
+
+    <para>Die <emphasis role="bold">Block ID</emphasis> kann man nur in der
+    Block-Verwaltung herausfinden - wenn man bei dem fraglichen Block mit der
+    Maus über den Link zum editieren oder löschen geht, wird in der URL eine
+    bid angezeigt. Die Zahl wird als Block ID eingetragen.</para>
+
+    <para>Die <emphasis role="bold">Link ID</emphasis> ist die mid, die in der
+    URL steht, wenn man den entsprechenden Link in der Navigation
+    anklickt.</para>
+
+    <para>Der <emphasis role="bold">Linkname</emphasis> ist einfach das, was
+    in dem Block steht (siehe Bsp. oben).</para>
+
+    <bridgehead>Modul Konfigurieren</bridgehead>
+
+    <para>Nächster Schritt ist die Konfiguration von Content Express.
+    Entsprechend der Aufteilung in 3 Untermodule gibt es hier auch 3
+    Konfigurationen. Unter <emphasis role="bold">/Administration/Content
+    Express/Seiten Konfiguration</emphasis> gibt es folgende
+    Menüpunkte:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>voreingestellte Inhalts-Seite</term>
+
+        <listitem>
+          <para>Welcher Inhalt soll bei einem Menüpunkt angezeigt werden, wenn
+          kein andere Inhalt zugewiesen wurde ('Default' quasi). Hier kann man
+          einen vorhandenen Inhalt auswählen, oder als 'zugehörige URL' eine
+          beliebige URL angeben.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>schnellen editieren-Link für Admins anschalten</term>
+
+        <listitem>
+          <para>Bei Content Express-Artikeln wird für Admins ein Editier-Link
+          eingeblendet. Sonst sind Änderungen nur über die Administration
+          möglich.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Media auto-clean anschalten</term>
+
+        <listitem>
+          <para>CE prüft die Referenzen auf die Media-Datei und zählt
+          diese(RC); wird 0 erreicht, so löscht CE die korrespondierenden
+          Medien aus dem Archiv' - sprich: Wird ein Bild nicht mehr benötigt,
+          wird es automatisch gelöscht.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>WYSIWYG Editor</term>
+
+        <listitem>
+          <para>Soll der CE-eigene What-You-See-Is-What-You-Get-Editor benutzt
+          werden? Dazu gibt es noch Einstellungen zur Breite und Höhe des
+          Editors</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>'Drucken Links'</term>
+
+        <listitem>
+          <para>Wo sollen Links zu Druckansichten angezeigt werden?
+          oben/unten</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Link zum Versenden</term>
+
+        <listitem>
+          <para>Artikel an Freund versenden - Soll ein Link dafür eingeblendet
+          werden? oben/unten</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Artikel-Navigation an</term>
+
+        <listitem>
+          <para>Wenn Seiten anderen Seiten zugeordnet werden, kann eine
+          "weiterblättern/zurückblättern"-Funktion aktiviert werden</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Verschachtelung der Indexseite (-1 für unlimitiert)</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Aktualisierungsdatum anzeigen</term>
+
+        <listitem>
+          <para>Das Datum der letzten Änderung wird angezeigt - besonders
+          interessant, wenn wichtig ist, wie aktuell die Inhalte sind.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Views anzeigen</term>
+
+        <listitem>
+          <para>Zeigt an, wie oft die Seite aufgerufen wurde</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Zeitformat (siehe PHP date-Funktion)</term>
+
+        <listitem>
+          <para>Deutsches Format: %d.%m.%Y</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Views auf der Indexseite anzeigen</term>
+
+        <listitem>
+          <para>?? Keine Info auf der CE-Homepage</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>'Autoren-Label' auf der Indexseite anzeigen</term>
+
+        <listitem>
+          <para>Zeigt an, wer den Artikel zuletzt bearbeitet hat</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Die letzten 8 Einstellen sind nur als Standardwerte zu sehen. Diese
+    Einstellungen lassen sich auch für jeden Artikel einzelnd
+    einstellen.</para>
+
+    <para>Unter <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guisubmenu>Content Express</guisubmenu>
+
+        <guimenuitem>Menükonfiguration</guimenuitem>
+      </menuchoice> gibt es folgende Menüpunkte:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>schnellen editieren-Link für Admins anschalten</term>
+
+        <listitem>
+          <para>Häkchen = Im Menüblock wird für Admins ein Editier-Link
+          eingeblendet. Sonst sind Änderungen nur über die Administration
+          möglich.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>PostNuke Menüblock Stil anschalten</term>
+
+        <listitem>
+          <para>Häkchen = Der Menüblock sieht aus wie der
+          PostNuke-Menu-Block</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Unter <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guisubmenu>Content Express</guisubmenu>
+
+        <guimenuitem>Media-Konfiguration</guimenuitem>
+      </menuchoice> gibt es folgende Menüpunkte:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Unterstützte Media-Typen</term>
+
+        <listitem>
+          <para>Hier müssen alle Mime-Types von zu unterstützenden Dateitypen
+          eingetragen werden.Hierdurch kann man auch verhindern, daß bestimmte
+          Dateitypen hochgeladen werden - einfach durch weglassen des
+          Mime-Types. Ein Liste der möglichen Mime-Types gibt es zum Beispiel
+          bei: <ulink
+          url="ftp://ftp.isi.edu/in-notes/iana/assignments/media-types/media-types">ftp://ftp.isi.edu/in-notes/iana/assignments/media-types/media-types</ulink></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Max. Media-Dateigrösse(in Bytes)</term>
+
+        <listitem>
+          <para>Wie groß darf ein Upload höchstens sein? Diese Zahl kann
+          natürlich nicht größer sein, als die Höchstgröße, die in der php.ini
+          eingetragen ist.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Media Maße (BxH in Pixeln)</term>
+
+        <listitem>
+          <para>Hier kann eine Standart-Größe für die Bilder eingestellt
+          werden (0 x 0 = Original Bild-Größe)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Media Archiv</term>
+
+        <listitem>
+          <para>Verzeichnisname - Hier muß der Webserver selbstverständlich
+          Schreibrechte haben.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Beitrag veröffentlichen</bridgehead>
+
+    <para>Um nun einen ersten Beitrag zu veröffentlichen, erscheint bei Klick
+    auf 'Artikel anzeigen' ein Webformular, mit dem der Beitrag editiert
+    werden kann. <emphasis role="bold">Jeder</emphasis> Beitrag muß einen
+    Titel haben - selbst wenn dieser im Beitrag nicht angezeigt werden soll,
+    erkennt man ihn an diesem Titel in der Administration.</para>
+
+    <para>Wenn nun der Titel eingegeben ist und anhand des folgenden Häkchens
+    festgelegt wurde, ob dieser angezeigt werden soll oder nicht, kann die
+    Eingabe des eigentlichen Textes beginnen. Unter dem Titel befindet sich
+    ein Dropdownfeld, mit dem man für den ganzen Text einstellen kann, ob er
+    rechts, links, oder zentriert angezeigt werden soll. Blocksatz wird
+    offenbar zZt noch nicht unterstützt. Kategorien kann man als Newbie erst
+    ignorieren.</para>
+
+    <para>Der Editor unterstützt</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>die grundsätzlichen Funktionen eines einfachen Editors wie
+        Wordpad,</para>
+      </listitem>
+
+      <listitem>
+        <para>benutzt zum Teil sogar dessen Look&amp;Feel</para>
+      </listitem>
+
+      <listitem>
+        <para>und unterstützt das Rich Text Format (RTF)</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Die meisten Buttons sollten selbsterklärend sein, oder sich
+    zumindest nach kurzem Testen erklären.</para>
+
+    <para>Durch die Rich-Text-Unterstützung ist der Editor in der Lage zum
+    Beispiel Dokumente, die in Microsoft Word oder Starwriter erstellt wurden
+    zu verarbeiten. So kann man zum Beispiel per copy&amp;paste ganze Word-
+    oder Excel-Dateien einfügen, die dann 'sehr ähnlich' dargestellt
+    werden.</para>
+
+    <para>Ist der Text soweit fertiggestellt, geht es unterhalb des Editors im
+    Formular weiter:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>übergeordnet</term>
+
+        <listitem>
+          <para>Im Prinzip können mehrere Beiträge zu einem langen Dokument
+          zusammengehängt werden. Soll der Beitrag einem anderen angehängt
+          werden, kann man hier den Hauptbeitrag auswählen. Sonst steht hier
+          'an die Spitze'</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sprache</term>
+
+        <listitem>
+          <para>Für welche Sprache soll dieser Beitrag sichbar sein? Hier ist
+          die Sitesprache voreingestellt, und sollte bei einsprachigen Sites
+          auch nicht geändert werden. Ist die Site mehrsprachig, und alle User
+          sollen den Text sehen können, stellt man hier auf 'all'</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>oberen/unteren Drucken-Link anschalten</term>
+
+        <listitem>
+          <para>Wo soll ein Link zur Druckerfreundlichen Version eingeblendet
+          werden?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Publikationsdatum/Ablaufdatum</term>
+
+        <listitem>
+          <para>Ab wann soll der Beitrag angezeigt werden und wann soll er
+          wieder ausgeblendet werden? Wenn hier nichts eingetragen wird, trägt
+          CE automatisch ein Datum in ferner Zukunft ein.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Prüfstatus</term>
+
+        <listitem>
+          <para>Preview = Vorschau - der Beitrag wird noch nicht
+          gespeichert(!), Postet = Der Beitrag wird gespeichert</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Aktiv</term>
+
+        <listitem>
+          <para>Soll der Beitrag zugreifbar sein, oder soll der erstmal nur
+          'intern' bleiben? Häkchen setzen, da der Beitrag ja gleich sichtbar
+          sein soll.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Außerdem kann man natürlich alle anderen Werte setzten, wenn man sie
+    nicht so haben will, wie in der Modul-Konfiguration festgelegt (siehe
+    oben).</para>
+
+    <para>Wenn alle Angaben richtig sind, kann jetzt 'Seiteninhalt speichern'
+    geklickt werden. Danach erscheint die gleiche Seite wieder und der gerade
+    eingegeben Beitrag sollte in der Übersicht erscheinen. Daneben befinden
+    sind verschiedene Links zur Manipulation des Beitrags: Editieren | Löschen
+    | Deaktivieren | Links | Rechts | Hoch | Runter - über Editieren kann man
+    den Beitrag ändern, über 'löschen' löschen - die anderen Funktionen werden
+    später erklärt.</para>
+
+    <bridgehead>Menüpunkt einrichten</bridgehead>
+
+    <para>Der gerade eingegebene Beitrag ist für den normalen User noch nicht
+    zu erreichen, da es keinen Link zu ihm gibt. Diesen legt man unter
+    <emphasis role="bold">Menüs anzeigen</emphasis> an - ein paar der
+    Menüpunkte ähneln denen aus der Seitenpublikation:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Menü-Punkt-Name</term>
+
+        <listitem>
+          <para>Name, der im Menü als Link erscheint (Zu lange Begriffe können
+          den Menüblock unschön auseinander drücken!)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Menü-Typ</term>
+
+        <listitem>
+          <variablelist>
+            <varlistentry>
+              <term>Trenner</term>
+
+              <listitem>
+                <para>Leerzeile zur optischen Auflockerung in umfangreichen
+                Menüs</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Titel</term>
+
+              <listitem>
+                <para>Kein Link nur Zwischenüberschrift, wird auch anders
+                dargestellt</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Anklickbarer Titel</term>
+
+              <listitem>
+                <para>wie Titel aber doch klickbar (!?)</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Modul</term>
+
+              <listitem>
+                <para>Hier kann direkt der eben eingegebene Artikel ausgewählt
+                werden. Offenbar ist hier geplant auch Beiträge aus anderen
+                Modulen einfach auswählbar zu machen.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>zugehörige URL</term>
+
+              <listitem>
+                <para>beliebige URL - auch externe</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Übergeordnetes Menü</term>
+
+        <listitem>
+          <para>Soll der Menüpunkt Unterpunkt eines anderen sein?</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>CE Menü-Block</term>
+
+        <listitem>
+          <para>Wenn mehrere Menüblocks angelegt wurden, kann man hier den
+          richtigen auswählen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sprache</term>
+
+        <listitem>
+          <para>Für welche Sprache soll dieser Link sichbar sein? Hier ist die
+          Sitesprache voreingestellt, und sollte bei einsprachigen Sites auch
+          nicht geändert werden. Ist die Site mehrsprachig, und alle User
+          sollen den Text sehen können, stellt man hier auf 'all'</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Publikationsdatum/Ablaufdatum</term>
+
+        <listitem>
+          <para>Ab wann soll der Link angezeigt werden und wann soll er wieder
+          ausgeblendet werden? Wenn hier nichts eingetragen wird, trägt CE
+          automatisch ein Datum in ferner Zukunft ein.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Prüfstatus</term>
+
+        <listitem>
+          <para>Preview = Vorschau - der Beitrag wird noch nicht
+          gespeichert(!), Postet = Der Beitrag wird gespeichert</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Aktiv</term>
+
+        <listitem>
+          <para>oll der Link sichbar sein, oder soll der erstmal nur 'intern'
+          bleiben? Häkchen setzen, da der Beitrag ja gleich sichtbar sein
+          soll.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>wird in neuem Fenster geöffnet</term>
+
+        <listitem>
+          <para>Gerade externe Links sollen ja oft in einem neuen
+          Browserfenster geöffnet werden.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Wenn alle Angaben richtig sind, kann jetzt 'Menü speichern' geklickt
+    werden. Der Link sollte dann sowohl in der Übersicht erscheinen, als auch
+    im Menüblock - sofern denn 'Aktiv' gewählt wurde. Die Möglichkeit ein
+    Javaskript-Menü mit RolloverBildern einzubauen, kann der Newbie erstmal
+    ignorieren.</para>
+
+    <para><emphasis role="bold">Fertig:</emphasis> Der erste Beitrag wurde
+    erstellt und im Menüblock verlinkt.</para>
+
+    <bridgehead>Bild einbinden</bridgehead>
+
+    <para>Um ein Bild in einen Beitrag einzubinden, findet man unter <emphasis
+    role="bold">Media Manager</emphasis> den Media Upload. Klickt man hier
+    auch 'Durchsuchen' kann man lokal das gewünschte Bild auswählen. Nach
+    Klick auf 'Medien-Archiv erneuern' wird das Bild hochgeladen - Das dauert
+    einen Moment in dem man nicht wirklich sieht, daß etwas passiert. Ist der
+    Upload jedoch fertig, erscheint eine unscheinbare Nachricht:
+    'Medien-Archiv erneuert'.</para>
+
+    <para>Achtung: Ist das Grafikformat nicht in den Mime-Types zugelassen,
+    ist das Bild zu groß, oder ist das Verzeichnis schriebgeschützt, kann der
+    Upload nicht funktionieren.</para>
+
+    <para>Bei Klick auf 'Seiteninhalt anzeigen' erscheint die Übersicht der
+    Artikel mit dem eben erstellten Beitrag. Der soll jetzt 'editiert' werden.
+    Also klickt man rechts neben dem Titel des Beitrages auf 'Editieren'. Der
+    Beitrag erscheint, mit allen Einstellungen.</para>
+
+    <para>Der Cursor sollte an die Stelle gesetzt werden, an der das Bild
+    eingefügt werden soll. Dann klickt man auf den Editor-Button für 'Bild
+    einfügen (kleiner Rahmen mit Bild, siebtes Icon von Links in der oberen
+    Reihe). In einem kleinen Popup kann man nun das Bild auswählen, die Größe
+    einstellen (muß man aber nicht) und angeben, wie es im Text angeordnet
+    werden soll. Nach Bestätigung mit 'Ok' sollte das Bild im Text angezeigt
+    werden. Nun kann auch der Beitrag wieder gepostet werden und das Bild
+    erscheint fortan im Text.</para>
+
+    <bridgehead>Artikel untereinander Verknüpfen</bridgehead>
+
+    <para>Einen Link zu einem anderen Artikel in einen Text einzufügen ist mit
+    Content Express sehr einfach gelöst.</para>
+
+    <para>Möchte man einen Link zu einem anderen Artikel einfügen, bringt man
+    den Cursor im Editor einfach an die antsprechende Stelle (man kann auch
+    den zu verlinkenden Text markieren) und klickt dann auf das gelbe Icon
+    (das achte von links in der oberen Reihe). In einem Popup kann man nun den
+    Artikel auswählen und wenn man vorher nicht schon einen Linktext markiert
+    hatte, sollte man den Linktext eingeben. Klick auf 'Okay' - Fertig.</para>
+  </section>
+
+  <section>
+    <title>Pagesetter</title>
+
+    <para>Dir ist Modulprogrammierung eine Nummer zu hoch, trotzdem möchtest
+    Du Dir aber gerne ein eigenes kleines Modul basteln, mit dem Du dann
+    einfach Inhalte verwalten kannst? Dann bist Du bei Pagesetter genau
+    richtig. Mit Jørn Lind-Nielsen's Modul kannst Du in wenigen Schritten ein
+    mittlerweile sogar sehr komfortables Modul "zusammenklicken".</para>
+
+    <para>Pagesetter ist ein PostNuke-Modul, mit dem der Administrator
+    beliebige Arten von Publikationen definieren und veröffentlichen kann.
+    Dadurch muss man nicht für jeden speziellen Fall ein eigenes Modul
+    programmieren: Man legt einfach die nötigen Datenbankfelder (String, Text,
+    Datum, Bild usw.) fest und entwirft dazu ein Template. So kann man die
+    Funktionalität anderer Module nachbauen:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>News (Artikel mit Überschrift, Anreisser, Haupttext und
+        dazugehörigem Foto)</para>
+      </listitem>
+
+      <listitem>
+        <para>FAQ (Artikel mit Frage und Antwort)</para>
+      </listitem>
+
+      <listitem>
+        <para>Rezepte (Titel, Liste der Zutaten, Kochanweisungen)</para>
+      </listitem>
+
+      <listitem>
+        <para>Aufgabenlisten</para>
+      </listitem>
+
+      <listitem>
+        <para>Seminarbeschreibungen</para>
+      </listitem>
+
+      <listitem>
+        <para>Musiksammlungen</para>
+      </listitem>
+
+      <listitem>
+        <para>usw.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Der Funktionsumfang von Pagesetter umfasst folgende Features:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Der Admin kann selbst Publikationstypen definieren, die eine
+        variable Anzahl Eingabefelder verschiedener Art umfassen
+        können.</para>
+      </listitem>
+
+      <listitem>
+        <para>Mit dem pnRender-System kann der Admin die Modulausgaben in
+        Templates in fast jegliche Form bringen.</para>
+      </listitem>
+
+      <listitem>
+        <para>Der WYSIWYG-Editor htmlArea erleichtert die Eingabe der Daten
+        ohne HTML-Kenntnisse.</para>
+      </listitem>
+
+      <listitem>
+        <para>Dropdown-Listen aus Kategorien und Unterkategorien können
+        erzeugt und als Eingabefelder eingebunden werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Mehrseitige Einträge.</para>
+      </listitem>
+
+      <listitem>
+        <para>Daten könne über den eingebauten Datum-Picker ausgewählt
+        werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Hohe Geschwindigkeit dank Ausgabe-Caching.</para>
+      </listitem>
+
+      <listitem>
+        <para>Einfache Workflows zum Einreichen und Bestätigen von
+        Artikeln.</para>
+      </listitem>
+
+      <listitem>
+        <para>Artikel können mit Start- und Enddatum veröffentlicht
+        werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Auf der PostNuke-Startseite könne beliebige Publikationstypen
+        angezeigt werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Pagesetter ist kompatibel zu dem PostNuke-Hook System. Es können
+        zum Beispiel Kommentare, Bewertungen usw. in Pagesetter-Artikeln
+        benutzt werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>Pagesetter arbeitet mit Photoshare als Bildergalerie zusammen.
+        Bilder aus der Galerie können einfach in Pagesetter-Artikel übernommen
+        werden.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Nach der Installation des Moduls, muss das Untervezeichnis
+    pnTemplates Schreibzugriff (777) bekommen. Und schon kann es
+    losgehen:</para>
+
+    <procedure>
+      <step>
+        <para>Man legt sich einen neuen Publikationstypen an und klickt sich
+        ein paar Datenbank Felder zusammen, in die später die Daten
+        eingetragen werden.</para>
+      </step>
+
+      <step>
+        <para>Man weisst dem Publikationstypen einen Workflow zu. Sollen die
+        User alles bearbeiten können (Wiki), oder sollen Redakteure Artikel
+        einreichen, die von Lektoren korrigiert an Chefredakteure zur
+        Veröffentlichung weitergereicht werden? Diese Workflows lassen sich
+        per XML selbst erstellen und mit Plugins erweitern.</para>
+      </step>
+
+      <step>
+        <para>Zum Schluss erstellt man sich noch Templates, die die Ausgaben
+        der Inhalte steuern.</para>
+      </step>
+    </procedure>
+
+    <para>Pagesetter ist die optimale Lösung für einfache Content-Fragen. Das
+    Modul kann zum Beispiel sehr einfach das Newsmodul ersetzen und arbeitet
+    sogar mit Photoshare als Galerie direkt zusammen. Ein bisschen Ahnung von
+    HTML sollte man haben und zumindest keine Angst vor PHP/Smarty: es wird
+    Xanthia/pnRender benötigt!</para>
+
+    <para>Die Homepage findet man auf <ulink
+    url="http://www.elfisk.dk/">http://www.elfisk.dk/</ulink>.</para>
+  </section>
+
+  <section>
+    <title>Bestehende Seiten und andere Applikationen einbinden</title>
+
+    <para>Wenn eine Homepage bereits seit einiger Zeit läuft, so haben sich
+    sicherlich bereits etliche Dokumente etc. angesammelt, die bei einer
+    Umstellung auf PostNuke erhalten bleiben sollen. Vielleicht ist auch
+    bereits die eine oder andere Web-Anwendung wie Forum, Gästebuch o.ä. Im
+    Einsatz. Um diese beizubehalten, gibt es mehrere Module.</para>
+
+    <para>Man sollte aber beachten, dass dies alles keine echte Einbindung
+    ist. Statische Inhalte sollten mit Modulen wie <emphasis
+    role="bold">ContentExpress</emphasis> oder <emphasis
+    role="bold">PagEd</emphasis> verwaltet werden. Nur so kann man die
+    Möglichkeiten eines CMS ausschöpfen. Um eine Anwendung einzubinden, reicht
+    es nicht aus, sie im PostNuke-Design anzuzeigen. Vielmehr müssen auch z.B.
+    die Benutzerverwaltung, die Suchfunktionen usw. integriert werden.</para>
+
+    <bridgehead>Static_Docs</bridgehead>
+
+    <para>Von Simon Wunderlin stammt ein hervorragendes Modul, mit dem man
+    alle Arten von Dokumenten einbinden kann. <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-108.html">Static_Docs</ulink>
+    benutzt dazu eine Art virtuelles Dateisystem. Der Vorteil bei dieser
+    Methode ist, dass HTML-Seiten nicht angepasst werden müssen. Das erledigt
+    Static_Docs von sich aus.</para>
+
+    <para>Die Vorgehensweise ist einfach: Die darzustellenden Seiten werden in
+    das Verzeichnis <filename>modules/Static_Docs/data</filename> kopiert,
+    wobei die Verzeichnisstruktur erhalten bleiben muß &mdash; fertig.
+    Static_Docs kann neben reinen HTML-Seiten auch eine Reihe anderer
+    Dateitypen darstellen, so werden z.B. Bilder oder Flash-Dateien
+    automatisch im Design der Seite angezeigt. Auch eine Unterstützung vom
+    PHP- und cgi-Skripten ist vorhanden. Hier muß aber gegebenenfalls das
+    jeweilige Skript entsprechend angepasst werden.</para>
+
+    <bridgehead>Framebrowser</bridgehead>
+
+    <para>Framebrowser war eine Möglichkeit, Seiten in einem IFrame anzeigen
+    zu lassen. Framebrowser wird nicht mehr weiterentwickelt, die Nachfolge
+    hat PostWrap angetreten.</para>
+
+    <bridgehead>PostWrap</bridgehead>
+
+    <para>Mit <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-visit-lid-59.html">Postwrap</ulink>
+    lassen sich die Seite im <ulink
+    url="http://selfhtml.teamone.de/html/frames/eingebettete.htm">iFrame</ulink>
+    anzeigen - so lässt sich dann auch recht einfach auf Externe Inhalte
+    zugreifen. Damit ist es nicht nur möglich, statische Seiten anzuzeigen,
+    sondern eben auch die Ausgabe von anderen Skripten - gleich, ob es sich
+    dabei um PHP-Skripte oder CGIs handelt.</para>
+
+    <bridgehead>blank.php</bridgehead>
+
+    <para>Dies ist die Methode für 'Selbermacher'. Folgendes Skript zeigt eine
+    Seite im PostNuke-Design an:</para>
+
+    <programlisting>&lt;?php
+// Initialisierung der PostNuke-API
+include'includes/pnAPI.php';
+pnInit();
+
+// Kopf der Seite
+include('header.php');
+
+// Wenn eine Tabelle um die Seite gewünscht ist. 
+// Sonst kann die folgende Zeile auch weggelassen werden.
+OpenTable();
+?&gt; 
+
+HTML oder PHP hier einfügen ... 
+
+&lt;?php
+// Wenn eine Tabelle um die Seite gewünscht ist, diese wieder schließen.
+// Sonst kann die folgende Zeile auch weggelassen werden.
+CloseTable();
+
+// Seitenfuß
+include('footer.php');
+
+// seems to be missing in older versions
+if(function_exists('session_write_close')){
+ session_write_close();
+}
+?&gt;</programlisting>
+
+    <para>Diese Datei legt man z.B. als <filename>foobar.php</filename> in das
+    Stammverzeichnis von PostNuke. Ein Aufruf von
+    <systemitem>http://url.meiner.seite/foobar.php</systemitem> genügt dann,
+    um die Seite aufzurufen.</para>
+
+    <bridgehead>PostNuke_frame</bridgehead>
+
+    <para>Eine Weiterentwicklung der blank.php ist <ulink
+    url="http://sf.net/projects/lottasophie">PostNuke_frame</ulink>. Mit Hilfe
+    dieses PHP-Skripts erhält man die Bereiche "oben und links" sowie "rechts
+    und unten" einer PostNuke-Seite in Variablen, die man dann weiter
+    verwenden kann. Dies klappt sowohl bei statischen Seiten als auch bei
+    manchen PHP-Skripten. Der Vorteil ist, dass die Seiten mit PostNuke_frame
+    nicht notwendigerweise im PostNuke-Verzeichnis liegen müssen.</para>
+  </section>
+</chapter>

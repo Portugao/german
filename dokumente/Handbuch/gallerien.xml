@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Gallerien</title>
+
+  <section>
+    <title>Photoshare</title>
+
+    <para>Aus der Not geboren, auch im safe_mode eine Galerie mit PostNuke
+    betreiben zu können, hat Photoshare mittlerweile eine treue Fangemeinde
+    gefunden. Programmierer Jørn Lind-Nielsen (siehe auch: Pagesetter) hat
+    sich mit diesem Modul um die Kooperation zwischen den verschiedenen
+    Modulen verdient gemacht: Es bietet eine Schnittstelle zu Photoshare, mit
+    der andere Module auf die dort verwalteten Bilder zugreifen können. PagEd
+    und Pagesetter zum Beispiel können Photoshare-Bilder in ihre Artikeln
+    integrieren.</para>
+
+    <para>Die Fotos werden bei Photoshare in Alben verwaltet, deren Aussehen
+    über Templates angepasst werden können. Es gibt zum Beispiel die normale
+    Ansicht vieler kleiner Thumbnails, eine Diashow und eine Ansicht, ähnlich
+    der "Filmstreifen"-Ansicht aus Windows.</para>
+
+    <para>Alben können Unteralben enthalten, deren Rechte über eine eigene
+    Rechtverwaltung sehr einfach zugeteilt werden können. Man kann sogar
+    seinen Usern ermöglichen eigene Alben zu pflegen.</para>
+
+    <para>Wer grosse Mengen Bilder importieren will, kann die Dateien zuvor
+    per FTP hochladen und dann über einen eigenen Dialog importieren. Jedes
+    Bild kann mit einem Titel und einer Beschreiung versehen werden.</para>
+
+    <para>Homepage: <ulink
+    url="http://www.elfisk.dk">http://www.elfisk.dk</ulink></para>
+  </section>
+</chapter>

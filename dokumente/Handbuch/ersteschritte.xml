@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$" status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Erste Schritte</title>
+
+  <para>Dieser Text wurde und freundlicherweise von <ulink
+  url="http://www.andylanger.de">Andy Langer</ulink> zur Verfügung
+  gestellt.</para>
+
+  <para>Die Installation ist erfolgreich verlaufen und wir stehen vor der
+  fertig funktionierenden Seite. Klasse!</para>
+
+  <section>
+    <title>Einloggen</title>
+
+    <para>Jetzt sind wir endlich soweit, uns das erste Mal auf der eigenen
+    Seite einzuloggen. Das geht auf der rechten Seite mit dem vorher
+    festgelegten Nutzernamen und Passwort für den Administrator.</para>
+
+    <para>Bin ich da schon drin? Ja. So einfach geht das. Die Seite ist
+    natürlich noch ziemlich nackt, aber immerhin. Das Menü auf der linken
+    Seite hat sich auch verändert, es kamen ein paar Punkte hinzu:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Einstellungen</para>
+      </listitem>
+
+      <listitem>
+        <para>Administration</para>
+      </listitem>
+
+      <listitem>
+        <para>Abmeldung</para>
+      </listitem>
+    </itemizedlist>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="menu1.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Vor dem Anmelden</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="menu2.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Das Administrationsmenü</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+
+    <para>Mit denen werden wir uns jetzt etwas näher befassen.</para>
+
+    <bridgehead>Abmeldung</bridgehead>
+
+    <para>Fangen wir zur Abwechslung mal von unten an. Denn der ist eigentlich
+    selbsterklärend und am schnellsten erklärt. Damit meldet man sich von der
+    Seite wieder ab.</para>
+
+    <bridgehead>Einstellungen</bridgehead>
+
+    <para>Darüber kann man einige prsönliche Dinge einstellen, die das
+    Aussehen der Seite betreffen. Außerdem kann man ein eigenes Profil
+    anlegen, das andere Nutzer der Seite dann aufrufen können. Alles, was man
+    hier einstellt, betrifft nur den aktuellen Nutzernamen, haben also für
+    alle anderen Anwender keine Auswirkungen.</para>
+
+    <para>Ich denke, am einfachsten ist es, wenn man sich alle Punkte mal
+    durchschaut. Sollte etwas unklar sein, läßt man am besten die
+    Standardeinstellung.</para>
+
+    <bridgehead>Administration</bridgehead>
+
+    <para>Der wichtigste Punkt. Klickt man auf
+    <guimenu>Administration</guimenu>, öffnet sich das Administrationsmenü mit
+    allen möglichen Komponenten, die bearbeitet werden können. Da gibt's ganz
+    schön viel, denn über die Administration kann man alles einstellen, was
+    das Aussehen und die Funktionsweise der Seite betrifft.</para>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="AdminMenu.gif" format="GIF" />
+        </imageobject>
+
+        <caption>
+          <para>Vor dem Anmelden</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Willkommensnachricht löschen</title>
+
+      <para>Jetzt steht uns noch die Willkommensnachricht im Weg. Dieseist
+      eine so genannte <emphasis role="bold">Admin Message</emphasis>. Wie
+      bereits oben erwähnt gibt es verschiedene Möglichkeiten, Text auf die
+      Seite zu bekommen, unter anderem eben diese. Um diesen Text loszuwerden,
+      gehst Du auf <guimenu>Administration</guimenu>, dann auf
+      <guimenuitem>Admin Messages</guimenuitem>. Hier kommt jetzt eine Liste
+      mit allen aktiven Nachrichten des Administrators und darunter die
+      Möglichkeit, eigene zu schreiben.</para>
+
+      <para>Jetzt gehst Du bei der entsprechenden Zeile auf
+      <guibutton>löschen</guibutton>, bestätigst das noch und weg ist
+      sie.</para>
+
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata align="center" fileref="adminmessages.gif" format="GIF" />
+          </imageobject>
+
+          <caption>
+            <para>Das Menü für Administrator-Nachrichten</para>
+          </caption>
+        </mediaobject>
+      </screenshot>
+    </section>
+
+    <section>
+      <title>Eigene Willkommens-Nachricht</title>
+
+      <para>Weil wir gerade dabei sind, kannst Du gleich noch einen eigenen
+      Willkommens-Text schreiben. Dazu gibst Du im Formular unten einen Titel
+      und eine Nachricht ein, z. B.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Titel</term>
+
+          <listitem>
+            <para>Willkommen</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Nachricht</term>
+
+          <listitem>
+            <para>Toll dass Du da bist, ich bin ja so glücklich!</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Sprache</term>
+
+          <listitem>
+            <para>Deutsch</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Aktiv</term>
+
+          <listitem>
+            <para>ja</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Wer soll die Nachricht sehen</term>
+
+          <listitem>
+            <para>alle Besucher</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>Fertig.</para>
+    </section>
+  </section>
+</chapter>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Blöcke</title>
+
+  <para>Nahezu jedes Modul bringt seine eigenen Blöcke mit. Der Inhalt wird
+  vom Modul bestimmt, wie z.B. neueste Links, ungelesene persönliche
+  Nachrichten usw.</para>
+
+  <section>
+    <title>Core/Simple File Include</title>
+
+    <para>Dieser Block lädt als Inhalt eine vorgebene Datei (z.B. PHP)</para>
+  </section>
+
+  <section>
+    <title>Core/PHP Script</title>
+
+    <para>Dieser Block lädt als Inhalt eine vorgebene PHP-Datei.</para>
+
+    <important>
+      <itemizedlist>
+        <listitem>
+          <para>Die Datei darf <markup>&lt;?php</markup> und
+          <markup>?&gt;</markup> <emphasis role="bold">nicht</emphasis>
+          enthalten.</para>
+        </listitem>
+
+        <listitem>
+          <para>Die Größe ist auf auf 64k beschrankt.</para>
+        </listitem>
+
+        <listitem>
+          <para>Datenbankzugriffe sind nicht erlaubt.</para>
+        </listitem>
+      </itemizedlist>
+    </important>
+  </section>
+
+  <section>
+    <title>Core/Plain Text</title>
+
+    <para>Eine einfache Möglichkeit, Text in einem Block darzustellen.
+    Komfortabler geht es mit den Administrative Messaages.</para>
+  </section>
+
+  <section>
+    <title>Core/RSS Newsfeed</title>
+
+    <para>Manche Seiten bieten Fremdinhalte im RSS Format an. Diese Inhalte
+    kann man in die eigene Seite einbinden. Die Nachrichten werden nicht
+    Bestandteil der eigenen Seite. Man sieht die Überschriften der Artikel und
+    wird durch einen Klick auf die andere Seite geleitet.</para>
+
+    <para>Möglich wird das durch die Unterstützung des sogenannten
+    RSS/RDF-Formats.</para>
+
+    <para>Bei der Einbindung fremder Schlagzeilen müssen die Urheberrechte
+    beachtet werden!</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>RSS File URL:</term>
+
+        <listitem>
+          <para>Hier geben Sie die URL der Nachrichtenquelle ein, z.B.
+          http://www.post-nuke.net/backend.php</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Seitenbild anzeigen:</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Seitensuche anzeigen:</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung anzeigen:</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Alternative Seitenanzeige aktivieren:</term>
+
+        <listitem>
+          <para></para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Inhalte aktualisieren:</term>
+
+        <listitem>
+          <para>Die Nachrichten werden nicht ständig abgefragt; vielmehr wird
+          eine lokale Kopie angelegt. Diese Kopie veraltet natürlich nach
+          einiger Zeit. Aus diesem Grund kann man hiermit eine automatische
+          Aktivierung einstellen. Welche Zeit hier eingestellt wird, hängt
+          davon ab, wie häufig die eingebundene Seite ihre Nachrichten
+          aktualisiert.</para>
+
+          <para>PostNuke selbst kann als 'Quelle' für entsprechende
+          Schlagzeilen dienen. Dazu dient die Datei backend.php.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Core/RSS Extra</bridgehead>
+
+    <para>Ein alternatives Format für Fremdinhalte. Siehe beim
+    RSS-Block.</para>
+  </section>
+
+  <section>
+    <title>Core/Languages</title>
+
+    <para>Dieser Block zeigt die Auswahl für die Sprache des Benutzers an.
+    Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
+    jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
+    Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis, die
+    auch in der Funktion "languagelist", die in der Dateiei
+    modules/NS-languages/api.php definiert wird, enthalten sind.</para>
+  </section>
+
+  <section>
+    <title>Core/User's Custom Box</title>
+
+    <para>Der Inhalt dieses Blocks kann vom User selbst bestimmt werden (z.B.
+    Lieblingslinks)</para>
+  </section>
+
+  <section>
+    <title>Core/Latest Web Links</title>
+
+    <para>Block mit den neuesten Einträgen der Link-Datenbank</para>
+  </section>
+</chapter>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$ $Date$" status="draft">
+  <!-- $Id$-->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Weitere Module</title>
+
+  <section>
+    <title>Autolinks</title>
+
+    <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
+    Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
+    Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
+    Funktion durchsucht einen Texte nach bestimmten Schlüsselworten und
+    verknüpft dieses mit einem Link.Soll zum Beipiel in allen Artikeln
+    automatisch das Wort 'PostNuke' mit dem Link www.post-nuke.net verknüpft
+    werden, sind folgende Schritt nötig:</para>
+
+    <bridgehead>Installation &amp; Konfiguration</bridgehead>
+
+    <para>Über <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guisubmenu>Module</guisubmenu>
+
+        <guimenuitem>Liste neu generieren</guimenuitem>
+      </menuchoice> muß zuerst die Autolinks initialisiert und aktiviert
+    werden.</para>
+
+    <para>Um dann Autolinks für ein bestimmtes Modul zu aktivieren, auf
+    <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guimenuitem>Module</guimenuitem>
+      </menuchoice> gehen und klicken auf <guimenuitem>neu
+    erzeugen</guimenuitem> klicken. Danach kann man innerhalb des Moduls, das
+    man ausgewählt hat, auf <guimenuitem>editieren</guimenuitem> gehen und
+    dort dann <guimenuitem>Autolink</guimenuitem> anwählen. Wenn man das bei
+    allen Modulen gemacht hat, bei denen man Autolinks hinzufügen möchte, geht
+    man auf <guimenuitem>Autolink Konfiguration Updaten</guimenuitem> und
+    startet ein Update der Datenbank.</para>
+
+    <important>
+      <para>Man muss diese Funktion für jedes Modul bei der
+      'Modulkonfiguration' einschalten!</para>
+    </important>
+
+    <para>In der <emphasis>Autolinks Konfiguration</emphasis> kann man
+    einstellen, ob ein Link nur beim ersten Auftreten eines Wortes in einem
+    Artikel gesetzt wird oder, ob der Link jedesmal hinzugefügt werden soll.
+    Kommt das Wort 'PostNuke' 3x in dem Text vor, würde dieser dann alle drei
+    mal mit dem Link versehen.</para>
+
+    <para>Wenn nun die Autolinks aktiviert sind, kann man über den
+    Administrationsbildschirm folgende Funktionen nutzen: <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guisubmenu>Autolinks</guisubmenu>
+
+        <guimenuitem>Autolink hinzufügen</guimenuitem>
+      </menuchoice></para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Eingabe des Schlüsselwortes</term>
+
+        <listitem>
+          <para>Das ist das Wort, welches später im Text durch den Link
+          ersetzt werden soll. Groß/Kleinschreibung wird dabei nicht
+          unterschieden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Titel eingeben</term>
+
+        <listitem>
+          <para>Eingabe des Titels, der später für den Link erscheinen soll.
+          Dieser wird auch für die 'MouseOver'-Effekte benutzt. (Stichwort:
+          'Alt-Tag' im Link)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>URL eingeben</term>
+
+        <listitem>
+          <para>Die URL in der Form z.b. 'http://www.linkname.de' eingeben
+          (oder wenn die Datei auf dem eigenen System ist als
+          'datei.html')</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kommentar</term>
+
+        <listitem>
+          <para>Diese ist nur für den Administrator sichtbar.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Mit <guibutton>Hinzufügen</guibutton> wird der Link dann in die
+    Datenbank eingetragen.</para>
+
+    <para>Mit <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guisubmenu>Autolinks</guisubmenu>
+
+        <guimenuitem>Autolinks ansehen</guimenuitem>
+      </menuchoice> kann man sich eine Liste aller Autolinks sortiert nach
+    Schlüsselwort ansehen und diese auch editieren. Mit <emphasis>Update
+    Autolink</emphasis> wird die Änderung dann in die Datenbank eingetragen.
+    Klickt man auf <guibutton>löschen</guibutton> wird man nochmals gefragt,
+    ob der Link wirklich gelöscht werden soll. Durch
+    <emphasis>Abbruch</emphasis> kann man hier nochmal den Löschvorgang
+    verhindern.</para>
+
+    <important>
+      <para>Da jede Ausgabe erstmal noch durch dieses Modul geschickt wird,
+      bringt es natürlich zumindest leichte Performance-Nachteile mit
+      sich.</para>
+    </important>
+  </section>
+
+  <section>
+    <title>Ephemeriden</title>
+
+    <para>Tja, ein nicht ganz einfach zu übersetzendes Wort. Ephemeriden sind
+    tagesabhängige Informationen, mit denen die Seite interessanter gestaltet
+    werden kann. Dieses Modul zeigt also Daten zu einem Tag an, frei nach dem
+    Motto: 'Es war einmal...'</para>
+
+    <para>Man kann also Termine eingeben, die auf besondere Ereignisse in der
+    Geschichte hinweisen, also z.B. den eigenen Geburtstag :-) Man trägt das
+    entsprechende Datum mit <emphasis>Tag, Monat, Jahr</emphasis> ein, wählt
+    die Sprache, für die dieser Ephemerid angezeigt werden soll und trägt dann
+    noch eine Beschreibung ein. Durch die Wahl der Sprache wird der Ephemerid
+    nur für die entsprechende Sprachgruppe angezeigt, z.B. wäre der Geburtstag
+    der Queen oder der 'Independence Day' für alle engl. sprechenden User
+    interessant. Die bereits eingetragenen Daten kann man wieder
+    <emphasis>editieren</emphasis> oder <emphasis>löschen</emphasis>. WICHTIG:
+    Es erfolgt keine Bestätigung, ob der Eintrag wirklich gelöscht werden
+    soll.</para>
+
+    <para>Die Tagesinformationen werden durch den entsprechenden Block
+    "Core/Ephemerids" angezeigt.</para>
+  </section>
+
+  <section>
+    <title>Zitate</title>
+
+    <para>Im Modul Zitate können Zitate eingetragen werden, die dann zufällig
+    auf der Website im 'Quotes'-Block (einzurichten in Administration-Blöcke)
+    angezeigt werden.</para>
+
+    <para>Zusätzlich zum Zitat kann man auch noch den Autor angeben. 'Submit'
+    speichert das Zitat. Die bereits gespeicherten Zitate können über 'Ändern'
+    bearbeitet und danach wieder gespeichert werden. Mit 'Löschen' wird das
+    Zitat gelöscht. Es wird dabei nicht nach einer Bestätigung gefragt.</para>
+
+    <para>Der Block "Quotes/Random Quote" zeigt dann ein zufälliges Zitat aus
+    der Zitatedatenbank an.</para>
+  </section>
+
+  <section>
+    <title>Statistik</title>
+
+    <para>Das Statistik-Modul informiert über die Anzahl der Zugriffe.</para>
+
+    <bridgehead>Zugriffsrechte</bridgehead>
+
+    <para>Bei den Zugriffsrechten kann man sich durch einen Klick auf
+    'Komponente' bzw. 'Instanz' alle im System hinterlegten
+    Berechtigungsschemata anzeigen. Für das Modul Statistik gilt die
+    Komponente 'Stats::' Beispiel:</para>
+
+    <para><literal>Stats:: /// ::</literal></para>
+
+    <para>wenn man z.B. den Zugriff auf die Statistik für unregistrierte
+    Benutzer verhindern möchte, ein (wichtig!) Benutzerrecht</para>
+
+    <para><literal>unregistrierte | Stats:: | .* | keines</literal></para>
+
+    <para>anlegen. Es muss ein Benutzerrecht gewählt werden, da das allgemeine
+    Leserecht bei den Gruppen (unregistrierte | .* | .* | lesen) ansonsten
+    nicht überlagert werden kann.</para>
+
+    <bridgehead>Statistik zurücksetzen</bridgehead>
+
+    <para>Unter Umständen kann es sinnvoll sein, die Statistik wieder
+    zurückzusetzen, z.B. nachdem eine Seite ausgiebig offline getestet wurde,
+    und man den Zähler wirklich bei 0 starten lassen möchte. Es gibt derzeit
+    keine "einfache" Lösung dafür, man muss sich also damit begnügen, die
+    Datenbank manuell zu editieren. Im Anhang findet man ein entsprechendes
+    SQL-Skript.</para>
+  </section>
+</chapter>

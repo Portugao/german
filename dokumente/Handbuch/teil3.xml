@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE part PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<part>
+  <title>Administration</title>
+
+  <preface>
+    <title>Einführung</title>
+
+    <para>Die Administrationsfunktionen stehen nur berechtigten Nutzern zur
+    Verfügung.</para>
+
+    <para>Nach der Anmeldung an der Seite bekommt der berechtigte Nutzer die
+    verschiedenen Administrationsmöglichkeiten der Seite angezeigt (siehe auch
+    Zugriffsrechte ). Diese Grundfunktionalitäten kann man außerdem noch durch
+    verschiedene Module erweitern. Die Anmeldung erfolgt für Benutzer und
+    Administratoren gleich - jeweils direkt über die Homepage der
+    PostNuke-Seite. Nach erfolgreicher Anmeldung wird im Main Menü ein
+    zusätzlicher Link 'Administration' angezeigt, über den man in den
+    Adminbereich gelangt. Hier finden sich dann die
+    Konfigurationsmöglichkeiten für die einzelnen Module. Dies ist die
+    Hauptübersicht zur PostNuke-Administration, es werden alle installierten
+    und aktiven Module angezeigt.</para>
+
+    <para>Zeitgesteuerte Beiträge: Eine Liste der noch nicht veröffentlichten
+    Artikel.</para>
+
+    <para>Die letzten XX Artikel: Hier sieht man die letzten XX Artikel, die
+    veröffentlicht wurden. Die Anzahl der Artikel, die hier dargestellt
+    werden, kann unter den Einstellungen festgelegt werden. Die neuesten
+    Artikel werden oben in der Liste angezeigt. Die Artikel können direkt
+    editiert bzw. gelöscht werden. Im Anschluß an die Liste besteht die
+    Möglichkeit, ältere Artikel über die jeweilige ID direkt zu ändern bzw. zu
+    löschen. Sind Umfragen aktiv, werden diese am Ende der Seite
+    angezeigt.</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="AdminMenu.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
+  </preface>
+
+  <xi:include href="konfiguration.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="moduleundbloecke.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="benutzer.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="infobloecke.xml"
+              xmlns:xi="http://www.w3.org/2003/XInclude" />
+
+  <xi:include href="themes.xml" xmlns:xi="http://www.w3.org/2003/XInclude" />
+</part>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Menüs und Infoblöcke</title>
+
+  <section>
+    <title>Core/Generic menu</title>
+
+    <para>Dies ist der wesentliche Navigationsblock.</para>
+
+    <para>Neben den für alle Blöcke verfügbaren Einstellungen Titel, Position
+    und Sprache bietet es die folgenden Einstellungsmöglichkeiten:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Menü-Format</term>
+
+        <listitem>
+          <para>List-Menü oder Dropdown-Menü, die Art, wie das Menü angezeigt
+          wird.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Anzeige Module</term>
+
+        <listitem>
+          <para>Wenn angekreuzt, werden alle aktiven Module angezeigt. Die
+          angezeigten Namen können in der Administration der Module verändert
+          werden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Anzeige zu prüfen</term>
+
+        <listitem>
+          <para>Wenn angekreuzt, werden eingegangene Artikel etc, die noch zu
+          überprüfen sind, angezeigt</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Die Für die Einträge in der Menüliste gibt es folgende Werte</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Titel</term>
+
+        <listitem>
+          <para>Der Titel, der als Menütitel angezeigt wird</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>URL</term>
+
+        <listitem>
+          <para>Die URL, zu der beim Anklicken gesprungen werden soll.</para>
+
+          <para>Will man zu einem Modul direkt springen, so kann man auch die
+          Kurzform [Modul:Datei] bzw. {Modul:Funktion} verwenden. Dabei
+          gilt:</para>
+
+          <informaltable frame="all">
+            <tgroup cols="3">
+              <colspec colname="url" colwidth="25%" />
+
+              <colspec colname="link" colwidth="35%" />
+
+              <colspec colname="rem" colwidth="40%" />
+
+              <thead>
+                <row>
+                  <entry>Als URL eingegeben</entry>
+
+                  <entry>entstehender Link</entry>
+
+                  <entry>Anmerkung</entry>
+                </row>
+              </thead>
+
+              <tbody>
+                <row>
+                  <entry><userinput>[<replaceable>Modul</replaceable>]</userinput></entry>
+
+                  <entry><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=index</systemitem></entry>
+
+                  <entry morerows="1">die "alte" Art der Adressierung (z.B.
+                  für die Module News, Downloads, FAQ, Reviews, Search
+                  usw.)</entry>
+                </row>
+
+                <row>
+                  <entry><userinput>[<replaceable>Modul</replaceable>:<replaceable>Datei</replaceable>]</userinput></entry>
+
+                  <entry><systemitem>modules.php?op=modload&amp;name=<replaceable>Modul</replaceable>&amp;file=<replaceable>Datei</replaceable></systemitem></entry>
+                </row>
+
+                <row>
+                  <entry><userinput>{<replaceable>Modul</replaceable>}</userinput></entry>
+
+                  <entry><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=main</systemitem></entry>
+
+                  <entry morerows="1">die "neue" Art der Adressierung (z.B.
+                  für die Module ContentExpress, pnAddressBook, PostCalendar
+                  usw.)</entry>
+                </row>
+
+                <row>
+                  <entry><userinput>{<replaceable>Modul</replaceable>:<replaceable>Funktion</replaceable>}</userinput></entry>
+
+                  <entry><systemitem>index.php?module=<replaceable>Modul</replaceable>&amp;func=<replaceable>Funktion</replaceable></systemitem></entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </informaltable>
+
+          <para>Der dafür zustängige Code schaut nur, ob das <emphasis
+          role="bold">erste</emphasis> Zeichen [ oder { ist, und geht davon
+          aus, dass das <emphasis role="bold">letzte</emphasis> Zeichen die
+          entsprechende schließende Klammer ist. Evtl. notwendige zusätzliche
+          Parameter müssen also <emphasis role="bold">in</emphasis> die
+          Klammer und nicht dahinter! Man kann auch z.B. mit
+          "{Modul:Funktion&amp;sid=1}" noch weitere Daten übergeben</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung</term>
+
+        <listitem>
+          <para>Die Beschreibung wird angezeigt, wenn die Maus über einem Link
+          verweilt</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <section>
+      <title>Zugriffsrechte für das Hauptmenü</title>
+
+      <para>Ein gutes Beispiel für die Anwendung des PostNuke
+      Berechtigunssystems liefert das Hauptmenü. Als kurze Vorbemerkung sollte
+      erwähnt werden, daß ".*" einen regulären Ausdruck darstellt. Damit mag
+      der eine oder andere nichts anfangen, aber mal kurz:</para>
+
+      <para>der . beschreibt ein beliebiges Zeichen</para>
+
+      <para>der * steht für eine beliebige Wiederholung (auch keine)</para>
+
+      <para>Nehmen wir einmal an, wir hätten einen Menü-Block mit dem Namen
+      <guimenu>Hauptmenü</guimenu> und den Punkten
+      <guimenuitem>Home</guimenuitem>, <guimenuitem>mein
+      Account</guimenuitem>, <guimenuitem>Mitglied werden</guimenuitem>,
+      <guimenuitem>Administration</guimenuitem> und
+      <guimenuitem>Logout</guimenuitem>. Nun sollen <emphasis>alle
+      Benutzer</emphasis> <guimenuitem>Home</guimenuitem> sehen, alle
+      <emphasis>registrierten Benutzer</emphasis> zusätzlich <guimenuitem>mein
+      Account</guimenuitem> und <guimenuitem>Logout</guimenuitem>, alle
+      <emphasis>Administratoren</emphasis>
+      <guimenuitem>Administration</guimenuitem> und alle Gäste
+      <guimenuitem>Mitglied werden</guimenuitem>.</para>
+
+      <para>Als nächstes ist die jeweilige Gruppe zu bestimmen. Zunächst die
+      Admins, dann die User und zum Schluß die Gäste. Warum? weil das System
+      dem Prinzip "First Match" folgt, das heißt also, die erste positive
+      Übereinstimmung die Suche beendet. Es ist also immer darauf zu achten,
+      daß die komplexen oder sehr speziellen Einschränkungen zuerst
+      erfolgen.</para>
+
+      <para>Für den Admin wählt man dann die Komponente (in diesem Fall immer
+      "Menublock::").</para>
+
+      <para>Die Instanz setzt sich bei Menüblöcken aus dem Titel und dem
+      Menüpunkt zusammen. Hier soll nun "Mitglied werden" verboten werden,
+      alles andere ist für den Admin erlaubt:</para>
+
+      <segmentedlist>
+        <segtitle>Gruppe</segtitle>
+
+        <segtitle>Komponente</segtitle>
+
+        <segtitle>Instanz</segtitle>
+
+        <segtitle>Recht</segtitle>
+
+        <seglistitem>
+          <seg>Admins</seg>
+
+          <seg>Menublock::</seg>
+
+          <seg>Hauptmenü:Mitglied werden:</seg>
+
+          <seg>keines</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg>Admins</seg>
+
+          <seg>.*</seg>
+
+          <seg>.*</seg>
+
+          <seg>administrieren</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg>alle Gruppen</seg>
+
+          <seg>Menublock::</seg>
+
+          <seg>Hauptmenü:Administration:</seg>
+
+          <seg>keines</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg>Users</seg>
+
+          <seg>Menublock::</seg>
+
+          <seg>Hauptmenü:(mein Account|Logout):</seg>
+
+          <seg>kommentieren</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg>Users</seg>
+
+          <seg>Menublock::</seg>
+
+          <seg>Hauptmenü:Mitglied werden:</seg>
+
+          <seg>keines</seg>
+        </seglistitem>
+
+        <seglistitem>
+          <seg>Users</seg>
+
+          <seg>.*</seg>
+
+          <seg>.*</seg>
+
+          <seg>kommentieren</seg>
+        </seglistitem>
+      </segmentedlist>
+
+      <para>Somit ist dann das Menü so aufgebaut, dass es je nach Userstatus
+      entsprechend angezeigt wird.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Weitere Blöcke</title>
+
+    <section>
+      <title>Core/User's Login</title>
+
+      <para>Hiermit können sich registrierte Benutzer anmelden. Für noch nicht
+      registrierte Benutzer steht ein Informationstext und ein Link zur
+      Registrierung zur Verfügung.</para>
+
+      <para>Wenn Sie dieser Block nicht aktiviert ist, kann man sich dennoch
+      über <systemitem>&lt;PostNuke&gt;/user.php</systemitem> anmelden.</para>
+    </section>
+
+    <section>
+      <title>Core/Online</title>
+
+      <para>Dieser Block zeigt an, wie viele Nutzer bzw. Gäste gerade online
+      sind, unter welchem Namen man selbst angemeldet ist, und wie viele
+      private Nachrichten man hat.</para>
+    </section>
+
+    <section>
+      <title>Core/Button Link Block</title>
+
+      <para>Mit vorhanden Grafiken kann hier einfach eine Navigation mit
+      Buttons erstellt werden. Außerdem lassen sich damit auch die beliebten
+      88x31 Buttons sammeln.</para>
+    </section>
+
+    <section>
+      <title>Core/HTML</title>
+
+      <para>Dieser Block lädt als Inhalt die angegebenen HTML-Tags.</para>
+
+      <tip>
+        <para>Viele Webdienste gestatten es (ggfls. per Anmeldung), Dienste
+        wie Wetter, Anfahrtsbeschreibung etc. auf der eigenen Webseite
+        einzubauen. Dazu stellen diese HTML-Schnipsel zur Verfügung, die in
+        die eigene Webseite eingebaut werden sollen.</para>
+
+        <para>Dazu ist der HTML-Block ideal: Man erstellt einfach einen neuen
+        Block "core/HTML" und kopiert im nächsten Menü den HTML-Code, den man
+        vom Anbieter erhalten hat, in das Inhaltsfeld und fertig!</para>
+      </tip>
+    </section>
+
+    <section>
+      <title>Core/Search Box</title>
+
+      <para>Eine Block der eine Suchfunktion anbietet. Allerdings wird in der
+      Standardversion nur innerhalb der Artikel gesucht!</para>
+
+      <para>Es gibt alternative Suchboxen, die dem Systemverwalter erlauben,
+      den Suchbereich anzugeben.</para>
+    </section>
+
+    <section>
+      <title>Core/Languages</title>
+
+      <para>Dieser Block zeigt die Auswahl für die Sprache des Benutzers an.
+      Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
+      jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
+      Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis,
+      die auch in der Funktion "languagelist", die in der Dateiei
+      modules/NS-languages/api.php definiert wird, enthalten sind.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Sprachkonfiguration</title>
+
+    <para>PostNuke ist von Hause aus in der Lage, mehrsprachig zu
+    funktionieren. Diese Merhrsprachigkeit besteht darin, dass man zum einen
+    durch Aufspielen des entsprechenden Sprachpaketes seine eigene Sprache
+    wählen kann. Zum anderen kann man sogar die Seite mehrsprachig betreiben
+    und dem Besucher die Möglichkeit geben, aus den verfügbaren Sprachen seine
+    zu wählen.</para>
+
+    <para>Um das jetzt auf unserer Seite zu machen brauchen wir erstmal die
+    Sprachdatei, am besten wieder von <ulink
+    url="http://www.postnuke.com/">www.PostNuke.com</ulink> oder von <ulink
+    url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach das
+    gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles, was
+    sich unter <emphasis role="bold">/html/</emphasis> befindet per FTP auf
+    den Server spielen. Dabei fällt Dir vermutlich auf, dass zu jedem Modul
+    ein Ordner "lang" oder "pnlang" existiert, in den dann ein Ordner namens
+    <emphasis role="bold">"deu"</emphasis> kopiert wird. Darin befinden sich
+    dann die entsprechenden Sprachdateien.</para>
+
+    <para>Wenn alles hochkopiert ist, kannst Du Deine Seite aufmachen und hast
+    dann links unten <emphasis role="bold">"Language"</emphasis>. Dort wählst
+    Du <emphasis role="bold">"German"</emphasis> aus und schon erscheint die
+    Seite auf deutsch. Selbstverständlich nur die Menüs, die existierenden
+    Texte bleiben auf Englisch.</para>
+
+    <para>Das Sprachen-Modul ist in erster Linie an Übersetzer gerichtet.
+    Einzig der Punkt '<emphasis role="bold">Sprach-Konfiguration</emphasis>'
+    ist für den 'normalen' Betrieb von Interesse: Dort wird die
+    Standardsprache der Website eingestellt.</para>
+
+    <para>Sollen mehrere Sprachen unterstützt werden, kann man dort auch
+    <emphasis role="bold">ML</emphasis> (multilanguage) aktivieren. Mit
+    <emphasis role="bold">Flaggen</emphasis> kann man dem User ermöglichen,
+    seine Sprache im entsprechenden Block über die Landesflagge (anstelle
+    eines Pulldownmenü) auszuwählen.</para>
+
+    <para>Wer internationale Sprachdateien sucht, sollte einmal in unsere
+    <ulink url="Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
+    schauen, ob die gesuchte Sprache dabei ist.</para>
+
+    <remark>wir haben oben bereits die Sprachdatei mit installiert. Hier
+    beschreiben, wie weitere Sprachen installiert werden können.</remark>
+  </section>
+
+  <section>
+    <title>Banner</title>
+
+    <para>Viele Websites nutzen die Möglichkeiten von Bannern, um die
+    Betriebskosten der Webseite teilweise zu refinanzieren. PostNuke hat ein
+    eingebautes System, welches die Darstellung und die Verwaltung von Bannern
+    unterstützt.</para>
+
+    <para>Um ein Banner auf Ihrer Website zu platzieren, müssen Sie zunächst
+    einmal einen <emphasis role="bold">Kunden</emphasis> anlegen, den Sie dann
+    mit dem Banner verknüpfen. Hierzu tragen Sie in die freien Felder dieses
+    Fensters den Kundennamen, Ansprechpartner, E-Mailadresse, Kundenlogin,
+    Kundenpasswort, weitere Informationen (nur sichtbar für den Admin im
+    Bannermodul) ein und klicken auf 'Kunden anlegen'.</para>
+
+    <para><guimenuitem>Banner hinzufügen</guimenuitem> kann man erst, wenn ein
+    Kunde angelegt wurde. Wählen Sie zunächst den 'Kunden' aus dem
+    Dropdown-Menü und tragen Sie die Anzahl der gekauften Impressions
+    (Banneraufrufe) ein (0=unendlich), dann die URL im Format
+    <systemitem>http://www.firma.de/images/banners/bannerl.gif</systemitem>,
+    wo das Banner abgelegt ist und schließlich die URL, an die der User bei
+    Klick auf das Banner umgeleitet werden soll ein.</para>
+
+    <para>Klicken Sie zum Abschluß auf <guimenuitem>Banner
+    hinzufügen</guimenuitem>, um dieses Banner zu speichern.</para>
+
+    <para><emphasis role="bold">'derzeit aktive Banner'</emphasis></para>
+
+    <para>In dieser Liste werden alle aktiven Banner, alle abgelaufenen Banner
+    (Anzahl der gekauften Impressionen erreicht) und eine Liste aller
+    eingetragenen Kunden angezeigt.</para>
+
+    <para>Unter <emphasis role="bold">'aktive Banner'</emphasis> werden die
+    Impressionen, die verbleibenden Impressionen, die prozentuale Anzahl der
+    Klicks, der Kundenname und die Möglichkeit diesen Eintrag zu editieren
+    oder zu löschen angezeigt.</para>
+
+    <para>Unter <emphasis role="bold">'abgelaufene Banner'</emphasis> werden
+    die bezahlten Impressionen, die prozentuale Anzahl der Klicks, das
+    Aktivierungsdatum des Banners und die Möglichkeit diesen Eintrag zu
+    editieren oder zu löschen angezeigt.</para>
+
+    <para><emphasis role="bold">'Banner Kunde'</emphasis> enthält die
+    Information über die Anzahl der Banner, die ein Kunde hat, sowie die
+    Möglichkeit diesen Eintrag zu editieren oder zu löschen.</para>
+
+    <para><emphasis role="bold">'Banner Konfiguration'</emphasis> Hier wählt
+    man aus, ob Banner für diese Website aktiviert werden sollen. Steht hier
+    ein 'Nein', werden auch bereits definierte Banner nicht angezeigt.</para>
+
+    <para><emphasis role="bold">Wichtig</emphasis>: Die Anzeige von Bannern
+    muss vom jeweiligen Layout unterstützt werden. Erkennen kann man das am
+    Aufruf der zuständigen Funktion <emphasis>pnBannerDisplay();</emphasis> -
+    Die muß irgendwo in der theme.php stehen.</para>
+
+    <para>Ihre Kunden können über den Link
+    <systemitem>http://www.ihre-firma.de/banners.php?op=login</systemitem> auf
+    ihre Bannerstatistik zugreifen. Dieser Account dient ausschließlich der
+    Abfrage 'derzeit aktive Banner' der Bannerstatistik und ist <emphasis>kein
+    Zugang, um sich auf der Seite anzumelden</emphasis>.</para>
+
+    <para>Das Interface für den Bannerkunden umfasst die folgenden
+    Daten:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Banner ID</term>
+
+        <listitem>
+          <para>ID des Banners auf Ihrer Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Impressionen</term>
+
+        <listitem>
+          <para>Anzahl, wie oft das Banner den Usern gezeigt worden ist</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Impressionen insgesamt</term>
+
+        <listitem>
+          <para>Anzahl der gezeigten Banner gesamt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>verbleibende Impressionen</term>
+
+        <listitem>
+          <para>Anzahl der verbleibenden Bannerpräsentationen, wenn ein Kunde
+          eine bestimmte Anzahl gekauft hat (0=unendlich)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Klicks</term>
+
+        <listitem>
+          <para>Anzahl der Klicks auf das Banner von dieser Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Klicks %</term>
+
+        <listitem>
+          <para>prozentuale Klicks auf diese Banner</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Funktionen : Email Stats</term>
+
+        <listitem>
+          <para>sendet die Statistik an die im Kundeninfo gespeicherte
+          Emailadresse</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Funktionen : Ändere URL</term>
+
+        <listitem>
+          <para>Ändern der Webadresse, auf die die User geleitet werden, wenn
+          sie auf das Banner klicken</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Sollten die Banner trotz eingeschalteter Funktion nicht angezeigt
+    werden, kann es sein, dass die Bannerfunktion im Theme nicht definiert
+    ist.</para>
+
+    <para>Die Standardgrößen von Bannern wie sie von <ulink
+    url="http://www.iab.net/iab_banner_standards/bannersizes.html">IAB Ad
+    Standards</ulink> definiert werden:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>468 x 60 (Full Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>234 x 60 (Half Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 90 (Button 1)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 60 (Button 2)</para>
+      </listitem>
+
+      <listitem>
+        <para>88 x 31 (Micro Bar)</para>
+      </listitem>
+
+      <listitem>
+        <para>160 x 600 (Wide Skyscraper)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 600 (Skyscraper)</para>
+      </listitem>
+
+      <listitem>
+        <para>125 x 125 (Square Button)</para>
+      </listitem>
+
+      <listitem>
+        <para>180 x 50 (Rectangle)</para>
+      </listitem>
+
+      <listitem>
+        <para>120 x 240 (Vertical Banner)</para>
+      </listitem>
+
+      <listitem>
+        <para>300 x 250 (Medium Rectangle)</para>
+      </listitem>
+
+      <listitem>
+        <para>250 x 250 (Square Pop-up)</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>HTTP-Referer</title>
+
+    <para>Wenn Sie diese Liste aktivieren, wird Ihnen angezeigt, von wo aus
+    die User auf Ihre Site aus zugreifen.</para>
+
+    <para>Dies ist auf stark besuchten Seiten eine sehr schnell wachsende
+    Liste, deren Länge man begrenzen kann. In der Liste werden die Anzahl der
+    Zugriffe von einer bestimmten Seite aus, die aufrufende URL und die
+    prozentualen Aufrufe von dieser Seite angezeigt. Mit 'Löschen' kann man
+    die Liste zurücksetzen. Hierbei wird allerdings nicht gefragt, ob Sie
+    wirklich die Liste löschen wollen.</para>
+
+    <para>Unter 'Gesamt' steht die Summe der Aufrufe</para>
+
+    <para>Unter 'HTTP Referer Konfigurieren' kann man auswählen, ob diese
+    Funktion genutzt werden soll und wie viele Einträge in der Liste
+    aufgenommen werden. Klicken Sie auf 'Speichern' um Änderungen zu
+    übernehmen.</para>
+
+    <para>Die Referer-Information steht Ihnen nur zur Verfügung, wenn Ihre
+    Besucher direkt auf PostNuke-Seiten zugreifen. Wenn sie hingegen über eine
+    'Intro'-Seite geführt werden, so werden die Referer eben diese Intro-Seite
+    anzeigen...</para>
+  </section>
+</chapter>

@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Weitere Info-Module</title>
+
+  <section>
+    <title>Admin Messages</title>
+
+    <para>Die Admin Messages sind Meldungen, die im zugehörigen Block
+    angezeigt werden. Dieser wird typischerweise so platziert, dass er auf der
+    Hauptseite immer oberhalb der Beiträge angezeigt wird. Damit sind die
+    Admin Messages immer sichtbar. Dies ist praktisch, wenn man seinen
+    Besuchern etwas mitteilen möchte, denn Beiträge werden im Laufe der Zeit
+    von neuen Beiträgen von der Startseite verdrängt, da immer die neuesten
+    Beiträge oben stehen. Die Admin-Messages eignen sich daher vor allem für
+    sehr wichtige Nachrichten, die vom Benutzer der Seite unbedingt gelesen
+    werden sollten (geänderte Öffnungszeiten während Feiertagen etc.). Die
+    Nachrichten können unterschiedlichen Benutzergruppen (z.B. unregistrierten
+    Benutzern, registrierten Benutzern oder Admins) zugänglich gemacht werden.
+    So könnt Ihr z.B. Neulinge auffordern sich zu registrieren oder
+    registrierten Benutzern neue Features vorstellen. Es können beliebig viele
+    dieser Mitteilungen geschrieben werden.</para>
+
+    <para>Sind bereits Mitteilungen geschrieben, erscheinen diese ganz oben
+    und können direkt editiert oder gelöscht werden. Um eine neue Mitteilung
+    zu schreiben, füllt einfach die Felder darunter aus:</para>
+
+    <para>Zunächst solltet Ihr einen <emphasis role="bold">Titel</emphasis>
+    eintragen. Im nächsten Feld tragt ihr den <emphasis
+    role="bold">Inhalt</emphasis> ein, der auch wieder mit
+    (freigegebenen)HTML-Befehlen formatiert werden kann. Nun wählt Ihr wieder
+    eine <emphasis role="bold">Sprache</emphasis>. Nur wenn 'alle' ausgewählt
+    wird, können auch alle User diese Nachricht sehen. Wählt ihr z.B.
+    'Englisch', können nur Userden Beitrag lesen, die auch Englisch als
+    Sprache gewählt haben. Um diese Nachricht zu <emphasis
+    role="bold">aktivieren</emphasis>, setzt den Button auf 'Ja'. Soll die
+    Nachricht nicht angezeigt werden, aber auch nicht gelöscht werden, wählt
+    einfach 'Nein'.</para>
+
+    <para><emphasis role="bold">Mit Wer diese Nachricht sehen soll</emphasis>
+    kann die Zielgruppe dieser Nachricht ausgewählt werden: Im Dropdownmenü
+    werden die Benutzergruppen angezeigt, aus denen ihr auswählen
+    könnt.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Allen Besuchern: Alle Besucher der Seite bekommen die Nachricht
+        angezeigt</para>
+      </listitem>
+
+      <listitem>
+        <para>Nur registrierte Besucher: Nur Besucher, die sich auf der Seite
+        registriert haben und angemeldet sind bekommen die Nachricht
+        angezeigt.</para>
+      </listitem>
+
+      <listitem>
+        <para>Nur anonyme Besucher: Nur Besucher, die sich bisher nicht auf
+        der Seite registriert haben bekommen die Nachricht angezeigt.</para>
+      </listitem>
+
+      <listitem>
+        <para>Nur Administratoren: Nur Mitglieder der Administratoren-Gruppe
+        bekommen die Nachricht angezeigt.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Ist alles fertig, klickt einfach auf hinzufügen.</para>
+
+    <para>Die 'Admin Messages' werden im gleichnamigen Block angezeigt. In der
+    Standardkonfiguration wird dieser als 'Center Block' angelegt.</para>
+
+    <para>Wenn man Admin Messages erzeugt hat, diese aber nicht angezeigt
+    werden, sollte man folgendes überprüfen:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Ist ein Block für die Admin Messages angelegt?</para>
+      </listitem>
+
+      <listitem>
+        <para>Handelt es sich um ein Theme, das für PostNuke ausgelegt ist,
+        und die Center Blocks anzeigt? Seit PostNuke .71x wurden zusätzliche
+        'Center'-Blocks eingeführt - diese müssen in der jeweilige theme.php
+        definiert sein. Der entsprechende Aufruf ist in aller Regel</para>
+
+        <programlisting>if ($index == 1) {
+    blocks('centre');
+}</programlisting>
+
+        <para>am Ende der Funktion themeheader.php - man kann dies leicht in
+        den Standardthemes nachvollziehen.</para>
+      </listitem>
+    </itemizedlist>
+
+    <tip>
+      <para>Es ist durchaus möglich, mehr als eine Admin Message
+      anzulegen.</para>
+    </tip>
+  </section>
+
+  <section>
+    <title>Downloads</title>
+
+    <para>In diesem Administrationsbereich werden die Downloads in die
+    Datenbank eingetragen.</para>
+
+    <bridgehead>Was kann das Download-Modul?</bridgehead>
+
+    <para>PostNuke unterstützt das Anbieten von Downloads. Dabei lassen sich
+    Dateien beliebigen Formates und Herkunft verwalten. Diese Downloads kann
+    man in Kategorien und Unterkategorien unterteilen, um es dem User
+    einfacher zu machen die Dateien zu finden, an denen er Interesse
+    hat.</para>
+
+    <para>Es können bis jetzt aber nur Links zu Downloads eingefügt werden,
+    die bereits im Internet zu erreichen sind. Eine Upload-Funktion ist bisher
+    nur mit Download-Modulen anderer Modulentwickler möglich. Auch lassen sich
+    bisher nur Haupt- und Unterkategorien anlegen - eine weitere Verzweigung
+    ist noch nicht möglicht.</para>
+
+    <para>Zu beachten ist, dass hier effektiv nur Verweise eingetragen werden.
+    Die entsprechenden Dateien müssen sich bereits auf einem Internetserver
+    befinden. Zum Hochladen der Daten benutzen sie in aller Regel ein
+    FTP-Programm. Als Alternative gibt es das Modul UpDownloads, das auch das
+    Hochladen der Dateien ermöglicht.</para>
+
+    <bridgehead>Kategorien anlegen, ändern und löschen</bridgehead>
+
+    <para>Alle Downloads werden in Kategorien und Unterkategorien verwaltet.
+    Bevor der erste Download eingetragen werden kann, muß mindestens eine
+    Hauptkategorie eingetragen werden.</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Neue Hauptkategorie hinzufügen</term>
+
+        <listitem>
+          <para>Hier trägt man eine neue Kategorie inkl. Beschreibung in die
+          Downloadliste ein. Hierzu muss man natürlich Name und
+          Kurzbeschreibung (255 Zeichen) angeben. Auf 'hinzufügen' klicken, um
+          diesen Eintrag der Datenbank hinzuzufügen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Unterkategorie hinzuzufügen</term>
+
+        <listitem>
+          <para>Um eine Unterkategorie hinzuzufügen, den Namen der
+          'Unterkategorie' eintragen und aus dem Pulldownmenü die
+          Hauptkategorie unterhalb der diese erscheinen soll angeben. Es ist
+          möglich, eine Unterkategorie unterhalb einer Unterkategorie
+          anzulegen, indem man aus der Liste die
+          'Hauptkategorie/Unterkategorie' auswählt. Auf 'hinzufügen' klicken,
+          um die Unterkategorie anzulegen.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Um eine <emphasis role="bold">Kategorie zu verändern</emphasis> oder
+    zu löschen, die entsprechende Kategorie aus dem Pulldownmenü auswählen.
+    Auf 'ändern' klicken. Die Kategorie wird angezeigt und man kann Änderungen
+    vornehmen. Auml;nderungen könnnen auf diese Weise auch für alle
+    Unterkategorien vorgenommen werden.</para>
+
+    <para>Die Kategorie kann man '<emphasis role="bold">löschen</emphasis>',
+    wenn man sie zunächst auswählt und dann auf der nächsten Seite auf
+    'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
+    Unterkategorien und die darin enthaltenen Links.</para>
+
+    <para>Die Dateien werden natürlich nicht aus dem File-System
+    gelöscht.</para>
+
+    <bridgehead>Downloads eintragen, ändern und löschen</bridgehead>
+
+    <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, können Downloads
+    hinzugefügt werden. Hierzu auf <emphasis role="bold">Download
+    hinzufügen</emphasis> klicken.Folgende Felder werden einem Download
+    zugewiesen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>Name des Programms. Das kann der dateiname sein, besser ist es
+          aber vielleicht, einen beschreibenden Titel zu wählen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dateipfad</term>
+
+        <listitem>
+          <para>Pfad des Programms, entwerder relativ
+          (<filename>downloads/datei.zip</filename>) oder absolut
+          <systemitem>http://www.beispiel.de/downloads/datei.zip</systemitem>)</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kategorie</term>
+
+        <listitem>
+          <para>Kategorie, in der der Downioad angezeigt werden soll</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung</term>
+
+        <listitem>
+          <para>Beschreibung der Funktion der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Nicht unbedingt notwendig, aber oft interessant, sind die folgenden
+    Angaben:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name Autor</term>
+
+        <listitem>
+          <para>Autor der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>E-Mail Autor</term>
+
+        <listitem>
+          <para>Email des Autors der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dateigröße</term>
+
+        <listitem>
+          <para>Größe der Datei in Bytes, die entsprechende KB bzw. MB Zahl
+          wird berechnet. Unter Windows erhalten Sie die Größe einer Datei,
+          indem sie mit einem Rechtsklick auf die entsprechende Datei das
+          Fenster 'Eigenschaften' aufrufen, Linux- oder Unix-Anwender benutzen
+          ls -l</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Version</term>
+
+        <listitem>
+          <para>Version der Datei</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Homepage</term>
+
+        <listitem>
+          <para>Homepage der Datei oder des Autors</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Hits</term>
+
+        <listitem>
+          <para>Anzahl der bisherigen Downloads der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Sie müssen nicht alle Felder ausfüllen, leere Felder werden in der
+    Anzeige ignoriert.</para>
+
+    <para><emphasis role="bold">Abstimmungsliste löschen</emphasis>: User
+    können über Downloads abstimmen, hiermit wird die die Abstimmung
+    zurückgesetzt.</para>
+
+    <para><emphasis role="bold">Defekten Link melden</emphasis>: Wenn ein
+    Anwender einen defekten Link findet, kann er das durch einen Klick auf
+    'Defekten Link melden' diesen dem Administrator melden. Der Administrator
+    wird benachrichtigt und bekommt unter <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guimenuitem>Downloads</guimenuitem>
+      </menuchoice> eine Liste mit der Anzahl der defekt gemeldeten Links
+    angezeigt.</para>
+
+    <para>Klicken Sie auf 'Defekt gemeldete Downloads' und sie erhalten die
+    komplette Liste</para>
+
+    <para>In diesem Menü können Sie 'Editieren' wählen um zu den Einstellungen
+    des Links zu kommen, den Sie dann editieren können, um den Fehler zu
+    beheben. Ist der Downloadlink jedoch in Ordnung, so wählen sie Ignorieren,
+    um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählen
+    Sie 'Löschen', um diesen Download aus der Datenbank zu entfemen.</para>
+
+    <para><emphasis role="bold">Wichtig</emphasis>: Es wird nicht nach einer
+    Bestätigung für den Löschvorgangs gefragt. überprüfen Sie, ob Sie den
+    Downloadlink wirklich löschen wollen.</para>
+
+    <para><emphasis role="bold">gemeldete Änderungswünsche</emphasis>: User
+    können Sie auch benachrichtigen, wenn ein Link nicht mehr dem neusten
+    Stand ist. Hier wird angezeigt, wie viele und welche Anderungswünsche
+    vorhanden sind. Klicken Sie auf editieren, wenn Sie den Link verändern
+    wollen.</para>
+
+    <para><emphasis role="bold">Downloads überprüfen</emphasis>: Klicken Sie
+    auf 'Downloads überprüfen', wenn Sie alle Ihre Downloads überprüfen
+    wollen. Sie gelangen zu einem weiteren Dialog, auf dem Ihnen weitere
+    Optionen offen stehen. Entweder Sie wählen dann 'alle Downloads
+    überprüfen' (dies kann einige Zeit dauern, besonders, wenn Sie viele
+    Downloads haben) oder Sie überprüfen nur eine Kategorie oder sogar nur
+    eine der Unterkategorien. Klicken Sie hierzu auf die Kategorie bzw die
+    Unterkategorie, die Sie überprüfen wollen.</para>
+
+    <para>Wenn die Überprüfung abgeschlossen ist, öffnet sich ein Fenster, in
+    dem das Ergebnis der Prüfung angezeigt wird. Wenn die Downloads ok sind,
+    erscheint neben dem entsprechenden Listeneintrag ein 'OK'. Wird ein Fehler
+    festgestellt, so erscheint 'Fehler' neben der entsprechenden Datei und Sie
+    erhalten die Möglichkeit diesen Downloadlink zu löschen oder zu
+    editieren.</para>
+
+    <para>Klicken Sie auf 'Ändern', um Änderungen vorzunehmen oder auf
+    'Löschen', um den Link zu löschen. Um eine Kategorie zu verändern oder zu
+    löschen, wählen Sie die Kategorie vom Pulldownmenü. Klicken Sie dann auf
+    'ändern'. Die Kategorie wird angezeigt und Sie können Änderungen
+    vornehmen. Die Änderungen werden dann auch für alle Unterkategorien
+    vorgenommen. Die Kategorie kann man 'löschen', wenn man sie zunächst
+    auswählt und dann auf der nächsten Seite auf 'löschen' klickt. Das Löschen
+    einer Kategorie löscht auch alle Unterkategorien und die darin enthaltenen
+    Links. Die Dateien werden natürlich nicht von Ihrem System
+    gelöscht.</para>
+
+    <para>Um einen <emphasis role="bold">Downloadlink zu 'ändern'</emphasis>,
+    die Download ID eingeben, die auch angezeigt wird, wenn man mit der Maus
+    über den Download geht. In der Statuszeile des Browsersfensters wird der
+    Link angezeigt, in dem auch ID=Nummer steht. Diese Nummer ist die ID des
+    Links. Wenn diese eingegeben wird, kann man anschließend alle
+    Informationen Ändern, die beim Hinzufügen des Links eingetragen wurden.
+    Klicken auf 'Hinzufügen' speichert die Änderungen.</para>
+
+    <para>Unter 'Download Konfiguration' können Sie wählen, ob es
+    unregistrierten Benutzern erlaubt ist, neue Downloads vorzuschlagen.
+    Klicken Sie auf 'Speichern', um Ihre Änderungen zu speichern.</para>
+  </section>
+
+  <section>
+    <title>Web Links</title>
+
+    <para>Um die Links besser zu gliedern, können Kategorien und
+    Unterkategorien angelegt werden. So bleibt die Seite auch mit vielen Links
+    übersichtlich gegliedert. Folgende Felder werden einem Web Link
+    zugewiesen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Seitentitel</term>
+
+        <listitem>
+          <para>Name des Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>URL</term>
+
+        <listitem>
+          <para>z. Bsp- http://www.einefirma.de/</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kategorie</term>
+
+        <listitem>
+          <para>Kategorie, in der der Link angezeigt werden soll</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beschreibung</term>
+
+        <listitem>
+          <para>Beschreibung des Inhalts der Seite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>Autor des Links</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>E-Mail</term>
+
+        <listitem>
+          <para>E-Mail des Autors der Datei</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Sie müssen nicht alle Felder ausfüllen, leere Felder werden in der
+    Anzeige ignoriert.</para>
+
+    <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der Tat
+    basieren beide auf der selben Codabasis).</para>
+
+    <para>Jeder Nutzer kann (nach Berechtigung) Links für die Datenbank
+    vorschlagen, über vorhandene Links abstimmen oder 'tote Links'
+    (fehlerhafte Adressen) melden. Diese werden durch die Funktionen 'Lösche
+    Link-Abstimmungen', 'Tote Links', 'Linkänderungs-Wünsche' und 'Links
+    prüfen' bearbeiten.</para>
+
+    <para>Letzte Funktion überprüft alle vorhandenen Links auf ihre Gültigkeit
+    (Linkchecker) und erleichtert somit die Administration in diesem
+    Bereich.</para>
+  </section>
+
+  <section>
+    <title>FAQ</title>
+
+    <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
+    Man versteht darunter Informationen, die zusammengestellt werden, damit
+    der Betrieber einer Seite nicht dauernd die gleichen Fragen beantworten
+    muss (z.B. 'Wie kann ich das BIOS neu aufspielen?') Diese Antwort müssten
+    die Hersteller bestimmt 100-mal am Tag geben. Also stellt man
+    entsprechende FAQs ins Netz, die die User erst einmal durchsuchen können,
+    wenn sie Probleme haben.</para>
+
+    <para><emphasis role="bold">Um die FAQs zu nutzen, legen sie zunächst eine
+    oder mehrere Kategorien ein. Die eingetragene Kategorie speichern sie wie
+    gewohnt.</emphasis></para>
+
+    <para>Wollen Sie innerhalb einer Kategorie noch Unterkategorien einsetzen,
+    so wählen Sie einfach rechts die übergeordnete Hauptkategorie oder 'Neue
+    Hauptkategorie'.</para>
+
+    <para>Fragen können direkt über den FAQ-Link im Hauptmenü gestellt werden.
+    Beim Klicken des Links wird der User auf eine neue Seite gebracht, wo der
+    User die Frage stellen, seine Emailadresse eintragen und die Frage einer
+    Kategorie zuordnen kann oder 'unsicher', wenn er keine passende Kategorie
+    findet und eine generelle Frage stellen möchte. Danach schickt der User
+    die Frage ab.</para>
+
+    <para>Der Administrator wird über offen stehende Fragen im Contentbereich
+    informiert.</para>
+
+    <para>Als Administrator gehen Sie zur <menuchoice>
+        <guimenu>Administration</guimenu>
+
+        <guimenuitem>FAQ</guimenuitem>
+      </menuchoice> um die folgenden Funktionen zu erreichen:</para>
+
+    <para><emphasis role="bold">Unbeantwortete Fragen ansehen</emphasis> gibt
+    eine Liste mit offenen Fragen aus. Der Administrator kann die Fragen
+    beantworten oder löschen. Um die Fragen zu beantworten, klicken Sie auf
+    '<emphasis role="bold">Beantworten</emphasis>' und geben Sie die Antwort
+    auf die Frage ein.</para>
+
+    <para>Wählen sie, falls nötig, eine Kategorie für die Frage/Antwort aus
+    und drücken dann auf '<emphasis role="bold">Speichern</emphasis>'. Die
+    Frage/Antwort wird dann in die FAQ eingetragen. Wenn man die Frage
+    '<emphasis role="bold">löscht</emphasis>', wird man zur Bestätigung des
+    Löschvorgangs aufgefordert. Man kann den Löschvorgang abbrechen.</para>
+
+    <para>Wenn FAQ-Kategorien existieren, werden diese oben auf dem FAQ Modul
+    Fenster angezeigt. Man kann die Kategorien editieren (Titel,
+    Spracheinstellung oder Inhalt) oder löschen.</para>
+
+    <para>Löscht man eine Kategorie, werden alle Unterkategorien und alle
+    Fragen/Antworten gelöscht, wenn man dieses mit 'Ja' bestätigt. Bei 'Nein'
+    bricht man den Löschvorgang ab.</para>
+
+    <para>Nach dem Editieren einer Kategorie kann man über 'Speichern' die
+    Einträge sichern.</para>
+
+    <para>Im unteren Bereich der Seite kann man auch eine neue Frage eintragen
+    und diese innerhalb der FAQ speichern.</para>
+
+    <para>Mit der Sprache wählen Sie, für welche Sprache die FAQ Kategorie
+    angezeigt werden soll. Sollen alle User die Fragen und Antworten dieser
+    Kategorie sehen können, dann wählen Sie einfach 'alle'.</para>
+  </section>
+</chapter>

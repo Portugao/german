@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$ $Date$"
+         status="draft">
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Community</title>
+
+  <bridgehead>Die Entwickler- und Support-Communities</bridgehead>
+
+  <para>Die <emphasis role="bold">internationale PostNuke Community</emphasis>
+  versammelt sich natürlich auf der <ulink
+  url="http://www.postnuke.com/">offiziellen Homepage</ulink>. Daneben gibt es
+  aber eine ganze Reihe sehr fruchtbarer <emphasis role="bold">nationaler
+  Communities</emphasis> wie <ulink
+  url="http://www.post-nuke.net">post-nuke.net</ulink>. Die nationalen Teams
+  widmen sich vor allem dem User-Support in der eigenen Sprache. Es werden sie
+  jeweiligen Sprachdateien für PostNuke gepflegt und spezielle rechtliche
+  Probleme des Landes und Erfahrungen aus dem Support an die internationale
+  Entwicklung herangetragen.</para>
+
+  <bridgehead>NOC - Treffpunkt für Modulentwickler</bridgehead>
+
+  <para>Es existieren dazu eine Vielzahl Sites, die sich zum Beispiel mit den
+  PostNuke-Themes oder der Modulentwicklung beschäftigen. Um die verstreuten
+  Modulentwickler zusammen zu führen, wurde das <ulink
+  url="http://noc.postnuke.com/">PostNuke NOC</ulink> eingerichtet. Hier
+  können Projekte ähnlich SourceForge organisiert und koordiniert
+  werden.</para>
+
+  <bridgehead>User 2 User Support</bridgehead>
+
+  <para>Nicht zu vergessen sind natürlich auch die hunderte <ulink
+  url="http://www.post-nuke.net/modules.php?op=modload&amp;name=Web_Links&amp;file=index&amp;req=viewlink&amp;cid=1">User</ulink>,
+  die PostNuke schon in <emphasis role="bold">Produktivumgebungen</emphasis>
+  für ihre Zwecke einsetzen und oft auf Anfrage gerne die eine oder andere
+  Detailösung verraten.</para>
+
+  <mediaobject>
+    <imageobject>
+      <imagedata align="center" fileref="devUser.gif" format="GIF" />
+    </imageobject>
+  </mediaobject>
+
+  <bridgehead>Wer steht hinter PostNuke</bridgehead>
+
+  <para>Wie die meisten anderen erfolgreichen OpenSource-Projekte auch ist
+  PostNuke das Ergebnis der Zusammenarbeit unterschiedlicher Menschen aus
+  unterschiedlichen Ländern, versteut über den ganzen Erdball. Die Namen
+  derer, die mitgeholgen haben, PostNuke zu entwickeln findet man in den
+  Dateien <filename>docs/CREDITS.txt</filename> und
+  <filename>docs/previouscredits.txt</filename> im
+  PostNuke-Verzeichnis.</para>
+
+  <section>
+    <title>Wir über uns</title>
+
+    <bridgehead>Was ist post-nuke.net?</bridgehead>
+
+    <para>Ziel dieser Community ist die Förderung der Entwicklung des Content
+    Management Systems PostNuke. Er wird insbesondere erfüllt durch die
+    Unterstützung der Zusammenarbeit nationaler und internationaler
+    Entwickler, die Wahrnehmung der Vertretung der Interessen der Entwickler
+    und den Betrieb einer Online-Plattform für den deutschsprachigen Support
+    des Systems im Internet.</para>
+
+    <para>Wir glauben, dass eine große Benutzergruppe wie die
+    deutschsprachigen PostNuke-Anwender einen muttersprachlichen Support
+    brauchen. Dieser vereinfacht den Einstieg, da trotz der weiten Verbreitung
+    von Englischkenntnissen die Sprachbarriere viele potentielle Benutzer
+    behindern kann.</para>
+
+    <para>Darüber hinaus sind wir uns einig gewesen, daß eine umfangreiche
+    Dokumentation von der Basisinstallation und der grundlegenden
+    Administration bis hin zur Lösung vieler, häufiger Probleme für PostNuke
+    fehlte. Mittlerweile hat das Team PostNuke eine Vielzahl Informationen aus
+    verschiedensten Quellen zusammengetragen und der Community zur Verfügung
+    gestellt.</para>
+
+    <bridgehead>Die Community</bridgehead>
+
+    <para>Diese Community besteht aus PostNuke-Webmastern und -Entwicklern aus
+    dem deutschen Sprachraum. Sie ist aber auch eng mit anderen
+    internationalen Communities und auch direkt mit dem PostNuke Projekt
+    Management verknüpft.</para>
+
+    <para>Dabei wollen wir nicht nur den privaten Benutzer ansprechen, sondern
+    auch den professionellen Einsatz fördern.</para>
+
+    <bridgehead>Das Team PostNuke</bridgehead>
+
+    <para>Das Team PostNuke ist eine offene Gruppe von PostNuke-Enthusiasten,
+    die sich in verschiedenen Bereichen dieser Site engagieren. Neben dem
+    Support im Forum ist hier die Arbeit an der Dokumentation, die Erstellung
+    von News aber nicht zuletzt auch der Serverbetrieb zu nennen.</para>
+
+    <para>Wir sind für neue Mitglieder offen - wer sich also für die Community
+    engagieren möchte, kann sich gerne bei uns melden.</para>
+
+    <bridgehead>Deutschsprachiger Support</bridgehead>
+
+    <para>Webmastern, die PostNuke einsetzen, stellen wir eine komplette,
+    deutschsprachige Dokumentation in Form des PostNuke Handbuchs zur
+    Verfügung und unterstützen sie im <ulink
+    url="http://www.post-nuke.net/phpBB_14.htm">Forum</ulink> bei der Lösung
+    ihrer individuellen Probleme.</para>
+
+    <bridgehead>Zusammenarbeit mit der Entwicklung</bridgehead>
+
+    <para>Als Teile des PostNuke-Entwicklerteams stellen mehrere
+    Team-Mitglieder den direkten Draht zur internationalen Entwickler-Gruppe
+    sicher. Er gibt Anregungen und Fehlerberichte, die bei uns auflaufen an
+    die richtigen Stellen weiter und gibt das entsprechende Feedback
+    zurück.</para>
+
+    <para>Das Team PostNuke pflegt weiterhin Kontakte zu verschiedenen
+    Modul-Entwicklern und bekommt so Informationen zu deren Entwicklungen oft
+    aus erster Hand. Diese Informationen werden in den News verarbeitet, die
+    unsere User mit dem nötigen Überblick über die Möglichkeiten ihres Systems
+    versorgt.</para>
+
+    <bridgehead>Internationale Dokumentationsarbeit</bridgehead>
+
+    <para>Sowohl das erwähnte PostNuke Handbuch als auch die Dev-Dokumentation
+    wird unter 'GNU Free Documentation License' veröffentlicht. Das ermöglicht
+    eine rechtlich unproblematische Übersetzung für fremdsprachige
+    Dokumentationsprojekte.</para>
+  </section>
+
+  <section>
+    <title>Der post-nuke.net-Knigge</title>
+
+    <subtitle>Eine kleine Liste von wichtigen Regeln, die jeder beachten
+    sollte</subtitle>
+
+    <para><emphasis>Besonderer Dank an dieser Stelle an Sascha Carlin (itst)
+    von <ulink url="http://www.phpbb.de">phpbb.de</ulink> für die freundliche
+    Genehmigung, den <ulink
+    url="http://www.phpbb.de/doku/kb/artikel.php?artikel=knigge">phpbb-Knigge</ulink>
+    als Vorlage benutzen zu können.</emphasis></para>
+
+    <para>Das Motto "Service zu PostNuke in deutscher Sprache" ist bei uns
+    Programm - post-nuke.net ist die deutsche Anlaufstelle rund um das Content
+    Management System PostNuke. Niemand braucht sich hier zu verstecken, weil
+    sie/er etwas nicht weiß. Niemand wird hier ausgelacht oder blöd von der
+    Seite angequatscht. Dennoch sind hin und wieder Hinweise nötig, um die
+    Schäfchen wieder auf den rechten Weg zu führen. Erst Lesen und Suchen,
+    dann Posten</para>
+
+    <para>Um zu vermeiden, dass man einen solchen Hinweis im Posteingang oder
+    als Antwort auf einen Beitrag findet, sind hier die Hinweise in
+    gesammelter Form. Wir bitten, diese aufmerksam durchzulesen und zu
+    beachten. So haben letztendlich alle mehr von post-nuke.net.</para>
+
+    <para>Vor allem aber gilt 'andere nur so behandeln, wie man auch selbst
+    behandelt werden will'.</para>
+
+    <para>Wenn bei der Installation oder dem Betrieb von PostNuke und/oder
+    beim Benutzen/Einbauen eines Moduls Probleme auftauchen, bitte als erstes
+    überprüfen, ob die Lösung dazu nicht schon irgendwo geschrieben steht.
+    Dazu im PostNuke Handbuch und/oder über die <ulink
+    url="http://www.post-nuke.net/Search.htm">portalweite Suche</ulink> nach
+    einer möglichen Antwort suchen - denn die meisten Probleme wurden bereits
+    von anderen gefragt - und auch gelöst.</para>
+
+    <para>Bitte auch die <ulink url="http://www.post-nuke.net/FAQ.htm">FAQ -
+    Häufige Fragen</ulink> durchlesen - sie enthalten wichtige Informationen,
+    die in vielen Fällen weiterhelfen.</para>
+
+    <para>Wenn man tatsächlich nirgends eine Lösung für ein Problem findet,
+    ist der nächste Schritt das Problem in einem Forumsbeitrag zu schildern.
+    Dabei bitte darauf achten, dass</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>die Frage im richtigen Forum gestellt wird,</para>
+      </listitem>
+
+      <listitem>
+        <para>einen passenden Titel gewählt wird,</para>
+      </listitem>
+
+      <listitem>
+        <para>das Problem so präzise wie möglich beschrieben wird und</para>
+      </listitem>
+
+      <listitem>
+        <para>gegebenenfalls Fehlermeldungen zitiert, Screenshots
+        bereitgestellt, Links zur Seite bzw. eventuell den entsprechenden
+        Dateien gepostest und/oder Angaben zur genutzten PostNuke-Version,
+        bereits installierten Modulen und der benutzten Serverkonfiguration
+        gemacht werden.</para>
+      </listitem>
+    </itemizedlist>
+
+    <bridgehead>Aussagen wie 'es geht nicht' oder 'Hilfe' bringen niemandem
+    etwas.</bridgehead>
+
+    <para>Weitere Hinweise für das Verfassen von Beiträgen finden sich auch im
+    Artikel <ulink
+    url="http://www.lugbz.org/documents/smart-questions_de.html">Wie man
+    Fragen richtig stellt</ulink>.</para>
+
+    <para>Für das generelle Verfassen von Beiträgen (ob nun eigene Fragen,
+    Lösungen oder sonstige Beiträge) sollte beachtet werden, dass man niemand
+    beleidigt oder anderweitig verletzt wird.</para>
+
+    <para>Allgemein gilt für das Verfassen von Beiträgen, dass immer der
+    Verfasser selbst für den Inhalt verantwortlich ist. Beiträge mit Inhalten
+    zu Pornographie, illegalen Tätigkeiten und dergleichen werden bei Kenntnis
+    vom Team PostNuke gelöscht, wobei wir uns vorbehalten, gegebenenfalls auch
+    rechtliche Schritte einzuleiten.</para>
+
+    <bridgehead>Probleme mit anderen?</bridgehead>
+
+    <para>Wenn man sich selber beleidigt oder anderweitig verletzt fühlt, dies
+    bitte per PM einem Moderator melden. Wir kümmern uns dann darum und klären
+    die Sache. Bitte immer sachlich bleiben und nicht ausfallend
+    werden.</para>
+
+    <para>Angriff ist nicht immer die beste Verteidigung</para>
+
+    <para>Wenn jemandem die Fragestellung in einem Beitrag oder generell die
+    Art und Weise wie andere schreiben nicht passt oder man keinerlei
+    Information zur Lösung des Problems beitragen kann, so sollte man sich von
+    diesen Themen am Besten fernhalten.</para>
+
+    <bridgehead>Ladezeiten/Größe von Signaturen</bridgehead>
+
+    <para>Bitte darauf achten, das die Signatur nicht zu lang ist, lange
+    Signaturen erschweren das Lesen der Beiträge. In der Signatur sollten
+    ebenfalls keine externe Bilder/Skripte verlinkt werden.</para>
+
+    <bridgehead>Topic-Bumping</bridgehead>
+
+    <para>Bitte mindestens 24h warten bevor man selbst auf eigene Fragen
+    antwortet, um sie wieder an die erste Stelle in der Themenansicht zu
+    bringen. Der Mindestabstand zwischen zwei Bumps ist ebenfalls 24h.</para>
+
+    <bridgehead>Posten von Code</bridgehead>
+
+    <para>Wenn Code gepostet werden soll, diesen bitte immer in [code]-Blöcke
+    einschließen.</para>
+
+    <para>Wenn der Code zu lang ist (länger als 30 Zeilen) oder jemand
+    explizit dazu auffordert, bitte eine Datei mit der Endung .txt auf einen
+    Server ablegen und darauf verlinken. Größere Pakete (z.B. Themes, Blöcke
+    usw.) bitte als ZIP- bzw. tgz-Archiv verpacken.</para>
+
+    <para>Wenn man Fehlermeldungen mit Zeilennummern erhält, bitte klar
+    erkenntlich machen, welche Zeile im Code die betreffende ist (z.B. durch
+    'Zeile 123 ist diese: echo 'Hallo Welt';' oder 'echo 'Hallo Welt';
+    ////dieses ist Zeile 123').</para>
+
+    <bridgehead>Nobody is perfect</bridgehead>
+
+    <para>Zu guter Letzt sollte man auch immer beachten, das die Benutzer und
+    Moderatoren hier dies alles nur in ihrer Freizeit tun und auch nur
+    Menschen sind, die Fehler machen können. Von einem Forum und den Usern,
+    die dieses benutzen, kann man nicht einen 24h Support oder eine
+    Problemlösung innerhalb von ein paar Stunden verlangen - auch wenn wir uns
+    alle Mühe geben.</para>
+
+    <bridgehead>Traurig aber wichtig</bridgehead>
+
+    <para>Auch wenn es nicht schön ist, es muss sein: bei wiederholtem
+    Missachten unseren kleines Knigges und entsprechenden Hinweisen der
+    Moderatoren kann Dein Account gesperrt werden.</para>
+  </section>
+</chapter>

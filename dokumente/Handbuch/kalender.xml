@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Kalender</title>
+
+  <para>Mit Hilfe eines Kalenders lassen sich die Besucher über Termine usw.
+  auf dem laufenden halten.</para>
+
+  <section>
+    <title>PostCalendar</title>
+
+    <para>PostCalendar ist ein umfangreiches Kalender-Modul, dass sich über
+    Templates bequem anpassen lässt. Dabei stehen neben verschiedenen
+    Ansichten (Tag, Woche, Monat usw.) auch verschiedene Layouts zur
+    Verfügung.</para>
+
+    <para>Darüberhinaus gibt die Möglichkeit, dass User nicht nur Termine
+    einreichen, sondern auch private, eigene Kalender führen können. Die
+    nötigen Einstellungen werden über die Zugriffsrechte vorgenommen.</para>
+
+    <para>PostCalendar wurde bis Sommer 2003 von Mahmood Al-Youssif und Roger
+    Raymond entwickelt, dann aber aufgegeben und vorerst vom PostNuke CoreTeam
+    adoptiert worden. Bisher kümmern sich Michael Halbrook, Mark West und
+    Andreas Krapohl (Larsneo) aber hauptsächlich um Security Updates und die
+    Anpassung an pnRender. Wer sich für die Arbeit an diesem wichtigen Modul
+    interessiert, kann sich an das Team wenden.</para>
+
+    <para>Mit dem Zusatzmodul iCal lässt sich der PostCalendar um die Funktion
+    erweitern, dass per Klick Termine automatisch in lokale Kalender-Clients
+    (Outlook, Mozilla Calendar...) übernommen werden. Mittlerweile gibt es
+    auch einen RSS-Feed für PostCalendar, der sich aber leider noch nicht an
+    die Zugriffsrechte hält.</para>
+
+    <para>Homepage: <ulink
+    url="http://noc.postnuke.com/projects/postcalendar/">http://noc.PostNuke.com/projects/postcalendar/</ulink>.</para>
+  </section>
+</chapter>

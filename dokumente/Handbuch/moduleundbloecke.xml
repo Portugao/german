@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter>
+  <title>Module und Blöcke</title>
+
+  <para>PostNuke kann in seinem Funktionsumfang durch sogennante Module
+  erweitert werden. In der Standardauslieferung von PostNuke sind bereits
+  einige Module integriert. Der Administrator kann entscheiden, welche er auf
+  seiner Seite einsetzen, deaktiveren oder auch ggfs. löschen möchte.
+  Weiterhin gibt es zahlreiche Downloadquellen für zusätzliche Module (z.B.
+  <ulink url="http://mods.postnuke.com/index.php">mods.PostNuke.com</ulink>
+  oder unsere <ulink
+  url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulsammlung</ulink>).</para>
+
+  <para>PostNuke zeigt die Inhalte des Moduls in der Mitte der Seite an. An
+  den Rändern links, rechts und oben können sich mehrere Boxen befinden, z.B.
+  ein Menü, die Anmeldefelder, eine Wetterinformation usw. Diese Boxen werden
+  als 'Blöcke' bezeichnet. Nahezu jedes Modul bringt seine eigenen Blöcke
+  mit.</para>
+
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="modulebloecke.gif" format="GIF" />
+      </imageobject>
+
+      <caption>
+        <para>Blöcke (blau unterlegt) und das aktuelle Modul (rot
+        unterlegt)</para>
+      </caption>
+    </mediaobject>
+  </screenshot>
+
+  <section>
+    <title>Moduladministration</title>
+
+    <para>Da für die optimale Konfiguration von PostNuke ein Grundverständnis
+    über die Funktions- und Arbeitsweise der Module von grosser Bedeutung ist,
+    sollen hier kurz die Bedeutungen der Modulfunktionen initialisieren,
+    aktivieren, editieren, deaktivieren, upgraden und entfernen (löschen!)
+    erklärt werden. Diese Funktionen gelten für alle Module innerhalb von
+    PostNuke.</para>
+
+    <bridgehead>Modulinstallation</bridgehead>
+
+    <para>Module bestehen normalerweise aus mehreren Dateien (Funktionen,
+    Grafiken, Sprachdateien usw.), die zusammen in einem Verzeichnis liegen,
+    das den Namen des Moduls trägt. Dieses Verzeichnis muss ins Verzeichnis
+    <filename>/modules</filename> auf dem Webserver kopiert werden.</para>
+
+    <para>Die Installation / Konfiguration der Module erfolgt im
+    Administrationsbereich über den Menüpunkt 'Module':</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>anzeigen</term>
+
+        <listitem>
+          <para>zeigt eine Liste aller auf der Seite vorhanden Module mitsamt
+          ihren jeweiligen Einstellungen an</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>erneut erzeuge</term>
+
+        <listitem>
+          <para>baut die Modulliste auf Grundlage der Verzeichnisinformationen
+          in /modules neu auf. Jedesmal wenn ein neues Modul installiert (d.h.
+          in das Modulverzeichnis /modules kopiert wird) muss die Modulliste
+          neu erzeugt werden um die Änderungen des Dateisystems zu erkennen.
+          Man kann die Liste aber auch generell vor dem anzeigen der
+          Moduleinstellungen neu erzeugen um sicherzustellen, dass man mit den
+          aktuellsten Informationen arbeitet.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Die Konfiguration im Detail:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>initialisieren</term>
+
+        <listitem>
+          <para>damit werden die für das Modul erforderlichen
+          Datenbanktabellen und Variablen im System erzeugt. Module müssen in
+          aller Regel initialisiert werden, bevor man mit ihnen arbeiten
+          kann</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>aktivieren</term>
+
+        <listitem>
+          <para>nach der Initialisierung kann ein Modul aktiviert werden,
+          damit PostNuke darauf zugreifen kann</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>editieren</term>
+
+        <listitem>
+          <para>Hier können folgende Einstellungen vorgenommen werden:</para>
+
+          <variablelist>
+            <varlistentry>
+              <term>Name</term>
+
+              <listitem>
+                <para>Der Name wird für den Menüblock benutzt, wenn 'Module
+                anzeigen' aktiviert ist.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Beschreibung</term>
+
+              <listitem>
+                <para>Auch diese wird für den Menüblock benutzt. Sie wird
+                angezeigt, wenn der Mauszeiger über dem Link verweilt.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Aktiviere...</term>
+
+              <listitem>
+                <para>Hiermit können die im System vorhandenen 'Hooks'
+                modulspezifisch aktiviert werden. Vereinfacht gesagt, sind
+                Hooks eine Möglichkeit, die Ausgabe eines Moduls zu verändern.
+                Die Autolinks sind z.B. als Hook realisiert.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>deaktivieren</term>
+
+        <listitem>
+          <para>hiermit wird ein Modul deaktiviert, d.h. es ist für Benutzer
+          nicht mehr nutzbar obwohl alle Einstellungen noch im System
+          vorhanden sind. Das deaktivieren löscht weder Moduldateien, noch
+          entsprechende Tabellen bzw. Variablen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>upgraden</term>
+
+        <listitem>
+          <para>diese Funktion integriert neue Tabellen/Variablen wenn eine
+          neue Modulversion eingespielt wurde. Nach dem Upgraden muss das
+          Modul erneut aktiviert werden</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>entfernen</term>
+
+        <listitem>
+          <para>entfernt ein Modul vollständig, d.h. die entsprechenden
+          Datenbanktabellen und Modulvariablen werden gelöscht. Das
+          entsprechende Modulverzeichnis in /modules bleibt allerdings
+          bestehen. Vor dem entfernen muss ein Modul deaktiviert
+          werden.</para>
+
+          <caution>
+            <para>Es gibt keine Sicherheitsabfrage beim Entfernen!</para>
+          </caution>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Modul Upgrade</bridgehead>
+
+    <para>Beim Upgrade von Module sollten einige Schritte beachtet
+    werden:</para>
+
+    <procedure>
+      <step>
+        <para>Um die aktualisierte Version eines Moduls einzuspielen sollte
+        man, wie es eigentlich bei jeder Aktion am System geraten wird, ein
+        Datenbank-Dump und ein Datei-Backup erstellen.</para>
+      </step>
+
+      <step>
+        <para>Dokumentation des Moduls lesen. - evtl. verlangt es nach
+        geändertem Vorgehen.</para>
+      </step>
+
+      <step>
+        <para>Nun löscht man das alte Modulverzeichnis (Achtung! Falls das
+        Modul Dinge im Verzeichnis speichert - dieses Dateien natürlich nicht
+        löschen)</para>
+      </step>
+
+      <step>
+        <para>Jetzt kopierst Du die neue Version des Moduls ins Verzeichnis
+        und</para>
+      </step>
+
+      <step>
+        <para>meldest Dich mit Adminrechten auf Deiner Site an, gehst in die
+        Administration</para>
+      </step>
+
+      <step>
+        <para>unter 'Module' erzeugst Du die Modulliste neu, suchst Dir Dein
+        Modul raus.</para>
+      </step>
+
+      <step>
+        <para>Hat die Aktion bis hier hin geklappt, steht da jetzt 'Upgrade'
+        hinter. Klicke diesen Link</para>
+      </step>
+
+      <step>
+        <para>und danach noch mal 'aktivieren' - Fertig</para>
+      </step>
+
+      <step>
+        <para>Probier zum Schluß aus, ob das Modul auch so funktioniert, wie
+        es sollte und spiel zur Not das Backup wieder ein.</para>
+      </step>
+    </procedure>
+
+    <para>Damit die Upgrade-Funktionalität auch wirklich verlässlich
+    funktioniert sollte auf jeden Fall mindestens die Version .726 installiert
+    sein. Mit älteren Versionen kann es unter Umständen Probleme geben.</para>
+  </section>
+
+  <section>
+    <title>Blöcke</title>
+
+    <para>Über den Punkt <guimenuitem>Blöcke</guimenuitem> in der
+    Administration werden die Blöcke verwaltet. Zunächst werden die bereits
+    bestehenden Blöcke aufgelistet. Zu jedem Block ist angegeben, an welcher
+    Stelle sie erscheint (d.h. sowohl die 'Rangfolge' als auch in welcher
+    'Leiste'), wie sie heißt, von welchem Modul sie bereitgestellt wird, und
+    ob sie aktiv ist. Für jeden Block stehen folgende Funktionen zur
+    Verfügung:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Deaktivieren</term>
+
+        <listitem>
+          <para>Der Block wird nicht mehr angezeigt, bleibt aber im
+          System</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Editieren</term>
+
+        <listitem>
+          <para>Ändern der Einstellungen eines Blocks. Diese Einstellungen
+          sind je nach Blockart verschieden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Löschen</term>
+
+        <listitem>
+          <para>Löscht den Block komplett aus dem System.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Mit den Pfeilen könne die Blöcke in der Reihenfolge verschoben
+    werden. Mit einem Klick auf den gewünschten Pfeil wandert der Block um
+    eine Position rauf oder runter. Die Position (links, mitte, rechts) können
+    Sie beeinflussen, wenn Sie auf Editieren klicken. Für jeden Block gibt es
+    die folgenden Felder:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Titel</term>
+
+        <listitem>
+          <para>Der Titel des Blocks. Dieser wird üblicherweise auch im Block
+          selbst angezeigt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Position</term>
+
+        <listitem>
+          <para>Links, Rechts, Mitte</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sprache</term>
+
+        <listitem>
+          <para>Die Sprache des Portals, für das der Block angezeigt werden
+          soll.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Weitere Möglichkeiten der Blockverwaltung</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Neuer Block</term>
+
+        <listitem>
+          <para>Hieer wird ein neuer Block angelegt. Die Funktion des Blocks
+          wird über ein Pulldownmenü festgelegt. Nach dem Klick auf
+          'Erstellen' wird der Block angelegt. Natürlich läßt er sich später
+          auch noch ändern, indem man in der Übersicht auf 'Editieren'
+          klickt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Blöcke Anzeigen</term>
+
+        <listitem>
+          <para>Zeigt eine Übersicht der Blöcke an.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Aktive Blöcke</term>
+
+        <term>Alle Blöcke</term>
+
+        <listitem>
+          <para>Wechselt zwischen den Ansichten aller Blöcke oder nur der
+          aktiven Blöcke.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Konfigurieren</term>
+
+        <listitem>
+          <para>Schaltet die Colapse-Funktion der Blöcke an bzw. aus. Diese
+          Funktion ermöglicht einem registrierten Benutzer, die Inhalte eines
+          Blocks 'wegzuklappen'. Seit Postuke .714 kann man die
+          "minimize/maximize"-Knöpfe im Administrationsbereich - Blöcke -
+          konfigurieren mit der Option "Symbole zur Block-Verkleinerung
+          aktivieren?" ein- bzw. ausschalten. Die entsprechenden Icons sind
+          übrigens in <filename>/images/global/downb.gif</filename> bzw.
+          <filename>upb.gif</filename> zu finden.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <bridgehead>Wie kann ich bei meinem Modul dafür sorgen, daß die rechten
+    Blocks angezeigt werden?</bridgehead>
+
+    <para>Bei den Modulen kann man durch setzen von $index = 1; festlegen, ob
+    die rechten Blocks angezeigt werden sollen oder nicht.</para>
+  </section>
+</chapter>
