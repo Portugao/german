@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <appendix id="XTE.News" lang="de-DE"
@@ -6,17 +6,21 @@
           status="draft">
   <!-- $Id$ -->
 
-  <title>Variablen fÃ¼r "News"-Templates</title>
+  <appendixinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+  </appendixinfo>
 
-  <para>Die Arrays, die in traditionellen Themes fÃ¼r die Funktionen zur
-  Darstellung der News zur VerfÃ¼gung stehen (<varname>$info</varname>,
+  <title>Variablen für "News"-Templates</title>
+
+  <para>Die Arrays, die in traditionellen Themes für die Funktionen zur
+  Darstellung der News zur Verfügung stehen (<varname>$info</varname>,
   <varname>$links</varname> und <varname>$preformat</varname>) werden den
-  entsprechenden Templates Ã¼bergeben und stehen dort zur VerfÃ¼gung. Auf sie
-  wird in der normalen Smarty-Syntax zurÃ¼ckgegriffeb, also z.B.
+  entsprechenden Templates übergeben und stehen dort zur Verfügung. Auf sie
+  wird in der normalen Smarty-Syntax zurückgegriffeb, also z.B.
   <markup>&lt;!--[$preformat.title]--&gt;</markup>.</para>
 
   <table frame="all">
-    <title>Variablen fÃ¼r "News"-Templates</title>
+    <title>Variablen für "News"-Templates</title>
 
     <tgroup cols="4">
       <colspec colname="name" />
@@ -146,7 +150,7 @@
 
           <entry></entry>
 
-          <entry>Zeigt die LÃ¤nge des Artikels in Anzahl von Bytes im Format "n
+          <entry>Zeigt die Länge des Artikels in Anzahl von Bytes im Format "n
           bytes mehr"</entry>
 
           <entry></entry>
@@ -207,7 +211,7 @@
 
         <row>
           <entry align="center" nameend="links"
-          namest="name"><emphasis>VerÃ¶ffentlichungsdatum</emphasis></entry>
+          namest="name"><emphasis>Veröffentlichungsdatum</emphasis></entry>
         </row>
 
         <row>
@@ -288,7 +292,7 @@
         <row>
           <entry>topic</entry>
 
-          <entry>Topic ID (fÃ¼r RÃ¼ckwÃ¤rtskompatibilitÃ¤t; besser tid
+          <entry>Topic ID (für Rückwärtskompatibilität; besser tid
           benutzen)</entry>
 
           <entry></entry>
@@ -299,7 +303,7 @@
         <row>
           <entry>topicid</entry>
 
-          <entry>Topic ID (fÃ¼r RÃ¼ckwÃ¤rtskompatibilitÃ¤t; besser tid
+          <entry>Topic ID (für Rückwärtskompatibilität; besser tid
           benutzen)</entry>
 
           <entry></entry>
@@ -330,7 +334,7 @@
         <row>
           <entry>topictext</entry>
 
-          <entry>Topic Beschreibungstext (zB. fÃ¼r das ALT="" tag des
+          <entry>Topic Beschreibungstext (zB. für das ALT="" tag des
           Topic-Bildes)</entry>
 
           <entry></entry>
@@ -341,7 +345,7 @@
         <row>
           <entry>tcounter</entry>
 
-          <entry>Anzahl der BeitrÃ¤ge zu einem Topic</entry>
+          <entry>Anzahl der Beiträge zu einem Topic</entry>
 
           <entry></entry>
 
@@ -353,10 +357,10 @@
 
           <entry></entry>
 
-          <entry>Link auf alle BeitrÃ¤ge eines Topics, formatiert als
+          <entry>Link auf alle Beiträge eines Topics, formatiert als
           Bild</entry>
 
-          <entry>Link auf alle BeitrÃ¤ge eines Topics</entry>
+          <entry>Link auf alle Beiträge eines Topics</entry>
         </row>
 
         <row>
@@ -377,7 +381,7 @@
         <row>
           <entry>catid</entry>
 
-          <entry>Kategorie ID (fÃ¼r RÃ¼ckwÃ¤rtskompatibilitÃ¤t; besser cid
+          <entry>Kategorie ID (für Rückwärtskompatibilität; besser cid
           benutzen)</entry>
 
           <entry></entry>
@@ -475,7 +479,7 @@
         <row>
           <entry>catthemeoverride</entry>
 
-          <entry>Name des Themes zum auÃŸer Kraft setzen der Kategorie</entry>
+          <entry>Name des Themes zum außer Kraft setzen der Kategorie</entry>
 
           <entry></entry>
 
@@ -485,7 +489,7 @@
         <row>
           <entry>themeoverride</entry>
 
-          <entry>Name des Themes zum auÃŸer Kraft setzen des Beitrags</entry>
+          <entry>Name des Themes zum außer Kraft setzen des Beitrags</entry>
 
           <entry></entry>
 
@@ -501,13 +505,13 @@
           <entry>version</entry>
 
           <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
-          EintrÃ¤ge vorhanden sind. stets "1"</entry>
+          Einträge vorhanden sind. stets "1"</entry>
 
           <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
-          EintrÃ¤ge vorhanden sind. stets "1"</entry>
+          Einträge vorhanden sind. stets "1"</entry>
 
           <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
-          EintrÃ¤ge vorhanden sind. stets "1"</entry>
+          Einträge vorhanden sind. stets "1"</entry>
         </row>
       </tbody>
     </tgroup>
