@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <!-- 
+     $Id$
+	 
 	 This file lists the download sources of the files included in this release 
 
      Explanation of the fields:
@@ -49,7 +51,7 @@
 	<saxon>
 		<description>Michael Kay's Saxon</description>
 		<homepage>http://saxon.sourceforge.net/</homepage>
-		<download>http://easynews.dl.sourceforge.net/sourceforge/saxon/</download>
+		<download>http://voxel.dl.sourceforge.net/sourceforge/saxon/</download>
 		<file>saxon6_5_3.zip</file>
 		<directory>saxon6_5_3</directory>
 		<unzip>saxon6_5_3</unzip>
@@ -76,7 +78,7 @@
 	<docbook-xsl>
 		<description>the DocBook XSL Stylesheets.</description>
 		<homepage>http://docbook.sourceforge.net/</homepage>
-		<download>http://easynews.dl.sourceforge.net/sourceforge/docbook/</download>
+		<download>http://voxel.dl.sourceforge.net/sourceforge/docbook/</download>
 		<file>docbook-xsl-1.65.1.zip</file>
 		<directory>docbook-xsl-1.65.1</directory>
 		<unzip>.</unzip>
