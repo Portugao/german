@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<article>
+  <title>DocBook-Links</title>
+
+  <articleinfo>
+    <releaseinfo>$Id: XTE.Intro.xml,v 1.1 2004/03/12 14:21:10 jna Exp
+    $</releaseinfo>
+  </articleinfo>
+
+  <para>Hier die für mich wichtigsten Links zum Thema DocBook:</para>
+
+  <section>
+    <title>Tools</title>
+
+    <section>
+      <title>XMLMind XML Editor (XXE)</title>
+
+      <para>Die "Standard"-Version ist für privaten wie für
+      Open-Source-Bereich kostenlos zu nutzen. Der XXE ist ein WYSIWYG-Editor,
+      der das Erstellen von DocBook-Dokumenten wirklich einfach macht.
+      Nachteil ist, dass keinerlei Zugriff auf den Quelltext möglich ist (das
+      macht man dann z.B. mit jEdit oder vi).</para>
+
+      <para><ulink
+      url="http://www.xmlmind.com/xmleditor/">http://www.xmlmind.com/xmleditor/</ulink></para>
+    </section>
+
+    <section>
+      <title>DocMAN</title>
+
+      <para>Um die DocBook-Dokumente in "ebbes g'scheits" umzuwandeln,
+      benötigt man die verschiedensten Dinge (XSLT-Prozessor, XML-Stylesheets
+      usw...). Ein "Toolchain-Manager" macht das Leben leichter. DocMAN ist
+      eine Java-Applikation.</para>
+
+      <para><ulink
+      url="http://trieloff.net/doctutorial/docman/quickquide/">http://trieloff.net/doctutorial/docman/quickquide/</ulink></para>
+    </section>
+
+    <section>
+      <title>eDE</title>
+
+      <para>eDE ist ein weiterer Toolchain-Manager, der das ganze mit einer
+      Reihe von Batch-Dateien löst. Mir gefällt DocMAN mittlerweile
+      besser.</para>
+
+      <para><ulink
+      url="http://docbook.e-novative.de/">http://docbook.e-novative.de/</ulink></para>
+    </section>
+  </section>
+
+  <section>
+    <title>Anleitungen</title>
+
+    <section>
+      <title>Dokumentationen mit DocBook-XML</title>
+
+      <para>Umfangreiche deutsche Doku</para>
+
+      <para><ulink
+      url="http://trieloff.net/docbook/tutorial/">http://trieloff.net/docbook/tutorial/</ulink></para>
+    </section>
+
+    <section>
+      <title>DocBook: The Definitive Guide (TDG)</title>
+
+      <para>Die offizielle Dokumentation. Das wichtigste daran ist die
+      Element-Referenz.</para>
+
+      <para>1. Auflage: <ulink
+      url="http://www.oasis-open.org/docbook/documentation/reference/">http://www.oasis-open.org/docbook/documentation/reference/</ulink></para>
+
+      <para>2. Auflage: <ulink
+      url="http://www.docbook.org/tdg/en/html/">http://www.docbook.org/tdg/en/html/</ulink></para>
+    </section>
+
+    <section>
+      <title>DocBook XSL: The Complete Guide</title>
+
+      <para>Dieser Guide geht mehr auf die Technologie und die Verwendung von
+      DocBook ein als TDG.</para>
+
+      <para><ulink
+      url="http://www.sagehill.net/docbookxsl/index.html">http://www.sagehill.net/docbookxsl/index.html</ulink></para>
+    </section>
+
+    <section>
+      <title>DocBook Wiki</title>
+
+      <para>Das Dokumentations-Wiki, u.a. mit einer Reihe an weiteren
+      Links.</para>
+
+      <para><ulink
+      url="http://docbook.org/wiki/moin.cgi/">http://docbook.org/wiki/moin.cgi/</ulink></para>
+    </section>
+  </section>
+</article>
