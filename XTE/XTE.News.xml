@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<appendix id="XTE.News" lang="de-DE"
+          revision="$Revision$ $Date$"
+          status="draft">
+  <!-- $Id$ -->
+
+  <title>Variablen für "News"-Templates</title>
+
+  <para>Die Arrays, die in traditionellen Themes für die Funktionen zur
+  Darstellung der News zur Verfügung stehen (<varname>$info</varname>,
+  <varname>$links</varname> und <varname>$preformat</varname>) werden den
+  entsprechenden Templates übergeben und stehen dort zur Verfügung. Auf sie
+  wird in der normalen Smarty-Syntax zurückgegriffeb, also z.B.
+  <markup>&lt;!--[$preformat.title]--&gt;</markup>.</para>
+
+  <table frame="all">
+    <title>Variablen für "News"-Templates</title>
+
+    <tgroup cols="4">
+      <colspec colname="name" />
+
+      <colspec colname="info" />
+
+      <colspec colname="preformat" />
+
+      <colspec colname="links" />
+
+      <thead>
+        <row>
+          <entry>Name</entry>
+
+          <entry>$info</entry>
+
+          <entry>$preformat</entry>
+
+          <entry>$links</entry>
+        </row>
+      </thead>
+
+      <tbody>
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Artikel</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>sid</entry>
+
+          <entry>ID des Beitrags ("Story-ID")</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>title</entry>
+
+          <entry>Beitrags Titel</entry>
+
+          <entry>Beitragstitel (CSS Klasse "pn-title") +Link auf den
+          Beitrag</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>hometext</entry>
+
+          <entry>Einleitungstext als reiner Text</entry>
+
+          <entry>Einleitungstext mit automatisch generierten Links</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>bodytext</entry>
+
+          <entry>Beitragstext als reiner Text</entry>
+
+          <entry>Beitragstext mit automatisch generierten Links</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>notes</entry>
+
+          <entry>Anmerkungen</entry>
+
+          <entry>Anmerkungen</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>maintext</entry>
+
+          <entry>Kompletter Text (= hometext + bodytext)</entry>
+
+          <entry>Kompletter Text (= hometext + bodytext)</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>fulltext</entry>
+
+          <entry>Kompletter Text mit Anmerkungen (= maintext + notes)</entry>
+
+          <entry>Kompletter Text mit Anmerkungen (= maintext + notes)</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>"mehr"</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>readmore</entry>
+
+          <entry></entry>
+
+          <entry>Link "weiterlesen"</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>fullarticle</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+
+          <entry>Link zum kompletten Artikel</entry>
+        </row>
+
+        <row>
+          <entry>bytesmore</entry>
+
+          <entry></entry>
+
+          <entry>Zeigt die Länge des Artikels in Anzahl von Bytes im Format "n
+          bytes mehr"</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>withcomm</entry>
+
+          <entry>0 = Kommentare sind erlaubt; 1 = Kommentare sind nicht
+          erlaubt</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>comments</entry>
+
+          <entry>Anzahl der Kommentare</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>comment</entry>
+
+          <entry></entry>
+
+          <entry>Anzahl der Kommentare im Format "n Kommentare" oder "Deine
+          Meinung?"</entry>
+
+          <entry>Link zu den Kommentare</entry>
+        </row>
+
+        <row>
+          <entry>more</entry>
+
+          <entry></entry>
+
+          <entry>Komplette "Weiterlesen"-Zeile, mit Anzahl der Bytes und
+          Anzahl der Kommentare</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>counter</entry>
+
+          <entry>Anzahl der Zugriffe</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Veröffentlichungsdatum</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>briefdate</entry>
+
+          <entry>Datum kurzes Format</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>briefdatetime</entry>
+
+          <entry>Datum/Zeit, kurzes Format</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>longdate</entry>
+
+          <entry>Datum langes Format</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>longdatetime</entry>
+
+          <entry>Datum/Zeit, langes Format</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>time</entry>
+
+          <entry>Erstellungszeit</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>unixtime</entry>
+
+          <entry>Erstellungszeit im UNIXTIME Format</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Topic</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>tid</entry>
+
+          <entry>Topic ID</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>topic</entry>
+
+          <entry>Topic ID (für Rückwärtskompatibilität; besser tid
+          benutzen)</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>topicid</entry>
+
+          <entry>Topic ID (für Rückwärtskompatibilität; besser tid
+          benutzen)</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>topicname</entry>
+
+          <entry>Name des Topics</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>topicimage</entry>
+
+          <entry>Bildname ohne alle Pfade</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>topictext</entry>
+
+          <entry>Topic Beschreibungstext (zB. für das ALT="" tag des
+          Topic-Bildes)</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>tcounter</entry>
+
+          <entry>Anzahl der Beiträge zu einem Topic</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>searchtopic</entry>
+
+          <entry></entry>
+
+          <entry>Link auf alle Beiträge eines Topics, formatiert als
+          Bild</entry>
+
+          <entry>Link auf alle Beiträge eines Topics</entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Kategorie</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>cid</entry>
+
+          <entry>Kategorie ID</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>catid</entry>
+
+          <entry>Kategorie ID (für Rückwärtskompatibilität; besser cid
+          benutzen)</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>cattitle</entry>
+
+          <entry>Name der Kategorie</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>catandtitle</entry>
+
+          <entry>Kategorie und Titel des Artikels in der Form
+          Kategorie:Titel</entry>
+
+          <entry>Kategorie und Titel des Artikels als Doppellink</entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>category</entry>
+
+          <entry></entry>
+
+          <entry>Link auf die Kategorie; wenn keine Kategorie angegeben ist,
+          wird der Link unsichtbar</entry>
+
+          <entry>Link auf die Kategorie</entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Autor</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>aid</entry>
+
+          <entry>ID des Autors</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>informant</entry>
+
+          <entry>Benutzername des Autor</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Spezielle Links</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>print</entry>
+
+          <entry></entry>
+
+          <entry>Link zur Druckansicht</entry>
+
+          <entry>Link zur Druckansicht</entry>
+        </row>
+
+        <row>
+          <entry>send</entry>
+
+          <entry></entry>
+
+          <entry>An Freund verschicken</entry>
+
+          <entry>An Freund verschicken</entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Themes</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>catthemeoverride</entry>
+
+          <entry>Name des Themes zum außer Kraft setzen der Kategorie</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry>themeoverride</entry>
+
+          <entry>Name des Themes zum außer Kraft setzen des Beitrags</entry>
+
+          <entry></entry>
+
+          <entry></entry>
+        </row>
+
+        <row>
+          <entry align="center" nameend="links"
+          namest="name"><emphasis>Sonstiges</emphasis></entry>
+        </row>
+
+        <row>
+          <entry>version</entry>
+
+          <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
+          Einträge vorhanden sind. stets "1"</entry>
+
+          <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
+          Einträge vorhanden sind. stets "1"</entry>
+
+          <entry>Versionsangabe. Damit kann festgestellt werden, ob bestimmte
+          Einträge vorhanden sind. stets "1"</entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</appendix>
