@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Benutzer" lang="de-DE" revision="$Revision$" status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Benutzermanagement</title>
+
+  <para>Als Content Management System verfügt PostNuke über ein umfangreiches
+  Benutzer- und Gruppenmanagement. Vor allem für die korrekte Anwendung des
+  Berechtigungssystems ist ein Verständnis über die sich ergebenden
+  Zusammenhänge sehr wichtig.</para>
+
+  <para>In der Standard-Auslieferung von Postnuke gibt es zunächst drei
+  Benutzergruppen:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>unregistrierte</para>
+    </listitem>
+
+    <listitem>
+      <para>Users</para>
+    </listitem>
+
+    <listitem>
+      <para>Admins</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Jeder Besucher ist zunächst einmal Mitglied der unregistrierten
+  Benutzer, erst nach seiner Anmeldung (bzw. der Registrierung) ist er
+  Mitglied der Users-Gruppe. Der Administrator der Seite wird bereits während
+  der Installation der Admin-Gruppe zugewiesen. Diese System-Gruppen sollten
+  weder umbenannt oder gelöscht werden!</para>
+
+  <caution>
+    <para>Bei Upgrades von älteren Version von PostNuke, PHPNuke oder
+    myPHPNuke werden zusätzlich Gruppen gemäß den alten Autorenrechten
+    eingericht, allerdings müssen die Rechte neu zugewiesen werden.</para>
+  </caution>
+
+  <para>Zur individuellen Verwaltung kann man im <menuchoice>
+      <guimenu>Administrationsbereich</guimenu>
+
+      <guimenu>Gruppen</guimenu>
+    </menuchoice>beliebig viele weitere Gruppen anlegen, Benutzer zuordnen und
+  ihnen über das Berechtigungssystem Rechte zuweisen. Ein Benutzer kann dabei
+  auch mehreren Gruppen zugeordnet werden:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>neue Gruppe hinzufügen</term>
+
+      <listitem>
+        <para>neue Gruppe hinzufügen dient dazu weitere, individuelle Gruppen
+        einzurichten, denen später Mitglieder zugewiesen werden können.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Gruppenname</term>
+
+      <listitem>
+        <para>Gruppenname listet die bereits bestehenden Gruppen auf, durch
+        einen Klick auf den jeweiligen Namen kann man die Mitgliederliste
+        dieser Gruppe aufrufen und editieren (Benutzer zu Gruppe hinzufügen |
+        löschen | Gruppe modifizieren) Die Standardgruppen 'Admins' und
+        'Users' sollten nicht umbenamt oder gelöscht werden!</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</chapter>

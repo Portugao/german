@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Administration" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Administration</title>
+
+  <section>
+    <title>Einführung</title>
+
+    <para>Die Administrationsfunktionen stehen nur autorisierten Nutzern zur
+    Verfügung.</para>
+
+    <para>Nach der Anmeldung an der Seite bekommt der berechtigte Nutzer die
+    verschiedenen Administrationsmöglichkeiten der Seite angezeigt (siehe auch
+    Zugriffsrechte ). Diese Grundfunktionalitäten kann man außerdem noch durch
+    verschiedene Module erweitern. Die Anmeldung erfolgt für Benutzer und
+    Administratoren gleich - jeweils direkt über die Homepage der
+    PostNuke-Seite. Nach erfolgreicher Anmeldung wird im Main Menü ein
+    zusätzlicher Link 'Administration' angezeigt, über den man in den
+    Adminbereich gelangt. Hier finden sich dann die
+    Konfigurationsmöglichkeiten für die einzelnen Module. Dies ist die
+    Hauptübersicht zur PostNuke-Administration, es werden alle installierten
+    und aktiven Module angezeigt. Zeitgesteuerte Beiträge: Eine Liste der noch
+    nicht veröffentlichten Artikel. Die letzten XX Artikel: Hier sieht man die
+    letzten XX Artikel, die veröffentlicht wurden. Die Anzahl der Artikel, die
+    hier dargestellt werden, kann unter den Einstellungen festgelegt werden.
+    Die neuesten Artikel werden oben in der Liste angezeigt. Die Artikel
+    können direkt editiert bzw. gelöscht werden. Im Anschluß an die Liste
+    besteht die Möglichkeit, ältere Artikel über die jeweilige ID direkt zu
+    ändern bzw. zu löschen. Sind Umfragen aktiv, werden diese am Ende der
+    Seite angezeigt.</para>
+  </section>
+
+  <section>
+    <title>Grundkonfiguration</title>
+
+    <para>Nach erfolgreicher Installation und Anmeldung wird im Main Menu ein
+    zusätzlicher Link 'Administration' angezeigt, über den man in den
+    Adminbereich gelangt. Viele wichtige Werte ("Site-Name",
+    "Admin-Emailadresse" usw) werden bei Postnuke an zentraler Stelle
+    eingestellt. Diese Daten sind im Punkt 'Einstellungen'
+    zusammengefasst:</para>
+
+    <table>
+      <title>Einstellungen</title>
+
+      <tgroup cols="2">
+        <tbody>
+          <row>
+            <entry>Eintrag</entry>
+
+            <entry>Funktion</entry>
+          </row>
+
+          <row>
+            <entry>Name</entry>
+
+            <entry>Name der Website</entry>
+          </row>
+
+          <row>
+            <entry>Logo</entry>
+
+            <entry>Name einer Bilddatei in /images das für die Druckansicht
+            verwendet wird (das 'normale' Seitenlogo wird in aller Regel im
+            Theme definiert)</entry>
+          </row>
+
+          <row>
+            <entry>Slogan</entry>
+
+            <entry>Slogan, der im Seitentitel und in einigen Themes angezeigt
+            wird</entry>
+          </row>
+
+          <row>
+            <entry>Meta Keywords</entry>
+
+            <entry>Für Suchmaschinen wie Google, Fireball etc. können hier
+            sogenannte Meta Keywords angegeben werden</entry>
+          </row>
+
+          <row>
+            <entry>MetaKeywords dynamisch erzeugen</entry>
+
+            <entry>Keywords werden dynamisch aus dem Seiteninhalt erzeugt,
+            führt allerdings zu einem Performance-Verlust da die Seite an
+            Umfang zunehmen.</entry>
+          </row>
+
+          <row>
+            <entry>Startdatum</entry>
+
+            <entry>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf
+            der Statistikseite angezeigt</entry>
+          </row>
+
+          <row>
+            <entry>Administrator E-Mail</entry>
+
+            <entry>Kontaktadresse für alles Admin-Mail des Systems</entry>
+          </row>
+
+          <row>
+            <entry>Standard-Theme der Seite</entry>
+
+            <entry>Auswahl des Themes, mit dem unregistrierte Benutzer die
+            Website angezeigt bekommen</entry>
+          </row>
+
+          <row>
+            <entry>Dürfen Benutzer Theme individuell einstellen?</entry>
+
+            <entry>Hier kann bestimmt werden, ob sich Benutzer ein
+            abweichendes Theme einstellen können</entry>
+          </row>
+
+          <row>
+            <entry>rechte Blöcke in Beiträgen anzeigen?</entry>
+
+            <entry>Hier kann bestimmt werden, ob sich Benutzer ein
+            abweichendes Theme einstellen können</entry>
+          </row>
+
+          <row>
+            <entry>lokales Zeitformat (de_DE)</entry>
+
+            <entry>Einstellung des Zeitformates, für Deutschland sollte
+            'de_DE' korrekt sein</entry>
+          </row>
+
+          <row>
+            <entry>Zeitzone (GMT+1)</entry>
+
+            <entry>Einstellung der Zeitzone, Deutschland ist in GMT+1</entry>
+          </row>
+
+          <row>
+            <entry>Startseite</entry>
+
+            <entry>Angabe des Moduls mit dem PostNuke startet, in aller Regel
+            'News'</entry>
+          </row>
+
+          <row>
+            <entry>Artikel im Adminmenü</entry>
+
+            <entry>Anzahl der angezeigten Artikel auf der
+            Administrationsseite</entry>
+          </row>
+
+          <row>
+            <entry>Beiträge auf der Startseite</entry>
+
+            <entry>Anzahl der Artikel auf der Homepage Die Anzahl der
+            angezeigten News wird von zwei Faktoren beeinflusst - die
+            Einstellung in der Administration und die Einstellung in der
+            persönlichen Seite (user.php?op=edithome).</entry>
+          </row>
+
+          <row>
+            <entry>Reihenfolge der News</entry>
+
+            <entry>Auswahl, ob die Beiträge nach ihrer ID oder nach Datum
+            sortiert werden sollen</entry>
+          </row>
+
+          <row>
+            <entry>Icons im Adminmenü?</entry>
+
+            <entry>Die Links im Adminbereich könnten entweder als Text oder
+            als Icons angezeigt werden</entry>
+          </row>
+
+          <row>
+            <entry>Fehlermeldungen via E-Mail senden</entry>
+
+            <entry>Hier kann eingestellt werden, ob bei fehlenden Seiten
+            'keine' Meldung, eine Meldung 'von Zugriffen innerhalb der Domain'
+            oder aber eine 'generell' Meldung an den Administrator geschickt
+            werden soll</entry>
+          </row>
+
+          <row>
+            <entry>Fehlermeldungen mit error.php erzeugen</entry>
+
+            <entry>bei einem Apache Webserver können Fehlermeldungen
+            individuell erzeugt werden, anstelle der Servermeldung erscheinen
+            dann 'lustige' Fehlermeldungen. Zusätzlich zur Aktivierung muss
+            dazu auch eine .htaccess-Datei im root der Installation abgelegt
+            werden:<programlisting>ErrorDocument 404 http://www.deineseite.de/error.php?op=404</programlisting></entry>
+          </row>
+
+          <row>
+            <entry>Zensur aktivieren</entry>
+
+            <entry>Auswahl, ob die automatische Zensur bestimmter Wort
+            angewendet werden soll (derzeit sind die 'bösen Begriffe'
+            allerdings nur in der module_vars-Tabelle definierbar)</entry>
+          </row>
+
+          <row>
+            <entry>WYSIWIG-Editor benutzen</entry>
+
+            <entry>Auswahl ob der graphische Editor 'vietdev' automatisch in
+            alle Textareas angewendet werden soll</entry>
+          </row>
+
+          <row>
+            <entry>pnAntiCracker</entry>
+
+            <entry>Bestimmt, ob bei bestimmten 'Hacking'-Versuchen automatisch
+            eine Mail an den Admin gesendet wird. dringend empfohlen!</entry>
+          </row>
+
+          <row>
+            <entry>Standardgruppe für Benutzer</entry>
+
+            <entry>Registrierte Benutzer werden automatisch einer bestimmten
+            Gruppe zugeordnet. Die Standardeinstellung 'Users' sollte nicht
+            geändert werden</entry>
+          </row>
+
+          <row>
+            <entry>Sprache der Website</entry>
+
+            <entry>unregistrierte Benutzer sehen die Website in der
+            eingestellten Sprache. Wenn Multilangual-Unterstützung aktiviert
+            ist, kann die Sprache darüberhinaus individuell eingestellt
+            werden</entry>
+          </row>
+
+          <row>
+            <entry>Kompression aktivieren</entry>
+
+            <entry>aktiviert die gzip-Kompression der Seiten</entry>
+          </row>
+
+          <row>
+            <entry>Fuss-Zeile</entry>
+
+            <entry>Die Fuss-Zeile wird unter jeder Postnuke-Seite dargestellt
+            und kann individuell angepasst werden. Die Standard-Daten müssen
+            nicht beibehalten werden (HTML erlaubt)</entry>
+          </row>
+
+          <row>
+            <entry>Backend Titel</entry>
+
+            <entry>Postnuke erzeugt automatisch eine Datei, die es anderen
+            Websites ermöglicht, Inhalte zu 'grabben' - hier wird der Titel
+            der Datei angegeben</entry>
+          </row>
+
+          <row>
+            <entry>Backend Sprache</entry>
+
+            <entry>Angabe der Sprache der Backend-Informationen</entry>
+          </row>
+
+          <row>
+            <entry>Sicherheitslevel</entry>
+
+            <entry>Einstellung zur Speicherung der Benutzeranmeldung in einem
+            Cookie gespeichert (hoch: kein Cookie, mittel: Cookie verfällt
+            nach xx Tagen, niedrig: Cookie verfällt nie)</entry>
+          </row>
+
+          <row>
+            <entry>Tagesanzahl der Dauer bei mittlerer Sicherheit</entry>
+
+            <entry>Angabe der Tage bis ein Cookie verfällt (nur bei mittlerer
+            Sicherheitsstufe)</entry>
+          </row>
+
+          <row>
+            <entry>Benutzer werden nach folgender Zeit inaktiv (10)</entry>
+
+            <entry>Angabe der Zeitspanne bis ein inaktiver Benutzer abgemeldet
+            wird. Optimaler Wert: 10 min</entry>
+          </row>
+
+          <row>
+            <entry>Intranet</entry>
+
+            <entry>Postnuke ist darauf ausgerichtet in einer 'fully qualified
+            domain' Umgebung, d.h. als normale Domain (und nicht z.b. als
+            localhost) zu laufen. Bei Angabe von 'Ja' werden einige
+            Sicherheitseinstellungen von Postnuke ausser Kraft gesetzt. Dies
+            ist nicht empfohlen!</entry>
+          </row>
+
+          <row>
+            <entry>in Beiträgen erlaubte HTML-Tags</entry>
+
+            <entry>Angabe, ob und wenn ja welche HTML-Tags in Beiträgen
+            erlaubt sein sollen: nicht erlaubt, erlaubt, erlaubt mit
+            Parametern (z.b. &lt;FONT TYPE='ARIAL' COLOR='#FFFFFF'&gt;) Dabei
+            ist klar, daß gewisse Tags ohne Parameter gar keinen Sinn machen.
+            Hyperlinks ( &lt;a&gt; ) zum Beispiel haben immer mindenstens den
+            Parameter mit der Hyperlink Referenz (href='index.php') Wichtig:
+            Parameter nur freigeben, wenn unbedingt erforderlich!</entry>
+          </row>
+
+          <row>
+            <entry>Eingebette HTML-Entitäten in normale Zeichen
+            wandeln</entry>
+
+            <entry>Solange keine multi-byte Unterstützung benötigt wird,
+            sollte diese Option auf 'nein' stehen</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </section>
+
+  <section>
+    <title>Grafischer Editor</title>
+
+    <para>Man kann zukünftig in PostNuke einen graphischen Editor unterhalb
+    der Allgemeinen Einstellungen systemweit aktivieren bzw. deaktivieren.
+    Bitte jetzt nicht gleich laut losjubeln! Der Editor befindet sich noch in
+    einer frühen Phase, u.a funktioniert das direkte Zusammenspiel mit
+    freigegebenen HTML Tags noch nicht, was bedeutet, dass man mit dem Editor
+    unter Umständen Texte generieren kann, die mit &lt;TAGS&gt; dargestellt
+    werden da die entsprechenden HTML-Befehle in der Administration
+    deaktiviert sind. Die Upload-Funktionalität wurde in der .723 aus
+    Sicherheitsgründen deaktiviert!</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/wysiwyg1.gif" />
+      </imageobject>
+
+      <caption>
+        <para>Dieser Artikel im WYSIWYG-Editor von PostNuke</para>
+      </caption>
+    </mediaobject>
+
+    <para>Ist der Editor erstmal aktiviert, kommt in jeder &lt;textarea&gt;
+    die Abfrage, ob man den Visual Mode benutzen möchte. Leider funktioniert
+    das momentan nur im Internet Explorer, entsprechende Funktionen werden
+    weder vom Netscape Navigator noch von Opera unterstützt. Übrigens: selbst
+    wenn man an dieser Stelle den Editor nicht aktiviert, kann man über einen
+    Rechtsklick Formatierungsoptionen aufrufen! Die Buttons verändern die
+    Schrift im Editor sofort, die verwendeten HTML Tags sind für den Benutzer
+    nicht sichtbar (vollwertiger Editor) Hier jetzt eine Kurzübersicht der
+    verwendeten Buttons mit Bedeutung (von links nach rechts):</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/wysiwyg2.gif" />
+      </imageobject>
+    </mediaobject>
+
+    <para>Bold - Fettschrift</para>
+
+    <para>Left - Text links am Rand ausrichten</para>
+
+    <para>Center - Text mittig ausrichten</para>
+
+    <para>Right - Text rechts am Rand ausrichten</para>
+
+    <para>Outdent - Einrückung zurücknehmen</para>
+
+    <para>Indent - Text Einrücken</para>
+
+    <para>Italic - kursiver Text</para>
+
+    <para>Underline - unterstrichener Text</para>
+
+    <para>Strike Through - durchgestrichener Text</para>
+
+    <para>SuperScript - hochgestellter Text</para>
+
+    <para>SubScript - tiefgestellter Text</para>
+
+    <para>Background - Hintergrundfarbe (als Name oder über
+    Colorpicker)</para>
+
+    <para>Foreground - Textfarbe (als Name oder über Colorpicker)</para>
+
+    <para>Insert Image - Bild einfügen (das Bild muß auf einer Webadresse
+    liegen)</para>
+
+    <para>Create Link - erzeugt einen beliebigen Link (aktiver Link)</para>
+
+    <para>Delete Link - deaktiviert einen gesetzten Link (Text bleibt
+    stehen)</para>
+
+    <para>Select All - Wählt den kompletten Text</para>
+
+    <para>Cut - Schneidet den markierten Text aus (bleibt im Clipboard)</para>
+
+    <para>Copy - Kopiert die markierte Textstelle in das Clipboard</para>
+
+    <para>Paste - fügt den Text an der Cursorposition wieder ein (auch
+    mehrfach)</para>
+
+    <para>Content Recover/Insert Smartcard Data (siehe unter Help)</para>
+
+    <para>In der Zeile unter diesen Buttons findet sich eine weitere Zeile mit
+    weiteren Funktionen:</para>
+
+    <para>1. Fontauswahl über Dropdown-Menü</para>
+
+    <para>2. Überschriftenwahl (HTML)</para>
+
+    <para>3. Fontsize (HTML Größen)</para>
+
+    <para>4. Formularfelder (Fieldset, Button, Checkbox, ....)</para>
+
+    <para>5. qsave - Kopiert die Textarea in das Clipboard, so dass man nach
+    weiteren Änderungen über 'Content Data Recovery' den letzten Stand wieder
+    herstellen kann. (funktioniert noch nicht)</para>
+
+    <para>6. Über Swapmode schaltet man vom normalen Editor Modus in die HTML
+    Ansicht.</para>
+
+    <para>7. Extras - Über Extras wird ein weiteres Fenster geöffnet, in dem
+    sich weitere Funktionen des Editors hinter Buttons befinden:</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/wysiwyg3.gif" />
+      </imageobject>
+    </mediaobject>
+
+    <para>Create Div/DivStyle - fügt Div-Layer ein</para>
+
+    <para>DivBorder - Verändert im weiteren Controlpanel den Rahmen des
+    Div-Layers.</para>
+
+    <para>DivFilter - Markiert den Div-Layer zur Veränderung Emotions - Öffnet
+    ein Smileyfenster, welches eine Auswahl ermöglicht</para>
+
+    <para>Characters - Öffnet die Sonderzeichen über Webdings</para>
+
+    <para>HR - Linie</para>
+
+    <para>Pre - Vorformatierter Block</para>
+
+    <para>DelPre - Lösche Vorformatierung</para>
+
+    <para>Marquee - Laufschrift</para>
+
+    <para>Del Format - Lösche Formatierung</para>
+
+    <para>Undo - Letzten Schritt rückgängig machen</para>
+
+    <para>Redo - Letzten Schritt wiederholen</para>
+
+    <para>Search/Replace - Suchen und Ersetzen</para>
+
+    <para>Open/Save File - Öffnet ein lokales File bzw. speichert den Inhalt
+    als lokales File, wenn die ActiveX Funktion freigeschaltet ist.</para>
+
+    <para>Insert Table - Fügt eine Tabelle ein. Über ein weiteres Fenster
+    wählt man eine vorgegebene Größe oder gibt selber die Anzahl von Zeilen
+    und Spalten ein.</para>
+
+    <para>Table Properties - Öffnet weiteres Controlpanel mit allen
+    Einstellmöglichkeiten für eine Tabelle</para>
+
+    <para>Cell Properties - Öffnet weiteres Controlpanel mit allen
+    Einstellmöglichkeiten für eine Zelle</para>
+
+    <para>Insert Cell - Fügt Zelle ein</para>
+
+    <para>Delete Cell - Löscht Zelle (an Cursorposition)</para>
+
+    <para>Insert Row - Fügt Zeile ein (oberhalb der Cursorposition)</para>
+
+    <para>Delete Row - Löscht Zeile (an Cursorposition)</para>
+
+    <para>Insert Col - Fügt Spalte ein (vor der Cursorposition)</para>
+
+    <para>Delete Col - Löscht Spalte (an Cursorposition)</para>
+
+    <para>Insert Colspace - übergreifende Vergrößerung (Vergrößert Zelle um
+    die nächste Zelle)</para>
+
+    <para>Decrease Colspace - verkleinert Zelle um die letzte
+    Vergrößerung)</para>
+
+    <para>Insert Rowspan - Vergrößert Zelle um folgende Zeilengröße</para>
+
+    <para>Decrease Rowspan - verkleinert Zelle um eine Zeilengröße</para>
+
+    <para>Swap Code - Wechselt wieder in den Editor</para>
+
+    <para>[ Upload - Möglichkeit ein lokales File upzuloaden ]
+    deaktiviert</para>
+
+    <para>Options - Editor Options, Größe des normalen Textfeldes,
+    Hintergrundbild, Stylevorlage, Text Style, Text Größe, Text Farbe (über
+    Buttons Änderbar) Help - Übersicht der Hotkeys und weitere Erklärung zu
+    Insert Smartcard Data</para>
+
+    <para>Wie in allen HTML-Generatoren (Dreamweaver, Frontpage usw.) erzeugt
+    [ENTER] einen &lt;BR&gt;-Tag und [SHIFT]+[ENTER] einen
+    &lt;P&gt;-Tag.</para>
+  </section>
+
+  <section>
+    <title>Module</title>
+
+    <para>Postnuke kann in seinem Funktionsumfang durch sogennante Module
+    erweitert werden. Da für die optimale Konfiguration von Postnuke ein
+    Grundverständnis über die Funktions- und Arbeitsweise der Module von
+    grosser Bedeutung ist, sollen hier kurz die Bedeutungen der
+    Modulfunktionen initialisieren, aktivieren, editieren, deaktivieren,
+    upgraden und entfernen (löschen!) erklärt werden. Diese Funktionen gelten
+    für alle Module innerhalb von Postnuke. In der Standardauslieferung von
+    Postnuke sind bereits einige Module integriert. Der Administrator kann
+    entscheiden, welche er auf seiner Seite einsetzen, deaktiveren oder auch
+    ggfs. löschen möchte. Weiterhin gibt es zahlreiche Downloadquellen für
+    zusätzliche Module (z.B. <ulink
+    url="http://mods.postnuke.com/index.php">mods.postnuke.com</ulink> oder
+    unsere <ulink
+    url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulsammlung</ulink>).</para>
+
+    <section>
+      <title>Modulinstallation</title>
+
+      <para>Module bestehen normalerweise aus mehreren Dateien (Funktionen,
+      Grafiken, Sprachdateien usw.), die zusammen in einem Verzeichnis liegen,
+      das den Namen des Moduls trägt. Dieses Verzeichnis muss ins Verzeichnis
+      <filename>/modules</filename> auf dem Webserver kopiert werden.</para>
+
+      <para>Die Installation / Konfiguration der Module erfolgt im
+      Administrationsbereich über den Menüpunkt 'Module':</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis>anzeigen</emphasis> zeigt eine Liste aller auf der
+          Seite vorhanden Module mitsamt ihren jeweiligen Einstellungen
+          an</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis>erneut erzeugen</emphasis> baut die Modulliste auf
+          Grundlage der Verzeichnisinformationen in /modules neu auf. Jedesmal
+          wenn ein neues Modul installiert (d.h. in das Modulverzeichnis
+          /modules kopiert wird) muss die Modulliste neu erzeugt werden um die
+          Änderungen des Dateisystems zu erkennen. Man kann die Liste aber
+          auch generell vor dem anzeigen der Moduleinstellungen neu erzeugen
+          um sicherzustellen, dass man mit den aktuellsten Informationen
+          arbeitet.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Die Konfiguration im Detail:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>initialisieren: damit werden die für das Modul erforderlichen
+          Datenbanktabellen und Variablen im System erzeugt. Module müssen in
+          aller Regel initialisiert werden, bevor man mit ihnen arbeiten
+          kann</para>
+        </listitem>
+
+        <listitem>
+          <para>aktivieren: nach der Initialisierung kann ein Modul aktiviert
+          werden, damit Postnuke darauf zugreifen kann</para>
+        </listitem>
+
+        <listitem>
+          <para>editieren: einige Einstellungen die das Modul im allgemeinen
+          betreffen können direkt in der Moduladministration eingestellt
+          werden (Name, Autolinks, Ratings, Wiki). Die meisten Module haben
+          für ihre Detaileinstellungen allerdings eigene Menüpunkte im
+          Administrationsmenü</para>
+        </listitem>
+
+        <listitem>
+          <para>deaktivieren: hiermit wird ein Modul deaktiviert, d.h. es ist
+          für Benutzer nicht mehr nutzbar obwohl alle Einstellungen noch im
+          System vorhanden sind. Das deaktivieren löscht weder Moduldateien,
+          noch entsprechende Tabellen bzw. Variablen</para>
+        </listitem>
+
+        <listitem>
+          <para>upgraden: diese Funktion integriert neue Tabellen/Variablen
+          wenn eine neue Modulversion eingespielt wurde. Nach dem Upgraden
+          muss das Modul erneut aktiviert werden</para>
+        </listitem>
+
+        <listitem>
+          <para>entfernen: entfernt ein Modul vollständig, d.h. die
+          entsprechenden Datenbanktabellen und Modulvariablen werden gelöscht.
+          Das entsprechende Modulverzeichnis in /modules bleibt allerdings
+          bestehen. Vor dem entfernen muss ein Modul deaktiviert werden.
+          <caution>
+              <para>Es gibt keine Sicherheitsabfrage beim enfernen!</para>
+            </caution></para>
+        </listitem>
+      </itemizedlist>
+
+      <tip>
+        <para>Fragen zu Modulen und zur Installation stellt man am besten im
+        <ulink
+        url="http://www.post-nuke.net/phpBB_14-viewforum-forum-4.html">Support-Forum</ulink>.</para>
+      </tip>
+    </section>
+
+    <section>
+      <title>Modul Upgrade</title>
+
+      <para>Beim Upgrade von Module sollten einige Schritte beachtet
+      werden:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Um die aktualisierte Version eines Moduls einzuspielen sollte
+          man, wie es eigentlich bei jeder Aktion am System geraten wird, ein
+          Datenbank-Dump und ein Datei-Backup erstellen.</para>
+        </listitem>
+
+        <listitem>
+          <para>Dokumentation des Moduls lesen. - evtl. verlangt es nach
+          geändertem Vorgehen.</para>
+        </listitem>
+
+        <listitem>
+          <para>Nun löscht man das alte Modulverzeichnis (Achtung! Falls das
+          Modul Dinge im Verzeichnis speichert - dieses Dateien natürlich
+          nicht löschen)</para>
+        </listitem>
+
+        <listitem>
+          <para>Jetzt kopierst Du die neue Version des Moduls ins Verzeichnis
+          und</para>
+        </listitem>
+
+        <listitem>
+          <para>meldest Dich mit Adminrechten auf Deiner Site an, gehst in die
+          Administration</para>
+        </listitem>
+
+        <listitem>
+          <para>unter 'Module' erzeugst Du die Modulliste neu, suchst Dir Dein
+          Modul raus.</para>
+        </listitem>
+
+        <listitem>
+          <para>Hat die Aktion bis hier hin geklappt, steht da jetzt 'Upgrade'
+          hinter. Klicke diesen Link</para>
+        </listitem>
+
+        <listitem>
+          <para>und danach noch mal 'aktivieren' - Fertig</para>
+        </listitem>
+
+        <listitem>
+          <para>Probier zum Schluß aus, ob das Modul auch so funktioniert, wie
+          es sollte und spiel zur Not das Backup wieder ein.</para>
+        </listitem>
+      </orderedlist>
+
+      <para>Damit die Upgrade-Funktionalität auch wirklich verlässlich
+      funktioniert sollte auf jeden Fall mindestens die Version .726
+      installiert sein. Mit älteren Versionen kann es unter Umständen Probleme
+      geben.</para>
+    </section>
+
+    <section>
+      <title>Standart Modul</title>
+
+      <para>Es folgt eine kurze Beschreibung der mitgelieferten Module.</para>
+
+      <section>
+        <title>Beitrag hinzufügen</title>
+
+        <para>Der Bereich Beiträge ist eigentlich sehr intuitiv bedienbar. Es
+        handelt sich dabei um die zentrale Newserfassung des Systems. Die hier
+        erfassten Beiträge erscheinen (je nach Einstellung) auf der
+        Hauptseite. Hier kann man einen Beitrag erstellen, indem man einen
+        Titel angibt, ein Topic wählt und eine Kategorie auswählt (oder diese
+        neu erstellt, später kann man auch ein anderes Thema wählen).
+        Schließlich kann man noch entscheiden, ob man den Beitrag auf der
+        Startseite anzeigen lassen will oder ob sie nur innerhalb der
+        Kategorie erscheinen sollen. Weiterhin kann man entscheiden, ob man
+        Kommentare erlauben möchte und für welche Sprachen der Text zugelassen
+        werden soll (wählt 'alle', wenn er überall erscheinen soll).</para>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/Submit.gif" />
+          </imageobject>
+
+          <caption>
+            <para>Das Eingabeformular</para>
+          </caption>
+        </mediaobject>
+
+        <para>Hat man erstmal alles beantwortet, geht es an die Erstellung des
+        eigentlichen Beitrags, der nat. auch HTML-Befehle erlaubt. Zunächst
+        gibt man den Beitrag Text ein, in dem der Teil des Artikels
+        (Einleitung oder Zusammenfassung) geschrieben wird, der auf der
+        Startseite angezeigt werden soll. Im Bereich erweiterter Text trägt
+        man dann den Rest des Artikels ein. Nat. sind hier auch Links und
+        Images möglich, wenn man die freigeschaltet hat. Der User kann diesen
+        Text lesen, wenn er unterhalb der Einleitung auf weiterlesen klickt.
+        Schließlich läßt sich noch eine Anmerkung eingeben und man kann
+        entscheiden zu welchem Zeitpunkt der Beitrag zeitgesteuert erscheinen
+        soll. Am Ende wählt man jetzt noch, ob man sich die Beitragsvorschau
+        anzeigen lassen möchte, oder ob der Beitrag freigegeben werden soll.
+        Die einzelnen Felder sind:</para>
+
+        <para>Topics</para>
+
+        <para>Die Beiträge können Themengebieten zugeordnet werden. So kann
+        der Benutzer die Beiträge schon anhand der Symbole, die für jedes
+        Themengebiet vergeben wurden, einordnen. Durch einen Klick auf dieses
+        Symbol kann sich der Nutzer alle Beiträge eines jeweiligen
+        Themengebietes anzeigen lassen. Die Topics haben einen eigenen
+        Administrationspunkt. Wählt man kein spezifisches Thema aus, so
+        erschenit statt des Symbols für das Thema das Browsersymbol für eine
+        nicht gefundene Grafik!</para>
+
+        <para>Kategorie</para>
+
+        <para>Die Einteilung nach Kategorien ermöglicht eine noch feinere
+        Kategorisierung der Beiträge Wenn sehr viele Beiträge erstellt werden
+        kann durch die Kategorisierung erreicht werden, dass nicht alle
+        Beiträge automatisch über die Startseite laufen, sondern nur die
+        wichtigsten. Außerdem können Kategorien auch andere Layouts zugwiesen
+        werden. Der Zugriff auf Beiträge einer Kategrorie kann über das
+        Rechtesystem eingeschränkt werden.</para>
+
+        <para>Zunächst gibt man den Titel und den Beitrags-Text ein, in dem
+        der Teil des Artikels (Einleitung oder Zusammenfassung) geschrieben
+        wird, der auf der Ubersichtsseite angezeigt werden soll. Im Bereich
+        'erweiterter Text' trägt man dann den Rest des Artikels ein (sofern
+        vorhanden). Natürlich sind hier auch Links usw. möglich. Der User kann
+        diesen Text lesen, wenn er unterhalb der Einleitung auf Weiterlesen
+        klickt.</para>
+
+        <para>Titel</para>
+
+        <para>Der Titel sollte ausdrucksstark sein und grob beschreiben, um
+        was es in dem Beitrag geht. Er erscheint als Überschriftszeile des
+        Beitrags.</para>
+
+        <para>Beitrags-Text</para>
+
+        <para>Der Text der in der ersten Übersicht erscheint, also der
+        'Anreißer'. Dieser sollte nicht zu lang sein und zum Weiterlesen
+        animieren. erweiterter Text Dieser Text erscheint zusätzlich, wenn man
+        auf 'mehr' klickt. Er kann aber auch weggelassen werden.</para>
+
+        <para>Auf der Startseite?</para>
+
+        <para>Sofern Kategorien erstellt wurden, kann man mit dieser
+        Einstellung steuern, welche Beiträge auf der Startseite erscheinen,
+        und welche nicht. Die Kategorie 'Beiträge' erscheint immer auf der
+        Startseite, so dass hier diese Auswahl ohne Wirkung bleibt.</para>
+
+        <para>Kommentare</para>
+
+        <para>Durch aktivieren dieser Funktion können berechtigte Benutzer
+        Beiträge kommentieren und so ihre Meinung äußern. In der
+        Rechteverwaltung kann noch eingestellt werden, ob auch anonyme Nutzer
+        (also solche die sich noch nicht angemeldet haben) Kommentare
+        schreiben dürfen.</para>
+
+        <para>Sprache</para>
+
+        <para>Auswahl der Spracheinstellung, bei der der Beitrag angezeigt
+        werden soll. Beiträge die als 'deutsch' markiert sind, erscheinen nur
+        dann, wenn sich der Nutzer die Seite auf deutsch anzeigen lässt. Diese
+        Auswahl hat natürlich nur bei mehrsprachigen Seiten Wirkung. Wird die
+        Option 'alle' gewählt, wird der Beitrag bei jeder Spracheiustellung
+        angezeigt. Damit wird die allgemeine Spracheinstellung der Seite nicht
+        verändert. Diese erfolgt über einen gesonderten
+        Administrationspunkt</para>
+
+        <para>Formatierungs-Typ</para>
+
+        <para>Je nach Formatierungstyp werden Zeilenumbrüche dann auch im
+        Artikel dargestellt.</para>
+
+        <para>Anmerkung</para>
+
+        <para>Anmerkungen erscheinen unter dem eigentlichen Beitrag. Von der
+        Funktion sind sie als 'Anmerkung der Redaktion' zu sehen, gehören also
+        nicht mehr zum eigentlichen Beitrag, haben aber einen höheren
+        Stellenwert als Kommentare, die jeder eingeben kann.</para>
+
+        <para>Beitrag zeitgesteuert?</para>
+
+        <para>Es kann eingestellt werden, ab wann der Beitrag angezeigt werden
+        soll (z.B. Silvestergrüße am 31.12. ab 0:00 Uhr).</para>
+
+        <para>Im eigentlichen Beitrag sind auch HTML-Befehle erlaubt. Diese
+        müssen jedoch in den 'Einstellungen' zuerst freigegeben werden. Diese
+        Einschränkung soll Missbrauch verhindern. Außerdem können so
+        'Layoutbezogene' Befehle verboten werden (Schriftfarbe, Art und
+        Größe). So wird die optische Gleichförmigkeit der Seite
+        gewährleistet.</para>
+
+        <para>Man kann sich vor der Freigabe die Beitragsvorschau anzeigen
+        lassen, um den Beitrag zu prüfen.</para>
+
+        <para>Eine weitere Möglichkeit, Beiträge einzugeben, bietet die
+        Funktion 'Submit News'. Der Hauptunterschied zur Funktion 'Beitrag
+        hinzufügen' besteht darin, dass diese Beiträge erst vom Administrator
+        geprüft und freigegeben werden müssen, bevor sie auf der Homepage
+        erscheinen. Diese Funktion ist für Co-Autoren gedacht, wobei die
+        Entscheidung zur Veröffentlichung beim Administrator liegt.</para>
+
+        <para><tip>
+            <para>Wenn Ihr eine Artikelserie schreiben wollt, dann geht auf
+            der Startseite mit der Maus über die Überschrift Eures ersten
+            Artikels. Unten im Fenster erscheint jetzt der damit verbundene
+            Link, z.B.:
+            <filename>http://eureseite.de/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112</filename>.
+            Die ID des Artikels ist also 112. Macht das auch mit dem zweiten
+            Artikel der Serie. Die ID wäre in unserem Beispiel jetzt 126. Um
+            Eure Artikel zu verbinden, editiert Ihr den 1. Artikel und geht
+            nach ganz unten. Dort tragt Ihr einen Link auf den
+            nachfolgenden</para>
+
+            <para>(modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=126)
+            bzw. vorhergehenden Artikel
+            (modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112)
+            ein.</para>
+          </tip></para>
+      </section>
+
+      <section>
+        <title>Admin Messages</title>
+
+        <para>Die Admin Messages sind Meldungen, die im zugehörigen Block
+        angezeigt werden. Dieser wird typischerweise so platziert, dass er auf
+        der Hauptseite immer oberhalb der Beiträge angezeigt wird. Damit sind
+        die Admin Messages immer sichtbar. Dies ist praktisch, wenn man seinen
+        Besuchern etwas mitteilen möchte, denn Beiträge werden im Laufe der
+        Zeit von neuen Beiträgen von der Startseite verdrängt, da immer die
+        neuesten Beiträge oben stehen. Die Admin-Messages eignen sich daher
+        vor allem für sehr wichtige Nachrichten, die vom Benutzer der Seite
+        unbedingt gelesen werden sollten (geänderte Öffnungszeiten während
+        Feiertagen etc.). Die Nachrichten können unterschiedlichen
+        Benutzergruppen (z.B. unregistrierten Benutzern, registrierten
+        Benutzern oder Admins) zugänglich gemacht werden. So könnt Ihr z.B.
+        Neulinge auffordern sich zu registrieren oder registrierten Benutzern
+        neue Features vorstellen. Es können beliebig viele dieser Mitteilungen
+        geschrieben werden. Sind bereits Mitteilungen geschrieben, erscheinen
+        diese ganz oben und können direkt editiert oder gelöscht werden. Um
+        eine neue Mitteilung zu schreiben, füllt einfach die Felder darunter
+        aus: Zunächst solltet Ihr einen Titel eintragen. Im nächsten Feld
+        tragt ihr den Inhalt ein, der auch wieder mit
+        (freigegebenen)HTML-Befehlen formatiert werden kann. Nun wählt Ihr
+        wieder eine Sprache. Nur wenn 'alle' ausgewählt wird, können auch alle
+        User diese Nachricht sehen. Wählt ihr z.B. 'Englisch', können nur
+        Userden Beitrag lesen, die auch Englisch als Sprache gewählt haben. Um
+        diese Nachricht zu aktivieren, setzt den Button auf 'Ja'. Soll die
+        Nachricht nicht angezeigt werden, aber auch nicht gelöscht werden,
+        wählt einfach 'Nein'. Mit Wer diese Nachricht sehen soll kann die
+        Zielgruppe dieser Nachricht ausgewählt werden: Im Dropdownmenü werden
+        die Benutzergruppen angezeigt, aus denen ihr auswählen
+        könnt.<itemizedlist>
+            <listitem>
+              <para>Allen Besuchern: Alle Besucher der Seite bekommen die
+              Nachricht angezeigt</para>
+            </listitem>
+
+            <listitem>
+              <para>Nur registrierte Besucher: Nur Besucher, die sich auf der
+              Seite registriert haben und angemeldet sind bekommen die
+              Nachricht angezeigt.</para>
+            </listitem>
+
+            <listitem>
+              <para>Nur anonyme Besucher: Nur Besucher, die sich bisher nicht
+              auf der Seite registriert haben bekommen die Nachricht
+              angezeigt.</para>
+            </listitem>
+
+            <listitem>
+              <para>Nur Administratoren: Nur Mitglieder der
+              Administratoren-Gruppe bekommen die Nachricht angezeigt.</para>
+            </listitem>
+          </itemizedlist>Ist alles fertig, klickt einfach auf hinzufügen. Die
+        'Admin Messages' werden im gleichnamigen Block angezeigt. In der
+        Standardkonfiguration wird dieser als 'Center Block' angelegt. Wenn
+        man Admin Messages erzeugt hat, diese aber nicht angezeigt werden,
+        sollte man folgendes überprüfen: * Ist ein Block für die Admin
+        Messages angelegt? * Handelt es sich um ein Theme, das für PostNuke
+        ausgelegt ist, und die Center Blocks anzeigt? Seit PostNuke .71x
+        wurden zusätzliche 'Center'-Blocks eingeführt - diese müssen in der
+        jeweilige theme.php definiert sein. Der entsprechende Aufruf ist in
+        aller Regel <programlisting>if ($index == 1) {
+          blocks('centre');
+      }</programlisting> am Ende der Funktion themeheader.php - man kann dies
+        leicht in den Standard Themes nachvollziehen.</para>
+      </section>
+
+      <section>
+        <title>Autolinks</title>
+
+        <para>Was machen die Autolinks? Autolinks sind eine bequeme
+        Möglichkeit, weiterführende Informationen zu bestimmten Themen
+        bereitzustellen. Autolinks ist ein Modul, das in die
+        Bildschirmausgaben andere Module eingreifen kann. Die Funktion
+        durchsucht einen Texte nach bestimmten Schlüsselworten und verknüpft
+        dieses mit einem Link.Soll zum Beipiel in allen Artikeln automatisch
+        das Wort 'Postnuke' mit dem Link www.post-nuke.net verknüpft werden,
+        sind folgende Schritt nötig: Installation &amp; Konfiguration<caution>
+            <para>Man muss diese Funktion für jedes Modul bei der
+            'Modulkonfiguration' einschalten!</para>
+          </caution> Über Administration&gt;Module&gt;Liste neu generieren muß
+        zuerst die Autolinks initialisiert und aktiviert werden. Um dann
+        Autolinks für ein bestimmtes Modul zu aktivieren, auf Administration
+        Module gehen und klicken auf neu erzeugen klicken. Danach kann man
+        innerhalb des Moduls, das man ausgewählt hat, auf editieren gehen und
+        dort dann Autolink anwählen. Wenn man das bei allen Modulen gemacht
+        hat, bei denen man Autolinks hinzufügen möchte, geht man auf Autolink
+        Konfiguration Updaten und startet ein Update der Datenbank. In der
+        Autolinks Konfiguration kann man einstellen, ob ein Link nur beim
+        ersten Auftreten eines Wortes in einem Artikel gesetzt wird oder, ob
+        der Link jedesmal hinzugefügt werden soll. Kommt das Wort 'Postnuke'
+        3x in dem Text vor, würde dieser dann alle drei mal mit dem Link
+        versehen. Wenn nun die Autolinks aktiviert sind, kann man über den
+        Administrationsbildschirm folgende Funktionen nutzen:
+        Administration&gt;Autolinks&gt;Autolink hinzufügen.</para>
+
+        <table>
+          <title>Funktionen in den Autolinks</title>
+
+          <tgroup cols="2">
+            <tbody>
+              <row>
+                <entry></entry>
+
+                <entry>Beschreibung</entry>
+              </row>
+
+              <row>
+                <entry>Eingabe des Schlüsselwortes</entry>
+
+                <entry>Das ist das Wort, welches später im Text durch den Link
+                ersetzt werden soll. Groß/Kleinschreibung wird dabei nicht
+                unterschieden.</entry>
+              </row>
+
+              <row>
+                <entry>Titel eingeben</entry>
+
+                <entry>Eingabe des Titels, der später für den Link erscheinen
+                soll. Dieser wird auch für die 'MouseOver'-Effekte benutzt.
+                (Stichwort: 'Alt-Tag' im Link)</entry>
+              </row>
+
+              <row>
+                <entry>URL eingeben</entry>
+
+                <entry>Die URL in der Form z.b. 'http://www.linkname.de'
+                eingeben (oder wenn die Datei auf dem eigenen System ist als
+                'datei.html')</entry>
+              </row>
+
+              <row>
+                <entry>Kommentar</entry>
+
+                <entry>Diese ist nur für den Administrator sichtbar.</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+
+        <para>Mit Hinzufügen wird der Link dann in die Datenbank eingetragen.
+        Mit Administration&gt;Autolinks&gt;Autolinks ansehen kann man sich
+        eine Liste aller Autolinks sortiert nach Schlüsselwort ansehen und
+        diese auch editieren. Mit Update Autolink wird die Änderung dann in
+        die Datenbank eingetragen. Klickt man auf löschen wird man nochmals
+        gefragt, ob der Link wirklich gelöscht werden soll. Durch Abbruch kann
+        man hier nochmal den Löschvorgang verhindern. <caution>
+            <para>Da jede Ausgabe erstmal noch durch dieses Modul geschickt
+            wird, bringt es natürlich zumindest leichte Performance-Nachteile
+            mit sich.</para>
+          </caution></para>
+      </section>
+
+      <section>
+        <title>Banner</title>
+
+        <para>Viele Websites nutzen die Möglichkeiten von Bannern, um die
+        Betriebskosten der Webseite teilweise zu refinanzieren. PostNuke hat
+        ein eingebautes System, welches die Darstellung und die Verwaltung von
+        Bannern unterstützt. Um ein Banner auf Ihrer Website zu platzieren,
+        müssen Sie zunächst einmal einen Kunden anlegen, den Sie dann mit dem
+        Banner verknüpfen. Hierzu tragen Sie in die freien Felder dieses
+        Fensters den Kundennamen, Ansprechpartner, E-Mailadresse, Kundenlogin,
+        Kundenpasswort, weitere Informationen (nur sichtbar für den Admin im
+        Bannermodul) ein und klicken auf 'Kunden anlegen'. 'Banner hinzufügen'
+        kann man erst, wenn ein Kunde angelegt wurde. Wählen Sie zunächst den
+        'Kunden' aus dem Dropdown-Menü und tragen Sie die Anzahl der gekauften
+        Impressions (Banneraufrufe) ein (0=unendlich), dann die URL im Format
+        <filename>http://www.firma.de/images/banners/bannerl.gif</filename>,
+        wo das Banner abgelegt ist und schließlich die URL, an die der User
+        bei Klick auf das Banner umgeleitet werden soll ein. Klicken Sie zum
+        Abschluß auf 'Banner hinzufügen', um dieses Banner zu speichern.
+        'derzeit aktive Banner' In dieser Liste werden alle aktiven Banner,
+        alle abgelaufenen Banner (Anzahl der gekauften Impressionen erreicht)
+        und eine Liste aller eingetragenen Kunden angezeigt. Unter 'aktive
+        Banner' werden die Impressionen, die verbleibenden Impressionen, die
+        prozentuale Anzahl der Klicks, der Kundenname und die Möglichkeit
+        diesen Eintrag zu editieren oder zu löschen angezeigt. Unter
+        'abgelaufene Banner' werden die bezahlten Impressionen, die
+        prozentuale Anzahl der Klicks, das Aktivierungsdatum des Banners und
+        die Möglichkeit diesen Eintrag zu editieren oder zu löschen angezeigt.
+        'Banner Kunde' enthält die Information über die Anzahl der Banner, die
+        ein Kunde hat, sowie die Möglichkeit diesen Eintrag zu editieren oder
+        zu löschen. 'Banner Konfiguration' Hier wählt man aus, ob Banner für
+        diese Website aktiviert werden sollen. Steht hier ein 'Nein', werden
+        auch bereits definierte Banner nicht angezeigt.<caution>
+            <para>Die Anzeige von Bannern muss vom jeweiligen Layout
+            unterstützt werden. Erkennen kann man das am Aufruf der
+            zuständigen Funktion pnBannerDisplay(); - Die muß irgendwo in der
+            theme.php stehen.</para>
+
+            <para>Wenn ein Banner in einem Block mittels dem
+            "Core/banners"-Block darstellt werden soll, muss man darauf
+            achten, dass die "Custom Banner ID" höher 2 gewählt wird. Da von
+            Haus aus die IDs 1 und 2 für Header- und Footer-Banner "vergeben"
+            sind.</para>
+          </caution>Ihre Kunden können über den Link
+        http://www.ihre-firma.de/banners.php?op=login auf ihre Bannerstatistik
+        zugreifen. Dieser Account dient ausschließlich der Abfrage 'derzeit
+        aktive Banner' der Bannerstatistik und ist kein Zugang, um sich als
+        üser auf der Seite anzumelden. Das Interface für den Bannerkunden
+        umfasst die folgenden Daten:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>'Banner ID' ID des Banners auf Ihrer Seite</para>
+          </listitem>
+
+          <listitem>
+            <para>'Impressionen' Anzahl, wie oft das Banner den Usern gezeigt
+            worden ist</para>
+          </listitem>
+
+          <listitem>
+            <para>'Impressionen insgesamt' Anzahl der gezeigten Banner
+            gesamt</para>
+          </listitem>
+
+          <listitem>
+            <para>'verbleibende Impressionen' ; Anzahl der verbleibenden
+            Bannerpräsentationen, wenn ein Kunde eine bestimmte Anzahl gekauft
+            hat (0=unendlich)</para>
+          </listitem>
+
+          <listitem>
+            <para>'Klicks' ; Anzahl der Klicks auf das Banner von dieser
+            Seite</para>
+          </listitem>
+
+          <listitem>
+            <para>'Klicks %' prozentuale Klicks auf diese Banner</para>
+          </listitem>
+
+          <listitem>
+            <para>'Funktionen : Email Stats' sendet die Statistik an die im
+            Kundeninfo gespeicherte Emailadresse</para>
+          </listitem>
+
+          <listitem>
+            <para>'Funktionen : Ändere URL' Ändern der Webadresse, auf die die
+            User geleitet werden, wenn sie auf das Banner klicken</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Sollten die Banner trotz eingeschalteter Funktion nicht
+        angezeigt werden, kann es sein, dass die Bannerfunktion im Theme nicht
+        definiert ist. Die Standardgrößen von Bannern wie sie von IAB Ad
+        Standards definiert werden:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>468 x 60 (Full Banner)</para>
+          </listitem>
+
+          <listitem>
+            <para>234 x 60 (Half Banner)</para>
+          </listitem>
+
+          <listitem>
+            <para>120 x 90 (Button 1)</para>
+          </listitem>
+
+          <listitem>
+            <para>120 x 60 (Button 2)</para>
+          </listitem>
+
+          <listitem>
+            <para>88 x 31 (Micro Bar)</para>
+          </listitem>
+
+          <listitem>
+            <para>160 x 600 (Wide Skyscraper)</para>
+          </listitem>
+
+          <listitem>
+            <para>120 x 600 (Skyscraper)</para>
+          </listitem>
+
+          <listitem>
+            <para>125 x 125 (Square Button)</para>
+          </listitem>
+
+          <listitem>
+            <para>180 x 50 (Rectangle)</para>
+          </listitem>
+
+          <listitem>
+            <para>120 x 240 (Vertical Banner)</para>
+          </listitem>
+
+          <listitem>
+            <para>300 x 250 (Medium Rectangle)</para>
+          </listitem>
+
+          <listitem>
+            <para>250 x 250 (Square Pop-up)</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Blöcke</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/bloecke.gif" />
+          </imageobject>
+
+          <caption>
+            <para>Blockübersicht</para>
+          </caption>
+        </mediaobject>
+
+        <para>Viele Inhalte oder Module des Systems werden in Blöcken rechts
+        oder links angezeigt. Mit diesem Menüpunkt weren die Blöcke
+        administriert. Zunächst werden die bereits bestehenden Blöcke
+        aufgelistet. Zu jedem Block ist angegeben, an welcher Stelle sie
+        erscheint (d.h. sowohl die 'Rangfolge' als auch in welcher 'Leiste'),
+        wie sie heißt, von welchem Modul sie bereitgestellt wird, und ob sie
+        aktiv ist. Für jeden Block stehen folgende Funktionen zur
+        Verfügung:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Deaktivieren: Der Block wird nicht mehr angezeigt, bleibt
+            aber im System</para>
+          </listitem>
+
+          <listitem>
+            <para>Editieren: Ändern der Einstellungen eines Blocks. Diese
+            Einstellungen sind je nach Blockart verschieden.</para>
+          </listitem>
+
+          <listitem>
+            <para>Löschen: Löscht den Block komplett aus dem System.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Mit den Pfeilen könne die Blöcke in der Reihenfolge verschoben
+        werden. Mit einem Klick auf den gewünschten Pfeil wandert der Block um
+        eine Position rauf oder runter. Die Position (links, mitte, rechts)
+        können Sie beeinflussen, wenn Sie auf Editieren klicken. Für jeden
+        Block gibt es die folgenden Felder:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Titel: Der Titel des Blocks. Dieser wird üblicherweise auch
+            im Block selbst angezeigt</para>
+          </listitem>
+
+          <listitem>
+            <para>Position: Links, Rechts, Mitte</para>
+          </listitem>
+
+          <listitem>
+            <para>Sprache: Die Sprache des Portals, für das der Block
+            angezeigt werden soll.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Weitere Möglichkeiten der Blockverwaltung:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Neuer Block: Fiter wird ein neuer Block angelegt. Die
+            Funktion des Blocks wird über ein Pulldownmenü festgelegt. Nach
+            dem Klick auf 'Erstellen' wird der Block angelegt. Natürlich läßt
+            er sich später auch noch ändern, indem man in der Übersicht auf
+            'Editieren' klickt (s. oben).</para>
+          </listitem>
+
+          <listitem>
+            <para>Blöcke Anzeigen: Zeigt eine Übersicht der Blöcke an.</para>
+          </listitem>
+
+          <listitem>
+            <para>Aktive Blöcke bzw. Alle Blöcke: Wechselt zwischen den
+            Ansichten aller Blöcke oder nur der aktiven Blöcke.</para>
+          </listitem>
+
+          <listitem>
+            <para>Konfigurieren: Schaltet die Colapse-Funktion der Blöcke an
+            bzw. aus. Diese Funktion ermöglicht einem registrierten Benutzer,
+            die Inhalte eines Blocks 'wegzuklappen'.</para>
+          </listitem>
+        </itemizedlist>
+
+        <tip>
+          <para>Mit dem Nuclei-Block-Modul sind weitergehende Formatierungen
+          möglich!</para>
+
+          <itemizedlist>
+            <listitem>
+              <para><emphasis>Wie aktiviere/deaktiviere ich die
+              Verkleinerungsknöpfe bei den Blöcken?</emphasis></para>
+
+              <para>Seit Postuke .714 kann man die "minimize/maximize"-Knöpfe
+              im Administrationsbereich - Blöcke - konfigurieren mit der
+              Option "Symbole zur Block-Verkleinerung aktivieren?" ein- bzw.
+              ausschalten. Die entsprechenden Icons sind übrigens in
+              /images/global/downb.gif bzw. upb.gif zu finden.</para>
+            </listitem>
+
+            <listitem>
+              <para><emphasis>Wie kann ich bei meinem Modul dafür sorgen, daß
+              die rechten Blocks angezeigt werden?</emphasis></para>
+
+              <para>Bei den Modulen kann man durch setzen von $index = 1;
+              festlegen, ob die rechten Blocks angezeigt werden sollen oder
+              nicht.</para>
+            </listitem>
+
+            <listitem>
+              <para><emphasis>Ich lese immer mal wieder etwas über die Nuclei
+              Blocks. Was machen die eigentlich?</emphasis></para>
+
+              <para>Die Nuclei Block-Modul, zu finden auf
+              http://www.tangant.com, ersetzt das Block-Management von
+              PostNuke. Dabei werden Core-Dateien ersetzt! Allerdings sind die
+              Änderungen relativ klein. Mit den Nuclei-Blöcken sind erweiterte
+              Positionierungsmöglichkeiten von Blöcken möglich (neben links,
+              rechts, center dann auch frei definierbare Areas), die
+              allerdings vom Theme entsprechend unterstützt werden müssen.
+              Damit sind dann z.B. auch dreispaltige Themes möglich. Themes,
+              die diese Positionierungen unterstützen, sind z.B. Nucleus,
+              Nucleus XL oder Gx2, alle zum Download bei
+              http://www.tangant.com. Man kann auch die Suchmaschine auf
+              http://themes.postnuke.com/ mit dem Suchwort 'Nuclei' füttern.
+              Setzt man ein Standard-Theme mit dem Nuclei Block-Modul ein, so
+              sind nur die 'Standard-Blöcke', also diejenigen, die links,
+              rechts und mittig positioniert werden, sichtbar. Mit Hilfe
+              dieser Erweiterung ist auch die Startseite von post-nuke.net
+              gestaltet!</para>
+            </listitem>
+          </itemizedlist>
+        </tip>
+      </section>
+
+      <section>
+        <title>Kommentare (NS-Comments)</title>
+
+        <para>Kommentare erlauben den Usern, mit Ihrer Website zu
+        interagieren. Wenn ein üser einen Artikel liest zu dem er etwas
+        hinzufügen will oder etwas anzumerken hat, dann kann er einen
+        Kommentar schreiben, der in der Datenbank gespeichert und mit dem
+        Artikel angezeigt wird. Die Einstellung für Kommentare entscheidet,
+        wie PostNuke mit den Artikeln umgeht:</para>
+
+        <caution>
+          <para>Kommentare sind standardmäßig für das Reviews-Modul aktiviert
+          und werden durch die Einstellungen in diesem Bereich nicht
+          beeinflusst. Hier geht es ausschließlich um die Kommentare zu den
+          News.</para>
+        </caution>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/kommentare.gif" />
+          </imageobject>
+
+          <caption>
+            <para>Kommentaradministration</para>
+          </caption>
+        </mediaobject>
+
+        <para>Durch die Wahl der Moderation legt man fest, ob nur der
+        Administrator oder auch der Benutzer oder keine Moderation stattfinden
+        soll. Der Administrator kann einen Beitrag immer bearbeiten oder
+        entfernen. Bedenken Sie bitte, dass zu starke Moderation die
+        Kommunikation mit den Nutzern ersticken kann. Wählt man keine
+        Moderation besteht jedoch die Gefahr, dass unqualifizierte, falsche
+        oder gar rechtlich fragliche Kommentare eingestellt werden. Weiterhin
+        kann gewählt werden, ob anonyme User (Anonymous) Kommentare schreiben
+        dürfen oder nicht. Außerdem kann man die Anzahl der Bytes festlegen,
+        die ein Kommentar lang sein darf. 4096 Bytes ermöglichen einen
+        umfassenden Kommentar, verhindern aber, dass üser das System mit
+        zufälligem überlangem Text füllen, um einen Datenbankfehler zu
+        erzeugen. Mit 'Name für Anonymous' gibt man an, welcher Name für einen
+        nicht registrierten User benutzt wird. Diese Einstellung wird auch von
+        vielen anderen Modulen benutzt.</para>
+      </section>
+
+      <section>
+        <title>Downloads</title>
+
+        <para>In diesem Administrationsbereich werden die Downloads in die
+        Datenbank eingetragen. PostNuke unterstützt das Anbieten von
+        Downloads. Dabei lassen sich Dateien beliebigen Formates und Herkunft
+        verwalten. Diese Downloads kann man in Kategorien und Unterkategorien
+        unterteilen, um es dem User einfacher zu machen die Dateien zu finden,
+        an denen er Interesse hat. Es können bis jetzt aber nur Links zu
+        Downloads eingefügt werden, die bereits im Internet zu erreichen sind.
+        Eine Upload-Funktion ist bisher nur mit Download-Modulen anderer
+        Modulentwickler möglich. Auch lassen sich bisher nur Haupt- und
+        Unterkategorien anlegen - eine weitere Verzweigung ist noch nicht
+        möglicht. Zu beachten ist, dass hier effektiv nur Verweise eingetragen
+        werden. Die entsprechenden Dateien müssen sich bereits auf einem
+        Internetserver befinden. Zum Hochladen der Daten benutzen sie in aller
+        Regel ein FTP-Programm. Als Alternative gibt es das Modul UpDownloads,
+        das auch das Hochladen der Dateien ermöglicht.</para>
+
+        <para>Alle Downloads werden in Kategorien und Unterkategorien
+        verwaltet. Bevor der erste Download eingetragen werden kann, muß
+        mindestens eine Hauptkategorie eingetragen werden.</para>
+
+        <para><emphasis>Neue Hauptkategorie hinzufügen</emphasis> - Hier trägt
+        man eine neue Kategorie inkl. Beschreibung in die Downloadliste ein.
+        Hierzu muss man natürlich Name und Kurzbeschreibung (255 Zeichen)
+        angeben. Auf 'hinzufügen' klicken, um diesen Eintrag der Datenbank
+        hinzuzufügen.</para>
+
+        <para><emphasis>Unterkategorie hinzuzufügen</emphasis> - Um eine
+        Unterkategorie hinzuzufügen, den Namen der 'Unterkategorie' eintragen
+        und aus dem Pulldownmenü die Hauptkategorie unterhalb der diese
+        erscheinen soll angeben. Es ist möglich, eine Unterkategorie unterhalb
+        einer Unterkategorie anzulegen, indem man aus der Liste die
+        'Hauptkategorie/Unterkategorie' auswählt. Auf 'hinzufügen' klicken, um
+        die Unterkategorie anzulegen.</para>
+
+        <para>Um eine Kategorie zu verändern oder zu löschen, die
+        entsprechende Kategorie aus dem Pulldownmenü auswählen. Auf 'ändern'
+        klicken. Die Kategorie wird angezeigt und man kann Änderungen
+        vornehmen. Auml;nderungen könnnen auf diese Weise auch für alle
+        Unterkategorien vorgenommen werden. Die Kategorie kann man 'löschen',
+        wenn man sie zunächst auswählt und dann auf der nächsten Seite auf
+        'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
+        Unterkategorien und die darin enthaltenen Links. Die Files werden
+        natürlich nicht aus dem File-System gelöscht.</para>
+
+        <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, können
+        Downloads hinzugefügt werden. Hierzu auf Download hinzufügen
+        klicken.Folgende Felder werden einem Download zugewiesen:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Name: Name des Programms. Das kann der dateiname sein,
+            besser ist es aber vielleicht, einen beschreibenden Titel zu
+            wählen.</para>
+          </listitem>
+
+          <listitem>
+            <para>Dateipfad: Pfad des Programms, entwerder relativ
+            (downloads/datei.zip) oder absolut
+            http://www.beispiel.de/downloads/datei.zip)</para>
+          </listitem>
+
+          <listitem>
+            <para>Kategorie: Kategorie, in der der Download angezeigt werden
+            soll</para>
+          </listitem>
+
+          <listitem>
+            <para>Beschreibung: Beschreibung der Funktion der Datei</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Nicht unbedingt notwendig, aber oft interessant, sind die
+        folgenden Angaben:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Name Autor: Autor der Datei</para>
+          </listitem>
+
+          <listitem>
+            <para>E-Mail Autor: Email des Autors der Datei</para>
+          </listitem>
+
+          <listitem>
+            <para>Dateigröße: Größe der Datei in Bytes, die entsprechende KB
+            bzw. MB Zahl wird berechnet. Unter Windows erhalten Sie die Größe
+            einer Datei, indem sie mit einem Rechtsklick auf die entsprechende
+            Datei das Fenster 'Eigenschaften' aufrufen, Linux- oder
+            Unix-Anwender benutzen ls -l</para>
+          </listitem>
+
+          <listitem>
+            <para>Version: Version der Datei</para>
+          </listitem>
+
+          <listitem>
+            <para>Homepage: Homepage der Datei oder des Autors</para>
+          </listitem>
+
+          <listitem>
+            <para>Hits: Anzahl der bisherigen Downloads der Datei</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Sie müssen nicht alle Felder ausfüllen, leere Felder werden in
+        der Anzeige ignoriert. Abstimmungsliste löschen: User können über
+        Downloads abstimmen, hiermit wird die die Abstimmung zurückgesetzt.
+        Defekten Link melden: Wenn ein Anwender einen defekten Link findet,
+        kann er das durch einen Klick auf 'Defekten Link melden' diesen dem
+        Administrator melden. Der Administrator wird benachrichtigt und
+        bekommt unter Administration -&gt; Downloads eine Liste mit der Anzahl
+        der defekt gemeldeten Links angezeigt. Klicken Sie auf 'Defekt
+        gemeldete Downloads' und sie erhalten die komplette Liste In diesem
+        Menü können Sie 'Editieren' wählen um zu den Einstellungen des Links
+        zu kommen, den Sie dann editieren können, um den Fehler zu beheben.
+        Ist der Downloadlink jedoch in Ordnung, so wählen sie Ignorieren, um
+        alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählen
+        Sie 'Löschen', um diesen Download aus der Datenbank zu
+        entfemen.</para>
+
+        <caution>
+          <para>Es wird nicht nach einer Bestätigung für den Löschvorgangs
+          gefragt. überprüfen Sie, ob Sie den Downloadlink wirklich löschen
+          wollen.</para>
+        </caution>
+
+        <para>gemeldete Änderungswünsche: User können Sie auch
+        benachrichtigen, wenn ein Link nicht mehr dem neusten Stand ist. Hier
+        wird angezeigt, wie viele und welche Anderungswünsche vorhanden sind.
+        Klicken Sie auf editieren, wenn Sie den Link verändern wollen.
+        Downloads überprüfen: Klicken Sie auf 'Downloads überprüfen', wenn Sie
+        alle Ihre Downloads überprüfen wollen. Sie gelangen zu einem weiteren
+        Dialog, auf dem Ihnen weitere Optionen offen stehen. Entweder Sie
+        wählen dann 'alle Downloads überprüfen' (dies kann einige Zeit dauern,
+        besonders, wenn Sie viele Downloads haben) oder Sie überprüfen nur
+        eine Kategorie oder sogar nur eine der Unterkategorien. Klicken Sie
+        hierzu auf die Kategorie bzw die Unterkategorie, die Sie überprüfen
+        wollen. Wenn die Überprüfung abgeschlossen ist, öffnet sich ein
+        Fenster, in dem das Ergebnis der Prüfung angezeigt wird. Wenn die
+        Downloads ok sind, erscheint neben dem entsprechenden Listeneintrag
+        ein 'OK'. Wird ein Fehler festgestellt, so erscheint 'Fehler' neben
+        der entsprechenden Datei und Sie erhalten die Möglichkeit diesen
+        Downloadlink zu löschen oder zu editieren. Klicken Sie auf 'Ändern',
+        um Änderungen vorzunehmen oder auf 'Löschen', um den Link zu löschen.
+        Um eine Kategorie zu verändern oder zu löschen, wählen Sie die
+        Kategorie vom Pulldownmenü. Klicken Sie dann auf 'ändern'. Die
+        Kategorie wird angezeigt und Sie können Änderungen vornehmen. Die
+        Änderungen werden dann auch für alle Unterkategorien vorgenommen. Die
+        Kategorie kann man 'löschen', wenn man sie zunächst auswählt und dann
+        auf der nächsten Seite auf 'löschen' klickt. Das Löschen einer
+        Kategorie löscht auch alle Unterkategorien und die darin enthaltenen
+        Links. Die Dateien werden natürlich nicht von Ihrem System gelöscht.
+        Um einen Downloadlink zu 'ändern', die Download ID eingeben, die auch
+        angezeigt wird, wenn man mit der Maus über den Download geht. In der
+        Statuszeile des Browsersfensters wird der Link angezeigt, in dem auch
+        ID=Nummer steht. Diese Nummer ist die ID des Links. Wenn diese
+        eingegeben wird, kann man anschließend alle Informationen Ändern, die
+        beim Hinzufügen des Links eingetragen wurden. Klicken auf 'Hinzufügen'
+        speichert die Änderungen. Unter 'Download Konfiguration' können Sie
+        wählen, ob es unregistrierten Benutzern erlaubt ist, neue Downloads
+        vorzuschlagen. Klicken Sie auf 'Speichern', um Ihre Änderungen zu
+        speichern.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Blöcke</title>
+
+      <para>PostNuke zeigt die Inhalte des Moduls in der Mitte der Seite an.
+      An den Rändern links, rechts und oben können sich mehrere Boxen
+      befinden, z.B. ein Menü, die Anmeldefelder, eine Weterinformation
+      usw.</para>
+
+      <para>Diese Boxen werden als 'Blöcke' bezeichnet.</para>
+
+      <para>Nahezu jedes Modul bringt seine eigenen Blöcke mit. Der Inhalt
+      wird vom Modul bestimmt, wie z.B. neueste Links, ungelesene persönliche
+      Nachrichten usw.</para>
+    </section>
+
+    <section>
+      <title>Benutzermanagement</title>
+
+      <para>Als Content Management System verfügt PostNuke über ein
+      umfangreiches Benutzer- und Gruppenmanagement. Vor allem für die
+      korrekte Anwendung des Berechtigungssystems ist ein Verständnis über die
+      sich ergebenden Zusammenhänge sehr wichtig.</para>
+
+      <para>In der Standard-Auslieferung von Postnuke gibt es zunächst drei
+      Benutzergruppen:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>unregistrierte</para>
+        </listitem>
+
+        <listitem>
+          <para>Users</para>
+        </listitem>
+
+        <listitem>
+          <para>Admins</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Jeder Besucher ist zunächst einmal Mitglied der unregistrierten
+      Benutzer, erst nach seiner Anmeldung (bzw. der Registrierung) ist er
+      Mitglied der Users-Gruppe. Der Administrator der Seite wird bereits
+      während der Installation der Admin-Gruppe zugewiesen. Diese
+      System-Gruppen sollten weder umbenannt oder gelöscht werden! <caution>
+          <para>Bei Upgrades von älteren Version von PostNuke, PHPNuke oder
+          myPHPNuke werden zusätzlich Gruppen gemäß den alten Autorenrechten
+          eingericht, allerdings müssen die Rechte neu zugewiesen
+          werden.</para>
+        </caution>Zur individuellen Verwaltung kann man im
+      Administrationsbereich -&gt; Gruppen beliebig viele weitere Gruppen
+      anlegen, Benutzer zuordnen und ihnen über das Berechtigungssystem Rechte
+      zuweisen. Ein Benutzer kann dabei auch mehreren Gruppen zugeordnet
+      werden:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>neue Gruppe hinzufügen dient dazu weitere, individuelle
+          Gruppen einzurichten, denen später Mitglieder zugewiesen werden
+          können.</para>
+        </listitem>
+
+        <listitem>
+          <para>Gruppenname listet die bereits bestehenden Gruppen auf, durch
+          einen Klick auf den jeweiligen Namen kann man die Mitgliederliste
+          dieser Gruppe aufrufen und editieren (Benutzer zu Gruppe hinzufügen
+          | löschen | Gruppe modifizieren) Die Standardgruppen 'Admins' und
+          'Users' sollten nicht umbenamt oder gelöscht werden!</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Zugriffsrechte</title>
+
+      <para>Vielen Benutzern erscheint das Rechtesystem auf den ersten Blick
+      ziemlich kompliziert und verwirrend. Es ist nicht mehr so einfach zu
+      administrieren wie in früheren Versionen, bietet aber umsomehr
+      Möglichkeiten, wenn man es richtig einsetzt. Das Berechtigungssystem
+      erlaubt Administratoren die Inhalte ihrer Seite zu schützen und den
+      Zugang zu allen Bereich individuell einzustellen. Es unterscheidet neun
+      unterschiedliche Stufen:</para>
+
+      <para>- keines</para>
+
+      <para>- Übersicht</para>
+
+      <para>- lesen</para>
+
+      <para>- kommentieren</para>
+
+      <para>- moderieren</para>
+
+      <para>- editieren</para>
+
+      <para>- hinzufügen</para>
+
+      <para>- löschen</para>
+
+      <para>- administrieren</para>
+
+      <para>Die sich ergebenden Berechtigungen sind dabei modulspezifisch,
+      d.h. der Modulautor entscheidet welche Berechtigung für eine bestimmte
+      Aktion notwendig ist. Generell gilt aber, dass Berechtigungen kumulativ
+      sind, d.h. alle niedriegeren Berechtigungen beinhalten ('kommentieren'
+      schliesst also automatisch auch 'lesen' mit ein).</para>
+
+      <para>Zuerst sollte man eine Gruppe erstellen, für die die
+      Berechtigungen gelten sollen und dann die Mitglieder zuordnen. Dieser
+      Gruppe kann man im folgenden dann die gewünschten Berechtigungen
+      zuweisen.</para>
+
+      <para>Ein Beispiel: Erstellung einer Gruppe 'Subadmin', die News
+      administrieren kann, Schritt für Schritt erklärt: Zuerst die Gruppe
+      'Subadmin' anlegen und gewünschte Benutzer zuordnen. Dann unter
+      Zugriffsrechte auf neues Gruppenrecht klicken.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Gruppe -&gt; Subadmin</para>
+        </listitem>
+
+        <listitem>
+          <para>Komponente -&gt; Stories::Story</para>
+        </listitem>
+
+        <listitem>
+          <para>Instanz -&gt; .*</para>
+        </listitem>
+
+        <listitem>
+          <para>Zugriffsrecht -&gt; administrieren</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>(eine Liste der vorhandenen Komponenten wird übrigens bei Klick
+      auf den Titel in einem Pop-Up-Fenster eingeblendet) Man beachte: diese
+      Einstellung räumt der Gruppe Adminberechtigung für das Modul Stories
+      ein! Jetzt muss man noch sicherstellen, dass die Reihenfolge der
+      Berechtigungen korrekt ist. Zugriffsberechtigungen werden linear von
+      oben nach unten in der Liste angewendet - Rogue nimmt die erste passende
+      Berechtigung und wendet diese an - wenn also eine Zeile
+      Adminberechtigung einräumt kann dies nicht durch spätere Zeile
+      eingeschränkt werden! In den meisten Fällen ist die oberste
+      Berechtigung:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Admins | .* | .* | administrieren</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>(also dürfen alle Benutzer in der Gruppe Admin alles) Die neu
+      eingerichtet Subadmin-Gruppe sollte also UNTER diese Berechtigung
+      gestellt werden, damit keine spätere Zeile eventuelle Einschränkungen
+      vornimmt.</para>
+
+      <para>Beispiel:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Subadmin|Stories::|.*|administrieren</para>
+        </listitem>
+
+        <listitem>
+          <para>Users|.*|.*|kommentieren</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>erlaubt Mitglieder der Subadmin-Gruppe die Administration des
+      Story-Bereiches - wenn man nun die beiden Zeilen in der Reihenfolge
+      umstellt, macht die Berechtigung schon keinen Sinn mehr, da die
+      Subadmins als Mitglieder der Gruppe 'Users' nur das Kommentarrecht
+      eingeräumt bekommen. Durch den Einsatz der 'Instanz' in den
+      Berechtigungen kann man die Einstellungen sehr detailliert einrichten -
+      folgende Beispiele sollen dies verdeutlichen: Der Link zur
+      'Administration' im Hauptmenü soll nur für Administratoren angezeigt
+      werden.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>alle
+          Gruppen|Menublock::|Hauptmenü:Administration:|keines</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Dabei ist wichtig, dass das Hauptmenü auch tatsächlich 'Hauptmenü'
+      heisst und dass diese Zugriffsberechtigung direkt UNTER denen der
+      Admingruppen steht (in der default-Installation ist das eigentlich schon
+      eingetragen - und zwar für das Main Menu) Wenn nun mehrer Links
+      'gesperrt' werden sollen, ist die Angabe wie folgt:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>alle
+          Gruppen|Menublock::|Hauptmenü:(Administration|Link1|Link2):|keines</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>(das | (Pipe-) Zeichen fungiert als Trenner der einzelnen mit
+      Klammern umschlossenen Einträge) Sehr häufig wird gefragt, wie man
+      anonymen Benutzern die Teilnahme an Umfragen bzw. das Kommentieren von
+      Beiträgen ermöglichen kann:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>unregistrierte Gruppen|Polls::|.*|kommentieren</para>
+        </listitem>
+
+        <listitem>
+          <para>unregistrierte Gruppen|Stories::Story|.*|kommentieren</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Diese Zeilen müssen natürlich ÜBER die normalerweise letzte Zeile
+      in der die allgemeinen Rechte für anonyme Benutzer auf lesen gesetzt
+      werden. Achtung: Ein fehlerhaft konfiguriertes Berechtigungssystem kann
+      dazu führen, dass z.B. anonyme Benutzer auf der Postnuke-Site Inhalte
+      aktualisieren, hinzufügen oder sogar löschen können! Wenn man allerdings
+      sorgfältig vorgeht und die bereits bestehenden Berechtigungen (und auch
+      ihre Reihenfolge in der Liste) nicht ändert, sollte das allerdings nicht
+      passieren... Wenn man sich trotz aller Warnungen einmal selber
+      ausgesperrt hat, kann das PostNuke Swiss Army Knife Tool die
+      Berechtigungen wieder auf den Standard zurücksetzen.</para>
+
+      <para><tip>
+          <para>User oder Gruppenrechte?</para>
+
+          <para>Eines vorweg: die Rechte sind in beiden fällen die Gleichen.
+          Einziger Unterschied besteht in der Rangfolge der Rechte: Userrechte
+          überschreiben immer Gruppenrechte.</para>
+
+          <para>Gruppen-Rechte sollten generell festgelegt werden.
+          Gruppenrechte beziehen sich auf alle Mitglieder einer Gruppe
+          wohingegen Benutzerrechte sich auf einen speziellen Benutzer
+          beziehen. Sie regeln eigentlich den grundsätzlichen Zugang zur
+          Seite! Die User-Rechte legen die Freiheitsgrade des einzelnen Users
+          fest.</para>
+
+          <para>Normalerweise sollten Gruppenrechte eingesetzt werden und nur
+          in Ausnahmefällen sollten Benutzerrechte zusätzlich gesetzt werden,
+          damit ein spezieller Benutzer zusätzliche Rechte über seine
+          Gruppenrechte hinaus erhält.</para>
+
+          <para>Die Festlegung der einzelnen Userrechte geht weiter und ist im
+          Grunde detaillierter (insofern sie eben einen User betrifft und
+          nicht eine Gruppe aus mehreren Usern)</para>
+
+          <para>Deshalb sollten die User-Rechte auch erst nach den
+          Gruppenrechten festgelegt werden; Sie bestimmen die Möglichkeiten,
+          wenn ein bestimmter User etwas machen können sollte, was mit dem
+          Rechtsstatus seiner aktuellen Gruppenzugehörigkeit nicht möglich
+          ist.</para>
+
+          <para>Man sollte mit den Gruppenrechten zuerst arbeiten und später
+          dann die User-Rechte zur Feinabstimmung hinzuziehen!</para>
+        </tip></para>
+
+      <section>
+        <title>Hauptmenü</title>
+
+        <para>Ein gutes Beispiel für die Anwendung des PostNuke
+        Berechtigunssystems liefert das Hauptmenü. Als kurze Vorbemerkung
+        sollte erwähnt werden, daß ".*" einen regulären Ausdruck darstellt.
+        Damit mag der eine oder andere nichts anfangen, aber mal kurz: der .
+        beschreibt ein beliebiges Zeichen, der * steht für eine beliebige
+        Wiederholung (auch keine) Nehmen wir einmal an, wir hätten einen
+        Menü-Block mit dem Namen "Hauptmenü" und den Punkten "Home", "mein
+        Account", "Mitglied werden", "Administration" und "Logout". Nun sollen
+        alle Benutzer "Home" sehen, alle registrierten Benutzer zusätzlich
+        "mein Account" und "Logout", alle Administratoren "Administration" und
+        alle Gäste "Mitglied werden". Nun ist zunächst der Bereich anzugeben.
+        Das ist unproblematisch, denn derzeit gibt es nur die Option "Alle
+        Bereiche". Als nächstes ist die jeweilige Gruppe zu bestimmen.
+        Zunächst die Admins, dann die User und zum Schluß die Gäste. Warum?
+        weil das System dem Prinzip "First Match" folgt, daß heißt also, die
+        erste positive Übereinstimmung die Suche beendet. Es ist also immer
+        darauf zu achten, daß die komplexen oder sehr speziellen
+        Einschränkungen zuerst erfolgen. Für den Admin wählt man dann die
+        Komponente (in diesem Fall immer "Menublock::"). Die Instanz setzt
+        sich bei Menüblöcken aus dem Titel und dem Menüpunkt zusammen. Hier
+        soll nun "Mitglied werden" verboten werden, alles andere ist für den
+        Admin erlaubt:<programlisting>Gruppe: Admins
+Komponente: Menublock::
+Instanz: Hauptmenü:Mitglied werden:
+Recht: keines
+
+Gruppe: Admins
+Komponente: .*
+Instanz: .*
+Recht: administrieren
+
+Gruppe: alle Gruppen
+Komponente: Menublock::
+Instanz: Hauptmenü:Administration:
+Recht: keines</programlisting>Es folgen die Benutzerrechte:<programlisting>Gruppe: Users
+Komponente: Menublock::
+Instanz: Hauptmenü:(mein Account|Logout):
+Recht: kommentieren
+
+Gruppe: Users
+Komponente: Menublock::
+Instanz: Hauptmenü:Mitglied werden:
+Recht: keines
+
+Gruppe: Users
+Komponente: .*
+Instanz: .*
+Recht: kommentieren</programlisting>Somit ist dann das Menü so aufgebaut, dass
+        es je nach Userstatus entsprechend angezeigt wird. Zusammenfassend:
+        Die Gruppenrechte werden nacheinander ausgewertet. Der erste Treffer
+        zählt, alles weitere wird ignoriert. Die Komponente ist vorgegeben,
+        z.B. Menublock:: oder Onlineblock::. Die Instanz besteht aus zwei
+        Teilen, deren Bedeutung von der jeweiligen Komponente abhängt. Die
+        einzelnen Teile sind durch den Doppelpunkt voneinander getrennt. Der
+        Ausdruck, der ausgewertet wird, ist ein regulärer Ausdruck: Beispiele:
+        ^Haupt* = Alles was mit "Haupt" beginnt, also Hauptmenü, Hauptauswahl,
+        Hauptmann. (x|y|z) = x oder y oder z als Ganzes .* = alles</para>
+      </section>
+
+      <section>
+        <title>Stories</title>
+
+        <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+        worden - unter anderem kann jetzt die Komponente 'Stories::Story'
+        zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+        Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+        'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+        Für den Bereich 'News' ist in erster Linie 'Stories::Story'
+        interessant ('Stories::Category' wird lediglich für die Administration
+        der Kategorien benötigt). Beispiele: <command>Stories::Story ///
+        Author ID:Category name:Story ID</command></para>
+
+        <itemizedlist>
+          <listitem>
+            <para>wenn man nun den Zugriff auf eine bestimmte Kategorie für
+            unregistrierte Benutzer verhindern will, sollte folgende
+            Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* |
+            .* | lesen) gesetzt werden:</para>
+
+            <para><command>unregistrierte | Stories::Story | :Kategoriename: |
+            keines</command></para>
+          </listitem>
+
+          <listitem>
+            <para>wenn man der Gruppe 'Autoren' ermöglichen will, neue
+            Beiträge in der Kategorie 'Info' zu schreiben, sollte folgende
+            Berechtigung nach der allgemeinen Adminzeile (Admins | .* | .* |
+            administrieren) gesetzt werden:</para>
+
+            <para><command>Autoren | Stories::Story | :Info: |
+            hinzufügen</command></para>
+
+            <para>bzw.</para>
+
+            <para><command>Autoren | Stories::Story | :Info: |
+            löschen</command></para>
+
+            <para>wenn sie die Artikel dieser Kategorie auch löschen sollen
+            dürfen.</para>
+          </listitem>
+
+          <listitem>
+            <para>wenn es das entsprechende Theme unterstützt kann man
+            darüberhinaus beispielsweise unregistrierten Benutzern lediglich
+            das 'Übersicht' Recht einräumen und ihnen nur den Hometext
+            anzeigen</para>
+          </listitem>
+
+          <listitem>
+            <para>zum direkten Aufruf des entsprechenden Adminbereiches kann
+            man das MainMenu um einen Link zu
+            admin.php?module=NS-AddStory&amp;op=main erweitern, der nur der
+            entsprechenden Gruppe angezeigt wird.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Topics</title>
+
+        <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+        worden - unter anderem kann jetzt die Komponente 'Topics::Topic'
+        zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+        Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+        'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+        Für den Bereich 'Topics' ist in erster Linie 'Topics::Topic'
+        interessant ('Topics::Related' wird lediglich für die Administration
+        der Topics genauer gesagt die verwandten Links, benötigt). Beispiele:
+        <command>Topics::Topic /// Topic name::Topic ID</command></para>
+
+        <itemizedlist>
+          <listitem>
+            <para>wenn man nun den Zugriff auf ein bestimmtes Topic für
+            unregistrierte Benutzer verhindern will, sollte folgende
+            Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* |
+            .* | lesen) gesetzt werden: <command>unregistrierte |
+            Topics::Topic | Topic_Name:: | keines</command><caution>
+                <para>Der Topicname ist nicht zu verwechseln mit dem Topictext
+                - am besten in der Topicadministration nachschauen!</para>
+              </caution></para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Statistik</title>
+
+        <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+        worden - unter anderem kann jetzt die Komponente 'Stats::'
+        zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+        Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+        'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+        Für das Modul Statistik gilt die Komponente 'Stats::' Beispiel:</para>
+
+        <para><command>Stats:: /// ::</command> wenn man z.B. den Zugriff auf
+        die Statistik für unregistrierte Benutzer verhindern möchte, ein
+        (wichtig!) Benutzerrecht</para>
+
+        <para><command>unregistrierte | Stats:: | .* | keines</command>
+        anlegen. Es muss ein Benutzerrecht gewählt werden, da das allgemeine
+        Leserecht bei den Gruppen (unregistrierte | .* | .* | lesen) ansonsten
+        nicht überlagert werden kann.</para>
+      </section>
+
+      <section>
+        <title>Mitgliederliste</title>
+
+        <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+        worden - unter anderem kann jetzt die Komponente 'Members_List::'
+        zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+        Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+        'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+        Für das Modul Mitgliederliste gilt die Komponente 'Members_List::'
+        Beispiel: <command>Members_List:: /// ::</command> wenn man z.B. den
+        Zugriff auf die Statistik für unregistrierte Benutzer verhindern
+        möchte, ein (wichtig!) Benutzerrecht <command>unregistrierte |
+        Members_List:: | .* | keines</command> anlegen. Es muss ein
+        Benutzerrecht gewählt werden, da das allgemeine Leserecht bei den
+        Gruppen (unregistrierte | .* | .* | lesen) ansonsten nicht überlagert
+        werden kann.</para>
+      </section>
+
+      <section>
+        <title>Umfragen</title>
+
+        <para>Standardmäßig sind die Polls für die unregistrierten User nicht
+        zugänglich - wer das ändern will, muß die Polls entsprechend
+        freigeben:</para>
+
+        <para><command>Polls:: .* kommentieren</command></para>
+
+        <para>Man darf natürlich nicht vergessen unter Administration &gt;
+        Kommentare einzustellen, daß anonyme User nicht kommentieren dürfen,
+        sonst kann der böswillige Besucher damit natürlich Schabernack
+        treiben.</para>
+      </section>
+
+      <section>
+        <title>phpBB_14</title>
+
+        <para>Die folgenden Beispiele beziehen sich auf das phpBB_14 Modul für
+        PostNuke das mit Integration in das Permission Management vorliegt,
+        sie können aber auch auf alle anderen in das Rogue Permission-System
+        eingebundenen Module übertragen werden. Bei den Zugriffsberechtigungen
+        im Administrationsbereich kann man durch einen Klick auf "Komponente"
+        bzw. "Instanz" eine Auflistung aller im System angelegten
+        Berechtigungsschemata anzeigen. Für das phpBB-Modul stehen folgende
+        Berechtigungen zur Verfügung:</para>
+
+        <para><command>Komponente: phpBB_14::Category Instanz: Category name::
+        Komponente: phpBB_14::Forum Instanz: Forum name::</command></para>
+
+        <para>dies bedeutet, dass der Zugriff sowohl über die Kategorie, als
+        auch über das Forum definiert werden kann.</para>
+
+        <para>Beispiele: Normalerweise haben unregistrierte Benutzer in Rogue
+        ein allgemeines Leserecht (in aller Regel als letzte Zeile in den
+        Berechtigungen definiert):</para>
+
+        <para><command>unregistrierte Gruppen | .* | .* | lesen</command>
+        damit eine bestimmte Kategorie nun anonymen Benutzer nicht angezeigt
+        wird, muss dieses Leserecht eingeschränkt werden:</para>
+
+        <para><command>unregistrierte Gruppen | phpBB_14::Category |
+        Name_Kategorie:: | keines</command></para>
+
+        <para>damit nur ein bestimmtes Forum anonymen Benutzer nicht angezeigt
+        wird, sieht die Berechtigungsvariante wie folgt aus:</para>
+
+        <para><command>unregistrierte Gruppen | phpBB_14::Forum | Name_Forum::
+        | keines</command> damit diese Berechtigungen auch angewendet werden,
+        müssen sie natürlich VOR das allgemeine Leserecht gesetzt werden.
+        Damit unregistrierte Benutzer in einem Forum/einer Kategorie posten
+        können, muss das Leserecht dagegen erweitert werden: generell für alle
+        Foren:</para>
+
+        <para><command>unregistrierte Gruppen | phpBB_14::Category | .* |
+        kommentieren</command></para>
+
+        <para>oder auf Grundlage von Forum bzw. Kategorie:</para>
+
+        <para><command>unregistrierte Gruppen | phpBB_14::Forum | Name_Forum::
+        | kommentieren unregistrierte Gruppen | phpBB_14::Category |
+        Name_Kategorie:: | kommentieren</command></para>
+
+        <para>Um nun auch Moderatoren zu bestimmen, sehen die Rechte wie folgt
+        aus:</para>
+
+        <para><command>phpBB-Moderatoren | phpBB_14::Forum | Name_Forum:: |
+        moderieren phpBB-Moderatoren | phpBB_14::Category | Name_Kategorie:: |
+        moderieren</command> (wobei "phpBB-Moderatoren" sowohl für eine Gruppe
+        als auch für Einzelbenutzer stehen kann)</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Performance</title>
+
+      <para>Neben einer guten Anbindung und einer schnellen Datenbank kann man
+      die Performance von PostNuke mit ein paar kleinen Eingriffen weiter
+      optimieren:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Optimierung der Konfiguration</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>unnötige Module und Blöcke entfernen und ggfs. aus dem
+              /html/modules/ Verzeichnis löschen</para>
+            </listitem>
+
+            <listitem>
+              <para>unnötige Autolinks-Einträge entfernen bzw. Autolinks
+              komplett deaktivieren</para>
+            </listitem>
+
+            <listitem>
+              <para>keine dynamischen Keywords generieren lassen</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Setzen weiterer Index-Felder (für PN-Versionen ab .714)</para>
+
+          <para>Gerade für grössere Installationen sind die Indexfelder der
+          Postnuke-Datenbank noch nicht optimal ausgeschöpft, durch hinzufügen
+          einiger Indizes kann die Performance gesteigert
+          werden:<programlisting>alter table nuke_comments add index idx_pid (pn_pid);
+alter table nuke_comments add index idx_sid (pn_sid);
+alter table nuke_group_membership add index idx_ug (pn_uid,pn_gid);
+alter table nuke_message add index idx_exp (pn_active,pn_expire);
+alter table nuke_modules add index idx_name (pn_name);
+alter table nuke_poll_data add index idx_pollid (pn_pollid);
+alter table nuke_pollcomments add index idx_pollid (pn_pollid);
+alter table nuke_referer add index idx_url (pn_url);
+alter table nuke_stats_date add index idx_date (pn_date);
+alter table nuke_session_info add index idx_last (pn_lastused);
+alter table nuke_stories add index idx_catid (pn_catid);
+alter table nuke_stories add index idx_topic (pn_topic);
+alter table nuke_user_data add index idx_uid (pn_uda_uid);
+alter table nuke_userblocks add index idx_ub (pn_uid,pn_bid);
+alter table nuke_users add index idx_uname (pn_uname);</programlisting>Ein
+          regelmässiges optimieren der umfangreicheren Tabellen (z.B. mit
+          PHPMyAdmin) hilft ebenfalls, die Query-Zeiten zu verbessern.<caution>
+              <para>Vor allen Änderungen an der Datenbank sollte ein Dump
+              angelegt werden!</para>
+            </caution></para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
+</chapter>

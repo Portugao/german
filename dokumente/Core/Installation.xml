@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Installation" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Installation</title>
+
+  <section>
+    <title>Vor der Installation</title>
+
+    <para>Für die erfolgreiche Installation von Postnuke wird ein
+    funktionierender Webserver mit PHP und eine Datenbank benötigt. Durch die
+    Benutzung der Datenbankabstraktion ADODB soll Postnuke in Zukunft mit
+    einer Vielzahl Datenbanksysteme funktionieren - zur Zeit empfiehlt sich
+    nur die Benutzung von mySQL , da vor allem Modul von Dritt-Anbietern oft
+    noch nicht vollkommen auf ADODB umgestellt sind. Da sich das Vorgehen bei
+    der Installdeation eines solchen Systems stark unterscheidet, je nachdem,
+    welches Betriebssystem, welchen Webserver und welche Datenbank zur
+    Verfügung stehen, wird dieses Handbuch darauf nicht näher eingehen und auf
+    die entsprechenden Internetseiten verweisen.</para>
+
+    <para>Zum Beispiel: <ulink url="???">LAMP - Linux, Apache, mySQL,
+    PHP</ulink></para>
+
+    <para>In der <ulink url="???">FAQ</ulink> sind einige bekannte Probleme
+    erklärt, die bei der Installation auftreten können. Ein kurzer Blick über
+    die Fragen und Antworten, kann viel Zeit und Ärger sparen. Download der
+    aktuellsten Postnuke-Version: <ulink
+    url="???">Downloadbereich</ulink></para>
+
+    <tip>
+      <para>Zur besseren Auswahl eines geeigneten Providers sind die
+      notwendigen Voraussetzungen für PostNuke sind schnell
+      zusammengestellt:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis>PHP</emphasis> - PostNuke besteht aus einer Reihe an
+          PHP-Skripten. Eine PHP-Unterstützung ist also notwendig. Mit
+          bestimmten Versionen von PHP (vor allem 4.2.3) sind im Zusammenspiel
+          mit PHP Fehler berichtet worden; allerdings hat man als Kunde im
+          allgemeinen keinen Einfluß auf die eingesetzte PHP-Version. Man
+          sollt allerdings darauf achten, dass der safe_mode nicht
+          eingeschaltet ist, da dieses Sicherheitsfeature von PHP Uploads
+          erfolgreich verhindert. Damit lassen sich z.B. die meisten Gallerien
+          nicht betreiben.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis>Datenbank</emphasis> - Alle Inhalte von PostNuke
+          werden in einer Datenbank gespeichert. Obwohl PostNuke durch die
+          Verwendung der ADOdb-Bibliotheken theoretisch unabhängig von der
+          verwendeten Datenbank ist, empfiehlt sich die Verwendung von mySQL,
+          da einige ältere Module von Drittentwicklern noch nicht komplett auf
+          ADODB umgestellt sind. MySQL ist aber die Datenbank, die von den
+          meisten Providern ohnehin eingesetzt wird.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis>Webserver</emphasis> - PostNuke selbst ist es egal,
+          welcher Webserver auf welcher Plattform zum Einsatz kommt.
+          Emfehlenswert ist der Einsatz des Apache Webservers, da einige
+          Tricks (z.B. die sogenannten &ldquor;kurzen URLs&rdquor;) bestimmte
+          Webserver-Module voraussetzen, die nur der Apache bietet.
+          Insbesondere muß für den Einsatz von &ldquor;kurzen URLs&rdquor; das
+          Modul mod_rewrite aktiviert sein.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Erfüllt ein Webspace-Angebot diese Voraussetzungen, so ist der
+      Rest meist nur eine Frage des Preises. Wie oft, gilt auch in diesem
+      Bereich &ldquor;you get what you pay for&rdquor;...</para>
+
+      <para>Darüber hinaus müssen natürlich die folgenden Überlegungen
+      angestellt werden:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Geplante Größe des Internetangebotes</para>
+        </listitem>
+
+        <listitem>
+          <para>Das zu erwartende monatliche Transfervolumen</para>
+        </listitem>
+
+        <listitem>
+          <para>Anzahl der Email-Postfächer</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Konkrete Anbieter anzugeben, ist schwierig. Eine gute Übersicht
+      findet man auf <ulink url="???">WebHostlist.de</ulink>. Dort gibt es
+      auch '<ulink url="???">Tipps zur Providerwahl</ulink>'.</para>
+    </tip>
+
+    <tip>
+      <para><emphasis>Kostenloser Webspace?</emphasis></para>
+
+      <para>Eigentlich ist das Free-Hosting-Paket von Lycos/Tripod ja eine
+      tolle Sache. 50MB Speicherplatz, PHP und MySQL kostenlos &ndash;
+      eigentlich ideal, um eine kleine PostNuke-Seite zu installieren.
+      Allerdings bekommt man PostNuke auf diesem Angebot nicht
+      zufriedenstellend zum Laufen. Das Werbegerümpel, was im http-header(!)
+      eingebunden ist und die etwas seltsame php4u-Umgebung werfen so einige
+      Probleme im Betrieb der Seite auf. Einzige Lösung: einen gescheiten
+      Provider suchen. Wenn Du Dich davon aber nicht abschrecken läßt, und es
+      trotzdem versuchen möchtest, helfen Die die folgenden Links
+      weiter:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>http://mikespub.net/copdab/lycos.txt</para>
+        </listitem>
+
+        <listitem>
+          <para>http://mitglied.lycos.de/jnapp</para>
+        </listitem>
+      </itemizedlist>
+    </tip>
+  </section>
+
+  <section>
+    <title>Upload des Systems</title>
+
+    <para>Die aktuelle Version von Postnuke und das aktuelle, deutsche
+    Sprachpaket gibt es im <ulink url="???">Downloadbereich</ulink></para>
+
+    <orderedlist>
+      <listitem>
+        <para>Entpacken der Archive</para>
+      </listitem>
+
+      <listitem>
+        <para>Upload der Postnuke-Dateien in den Webspace (lediglich den
+        Inhalt des HTML-Verzeichnisses in das Webroot kopieren, der Ordner
+        Phoenix-SQL braucht nicht upgeloadet werden!)</para>
+      </listitem>
+
+      <listitem>
+        <para>Upload der Sprachdateien in den Webspace (die
+        Gross-/Kleinschreibung der Dateien und Pfade müssen beibehalten
+        werden)</para>
+      </listitem>
+
+      <listitem>
+        <para>bei Linux/Unix-Systemen Zugriffsberechtiung für
+        <filename>config.php</filename> und
+        <filename>config-old.php</filename> auf chmod 666 setzen</para>
+      </listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Installationsroutine</title>
+
+    <para>Nach dem Aufruf der Installationsroutine mit
+    <filename>http://www.deineseite.de/install.php</filename>, muss nur noch
+    den Bildschirmanweiungen gefolgt werden:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Datenbank-Konfiguration:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Datenbank Host: URL des Datenbankservers</para>
+          </listitem>
+
+          <listitem>
+            <para>Datenbank Benutzer: Benutzer der Datenbank</para>
+          </listitem>
+
+          <listitem>
+            <para>Datenbank Passwort: Passwort für die Datenbank</para>
+          </listitem>
+
+          <listitem>
+            <para>Datenbank Name: Name der Datenbank</para>
+          </listitem>
+
+          <listitem>
+            <para>Table Prefix: Falls mehrere Installationen in einer
+            Datenbank geplant sind, können hier unterschiedliche Prefixe
+            angegeben werden - ansonsten 'nuke'</para>
+          </listitem>
+
+          <listitem>
+            <para>Datenbank Typ: Typ des Datenbanksystems auswählen (z.B.
+            mysql)</para>
+          </listitem>
+
+          <listitem>
+            <para>Intranet: nur bei (Test-)Installationen innerhalb eines
+            Intranets - nicht empfohlen!</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+
+      <listitem>
+        <para>Angaben überprüfen und Installation starten</para>
+
+        <para>Die erforderlichen Tabellen werden automatisch
+        eingerichtet</para>
+
+        <para><tip>
+            <para>bei Root-Zugang zum DB-Server kann die Erstellung einer
+            Datenbank gewählt werden, bei gehosteten Seiten ist dies in der
+            Regel nicht möglich</para>
+          </tip></para>
+      </listitem>
+
+      <listitem>
+        <para>Administrator-Zugang einrichten:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Admin-Login: Loginname des Administrators</para>
+          </listitem>
+
+          <listitem>
+            <para>Admin-Name: vollständiger Name des Administrators</para>
+          </listitem>
+
+          <listitem>
+            <para>Admin-Passwort: Passwort für den Administrator-Zugang</para>
+          </listitem>
+
+          <listitem>
+            <para>Admin-Passwort (Bestätigung): Passwort für den
+            Administrator-Zugang</para>
+          </listitem>
+
+          <listitem>
+            <para>Admin-Email: vollständige E-Mail-Adresse des Admins
+            eingeben</para>
+          </listitem>
+
+          <listitem>
+            <para>Admin-URL: Website des Administrators, in aller Regel die
+            Adresse der neuen Seite</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Nun nur noch die Eingaben bestätigen, um die Installation
+        abzuschliessen.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Nun kann man zur neu eingerichteten Postnuke-Seite wechseln:
+    <filename>http://www.deineseite.de/index.php</filename></para>
+  </section>
+
+  <section>
+    <title>Test der Installation</title>
+
+    <para>Vor Inbetriebname der Postnuke-Seite sollten noch einige
+    Konfigurationsarbeiten durchgeführt werden. Dazu wechselt man nach
+    Abschluss der Installation zur neu eingerichteten Website. Sollte keine
+    Postnuke-Seite angezeigt werden, ist die Installation nicht korrekt
+    durchgelaufen - in diesem Fall sollte man als erstes überprüfen, ob im
+    root-Verzeichnis eine Datei '<function>index.htm</function>' bzw.
+    '<filename>index.html</filename>' (werden in aller Regel vor der für
+    PostNuke notwendigen '<filename>index.php</filename>' geladen) liegt - in
+    diesem Fall diese Dateien löschen bzw. umbenamen. Bei Updates/Upgrades
+    kann es unter Umständen auch möglich sein, dass zuerst noch die Cookies im
+    Browser gelöscht werden müssen. Bei sonstigen Installationsproblemen am
+    besten in den Foren bei <ulink url="???">post-nuke.net</ulink> bzw. <ulink
+    url="???">postnuke.com</ulink> nach Hilfe suchen.</para>
+  </section>
+
+  <section>
+    <title>Abschluss der Installation</title>
+
+    <para>Wenn die Postnuke-Seite erscheint, war die Installation erfolgreich
+    - in diesem Fall sollten zum Abschluss der Installation unbedingt ein paar
+    Dinge gelöscht werden:</para>
+
+    <caution>
+      <para>Das gesamte Verzeichnis <filename>/install</filename> und die
+      <filename>install.php</filename> auf dem Webspace muß gelöscht
+      werden.</para>
+
+      <para>Die Rechte für die <filename>config.php</filename> und
+      <filename>config-old.php</filename> sollten wieder zurück auf 664
+      gesetzt werden.</para>
+    </caution>
+  </section>
+
+  <section>
+    <title>Upgrade</title>
+
+    <para>PostNuke unterstützt das Upgrade von allen früheren Versionen und
+    einer Anzahl anderer *Nuke Derivate wie PHPNuke und MyPHPNuke. Bei einem
+    Upgrade sind auf jeden Fall auch eventuell zusätzlich installierte Module
+    zu berücksichtigen - gerade bei grösseren Installationen sollte ein
+    Upgrade immer zuerst lokal (z.B. auf einem WAMP-Server, siehe auch
+    FAQ-Bereich) getestet werden.</para>
+
+    <para>Vorgehen beim Upgrade:</para>
+
+    <orderedlist>
+      <listitem>
+        <para>Bevor mit dem Upgrade begonnen wird, ein BACKUP anlegen. Nur mit
+        einem vollständigen Backup (Datenbank und Filesystem) kann im
+        Problemfall wieder der Ursprungszustand wiederhergestellt
+        werden!</para>
+      </listitem>
+
+      <listitem>
+        <para>zusätzlich eine Kopie der <filename>config.php</filename>
+        anlegen</para>
+      </listitem>
+
+      <listitem>
+        <para>alle PostNuke Dateien löschen. <emphasis>alle</emphasis>! (an
+        dieser Stelle noch einmal der deutliche Hinweis auf die Notwendigkeit
+        eines Backups...). Alternativ kann - genügend Plattenplatz/Webspace
+        vorausgesetzt auch die Installation in einem anderen Verzeichnis
+        vorgenommen werden.</para>
+      </listitem>
+
+      <listitem>
+        <para>die vorher gesicherte config.php in das root-Verzeichnis (in dem
+        auch config.php und config-old.php liegen) uploaden. Der spätere
+        Upgrade-Prozess benötigt diese Datei.</para>
+      </listitem>
+
+      <listitem>
+        <para>Start der Installation via install.php. Den Anweisungen des
+        Skriptes folgen und bei der Frage 'New install' bzw. 'Upgrade' Upgrade
+        wählen und die bisherigen Nuke-Version angeben. Der Rest der
+        Installation sollte automatisch bzw. wie bei einer Neuinstallation
+        ablaufen.</para>
+      </listitem>
+
+      <listitem>
+        <para>Danach können aus dem Backup wieder das Theme und die
+        Dritt-Hersteller-Module hochgeladen werden. Die entsprechenden
+        Datenbank-Einträge sind natürlich beim Update erhalten
+        geblieben.</para>
+      </listitem>
+    </orderedlist>
+
+    <para>Sollte vorher eine Version von PHPNuke installiert gewesen sein, so
+    läßt sich dieses auf Postnuke upgraden, solange es höchstens PHPNuke 5.4
+    war - bei allen neueren Versionen von PHPNuke wird das Upgrade-Skript
+    nicht funktionieren. Weiterhin wird das Upgrade von MyPHPNuke 1.8.7 und
+    1.8.8 unterstützt.</para>
+  </section>
+
+  <section>
+    <title>FAQ - Fragen &amp; Antworten</title>
+
+    <para>In diesem Abschnitt werden einige der häufigsten Fragen bei der
+    Installation geklärt:</para>
+
+    <section>
+      <title>Was ist der safe_mode?</title>
+
+      <para>Der safe_mode ist eine Möglichkeit, sich beim Shared Hosting vor
+      Angriffen von anderen Kunden (nicht von außen!) zu schützen. Mehr
+      Informationen dazu im PHP-Handbuch und in der PHP-FAQ . Der Dreh beim
+      safe_mode ist der, das ein Skript nur auf Dateien zugreifen kann, die
+      denselben Owner haben wie das Skript. Das Problem ist allerdings, dass
+      durch das Skript angelegte Dateien und Verzeichnisse die Ownership des
+      Web-Servers haben! Beispiel: Ein Verzeichnis foo ist per ftp angelegt
+      und brav auf 777 chmod'ed. Der Owner ist der jeweilige
+      ftp-Benutzer.</para>
+
+      <para>Will ein Skript eine Datei in diesem Verzeichnis ablegen (z.B.
+      nach einem Upload), so darf es das. Das Verzeichnis, in dem das
+      passiert, ist foo mit der Ownership des FTP-Benutzers. Und das ist in
+      aller Regel derjenige, der auch die Skripten hochgeladen hat. Die
+      angelegte Datei hat jetzt die Ownership des Web-Servers! Auch das
+      Anlegen eines Verzeichnisses geht - es hat dann die Ownership des
+      Web-Severs. Nur das Anlegen einer Datei in dieses Unterverzeichnis geht
+      jetzt schief! Denn das Unterverzeichnis hat die Eigentümerschaft des
+      Web-Servers, das Skript die des FTP-Benutzers. Und genau diese Zugriffe
+      unterbindet der safe_mode. Gerade das dritte Beispiel ist aber genau
+      das, was viele Skripte - insbesondere Gallerien - machen. Sowohl die
+      My_eGallery als auch die von Menalto benutzen für jede Gallerie ein
+      Unterverzeichnis. Daher können diese Skripten auf Webspace mit safe_mode
+      nicht betrieben werden. Die Ausnahme bei den Galerien ist Photoshare.
+      Sie kann problemlos mit dem safe_mode umgehen.</para>
+
+      <tip>
+        <para><emphasis>Den safe_mode umgehen</emphasis>:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>CGI-Version von PHP bekommen:</para>
+
+            <orderedlist>
+              <listitem>
+                <para>Vorkompilierte Version besorgen - Einige kompilierte
+                Versionen kann man bei <ulink url="???">Jesse Lambdin</ulink>
+                herunterladen.</para>
+              </listitem>
+
+              <listitem>
+                <para>Selbst kompilieren - Es ist aber auch durchaus möglich,
+                PHP selbst zu übersetzen und die dabei entstehende CGI-Version
+                von PHP einzusetzen. Der Vorteil bei dieser Variante ist, dass
+                man die eingesetzte PHP-Version sowie die benötigten
+                Erweiterungen selbst bestimmen kann. Nachdem man die Sourcen
+                von php.net geholt und ausgepackt hat, konfiguriert man die
+                Installation mit</para>
+
+                <para><command>./configure --enable-force-cgi-redirect
+                --disable-safe-mode
+                &ndash;with-config-file-path=/usr/local/lib/php-cgi</command>
+                Unbedingt den Parameter
+                <command>&ndash;enable-force-cgi-redirect</command> mit
+                angeben! Da PHP in unserem, für jeden Surfer zugänglichen
+                cgi-bin-Verzeichnis liegen wird, wäre es anderenfalls möglich,
+                dass jeder beliebige Skripte starten würde! Der Parameter
+                <command>&ndash;with-config-file-path=/usr/local/lib/php-cgi</command>
+                sorgt dafür, dass die angegebene <filename>php.ini</filename>
+                nit anderen <filename>php.ini</filename>s kollidiert. Evtl.
+                sollten noch weitere benötigte Erweiterungen mit angegeben
+                werden. Nachdem das Paket auf diese Art konfiguriert wurde,
+                startet der Befehl make den Übersetzer. Anschließend findet
+                man das benötigte PHP-Programm in
+                <filename>sapi/cgi</filename>. Evtl. sollte man noch mit
+                <command>strip sapi/cgi/php</command> die debug-Informationen
+                entfernen.</para>
+              </listitem>
+            </orderedlist>
+          </listitem>
+
+          <listitem>
+            <para>PHP installieren - Hat man nun die benötigte PHP-Version, so
+            lädt man sie auf seinen Webspace in das cgi-bin-Verzeichnis. Die
+            Berechtigungen müssen auf 755 (d.h. lesen, ausführen für alle)
+            gesetzt werden. In dasselbe Verzeichnis kommt die gewünschte
+            php.ini. PHP benutzt dann diese statt der oben angegebenen (die
+            wahrscheinlich ohnehin nicht existieren wird...)</para>
+          </listitem>
+
+          <listitem>
+            <para>Apache anweisen, diese PHP-Version zu nutzen - Jetzt müssen
+            wir noch dem Apache mitteilen, dass ab sofort diese PHP-Version zu
+            benutzen ist. Das geschieht mit einer .htaccess-Datei im
+            Stammverzeichnis der Webpräsenz mit dem folgenden
+            Inhalt:<programlisting># Einen neuen MIME-Typ definieren
+AddType application/cgi-php .php
+
+# ...und mit dem Executable verknüpfen
+Action application/cgi-php /cgi-bin/php
+
+Anmerkung: Die für mich logischere Variante der .htaccess, nämlich
+
+# den bestehenden Handler für PHP-Dateien löschen...
+RemoveHandler php
+
+# ...und stattdessen unseren eigenen einfügen
+AddHandler php-skript php
+
+# ...und mit dem Executable verknüpfen
+Action php-skript /cgi-bin/php</programlisting></para>
+          </listitem>
+        </itemizedlist>
+      </tip>
+    </section>
+
+    <section>
+      <title>Was sind meine Verbindungsdaten in der config.php?</title>
+
+      <para>Normalerweise wird die config.php bei der Installation automatisch
+      erzeugt und muss nicht manuell bearbeitet werden. Sollte dies trotzdem
+      einmal notwendig sein, sollten folgende Angaben ausgefüllt
+      werden:<programlisting>$pnconfig['dbtype'] = 'mysql'; //Typ der Datenbank
+$pnconfig['dbhost'] = 'localhost'; //MySQL Datenbankserver
+$pnconfig['dbuname'] = 'root'; //MySQL Datenbankbenutzer
+$pnconfig['dbpass'] = ''; //MySQL Datenbankpasswort
+$pnconfig['dbname'] = 'postnuke'; //MySQL Datenbankname
+$pnconfig['system'] = '0'; //0 für Unix/Linux, 1 für Windows
+$pnconfig['prefix'] = 'nuke'; //MySQL Tabellenprefix
+$pnconfig['encoded'] = '0'; // 0 für unkodierten, 1 für kodierten Benutzernamen/-passwort*</programlisting>*
+      Die Daten sind Base_64 kodiert - um manuell eine
+      Benutzername/passwort-Kombination von Klartext in Base_64 zu wandeln,
+      kann man sich mit dem PostNuke Swiss Army Knife Tool behelfen.</para>
+    </section>
+
+    <section>
+      <title>Wie installiere ich das ganze auf meinem lokalen
+      Windows-System?</title>
+
+      <para>Neben dem Postnuke-Paket benötigt man zum lokalen Testen auch
+      einen (Apache-)Webserver, PHP und MySQL.</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Die benötigte Software downloaden:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Apache WWW Server Den Apache WWW Server kann man unter
+              <ulink
+              url="???">http://httpd.apache.org/dist/httpd/binaries/win32/</ulink>
+              als 3 MB großes MSI Setup herunterladen - du solltest die
+              aktuellste 1.3.x-Version auswählen (da die Apache2-Version noch
+              nicht für PHP freigegeben ist)</para>
+            </listitem>
+
+            <listitem>
+              <para>MySQL Datenbank Server Von MySQL gibt es verschiedenste
+              Versionen für verschiedenste Plattformen und Systeme. Im
+              Download-Bereich unter <ulink
+              url="???">http://www.mysql.com</ulink> findest du die
+              aktuellsten Versionen von MySQL (ca. 12.2MB).</para>
+            </listitem>
+
+            <listitem>
+              <para>PHP 4 Das PHP Modul für Apache kann man unter <ulink
+              url="???">http://www.php.net/downloads.php</ulink>
+              herunterladen. Wähle unter Win32 Binaries die Version 4.0.6 oder
+              aber Version 4.2.1 (oder neuer)</para>
+            </listitem>
+
+            <listitem>
+              <para>phpMyAdmin PhpMyAdmin ist ein Administrationstool für
+              MySQL, mit ihm kann man auf Datenbanken direkt über den
+              Webbrowser zugreifen - Download unter <ulink
+              url="???">http://phpmyadmin.sourceforge.net</ulink></para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Installation und Konfiguration der Komponenten</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Apache Webserver Der Apache Webserver wird als
+              installierbares Paket downgeloadet. Starte die Installation wie
+              bei jedem anderen Programm, lasse den Installationspfad am
+              besten so wie er ist. Öffne im Apache Verzeichnis /conf die
+              Datei httpd.conf mit einem Texteditor. Dort findest Du eine
+              Stelle wo steht: ...local testing and development... ServerName
+              Ändere diese Zeile in folgende um: ServerName localhost (Falls
+              nicht schon bei der Installation angegeben) Bemerkung: Bei dem
+              Servername 'localhost' handelt es sich um einen Namen der von
+              Windows 'akzeptiert' wird. Der Servername 'localhost' ist auf
+              jedem System der Name des Rechners. Speichere und schliesse
+              jetzt die httpd.conf. Starte jetzt im Apache Verzeichnis die
+              Anwendung apache.exe, und lasse sie laufen. Starte deinen
+              Webbrowser und gib Sie als URL http://localhost/ ein. Wenn alles
+              richtig gemacht worden ist, dann siehst du jetzt eine Seite, auf
+              der steht, dass der Apache Webserver erfolgreich installiert
+              wurde.</para>
+            </listitem>
+
+            <listitem>
+              <para>Datenbanksoftware MySQL Wenn du die richtige Version
+              downgeloadet hast, ist auch diese Installation einfach. Zunächst
+              installierst du MySQL in den angegebenen Pfad (C:mysql), dann
+              startest du im MySQL-Ordner /bin das Programm winmysqladmin.exe,
+              gibst dort einen Usernamen und ein Passwort ein (merken, wichtig
+              für Datenbankaktionen) und lässt es laufen. Von nun an wird
+              dieses Programm auch in Autostart bei jedem Hochfahren
+              gestartet. Falls dies nicht nötig oder unerwünscht ist, lösche
+              den Eintrag aus "Autostart".</para>
+            </listitem>
+
+            <listitem>
+              <para>PHP PHP kann auf zwei Arten installieren. Als Modul und
+              als CGI-Sprache. Wir wollen PHP als Modul von Apache
+              installieren, da die andere Art sich auf das cgi-bin beschränkt.
+              Nun, entpacke das PHP Paket, und installiere es in das
+              Vorgegebene Verzeichnis. Zur Konfiguration des Apache-Servers
+              ist es dann noch notwendig die httpd.conf-Datei zu editieren,
+              und nach<programlisting>#AddHandler type-map var</programlisting>folgende
+              Zeilen hinzuzufügen:<programlisting>#AddHandler type-map var
+
+# And for PHP 4.x, use
+ScriptAlias /php/ "c:/php/"
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php-source .phps
+Action application/x-httpd-php /php/php.exe</programlisting>Dann müsstest du
+              den oberen Abschnitt sehen, mach die #-Zeichen am Anfang weg, so
+              das das ganze dann aussieht wie hier oben. Speicher und
+              schliesse die <filename>httpd.conf</filename>. Nach dieser
+              Änderung ist ein Neustart des Apache notwendig.</para>
+            </listitem>
+
+            <listitem>
+              <para>phpMyAdmin PHPMyAdmin ist ein Tool, das auf jedem
+              Webserver mit PHP und MySQL installiert sein sollte. Mit ihm
+              kann man sehr leicht auf Datenbanken zugreifen (erstellen,
+              ändern und löschen). Entpacke das Paket in das Apache
+              /htdocs-Verzeichnis. Dort werden auch in Zukunft alle Websiten
+              und PHP-Programme gespeichert. Nach dem Entpacken findest du
+              dort eine Datei Names confic.inc.php, öffne diese, und editiere
+              die gewünschten Variablen. Du benötigen auf jeden Fall deinen
+              MySQL-Usernamen und das Passwort. Nach dem editieren speicherst
+              du das ganze, und gehst mit dem Browser auf folgende URL:
+              <filename>http://localhost/phpMyAdmin/index.php</filename>
+              Solltest du jetzt etwas buntes sehen, dann waren deine
+              Bemühungen erfolgreich. Überprüfung ob PHP auch läuft! Alle
+              Dateien, die in dem Ordner "htdocs" im Apache Programmordner
+              liegen und auf ".php" enden werden vom Apache Server nun als PHP
+              Skripte interpretiert. Um dies zu testen, erstellst du eine
+              Datei phpinfo.php mit folgendem Code:<programlisting>&lt;?php
+phpinfo()
+?&gt;</programlisting>Diese speicherst du dann im Apache /htdocs-Verzeichnis
+              ab. Ruft man nun unter
+              <filename>http://localhost/phpinfo.php</filename> das Skript auf
+              sollten einige Informationen von PHP angezeigt werden.</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </orderedlist>
+
+      <para>Das wars, die Installation ist nun fertig!</para>
+    </section>
+
+    <section>
+      <title>Ist es möglich, PostNuke auch auf einem PostgresSQL DBMS zu
+      installieren? Via ADODB kann man aus PostNuke heraus auf andere DBMS'e
+      zugreifen...</title>
+
+      <para>Prinzipiell sollte es schon funktionieren, via ADODB auch andere
+      Datenbanken zu nutzen (das pnForum läuft beispielsweise auch in einer
+      Oracle-Installation). Eventuell hat das jeweilige DBMS aber spezielle
+      Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B. keine LEFT
+      JOINS in Oracle). Generell gilt die Datenbank-Unabhängigkeit natürlich
+      auch nur für die Module, die ADODB-konform ausgeführt sind.</para>
+    </section>
+
+    <section>
+      <title>Kann ich meine Site einfach in anderes Verzeichnis
+      verschieben?</title>
+
+      <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in
+      der DB sollte es keine Probleme geben. Die kannst Du aber einfach in
+      einer DB-Dump-Kopie durch suchen&amp;ersetzen austauschen und das Dump
+      zurückspielen.</para>
+    </section>
+
+    <section>
+      <title>Obwohl ich das deutsche Sprachpaket eingespielt habe, bleibt die
+      Site englisch.</title>
+
+      <para>Probleme können auftreten, wenn in der
+      <filename>php.ini</filename> nicht <command>register_global=on</command>
+      ist. Zuerst reicht es aber auch zu überprüfen, ob die Usereinstellungen
+      nicht noch auf englisch gesetzt sind. Das umzuschalten reicht der Aufruf
+      von
+      <filename>http://deineseite.de/index.php?newlang=deu</filename></para>
+    </section>
+
+    <section>
+      <title>Was macht man wenn die PostNuke Installation durch die
+      Installation eines neuen Blocks/Modules so gestört wird, das man nicht
+      mehr in das Block- oder Module-Administratormenü gelangt? Kann man das
+      irgendwie reparieren?</title>
+
+      <para>Erstmal kann man die Adminsitration über
+      <filename>http://www.example.com/admin.php</filename> erreichen. Sollte
+      auch das nicht mehr gehen, kann evtl. das Swiss Army Knife Tool helfen.
+      Das ist vor allem bei vermurksten Themes der Fall. Als dritte
+      Möglichkeit kann man natürlich auch manuell die DB bearbeiten: Alle
+      Tables des Moduls löschen, alle dazugehörigen Variablen in
+      <command>$prefix_module_vars</command> entfernen und in der
+      <filename>$prefix_modules</filename> das Modul löschen.</para>
+    </section>
+
+    <section>
+      <title>Folgender Fehler tritt nach der Installation auf: Warning: Failed
+      opening '/srv/www/htdocs/CMS3/install.php' for inclusion
+      (include_path='.:/usr/share/php') in Unknown on line 0</title>
+
+      <para>Die Seite hat noch die falschen Benutzerrechte mit dem
+      Linux-Befehl "chown" sollte man dem Webserver alle Dateien
+      überlassen.</para>
+    </section>
+  </section>
+</chapter>
