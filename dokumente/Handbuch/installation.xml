@@ -263,7 +263,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
         vergleichen kann. Weitere gute Programme sind <ulink
         url="http://www.jonelo.de/java/jacksum/">Jacksum</ulink> (in Java und
         damit Plattformunabhängig) und <ulink
-        url="http://www.paehl.de/">DPASHA</ulink> (für Windows). </para>
+        url="http://www.paehl.de/">DPASHA</ulink> (für Windows).</para>
 
         <note>
           <para>Die md5- und SHA1-Algorithmem sind Verfahren zur Berechnung
@@ -612,8 +612,9 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </step>
 
       <step>
-        <para>Zunächst wählt man die Sprache aus. Hierbei handelt es sich um
-        die Sprache des Installationsprogramms.<indexterm>
+        <para>Die Installationsroutine erkennt die Sprache, die der Browser
+        eingestellt hat. Man kann diese Wahl aber auch ändern. Hierbei handelt
+        es sich um die Sprache des Installationsprogramms.<indexterm>
             <primary>Installation</primary>
 
             <secondary>Aufrufen</secondary>
