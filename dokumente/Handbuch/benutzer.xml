@@ -24,9 +24,9 @@
     System bekannt. Über den Menüpunkt <menuchoice>
         <guimenu>Administration</guimenu>
 
-        <guimenuitem>Benutzer</guimenuitem>
+        <guimenuitem>Benutzer-Administration</guimenuitem>
       </menuchoice> kann ein Systemverwalter aber auch selbst Benutzer
-    anlegen. befindet sich auch die Möglichkeit, bestehende Benutzer zu
+    anlegen. Dort befindet sich auch die Möglichkeit, bestehende Benutzer zu
     bearbeiten oder zu löschen. Im unteren Bereich befinden sich drei weitere
     Optionen:</para>
 
@@ -72,8 +72,8 @@
       <bridgehead>Zugriffsrechte</bridgehead>
 
       <para>Für das Modul Mitgliederliste gilt die Komponente 'Members_List::'
-      wenn man z.B. den Zugriff auf die Statistik für unregistrierte Benutzer
-      verhindern möchte, ein (wichtig!) Benutzerrecht</para>
+      wenn man z.B. den Zugriff auf die Mitgliederliste für unregistrierte
+      Benutzer verhindern möchte, muss man ein (wichtig!) Benutzerrecht</para>
 
       <para><literal>unregistrierte | Members_List:: | .* |
       keines</literal></para>
@@ -131,11 +131,12 @@
     (bzw. der Registrierung) ist er Mitglied der
     <emphasis>Users-Gruppe</emphasis>. Der Administrator der Seite wird
     bereits während der Installation der <emphasis>Admin-Gruppe</emphasis>
-    zugewiesen. Diese System-Gruppen sollten weder umbenannt oder gelöscht
+    zugewiesen. Diese System-Gruppen sollten weder umbenannt noch gelöscht
     werden! <note>
         <para>Bei Upgrades von älteren Version von PostNuke, PHPNuke oder
         myPHPNuke werden zusätzlich Gruppen gemäß den alten Autorenrechten
-        eingericht, allerdings müssen die Rechte neu zugewiesen werden.</para>
+        eingerichtet, allerdings müssen die Rechte neu zugewiesen
+        werden.</para>
       </note>Zur individuellen Verwaltung kann man unter <menuchoice>
         <guimenu>Administration</guimenu>
 
@@ -162,7 +163,7 @@
           auf den jeweiligen Namen kann man die Mitgliederliste dieser Gruppe
           aufrufen und editieren (Benutzer zu Gruppe hinzufügen | löschen |
           Gruppe modifizieren) Die Standardgruppen 'Admins' und 'Users'
-          sollten nicht umbenamt oder gelöscht werden!</para>
+          sollten nicht umbenannt oder gelöscht werden!</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -285,8 +286,8 @@
     </itemizedlist>
 
     <para>(also dürfen alle Benutzer in der Gruppe Admin alles) Die neu
-    eingerichtet Subadmin-Gruppe sollte also UNTER diese Berechtigung gestellt
-    werden, damit keine spätere Zeile eventuelle Einschränkungen
+    eingerichtete Subadmin-Gruppe sollte also UNTER diese Berechtigung
+    gestellt werden, damit keine spätere Zeile eventuelle Einschränkungen
     vornimmt.</para>
 
     <para>Beispiel:</para>
@@ -359,33 +360,34 @@
       Berechtigungen wieder auf den Standard zurücksetzen.</para>
     </warning>
 
-    <bridgehead>User oder Gruppenrechte?</bridgehead>
+    <bridgehead>Benutzer oder Gruppenrechte?</bridgehead>
 
     <para>Eines vorweg: die Rechte sind in beiden fällen die Gleichen.
     Einziger Unterschied besteht in der Rangfolge der Rechte:
-    <emphasis>Userrechte überschreiben immer Gruppenrechte</emphasis>.</para>
+    <emphasis>Benutzerrechte überschreiben immer
+    Gruppenrechte</emphasis>.</para>
 
     <para>Gruppen-Rechte sollten generell festgelegt werden. Gruppenrechte
     beziehen sich auf alle Mitglieder einer Gruppe wohingegen Benutzerrechte
     sich auf einen speziellen Benutzer beziehen. Sie regeln eigentlich den
-    grundsätzlichen Zugang zur Seite! Die User-Rechte legen die Freiheitsgrade
-    des einzelnen Users fest.</para>
+    grundsätzlichen Zugang zur Seite! Die Benutzerrechte legen die
+    Freiheitsgrade des einzelnen Users fest.</para>
 
     <para>Normalerweise sollten Gruppenrechte eingesetzt werden und nur in
     Ausnahmefällen sollten Benutzerrechte zusätzlich gesetzt werden, damit ein
     spezieller Benutzer zusätzliche Rechte über seine Gruppenrechte hinaus
     erhält.</para>
 
-    <para>Die Festlegung der einzelnen Userrechte geht weiter und ist im
+    <para>Die Festlegung der einzelnen Benutzerrechte geht weiter und ist im
     Grunde detaillierter (insofern sie eben einen User betrifft und nicht eine
-    Gruppe aus mehreren Usern)</para>
+    Gruppe aus mehreren Usern).</para>
 
-    <para>Deshalb sollten die User-Rechte auch erst nach den Gruppenrechten
+    <para>Deshalb sollten die Benutzerrechte auch erst nach den Gruppenrechten
     festgelegt werden; Sie bestimmen die Möglichkeiten, wenn ein bestimmter
-    User etwas machen können sollte, was mit dem Rechtsstatus seiner aktuellen
+    User etwas machen können sollte, was mit dem Rechtestatus seiner aktuellen
     Gruppenzugehörigkeit nicht möglich ist.</para>
 
     <para>Man sollte mit den Gruppenrechten zuerst arbeiten und später dann
-    die User-Rechte zur Feinabstimmung hinzuziehen!</para>
+    die Benutzerrechte zur Feinabstimmung hinzuziehen!</para>
   </section>
 </chapter>
