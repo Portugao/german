@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter lang="de-DE" revision="$Revision$ $Date$"
+         status="draft">
+  <!-- $Id$-->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Die News-Verwaltung in PostNuke</title>
+
+  <para>Eine zentrale Funktionalität von PostNuke ist die Verwaltung aktueller
+  Informationen. Diese Informationen werden mal als News, mal als Artikel oder
+  Story bezeichnet &mdash; gemeint ist aber stets das Gleiche!</para>
+
+  <section>
+    <title>Topics</title>
+
+    <para>Themenbereiche helfen, die Beiträge nach Themen zu ordnen.</para>
+
+    <para>So kann der Nutzer schon anhand des Symbols erkennen, zu welchem
+    Themenkomplex ein Beitrag gehört Das Symbol muss sich schon auf dem
+    Webserver im Ordner images/topics/ befinden.</para>
+
+    <bridgehead>Wozu Topics und Kategorien?</bridgehead>
+
+    <para>Die PostNuke-"Topics" entsprechen den vom Journalismus bekannten
+    Rubriken: Rubrik: Sport Rubrik: Politik Diese Rubriken (ich bleibe mal bei
+    dem Begriff) liegen fest, ein Redakteur kann sie nicht beliebig ändern. In
+    PN gibt es dafür einen eigenen Administrationspunkt.</para>
+
+    <para>Die PostNuke-Kategorien sind die Kategorien unterhalb des Topics.
+    Kategorie: Fussball Kategorie: Kommentar</para>
+
+    <para>Bei PostNuke sidn die Kategorien allerdings unabhängig von den
+    Rubriken sind (d.h. Du könntest "Fußball" auch unter "Politik" setzen --
+    PostNuke verhindert das nicht; das kann nur der gesunde Menschenverstand).
+    Die Kategorien sind nicht fest -- wenn Du, um beim Sport zu bleiben, das
+    erste Mal über Kuhfladenweitwurf schreibst, mußt Du die Kategorie neu
+    einrichten. Tatsächlich werden die Kategorein bei PN über die Artikel mit
+    verwaltet.</para>
+
+    <para>Es handelt sich bei "Topics" und "Categories" also nicht um eine
+    zweistufige Hierarchie, sondern um ein zweidimensionales
+    Ordnungssystem!</para>
+
+    <para>Unterschiede gibt es auch bei den Berechtigungen:</para>
+
+    <para>Topics sind solange gut, wie man maximal den Zugriff einschränken
+    möchte: Die Ansicht der Beiträge kann über die komponente Topics::Topic
+    gesteuert werden. Wenn man allerdings das Posten von News (via AddStory)
+    themenweise erlauben möchte, sind die Kategorien das Mittel der Wahl -
+    AddStory prüft auf Stories::Story ab. Dort wiederum findet sich die
+    Kategorieangabe in der Instanz. Insgesamt ist das weitesgehend ein Relikt
+    aus dunkler Vergangenheit - die Backwards-Kompatibilität macht solche
+    krummen Dinger manchmal notwendig. An einer Verbesserung wird aber bereits
+    gearbeitet...</para>
+  </section>
+
+  <section remap="h4">
+    <title>Beitrag hinzufügen</title>
+
+    <para>Der Bereich Beiträge ist eigentlich sehr intuitiv bedienbar. Es
+    handelt sich dabei um die zentrale Newserfassung des Systems. Die hier
+    erfassten Beiträge erscheinen (je nach Einstellung) auf der Hauptseite.
+    Hier kann man einen Beitrag erstellen, indem man einen
+    <emphasis>Titel</emphasis> angibt, ein <emphasis>Topic</emphasis> wählt
+    und eine Kategorie auswählt (oder diese neu erstellt, später kann man auch
+    ein anderes Thema wählen). Schließlich kann man noch entscheiden, ob man
+    den Beitrag <emphasis>auf der Startseite</emphasis> anzeigen lassen will
+    oder ob sie nur innerhalb der Kategorie erscheinen sollen. Weiterhin kann
+    man entscheiden, ob man <emphasis>Kommentare erlauben</emphasis> möchte
+    und für welche Sprachen der Text zugelassen werden soll (wählt 'alle',
+    wenn er überall erscheinen soll).</para>
+
+    <para>Hat man erstmal alles beantwortet, geht es an die Erstellung des
+    eigentlichen Beitrags, der nat. auch HTML-Befehle erlaubt. Zunächst gibt
+    man den <emphasis>Beitrag Text</emphasis> ein, in dem der Teil des
+    Artikels (Einleitung oder Zusammenfassung) geschrieben wird, der auf der
+    Startseite angezeigt werden soll. Im Bereich <emphasis>erweiterter
+    Text</emphasis> trägt man dann den Rest des Artikels ein. Nat. sind hier
+    auch Links und Images möglich, wenn man die freigeschaltet hat. Der User
+    kann diesen Text lesen, wenn er unterhalb der Einleitung auf
+    <emphasis>weiterlesen</emphasis> klickt.</para>
+
+    <para>Schließlich läßt sich noch eine <emphasis>Anmerkung</emphasis>
+    eingeben und man kann entscheiden zu welchem Zeitpunkt der
+    <emphasis>Beitrag zeitgesteuert</emphasis> erscheinen soll. Am Ende wählt
+    man jetzt noch, ob man sich die Beitragsvorschau anzeigen lassen möchte,
+    oder ob der Beitrag freigegeben werden soll.</para>
+
+    <para>Zunächst gibt man den Titel und den Beitrags-Text ein, in dem der
+    Teil des Artikels (Einleitung oder Zusammenfassung) geschrieben wird, der
+    auf der Ubersichtsseite angezeigt werden soll. Im Bereich 'erweiterter
+    Text' trägt man dann den Rest des Artikels ein (sofern vorhanden).
+    Natürlich sind hier auch Links usw. möglich. Der User kann diesen Text
+    lesen, wenn er unterhalb der Einleitung auf Weiterlesen klickt.</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="Submit.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
+
+    <para>Die einzelnen Felder sind:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Topics</term>
+
+        <listitem>
+          <para>Die Beiträge können Themengebieten zugeordnet werden. So kann
+          der Benutzer die Beiträge schon anhand der Symbole, die für jedes
+          Themengebiet vergeben wurden. Durch einen Klick auf dieses Symbol
+          kann sich der Nutzer alle Beiträge eines jeweiligen Themengebietes
+          anzeigen lassen. Die Topics haben einen eigenen
+          Administrationspunkt. Wählt man kein spezifisches Thema aus, so
+          erschenit statt des Symbols für das Thema das Browsersymbol für eine
+          nicht gefundene Grafik! einordnen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kategorie</term>
+
+        <listitem>
+          <para>Die Einteilung nach Kategorien ermöglicht eine noch feinere
+          Kategorisierung der Beiträge</para>
+
+          <para>Wenn sehr viele Beiträge erstellt werden kann durch die
+          Kategorisierung erreicht werden, dass nicht alle Beiträge
+          automatisch über die Startseite laufen, sondern nur die wichtigsten.
+          Außerdem können Kategorien auch andere Layouts zugwiesen werden. Der
+          Zugriff auf Beiträge einer Kategrorie kann über das Rechtesystem
+          eingeschränkt werden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Titel</term>
+
+        <listitem>
+          <para>Der Titel sollte ausdrucksstark sein und grob beschreiben, um
+          was es in dem Beitrag geht. Er erscheint als Überschriftszeile des
+          Beitrags.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beitrags-Text</term>
+
+        <listitem>
+          <para>Der Text der in der ersten Übersicht erscheint, also der
+          'Anreißer'. Dieser sollte nicht zu lang sein und zum Weiterlesen
+          animieren.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>erweiterter Text</term>
+
+        <listitem>
+          <para>Dieser Text erscheint zusätzlich, wenn man auf 'mehr' klickt.
+          Er kann aber auch weggelassen werden.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Auf der Startseite?</term>
+
+        <listitem>
+          <para>Sofern Kategorien erstellt wurden, kann man mit dieser
+          Einstellung steuern, welche Beiträge auf der Startseite erscheinen,
+          und welche nicht. Die Kategorie 'Beiträge' erscheint immer auf der
+          Startseite, so dass hier diese Auswahl ohne Wirkung bleibt.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Kommentare</term>
+
+        <listitem>
+          <para>Durch aktivieren dieser Funktion können berechtigte Benutzer
+          Beiträge kommentieren und so ihre Meinung äußern. In der
+          Rechteverwaltung kann noch eingestellt werden, ob auch anonyme
+          Nutzer (also solche die sich noch nicht angemeldet haben) Kommentare
+          schreiben dürfen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sprache</term>
+
+        <listitem>
+          <para>Auswahl der Spracheinstellung, bei der der Beitrag angezeigt
+          werden soll. Beiträge die als 'deutsch' markiert sind, erscheinen
+          nur dann, wenn sich der Nutzer die Seite auf deutsch anzeigen lässt.
+          Diese Auswahl hat natürlich nur bei mehrsprachigen Seiten Wirkung.
+          Wird die Option 'alle' gewählt, wird der Beitrag bei jeder
+          Spracheiustellung angezeigt. Damit wird die allgemeine
+          Spracheinstellung der Seite nicht verändert. Diese erfolgt über
+          einen gesonderten Administrationspunkt</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Formatierungs-Typ</term>
+
+        <listitem>
+          <para>Je nach Formatierungstyp werden Zeilenumbrüche dann auch im
+          Artikel dargestellt.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Anmerkung</term>
+
+        <listitem>
+          <para>Anmerkungen erscheinen unter dem eigentlichen Beitrag. Von der
+          Funktion sind sie als 'Anmerkung der Redaktion' zu sehen, gehören
+          also nicht mehr zum eigentlichen Beitrag, haben aber einen höheren
+          Stellenwert als Kommentare, die jeder eingeben kann.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beitrag zeitgesteuert?</term>
+
+        <listitem>
+          <para>Es kann eingestellt werden, ab wann der Beitrag angezeigt
+          werden soll (z.B. Silvestergrüße am 31.12. ab 0:00 Uhr).</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Im eigentlichen Beitrag sind auch HTML-Befehle erlaubt. Diese müssen
+    jedoch in den 'Einstellungen' zuerst freigegeben werden. Diese
+    Einschränkung soll Missbrauch verhindern. Außerdem können so
+    'Layoutbezogene' Befehle verboten werden (Schriftfarbe, Art und Größe). So
+    wird die optische Gleichförmigkeit der Seite gewährleistet.</para>
+
+    <para>Man kann sich vor der Freigabe die Beitragsvorschau anzeigen lassen,
+    um den Beitrag zu prüfen.</para>
+
+    <para>Eine weitere Möglichkeit, Beiträge einzugeben, bietet die Funktion
+    'Submit News'. Der Hauptunterschied zur Funktion 'Beitrag hinzufügen'
+    besteht darin, dass diese Beiträge erst vom Administrator geprüft und
+    freigegeben werden müssen, bevor sie auf der Homepage erscheinen. Diese
+    Funktion ist für Co-Autoren gedacht, wobei die Entscheidung zur
+    Veröffentlichung beim Administrator liegt.</para>
+
+    <tip>
+      <para>Wenn Ihr eine Artikelserie schreiben wollt, dann geht auf der
+      Startseite mit der Maus über die Überschrift Eures ersten Artikels.
+      Unten im Fenster erscheint jetzt der damit verbundene Link, z.B.:
+      <literal>http://eureseite.de/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112</literal>.
+      Die ID des Artikels ist also 112. Macht das auch mit dem zweiten Artikel
+      der Serie. Die ID wäre in unserem Beispiel jetzt 126. Um Eure Artikel zu
+      verbinden, editiert Ihr den 1. Artikel und geht nach ganz unten. Dort
+      tragt Ihr einen Link auf den nachfolgenden</para>
+
+      <para>(<systemitem>modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=126</systemitem>)</para>
+
+      <para>bzw. vorhergehenden Artikel</para>
+
+      <para>(<systemitem>modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112</systemitem>)</para>
+
+      <para>ein.</para>
+    </tip>
+
+    <bridgehead>Wie kann ich beim Schreiben von Artikeln Bilder
+    einbinden?</bridgehead>
+
+    <para>Leider bietet PostNuke von Hause aus keine Möglichkeit, Bilder in
+    Artikel einzubinden und diese auch gleich, also beim Schreiben eines
+    Artikels, auf den Server zu laden...</para>
+
+    <para>Letztendlich besteht das "Einbinden von Bildern" stets aus zwei
+    Schritten:</para>
+
+    <procedure>
+      <step>
+        <title>Das Bild muß auf den Server geladen werden ("upload")</title>
+
+        <para>Den Upload kann man zum einen über FTP erledigen, zum anderen
+        gibt es eine Reihe an Uploadmodulen, die per Web-Frontend es Erlauben,
+        Bilder hochzuladen. Während FTP immer funktionieren sollte, kommen die
+        meisten Upload-Module nicht damit klar, wenn PHP im "safe_mode" läuft.
+        Zum Upload der Bilder kann man natürlich auch eine der zahlreichen
+        Gallerie-Module für PostNuke (z.B. my_eGallery) benutzen.</para>
+      </step>
+
+      <step>
+        <title>Das Bild muß mit dem img-Tag eingebunden werden.</title>
+
+        <para>Befindet sich das Bild auf dem Server, so wird es mit dem
+        img-Tag eingebunden: <markup>&lt;img src="bilder/foobar.jpg"
+        alt="foobar" width="100" height"150"&gt;</markup>. Wenn der Upload
+        über eine Gallerie erfolgt, wäre es natürlich hilfreich, wenn diese
+        Gallerie einen Hook zur Verfügung stellt, der den Tag selbständig
+        einfügt (also z.B. aus {Bild19} wird ein img-Tag, der auf das Bild
+        Nummer 19 verweist)</para>
+      </step>
+    </procedure>
+  </section>
+
+  <section remap="h4">
+    <title>Submit News</title>
+
+    <para>'Submit News' ist eine weitere Möglichkeit, Beiträge einzugeben. Der
+    Hauptunterschied zur Funktion 'Beitrag hinzufügen' besteht darin, dass
+    diese Beiträge erst vom Administrator geprüft und freigegeben werden
+    müssen, bevor sie auf der Homepage erscheinen. Diese Funktion ist für
+    Co-Autoren gedacht, wobei die Entscheidung zur Veröffentlichung beim
+    Administrator liegt.</para>
+
+    <para>Durch die Benachrichtigungsfunktion können sie entscheiden ob und
+    mit welchem Text sie auf neueingegangene Beiträge aufmerksam gemacht
+    werden wollen.</para>
+  </section>
+
+  <section remap="h4">
+    <title>Kommentare</title>
+
+    <para>Kommentare erlauben den Usern, mit Ihrer Website zu interagieren.
+    Wenn ein üser einen Artikel liest zu dem er etwas hinzufügen will oder
+    etwas anzumerken hat, dann kann er einen Kommentar schreiben, der in der
+    Datenbank gespeichert und mit dem Artikel angezeigt wird.</para>
+
+    <para>Die Einstellung für Kommentare entscheidet, wie PostNuke mit den
+    Artikeln umgeht:</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="kommentare.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
+
+    <para><emphasis role="bold">Wichtig</emphasis>: Kommentare sind
+    standardmäßig für das Reviews-Modul aktiviert und werden durch die
+    Einstellungen in diesem Bereich nicht beeinflusst. Hier geht es
+    ausschließlich um die Kommentare zu den News.</para>
+
+    <para>Durch die Wahl der <emphasis>Moderation</emphasis> legt man fest, ob
+    nur der Administrator oder auch der Benutzer oder keine Moderation
+    stattfinden soll. Der Administrator kann einen Beitrag immer bearbeiten
+    oder entfernen. Bedenken Sie bitte, dass zu starke Moderation die
+    Kommunikation mit den Nutzern ersticken kann. Wählt man keine Moderation
+    besteht jedoch die Gefahr, dass unqualifizierte, falsche oder gar
+    rechtlich fragliche Kommentare eingestellt werden.</para>
+
+    <para>Weiterhin kann gewählt werden, ob anonyme User (Anonymous)
+    Kommentare schreiben dürfen oder nicht. Außerdem kann man die Anzahl der
+    Bytes festlegen, die ein Kommentar lang sein darf. 4096 Bytes ermöglichen
+    einen umfassenden Kommentar, verhindern aber, dass üser das System mit
+    zufälligem überlangem Text füllen, um einen Datenbankfehler zu
+    erzeugen.</para>
+
+    <para>Mit 'Name für Anonymous' gibt man an, welcher <emphasis>Name für
+    einen nicht registrierten User</emphasis> benutzt wird. Diese Einstellung
+    wird auch von vielen anderen Modulen benutzt.</para>
+  </section>
+
+  <section>
+    <title>Blöcke</title>
+
+    <para></para>
+
+    <section remap="h4">
+      <title>Core/Today's Big Story</title>
+
+      <para>Der heute am häufigsten gelesene Beitrag</para>
+    </section>
+
+    <section remap="h4">
+      <title>Core/Categories Menü</title>
+
+      <para>Dieser Block beitet eine Navigation, um über die angelegten
+      Kategorien zu navigieren.</para>
+
+      <para>Es werden nur Kategorien angezeigt, in denen Artikel existieren.
+      Außerdem wird das Datum des aktuellsten Artikels angegeben.</para>
+    </section>
+
+    <section remap="h4">
+      <title>Core/Topics Menü</title>
+
+      <para>Eine Navigation, um über verschiedene Topics zu navigieren. Es
+      werden nur Topics angezeigt, in denen Artikel existieren. Außerdem wird
+      das Datum des aktuellsten Artikels angegeben.</para>
+    </section>
+
+    <section remap="h4">
+      <title>Core/Past Articies</title>
+
+      <para>Dieser Block bietet einen Direktzugriff auf alte Beiträge der
+      Seite an. Die Anzahl der Artikel kann über die Blockadministration
+      verändert werden.</para>
+    </section>
+
+    <section remap="h4">
+      <title>Core/Story Related Links</title>
+
+      <para>Block für verwandte Links (nur in der Artikelansicht)</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Zugriffsrechte</title>
+
+    <para></para>
+
+    <section remap="h4">
+      <title>Zugriffsrechte: Stories</title>
+
+      <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+      worden - unter anderem kann jetzt die Komponente 'Stories::Story'
+      zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+      Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+      'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+      Für den Bereich 'News' ist in erster Linie 'Stories::Story' interessant
+      ('Stories::Category' wird lediglich für die Administration der
+      Kategorien benötigt).</para>
+
+      <para><emphasis role="bold">Beispiele:</emphasis></para>
+
+      <para><literal>Stories::Story /// Author ID:Category name:Story ID
+      </literal></para>
+
+      <itemizedlist>
+        <listitem>
+          <para>wenn man nun den Zugriff auf eine bestimmte Kategorie für
+          unregistrierte Benutzer verhindern will, sollte folgende
+          Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* | .*
+          | lesen) gesetzt werden:</para>
+
+          <para><literal>unregistrierte | Stories::Story | :Kategoriename: |
+          keines</literal></para>
+        </listitem>
+
+        <listitem>
+          <para>wenn man der Gruppe 'Autoren' ermöglichen will, neue Beiträge
+          in der Kategorie 'Info' zu schreiben, sollte folgende Berechtigung
+          nach der allgemeinen Adminzeile (Admins | .* | .* | administrieren)
+          gesetzt werden:</para>
+
+          <para><literal>Autoren | Stories::Story | :Info: |
+          hinzufügen</literal></para>
+
+          <para>bzw.</para>
+
+          <para><literal>Autoren | Stories::Story | :Info: |
+          löschen</literal></para>
+
+          <para>wenn sie die Artikel dieser Kategorie auch löschen sollen
+          dürfen.</para>
+        </listitem>
+
+        <listitem>
+          <para>wenn es das entsprechende Theme unterstützt kann man
+          darüberhinaus beispielsweise unregistrierten Benutzern lediglich das
+          'Übersicht' Recht einräumen und ihnen nur den Hometext
+          anzeigen</para>
+        </listitem>
+
+        <listitem>
+          <para>zum direkten Aufruf des entsprechenden Adminbereiches kann man
+          das MainMenu um einen Link zu <emphasis
+          role="bold">admin.php?module=NS-AddStory&amp;op=main</emphasis>
+          erweitern, der nur der entsprechenden Gruppe angezeigt wird.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section remap="h4">
+      <title>Zugriffsrechte: Topics</title>
+
+      <para>Ab der Version .722 ist das Permission System ein wenig gefixt
+      worden - unter anderem kann jetzt die Komponente 'Topics::Topic'
+      zumindestens weitestgehend korrekt eingesetzt werden. Bei den
+      Zugriffsrechten kann man sich durch einen Klick auf 'Komponente' bzw.
+      'Instanz' alle im System hinterlegten Berechtigungsschemata anzeigen.
+      Für den Bereich 'Topics' ist in erster Linie 'Topics::Topic' interessant
+      ('Topics::Related' wird lediglich für die Administration der Topics
+      genauer gesagt die verwandten Links, benötigt).</para>
+
+      <para><emphasis role="bold">Beispiele</emphasis></para>
+
+      <para><literal>Topics::Topic /// Topic name::Topic ID</literal></para>
+
+      <itemizedlist>
+        <listitem>
+          <para>wenn man nun den Zugriff auf ein bestimmtes Topic für
+          unregistrierte Benutzer verhindern will, sollte folgende
+          Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* | .*
+          | lesen) gesetzt werden:</para>
+
+          <para><literal>unregistrierte | Topics::Topic | Topic_Name:: |
+          keines</literal></para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Wichtig: der Topicname ist nicht zu verwechseln mit dem Topictext
+      - am besten in der Topicadministration nachschauen!</para>
+    </section>
+  </section>
+</chapter>
