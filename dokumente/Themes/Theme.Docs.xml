@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+  <title>Layoutentwicklung in Postnuke .7x</title>
+
+  <sect1>
+    <title>Einführung</title>
+
+    <para>-todo- (Link zum Theme Forum)</para>
+  </sect1>
+
+  <sect1>
+    <title>Themes in Postnuke .7x</title>
+
+    <para>-todo-</para>
+
+    <sect2>
+      <title>theme.php</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Mehrsprachigkeit</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>$info, $preformat, $links</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>$block-Array</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Style Sheets</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Kurze URLs</title>
+
+      <para>-todo-</para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Autotheme</title>
+
+    <para>Doku:
+    http://www.cms-themes.de/module-subjects-viewpage-pageid-10.html</para>
+
+    <para>Forum:
+    http://www.cms-themes.de/name-PNphpBB2-viewforum-f-22.html</para>
+  </sect1>
+
+  <sect1>
+    <title>Barrierefreiheit</title>
+
+    <para>-todo-</para>
+  </sect1>
+
+  <sect1>
+    <title>FAQ</title>
+
+    <para>F&amp;A aus der FAQ</para>
+  </sect1>
+  <xi:include href="../XTE/XTE.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</chapter>

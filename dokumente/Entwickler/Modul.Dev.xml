@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter>
+  <title>Entwicklerdokumentation</title>
+
+  <sect1>
+    <title>Modul Entwicklung</title>
+
+    <para>-todo-</para>
+
+    <sect2>
+      <title>admin.php</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Suchfunktion</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Benutzermenü</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Blöcke</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Hooks</title>
+
+      <para>-todo-</para>
+    </sect2>
+
+    <sect2>
+      <title>Smartifikation</title>
+
+      <para>-todo-</para>
+    </sect2>
+  </sect1>
+
+  <sect1>
+    <title>Richtlinien für die Programmierung</title>
+
+    <para>-todo-</para>
+  </sect1>
+
+  <sect1>
+    <title>pnAPI</title>
+
+    <para>-todo-</para>
+  </sect1>
+
+  <sect1>
+    <title>pnADODB</title>
+
+    <para>-todo-</para>
+  </sect1>
+
+  <sect1>
+    <title>phpxref für Postnuke .726</title>
+
+    <para>PHP Cross Reference für PostNuke .726 gibt es <ulink
+    url="???">hier</ulink>.</para>
+  </sect1>
+</chapter>
