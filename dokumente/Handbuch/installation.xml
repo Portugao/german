@@ -140,112 +140,8 @@
       <title>Installation auf dem heimischen Rechner</title>
 
       <para>Um PostNuke ausgiebig testen zu können, empfiehlt sich die
-      Installation auf dem heimischen PC. Dazu braucht man</para>
-
-      <variablelist>
-        <varlistentry>
-          <term>Einen Web-Server</term>
-
-          <listitem>
-            <para>Üblicherweise wird man Apache nehmen, da dieser unter der
-            GPL und kostenfrei verfügbar ist. Dieser Web-Server ist unter
-            <ulink url="http://httpd.apache.org/ ">http://httpd.apache.org/
-            </ulink>herunterladbar. Er wird als installierbares Paket
-            downgeloadet. Eine Anleitung, wie der Apache unter Windows zum
-            laufen zu bekommen ist, findet man unter
-            http://httpd.apache.org/docs/windows.html.</para>
-
-            <para>Die Installation startet man wie bei jedem anderen Programm,
-            den Installationspfad lässt man am besten so wie er ist. Nach
-            Abschluß der Installation startet man dann den Webbrowser und gib
-            als URL <systemitem
-            class="systemname">http://localhost/</systemitem> ein. Wenn alles
-            richtig gemacht worden ist, dann sieht man jetzt eine Seite, auf
-            der steht, dass der Apache Webserver erfolgreich installiert
-            wurde.</para>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>PHP</term>
-
-          <listitem>
-            <para>PHP bekommt man bei <ulink
-            url="http://www.php.net/downloads.php">http://www.php.net/downloads.php</ulink>.
-            Details, wie PHP dann noch zu konfigurieren ist, findet man unter
-            http://www.php.net/manual/de/install.apache.php (für Apache 1.3)
-            bzw. http://www.php.net/manual/en/install.apache2.php (für Apache
-            2).</para>
-
-            <para>PHP kann man auf zwei Arten installieren, als Modul und als
-            CGI-Sprache. Empfehlenswert ist es, PHP als Modul von Apache zu
-            installieren. Das PHP Paket entpacken und in das vorgegebene
-            Verzeichnis installieren. Zur Konfiguration des Apache-Servers ist
-            es dann noch notwendig die <filename>httpd.conf</filename>-Datei
-            zu editieren, und nach<programlisting>#AddHandler type-map var</programlisting>folgende
-            Zeilen hinzuzufügen:<programlisting>#AddHandler type-map var
-
-# And for PHP 4.x, use
-ScriptAlias /php/ "c:/php/"
-AddType application/x-httpd-php .php
-AddType application/x-httpd-php-source .phps
-Action application/x-httpd-php /php/php.exe</programlisting>Nun speichert und
-            schliesst man die <filename>httpd.conf</filename>. Nach dieser
-            Änderung ist ein Neustart des Apache notwendig.</para>
-
-            <para>Alle Dateien, die in dem Verzeichnis
-            <filename>htdocs</filename> im Apache Programmordner liegen und
-            auf ".php" enden werden vom Apache Server nun als PHP-Skripte
-            interpretiert. Um dies zu testen, erstellt man eine Datei
-            <filename>phpinfo.php</filename> mit folgendem
-            Code:<programlisting>&lt;?php
-phpinfo()
-?&gt;</programlisting>Diese speichert man dann im Apache
-            <filename>/htdocs</filename>-Verzeichnis ab. Ruft man nun unter
-            <filename>http://localhost/phpinfo.php</filename> das Skript auf
-            sollten einige Informationen von PHP angezeigt werden.</para>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>Eine von PostNuke unterstützte Datenbank, vorzugsweise
-          MySQL</term>
-
-          <listitem>
-            <para>Die aktuelle Version von MySQL bekommt man unter <ulink
-            url="http://www.mysql.de/downloads/index.html">http://www.mysql.de/downloads/index.html</ulink>.
-            Wenn man die richtige Version downgeloadet hat, ist auch diese
-            Installation einfach. Zunächst installiert man MySQL in den
-            angegebenen Pfad (C:mysql), dann startet man im MySQL-Ordner /bin
-            das Programm winmysqladmin.exe, gibst dort einen Usernamen und ein
-            Passwort ein (merken, wichtig für Datenbankaktionen) und lässt es
-            laufen. Von nun an wird dieses Programm auch in Autostart bei
-            jedem Hochfahren gestartet. Falls dies nicht nötig oder
-            unerwünscht ist, löscht man den Eintrag aus "Autostart".</para>
-          </listitem>
-        </varlistentry>
-
-        <varlistentry>
-          <term>phpMyAdmin</term>
-
-          <listitem>
-            <para>phpMyAdmin ist ein Administrationstool für MySQL - Download
-            unter <ulink
-            url="http://www.phpmyadmin.net/">http://phpmyadmin.sourceforge.net</ulink>.
-            Mit ihm kann man sehr leicht auf Datenbanken zugreifen (erstellen,
-            ändern und löschen). Man entpackt das Paket in das Apache
-            /htdocs-Verzeichnis. Dort werden auch in Zukunft alle Websiten und
-            PHP-Programme gespeichert. Nach dem Entpacken findet man dort eine
-            Datei Names confic.inc.php, diese öffnen, und die gewünschten
-            Variablen editieren. Man benötigen auf jeden Fall den
-            MySQL-Usernamen und das Passwort. Nach dem editieren speichert man
-            das ganze, und gehst mit dem Browser auf folgende URL:
-            <filename>http://localhost/phpMyAdmin/index.php</filename>. Wenn
-            man jetzt etwas buntes sieht, dann waren die Bemühungen
-            erfolgreich.</para>
-          </listitem>
-        </varlistentry>
-      </variablelist>
+      Installation eines Web-Servers mit PHP und MySQL auf dem heimischen PC.
+      Diese Installation beschreiben wir im Anhang.</para>
 
       <tip>
         <para>Wer Wert auf eine "Ein-Klick-Lösung" legt, sollte sich <ulink
@@ -255,10 +151,10 @@ phpinfo()
         installieren.</para>
 
         <para>Zur Zeit gibt es drei XAMPP-Distributionen:Für Windows, Linux
-        und Solaris. Der Download ist aber mit fast 60 MB sehr groß, wer kein
-        DSL hat kann eine CD für 5 Euro bestellen. Nach der denkbar einfachen
-        Installation unter Windows liefen alle Module, die hier zum Einsatz
-        kommen, problemlos.</para>
+        und Solaris. Der Download ist aber recht groß. Wer keine Lust auf den
+        Download hat, kann auch eine CD für 5 Euro bestellen. Nach der denkbar
+        einfachen Installation unter Windows liefen alle Module, die hier zum
+        Einsatz kommen, problemlos.</para>
       </tip>
     </section>
   </section>
@@ -291,7 +187,7 @@ phpinfo()
       <step>
         <para>Herunterladen der aktuellen Version von PostNuke und der
         aktuellen Sprachdatei als ZIP-Archiv von <ulink
-        url="http://www.post-nuke.net/">www.post-nuke.net</ulink>.</para>
+        url="http://www.post-nuke.net/">http://www.post-nuke.net</ulink>.</para>
       </step>
 
       <step>
@@ -356,7 +252,7 @@ phpinfo()
         später auf die Seite zugegriffen wird. Soll heissen, dass am besten
         nicht der Ordner <filename>/html/</filename> aufgespielt wird, sondern
         nur dessen Inhalt. Sonst muss die Seite über <systemitem
-        class="systemname">http://www.deinedomain.de/html/</systemitem>
+        class="systemname">http://www.example.com/html/</systemitem>
         angesprochen werden, was unpraktisch ist.</para>
       </step>
 
@@ -377,7 +273,7 @@ phpinfo()
     <procedure>
       <step>
         <para>Start der Installation über <systemitem
-        class="systemname">http://www.deinedomain.de/install.php</systemitem>.</para>
+        class="systemname">http://www.example.com/install.php</systemitem>.</para>
       </step>
 
       <step>
@@ -479,11 +375,14 @@ phpinfo()
             <listitem>
               <para>Die "Intranet"-Option muss nur bei Installationen ohne
               "vollqualifizierten" Domainnamen angewählt werden. Beispiele für
-              "qualifizierte" Domainnamen sind www.PostNuke.com und
-              foo.bar.com, aber auch z.B. 127.0.0.1 - Beispiele für
-              "unqualifizierte" Domainnamen sind foo.com, localhost und
-              mysite.org. Wenn dieser Parameter nicht richtig gesetzt wird,
-              ist unter Umständen kein Login möglich!</para>
+              "qualifizierte" Domainnamen sind
+              <systemitem>www.postnuke.com</systemitem> und
+              <systemitem>www.example.com</systemitem>, aber auch z.B.
+              127.0.0.1 - Beispiele für "unqualifizierte" Domainnamen sind
+              <systemitem>localhost</systemitem> und
+              <systemitem>rechnername</systemitem>. Wenn dieser Parameter
+              nicht richtig gesetzt wird, ist unter Umständen kein Login
+              möglich!</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -620,8 +519,8 @@ phpinfo()
       <step>
         <para>Nun kann man zur neu eingerichteten PostNuke-Seite wechseln:
         <systemitem
-        class="systemname">http://www.deineseite.de/index.php</systemitem>.
-        Die Seite sieht dann wie folgt aus:</para>
+        class="systemname">http://www.example.com/index.php</systemitem>. Die
+        Seite sieht dann wie folgt aus:</para>
 
         <mediaobject>
           <imageobject>
@@ -650,23 +549,20 @@ phpinfo()
         unbedingt ein paar Dinge gelöscht werden:</para>
 
         <caution>
-          <para>Das gesamte Verzeichnis <filename>/install</filename> und die
-          <filename>install.php</filename> auf dem Webspace muß gelöscht
-          werden.</para>
+          <itemizedlist>
+            <listitem>
+              <para>Das gesamte Verzeichnis <filename>/install</filename> und
+              die <filename>install.php</filename> auf dem Webspace muß
+              gelöscht werden.</para>
+            </listitem>
 
-          <para>Die Rechte für die <filename>config.php</filename> und
-          <filename>config-old.php</filename> sollten wieder zurück auf 644
-          gesetzt werden.</para>
+            <listitem>
+              <para>Die Rechte für die <filename>config.php</filename> und
+              <filename>config-old.php</filename> sollten wieder zurück auf
+              644 gesetzt werden.</para>
+            </listitem>
+          </itemizedlist>
         </caution>
-      </step>
-
-      <step>
-        <para>Wenn man jetzt nicht zu schnell war, hat man sein FTP-Programm
-        noch auf. Das braucht man noch, denn wie einem sicher auffallen wird
-        steht als Reminder auf der Seite, dass man die
-        <filename>install.php</filename> und den
-        <filename>install</filename>-Ordner aus Sicherheitsgründen löschen
-        soll, also bietet es sich an, das jetzt zu tun.</para>
 
         <warning>
           <para>Immer wieder kommt es vor, dass der
@@ -715,13 +611,13 @@ phpinfo()
 
     <itemizedlist>
       <listitem>
-        <para>Welche Module und Blöcke setz man überhaupt ein?</para>
+        <para>Welche Module und Blöcke setzt man überhaupt ein?</para>
       </listitem>
 
       <listitem>
         <para>Welche von ihnen will man überhaupt weiterhin nutzen oder ist
-        man sich ihrer über? (Merke: Alles was man jetzt rauschmeißt muß man
-        nicht mehr updaten)</para>
+        man sich ihrer über? (Merke: Alles, was man jetzt rauschmeisst, muß
+        man nicht mehr updaten)</para>
       </listitem>
     </itemizedlist>
 
@@ -931,15 +827,16 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
     </section>
 
     <section>
-      <title>Ist es möglich, PostNuke auch auf einem PostgreSQL DBMS zu
-      installieren?</title>
+      <title>Ist es möglich, PostNuke auch mit einem anderen Datenbanksystem
+      als MySQL zu installieren?</title>
 
       <para>Prinzipiell sollte es schon funktionieren, via ADOdb auch andere
       Datenbanken zu nutzen (das pnForum läuft beispielsweise auch in einer
-      Oracle-Installation). Eventuell hat das jeweilige DBMS aber spezielle
-      Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B. keine LEFT
-      JOINS in Oracle). Generell gilt die Datenbank-Unabhängigkeit natürlich
-      auch nur für die Module, die ADOdb-konform ausgeführt sind.</para>
+      Oracle-Installation). Eventuell hat das jeweilige Datenbanksystem aber
+      spezielle Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B.
+      keine LEFT JOINS in Oracle). Generell gilt die Datenbank-Unabhängigkeit
+      natürlich auch nur für die Module, die ADOdb-konform ausgeführt
+      sind.</para>
     </section>
 
     <section>
@@ -948,8 +845,8 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
 
       <para>Ein Backup vorher kann nie schaden und bis auf absolute Links in
       der Datenbank sollte es keine Probleme geben. Die kannst Du aber einfach
-      in einer DB-Dump-Kopie durch suchen&amp;ersetzen austauschen und das
-      Dump zurückspielen.</para>
+      in einem Datenbank-Dump durch Suchen und Ersetzen austauschen und dann
+      den Dump zurückspielen.</para>
     </section>
 
     <section>
@@ -958,7 +855,7 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
 
       <para>Überprüfe, ob die Usereinstellungen noch auf englisch gesetzt
       sind. Zum Umschalten reicht der Aufruf von
-      <filename>http://www.deineseite.de/index.php?newlang=deu</filename></para>
+      <filename>http://www.example.com/index.php?newlang=deu</filename></para>
     </section>
 
     <section>
@@ -982,9 +879,9 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       opening '/....../install.php' for inclusion
       (include_path='.:/usr/share/php') in Unknown on line 0</title>
 
-      <para>Die Seite hat noch die falschen Benutzerrechte mit dem
-      Linux-Befehl "chown" sollte man dem Webserver alle Dateien
-      überlassen.</para>
+      <para>Die Dateien hat noch die falschen Benutzerrechte mit dem
+      Linux-Befehl <command>chown</command> sollte man dem Webserver alle
+      Dateien überlassen.</para>
     </section>
   </section>
 </chapter>
