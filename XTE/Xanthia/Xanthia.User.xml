@@ -64,7 +64,7 @@
     <screenshot>
       <mediaobject>
         <objectinfo>
-          <title>The Xanthia Configuration Screen</title>
+          <title>Die Xanthia Konfiguration</title>
         </objectinfo>
 
         <imageobject>
@@ -207,7 +207,7 @@
   </section>
 
   <section id="Xanthia.User.ConfigThemes">
-    <title>Installing and Configuring Xanthia Themes</title>
+    <title>Installation und Konfiguration von Xanthia Themes</title>
 
     <section id="Xanthia.User.ConfigThemes.Adding">
       <title>Themes installieren</title>
@@ -1023,7 +1023,7 @@
   </section>
 
   <section id="Xanthia.User.FAQ">
-    <title>Frequently Asked Questions</title>
+    <title>FAQ - häufig gestellte Fragen</title>
 
     <qandaset>
       <qandadiv>
@@ -1037,11 +1037,10 @@
           </question>
 
           <answer>
-            <para>Dieser Fehler zeit an, daß Xanthia keinThe error indicates
-            that Xanthia didn't find a template for a given zone. Check that
-            template is present in the templates directory for your theme.
-            Nutze das "Swiss Army Knife Tool für PostNuke" (PSAK), das unter
-            <ulink
+            <para>Dieser Fehler zeigt an, daß Xanthia kein passendes Template
+            gefunden hat. Kontrolliere, daß sich das Template in dem Template
+            Ordner des eingesetzten Themes befindet. Nutze das "Swiss Army
+            Knife Tool für PostNuke" (PSAK), das unter <ulink
             url="http://post-nuke.net/Downloads+index-req-viewdownload-cid-1.html">http://www.post-nuke.net</ulink>
             zum Download angeboten wird, um ein funktionierendes Theme
             einzustellen.</para>
@@ -1050,23 +1049,24 @@
 
         <qandaentry>
           <question>
-            <para>I don't have the "<guimenuitem>short URLs</guimenuitem>"
-            option in the Xanthia Configuration</para>
+            <para>Ich finde die Option "<guimenuitem>short URLs</guimenuitem>"
+            in der Xanthia Konfiguration nicht!</para>
           </question>
 
           <answer>
-            <para>The Xanthia Admin panel will only show the short URLs
-            configuration option once you have the
-            <filename>.htaccess</filename> file in place. (See <xref
-            linkend="Xanthia.User.CommonTasks.ShortURLs.How" />). When the
-            xanthia module is initialised it checks to see if the server is
-            re-write capable but once installed there doesn't seem to be a way
-            confirm that rewrite support is available. If this detection has
-            failed, you'll have to edit the Database directly (using
-            phpMyAdmin or a similar tool). In the table
+            <para>Diese Option wird in der Konfiguration erst angezeigt,
+            sobald du eine passende <filename>.htaccess</filename> auf dem
+            Server erstellt hast. (Siehe auch <xref
+            linkend="Xanthia.User.CommonTasks.ShortURLs.How" />). Wenn Xanthia
+            initialisiert wird, überprüft es, ob das re-write Modul auf dem
+            Server gestartet ist, aber wenn Xanthia einmal initialisert wurde,
+            gibt es keine Möglichkeit, diese Überprüfung zu wiederholen. Wenn
+            die Überprüfung falsch verlief, mußt du die Datenbank direkt (via
+            phpMyAdmin oder etwas Ähnlichem) bearbeiten: In der Tabelle
             <filename><replaceable>&lt;prefix&gt;</replaceable>_module_vars</filename>
-            locate the module variable pn_modname = Xanthia pn_name
-            =shorturlsok. If it's value is 0 then set it to 1.</para>
+            befindet sich die Variable pn_modname = Xanthia pn_name
+            =shorturlsok. Wenn dieser Wert auf 0 gesetzt ist, setze ihn auf
+            1!</para>
           </answer>
         </qandaentry>
       </qandadiv>
@@ -1188,9 +1188,7 @@
             Themes</guisubmenu><guisubmenu>Edit
             Theme</guisubmenu><guimenuitem>Theme Settings</guimenuitem> nach
             der <guimenuitem>indexcol</guimenuitem> theme setting. Diese
-            stellt die Anzahl der Spalten ein. As the theme settings are
-            defined on a per theme basis the language files, in some themes
-            aren't as clear as they could be.</para>
+            stellt die Anzahl der Spalten ein.</para>
           </answer>
         </qandaentry>
 
