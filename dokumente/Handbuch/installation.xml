@@ -181,20 +181,10 @@
     </section>
   </section>
 
-  <section id="systeminstallation">
-    <title>Installation des Systems</title>
-
-    <para role="info">Die Installation ist eigentlich sehr einfach und man
-    wird, ähnlich der Installation eines Programmes, Schritt für Schritt nach
-    den Daten gefragt, die notwendig sind. Zum Abschluss ist die Seite so
-    eingerichtet, dass sie bereits komplett funktionsfähig ist.</para>
-
-    <para>Selbstverständlich führen auch bei der PostNuke-Installation viele
-    Wege nach Rom, so unterscheidet es sich, ob die Installation via FTP auf
-    den Server geladen wird oder ob ein Shell-Zugang besteht und das Archiv
-    online entpackt wird. Aber, wie bereits in den Grundlagen erwähnt möchten
-    wir hier alles so einfach wie möglich halten und somit erkläre wir den (in
-    unseren Augen) gebräuchlichsten Weg.</para>
+  <section id="verzeichnisstruktur">
+    <title>Die Verzeichnisstruktur von PostNuke<indexterm>
+        <primary>Verzeichnisstruktur</primary>
+      </indexterm></title>
 
     <bridgehead>Download und Entpacken der notwendigen Dateien<indexterm>
         <primary>Download</primary>
@@ -296,6 +286,124 @@
       </step>
     </procedure>
 
+    <bridgehead>PostNuke unter die Motorhaube geschaut</bridgehead>
+
+    <para>Im Hauptverzeichnis liegen nur wenige Dateien &mdash; wichtig ist
+    hier vor allem die <filename>config.php<indexterm>
+        <primary>config.php</primary>
+      </indexterm></filename> und die <filename>config-old.php<indexterm>
+        <primary>config-old.php</primary>
+      </indexterm></filename>, die im Laufe der Installation vom System
+    automatisch geschrieben wird. Alle anderen Dateien sind Systemdateien, und
+    müssen nicht geändert werden.</para>
+
+    <para>Das <filename class="directory">/docs<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>docs</secondary>
+      </indexterm></filename>-Verzeichnis enthält einige Dateien mit
+    Danksagungen an die verschiedenen Postnuke-Entwickler und eine Liste der
+    geänder Dateien.</para>
+
+    <para>Unter <filename class="directory">/images<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>images</secondary>
+      </indexterm></filename> liegen die Grafiken, die vom System benutzt
+    werden. Zum Beispiel unter /images/topics kann man die Bilder für die
+    Topics ablegen.</para>
+
+    <para>Das <filename class="directory">/includes<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>blocks</secondary>
+      </indexterm></filename>-Verzeichnis enthält die wichtigsten
+    Systemdateien &mdash; die verschiedenen Interfaces, auf die alle Module
+    zurückgreifen. Außerdem liegen hier im Unterverzeichnis <filename
+    class="directory">/includes/blocks</filename> die mitgelieferten
+    Blöcke<indexterm>
+        <primary>Blöcke</primary>
+      </indexterm>. Weitere Blöcke befinden sind in den jeweiligen
+    Modulverzeichnissen.</para>
+
+    <para>Für die Installation ist das <filename
+    class="directory">/install<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>install</secondary>
+      </indexterm></filename>-Verzeichnis wichtig. Nach der Installation
+    sollte dieses aber zusammen mit der <filename>install.php</filename> aus
+    dem Hauptverzeichnis gelöscht werden, da sonst Unbefugte Zugriff auf die
+    Datenbank erhalten könnten.</para>
+
+    <para>Wie der Name <filename class="directory">/javascript<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>javascript</secondary>
+      </indexterm></filename> schon sagt, liegen hier verschiedene
+    Javascripte, die im ganzen System zur Verfügung stehen.</para>
+
+    <para>Unter <filename class="directory">/language<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>language</secondary>
+      </indexterm></filename> liegen die Sprachdateien<indexterm>
+        <primary>Sprachdateien</primary>
+      </indexterm>, die systemweit zur Verfügung stehenden
+    Sprachdefinitionen.</para>
+
+    <para>Nicht nur die mitgelieferten, sondern auch die zusätzlichen
+    Module<indexterm>
+        <primary>Module</primary>
+      </indexterm> befinden sich im <filename
+    class="directory">/modules<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>modules</secondary>
+      </indexterm></filename>-Verzeichnis.</para>
+
+    <para>In <filename class="directory">/pnadodb<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>pnadodb</secondary>
+      </indexterm></filename> liegen die Dateien, die für die
+    Datenbankzugriffe verantwortlich sind und dafür sorgen, dass PostNuke mit
+    verschiedenen Datenbanksystemen zusammenarbeiten kann.</para>
+
+    <para>Temporäre Dateien werden unter <filename
+    class="directory">/pnTemp<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>pnTemp</secondary>
+      </indexterm></filename> abgelegt. Dieses und die Unterverzeichnisse
+    müssen für den Webserver beschreibbar sein.</para>
+
+    <para>Unter <filename class="directory">/themes<indexterm>
+        <primary>Verzeichnisse</primary>
+
+        <secondary>themes</secondary>
+      </indexterm></filename> werden die Layouts abgelegt. Einige
+    Beispielthemes sind im Basispaket enthalten. Weitere Themes können selbst
+    erstellt oder auf verschiedenen Websites heruntergeladen werden. Zum
+    Beispiel <ulink
+    url="http://www.cms-themes.de">http://www.cms-themes.de</ulink>.</para>
+  </section>
+
+  <section id="systeminstallation">
+    <title>Installation des Systems</title>
+
+    <para role="info">Die Installation ist eigentlich sehr einfach und man
+    wird, ähnlich der Installation eines Programmes, Schritt für Schritt nach
+    den Daten gefragt, die notwendig sind. Zum Abschluss ist die Seite so
+    eingerichtet, dass sie bereits komplett funktionsfähig ist.</para>
+
+    <para>Selbstverständlich führen auch bei der PostNuke-Installation viele
+    Wege nach Rom, so unterscheidet es sich, ob die Installation via FTP auf
+    den Server geladen wird oder ob ein Shell-Zugang besteht und das Archiv
+    online entpackt wird. Aber, wie bereits in den Grundlagen erwähnt möchten
+    wir hier alles so einfach wie möglich halten und somit erkläre wir den (in
+    unseren Augen) gebräuchlichsten Weg.</para>
+
     <bridgehead>Upload der Dateien<indexterm>
         <primary>Upload</primary>
       </indexterm><indexterm>
@@ -304,9 +412,9 @@
         <secondary>Upload</secondary>
       </indexterm></bridgehead>
 
-    <para>Nachdem nun die Dateien in entpackter Form auf dem heimischen PC
-    vorliegen, müssen diese auf den Webspace hochgeladen werden. Dies
-    funktioniert überlicherweise mit einem FTP-Programm.</para>
+    <para>Nachdem die Dateien, wie oben beschrieben, in entpackter Form auf
+    dem heimischen PC vorliegen, müssen diese auf den Webspace hochgeladen
+    werden. Dies funktioniert überlicherweise mit einem FTP-Programm.</para>
 
     <tip>
       <para>Ein sehr gutes Programm ist z. B. <ulink
@@ -1210,7 +1318,7 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
     <important>
       <para>Um Direktzugriffe auf pnTemp zu verhindern, liegt eine
       entsprechende <filename>.htaccess</filename>-Datei in diesem
-      Verzeichnis. </para>
+      Verzeichnis.</para>
 
       <para>Aus Sicherheitsgründen empfehlen wir Webmastern,
       <filename>pnTemp</filename> ausserhalb des Postnuke Hauptverzeichnisses
