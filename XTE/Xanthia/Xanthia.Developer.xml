@@ -63,14 +63,19 @@
           <orgdiv>Development Team</orgdiv>
         </affiliation>
       </author>
-    </authorgroup>
 
-    <authorgroup>
-      <corpauthor>Steffen Voß</corpauthor>
+      <author>
+        <firstname>Steffen</firstname>
 
-      <othercredit>
-        <lineage>German Translation</lineage>
-      </othercredit>
+        <surname>Voss</surname>
+
+        <affiliation>
+          <jobtitle>German Translation</jobtitle>
+
+          <orgname><ulink
+          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
+        </affiliation>
+      </author>
     </authorgroup>
 
     <releaseinfo>$Revision$</releaseinfo>
@@ -219,11 +224,11 @@ $themeinfo['xhtmlsupport'] = 0;
       theme.php um das Herzstück des Layouts. Hier fängt das System an die
       Ausgaben zu generieren. Anders aber als bei der alten theme.php braucht
       diese Datei nicht verändert zu werden. Jedes Xanthia-Theme funktioniert
-      mit der gleichen themes.php. </para>
+      mit der gleichen themes.php.</para>
 
       <para>Fortgeschrittene Theme-Entwickler können sie aber bearbeiten um
       zusätzliche Smarty-Funktionen wie zum Beispiel Ausgaben-Filter, Vor- und
-      Nachfilter in ihr Theme zu integrieren. </para>
+      Nachfilter in ihr Theme zu integrieren.</para>
     </section>
 
     <section id="Xanthia.Devel.master">
@@ -263,7 +268,7 @@ $themeinfo['xhtmlsupport'] = 0;
         <title>News-index2.htm</title>
 
         <para>Mit diesem Template lassen sich News im 2-spaltenlayout
-        erzeugen. </para>
+        erzeugen.</para>
       </section>
     </section>
 
@@ -414,8 +419,7 @@ $themeinfo['xhtmlsupport'] = 0;
     Modullayouts im Theme und bevorzugt diese dann vor denen im
     Modulverzeichnis:</para>
 
-    <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/modules/<replaceable>&lt;modulename&gt;</replaceable>/</filename>
-    </para>
+    <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/modules/<replaceable>&lt;modulename&gt;</replaceable>/</filename></para>
 
     <para>Für Blöck gilt dasselbe: Die Themetemplates habe vorrang vor den
     Blockeigenen Layouts, wenn sie hier liegen:</para>
@@ -554,8 +558,8 @@ $themeinfo['xhtmlsupport'] = 0;
     url="http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/">http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/</ulink>
     (engl.)</para>
 
-    <para>Unter /modules/Xanthia/plugins/ liegen alle verfügbaren Plugins
-    </para>
+    <para>Unter /modules/Xanthia/plugins/ liegen alle verfügbaren
+    Plugins</para>
 
     <para>Eigene Plugins können in /themes/YOURTHEME/plugins abgelegt
     werden.</para>

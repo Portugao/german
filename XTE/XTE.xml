@@ -78,16 +78,19 @@
         <contrib>Patrick contributed main parts of the Template
         documentation</contrib>
       </author>
-    </authorgroup>
 
-    <authorgroup>
-      <editor>
+      <author>
         <firstname>Steffen</firstname>
 
-        <surname>Voß</surname>
+        <surname>Voss</surname>
 
-        <contrib>Deutsche Übersetzung</contrib>
-      </editor>
+        <affiliation>
+          <jobtitle>German Translation</jobtitle>
+
+          <orgname><ulink
+          url="http://www.post-nuke.net">post-nuke.net</ulink></orgname>
+        </affiliation>
+      </author>
     </authorgroup>
 
     <abstract>
