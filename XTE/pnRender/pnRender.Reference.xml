@@ -29,14 +29,16 @@
     </keywordset>
   </appendixinfo>
 
-  <title>Plugins Reference</title>
+  <title>Plugin Referenz</title>
 
-  <para>This Sections lists all available plugins</para>
+  <para>In diesem Abschnitt wird die Funktion aller verfügbaren Plugins
+  erläutert.</para>
 
-  <remark>Please note: This list is not current at the moment</remark>
+  <remark>Anmerkung: Diese Liste ist nicht komplett, deswegen ist die
+  Übersetzung auch nicht vollständig.</remark>
 
   <section id="pnrender.plugins.functions">
-    <title>pnRender Functions</title>
+    <title>pnRender Functionen</title>
 
     <refentry id="pnrender.plugins.function.pager">
       <refmeta>
@@ -50,13 +52,13 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>...</para>
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -66,7 +68,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pager</title>
@@ -80,11 +82,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author: ....</para>
+            <para>Autor: ....</para>
           </listitem>
 
           <listitem>
-            <para>since: ...</para>
+            <para>seit: ...</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -102,13 +104,13 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>...</para>
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -118,7 +120,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pagerabc</title>
@@ -132,11 +134,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author: ....</para>
+            <para>Autor: ....</para>
           </listitem>
 
           <listitem>
-            <para>since: ...</para>
+            <para>seit: ...</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -155,7 +157,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>The block is choosen either by id or by title. Remember, title
         is not unique.</para>
@@ -168,7 +170,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters:</title>
+        <title>Verfügbare Parameter:</title>
 
         <itemizedlist>
           <listitem>
@@ -199,7 +201,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnblock</title>
@@ -213,11 +215,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author: Andreas Stratmann</para>
+            <para>Autor: Andreas Stratmann</para>
           </listitem>
 
           <listitem>
-            <para>since: 03/05/23</para>
+            <para>seit: 03/05/23</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -235,7 +237,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function obtains a configuration variable from the PostNuke
         system.</para>
@@ -246,7 +248,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -257,7 +259,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnconfiggetvar</title>
@@ -271,11 +273,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Andreas Stratmann</para>
+            <para>Autor - Andreas Stratmann</para>
           </listitem>
 
           <listitem>
-            <para>since - 03/05/19</para>
+            <para>seit - 03/05/19</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -294,7 +296,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function obtains the base URL for the site. The base url is
         defined as the full URL for the site minus any file information i.e.
@@ -305,7 +307,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -315,7 +317,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pager</title>
@@ -329,11 +331,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Mark West</para>
+            <para>Autor - Mark West</para>
           </listitem>
 
           <listitem>
-            <para>since - 08/08/2003</para>
+            <para>seit - 08/08/2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -351,7 +353,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function obtains the last status message posted for this
         session. The status message exists in one of two session variables:
@@ -374,7 +376,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -384,7 +386,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pngetstatusmsg</title>
@@ -398,11 +400,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Jörg Napp</para>
+            <para>Autor - Jörg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
 
           <listitem>
@@ -425,7 +427,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function provides an easy way to include an image. The
         function will return the full source path to the image. It will as
@@ -433,7 +435,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -469,7 +471,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnimg</title>
@@ -478,13 +480,13 @@
 
           <para>will become</para>
 
-          <programlisting>&lt;img src="modules/Example/pnimages/eng/heading.gif" alt="" width="261" height="69" /&gt;</programlisting>
+          <programlisting>&lt;img src="modules/Beispiel/pnimages/eng/heading.gif" alt="" width="261" height="69" /&gt;</programlisting>
 
           <programlisting>&lt;!--[pnimg src="heading.gif" width="100" border="1" alt="foobar" ]--&gt;</programlisting>
 
           <para>will become</para>
 
-          <programlisting>&lt;img src="modules/Example/pnimages/eng/heading.gif" width="100" border="1" alt="foobar" /&gt;</programlisting>
+          <programlisting>&lt;img src="modules/Beispiel/pnimages/eng/heading.gif" width="100" border="1" alt="foobar" /&gt;</programlisting>
         </example>
       </refsect1>
 
@@ -493,11 +495,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Jörg Napp</para>
+            <para>Autor - Jörg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 06. Oct. 2003</para>
+            <para>seit - 06. Oct. 2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -516,14 +518,14 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function takes a identifier and returns the corresponding
         language constant.</para>
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -534,12 +536,12 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnml</title>
 
-          <programlisting format="linespecific">&lt;!--[pnml name="_EXAMPLESTRING"]--&gt;</programlisting>
+          <programlisting format="linespecific">&lt;!--[pnml name="_BeispielSTRING"]--&gt;</programlisting>
         </example>
       </refsect1>
 
@@ -548,11 +550,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Mark West</para>
+            <para>Autor - Mark West</para>
           </listitem>
 
           <listitem>
-            <para>since - 08/08/2003</para>
+            <para>seit - 08/08/2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -571,7 +573,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function calls a calls a specific module API function. It
         returns whatever the return value of the resultant function is if it
@@ -580,7 +582,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -607,7 +609,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodapifunc</title>
@@ -621,15 +623,15 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Andreas Stratmann</para>
+            <para>Autor - Andreas Stratmann</para>
           </listitem>
 
           <listitem>
-            <para>author - Jörg Napp</para>
+            <para>Autor - Jörg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 03/05/23</para>
+            <para>seit - 03/05/23</para>
           </listitem>
 
           <listitem>
@@ -653,7 +655,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function calls a specific module function. It returns
         whatever the return value of the resultant function is if it succeeds.
@@ -662,7 +664,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -689,7 +691,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodfunc</title>
@@ -703,15 +705,15 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Andreas Stratmann</para>
+            <para>Autor - Andreas Stratmann</para>
           </listitem>
 
           <listitem>
-            <para>author - Jörg Napp</para>
+            <para>Autor - Jörg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 03/05/23</para>
+            <para>seit - 03/05/23</para>
           </listitem>
 
           <listitem>
@@ -734,7 +736,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function obtains a module-specific variable from the
         PostNuke system.</para>
@@ -745,7 +747,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -761,12 +763,12 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodgetvar</title>
 
-          <programlisting format="linespecific">&lt;!--[pnmodgetvar module="Example" name="foobar"|pnvarprepfordisplay]--&gt;</programlisting>
+          <programlisting format="linespecific">&lt;!--[pnmodgetvar module="Beispiel" name="foobar"|pnvarprepfordisplay]--&gt;</programlisting>
         </example>
       </refsect1>
 
@@ -775,11 +777,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Andreas Stratmann</para>
+            <para>Autor - Andreas Stratmann</para>
           </listitem>
 
           <listitem>
-            <para>since - 03/05/19</para>
+            <para>seit - 03/05/19</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -798,7 +800,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function returns a module URL string if successful. Unlike
         the API function pnModURL, this is already sanitized to display, so it
@@ -806,7 +808,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -833,7 +835,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodurl</title>
@@ -850,11 +852,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Mark West</para>
+            <para>Autor - Mark West</para>
           </listitem>
 
           <listitem>
-            <para>since - 08/08/2003</para>
+            <para>seit - 08/08/2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -873,7 +875,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>As the MGD states, all operations protected by
         pnSecAuthAction(). Ih the form, you generate a hidden field with the
@@ -887,7 +889,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -898,7 +900,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnsecgenauthkey</title>
@@ -912,11 +914,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Mark West</para>
+            <para>Autor - Mark West</para>
           </listitem>
 
           <listitem>
-            <para>since - 08/08/2003</para>
+            <para>seit - 08/08/2003</para>
           </listitem>
 
           <listitem>
@@ -940,14 +942,14 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This function returns the corresponding color define from the
         theme</para>
       </refsect1>
 
       <refsect1>
-        <title>Available parameters</title>
+        <title>Verfügbare Parameter</title>
 
         <itemizedlist>
           <listitem>
@@ -958,7 +960,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnthemegetvar</title>
@@ -972,11 +974,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Jörg Napp</para>
+            <para>Autor - Jörg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
 
           <listitem>
@@ -1002,14 +1004,14 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This modifier will run the transform hooks that are enabled for
         the corresponding module (like Autolinks, bbclick and others).</para>
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodcallhooks</title>
@@ -1023,15 +1025,15 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Joerg Napp</para>
+            <para>Autor - Joerg Napp</para>
           </listitem>
 
           <listitem>
-            <para>author - The pnCommerce team</para>
+            <para>Autor - The pnCommerce team</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -1049,7 +1051,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This modifier examines the contents of the passed variable for
         words which are deemed offensive or otherwise not allowed to be
@@ -1074,7 +1076,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnmodcallhooks</title>
@@ -1088,11 +1090,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - Joerg Napp</para>
+            <para>Autor - Joerg Napp</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -1111,7 +1113,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This modifier carries out suitable escaping of characters such
         that when output as part of an HTML page the exact string is
@@ -1124,7 +1126,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnvarprepfordisplay</title>
@@ -1138,11 +1140,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - The pnCommerce team</para>
+            <para>Autor - The pnCommerce team</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
 
           <listitem>
@@ -1166,14 +1168,14 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This modifier carries out suitable escaping of characters such
         that when inserted into a database the exact string is stored.</para>
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnvarprepforstore</title>
@@ -1187,11 +1189,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - ....</para>
+            <para>Autor - ....</para>
           </listitem>
 
           <listitem>
-            <para>since - ...</para>
+            <para>seit - ...</para>
           </listitem>
         </itemizedlist>
       </refsect1>
@@ -1210,7 +1212,7 @@
       </refnamediv>
 
       <refsect1>
-        <title>Description</title>
+        <title>Beschreibung</title>
 
         <para>This modifier carries out suitable escaping of characters such
         that when output as part of an HTML page the exact string is
@@ -1231,7 +1233,7 @@
       </refsect1>
 
       <refsect1>
-        <title>Example</title>
+        <title>Beispiel</title>
 
         <example>
           <title>pnvarprephtmldisplay</title>
@@ -1245,11 +1247,11 @@
 
         <itemizedlist>
           <listitem>
-            <para>author - The pnCommerce team</para>
+            <para>Autor - The pnCommerce team</para>
           </listitem>
 
           <listitem>
-            <para>since - 16. Sept. 2003</para>
+            <para>seit - 16. Sept. 2003</para>
           </listitem>
 
           <listitem>
