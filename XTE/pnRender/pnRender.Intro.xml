@@ -31,6 +31,18 @@
           <orgname>PostNuke</orgname>
         </affiliation>
       </author>
+
+      <author>
+        <firstname>Steffen</firstname>
+
+        <surname>Voss</surname>
+
+        <affiliation>
+          <jobtitle>German Translation</jobtitle>
+
+          <orgname><ulink url="???">post-nuke.net</ulink></orgname>
+        </affiliation>
+      </author>
     </authorgroup>
 
     <releaseinfo>$Revision$</releaseinfo>
@@ -46,67 +58,68 @@
     </keywordset>
   </chapterinfo>
 
-  <title>Introduction</title>
+  <title>Einführung</title>
 
   <section id="pnrender.intro.whatis">
-    <title>What is Smarty?</title>
+    <title>Was ist Smarty?</title>
 
-    <para>From the Smarty Documentation:</para>
+    <para>Aus der Smarty-Dokumentation:</para>
 
     <blockquote>
       <attribution><ulink
-      url="http://smarty.php.net/manual/en/what.is.smarty.php">The Smarty
-      Documentation</ulink></attribution>
+      url="http://smarty.php.net/manual/de/what.is.smarty.php">Smarty
+      Dokumentation</ulink></attribution>
 
-      <para>Smarty is a template engine for PHP.</para>
+      <para>Smarty ist eine Template-Engine für PHP. Genauer gesagt erlaubt es
+      die einfache Trennung von Applikations-Logik und Design/Ausgabe. Dies
+      ist vor allem wünschenswert, wenn der Applikationsentwickler nicht die
+      selbe Person ist wie der Designer. Nehmen wir zum Beispiel eine Webseite
+      die Zeitungsartikel ausgibt. Der Titel, die Einführung, der Author und
+      der Inhalt selbst enthalten keine Informationen darüber wie sie
+      dargestellt werden sollen. Also werden sie von der Applikation an Smarty
+      übergeben, damit der Designer in den Templates mit einer Kombination von
+      HTML- und Template-Tags die Ausgabe (Tabellen, Hintergrundfarben,
+      Schriftgrössen, Stylesheets, etc.) gestalten kann. Falls nun die
+      Applikation eines Tages angepasst werden muss, ist dies für den Designer
+      nicht von Belang, da die Inhalte immer noch genau gleich übergeben
+      werden. Genauso kann der Designer die Ausgabe der Daten beliebig
+      verändern, ohne dass eine Änderung der Applikation vorgenommen werden
+      muss. Somit können der Programmierer die Applikations-Logik und der
+      Designer die Ausgabe frei anpassen, ohne sich dabei in die Quere zu
+      kommen.</para>
 
-      <para>More specifically, it facilitates a manageable way to separate
-      application logic and content from its presentation. This is best
-      described in a situation where the application programmer and the
-      template designer play different roles, or in most cases are not the
-      same person. For example, let's say you are creating a web page that is
-      displaying a newspaper article. The article headline, tagline, author
-      and body are content elements, they contain no information about how
-      they will be presented. They are passed into Smarty by the application,
-      then the template designer edits the templates and uses a combination of
-      HTML tags and template tags to format the presentation of these elements
-      (HTML tables, background colors, font sizes, style sheets, etc.) One day
-      the programmer needs to change the way the article content is retrieved
-      (a change in application logic.) This change does not affect the
-      template designer, the content will still arrive in the template exactly
-      the same. Likewise, if the template designer wants to completely
-      redesign the templates, this requires no changes to the application
-      logic. Therefore, the programmer can make changes to the application
-      logic without the need to restructure templates, and the template
-      designer can make changes to templates without breaking application
-      logic.</para>
+      <para>Was Smarty nicht kann: Smarty versucht nicht die gesamte Logik aus
+      dem Template zu verbannen. Solange die verwendete Logik ausschließlich
+      für die Ausgabe verwendet wird, kann sie auch im Template eingebettet
+      werden. Ein Tip: versuchen Sie Applikations-Logik aus dem Template und
+      Präsentations-Logik aus der Applikation herauszuhalten. Nur so bleibt
+      die Applikation auf absehbere Zeit gut skalier- und wartbar.</para>
     </blockquote>
 
-    <para>Smarty makes it possible to seperate layout and code, which will
-    lead to better code with less bugs.</para>
+    <para>Smarty trennt also das Layout vom Code, was zu besserem Code und
+    weniger Fehlern führt.</para>
   </section>
 
   <section id="pnrender.intro.smartypn">
-    <title>Smarty Support in PostNuke</title>
+    <title>Smarty Unterstützung in PostNuke</title>
 
-    <para>The advantages of using a template engine have convinced the
-    PostNuke developers to provide access to a template engine in the core.
-    Smarty has been chosen to be this template engine. The original source of
-    the implementation of Smarty now found in PostNuke, called <emphasis
-    role="bold">pnRender</emphasis>, was originally developed for <ulink
-    url="http://www.envolution.com/">Envolution</ulink>, but has undergone a
-    complete rewrite.</para>
-
-    <para>pnRender now is a subclass of Smarty, so that developers familiar to
-    Smarty can use pnRender as they would use Smarty.</para>
+    <para>Diese überzeugenden Argumente für eine zentrale Templating Engine
+    haben das Postnuke Entwicklerteam davon überzeugt, ein solches System in
+    den Postnuke-Kern zu integrieren. Als Vorlage für die
+    Postnuke-Smarty-Implementierung diente das pnRender-System von <ulink
+    url="???">Envolution</ulink>. Inzwischen wurde der Quelltext aber komplett
+    überarbeitet und neu geschrieben. pnRender ist eine Unterklasse (Subclass)
+    von Smarty, so dass Smarty-Kenner pnRender so benutzen können wie Smarty.
+    </para>
   </section>
 
   <section id="pnrender.intro.avail">
-    <title>Availability</title>
+    <title>Verfügbarkeit</title>
 
-    <para>pnRender is available as part of the PostNuke core in PostNuke
-    .8.</para>
+    <para>pnRender ist als Teil des Systems erhältlich in PostNuke .750 bzw.
+    .8</para>
 
-    <para>pnRender is available as an add-on to PostNuke .726</para>
+    <para>pnRender ist darüberhinaus erhältlich als Add-on für PostNuke
+    .726</para>
   </section>
 </chapter>
