@@ -25,7 +25,7 @@
     nicht größer als 150x150 Pixel sein sollte. Das Bild muss in
     modules/Reviews/images gespeichert werden. Gibt es bereits Bewertungen,
     die auf eine Freischaltung warten, so erscheinen diese unten auf der
-    Seite- Der Administrator kann jede Bewertung editieren, ändern, das Datum
+    Seite. Der Administrator kann jede Bewertung editieren, ändern, das Datum
     stellen, wenn er auf 'Speichern' klickt. Drückt er auf 'Löschen', wird die
     Bewertung ohne Bestätigung gelöscht.</para>
 
@@ -100,8 +100,8 @@
 
     <para>Das eingebaute <ulink
     url="http://www.post-nuke.net/Content-PostNuke%20Handbuch-44-91-75.html">
-    Umfrage-Modul</ulink> von PostNuke weist einige Schwächen auf. Vieseitiger
-    einzusetzen ist das 'PostNuke Easy Survey Package' <ulink
+    Umfrage-Modul</ulink> von PostNuke weist einige Schwächen auf.
+    Vielseitiger einzusetzen ist das 'PostNuke Easy Survey Package' <ulink
     url="http://pnesp.sf.net">pnESP</ulink>.</para>
 
     <para>pnESP ist ein Modul zum Gestalten, Veröffentlichen und Auswerten von
@@ -114,10 +114,10 @@
     Polls lassen sich recht leicht umsetzen, da sie ja einfach nur Umfragen
     sind. Sie haben zur besseren Unterscheidung einen eigenen Typ (Poll) und
     werden dann nicht in der Umfragezentrale gepostet, da dies ja meist
-    gezielt über Blöcke erfolgt. Soll ein Poll dennoch dort augelistet werden,
-    reicht es den Typ Survey zu nehmen. Ich gebe zu, ist nicht ganz sauber und
-    sollte noch mal überarbeitet werden. Aber nichts ist perfekt, gelle? Mit
-    pnESP ist es möglich eine Lebenszeit einzustellen.</para>
+    gezielt über Blöcke erfolgt. Soll ein Poll dennoch dort aufgelistet
+    werden, reicht es den Typ Survey zu nehmen. Ich gebe zu, ist nicht ganz
+    sauber und sollte noch mal überarbeitet werden. Aber nichts ist perfekt,
+    gelle? Mit pnESP ist es möglich eine Lebenszeit einzustellen.</para>
 
     <para>Einfach Anfangsdatum, Endedatum einstellen, fertig.</para>
 
@@ -143,9 +143,9 @@
     Publisher (Veröffentlicher) und einen Lister. Beide sind sehr generisch
     und ebenfalls vollständig templated, also keine Coding notwendig. Der
     Publisher stellt eine Umfrage direkt im block dar, ähnlich dem Poll Block,
-    aber mit mehr Möglichkeiten. Der Lister listet einfach Dinge auf, sortiert
-    blabla. Er ist unsofern sehr generisch gehalten, als das die Abfragen was
-    dargestellt werden leicht extern eingestellt werden kann.</para>
+    aber mit mehr Möglichkeiten. Der Lister listet einfach Dinge auf. Er ist
+    insofern sehr generisch gehalten, als das die Abfragen was dargestellt
+    werden leicht extern eingestellt werden kann.</para>
 
     <para>Die Dokumentation ist noch recht schwach, aber daran wird
     gearbeitet. Deutsche Texte sind bereits vorhanden.</para>
@@ -212,11 +212,11 @@
 
     <para>pnphpBB2 ist eine Alternative für Communities mit einem grossen
     technischen Wissen, die viele Features benötigen - xForum wird zur Zeit
-    nicht entwickelt, ist berüchtigt für verschiedene Bugs und könnte im
+    nicht weiterentwickelt, ist berüchtigt für verschiedene Bugs und könnte im
     Zusammenhang mit PHP5 problematisch werden. Für den Umstieg von xForum auf
     phpBB2 gibt es ein Tutorial.</para>
 
-    <para>Auf grund der 100%igen Einbindung in das PostNuke Framework,
+    <para>Auf Grund der 100%igen Einbindung in das PostNuke Framework,
     empfiehlt das Team PostNuke pnForum. Wer also eine neue Site einrichtet,
     sollte gleich zu pnForum greifen.</para>
 
@@ -361,7 +361,7 @@
     <para>Die Installation ist nicht komplizierter als die jedes anderen
     Moduls, danach kann man sofort beginnen den Newsletter anzupassen. Dazu
     gibt es ein Templates-Verzeichnis in dem man sowohl den HTML- als auch den
-    Plain-Text-Newsletter anpassen optisch kann.</para>
+    Plain-Text-Newsletter optisch anpassen kann.</para>
 
     <para>Alle Inhalte werden automatisch aus der Datenbank erzeugt. Dafür
     gibt es Plugins für eine ganze Reihe beliebter Module (News, PostCalendar,

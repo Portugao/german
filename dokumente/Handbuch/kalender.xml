@@ -20,11 +20,11 @@
     nötigen Einstellungen werden über die Zugriffsrechte vorgenommen.</para>
 
     <para>PostCalendar wurde bis Sommer 2003 von Mahmood Al-Youssif und Roger
-    Raymond entwickelt, dann aber aufgegeben und vorerst vom PostNuke CoreTeam
-    adoptiert worden. Bisher kümmern sich Michael Halbrook, Mark West und
-    Andreas Krapohl (Larsneo) aber hauptsächlich um Security Updates und die
-    Anpassung an pnRender. Wer sich für die Arbeit an diesem wichtigen Modul
-    interessiert, kann sich an das Team wenden.</para>
+    Raymond entwickelt, dann aber aufgegeben und ist vorerst vom PostNuke
+    CoreTeam adoptiert worden. Bisher kümmern sich Michael Halbrook, Mark West
+    und Andreas Krapohl (Larsneo) aber hauptsächlich um Security Updates und
+    die Anpassung an pnRender. Wer sich für die Arbeit an diesem wichtigen
+    Modul interessiert, kann sich an das Team wenden.</para>
 
     <para>Mit dem Zusatzmodul iCal lässt sich der PostCalendar um die Funktion
     erweitern, dass per Klick Termine automatisch in lokale Kalender-Clients
