@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Installation" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Erste Schritte</title>
+
+  <para>Dieser Text wurde und freunlicherweise von <ulink
+  url="http://www.andylanger.de">Andy Langer</ulink> zur Verfügung
+  gestellt.</para>
+
+  <para>Die Installation ist erfolgreich verlaufen und wir stehen vor der
+  fertig funktionierenden Seite. Klasse! Aber, bevor wir jetzt loslegen müssen
+  wir noch etwas warten. Es soll ja schließlich so einfach wie möglich sein,
+  und deswegen muss das deutsche Sprachpaket installiert werden.</para>
+
+  <section remap="h2">
+    <title>Grundlegendes zur Sprache</title>
+
+    <para>PostNuke ist von Hause aus in der Lage, mehrsprachig zu
+    funktionieren. Man kann also die Seite mehrsprachig zu betreiben und dem
+    User die Möglichkeit geben, aus den verfügbaren Sprachen seine zu
+    wählen.</para>
+
+    <para>Oder, man hat eine einsprachige Seite - wie ich, da die Zeit, in
+    mehreren Sprachen Artikel zu veröffentlichen fehlt. Dann kann man durch
+    aufspielen des entsprechenden Sprachpaketes seine eigene Sprache
+    wählen.</para>
+
+    <para>Technisch funktioniert das ähnlich wie das Wörterbuch in Word.
+    PostNuke ist universell programmiert und wird durch den Einsatz des
+    entsprechenden Wörterbuchs auf die jeweilige Sprache eingestellt.</para>
+
+    <para>Um das jetzt auf unserer Seite zu machen brauchen wir erstmal die
+    Sprachdatei, am besten wieder von <ulink
+    url="http://www.postnuke.com/">www.postnuke.com</ulink> oder von <ulink
+    url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach das
+    gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles, was
+    sich unter <emphasis role="bold">/html/</emphasis> befindet per FTP auf
+    den Server spielen. Dabei fällt Dir vermutlich auf, dass zu jedem Modul
+    ein Ordner "lang" oder "pnlang" existiert, in den dann ein Ordner namens
+    <emphasis role="bold">"deu"</emphasis> kopiert wird. Darin befinden sich
+    dann die entsprechenden Sprachdateien.</para>
+
+    <para>Wenn alles hochkopiert ist, kannst Du Deine Seite aufmachen und hast
+    dann links unten <emphasis role="bold">"Language"</emphasis>. Dort wählst
+    Du <emphasis role="bold">"German"</emphasis> aus und schon erscheint die
+    Seite auf deutsch. Selbstverständlich nur die Menüs, die existierenden
+    Texte bleiben auf Englisch.</para>
+  </section>
+
+  <section remap="h2">
+    <title>Installations-Ordner entfernen</title>
+
+    <para>Wenn Du jetzt nicht zu schnell warst, hast Du Dein FTP-Programm noch
+    auf. Das brauchst Du noch, denn wie Dir sicher auffällt steht als Reminder
+    auf der Seite, dass Du die <emphasis role="bold">install.php</emphasis>
+    und den <emphasis role="bold">install-Ordner</emphasis> aus
+    Sicherheitsgründen löschen sollst, also bietet es sich an, das jetzt zu
+    tun.</para>
+  </section>
+
+  <section remap="h2">
+    <title>Einloggen</title>
+
+    <para>Jetzt sind wir endlich soweit, uns das erste Mal auf der eigenen
+    Seite einzuloggen. Das geht auf der rechten Seite mit dem vorher
+    festgelegten Nutzernamen und Passwort für den Administrator.</para>
+
+    <para>Bin ich da schon drin? Ja. So einfach geht das. Die Seite ist
+    natürlich noch ziemlich nakt, aber immerhin.</para>
+
+    <para>Wie Dir sicher aufgefallen ist, hat sich das Menü links verändert,
+    es kamen ein paar Punkte hinzu:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>My Account</para>
+      </listitem>
+
+      <listitem>
+        <para>Administration</para>
+      </listitem>
+
+      <listitem>
+        <para>Logout</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Mit denen werden wir uns jetzt etwas näher befassen.</para>
+
+    <bridgehead>Logout</bridgehead>
+
+    <para>Fangen wir zur Abwechslung mal von unten an. Denn der ist eigentlich
+    selbsterklärend und am schnellsten erklärt. Damit meldest Du dich von der
+    Seite wieder ab.</para>
+
+    <bridgehead>My Account</bridgehead>
+
+    <para>Darüber kannst Du einige Dinge einstellen, die das Aussehen der
+    Seite betreffen. Außerdem kannst Du ein eigenes Profil von Dir anlegen,
+    das andere Nutzer der Seite dann aufrufen können. Alles, was Du hier
+    einstellst, betreffen nur Deinen aktuellen Nutzernamen, haben also für
+    alle anderen User keine Auswirkungen.</para>
+
+    <para>Ich denke, am einfachsten ist es, wenn Du dir in Ruhe alle Punkte
+    mal durchschaust. Sollte Dir etwas unklar sein, läßt Du am besten die
+    Standardeinstellung, aber eigentlich kannst Du hier nix kaputt
+    machen.</para>
+
+    <bridgehead>Administration</bridgehead>
+
+    <para>Der wichtigste Punkt. Denn über die Administration kannst Du alles
+    einstellen, was das Aussehen und die Funktionsweise der Seite betrifft. Da
+    das aufgrund des Funktionsreichtums von PostNuke natürlich etwas
+    umfangreicher ist, gehe ich jetzt hier nur auf die - in meinen Augen -
+    wichtigsten ersten Schritte ein, alles weitere kommt dann in ein extra
+    Kapitel.</para>
+
+    <para>Um die Seite funktionsfähig zu machen, muss erstmal der <emphasis
+    role="bold">Reminder</emphasis> weg, da wir die darin empfohlene Aktion ja
+    eh gemacht haben.</para>
+
+    <bridgehead></bridgehead>
+
+    <section remap="h3">
+      <title>Reminder Block löschen</title>
+
+      <para>Der Text befindet sich in einem Block. Den Unterschied zwischen
+      Block und Modul erkläre ich dann später im Tutorial, genauso wie die
+      verschiedenen Möglichkeiten, Informationen auf die Seite zu stellen. Um
+      den Block zu löschen gehst Du wie folgt vor:</para>
+
+      <para><emphasis role="bold">Administration anklicken.</emphasis> Jetzt
+      öffnet sich das Administrationsmenü mit allen möglichen Komponenten, die
+      bearbeitet werden können. Da gibt's ganz schön viel, was wir brauchen
+      ist <emphasis role="bold">"Blöcke"</emphasis>.</para>
+
+      <para><emphasis role="bold">Blöcke anklicken.</emphasis> Wieder kommt
+      eine auf den ersten Blick unübersichtliche Tabelle. Darin findest Du
+      alle Komponenten, die derzeit auf Deiner Seite dargestellt werden, mit
+      ihrer Position (links, mitte oder rechts) und in der Reihenfolge, in der
+      sie - von oben nach unten - auf der Seite erscheinen.</para>
+
+      <para>Gleich die zweite Zeile trägt den Title <emphasis
+      role="bold">Reminder</emphasis>. Ganz rechts auf der Zeile klickst Du
+      auf <emphasis role="bold">"löschen"</emphasis>. Die folgende Seite fragt
+      nochmal nach einer <emphasis role="bold">Bestätigung</emphasis> und weg
+      ist der Block. Wie Du links siehst, ist das Menü nach oben
+      gerückt.</para>
+    </section>
+
+    <section remap="h3">
+      <title>"Welcome to PostNuke"-Text löschen</title>
+
+      <para>Jetzt steht uns noch die Willkommensnachricht im Weg. Diese ist
+      kein Block, sondern eine sog. <emphasis role="bold">Admin
+      Message</emphasis>. Wie bereits oben erwähnt gibt es verschiedene
+      Möglichkeiten, Text auf die Seite zu bekommen, unter anderem eben diese.
+      Eine Beschreibung dazu kommt dann im Kapitel
+      <emphasis>Content</emphasis>.</para>
+
+      <para>Um diesen Text erstmal loszuwerden, gehst Du wieder auf <emphasis
+      role="bold">Administration</emphasis>, dann auf <emphasis
+      role="bold">Admin Messages</emphasis>. Hier kommt jetzt eine Liste mit
+      allen aktiven Nachrichten des Administrators und darunter die
+      Möglichkeit, eigene zu schreiben.</para>
+
+      <para>Jetzt gehst Du bei der <emphasis role="bold">"Welcome to
+      PostNuke"</emphasis>-Zeile auf <emphasis role="bold">löschen</emphasis>,
+      bestätigst das noch und wech ist sie.</para>
+    </section>
+
+    <section remap="h3">
+      <title>Eigene Willkommens-Nachricht</title>
+
+      <para>Weil wir gerade dabei sind, kannst Du gleich noch einen eigenen
+      Willkommens-Text schreiben. Dazu gibst Du im Formular unten einen Titel
+      und eine Nachricht ein, z. B.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Titel:</emphasis> Willkommen</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Nachricht:</emphasis> Toll dass Du da
+          bist, ich bin ja so glücklich!</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Sprache:</emphasis> Deutsch</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Aktiv:</emphasis> ja</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Wer soll die Nachricht sehen:</emphasis>
+          alle Besucher</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Fertig. Wenn Du jetzt auf <emphasis role="bold">Home</emphasis>
+      gehst hast Du eine grundsätzlich einsatzbereite PostNuke-Seite. Alles
+      Weitere ein den nächsten Teilen dieses Tutorials.</para>
+    </section>
+
+    <section>
+      <title>Grundkonfiguration</title>
+
+      <para>Nach erfolgreicher Anmeldung wird im Hauptmenü ein zusätzlicher
+      Link <guimenu>Administration</guimenu> angezeigt, über den man in den
+      Adminbereich gelangt.</para>
+
+      <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw)
+      werden bei Postnuke an zentraler Stelle eingestellt. Diese Daten sind im
+      Punkt <guimenu>Einstellungen</guimenu> zusammengefasst:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Name</term>
+
+          <listitem>
+            <para>Name der Website</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Logo</term>
+
+          <listitem>
+            <para>Name einer Bilddatei in <filename>/images</filename> das
+            <emphasis>für die Druckansicht</emphasis> verwendet wird (das
+            'normale' Seitenlogo wird in aller Regel im Theme
+            definiert)</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Slogan</term>
+
+          <listitem>
+            <para>Slogan, der im Seitentitel und in einigen Themes angezeigt
+            wird</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Meta Keywords</term>
+
+          <listitem>
+            <para>Für Suchmaschinen wie Google, Fireball etc. können hier
+            sogenannte Meta Keywords angegeben werden</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>MetaKeywords dynamisch erzeugen</term>
+
+          <listitem>
+            <para>Keywords werden dynamisch aus dem Seiteninhalt erzeugt,
+            führt allerdings zu einem Performance-Verlust da die Seite an
+            Umfang zunehmen.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Startdatum</term>
+
+          <listitem>
+            <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf
+            der Statistikseite angezeigt</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Administrator E-Mail</term>
+
+          <listitem>
+            <para>Kontaktadresse für alles Admin-Mail des Systems</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Standard-Theme der Seite</term>
+
+          <listitem>
+            <para>Auswahl des Themes, mit dem unregistrierte Benutzer die
+            Website angezeigt bekommen</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Dürfen Benutzer Theme individuell einstellen?</term>
+
+          <listitem>
+            <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
+            Theme einstellen können</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>rechte Blöcke in Beiträgen anzeigen?</term>
+
+          <listitem>
+            <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
+            Theme einstellen können</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>lokales Zeitformat (de_DE)</term>
+
+          <listitem>
+            <para>Einstellung des Zeitformates, für Deutschland sollte 'de_DE'
+            korrekt sein</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Zeitzone (GMT+1)</term>
+
+          <listitem>
+            <para>Einstellung der Zeitzone, Deutschland ist in GMT+1</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Startseite</term>
+
+          <listitem>
+            <para>Angabe des Moduls mit dem PostNuke startet, in aller Regel
+            'News'</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Artikel im Adminmenü</term>
+
+          <listitem>
+            <para>Anzahl der angezeigten Artikel auf der
+            Administrationsseite</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Beiträge auf der Startseite</term>
+
+          <listitem>
+            <para>Anzahl der Artikel auf der Homepage</para>
+
+            <para>Die Anzahl der angezeigten News wird von zwei Faktoren
+            beeinflusst - die Einstellung in der Administration und die
+            Einstellung in der persönlichen Seite
+            (<systemitem>user.php?op=edithome</systemitem>).</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Reihenfolge der News</term>
+
+          <listitem>
+            <para>Auswahl, ob die Beiträge nach ihrer ID oder nach Datum
+            sortiert werden sollen</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Icons im Adminmenü?</term>
+
+          <listitem>
+            <para>Die Links im Adminbereich könnten entweder als Text oder als
+            Icons angezeigt werden</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Fehlermeldungen via E-Mail senden</term>
+
+          <listitem>
+            <para>Hier kann eingestellt werden, ob bei fehlenden Seiten
+            'keine' Meldung, eine Meldung 'von Zugriffen innerhalb der Domain'
+            oder aber eine 'generell' Meldung an den Administrator geschickt
+            werden soll</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Fehlermeldungen mit error.php erzeugen</term>
+
+          <listitem>
+            <para>bei einem Apache Webserver können Fehlermeldungen
+            individuell erzeugt werden, anstelle der Servermeldung erscheinen
+            dann 'lustige' Fehlermeldungen. Zusätzlich zur Aktivierung muss
+            dazu auch eine <filename>.htaccess</filename>-Datei im root der
+            Installation abgelegt werden:</para>
+
+            <programlisting>ErrorDocument 404 http://www.deineseite.de/error.php?op=404</programlisting>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Zensur aktivieren</term>
+
+          <listitem>
+            <para>Auswahl, ob die automatische Zensur bestimmter Wort
+            angewendet werden soll (derzeit sind die 'bösen Begriffe'
+            allerdings nur in der module_vars-Tabelle definierbar)</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>WYSIWIG-Editor benutzen</term>
+
+          <listitem>
+            <para>Auswahl ob der graphische Editor automatisch in alle
+            Textareas angewendet werden soll</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>pnAntiCracker</term>
+
+          <listitem>
+            <para>Bestimmt, ob bei bestimmten 'Hacking'-Versuchen automatisch
+            eine Mail an den Admin gesendet wird. <emphasis
+            role="bold">dringend empfohlen!</emphasis></para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Standardgruppe für Benutzer</term>
+
+          <listitem>
+            <para>Registrierte Benutzer werden automatisch einer bestimmten
+            Gruppe zugeordnet. Die Standardeinstellung <systemitem
+            class="groupname">Users</systemitem> sollte nicht geändert
+            werden</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Sprache der Website</term>
+
+          <listitem>
+            <para>unregistrierte Benutzer sehen die Website in der
+            eingestellten Sprache. Wenn Multilangual-Unterstützung aktiviert
+            ist, kann die Sprache darüberhinaus individuell eingestellt
+            werden</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Kompression aktivieren</term>
+
+          <listitem>
+            <para>aktiviert die <systemitem
+            class="library">gzip</systemitem>-Kompression der Seiten</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Fuss-Zeile</term>
+
+          <listitem>
+            <para>Die Fuss-Zeile wird unter jeder Postnuke-Seite dargestellt
+            und kann individuell angepasst werden. Die Standard-Daten müssen
+            <emphasis role="bold">nicht</emphasis> beibehalten werden (HTML
+            erlaubt)</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Backend Titel</term>
+
+          <listitem>
+            <para>Postnuke erzeugt automatisch eine Datei, die es anderen
+            Websites ermöglicht, Inhalte zu 'grabben' - hier wird der Titel
+            der Datei angegeben</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Backend Sprache</term>
+
+          <listitem>
+            <para>Angabe der Sprache der Backend-Informationen</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Sicherheitslevel</term>
+
+          <listitem>
+            <para>Einstellung zur Speicherung der Benutzeranmeldung in einem
+            Cookie gespeichert (hoch: kein Cookie, mittel: Cookie verfällt
+            nach xx Tagen, niedrig: Cookie verfällt nie)</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Tagesanzahl der Dauer bei mittlerer Sicherheit</term>
+
+          <listitem>
+            <para>Angabe der Tage bis ein Cookie verfällt (nur bei mittlerer
+            Sicherheitsstufe)</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Benutzer werden nach folgender Zeit inaktiv (10)</term>
+
+          <listitem>
+            <para>Angabe der Zeitspanne bis ein inaktiver Benutzer abgemeldet
+            wird. Optimaler Wert: 10 min</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Intranet</term>
+
+          <listitem>
+            <para>Postnuke ist darauf ausgerichtet in einer 'fully qualified
+            domain' Umgebung, d.h. als normale Domain (und nicht z.b. als
+            <systemitem class="systemname">localhost</systemitem>) zu laufen.
+            Bei Angabe von 'Ja' werden einige Sicherheitseinstellungen von
+            Postnuke ausser Kraft gesetzt. Dies ist nicht empfohlen!</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>in Beiträgen erlaubte HTML-Tags</term>
+
+          <listitem>
+            <para>Angabe, ob und wenn ja welche HTML-Tags in Beiträgen erlaubt
+            sein sollen: nicht erlaubt, erlaubt, erlaubt mit Parametern (z.b.
+            <markup>&lt;FONT TYPE='ARIAL' COLOR='#FFFFFF'&gt;</markup>) Dabei
+            ist klar, daß gewisse Tags <emphasis role="bold">ohne</emphasis>
+            Parameter gar keinen Sinn machen. Hyperlinks (
+            <markup>&lt;a&gt;</markup> ) zum Beispiel haben immer mindenstens
+            den Parameter mit der Hyperlink Referenz
+            (<markup>href='index.php'</markup>) <emphasis role="bold">Wichtig:
+            Parameter nur freigeben, wenn unbedingt
+            erforderlich!</emphasis></para>
+
+            <tip>
+              <title>Freigabe von HTML mit/ohne Parametern</title>
+
+              <para>Viele mögen sich wundern, was es in der Administration -
+              Einstellungen im Bereich erlaubt HTML-Tags mit der
+              Unterscheidung 'mit' und 'ohne' Parametern auf sich hat. Am
+              Beispiel eines XSS Exploits kann man das recht einfach
+              darlegen:</para>
+
+              <para>Folgender Programmcode hat mit/ohne Parameter ziemlich
+              unterschiedliche Auswirkungen:</para>
+
+              <para><literal><userinput>&lt;b
+              onMouseOver="alert(document.location);"&gt;Dieser Text ist beim
+              Überfahren mit der Maus
+              gefährlich&lt;/b&gt;</userinput></literal></para>
+
+              <para><literal><userinput>&lt;i
+              onClick="alert(document.location);"&gt;Dieser Text ist beim
+              Klicken&lt;/i&gt;</userinput></literal></para>
+
+              <para>Also: Aufpassen bei der Freigabe von Tags!</para>
+            </tip>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Eingebette HTML-Entitäten in normale Zeichen wandeln</term>
+
+          <listitem>
+            <para>Solange keine multi-byte Unterstützung benötigt wird, sollte
+            diese Option auf 'nein' stehen</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
+  </section>
+</chapter>
