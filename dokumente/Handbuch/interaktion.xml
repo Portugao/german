@@ -137,101 +137,34 @@
   </section>
 
   <section id="pnESP">
-    <title>pnESP<indexterm>
-        <primary>pnESP</primary>
+    <title>Advanvced Polls<indexterm>
+        <primary>Advanced Polls</primary>
       </indexterm></title>
 
     <para>Das eingebaute <link linkend="polls">Umfrage-Modul</link> von
-    PostNuke weist einige Schwächen auf. Vielseitiger einzusetzen ist das
-    'PostNuke Easy Survey Package' <ulink
-    url="http://pnesp.sf.net">pnESP</ulink>.</para>
-
-    <para>pnESP ist ein Modul zum Gestalten, Veröffentlichen und Auswerten von
-    Umfragen. Das Gestalten erfolgt online, ist einfach zu bedienen und
-    äusserst flexibel. Es lässt eigentlich alles realisieren was das Herz
-    begehrt. Es ist ursprünglich enstanden aus <ulink
-    url="http://phpesp.sf.net">phpESP</ulink>, bietet allerdings mittlerweile
-    mehr Gestaltungsmöglichkeiten. Wir arbeiten an Erweiterungen für echte
-    Quizzes und Wettbewerbe, da es gut im E-Learning eingesetzt werden kann.
-    Polls lassen sich recht leicht umsetzen, da sie ja einfach nur Umfragen
-    sind. Sie haben zur besseren Unterscheidung einen eigenen Typ (Poll) und
-    werden dann nicht in der Umfragezentrale gepostet, da dies ja meist
-    gezielt über Blöcke erfolgt. Soll ein Poll dennoch dort aufgelistet
-    werden, reicht es den Typ Survey zu nehmen. Ich gebe zu, ist nicht ganz
-    sauber und sollte noch mal überarbeitet werden. Aber nichts ist perfekt,
-    gelle? Mit pnESP ist es möglich eine Lebenszeit einzustellen.</para>
-
-    <para>Einfach Anfangsdatum, Endedatum einstellen, fertig.</para>
-
-    <para>Das Modul wird pnAPI konform entwickelt. Das heisst, index.php hat
-    nur noch für das Setzen der Startseite eine Bedeutung. Der Rest befindet
-    sich in den pn*.php Dateien und unter includes/admin/*.</para>
-
-    <para>Das Anpassen geschieht grundsätzlich nicht in den PHP Dateien, da
-    die Darstellung über sogenannte Smarty templates realisiert wird. Dies
-    sind 'normale' HTML Dateien und enthalten keinen Code, lediglich einige
-    Smarty Variablen und andere Smarty spezifische Dinge. Schau mal rein. Die
-    Templates befinden sich alle unter pntemplates. Die Central ist unter
-    pntemplates/central und ist hierarchisch aufgebaut um flexibel zu bleiben.
-    Die templates für blocks, insbesondere dem Poll block, befinden sich unter
-    pntemplates/blocks.</para>
-
-    <para>Andere grafische Details (font, farbe etc.) werden über sogenannte
-    CSS-Style eingestellt. Diese befinden sich unter pnesp/styles. Struktur
-    ähnlich pntemplates.</para>
-
-    <para>Einen Block zur Auflistung von Umfragen ist noch nicht
-    veröffentlicht. Aber soviel vorab. Es wird zwei Blöcke geben: einen
-    Publisher (Veröffentlicher) und einen Lister. Beide sind sehr generisch
-    und ebenfalls vollständig templated, also keine Coding notwendig. Der
-    Publisher stellt eine Umfrage direkt im block dar, ähnlich dem Poll Block,
-    aber mit mehr Möglichkeiten. Der Lister listet einfach Dinge auf. Er ist
-    insofern sehr generisch gehalten, als das die Abfragen was dargestellt
-    werden leicht extern eingestellt werden kann.</para>
-
-    <para>Die Dokumentation ist noch recht schwach, aber daran wird
-    gearbeitet. Deutsche Texte sind bereits vorhanden.</para>
-
-    <para>Was kommt demnächst:</para>
+    PostNuke weist einige Schwächen auf. Vielseitiger einzusetzen ist <ulink
+    url="http://markwest.me.uk/">Advanced Polls</ulink> von Mark West. Es
+    bietet u.a. die folgenden Möglichkeiten:</para>
 
     <itemizedlist>
       <listitem>
-        <para>vollständige Unterstützung des PostNuke User Systems</para>
+        <para>Ein- oder mehrfache Abstimmmöglichkeiten</para>
       </listitem>
 
       <listitem>
-        <para>Quizzes, Examen</para>
+        <para>Einschränkungen basierend auf Benutzernamen oder
+        IP-Adresse</para>
       </listitem>
 
       <listitem>
-        <para>Viele Features für den Betrieb im Lern-Umfeld</para>
-      </listitem>
-
-      <listitem>
-        <para>bessere Sprachunterstützung</para>
-      </listitem>
-
-      <listitem>
-        <para>Dokumentation (Benutzer und Entwickler)</para>
-      </listitem>
-
-      <listitem>
-        <para>Wiederkehrende Ereignisse</para>
-      </listitem>
-
-      <listitem>
-        <para>Verknüpfung mit PostCalendar</para>
-      </listitem>
-
-      <listitem>
-        <para>und und und ...</para>
+        <para>Zeitlich beschränke Abstimmungen</para>
       </listitem>
     </itemizedlist>
 
-    <para>Auf der <ulink url="http://pnesp.sf.net">Projekt-Homepage</ulink>
-    gibt es ein Forum, in dem man Wünsche äussern kann, die meistens schnell
-    umgesetzt werden, sofern möglich. Weiterhin steht eine Demo des Moduls zur
-    Verfügung.</para>
+    <para>Advanced Polls kommt mit entsprechenden Blöcken, ist vollständig
+    API-konform und in das PostNuke-Berechtigungssystem integriert. Auf der
+    angegebenen Seite findet man auch die deutsche Sprachdatei für das Modul.
+    </para>
   </section>
 
   <section id="pnforum">
