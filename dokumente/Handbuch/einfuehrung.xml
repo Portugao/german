@@ -15,13 +15,18 @@
   <section id="wasistpostnuke">
     <title>Was ist PostNuke?</title>
 
-    <para>PostNuke ist ein Content Management System (<acronym>CMS</acronym>).
-    Das bedeutet, dass PostNuke Inhalte von Design und Technik trennt. Die
-    Inhalte einer Internetpräsenz können via Browser verwaltet werden. Es gibt
-    zum Beispiel die Möglichkeit Artikel, Links, Downloads, FAQs,
-    Bildergalerien, Foren etc. einzubinden. Durch die klare Gliederung in
-    Form, Funktion, Inhalt und Gestaltung hilft PostNuke die Kosten einer
-    Website zu reduzieren.</para>
+    <para>PostNuke ist ein Content Management System<indexterm>
+        <primary>Content Management System</primary>
+      </indexterm> (<acronym>CMS</acronym><indexterm>
+        <primary>CMS</primary>
+
+        <see>Content Management System</see>
+      </indexterm>). Das bedeutet, dass PostNuke Inhalte von Design und
+    Technik trennt. Die Inhalte einer Internetpräsenz können via Browser
+    verwaltet werden. Es gibt zum Beispiel die Möglichkeit Artikel, Links,
+    Downloads, FAQs, Bildergalerien, Foren etc. einzubinden. Durch die klare
+    Gliederung in Form, Funktion, Inhalt und Gestaltung hilft PostNuke die
+    Kosten einer Website zu reduzieren.</para>
 
     <para>PostNuke ist modular aufgebaut - es gibt wichtige Funktionen, die
     vom so genannten Core angeboten und von den zusätzlichen Modulen genutzt
@@ -42,13 +47,14 @@
     <bridgehead>Funktionsumfang mit Modulen erweitern</bridgehead>
 
     <para>Der Funktionsumfang einer PostNuke-Site lässt sich über die
-    Einbindung von Erweiterungen, den <emphasis>Modulen</emphasis> beliebig
-    festlegen. In der Basisinstallation sind schon eine Reihe Module
-    enthalten, deren Entwicklung noch aus PHPNuke-Zeiten übernommen und
-    mittlerweile dem PostNuke-System angepasst wurden. Dazu gehört vor allem
-    das Newssystem, die Weblinks, das Download-Modul usw. Diese Module zu
-    benutzen ist allerdings nicht Pflicht - bereits jetzt gibt es eine große
-    Anzahl an <ulink
+    Einbindung von Erweiterungen, den <emphasis>Modulen</emphasis><indexterm>
+        <primary>Module</primary>
+      </indexterm> beliebig festlegen. In der Basisinstallation sind schon
+    eine Reihe Module enthalten, deren Entwicklung noch aus PHPNuke-Zeiten
+    übernommen und mittlerweile dem PostNuke-System angepasst wurden. Dazu
+    gehört vor allem das Newssystem, die Weblinks, das Download-Modul usw.
+    Diese Module zu benutzen ist allerdings nicht Pflicht - bereits jetzt gibt
+    es eine große Anzahl an <ulink
     url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-2.html">Modulen
     von Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
     über die Verwaltung von Bildersammlungen bis hin zu ganzen Webshops
@@ -64,29 +70,40 @@
     <bridgehead>Permissions steuern die Zugriffsrechte der User</bridgehead>
 
     <para>PostNuke bietet ein System von <emphasis
-    role="bold">Zugriffsrechten</emphasis>, das es ermöglicht, Anwendern oder
-    Usergruppen gezielt Zugriffsrecht zu geben oder zu entziehen. Diese Rechte
-    werden in der Adminstration online verwaltet.</para>
+    role="bold">Zugriffsrechten</emphasis><indexterm>
+        <primary>Zugriffsrechte</primary>
+      </indexterm><indexterm>
+        <primary>Permissions</primary>
+
+        <see>Zugriffsrechte</see>
+      </indexterm>, das es ermöglicht, Anwendern oder Usergruppen gezielt
+    Zugriffsrecht zu geben oder zu entziehen. Diese Rechte werden in der
+    Adminstration online verwaltet.</para>
 
     <bridgehead>Webseiten internationalisieren durch beliebig viele
     Sprachpakete</bridgehead>
 
-    <para>Um verschiedene Zielgruppen ansprechen zu können bietet PostNuke die
-    Möglichkeit, die Website mehrsprachig zu betreiben. Über einfache
-    Sprachpakete, werden alle Ausgaben des Systems oder der Module in vielen
-    verschiedenen <emphasis role="bold">Sprachen</emphasis> parallel
+    <para><indexterm>
+        <primary>Sprachen</primary>
+      </indexterm>Um verschiedene Zielgruppen ansprechen zu können bietet
+    PostNuke die Möglichkeit, die Website mehrsprachig zu betreiben. Über
+    einfache Sprachpakete, werden alle Ausgaben des Systems oder der Module in
+    vielen verschiedenen <emphasis role="bold">Sprachen</emphasis> parallel
     möglich.</para>
 
     <bridgehead>Themes - Layout getrennt von den Inhalten</bridgehead>
 
-    <para>Über dieses Basissystem wird zum Beispiel das Layout gesteuert. Das
-    äußere Erscheinungsbild kann bequem verändert werden, ohne dass jede
-    einzelne Seite neu angefasst werden muss. Zum Lieferumfang von PostNuke
-    gehören dazu mehrere <emphasis role="bold">Themes</emphasis>. Diese dienen
-    in erster Linie zum Testen dieser Funktionalität. Außerdem kann man anhand
-    dieser Beispiele auch für das Erstellen eigener Layouts die Systematik
-    abgucken. Um einer Seite ein eigenes Gesicht zu geben, wird man um die
-    Erstellung eines eigenen Themes nicht umhin kommen. Es gibt <ulink
+    <para><indexterm>
+        <primary>Themes</primary>
+      </indexterm>Über dieses Basissystem wird zum Beispiel das Layout
+    gesteuert. Das äußere Erscheinungsbild kann bequem verändert werden, ohne
+    dass jede einzelne Seite neu angefasst werden muss. Zum Lieferumfang von
+    PostNuke gehören dazu mehrere <emphasis role="bold">Themes</emphasis>.
+    Diese dienen in erster Linie zum Testen dieser Funktionalität. Außerdem
+    kann man anhand dieser Beispiele auch für das Erstellen eigener Layouts
+    die Systematik abgucken. Um einer Seite ein eigenes Gesicht zu geben, wird
+    man um die Erstellung eines eigenen Themes nicht umhin kommen. Es gibt
+    <ulink
     url="http://www.post-nuke.net/Web_Links+index-req-viewlink-cid-3.html">mehrere
     Seiten</ulink>, von denen man Themes (unterschiedlichster Qualität)
     herunterladen kann. Das Standard-Layout kann in der Administration
@@ -111,10 +128,12 @@
 
     <bridgehead>Wie sicher ist PostNuke?</bridgehead>
 
-    <para>Bei der Entwicklung von PostNuke wird verstärkt darauf geachtet,
-    einen sicheren und stabilen Kern zu erreichen. Es gibt allerdings einige
-    Dinge, die jeder Webmaster beachten sollte, um eine optimale Sicherheit zu
-    erreichen: <itemizedlist>
+    <para><indexterm>
+        <primary>Sicherheit</primary>
+      </indexterm>Bei der Entwicklung von PostNuke wird verstärkt darauf
+    geachtet, einen sicheren und stabilen Kern zu erreichen. Es gibt
+    allerdings einige Dinge, die jeder Webmaster beachten sollte, um eine
+    optimale Sicherheit zu erreichen: <itemizedlist>
         <listitem>
           <para><emphasis role="bold">Stets auf die aktuellste Version von
           PostNuke updaten!</emphasis> Auch wenn viele ihre Installationen
@@ -208,9 +227,17 @@
   <section id="opensource">
     <title>Open Source und Open Development</title>
 
-    <para>PostNuke ist ein frei verfügbares System, veröffentlicht unter der
-    GNU General Public License (GPL). Es darf von jedem kostenfrei eingesetzt
-    werden, gleich ob privat oder kommerziell, ob große Firma oder kleiner
+    <para><indexterm>
+        <primary>Open Source</primary>
+      </indexterm>PostNuke ist ein frei verfügbares System, veröffentlicht
+    unter der GNU General Public License<indexterm>
+        <primary>GNU General Public License</primary>
+      </indexterm> (<acronym>GPL<indexterm>
+        <primary>GPL</primary>
+
+        <see>GNU General Public License</see>
+      </indexterm></acronym>). Es darf von jedem kostenfrei eingesetzt werden,
+    gleich ob privat oder kommerziell, ob große Firma oder kleiner
     Verein.</para>
 
     <para>Die Grundidee hinter Open Source ist einfach: <emphasis>Wenn jeder
