@@ -42,6 +42,12 @@
     Möglichkeit, ältere Artikel über die jeweilige ID direkt zu ändern bzw. zu
     löschen. Sind Umfragen aktiv, werden diese am Ende der Seite
     angezeigt.</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="AdminMenu.gif" format="GIF" />
+      </imageobject>
+    </mediaobject>
   </section>
 
   <section>
