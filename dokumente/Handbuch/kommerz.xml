@@ -32,6 +32,18 @@
       Programm, die Anzeige erfolgt innerhalb von PostNuke.</para>
     </tip>
 
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata align="center" fileref="bannerconfig.gif" format="GIF" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Die Banner-Konfiguration</phrase>
+        </textobject>
+      </mediaobject>
+    </screenshot>
+
     <para>Um einen Banner auf seiner Website zu platzieren, muss man zunächst
     einmal einen <emphasis role="bold">Kunden</emphasis> anlegen, den man dann
     mit dem Banner verknüpft. Hierzu trägt man in die freien Felder dieses
