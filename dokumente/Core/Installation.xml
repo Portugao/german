@@ -369,7 +369,7 @@ phpinfo()
             das ganze, und gehst mit dem Browser auf folgende URL:
             <filename>http://localhost/phpMyAdmin/index.php</filename>
             Solltest du jetzt etwas buntes sehen, dann waren deine Bemühungen
-            erfolgreich. </para>
+            erfolgreich.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -740,7 +740,7 @@ phpinfo()
     <section>
       <title>Grundkonfiguration</title>
 
-      <para>Nach erfolgreicher Anmeldung wird im Main Menu ein zusätzlicher
+      <para>Nach erfolgreicher Anmeldung wird im Hauptmenü ein zusätzlicher
       Link <guimenu>Administration</guimenu> angezeigt, über den man in den
       Adminbereich gelangt.</para>
 
@@ -876,7 +876,7 @@ phpinfo()
         </varlistentry>
 
         <varlistentry>
-          <term>Beiträge auf der</term>
+          <term>Beiträge auf der Startseite</term>
 
           <listitem>
             <para>Anzahl der Artikel auf der Homepage</para>
