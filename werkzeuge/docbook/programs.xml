@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- 
      $Id$
 	 
@@ -15,7 +15,14 @@
 	 The information in this file is used to automatically update the docbook
 	 environment, but as well to inform the environment about the actual file
 	 paths of the tools. 
+
+	 (c) 2004 Jörg Napp
 -->
+
+<!DOCTYPE programinfo [
+  <!ENTITY sfmirror  "voxel" ><!-- Sourceforge mirror to use -->
+]>
+
 
 <programs>
 <!-- ==========================================================================================	
@@ -51,7 +58,7 @@
 	<saxon>
 		<description>Michael Kay's Saxon</description>
 		<homepage>http://saxon.sourceforge.net/</homepage>
-		<download>http://voxel.dl.sourceforge.net/sourceforge/saxon/</download>
+		<download>http://&sfmirror;.dl.sourceforge.net/sourceforge/saxon/</download>
 		<file>saxon6_5_3.zip</file>
 		<directory>saxon6_5_3</directory>
 		<unzip>saxon6_5_3</unzip>
@@ -78,7 +85,7 @@
 	<docbook-xsl>
 		<description>the DocBook XSL Stylesheets.</description>
 		<homepage>http://docbook.sourceforge.net/</homepage>
-		<download>http://voxel.dl.sourceforge.net/sourceforge/docbook/</download>
+		<download>http://&sfmirror;.dl.sourceforge.net/sourceforge/docbook/</download>
 		<file>docbook-xsl-1.65.1.zip</file>
 		<directory>docbook-xsl-1.65.1</directory>
 		<unzip>.</unzip>
