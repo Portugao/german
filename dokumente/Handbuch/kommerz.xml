@@ -26,7 +26,7 @@
     Verwaltung von Bannern unterstützt.</para>
 
     <tip>
-      <para>Das PostNuke-eigene Bannersystem ist nicht sondrlich komfortabel.
+      <para>Das PostNuke-eigene Bannersystem ist nicht sonderlich komfortabel.
       Eine weitaus bessere Bannerverwaltung bietet <ulink
       url="http://phpadsnew.sourceforge.net/">phpAdsNew</ulink><indexterm>
           <primary>phpAdsNew</primary>
@@ -61,7 +61,7 @@
     Kunde angelegt wurde. Zunächst wählt man den 'Kunden' aus dem
     Dropdown-Menü aus und trägt die Anzahl der gekauften Impressions
     (Banneraufrufe) ein (0=unendlich). Dann die URL im Format
-    <systemitem>http://www.firma.de/images/banners/bannerl.gif</systemitem>,
+    <systemitem>http://www.example.com/images/banners/bannerl.gif</systemitem>,
     wo das Banner abgelegt ist und zuletzt trägt man die URL, an die der User
     bei Klick auf das Banner umgeleitet werden soll, ein.</para>
 
@@ -98,7 +98,7 @@
     Die muß irgendwo in der theme.php stehen.</para>
 
     <para>Die Kunden können über den Link
-    <systemitem>http://www.ihre-firma.de/banners.php?op=login</systemitem> auf
+    <systemitem>http://www.example.com/banners.php?op=login</systemitem> auf
     ihre Bannerstatistik zugreifen. Dieser Account dient ausschließlich der
     Abfrage 'derzeit aktive Banner' der Bannerstatistik und ist <emphasis>kein
     Zugang, um sich auf der Seite anzumelden</emphasis>.</para>

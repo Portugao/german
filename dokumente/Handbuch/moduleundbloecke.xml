@@ -277,7 +277,7 @@
     <command>$prefix_module_vars</command> entfernen und in der
     <filename>$prefix_modules</filename> das Modul löschen.</para>
 
-    <section>
+    <section id="hooksaktivieren">
       <title>Hooks für ein Modul aktivieren<indexterm>
           <primary>Module</primary>
 
@@ -308,12 +308,12 @@
 
           <secondary>Display-Hooks</secondary>
         </indexterm>) hängen etwas an die Ausgabe an: EZComments fügt an die
-      Ausgabe ein Kommentarfeld an, Ratings eine Bewertungsfunktion usw.
-      </para>
+      Ausgabe ein Kommentarfeld an, Ratings eine Bewertungsfunktion
+      usw.</para>
 
       <para>Damit ein solches Hook-Modul aktiv wird, muss es für ein anderes
       aktiviert werden. Dies geschieht unter <guimenuitem>Modul
-      editieren</guimenuitem> in der Modul-Administration. </para>
+      editieren</guimenuitem> in der Modul-Administration.</para>
 
       <para>Beispiel: Um <replaceable>Autolinks</replaceable> für die
       <replaceable>News</replaceable> zu aktivieren, sucht man
@@ -324,7 +324,7 @@
       Verfügung.</para>
 
       <note>
-        <para>Nicht alle Module unterstützen alle Arten von Hooks. </para>
+        <para>Nicht alle Module unterstützen alle Arten von Hooks.</para>
       </note>
     </section>
   </section>

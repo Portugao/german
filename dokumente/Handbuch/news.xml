@@ -214,7 +214,10 @@
 
         <listitem>
           <para>Je nach Formatierungstyp werden Zeilenumbrüche dann auch im
-          Artikel dargestellt.</para>
+          Artikel dargestellt: Ist <guibutton>Text</guibutton> eingetragen, so
+          werden Zeilenumbüche auch so im Text ausgegeben. Bei der Einstellung
+          <guibutton>HTML</guibutton> passiert dies nicht (Erforderlich ist
+          dies z.B. beim Einsatz des TypeTool)</para>
         </listitem>
       </varlistentry>
 
@@ -305,6 +308,106 @@
         Nummer 19 verweist)</para>
       </step>
     </procedure>
+
+    <bridgehead>Wie kann ich die Anzahl der Artikel auf der Startseite
+    festlegen?</bridgehead>
+
+    <para>Einige Einstellungen, die man eigentlich eher in der News-Verwaltung
+    vermutet, befinden sich tatsächlich in den <olink targetdoc="Handbuch"
+    targetptr="settings">Einstellungen</olink>:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Artikel im Adminmenü<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Artikel im Adminmenü</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Artikel im Adminmenü</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Anzahl der angezeigten Artikel auf der
+          Administrationsseite</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Beiträge auf der Startseite<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Beiträge auf Startseite</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Beiträge auf Startseite</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Anzahl der Artikel auf der Homepage. Die Anzahl der
+          angezeigten News wird von zwei Faktoren beeinflusst - die
+          Einstellung in der Administration und die Einstellung in der
+          persönlichen Seite.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Reihenfolge der News<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Reihenfolge der News</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Reihenfolge</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Auswahl, ob die Beiträge nach ihrer ID oder nach Datum
+          sortiert werden sollen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>rechte Blöcke in Beiträgen anzeigen?<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Rechte Blöcke in Beiträgen</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Rechte Blöcke</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Hier kann bestimmt werden, ob die rechten Blöcke in Beiträgen
+          angezeigt werden sollen</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Newspager anzeigen<indexterm>
+            <primary>Einstellungen</primary>
+
+            <secondary>Newspager</secondary>
+          </indexterm><indexterm>
+            <primary>News</primary>
+
+            <secondary>Newspager</secondary>
+          </indexterm></term>
+
+        <listitem>
+          <para>Hiermit wird bestimmt, ob auf der Übersichtsseite der News ein
+          "Pager", also ein Seitenanzeiger angezeigt wird, mit dem man ältere
+          Beiträge auswählen kann.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+    <para>Ferner kann jeder Anwender selbst festlegen, wie viele Beiträge er
+    auf der News-Startseite sehen möchte.</para>
   </section>
 
   <section id="submitnews">
@@ -661,54 +764,38 @@
       interessant ('Stories::Category' wird lediglich für die Administration
       der Kategorien benötigt).</para>
 
-      <para><emphasis role="bold">Beispiele:</emphasis></para>
+      <para>Wenn man nun den Zugriff auf eine bestimmte Kategorie für
+      unregistrierte Benutzer verhindern will, sollte folgende Berechtigung
+      vor dem allgemeinen Leserecht (unregistrierte | .* | .* | lesen) gesetzt
+      werden:</para>
 
-      <para><literal>Stories::Story /// Author ID:Category name:Story ID
-      </literal></para>
+      <para><literal>unregistrierte | Stories::Story | :Kategoriename: |
+      keines</literal></para>
 
-      <itemizedlist>
-        <listitem>
-          <para>wenn man nun den Zugriff auf eine bestimmte Kategorie für
-          unregistrierte Benutzer verhindern will, sollte folgende
-          Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* | .*
-          | lesen) gesetzt werden:</para>
+      <para>wenn man der Gruppe 'Autoren' ermöglichen will, neue Beiträge in
+      der Kategorie 'Info' zu schreiben, sollte folgende Berechtigung nach der
+      allgemeinen Adminzeile (Admins | .* | .* | administrieren) gesetzt
+      werden:</para>
 
-          <para><literal>unregistrierte | Stories::Story | :Kategoriename: |
-          keines</literal></para>
-        </listitem>
+      <para><literal>Autoren | Stories::Story | :Info: |
+      hinzufügen</literal></para>
 
-        <listitem>
-          <para>wenn man der Gruppe 'Autoren' ermöglichen will, neue Beiträge
-          in der Kategorie 'Info' zu schreiben, sollte folgende Berechtigung
-          nach der allgemeinen Adminzeile (Admins | .* | .* | administrieren)
-          gesetzt werden:</para>
+      <para>bzw.</para>
 
-          <para><literal>Autoren | Stories::Story | :Info: |
-          hinzufügen</literal></para>
+      <para><literal>Autoren | Stories::Story | :Info: |
+      löschen</literal></para>
 
-          <para>bzw.</para>
+      <para>wenn sie die Artikel dieser Kategorie auch löschen sollen
+      dürfen.</para>
 
-          <para><literal>Autoren | Stories::Story | :Info: |
-          löschen</literal></para>
+      <para>wenn es das entsprechende Theme unterstützt kann man darüberhinaus
+      beispielsweise unregistrierten Benutzern lediglich das 'Übersicht' Recht
+      einräumen und ihnen nur den Hometext anzeigen</para>
 
-          <para>wenn sie die Artikel dieser Kategorie auch löschen sollen
-          dürfen.</para>
-        </listitem>
-
-        <listitem>
-          <para>wenn es das entsprechende Theme unterstützt kann man
-          darüberhinaus beispielsweise unregistrierten Benutzern lediglich das
-          'Übersicht' Recht einräumen und ihnen nur den Hometext
-          anzeigen</para>
-        </listitem>
-
-        <listitem>
-          <para>zum direkten Aufruf des entsprechenden Adminbereiches kann man
-          das MainMenu um einen Link zu
-          <systemitem>admin.php?module=NS-AddStory&amp;op=main</systemitem>
-          erweitern, der nur der entsprechenden Gruppe angezeigt wird.</para>
-        </listitem>
-      </itemizedlist>
+      <para>zum direkten Aufruf des entsprechenden Adminbereiches kann man das
+      MainMenu um einen Link zu
+      <systemitem>admin.php?module=NS-AddStory&amp;op=main</systemitem>
+      erweitern, der nur der entsprechenden Gruppe angezeigt wird.</para>
     </section>
 
     <section id="news.permissions.topics">
@@ -734,17 +821,13 @@
 
       <para><literal>Topics::Topic /// Topic name::Topic ID</literal></para>
 
-      <itemizedlist>
-        <listitem>
-          <para>wenn man nun den Zugriff auf ein bestimmtes Topic für
-          unregistrierte Benutzer verhindern will, sollte folgende
-          Berechtigung vor dem allgemeinen Leserecht (unregistrierte | .* | .*
-          | lesen) gesetzt werden:</para>
+      <para>wenn man nun den Zugriff auf ein bestimmtes Topic für
+      unregistrierte Benutzer verhindern will, sollte folgende Berechtigung
+      vor dem allgemeinen Leserecht (unregistrierte | .* | .* | lesen) gesetzt
+      werden:</para>
 
-          <para><literal>unregistrierte | Topics::Topic | Topic_Name:: |
-          keines</literal></para>
-        </listitem>
-      </itemizedlist>
+      <para><literal>unregistrierte | Topics::Topic | Topic_Name:: |
+      keines</literal></para>
 
       <para>Wichtig: der Topicname ist nicht zu verwechseln mit dem Topictext
       - am besten in der Topicadministration nachschauen!</para>

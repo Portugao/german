@@ -430,44 +430,18 @@
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
     Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
     Funktion durchsucht einen Text nach bestimmten Schlüsselwörtern und
-    verknüpft dieses mit einem Link. Soll zum Beipiel in allen Artikeln
-    automatisch das Wort 'PostNuke' mit dem Link www.post-nuke.net verknüpft
-    werden, sind folgende Schritte nötig:</para>
+    verknüpft dieses mit einem Link. </para>
 
-    <bridgehead>Installation &amp; Konfiguration</bridgehead>
+    <para>Die Autolinks sind ein Hook und müssen daher, wie unter <olink
+    targetdoc="Handbuch"
+    targetptr="hooksaktivieren">Moduladministration</olink> beschrieben, für
+    andere Module aktiviert werden. </para>
 
-    <para>Über <menuchoice>
-        <guimenu>Administration</guimenu>
-
-        <guisubmenu>Module</guisubmenu>
-
-        <guimenuitem>Liste neu generieren</guimenuitem>
-      </menuchoice> muß zuerst das Modul Autolinks initialisiert und aktiviert
-    werden.</para>
-
-    <para>Um dann Autolinks für ein bestimmtes Modul zu aktivieren, auf
-    <menuchoice>
-        <guimenu>Administration</guimenu>
-
-        <guimenuitem>Module</guimenuitem>
-      </menuchoice> gehen und auf <guimenuitem>neu erzeugen</guimenuitem>
-    klicken. Danach kann man innerhalb des Moduls, das man ausgewählt hat, auf
-    <guimenuitem>editieren</guimenuitem> gehen und dort dann
-    <guimenuitem>Autolink</guimenuitem> anwählen. Wenn man das bei allen
-    Modulen gemacht hat, bei denen man Autolinks hinzufügen möchte, geht man
-    auf <guimenuitem>Autolink Konfiguration Updaten</guimenuitem> und startet
-    ein Update der Datenbank.</para>
-
-    <important>
-      <para>Man muss diese Funktion für jedes Modul bei der
-      'Modulkonfiguration' einschalten!</para>
-    </important>
-
-    <para>In der <emphasis>Autolinks Konfiguration</emphasis> kann man
+    <para>In der <guimenu>Autolinks Konfiguration</guimenu> kann man
     einstellen, ob ein Link nur beim ersten Auftreten eines Wortes in einem
     Artikel gesetzt wird oder, ob der Link jedesmal hinzugefügt werden soll.
-    Kommt das Wort 'PostNuke' 3x in dem Text vor, würde dieser dann alle drei
-    mal mit dem Link versehen.</para>
+    Kommt das Wort 'PostNuke' 3 Mal in dem Text vor, würde dieser dann alle
+    drei mal mit dem Link versehen.</para>
 
     <para>Wenn nun die Autolinks aktiviert sind, kann man über den
     Administrationsbildschirm folgende Funktionen nutzen: <menuchoice>
@@ -494,8 +468,8 @@
 
         <listitem>
           <para>Eingabe des Titels, der später für den Link erscheinen soll.
-          Dieser wird auch für die 'MouseOver'-Effekte benutzt. (Stichwort:
-          'Alt-Tag' im Link)</para>
+          Dieser wird als <markup>title</markup>-Attribut des Links
+          benutzt.</para>
         </listitem>
       </varlistentry>
 
@@ -503,9 +477,10 @@
         <term>URL eingeben</term>
 
         <listitem>
-          <para>Die URL in der Form z.b. 'http://www.linkname.de' eingeben
-          (oder wenn die Datei auf dem eigenen System ist als
-          'datei.html')</para>
+          <para>Die URL in der Form z.b.
+          <systemitem>http://www.example.com</systemitem> eingeben (oder wenn
+          die Datei auf dem eigenen System ist als
+          <systemitem>datei.html</systemitem>)</para>
         </listitem>
       </varlistentry>
 
@@ -542,27 +517,44 @@
     </important>
   </section>
 
-  <section id="ephemeridis">
-    <title>Ephemeriden<indexterm>
-        <primary>Ephemeriden</primary>
+  <section>
+    <title>Censor (Wörter zensieren)<indexterm>
+        <primary>Censor-Modul</primary>
+
+        <see>Zenzur-Modul</see>
+      </indexterm><indexterm>
+        <primary>Zenzur-Modul</primary>
       </indexterm></title>
 
-    <para>Tja, ein nicht ganz einfach zu übersetzendes Wort. Ephemeriden sind
-    tagesabhängige Informationen, mit denen die Seite interessanter gestaltet
-    werden kann. Dieses Modul zeigt also Daten zu einem Tag an, frei nach dem
-    Motto: 'Es war einmal...'</para>
+    <para>Die Zensurfunktion ermöglicht es, bestimmte unerwünschte Worte aus
+    dem Beitrag zu filtern und durch <computeroutput>*****</computeroutput> zu
+    ersetzen. Die Zensur kann auch vollständig ausser Kraft gesetzt werden.
+    </para>
+  </section>
 
-    <para>Man kann also Termine eingeben, die auf besondere Ereignisse in der
-    Geschichte hinweisen, also z.B. den eigenen Geburtstag :-) Man trägt das
-    entsprechende Datum mit <emphasis>Tag, Monat, Jahr</emphasis> ein, wählt
-    die Sprache, für die dieser Ephemerid angezeigt werden soll und trägt dann
-    noch eine Beschreibung ein. Durch die Wahl der Sprache wird der Ephemerid
-    nur für die entsprechende Sprachgruppe angezeigt, z.B. wäre der Geburtstag
-    der Queen oder der 'Independence Day' für alle engl. sprechenden User
-    interessant. Die bereits eingetragenen Daten kann man wieder
-    <emphasis>editieren</emphasis> oder <emphasis>löschen</emphasis>. WICHTIG:
-    Es erfolgt keine Bestätigung, ob der Eintrag wirklich gelöscht werden
-    soll.</para>
+  <section id="ephemeridis">
+    <title>Ephemeriden (Tagesmotto)<indexterm>
+        <primary>Ephemeriden</primary>
+
+        <see>Tagesmotto</see>
+      </indexterm><indexterm>
+        <primary>Tagesmotto</primary>
+      </indexterm></title>
+
+    <para>Ephemeriden sind tagesabhängige Informationen, mit denen die Seite
+    interessanter gestaltet werden kann. Dieses Modul zeigt also Daten zu
+    einem Tag an, frei nach dem Motto: 'Es war einmal...'</para>
+
+    <para>Man kann Termine eingeben, die auf besondere Ereignisse in der
+    Geschichte hinweisen. Man trägt das entsprechende Datum mit <emphasis>Tag,
+    Monat, Jahr</emphasis> ein, wählt die Sprache, für die dieser Ephemerid
+    angezeigt werden soll und trägt dann noch eine Beschreibung ein. Durch die
+    Wahl der Sprache wird der Ephemerid nur für die entsprechende Sprachgruppe
+    angezeigt, z.B. wäre der Geburtstag der Queen oder der 'Independence Day'
+    für alle engl. sprechenden User interessant. Die bereits eingetragenen
+    Daten kann man wieder <emphasis>editieren</emphasis> oder
+    <emphasis>löschen</emphasis>. WICHTIG: Es erfolgt keine Bestätigung, ob
+    der Eintrag wirklich gelöscht werden soll.</para>
 
     <para>Die Tagesinformationen werden durch den entsprechenden Block
     "Core/Ephemerids" angezeigt.</para>
