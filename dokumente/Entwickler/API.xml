@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<book id="Administration" lang="de-DE" revision="$Revision$"
+      status="draft">
+
+  <title>Die PostNuke API</title>
+
+  <preface>
+    <title>Einleitung</title>
+
+    <subtitle>Was ist die PostNuke API eigendlich?</subtitle>
+
+    <para>Bei der PostNuke API handelt es sich um einen Satz von Funktionen für das PostNuke CMS, das Entwicklern ermöglicht auf Schlüsselinformationen zuzugreifen und eigenen Inhalt auf einfachen Weg in das System zu integrieren.</para>
+
+    <subtitle>Vorteile einer API</subtitle>
+
+    <para>Es gibt eine Reihe von Vorteilen die für eine API von PostNuke sprechen. Im Vordergrund steht dabei das die API allen Entwicklern von PostNuke ermöglicht einen kompatiblen Code für PostNuke zu schreiben, der dafür garantiert das die Arbeit des entwicklers auch nach einem Update von PostNuke noch funktioniert. Es ist für ein System wie PostNuke von großer Bedeutung da die Core (Kern) Funktionalität des Systems schnell veraltert und weiterentwickelt wird. Ein stabiles Interface (Schnittstelle) im System zu haben ist daher eine der Voraussetzungen für einen Entwickler seine Arbeit beim updaten und optimieren des Systems voranzutreiben ohne den Code den Modul Entwickler geschrieben haben beachten oder ändern zu müssen. Aber auch weitere Gründe wie z.B. das Entwickler schneller mit Postnuke arbeiten können ohne den kompletten Postnuke Code zu kennen sprechen für einen Standart der mit dieser API geschaffen wurde.</para>
+
+    <subtitle>Nachteile der API</subtitle>
+
+    <para>Der Hauptnachteil der API liegt darin, das der Entwickler sofern keine Funktion für ein bestimmtes Ziel in der API festgeschrieben wurde in seinem Handeln eingeschränkt ist. In dem Fall muss der Entwickler diese Funktion erst in die API integrieren undebenso die neue Funktion an sich.(Details dazu findet der Entwickler noch im Verlauf dieser Dokumentanion.</para>
+
+    <subtitle>Wer sollte diese API nutzen?</subtitle>
+
+    <para>Die PostNuke API ist in erster Linie für Entwickler die eigene Module für das PostNuke CMS schreiben möchten. Aber auch Theme Designer oder Block Schreiben können diese API nutzen um weiter Funktion in Ihre Themes zu integrieren oder Blöcke für Postnuke zu schreiben.</para>
+
+    <subtitle>Status der API</subtitle>
+
+    <para>Die API von PostNuke befindet sich noch im Alpha Status. Das bedeutet das die API noch erweitert wird. Wie auch immer, alle Funktionen die in dieser Dokumentation beschriben werden sind auch voll funktionsfähig und werden auch soweit voraussehbar funktionfähig bleiben. Zukünftige Versionen der API werden Hinweise enthalten was hinzugekommen, verändert oder gelöscht wurde und Entwickler werden mindestens 6 Monate Zeit haben Ihre Module, Themes und Blöcke bei Bedarf anzupassen.</para>
+
+    <subtitle>Diese Dokumentaion</subtitle>
+
+    <para>Diese Dokumentation gibt einen Überblick über die PostNuke API und beinhaltet auch eine Referenz für jede der aktuell verfügbaren Funktionen, die dem entwickler im Moment zur Verfügung stehen.</para>
+
+    <subtitle>Weitere Dokumente</subtitle>
+
+    <para>Weiter Dokumente die in verbindung mit dieser Dokumentation genutzt werden können sind der Module Entwicklungs Guide, der Theme Entwicklungs Guide, der kategorisierte Data Guide und der Ausgabe Funktions Guide (Alle noch in Vorbereitung).</para>
+
+    <subtitle>Vorschläge und Updates</subtitle>
+
+    <para>Die PostNuke API befindet sich im Stadium der ständigen Weiterentwicklung. Es werden wahrscheinlich noch einige Funktionen von Entwicklern vermisst werden. Daher kann ein Entwickler wenn er eine anfrage nach einer bestimmten Funktion hat diese auf der PostNuke Seite auf Sourceforge.net stellen. Das selbe System kann genutzt werden um Updates oder Neuerungen gesendet zu bekommen.</para>
+
+    <para>Bitte bedenken Sie das die Grundvoraussetzungen für eine Änderung an der API die Stabilität ist. Es kann sein das eine Änderungsanfrage zu der API sei es ein Update oder eine Erweiterung abgelehnt wird, wenn Sie entweder zu speziell oder auch auf anderen wegen mit der aktuellen API erreicht werden kann. In diesen Fällen versucht das Postnuke Team eine alternative vorzuschlagen. Eine Änderung oder Erweiterungs Anfrage der API bedeutet also noch nicht das diese auch zu Einsatz kommt.</para>
+  </preface>
+
+  <chapter>
+  	<title>Die einzelnen Bereiche der API</title>
+  	
+  	<para>Die PostNuke API ist in eine Anzahl von Bereichen unterteilt, die sich wie folgt gliedern:</para>
+  	
+  	<subtitle>Users (Benutzer)</subtitle>
+  	
+  	<para>Dieser Bereich deckt alles ab was auf der Postnuke Seite die Benutzer (verwaltung) betrifft. Bestätigung das ein Benutzer angemeldet ist, Benutzer spezifische Einstellungen oder einen Benutzer in das PostNuke System einloggen sind ein paar Beispiele der Funktionen dieses Bereiches.</para>
+  	
+  	<subtitle>Modules (Module)</subtitle>
+  	
+  	<para>In diesem Bereich dreht sich alles um die Module. Kontrollieren ob ein bestimmtes Modul verfügbar ist, Modul spezifische Paratmeter einstellen, oder das laden einer in eine spezielle Modul API sind Beispiele dafür.</para>
+  	
+  	<subtitle>Sicherheit (Security)</subtitle>
+  	
+  	<para>Der Bereich steuert alles was mit der Sicherheit des PostNuke System zu tun hat. Überpüfung ob ein Benutzer die erforderlichen recht hat für ein Aktion und generieren von eindeutigen Anfrage-Identifikations-Schlüsseln und Attacken vorzubeugen sind einige der Funktionen dieses Bereiches.</para>
+  	
+  	<subtitle>Sessions</subtitle>
+  	
+  	<para>Der Bereich regelt alles im zusammenhang mit den HPPT Sessions. Er steuert die Session Variablen, erstellt die Session Cookies für den Webbrowser des Benutzers und initialisiert die PHP Einstellungen um dir richtigen eingebauten (aktivierten) Sicherheits-Einstellungen zu benutzen. Dies sind einige Beispiele diese Bereiches.</para>
+  	
+  	<subtitle>Variablen (Variables)</subtitle>
+  	
+  	<para>Dieser Bereich steuert die Handhabung von Variablen. Benutzer Eingaben entfernen und reparieren, richtige Informationen an die Datenbank weitergeben und das sicherstellen das Dateinamen keine System schädigenden Zeichen haben sind einige der Beispiele.</para>
+  	
+  	<subtitle>Ausgabe (Output)</subtitle>
+  	
+  	<para>Dieser Berich deckt alles ab was mit der Ausgabe des PostNuke Systems zu tun hat. Erstellen von Tabellen Informationen, eine DropDown List in ein Formular setzen und die Druckausgabe einer Datei sind einige der Aufgaben dieses Bereiches.</para>
+  	
+  	<subtitle>Datenbank (Database)</subtitle>
+  	
+  	<para>Dieser Berich deckt alles Datenbank spezifische ab. Das initialisieren der Datenbankverbindung, Datenbankabfrage und eine List der Tabellen die die Datenbank enthält werden z.B. hierüber gesteuert und ansprechbar gemacht.</para>
+  	
+  	<subtitle>Verschiedenes (Miscellaneous)</subtitle>
+  	
+  	<para>Dieser Bereich enthält die Anzahl der restlichen Funktionen die keiner bestimmten Gruppe zugeordnet werden können. ein bestimmtes Theme für einen Benutzer laden, Status Nachtichten erhalten und HTTP Redircts zu anderen Seiten herstellen sind hier einige Beispiele.</para>
+  </chapter>
+  
+  <chapter>
+    <title>Hinweise zur Programmierung mit der API</title>
+    
+  	<subtitle>Die Benutzung von <emphasis>void</emphasis></subtitle>
+  	
+  	<para>In der gesamten API Referenz wird ein Typ <emphasis>void</emphasis> speziell bei wiederkehrenden Werten genutzt. PHP hat von sich aus keinen Typ <emphasis>void</emphasis>, er wird in diesem Dokument genutzt um einen nicht gesetzten Wert zu bezeichnen. Es ist sehr wichtig für das weitere lesen und verstehen dieser Dokumentaition, das Sie den Unterschied verstehen. Der <emphasis>void</emphasis> Parameter wird genutzt vom Ausnahme Handling System auf den die PostNuke API Funktionen nutzen.</para>
+  	
+  	<para>Ein Beispiel:</para>
+  	
+  	<para><emphasis role="bold">pnModAPIFunc()</emphasis> nimmt Parameter des Modulnames, des Typ`s und Funktion auf und stellt dann fest welche aktuelle Modul Funktion aufgerufen werden soll, dann wird die Modul Funktion aufgerufen und der Rückgabe-Wert wird als eigener Rückgabewert zurückgegeben. Das Problem dabei ist, das, wenn <emphasis role="bold">pnModAPIFunc()</emphasis> falsch zurückgegeben oder die entprechende Funktion nicht gefunden wird, der Entwickler dann nicht mehr unterscheiden kann zwischen einer gefundenen Funktion die selber falsch zurückgegeben wird. void Rückgabewetre können jedoch mit der PHP <emphasis role="bold">isset()</emphasis> Funktion überprüft werden, wie die folgende Anschauung zeigt: </para>
+  	
+  	<programlisting>$articles = pnModAPIFunc('News', 'user', 'getarticles');
+    if (!isset($articles) &amp;&amp; pnExceptionMajor() != PN_NO_EXCEPTION) {
+    // pnModAPIFunc() failed
+    return;
+    // throw back exception
+    }
+    if ($articles == false){
+    // getarticles failed
+    }else{
+    // getarticles succeeded, data in $articles
+    }</programlisting>
+  	<para> Durch die gesame PostNuke API Referenz hindurch sind die Rückgabe Werte von <emphasis>void</emphasis> und <emphasis>false</emphasis> verschieden. <emphasis>false</emphasis> wird zurückgeben wenn eine API Funktion korrekt arbeitet und eine Negative Antwort gibt, <emphasis>void</emphasis> wird zurückgegeben wenn ein API Aufruf Probleme bereitet und eine Ausnahme dadurch hervorgerufen wird. Hinweis: Dies ist eine generelle Regel, es gibt aber wie bei allen Regeln auch hier einige wenige Ausnahmen. Auf diese Ausnahmen wird jedoch in der weiteren Dokumentation hingewiesen.</para>
+  </chapter>
+  
+  <chapter>
+  	<title>Die API Referenz</title>
+  	<listitem><para>pnBlockGetInfo - Block Informationen abrufen</para></listitem>
+  	<listitem><para>pnBlockLoad - Einen Block laden</para></listitem>
+  	<listitem><para>pnBlockShow - Eine Block Konfigruations-Variable setzen</para></listitem>
+  	<listitem><para>pnBlockVarsFromContent -</para></listitem>
+  	<listitem><para>pnConfigGetVar - Eine Konfigruations-Variable erhalten (abfragen)</para></listitem>
+  	<listitem><para>pnConfigSetVar - Eine Konfigruations-Variable setzen</para></listitem>
+  	<listitem><para>pnConfigDelVar - Eine Konfigruations-Variable löschen</para></listitem>
+  	<listitem><para>pnDBGetConn - Datenbank Verbindung herstellen (aufrufen)</para></listitem>
+  	<listitem><para>pnDBGetTables - Datenbank-Tabellen Verbindung herstellen (aufrufen)</para></listitem>
+  	<listitem><para>pnDBInit - PostNuke Datenbank Verbindung initialisieren</para></listitem>
+  	<listitem><para>pnExceptionFree - reset exception status</para></listitem>
+  	<listitem><para>pnExceptionId - return current exception identifier</para></listitem>
+  	<listitem><para>pnExceptionMajor - return current exception major number</para></listitem>
+  	<listitem><para>pnExceptionSet - raise an exception</para></listitem>
+  	<listitem><para>pnExceptionValue - return current exception value</para></listitem>
+  	<listitem><para>pnGetBaseURI - Basis URI für PostNuke erhalten</para></listitem>
+  	<listitem><para>pnGetBaseURL - Basis URL der Seite erhalten</para></listitem>
+  	<listitem><para>pnGetStatusMsg - Status Nachricht erhalten</para></listitem>
+  	<listitem><para>pnInit - PostNuke initialisieren</para></listitem>
+  	<listitem><para>pnModAPIFunc - Eine Modul API Funktion ausführen</para></listitem>
+  	<listitem><para>pnModAPILoad - Eine Modul API laden</para></listitem>
+  	<listitem><para>pnModAvailable - Verfügbarkeit eines Modules checken</para></listitem>
+  	<listitem><para>pnModCallHooks - carry out hook operations for module</para></listitem>
+  	<listitem><para>pnModDBInfoLoad - load database infor for a module</para></listitem>
+  	<listitem><para>pnModDelVar - Eine Modul Variable löschen</para></listitem>
+  	<listitem><para>pnModFunc - Eine Modul Funktion ausführen</para></listitem>
+  	<listitem><para>pnModGetAdminMods - Eine Liste der Admin-Module erhalten</para></listitem>
+  	<listitem><para>pnModGetIDFromName - Modul ID aus dem Namen erhalten</para></listitem>
+  	<listitem><para>pnModGetInfo - Modul Informationen erhalten</para></listitem>
+  	<listitem><para>pnModGetName - get name of current top-level module</para></listitem>
+  	<listitem><para>pnModGetUserMods - Eine Liste der Benutzer-Module erhalten</para></listitem>
+  	<listitem><para>pnModGetVar - Eine Modul-Variable erhalten</para></listitem>
+  	<listitem><para>pnModLoad - Ein Modul laden</para></listitem>
+  	<listitem><para>pnModRegisterHook - register a hook function</para></listitem>
+  	<listitem><para>pnModSetVar - Eine Modul-Variable setzen</para></listitem>
+  	<listitem><para>pnModUnregisterHook - unregister a hook function</para></listitem>
+  	<listitem><para>pnModURL - Eine Modul-URL erstellen</para></listitem>
+  	<listitem><para>pnRedirect - Weiterleitung zu einer anderen Seite</para></listitem>
+  	<listitem><para>pnSecAddSchema - Sicherheits-Schema hinzufügen</para></listitem>
+  	<listitem><para>pnSecAuthAction - authorise attempted action</para></listitem>
+  	<listitem><para>pnSecConfirmAuthKey -</para></listitem>
+  	<listitem><para>pnSecGenAuthKey -</para></listitem>
+  	<listitem><para>pnSessionDelVar - Eine Session-Variable löschen</para></listitem>
+  	<listitem><para>pnSessionGetVar - Session-Variable erhalten</para></listitem>
+  	<listitem><para>pnSessionInit - Eine Session initialisieren</para></listitem>
+  	<listitem><para>pnSessionSetup - Session Setup</para></listitem>
+  	<listitem><para>pnSessionSetVar - Session-Variable setzen</para></listitem>
+  	<listitem><para>pnThemeLoad - Theme anzeigen</para></listitem>
+  	<listitem><para>pnUserGetAll - Basis Informationen aller Benutzer erhalten</para></listitem>
+  	<listitem><para>pnUserGetLang - Aktuelle Sprache erhalten</para></listitem>
+  	<listitem><para>pnUserGetTheme - Aktuelles Theme erhalten</para></listitem>
+  	<listitem><para>pnUserGetVar - Eine Benutzer-Variable erhalten</para></listitem>
+  	<listitem><para>pnUserGetVars - Alle Benutzer-Variablen erhalten</para></listitem>
+  	<listitem><para>pnUserLoggedIn - Überprüfen ob ein Benutzer angemeldet ist</para></listitem>
+  	<listitem><para>pnUserLogIn - Benutzer Einloggen</para></listitem>
+  	<listitem><para>pnUserLogOut - Benutzer ausloggen</para></listitem>
+  	<listitem><para>pnUserSetVar - Benutzer-Variable setzen</para></listitem>
+  	<listitem><para>pnUserValidateVar - Eine Benutzer-Variable bestätigen</para></listitem>
+  	<listitem><para>pnVarCensor - Zensierte Wörter aus einer Variable entfernen</para></listitem>
+  	<listitem><para>pnVarCleanFromInput - Form (Formular) Variable erhalten</para></listitem>
+  	<listitem><para>pnVarPrepForDisplay - Variable zun Anzeigen vorbereiten</para></listitem>
+  	<listitem><para>pnVarPrepForOS - Variable für ein Betriebssytem vorbereiten</para></listitem>
+  	<listitem><para>pnVarPrepForStore - Variable für Eintrag in die Datenbank vorbereiten</para></listitem>
+  	<listitem><para>pnVarPrepHTMLDisplay - prepare variable for display, preserving some HTML tags</para></listitem>
+  	<listitem><para>pnVarValidate - Eine Variable bestätigen</para></listitem>
+  </chapter>
+</book>
