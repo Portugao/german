@@ -2,6 +2,12 @@
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter>
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
   <title>Grundkonfiguration</title>
 
   <para>Viele wichtige Werte ("Site-Name", "Admin-Emailadresse" usw.) werden
@@ -344,7 +350,7 @@
         role="bold">Wichtig: Parameter nur freigeben, wenn unbedingt
         erforderlich!</emphasis></para>
 
-        <tip>
+        <warning>
           <title>Freigabe von HTML mit/ohne Parametern</title>
 
           <para>Viele mögen sich wundern, was es in der Administration -
@@ -365,7 +371,7 @@
           Klicken&lt;/i&gt;</userinput></literal></para>
 
           <para>Also: Aufpassen bei der Freigabe von Tags!</para>
-        </tip>
+        </warning>
       </listitem>
     </varlistentry>
 
