@@ -6,6 +6,11 @@
          status="draft">
   <!-- $Id$ -->
 
+  <!--ACHTUNG:
+
+Die URLs müssen noch überprüft und angepsaat werden
+IDs sind noch nicht vergeben-->
+
   <chapterinfo>
     <releaseinfo>$Revision$</releaseinfo>
 
@@ -17,84 +22,112 @@
   <section>
     <title>Was ist Postnuke?</title>
 
-    <para>PostNuke ist ein Content Management System (CMS). Das bedeutet, daß
-    mit PostNuke Inhalte von Design und Technik trennt. Die Inhalte einer
-    Internetpräsenz können via Browser verwaltet werden. Es gibt zum Beispiel
-    die Möglichkeit Artikel, Links, Downloads, FAQs, Bildergalerien, Foren
-    etc. einzubinden. Durch die klare Aufgliederung in Form, Funktion, Inhalt
-    und Gestaltung hilft PostNuke die Kosten einer Website zu reduzieren.
-    PostNuke ist modular aufgebaut - es gibt wichtige Funktionen, die vom
-    sogenannten Core angeboten und von den zusätzlichen Modulen genutzt
+    <para>PostNuke ist ein Content Management System (<acronym>CMS</acronym>).
+    Das bedeutet, daß mit PostNuke Inhalte von Design und Technik trennt. Die
+    Inhalte einer Internetpräsenz können via Browser verwaltet werden. Es gibt
+    zum Beispiel die Möglichkeit Artikel, Links, Downloads, FAQs,
+    Bildergalerien, Foren etc. einzubinden. Durch die klare Aufgliederung in
+    Form, Funktion, Inhalt und Gestaltung hilft PostNuke die Kosten einer
+    Website zu reduzieren.</para>
+
+    <para>PostNuke ist modular aufgebaut - es gibt wichtige Funktionen, die
+    vom sogenannten Core angeboten und von den zusätzlichen Modulen genutzt
     werden. Dadurch kann der Leistungsumfang individuell angepasst und nahezu
     beliebig erweitert werden.</para>
 
     <section>
-      <title>Geschichte</title>
+      <title>Aufbau des Postnuke Systems</title>
 
-      <para>PostNuke basiert auf einer Idee von John Cox und ist aus Franzisco
-      Burzis phpNuke hervorgegangen (Nuke steht dabei übrigens lediglich für
-      den Nickname von FB, siehe <ulink url="???">Interview mit FB</ulink> ) -
-      daher kommt auch der Name:</para>
+      <para>Das System von Postnuke basiert auf Modularität. Es gibt eine
+      zentrale Einheit, den '<emphasis role="bold">Core</emphasis>', der per
+      API (pnAPI, pnHTML usw.) verschiedene standardisierte Zugriffe auf die
+      Datenbank und die anderen Teile des Systems bietet. Die dazugehörigen
+      Dateien befinden sind im Pfad /include.</para>
 
-      <para>'post' [lat.], nach + (php)Nuke = PostNuke Nach einigen Querelen
-      um die Zukunft von phpNuke - bei denen Franzisco Burzis als Anhänger
-      zentral von ihn gesteuerten Entwicklung auftrat, startete John Cox das
-      Projekt PostNuke. Die 'Gründungsmitglieder' des neuen Forks waren damals
-      Greg Allan, Sean Finkle und Harry Zink. Letzterer ist zwischenzeitlich
-      das letzte verbliebene Gründungsmitglied - John Cox kümmert sich derzeit
-      um die Entwicklung von <ulink url="???">Xaraya</ulink> . Harry Zink und
-      Vanessa Haakenson werden verstärkt von einem <ulink
-      url="???">Team</ulink> von 15-20 Entwicklern, Projektmanagern und
-      Grafikern. Der Anteil der Relikte von phpNuke werden mit jeder
-      veröffentlichten Version weniger und PostNuke entwickelt sich
-      mittlerweile in eine völlig andere Richtung.</para>
+      <section>
+        <title>Themes - Layout getrennt von den Inhalten</title>
+
+        <para>Über dieses Basissystem wird zum Beispiel das Layout gesteuert.
+        Das äußere Erscheinungsbild kann bequem verändert werden, ohne dass
+        jede einzelne Seite neu angefaßt werden muss. Zum Lieferumfang von
+        Postnuke gehören dazu mehrere <emphasis role="bold">Themes</emphasis>.
+        Diese dienen in erster Linie zum Testen dieser Funktionalität.
+        Außerdem kann man anhand dieser Beispiel auch für das Erstellen
+        eigener Layouts die Systematik abgucken. Um einer Seite ein eigenes
+        Gesicht zu geben, wird man um die Erstellung eines eigenen Themes
+        nicht umhin kommen. Es gibt <ulink
+        url="Web_Links+index-req-viewlink-cid-3.html">mehrere Seiten</ulink>,
+        von denen man Themes (unterschiedlichster Qualität) herunterladen
+        kann. Das Standard-Layout kann in der Administration festgelegt werden
+        - desweiteren kann man die Auswahl auch den Usern überlassen. Im
+        Verzeichnis /theme befinden sie die Unterverzeichnisse für die
+        verschiedenen auswählbaren Layouts.</para>
+      </section>
+
+      <section>
+        <title>Funktionsumfang erweitern mit Modulen</title>
+
+        <para>Wie bereits erwähnt, läßt sich der Funktionsumfang einer
+        Postnuke-Site über die Einbindung von Erweiterungen, den Modulen
+        beliebig festlegen. In der Basisinstallation sind schon eine Reihe
+        Module enthalten, deren Entwicklung noch aus PHPNuke-Zeiten übernommen
+        und mittlerweile dem Postnuke-System angepaßt wurden. Dazu gehört vor
+        allem das Newssystem, die Weblinks, das Download-Modul usw. Diese
+        Module zu benutzen ist allerdings nicht Pflicht - bereits jetzt gibt
+        es eine große Anzahl an <ulink
+        url="Web_Links+index-req-viewlink-cid-2.html">Modulen von
+        Dritt-Entwicklern</ulink>, die von einem einfachen Feedbackformular
+        über die Verwaltung von Bildersammlungen (Gallerien) bis hin zu ganzen
+        Webshops reichen. Zum Teil wurden damit auch Alternativen zu den
+        mitgelieferten Modulen geschaffen, die mit einem weit größeren
+        Funktionsumfang aufwarten.</para>
+
+        <para>Da die Postnuke-Entwickler sich bisher auf die Überarbeitung des
+        Basissystems konzentriert haben, wurden vor allem der Funktionsumfang
+        der mitgelieferten Module etwas vernachlässigt. Technisch sind sie
+        aber alle auf dem aktuellsten Stand. Die Module befinden sich im
+        Verzeichnis /modules</para>
+      </section>
+
+      <section>
+        <title>Permissions steuern die Zugriffsrecht der User</title>
+
+        <para>'Technisch auf dem aktuellsten Stand' bedeutet vor allem auch,
+        daß sie in das Permission-System integriert wurden. Postnuke bietet
+        ein System von <emphasis role="bold">Zugriffsrechten</emphasis>, das
+        es ermöglicht, Usern oder Usergruppen gezielt Zugriffsrecht zu geben
+        oder zu entziehen. Diese Rechte werden in der Adminstration online
+        verwaltet.</para>
+      </section>
+
+      <section>
+        <title>Webseiten internationalisieren durch beliebig viele
+        Sprachpakete</title>
+
+        <para>Um verschiedene Zielgruppen ansprechen zu können bietet Postnuke
+        die Möglichkeit, die Website mehrsprachig zu bereiben. Über einfache
+        Sprachpakete, werden alle Ausgaben des Systems oder der Module in
+        vielen verschiedenen <emphasis role="bold">Sprachen</emphasis>
+        parallel möglich.</para>
+      </section>
     </section>
 
     <section>
-      <title>Community</title>
+      <title>Wie stabil ist PostNuke?</title>
 
-      <para>Die Entwickler- und Support-Communities</para>
+      <para>Obwohl PostNuke derzeit offiziell noch als alpha-Software
+      eingestuft wird, ist es bereits sehr stabil und voll supported.
+      Fehlermeldungen können hier im <ulink url="???">Forum</ulink> oder aber
+      auch direkt in den englischen Foren bei <ulink
+      url="???">forums.postnuke.com</ulink> gepostet werden. Es wird aber
+      davon abgeraten, an den mitgelieferten Dateien Änderungen vorzunehmen,
+      da diese bei zukünftigen Updates entweder verloren gingen oder nicht auf
+      den aktuellsten Stand gebracht werden können. Da Postnuke noch 'alpha'
+      ist, stehen bis zum offiziellen ersten Release noch einige größere
+      Umstellungen an, die auf jeden Fall nachvollzogen werden sollten.</para>
 
-      <para>Die internationale Postnuke Community versammelt sich natürlich
-      auf der offiziellen Homepage. Daneben gibt es aber eine ganze Reihe sehr
-      fruchtbarer nationaler Communities wie post-nuke.net. Die nationalen
-      Teams widmen sich vor allem dem User-Support in der eigenen Sprache. Es
-      werden sie jeweiligen Sprachdateien für Postnuke gepflegt und spezielle
-      rechtliche Probleme des Landes und Erfahrungen aus dem Support an die
-      internationale Entwicklung herangetragen. NOC - Treffpunkt für
-      Modulentwickler Es existieren dazu eine Vielzahl Sites, die sich zum
-      Beispiel mit der Postnuke-Themes oder der Modulentwicklung beschäftigen.
-      Um die verstreuten Modulentwickler zusammen zu führen, wurde das NOC
-      Postnuke eingerichtet. Hier können Projekte ähnlich SourceForge
-      organisiert und koordiniert werden. User 2 User Support Nicht zu
-      vergessen sind natürlich auch die hunderte User, die Postnuke schon in
-      Produktivumgebungen für ihre Zwecke einsetzen und oft auf Anfrage gerne
-      die eine oder andere Detailösung verraten.</para>
-
-      <mediaobject>
-        <imageobject>
-          <imagedata align="center" fileref="devUser.gif" format="GIF"
-                     width="" />
-        </imageobject>
-      </mediaobject>
+      <para>PostNuke ist <ulink url="???">ServerProven</ulink> von IBM</para>
     </section>
-  </section>
-
-  <section>
-    <title>Wie stabil ist PostNuke?</title>
-
-    <para>Obwohl PostNuke derzeit offiziell noch als alpha-Software eingestuft
-    wird, ist es bereits sehr stabil und voll supported. Fehlermeldungen
-    können hier im <ulink url="???">Forum</ulink> oder aber auch direkt in den
-    englischen Foren bei <ulink url="???">forums.postnuke.com</ulink> gepostet
-    werden. Es wird aber davon abgeraten, an den mitgelieferten Dateien
-    Änderungen vorzunehmen, da diese bei zukünftigen Updates entweder verloren
-    gingen oder nicht auf den aktuellsten Stand gebracht werden können. Da
-    Postnuke noch 'alpha' ist, stehen bis zum offiziellen ersten Release noch
-    einige größere Umstellungen an, die auf jeden Fall nachvollzogen werden
-    sollten.</para>
-
-    <para>PostNuke ist <ulink url="???">ServerProven</ulink> von IBM</para>
 
     <section>
       <title>Wie sicher ist Postnuke?</title>
@@ -102,53 +135,63 @@
       <para>Bei der Entwicklung von Postnuke wird verstärkt darauf geachtet,
       einen sicheren und stabilen Kern zu erreichen. Es gibt allerdings einige
       Dinge, die jeder Webmaster beachten sollte, um eine optimale Sicherheit
-      zu erreichen: Stets auf die aktuellste Version von PostNuke updaten!
-      Auch wenn viele ihre Installationen individuell anpassen, ist nur ein
-      Update der Garant für die bestmögliche Sicherheit. Alle, die nicht die
-      aktuelle Version einsetzen, seien an dieser Stelle ausdrücklich vor
-      potentiellen Sicherheitslücken gewarnt.<itemizedlist>
+      zu erreichen: <itemizedlist>
           <listitem>
-            <para>Die komplette Dokumentation lesen - es ist viel Zeit und
-            Anstregung in das Dokumentationsprojekt geflossen und viele Fragen
-            rund um die Installation und den Betrieb einer PostNuke-Seite
-            werden dort beantwortet. Insbesondere die Zugriffsrechte und
-            erlaubte HTML-Tags sollten mit Bedacht eingestellt werden. Wenn
-            nach dem Lesen der Dokumentation noch Fragen offen sind, sollten
-            die Foren nach Lösungen durchsucht werden bzw. (im richtigen
-            Forum) entsprechende Fragen gestellt werden.</para>
+            <para><emphasis role="bold">Stets auf die aktuellste Version von
+            PostNuke updaten!</emphasis> Auch wenn viele ihre Installationen
+            individuell anpassen, ist nur ein Update der Garant für die
+            bestmögliche Sicherheit. Alle, die nicht die aktuelle Version
+            einsetzen, seien an dieser Stelle ausdrücklich vor potentiellen
+            Sicherheitslücken gewarnt.</para>
           </listitem>
 
           <listitem>
-            <para>Sicherstellen, dass nur verlässliche Co-Admins/Moderatoren
-            erweiterten Zugang zur Website erhalten. Die Verantwortung beim
-            Betrieb einer Website liegt ausschliesslich beim Webmaster!</para>
+            <para>Die komplette <emphasis role="bold">Dokumentation
+            lesen</emphasis> - es ist viel Zeit und Anstregung in das
+            Dokumentationsprojekt geflossen und viele Fragen rund um die
+            Installation und den Betrieb einer PostNuke-Seite werden dort
+            beantwortet. Insbesondere die Zugriffsrechte und erlaubte
+            HTML-Tags sollten mit Bedacht eingestellt werden. Wenn nach dem
+            Lesen der Dokumentation noch Fragen offen sind, sollten die Foren
+            nach Lösungen durchsucht werden bzw. (im richtigen Forum)
+            entsprechende Fragen gestellt werden.</para>
           </listitem>
 
           <listitem>
-            <para>Passworte sorgfältig auswählen. Nach Möglichkeit
-            verschiedene Passworte für verschiedene Bereiche wählen (also.
-            z.B. nicht identische Passworte für verschiedene PN-Accounts, FTP,
-            MySQL). Passworte nie weitergeben - schon gar nicht in
-            öffentlichen Foren posten.</para>
-
-            <para>Eine kleine Hilfe zum Ausdenken von relativ sicheren
-            Paßwörtern: Statt eines Wortes ('Geheim', 'Mutti' oder gar
-            'Passwort') denkt man sich einen 'Pass-Satz' aus und nimmt von
-            jedem Wort den Anfangsbuchstaben für das Passwort. Zum Beispiel:
-            'Ich finde Postnuke ist eine ganz tolle Sache' = 'ifpiegts'.
-            Darauf muß erstmal ein Außenstehender kommen.</para>
+            <para>Sicherstellen, dass <emphasis role="bold">nur verlässliche
+            Co-Admins/Moderatoren</emphasis> erweiterten Zugang zur Website
+            erhalten. Die Verantwortung beim Betrieb einer Website liegt
+            ausschliesslich beim Webmaster!</para>
           </listitem>
 
           <listitem>
-            <para>In sog. 'shared hosts' Umgebungen mit Shell-Accounts können
-            unter Umständen die Konfigurationsdaten von anderen Benutzern
-            eingesehen werden - es gibt nahezu nichts, was PostNuke dagegen
-            unternehmen kann.</para>
+            <para><emphasis role="bold">Passworte sorgfältig
+            auswählen</emphasis>. Nach Möglichkeit verschiedene Passworte für
+            verschiedene Bereiche wählen (also. z.B. nicht identische
+            Passworte für verschiedene PN-Accounts, FTP, MySQL). Passworte nie
+            weitergeben - schon gar nicht in öffentlichen Foren posten.</para>
+
+            <note>
+              <para>Eine kleine Hilfe zum Ausdenken von relativ sicheren
+              Paßwörtern: Statt eines Wortes ('Geheim', 'Mutti' oder gar
+              'Passwort') denkt man sich einen 'Pass-Satz' aus und nimmt von
+              jedem Wort den Anfangsbuchstaben für das Passwort. Zum Beispiel:
+              'Ich finde Postnuke ist eine ganz tolle Sache' = 'ifpiegts'.
+              Darauf muß erstmal ein Außenstehender kommen.</para>
+            </note>
+          </listitem>
+
+          <listitem>
+            <para>In sog. <emphasis role="bold">'shared hosts' Umgebungen mit
+            Shell-Accounts </emphasis>können unter Umständen die
+            Konfigurationsdaten von anderen Benutzern eingesehen werden - es
+            gibt nahezu nichts, was PostNuke dagegen unternehmen kann.</para>
           </listitem>
 
           <listitem>
             <para>Selbst bei grösster Anstregung kann PostNuke aufgrund der
-            Komplexität weitere Sicherheitslücken enthalten. Wenn die
+            Komplexität weitere <emphasis
+            role="bold">Sicherheitslücken</emphasis> enthalten. Wenn die
             Vermutung besteht, dass eine PostNuke Installation gehackt wurde,
             zuerst die obigen Punkte noch einmal durchgehen und dann mit dem
             PostNuke-Team in Verbindung setzen. Wenn Sicherheitsprobleme
@@ -208,7 +251,7 @@
     Wie auch PHP und Mysql ist PostNuke unter GPL veröffentlicht, was auch
     eine weiterhin freie Nutzung des Systems garantiert. Weitere bekannte
     Opensource-Projekte sind übrigens Mozilla (Grundlage der Netscapebrowser)
-    oder Linux (ein alternatives Betriebssystem). </para>
+    oder Linux (ein alternatives Betriebssystem).</para>
 
     <para>PostNuke ist geschrieben in PHP und lizensiert unter der GNU General
     Public License. Als Open Source / Open Development Projekt arbeiten an
@@ -218,6 +261,46 @@
     Leistungsfähigkeit einer Open Source Entwicklung. Nähere Informationen zum
     Team finden sich auf der <ulink url="???">PostNuke NOC
     Projektseite</ulink>.</para>
+  </section>
+
+  <section>
+    <title>Community</title>
+
+    <bridgehead>Die Entwickler- und Support-Communities</bridgehead>
+
+    <para>Die <emphasis role="bold">internationale Postnuke
+    Community</emphasis> versammelt sich natürlich auf der <ulink
+    url="#">offiziellen Homepage</ulink>. Daneben gibt es aber eine ganze
+    Reihe sehr fruchtbarer <emphasis role="bold">nationaler
+    Communities</emphasis> wie <ulink
+    url="http://www.post-nuke.net">post-nuke.net</ulink>. Die nationalen Teams
+    widmen sich vor allem dem User-Support in der eigenen Sprache. Es werden
+    sie jeweiligen Sprachdateien für Postnuke gepflegt und spezielle
+    rechtliche Probleme des Landes und Erfahrungen aus dem Support an die
+    internationale Entwicklung herangetragen.</para>
+
+    <bridgehead>NOC - Treffpunkt für Modulentwickler</bridgehead>
+
+    <para>Es existieren dazu eine Vielzahl Sites, die sich zum Beispiel mit
+    der <ulink url="#">Postnuke-Themes</ulink> oder der <ulink
+    url="#">Modulentwicklung</ulink> beschäftigen. Um die verstreuten
+    Modulentwickler zusammen zu führen, wurde das <ulink url="#">NOC
+    Postnuke</ulink> eingerichtet. Hier können Projekte ähnlich SourceForge
+    organisiert und koordiniert werden.</para>
+
+    <bridgehead>User 2 User Support</bridgehead>
+
+    <para>Nicht zu vergessen sind natürlich auch die hunderte <ulink
+    url="http://www.post-nuke.net/modules.php?op=modload&amp;name=Web_Links&amp;file=index&amp;req=viewlink&amp;cid=1">User</ulink>,
+    die Postnuke schon in <emphasis role="bold">Produktivumgebungen</emphasis>
+    für ihre Zwecke einsetzen und oft auf Anfrage gerne die eine oder andere
+    Detailösung verraten.</para>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata align="center" fileref="devUser.gif" format="GIF" width="" />
+      </imageobject>
+    </mediaobject>
   </section>
 
   <section>
