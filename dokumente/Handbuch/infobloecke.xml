@@ -299,11 +299,12 @@
     <section>
       <title>Core/Search Box</title>
 
-      <para>Eine Block der eine Suchfunktion anbietet. Allerdings wird in der
-      Standardversion nur innerhalb der Artikel gesucht!</para>
+      <para>Ein Block der eine Suchfunktion anbietet. Bei aktiviertem Block
+      kann man in der Blockadministration auf 'editieren' klicken, um die
+      Suche in einzelnen Modulen zu aktivieren oder zu deaktivieren.</para>
 
-      <para>Es gibt alternative Suchboxen, die dem Systemverwalter erlauben,
-      den Suchbereich anzugeben.</para>
+      <para>Es besteht auch die Möglichkeit, ein Suchfunktion direkt in das
+      Theme einzubauen.</para>
     </section>
 
     <section>
@@ -326,22 +327,22 @@
     durch Aufspielen des entsprechenden Sprachpaketes seine eigene Sprache
     wählen kann. Zum anderen kann man sogar die Seite mehrsprachig betreiben
     und dem Besucher die Möglichkeit geben, aus den verfügbaren Sprachen seine
-    zu wählen.</para>
+    auszuwählen.</para>
 
-    <para>Um das jetzt auf unserer Seite zu machen brauchen wir erstmal die
+    <para>Um das jetzt auf der eigenen Seite zu machen braucht man erstmal die
     Sprachdatei, am besten wieder von <ulink
     url="http://www.postnuke.com/">www.PostNuke.com</ulink> oder von <ulink
     url="http://www.pncommunity.de/">www.pncommunity.de</ulink>. Danach das
     gleiche Spiel wie beim Installieren von PostNuke: Entpacken und alles, was
     sich unter <emphasis role="bold">/html/</emphasis> befindet per FTP auf
-    den Server spielen. Dabei fällt Dir vermutlich auf, dass zu jedem Modul
-    ein Ordner "lang" oder "pnlang" existiert, in den dann ein Ordner namens
+    den Server spielen. Dabei fällt vermutlich auf, dass zu jedem Modul ein
+    Ordner "lang" oder "pnlang" existiert, in den dann ein Ordner namens
     <emphasis role="bold">"deu"</emphasis> kopiert wird. Darin befinden sich
     dann die entsprechenden Sprachdateien.</para>
 
-    <para>Wenn alles hochkopiert ist, kannst Du Deine Seite aufmachen und hast
-    dann links unten <emphasis role="bold">"Language"</emphasis>. Dort wählst
-    Du <emphasis role="bold">"German"</emphasis> aus und schon erscheint die
+    <para>Wenn alles hochkopiert ist, kann man seine Seite aufmachen und hat
+    dann links unten <emphasis role="bold">"Language"</emphasis>. Dort wählt
+    man <emphasis role="bold">"German"</emphasis> aus und schon erscheint die
     Seite auf deutsch. Selbstverständlich nur die Menüs, die existierenden
     Texte bleiben auf Englisch.</para>
 
@@ -360,8 +361,8 @@
     <ulink url="Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
     schauen, ob die gesuchte Sprache dabei ist.</para>
 
-    <remark>Wir haben oben bereits die Sprachdatei mit installiert. Hier
-    beschreiben, wie weitere Sprachen installiert werden können.</remark>
+    <remark>Oben haben wir bereits die Sprachdatei mit installiert. Hier wird
+    beschrieben, wie man weitere Sprachen installieren kann.</remark>
   </section>
 
   <section>
@@ -372,22 +373,22 @@
     eingebautes System, welches die Darstellung und die Verwaltung von Bannern
     unterstützt.</para>
 
-    <para>Um ein Banner auf Ihrer Website zu platzieren, müssen Sie zunächst
-    einmal einen <emphasis role="bold">Kunden</emphasis> anlegen, den Sie dann
-    mit dem Banner verknüpfen. Hierzu tragen Sie in die freien Felder dieses
+    <para>Um einen Banner auf seiner Website zu platzieren, muss man zunächst
+    einmal einen <emphasis role="bold">Kunden</emphasis> anlegen, den man dann
+    mit dem Banner verknüpft. Hierzu trägt man in die freien Felder dieses
     Fensters den Kundennamen, Ansprechpartner, E-Mailadresse, Kundenlogin,
     Kundenpasswort, weitere Informationen (nur sichtbar für den Admin im
     Bannermodul) ein und klicken auf 'Kunden anlegen'.</para>
 
     <para><guimenuitem>Banner hinzufügen</guimenuitem> kann man erst, wenn ein
-    Kunde angelegt wurde. Wählen Sie zunächst den 'Kunden' aus dem
-    Dropdown-Menü und tragen Sie die Anzahl der gekauften Impressions
-    (Banneraufrufe) ein (0=unendlich), dann die URL im Format
+    Kunde angelegt wurde. Zunächst wählt man den 'Kunden' aus dem
+    Dropdown-Menü aus und trägt die Anzahl der gekauften Impressions
+    (Banneraufrufe) ein (0=unendlich). Dann die URL im Format
     <systemitem>http://www.firma.de/images/banners/bannerl.gif</systemitem>,
-    wo das Banner abgelegt ist und schließlich die URL, an die der User bei
-    Klick auf das Banner umgeleitet werden soll ein.</para>
+    wo das Banner abgelegt ist und zuletzt trägt man die URL, an die der User
+    bei Klick auf das Banner umgeleitet werden soll, ein.</para>
 
-    <para>Klicken Sie zum Abschluß auf <guimenuitem>Banner
+    <para>Zum Abschluß klickt man auf <guimenuitem>Banner
     hinzufügen</guimenuitem>, um dieses Banner zu speichern.</para>
 
     <para><emphasis role="bold">'derzeit aktive Banner'</emphasis></para>
@@ -419,7 +420,7 @@
     Aufruf der zuständigen Funktion <emphasis>pnBannerDisplay();</emphasis> -
     Die muß irgendwo in der theme.php stehen.</para>
 
-    <para>Ihre Kunden können über den Link
+    <para>Die Kunden können über den Link
     <systemitem>http://www.ihre-firma.de/banners.php?op=login</systemitem> auf
     ihre Bannerstatistik zugreifen. Dieser Account dient ausschließlich der
     Abfrage 'derzeit aktive Banner' der Bannerstatistik und ist <emphasis>kein
@@ -559,15 +560,15 @@
   <section>
     <title>HTTP-Referer</title>
 
-    <para>Wenn Sie diese Liste aktivieren, wird Ihnen angezeigt, von wo aus
-    die User auf Ihre Site aus zugreifen.</para>
+    <para>Wenn man diese Liste aktiviert, wird einem angezeigt, von wo aus die
+    User auf die Site zugreifen.</para>
 
     <para>Dies ist auf stark besuchten Seiten eine sehr schnell wachsende
     Liste, deren Länge man begrenzen kann. In der Liste werden die Anzahl der
     Zugriffe von einer bestimmten Seite aus, die aufrufende URL und die
     prozentualen Aufrufe von dieser Seite angezeigt. Mit 'Löschen' kann man
-    die Liste zurücksetzen. Hierbei wird allerdings nicht gefragt, ob Sie
-    wirklich die Liste löschen wollen.</para>
+    die Liste zurücksetzen. Hierbei wird allerdings nicht gefragt, ob man
+    wirklich die Liste löschen will.</para>
 
     <para>Unter 'Gesamt' steht die Summe der Aufrufe</para>
 
@@ -576,9 +577,9 @@
     aufgenommen werden. Klicken Sie auf 'Speichern' um Änderungen zu
     übernehmen.</para>
 
-    <para>Die Referer-Information steht Ihnen nur zur Verfügung, wenn Ihre
-    Besucher direkt auf PostNuke-Seiten zugreifen. Wenn sie hingegen über eine
-    'Intro'-Seite geführt werden, so werden die Referer eben diese Intro-Seite
+    <para>Die Referer-Information stehen nur zur Verfügung, wenn die Besucher
+    direkt auf PostNuke-Seiten zugreifen. Wenn man hingegen über eine
+    'Intro'-Seite geführt wird, werden die Referer eben diese Intro-Seite
     anzeigen...</para>
   </section>
 </chapter>

@@ -10,8 +10,8 @@
     <para>PostNuke erlaubt es, Bewertungen auf der Site zu haben. Mit diesem
     Modul werden die Bewertungen verwaltet.</para>
 
-    <para>Zunächst geben Sie einen Titel ein, z.B. 'Wir brauchen Ihre
-    Bewertungen '. Als nächstes geben sie eine 'Beschreibung' der Bewertungen
+    <para>Zunächst gibt man einen Titel ein, z.B. 'Wir brauchen Ihre
+    Bewertungen '. Als nächstes gibt man eine 'Beschreibung' der Bewertungen
     ein, z.B.:</para>
 
     <para>'<emphasis>Dieser Bereich enthält Bewertungen folgender Themen:
@@ -29,16 +29,15 @@
     stellen, wenn er auf 'Speichern' klickt. Drückt er auf 'Löschen', wird die
     Bewertung ohne Bestätigung gelöscht.</para>
 
-    <para>Um selber eine Bewertung zu schreiben, klicken Sie auf 'hier klicken
+    <para>Um selber eine Bewertung zu schreiben, klickt man auf 'hier klicken
     um einen Review zu verfassen'. Hier kommt man dann auf eine Seite, in der
-    alle Bewrtungen alphabetisch und in einer Toplist angezeigt werden. Mit
+    alle Bewertungen alphabetisch und in einer Toplist angezeigt werden. Mit
     "Review eintragen" gelangt man auf die Seite, in der man einen Titel, eine
     Beschreibung, eine URL und eine Grafik angeben kann, die diesem Review
     zugeordnet werden. Nachdem man sich die Vorschau angesehen hat, kann man
-    als Admin den Review direkt in die Liste eintragen lassen. Achten Sie
-    bitte auf korrekte Schreibweise und auf richtige Grammatik. Klicken Sie
-    auch 'Abbrechen', wenn Sie die Bearbeitung des Reviews abbrechen
-    wollen.</para>
+    als Admin den Review direkt in die Liste eintragen lassen. Auf korrekte
+    Schreibweise und richtige Grammatik achten. Auf 'Abbrechen' klicken, wenn
+    man die Bearbeitung des Reviews abbrechen will.</para>
   </section>
 
   <section>

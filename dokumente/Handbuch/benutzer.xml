@@ -225,7 +225,7 @@
     Zugriffsberechtigungen werden linear von oben nach unten in der Liste
     angewendet - PostNuke nimmt die erste passende Berechtigung und wendet
     diese an - wenn also eine Zeile Adminberechtigung einräumt kann dies nicht
-    durch spätere Zeile eingeschränkt werden!</para>
+    durch eine spätere Zeile eingeschränkt werden!</para>
 
     <para>Die <emphasis role="bold">Komponente</emphasis> ist vorgegeben, z.B.
     Menublock:: oder Onlineblock::.</para>

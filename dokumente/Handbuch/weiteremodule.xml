@@ -19,7 +19,7 @@
     <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
     Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
-    Funktion durchsucht einen Texte nach bestimmten Schlüsselworten und
+    Funktion durchsucht einen Text nach bestimmten Schlüsselwörtern und
     verknüpft dieses mit einem Link. Soll zum Beipiel in allen Artikeln
     automatisch das Wort 'PostNuke' mit dem Link www.post-nuke.net verknüpft
     werden, sind folgende Schritte nötig:</para>

@@ -32,8 +32,8 @@
     pagebreak--&gt;</markup> erzeugt. Natürlich können auch HTML-Befehle zur
     Formatierung benutzt werden.</para>
 
-    <para>Beim ersten Aufruf sehen Sie lediglich die Möglichkeit, eine neue
-    Sektion anzulegen. dazu geben Sie einen Titel an, sowie der Name einer
+    <para>Beim ersten Aufruf sieht man lediglich die Möglichkeit, eine neue
+    Sektion anzulegen. Dazu gibt man einen Titel an, sowie den Name einer
     Grafik, die in <filename>images/sections/</filename> liegen muß.</para>
 
     <para>Ist eine Sektion angelegt, so können dazu auch Artikel angelegt
@@ -52,7 +52,7 @@
 
     <para>PagEd wird unter der Leitung von Øivind Skau ständig
     weiterentwickelt und verfügt über eine aktive Fan-Gemeinde. Die Homepage
-    ist <ulink
+    lautet <ulink
     url="http://canvas.anubix.net">http://canvas.anubix.net</ulink>.</para>
   </section>
 
@@ -457,7 +457,7 @@
     Eingabe des eigentlichen Textes beginnen. Unter dem Titel befindet sich
     ein Dropdownfeld, mit dem man für den ganzen Text einstellen kann, ob er
     rechts, links, oder zentriert angezeigt werden soll. Blocksatz wird
-    offenbar zZt noch nicht unterstützt. Kategorien kann man als Newbie erst
+    offenbar z.Zt. noch nicht unterstützt. Kategorien kann man als Newbie erst
     ignorieren.</para>
 
     <para>Der Editor unterstützt</para>
@@ -752,10 +752,10 @@
   <section>
     <title>Pagesetter</title>
 
-    <para>Dir ist Modulprogrammierung eine Nummer zu hoch, trotzdem möchtest
-    Du Dir aber gerne ein eigenes kleines Modul basteln, mit dem Du dann
-    einfach Inhalte verwalten kannst? Dann bist Du bei Pagesetter genau
-    richtig. Mit Jørn Lind-Nielsen's Modul kannst Du in wenigen Schritten ein
+    <para>Für die, denen die Modulprogrammierung eine Nummer zu hoch ist, die
+    aber trotzdem gerne ein eigenes kleines Modul basteln möchten, mit dem man
+    dann einfach Inhalte verwalten kann, für die ist Pagesetter genau richtig.
+    Mit Jørn Lind-Nielsen's Modul kann man in wenigen Schritten ein
     mittlerweile sogar sehr komfortables Modul "zusammenklicken".</para>
 
     <para>Pagesetter ist ein PostNuke-Modul, mit dem der Administrator
@@ -892,7 +892,7 @@
     HTML sollte man haben und zumindest keine Angst vor PHP/Smarty: es wird
     Xanthia/pnRender benötigt!</para>
 
-    <para>Die Homepage findet man auf <ulink
+    <para>Die Homepage findet man unter <ulink
     url="http://www.elfisk.dk/">http://www.elfisk.dk/</ulink>.</para>
   </section>
 

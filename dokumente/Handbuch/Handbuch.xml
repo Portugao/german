@@ -196,7 +196,7 @@ alter table <replaceable>nuke</replaceable>_users add index idx_uname (pn_uname)
       </listitem>
 
       <listitem>
-        <para>Apache anweisen, diese PHP-Version zu nutzen - Jetzt müssen wir
+        <para>Apache anweisen, diese PHP-Version zu nutzen - Jetzt muss man
         noch dem Apache mitteilen, dass ab sofort diese PHP-Version zu
         benutzen ist. Das geschieht mit einer
         <filename>.htaccess</filename>-Datei im Stammverzeichnis der

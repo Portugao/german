@@ -201,7 +201,7 @@
     <para>Für den Betrieb von PostNuke ist neben einem Webserver zum Upload
     der Dateien lediglich die Skriptsprache PHP sowie eine Datenbankanbindung
     (z.B. MySQL) notwendig (Mindestanforderung: PHP 4.1 und MySQL 4.3.x).
-    Durch den Einsatz der ADODB-Datenbank-Abstraktion kann PostNuke mit
+    Durch den Einsatz der ADOdb-Datenbank-Abstraktion kann PostNuke mit
     diversen Datenbanken (z.B. MySQL, SQL, PostgreSQL und andere)
     zusammenarbeiten und stellt so eine Lösung für Internet/Intranet-Lösungen
     jeglicher Größenordnung dar.</para>

@@ -20,11 +20,11 @@
     funktionierender Webserver mit <ulink
     url="http://www.php.net/">PHP</ulink> und eine Datenbank benötigt. Durch
     die Benutzung der Datenbankabstraktion <ulink
-    url="http://adodb.sourceforge.net/">ADODB</ulink> soll PostNuke in Zukunft
+    url="http://adodb.sourceforge.net/">ADOdb</ulink> soll PostNuke in Zukunft
     mit einer Vielzahl Datenbanksysteme funktionieren - zur Zeit empfiehlt
     sich nur die Benutzung von <ulink
     url="http://www.mysql.com/">MySQL</ulink> , da vor allem Modul von
-    Dritt-Anbietern oft noch nicht vollkommen auf ADODB umgestellt
+    Dritt-Anbietern oft noch nicht vollkommen auf ADOdb umgestellt
     sind.</para>
 
     <section>
@@ -57,9 +57,9 @@
           <listitem>
             <para>Alle Inhalte von PostNuke werden in einer Datenbank
             gespeichert. Obwohl PostNuke durch die Verwendung der
-            ADODB-Bibliotheken theoretisch unabhängig von der verwendeten
+            ADOdb-Bibliotheken theoretisch unabhängig von der verwendeten
             Datenbank ist, empfiehlt sich die Verwendung von MySQL, da einige
-            ältere Module von Drittentwicklern noch nicht komplett auf ADODB
+            ältere Module von Drittentwicklern noch nicht komplett auf ADOdb
             umgestellt sind. MySQL ist aber die Datenbank, die von den meisten
             Providern ohnehin eingesetzt wird.</para>
           </listitem>
@@ -934,12 +934,12 @@ $pnconfig['temp'] = 'pnTemp'; <co id="configphp.pntemp" /></programlisting>
       <title>Ist es möglich, PostNuke auch auf einem PostgreSQL DBMS zu
       installieren?</title>
 
-      <para>Prinzipiell sollte es schon funktionieren, via ADODB auch andere
+      <para>Prinzipiell sollte es schon funktionieren, via ADOdb auch andere
       Datenbanken zu nutzen (das pnForum läuft beispielsweise auch in einer
       Oracle-Installation). Eventuell hat das jeweilige DBMS aber spezielle
       Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B. keine LEFT
       JOINS in Oracle). Generell gilt die Datenbank-Unabhängigkeit natürlich
-      auch nur für die Module, die ADODB-konform ausgeführt sind.</para>
+      auch nur für die Module, die ADOdb-konform ausgeführt sind.</para>
     </section>
 
     <section>

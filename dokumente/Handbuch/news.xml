@@ -25,24 +25,25 @@
     <para>Themenbereiche helfen, die Beiträge nach Themen zu ordnen.</para>
 
     <para>So kann der Nutzer schon anhand des Symbols erkennen, zu welchem
-    Themenkomplex ein Beitrag gehört Das Symbol muss sich schon auf dem
+    Themenkomplex ein Beitrag gehört. Das Symbol muss sich schon auf dem
     Webserver im Ordner images/topics/ befinden.</para>
 
     <bridgehead>Wozu Topics und Kategorien?</bridgehead>
 
     <para>Die PostNuke-"Topics" entsprechen den vom Journalismus bekannten
-    Rubriken: Rubrik: Sport Rubrik: Politik Diese Rubriken (ich bleibe mal bei
-    dem Begriff) liegen fest, ein Redakteur kann sie nicht beliebig ändern. In
-    PostNuke gibt es dafür einen eigenen Administrationspunkt.</para>
+    Rubriken: Rubrik: Sport Rubrik: Politik Diese Rubriken (wir bleiben mal
+    bei dem Begriff) liegen fest, ein Redakteur kann sie nicht beliebig
+    ändern. In PostNuke gibt es dafür einen eigenen
+    Administrationspunkt.</para>
 
     <para>Die PostNuke-Kategorien sind die Kategorien unterhalb des Topics.
     Kategorie: Fussball Kategorie: Kommentar</para>
 
     <para>Bei PostNuke sind die Kategorien allerdings unabhängig von den
-    Rubriken (d.h. Du könntest "Fußball" auch unter "Politik" setzen --
+    Rubriken (d.h. man könnte "Fußball" auch unter "Politik" setzen --
     PostNuke verhindert das nicht; das kann nur der gesunde Menschenverstand).
-    Die Kategorien sind nicht fest -- wenn Du, um beim Sport zu bleiben, das
-    erste Mal über Kuhfladenweitwurf schreibst, mußt Du die Kategorie neu
+    Die Kategorien sind nicht fest -- wenn man, um beim Sport zu bleiben, das
+    erste Mal über Kuhfladenweitwurf schreibt, muss man die Kategorie neu
     einrichten. Tatsächlich werden die Kategorien bei PostNuke über die
     Artikel mit verwaltet.</para>
 
@@ -74,9 +75,9 @@
     und eine Kategorie auswählt (oder diese neu erstellt, später kann man auch
     ein anderes Thema wählen). Schließlich kann man noch entscheiden, ob man
     den Beitrag <emphasis>auf der Startseite</emphasis> anzeigen lassen will
-    oder ob sie nur innerhalb der Kategorie erscheinen sollen. Weiterhin kann
+    oder ob er nur innerhalb der Kategorie erscheinen sollen. Weiterhin kann
     man entscheiden, ob man <emphasis>Kommentare erlauben</emphasis> möchte
-    und für welche Sprachen der Text zugelassen werden soll (wählt 'alle',
+    und für welche Sprachen der Text zugelassen werden soll ('alle' wählen,
     wenn er überall erscheinen soll).</para>
 
     <para>Hat man erstmal alles beantwortet, geht es an die Erstellung des
@@ -237,14 +238,14 @@
     um den Beitrag zu prüfen.</para>
 
     <tip>
-      <para>Wenn Ihr eine Artikelserie schreiben wollt, dann geht auf der
-      Startseite mit der Maus über die Überschrift Eures ersten Artikels.
-      Unten im Fenster erscheint jetzt der damit verbundene Link, z.B.:
+      <para>Wenn man eine Artikelserie schreiben will, dann geht man auf der
+      Startseite mit der Maus über die Überschrift des ersten Artikels. Unten
+      im Fenster erscheint jetzt der damit verbundene Link, z.B.:
       <literal>http://eureseite.de/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112</literal>.
-      Die ID des Artikels ist also 112. Macht das auch mit dem zweiten Artikel
-      der Serie. Die ID wäre in unserem Beispiel jetzt 126. Um Eure Artikel zu
-      verbinden, editiert Ihr den 1. Artikel und geht nach ganz unten. Dort
-      tragt Ihr einen Link auf den nachfolgenden</para>
+      Die ID des Artikels ist also 112. So macht man das auch mit dem zweiten
+      Artikel der Serie. Die ID wäre in unserem Beispiel jetzt 126. Um die
+      Artikel zu verbinden, editiert man den 1. Artikel und geht nach ganz
+      unten. Dort trägt man einen Link auf den nachfolgenden</para>
 
       <para>(<systemitem>modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=126</systemitem>)</para>
 
@@ -301,9 +302,8 @@
     Co-Autoren gedacht, wobei die Entscheidung zur Veröffentlichung beim
     Administrator liegt.</para>
 
-    <para>Durch die Benachrichtigungsfunktion können sie entscheiden ob und
-    mit welchem Text sie auf neueingegangene Beiträge aufmerksam gemacht
-    werden wollen.</para>
+    <para>Durch die Benachrichtigungsfunktion kann man entscheiden ob und mit
+    welchem Text auf neueingegangene Beiträge aufmerksam gemacht wird.</para>
   </section>
 
   <section>
@@ -360,7 +360,7 @@
 
     <para>Nach Bestätigung mit <emphasis>Okay</emphasis> startet der Editor.
     Als erstes muß jetzt noch ein den Settings "Auto-Convert Extended
-    Characters" ausgeschaltet werden. - Jetzt ist w.Bloggar fertig für Deinen
+    Characters" ausgeschaltet werden. - Jetzt ist w.Bloggar fertig für den
     ersten Post. Nachdem man den Beitrag zuende geschrieben und formartiert
     hat, wählt man ein Topic aus (die hat sich w.Bloggar nämlich schon vorher
     von der Site gezogen) und veröffentlicht den Beitrag mit <emphasis

@@ -201,23 +201,23 @@
       </step>
 
       <step>
-        <para>Jetzt kopierst Du die neue Version des Moduls ins Verzeichnis
+        <para>Jetzt kopiert man die neue Version des Moduls ins Verzeichnis
         und</para>
       </step>
 
       <step>
-        <para>meldest Dich mit Adminrechten auf Deiner Site an, gehst in die
+        <para>meldet sich mit Adminrechten auf der Site an, geht in die
         Administration</para>
       </step>
 
       <step>
-        <para>unter 'Module' erzeugst Du die Modulliste neu, suchst Dir Dein
-        Modul raus.</para>
+        <para>unter 'Module' und erzeugt die Modulliste neu, und sucht dann
+        das Modul raus.</para>
       </step>
 
       <step>
         <para>Hat die Aktion bis hier hin geklappt, steht da jetzt 'Upgrade'
-        hinter. Klicke diesen Link</para>
+        hinter. Jetzt diesen Link anklicken</para>
       </step>
 
       <step>
@@ -225,8 +225,8 @@
       </step>
 
       <step>
-        <para>Probier zum Schluß aus, ob das Modul auch so funktioniert, wie
-        es sollte und spiel zur Not das Backup wieder ein.</para>
+        <para>Zum Schluß ausprobieren, ob das Modul auch so funktioniert, wie
+        es sollte und sonst spielt man zur Not das Backup wieder ein.</para>
       </step>
     </procedure>
 
@@ -241,9 +241,9 @@
     <para>Über den Punkt <guimenuitem>Blöcke</guimenuitem> in der
     Administration werden die Blöcke verwaltet. Zunächst werden die bereits
     bestehenden Blöcke aufgelistet. Zu jedem Block ist angegeben, an welcher
-    Stelle sie erscheint (d.h. sowohl die 'Rangfolge' als auch in welcher
-    'Leiste'), wie sie heißt, von welchem Modul sie bereitgestellt wird, und
-    ob sie aktiv ist. Für jeden Block stehen folgende Funktionen zur
+    Stelle er erscheint (d.h. sowohl die 'Rangfolge' als auch in welcher
+    'Leiste'), wie er heißt, von welchem Modul er bereitgestellt wird, und ob
+    er aktiv ist. Für jeden Block stehen folgende Funktionen zur
     Verfügung:</para>
 
     <variablelist>
@@ -276,8 +276,8 @@
 
     <para>Mit den Pfeilen könne die Blöcke in der Reihenfolge verschoben
     werden. Mit einem Klick auf den gewünschten Pfeil wandert der Block um
-    eine Position rauf oder runter. Die Position (links, mitte, rechts) können
-    Sie beeinflussen, wenn Sie auf Editieren klicken. Für jeden Block gibt es
+    eine Position rauf oder runter. Die Position (links, mitte, rechts) kann
+    man beeinflussen, wenn man auf Editieren klickt. Für jeden Block gibt es
     die folgenden Felder:</para>
 
     <variablelist>
