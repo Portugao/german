@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <appendix id="Xanthia.Credits" lang="en-US"
@@ -12,9 +12,9 @@
     <para>Ein spezielles Danke an <personname>
         <firstname>Brian K.</firstname>
 
-        <surname>Virgin den ursprÃ¼nglichen Autor von</surname>
+        <surname>Virgin den ursprünglichen Autor von</surname>
       </personname>Encompass aus dem Xanthia hervorgegangen ist. Du hast ein
-    groÃŸartiges Modul und eine Inspiration geschaffen.</para>
+    großartiges Modul und eine Inspiration geschaffen.</para>
 
     <para>Spezieller Dank auch an <personname>
         <firstname>Gregory</firstname>
@@ -22,7 +22,7 @@
         <surname>Remington</surname>
       </personname>aka <personname>
         <othername>mediatech</othername>
-      </personname>fÃ¼r alle die groÃŸartigen VorschlÃ¤ge, die Xanthia mÃ¤chtig
+      </personname>für alle die großartigen Vorschläge, die Xanthia mächtig
     voran gebracht haben.</para>
 
     <para>Dank an <personname>
@@ -32,24 +32,24 @@
       </personname>(<personname>
         <othername>ColdRolledSteel</othername>
       </personname>) von <ulink
-    url="http://www.mtrad.com">http://www.mtrad.com</ulink> fÃ¼r seine Arbeit
+    url="http://www.mtrad.com">http://www.mtrad.com</ulink> für seine Arbeit
     an den Kurzen URLs.</para>
 
     <para><personname>
         <firstname>Martin</firstname>
 
         <surname>Anderson</surname>
-      </personname>soll an dieser Stelle fÃ¼r seine weitere Arbeit an den
-    kurzen URLs erwÃ¤hnt werden.</para>
+      </personname>soll an dieser Stelle für seine weitere Arbeit an den
+    kurzen URLs erwähnt werden.</para>
 
-    <para>ErwÃ¤hnt werden soll auch <personname>
+    <para>Erwähnt werden soll auch <personname>
         <othername>CHTEKK</othername>
       </personname>von <ulink
-    url="http://www.longitekk.com/">http://www.longitekk.com/</ulink> fÃ¼r
-    seine Arbeit an den kurzen URLs und die Entwicklung eines Konzepts fÃ¼r
+    url="http://www.longitekk.com/">http://www.longitekk.com/</ulink> für
+    seine Arbeit an den kurzen URLs und die Entwicklung eines Konzepts für
     erweiterbare KurzURLs</para>
 
-    <para>Dank an den ursprÃ¼nglichen Autor von Envolutions NoMoreBlocks Modul
+    <para>Dank an den ursprünglichen Autor von Envolutions NoMoreBlocks Modul
     - <personname>
         <othername>ZXvision</othername>
       </personname>(<email>zxvision@envolution.it</email>), <personname>
@@ -68,7 +68,15 @@
         <surname>Choi</surname>
       </personname>(<personname>
         <othername>noborders)</othername>
-      </personname>fÃ¼r seine VorschlÃ¤ge, Tutorials, Fragen &amp; Antworten im
+      </personname>für seine Vorschläge, Tutorials, Fragen &amp; Antworten im
     Support Forum.</para>
+
+    <para>Dank an <personname>
+        <firstname>Christian</firstname>
+
+        <surname>Karrié</surname>
+      </personname>(<personname>
+        <othername>WonderBlood)</othername>
+      </personname>für die Zusammenfassung der Variablen und Plugins.</para>
   </section>
 </appendix>
