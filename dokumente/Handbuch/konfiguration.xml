@@ -960,8 +960,9 @@
     Berechtigungs-System:</para>
 
     <para>Der Editor wird angezeigt, wenn der entsprechende Benutzer
-    zumindestens eine 'kommentieren' Berechtigung für die 'WYSIWYG'-Komponente
-    (ggfs. verbunden mit dem Modulnamen als Instanz) besitzt:<indexterm>
+    zumindestens eine 'kommentieren' Berechtigung für die
+    'typetool'-Komponente (ggfs. verbunden mit dem Modulnamen als Instanz)
+    besitzt:<indexterm>
         <primary>Typetool</primary>
 
         <secondary>Zugriffsrechte</secondary>
@@ -971,19 +972,23 @@
         <secondary>Typetool</secondary>
       </indexterm></para>
 
-    <para>GROUP | WYSIWYG:: | MOD_NAME:: | comment</para>
+    <para>Gruppe | typetool:: | MODULNAME:: | kommentieren</para>
 
     <para>auf diese Art und Weise ist er für unregistrierte Benutzer erst
     einmal nicht verfügbar. Sollen auch sie Zugriff haben gilt:</para>
 
-    <para>unregistered | WYSIWYG:: | .* | comment unregistered | .* | .* |
-    read</para>
+    <para>unregistrierte (Gruppe) | typetool:: | .* | kommentieren </para>
+
+    <para>unregistrierte (Gruppe) | .* | .* | lesen</para>
 
     <para>Falls dagegen nur Admins Zugriff auf den Editor haben sollen, lauten
     die Berechtigungen:</para>
 
-    <para>Admins | .* | .* | admin All Groups | WYSIWYG:: | .* | none Users |
-    .* | .* | comment</para>
+    <para>Admins | .* | .* | administrieren </para>
+
+    <para>alle Gruppen | typetool:: | .* | keines </para>
+
+    <para>Users | .* | .* | kommentieren</para>
 
     <screenshot>
       <mediaobject>
