@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<appendix>
+  <appendixinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </appendixinfo>
+
+  <title>Was ist der safe_mode?</title>
+
+  <para>Der safe_mode ist eine Möglichkeit, sich beim Shared Hosting vor
+  Angriffen von anderen Kunden (nicht von außen!) zu schützen. Mehr
+  Informationen dazu im PHP-Handbuch und in der PHP-FAQ . Der Dreh beim
+  safe_mode ist der, das ein Skript nur auf Dateien zugreifen kann, die
+  denselben Owner haben wie das Skript. Das Problem ist allerdings, dass durch
+  das Skript angelegte Dateien und Verzeichnisse die Ownership des Web-Servers
+  haben! Beispiel: Ein Verzeichnis foo ist per ftp angelegt und brav auf 777
+  chmod'ed. Der Owner ist der jeweilige ftp-Benutzer.</para>
+
+  <procedure>
+    <step>
+      <title>Anlegen einer Datei</title>
+
+      <para>Will ein Skript eine Datei in diesem Verzeichnis ablegen (z.B.
+      nach einem Upload), so darf es das. Das Verzeichnis, in dem das
+      passiert, ist foo mit der Ownership des FTP-Benutzers. Und das ist in
+      aller Regel derjenige, der auch die Skripten hochgeladen hat. Die
+      angelegte Datei hat jetzt die Ownership des Web-Servers!</para>
+    </step>
+
+    <step>
+      <title>Anlegen eines Unterverzeichnisses</title>
+
+      <para>Genau wie eben: Das geht. Und das Unterverzeichnis hat die
+      Ownership des Web-Severs.</para>
+    </step>
+
+    <step>
+      <title>Anlegen einer Datei in dieses Unterverzeichnis</title>
+
+      <para>Das geht jetzt schief! Denn das Unterverzeichnis hat die
+      Eigentümerschaft des Web-Servers, das Skript die des FTP-Benutzers. Und
+      genau diese Zugriffe unterbindet der safe_mode.</para>
+    </step>
+  </procedure>
+
+  <para>Gerade das dritte Beispiel ist aber genau das, was viele Skripte -
+  insbesondere Galerien - machen. Sowohl die My_eGallery als auch die von
+  Menalto benutzen für jede Galerie ein Unterverzeichnis. Daher können diese
+  Skripte auf Webspace mit safe_mode nicht betrieben werden. Die Ausnahme bei
+  den Galerien ist Photoshare. Sie kann problemlos mit dem safe_mode
+  umgehen.</para>
+
+  <bridgehead>Den safe_mode umgehen</bridgehead>
+
+  <para>Auch, wenn der Provider safe_mode aktiviert hat, gibt es u.U. doch
+  noch eine Möglichkeit, Uploads zu realisieren. Dazu benötigt man aber die
+  Möglichkeit, eigene CGI-Programme zu starten. Diese Anleitung besiert auf
+  der <ulink
+  url="http://gallery.menalto.com/modules.php?op=modload&amp;name=GalleryDocs&amp;file=index&amp;page=gallery1-install.faq.b.php#gallery1-install.faq.b.3">FAQ
+  der menalto-Gallerie</ulink>.</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>CGI-Version von PHP bekommen:</para>
+
+      <orderedlist>
+        <listitem>
+          <para>Vorkompilierte Version besorgen - Einige kompilierte Versionen
+          kann man auf der <ulink
+          url="https://sourceforge.net/project/showfiles.php?group_id=7130&amp;package_id=86765">Gallery-Downloadseite</ulink>
+          herunterladen.</para>
+        </listitem>
+
+        <listitem>
+          <para>Selbst kompilieren - Es ist aber auch durchaus möglich, PHP
+          selbst zu übersetzen und die dabei entstehende CGI-Version von PHP
+          einzusetzen. Der Vorteil bei dieser Variante ist, dass man die
+          eingesetzte PHP-Version sowie die benötigten Erweiterungen selbst
+          bestimmen kann. Nachdem man die Sourcen von php.net geholt und
+          ausgepackt hat, konfiguriert man die Installation mit</para>
+
+          <para><command>./configure --enable-force-cgi-redirect
+          --disable-safe-mode
+          --with-config-file-path=/usr/local/lib/php-cgi</command></para>
+
+          <para>Unbedingt den Parameter
+          <command>--enable-force-cgi-redirect</command> mit angeben! Da PHP
+          in unserem, für jeden Surfer zugänglichen cgi-bin-Verzeichnis liegen
+          wird, wäre es anderenfalls möglich, dass jeder beliebige Skripte
+          starten würde! Der Parameter
+          <command>--with-config-file-path=/usr/local/lib/php-cgi</command>
+          sorgt dafür, dass die angegebene <filename>php.ini</filename> nit
+          anderen <filename>php.ini</filename>s kollidiert. Evtl. sollten noch
+          weitere benötigte Erweiterungen mit angegeben werden. Nachdem das
+          Paket auf diese Art konfiguriert wurde, startet der Befehl make den
+          Übersetzer. Anschließend findet man das benötigte PHP-Programm in
+          <filename>sapi/cgi</filename>. Evtl. sollte man noch mit
+          <command>strip sapi/cgi/php</command> die debug-Informationen
+          entfernen.</para>
+        </listitem>
+      </orderedlist>
+    </listitem>
+
+    <listitem>
+      <para>PHP installieren - Hat man nun die benötigte PHP-Version, so lädt
+      man sie auf seinen Webspace in das cgi-bin-Verzeichnis. Die
+      Berechtigungen müssen auf 755 (d.h. lesen, ausführen für alle) gesetzt
+      werden. In dasselbe Verzeichnis kommt die gewünschte php.ini. PHP
+      benutzt dann diese statt der oben angegebenen (die wahrscheinlich
+      ohnehin nicht existieren wird...)</para>
+    </listitem>
+
+    <listitem>
+      <para>Apache anweisen, diese PHP-Version zu nutzen - Jetzt muss man noch
+      dem Apache mitteilen, dass ab sofort diese PHP-Version zu benutzen ist.
+      Das geschieht mit einer <filename>.htaccess</filename>-Datei im
+      Stammverzeichnis der Webpräsenz mit dem folgenden
+      Inhalt:<programlisting># Einen neuen MIME-Typ definieren 
+AddType application/cgi-php .php 
+
+# ...und mit dem Executable verknüpfen 
+Action application/cgi-php /cgi-bin/php</programlisting></para>
+    </listitem>
+  </itemizedlist>
+</appendix>

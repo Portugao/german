@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE appendix PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<appendix>
+  <appendixinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </appendixinfo>
+
+  <title>Statistiken zurücksetzen</title>
+
+  <para>Um die Statistiken auf 0 zurückzusetzen, führt man folgendes Skript
+  auf der Datenbank aus (z.B. mit phpMyAdmin)</para>
+
+  <para>Dabei muß der Präfix <replaceable>nuke</replaceable> auf die eigenen
+  Gegebenheiten angepaßt werden!</para>
+
+  <programlisting>DROP TABLE IF EXISTS <replaceable>nuke</replaceable>_counter;
+
+CREATE TABLE <replaceable>nuke</replaceable>_counter (
+ pn_type varchar(80) NOT NULL default '',
+ pn_var varchar(80) NOT NULL default '',
+ pn_count int(11) unsigned NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('total', 'hits', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Lynx', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'MSIE', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Opera', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Konqueror', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Netscape', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Bot', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('browser', 'Other', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'Windows', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'Linux', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'Mac', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'FreeBSD', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'SunOS', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'IRIX', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'BeOS', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'OS/2', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'AIX', 0);
+INSERT INTO <replaceable>nuke</replaceable>_counter VALUES ('os', 'Other', 0);
+
+# --------------------------------------------------------
+
+DROP TABLE IF EXISTS <replaceable>nuke</replaceable>_stats_date;
+
+CREATE TABLE <replaceable>nuke</replaceable>_stats_date (
+ pn_date varchar(80) NOT NULL default '',
+ pn_hits int(11) unsigned NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO <replaceable>nuke</replaceable>_stats_date VALUES ('15062003', 0);
+
+# --------------------------------------------------------
+
+DROP TABLE IF EXISTS <replaceable>nuke</replaceable>_stats_hour;
+
+CREATE TABLE <replaceable>nuke</replaceable>_stats_hour (
+ pn_hour tinyint(2) unsigned NOT NULL default '0',
+ pn_hits int(11) unsigned NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (0, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (1, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (2, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (3, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (4, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (5, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (6, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (7, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (8, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (9, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (10, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (11, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (12, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (13, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (14, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (15, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (16, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (17, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (18, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (19, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (20, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (21, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (22, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_hour VALUES (23, 0);
+
+# --------------------------------------------------------
+
+DROP TABLE IF EXISTS <replaceable>nuke</replaceable>_stats_month;
+
+CREATE TABLE <replaceable>nuke</replaceable>_stats_month (
+ pn_month tinyint(2) unsigned NOT NULL default '0',
+ pn_hits int(11) unsigned NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (1, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (2, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (3, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (4, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (5, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (6, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (7, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (8, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (9, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (10, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (11, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_month VALUES (12, 0);
+
+# --------------------------------------------------------
+
+DROP TABLE IF EXISTS <replaceable>nuke</replaceable>_stats_week;
+
+CREATE TABLE <replaceable>nuke</replaceable>_stats_week (
+ pn_weekday tinyint(1) unsigned NOT NULL default '0',
+ pn_hits int(11) unsigned NOT NULL default '0'
+) TYPE=MyISAM;
+
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (0, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (1, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (2, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (3, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (4, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (5, 0);
+INSERT INTO <replaceable>nuke</replaceable>_stats_week VALUES (6, 0);</programlisting>
+</appendix>
