@@ -84,7 +84,7 @@
     <para>Module bestehen normalerweise aus mehreren Dateien (Funktionen,
     Grafiken, Sprachdateien usw.), die zusammen in einem Verzeichnis liegen,
     das den Namen des Moduls trägt. Dieses Verzeichnis muss ins Verzeichnis
-    <filename>/modules</filename> auf dem Webserver kopiert werden. </para>
+    <filename>/modules</filename> auf dem Webserver kopiert werden.</para>
 
     <para>Die Installation / Konfiguration der Module erfolgt im
     Administrationsbereich über den Menüpunkt 'Module':</para>
@@ -98,8 +98,8 @@
           ihren jeweiligen Einstellungen an. Über die Buchstaben erreicht man
           die Module mit dem betreffenden Anfangsbuchstaben recht schnell.
           Darüber hinaus kann man in dem Dropdown-Feld auswählen, ob man alle
-          Module, oder nur solche mit einem bestimmten Status sehen möchte.
-          </para>
+          Module, oder nur solche mit einem bestimmten Status sehen
+          möchte.</para>
         </listitem>
       </varlistentry>
 
@@ -127,7 +127,7 @@
         <listitem>
           <para>Dies ist der erste Zustand eines Moduls nach dem Hochladen.
           Das Modul ist zwar im Dateisystem vorhanden, es befinden sich aber
-          keine Informationen in der PostNuke-Datenbank. </para>
+          keine Informationen in der PostNuke-Datenbank.</para>
         </listitem>
       </varlistentry>
 
@@ -136,7 +136,7 @@
 
         <listitem>
           <para>Nach dem Initialisieren, bei dem die Datenbankinformationen
-          erzeugt werden, ist ein Modul zunächst inaktiv. </para>
+          erzeugt werden, ist ein Modul zunächst inaktiv.</para>
         </listitem>
       </varlistentry>
 
@@ -153,7 +153,7 @@
 
         <listitem>
           <para>Ein initialisiertes Modul, dessen Dateien im Dateisystem
-          fehlen. </para>
+          fehlen.</para>
         </listitem>
       </varlistentry>
 
@@ -162,7 +162,7 @@
 
         <listitem>
           <para>Zu diesem Modul ist eine neue Version installiert worden, die
-          nun initialisiert werden muss. </para>
+          nun initialisiert werden muss.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -208,8 +208,8 @@
           <para>Entfernt ein deaktiviertes Modul vollständig, d.h. die
           entsprechenden Datenbanktabellen und Modulvariablen werden gelöscht.
           Das entsprechende Modulverzeichnis in <filename
-          class="directory">/modules</filename> bleibt allerdings bestehen.
-          </para>
+          class="directory">/modules</filename> bleibt allerdings
+          bestehen.</para>
 
           <caution>
             <para>Es gibt keine Sicherheitsabfrage beim Entfernen!</para>
@@ -443,9 +443,9 @@
           <imagedata align="center" fileref="bloecke.gif" format="GIF" />
         </imageobject>
 
-        <textobject>
-          <phrase>Die Blockadministration</phrase>
-        </textobject>
+        <caption>
+          <para>Die Blockadministration</para>
+        </caption>
       </mediaobject>
     </screenshot>
 
