@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Autolinks" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Autolinks</title>
+
+  <para>Was machen die Autolinks? Autolinks sind eine bequeme Möglichkeit,
+  weiterführende Informationen zu bestimmten Themen bereitzustellen. Autolinks
+  ist ein Modul, das in die Bildschirmausgaben andere Module eingreifen kann.
+  Die Funktion durchsucht einen Texte nach bestimmten Schlüsselworten und
+  verknüpft dieses mit einem Link.Soll zum Beipiel in allen Artikeln
+  automatisch das Wort 'Postnuke' mit dem Link www.post-nuke.net verknüpft
+  werden, sind folgende Schritt nötig:</para>
+
+  <para>Installation &amp; Konfiguration<caution>
+      <para>Man muss diese Funktion für jedes Modul bei der
+      'Modulkonfiguration' einschalten!</para>
+    </caution>Über <menuchoice>
+      <guimenu>Administration</guimenu>
+
+      <guimenu>Module</guimenu>
+
+      <guimenu>Liste neu generieren</guimenu>
+    </menuchoice> muß zuerst die Autolinks initialisiert und aktiviert
+  werden.</para>
+
+  <para>Um dann Autolinks für ein bestimmtes Modul zu aktivieren, auf
+  <menuchoice>
+      <guimenu>Administration</guimenu>
+
+      <guimenu>Module</guimenu>
+    </menuchoice> gehen und klicken auf neu erzeugen klicken. Danach kann man
+  innerhalb des Moduls, das man ausgewählt hat, auf
+  <guimenu>editieren</guimenu> gehen und dort dann <guimenu>Autolink</guimenu>
+  anwählen.</para>
+
+  <para>Wenn man das bei allen Modulen gemacht hat, bei denen man Autolinks
+  hinzufügen möchte, geht man auf Autolink Konfiguration Updaten und startet
+  ein Update der Datenbank. In der Autolinks Konfiguration kann man
+  einstellen, ob ein Link nur beim ersten Auftreten eines Wortes in einem
+  Artikel gesetzt wird oder, ob der Link jedesmal hinzugefügt werden soll.
+  Kommt das Wort 'Postnuke' 3x in dem Text vor, würde dieser dann alle drei
+  mal mit dem Link versehen. Wenn nun die Autolinks aktiviert sind, kann man
+  über den Administrationsbildschirm folgende Funktionen nutzen:
+  Administration&gt;Autolinks&gt;Autolink hinzufügen.</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Eingabe des Schlüsselwortes</term>
+
+      <listitem>
+        <para>Das ist das Wort, welches später im Text durch den Link ersetzt
+        werden soll. Groß/Kleinschreibung wird dabei nicht
+        unterschieden.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Titel eingeben</term>
+
+      <listitem>
+        <para>Eingabe des Titels, der später für den Link erscheinen soll.
+        Dieser wird auch für die 'MouseOver'-Effekte benutzt. (Stichwort:
+        'Alt-Tag' im Link)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>URL eingeben</term>
+
+      <listitem>
+        <para>Die URL in der Form z.b. 'http://www.linkname.de' eingeben (oder
+        wenn die Datei auf dem eigenen System ist als 'datei.html')</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Kommentar</term>
+
+      <listitem>
+        <para>Diese ist nur für den Administrator sichtbar.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>Mit Hinzufügen wird der Link dann in die Datenbank eingetragen. Mit
+  Administration&gt;Autolinks&gt;Autolinks ansehen kann man sich eine Liste
+  aller Autolinks sortiert nach Schlüsselwort ansehen und diese auch
+  editieren. Mit Update Autolink wird die Änderung dann in die Datenbank
+  eingetragen. Klickt man auf löschen wird man nochmals gefragt, ob der Link
+  wirklich gelöscht werden soll. Durch Abbruch kann man hier nochmal den
+  Löschvorgang verhindern.</para>
+
+  <note>
+    <para>Da jede Ausgabe erstmal noch durch dieses Modul geschickt wird,
+    bringt es natürlich zumindest leichte Performance-Nachteile mit
+    sich.</para>
+  </note>
+</chapter>

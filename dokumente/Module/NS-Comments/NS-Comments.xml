@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Kommentare" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Kommentare (NS-Comments)</title>
+
+  <para>Kommentare erlauben den Usern, mit Ihrer Website zu interagieren. Wenn
+  ein üser einen Artikel liest zu dem er etwas hinzufügen will oder etwas
+  anzumerken hat, dann kann er einen Kommentar schreiben, der in der Datenbank
+  gespeichert und mit dem Artikel angezeigt wird. Die Einstellung für
+  Kommentare entscheidet, wie PostNuke mit den Artikeln umgeht:</para>
+
+  <note>
+    <para>Kommentare sind standardmäßig für das Reviews-Modul aktiviert und
+    werden durch die Einstellungen in diesem Bereich nicht beeinflusst. Hier
+    geht es ausschließlich um die Kommentare zu den News.</para>
+  </note>
+
+  <screenshot>
+    <mediaobject>
+      <objectinfo>
+        <title>Kommentaradministration</title>
+      </objectinfo>
+
+      <imageobject>
+        <imagedata align="center" fileref="kommentare.gif" format="GIF" />
+      </imageobject>
+
+      <textobject>
+        <phrase>Kommentaradministration</phrase>
+      </textobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>Durch die Wahl der Moderation legt man fest, ob nur der Administrator
+  oder auch der Benutzer oder keine Moderation stattfinden soll. Der
+  Administrator kann einen Beitrag immer bearbeiten oder entfernen. Bedenken
+  Sie bitte, dass zu starke Moderation die Kommunikation mit den Nutzern
+  ersticken kann. Wählt man keine Moderation besteht jedoch die Gefahr, dass
+  unqualifizierte, falsche oder gar rechtlich fragliche Kommentare eingestellt
+  werden. Weiterhin kann gewählt werden, ob anonyme User (Anonymous)
+  Kommentare schreiben dürfen oder nicht. Außerdem kann man die Anzahl der
+  Bytes festlegen, die ein Kommentar lang sein darf. 4096 Bytes ermöglichen
+  einen umfassenden Kommentar, verhindern aber, dass üser das System mit
+  zufälligem überlangem Text füllen, um einen Datenbankfehler zu erzeugen. Mit
+  'Name für Anonymous' gibt man an, welcher Name für einen nicht registrierten
+  User benutzt wird. Diese Einstellung wird auch von vielen anderen Modulen
+  benutzt.</para>
+</chapter>

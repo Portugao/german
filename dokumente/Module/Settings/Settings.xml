@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Einstellungen" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Einstellungen</title>
+
+  <para>Nach erfolgreicher Installation und Anmeldung wird im Main Menu ein
+  zusätzlicher Link 'Administration' angezeigt, über den man in den
+  Adminbereich gelangt. Viele wichtige Werte ("Site-Name",
+  "Admin-Emailadresse" usw) werden bei Postnuke an zentraler Stelle
+  eingestellt. Diese Daten sind im Punkt 'Einstellungen'
+  zusammengefasst:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Logo</term>
+
+      <listitem>
+        <para>Name einer Bilddatei in /images das für die Druckansicht
+        verwendet wird (das 'normale' Seitenlogo wird in aller Regel im Theme
+        definiert)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Slogan</term>
+
+      <listitem>
+        <para>Slogan, der im Seitentitel und in einigen Themes angezeigt
+        wird</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Meta Keywords</term>
+
+      <listitem>
+        <para>Für Suchmaschinen wie Google, Fireball etc. können hier
+        sogenannte Meta Keywords angegeben werden</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>MetaKeywords dynamisch erzeugen</term>
+
+      <listitem>
+        <para>Keywords werden dynamisch aus dem Seiteninhalt erzeugt, führt
+        allerdings zu einem Performance-Verlust da die Seite an Umfang
+        zunehmen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Startdatum</term>
+
+      <listitem>
+        <para>Angabe des 'Gründungszeitpunktes' der Seite, wird u.a. auf der
+        Statistikseite angezeigt</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Administrator E-Mail</term>
+
+      <listitem>
+        <para>Kontaktadresse für alles Admin-Mail des Systems</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Standard-Theme der Seite</term>
+
+      <listitem>
+        <para>Auswahl des Themes, mit dem unregistrierte Benutzer die Website
+        angezeigt bekommen</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Dürfen Benutzer Theme individuell einstellen?</term>
+
+      <listitem>
+        <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
+        Theme einstellen können</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>rechte Blöcke in Beiträgen anzeigen?</term>
+
+      <listitem>
+        <para>Hier kann bestimmt werden, ob sich Benutzer ein abweichendes
+        Theme einstellen können</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>lokales Zeitformat (de_DE)</term>
+
+      <listitem>
+        <para>Einstellung des Zeitformates, für Deutschland sollte 'de_DE'
+        korrekt sein</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Zeitzone (GMT+1)</term>
+
+      <listitem>
+        <para>Einstellung der Zeitzone, Deutschland ist in GMT+1</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Startseite</term>
+
+      <listitem>
+        <para>Angabe des Moduls mit dem PostNuke startet, in aller Regel
+        'News'</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Artikel im Adminmenü</term>
+
+      <listitem>
+        <para>Anzahl der angezeigten Artikel auf der
+        Administrationsseite</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Beiträge auf der Startseite</term>
+
+      <listitem>
+        <para>Anzahl der Artikel auf der Homepage Die Anzahl der angezeigten
+        News wird von zwei Faktoren beeinflusst - die Einstellung in der
+        Administration und die Einstellung in der persönlichen Seite
+        (user.php?op=edithome).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Reihenfolge der News</term>
+
+      <listitem>
+        <para>Auswahl, ob die Beiträge nach ihrer ID oder nach Datum sortiert
+        werden sollen</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Icons im Adminmenü?</term>
+
+      <listitem>
+        <para>Die Links im Adminbereich könnten entweder als Text oder als
+        Icons angezeigt werden</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fehlermeldungen via E-Mail senden</term>
+
+      <listitem>
+        <para>Hier kann eingestellt werden, ob bei fehlenden Seiten 'keine'
+        Meldung, eine Meldung 'von Zugriffen innerhalb der Domain' oder aber
+        eine 'generell' Meldung an den Administrator geschickt werden
+        soll</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fehlermeldungen mit error.php erzeugen</term>
+
+      <listitem>
+        <para>bei einem Apache Webserver können Fehlermeldungen individuell
+        erzeugt werden, anstelle der Servermeldung erscheinen dann 'lustige'
+        Fehlermeldungen. Zusätzlich zur Aktivierung muss dazu auch eine
+        .htaccess-Datei im root der Installation abgelegt
+        werden:<programlisting>ErrorDocument 404 http://www.deineseite.de/error.php?op=404</programlisting></para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Zensur aktivieren</term>
+
+      <listitem>
+        <para>Auswahl, ob die automatische Zensur bestimmter Wort angewendet
+        werden soll (derzeit sind die 'bösen Begriffe' allerdings nur in der
+        module_vars-Tabelle definierbar)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>WYSIWIG-Editor benutzen</term>
+
+      <listitem>
+        <para>Auswahl ob der graphische Editor 'vietdev' automatisch in alle
+        Textareas angewendet werden soll</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>pnAntiCracker</term>
+
+      <listitem>
+        <para>Bestimmt, ob bei bestimmten 'Hacking'-Versuchen automatisch eine
+        Mail an den Admin gesendet wird. dringend empfohlen!</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Standardgruppe für Benutzer</term>
+
+      <listitem>
+        <para>Registrierte Benutzer werden automatisch einer bestimmten Gruppe
+        zugeordnet. Die Standardeinstellung 'Users' sollte nicht geändert
+        werden</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Sprache der Website</term>
+
+      <listitem>
+        <para>unregistrierte Benutzer sehen die Website in der eingestellten
+        Sprache. Wenn Multilangual-Unterstützung aktiviert ist, kann die
+        Sprache darüberhinaus individuell eingestellt werden</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Kompression aktivieren</term>
+
+      <listitem>
+        <para>aktiviert die gzip-Kompression der Seiten</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fuss-Zeile</term>
+
+      <listitem>
+        <para>Die Fuss-Zeile wird unter jeder Postnuke-Seite dargestellt und
+        kann individuell angepasst werden. Die Standard-Daten müssen nicht
+        beibehalten werden (HTML erlaubt)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Backend Titel</term>
+
+      <listitem>
+        <para>Postnuke erzeugt automatisch eine Datei, die es anderen Websites
+        ermöglicht, Inhalte zu 'grabben' - hier wird der Titel der Datei
+        angegeben</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Backend Sprache</term>
+
+      <listitem>
+        <para>Angabe der Sprache der Backend-Informationen</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Sicherheitslevel</term>
+
+      <listitem>
+        <para>Einstellung zur Speicherung der Benutzeranmeldung in einem
+        Cookie gespeichert (hoch: kein Cookie, mittel: Cookie verfällt nach xx
+        Tagen, niedrig: Cookie verfällt nie)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tagesanzahl der Dauer bei mittlerer Sicherheit</term>
+
+      <listitem>
+        <para>Angabe der Tage bis ein Cookie verfällt (nur bei mittlerer
+        Sicherheitsstufe)</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Benutzer werden nach folgender Zeit inaktiv (10)</term>
+
+      <listitem>
+        <para>Angabe der Zeitspanne bis ein inaktiver Benutzer abgemeldet
+        wird. Optimaler Wert: 10 min</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Intranet</term>
+
+      <listitem>
+        <para>Postnuke ist darauf ausgerichtet in einer 'fully qualified
+        domain' Umgebung, d.h. als normale Domain (und nicht z.b. als
+        localhost) zu laufen. Bei Angabe von 'Ja' werden einige
+        Sicherheitseinstellungen von Postnuke ausser Kraft gesetzt. Dies ist
+        nicht empfohlen!</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>in Beiträgen erlaubte HTML-Tags</term>
+
+      <listitem>
+        <para>Angabe, ob und wenn ja welche HTML-Tags in Beiträgen erlaubt
+        sein sollen: nicht erlaubt, erlaubt, erlaubt mit Parametern (z.b.
+        &lt;FONT TYPE='ARIAL' COLOR='#FFFFFF'&gt;) Dabei ist klar, daß gewisse
+        Tags ohne Parameter gar keinen Sinn machen. Hyperlinks ( &lt;a&gt; )
+        zum Beispiel haben immer mindenstens den Parameter mit der Hyperlink
+        Referenz (href='index.php') Wichtig: Parameter nur freigeben, wenn
+        unbedingt erforderlich!</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Eingebette HTML-Entitäten in normale Zeichen wandeln</term>
+
+      <listitem>
+        <para>Solange keine multi-byte Unterstützung benötigt wird, sollte
+        diese Option auf 'nein' stehen</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</chapter>

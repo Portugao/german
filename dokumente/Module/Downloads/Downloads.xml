@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="Downloads" lang="de-DE" revision="$Revision$"
+         status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Downloads</title>
+
+  <para>In diesem Administrationsbereich werden die Downloads in die Datenbank
+  eingetragen. PostNuke unterstützt das Anbieten von Downloads. Dabei lassen
+  sich Dateien beliebigen Formates und Herkunft verwalten. Diese Downloads
+  kann man in Kategorien und Unterkategorien unterteilen, um es dem User
+  einfacher zu machen die Dateien zu finden, an denen er Interesse hat. Es
+  können bis jetzt aber nur Links zu Downloads eingefügt werden, die bereits
+  im Internet zu erreichen sind. Eine Upload-Funktion ist bisher nur mit
+  Download-Modulen anderer Modulentwickler möglich. Auch lassen sich bisher
+  nur Haupt- und Unterkategorien anlegen - eine weitere Verzweigung ist noch
+  nicht möglicht. Zu beachten ist, dass hier effektiv nur Verweise eingetragen
+  werden. Die entsprechenden Dateien müssen sich bereits auf einem
+  Internetserver befinden. Zum Hochladen der Daten benutzen sie in aller Regel
+  ein FTP-Programm. Als Alternative gibt es das Modul UpDownloads, das auch
+  das Hochladen der Dateien ermöglicht.</para>
+
+  <para>Alle Downloads werden in Kategorien und Unterkategorien verwaltet.
+  Bevor der erste Download eingetragen werden kann, muß mindestens eine
+  Hauptkategorie eingetragen werden.</para>
+
+  <para><emphasis>Neue Hauptkategorie hinzufügen</emphasis> - Hier trägt man
+  eine neue Kategorie inkl. Beschreibung in die Downloadliste ein. Hierzu muss
+  man natürlich Name und Kurzbeschreibung (255 Zeichen) angeben. Auf
+  'hinzufügen' klicken, um diesen Eintrag der Datenbank hinzuzufügen.</para>
+
+  <para><emphasis>Unterkategorie hinzuzufügen</emphasis> - Um eine
+  Unterkategorie hinzuzufügen, den Namen der 'Unterkategorie' eintragen und
+  aus dem Pulldownmenü die Hauptkategorie unterhalb der diese erscheinen soll
+  angeben. Es ist möglich, eine Unterkategorie unterhalb einer Unterkategorie
+  anzulegen, indem man aus der Liste die 'Hauptkategorie/Unterkategorie'
+  auswählt. Auf 'hinzufügen' klicken, um die Unterkategorie anzulegen.</para>
+
+  <para>Um eine Kategorie zu verändern oder zu löschen, die entsprechende
+  Kategorie aus dem Pulldownmenü auswählen. Auf 'ändern' klicken. Die
+  Kategorie wird angezeigt und man kann Änderungen vornehmen. Auml;nderungen
+  könnnen auf diese Weise auch für alle Unterkategorien vorgenommen werden.
+  Die Kategorie kann man 'löschen', wenn man sie zunächst auswählt und dann
+  auf der nächsten Seite auf 'löschen' klickt. Das Löschen einer Kategorie
+  löscht auch alle Unterkategorien und die darin enthaltenen Links. Die Files
+  werden natürlich nicht aus dem File-System gelöscht.</para>
+
+  <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, können Downloads
+  hinzugefügt werden. Hierzu auf Download hinzufügen klicken.Folgende Felder
+  werden einem Download zugewiesen:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Name: Name des Programms. Das kann der dateiname sein, besser ist
+      es aber vielleicht, einen beschreibenden Titel zu wählen.</para>
+    </listitem>
+
+    <listitem>
+      <para>Dateipfad: Pfad des Programms, entwerder relativ
+      (downloads/datei.zip) oder absolut
+      http://www.beispiel.de/downloads/datei.zip)</para>
+    </listitem>
+
+    <listitem>
+      <para>Kategorie: Kategorie, in der der Download angezeigt werden
+      soll</para>
+    </listitem>
+
+    <listitem>
+      <para>Beschreibung: Beschreibung der Funktion der Datei</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Nicht unbedingt notwendig, aber oft interessant, sind die folgenden
+  Angaben:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Name Autor: Autor der Datei</para>
+    </listitem>
+
+    <listitem>
+      <para>E-Mail Autor: Email des Autors der Datei</para>
+    </listitem>
+
+    <listitem>
+      <para>Dateigröße: Größe der Datei in Bytes, die entsprechende KB bzw. MB
+      Zahl wird berechnet. Unter Windows erhalten Sie die Größe einer Datei,
+      indem sie mit einem Rechtsklick auf die entsprechende Datei das Fenster
+      'Eigenschaften' aufrufen, Linux- oder Unix-Anwender benutzen ls
+      -l</para>
+    </listitem>
+
+    <listitem>
+      <para>Version: Version der Datei</para>
+    </listitem>
+
+    <listitem>
+      <para>Homepage: Homepage der Datei oder des Autors</para>
+    </listitem>
+
+    <listitem>
+      <para>Hits: Anzahl der bisherigen Downloads der Datei</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Sie müssen nicht alle Felder ausfüllen, leere Felder werden in der
+  Anzeige ignoriert. Abstimmungsliste löschen: User können über Downloads
+  abstimmen, hiermit wird die die Abstimmung zurückgesetzt. Defekten Link
+  melden: Wenn ein Anwender einen defekten Link findet, kann er das durch
+  einen Klick auf 'Defekten Link melden' diesen dem Administrator melden. Der
+  Administrator wird benachrichtigt und bekommt unter Administration -&gt;
+  Downloads eine Liste mit der Anzahl der defekt gemeldeten Links angezeigt.
+  Klicken Sie auf 'Defekt gemeldete Downloads' und sie erhalten die komplette
+  Liste In diesem Menü können Sie 'Editieren' wählen um zu den Einstellungen
+  des Links zu kommen, den Sie dann editieren können, um den Fehler zu
+  beheben. Ist der Downloadlink jedoch in Ordnung, so wählen sie Ignorieren,
+  um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählen Sie
+  'Löschen', um diesen Download aus der Datenbank zu entfemen.</para>
+
+  <caution>
+    <para>Es wird nicht nach einer Bestätigung für den Löschvorgangs gefragt.
+    überprüfen Sie, ob Sie den Downloadlink wirklich löschen wollen.</para>
+  </caution>
+
+  <para>gemeldete Änderungswünsche: User können Sie auch benachrichtigen, wenn
+  ein Link nicht mehr dem neusten Stand ist. Hier wird angezeigt, wie viele
+  und welche Anderungswünsche vorhanden sind. Klicken Sie auf editieren, wenn
+  Sie den Link verändern wollen. Downloads überprüfen: Klicken Sie auf
+  'Downloads überprüfen', wenn Sie alle Ihre Downloads überprüfen wollen. Sie
+  gelangen zu einem weiteren Dialog, auf dem Ihnen weitere Optionen offen
+  stehen. Entweder Sie wählen dann 'alle Downloads überprüfen' (dies kann
+  einige Zeit dauern, besonders, wenn Sie viele Downloads haben) oder Sie
+  überprüfen nur eine Kategorie oder sogar nur eine der Unterkategorien.
+  Klicken Sie hierzu auf die Kategorie bzw die Unterkategorie, die Sie
+  überprüfen wollen. Wenn die Überprüfung abgeschlossen ist, öffnet sich ein
+  Fenster, in dem das Ergebnis der Prüfung angezeigt wird. Wenn die Downloads
+  ok sind, erscheint neben dem entsprechenden Listeneintrag ein 'OK'. Wird ein
+  Fehler festgestellt, so erscheint 'Fehler' neben der entsprechenden Datei
+  und Sie erhalten die Möglichkeit diesen Downloadlink zu löschen oder zu
+  editieren. Klicken Sie auf 'Ändern', um Änderungen vorzunehmen oder auf
+  'Löschen', um den Link zu löschen. Um eine Kategorie zu verändern oder zu
+  löschen, wählen Sie die Kategorie vom Pulldownmenü. Klicken Sie dann auf
+  'ändern'. Die Kategorie wird angezeigt und Sie können Änderungen vornehmen.
+  Die Änderungen werden dann auch für alle Unterkategorien vorgenommen. Die
+  Kategorie kann man 'löschen', wenn man sie zunächst auswählt und dann auf
+  der nächsten Seite auf 'löschen' klickt. Das Löschen einer Kategorie löscht
+  auch alle Unterkategorien und die darin enthaltenen Links. Die Dateien
+  werden natürlich nicht von Ihrem System gelöscht. Um einen Downloadlink zu
+  'ändern', die Download ID eingeben, die auch angezeigt wird, wenn man mit
+  der Maus über den Download geht. In der Statuszeile des Browsersfensters
+  wird der Link angezeigt, in dem auch ID=Nummer steht. Diese Nummer ist die
+  ID des Links. Wenn diese eingegeben wird, kann man anschließend alle
+  Informationen Ändern, die beim Hinzufügen des Links eingetragen wurden.
+  Klicken auf 'Hinzufügen' speichert die Änderungen. Unter 'Download
+  Konfiguration' können Sie wählen, ob es unregistrierten Benutzern erlaubt
+  ist, neue Downloads vorzuschlagen. Klicken Sie auf 'Speichern', um Ihre
+  Änderungen zu speichern.</para>
+</chapter>

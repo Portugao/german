@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<chapter id="News" lang="de-DE" revision="$Revision$" status="draft">
+  <!-- $Id$ -->
+
+  <chapterinfo>
+    <releaseinfo>$Revision$</releaseinfo>
+
+    <date>$Date$</date>
+  </chapterinfo>
+
+  <title>Beitrag hinzufügen</title>
+
+  <para>Der Bereich Beiträge ist eigentlich sehr intuitiv bedienbar. Es
+  handelt sich dabei um die zentrale Newserfassung des Systems. Die hier
+  erfassten Beiträge erscheinen (je nach Einstellung) auf der Hauptseite. Hier
+  kann man einen Beitrag erstellen, indem man einen Titel angibt, ein Topic
+  wählt und eine Kategorie auswählt (oder diese neu erstellt, später kann man
+  auch ein anderes Thema wählen). Schließlich kann man noch entscheiden, ob
+  man den Beitrag auf der Startseite anzeigen lassen will oder ob sie nur
+  innerhalb der Kategorie erscheinen sollen. Weiterhin kann man entscheiden,
+  ob man Kommentare erlauben möchte und für welche Sprachen der Text
+  zugelassen werden soll (wählt 'alle', wenn er überall erscheinen
+  soll).</para>
+
+  <screenshot>
+    <mediaobject>
+      <objectinfo>
+        <title>Das Eingabeformular</title>
+      </objectinfo>
+
+      <imageobject>
+        <imagedata align="center" fileref="Submit.gif" format="JPG" />
+      </imageobject>
+
+      <textobject>
+        <phrase>Das Eingabeformular</phrase>
+      </textobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>Hat man erstmal alles beantwortet, geht es an die Erstellung des
+  eigentlichen Beitrags, der natürlich auch HTML-Befehle erlaubt.</para>
+
+  <para>Zunächst gibt man den Beitrag Text ein, in dem der Teil des Artikels
+  (Einleitung oder Zusammenfassung) geschrieben wird, der auf der Startseite
+  angezeigt werden soll. Im Bereich erweiterter Text trägt man dann den Rest
+  des Artikels ein. Nat. sind hier auch Links und Images möglich, wenn man die
+  freigeschaltet hat. Der User kann diesen Text lesen, wenn er unterhalb der
+  Einleitung auf weiterlesen klickt. Schließlich läßt sich noch eine Anmerkung
+  eingeben und man kann entscheiden zu welchem Zeitpunkt der Beitrag
+  zeitgesteuert erscheinen soll. Am Ende wählt man jetzt noch, ob man sich die
+  Beitragsvorschau anzeigen lassen möchte, oder ob der Beitrag freigegeben
+  werden soll. Die einzelnen Felder sind:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Topics</term>
+
+      <listitem>
+        <para>Die Beiträge können Themengebieten zugeordnet werden. So kann
+        der Benutzer die Beiträge schon anhand der Symbole, die für jedes
+        Themengebiet vergeben wurden, einordnen. Durch einen Klick auf dieses
+        Symbol kann sich der Nutzer alle Beiträge eines jeweiligen
+        Themengebietes anzeigen lassen. Die Topics haben einen eigenen
+        Administrationspunkt. Wählt man kein spezifisches Thema aus, so
+        erschenit statt des Symbols für das Thema das Browsersymbol für eine
+        nicht gefundene Grafik!</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Kategorie</term>
+
+      <listitem>
+        <para>Die Einteilung nach Kategorien ermöglicht eine noch feinere
+        Kategorisierung der Beiträge Wenn sehr viele Beiträge erstellt werden
+        kann durch die Kategorisierung erreicht werden, dass nicht alle
+        Beiträge automatisch über die Startseite laufen, sondern nur die
+        wichtigsten. Außerdem können Kategorien auch andere Layouts zugwiesen
+        werden. Der Zugriff auf Beiträge einer Kategrorie kann über das
+        Rechtesystem eingeschränkt werden.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>Zunächst gibt man den Titel und den Beitrags-Text ein, in dem der Teil
+  des Artikels (Einleitung oder Zusammenfassung) geschrieben wird, der auf der
+  Ubersichtsseite angezeigt werden soll. Im Bereich 'erweiterter Text' trägt
+  man dann den Rest des Artikels ein (sofern vorhanden). Natürlich sind hier
+  auch Links usw. möglich. Der User kann diesen Text lesen, wenn er unterhalb
+  der Einleitung auf Weiterlesen klickt.</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Titel</term>
+
+      <listitem>
+        <para>Der Titel sollte ausdrucksstark sein und grob beschreiben, um
+        was es in dem Beitrag geht. Er erscheint als Überschriftszeile des
+        Beitrags.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Beitrags-Text</term>
+
+      <listitem>
+        <para>Der Text der in der ersten Übersicht erscheint, also der
+        'Anreißer'. Dieser sollte nicht zu lang sein und zum Weiterlesen
+        animieren. erweiterter Text Dieser Text erscheint zusätzlich, wenn man
+        auf 'mehr' klickt. Er kann aber auch weggelassen werden.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Auf der Startseite?</term>
+
+      <listitem>
+        <para>Sofern Kategorien erstellt wurden, kann man mit dieser
+        Einstellung steuern, welche Beiträge auf der Startseite erscheinen,
+        und welche nicht. Die Kategorie 'Beiträge' erscheint immer auf der
+        Startseite, so dass hier diese Auswahl ohne Wirkung bleibt.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Kommentare</term>
+
+      <listitem>
+        <para>Durch aktivieren dieser Funktion können berechtigte Benutzer
+        Beiträge kommentieren und so ihre Meinung äußern. In der
+        Rechteverwaltung kann noch eingestellt werden, ob auch anonyme Nutzer
+        (also solche die sich noch nicht angemeldet haben) Kommentare
+        schreiben dürfen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Sprache</term>
+
+      <listitem>
+        <para>Auswahl der Spracheinstellung, bei der der Beitrag angezeigt
+        werden soll. Beiträge die als 'deutsch' markiert sind, erscheinen nur
+        dann, wenn sich der Nutzer die Seite auf deutsch anzeigen lässt. Diese
+        Auswahl hat natürlich nur bei mehrsprachigen Seiten Wirkung. Wird die
+        Option 'alle' gewählt, wird der Beitrag bei jeder Spracheiustellung
+        angezeigt. Damit wird die allgemeine Spracheinstellung der Seite nicht
+        verändert. Diese erfolgt über einen gesonderten
+        Administrationspunkt</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Formatierungs-Typ</term>
+
+      <listitem>
+        <para>Je nach Formatierungstyp werden Zeilenumbrüche dann auch im
+        Artikel dargestellt</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Anmerkung</term>
+
+      <listitem>
+        <para>Anmerkungen erscheinen unter dem eigentlichen Beitrag. Von der
+        Funktion sind sie als 'Anmerkung der Redaktion' zu sehen, gehören also
+        nicht mehr zum eigentlichen Beitrag, haben aber einen höheren
+        Stellenwert als Kommentare, die jeder eingeben kann.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Beitrag zeitgesteuert?</term>
+
+      <listitem>
+        <para>Es kann eingestellt werden, ab wann der Beitrag angezeigt werden
+        soll (z.B. Silvestergrüße am 31.12. ab 0:00 Uhr).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>Im eigentlichen Beitrag sind auch HTML-Befehle erlaubt. Diese müssen
+  jedoch in den 'Einstellungen' zuerst freigegeben werden. Diese Einschränkung
+  soll Missbrauch verhindern. Außerdem können so 'Layoutbezogene' Befehle
+  verboten werden (Schriftfarbe, Art und Größe). So wird die optische
+  Gleichförmigkeit der Seite gewährleistet.</para>
+
+  <para>Man kann sich vor der Freigabe die Beitragsvorschau anzeigen lassen,
+  um den Beitrag zu prüfen.</para>
+
+  <para>Eine weitere Möglichkeit, Beiträge einzugeben, bietet die Funktion
+  'Submit News'. Der Hauptunterschied zur Funktion 'Beitrag hinzufügen'
+  besteht darin, dass diese Beiträge erst vom Administrator geprüft und
+  freigegeben werden müssen, bevor sie auf der Homepage erscheinen. Diese
+  Funktion ist für Co-Autoren gedacht, wobei die Entscheidung zur
+  Veröffentlichung beim Administrator liegt.</para>
+
+  <tip>
+    <para>Wenn Ihr eine Artikelserie schreiben wollt, dann geht auf der
+    Startseite mit der Maus über die Überschrift Eures ersten Artikels. Unten
+    im Fenster erscheint jetzt der damit verbundene Link, z.B.:
+    <filename>http://<replaceable>eureseite.de</replaceable>/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112</filename>.
+    Die ID des Artikels ist also 112. Macht das auch mit dem zweiten Artikel
+    der Serie. Die ID wäre in unserem Beispiel jetzt 126. Um Eure Artikel zu
+    verbinden, editiert Ihr den 1. Artikel und geht nach ganz unten. Dort
+    tragt Ihr einen Link auf den nachfolgenden</para>
+
+    <para>(modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=126)
+    bzw. vorhergehenden Artikel
+    (modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=112)
+    ein.</para>
+  </tip>
+</chapter>
