@@ -42,7 +42,7 @@
       </varlistentry>
     </variablelist>
 
-    <para>Die Für die Einträge in der Menüliste gibt es folgende Werte</para>
+    <para>Für die Einträge in der Menüliste gibt es folgende Werte</para>
 
     <variablelist>
       <varlistentry>
@@ -313,7 +313,7 @@
       Dies kann entweder über ein Dropdown-Feld oder aber eine Liste der
       jeweiligen Landesflaggen geschehen. Zur Auswahl kommen automatisch alle
       Sprachen aus dem Verzeichnis "language" im PostNuke-Stammverzeichnis,
-      die auch in der Funktion "languagelist", die in der Dateiei
+      die auch in der Funktion "languagelist", die in der Datei
       modules/NS-languages/api.php definiert wird, enthalten sind.</para>
     </section>
   </section>
@@ -360,7 +360,7 @@
     <ulink url="Web_Links+index-req-viewlink-cid-16.html">Linkliste</ulink>
     schauen, ob die gesuchte Sprache dabei ist.</para>
 
-    <remark>wir haben oben bereits die Sprachdatei mit installiert. Hier
+    <remark>Wir haben oben bereits die Sprachdatei mit installiert. Hier
     beschreiben, wie weitere Sprachen installiert werden können.</remark>
   </section>
 
