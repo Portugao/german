@@ -508,7 +508,7 @@ $themeinfo['xhtmlsupport'] = 0;
 
     <para>Eine komplette Liste alle XTE-Plugins mit einer
     Entwickler-Dokumentation gibt es online unter <ulink
-    url="http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/">http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/</ulink>
+    url="http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/">http://www.markwest.me.uk/docs/phpdoc/XTE/HTMLSmartyConverter/</ulink>
     (engl.)</para>
 
     <para>Unter /modules/Xanthia/plugins/ liegen alle verfügbaren
