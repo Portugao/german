@@ -81,19 +81,20 @@
             Providern ohnehin eingesetzt wird.</para>
 
             <note>
-              <title>Ist es möglich, PostNuke auch mit einem anderen
-              Datenbanksystem als MySQL zu installieren?</title>
-
-              <para>Prinzipiell sollte es schon funktionieren, via
+              <para>Prinzipiell ist es auch möglich, PostNuke auch mit einem
+              anderen Datenbanksystem als MySQL zu installieren, da die
+              Datenbankzugriffe über die datenbankunabhängige Schnittstelle
               ADOdb<indexterm>
                   <primary>ADOdb</primary>
-                </indexterm> auch andere Datenbanken zu nutzen (das pnForum
-              läuft beispielsweise auch in einer Oracle-Installation).
-              Eventuell hat das jeweilige Datenbanksystem aber spezielle
+                </indexterm> nutzen. Allerdings ist die
+              Datenbankunabhängigkeit momentan noch kein designziel von
+              PostNuke gewesen, und so muss man sich auf eigene Experimente
+              verlassen. Eventuell hat das jeweilige Datenbanksystem spezielle
               Eigenarten, die zusätzlich berücksichtigt werden müssen (z.B.
               keine LEFT JOINS in Oracle). Generell gilt die
               Datenbank-Unabhängigkeit natürlich auch nur für die Module, die
-              ADOdb-konform ausgeführt sind.</para>
+              ADOdb-konform ausgeführt sind. Das pnForum läuft beispielsweise
+              auch in einer Oracle-Installation.</para>
             </note>
           </listitem>
         </varlistentry>
@@ -1446,7 +1447,7 @@ $pnconfig['temp']        = 'pnTemp'; <co id="configphp.pntemp" /></programlistin
     <para>Neben diesen Verbindungsangaben findet man in der
     <filename>config.php</filename> noch drei weitere Werte, die zur
     Fehlersuche gedacht sind. Im Normalfall sollten alle dieser Werte auf 0
-    gesetzt werden. </para>
+    gesetzt werden.</para>
 
     <programlisting>$pndebug['debug']          = 0; <co id="configphp.debug" /> 
 $pndebug['debug_sql']      = 0; <co id="configphp.debugsql" /> 
