@@ -49,14 +49,15 @@
       Modulentwickler bedenken, es bei der Initialisierung anzulegen und bei
       Löschung des Moduls auch das Verzeichnis samt Inhalten zu löschen.
       Benannte werden sollten diese Verzeichnisse nach der gleichen Konvention
-      wie die Dateien in Punkt 2.2.</para>
+      wie die Dateien unter <xref linkend="pntemp.uses.filenames" />
+      beschrieben.</para>
     </section>
 
     <section id="pntemp.uses.deletion">
       <title>automatisches Löschen</title>
 
       <para>Kurz gesagt: Eine automatsiche Löschung von temporären Dateien
-      wird nicht stattfinden.</para>
+      erfolgt nicht.</para>
 
       <para>Es gibt keine automatische Aufräumfunktion. Jeder Modulentwickler
       muss also selbst darauf achten, was im temporären Verzeichnis passiert.

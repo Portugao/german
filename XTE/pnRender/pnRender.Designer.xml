@@ -24,8 +24,8 @@
     In das verbereitete HTML werden dann die nicht-HTML-Tags eingefügt. Sie
     geben vor, wie die Smarty-Engine die Inhalte einbauen soll. Dieses
     Einführung kann natürlich nicht alle Möglichkeiten von Smarty abdecken.
-    Dazu kann man auf der <ulink url="???">Smarty-Homepage</ulink> mehr
-    lesen.</para>
+    Dazu kann man auf der <ulink
+    url="http://smarty.php.net">Smarty-Homepage</ulink> mehr lesen.</para>
 
     <blockquote>
       <attribution><ulink url="http://smarty.php.net/crashcourse.php">Smarty
@@ -34,19 +34,19 @@
       <para>Zu beachten ist, dass alle Funktionen von Smarty (Modifier,
       Functionen, usw.) sich nur auf die Darstellung des Inhaltes beziehen.
       Dadurch wird die Logik vom Layout getrennt. Jegliche Logik sollte in der
-      Application liegen, das Layout sollte ausschließlich in den Templates
+      Anwendung liegen, das Layout sollte ausschließlich in den Templates
       festgelegt werden. Aus diesem Motiv wurde Smarty entwickelt.</para>
     </blockquote>
   </section>
 
   <section id="pnrender.tempdev.basics">
-    <title>Grundlegendes zu Template</title>
+    <title>Grundlegendes zu Templates</title>
 
     <section id="pnrender.tempdev.basics.delimiters">
       <title>Trennsymbole</title>
 
       <para>Alle Smarty-Tags sind von <emphasis
-      role="bold">Trennsymbolen</emphasis>. Standartmäßig ist das in Smarty
+      role="bold">Trennsymbolen</emphasis>. Standardmäßig ist das in Smarty
       <markup>{</markup> und <markup>}</markup>. Diese wurden für pnRender in
       <markup>&lt;!--[</markup> und <markup>]--&gt;</markup> geändert, weil
       zum Beispiel Dreamweaver-benutzer Probleme mit den Originaltags haben.
@@ -128,7 +128,7 @@
       geladen werden können:</para>
 
       <example>
-        <title>Internationalization</title>
+        <title>Internationalisierung</title>
 
         <programlisting format="linespecific">&lt;!--[pnml name="_SUBMIT"]--&gt;</programlisting>
       </example>
@@ -154,9 +154,10 @@
 &lt;!--[/if]--&gt;
 ...</programlisting>
 
-        <para>In diesem Fall soll der Inhalt der Variable $name fettgedruckt
-        angezeigt werden, wenn die Variable $bold wahr (true) ist, sonst soll
-        er normal angezeigt werden. If-Then Abfragen können mit verschiedenen
+        <para>In diesem Fall soll der Inhalt der Variable
+        <varname>$name</varname> fettgedruckt angezeigt werden, wenn die
+        Variable <varname>$bold</varname> wahr (true) ist, sonst soll er
+        normal angezeigt werden. If-Then Abfragen können mit verschiedenen
         Bedingungen erstellt werden:</para>
 
         <para>== (gleich)</para>
@@ -172,7 +173,7 @@
         <para>&gt;= (größer oder gleich)</para>
 
         <para>Mehr Informationen gibt es auf der <ulink
-        url="http://smarty.php.net/manual/en/language.builtin.functions.php">Smarty-Homepage</ulink>.</para>
+        url="http://smarty.php.net/manual/de/language.builtin.functions.php">Smarty-Homepage</ulink>.</para>
       </section>
 
       <section>
@@ -202,7 +203,7 @@
     <title>Plugins</title>
 
     <para>pnRender wird mit einigen Plugins (sowohl Modifiern als auch
-    Funktionen) ausgeliefert, um den Temeplatedesignern Zugriff auf
+    Funktionen) ausgeliefert, um den Templatedesignern Zugriff auf
     Postnuke-eigene Funktionen zu ermöglichen. Wer schon einmal mit der
     Postnuke-API gearbeitet hat, wird sich hier leicht zurecht finden.</para>
 
