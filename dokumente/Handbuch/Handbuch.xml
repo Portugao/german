@@ -129,15 +129,15 @@ alter table <replaceable>nuke</replaceable>_users add index idx_uname (pn_uname)
     </procedure>
 
     <para>Gerade das dritte Beispiel ist aber genau das, was viele Skripte -
-    insbesondere Gallerien - machen. Sowohl die My_eGallery als auch die von
-    Menalto benutzen für jede Gallerie ein Unterverzeichnis. Daher können
-    diese Skripten auf Webspace mit safe_mode nicht betrieben werden. Die
-    Ausnahme bei den Galerien ist Photoshare. Sie kann problemlos mit dem
-    safe_mode umgehen.</para>
+    insbesondere Galerien - machen. Sowohl die My_eGallery als auch die von
+    Menalto benutzen für jede Galerie ein Unterverzeichnis. Daher können diese
+    Skripte auf Webspace mit safe_mode nicht betrieben werden. Die Ausnahme
+    bei den Galerien ist Photoshare. Sie kann problemlos mit dem safe_mode
+    umgehen.</para>
 
     <bridgehead>Den safe_mode umgehen</bridgehead>
 
-    <para>Auch, wenn der Provider safe_mode aktiviert hat, gibt es u.U. Doch
+    <para>Auch, wenn der Provider safe_mode aktiviert hat, gibt es u.U. doch
     noch eine Möglichkeit, Uploads zu realisieren. Dazu benötigt man aber die
     Möglichkeit, eigene CGI-Programme zu starten. Diese Anleitung besiert auf
     der <ulink
