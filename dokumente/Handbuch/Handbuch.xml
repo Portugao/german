@@ -13,6 +13,118 @@
       <holder>PostNuke e.V.</holder>
     </copyright>
 
+    <legalnotice>
+      <para>Diese Werk ist unter einer Creative Commons Lizenz lizensiert. Sie
+      dürfen das Werk vervielfältigen, verbreiten und öffentlich
+      aufführen</para>
+
+      <para>Zu den folgenden Bedingungen:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para><emphasis role="bold">Namensnennung</emphasis>. Sie müssen den
+          Namen den Autors / Urhebers nennen.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Keine kommerzielle Nutzung</emphasis>.
+          Dieses Werk darf nicht für kommerzielle Zwecke verwendet
+          werden.</para>
+        </listitem>
+
+        <listitem>
+          <para><emphasis role="bold">Keine Bearbeitung</emphasis>. Das Werk
+          darf nicht bearbeitet, in anderer Weise umgestaltet (verändert) oder
+          als Grundlage für ein anderes Werk verwendet werden.</para>
+        </listitem>
+
+        <listitem>
+          <para>Im Falle einer Verbreitung müssen Sie anderen die
+          Lizenzbedingungen, unter die dieses Werk fällt, mitteilen.</para>
+        </listitem>
+
+        <listitem>
+          <para>Jede dieser Bedingungen kann nach schriftlicher Einwilligung
+          des Autors (Urhebers) aufgehoben werden.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Die gesetzlichen Schranken des Urheberrechts bleiben hiervon
+      unberührt. Eiine Zusammenfassung des Lizenzvertrags in
+      allgemeinverständlicher Sprache finden Sie unter <ulink
+      url="http://creativecommons.org/licenses/by-nc-nd/2.0/de/legalcode">http://creativecommons.org/licenses/by-nc-nd/2.0/de/legalcode</ulink>.</para>
+    </legalnotice>
+
+    <publisher>
+      <publishername>PostNuke e.V.</publishername>
+    </publisher>
+
+    <authorgroup>
+      <author>
+        <firstname>Volker</firstname>
+
+        <surname>Glienke</surname>
+
+        <affiliation>
+          <orgname>Post-Nuke.net</orgname>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Bernd</firstname>
+
+        <surname>Heitmann-Müller</surname>
+
+        <affiliation>
+          <orgname>Post-Nuke.net</orgname>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Andreas</firstname>
+
+        <surname>Krapohl</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+
+          <orgdiv>Development Team</orgdiv>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Andy</firstname>
+
+        <surname>Langer</surname>
+      </author>
+
+      <author>
+        <firstname>Jörg</firstname>
+
+        <surname>Napp</surname>
+
+        <affiliation>
+          <jobtitle>Developer</jobtitle>
+
+          <orgname>PostNuke</orgname>
+
+          <orgdiv>Development Team</orgdiv>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Steffen</firstname>
+
+        <surname>Voß</surname>
+
+        <affiliation>
+          <orgname>Post-Nuke.net</orgname>
+        </affiliation>
+      </author>
+    </authorgroup>
+
     <releaseinfo>$Revision$</releaseinfo>
 
     <date>$Date$</date>
