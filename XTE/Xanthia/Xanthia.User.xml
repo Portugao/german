@@ -168,8 +168,8 @@
         <term>Store Templates in Database</term>
 
         <listitem>
-          <para>Select if you want to store the templates in the PostNuke
-          database.</para>
+          <para>Option, um das Template in der PostNuke Datenbak zu
+          speichern.</para>
 
           <para>When you decide not to store the templates in the database,
           you lose the online editing of templates but reduce database load
@@ -213,10 +213,10 @@
       <title>Themes installieren</title>
 
       <caution>
-        <para>If installing the <application>Xanthia Theme Pack</application>
-        ensure that you have changed your default theme too a non-Xanthia
-        theme. This can be a third party, or the
-        <application>extra-lite</application> core theme.</para>
+        <para>Wenn ein Xanthia Theme installiert werden soll, stelle bitte
+        vorher ein Nicht-Xanthia-Theme als Standard Theme ein. Dieses kann
+        sowohl ein mitgeliefertes als auch ein anderes funktionierendes Theme
+        sein.</para>
       </caution>
 
       <para>Xanthia Theme-Templates sind immer in einem Verzeichnis mit dem
@@ -1201,12 +1201,18 @@
           </question>
 
           <answer>
-            <para>Schau unter
-            <guimenu>Administration</guimenu><guisubmenu>Xanthia</guisubmenu><guisubmenu>View
-            Themes</guisubmenu><guisubmenu>Edit
-            Theme</guisubmenu><guimenuitem>Theme Settings</guimenuitem> nach
-            der <guimenuitem>indexcol</guimenuitem> theme setting. Diese
-            stellt die Anzahl der Spalten ein.</para>
+            <para>Schau unter <menuchoice>
+                <guimenu>Administration</guimenu>
+
+                <guisubmenu>Xanthia</guisubmenu>
+
+                <guisubmenu>View Themes</guisubmenu>
+
+                <guisubmenu>Edit Theme</guisubmenu>
+
+                <guimenuitem>Theme Settings</guimenuitem>
+              </menuchoice> nach der <guimenuitem>indexcol</guimenuitem> theme
+            setting. Diese stellt die Anzahl der Spalten ein.</para>
           </answer>
         </qandaentry>
 
@@ -1306,7 +1312,7 @@
 
         <listitem>
           <para>Dies ist der Name des Moduls. Man wählt in im ersten Kasten
-          der Blockkonfiguration aus. </para>
+          der Blockkonfiguration aus.</para>
         </listitem>
       </varlistentry>
 
@@ -1337,9 +1343,9 @@
     <command>index.php?module=<replaceable>&lt;modname&gt;</replaceable></command>).
     Der Grund dafür ist, dass ältere Module den Header und Footer der Seite
     eigenständig ausgeben. Somit kann man bei diesen Modulen nicht an die
-    reine Ausgabe der Module gelangen. </para>
+    reine Ausgabe der Module gelangen.</para>
 
     <para>In PostNuke .8 werden alle Module pnAPI konform sein. In Hinblick
-    darauf wurde der vorliegende Block Xanthia bereits hinzugefügt. </para>
+    darauf wurde der vorliegende Block Xanthia bereits hinzugefügt.</para>
   </section>
 </chapter>
