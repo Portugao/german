@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="Xanthia.Devel" lang="en-US"
@@ -51,7 +51,7 @@
       </author>
 
       <author>
-        <firstname>JÃ¶rg</firstname>
+        <firstname>Jörg</firstname>
 
         <surname>Napp</surname>
 
@@ -91,7 +91,7 @@
     </keywordset>
   </chapterinfo>
 
-  <title>Xanthia fÃ¼r Theme-Entwickler</title>
+  <title>Xanthia für Theme-Entwickler</title>
 
   <section id="Xanthia.Devel.Anatomy">
     <title>Aufbau eines Themes</title>
@@ -100,17 +100,17 @@
     Themes zu; Als erstes We will now look at the makeup of Xanthia theme; Als
     erstes schauen wir uns die Struktur von Themes sowie deren
     Hauptbestandteile an und bestimmen ein paar der wichtigsten Begriffe. Dann
-    schauen wir uns die einzelnen Dateien genauer an und klÃ¤ren, welche Rolle
-    sie fÃ¼r das Theme spielen.</para>
+    schauen wir uns die einzelnen Dateien genauer an und klären, welche Rolle
+    sie für das Theme spielen.</para>
 
     <section id="Xanthia.Devel.xaninfo">
       <title>xaninfo.php</title>
 
       <para>In der Administration von Xanthia kann man sich die Credits jedes
       installierten Themes anschauen. Diese Informationen stammen aus der
-      Datei xaninfo.php. xaninfo.php ist in Struktur und Inhalt so Ã¤hnlich
+      Datei xaninfo.php. xaninfo.php ist in Struktur und Inhalt so ähnlich
       aufgebaut wie die pnversion.php, die jedem Postnuke Modul beliegt. Die
-      xaninfo.php kÃ¶nnte zum Beispiel so aussehen:</para>
+      xaninfo.php könnte zum Beispiel so aussehen:</para>
 
       <programlisting>&lt;?php
 $themeinfo['name'] = 'SeaBreeze';
@@ -121,11 +121,11 @@ $themeinfo['xhtmlsupport'] = 0;
 ?&gt;</programlisting>
 
       <para>Wie man sieht, wird hier ein php array mit einigen Elementen
-      gefÃ¼llt. Die ersten drei Felder sollten sich selbst erklÃ¤ren. Das vierte
-      Feld ("api") wird sich evtl. bei zukÃ¼nftigen Xanthia-Versionen
-      verÃ¤ndern. Zur Zeit ist hier aber nur die Einstellung "Xanthia2.0"
-      mÃ¶glich. Das letzte Feld ("xhtmlsupport") kommt ins Spiel, wenn ab
-      Postnuke .8 dem System die Vorgabe des HTML doctype mÃ¶glich ist. Wenn
+      gefüllt. Die ersten drei Felder sollten sich selbst erklären. Das vierte
+      Feld ("api") wird sich evtl. bei zukünftigen Xanthia-Versionen
+      verändern. Zur Zeit ist hier aber nur die Einstellung "Xanthia2.0"
+      möglich. Das letzte Feld ("xhtmlsupport") kommt ins Spiel, wenn ab
+      Postnuke .8 dem System die Vorgabe des HTML doctype möglich ist. Wenn
       das Theme korrektes XHTML ausgibt, kann hier der Wert 1 gesetzt
       werden.</para>
     </section>
@@ -133,14 +133,14 @@ $themeinfo['xhtmlsupport'] = 0;
     <section id="Xanthia.Devel.xaninit">
       <title>xaninit.php</title>
 
-      <para>Die Xanthia Templating Engine speichert Werte fÃ¼r die Theme
-      Konfiguration, Templates, Paletten, Zonen und BlÃ¶cke in der Datenbank,
-      deshalb mÃ¼ssen mit dieser Datei alle relevanten Daten zur VerfÃ¼gung
+      <para>Die Xanthia Templating Engine speichert Werte für die Theme
+      Konfiguration, Templates, Paletten, Zonen und Blöcke in der Datenbank,
+      deshalb müssen mit dieser Datei alle relevanten Daten zur Verfügung
       gestellt werden.</para>
 
       <para>Eine solche Datei zu erzeugen ist recht einfach. Sie besteht aus
       einer Reihe Funktionen, die das Layout, die Blockzonen, die Paletten die
-      zugehÃ¶rigen Templates und einige Variablen erzeugen. Der einfachste Weg
+      zugehörigen Templates und einige Variablen erzeugen. Der einfachste Weg
       so eine Datei zu erzeugen ist es, eine bestehende Datei aus einem
       anderen Theme zu kopieren und zu bearbeiten. Alle
       Initialisierungsskripte in den mitgelieferten Themes sind dokumentiert,
@@ -149,8 +149,8 @@ $themeinfo['xhtmlsupport'] = 0;
       <section id="Xanthia.Devel.CreatePalette">
         <title>CreatePalette</title>
 
-        <para>Diese Funktion erzeugt die Farbdefintionen fÃ¼r das Layout. Jedes
-        Theme muÃŸ zumindest eine Palette enthalten, wenn keine dynamischen
+        <para>Diese Funktion erzeugt die Farbdefintionen für das Layout. Jedes
+        Theme muß zumindest eine Palette enthalten, wenn keine dynamischen
         Stylesheets benutzt werden. Sollen statische Stylesheets benutzt
         werden, dann ist die Palette eine Kopie des Farbschemas, das in den
         StyleSheets benutzt wird. Bei dynamischen StyleSheets kann das Theme
@@ -161,22 +161,22 @@ $themeinfo['xhtmlsupport'] = 0;
         <title>CreateThemeVar</title>
 
         <para>Mit dieser Funktion werden Layoutvariablen festgelegt. Mit
-        diesen Variablen kÃ¶nnen dann verschiedene Aspekte des Layouts (z.B.
+        diesen Variablen können dann verschiedene Aspekte des Layouts (z.B.
         Breite 750px oder 100%) kontrolliert werden. Alle diese Variablen
-        stehen dann global in allen Templates zur VerfÃ¼gung. Themevariablen
+        stehen dann global in allen Templates zur Verfügung. Themevariablen
         werden wie normale Smarty-Variablen benutzt. Zum Beispiel die Variable
-        fÃ¼r die Seitebreite wÃ¤re dann &lt;!--[$pagewidth]--&gt;.</para>
+        für die Seitebreite wäre dann &lt;!--[$pagewidth]--&gt;.</para>
       </section>
 
       <section id="Xanthia.DevelCreateThemeTemplate">
         <title>CreateThemeTemplate</title>
 
-        <para>Diese Funktion erzeugt ein neues Template und lÃ¤dt es in die
+        <para>Diese Funktion erzeugt ein neues Template und lädt es in die
         Datenbank. Jedes Template bekommt ein Label, durch das die Quell-Datei
         des Templates geladen werden und in die Datenbank geschoben werden
-        kann. Templates gibt es fÃ¼r das Theme, fÃ¼r Blocks und Module. Theme
+        kann. Templates gibt es für das Theme, für Blocks und Module. Theme
         Templates werden Themezonen zugeordnet, genau wie Block Templates
-        Blockzonen zugewiesen werden. Modultemplates ermÃ¶glichen es, jedem
+        Blockzonen zugewiesen werden. Modultemplates ermöglichen es, jedem
         Modul ein eigenes Look&amp;Feel zu geben.</para>
       </section>
 
@@ -187,12 +187,12 @@ $themeinfo['xhtmlsupport'] = 0;
         festgelegt. Zur Zeit wird noch daran gearbeitet diese Aufgabe zu
         vereinfachen. Zur Zeit wird empfohlen in jedem Theme die gleichen
         Blockzonen zu definieren, auch wenn sie nicht genutzt werden. Der
-        Site-Admin kann dann Zonen so hinzufÃ¼gen, wie er es braucht.</para>
+        Site-Admin kann dann Zonen so hinzufügen, wie er es braucht.</para>
 
-        <para>Jede Zone trÃ¤gt normalerweise ein Z als ersten Buchstaben
-        (PrÃ¤fix) um anzuzeigen, dass es sich um eine Zone handelt. Jede Zone
+        <para>Jede Zone trägt normalerweise ein Z als ersten Buchstaben
+        (Präfix) um anzuzeigen, dass es sich um eine Zone handelt. Jede Zone
         verweist auf ein template. Dazu wird ebenfalls der normale Smarty
-        Variablenaufruf genutzt. Zum Beispiel fÃ¼r die Zone ZUPPERTOP gilt dann
+        Variablenaufruf genutzt. Zum Beispiel für die Zone ZUPPERTOP gilt dann
         der Aufruf <markup>&lt;!--[$ZUPPERTOP]--&gt;</markup>.</para>
       </section>
 
@@ -200,17 +200,17 @@ $themeinfo['xhtmlsupport'] = 0;
         <title>CreateThemeZone</title>
 
         <para>Diese Funktion erzeugt die Themezonen. Jede Zone sollte einen
-        selbsterklÃ¤renden Namen bekommen. Dann werden Label, Zonentyp und
+        selbsterklärenden Namen bekommen. Dann werden Label, Zonentyp und
         Status eingestellt.</para>
 
-        <para>Der selbsterklÃ¤renden Namen ist eine Sprachkonstante, um
+        <para>Der selbsterklärenden Namen ist eine Sprachkonstante, um
         Mehrsprachige Sites zuzulassen. Eine Reihe Zonen werden von von
-        Xanthia schon zur VerfÃ¼gung gestellt. ZusÃ¤tzliche Zonen kÃ¶nnen im
+        Xanthia schon zur Verfügung gestellt. Zusätzliche Zonen können im
         Verzeichnis
         <filename>lang/<replaceable>&lt;sprach-code&gt;</replaceable>/xaninit.php</filename>
         angelegt werden. Das Label ist die Kurzbezeichnung durch die
         normalerweise auf die Zone verwiesen wird. Der Zonentyp ist entweder 0
-        (obligatorisch) oder 1(zusÃ¤tzlich). Der Status ist entweder 0(inaktiv)
+        (obligatorisch) oder 1(zusätzlich). Der Status ist entweder 0(inaktiv)
         oder 1(aktiv). Der Templatetyp ist entweder "block", "theme" oder
         "module". Zu jeder Themezone gibt es normalerweise ein
         Template.</para>
@@ -221,13 +221,13 @@ $themeinfo['xhtmlsupport'] = 0;
       <title>theme.php</title>
 
       <para>Wie beim alten Layout-System von Postnuke, handelt es sich bei der
-      theme.php um das HerzstÃ¼ck des Layouts. Hier fÃ¤ngt das System an die
+      theme.php um das Herzstück des Layouts. Hier fängt das System an die
       Ausgaben zu generieren. Anders aber als bei der alten theme.php braucht
-      diese Datei nicht verÃ¤ndert zu werden. Jedes Xanthia-Theme funktioniert
+      diese Datei nicht verändert zu werden. Jedes Xanthia-Theme funktioniert
       mit der gleichen themes.php.</para>
 
-      <para>Fortgeschrittene Theme-Entwickler kÃ¶nnen sie aber bearbeiten um
-      zusÃ¤tzliche Smarty-Funktionen wie zum Beispiel Ausgaben-Filter, Vor- und
+      <para>Fortgeschrittene Theme-Entwickler können sie aber bearbeiten um
+      zusätzliche Smarty-Funktionen wie zum Beispiel Ausgaben-Filter, Vor- und
       Nachfilter in ihr Theme zu integrieren.</para>
     </section>
 
@@ -236,25 +236,60 @@ $themeinfo['xhtmlsupport'] = 0;
 
       <para>Master.htm ist das Haupttemplate. Mit diesem Template beginnt die
       Layout Generierung, es umfasst das komplette Layout in das dann die
-      anderen Templates fÃ¼r die Blockzonen usw. integriert werden, bevor sie
+      anderen Templates für die Blockzonen usw. integriert werden, bevor sie
       an den Browser geschickt werden. Dieses Template kann mit jedem
       HTML-Editor bearbeitet werden.</para>
+
+      <figure>
+        <title>Grundgerüst der master.htm für ein Theme</title>
+
+        <programlisting>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+&lt;html lang="&lt;!--[lang]--&gt;"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=&lt;!--[charset]--&gt;"&gt;
+&lt;meta name="description" content="&lt;!--[slogan]--&gt;"&gt;
+&lt;meta name="robots" content="index,follow"&gt;
+&lt;meta name="resource-type" content="document"&gt;
+&lt;meta http-equiv="expires" content="0"&gt;
+&lt;meta name="author" content="&lt;!--[sitename]--&gt;"&gt;
+&lt;meta name="copyright" content="Copyright (c) 2004 by &lt;!--[sitename]--&gt;"&gt;
+&lt;meta name="revisit-after" content="1 days"&gt;
+&lt;meta name="distribution" content="Global"&gt;
+&lt;meta name="generator" content="PostNuke &lt;!--[pnml name="_PN_VERSION_NUM"]--&gt; - http://postnuke.com"&gt;
+&lt;meta name="rating" content="General"&gt;
+&lt;meta name="KEYWORDS" content="&lt;!--[keywords]--&gt;"&gt;
+&lt;title&gt;&lt;!--[sitename]--&gt; :: &lt;!--[slogan]--&gt;&lt;/title&gt;
+&lt;link rel="stylesheet" href="&lt;!--[$themepath]--&gt;/style/styleNN.css" type="text/css"&gt;
+&lt;link rel="icon" href="&lt;!--[$imagepath]--&gt;/icon.png" type="image/png"&gt;
+&lt;link rel="shortcut icon" href="&lt;!--[$imagepath]--&gt;/favicon.ico"&gt;
+&lt;style type="text/css"&gt;
+@import url("&lt;!--[$themepath]--&gt;/style/style.css");
+&lt;/style&gt;
+&lt;! --[additional_header]--&gt;
+&lt;!--[modulestylesheet]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  <replaceable>Hier Dein Code</replaceable>
+&lt;!--[nocache]--&gt;&lt;!--[page rendertime]--&gt;&lt;!--[/nocache]--&gt;
+&lt;/body&gt;
+&lt;/html&gt;</programlisting>
+      </figure>
     </section>
 
     <section id="Xanthia.Devel.News">
       <title>News templates</title>
 
       <para>Diese Templates kontrollieren das Aussehen der News in PostNuke
-      .726. Ab PostNuke .8 werden diese Templates nicht mehr benÃ¶tigt, da die
-      News nicht mehr Ã¼ber das Theme, sondern wie alle Module Ã¼ber die eigenen
+      .726. Ab PostNuke .8 werden diese Templates nicht mehr benötigt, da die
+      News nicht mehr über das Theme, sondern wie alle Module über die eigenen
       Templates definiert werden.</para>
 
       <section id="Xanthia.Devel.NewsIndex">
         <title>News-index.htm</title>
 
         <para>Dieses Template dient der Steuerung der Ausgaben in der
-        Ãœbersicht auf der Startseite oder in den Newslisten. Im klassischen
-        Layoutsystem hat das die themeindex Funktion Ã¼bernommen.</para>
+        Übersicht auf der Startseite oder in den Newslisten. Im klassischen
+        Layoutsystem hat das die themeindex Funktion übernommen.</para>
       </section>
 
       <section id="Xanthia.Devel.NewsArticle">
@@ -275,22 +310,22 @@ $themeinfo['xhtmlsupport'] = 0;
     <section id="Xanthia.DevelBlockTemplates">
       <title>Block Templates</title>
 
-      <para>Die Blocktemplates kontrollieren das Aussehen der einzelnen BlÃ¶cke
-      und Blockzonen. Jedes Blocktemplate erhÃ¤lt einen Blocktitel in der
-      Titelvariablen. Die Blockinhalte werden dann Ã¼ber die Inhaltsvariable
+      <para>Die Blocktemplates kontrollieren das Aussehen der einzelnen Blöcke
+      und Blockzonen. Jedes Blocktemplate erhält einen Blocktitel in der
+      Titelvariablen. Die Blockinhalte werden dann über die Inhaltsvariable
       eingebaut.</para>
 
       <section id="Xanthia.Devel.lsblock">
         <title>lsblock.htm and rsblock.htm</title>
 
         <para>Diese Templates sind die klassischen rechten und linken
-        BlÃ¶cke.</para>
+        Blöcke.</para>
       </section>
 
       <section id="Xanthia.Devel.ccblock">
         <title>ccblock.htm</title>
 
-        <para>Dieses Template steuert die mittleren BlÃ¶cke.</para>
+        <para>Dieses Template steuert die mittleren Blöcke.</para>
       </section>
     </section>
   </section>
@@ -298,20 +333,20 @@ $themeinfo['xhtmlsupport'] = 0;
   <section>
     <title>Layout des Themes</title>
 
-    <remark>Dieses Kapitel enthÃ¤lt nur knappe Informationen und muÃŸ noch
-    Ã¼berarbeitet werden -- jn</remark>
+    <remark>Dieses Kapitel enthält nur knappe Informationen und muß noch
+    überarbeitet werden -- jn</remark>
 
     <note>
       <para>Das Mastertemplate umfasst das komplette Layout ohne den von
       Postnuke generierten Inhalt. Das war in Xanthia-Versionen vor
-      ReleaseCandidate 3 anders. Die alten Themes kÃ¶nnten also angepasst
-      werden mÃ¼ssen.</para>
+      ReleaseCandidate 3 anders. Die alten Themes könnten also angepasst
+      werden müssen.</para>
     </note>
 
     <para>Die obligatorischen Templates liegen im Verzeichnis:
     <filename>themes/<replaceable>&lt;themename&gt;</replaceable>/templates/</filename></para>
 
-    <para>Dazu gehÃ¶ren:</para>
+    <para>Dazu gehören:</para>
 
     <itemizedlist>
       <listitem>
@@ -360,19 +395,19 @@ $themeinfo['xhtmlsupport'] = 0;
       </listitem>
     </itemizedlist>
 
-    <para><remark>Ob diese alle obligatorisch sind muss noch geklÃ¤rt werden -
+    <para><remark>Ob diese alle obligatorisch sind muss noch geklärt werden -
     vor allem die letzten drei -- jn</remark></para>
 
-    <para>AuÃŸerdem kÃ¶nnen eigene Templates gegen die oben genannten
-    augetauscht werden. Zum Beispiel kÃ¶nnte in einer eigenen
-    <filename>News-article.htm</filename> Code enthalten sein, der dafÃ¼r
+    <para>Außerdem können eigene Templates gegen die oben genannten
+    augetauscht werden. Zum Beispiel könnte in einer eigenen
+    <filename>News-article.htm</filename> Code enthalten sein, der dafür
     sorgt, dass die Topic-Bilder abwechselnd rechts und links angezeigt
     werden.</para>
 
     <para>Eigene Modultemplates liegen in
     <filename>themes/<replaceable>&lt;themename&gt;</replaceable>/templates/modules</filename>.</para>
 
-    <para>Das kÃ¶nnten z.B, sein:</para>
+    <para>Das könnten z.B, sein:</para>
 
     <itemizedlist>
       <listitem>
@@ -411,7 +446,7 @@ $themeinfo['xhtmlsupport'] = 0;
       </listitem>
     </itemizedlist>
 
-    <para>es kÃ¶nnen hier aber auch eigene Blocklayouts gespeichert
+    <para>es können hier aber auch eigene Blocklayouts gespeichert
     werden.</para>
 
     <para>Modulspezifische Templates funktionieren nur ab Postnuke .8 oder bei
@@ -421,7 +456,7 @@ $themeinfo['xhtmlsupport'] = 0;
 
     <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/modules/<replaceable>&lt;modulename&gt;</replaceable>/</filename></para>
 
-    <para>FÃ¼r BlÃ¶ck gilt dasselbe: Die Themetemplates habe vorrang vor den
+    <para>Für Blöck gilt dasselbe: Die Themetemplates habe vorrang vor den
     Blockeigenen Layouts, wenn sie hier liegen:</para>
 
     <para><filename>themes/<replaceable>&lt;themename&gt;</replaceable>/pntemplates/blocks/<replaceable>&lt;blockname&gt;</replaceable>/</filename></para>
@@ -440,7 +475,7 @@ $themeinfo['xhtmlsupport'] = 0;
       <listitem>
         <para>Die wichtigesten Templates (<filename>master.htm</filename>,
         <filename>lsblock.htm</filename> und <filename>rsblock.htm</filename>)
-        kÃ¶nnen nun lokal mit einem HTML-Editor (Von Notepad zu Dreamweaver)
+        können nun lokal mit einem HTML-Editor (Von Notepad zu Dreamweaver)
         bearbeitet und dann auf den Server geladen werden.</para>
       </listitem>
 
@@ -453,7 +488,7 @@ $themeinfo['xhtmlsupport'] = 0;
             <guisubmenu>View Themes</guisubmenu>
 
             <guimenuitem>Reload templates</guimenuitem>
-          </menuchoice> klicken, um die Templates neu einzulesen. Dazu mÃ¼ssen
+          </menuchoice> klicken, um die Templates neu einzulesen. Dazu müssen
         die Optionen <guimenuitem>Check for updates to templates</guimenuitem>
         und <guimenuitem>Force compile</guimenuitem> unter <menuchoice>
             <guimenu>Administration</guimenu>
@@ -465,49 +500,49 @@ $themeinfo['xhtmlsupport'] = 0;
       </listitem>
 
       <listitem>
-        <para>Nun sollten die Ã„nderungen auf der Site zu sehen sein<note>
+        <para>Nun sollten die Änderungen auf der Site zu sehen sein<note>
             <para>Die Funktion <guimenuitem>Reload templates</guimenuitem>
-            muss nach jeder Ã„nderung an den Templates angeklickt werden.
-            Ã„nderungen an den CSS Dateien aber zum Beispiel werden natÃ¼rlich
-            sofort Ã¼bernommen.</para>
+            muss nach jeder Änderung an den Templates angeklickt werden.
+            Änderungen an den CSS Dateien aber zum Beispiel werden natürlich
+            sofort übernommen.</para>
           </note></para>
       </listitem>
 
       <listitem>
-        <para>Wenn fÃ¼r bestimmte Module eigene Layouts erzeugt werden sollen,
-        muÃŸ ein Unterverzeichnis /modules im Theme-Verzeichnis angelegt
+        <para>Wenn für bestimmte Module eigene Layouts erzeugt werden sollen,
+        muß ein Unterverzeichnis /modules im Theme-Verzeichnis angelegt
         werden, in dem dann die entsprechenden Haupttemplates liegen. Diese
         werden dann in der Xanthia-Administration <emphasis>module
         template</emphasis> angezeigt.<note>
-            <para>Templates kÃ¶nnen auch in der Xanthia-Administration geÃ¤ndert
-            werden, da diese Ã„nderungen aber nur in die Datenbank und nicht in
-            die Dateien Ã¼bernommen werden, sind alle Anpassungen rÃ¼ckgÃ¤ngig
+            <para>Templates können auch in der Xanthia-Administration geändert
+            werden, da diese Änderungen aber nur in die Datenbank und nicht in
+            die Dateien übernommen werden, sind alle Anpassungen rückgängig
             gemacht wenn <guimenuitem>reload templates</guimenuitem> geklickt
             wird. Deswegen sollte die oben beschriebene Variante benutzt
-            werden. Die Ã„nderungen Ã¼ber die Administration sind aber ganz
-            hilfreich, wenn man schnell kleinere Ã„nderungen ausprobieren und
-            ggf. rÃ¼ckgÃ¤ngig machen will.</para>
+            werden. Die Änderungen über die Administration sind aber ganz
+            hilfreich, wenn man schnell kleinere Änderungen ausprobieren und
+            ggf. rückgängig machen will.</para>
           </note></para>
       </listitem>
 
       <listitem>
         <para>pnDefault nutzt dynamische StyleSheet (style.php) in denen die
-        Farben und die SchriftgrÃ¶ÃŸen Ã¼ber die Administration angepaÃŸt werden.
-        Die leere style.css kann fÃ¼r eigene Anpassungen genutzt werden.</para>
+        Farben und die Schriftgrößen über die Administration angepaßt werden.
+        Die leere style.css kann für eigene Anpassungen genutzt werden.</para>
       </listitem>
     </itemizedlist>
 
-    <para>FÃ¼r das Bearbeiten der Dateien sollten Editoren mit
+    <para>Für das Bearbeiten der Dateien sollten Editoren mit
     Syntax-Highlightning benutzt werden, damit kleine Fehler im Quelltext
-    leichter auffallen und beseitigt werden kÃ¶nnen, bevor die Dateien
-    hochgeladen werden. AuÃŸerdem sollten die gÃ¤ngigen W3C Standards (xhtml,
-    css, accessibility) fÃ¼r Webdesign bekannt sein. Zum Beispiel:</para>
+    leichter auffallen und beseitigt werden können, bevor die Dateien
+    hochgeladen werden. Außerdem sollten die gängigen W3C Standards (xhtml,
+    css, accessibility) für Webdesign bekannt sein. Zum Beispiel:</para>
 
     <para><itemizedlist>
         <listitem>
           <para>Veraltete Tags wie <markup>&lt;font&gt;</markup>,
           <markup>&lt;b&gt;</markup>, <markup>&lt;i&gt;</markup> sollten nicht
-          mehr benutzt werden dafÃ¼r gibt es die StyleSheets (CSS).</para>
+          mehr benutzt werden dafür gibt es die StyleSheets (CSS).</para>
         </listitem>
 
         <listitem>
@@ -521,7 +556,7 @@ $themeinfo['xhtmlsupport'] = 0;
         </listitem>
 
         <listitem>
-          <para>Alle Attribute sollten in AnfÃ¼hrungszeichen stehen. Zum
+          <para>Alle Attribute sollten in Anführungszeichen stehen. Zum
           Beispiel <markup>ist &lt;input type="text"....&gt;</markup> besser
           als <markup>&lt;input type=text...&gt;</markup></para>
         </listitem>
@@ -534,7 +569,7 @@ $themeinfo['xhtmlsupport'] = 0;
         </listitem>
 
         <listitem>
-          <para>Tabellen sind keine Layoutelemente. DafÃ¼r gibt es DIV und
+          <para>Tabellen sind keine Layoutelemente. Dafür gibt es DIV und
           CSS</para>
         </listitem>
       </itemizedlist></para>
@@ -543,8 +578,8 @@ $themeinfo['xhtmlsupport'] = 0;
       <title>Dynamische Stylesheets</title>
 
       <para>Um Dynamische Stylesheets zu benutzen, sollte folgender Eintrag
-      ganz oben in der master.htm vor dem schlieÃŸenden head Tag
-      <markup>&lt;/head&gt; eingefÃ¼gt werden</markup>:</para>
+      ganz oben in der master.htm vor dem schließenden head Tag
+      <markup>&lt;/head&gt; eingefügt werden</markup>:</para>
 
       <programlisting>&lt;!--[include_php file="$themepath/style/style.php"]--&gt;</programlisting>
     </section>
@@ -558,10 +593,271 @@ $themeinfo['xhtmlsupport'] = 0;
     url="http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/">http://docs.markwest.me.uk/phpdoc/XTE/HTMLSmartyConverter/</ulink>
     (engl.)</para>
 
-    <para>Unter /modules/Xanthia/plugins/ liegen alle verfÃ¼gbaren
+    <para>Unter /modules/Xanthia/plugins/ liegen alle verfügbaren
     Plugins</para>
 
-    <para>Eigene Plugins kÃ¶nnen in /themes/YOURTHEME/plugins abgelegt
+    <para>Eigene Plugins können in /themes/YOURTHEME/plugins abgelegt
     werden.</para>
+
+    <section>
+      <title>Xanthia Theme Codes</title>
+
+      <para>Basiert auf PiterPanV2 Theme</para>
+
+      <table frame="all">
+        <title>Xanthia Theme Codes</title>
+
+        <tgroup cols="3">
+          <colspec colname="c1" colwidth="33*" />
+
+          <colspec colname="c2" colwidth="33*" />
+
+          <colspec colname="c3" colwidth="33*" />
+
+          <thead>
+            <row>
+              <entry><para>Stynax</para></entry>
+
+              <entry><para>Erklärung</para></entry>
+
+              <entry><para>Modul / Refer to</para></entry>
+            </row>
+          </thead>
+
+          <tbody>
+            <row>
+              <entry><para><markup>&lt;!--[sitename]--&gt;</markup></para></entry>
+
+              <entry><para>Name der Website</para></entry>
+
+              <entry><para>Settings</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[pnml
+              name="_PN_VERSION_NUM"]--&gt;</markup></para></entry>
+
+              <entry><para>PostNuke Version</para></entry>
+
+              <entry><para><emphasis>*.php</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[keywords]--&gt;</markup></para></entry>
+
+              <entry><para>Keywords</para></entry>
+
+              <entry><para>Settings</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[slogan]--&gt;</markup></para></entry>
+
+              <entry><para>Slogan der Website</para></entry>
+
+              <entry><para>Settings</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$themepath]--&gt;</markup></para></entry>
+
+              <entry><para>Pfad zum Theme</para></entry>
+
+              <entry><para><emphasis>Filesystem</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$imagepath]--&gt;</markup></para></entry>
+
+              <entry><para>Pfad zum Image Ordner des Themes</para></entry>
+
+              <entry><para><emphasis>Filesystem</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[additional_header]--&gt;</markup></para></entry>
+
+              <entry><para>Zusätzlicher Header</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[modulestylesheet]--&gt;</markup></para></entry>
+
+              <entry><para>Stylesheet vom Modul</para></entry>
+
+              <entry><para><emphasis>style.php</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$pagewidth]--&gt;</markup></para></entry>
+
+              <entry><para>Breite der Seite</para></entry>
+
+              <entry><para>Xanthia - Configure X. - Theme Settings
+              </para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[datetime]--&gt;
+              </markup></para></entry>
+
+              <entry><para>Uhrzeit und Datum</para></entry>
+
+              <entry><para><emphasis>Servereinstellungen</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[displaygreeting]--&gt;</markup></para></entry>
+
+              <entry><para>Begrüßung</para></entry>
+
+              <entry><para>Admin_Messages (?), eher nicht</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$sepcolor]--&gt;</markup></para></entry>
+
+              <entry><para>Farbe des Seperators</para></entry>
+
+              <entry><para>Xanthia - Configure X. - Color Settings
+              </para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--newtemplate--&gt;</markup></para></entry>
+
+              <entry><para>?</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[pnbannerdisplay]--&gt;</markup></para></entry>
+
+              <entry><para>Banner</para></entry>
+
+              <entry><para>Banners</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$TOPLINKS]--&gt;
+              </markup></para></entry>
+
+              <entry><para>?</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$lcolwidth]--&gt;</markup></para></entry>
+
+              <entry><para>Breite des Linken Blockbereichs</para></entry>
+
+              <entry><para>Xanthia - Configure X. - Theme Settings
+              </para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$leftblocks]--&gt;</markup></para></entry>
+
+              <entry><para>Linker Blockbereich</para></entry>
+
+              <entry><para>Blocks</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$centerblocks]--&gt;</markup></para></entry>
+
+              <entry><para>Mittlerer Blockbereich</para></entry>
+
+              <entry><para>Blocks</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$maincontent]--&gt;</markup></para></entry>
+
+              <entry><para>Content Bereich (bei AT &lt;!-- [modules] --&gt;)
+              </para></entry>
+
+              <entry><para><emphasis>Jeweiliges
+              Modul</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$rightblocks]--&gt;</markup></para></entry>
+
+              <entry><para>Rechter Blockbereich</para></entry>
+
+              <entry><para>Blocks</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$color2]--&gt;</markup></para></entry>
+
+              <entry><para>2. Farbe</para></entry>
+
+              <entry><para>Xanthia - Configure X. - Color Settings
+              </para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$BOTTOMLINKS]--&gt;</markup></para></entry>
+
+              <entry><para>?</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[footmsg]--&gt;</markup></para></entry>
+
+              <entry><para>Fußzeile</para></entry>
+
+              <entry><para>Settings /
+              <emphasis>footer.php</emphasis></para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[$FOOTLINKS]--&gt;
+              </markup></para></entry>
+
+              <entry><para>?</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[nocache]--&gt;</markup></para></entry>
+
+              <entry><para>Gibt einen Bereich an, der nicht gechached wird
+              </para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[/nocache]--&gt;
+              </markup></para></entry>
+
+              <entry><para>siehe obendrüber</para></entry>
+
+              <entry><para>?</para></entry>
+            </row>
+
+            <row>
+              <entry><para><markup>&lt;!--[pagerendertime]--&gt;
+              </markup></para></entry>
+
+              <entry><para>zeigt Zeit an, in der die Seite erstellt wurde
+              </para></entry>
+
+              <entry><para><emphasis>footer.php</emphasis></para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
   </section>
 </chapter>
