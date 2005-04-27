@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="weiteremodule" lang="de-DE" status="draft">
@@ -22,76 +22,76 @@
 
     <bridgehead>Was kann das Download-Modul?</bridgehead>
 
-    <para>PostNuke unterstÃ¼tzt das Anbieten von Downloads. Dabei lassen sich
+    <para>PostNuke unterstützt das Anbieten von Downloads. Dabei lassen sich
     Dateien beliebigen Formates und Herkunft verwalten. Diese Downloads kann
     man in Kategorien und Unterkategorien unterteilen, um es dem User
     einfacher zu machen die Dateien zu finden, an denen er Interesse
     hat.</para>
 
-    <para>Es kÃ¶nnen bis jetzt aber nur Links zu Downloads eingefÃ¼gt werden,
+    <para>Es können bis jetzt aber nur Links zu Downloads eingefügt werden,
     die bereits im Internet zu erreichen sind. Eine Upload-Funktion ist bisher
-    nur mit Download-Modulen anderer Modulentwickler mÃ¶glich. Auch lassen sich
+    nur mit Download-Modulen anderer Modulentwickler möglich. Auch lassen sich
     bisher nur Haupt- und Unterkategorien anlegen - eine weitere Verzweigung
-    ist noch nicht mÃ¶glich.</para>
+    ist noch nicht möglich.</para>
 
     <para>Zu beachten ist, dass hier effektiv nur Verweise eingetragen werden.
-    Die entsprechenden Dateien mÃ¼ssen sich bereits auf einem Internetserver
+    Die entsprechenden Dateien müssen sich bereits auf einem Internetserver
     befinden. Zum Hochladen der Daten benutzt man in aller Regel ein
     FTP-Programm. Als Alternative gibt es das Modul UpDownload, das auch das
-    Hochladen der Dateien ermÃ¶glicht.</para>
+    Hochladen der Dateien ermöglicht.</para>
 
-    <bridgehead>Kategorien anlegen, Ã¤ndern und lÃ¶schen</bridgehead>
+    <bridgehead>Kategorien anlegen, ändern und löschen</bridgehead>
 
     <para>Alle Downloads werden in Kategorien und Unterkategorien verwaltet.
-    Bevor der erste Download eingetragen werden kann, muÃŸ mindestens eine
+    Bevor der erste Download eingetragen werden kann, muß mindestens eine
     Hauptkategorie eingetragen werden.</para>
 
     <variablelist>
       <varlistentry>
-        <term>Neue Hauptkategorie hinzufÃ¼gen</term>
+        <term>Neue Hauptkategorie hinzufügen</term>
 
         <listitem>
-          <para>Hier trÃ¤gt man eine neue Kategorie inkl. Beschreibung in die
-          Downloadliste ein. Hierzu muss man natÃ¼rlich Name und
-          Kurzbeschreibung (255 Zeichen) angeben. Auf 'hinzufÃ¼gen' klicken, um
-          diesen Eintrag der Datenbank hinzuzufÃ¼gen</para>
+          <para>Hier trägt man eine neue Kategorie inkl. Beschreibung in die
+          Downloadliste ein. Hierzu muss man natürlich Name und
+          Kurzbeschreibung (255 Zeichen) angeben. Auf 'hinzufügen' klicken, um
+          diesen Eintrag der Datenbank hinzuzufügen</para>
         </listitem>
       </varlistentry>
 
       <varlistentry>
-        <term>Unterkategorie hinzuzufÃ¼gen</term>
+        <term>Unterkategorie hinzuzufügen</term>
 
         <listitem>
-          <para>Um eine Unterkategorie hinzuzufÃ¼gen, den Namen der
-          'Unterkategorie' eintragen und aus dem PulldownmenÃ¼ die
+          <para>Um eine Unterkategorie hinzuzufügen, den Namen der
+          'Unterkategorie' eintragen und aus dem Pulldownmenü die
           Hauptkategorie unterhalb der diese erscheinen soll angeben. Es ist
-          mÃ¶glich, eine Unterkategorie unterhalb einer Unterkategorie
+          möglich, eine Unterkategorie unterhalb einer Unterkategorie
           anzulegen, indem man aus der Liste die
-          'Hauptkategorie/Unterkategorie' auswÃ¤hlt. Auf 'hinzufÃ¼gen' klicken,
+          'Hauptkategorie/Unterkategorie' auswählt. Auf 'hinzufügen' klicken,
           um die Unterkategorie anzulegen.</para>
         </listitem>
       </varlistentry>
     </variablelist>
 
-    <para>Um eine <emphasis role="bold">Kategorie zu verÃ¤ndern</emphasis> oder
-    zu lÃ¶schen, die entsprechende Kategorie aus dem PulldownmenÃ¼ auswÃ¤hlen.
-    Auf 'Ã¤ndern' klicken. Die Kategorie wird angezeigt und man kann Ã„nderungen
-    vornehmen. Ã„nderungen kÃ¶nnnen auf diese Weise auch fÃ¼r alle
+    <para>Um eine <emphasis role="bold">Kategorie zu verändern</emphasis> oder
+    zu löschen, die entsprechende Kategorie aus dem Pulldownmenü auswählen.
+    Auf 'ändern' klicken. Die Kategorie wird angezeigt und man kann Änderungen
+    vornehmen. Änderungen könnnen auf diese Weise auch für alle
     Unterkategorien vorgenommen werden.</para>
 
-    <para>Die Kategorie kann man '<emphasis role="bold">lÃ¶schen</emphasis>',
-    wenn man sie zunÃ¤chst auswÃ¤hlt und dann auf der nÃ¤chsten Seite auf
-    'lÃ¶schen' klickt. Das LÃ¶schen einer Kategorie lÃ¶scht auch alle
+    <para>Die Kategorie kann man '<emphasis role="bold">löschen</emphasis>',
+    wenn man sie zunächst auswählt und dann auf der nächsten Seite auf
+    'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
     Unterkategorien und die darin enthaltenen Links.</para>
 
-    <para>Die Dateien werden natÃ¼rlich nicht aus dem File-System
-    gelÃ¶scht.</para>
+    <para>Die Dateien werden natürlich nicht aus dem File-System
+    gelöscht.</para>
 
-    <bridgehead>Downloads eintragen, Ã¤ndern und lÃ¶schen</bridgehead>
+    <bridgehead>Downloads eintragen, ändern und löschen</bridgehead>
 
-    <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, kÃ¶nnen Downloads
-    hinzugefÃ¼gt werden. Hierzu auf <emphasis role="bold">Download
-    hinzufÃ¼gen</emphasis> klicken. Folgende Felder werden einem Download
+    <para>Jetzt nachdem wie das Kategoriesystem angelegt ist, können Downloads
+    hinzugefügt werden. Hierzu auf <emphasis role="bold">Download
+    hinzufügen</emphasis> klicken. Folgende Felder werden einem Download
     zugewiesen:</para>
 
     <variablelist>
@@ -100,7 +100,7 @@
 
         <listitem>
           <para>Name des Programms. Das kann der Dateiname sein, besser ist es
-          aber vielleicht, einen beschreibenden Titel zu wÃ¤hlen.</para>
+          aber vielleicht, einen beschreibenden Titel zu wählen.</para>
         </listitem>
       </varlistentry>
 
@@ -152,11 +152,11 @@
       </varlistentry>
 
       <varlistentry>
-        <term>DateigrÃ¶ÃŸe</term>
+        <term>Dateigröße</term>
 
         <listitem>
-          <para>GrÃ¶ÃŸe der Datei in Bytes, die entsprechende KB bzw. MB Zahl
-          wird berechnet. Unter Windows erhalten Sie die GrÃ¶ÃŸe einer Datei,
+          <para>Größe der Datei in Bytes, die entsprechende KB bzw. MB Zahl
+          wird berechnet. Unter Windows erhalten Sie die Größe einer Datei,
           indem sie mit einem Rechtsklick auf die entsprechende Datei das
           Fenster 'Eigenschaften' aufrufen, Linux- oder Unix-Anwender benutzen
           ls -l</para>
@@ -188,12 +188,12 @@
       </varlistentry>
     </variablelist>
 
-    <para>Man muss nicht alle Felder ausfÃ¼llen, leere Felder werden in der
+    <para>Man muss nicht alle Felder ausfüllen, leere Felder werden in der
     Anzeige ignoriert.</para>
 
-    <para><emphasis role="bold">Abstimmungsliste lÃ¶schen</emphasis>: User
-    kÃ¶nnen Ã¼ber Downloads abstimmen, hiermit wird die Abstimmung
-    zurÃ¼ckgesetzt.</para>
+    <para><emphasis role="bold">Abstimmungsliste löschen</emphasis>: User
+    können über Downloads abstimmen, hiermit wird die Abstimmung
+    zurückgesetzt.</para>
 
     <para><emphasis role="bold">Defekten Link melden</emphasis>: Wenn ein
     Anwender einen defekten Link findet, kann er das durch einen Klick auf
@@ -205,62 +205,62 @@
       </menuchoice> eine Liste mit der Anzahl der defekt gemeldeten Links
     angezeigt.</para>
 
-    <para>Klickt man auf 'Defekt gemeldete Downloads' erhÃ¤lt man die komplette
+    <para>Klickt man auf 'Defekt gemeldete Downloads' erhält man die komplette
     Liste.</para>
 
-    <para>In diesem MenÃ¼ kann man 'Editieren' wÃ¤hlen um zu den Einstellungen
+    <para>In diesem Menü kann man 'Editieren' wählen um zu den Einstellungen
     des Links zu kommen, in denen man dann editieren kann, um den Fehler zu
-    beheben. Ist der Downloadlink jedoch in Ordnung, so wÃ¤hlt man Ignorieren,
-    um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wÃ¤hlt man
-    'LÃ¶schen', um diesen Download aus der Datenbank zu entfernen.</para>
+    beheben. Ist der Downloadlink jedoch in Ordnung, so wählt man Ignorieren,
+    um alle weiteren Meldungen zu ignorieren. Ist der Link veraltet, wählt man
+    'Löschen', um diesen Download aus der Datenbank zu entfernen.</para>
 
     <para><emphasis role="bold">Wichtig</emphasis>: Es wird nicht nach einer
-    BestÃ¤tigung fÃ¼r den LÃ¶schvorgang gefragt. ÃœberprÃ¼fen Sie, ob Sie den
-    Downloadlink wirklich lÃ¶schen wollen.</para>
+    Bestätigung für den Löschvorgang gefragt. Überprüfen Sie, ob Sie den
+    Downloadlink wirklich löschen wollen.</para>
 
-    <para><emphasis role="bold">gemeldete Ã„nderungswÃ¼nsche</emphasis>: User
-    kÃ¶nnen auch benachrichtigen, wenn ein Link nicht mehr auf dem neusten
-    Stand ist. Hier wird angezeigt, wie viele und welche Ã„nderungswÃ¼nsche
-    vorhanden sind. Auf editieren klicken, wenn man den Link verÃ¤ndern
+    <para><emphasis role="bold">gemeldete Änderungswünsche</emphasis>: User
+    können auch benachrichtigen, wenn ein Link nicht mehr auf dem neusten
+    Stand ist. Hier wird angezeigt, wie viele und welche Änderungswünsche
+    vorhanden sind. Auf editieren klicken, wenn man den Link verändern
     will.</para>
 
-    <para><emphasis role="bold">Downloads Ã¼berprÃ¼fen</emphasis>: Auf
-    'Downloads Ã¼berprÃ¼fen' klicken, wenn man alle Downloads Ã¼berprÃ¼fen will.
+    <para><emphasis role="bold">Downloads überprüfen</emphasis>: Auf
+    'Downloads überprüfen' klicken, wenn man alle Downloads überprüfen will.
     Man gelangt zu einem weiteren Dialog, auf dem weitere Optionen offen
-    stehen. Entweder wÃ¤hlt man dann 'alle Downloads Ã¼berprÃ¼fen' (dies kann
+    stehen. Entweder wählt man dann 'alle Downloads überprüfen' (dies kann
     einige Zeit dauern, besonders, wenn viele Downloads vorhanden sind) oder
-    man Ã¼berprÃ¼ft nur eine Kategorie oder sogar nur eine der Unterkategorien.
+    man überprüft nur eine Kategorie oder sogar nur eine der Unterkategorien.
     Dazu klickt man auf die Kategorie bzw die Unterkategorie, die man
-    Ã¼berprÃ¼fen will.</para>
+    überprüfen will.</para>
 
-    <para>Wenn die ÃœberprÃ¼fung abgeschlossen ist, Ã¶ffnet sich ein Fenster, in
-    dem das Ergebnis der PrÃ¼fung angezeigt wird. Wenn die Downloads ok sind,
+    <para>Wenn die Überprüfung abgeschlossen ist, öffnet sich ein Fenster, in
+    dem das Ergebnis der Prüfung angezeigt wird. Wenn die Downloads ok sind,
     erscheint neben dem entsprechenden Listeneintrag ein 'OK'. Wird ein Fehler
     festgestellt, so erscheint 'Fehler' neben der entsprechenden Datei und man
-    erhÃ¤lt die MÃ¶glichkeit diesen Downloadlink zu lÃ¶schen oder zu
+    erhält die Möglichkeit diesen Downloadlink zu löschen oder zu
     editieren.</para>
 
-    <para>Auf 'Ã„ndern' klicken, um Ã„nderungen vorzunehmen oder auf 'LÃ¶schen',
-    um den Link zu lÃ¶schen. Um eine Kategorie zu verÃ¤ndern oder zu lÃ¶schen,
-    wÃ¤hlt man die Kategorie vom PulldownmenÃ¼. Dann auf 'Ã¤ndern' klicken. Die
-    Kategorie wird angezeigt und man kann Ã„nderungen vornehmen. Die Ã„nderungen
-    werden dann auch fÃ¼r alle Unterkategorien vorgenommen. Die Kategorie kann
-    man 'lÃ¶schen', wenn man sie zunÃ¤chst auswÃ¤hlt und dann auf der nÃ¤chsten
-    Seite auf 'lÃ¶schen' klickt. Das LÃ¶schen einer Kategorie lÃ¶scht auch alle
+    <para>Auf 'Ändern' klicken, um Änderungen vorzunehmen oder auf 'Löschen',
+    um den Link zu löschen. Um eine Kategorie zu verändern oder zu löschen,
+    wählt man die Kategorie vom Pulldownmenü. Dann auf 'ändern' klicken. Die
+    Kategorie wird angezeigt und man kann Änderungen vornehmen. Die Änderungen
+    werden dann auch für alle Unterkategorien vorgenommen. Die Kategorie kann
+    man 'löschen', wenn man sie zunächst auswählt und dann auf der nächsten
+    Seite auf 'löschen' klickt. Das Löschen einer Kategorie löscht auch alle
     Unterkategorien und die darin enthaltenen Links. Die Dateien werden
-    natÃ¼rlich nicht von Ihrem System gelÃ¶scht.</para>
+    natürlich nicht von Ihrem System gelöscht.</para>
 
-    <para>Um einen <emphasis role="bold">Downloadlink zu 'Ã¤ndern'</emphasis>,
+    <para>Um einen <emphasis role="bold">Downloadlink zu 'ändern'</emphasis>,
     die Download ID eingeben, die auch angezeigt wird, wenn man mit der Maus
-    Ã¼ber den Download geht. In der Statuszeile des Browsersfensters wird der
+    über den Download geht. In der Statuszeile des Browsersfensters wird der
     Link angezeigt, in dem auch ID=Nummer steht. Diese Nummer ist die ID des
-    Links. Wenn diese eingegeben wird, kann man anschlieÃŸend alle
-    Informationen Ã¤ndern, die beim HinzufÃ¼gen des Links eingetragen wurden.
-    Klicken auf 'HinzufÃ¼gen' speichert die Ã„nderungen.</para>
+    Links. Wenn diese eingegeben wird, kann man anschließend alle
+    Informationen ändern, die beim Hinzufügen des Links eingetragen wurden.
+    Klicken auf 'Hinzufügen' speichert die Änderungen.</para>
 
-    <para>Unter 'Download Konfiguration' kann man wÃ¤hlen, ob es
+    <para>Unter 'Download Konfiguration' kann man wählen, ob es
     unregistrierten Benutzern erlaubt ist, neue Downloads vorzuschlagen. Auf
-    'Speichern' klicken, um die Ã„nderungen zu speichern.</para>
+    'Speichern' klicken, um die Änderungen zu speichern.</para>
   </section>
 
   <section id="weblinks">
@@ -272,12 +272,12 @@
         <see>Web Links</see>
       </indexterm></title>
 
-    <para>Um die Links besser zu gliedern, kÃ¶nnen Kategorien und
+    <para>Um die Links besser zu gliedern, können Kategorien und
     Unterkategorien angelegt werden. So bleibt die Seite auch mit vielen Links
-    Ã¼bersichtlich gegliedert.</para>
+    übersichtlich gegliedert.</para>
 
     <tip>
-      <para>Das Web Links-Modul ist dem Download-Modul sehr Ã¤hnlich (in der
+      <para>Das Web Links-Modul ist dem Download-Modul sehr ähnlich (in der
       Tat basieren beide auf der selben Codebasis).</para>
     </tip>
 
@@ -333,23 +333,23 @@
       </varlistentry>
     </variablelist>
 
-    <para>Man muss nicht alle Felder ausfÃ¼llen, leere Felder werden in der
+    <para>Man muss nicht alle Felder ausfüllen, leere Felder werden in der
     Anzeige ignoriert.</para>
 
-    <para>Jeder Nutzer kann (nach Berechtigung) Links fÃ¼r die Datenbank
-    vorschlagen, Ã¼ber vorhandene Links abstimmen oder 'tote Links'
-    (fehlerhafte Adressen) melden. Diese werden durch die Funktionen 'LÃ¶sche
-    Link-Abstimmungen', 'Tote Links', 'LinkÃ¤nderungs-WÃ¼nsche' und 'Links
-    prÃ¼fen' bearbeiten.</para>
+    <para>Jeder Nutzer kann (nach Berechtigung) Links für die Datenbank
+    vorschlagen, über vorhandene Links abstimmen oder 'tote Links'
+    (fehlerhafte Adressen) melden. Diese werden durch die Funktionen 'Lösche
+    Link-Abstimmungen', 'Tote Links', 'Linkänderungs-Wünsche' und 'Links
+    prüfen' bearbeiten.</para>
 
-    <para>Letzte Funktion Ã¼berprÃ¼ft alle vorhandenen Links auf ihre GÃ¼ltigkeit
+    <para>Letzte Funktion überprüft alle vorhandenen Links auf ihre Gültigkeit
     (Linkchecker) und erleichtert somit die Administration in diesem
     Bereich.</para>
 
     <section>
       <title>Der "Latest Web Links"-Block</title>
 
-      <para>Block mit den neuesten EintrÃ¤gen der Link-Datenbank</para>
+      <para>Block mit den neuesten Einträgen der Link-Datenbank</para>
     </section>
   </section>
 
@@ -361,27 +361,27 @@
     <para>Die Frequently Asked Questions (FAQ) begegnen einem immer wieder.
     Man versteht darunter Informationen, die zusammengestellt werden, damit
     der Betreiber einer Seite nicht dauernd die gleichen Fragen beantworten
-    muss (z.B. 'Wie kann ich das BIOS neu aufspielen?') Diese Antwort mÃ¼ssten
+    muss (z.B. 'Wie kann ich das BIOS neu aufspielen?') Diese Antwort müssten
     die Hersteller bestimmt 100-mal am Tag geben. Also stellt man
-    entsprechende FAQs ins Netz, die die User erst einmal durchsuchen kÃ¶nnen,
+    entsprechende FAQs ins Netz, die die User erst einmal durchsuchen können,
     wenn sie Probleme haben.</para>
 
-    <para><emphasis role="bold">Um die FAQs zu nutzen, legt man zunÃ¤chst eine
+    <para><emphasis role="bold">Um die FAQs zu nutzen, legt man zunächst eine
     oder mehrere Kategorien an. Die eingetragene Kategorie speichert man wie
     gewohnt.</emphasis></para>
 
     <para>Will man innerhalb einer Kategorie noch Unterkategorien einsetzen,
-    so wÃ¤hlt man einfach rechts die Ã¼bergeordnete Hauptkategorie oder 'Neue
+    so wählt man einfach rechts die übergeordnete Hauptkategorie oder 'Neue
     Hauptkategorie'.</para>
 
-    <para>Fragen kÃ¶nnen direkt Ã¼ber den FAQ-Link im HauptmenÃ¼ gestellt werden.
+    <para>Fragen können direkt über den FAQ-Link im Hauptmenü gestellt werden.
     Beim Klicken des Links wird der User auf eine neue Seite gebracht, wo der
     User die Frage stellen, seine Emailadresse eintragen und die Frage einer
     Kategorie zuordnen kann oder 'unsicher', wenn er keine passende Kategorie
-    findet und eine generelle Frage stellen mÃ¶chte. Danach schickt der User
+    findet und eine generelle Frage stellen möchte. Danach schickt der User
     die Frage ab.</para>
 
-    <para>Der Administrator wird Ã¼ber offen stehende Fragen im Contentbereich
+    <para>Der Administrator wird über offen stehende Fragen im Contentbereich
     informiert.</para>
 
     <para>Als Administrator geht man zur <menuchoice>
@@ -392,33 +392,33 @@
 
     <para><emphasis role="bold">Unbeantwortete Fragen ansehen</emphasis> gibt
     eine Liste mit offenen Fragen aus. Der Administrator kann die Fragen
-    beantworten oder lÃ¶schen. Um die Fragen zu beantworten, auf '<emphasis
+    beantworten oder löschen. Um die Fragen zu beantworten, auf '<emphasis
     role="bold">Beantworten</emphasis>' klicken und die Antwort auf die Frage
     eingeben.</para>
 
-    <para>Falls nÃ¶tig, eine Kategorie fÃ¼r die Frage/Antwort auswÃ¤hlen und dann
-    auf '<emphasis role="bold">Speichern</emphasis>' drÃ¼cken. Die
+    <para>Falls nötig, eine Kategorie für die Frage/Antwort auswählen und dann
+    auf '<emphasis role="bold">Speichern</emphasis>' drücken. Die
     Frage/Antwort wird dann in die FAQ eingetragen. Wenn man die Frage
-    '<emphasis role="bold">lÃ¶scht</emphasis>', wird man zur BestÃ¤tigung des
-    LÃ¶schvorgangs aufgefordert. Man kann den LÃ¶schvorgang abbrechen.</para>
+    '<emphasis role="bold">löscht</emphasis>', wird man zur Bestätigung des
+    Löschvorgangs aufgefordert. Man kann den Löschvorgang abbrechen.</para>
 
     <para>Wenn FAQ-Kategorien existieren, werden diese oben auf dem FAQ Modul
     Fenster angezeigt. Man kann die Kategorien editieren (Titel,
-    Spracheinstellung oder Inhalt) oder lÃ¶schen.</para>
+    Spracheinstellung oder Inhalt) oder löschen.</para>
 
-    <para>LÃ¶scht man eine Kategorie, werden alle Unterkategorien und alle
-    Fragen/Antworten gelÃ¶scht, wenn man dieses mit 'Ja' bestÃ¤tigt. Bei 'Nein'
-    bricht man den LÃ¶schvorgang ab.</para>
+    <para>Löscht man eine Kategorie, werden alle Unterkategorien und alle
+    Fragen/Antworten gelöscht, wenn man dieses mit 'Ja' bestätigt. Bei 'Nein'
+    bricht man den Löschvorgang ab.</para>
 
-    <para>Nach dem Editieren einer Kategorie kann man Ã¼ber 'Speichern' die
-    EintrÃ¤ge sichern.</para>
+    <para>Nach dem Editieren einer Kategorie kann man über 'Speichern' die
+    Einträge sichern.</para>
 
     <para>Im unteren Bereich der Seite kann man auch eine neue Frage eintragen
     und diese innerhalb der FAQ speichern.</para>
 
-    <para>Mit der Sprache wÃ¤hlt man, fÃ¼r welche Sprache die FAQ Kategorie
+    <para>Mit der Sprache wählt man, für welche Sprache die FAQ Kategorie
     angezeigt werden sollen. Sollen alle User die Fragen und Antworten dieser
-    Kategorie sehen kÃ¶nnen, dann wÃ¤hlt man einfach 'alle'.</para>
+    Kategorie sehen können, dann wählt man einfach 'alle'.</para>
   </section>
 
   <section id="autolinks">
@@ -426,39 +426,39 @@
         <primary>Autolinks</primary>
       </indexterm></title>
 
-    <para>Autolinks sind eine bequeme MÃ¶glichkeit, weiterfÃ¼hrende
+    <para>Autolinks sind eine bequeme Möglichkeit, weiterführende
     Informationen zu bestimmten Themen bereitzustellen. Autolinks ist ein
     Modul, das in die Bildschirmausgaben andere Module eingreifen kann. Die
-    Funktion durchsucht einen Text nach bestimmten SchlÃ¼sselwÃ¶rtern und
-    verknÃ¼pft dieses mit einem Link.</para>
+    Funktion durchsucht einen Text nach bestimmten Schlüsselwörtern und
+    verknüpft dieses mit einem Link.</para>
 
-    <para>Die Autolinks sind ein Hook und mÃ¼ssen daher, wie unter <olink
+    <para>Die Autolinks sind ein Hook und müssen daher, wie unter <olink
     targetdoc="Handbuch"
-    targetptr="hooksaktivieren">Moduladministration</olink> beschrieben, fÃ¼r
+    targetptr="hooksaktivieren">Moduladministration</olink> beschrieben, für
     andere Module aktiviert werden.</para>
 
     <para>In der <guimenu>Autolinks Konfiguration</guimenu> kann man
     einstellen, ob ein Link nur beim ersten Auftreten eines Wortes in einem
-    Artikel gesetzt wird oder, ob der Link jedesmal hinzugefÃ¼gt werden soll.
-    Kommt das Wort 'PostNuke' 3 Mal in dem Text vor, wÃ¼rde dieser dann alle
+    Artikel gesetzt wird oder, ob der Link jedesmal hinzugefügt werden soll.
+    Kommt das Wort 'PostNuke' 3 Mal in dem Text vor, würde dieser dann alle
     drei mal mit dem Link versehen.</para>
 
-    <para>Wenn nun die Autolinks aktiviert sind, kann man Ã¼ber den
+    <para>Wenn nun die Autolinks aktiviert sind, kann man über den
     Administrationsbildschirm folgende Funktionen nutzen: <menuchoice>
         <guimenu>Administration</guimenu>
 
         <guisubmenu>Autolinks</guisubmenu>
 
-        <guimenuitem>Autolink hinzufÃ¼gen</guimenuitem>
+        <guimenuitem>Autolink hinzufügen</guimenuitem>
       </menuchoice></para>
 
     <variablelist>
       <varlistentry>
-        <term>SchlÃ¼sselwort</term>
+        <term>Schlüsselwort</term>
 
         <listitem>
-          <para>Das ist das Wort, welches spÃ¤ter im Text durch den Link
-          ersetzt werden soll. GroÃŸ/Kleinschreibung wird dabei nicht
+          <para>Das ist das Wort, welches später im Text durch den Link
+          ersetzt werden soll. Groß/Kleinschreibung wird dabei nicht
           unterschieden.</para>
         </listitem>
       </varlistentry>
@@ -467,7 +467,7 @@
         <term>Titel</term>
 
         <listitem>
-          <para>Eingabe des Titels, der spÃ¤ter fÃ¼r den Link erscheinen soll.
+          <para>Eingabe des Titels, der später für den Link erscheinen soll.
           Dieser wird als <markup>title</markup>-Attribut des Links
           benutzt.</para>
         </listitem>
@@ -488,7 +488,7 @@
         <term>Kommentar</term>
 
         <listitem>
-          <para>Dieses ist nur fÃ¼r den Administrator sichtbar.</para>
+          <para>Dieses ist nur für den Administrator sichtbar.</para>
         </listitem>
       </varlistentry>
     </variablelist>
@@ -503,39 +503,58 @@
 
         <guimenuitem>Autolinks anzeigen</guimenuitem>
       </menuchoice> kann man sich eine Liste aller Autolinks sortiert nach
-    SchlÃ¼sselwort ansehen und diese auch editieren. Mit <emphasis
+    Schlüsselwort ansehen und diese auch editieren. Mit <emphasis
     role="bold"><emphasis role="bold">Autolink
-    aktualisieren</emphasis></emphasis> wird die Ã„nderung dann in die
-    Datenbank eingetragen. Klickt man auf <guibutton>LÃ¶schen</guibutton> wird
-    man nochmals gefragt, ob der Link wirklich gelÃ¶scht werden soll. Durch
-    <emphasis>Abbruch</emphasis> kann man hier nochmal den LÃ¶schvorgang
+    aktualisieren</emphasis></emphasis> wird die Änderung dann in die
+    Datenbank eingetragen. Klickt man auf <guibutton>Löschen</guibutton> wird
+    man nochmals gefragt, ob der Link wirklich gelöscht werden soll. Durch
+    <emphasis>Abbruch</emphasis> kann man hier nochmal den Löschvorgang
     verhindern.</para>
+  </section>
 
-    <para>Eine leistungsfÃ¤higere Alternative zu Autolinks ist der <emphasis
+  <section id="multihook">
+    <title>MultiHook<indexterm>
+        <primary>MultiHook</primary>
+      </indexterm></title>
+
+    <para>Eine leistungsfähigere Alternative zu Autolinks ist der <emphasis
     role="bold">MultiHook</emphasis>. Neben den normalen Autolinks bietet
-    dieses Modul auch die MÃ¶glichkeit, Akronyme und AbkÃ¼rzungen zu verwalten
-    und diese mit den entsprechenden Tags auszuzeichnen. Bewegt der User nun
-    den Mauszeiger Ã¼ber eine entsprechend markierte Textstelle, erscheint eine
-    kurze ErklÃ¤rung, bei 'CSS' kÃ¶nnte dies beispielsweise 'Cascading
-    Stylesheets' sein. </para>
+    dieses Modul auch die Möglichkeit, Akronyme<indexterm>
+        <primary>Akronym</primary>
+      </indexterm> und Abkürzungen<indexterm>
+        <primary>Abkürzungen</primary>
+      </indexterm> zu verwalten und diese mit den entsprechenden Tags
+    auszuzeichnen. Bewegt der User nun den Mauszeiger über eine entsprechend
+    markierte Textstelle, erscheint eine kurze Erklärung, bei
+    "<abbrev>CSS</abbrev>" könnte dies beispielsweise "Cascading Stylesheets"
+    sein.</para>
 
-    <para>Im Rahmen der Gestaltung barrierefreier Webseiten im Sinne der
-    <emphasis>BITV (Barrierefreie Informationstechnk -Verordnung)</emphasis>
-    sind AbkÃ¼rzungen und Akronyme zu kennzeichnen.</para>
+    <para>Im Rahmen der Gestaltung barrierefreier<indexterm>
+        <primary>Barrierefreiheit</primary>
+      </indexterm> Webseiten im Sinne der <emphasis>BITV<indexterm>
+        <primary>BITV</primary>
+
+        <see>Barrierefreiheit</see>
+      </indexterm> (Barrierefreie Informationstechnk -Verordnung<indexterm>
+        <primary>Barrierefreie Informationstechnk -Verordnung</primary>
+
+        <see>Barrierefreiheit</see>
+      </indexterm>)</emphasis> sind Abkürzungen und Akronyme zu
+    kennzeichnen.</para>
 
     <para>Die jeweils aktuellste Version des MultiHooks findet sich im
-    Downloadbereich von <link
-    linkend="???">http://www.pncommerce.de</link>.</para>
+    Downloadbereich von <ulink
+    url="http://www.pncommerce.de">http://www.pncommerce.de</ulink>.</para>
 
     <important>
-      <para>Sowohl fÃ¼r Autolinks als auch fÃ¼r den MultiHook gilt: Da jede
+      <para>Sowohl für Autolinks als auch für den MultiHook gilt: Da jede
       Ausgabe erstmal noch durch dieses Modul geschickt wird, bringt es
-      natÃ¼rlich zumindest leichte Performance-Nachteile mit sich.</para>
+      natürlich zumindest leichte Performance-Nachteile mit sich.</para>
     </important>
   </section>
 
   <section id="censor">
-    <title>Censor (WÃ¶rter zensieren)<indexterm>
+    <title>Censor (Wörter zensieren)<indexterm>
         <primary>Censor-Modul</primary>
 
         <see>Zenzur-Modul</see>
@@ -543,9 +562,9 @@
         <primary>Zenzur-Modul</primary>
       </indexterm></title>
 
-    <para>Die Zensurfunktion ermÃ¶glicht es, bestimmte unerwÃ¼nschte Worte aus
+    <para>Die Zensurfunktion ermöglicht es, bestimmte unerwünschte Worte aus
     dem Beitrag zu filtern und durch <computeroutput>*****</computeroutput> zu
-    ersetzen. Die Zensur kann auch vollstÃ¤ndig ausser Kraft gesetzt
+    ersetzen. Die Zensur kann auch vollständig ausser Kraft gesetzt
     werden.</para>
   </section>
 
@@ -558,20 +577,20 @@
         <primary>Tagesmotto</primary>
       </indexterm></title>
 
-    <para>Ephemeriden sind tagesabhÃ¤ngige Informationen, mit denen die Seite
+    <para>Ephemeriden sind tagesabhängige Informationen, mit denen die Seite
     interessanter gestaltet werden kann. Dieses Modul zeigt also Daten zu
     einem Tag an, frei nach dem Motto: 'Es war einmal...'</para>
 
     <para>Man kann Termine eingeben, die auf besondere Ereignisse in der
-    Geschichte hinweisen. Man trÃ¤gt das entsprechende Datum mit <emphasis>Tag,
-    Monat, Jahr</emphasis> ein, wÃ¤hlt die Sprache, fÃ¼r die dieser Ephemerid
-    angezeigt werden soll und trÃ¤gt dann noch eine Beschreibung ein. Durch die
-    Wahl der Sprache wird der Ephemerid nur fÃ¼r die entsprechende Sprachgruppe
-    angezeigt, z.B. wÃ¤re der Geburtstag der Queen oder der 'Independence Day'
-    fÃ¼r alle engl. sprechenden User interessant. Die bereits eingetragenen
+    Geschichte hinweisen. Man trägt das entsprechende Datum mit <emphasis>Tag,
+    Monat, Jahr</emphasis> ein, wählt die Sprache, für die dieser Ephemerid
+    angezeigt werden soll und trägt dann noch eine Beschreibung ein. Durch die
+    Wahl der Sprache wird der Ephemerid nur für die entsprechende Sprachgruppe
+    angezeigt, z.B. wäre der Geburtstag der Queen oder der 'Independence Day'
+    für alle engl. sprechenden User interessant. Die bereits eingetragenen
     Daten kann man wieder <emphasis>editieren</emphasis> oder
-    <emphasis>lÃ¶schen</emphasis>. WICHTIG: Es erfolgt keine BestÃ¤tigung, ob
-    der Eintrag wirklich gelÃ¶scht werden soll.</para>
+    <emphasis>löschen</emphasis>. WICHTIG: Es erfolgt keine Bestätigung, ob
+    der Eintrag wirklich gelöscht werden soll.</para>
 
     <para>Die Tagesinformationen werden durch den entsprechenden Block
     "Core/Ephemerids" angezeigt.</para>
@@ -586,16 +605,16 @@
         <see>Zitate</see>
       </indexterm></title>
 
-    <para>Im Modul Zitate kÃ¶nnen Zitate eingetragen werden, die dann zufÃ¤llig
-    auf der Website im 'Quotes'-Block (einzurichten in Administration-BlÃ¶cke)
+    <para>Im Modul Zitate können Zitate eingetragen werden, die dann zufällig
+    auf der Website im 'Quotes'-Block (einzurichten in Administration-Blöcke)
     angezeigt werden.</para>
 
-    <para>ZusÃ¤tzlich zum Zitat kann man auch noch den Autor angeben. 'Submit'
-    speichert das Zitat. Die bereits gespeicherten Zitate kÃ¶nnen Ã¼ber 'Ã„ndern'
-    bearbeitet und danach wieder gespeichert werden. Mit 'LÃ¶schen' wird das
-    Zitat gelÃ¶scht. Es wird dabei nicht nach einer BestÃ¤tigung gefragt.</para>
+    <para>Zusätzlich zum Zitat kann man auch noch den Autor angeben. 'Submit'
+    speichert das Zitat. Die bereits gespeicherten Zitate können über 'Ändern'
+    bearbeitet und danach wieder gespeichert werden. Mit 'Löschen' wird das
+    Zitat gelöscht. Es wird dabei nicht nach einer Bestätigung gefragt.</para>
 
-    <para>Der Block "Quotes/Random Quote" zeigt dann ein zufÃ¤lliges Zitat aus
+    <para>Der Block "Quotes/Random Quote" zeigt dann ein zufälliges Zitat aus
     der Zitatedatenbank an.</para>
   </section>
 </chapter>
