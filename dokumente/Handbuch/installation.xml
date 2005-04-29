@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="installation" lang="de-DE" status="draft">
@@ -431,6 +431,22 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
       </indexterm></filename> werden die Layouts (Themes) abgelegt. Einige
     Beispielthemes sind im Basispaket enthalten. Weitere Themes können selbst
     erstellt oder auf verschiedenen Websites heruntergeladen werden.</para>
+
+    <bridgehead>Was sind die ganzen leeren Dateien
+    <filename>index.html</filename>?</bridgehead>
+
+    <para>Diese Dateien sind dafür da, falls der Provider ein
+    Directory-Listing erlaubt. Ohne diese Dateien erhält man z.B. bei
+    <systemitem>www.example.com/postnuke/includes/</systemitem> ohne erlaubtes
+    Directory-Listing eine Fehlermeldung, mit erlaubtem Directory-Listing
+    hingegen sieht man alle enthaltenen Dateien. Befindet sich jedoch eine
+    index.html im Verzeichnis, so wird normalerweise diese ausgegeben; also
+    eine leere Seite. </para>
+
+    <para>Da die <filename>index.html</filename> nicht verlinkt sind, werden
+    sie von den Suchmaschinen nicht erfaßt, es ist also nicht erforderlich,
+    sie nach seinen Vorstellungen mit Schlüsselwörtern und Titeln
+    auszustatten.</para>
   </section>
 
   <section id="systeminstallation">
