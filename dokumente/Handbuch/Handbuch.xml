@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <book lang="de-DE" status="draft">
@@ -28,6 +28,12 @@
         <firstname>Volker</firstname>
 
         <surname>Biberger</surname>
+      </author>
+
+      <author>
+        <firstname>Gabriel</firstname>
+
+        <surname>Freinbichler</surname>
       </author>
 
       <author>
