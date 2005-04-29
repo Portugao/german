@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="benutzerundrechteverwaltung" lang="de-DE" status="draft">
@@ -41,7 +41,9 @@
           Insbesondere ist es möglich, die Registrierung auch ganz
           abzuschalten (das ist immer dann sinnvoll, wenn der Benutzerkreis
           überschaubar ist und alle Benutzer vom Verwalter selbst angelegt
-          werden).</para>
+          werden). Bei der Altersabfrage bei der Registrierung handelt es sich
+          um das sogenannte "COPPA-Agreement". Diese kann durch Setzen des
+          Mindestalters auf 0 deaktiviert werden.</para>
         </listitem>
       </varlistentry>
 
