@@ -517,5 +517,32 @@
 
     <para>Man sollte mit den Gruppenrechten zuerst arbeiten und später dann
     die Benutzerrechte zur Feinabstimmung hinzuziehen!</para>
+
+    <note>
+      <para>Möchte man die Anmeldung so handhaben, dass jeder Benutzer erst
+      durch den Administrator freigeschaltet werden muss, so erreicht man das
+      über die richtige Anwendung des Berechtigungssystems. In der
+      Standard-Auslieferung dürfen</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Anonyme lesen</para>
+        </listitem>
+
+        <listitem>
+          <para>Registrierte kommentieren</para>
+        </listitem>
+
+        <listitem>
+          <para>Admins administrieren</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Wenn man das ganze restriktiver handhaben möchtest, sollte man die
+      Rechte der beiden Gruppen 'Unregistrierte' und 'User' entsprechend
+      runtersetzen und eine zusätzliche Gruppe 'Mitglieder' mit erweiterten
+      Rechten einrichten. Die Mitgliedschaft in dieser Gruppe vergibt der
+      Admin dann in der Gruppen-Administration.</para>
+    </note>
   </section>
 </chapter>
