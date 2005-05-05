@@ -27,19 +27,18 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
-define('_MENU_DESCRIPTION','Beschreibung');
 define('_DISPLAY','Anzeige');
 define('_FQUESTIONS','FAQ-Fragen');
 define('_INSERT_BLANK_AFTER','Leerzeile anfügen');
 define('_MENU_AS_DROPDOWN','Dropdown-Menü');
 define('_MENU_AS_LIST','List-Menü');
+define('_MENU_CONTENT','Inhalt');
+define('_MENU_DESCRIPTION','Beschreibung');
 define('_MENU_FORMAT','Menü-Format');
+define('_MENU_MODULES','Module');
 define('_NEWONE','neue Zeile');
-//define('_SUBMISSIONS','Beiträge');
 define('_WAITINGCONT','zu prüfen');
 define('_WDOWNLOADS','zu prüfende Downloads');
 define('_WLINKS','zu prüfende Web-Links');
 define('_WREVIEWS','zu prüfende Reviews');
-define('_MENU_MODULES','Module');
-define('_MENU_CONTENT','Inhalt');
 ?>

@@ -27,7 +27,7 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_DATESTRING2','%A, %B %d');
 define('_OLDERARTICLES','ältere Beiträge');
 define('_PASTARTICLES','frühere Beiträge');
-define('_DATESTRING2','%A, %B %d');
 ?>

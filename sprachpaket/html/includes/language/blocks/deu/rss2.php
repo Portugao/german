@@ -27,9 +27,9 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_CURRENT','<-- aktuell');
 if (!defined('_CUSTOM')) {
     define('_CUSTOM','Benutzerdefiniert');
 }
-define('_CURRENT','<-- aktuell');
 define('_RSSPROBLEM','derzeit gibt es ein Problem mit dem Import der Headlines dieser Seite');
 ?>

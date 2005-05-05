@@ -27,6 +27,7 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_STORIESCATEGORY','Kategorie');
 define('_STORIESDISPLAYALL','alle Beiträge anzeigen');
 define('_STORIESDISPLAYFRONTPAGE','nur Titelseiten-Beiträge anzeigen');
 define('_STORIESDISPLAYNONFRONTPAGE','nur nicht-Titelseiten-Beiträge anzeigen');
