@@ -67,7 +67,7 @@ define('_CHECKCATEGORIES','Kategorien überprüfen');
 define('_CHECKFORIT','Keine E-Mail-Adresse angegeben. Die Einrichung wird trotzdem geprüft.');
 define('_CLICK','Klicken ');
 define('_COMESFROM','Der Beitrag ist von');
-define('_COMMENT','Komentar');
+define('_COMMENT','Kommentar');
 define('_COMMENTS','Kommentare');
 define('_COMMENTSWARNING','Wir sind nicht verantwortlich für Kommentare unserer Benutzer');
 define('_CONFIGURE','Konfigurieren');

@@ -42,7 +42,7 @@ define('_GROUPS', 'Grupen');
 define('_GROUPSNEW','Gruppe erstellen');
 define('_GROUPSADMINVIEW','Gruppen anzeigen');
 define('_GROUPSMODIFY','Gruppe modifizieren');
-define('_GROUPSNUMBER', 'Gupen ID');
+define('_GROUPSNUMBER', 'Gruppen ID');
 define('_GROUPSOPTIONS', 'Optionen');
 define('_GROUPSMODIFYCONFIG', 'Konfiguration modifizieren');
 define('_GROUPSITEMSPERPAGE', 'Einträge pro Seite');
