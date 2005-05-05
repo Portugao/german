@@ -116,10 +116,12 @@ define('_ACTIVE','aktiv');
 define('_INACTIVE','inaktiv');
 
 // member descriptors
-define('_GUEST','Gast');
-define('_GUESTS','Gäste');
-define('_MEMBER','registrierter Benutzer');
-define('_MEMBERS','registrierte Benutzer');
+define('_GUEST0','Gäste');  // if numguests == 0
+define('_GUEST','Gast');    // if numguests == 1
+define('_GUESTS','Gäste');  // if numguests > 1
+define('_MEMBER0','registrierte Benutzer');  // if numusers == 0
+define('_MEMBER','registrierter Benutzer');  // if numusers == 1
+define('_MEMBERS','registrierte Benutzer');  // if numusers > 1
 
 // member states
 define('_ONLINE','online');
