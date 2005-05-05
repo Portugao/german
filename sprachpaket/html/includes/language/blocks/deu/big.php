@@ -28,6 +28,5 @@
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
 define('_BIGSTORY','meistgelesener Beitrag heute:');
-define('_NOBIGSTORY','heute kein Top-Beitrag');
 define('_TODAYBIG','heutiger Top-Beitrag');
 ?>
