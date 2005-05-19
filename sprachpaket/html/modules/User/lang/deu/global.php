@@ -59,7 +59,7 @@ define('_GROUPMEMBERSHIP','Gruppen-Mitgliedschaft');
 define('_IFNO','Falls Nein, hier die Gründe angeben:');
 define('_ILLEGALUNAME','Ungültige Benutzernamen: ');
 define('_ILLEGALUNAMEDESC',' hier können Benutzernamen (mit Leerzeichen getrennt) angegeben werden, die nicht registriert werden können');
-define('_INTERESTS','Interesen');
+define('_INTERESTS','Interessen');
 define('_LAST10COMMENTS','Letzte zehn Kommentare von');
 define('_LAST10SUBMISSIONS','Letzte zehn Beiträge von');
 define('_LOCATION','Ort');
