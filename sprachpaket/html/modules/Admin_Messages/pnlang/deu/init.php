@@ -38,7 +38,7 @@
 define('_MESSAGE_00_a','Willkommen bei PostNuke!');
 define('_MESSAGE_00_b','PostNuke ist ein Content Management System (CMS), das Inhalte von Design und Technik trennt. Die Inhalte einer Internetpräsenz (zum Beispiel Artikel, Links, Downloads, FAQs, Bildergalerien, Foren etc.) können dabei direkt via Browser verwaltet werden. Durch die klare Aufgliederung in Form, Funktion, Inhalt und Gestaltung hilft PostNuke, die Kosten und den Aufwand beim Betrieb einer Website zu reduzieren.<br /><br />
 PostNuke ist modular aufgebaut - die zentralen Funktionen (Benutzermanagement, Berechtigungssystem, API) werden vom sogenannten Core übernommen, der Leistungsumfang kann darüberhinaus individuell angepasst und nahezu beliebig erweitert werden.<br /><br />
-<strong>Support und Dokumentation zu PostNuke gibt es bei <a href=\"http://www.post-nuke.net\">post-nuke.net</a>.</strong><br /><br />
+<strong>Support und Dokumentation zu PostNuke gibt es bei <a title=\"deutschsprachige Supportseite\" href=\"http://support.pn-cms.de\">support.pn-cms.de</a>.</strong><br /><br />
 <em>Anmerkung: Diese Meldung kann in Administration-Admin Nachrichten bearbeitet werden.</em>');
 // define('_MESSAGES_00_c',''); // It's a time()
 define('_MESSAGE_00_d','0');
