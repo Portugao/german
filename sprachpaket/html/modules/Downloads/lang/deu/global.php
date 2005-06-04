@@ -282,7 +282,7 @@ define('_TOTALNEWDOWNLOADS','neue Downloads insgesamt');
 define('_TOTALOF','insgesamt');
 define('_TOTALVOTES','Gesamtstimmen:');
 define('_TRATEDDOWNLOADS','insgesamt bewertete Downloads');
-define('_TRY2SEARCH','Suche nach');
+define('_TRY2SEARCH','Starte Suche nach');
 define('_TVOTESREQ','Stimmen mindestens benötigt');
 define('_UDOWNLOADS','Downloads');
 define('_UNKNOWN','unbekannt');
