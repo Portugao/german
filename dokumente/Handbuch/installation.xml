@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-15"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="installation" lang="de-DE" status="draft">
@@ -441,7 +441,7 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
     Directory-Listing eine Fehlermeldung, mit erlaubtem Directory-Listing
     hingegen sieht man alle enthaltenen Dateien. Befindet sich jedoch eine
     index.html im Verzeichnis, so wird normalerweise diese ausgegeben; also
-    eine leere Seite. </para>
+    eine leere Seite.</para>
 
     <para>Da die <filename>index.html</filename> nicht verlinkt sind, werden
     sie von den Suchmaschinen nicht erfaßt, es ist also nicht erforderlich,
@@ -1187,6 +1187,11 @@ $_SERVER['HTTP_HOST'] = 'www.example.com';
           im Profil des Administrators. Alle anderen Themes in diesem Release
           von PostNuke .760 sind Xanthia-Themes, die zuvor eine
           Initialisierung vom Adminbereich aus verlangen.</para>
+        </step>
+
+        <step>
+          <para>Sicherstellen, dass sich alle Module im Status "aktiv"
+          befinden. Ansonsten initialisieren und aktivieren.</para>
         </step>
 
         <step>
