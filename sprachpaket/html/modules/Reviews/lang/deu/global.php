@@ -77,6 +77,8 @@ define('_REVIEWSEDITNOAUTH','Keine Authorisierung, Reviews zu editieren');
 define('_REVIEWSINDB','Reviews in der Datenbank');
 define('_REVIEWSINVALIDID','ungültige Review-ID');
 define('_REVIEWSLETTER','Reviews für Buchstabe');
+define('_REWIEWSMAINDESC','Reviews Beschreibung');
+define('_REWIEWSMAINTITLE','Reviews Titel');
 define('_REVIEWSNOAUTH','Keine Authorisierung für Reviews-Administration');
 define('_REVIEWSREADNOAUTH','Keine Authorisierung, Reviews zu lesen');
 define('_REVIEWSSUBMITNOAUTH','Keine Authorisierung, Reviews einzureichen');
