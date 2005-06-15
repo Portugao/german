@@ -38,7 +38,7 @@ define('_GROUPSISDEFAULTUSERGROUP', '(*) = Default-Gruppe - kann nicht gelöscht 
 define('_GROUPSDEFAULTGROUPCANNOTBEDELETED', 'Die Default-Gruppe kann nicht gelöscht werden');
 define('_GROUPSADD', 'Neue Gruppe hinzufügen');
 define('_GROUPSNAME', 'Gruppenname');
-define('_GROUPS', 'Grupen');
+define('_GROUPS', 'Gruppen');
 define('_GROUPSNEW','Gruppe erstellen');
 define('_GROUPSADMINVIEW','Gruppen anzeigen');
 define('_GROUPSMODIFY','Gruppe modifizieren');
