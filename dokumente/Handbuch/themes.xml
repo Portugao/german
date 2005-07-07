@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-15"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
 <chapter id="themes" lang="de_DE" status="draft">
@@ -1662,5 +1662,92 @@
       </indexterm></title>
 
     <para>TBD</para>
+
+    <para>So sieht die Ordnerstruktur aus bei einem Autotheme:</para>
+
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="autotheme-struct.jpg" format="JPG" />
+        </imageobject>
+
+        <textobject>
+          <phrase>Die Orderstruktur eines Autothemes</phrase>
+        </textobject>
+
+        <caption>
+          <para>Die Orderstruktur eines Autothemes</para>
+        </caption>
+      </mediaobject>
+    </screenshot>
+  </section>
+
+  <section id="themefehler">
+    <title>Fehlersuche und -behebung</title>
+
+    <section>
+      <title><computeroutput>Call to undefined function:
+      <function>themeheader()</function></computeroutput></title>
+
+      <para>Es taucht immer mal wieder das Problem auf (vor allem bei
+      Autothemes und PostNuke Standard Themes) das sich jemand ein Theme
+      herunterlädt, es dann auf seinem Server kopiert und folgende
+      Fehlermeldung taucht auf : <computeroutput>Call to undefined function:
+      </computeroutput><function><computeroutput>themeheader()</computeroutput></function>.</para>
+
+      <para>Dafür gibt es einige Erklärungen:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Es ist kein PostNuke Theme</term>
+
+          <listitem>
+            <para>PHPNuke sieht sehr ähnlich aus</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Autothememodul nicht installiert</term>
+
+          <listitem>
+            <para>nur bei Autothemes</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Xanthia nicht installiert oder aktiviert.</term>
+
+          <listitem>
+            <para>nur bei Xanthia-Themes</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Ordnerstruktur falsch</term>
+
+          <listitem>
+            <para>hemes/themename/theme.php</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Verkehrte Version von PostNuke</term>
+
+          <listitem>
+            <para>Vielleicht ist das Theme für eine ältere
+            PostNuke-Version</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Bilder oder Dateien im falschen Modus übertragen</term>
+
+          <listitem>
+            <para>PHP-Dateien müssen beim FTP-Upload als Text-, Bilder als
+            Binärdateien behandelt werden.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </section>
   </section>
 </chapter>
