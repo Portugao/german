@@ -188,8 +188,8 @@ define('_PROMOTE04','Externe Stimmen werden besonders geprüft - bei Missbrauch w
 define('_PROMOTE05','Vielen Dank und viel Erfolg bei der Abstimmung!');
 define('_PROMOTEYOURSITE','Website bewerben');
 define('_PROPOSED','vorgeschlagene Änderung');
-define('_RANDOM','zufällig');
-define('_RATEIT','diese Seite bewerten');
+define('_RANDOM','Zufällig');
+define('_RATEIT','Diese Seite bewerten');
 define('_RATENOTE1','Bitte nicht mehrfach abstimmen.');
 define('_RATENOTE2','Die Skala reicht von 1 - 10, 1 bedeutet schlecht und 10 excellent.');
 define('_RATENOTE3','Bitte möglichst objektiv bewerten.');
