@@ -48,6 +48,7 @@ define('_CONSENT','(Mit dem Klick auf den Link wird ein Mindestalter von<br />'.
 define('_COOKIEWARNING','ANMERKUNG: Benutzereinstellungen sind Cookie-basiert.<br />');
 define('_EMAILAGAIN','E-Mail-Adresse bestätigen');
 define('_EMAILSDIFF','die beiden E-Mail-Adressen sind unterschiedlich');
+define('_EMAILINVALIDDOMAIN', 'Diese E-Mail-Addresse ist gesperrt');
 define("_ERRORMUSTAGREE","Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden!");
 define('_FINISH','fertig');
 define('_FOLLOWINGMEM','Benutzerinformationen:');
@@ -94,7 +95,6 @@ define('_UNICKNAME','Benutzername:');
 define('_UPASSWORD','Kennwort:');
 define('_USERPASS4','Kennwort von');
 define('_USERPASS42',''); //Add for non eng translation
-define('_WEBSITE','Website');
 define('_WEDONTGIVE','Die Daten werden gemäss Bundesdatenschutzgesetz vertraulich behandelt.<br /><a href=\'index.php?name=legal\'>Allgemeine Nutzungsbedingungen</a> und <a href=\'index.php?name=legal&amp;file=privacy\'>Erklärung zum Datenschutz</a>');
 define('_YOUAREREGISTERED','Die Registrierung war erfolgreich - das Kennwort wird per E-Mail übermittelt.');
 define('_YOURPASSIS','Das Kennwort lautet:');
