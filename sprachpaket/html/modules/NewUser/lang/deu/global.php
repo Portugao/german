@@ -48,7 +48,7 @@ define('_CONSENT','(Mit dem Klick auf den Link wird ein Mindestalter von<br />'.
 define('_COOKIEWARNING','ANMERKUNG: Benutzereinstellungen sind Cookie-basiert.<br />');
 define('_EMAILAGAIN','E-Mail-Adresse bestätigen');
 define('_EMAILSDIFF','die beiden E-Mail-Adressen sind unterschiedlich');
-define('_EMAILINVALIDDOMAIN', 'Diese E-Mail-Addresse ist gesperrt');
+define('_EMAILINVALIDDOMAIN', 'Diese E-Mail-Adresse ist gesperrt');
 define("_ERRORMUSTAGREE","Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden!");
 define('_FINISH','fertig');
 define('_FOLLOWINGMEM','Benutzerinformationen:');
