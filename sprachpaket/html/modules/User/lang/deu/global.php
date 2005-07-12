@@ -27,6 +27,9 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_USERALLOWCOOKIES', 'Bitte Cookies für die Seite zulassen!');
+define('_USERREDIRECT', 'weiter');
+define('_USERPROFILELINK', 'Profilseite');
 define('_IDNNAMES','IDN-Domains:');
 define('_IDNNAMESDESC', 'Erlaubt auch Umlaut-Adressen bei E-Mail und URL');
 define('_ADDFIELD','Felder hinzufügen');
@@ -35,6 +38,7 @@ define('_ADDUSER','Neuen Benutzer hinzufügen');
 define('_ADDUSERBUT','Benutzer hinzufügen');
 define('_ALLOWREG','Benutzerregistierung ermöglichen:');
 define('_ALLOWUSERS','E-Mail-Adresse öffentlich anzeigen');
+define('_ANONYMOUSNAME','Default-Name für unregistrierte Benutzer');
 define('_BIO','Zusatzinformation');
 define('_DELETEFIELD','Feld und Daten löschen');
 define('_DELETEUSER','Benutzer löschen');
@@ -57,6 +61,8 @@ define('_FORCHANGES','(nur zur Änderung)');
 define('_GROUP','Gruppe');
 define('_GROUPMEMBERSHIP','Gruppen-Mitgliedschaft');
 define('_IFNO','Falls Nein, hier die Gründe angeben:');
+define('_ILLEGALMAILDOMAINS', 'Gebannte Mail-Domains');
+define('_ILLEGALDOMAINDESC', 'Kommaseparierte Liste von E-Mail-Domains über die keine Registrierung erlaubt ist');
 define('_ILLEGALUNAME','Ungültige Benutzernamen: ');
 define('_ILLEGALUNAMEDESC',' hier können Benutzernamen (mit Leerzeichen getrennt) angegeben werden, die nicht registriert werden können');
 define('_INTERESTS','Interessen');
@@ -89,6 +95,7 @@ define('_PASSWDLEN','Mindest-Passwortlänge:');
 define('_PASSWDNOMATCH','Die Passworte stimmen nicht überein');
 define('_REASONS','Anmerkung:');
 define('_REGCONF','Konfiguration Benutzerregistrierung');
+define('_REGDATE', 'Anmeldedatum');
 define('_REGISTER','Registrierung.');
 define('_REGISTEREDUSER','Registrierter Benutzer #');
 define('_RETRIEVEPASS','Vergessenes Kennwort anfordern.');
