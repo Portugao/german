@@ -12,6 +12,7 @@ define('_ACTIVATEHTTPREF','HTTP-Referer aktivieren?');
 define('_DELETEREFERERS','Referer löschen');
 define('_FREQUENCY','Anzahl');
 define('_HTTPREFERERS','HTTP-Referer');
+define('_HTTPREFEXCLUDED','Ausnahmen (kommasepariert)');
 define('_MAXREF','Wie viele Referer maximal?');
 define('_PERCENT','Prozent');
 define('_REFERERSCONF','HTTP-Referer-Konfiguration');
