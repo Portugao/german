@@ -27,6 +27,7 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_COOKIEHINTFORLOGIN', 'Ab hier müssen Cookies erlaubt sein. Eine Anmeldung ist sonst nicht möglich.');
 define('_USERALLOWCOOKIES', 'Bitte Cookies für die Seite zulassen!');
 define('_USERREDIRECT', 'weiter');
 define('_USERPROFILELINK', 'Profilseite');
@@ -119,7 +120,7 @@ define('_USERID','User ID');
 define('_USERLOGIN','Login');
 define('_USERNOEXIST','Der Benutzer existiert nicht!');
 define('_USERPATH','Bildpfad für Icons der persönlichen Seite');
-define('_USERREGLOGIN','Benutzernanmeldung und Registrierung');
+define('_USERREGLOGIN','Benutzeranmeldung und Registrierung');
 define('_USERSTATUS','Aktueller Benutzerstatus');
 define('_USERUPDATE','Benutzer aktualisieren');
 define('_VERIFYEMAIL','Kennwort vom System erzeugen lassen: ');
