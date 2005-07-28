@@ -30,4 +30,8 @@
 define('_ASREGISTERED','<ul><li style="list-style:none"><a href="user.php?op=lostpassscreen&amp;module=LostPassword">Kennwort vergessen?</a></li><li style="list-style:none"><a href="user.php">Registrierung</a></li></ul>');
 define('_BLOCKNICKNAME','Benutzername');
 define('_BLOCKPASSWORD','Kennwort');
+if(!defined('_COOKIEHINTFORLOGIN')) {
+    define('_COOKIEHINTFORLOGIN', 'Ab hier müssen Cookies erlaubt sein. Eine Anmeldung ist sonst nicht möglich.');
+}
+
 ?>
