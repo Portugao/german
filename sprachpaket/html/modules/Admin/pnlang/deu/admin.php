@@ -34,6 +34,11 @@
  * @license http://www.gnu.org/copyleft/gpl.html
 */
 
+define('_ADMIN_MAGIC_QUOTES','Sicherheitshinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist nicht aktiv!');
+define('_ADMIN_REGISTER_GLOBALS','Sicherheitshinweis: <a href="http://php.net/register_globals">register_globals</a> ist aktiv!');
+define('_ADMIN_CONFIG_PHP','Sicherheitshinweis: config.php ist beschreibbar (ggfs. chmod 644 setzen)!');
+define('_ADMIN_CONFIG_OLD_PHP','Sicherheitshinweis: config-old.php ist beschreibbar (ggfs. chmod 644 setzen)!');
+define('_ADMIN_PNTEMP_HTACCESS','Sicherheitshinweis: /pnTemp-Verzeichnis ggfs. mit .htaccess vor externem Zugriff schützen.');
 define('_ADMINCONTINUE','Weiter');
 define('_ADMININSTALLWARNING','Warnung! Bitte die Datei install.php und den Ordner install aus dem Stammverzeichnis der Installation löschen');
 define('_ADMINPSAKWARNING', 'Warnung! Bitte das Swiss army knife tool aus dem Stammverzeichnis der Installation löschen');
