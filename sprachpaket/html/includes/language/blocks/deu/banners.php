@@ -29,4 +29,5 @@
 // ----------------------------------------------------------------------
 define('_CUSTOM','Custom Banner ID');
 define('_DEFINEBANNER',' Die IDs (0,1,2) sind reserviert, bitte eine ID grösser als 2 benutzen!');
+define('_BANNERAPINOTACTIVATED','Das Banner Module ist nicht aktiv!');
 ?>
