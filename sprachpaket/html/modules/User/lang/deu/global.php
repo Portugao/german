@@ -27,6 +27,8 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_LOGIN_REDIRECT_WCAG', 'WCAG-konforme Weiterleitung bei An/Abmeldung');
+define('_LOGIN_REDIRECT_DESC', 'Verzicht auf das Meta-Refresh');
 define('_COOKIEHINTFORLOGIN', 'Ab hier müssen Cookies erlaubt sein. Eine Anmeldung ist sonst nicht möglich.');
 define('_USERALLOWCOOKIES', 'Bitte Cookies für die Seite zulassen!');
 define('_USERREDIRECT', 'weiter');
