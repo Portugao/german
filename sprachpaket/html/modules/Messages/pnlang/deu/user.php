@@ -28,6 +28,7 @@
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
 
+define('_MESSAGESMENU', 'Auswahl');
 define('_MESSAGESINBOX', 'Posteingang');
 define('_MESSAGESNOTREAD', 'ungelesene Nachricht(en)');
 define('_MESSAGESNOSUBJECT', '<kein Betreff>');
