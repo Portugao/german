@@ -51,13 +51,13 @@ define('_TOPICNAME1','(Name ohne Leerzeichen - max. 20 Zeichen)');
 define('_TOPICNAME2','(z.B.: spieleundhobbies)');
 define('_TOPICNAMEEMPTY', 'Fehler! Themen-Name darf nicht leer sein'); 
 define('_TOPICIMAGENOTFOUND','Themen-Bild existiert nicht');
-define('_TOPICSADDNOAUTH','Keine Authorisierung, ein Thema hinzuzufügen');
+define('_TOPICSADDNOAUTH','Keine Autorisierung, ein Thema hinzuzufügen');
 define('_TOPICSCONF','Themen-Konfiguration');
-define('_TOPICSDELNOAUTH','Keine Authorisierung, dieses Thema zu löschen');
-define('_TOPICSEDITNOAUTH','Keine Authorisierung, dieses Thema zu editieren');
+define('_TOPICSDELNOAUTH','Keine Autorisierung, dieses Thema zu löschen');
+define('_TOPICSEDITNOAUTH','Keine Autorisierung, dieses Thema zu editieren');
 define('_TOPICSINROW','Anzahl der Themen-Bilder pro Reihe:');   //For large icon display without horisontal scroll
 define('_TOPICSMANAGER','Themen-Manager');
-define('_TOPICSNOAUTH','Keine Authorisierung für Themen');
+define('_TOPICSNOAUTH','Keine Autorisierung für Themen');
 define('_TOPICSPATH','Themen-Bildpfad');
 define('_TOPICTEXT','Themen-Text');
 define('_TOPICTEXT1','(komplette Beschreibung - max. 40 Zeichen)');

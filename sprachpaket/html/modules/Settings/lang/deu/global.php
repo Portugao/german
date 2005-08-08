@@ -74,7 +74,7 @@ define('_SECLOW', 'niedrig (Benutzer bleiben dauerhaft angemeldet)');
 define('_SECMEDIUM', 'mittel (Benutzer bleiben für eine bestimmte Anzahl an Tagen angemeldet)');
 define('_SECMEDLENGTH', 'Tagesanzahl der Dauer bei mittlerer Sicherheit');
 define('_SECOPT', 'Sicherheitsoptionen');
-define('_SETTINGSNOAUTH','Keine Authorisierung für die Einstellungen');
+define('_SETTINGSNOAUTH','Keine Autorisierung für die Einstellungen');
 define('_SITECONFIG','Konfiguration');
 define('_SITELOGO','Logo (Druckansicht)');
 define('_SITEOFF', 'Seite komplett deaktivieren');

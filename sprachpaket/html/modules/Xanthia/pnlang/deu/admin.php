@@ -70,14 +70,14 @@ define('_XA_BCTURNOFFBC','Falls die Block-Kontrolle auf derzeit aktive Module au
 Nach der Deaktivierung muss die Block-Kontrolle individuell für die Module gesetzt werden');
 define('_XA_BLOCKMANAGE','Block-Kontrolle konfigurieren für &nbsp;');
 if (!defined('_XA_BADAUTHKEY')) {
-	define('_XA_BADAUTHKEY','keine Authorisierung für diese Aktion');
+	define('_XA_BADAUTHKEY','keine Autorisierung für diese Aktion');
 }
 
 if (!defined('_XA_COMPASSNOAUTH')) {
-	define('_XA_COMPASSNOAUTH','keine Authorisierung für den Xanthia-Konfigurator');
+	define('_XA_COMPASSNOAUTH','keine Autorisierung für den Xanthia-Konfigurator');
 }
 if (!defined('_XA_COMPASSAPINOAUTH')) {
-	define('_XA_COMPASSAPINOAUTH','keine Authorisierung für die Xanthia Admin API.');
+	define('_XA_COMPASSAPINOAUTH','keine Autorisierung für die Xanthia Admin API.');
 }
 define('_XA_CONFIGURE_SHORTURL','Short URLs aktivieren'); 
 define('_XA_CONFIGURE_TRIMWHITESPACE', 'trimwhitespace Ausgabefilter');

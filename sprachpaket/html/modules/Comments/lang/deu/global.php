@@ -54,7 +54,7 @@ define('_MODUSERS','Moderation durch Benutzer');
 define('_NOMOD','Keine Moderation');
 define('_NOSCORES','Wertungen nicht anzeigen');
 define('_NOSUBJECTORCOMMENT','Kein Titel bzw. Kommentar angegeben'); 
-define('_NOTAUTHORIZEDCOMMENT','Keine Authorisierung, Beitrag zu kommentieren');
+define('_NOTAUTHORIZEDCOMMENT','Keine Autorisierung, Beitrag zu kommentieren');
 define('_REMOVECOMMENTS','Kommentare löschen');
 define('_SCORENOTE','Gastbeiträge haben den Wert 0; Beiträge von Mitgliedern starten bei 1. Moderatoren können weitere Einstellungen vornehmen');
 define('_SORTORDER','Reihenfolge');

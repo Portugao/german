@@ -30,7 +30,7 @@
 // http://www.pncommunity.de
 // last changes: 2003/06/12 larsneo
 //
-define('_QUOTESAPINOAUTH','Keine Authorisierung für die Quotes-API');
+define('_QUOTESAPINOAUTH','Keine Autorisierung für die Quotes-API');
 define('_QUOTEAPIUPDATEFAILED','Quotes-API Aktualisierung fehlgeschlagen');
 define('_QUOTESARGSERROR','Fehler bei den Quotes-Admin API Argumenten');
 ?>
