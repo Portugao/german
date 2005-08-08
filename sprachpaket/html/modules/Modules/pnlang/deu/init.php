@@ -27,7 +27,6 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
-
 /**
  * @package PostNuke_System_Modules
  * @subpackage  PostNuke_Modules
@@ -35,6 +34,7 @@
 */
 //
 // Modules
+//
 define('_MODULES_1_a','Admin');
 define('_MODULES_1_b','2');
 define('_MODULES_1_c','Admin');
