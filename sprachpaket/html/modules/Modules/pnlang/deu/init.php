@@ -33,7 +33,7 @@
  * @subpackage  PostNuke_Modules
  * @license http://www.gnu.org/copyleft/gpl.html
 */
-
+//
 // Modules
 define('_MODULES_1_a','Admin');
 define('_MODULES_1_b','2');
