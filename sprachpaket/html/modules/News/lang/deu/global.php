@@ -33,8 +33,10 @@ define('_NOTAUTHSTORY','Keine Berechtigung für den Beitrag');
 define('_READMORE','weiterlesen...');
 define('_RELATED','Verwandte Links');
 define('_SEEALL','Alle Beiträge dieses Themas aufrufen');
-define('_THISISTOPIC','Thema: '); 
-define('_FOLLOWINGNEWS','In diesem Thema sind folgende Beiträge: '); 
-define('_THISISCATEGORY','Kategorie: '); 
-define('_FOLLOWINGNEWSCATEGORY','In dieser Kategorie sind folgende Beiträge: '); 
+define('_THISISTOPIC','Thema: ');
+define('_FOLLOWINGNEWS','In diesem Thema sind folgende Beiträge: ');
+define('_THISISCATEGORY','Kategorie: ');
+define('_FOLLOWINGNEWSCATEGORY','In dieser Kategorie sind folgende Beiträge: ');
+define('_NOARTICLESYET1','Keine Beiträge');
+define('_NOARTICLESYET2',' zu diesem Thema gefunden');
 ?>
