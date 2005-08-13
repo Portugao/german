@@ -1,5 +1,5 @@
 <?php
-// Generated: $d$ by $id$
+// $Id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
 // Copyright (C) 2001 by The PostNuke Development Team.
