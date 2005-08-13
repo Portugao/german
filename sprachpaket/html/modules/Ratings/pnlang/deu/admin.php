@@ -25,7 +25,7 @@ define('_RATINGSSECMEDIUM', 		'mittel (eine Abstimmung/Session)');
 define('_RATINGSSECHIGH', 			'hoch (eine Abstimmung/Benutzer)');
 define('_RATINGSUPDATECONFIG', 		'Konfiguration aktualisieren');
 if (!defined('_RATINGSNOAUTH')) {
-	define('_RATINGSNOAUTH',		'Keine Autorisierung, auf das Rating-Modul zuzugreifen');
+	define('_RATINGSNOAUTH',		'Keine Berechtigung, auf das Rating-Modul zuzugreifen');
 }
 
 ?>

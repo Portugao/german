@@ -27,7 +27,7 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
-define('_MAILUSERSNOAUTH','Keine Autorisierung, Benutzer anzumailen');
+define('_MAILUSERSNOAUTH','Keine Berechtigung, Benutzer anzumailen');
 define('_NB_ERRORCOLOR','#990000');
 define('_NM_CHOOSEUSER','Benutzer auswählen');
 define('_NM_ERROR1','Fehler! Kein Benutzer ausgewählt');

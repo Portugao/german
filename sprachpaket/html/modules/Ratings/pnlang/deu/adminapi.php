@@ -15,7 +15,7 @@
 //
 
 if (!defined('_RATINGSNOAUTH')) {
-	define('_RATINGSNOAUTH','Keine Autorisierung, auf das Rating-Modul zuzugreifen');
+	define('_RATINGSNOAUTH','Keine Berechtigung, auf das Rating-Modul zuzugreifen');
 }
 
 ?>

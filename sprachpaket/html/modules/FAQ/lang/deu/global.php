@@ -35,7 +35,7 @@ define('_ASKAQUESTION','Eine Frage stellen');
 define('_BACKTOFAQINDEX','FAQ-Index');
 define('_EDITQUESTIONS','Frage editieren');
 define('_FAQ2','FAQ (häufig gestellte Fragen)');
-define('_FAQADDNOAUTH','Keine Autorisierung, eine FAQ-Frage zu stellen');
+define('_FAQADDNOAUTH','Keine Berechtigung, eine FAQ-Frage zu stellen');
 define('_FAQADMIN','FAQ-Administration');
 define('_FAQDELWARNING','Wirklich die Kategorie löschen?');
 define('_NEWTOPCATEGORY','Neue Hauptkategorie');

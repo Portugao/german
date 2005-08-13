@@ -128,7 +128,7 @@ define('_ONLINE','online');
 define('_OFFLINE','offline');
 
 // module system
-define('_BADAUTHKEY','Keine Autorisierung für die Aktion (Browser-Back verwendet?)');
+define('_BADAUTHKEY','Keine Berechtigung für die Aktion (Browser-Back verwendet?)');
 define('_CANCELDELETE', 'Löschen abbrechen');
 define('_CONFIGUPDATED', 'Modulkonfiguration aktualisiert');
 define('_CONFIGUPDATEFAILED', 'Modulkonfiguration konnte nicht aktualisiert werden');
@@ -144,7 +144,7 @@ define('_LOADAPIFAILED', 'Fehler! Beim Laden der API ist ein Problem aufgetreten
 define('_LOADFAILED','Fehler! Beim Laden des Moduls ist ein Problem aufgetreten');
 define('_MODARGSERROR','Fehler! Übergabewerte von API nicht akzeptiert');
 define('_MODIFYCONFIG', 'Konfiguration modifizieren');
-define('_MODULENOAUTH', 'Fehler! Keine Autorisierung für das Modul');
+define('_MODULENOAUTH', 'Fehler! Keine Berechtigung für das Modul');
 define('_MODULENODIRECTACCESS', 'Fehler! Das Modul kann nicht direkt aufgerufen werden');
 define('_NOSUCHITEM', 'nicht gefunden');
 define('_REGISTERFAILED', 'Fehler! Hook konnte nicht registriert werden');

@@ -37,7 +37,7 @@ define('_EMAILMSG','E-Mail-Nachricht');
 define('_EMAILSUBJECT','E-Mail-Betreff');
 define('_HTMLISFINE','HTML kann verwendet werden, allerdings bitte sorgfältig überprüfen!');
 define('_NEWSUBPREVIEW','Beitragsvorschau');
-define('_NOTALLOWED','Keine Autorisierung, Beiträge einzureichen');
+define('_NOTALLOWED','Keine Berechtigung, Beiträge einzureichen');
 define('_NOTIFYSUBMISSION','E-Mail-Benachrichtigung bei neuen Beiträgen?');
 define('_STORYLOOK','Der Beitrag wird wie folgt aussehen:');
 define('_STORYNEEDSTITLE','Der Beitrag braucht einen Titel');

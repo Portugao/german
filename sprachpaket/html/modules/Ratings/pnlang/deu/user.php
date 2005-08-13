@@ -17,7 +17,7 @@
 define('_RATETHISITEM', 'bewerten');
 define('_RATING', 'Bewertung');
 if (!defined('_RATINGSNOAUTH')) {
-	define('_RATINGSNOAUTH','Keine Autorisierung für das Rating-Modul');
+	define('_RATINGSNOAUTH','Keine Berechtigung für das Rating-Modul');
 }
 
 ?>
