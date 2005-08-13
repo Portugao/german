@@ -40,5 +40,6 @@ define('_MODULESAPIINVALIDSTATETRANSITIO','Fehler! Status-Übergang nicht möglich
 define('_MODULESAPIUPDATEFAILED','Fehler! Aktualisierung fehlgeschlagen');
 define('_MODULESAPIUPGRADED','Upgrade durchgeführt, Status jetzt inaktiv');
 define('_MODULESCOULDNOTINCLUDE', 'Erforderliche Datei konnte nicht geladen werden: ');
+define('_MODULESDUPLICATEDEFINE', 'Ein doppelter Anzeigename wurde gefunden.');
 
 ?>
