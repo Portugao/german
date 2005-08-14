@@ -23,6 +23,6 @@
 # For example:
 #DEFAULT (echo ""; id; echo %s; date; cat) >> $CVSROOT/CVSROOT/commitlog
 # or
-DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
+#####  DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
 
-#DEFAULT syncmail %{sVv} germandocs-cvsliste@perky.postnuke.com
+DEFAULT DEFAULT /var/www/gforge/cronjobs/cvs-cron/syncmail %{sVv} germandocs-cvsliste@lists.postnuke.com
