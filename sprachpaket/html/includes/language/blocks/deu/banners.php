@@ -27,7 +27,6 @@
 // Purpose of file: simple sideblock calling the new banner api
 //                  and allows to set up multiple custom banner sideblocks
 // ----------------------------------------------------------------------
-
 define('_CUSTOM','Custom Banner ID');
 define('_DEFINEBANNER',' Die IDs (0,1,2) sind reserviert, bitte eine ID größer als 2 benutzen!');
 define('_BANNERAPINOTACTIVATED','Das Banner Module ist nicht aktiv!');

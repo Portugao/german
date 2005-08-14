@@ -69,5 +69,4 @@ define('_LANGUAGE_X_KLINGON','Klingonisch');
 define('_LANGUAGE_X_RUS_KOI8R','Russisch KOI8-R');
 define('_LANGUAGE_YID','Jiddisch');
 define('_LANGUAGE_ZHO','Chinesisch (Simp.)');
-
 ?>
