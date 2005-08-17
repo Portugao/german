@@ -70,14 +70,14 @@ define('_XA_BCTURNOFFBC','Falls die Block-Kontrolle auf derzeit aktive Module au
 Nach der Deaktivierung muss die Block-Kontrolle individuell für die Module gesetzt werden');
 define('_XA_BLOCKMANAGE','Block-Kontrolle konfigurieren für &nbsp;');
 if (!defined('_XA_BADAUTHKEY')) {
-	define('_XA_BADAUTHKEY','keine Berechtigung für diese Aktion');
+	define('_XA_BADAUTHKEY','keine Autorisierung für diese Aktion');
 }
 
 if (!defined('_XA_COMPASSNOAUTH')) {
-	define('_XA_COMPASSNOAUTH','keine Berechtigung für den Xanthia-Konfigurator');
+	define('_XA_COMPASSNOAUTH','keine Autorisierung für den Xanthia-Konfigurator');
 }
 if (!defined('_XA_COMPASSAPINOAUTH')) {
-	define('_XA_COMPASSAPINOAUTH','keine Berechtigung für die Xanthia Admin API.');
+	define('_XA_COMPASSAPINOAUTH','keine Autorisierung für die Xanthia Admin API.');
 }
 define('_XA_CONFIGURE_SHORTURL','Short URLs aktivieren'); 
 define('_XA_CONFIGURE_TRIMWHITESPACE', 'trimwhitespace Ausgabefilter');
@@ -377,4 +377,10 @@ define('_XA_DOWNLOAD', 'URL');
 define('_XA_NAME', 'Name');
 define('_XA_XHTMLSUPPORT', 'XHTML Support');
 
+//added missing defines - Lindbergh 08.17.05
+define('_XA_NEWZONES', 'neuer Skin für Zone');
+define('_XA_DEFAULTLABEL', 'Benutze die Auswahlboxen zur Einstellung von Theme-, Block- oder Blockzonen-Templates.');
+define('_XA_ADMINPAGES', 'Administrationsbereich');
+define('_XA_HOMEPAGE', 'Startseite');
+define('_XA_USERPAGES', 'Benutzerseiten');
 ?>
