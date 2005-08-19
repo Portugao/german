@@ -34,6 +34,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html
 */
 
+define('_MODULESBLOCKSEXIST', 'Dieses Modul kann nicht entfernt werden: Es existieren aktive Blöcke!');
 define('_MODULESADMIN', 'Admin');
 define('_MODULESENABLEHOOKS','Verfügbare Hooks');
 define('_MODULESNOSUCHMODID','Fehler! Modul-ID nicht gefunden');
@@ -61,7 +62,7 @@ define('_MODULESINACTIVE', 'Inaktiv');
 define('_MODULESEDIT','Editieren');
 define('_MODULESFORTHIS','für dieses Modul');
 define('_MODULESINITIALISED','Modul initialisiert');
-define('_MODULESITEMSPERPAGE','Einträge pro Seite'); 
+define('_MODULESITEMSPERPAGE','Einträge pro Seite');
 define('_MODULESLOADLEGACY', 'Legacy Modul-Support aktivieren');
 define('_MODULESMODIFYCONFIG','Konfiguration modifizieren');
 define('_MODULESNEWDESCRIPTION','Neue Beschreibung');
