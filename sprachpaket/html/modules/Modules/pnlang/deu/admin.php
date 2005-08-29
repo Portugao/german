@@ -34,6 +34,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html
 */
 
+define('_MODULESNOHOOKS', 'Es sind keine Hooks installiert');
 define('_MODULESBLOCKSEXIST', 'Dieses Modul kann nicht entfernt werden: Es existieren aktive Blöcke!');
 define('_MODULESADMIN', 'Admin');
 define('_MODULESENABLEHOOKS','Verfügbare Hooks');
