@@ -1,6 +1,7 @@
-<?php // File: $Id$ $Name$
+<?php
+// Generated: $d$ by $id$
 // ----------------------------------------------------------------------
-// POSTNUKE Content Management System
+// PostNuke Content Management System
 // Copyright (C) 2001 by the PostNuke Development Team.
 // http://www.postnuke.com/
 // ----------------------------------------------------------------------
@@ -22,17 +23,12 @@
 //
 // To read the license please visit http://www.gnu.org/copyleft/gpl.html
 // ----------------------------------------------------------------------
-// Original Author of file: adam_baum (Greg)
-// Purpose of file: language definitions for Quotes admin API
+// Original Author of file: Everyone
+// Purpose of file: Translation files
+// Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
-//
-// please post comments regarding german translation at
-// http://www.pncommunity.de
-// last changes: 2003/06/12 larsneo
-//
-define('_QUOTESAPINOAUTH','Keine Berechtigung für die Quotes-API');
-define('_QUOTEAPIUPDATEFAILED','Quotes-API Aktualisierung fehlgeschlagen');
-define('_QUOTESARGSERROR','Fehler bei den Quotes-Admin API Argumenten');
+// last changes: 2005/09/20 landseer
 
+define('_QUOTESERRORMSG', 'Zu wenig Zitate in der Datenbank!');
 
 ?>

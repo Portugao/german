@@ -28,40 +28,31 @@
 //
 // please post comments regarding german translation at
 // http://www.pncommunity.de
-// last changes: 2004/08/10 larsneo
+// last changes: 2005/09/20 landseer
 //
+define('_QUOTES', 'Zitate');
+define('_QUOTESNEW', 'Neues Zitat');
+define('_QUOTESVIEW', 'Zitate anzeigen');
+define('_QUOTESMODIFYCONFIG', 'Konfiguration ändern');
+define('_QUOTESNOSUCHITEM', 'unbekanntes Zitat');
+define('_QUOTESITEMSPERPAGE', 'Einträge pro Seite');
+define('_QUOTESUPDATED', 'Zitat aktualisert');
+define('_QUOTESCANCELDELETE','Abbruch');
+define('_QUOTESCONFIRMDELETE','Zitat löschen?');
+define('_QUOTESAUTHOR','Autor');
+define('_QUOTESTEXT','Zitattext:');
+define('_QUOTESQUOTE','Zitat');
+define('_QUOTESACTION','Aktion');
+define('_QUOTESCREATE', 'Zitat erstellen');
+define('_QUOTESADDSUCCESS','Zitat erfolgreich erstellt.');
+define('_QUOTESDELETEACTION','Löschen');
+define('_QUOTESEDITACTION','Editieren');
+define('_QUOTESDELETED','Zitat gelöscht.');
+define('_QUOTESMODIFY','Zitate ändern');
+define('_QUOTESNOQUOTES','keine Zitate gefunden.');
+define('_QUOTESSEARCH','Suchen:');
+define('_QUOTESSEARCHRESULTS','Suchergebnisse ...');
+define('_QUOTESUPDATE', 'Zitat ändern');
+define('_QUOTESDELETE', 'Zitat löschen');
 
-define('_QOTDMISSINGVALUE','Zitat oder Autor fehlt');
-define('_QOTDADD','hinzufügen');
-define('_QOTDADDSUCCESS','Zitat erfolgreich hinzugefügt');
-define('_QOTDAUTHOR','Autor');
-define('_QOTDACTION','Aktion');
-define('_QOTDADDQ','Zitat hinzufügen');
-define('_QOTDBACK','zurück');
-define('_QOTDDELETEACTION','löschen');
-define('_QOTDDEL','Zitat löschen?');
-define('_QOTDSAVE','Änderung speichern?');
-define('_QOTDEDITACTION','editieren');
-define('_QOTDMODIFY','Zitat bearbeiten');
-define('_QOTDNEXT','nächste Seite');
-define('_QOTDNOQUOTES','keine Zitate gefunden');
-define('_QOTDPREVIOUS','vorherige Seite');
-define('_QOTDQUOTE','Zitat');
-define('_QOTDSEARCH','Suche nach Schlüsselwort:');
-define('_QOTDTEXT','Zitat-Text:');
-define('_QUOTESADDNOAUTH','Keine Berechtigung, Zitate hinzuzufügen');
-define('_QUOTESDELNOAUTH','Keine Berechtigung, Zitate zu löschen');
-define('_QUOTESEDITNOAUTH','Keine Berechtigung, Zitate zu editieren');
-define('_QUOTESNOAUTH','Keine Berechtigung, auf Zitate zuzugreifen');
-define('_QOTDSAVEACTION','speichern');
-define('_QOTDNOTADDED','Zitat konnte nicht hinzugefügt werden');
-define('_APILOADFAILED','API konnte nicht geladen werden');
-define('_CANCELQUOTEDELETE','Abbruch');
-define('_CONFIRMQUOTEDELETE','Bestätigung');
-define('_QOTDDELETED','Zitat gelöscht');
-define('_CONFIRM','bestätigen');
-define('_QOTDTOTAL','Zitate in Datenbank: ');
-define('_QOTDSUCCESS','Zitat gespeichert');
-define('_QOTDSEARCHRESULTS','Suchergebnisse...');
-define('_QAUTHUNKNOWN','unbekannt');
 ?>
