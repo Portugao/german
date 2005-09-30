@@ -1,4 +1,4 @@
-<?php 
+<?php
 // $Id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
@@ -23,7 +23,7 @@
 //
 // To read the license please visit http://www.gnu.org/copyleft/gpl.html
 // ----------------------------------------------------------------------
-// Original Author of file: 
+// Original Author of file:
 // Purpose of file: Translation files
 // ----------------------------------------------------------------------
 
@@ -34,11 +34,11 @@
  * @subpackage   Sniffer
  * @license      http://www.gnu.org/copyleft/gpl.html GNU General Public License
  */
- 
+
 define('_SNIFFERBLOCKBROWSERNAME', 'Browser');
 define('_SNIFFERBLOCKBROWSERVERSION', 'Browser version');
-define('_SNIFFERBLOCKOSNAME', 'OS');
-define('_SNIFFERBLOCKOSVERSION', 'OS version');
+define('_SNIFFERBLOCKOSNAME', 'BS');
+define('_SNIFFERBLOCKOSVERSION', 'BS version');
 define('_SNIFFERBLOCKUAID', 'User Agent ID');
 
 ?>
