@@ -1,5 +1,5 @@
 <?php
-// $Id$
+// Generated: $Id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
 // Copyright (C) 2002 by the PostNuke Development Team.
@@ -25,8 +25,6 @@
 
 include_once('modules/RSS/pnlang/deu/global.php');
 
-define('_RSSCREATED', 'Nachrichtenquelle hinzugefügt');
-define('_RSSDELETED', 'Nachrichtenquelle gelöscht');
-define('_RSSUPDATED', 'Nachrichtenquelle aktualisiert');
+define('_CACHE_DIR', 'Cacheverzeichnis');
 
 ?>

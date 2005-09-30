@@ -2,12 +2,8 @@
 // $Id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
-// Copyright (C) 2001 by the PostNuke Development Team.
+// Copyright (C) 2002 by the PostNuke Development Team.
 // http://www.postnuke.com/
-// ----------------------------------------------------------------------
-// Based on:
-// PHP-NUKE Web Portal System - http://phpnuke.org/
-// Thatware - http://thatware.org/
 // ----------------------------------------------------------------------
 // LICENSE
 //
@@ -23,24 +19,12 @@
 //
 // To read the license please visit http://www.gnu.org/copyleft/gpl.html
 // ----------------------------------------------------------------------
-// Original Author of file: Everyone
-// Purpose of file: Translation files
-// Translation team: Read credits in /docs/CREDITS.txt
+// Generated with pnDefinemachine for RSS
+// Language: deu
 // ----------------------------------------------------------------------
-define('_RSSITEMFAILED','Failed to get any items');
-if(!defined('_RSSVIEW')) {
-    define('_RSSVIEW','View News Feeds');
-}
-if(!defined('_RSS')){
-    define('_RSS', 'RSS News Feeds');
-}
-if(!defined('_RSSNAME')) {
-    define('_RSSNAME', 'Name');
-} 
-if(!defined('_RSSURL')) {
-    define('_RSSURL', 'URL');
-}
-define('_RSSBYAUTHOR', 'by');
-define('_RSSREADMORE', 'Read more....');
-define('_RSSAVAILABLEFEEDS', 'Available feeds');
+
+include_once('modules/RSS/pnlang/deu/global.php');
+
+define('_RSSITEMFAILED', 'Konnte Einträge nicht einlesen');
+
 ?>
