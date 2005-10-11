@@ -347,7 +347,7 @@ define('_USENDPRIVATEMSG','Private Nachricht senden');
 define('_USER','Benutzer');
 define('_USERANDIP','Benutzername und IP werden aufgezeichnet um Missbrauch zu verhindern.');
 define('_USERAVGRATING','durchschnittliche Wertung');
-define('_USERINFO','Benutzer Information');
+define('_USERINFO','Benutzerinformation');
 define('_USERNAME','Benutzername');
 define('_USUBCATEGORIES','Unter-Kategorien');
 define('_VISIT','Besuche');
