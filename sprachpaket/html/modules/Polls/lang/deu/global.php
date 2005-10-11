@@ -1,4 +1,5 @@
-<?php // File: $Id$ $Name$
+<?php 
+// File: $Id$ 
 // ----------------------------------------------------------------------
 // Original Author of file: ???
 // Purpose of file: Poll comments/module/admin defines.
@@ -94,7 +95,7 @@ define('_THREAD','Thread');
 define('_THRESHOLD','Begrenzung');
 define('_TOTALVOTES','Stimmen insgesamt:');
 define('_UCOMMENT','Kommentar');
-define('_USERINFO','Benutzerinfo');
+//define('_USERINFO','Benutzerinfo');
 if (!defined('_VOTE')) {
     define('_VOTE','Stimme');
 }
