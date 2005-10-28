@@ -1,0 +1,57 @@
+<?php
+function smarty_function_pnbread_crumb($params, &$smarty) 
+{
+    extract($params); 
+	unset($params);
+
+	$currentMod = pnModGetName('currentMod');
+
+	if ($currentMod == "News") {
+			$currentMod = "Aktuelles";
+		}
+
+	if ($currentMod == "ContentExpress") {
+			$currentMod = "Dokumentation";
+		}
+
+	if ($currentMod == "phpBB_14") {
+ 			$currentMod = "Forum";
+	}
+
+	if ($currentMod == "pnForum") {
+ 			$currentMod = "Forum";
+	}
+
+	if ($currentMod == "Web_Links") {
+ 			$currentMod = "Linkmaschine";
+	}
+	
+	if ($currentMod == "Search") {
+ 			$currentMod = "Suche";
+	}
+	
+	if ($currentMod == "formicula") {
+ 			$currentMod = "Kontakt";
+	}
+	
+	if ($currentMod == "AddStory") {
+			$currentMod = "Beitrag schreiben";
+		}
+
+	if ($currentMod == "Submit_News") {
+			$currentMod = "Beitrag schreiben";
+		}
+
+	if ($currentMod == "Static_Docs") {
+			$currentMod = "Dokumentation";
+		}
+
+	if ($currentMod == "pagesetter") {
+			$currentMod = "Dokumentation";
+		}
+
+	$bread_crumb = pnVarPrepForDisplay($currentMod);
+
+    return $bread_crumb;
+}
+?>

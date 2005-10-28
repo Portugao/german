@@ -1,0 +1,454 @@
+/* ######################################################################################################
+** ### Layoutbasis  #####################################################################################
+** ######################################################################################################
+*/
+
+img { border: 0 }
+
+ul {
+    margin-left: 0;
+}
+
+#mainnav, #mainnav ul {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+#mainnav ul {
+	margin-left: 0.5em;
+}
+
+/* "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info)
+**
+**  CSS Base v1.0 (27.09.2005) - Using clearfix hack
+**
+** Don't make any changes in this file. Any changes should be placed in basemod-stylefiles.
+*/
+
+
+@media all
+{
+html,body,div,span,p,h1,h2,h3,a {margin:0; padding:0; border:0; }
+
+body {
+	font-size:100.01%;
+	color:#000;
+} html > body {font-size:100.01%}
+
+/* ######################################################################################################
+** ### Box-Layout #######################################################################################
+** ######################################################################################################
+*/
+#page{ margin: 0; padding:0; }
+#header { margin: 0; padding: 0; }
+
+#impressum {
+	position:absolute;
+	top: 1em;
+	right: 1em;
+	padding-top:0.5em;
+	padding-right: 1em;
+	color: #fff;
+	font-size:12px;
+}
+
+#impressum a{
+	color: #fff;
+	text-decoration:none;
+}
+
+#impressum a:hover{
+	text-decoration:underline;
+}
+
+#nav { clear:both; margin: 0; padding: 0; width: 100%; }
+#main {	clear:both; margin: 0; padding: 0; width: 100%; }
+
+
+#col1 {
+	position: relative;
+	z-index: 3;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	width: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+}
+
+#col1_content { position: relative; z-index: 4; padding:0; }
+
+#col2
+{
+	z-index: 1;
+	width:auto;
+	padding: 0;
+  	margin: 0;
+   	margin-left: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+   	margin-right: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+}
+
+#col2_content
+{
+	padding-top: 0px; /* Hack! Notwendig damit Firefox und Opera den oberen Rand auf Null setzen */
+	z-index: 2;
+	margin:0;
+	padding: 0;
+}
+
+/* Use of the Holly-Hack show these declaration to IE only.
+This is necessary to avoid the 'disappearing background bug' */
+* html #col2, col2_content	{
+	position: relative;
+}
+
+#col3 {
+	position: relative;
+	z-index: 4;
+	padding: 0;
+	margin: 0;
+	width: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+	height: auto;
+	float:right;
+}
+
+#col3_content { position: relative; z-index: 5; padding: 0; }
+
+#footer { clear:both; padding:0; margin:0; margin-top: 0em; }
+
+/* ######################################################################################################
+** ### CSS-Hacks ########################################################################################
+** ######################################################################################################
+*/
+
+/* Cleafix-Hack zum Clearen der Float-Umgebungen */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+/* Cleafix-Hack zum Clearen der eingeschlossenen Float-Umgebungen "floatbox" */
+.floatbox:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.floatbox {
+	margin:0px;
+	padding:0px;
+	float:left;
+	width: 100%;
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .floatbox {height: 1%;}
+.floatbox {display: block;}
+/* End hide from IE-mac */
+
+/* Clearen der 3 Inhaltsspalten mittels dieses speziellen hr-Tags */
+.clear_columns{
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	float: left;
+	visibility: hidden;
+	border: 0;
+	margin-top: -2em;	/* erforderlich damit kein Leerraum zwischen Spalten und Footer entsteht */
+}
+
+}
+
+/* ######################################################################################################
+** ### Globale Layoutanpassungen ########################################################################
+** ######################################################################################################
+*/
+
+/* "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.deejay-home.de)
+**
+**  CSS Basis-Modifikation 3-Spalten V1.0 (26.04.05)
+*/
+@media all
+{
+
+/* Formatierung der Seite */
+body {
+	background: #ddd;
+	padding: 1em;	/* 0em für randabfallende Layouts */
+}
+
+#page{ border: 0px ; }
+
+/* Formatierung der Kopfbereiches */
+#header { background:#535661; color: #fff; padding-top:10px;}
+#nav { background: #535661 url("../images/sliding_door/nav_rund/bg.gif") repeat-x bottom; }
+
+/* Formatierung der Inhaltsspalten */
+#main { background: #fff url("../images/bg_left2.gif") repeat-y top left; }
+
+/* linke Spalte */
+#col1 {	width: 250px; }
+#col1_content {	padding-top:1.5em; margin-left: 1em; margin-right: 1em;	color: #444; }
+
+/* Mittlere Spalte */
+#col2
+{
+  	margin-left: 250px;
+   	margin-right: 15em;
+	border-left: 1px solid #888;
+	border-right: 2px dotted #ddd;
+}
+
+#col2_content { padding-top:1.5em; margin-left: 1em; margin-right: 1em; }
+
+/* Rechte Spalte */
+#col3 {	width: 15em; }
+#col3_content {	padding-top:1.5em; margin-left: 1em; margin-right: 1em; }
+
+/* Formatierung der Fußbereiches */
+#footer { padding-left: 1em; background:#535661; color:#fff; border-top: 1px #333 solid; line-height: 2em; }
+
+
+/* ######################################################################################################
+** ### Hauptnavigation: "Sliding Doors" von A List Apart ################################################
+** ######################################################################################################
+*/
+
+#nav_main {
+	width:100%;
+	float:left;
+	background: #535661 url("../images/sliding_door/nav_rund/bg.gif") repeat-x bottom;
+}
+
+#nav_main ul {
+  white-space: nowrap;
+  line-height: 1em;
+  margin:0;
+  padding:0 0 0 250px;
+  list-style:none;
+}
+
+#nav_main li {
+  float:left;
+ background: url("../images/sliding_door/nav_rund/left.gif") no-repeat top left;
+/*  margin-right: 2px;  nur einfügen bei ECKIGEN Ecken */
+  padding:0 0 0 3px;
+  }
+
+#nav_main a {
+  float:left;
+  display:block;
+  background: url("../images/sliding_door/nav_rund/right.gif") no-repeat top right;
+  padding:6px 11px 4px 8px;
+  text-transform: none;
+  text-decoration:none;
+  font-weight:normal;
+  color:#334;
+}
+
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+#nav_main a {float:none;}
+/* End IE5-Mac hack */
+#nav_main a:hover {
+  color:#000;
+  }
+#nav_main #current {
+  background-image: url("../images/sliding_door/nav_rund/left_on.gif");
+  }
+#nav_main #current a {
+  background-image:  url("../images/sliding_door/nav_rund/right_on.gif");
+  color:#334;
+  font-weight:bold;
+  padding-bottom:5px;
+  padding-top:6px;
+}
+
+/* ######################################################################################################
+** ### Definition der Basiselemente des Inhalts #########################################################
+** ######################################################################################################
+*/
+
+
+img.float_right {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 0.15em;
+	border:0;
+}
+
+div.floatdummy_left {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 0.15em;
+	width: 150px;
+	height: 90px;
+	text-align: center;
+	background: #ccd;
+	border: 1px #88a solid;
+}
+div.floatdummy_right {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 0.15em;
+	width: 120px;
+	height: 150px;
+	text-align: center;
+	background: #ccd;
+	border: 1px #88a solid;
+}
+
+div.floatdummy_left_small {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 0.15em;
+	width: 64px;
+	height: 64px;
+	text-align: center;
+	background: #ccd;
+	border: 1px #88a solid;
+	font-size: 0.8em;
+}
+
+div.floatdummy_right_small {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 0.15em;
+	width: 64px;
+	height: 64px;
+	text-align: center;
+	background: #ccd;
+	border: 1px #88a solid;
+	font-size: 0.8em;
+}
+
+#download {
+	background: #eef; padding: 4px; border: 1px #aac solid;
+}
+#download img{
+	float: left;
+	margin-right: 5px;
+	border: 0;
+}
+
+hr {
+	color:#000;
+	margin: 0;
+	padding:0;
+	border:none;
+	border-top:1px dotted #ccc;
+}
+
+blockquote {
+	font-family: monospace;
+    padding: 0.5em;
+	font-size: 0.9em;
+	border-left: 15px #cce solid;
+
+}
+
+blockquote.css {background: #f0f0f4 url("../images/bg_css.gif") no-repeat top right;}
+blockquote.xhtml {background: #f0f0f4 url("../images/bg_xhtml.gif") no-repeat top right;}
+
+#col1 blockquote {
+	margin: 0;
+	text-indent: 0;
+	border: 1px #fff solid;
+}
+}
+
+
+/* ######################################################################################################
+** ### Schriften  #######################################################################################
+** ######################################################################################################
+*/
+
+/* "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.deejay-home.de)
+**
+**  CSS Schriften V1.0 (26.04.05)
+*/
+
+@media all
+{
+body { font-family: Arial, Verdana, Helvetica, sans-serif; }
+
+h1,h2,h3 {display:block;}
+h1 {font-size: 1.2em; color: #757569; font-weight:bold; margin:0.4em 0 0.5em 0;}
+h2 {font-size: 1.0em; color: #A3A392; font-weight:bold; margin:0.4em 0 0.3em 0; padding: 0.2em; background:#eee; border: 1px #ccc solid;}
+h3 {font-size: 1.0em; font-weight:bold; margin:0.4em 0 0.3em 0;}
+
+#col1 h1, #col3 h1 {font-size: 1em;}
+#col1 h2, #col3 h2 {font-size: 0.8em;}
+#col1_content, #col3_content {padding-top: 1.8em;}
+
+#col1_content h1 {color: #222; border-bottom: 2px #ddd solid;}
+#col3_content h1 {border-bottom: 2px #668 solid;}
+#col1_content h2 {color: #444; background:#aac; border: 1px #88a solid;}
+
+#col1 p, #col3 p, #col1 ul, #col3 ul, #footer {font-size: 0.8em;}
+
+#col1 a {color: #886600}
+#footer a {color: #FF9900}
+
+p,ul {line-height: 1.5em;}
+p {line-height: 1.5em; margin: 0 0 1em 0;}
+
+em.mono { font-family: monospace; font-style: normal; font-size: 1em; font-weight: bold;}
+
+}
+
+/* ######################################################################################################
+** ### Globale Layoutanpassungen ########################################################################
+** ######################################################################################################
+*/
+
+/* "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.deejay-home.de)
+**
+**  CSS Basis-Modifikation 3-Spalten V1.0 (26.04.05)
+*/
+@media screen
+{
+#header{padding-top:10px;}
+
+#col3 {width: 15em;}
+#col2 {margin-right: 15em;}
+
+/* 2-Spaltenlayout mit linkem Float und Hauptteil */
+#col3 {display:none;}
+#col3_content {display:none;}
+#col2 {margin-right:10px; border-right:0;}
+}
+
+/* ######################################################################################################
+** ### Print-Version#####################################################################################
+** ######################################################################################################
+*/
+
+/* "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.deejay-home.de)
+**
+**  CSS Print-Version V1.0 (26.04.05)
+*/
+
+@media print
+{
+
+body {margin:0; padding: 0;}
+#page {border:0; border-top: 1px #aaa solid; }
+#col2 {border-left: 2px #ddd dotted;}
+#nav_main {border-top: 1px #aaa solid; border-bottom: 1px #aaa solid;}
+}
+
