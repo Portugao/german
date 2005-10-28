@@ -30,4 +30,6 @@
 define('_INFOCHANGED','Benutzereinstellungen geändert. Weiterleitung zur persönlichen Seite.');
 define('_LOGOUTEXIT','Abmeldung');
 define('_THISISYOURPAGE','Profilseite');
+define('_USERPROFILELINK', 'Profil');
+
 ?>
