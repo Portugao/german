@@ -3,7 +3,7 @@
 // Xanthia Theme Engine FOR PostNuke Content Management System
 // Copyright (C) 2003 by the CorpNuke.com Development Team.
 // Copyright is claimed only on changes to original files
-// Modifications by: Larry E. Masters aka. PhpNut 
+// Modifications by: Larry E. Masters aka. PhpNut
 // nut@phpnut.com
 // http://www.coprnuke.com/
 // ----------------------------------------------------------------------
@@ -39,6 +39,9 @@
  * @subpackage  Xanthia
  * @license http://www.gnu.org/copyleft/gpl.html
 */
+
+define('_XA_CURRENTPALETTE', 'Aktuelle Farbpalette');
+define('_XA_USEPALETTE', 'Diese Farbpalette verwenden');
 
 // Global Defines
 define('_XA_ADMINMENU','Administrations Menü');
@@ -79,7 +82,7 @@ if (!defined('_XA_COMPASSNOAUTH')) {
 if (!defined('_XA_COMPASSAPINOAUTH')) {
 	define('_XA_COMPASSAPINOAUTH','keine Autorisierung für die Xanthia Admin API.');
 }
-define('_XA_CONFIGURE_SHORTURL','Short URLs aktivieren'); 
+define('_XA_CONFIGURE_SHORTURL','Short URLs aktivieren');
 define('_XA_CONFIGURE_TRIMWHITESPACE', 'trimwhitespace Ausgabefilter');
 define('_XA_COMPASSEDIT','Xanthia Theme Engine');
 define('_XA_COLORSCONFIG','Farb-Einstellungen');
@@ -106,7 +109,7 @@ define('_XA_MODULES','Module');
 define('_XA_MODULE','Modul');
 define('_XA_MODULES_NOCACHE', 'Module die vom Caching ausgenommen sind');
 
-define('_XA_NEW', 'neu');	
+define('_XA_NEW', 'neu');
 define('_XA_NEWTHEME','neues Theme erstellen');
 define('_XA_NEWMASTERMODULES', 'neues Master für Modul');
 if (!defined('_XA_NOMODINFO')) {
@@ -229,9 +232,9 @@ define('_XA_ZONENODELTE','Zone konnte nicht gelöscht werden');
 define('_XA_ZONEINFO','Tipps und Hinweise für die Theme Zone Sektion, mehr Info bei http://www.post-nuke.net');
 define('_XA_ZONENEWINFO','Beim Erstellen einer neuen Zone beachten, dass der Zonen-Name die Langfassung und das Zonen-Label die Kurzfassung ist, die von
 Xanthia benutzt wird. Als Beispiel: falls eine neue rechte InnerBlock-Zone erstellt werden soll, könnte man den Zonen-Namen als rechter InnerBlock und das Zonen-Label als
-rinblock setzen. Ebenfalls können hier spezifische Templates für bestimmte Blöcke gesetzt werden. Als Beispiel: um ein spezielles Template für den Umfrage-Block zu setzen, 
+rinblock setzen. Ebenfalls können hier spezifische Templates für bestimmte Blöcke gesetzt werden. Als Beispiel: um ein spezielles Template für den Umfrage-Block zu setzen,
 den Zonen-Name als Umfrage-Block, das Zonen-Label as umfrage setzen. Block Zonen-Labels sind der Block Titel in Kleinbuchstaben ohne Sonderzeichen. (z.B. Umfrage:PostNuke ist
-umfragepostnuke, weitere Artikel ist weitereartikel... etc) Sobald eine neue Zone erstellt ist, wird sie inaktive gesetzt und hat noch kein zugewiesenes Template. 
+umfragepostnuke, weitere Artikel ist weitereartikel... etc) Sobald eine neue Zone erstellt ist, wird sie inaktive gesetzt und hat noch kein zugewiesenes Template.
 Einfach der Zone das gewünschte Template zuweisen und aktivieren');
 if (!defined('_XA_COMPASSNOZONES')) {
 	define('_XA_COMPASSNOZONES','keine Zone in den API Argumenten angegeben');
@@ -284,7 +287,7 @@ define('_XA_COLOR8C','Color 8');
 
 define('_XA_COLORSMAINMENU','Farb-Menü');
 define('_XA_COLORSUPDATED','Farben aktualisiert');
-define('_XA_COLORSINFO','Die Farben sollten im HEX-Format definiert werden, inklusive #. Beispielsweise für schwarz #000000 und für weiss #FFFFFF. Es stehen sechs verschieden Background-Farben, eine Seperator Farbe und zwei Text-Farben zur Verfügung. 
+define('_XA_COLORSINFO','Die Farben sollten im HEX-Format definiert werden, inklusive #. Beispielsweise für schwarz #000000 und für weiss #FFFFFF. Es stehen sechs verschieden Background-Farben, eine Seperator Farbe und zwei Text-Farben zur Verfügung.
 Einfach die Werte entsprechend anpassen und auf bestätigen klicken - die Änderungen werden sofort wirksam');
 
 // Skins Related Defines
