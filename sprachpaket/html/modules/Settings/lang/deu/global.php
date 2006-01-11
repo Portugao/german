@@ -27,6 +27,11 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+
+define('_ACTMULTILINGUAL','ML aktivieren');
+define('_ACTUSEFLAGS','Flaggen aktivieren');
+define('_ACTAUTODETECT', 'Sprache aufgrund der Browser-Einstellung voreinstellen');
+
 define('_ADMINEMAIL','Administrator-E-Mail');
 define('_ADMINGRAPHIC','Icons im Adminmenü?');
 define('_ANONYMOUSSESSIONS', 'Session-Cookies auch für unregistrierte Benutzer setzen');
