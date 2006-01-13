@@ -34,6 +34,8 @@
  * @license http://www.gnu.org/copyleft/gpl.html
 */
 
+define('_ADMIN_UPGRADE_PHP','Sicherheitshinweis: upgrade.php sollte gelöscht werden!');
+define('_ADMIN_LEGACY_MODE','Hinweis: legacy-Modus ist aktiv!');
 define('_ADMIN_MAGIC_QUOTES','Sicherheitshinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist nicht aktiv!');
 define('_ADMIN_REGISTER_GLOBALS','Sicherheitshinweis: <a href="http://php.net/register_globals">register_globals</a> ist aktiv!');
 define('_ADMIN_CONFIG_PHP','Sicherheitshinweis: config.php ist beschreibbar (ggfs. chmod 644 setzen)!');
