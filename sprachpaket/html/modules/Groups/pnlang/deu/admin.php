@@ -64,5 +64,6 @@ define('_GROUPSUSERNOTADDED', 'Benutzer nicht hinzugefügt');
 define('_GROUPSCONFIGUPDATED', 'Gruppen-Konfiguration aktualisiert');
 define('_GROUPSUPDATECONFIG', 'Gruppen-Konfiguration aktualisieren');
 define('_GROUPSDEFAULTGROUP','Default-Gruppe für Benutzer');
+define('_GROUPSNOMOREUSERS', 'Alle Benutzer sind Mitglieder dieser Gruppe.');
 
 ?>
