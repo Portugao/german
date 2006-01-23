@@ -28,6 +28,7 @@
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
 
+define('_HTMLSAFEHTML', 'Safehtml-Filter für Ausgabe verwenden');
 define('_ACTMULTILINGUAL','ML aktivieren');
 define('_ACTUSEFLAGS','Flaggen aktivieren');
 define('_ACTAUTODETECT', 'Sprache aufgrund der Browser-Einstellung voreinstellen');
