@@ -1,5 +1,5 @@
 <?php
-// $Id$
+// Generated: $d$ by $id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
 // Copyright (C) 2001 by The PostNuke Development Team.
@@ -28,6 +28,8 @@
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
 $minage = pnConfigGetVar('minage');
+define('_REGQUESTIONFAILED', 'Die Frage wurde nicht korrekt beantwortet!');
+define('_USERAGENTINVALID', 'Useragent nicht erlaubt');
 define('_2CHANGEINFO','Um die Informationen zu ändern');
 define('_ALLOWEMAILVIEW','E-Mail-Adresse öffentlich anzeigen');
 define('_ANDCONNECTOR','und');

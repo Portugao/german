@@ -27,6 +27,12 @@
 // Purpose of file: Translation files
 // Translation team: Read credits in /docs/CREDITS.txt
 // ----------------------------------------------------------------------
+define('_REG_QUESTION', 'Registrierungsfrage');
+define('_REG_ANSWER', 'Registrierungsantwort');
+define('_REG_QUESTIONDESC', '(individuelle Fragen können helfen, Spamregistrierungen zu vermeiden)');
+define('_REG_ANSWERDESC', '(Antwort auf die Spamprotect-Frage)');
+define('_ILLEGALUSERAGENTS', 'Gebannte Useragents');
+define('_ILLEGALUSERAGENTDESC', 'Kommaseparierte Liste von Useragents über die keine Registrierung erlaubt ist');
 define('_LOGIN_REDIRECT_WCAG', 'WCAG-konforme Weiterleitung bei An/Abmeldung');
 define('_LOGIN_REDIRECT_DESC', 'Verzicht auf das Meta-Refresh');
 define('_COOKIEHINTFORLOGIN', 'Ab hier müssen Cookies erlaubt sein. Eine Anmeldung ist sonst nicht möglich.');
@@ -78,10 +84,10 @@ define('_LOGINSITE','Anmeldung.');
 define('_MEMBEROF','Mitglied');
 define('_MINAGE','Mindestalter (COPPA):');
 define('_MINAGEDESCR','Setzt ein Mindestalter zur Registrierung<br />(0=keine Überprüfung)');
-define('_MODIFYUSERSADDNOAUTH','Keine Berechtigung, Benutzer hinzuzufügen');
-define('_MODIFYUSERSDELNOAUTH','Keine Berechtigung, Benutzer zu löschen');
-define('_MODIFYUSERSEDITNOAUTH','Keine Berechtigung, Benutzer zu editieren');
-define('_MODIFYUSERSNOAUTH','Keine Berechtigung, Benutzer zu modifizieren');
+define('_MODIFYUSERSADDNOAUTH','Keine Autorisierung, Benutzer hinzuzufügen');
+define('_MODIFYUSERSDELNOAUTH','Keine Autorisierung, Benutzer zu löschen');
+define('_MODIFYUSERSEDITNOAUTH','Keine Autorisierung, Benutzer zu editieren');
+define('_MODIFYUSERSNOAUTH','Keine Autorisierung, Benutzer zu modifizieren');
 define('_MYEMAIL','E-Mail-Adresse:');
 define('_MYHOMEPAGE','Webseite:');
 define('_NEEDTOCOMPLETE','Alle notwendigen Felder müssen ausgefüllt werden');
