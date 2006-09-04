@@ -27,6 +27,7 @@
 // changed to pn_bbcode: larsneo
 // ----------------------------------------------------------------------
 
+define('_PNBBCODE_NOSCRIPTWARNING', 'Ihr Browser unterstützt kein JavaScript oder es ist abgeschaltet. Einige Funktionen auf dieser Seite können deshalb nicht benutzt werden bzw. die Seite wird möglicherweise nicht angezeigt wie erwartet.');
 define('_PNBBCODE_ADMINCODECONFIG', 'Konfiguration [code][/code]');
 define('_PNBBCODE_ADMINCOLORCONFIG', 'Konfiguration [color][/color]');
 define('_PNBBCODE_ADMINISTRATION', 'pn_bbcode Verwaltung');

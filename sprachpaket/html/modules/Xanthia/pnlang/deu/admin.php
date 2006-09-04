@@ -40,6 +40,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html
 */
 
+define('_XA_TEMPLATES','Templates');
 define('_XA_CURRENTPALETTE', 'Aktuelle Farbpalette');
 define('_XA_USEPALETTE', 'Diese Farbpalette verwenden');
 

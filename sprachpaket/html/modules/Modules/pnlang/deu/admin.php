@@ -64,6 +64,7 @@ define('_MODULESEDIT','Editieren');
 define('_MODULESFORTHIS','für dieses Modul');
 define('_MODULESINITIALISED','Modul initialisiert');
 define('_MODULESITEMSPERPAGE','Einträge pro Seite');
+define('_MODULESITEMSPERPAGENUMERIC', 'Die Einstellung \'Einträge pro Seite\' muss eine positive, ganze Zahl sein. Es wurde die Voreinstellung genommen.');
 define('_MODULESLOADLEGACY', 'Legacy Modul-Support aktivieren');
 define('_MODULESMODIFYCONFIG','Konfiguration modifizieren');
 define('_MODULESNEWDESCRIPTION','Neue Beschreibung');
