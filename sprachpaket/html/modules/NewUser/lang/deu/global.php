@@ -49,10 +49,10 @@ define('_CONSENT','(Mit dem Klick auf den Link wird ein Mindestalter von<br />'.
 
 define('_COOKIEWARNING','ANMERKUNG: Benutzereinstellungen sind Cookie-basiert.<br />');
 define('_EMAILAGAIN','E-Mail-Adresse bestätigen');
-define('_EMAILSDIFF','die beiden E-Mail-Adressen sind unterschiedlich');
+define('_EMAILSDIFF','Die beiden E-Mail-Adressen sind unterschiedlich');
 define('_EMAILINVALIDDOMAIN', 'Diese E-Mail-Adresse ist gesperrt');
 define("_ERRORMUSTAGREE","Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden!");
-define('_FINISH','fertig');
+define('_FINISH','Fertig');
 define('_FOLLOWINGMEM','Benutzerinformationen:');
 define('_GETGROUP','Gruppenmitgliedschaft: ');
 define('_HERE','hier');
@@ -65,7 +65,7 @@ define('_MUSTBE','Für dieses Portal ist ein Mindestalter von '.$minage.' Jahren 
 define('_NOTIFYEMAILCONT1','Eine neue Registrierung! Der Benutzername ');
 define("_NOTIFYEMAILCONT2"," wurde soeben auf der Webseite ".pnConfigGetVar('sitename')." registriert.");
 define('_NOTIFYEMAILSUB','Ein neuer Benutzer hat sich auf der WebSite registriert!');
-define('_OPTIONALITEMS','freiwillige Angaben');
+define('_OPTIONALITEMS','Weitere freiwillige Angaben');
 
 //define('_OVER13a','Ich bin mindestens');
 //define('_OVER13b','Jahre oder besitze das Einverständnis meiner Erziehungsberechtigten.');
@@ -82,8 +82,8 @@ define('_REGISTERDISABLED','Benutzer-Registrierung deaktiviert!');
 define('_REGISTERNOW','Jetzt kostenfrei registrieren');
 define('_REGISTRATION','Registrierung.');
 define('_REGISTRATIONAGREEMENT','Einverständniserklärung für');
-define('_REGNEWUSER','Benutzer anlegen');
-define('_RETURN','zurück zur Hauptseite.');
+define('_REGNEWUSER','Neuen Benutzer anlegen');
+define('_RETURN','Zurück zur Hauptseite.');
 define('_SORRY','Sorry');
 define("_TERMSOFUSE","Allgemeinen Nutzungsbedingungen");
 define('_TOREGISTER','wurde ein Account angemeldet bei');

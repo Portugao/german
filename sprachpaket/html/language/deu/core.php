@@ -84,7 +84,7 @@ define('_ACCESS_COMMENT','Kommentieren');
 define('_ACCESS_DELETE','Löschen');
 define('_ACCESS_EDIT','Editieren');
 define('_ACCESS_MODERATE','Moderieren');
-define('_ACCESS_NONE','keines');
+define('_ACCESS_NONE','Keine Rechte');
 define('_ACCESS_OVERVIEW','Übersicht');
 define('_ACCESS_READ','Lesen');
 

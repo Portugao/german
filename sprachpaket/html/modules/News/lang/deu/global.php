@@ -37,6 +37,6 @@ define('_THISISTOPIC','Thema: ');
 define('_FOLLOWINGNEWS','In diesem Thema sind folgende Beiträge: ');
 define('_THISISCATEGORY','Kategorie: ');
 define('_FOLLOWINGNEWSCATEGORY','In dieser Kategorie sind folgende Beiträge: ');
-define('_NOARTICLESYET1','Keine Beiträge');
-define('_NOARTICLESYET2',' zu diesem Thema gefunden');
+define('_NOARTICLESYET1','Keine Artikel gefunden');
+define('_NOARTICLESYET2',' in dieser Rubrik bzw. Kategorie.');
 ?>
