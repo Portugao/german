@@ -107,7 +107,7 @@ define('_REGCONF','Konfiguration Benutzerregistrierung');
 define('_REGDATE', 'Anmeldedatum');
 define('_REGISTER','Neu-Registrierung.');
 define('_REGISTEREDUSER','Registrierter Benutzer #');
-define('_RETRIEVEPASS','Vergessenes Kennwort anfordern');
+define('_RETRIEVEPASS','Vergessenes Kennwort anfordern.');
 define('_RETYPEPASSWD','Kennwort wiederholen');
 define('_SELECTOPTION','Bitte eine Option aus dem folgenden Menü wählen:');
 define('_STRING_INSTRUCTIONS','NUR STRING: Grössenbereich (1-254)');
