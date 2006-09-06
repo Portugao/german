@@ -35,23 +35,23 @@ define('_ALLOWEMAILVIEW','E-Mail-Adresse öffentlich anzeigen');
 define('_ANDCONNECTOR','und');
 define('_ASREG1','Kommentare unter dem Benutzernamen verfassen');
 define('_ASREG2','Beiträge unter dem Benutzernamen verfassen');
-define('_ASREG3','einen benutzerdefinierten Block auf der Startseite erstellen');
-define('_ASREG4','die Anzahl der Beiträge auf der Startseite einstellen');
-define('_ASREG5','die Anzeige der Kommentare bestimmen');
-define('_ASREG6','das Seitendesign individuell einstellen');
+define('_ASREG3','Einen benutzerdefinierten Block auf der Startseite erstellen');
+define('_ASREG4','Die Anzahl der Beiträge auf der Startseite einstellen');
+define('_ASREG5','Die Anzeige der Kommentare bestimmen');
+define('_ASREG6','Das Seitendesign individuell einstellen');
 define('_ASREG7','und eine Menge mehr...');
 define('_ASREGUSER','Als ein registrierter Benutzer kann man:');
-define('_CREATEGROUP','direkte Gruppenmitgliedschaft anlegen: ');
+define('_CREATEGROUP','Direkte Gruppenmitgliedschaft anlegen: ');
 //define('_CONSENT1','(Mit dem Klick auf den Link wird ein Mindestalter von<br />');
 //define('_CONSENT2','Jahren bestätigt bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten.)');
 
 define('_CONSENT','(Mit dem Klick auf den Link wird ein Mindestalter von<br />'.$minage.' Jahren bestätigt bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten.)');
 
-define('_COOKIEWARNING','ANMERKUNG: Benutzereinstellungen sind Cookie-basiert.<br />');
+define('_COOKIEWARNING','Anmerkung: Diese Webseite verwendet Session-Cookies.<br />');
 define('_EMAILAGAIN','E-Mail-Adresse bestätigen');
 define('_EMAILSDIFF','Die beiden E-Mail-Adressen sind unterschiedlich');
 define('_EMAILINVALIDDOMAIN', 'Diese E-Mail-Adresse ist gesperrt');
-define("_ERRORMUSTAGREE","Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden!");
+define('_ERRORMUSTAGREE','Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden!');
 define('_FINISH','Fertig');
 define('_FOLLOWINGMEM','Benutzerinformationen:');
 define('_GETGROUP','Gruppenmitgliedschaft: ');
@@ -60,28 +60,28 @@ define('_HERE','hier');
 //define('_MUSTBE1','Für dieses Portal ist ein Mindestalter von');
 //define('_MUSTBE2','Jahren bzw. das Einverständnis der Erziehungsberechtigten erforderlich.');
 
-define('_MUSTBE','Für dieses Portal ist ein Mindestalter von '.$minage.' Jahren bzw. das Einverständnis der Erziehungsberechtigten erforderlich.');
+define('_MUSTBE','Für diese Webseite ist ein Mindestalter von '.$minage.' Jahren bzw. das Einverständnis der Erziehungsberechtigten erforderlich.');
 
 define('_NOTIFYEMAILCONT1','Eine neue Registrierung! Der Benutzername ');
-define("_NOTIFYEMAILCONT2"," wurde soeben auf der Webseite ".pnConfigGetVar('sitename')." registriert.");
+define('_NOTIFYEMAILCONT2',' wurde soeben auf der Webseite '.pnConfigGetVar('sitename').' registriert.');
 define('_NOTIFYEMAILSUB','Ein neuer Benutzer hat sich auf der WebSite registriert!');
 define('_OPTIONALITEMS','Weitere freiwillige Angaben');
 
 //define('_OVER13a','Ich bin mindestens');
 //define('_OVER13b','Jahre oder besitze das Einverständnis meiner Erziehungsberechtigten.');
 
-define('_OVER13','Ich bin mindestens '.$minage.' Jahre oder besitze das Einverständnis meiner Erziehungsberechtigten.');
+define('_OVER13','Ich bin mindestens '.$minage.' Jahre alt oder besitze das Einverständnis meiner Erziehungsberechtigten.');
 
 define('_PASSWILLSEND','Das Kennwort wird an die eingetragene E-Mail-Adresse gesendet');
 //define('_PASSWORD','Kennwort');
 define('_PASSWDAGAIN','Kennwort bestätigen');
-define('_PASSWDNEEDED','bitte ein Kennwort angeben');
+define('_PASSWDNEEDED','Bitte ein Kennwort angeben');
 define("_PRIVACYPOLICY","Erklärung zum Datenschutz");
 define('_REASONS','Anmerkung:');
 define('_REGISTERDISABLED','Benutzer-Registrierung deaktiviert!');
-define('_REGISTERNOW','Jetzt kostenfrei registrieren');
+define('_REGISTERNOW','Jetzt registrieren');
 define('_REGISTRATION','Registrierung.');
-define('_REGISTRATIONAGREEMENT','Einverständniserklärung für');
+define('_REGISTRATIONAGREEMENT','Einverständniserklärung zu');
 define('_REGNEWUSER','Neuen Benutzer anlegen');
 define('_RETURN','Zurück zur Hauptseite.');
 define('_SORRY','Sorry');

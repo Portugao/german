@@ -93,7 +93,7 @@ define('_EDITORIALREMOVED','Editorial entfernt');
 define('_EDITORIALTEXT','Editorial Text');
 define('_EDITORIALTITLE','Editorial Titel');
 define('_EDITORREVIEW','Editor Review');
-define('_EMAIL','E-Mail Adresse');
+define('_EMAIL','E-Mail-Adresse');
 define('_EMAILREGISTERED','Fehler! Die E-Mail-Adresse wurde bereits registriert');
 define('_ENV','ENV');
 define('_ERRORINVEMAIL','Fehler! Die E-Mail-Adresse scheint fehlerhaft zu sein');
