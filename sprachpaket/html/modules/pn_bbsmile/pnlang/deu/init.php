@@ -27,6 +27,6 @@
 // changes for pn_bbsmile: larsneo
 // ----------------------------------------------------------------------
 
-define('_PNBBSMILE_COULDNOTREGISTER',          'pn_bbsmile NICHT installiert!');
-define('_PNBBSMILE_COULDNOTUNREGISTER',        'pn_bbsmile NICHT entfernt!');
+include_once 'modules/pn_bbsmile/pnlang/eng/global.php';
+
 ?>
