@@ -62,11 +62,11 @@ define('_INSTALLERPERSONALCONFIGEXISTS', '%f existiert. Bitte vor der Installati
 // database field labels
 define('_INSTALLERDBTYPE', 'Datenbank Typ');
 define('_INSTALLERDBTABLETYPE', 'Tabellentyp (nur MySQL)');
-define('_INSTALLERDBHOST', 'Host');
-define('_INSTALLERDBUSERNAME', 'Benutzername');
-define('_INSTALLERDBPASSWORD', 'Kennwort');
-define('_INSTALLERDBNAME', 'Datenbank Name');
-define('_INSTALLERTABLEPREFIX', 'Tabellenprefix');
+define('_INSTALLERDBHOST', 'Datenbank-Server');
+define('_INSTALLERDBUSERNAME', 'Name des Datenbank-Benutzers');
+define('_INSTALLERDBPASSWORD', 'Kennwort des Datenbank-Benutzers');
+define('_INSTALLERDBNAME', 'Name der Datenbank');
+define('_INSTALLERTABLEPREFIX', 'Tabellenpräfix (für Table-Sharing)');
 define('_INSTALLERCREATEDB', 'Datenbank anlegen<br />Hinweis: Falls kein Root-Zugriff auf die Datenbank besteht, können in aller Regel auch keine neuen Datenbanken angelegt werden - in diesem Fall nur die Datenbank angeben, in die das Skript die erforderlichen Tabellen anlegen soll.');
 define('_INSTALLERCREATEDBFAILED', 'Datenbank konnte nicht angelegt werden - bitte die Account-Informationen kontrollieren');
 define('_INSTALLERDBINFOFROMHOST', 'Die entsprechenden Informationen liefert normalerweise der Provider bzw. Administrator.');
