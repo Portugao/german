@@ -11,8 +11,8 @@
  * @subpackage   Admin_Messages
  */
 
-define('_ADMINMESSAGES_NAME',        'Admin Messages');
-define('_ADMINMESSAGES_DISPLAYNAME', 'Admin Messages');
-define('_ADMINMESSAGES_DESCRIPTION', 'Display automated/programmed messages.');
+define('_ADMINMESSAGES_NAME',        'Admin-Nachrichten');
+define('_ADMINMESSAGES_DISPLAYNAME', 'Admin-Nachrichten');
+define('_ADMINMESSAGES_DESCRIPTION', 'Admin-Nachrichten für bestimmte Gruppen anzeigen.');
 
 ?>
