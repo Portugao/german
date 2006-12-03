@@ -21,7 +21,7 @@ define('_ADMIN_CATEGORY_02_b',    'Einstellungen für Benutzer, Gruppen und Zugri
 define('_ADMIN_CATEGORY_03_a',    'Inhalte');
 define('_ADMIN_CATEGORY_03_b',    'Module die für den Inhalt der PostNuke Webseite zuständig sind.');
 define('_ADMIN_CATEGORY_04_a',    'Drittanbieter');
-define('_ADMIN_CATEGORY_04_b',    'Zusätzliche module werden werden nach der Installation hier angezeigt.');
+define('_ADMIN_CATEGORY_04_b',    'Zusätzliche Module werden werden nach der Installation hier angezeigt.');
 define('_ADMIN_CATEGORY_05_a',    'Sicherheit');
 define('_ADMIN_CATEGORY_05_b',    'Module für Sicherheitseinstellungen der PostNuke Webseite.');
 define('_ADMIN_CATEGORY_06_a',    'Hooks');
