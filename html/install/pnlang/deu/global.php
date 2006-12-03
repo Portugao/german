@@ -4,7 +4,7 @@
 define('_INSTALLER', 'PostNuke Installation');
 define('_INSTALLERPLEASEREFER', 'Bitte die');
 define('_INSTALLERDURINGPROCESS', 'beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
-define('_INSTALLERQUALITY', 'HINWEIS: Die PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
+define('_INSTALLERQUALITY', 'HINWEIS: PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="http://community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 
 // installer tasks
 define('_INSTALLERTASKS', 'Installer Aufgaben');
@@ -34,7 +34,7 @@ define('_INSTALLERCHOOSELANG', 'Sprache wählen');
 // _licence.htm
 define('_INSTALLERTHISSCRIPT', 'Die Installationsroutine hilft bei der Grundeinrichtung einer neuen PostNuke Webseite.
 Die Installation erfolgt in mehreren Schritten in ca. 5-10 Minuten.');
-define('_INSTALLERLICENSE', 'Bitte vor der Installation die zugrundeliegende GNU General Public License durchlesen. PostNuke wird als "Freie" Software entwickelt,
+define('_INSTALLERLICENSE', 'Bitte vor der Installation die zugrundeliegende GNU General Public License durchlesen. PostNuke wird als "freie" Software entwickelt,
 es gibt aber Richtlinien zur Verteilung und Bearbeitung.');
 define('_INSTALLERGNUURL1', 'http://www.gnu.org/licenses/gpl.html');
 define('_INSTALLERGNULINKTEXT1', 'GNU General Public License');
@@ -44,7 +44,7 @@ define('_ACCEPTLICENCE', 'Lizenz akzeptieren');
 
 // _requirements.htm
 define('_INSTALLERPHP', 'PHP');
-define('_INSTALLERYOURPHPVER', 'Die aktuelle PHP-Version ist');
+define('_INSTALLERYOURPHPVER', 'Die installierte PHP-Version ist');
 define('_INSTALLERPHPTOKENOK', 'In der PHP-Version ist die "token" Funktion verfügbar.');
 define('_INSTALLERPHPTOKENNOTOK', 'In der PHP-Version ist die "token" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung.');
 define('_INSTALLERPHPVEROK', 'und erfüllt die Mindestanforderung (4.3.0).');
@@ -60,7 +60,7 @@ define('_INSTALLERPERSONALCONFIGEXISTS', '%f existiert. Bitte vor der Installati
 
 // _dbinformation.htm
 // database field labels
-define('_INSTALLERDBTYPE', 'Datenbank Typ');
+define('_INSTALLERDBTYPE', 'Datenbank');
 define('_INSTALLERDBTABLETYPE', 'Tabellentyp (nur MySQL)');
 define('_INSTALLERDBHOST', 'Datenbank-Server');
 define('_INSTALLERDBUSERNAME', 'Name des Datenbank-Benutzers');
