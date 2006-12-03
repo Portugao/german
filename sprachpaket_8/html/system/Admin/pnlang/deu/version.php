@@ -11,8 +11,8 @@
  * @subpackage   Admin
  */
 
-define('_ADMIN_NAME',        'Admin Panel');
-define('_ADMIN_DISPLAYNAME', 'Admin Panel');
-define('_ADMIN_DESCRIPTION', 'Manage the names, order, and templating of the admin links.');
+define('_ADMIN_NAME',        'Administration');
+define('_ADMIN_DISPLAYNAME', 'Administration');
+define('_ADMIN_DESCRIPTION', 'Admin-Kategorien und Modulzuordnungen bearbeiten.');
 
 ?>
