@@ -9,22 +9,22 @@
  */
 
 // date and time defines
-define('_DATE','Date');
-define('_DATEBRIEF','%b %d, %Y');
-define('_DATELONG','%A, %B %d, %Y');
-define('_DATESTRING','%A, %B %d @ %H:%M:%S');
-define('_DATETIMEBRIEF','%b %d, %Y - %I:%M %p');
-define('_DATETIMELONG','%A, %B %d, %Y - %I:%M %p');
+define('_DATE','Datum');
+define('_DATEBRIEF', '%d. %b %Y');
+define('_DATELONG', '%A, %d. %B %Y');
+define("_DATESTRING","%A, %d. %B %Y um %H:%M Uhr");
+define('_DATETIMEBRIEF', '%d.%m.%Y, %H:%M Uhr');
+define('_DATETIMELONG', '%A, %d. %B %Y, %H:%M Uhr');
 define('_DATEINPUT', '%Y-%m-%d'); // Dateformat for input fields (parsable - do not try other formats!)
 define('_DATETIMEINPUT', '%Y-%m-%d %H:%M'); // Date+time format for input fields (parsable - do not try other formats!)
 define('_DATEFIRSTWEEKDAY', 0); // 0 = sunday, 1 monday and so on
 define('_DAY_OF_WEEK_LONG','Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag');
 define('_DAY_OF_WEEK_SHORT','Son Mon Die Mit Don Fre Sam');
 define('_MONTH_LONG','Januar Februar März April Mai Juni Juli August September Oktober November Dezember');
-define('_MONTH_SHORT','Jan Feb Mär Apr Mai Jun Jul Aug Sep Okt Nov Dez');
+define('_MONTH_SHORT','Jan Feb Mar Apr Mai Jun Jul Aug Sep Okt Nov Dez');
 define('_TIME', 'Zeit');
-define('_TIMEBRIEF','%I:%M %p');
-define('_TIMEFORMAT', 12);  // use 24 here in other countries
+define('_TIMEBRIEF', '%H:%M');
+define('_TIMEFORMAT', 24);  // use 24 here in other countries
 define('_SECOND', 'Sekunde');
 define('_SECONDS', 'Sekunden');
 define('_MINUTE', 'Minute');
@@ -47,7 +47,7 @@ define('_TZOFFSETS','-12 -11 -10 -9.5 -9 -8 -7 -6 -5 -4 -3.5 -3 -2 -1 0 1 2 3 3.
 
 // locale defines
 define('_CHARSET','ISO-8859-15');
-define('_LOCALE','de_de');
+define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 
 // common words
@@ -59,9 +59,9 @@ define('_FOR', 'für');
 define('_NO','Nein');
 define('_OF','von');
 define('_OK','OK');
-define('_ON','on');
+define('_ON','am');
 define('_OR', 'oder');
-define('_TO','An');
+define('_TO','an');
 define('_THE', 'Ein');
 define('_UP','hoch');
 define('_URL', 'URL');
@@ -74,7 +74,7 @@ define('_ACCESS_COMMENT','Kommentieren');
 define('_ACCESS_DELETE','Löschen');
 define('_ACCESS_EDIT','Editieren');
 define('_ACCESS_MODERATE','Moderieren');
-define('_ACCESS_NONE','Keins');
+define('_ACCESS_NONE','Keine Rechte');
 define('_ACCESS_OVERVIEW','Übersicht');
 define('_ACCESS_READ','Lesen');
 
@@ -129,13 +129,13 @@ define('_USERNAME' ,'Benutzername');
 define('_GUEST','Gast');
 define('_GUEST0','Gäste');
 define('_GUESTS','Gäste');
-define('_MEMBER','Benutzer');
-define('_MEMBER0','Benutzer');
-define('_MEMBERS','Benutzer');
+define('_MEMBER','registrierte Benutzer');
+define('_MEMBER0','registrierte Benutzer');
+define('_MEMBERS','registrierte Benutzer');
 
 // member states
-define('_ONLINE','angemeldet');
-define('_OFFLINE','abgemeldet');
+define('_ONLINE','online');
+define('_OFFLINE','offline');
 
 // common postnuke terms
 define('_BLOCK' ,'Block');
@@ -194,7 +194,7 @@ define('_TRANSACTIONFAILED', 'Transaction fehlgeschlagen ... Rollback erfolgt!<b
 define('_UNKNOWNFUNC', 'Fehler: Unbekannte Funktion');
 define('_UNREGISTERFAILED', 'Fehler: Hook konnte nicht unregistriert werden');
 define('_UPDATEITEM', 'Aktualisiere %i%');
-define('_UPDATECONFIG', 'Konfiguration aktualisiert');
+define('_UPDATECONFIG', 'Aktualisieren');
 define('_UPDATEDBY', 'Aktualisiert von');
 define('_UPDATEDON', 'Aktualisiert am');
 define('_UPDATEFAILED','Fehler! Aktualisierungsversuch fehlgeschlagen');
