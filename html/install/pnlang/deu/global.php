@@ -2,25 +2,25 @@
 
 // installer page language strings
 define('_INSTALLER', 'PostNuke Installation');
-define('_INSTALLERPLEASEREFER', 'Bitte während der Installation');
-define('_INSTALLERDURINGPROCESS', 'beachten');
-define('_INSTALLERQUALITY', 'NOTE: Official PostNuke distributions are ONLY available from PostNuke.com. For certitude of quality, please ensure you are installing an official distribution.');
+define('_INSTALLERPLEASEREFER', 'Bitte die');
+define('_INSTALLERDURINGPROCESS', 'beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
+define('_INSTALLERQUALITY', 'HINWEIS: Die PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 
 // installer tasks
 define('_INSTALLERTASKS', 'Installer Aufgaben');
 define('_INSTALLERTASK0', 'Bestehendes Installations-Login');
 define('_INSTALLERTASK1', 'Sprache wählen');
 define('_INSTALLERTASK2', 'Lizenz akzeptieren');
-define('_INSTALLERTASK3', 'System-Voraussetzungen');
+define('_INSTALLERTASK3', 'Voraussetzungen');
 define('_INSTALLERTASK4', 'Datenbank Information');
 define('_INSTALLERTASK5', 'Installationstyp wählen');
-define('_INSTALLERTASK6', 'Administrator einrichten');
+define('_INSTALLERTASK6', 'Administrator anlegen');
 define('_INSTALLERTASK7', 'Theme wählen');
 define('_INSTALLERTASK8', 'Fertig!');
 
 // installer resources
 define('_INSTALLERESOURCES', 'Zusätzliche Informationen');
-define('_INSTALLERGUIDE', 'Installationsanleitung');
+define('_INSTALLERGUIDE', 'Anleitung zur Installation');
 define('_INSTALLERDOCS', 'PostNuke Dokumentation');
 define('_INSTALLERFORUMS', 'Support Foren');
 
@@ -32,11 +32,10 @@ define('_RECHECK', 'erneut prüfen');
 define('_INSTALLERCHOOSELANG', 'Sprache wählen');
 
 // _licence.htm
-define('_INSTALLERTHISSCRIPT', 'This script will install the PostNuke database and help you set up the variables that you need to start.
-You will be taken through a variety of pages. Each page sets a different portion of the script. We estimate that this entire process
-will take about ten minutes. At any time that you get stuck, please visit our support forums for help.');
-define('_INSTALLERLICENSE', 'Our License Please read through the GNU General Public License. PostNuke is developed as free software,
-but there are certain requirements for distributing and editing.');
+define('_INSTALLERTHISSCRIPT', 'Die Installationsroutine hilft bei der Grundeinrichtung einer neuen PostNuke Webseite.
+Die Installation erfolgt in mehreren Schritten in ca. 5-10 Minuten.');
+define('_INSTALLERLICENSE', 'Bitte vor der Installation die zugrundeliegende GNU General Public License durchlesen. PostNuke wird als "Freie" Software entwickelt,
+es gibt aber Richtlinien zur Verteilung und Bearbeitung.');
 define('_INSTALLERGNUURL1', 'http://www.gnu.org/licenses/gpl.html');
 define('_INSTALLERGNULINKTEXT1', 'GNU General Public License');
 define('_INSTALLERGNUURL2', 'http://www.gnu.org/philosophy/');
@@ -68,7 +67,7 @@ define('_INSTALLERDBUSERNAME', 'Benutzername');
 define('_INSTALLERDBPASSWORD', 'Kennwort');
 define('_INSTALLERDBNAME', 'Datenbank Name');
 define('_INSTALLERTABLEPREFIX', 'Tabellenprefix');
-define('_INSTALLERCREATEDB', 'Datenbank anlegen');
+define('_INSTALLERCREATEDB', 'Datenbank anlegen<br />Hinweis: Falls kein Root-Zugriff auf die Datenbank besteht, können in aller Regel auch keine neuen Datenbanken angelegt werden - in diesem Fall nur die Datenbank angeben, in die das Skript die erforderlichen Tabellen anlegen soll.');
 define('_INSTALLERCREATEDBFAILED', 'Datenbank konnte nicht angelegt werden - bitte die Account-Informationen kontrollieren');
 define('_INSTALLERDBINFOFROMHOST', 'Die entsprechenden Informationen liefert normalerweise der Provider bzw. Administrator.');
 define('_INSTALLERCONNECTDBFAILED', 'Keine Verbindung zur Datenbank - bitte die Account-Informationen kontrollieren');
@@ -100,15 +99,13 @@ define('_INSTALLERURLVALIDATECOMPAREFAILED', 'URL-Angabe scheinbar ungültig - bi
 
 // _gotosite.htm
 define('_INSTALLERCREDITS', 'Credits');
-define('_INSTALLERTEAM', 'These are the scripts and people that make PostNuke go. Take some time and let these people know how much you appreciate their work.
-If you would like to be listed here, contact us about being a part of the developement team. We are always looking for some help.');
-define('_INSTALLERPROBLEMS', 'You are now done with the PostNuke installation. If you run into any problems, let us know.  Make sure that you delete this script.
-You will not need it again.');
-define('_INSTALLERGOTOSITE', 'Go to your PostNuke site');
+define('_INSTALLERTEAM', 'Das sind die Skripte und Personen, welche PostNuke ausmachen - wir freuen uns über jede Art von Feedback unserer Benutzer.<br />Wir können immer Hilfe gebrauchen - wer hier gelistet werden möchte, sollte uns einfach kontaktieren.');
+define('_INSTALLERPROBLEMS', 'Die PostNuke Installation ist abgeschlossen. Falls Probleme oder Schwierigkeiten aufgetreten sind bitte eine Rückmeldung in den Support-Foren. Das install-Skript und der /install-Ordner sollten jetzt gelöscht werden.');
+define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
 
 // _selecttheme.htm
 define('_INSTALLERSELECTHEME', 'Default Theme der Seite');
-define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://community.postnuke.com/module-Database-main-tid-4.htm">Theme Release Database</a>. Bitte ein Theme für die Grundinstallation wählen, es kann später verändert werden.');
+define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später verändert werden.');
 define('_INSTALLERPNTHEMESURL', 'http://community.postnuke.com/module-Database-main-tid-4.htm');
 define('_INSTALLERPNTHEMES', 'Theme Release Database');
 
