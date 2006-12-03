@@ -11,18 +11,14 @@
 */
 
 // Messages
-define('_MESSAGE_00_a','Welcome to PostNuke');
-define('_MESSAGE_00_b','<p><a href="http://www.postnuke.com">PostNuke</a> is a weblog/content management system (CMS). It is far more secure and stable than competing products, and is able to work in high-volume environments with ease.<br /><br />
-Some of the key features of PostNuke are:</p>
-<ul>
-<li> customization of all aspects of the web site\'s appearance through themes, with support for CSS stylesheets</li>
-<li> the ability to specify items as being suitable for either a single language or for all languages</li>
-<li> the best guarantee of properly displaying your web pages in all browsers, thanks to full compliance with W3C HTML standards</li>
-<li> a standard API (application programming interface) and extensive documentation to allow for easy extension of your web site\'s functionality through modules and blocks.</li>
-</ul>
-<p>PostNuke has a very active developer and support community at <a href="http://www.postnuke.com">PostNuke.com</a>.</p>
-<p>We hope you will enjoy using PostNuke.<br /><br /><strong>The PostNuke development team </strong></p>
-<p><em>Note: you can edit or remove this message by going to the Administration page and clicking on the \'Administration messages\' entry </em></p>');
+define('_MESSAGE_00_a','Herzlich Willkommen!');
+define('_MESSAGE_00_b','<p><a href="http://support.pn-cms.de/modules/dokuwiki/doku.php?id=handbuch:wasistpostnuke" title="Was ist PostNuke?">PostNuke</a> ist ein unter <abbr lang="de" xml:lang="de" title="Gnu Public Licence"><span class="abbr" title="Gnu Public Licence">GPL</span></abbr> lizenziertes und frei verfügbares Framework mit Benutzerverwaltung und Templating System. 
+Über frei verfügbare Module kann es zum Community- und Content Management System (<abbr lang="de" xml:lang="de" title="Content Management System"><span class="abbr" title="Content Management System">CMS</span></abbr>) aufgerüstet werden. 
+Die Inhalte einer Internetpräsenz wie zum Beispiel News-Artikel, Links, Downloads, <abbr lang="de" xml:lang="de" title="Frequently Asked Questions"><span class="abbr" title="Frequently Asked Questions">FAQ</span></abbr>, Bildergalerien, Foren <abbr lang="de" xml:lang="de" title="et cetera"><span class="abbr" title="et cetera">etc.</span></abbr> können dabei direkt via Browser verwaltet werden.</p>
+<p>Durch die klare Trennung von Inhalt und Gestaltung hilft <a href="http://support.pn-cms.de/modules/dokuwiki/doku.php?id=handbuch:wasistpostnuke" title="Was ist PostNuke?">PostNuke</a>, die Kosten und den Aufwand beim Betrieb einer Internet-Präsenz zu reduzieren.</p>
+<p><strong>Das deutsche Sprachpaket sowie Support und Dokumentation zu PostNuke gibt es bei <a href="http://support.pn-cms.de">support.pn-cms.de</a>.</strong></p>
+<p><em>Anmerkung: Diese Meldung kann in Administration-Admin Nachrichten bearbeitet werden.</em></p>
+');
 // define('_MESSAGES_00_c',''); // It's a time()
 define('_MESSAGE_00_d','0');
 define('_MESSAGE_00_e','1');
