@@ -10,12 +10,12 @@
  * @subpackage Blocks
  */
 
-define('_ACTIVATEERROR','Error! Sorry! Could not activate block');
-define('_DEACTIVATEERROR','Error! Sorry! Could not deactivate block');
-define('_DELETEERROR','Error! Sorry! Could not delete block');
+define('_ACTIVATEERROR','Fehler! Block konnte nicht aktiviert werden');
+define('_DEACTIVATEERROR','Fehler! Block konnte nicht deaktiviert werden');
+define('_DELETEERROR','Fehler! Block konnte nicht gelöscht werden');
 
 // used for installation only
 if(!defined('_BLOCKS_POSITIONALREADYEXISTS')) {
-    define('_BLOCKS_POSITIONALREADYEXISTS', 'A block position of the same name already exists');
+    define('_BLOCKS_POSITIONALREADYEXISTS', 'Eine Block-Position mit diesem Namen existiert bereits');
 }
 ?>
