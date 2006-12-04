@@ -13,6 +13,6 @@
 
 define('_CENSOR_NAME',        'Censor');
 define('_CENSOR_DISPLAYNAME', 'Censor');
-define('_CENSOR_DESCRIPTION', 'Site Censorship Control');
+define('_CENSOR_DESCRIPTION', 'Censor (Wortkontrolle)');
 
 ?>
