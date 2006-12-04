@@ -10,9 +10,9 @@
  * @subpackage Theme
 */
 
-define('_THEME_CHANGE','Change Theme');
-define('_THEME_FORMAT', 'Output format');
-define('_THEME_IMAGEDROPDOWN', 'Dropdown with preview images');
-define('_THEME_SIMPLELIST', 'Simple list');
+define('_THEME_CHANGE','Theme wechseln');
+define('_THEME_FORMAT', 'Output Format');
+define('_THEME_IMAGEDROPDOWN', 'Dropdown mit Vorschaubildern');
+define('_THEME_SIMPLELIST', 'Einfache Liste');
 
 ?>
