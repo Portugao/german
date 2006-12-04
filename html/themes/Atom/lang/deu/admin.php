@@ -11,6 +11,6 @@
  * @subpackage   Atom
  */
 
-define('_ATOMTHEME_SHOWDESCRIPTION', 'Show item descriptions');
+define('_ATOMTHEME_SHOWDESCRIPTION', 'Beschreibung der Einträge anzeigen');
 
 ?>
