@@ -12,6 +12,6 @@
 
 define('_EXTRALITETHEME_NAME',        'ExtraLite');
 define('_EXTRALITETHEME_DISPLAYNAME', 'ExtraLite');
-define('_EXTRALITETHEME_DESCRIPTION', 'Legacy theme used during installation and upgrades');
+define('_EXTRALITETHEME_DESCRIPTION', 'Legacy Theme in Installation und Upgrades');
 
 ?>
