@@ -8,8 +8,8 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_THEMEMAIN', 'Theme main content table');
-define('_THEMEWELCOMETO', 'Welcome to');
-define('_WORDSMORE', 'More Words');
+define('_THEMEMAIN', 'Theme Inhaltsbereich (Tabelle)');
+define('_THEMEWELCOMETO', 'Willkommen bei');
+define('_WORDSMORE', 'weitere Worte');
 
 ?>
