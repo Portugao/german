@@ -10,13 +10,13 @@
  * @subpackage  PostNuke_Censor
  */
 
-define('_CENSORUPDATE', 'Update');
-define('_CENSORUPDATED', 'Censorship options updated');
-define('_CENSORMODE', 'Censor mode on');
-define('_CENSORLIST', 'List of censored words');
-define('_CENSORREPLACE', 'Replace censored words with');
-define('_CENSORMODEFAIL', 'Error! Could not update censor mode');
-define('_CENSORLISTFAIL', 'Error! Could not update censor list');
+define('_CENSORUPDATE', 'Aktualisieren');
+define('_CENSORUPDATED', 'Censor Optionen aktualisiert');
+define('_CENSORMODE', 'Censor aktiv');
+define('_CENSORLIST', 'Liste der Censor-Begriffe');
+define('_CENSORREPLACE', 'Censor ersetzt mit');
+define('_CENSORMODEFAIL', 'Fehler! Censor Modus konnte nicht aktualisiert werden');
+define('_CENSORLISTFAIL', 'Fehler! Censor Liste konnte nicht aktualisiert werden');
 define('_CENSOR', 'Censor');
 
 ?>
