@@ -1,13 +1,13 @@
 <?php
-define('_HOME','Home');
+define('_HOME','Startseite');
 define('_DOWNLOAD','Downloads');
-define('_SUBMITNEWS','Submit News');
+define('_SUBMITNEWS','Beiträge einreichen');
 define('_REVIEWS','Reviews');
 define('_FAQ','FAQ');
-define('_SETTINGS','Settings');
-define('_USERADMIN','User Admin');
-define('_GROUPADMIN','Groups');
-define('_PERMISSIONS','Permissions');
-define('_ADDSTORY','Add Story');
-define('_FORUMS','Forums');
+define('_SETTINGS','Einstellungen');
+define('_USERADMIN','User Administration');
+define('_GROUPADMIN','Gruppen');
+define('_PERMISSIONS','Zugriffsrechte');
+define('_ADDSTORY','Beitrag hinzufügen');
+define('_FORUMS','Forum');
 ?>
