@@ -11,7 +11,7 @@
  * @subpackage   rss
  */
 
-define('_RSSTHEME_SHOWDESCRIPTION', 'Show item descriptions');
+define('_RSSTHEME_SHOWDESCRIPTION', 'Beschreibung des Eintrags anzeigen');
 define('_RSSTHEME_RSSLEVEL', 'RSS Level');
 
 ?>

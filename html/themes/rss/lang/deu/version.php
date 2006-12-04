@@ -13,6 +13,6 @@
 
 define('_RSSTHEME_NAME',        'RSS');
 define('_RSSTHEME_DISPLAYNAME', 'RSS');
-define('_RSSTHEME_DESCRIPTION', 'Displays pages as an RSS feed');
+define('_RSSTHEME_DESCRIPTION', 'Zeigt Seiten als RSS Feed an');
 
 ?>
