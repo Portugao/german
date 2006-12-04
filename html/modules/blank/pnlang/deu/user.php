@@ -8,7 +8,7 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_BLANKMOD_TITLE',   'Blank Module Title');
-define('_BLANKMOD_CONTENT', 'Blank Module Content');
+define('_BLANKMOD_TITLE',   'Blank Module Titel');
+define('_BLANKMOD_CONTENT', 'Blank Module Inhalt');
 
 ?>
