@@ -13,8 +13,8 @@
  * @subpackage   AuthPN
  */
 
-define('_AUTHPN', 'PostNuke authentication');
-define('_AUTHPNMODULES', 'Authentication modules');
-define('_AUTHPNHELP', 'Comma-separated list of modules');
+define('_AUTHPN', 'PostNuke Authentifizierung');
+define('_AUTHPNMODULES', 'Authentifizierungs-Module');
+define('_AUTHPNHELP', 'Kommaseparierte Liste der Module');
 
 ?>
