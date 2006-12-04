@@ -10,24 +10,24 @@
  * @subpackage Blocks
  */
 
-define('_EMENU_ADDCURRENTURL', 'Add the current URL as new link in this block');
-define('_EMENU_ADDCURRENTURLSHORT', 'Add current URL');
-define('_EMENU_NEWLINK', '--new link--');
-define('_EMENU_ACTIVE', 'Active');
-define('_EMENU_ERROR', 'Error occured');
-define('_EMENU_IMAGE', 'Image');
-define('_EMENU_BLOCKTITLEOVERRIDEINFO', 'These blocktitles override the setting on top of this page!');
-define('_EMENU_BLOCKTITLE', 'Block titles');
-define('_EMENU_EDITTHISBLOCK', 'Edit this block');
+define('_EMENU_ADDCURRENTURL', 'Aktuelle URL als neuen Link in den Block aufnehmen');
+define('_EMENU_ADDCURRENTURLSHORT', 'Aktuelle URL hinzufügen');
+define('_EMENU_NEWLINK', '--neuer Link--');
+define('_EMENU_ACTIVE', 'Aktiv');
+define('_EMENU_ERROR', 'Fehler!');
+define('_EMENU_IMAGE', 'Bild');
+define('_EMENU_BLOCKTITLEOVERRIDEINFO', 'Diese Blocktitel übersteuern die Einstellungen der Seite!');
+define('_EMENU_BLOCKTITLE', 'Block Titel');
+define('_EMENU_EDITTHISBLOCK', 'Block editieren');
 define('_EMENU_TEMPLATE','Template');
-define('_EMENU_TEMPLATELONG','Template for this menu');
-define('_EMENU_ITEM_DRAGANDDROPHINT','Arrange your menu using drag and drop. The sort order and the menu items themself will be saved when you click on "update".');
-define('_EMENU_ITEM_APPEND', 'Add new menu item');
-define('_EMENU_DISPLAY','Display');
-define('_EMENU_CONTENT','Content');
-define('_EMENU_DESCRIPTION','Description');
-define('_EMENU_FORMAT','Menu format');
-define('_EMENU_MODULES','Modules');
-define('_EMENU_STYLESHEET', 'Stylesheet for this menu');
+define('_EMENU_TEMPLATELONG','Template für dieses Menü');
+define('_EMENU_ITEM_DRAGANDDROPHINT','Einträge über "Drag and Drop" anordnen. Die Anordnung wird mit "update" gespeichert.');
+define('_EMENU_ITEM_APPEND', 'Neuen Eintrag hinzufügen');
+define('_EMENU_DISPLAY','Anzeige');
+define('_EMENU_CONTENT','Inhalt');
+define('_EMENU_DESCRIPTION','Beschreibung');
+define('_EMENU_FORMAT','Format');
+define('_EMENU_MODULES','Module');
+define('_EMENU_STYLESHEET', 'Stylesheet für das Menü');
 
 ?>
