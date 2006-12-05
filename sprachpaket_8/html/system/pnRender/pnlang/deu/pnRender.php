@@ -19,11 +19,11 @@
  * @subpackage  pnRender
  */
 
-define('_PNRENDERBLOCK_MODULENAME',   'Module name');
-define('_PNRENDERBLOCK_TEMPLATENAME', 'Template file');
-define('_PNRENDERBLOCK_HINT',         'The template file must be in the /pntemplates directory of the specified module');
-define('_PNRENDERBLOCK_NOBLOCK',      'Error! Sorry! No block defined');
-define('_PNRENDERBLOCK_NOMODULE',     'Error! Sorry! No module: ');
-define('_PNRENDERBLOCK_PARAMETERS',   'Parameters (format: assign=value;assign2=value2...)');
+define('_PNRENDERBLOCK_MODULENAME',   'Modulname');
+define('_PNRENDERBLOCK_TEMPLATENAME', 'Template-Datei');
+define('_PNRENDERBLOCK_HINT',         'Die Template-Datei muss im /pntemplates Verzeichnis des Moduls sein');
+define('_PNRENDERBLOCK_NOBLOCK',      'Fehler! Kein entsprechender Block');
+define('_PNRENDERBLOCK_NOMODULE',     'Fehler! Kein Modul: ');
+define('_PNRENDERBLOCK_PARAMETERS',   'Parameter (Format: assign=value;assign2=value2...)');
 
 ?>
