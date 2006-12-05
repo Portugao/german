@@ -27,26 +27,26 @@
  * @subpackage  pnRender
  */
 
-define('_PNRENDER_ADMIN',                'pnRender administration');
+define('_PNRENDER_ADMIN',                'pnRender Administration');
 define('_PNRENDER_SMARTYVERSION',        'Smarty Version');
 
-define('_PNRENDER_COMPILE_SETTINGS',     'Compile settings');
-define('_PNRENDER_COMPILE_CHECK',        'Compile check');
-define('_PNRENDER_FORCE_COMPILE',        'Force compilation');
-define('_PNRENDER_CLEAR_COMPILED',       'Delete compiled templates');
-define('_PNRENDER_COMPILED_CLEARED',     'Compiled templates deleted');
-define('_PNRENDER_COMPILE_DIR',          'Compiled templates directory');
+define('_PNRENDER_COMPILE_SETTINGS',     'Compile Einstellungen');
+define('_PNRENDER_COMPILE_CHECK',        'Kompilierte Templates bei Änderungen neu erzeugen');
+define('_PNRENDER_FORCE_COMPILE',        'Kompilierte Templates bei jedem Aufruf neu generieren');
+define('_PNRENDER_CLEAR_COMPILED',       'Kompilierte Templates löschen');
+define('_PNRENDER_COMPILED_CLEARED',     'Compile Verzeichnis gelöscht');
+define('_PNRENDER_COMPILE_DIR',          'Compile Verzeichnis');
 
-define('_PNRENDER_CACHE_SETTINGS',       'Cache settings');
-define('_PNRENDER_CACHE_ENABLE',         'Enable caching');
-define('_PNRENDER_CACHE_LIFETIME',       'Lifetime for cached pages');
-define('_PNRENDER_CLEAR_CACHED',         'Delete cached pages');
-define('_PNRENDER_CACHE_CLEARED',        'Cache cleared');
-define('_PNRENDER_CACHE_DIR',            'Cached templates directory');
-define('_PNRENDER_CACHETIMENOTE1',       'A cache lifetime of 0 will set to cache to always regenerate - equivalent to no caching.');
-define('_PNRENDER_CACHETIMENOTE2',       'A cache lifetime of -1 will never expire the cached output'); 
+define('_PNRENDER_CACHE_SETTINGS',       'Cache Einstellungen');
+define('_PNRENDER_CACHE_ENABLE',         'Caching aktivieren');
+define('_PNRENDER_CACHE_LIFETIME',       'Dauer des Cachings');
+define('_PNRENDER_CLEAR_CACHED',         'Caching-Inhalte löschen');
+define('_PNRENDER_CACHE_CLEARED',        'Cache Verzeichnis gelöscht');
+define('_PNRENDER_CACHE_DIR',            'Cache Verzeichnis');
+define('_PNRENDER_CACHETIMENOTE1',       '0 deaktiviert das Caching, dauerhaftes Caching mit -1');
+define('_PNRENDER_CACHETIMENOTE2',       'siehe auch http://smarty.php.net/manual/de/variable.caching.php'); 
 
-define('_PNRENDER_DEBUG_SETTINGS',       'Debug settings');
-define('_PNRENDER_EXPOSE_TEMPLATE',      'Expose template information in comments');
+define('_PNRENDER_DEBUG_SETTINGS',       'Debug Einstellungen');
+define('_PNRENDER_EXPOSE_TEMPLATE',      'Template Informationen als Kommentar in die Ausgabe integrieren');
 
 ?>
