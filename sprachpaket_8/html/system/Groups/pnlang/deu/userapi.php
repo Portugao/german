@@ -11,9 +11,9 @@
  */
 
 define('_GROUPSMAILWARNINGADMIN', 'Webmaster');
-define('_GROUPSMAILWARNINGTEXT',  ' applied for a group on your site! Application Text: ');
-define('_GROUPSMAILWARNINGTITLE', 'New Group Application Registered');
+define('_GROUPSMAILWARNINGTEXT',  ' hat sich für eine Gruppenmitgliedschaft beworben! Kommentar: ');
+define('_GROUPSMAILWARNINGTITLE', 'Neue Bewerbung für Gruppenmitgliedschaft');
 
-define('_GROUPSAPPALREADYPENDING', 'You already appled fior this group');
+define('_GROUPSAPPALREADYPENDING', 'Es besteht schon eine Bewerbung');
 
 ?>
