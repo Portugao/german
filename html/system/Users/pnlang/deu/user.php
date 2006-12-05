@@ -10,18 +10,18 @@
  * @subpackage  PostNuke_Users
 */
 
-define('_CONFIRMTERMSOFUSEHINT', 'We changed our terms of use, please read and accept them by activating the following checkbox. If you do not accept them you will not able to log in.');
-define('_CONFIRMTERMSOFUSE', 'I accept the <a href="index.php?module=Legal&amp;func=termsofuse">Terms of Use</a>');
-define('_USERACTIVATION','User account activation');
-define('_YOUACTIVATED','Your user account has been activated. Please <a href="index.php?module=Users&func=view&op=loginscreen">click here</a> to log in.');
-define('_ACTIVATIONFAILED','FAILED: The activation link you provided is wrong.');
+define('_CONFIRMTERMSOFUSEHINT', 'Die Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Nutzungsbedingzbgen nicht akzeptiert wurden ist keine Anmeldung möglich.');
+define('_CONFIRMTERMSOFUSE', 'Ich akzeptiere die <a href="index.php?module=Legal&amp;func=termsofuse">Nutzungsbedingungen</a>');
+define('_USERACTIVATION','Account Aktivierung');
+define('_YOUACTIVATED','Der Account wurde aktiviert. Bitte <a href="index.php?module=Users&func=view&op=loginscreen">hier</a> anmelden.');
+define('_ACTIVATIONFAILED','Fehler: Der Aktivierungslink ist ungültig.');
 
 if (!defined('_CHARLONG')) {
-  define('_CHARLONG','characters long');
+  define('_CHARLONG','Zeihen lang');
 
 }
 
-define('_ADDITIONALINFO', 'Additional Information');
+define('_ADDITIONALINFO', 'Optionale Information');
 define('_ALLOWEMAILVIEW','Allow other users to view your e-mail address');
 define('_ANDCONNECTOR','and');
 define('_ASREG1','Post comments signed with your user name');

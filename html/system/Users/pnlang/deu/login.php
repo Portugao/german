@@ -8,10 +8,10 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_BLOCKNEWUSERREG','New account registration');
-define('_BLOCKLOSTPWD', 'Lost password recovery');
-define('_BLOCKEMAIL','Email Address');
-define('_BLOCKNICKNAME','User name');
-define('_BLOCKPASSWORD','Password');
-define('_BLOCKREMEMBERME','Remember me');
+define('_BLOCKNEWUSERREG','Neuen Account anlegen');
+define('_BLOCKLOSTPWD', 'Vergessenes Kennwort anfordern');
+define('_BLOCKEMAIL','E-Mail Adresse');
+define('_BLOCKNICKNAME','Benutzername');
+define('_BLOCKPASSWORD','Kennwort');
+define('_BLOCKREMEMBERME','Cookie setzen');
 ?>
