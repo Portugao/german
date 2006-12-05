@@ -129,7 +129,7 @@ define('_USERNAME' ,'Benutzername');
 define('_GUEST','Gast');
 define('_GUEST0','Gäste');
 define('_GUESTS','Gäste');
-define('_MEMBER','registrierte Benutzer');
+define('_MEMBER','registrierter Benutzer');
 define('_MEMBER0','registrierte Benutzer');
 define('_MEMBERS','registrierte Benutzer');
 
