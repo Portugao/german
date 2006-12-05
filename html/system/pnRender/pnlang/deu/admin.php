@@ -33,14 +33,14 @@ define('_PNRENDER_SMARTYVERSION',        'Smarty Version');
 define('_PNRENDER_COMPILE_SETTINGS',     'Compile Einstellungen');
 define('_PNRENDER_COMPILE_CHECK',        'Kompilierte Templates bei Änderungen neu erzeugen');
 define('_PNRENDER_FORCE_COMPILE',        'Kompilierte Templates bei jedem Aufruf neu generieren');
-define('_PNRENDER_CLEAR_COMPILED',       'Kompilierte Templates löschen');
+define('_PNRENDER_CLEAR_COMPILED',       'Compile Cache löschen');
 define('_PNRENDER_COMPILED_CLEARED',     'Compile Verzeichnis gelöscht');
 define('_PNRENDER_COMPILE_DIR',          'Compile Verzeichnis');
 
 define('_PNRENDER_CACHE_SETTINGS',       'Cache Einstellungen');
 define('_PNRENDER_CACHE_ENABLE',         'Caching aktivieren');
 define('_PNRENDER_CACHE_LIFETIME',       'Dauer des Cachings');
-define('_PNRENDER_CLEAR_CACHED',         'Caching-Inhalte löschen');
+define('_PNRENDER_CLEAR_CACHED',         'Template Cache löschen');
 define('_PNRENDER_CACHE_CLEARED',        'Cache Verzeichnis gelöscht');
 define('_PNRENDER_CACHE_DIR',            'Cache Verzeichnis');
 define('_PNRENDER_CACHETIMENOTE1',       '0 deaktiviert das Caching, dauerhaftes Caching mit -1');
