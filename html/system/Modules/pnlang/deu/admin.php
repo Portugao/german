@@ -10,57 +10,57 @@
 */
 
 // hooks
-define('_MODULES_ENABLEHOOKSEXTENDED', 'Hooks to enable for this module (extended settings)');
-define('_MODULES_ENABLEHOOKS', 'Hooks to enable for this module');
-define('_MODULES_EXTENDEDHOOKS', 'Extended Hook Settings');
-define('_MODULES_EXTENDEDHOOKSWARNING', 'Caution! Here you can enable single hooks and change the order in which they are invoked. If you are not sure about the effects, leave this as is.<br /><br />You can move the hooks using drag&drop within the sections. Moving a hook from one section to another does not work as it makes no sense.');
-define('_MODULES_STANDARDHOOKS', 'Standard Hook Settings');
+define('_MODULES_ENABLEHOOKSEXTENDED', 'Für das Modul verfügbare Hooks (erweiterte Einstellungen)');
+define('_MODULES_ENABLEHOOKS', 'Für das Modul verfügbare Hooks');
+define('_MODULES_EXTENDEDHOOKS', 'Erweiterte Hook Einstellungen');
+define('_MODULES_EXTENDEDHOOKSWARNING', 'Achtung! Hier können einzelne Hooks aktiviert werden und auch deren Reihenfolge. Diese Konfiguration sollte nur von erfahrenen Anwendern individuell vorgenommen werden.<br /><br />Innerhalb des jeweilige Bereiches können die Hooks via "Drag and Drop" angeordnet werden. Das Verschieben in andere Gruppen wird nicht unterstützt.');
+define('_MODULES_STANDARDHOOKS', 'Standard Hook Einstellungen');
 
 // module dependencies
 define('_MODULES_DEPENDENCYSTATE', 'Level');
-define('_MODULES_DEPENDENCY_NOTFOUND', 'Not found in system');
-define('_MODULES_DEPENDENCY_NOTFOUNDREGENERATE', 'Ensure that this module is present in the system (and modules list is regenereated!)');
-define('_MODULES_DEPENDENCY_REQUIRED', 'Required');
-define('_MODULES_DEPENDENCY_RECOMMENDED', 'Recommended');
-define('_MODULES_HASDEPENDENCIES', 'This module has dependencies that are currently not met by the system.');
-define('_MODULES_REMOVEDEPENDENTS', 'This module is used by other modules present in your system. Any modules listed as required dependents will be removed when removing this module.');
+define('_MODULES_DEPENDENCY_NOTFOUND', 'Nicht im System gefunden');
+define('_MODULES_DEPENDENCY_NOTFOUNDREGENERATE', 'Sicherstellen, dass das Modul im System verfügbar ist (und die Liste regeneriert wird!)');
+define('_MODULES_DEPENDENCY_REQUIRED', 'notwendig');
+define('_MODULES_DEPENDENCY_RECOMMENDED', 'empfohlen');
+define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeitigen System nicht erfüllt werden.');
+define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind werden bei Entfernung des Moduls ebenfalls entfernt.');
 
 // errors, warnings and statuses
-define('_MODULES_ACTIVATED', 'Module activated');
-define('_MODULES_BLOCKSEXIST', 'This module cannot be removed as there are blocks related to this module active.');
-define('_MODULES_CONFIRMDELETE', 'Warning: This action will permantly remove all data associated with this module including data held by modules hooked to this module!');
-define('_MODULES_DEACTIVATED', 'Module deactivated');
-define('_MODULES_DUPLICATEDISPLAYNAME', 'Cannot update module display info - a duplicate display name was detected!');
-define('_MODULES_FILESMISSING', 'Files missing');
-define('_MODULES_INITIALISED', 'Module installed');
-define('_MODULES_ITEMSPERPAGENUMERIC', 'The setting \'Items per page\' must be a positive integer. The value you entered was corrected.');
-define('_MODULES_NOHOOKS', 'No hooks installed');
-define('_MODULES_NOSUCHMODID', 'Error! No such module ID');
-define('_MODULES_NOMODID', 'No module ID supplied');
-define('_MODULES_NOMODS', 'No modules available');
-define('_MODULES_UPGRADED', 'New version installed');
-define('_MODULES_REGENERATED', 'Modules list regenerated from file system');
-define('_MODULES_REMOVED', 'Module uninstalled');
-define('_MODULES_UPDATEDINFORMATION', 'Updated module information');
+define('_MODULES_ACTIVATED', 'Modul aktiviert');
+define('_MODULES_BLOCKSEXIST', 'Modul kann nicht entfernt werden weil noch zugehörige Blöcke aktiv sind.');
+define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiderruflich ALLE Daten des Moduls und der zugeordneten Hooks!');
+define('_MODULES_DEACTIVATED', 'Modul deaktiviert');
+define('_MODULES_DUPLICATEDISPLAYNAME', 'Display Info kann nicht aktualisiert werden - der Displayname existiert bereits!');
+define('_MODULES_FILESMISSING', 'Dateien fehlen');
+define('_MODULES_INITIALISED', 'Modul installiert');
+define('_MODULES_ITEMSPERPAGENUMERIC', 'Die Einstellung \'Einträge pro Seite\' muß eine positive Zahl sein. Der eingetragene Wert wurde korrigiert.');
+define('_MODULES_NOHOOKS', 'Keine Hooks installiert');
+define('_MODULES_NOSUCHMODID', 'Fehler! Keine solche Modul ID');
+define('_MODULES_NOMODID', 'Keine Modul ID übergeben');
+define('_MODULES_NOMODS', 'Keine Module verfügbar');
+define('_MODULES_UPGRADED', 'Neue Version installiert');
+define('_MODULES_REGENERATED', 'Modul-Liste mit Dateisystem abgeglichen');
+define('_MODULES_REMOVED', 'Modul entfernt');
+define('_MODULES_UPDATEDINFORMATION', 'Modul-Information aktualisiert');
 
 // interface components
-define('_MODULES_ADMIN', 'Go to module administration panel');
-define('_MODULES_CONFIRMINITIALISE', 'Confirm initialisation of module');
-define('_MODULES_DELETE', 'Remove module');
-define('_MODULES_DISPNAME', 'Display name');
-define('_MODULES_GENERATE', 'Generate list of modules');
-define('_MODULES_INITIALISE', 'Install');
-define('_MODULES_FILTERBYSTATE', 'Filter by state');
-define('_MODULES_INVALID', 'Invalid');
-define('_MODULES_LOADLEGACY', 'Load legacy module support');
-define('_MODULES_MODIFY', 'Modify module');
-define('_MODULES_NEWDESCRIPTION', 'Enter new description');
-define('_MODULES_NEWNAME', 'Enter new name');
-define('_MODULES_REGENERATE', 'Regenerate List');
-define('_MODULES_UNINIT', 'Not installed');
+define('_MODULES_ADMIN', 'Zur Administration');
+define('_MODULES_CONFIRMINITIALISE', 'Initialisierung bestätigen');
+define('_MODULES_DELETE', 'Modul entfernen');
+define('_MODULES_DISPNAME', 'Displayname');
+define('_MODULES_GENERATE', 'Modul-Liste neu generieren');
+define('_MODULES_INITIALISE', 'Installieren');
+define('_MODULES_FILTERBYSTATE', 'Filter auf Status');
+define('_MODULES_INVALID', 'ungültig');
+define('_MODULES_LOADLEGACY', 'Legacy-Unterstützung für Module');
+define('_MODULES_MODIFY', 'Modul modifizieren');
+define('_MODULES_NEWDESCRIPTION', 'Neue Beschreibung');
+define('_MODULES_NEWNAME', 'Neuer Name');
+define('_MODULES_REGENERATE', 'Liste mit Dateisystem abgleichen');
+define('_MODULES_UNINIT', 'nicht installiert');
 define('_MODULES_UPGRADE', 'Upgrade');
-define('_MODULES_REMOVE', 'Remove module');
-define('_MODULES_STATE', 'State');
+define('_MODULES_REMOVE', 'Modul entfernen');
+define('_MODULES_STATE', 'Status');
 define('_MODULES_VERSION', 'Version');
 
 ?>

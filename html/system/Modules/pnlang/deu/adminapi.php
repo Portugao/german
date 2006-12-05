@@ -9,12 +9,12 @@
  * @subpackage  PostNuke_Modules
  */
 
-define('_MODULES_CHANGESTATEFAILED','Error! Sorry! Module state change failed');
-define('_MODULES_NOSUCHMOD','Error! Sorry! No such module');
-define('_MODULES_APIINVALIDSTATETRANSITION','Sorry! Invalid module state transition');
-define('_MODULES_APIUPDATEFAILED','Error! Sorry! Update attempt failed');
-define('_MODULES_APIUPGRADED','Module has been upgraded; it\'s status now is Inactive');
-define('_MODULES_COULDNOTINCLUDE', 'Could not load required file: ');
-define('_MODULES_DUPLICATEDEFINE', 'Duplicate define name found');
+define('_MODULES_CHANGESTATEFAILED','Fehler! Änderung des Status fehlgeschlagen');
+define('_MODULES_NOSUCHMOD','Fehler! Kein solches Modul');
+define('_MODULES_APIINVALIDSTATETRANSITION','Fehler! Status-Wechsel nicht unterstützt');
+define('_MODULES_APIUPDATEFAILED','Fehler! Update-Versuch fehlgeschlagen');
+define('_MODULES_APIUPGRADED','Module wurde upgegradet; jetzt inaktiv');
+define('_MODULES_COULDNOTINCLUDE', 'Konnte notwendige Datei nicht laden: ');
+define('_MODULES_DUPLICATEDEFINE', 'Doppelter Define-Name gefunden');
 
 ?>
