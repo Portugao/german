@@ -9,83 +9,83 @@
  * @subpackage  PostNuke_Permissions
 */
 
-define('_PERM_ERRORUPDATINGCONFIG', 'Error updating config: unknown permission id');
-define('_PERM_PERMISSIONLOCKED', 'This permission has been locked, modify the Permissions module configuration to unlock it');
-define('_PERM_ADMINPERMISSIONID', 'ID of main administration permission');
-define('_PERM_LOCKADMINPERMISSION', 'Lock main administration permission');
-define('_PERM_LOCKADMINLOCKEDHINT','The permission rule you have defined as your main administration permission (emphasised in the list below) has been <strong>locked</strong> which means you cannot edit, move or delete it. If this permission rule is not on top of the list others may be moved around it anyway! Go to the module configuration to unlock it if necessary.');
-define('_PERM_LOCKADMINUNLOCKEDHINT','The permission rule you have defined as your main administration permission (emphasised in the list below) is <strong>unlocked</strong> which means you can now edit, move or delete it. Go to the module configuration to lock it.');
-define('_PERM_DRAGANDDROPHINT','Arrange your permissions using drag and drop. The sort order will be saved immediately.');
-define('_PERM_YOUCANNOTDELETETHEMAINADMINPERMISSION', 'Caution: You cannot delete the main admin permission rule');
-define('_PERM_UPDATINGPERMISSION', '...updating permission rule...');
-define('_PERM_DELETINGPERMISSION', '...deleting permission rule...');
-define('_PERM_TESTINGPERMISSION', '...testing permission...');
+define('_PERM_ERRORUPDATINGCONFIG', 'Fehler beim Aktualisieren der Konfiguration: unbekannte ID');
+define('_PERM_PERMISSIONLOCKED', 'Dieses Zugriffsrecht ist fixiert, erst in der Konfiguration freigeben');
+define('_PERM_ADMINPERMISSIONID', 'ID der generischen Admin-Berechtigung');
+define('_PERM_LOCKADMINPERMISSION', 'Generische Admin-Berechtigung fixieren');
+define('_PERM_LOCKADMINLOCKEDHINT','Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>fixiert</strong>, kann also nicht editiert, verschoben oder gelöscht werden. Falls notwendig die Freigabe in der Konfiguration erteilen.');
+define('_PERM_LOCKADMINUNLOCKEDHINT','Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>nicht fixiert</strong>, kann also editiert, verschoben oder gelöscht werden. In der Konfiguration sollte die Fixierung aktiviert werden um Konfigurationsprobleme zu vermeiden.');
+define('_PERM_DRAGANDDROPHINT','Die Zugriffsrechte können via "Drag and Drop" sortiert werden. Die Reihenfolge ist sofort gültig.');
+define('_PERM_YOUCANNOTDELETETHEMAINADMINPERMISSION', 'Achtung: Die generische Admin-Berechtigung kann nicht gelöscht werden');
+define('_PERM_UPDATINGPERMISSION', '...aktualisiere Zugriffsrecht...');
+define('_PERM_DELETINGPERMISSION', '...lösche Zugriffsrecht...');
+define('_PERM_TESTINGPERMISSION', '...teste Zugriffsrecht...');
 
-define('_PERM_APPEND', 'Append a new permission rule');
-define('_PERM_CHECKRESULT', 'Result of permission check');
-define('_PERM_GRANTED', 'permission granted');
-define('_PERM_NOTGRANTED', 'permission not granted');
-define('_PERM_UNKNOWNUSER', 'unknown user');
-define('_PERM_CHECKPERMISSIONS', 'Check a users permission');
-define('_PERM_CHECKCOMPONENT', 'Component to check');
-define('_PERM_CHECKINSTANCE', 'Instance to check');
-define('_PERM_CHECKUSER', 'Username');
-define('_PERM_CHECKLEVEL', 'Access level');
-define('_PERM_CHECK', 'Check permission');
-define('_PERMISSIONS','Permissions');
-define('_ALLGROUPS','All groups');
-define('_ALLREALMS','All realms'); // Realms defines until they get their own home
-define('_ALLUSERS','All users');
+define('_PERM_APPEND', 'Zugriffsrecht hinzufügen');
+define('_PERM_CHECKRESULT', 'Ergebnis der Prüfung');
+define('_PERM_GRANTED', 'Zugriffsrecht');
+define('_PERM_NOTGRANTED', 'kein Zugriffsrecht');
+define('_PERM_UNKNOWNUSER', 'unbekannter Benutzer');
+define('_PERM_CHECKPERMISSIONS', 'Benutzer-Berechtigung prüfen');
+define('_PERM_CHECKCOMPONENT', 'Komponente');
+define('_PERM_CHECKINSTANCE', 'Instanz');
+define('_PERM_CHECKUSER', 'Benutzer');
+define('_PERM_CHECKLEVEL', 'Zugriffsrecht');
+define('_PERM_CHECK', 'prüfen');
+define('_PERMISSIONS','Zugriffsrechte');
+define('_ALLGROUPS','Alle Gruppen');
+define('_ALLREALMS','Alle Realms'); // Realms defines until they get their own home
+define('_ALLUSERS','Alle Benutzer');
 define('_REALM','Realm');
-define('_INSTANCE','Instance');
-define('_COMPONENT','Component');
-define('_GROUPPERMS','Group');
-define('_VIEWGROUPPERMS','View group permissions');
-define('_MODIFYPERM','Modify');
-define('_MODIFYGROUPPERM','Modify group permissions');
-define('_NEWPERM',' Add ');
-define('_NEWGROUPPERM','New group permission');
-define('_PERMLEVEL','Permissions level');
+define('_INSTANCE','Instanz');
+define('_COMPONENT','Komponente');
+define('_GROUPPERMS','Gruppe');
+define('_VIEWGROUPPERMS','Zugriffsrechte');
+define('_MODIFYPERM','modifizieren');
+define('_MODIFYGROUPPERM','Zugriffsrechte modifizieren');
+define('_NEWPERM',' hinzufügen ');
+define('_NEWGROUPPERM','Neues Zugriffsrecht');
+define('_PERMLEVEL','Zugriffsrecht');
 define('_PERMOPS','Operations');
 define('_SEQUENCE','Seq.');
-define('_UNREGISTEREDGROUP','Unregistered');
-define('_UNREGISTEREDUSER','Unregistered');
-define('_PERMISSIONINFO','Permissions information');
-define('_REGISTEREDCOMP','Registered component');
-define('_INSTANCETEMP','Instance template');
+define('_UNREGISTEREDGROUP','Gäste');
+define('_UNREGISTEREDUSER','unregistrierte (Benutzer)');
+define('_PERMISSIONINFO','Information');
+define('_REGISTEREDCOMP','Komponente');
+define('_INSTANCETEMP','Instanz Vorlage');
 
 // MMaes: Removed some hard-coded text
-define('_PERM_INC','Incremented permission rule');
-define('_PERM_DEC','Decremented permission rule');
-define('_PERM_UPD','Updated permission rule');
-define('_PERM_CREATED','Created permission rule');
-define('_PERM_DEL','Removed permission rule');
-define('_PERM_DECINCERR_NOID','Error! Sorry! No such permissions ID: ');
-define('_PERM_DECERR_NOSWAP','No permission directly below that one');
-define('_PERM_INCERR_NOSWAP','No permission directly above that one');
+define('_PERM_INC','Zugriffsrecht höher platziert');
+define('_PERM_DEC','Zugriffsrecht niedriger platziert');
+define('_PERM_UPD','Zugriffsrecht aktualisiert');
+define('_PERM_CREATED','Zugriffsrecht angelegt');
+define('_PERM_DEL','Zugriffsrecht gelöscht');
+define('_PERM_DECINCERR_NOID','Fehler! Keine ID für Zugriffsrecht: ');
+define('_PERM_DECERR_NOSWAP','Kein Zugriffsrecht direkt unterhalb dieser Berechtigung');
+define('_PERM_INCERR_NOSWAP','Kein Zugriffsrecht direkt oberhalb dieser Berechtigung');
 // MMaes: Direct Insert capability
 // define('_PERM_THINS','Ins.');
-define('_PERMINSBEFORE_ALTTXT','Insert permission rule  before');
-define('_PERM_INSERR','Error! Sorry! Could not update permission sequences');
-define('_PERM_INSNOTIFY','Inserted permission rule at position ');
+define('_PERMINSBEFORE_ALTTXT','Zugriffsrecht oberhalb einfügen');
+define('_PERM_INSERR','Fehler! Anordnung der Zugriffsrechte konnte nicht akutalisiert werden');
+define('_PERM_INSNOTIFY','Zugriffsrecht eingefügt an Position ');
 // MMaes: Only show permissions applying to a group
-define('_SEQ_ADJUST','Shift');
-define('_PERM_VWSHOWONLY','Only show permissions applying to: ');
+define('_SEQ_ADJUST','Bewegen');
+define('_PERM_VWSHOWONLY','Nur Zugriffsrechte anzeigen für: ');
 define('_PERM_VWFILTER','Filter');
-define('_PERM_WARN_FILTERACTIVE','<strong>- PARTIAL VIEW -</strong>');
-define('_PERM_PARTLY','Partial view of permissions list');
-define('_PERM_SHOWING','Group: ');
-define('_PERM_DECINCERR_NOSWAPPART','Error! Sorry! Permission-swapping in partial view can only be done if both affected permissions are visible. Please use full view');
+define('_PERM_WARN_FILTERACTIVE','<strong>- TEIL-ANSICHT -</strong>');
+define('_PERM_PARTLY','Zugriffsliste wirde nicht vollständig anzeigt, Filter aktiv');
+define('_PERM_SHOWING','Gruppe: ');
+define('_PERM_DECINCERR_NOSWAPPART','Fehler! Sorry! In der Teilansicht können nur sichtbare Zugriffsrechte beeinflusst werden. Bitte den Filter deaktivieren');
 // MMaes: ListEdit-function, editing in the mainview
-define('_PERM_LISTNONEFOUND','Error! Sorry! No permissions of this kind were found. Please add some first');
-define('_PERM_COMP_INPUTERR',' [Illegal input in component!] ');
-define('_PERM_INST_INPUTERR',' [Illegal input in instance!] ');
+define('_PERM_LISTNONEFOUND','Fehler! Keine solches Zugriffsrecht vorhanden, ggfs. zuerst anlegen');
+define('_PERM_COMP_INPUTERR',' [Ungültige Angabe in der Komponente!] ');
+define('_PERM_INST_INPUTERR',' [Ungültige Angabe in der Instanz!] ');
 // MMaes: Module-settings
-define('_PERM_ENABLEFILTER','Enable filtering of group permissions');
-define('_PERM_DISPLAYWARNING','Show warning bar when in filter list');
-define('_PERM_ROWHEIGHTVIEW','Minimum viewing row height (in pixels)');
-define('_PERM_ROWHEIGHTEDIT','Minimum editing row height (in pixels)');
-define('_PERMISSIONSDELETE', 'Delete permission rule');
-define('_PERMISSIONSCONFIRMDELETE', 'Confirm deletion of rule');
+define('_PERM_ENABLEFILTER','Filter in der Ansicht aktivieren');
+define('_PERM_DISPLAYWARNING','Infonmeldung bei aktivem Filter anzeigen');
+define('_PERM_ROWHEIGHTVIEW','Zeilenhöhe in Ansicht (min, in Pixel)');
+define('_PERM_ROWHEIGHTEDIT','Zeilenhöhe in Beabeitung (min, in Pixel)');
+define('_PERMISSIONSDELETE', 'Zugriffsrecht löschen');
+define('_PERMISSIONSCONFIRMDELETE', 'Löschen des Zugriffsrechtes bestätigen');
 
 ?>
