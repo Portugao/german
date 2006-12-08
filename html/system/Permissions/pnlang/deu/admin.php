@@ -73,7 +73,7 @@ define('_SEQ_ADJUST','Bewegen');
 define('_PERM_VWSHOWONLY','Nur Zugriffsrechte anzeigen für: ');
 define('_PERM_VWFILTER','Filter');
 define('_PERM_WARN_FILTERACTIVE','<strong>- TEIL-ANSICHT -</strong>');
-define('_PERM_PARTLY','Zugriffsliste wirde nicht vollständig anzeigt, Filter aktiv');
+define('_PERM_PARTLY','TEILANSICHT :: aktiver Filter');
 define('_PERM_SHOWING','Gruppe: ');
 define('_PERM_DECINCERR_NOSWAPPART','Fehler! Sorry! In der Teilansicht können nur sichtbare Zugriffsrechte beeinflusst werden. Bitte den Filter deaktivieren');
 // MMaes: ListEdit-function, editing in the mainview
