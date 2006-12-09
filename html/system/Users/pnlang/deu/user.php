@@ -17,11 +17,11 @@ define('_YOUACTIVATED','Der Account wurde aktiviert. Bitte <a href="index.php?mo
 define('_ACTIVATIONFAILED','Fehler: Der Aktivierungslink ist ungültig.');
 
 if (!defined('_CHARLONG')) {
-  define('_CHARLONG','Zeihen lang');
+  define('_CHARLONG','Zeichen lang');
 
 }
 
-define('_ADDITIONALINFO', 'Optionale Information');
+define('_ADDITIONALINFO', 'Optionale Informationen');
 define('_ALLOWEMAILVIEW','Allow other users to view your e-mail address');
 define('_ANDCONNECTOR','and');
 define('_ASREG1','Post comments signed with your user name');

@@ -11,36 +11,36 @@
  * @subpackage  PostNuke_Users
 */
 
-define('_AT','at');
-define('_ACCOUNTPENDING', 'Your account application is pending review by the site administrators. Confirmation of the application will be e-mailed after review of the application.');
-define('_AWEBUSERFROM','Someone with the IP address');
-define('_CODEREQUESTED','has just requested a confirmation code to change your password.');
-define('_FOLLOWINGMEM','The information stored about you is as follows:');
-define('_HASREQUESTED','has just requested that a password be sent.');
-define('_HASTHISEMAIL','has this e-mail address associated with it.');
-define('_IFYOUDIDNOTASK','If you didn\'t ask for this, don\'t worry. You are seeing this message, not \'them\'. If this was an error just log in with your new password.');
-define('_IFYOUDIDNOTASK2','If you didn\'t ask for this, don\'t worry. Just delete this e-mail message.');
-define('_KEEPTHISEMAILSAFE', 'Please keep this email safe, it is the only one you will receive with your password.');
-define('_NOTIFYEMAILCONT1','A new user has registered on the web site. User name: ');
+define('_AT','um');
+define('_ACCOUNTPENDING', 'Die Anmeldung muß durch den Seitenbetreiber noch freigeschaltet werden. Nach der Freigabe erfolgt eine E-Mail-Benachrichtigung');
+define('_AWEBUSERFROM','Jemand mit der IP-Adresse');
+define('_CODEREQUESTED','hat eine Bestätigung angefordert um das Kennwort zu ändern.');
+define('_FOLLOWINGMEM','Die gespeicherte Information ist:');
+define('_HASREQUESTED','hat einen Kennwort-Versand angefordert.');
+define('_HASTHISEMAIL','hat diese E-Mail-Adresse hinterlegt.');
+define('_IFYOUDIDNOTASK','Falls keine entsprechende Anforderung gestellt wurde kann diese Benachrichtigung ignoriert werden.');
+define('_IFYOUDIDNOTASK2','Falls keine entsprechende Anforderung gestellt wurde kann diese Benachrichtigung gelöscht werden.');
+define('_KEEPTHISEMAILSAFE', 'Bitte diese E-Mail speichern, es ist die einzige Kennwort-Benachrichtigung.');
+define('_NOTIFYEMAILCONT1','Ein neuer Benutzer hat sich registriert. Benutzername: ');
 define('_NOTIFYEMAILCONT2','');
-define('_NOTIFYEMAILSUB','A new user has registered on the web site!');
-define('_TOREGISTER','to register an account at');
-define('_UNICKNAME','User name:');
-define('_UPASSWORD','Password:');
-define('_USERACCOUNT','The user account');
-define('_USERPASS4','Password for');
+define('_NOTIFYEMAILSUB','Benutzerregistrierung');
+define('_TOREGISTER','um einen Account anzulegen bei');
+define('_UNICKNAME','Benutzername:');
+define('_UPASSWORD','Kennwort:');
+define('_USERACCOUNT','Der Benutzer-Account');
+define('_USERPASS4','Kennwort für');
 define('_USERPASS42',''); //Add for non eng translation
-define('_USERPASSWORD4','User password for');
-define('_USERAPPROVED', 'Your application has been approved. You password was sent to you in the previous email you received.');
-define('_USERSACTIVATIONMAIL', 'Activation of');
-define('_USERSACIVATEYOURACCOUNTLINK', 'Please click on the following link to complete the registration process');
-define('_USERSONCEACTIVATED', 'Once activated, your account details will be');
-define('_USERSESSIONEXPIREDHEADER', 'Your Session Has Expired.');
-define('_USERSESSIONEXPIREDTEXT', 'For your security, this session has expired because you have been inactive.  You will need to <a href="%u%">log on</a> again to access services.');
-define('_WELCOMETO', 'Welcome to');
-define('_WITHTHISCODE','With this confirmation code, you can now create a new password at');
-define('_YOUCANCHANGE','You can change it after you log in at');
-define('_YOURCODEIS','Your confirmation code is:');
-define('_YOURNEWPASSWORD','Your new password is:');
-define('_YOUUSEDEMAIL','You or someone else has used your e-mail address');
+define('_USERPASSWORD4','Benutzer-Kennwort für');
+define('_USERAPPROVED', 'Die Anmeldung wurde freigschaltet. Das Kennwort wurde bereits per E-Mail versendet.');
+define('_USERSACTIVATIONMAIL', 'Aktivierung von');
+define('_USERSACIVATEYOURACCOUNTLINK', 'Bitte den folgenden Link anklicken um die Registrierung abzuschliessen');
+define('_USERSONCEACTIVATED', 'Nach der Freischaltung sind die Account-Daten');
+define('_USERSESSIONEXPIREDHEADER', 'Die Benutzer-Session ist abgelaufen.');
+define('_USERSESSIONEXPIREDTEXT', 'Aus Sicherheitsgründen wurde die Benutzer-Session nach Inaktivität abgemeldet. Bitte erneut <a href="%u%">anmelden</a>.');
+define('_WELCOMETO', 'Willkommen bei');
+define('_WITHTHISCODE','Mit diesem Bestätigungs-Code kann ein neues Kennwort angelegt werden');
+define('_YOUCANCHANGE','Nach der Anmeldung kann es geändert werden');
+define('_YOURCODEIS','Der Bestätigungs-Code ist:');
+define('_YOURNEWPASSWORD','Das neue Kennwort ist:');
+define('_YOUUSEDEMAIL','Die folgende E-Mail-Adresse wurde genutzt');
 ?>
