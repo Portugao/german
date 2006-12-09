@@ -116,7 +116,7 @@ define('_USERSUPDATEUSER', 'Benutzer aktualisieren');
 if (!defined('_DETAILS')) {
     define('_DETAILS', 'Details');
 }
-define('_CONFIRMAPPLICATION', 'Benutzer-Registrierungen freigeben');
+define('_CONFIRMAPPLICATION', 'Aktion bestätigen');
 define('_USERDELETED', 'Benutzer gelöscht');
 
 ?>
