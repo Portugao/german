@@ -10,7 +10,7 @@
 
 define('_BLOCKNEWUSERREG','Neuen Account anlegen');
 define('_BLOCKLOSTPWD', 'Vergessenes Kennwort anfordern');
-define('_BLOCKEMAIL','E-Mail Adresse');
+define('_BLOCKEMAIL','E-Mail-Adresse');
 define('_BLOCKNICKNAME','Benutzername');
 define('_BLOCKPASSWORD','Kennwort');
 define('_BLOCKREMEMBERME','Cookie setzen');

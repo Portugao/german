@@ -76,6 +76,6 @@ define('_USER_2_ad','0');
 define('_USER_2_ae','0');
 define('_USER_2_af','1');
 
-define('_USER_REGDISABLED', 'Sorry! New user account registration is currently disabled');
+define('_USER_REGDISABLED', 'Die Registrierung ist derzeit nicht aktiviert');
 
 ?>
