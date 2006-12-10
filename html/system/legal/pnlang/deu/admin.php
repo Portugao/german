@@ -13,7 +13,7 @@
 
 define('_LEGAL', 'Allgemeine Nutzungsbedingungen');
 define('_LEGALALLUSERS', 'Alle Benutzer');
-define('_LEGALNOGROUPS', 'no groups');
+define('_LEGALNOGROUPS', 'Gruppe wählen');
 define('_LEGALTERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
 define('_LEGALPRIVACYPOLICY', 'Hinweise zum Datenschutz');
 define('_LEGALACCESSIBILITYSTATEMENT', 'Hinweise zur Barrierefreiheit');
