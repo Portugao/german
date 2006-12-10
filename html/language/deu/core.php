@@ -113,7 +113,7 @@ define('_VIEW', 'Ansicht');
 //common module fields
 define('_CONTENT', 'Inhalt');
 define('_DESCRIPTION', 'Beschreibung');
-define('_EMAIL' ,'E-Mail Adresse');
+define('_EMAIL' ,'E-Mail-Adresse');
 define('_ID', 'ID');
 define('_LANGUAGE', 'Sprache');
 define('_META', 'Metadata');
