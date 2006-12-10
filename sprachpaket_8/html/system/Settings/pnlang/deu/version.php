@@ -8,7 +8,7 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_SETTINGS_NAME',        'Einstellungen');
+define('_SETTINGS_NAME',        'Settings');
 define('_SETTINGS_DISPLAYNAME', 'Einstellungen');
 define('_SETTINGS_DESCRIPTION', 'PostNuke Grundkonfiguration');
 
