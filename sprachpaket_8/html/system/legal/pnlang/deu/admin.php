@@ -11,13 +11,13 @@
  * @subpackage   legal
  */
 
-define('_LEGAL', 'Legal statements');
-define('_LEGALALLUSERS', 'all users');
+define('_LEGAL', 'Allgemeine Nutzungsbedingungen');
+define('_LEGALALLUSERS', 'Alle Benutzer');
 define('_LEGALNOGROUPS', 'no groups');
-define('_LEGALTERMSOFUSE', 'Terms of use');
-define('_LEGALPRIVACYPOLICY', 'Privacy policy');
-define('_LEGALACCESSIBILITYSTATEMENT', 'Accessibility statement');
-define('_LEGALRESETAGREEMENT', 'Reset agreement to terms of use');
-define('_LEGALRESETAGREEMENTHINT', 'This resets the agreement to the terms of use fo the users of this group. If they want to login, they have to acknowledge them again. It does not effect the main admin account. You can do the same for single users in the user administration.');
+define('_LEGALTERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
+define('_LEGALPRIVACYPOLICY', 'Hinweise zum Datenschutz');
+define('_LEGALACCESSIBILITYSTATEMENT', 'Hinweise zur Barrierefreiheit');
+define('_LEGALRESETAGREEMENT', 'Zustimmung zu Nutzungsbedingungen zurücksetzen');
+define('_LEGALRESETAGREEMENTHINT', 'Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Mitglieder der entsprechenden Gruppe (außer Hauptadmin) können sich erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden.');
 
 ?>
