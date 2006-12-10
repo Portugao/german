@@ -11,7 +11,7 @@
  */
 
 define('_SEARCH_NAME',        'Search');
-define('_SEARCH_DISPLAYNAME', 'Search');
-define('_SEARCH_DESCRIPTION', 'Search this Site');
+define('_SEARCH_DISPLAYNAME', 'Suche');
+define('_SEARCH_DESCRIPTION', 'Seitenweite Suchoptionen bearbeiten');
 
 ?>

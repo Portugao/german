@@ -10,16 +10,16 @@
  * @subpackage  PostNuke_Search
  */
 
-define('_SEARCHSUMMARY','This search form is provided to help you locate items you are looking for.');
-define('_SEARCHALLWORDS','All words [AND]');
-define('_SEARCHANYWORDS','Any words [OR]');
-define('_NOPLUGINSFOUND','Error! Sorry! Unable to locate any search plug-ins');
-define('_SEARCHRECENT', 'Most recent searches');
-define('_SEARCHTERM', 'Search term');
-define('_SEARCHCOUNT', 'Number of searches');
-define('_SEARCHLASTDATE', 'Date of last search');
-define('_SEARCHRECENTSEARCHES', 'View a list of the <a href="%u%">recent searches</a> performed on this site');
-define('_SEARCHERROREMPTYSTRING', 'Error: Empty string');
-define('_SEARCHOPTIONS', 'Filter search by type');
+define('_SEARCHSUMMARY','Das Suchformular hilft, bestimmte Inhalte zu finden');
+define('_SEARCHALLWORDS','Alle Begriffe [UND]');
+define('_SEARCHANYWORDS','Einzelne Begriffe [ODER]');
+define('_NOPLUGINSFOUND','Fehler! Keine Such-Plugins gefunden');
+define('_SEARCHRECENT', 'Aktuelle Suchanfragen');
+define('_SEARCHTERM', 'Suchbegriff');
+define('_SEARCHCOUNT', 'Anzahl der Suchen');
+define('_SEARCHLASTDATE', 'Datum der letzten Suche');
+define('_SEARCHRECENTSEARCHES', 'Liste der <a href="%u%">aktuellen Suchanfragen</a> auf dieser Seite anzeigen');
+define('_SEARCHERROREMPTYSTRING', 'Fehler: leerer Ausdruck');
+define('_SEARCHOPTIONS', 'Suche nach Typ einschränken');
 
 ?>
