@@ -11,7 +11,7 @@
  */
 
 define('_LEGAL_NAME',        'Legal');
-define('_LEGAL_DISPLAYNAME', 'Legal');
-define('_LEGAL_DESCRIPTION', 'Generic Privacy Statement and Terms of Use');
+define('_LEGAL_DISPLAYNAME', 'Nutzungsbedingungen');
+define('_LEGAL_DESCRIPTION', 'Allgemeine Nutzungsbedingungen, Hinweise zum Datenschutz, Hinweise zur Barrierefreiheit');
 
 ?>

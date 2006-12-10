@@ -8,12 +8,12 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_TOUNOTACTIVE', 'Terms of use not activated');
-define('_PPNOTACTIVE', 'Privacy policy not activated');
-define('_ASNOTACTIVE', 'Accessibility statement not activated');
-define('_LEGAL', 'Legal statements');
-define('_LEGALTERMSOFUSE', 'Terms of use');
-define('_LEGALPRIVACYPOLICY', 'Privacy policy');
-define('_LEGALACCESIBILITYSTATEMENT', 'Accessibility statement');
+define('_TOUNOTACTIVE', 'Allgemeine Nutzungsbedingungen nicht aktiv');
+define('_PPNOTACTIVE', 'Hinweise zum Datenschutz nicht aktiv');
+define('_ASNOTACTIVE', 'Hinweise zur Barrierefreiheit nicht aktiv');
+define('_LEGAL', 'Allgemeine Nutzungsbedingungen');
+define('_LEGALTERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
+define('_LEGALPRIVACYPOLICY', 'Hinweise zum Datenschutz');
+define('_LEGALACCESIBILITYSTATEMENT', 'Hinweise zur Datenschutz');
 
 ?>
