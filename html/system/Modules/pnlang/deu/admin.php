@@ -28,7 +28,7 @@ define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft
 // errors, warnings and statuses
 define('_MODULES_ACTIVATED', 'Modul aktiviert');
 define('_MODULES_BLOCKSEXIST', 'Modul kann nicht entfernt werden weil noch zugehörige Blöcke aktiv sind.');
-define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiderruflich ALLE Daten des Moduls und der zugeordneten Hooks!');
+define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiederruflich ALLE Daten des Moduls und der zugeordneten Hooks!');
 define('_MODULES_DEACTIVATED', 'Modul deaktiviert');
 define('_MODULES_DUPLICATEDISPLAYNAME', 'Display Info kann nicht aktualisiert werden - der Displayname existiert bereits!');
 define('_MODULES_FILESMISSING', 'Dateien fehlen');
