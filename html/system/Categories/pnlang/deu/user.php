@@ -1,9 +1,9 @@
-<?php 
+<?php
 // ----------------------------------------------------------------------
 // Original Author of file: Robert Gasch
-// Purpose of file: English language defines; reviewed by David Nelson 15/10/2005
+// Purpose of file: english Translation Files
 // ----------------------------------------------------------------------
 
-require_once ('system/Categories/pnlang/eng/common.php');
+Loader::requireOnce('system/Categories/pnlang/deu/common.php');
 
 ?>
