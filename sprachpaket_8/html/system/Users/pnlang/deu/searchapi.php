@@ -10,7 +10,7 @@
  * @subpackage  PostNuke_Users
 */
 
-define('_USERSSEARCH', 'Registrierte Benutezr');
+define('_USERSSEARCH', 'Registrierte Benutzer');
 define('_USERSSEARCHMEMBERS', 'Durchsuche registrierte Benutzer');
 define('_USERSSEARCHRESULTS', 'registrierte Benutzer gefunden');
 define('_USERSSEACHNONEFOUND', 'Keine registrierten Benutzer gefunden');
