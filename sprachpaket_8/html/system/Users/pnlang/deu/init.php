@@ -11,7 +11,7 @@
 // Users
 define('_USER_1_a','1');
 define('_USER_1_b','');
-define('_USER_1_c','Anonymous');
+define('_USER_1_c','Gast');
 define('_USER_1_d','');
 define('_USER_1_e','');
 define('_USER_1_f','');

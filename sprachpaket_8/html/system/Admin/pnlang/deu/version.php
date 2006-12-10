@@ -13,6 +13,6 @@
 
 define('_ADMIN_NAME',        'Administration');
 define('_ADMIN_DISPLAYNAME', 'Administration');
-define('_ADMIN_DESCRIPTION', 'Admin-Kategorien und Modulzuordnungen bearbeiten.');
+define('_ADMIN_DESCRIPTION', 'Admin-Kategorien und Modulzuordnungen bearbeiten');
 
 ?>

@@ -11,11 +11,11 @@
  */
 
 // Groups
-define('_GROUPS_1_a', 'Users');
-define('_GROUPS_2_a', 'Administrators');
+define('_GROUPS_1_a', 'Benutzer');
+define('_GROUPS_2_a', 'Admins');
 // Groups Information
-define('_GROUPS_1_b', 'Users default Group'); // Users Description
-define('_GROUPS_2_b', 'Admin default Group'); // Admin Description
+define('_GROUPS_1_b', 'Default Gruppe für Benutzer');        // Users Description
+define('_GROUPS_2_b', 'Default Gruppe für Administratoren'); // Admin Description
 define('_GROUPS_1_c', 'usr');                 // Users prefix
 define('_GROUPS_2_c', 'adm');                 // Admin prefix
 
