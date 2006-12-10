@@ -10,45 +10,45 @@
  * @subpackage  PostNuke_Mailer
  */
 
-define('_PROFILE',                'Profile');
-define('_PROFILEEMPTYMAIL',       'No email address specified');
-define('_PROFILEINVALIDMAIL',     'Invalid email address specified');
-define('_PROFILEMAILEXISTS',      'Email in use - use another mail address');
+define('_PROFILE',                'Profil');
+define('_PROFILEEMPTYMAIL',       'Keine E-Mail-Adresse angegeben');
+define('_PROFILEINVALIDMAIL',     'Ungültige E-Mail-Adresse angegeben');
+define('_PROFILEMAILEXISTS',      'E-Mail-Adresse wird bereits verwendet');
 define('_PROFILELABEL',           'Label');
-define('_PROFILEID',              'View sample items');
-define('_PROFILEMAIN',            'Your Account');
-define('_PROFILEVIEW',            'Profile Information');
-define('_PROFILEMODIFY',          'Modify Profile Information');
-define('_PROFILEVALUE',           'Value');
-define('_UANOTE',                 'Note: ');
-define('_TEST',                   'Test DUD field');
-define('_PROFILEITEMFAILED',      'Failed to load profile item');
+define('_PROFILEID',              'Beispieleinträge anzeigen');
+define('_PROFILEMAIN',            'Account');
+define('_PROFILEVIEW',            'Profil-Information anzeigen');
+define('_PROFILEMODIFY',          'Profil-Information modifizieren');
+define('_PROFILEVALUE',           'Wert');
+define('_UANOTE',                 'Anmerkung: ');
+define('_TEST',                   'Testfeld DUD');
+define('_PROFILEITEMFAILED',      'Profil-Wert konnte nicht geladen werden');
 
 define('_PROFILEREQUIRED',        '*');
-define('_PROFILEREQUIREDTEXT',    'Fields marked by a * are required');
-define('_PROFILEREQUIREDMISSING', 'Required profile item missing');
-define('_PROFILESAVEOK',          'Profile Information saved');
+define('_PROFILEREQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
+define('_PROFILEREQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
+define('_PROFILESAVEOK',          'Profil-Information gespeichert');
 
-define('_PROFILEUNINDENTIFIED',   'Unidentified User');
+define('_PROFILEUNINDENTIFIED',   'Benutzer nicht bekannt');
 
 // Legacy constants
-define('_UREALNAME',              'Real Name');
-define('_UREALEMAIL',             'Real Email');
-define('_UFAKEMAIL',              'Email (Public)');
+define('_UREALNAME',              'Name');
+define('_UREALEMAIL',             'E-Mail-Adresse');
+define('_UFAKEMAIL',              'Fake-E-Mail-Adresse');
 define('_YOURHOMEPAGE',           'Homepage');
-define('_TIMEZONEOFFSET',         'Timezone');
+define('_TIMEZONEOFFSET',         'Zeitzone');
 define('_YOURAVATAR',             'Avatar');
 define('_YICQ',                   'ICQ ID');
 define('_YAIM',                   'AOL ID');
 define('_YYIM',                   'Yahoo ID');
 define('_YMSNM',                  'MSN ID');
-define('_YLOCATION',              'Location');
-define('_YOCCUPATION',            'Occupation');
-define('_YINTERESTS',             'Interests');
-define('_EXTRAINFO',              'Extra Information');
-define('_SIGNATURE',              'Signature');
-define('_PROFILEPASSWORD',        'Password');
+define('_YLOCATION',              'Ort');
+define('_YOCCUPATION',            'Beruf');
+define('_YINTERESTS',             'Interessen');
+define('_EXTRAINFO',              'Zusatzinformation');
+define('_SIGNATURE',              'Signatur');
+define('_PROFILEPASSWORD',        'Kennwort');
 define('_OPTIONAL',               'Optional');
-define('_255CHARMAX',             '255 Characters maximum');
-define('_ALLOWEDHTML',            'Permitted HTML tags:');
+define('_255CHARMAX',             'maximal 255 Zeichen');
+define('_ALLOWEDHTML',            'Freigegebene HTML tags:');
 ?>
