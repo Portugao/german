@@ -12,7 +12,7 @@
  */
 
 define('_SYSINFO_NAME',        'SysInfo');
-define('_SYSINFO_DISPLAYNAME', 'SystemInfo');
-define('_SYSINFO_DESCRIPTION', 'System Information');
+define('_SYSINFO_DISPLAYNAME', 'System Information');
+define('_SYSINFO_DESCRIPTION', 'Zusammenfassung der Systemumgebung für Diagnosezwecke');
 
 ?>
