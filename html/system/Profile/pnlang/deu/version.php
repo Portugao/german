@@ -12,6 +12,6 @@
 
 define('_PROFILE_MODNAME',     'Profile');
 define('_PROFILE_DISPLAYNAME', 'Profile');
-define('_PROFILE_DESCRIPTION', 'Display and Manage User Information');
+define('_PROFILE_DESCRIPTION', 'Benutzer-Informationen anzeigen und bearbeiten');
 
 ?>

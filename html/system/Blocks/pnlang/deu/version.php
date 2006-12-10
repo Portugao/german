@@ -12,7 +12,7 @@
  */
 
 define('_BLOCKMOD_NAME',        'Blocks');
-define('_BLOCKMOD_DISPLAYNAME', 'Blocks');
-define('_BLOCKMOD_DESCRIPTION', 'Administration of side and centre blocks');
+define('_BLOCKMOD_DISPLAYNAME', 'Blöcke');
+define('_BLOCKMOD_DESCRIPTION', 'Administration von Blöcken');
 
 ?>

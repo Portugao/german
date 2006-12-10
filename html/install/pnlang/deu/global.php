@@ -115,14 +115,14 @@ define('_INSTALLERMODIFYFILE_2','Fehler: kein Schreibzugriff:');
 define('_INSTALLERMODIFYFILE_3','0 Zeilen geändert, nicht gemacht');
 
 // default blocks
-define('_BLOCKS_00_b','Hauptmenü');
-define('_BLOCKS_00_c','a:5:{s:14:"displaymodules";s:1:"1";s:5:"style";i:1;s:10:"stylesheet";s:0:"";s:8:"template";s:4:"menu";s:7:"content";s:230:"index.php|Home|Back to the home page.LINESPLITuser.php|Your account|Go to your personal account control panel.LINESPLITadmin.php|Administration|Administer this PostNuke site.LINESPLIT{Users:logout}|Log out|Log out of your account.";}');
+define('_BLOCKS_00_b','Navigation');
+define('_BLOCKS_00_c','a:5:{s:14:"displaymodules";i:0;s:5:"style";i:1;s:10:"stylesheet";s:0:"";s:8:"template";s:4:"menu";s:7:"content";s:199:"index.php|Startseite|Zur StartseiteLINESPLITuser.php|Profil|Individuelle ProfilseiteLINESPLITadmin.php|Administration|Administration der SeiteLINESPLIT{Users:logout}|Abmeldung|Abmeldung von der Seite";}');
 define('_BLOCKS_01_b','Sprachen');
 define('_BLOCKS_02_b','Admin-Nachrichten');
 define('_USER_LOGINBLOCK_TITLE', 'Anmeldung');
 define('_USER_ONLINEBLOCK_TITLE', 'Wer ist angemeldet');
-define('_BLOCKS_LEFTBLOCKS', 'Linke Blöcke');
-define('_BLOCKS_RIGHTBLOCKS', 'Rechte Blöcke');
-define('_BLOCKS_CENTERBLOCKS', 'Mittlere Blöcke');
+define('_BLOCKS_LEFTBLOCKS', 'Blöcke Links');
+define('_BLOCKS_RIGHTBLOCKS', 'Blöcke Rechts');
+define('_BLOCKS_CENTERBLOCKS', 'Blöcke Mitte');
 
 ?>

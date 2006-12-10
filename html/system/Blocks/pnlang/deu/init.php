@@ -10,8 +10,8 @@
  * @subpackage Blocks
  */
 
-define('_BLOCKS_INIT_LEFTBLOCKS', 'Left blocks');
-define('_BLOCKS_INIT_RIGHTBLOCKS', 'Right blocks');
-define('_BLOCKS_INIT_CENTERBLOCKS', 'Center blocks');
+define('_BLOCKS_INIT_LEFTBLOCKS', 'Blöcke Links');
+define('_BLOCKS_INIT_RIGHTBLOCKS', 'Blöcke Rechts');
+define('_BLOCKS_INIT_CENTERBLOCKS', 'Blöcke Mitte');
 
 ?>
