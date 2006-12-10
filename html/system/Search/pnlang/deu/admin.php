@@ -10,7 +10,7 @@
  * @subpackage  PostNuke_Search
  */
 
-define('_SEARCHITEMSPERPAGE', 'Search results per page');
-define('_SEARCHDISABLE', 'Disable search plug-ins');
+define('_SEARCHITEMSPERPAGE', 'Suchergebnisse pro Seite');
+define('_SEARCHDISABLE', 'Such-Plugins deaktivieren');
 
 ?>
