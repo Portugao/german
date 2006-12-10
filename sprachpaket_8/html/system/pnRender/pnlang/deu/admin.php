@@ -30,21 +30,21 @@
 define('_PNRENDER_ADMIN',                'pnRender Administration');
 define('_PNRENDER_SMARTYVERSION',        'Smarty Version');
 
-define('_PNRENDER_COMPILE_SETTINGS',     'Compile Einstellungen');
-define('_PNRENDER_COMPILE_CHECK',        'Kompilierte Templates bei Änderungen neu erzeugen');
-define('_PNRENDER_FORCE_COMPILE',        'Kompilierte Templates bei jedem Aufruf neu generieren');
-define('_PNRENDER_CLEAR_COMPILED',       'Compile Cache löschen');
-define('_PNRENDER_COMPILED_CLEARED',     'Compile Verzeichnis gelöscht');
-define('_PNRENDER_COMPILE_DIR',          'Compile Verzeichnis');
+define('_PNRENDER_COMPILE_SETTINGS',     'Kompilierung (für Arbeiten an Modul-Templates)');
+define('_PNRENDER_COMPILE_CHECK',        'Aktualisierte Templates neu kompilieren');
+define('_PNRENDER_FORCE_COMPILE',        'Templates immer neu kompilieren');
+define('_PNRENDER_CLEAR_COMPILED',       'Compile-Cache löschen');
+define('_PNRENDER_COMPILED_CLEARED',     'Compile-Cache gelöscht');
+define('_PNRENDER_COMPILE_DIR',          'Compile-Verzeichnis');
 
 define('_PNRENDER_CACHE_SETTINGS',       'Cache Einstellungen');
 define('_PNRENDER_CACHE_ENABLE',         'Caching aktivieren');
 define('_PNRENDER_CACHE_LIFETIME',       'Dauer des Cachings');
-define('_PNRENDER_CLEAR_CACHED',         'Template Cache löschen');
-define('_PNRENDER_CACHE_CLEARED',        'Cache Verzeichnis gelöscht');
-define('_PNRENDER_CACHE_DIR',            'Cache Verzeichnis');
-define('_PNRENDER_CACHETIMENOTE1',       '0 deaktiviert das Caching, dauerhaftes Caching mit -1');
-define('_PNRENDER_CACHETIMENOTE2',       'siehe auch http://smarty.php.net/manual/de/variable.caching.php'); 
+define('_PNRENDER_CLEAR_CACHED',         'Template-Cache löschen');
+define('_PNRENDER_CACHE_CLEARED',        'Template-Cache gelöscht');
+define('_PNRENDER_CACHE_DIR',            'Cache-Verzeichnis');
+define('_PNRENDER_CACHETIMENOTE1',       'Cache-Lifetime von 0 deaktiviert das Cache');
+define('_PNRENDER_CACHETIMENOTE2',       'Cache-Lifetime von -1 sorgt für dauerhaftes Caching'); 
 
 define('_PNRENDER_DEBUG_SETTINGS',       'Debug Einstellungen');
 define('_PNRENDER_EXPOSE_TEMPLATE',      'Template Informationen als Kommentar in die Ausgabe integrieren');
