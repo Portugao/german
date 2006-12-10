@@ -11,8 +11,8 @@
 */
 
 define('_THEME_MAKEURLSCLICKABLE', 'URLs klickbar machen');
-define('_THEME_MAXSIZEFORLINKS', 'Linktext auf x Zeichen begrenzen');
-define('_THEME_MAXSIZEDEFAULTHINT', '(Default: 30)');
+define('_THEME_MAXSIZEFORLINKS', 'Zeichenbegrenzung für Linktext');
+define('_THEME_MAXSIZEDEFAULTHINT', '(Default: 30 Zeichen)');
 define('_THEME_VIEWTHEMES','Themes anzeigen');
 define('_THEME_ENGINE', 'Xanthia Theme Engine');
 define('_THEME_AVAILABLETHEMES', 'Verfügbare Themes');
@@ -23,8 +23,8 @@ define('_THEME_NOHTACCESS', 'Fehler! Die .htaccess Datei für XTE ist nicht im Ro
 define('_THEME_USECACHE','Seiten-Caching aktivieren');
 define('_THEME_CACHETYPE','Cachedaten in Datenbank speichern');
 define('_THEME_CACHETIME','Dauer des Cachings');
-define('_THEME_TEMPLATECHECK','Prüfung auf aktualisierte Templates');
-define('_THEME_FORCETEMPLATECHECK', 'Template-Generierung erzwingen');
+define('_THEME_TEMPLATECHECK','Aktualisierte Templates neu kompilieren');
+define('_THEME_FORCETEMPLATECHECK', 'Templates immer neu kompilieren');
 define('_THEME_NOCACHE', 'Vom Caching ausgenommene Module');
 define('_THEME_TRIMWHITESPACE', 'trimwhitespace Outputfilter nutzen');
 define('_THEME_COMMASEPERATED', 'kommasepariert');
@@ -98,7 +98,7 @@ define('_THEME_LICENSE', 'Lizenz');
 define('_THEME_SETTINGSUPDATED', 'Einstellugen aktualisiert');
 define('_THEME_CACHINGOPTONS', 'Caching');
 define('_THEME_DELETECACHEDTEMPLATES', 'Template-Cache löschen');
-define('_THEME_COMPILATIONOPTONS', 'Kompilierung');
+define('_THEME_COMPILATIONOPTONS', 'Kompilierung (für Arbeiten an Theme-Templates)');
 define('_THEME_DELETECOMPILEDTEMPLATES', 'Compile-Cache löschen');
 define('_THEME_FILTEROPTIONS', 'Filter');
 define('_THEME_SELECTIONOPTONS', 'Freigabe');
@@ -121,8 +121,8 @@ define('_THEME_GENERALSETTINGS', 'Einstellungen');
 define('_THEME_DELETE', 'Theme löschen');
 define('_THEME_CONFIRMDELETE', 'Löschen des Themes bestätigen');
 define('_THEME_DELETED', 'Theme gelöscht');
-define('_THEME_CACHETIMENOTE1', 'Eine Cache-Lifetime von 0 deaktiviert das Caching.');
-define('_THEME_CACHETIMENOTE2', 'Eine Cache-Lifetime von -1 sorgt für dauerhaftes Caching'); 
+define('_THEME_CACHETIMENOTE1', 'Cache-Lifetime von 0 deaktiviert das Caching');
+define('_THEME_CACHETIMENOTE2', 'Cache-Lifetime von -1 sorgt für dauerhaftes Caching'); 
 define('_THEME_XHTML', 'XHTML');
 define('_THEME_NEW', 'Theme anlegen');
 define('_THEME_LAYOUT', 'Layout');
