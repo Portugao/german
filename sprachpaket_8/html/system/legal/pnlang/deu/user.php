@@ -14,6 +14,6 @@ define('_ASNOTACTIVE', 'Hinweise zur Barrierefreiheit nicht aktiv');
 define('_LEGAL', 'Allgemeine Nutzungsbedingungen');
 define('_LEGALTERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
 define('_LEGALPRIVACYPOLICY', 'Hinweise zum Datenschutz');
-define('_LEGALACCESIBILITYSTATEMENT', 'Hinweise zur Datenschutz');
+define('_LEGALACCESIBILITYSTATEMENT', 'Hinweise zur Barrierefreiheit');
 
 ?>
