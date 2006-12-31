@@ -10,15 +10,15 @@
  * @subpackage Banners
  */
 
-define('_BANNERS','Banner');
+define('_BANNERS','Banners');
 
-define('_BANNERS_ACTIVATE','Banner aktiv');
-define('_BANNERS_OPENINNEWWINDOW', 'Klicks auf ein Banner öffnet ein neues Fenster');
+define('_BANNERS_ACTIVATE','Banners aktiv');
+define('_BANNERS_OPENINNEWWINDOW', 'Klick auf ein Banner öffnet ein neues Fenster');
 define('_BANNERS_YOURIP','Eigene IP (wird nicht gezählt)');
 
-define('_BANNERS_NOTACTIVE','Banner ist im Moment deaktiviert.');
+define('_BANNERS_NOTACTIVE','Banners ist im Moment deaktiviert.');
 define('_BANNERS_IMPORTANTNOTE','Wichtiger Hinweis!');
-define('_BANNERS_TOACTIVATE','Prüfe Deine Konfiguration um Banner zu aktivieren.');
+define('_BANNERS_TOACTIVATE','Prüfe Deine Konfiguration um Banners zu aktivieren.');
 
 define('_BANNERS_NEW','Banner hinzufügen');
 define('_BANNERS_PURCHASEDIMPRESSIONS','gekaufte Impressions');
@@ -28,10 +28,10 @@ define('_BANNERS_CLICKURL','Klick-URL');
 define('_BANNERS_CREATE','Banner hinzufügen');
 
 define('_BANNERS_CLIENTNAME','Klient');
-define('_BANNERS_CONTACTEMAIL','Kontact E-mail');
+define('_BANNERS_CONTACTEMAIL','Kontakt E-mail');
 define('_BANNERS_CONTACTNAME','Ansprechpartner');
-define('_BANNERS_CLIENTLOGINNAME','Klienten-Login');
-define('_BANNERS_CLIENTPASSWD','Klienten-Password');
+define('_BANNERS_CLIENTLOGINNAME','Klient-Login');
+define('_BANNERS_CLIENTPASSWD','Klient-Password');
 define('_BANNERS_EXTRAINFO', 'zusätzliche Informationen');
 define('_BANNERS_ADDCLIENT','Klient hinzufügen');
 
