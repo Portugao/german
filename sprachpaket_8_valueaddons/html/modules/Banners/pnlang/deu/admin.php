@@ -18,7 +18,7 @@ define('_BANNERS_YOURIP','Eigene IP (wird nicht gezählt)');
 
 define('_BANNERS_NOTACTIVE','Banners ist im Moment deaktiviert.');
 define('_BANNERS_IMPORTANTNOTE','Wichtiger Hinweis!');
-define('_BANNERS_TOACTIVATE','Prüfe Deine Konfiguration um Banners zu aktivieren.');
+define('_BANNERS_TOACTIVATE','Konfiguration prüfen um Banners zu aktivieren.');
 
 define('_BANNERS_NEW','Banner hinzufügen');
 define('_BANNERS_PURCHASEDIMPRESSIONS','gekaufte Impressions');
@@ -28,7 +28,7 @@ define('_BANNERS_CLICKURL','Klick-URL');
 define('_BANNERS_CREATE','Banner hinzufügen');
 
 define('_BANNERS_CLIENTNAME','Klient');
-define('_BANNERS_CONTACTEMAIL','Kontakt E-mail');
+define('_BANNERS_CONTACTEMAIL','Kontakt E-Mail');
 define('_BANNERS_CONTACTNAME','Ansprechpartner');
 define('_BANNERS_CLIENTLOGINNAME','Klient-Login');
 define('_BANNERS_CLIENTPASSWD','Klient-Password');
@@ -91,10 +91,10 @@ define('_BANNERS_FORTHIS','für diesen Banner');
 define('_BANNERS_THISURL','diese URL');
 define('_BANNERS_CHANGEURL','URL ändern');
 
-define('_BANNERS_FORMAIL','The following are the complete stats for your advertising investment at');
+define('_BANNERS_FORMAIL','Komplette Statistik für Banner-Schaltung bei');
 define('_BANNERS_IMAGE','Banner-Bild');
 define('_BANNERS_URL','Banner-URL');
-define('_BANNERS_IMPPURCHASED','gekaufte Impressions');
+define('_BANNERS_IMPPURCHASED','gebuchte Impressions');
 define('_BANNERS_REPORTMADEON','Report erstellt am');
 
 define('_BANNERS_URLCHANGED','URL aktualisiert');

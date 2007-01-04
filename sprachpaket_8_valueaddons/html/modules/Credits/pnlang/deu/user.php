@@ -25,7 +25,7 @@ define('_CREDITSHELP','Hilfe');
 define('_CREDITSLICENSE','Lizemz');
 define('_CREDITSCHANGELOG','Changelog');
 define('_CREDITSTITLE','Credits & Lizenz-Information');
-define('_CREDITSPOSTNUKE','Powered by <a href="http://www.postnuke.com">PostNuke</a>, einem Open Source GPL basierendem Content Management System.');
+define('_CREDITSPOSTNUKE','Powered by <a href="http://www.pn-cms.de">PostNuke</a>, einem Open Source GPL basierendem Content Management System.');
 define('_CREDITSMODULES','Installierte Module');
 define('_CREDITSREADPNCR','PostNuke Credits anzeigen');
 define('_CREDITSREADPNHP','PostNuke Hilfe anzeigen');
