@@ -10,15 +10,15 @@
  * @subpackage Blocks
  */
 
-define('_BASE','Base');
-define('_CODE','Code');
-define('_CURRENCY','Currency');
-define('_CURRENCYCODES','Currency codes');
-define('_CURRENCYRATES','Currency rates');
-define('_FXPPROBLEM','FXP: Error! Sorry! Connection failed.');
-define('_FXPPROBLEM2','FXP connection time-out');
-define('_FXP_ERROR','FXP error');
-define('_INSERT','Insert');
+define('_BASE','Basis');
+define('_CODE','Symbol');
+define('_CURRENCY','Währung');
+define('_CURRENCYCODES','Währungssymbole');
+define('_CURRENCYRATES','Währungskurse');
+define('_FXPPROBLEM','FXP: Fehler! Verbindung fehlgeschlagen');
+define('_FXPPROBLEM2','FXP Verbindungs- Timeout');
+define('_FXP_ERROR','FXP Fehler');
+define('_INSERT','Einfügen');
 define('_QUOTE','QUOTE');
 
 ?>
