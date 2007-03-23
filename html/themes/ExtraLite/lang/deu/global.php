@@ -10,6 +10,5 @@
 
 define('_THEMEMAIN', 'Theme Inhaltsbereich (Tabelle)');
 define('_THEMEWELCOMETO', 'Willkommen bei');
-define('_WORDSMORE', 'weitere Worte');
 
 ?>

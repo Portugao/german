@@ -2,8 +2,8 @@
 
 // installer page language strings
 define('_INSTALLER', 'PostNuke Installation');
-define('_INSTALLERPLEASEREFER', 'Bitte die');
-define('_INSTALLERDURINGPROCESS', 'beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
+define('_INSTALLERPLEASEREFERTOGUIDE', 'Bitte die <a style="color:red" href="docs/install.html" onclick="window.open(\'docs/install.html\');return false;">
+Installationsanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 define('_INSTALLERQUALITY', 'HINWEIS: PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="http://community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 
 // installer tasks
@@ -44,7 +44,6 @@ define('_ACCEPTLICENCE', 'Lizenz akzeptieren');
 
 // _requirements.htm
 define('_INSTALLERPHP', 'PHP');
-define('_INSTALLERYOURPHPVER', 'Die installierte PHP-Version ist');
 define('_INSTALLERPHPTOKENOK', 'In der PHP-Version ist die "token" Funktion verfügbar.');
 define('_INSTALLERPHPTOKENNOTOK', 'In der PHP-Version ist die "token" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung.');
 define('_INSTALLERPHPVEROK', 'und erfüllt die Mindestanforderung (4.3.0).');
@@ -96,6 +95,7 @@ define('_INSTALLERADMINURL', 'URL');
 define('_INSTALLERPASSWORDCOMPAREFAILED', 'Adminbenutzer konnte nicht angelegt werden - bitte Eingaben überprüfen');
 define('_INSTALLEREMAILVALIDATEFAILED', 'E-Mail-Adresse scheinbar ungültig - bitte Eingabe überprüfen');
 define('_INSTALLERURLVALIDATECOMPAREFAILED', 'URL-Angabe scheinbar ungültig - bitte Eingabe überprüfen');
+define('_INSTALLERUSERVALIDATECOMPAREFAILED', 'Im Benutzernamen sind Leerzeichen und Symbole nicht zuässig');
 
 // _gotosite.htm
 define('_INSTALLERCREDITS', 'Credits');
@@ -121,8 +121,5 @@ define('_BLOCKS_01_b','Sprachen');
 define('_BLOCKS_02_b','Admin-Nachrichten');
 define('_USER_LOGINBLOCK_TITLE', 'Anmeldung');
 define('_USER_ONLINEBLOCK_TITLE', 'Wer ist angemeldet');
-define('_BLOCKS_LEFTBLOCKS', 'Blöcke Links');
-define('_BLOCKS_RIGHTBLOCKS', 'Blöcke Rechts');
-define('_BLOCKS_CENTERBLOCKS', 'Blöcke Mitte');
 
 ?>
