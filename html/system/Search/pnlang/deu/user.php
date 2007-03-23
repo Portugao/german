@@ -10,16 +10,19 @@
  * @subpackage  PostNuke_Search
  */
 
-define('_SEARCHSUMMARY','Das Suchformular hilft, bestimmte Inhalte zu finden');
-define('_SEARCHALLWORDS','Alle Begriffe [UND]');
-define('_SEARCHANYWORDS','Einzelne Begriffe [ODER]');
-define('_NOPLUGINSFOUND','Fehler! Keine Such-Plugins gefunden');
-define('_SEARCHRECENT', 'Aktuelle Suchanfragen');
-define('_SEARCHTERM', 'Suchbegriff');
-define('_SEARCHCOUNT', 'Anzahl der Suchanfragen');
-define('_SEARCHLASTDATE', 'Datum der letzten Suchanfrage');
-define('_SEARCHRECENTSEARCHES', 'Liste der <a href="%u%">aktuellen Suchanfragen</a> auf dieser Seite anzeigen');
-define('_SEARCHERROREMPTYSTRING', 'Fehler: leerer Ausdruck');
-define('_SEARCHOPTIONS', 'Suche nach Typ einschränken');
+define('_SEARCH_ALLWORDS','Alle Begriffe [UND]');
+define('_SEARCH_ANYWORDS','Einzelne Begriffe [ODER]');
+define('_SEARCH_COUNT', 'Anzahl der Suchanfragen');
+define('_SEARCH_ERROREMPTYSTRING', 'Fehler: leerer Ausdruck');
+define('_SEARCH_LASTDATE', 'Datum der letzten Suchanfrage');
+define('_SEARCH_NOPLUGINSFOUND','Fehler! Keine Such-Plugins gefunden');
+define('_SEARCH_OPTIONS', 'Suche nach Typ einschränken');
+define('_SEARCH_RECENT', 'Aktuelle Suchanfragen');
+define('_SEARCH_RECENTSEARCHES', 'Liste der <a href="%u%">aktuellen Suchanfragen</a> auf dieser Seite anzeigen');
+define('_SEARCH_RESULTCOUNT','Anzahl der Treffer: %count%');
+define('_SEARCH_RESULTS', 'Suchergebnisse');
+define('_SEARCH_SEARCHDISABLED', 'Die Suche wurde durch den Administrator deaktiviert');
+define('_SEARCH_SUMMARY','Das Suchformular hilft, bestimmte Inhalte zu finden');
+define('_SEARCH_TERM', 'Suchbegriff');
 
 ?>

@@ -10,113 +10,98 @@
  * @subpackage  PostNuke_Users
 */
 
-if (!defined('_CANKNOWABOUT')) {
-    define('_CANKNOWABOUT','(Informationen über sich eingeben - maximal 255 Zeichen)');
-}
-define('_USERACTIVE', 'Benutzer ist aktiv');
-define('_USERINACTIVE', 'Benutzer ist inaktiv');
-define('_USERMUSTACCEPTTOU', 'Benutzer ist inaktiv bis Zustimmung zu Nutzungsbedingungen erteilt');
-define('_USERSTATUS', 'Benutzer Status');
- 
-define('_ADDUSER','Neuen Benutzer hinzufügen');
-define('_ADDUSERBUT','Benutzer hinzufügen');
-define('_ALLOWREG','Registrierung von Accounts ermöglichen:');
-define('_ANONYMOUS','Name für unregistrierte Benutzer:');
-define('_AREYOUSUREDEL','Wirklich Benutzer löschen?');
-define('_AIMCONTAINS','AIM Screenname enthält');
-define('_ANY','alle');
-define('_BACK','Zurück zur Benutzer-Administration');
-define('_CLICKTO','Um alle Benutzer anzuzeigen,<br />diesen Knopf klicken ohne vorher eine Wahl getroffen zu haben');
-define('_CHARLONG','Zeichen lang');
-define('_DENYUSER', 'Neuen Benutzer ablehnen');
-define('_DESELECTALL','Alle abwählen');
-define('_DYNAMICDATA','Dynamische Benutzerdaten');
-define('_EDITUSER','Benutzer zum Editieren wählen');
-define('_EMAILCONTAINS','E-Mail-Adresse enthält');
-define('_EMAILNOTPUBLIC','(Die E-Mail-Adresse ist nicht öffentlich, aber ein Pflichtfeld. Sie wird zum Kennwort-Versand benötigt');
-define('_ERRORINVEMAIL', 'Fehler! Unfültige E-Mail-Adresse');
-define('_FIND','Finden');
-define('_GOGO','Go!');
-define('_HASHMETHOD','Kennwort-Verschlüsselung (Default SHA256):');
-define('_HOMEPAGECONTAINS','Homepage enthält');
-define('_ICQCONTAINS','ICQ Nummer enthält');
-define('_IFNO','(Falls \'Nein\' können im folgenden Feld die Gründe angegeben werden)');
-define('_ILLEGALDOMAINDESC', 'Kommagetrennte Liste an E-Mail-Domains über die keine Registrierung erlaubt ist');
-define('_ILLEGALUSERAGENTS', 'Gesperrte Useragents: ');
-define('_ILLEGALUSERAGENTDESC', '(Kommagetrennte Liste an Userragents über die keine Registrierung erlaubt ist)');
-define('_ILLEGALUNAME','Gesperrte Benutzernamen: ');
-define('_ILLEGALUNAMEDESC',' (Mit Leerzeichen getrennte Liste an Benutzernamen die nicht erlaubt sind)');
-define('_LOGINCONF', 'Konfiguration Benutzeranmeldung');
-define('_LOGIN_REDIRECT_WCAG', 'WCAG-konforme An- und Abmeldung');
-define('_LOGIN_REDIRECT_META', '(Benutzung von Meta-Refresh)');
-define('_MINAGE','Mindestalter:');
-define('_MINAGEDESCR','(Das Mindestalter wird während der Registrierung abgefragt; 0 = keine Prüfung)');
-define('_MSNMCONTAINS','MSN Passport enthält');
-define('_MAIL','Mail');
-define('_MAILUSERS','Benutzer anmailen');
-define('_MAILSENT','Mail gesendet');
-define('_MAILSENTFAILED','Fehler! Mailversand fehlgeschlagen');
-define('_NICKNAME', 'Benutzername');
-define('_NOUSERSELECTED','Fehler! Kein Benutzer ausgewählt');
-define('_NM_FROM','Absender:');
-define('_NM_REPLYTOADDRESS','Antwort-Adresse:');
-define('_NM_SUBJECT','Thema:');
-define('_NM_MESSAGE','Nachricht:');
-define('_NM_SEND_MAIL','E-Mail-Nachricht(en) senden');
-define('_NOUSERFOUND','Kein passender Benutzer gefunden');
-define('_NOPASS','Kennwort fehlt');
-define('_NOTIFYEMAIL','Info-Mail über neue Benutzer: ');
-define('_NOTIFYEMAILDESC',' (Falls hier eine E-Mail-Adresse hinterlegt wird erfolgt nach Freischaltung von Accounts eine Benachrichtigung)');
-define('_OPTITEMS', 'Dynamische Benutzerdaten anzeigen:');
-define('_OPTITEMSDESC', '(Zusätzliche Profildaten während der Registrierung anzeigen)');
-define('_PASSWDLEN','Mindestlänge für Kennwort:');
-define('_PASSDIFFERENT','Kennwörter stimmen nicht überein');
-define('_REALNAMECONTAINS','Name enthält');
-define('_REQUIRED', '(notwendiges Feld)');
-define('_REGCONF','Benutzer Registrierung');
-define('_REGDATEAFTER','Registrierung erfolgte nach<br />(yyyy-mm-dd)');
-define('_REGDATEBEFORE','Registrierung erfolgte vor<br />(yyyy-mm-dd)');
-define('_REGMODERATION','Benutzerregistrierung moderieren');
-define('_SELECTALL','Alle wählen');
-define('_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
-define('_SIGNCONTAINS','Signatur enthält');
-define('_TYPENEWPASSWORD','(Zur Änderung das Kennwort zweimal angeben)');
-define('_UNIEMAIL','Eindeutige E-Mail-Adresse');
-define('_UNIEMAILDESC','(E-Mail-Adresse muß systemweit einmalig sein)');
-define('_USERADDED','Benutzer hinzugefügt');
-define('_USERADDFAILED','Fehler! Benutzer konnte nicht hinzugefügt werden');
+// general
 define('_USERADMINISTRATION','Benutzer Administration');
-define('_USERGROUPIS','Gruppe ist');
-define('_USERGRAPHIC','Icons in der Benutzerseite anzeigen');
-define('_USERGROUP', 'Gruppe');
-define('_USERGROUPMEMBERSHIP', 'Gruppen Mitgliedschaft');
-define('_USERMEMBEROF', 'Mitglied');
-define('_USERPATH','Pfad für Icons auf der Benutzerseite');
-define('_USERNAMECONTAINS','Benutzername enthält');
-define('_USERSDELETED','Benutzer wurde(n) gelöscht');
-define('_USEREDITED','Benutzer wurde editiert');
-define('_USEREXISTS', 'Fehler! Benutzername existiert bereits');
-define('_USERSEDIT', 'Benutzer editieren');
-define('_USERSFOUND','Suchergebnisse');
-define('_VERIFYEMAIL','E-Mail-Adresse während der Registrierung verifizieren ');
-define('_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort während der Registrierung wählen, muß den Account aber via Mail-Benachrichtung bestätigen');
-define('_YES_PASSWORDMAIL','Ja: Vom System generiertes Kennwort wird zur Verifizierung an die E-Mail-Adresse geschickt');
-define('_YIMCONTAINS','Yahoo! Messenger ID enthält');
-define('_USERLOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
-define('_USERSADMINVIEW', 'Benutzer anzeigen');
-define('_USERSREALNAME', 'Realer Name');
-define('_USERSID', 'Benutzer ID');
-define('_USERSEARCH', 'Benutzer durchsuchen');
-define('_USERSVIEW', 'Benutzer anzeigen');
-define('_USERSITEMSPERPAGE', 'Einträge pro Seite');
-define('_USERSNEW', 'Benutzer anlegen');
-define('_USERSPENDING', 'Ausstehende Anmeldungen zur Freigabe');
-define('_USERSGENERALSETTINGS', 'Einstellungen');
-define('_USERSUPDATEUSER', 'Benutzer aktualisieren');
-if (!defined('_DETAILS')) {
-    define('_DETAILS', 'Details');
-}
-define('_CONFIRMAPPLICATION', 'Aktion bestätigen');
-define('_USERDELETED', 'Benutzer gelöscht');
+
+// singular/plural
+define('_USERS_USER', 'Benutzer');
+define('_USERS_USERS', 'Benutzer');
+
+// navigation
+define('_USERS_DYNAMICDATA','Dynamische Benutzerdaten');
+define('_USERS_PENDINGAPPLICATIONS', 'Wartende Applikationen');
+
+// modify config template
+//  general settings
+define('_USERS_ANONYMOUSNAME','Name für unregistrierte Benutzer:');
+define('_USERS_GENERALSETTINGS', 'Einstellungen');
+define('_USERS_ENABLEGRAPHICS','Icons auf Benutzerebene aktivieren');
+define('_USERS_HASHMETHOD','Kennwort-Verschlüsselung (Default SHA256):');
+define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
+define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
+define('_USERS_MINAGE','Mindestalter:');
+define('_USERS_MINAGEDESCR','(Das Mindestalter wird während der Registrierung abgefragt; 0 = keine Prüfung)');
+define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
+define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
+
+//  registration options
+define('_USERS_ALLOWREGISTRATIONS','Registrierung von Accounts ermöglichen:');
+define('_USERS_ALLOWREGISTRATIONSDISABLED','(Falls \'Nein\' können im folgenden Feld die Gründe angegeben werden)');
+define('_USERS_ILLEGALDOMAINS', 'Kommagetrennte Liste an E-Mail-Domains über die keine Registrierung erlaubt ist');
+define('_USERS_ILLEGALUNAME','Gesperrte Benutzernamen: ');
+define('_USERS_ILLEGALUNAMEDESC',' (Mit Leerzeichen getrennte Liste an Benutzernamen die nicht erlaubt sind)');
+define('_USERS_ILLEGALUSERAGENTS', 'Gesperrte Useragents: ');
+define('_USERS_ILLEGALUSERAGENTDESC', '(Kommagetrennte Liste an Userragents über die keine Registrierung erlaubt ist)');
+define('_USERS_REGISTRATIONSETTINGS','Benutzerregistrierung');
+define('_USERS_MODERATION','Benutzerregistrierung moderieren');
+define('_USERS_NOTIFYEMAIL','Info-Mail über neue Benutzer: ');
+define('_USERS_NOTIFYEMAILDESC',' (Falls hier eine E-Mail-Adresse hinterlegt wird erfolgt nach Freischaltung von Accounts eine Benachrichtigung)');
+define('_USERS_OPTIONALITEMS', 'Dynamische Benutzerdaten anzeigen:');
+define('_USERS_OPTIONALITEMSDESC', '(Zusätzliche Profildaten während der Registrierung anzeigen)');
+define('_USERS_UNIQUEEMAIL','Eindeutige E-Mail-Adresse');
+define('_USERS_UNIQUEEMAILDESC','(E-Mail-Adresse muß systemweit einmalig sein)');
+define('_USERS_VERIFYEMAIL','E-Mail-Adresse während der Registrierung verifizieren ');
+define('_USERS_VERIFYEMAIL_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort während der Registrierung wählen, muß den Account aber via Mail-Benachrichtung bestätigen');
+define('_USERS_VERIFYEMAIL_YES_PASSWORDMAIL','Ja: Vom System generiertes Kennwort wird zur Verifizierung an die E-Mail-Adresse geschickt');
+//  login options
+define('_USERS_LOGINSETTINGS', 'Konfiguration der Benutzerregistrierung');
+define('_USERS_LOGIN_REDIRECT_WCAG', 'WCAG-konforme An- und Abmeldung');
+define('_USERS_LOGIN_REDIRECT_META', '(Benutzung von Meta-Refresh)');
+
+// new/modify template
+define('_USERS_GROUP', 'Gruppe');
+define('_USERS_GROUPMEMBERSHIP', 'Gruppen Mitgliedschaft');
+define('_USERS_MEMBEROF', 'Mitglied');
+
+// search template
+// Note: all of the strings ending in 'Contains' precede an input field so incomplete sentences here are fine.
+define('_USERS_ANYGROUP','alle');
+define('_USERS_CLICKTOFINDALL','Um alle Benutzer anzuzeigen,<br />diesen Knopf klicken ohne vorher eine Wahl getroffen zu haben');
+define('_USERS_REGDATEAFTER','Registrierung erfolgte nach<br />(yyyy-mm-dd)');
+define('_USERS_REGDATEBEFORE','Registrierung erfolgte vor<br />(yyyy-mm-dd)');
+define('_USERS_STATUS', 'Benutzer Status');
+define('_USERS_USERGROUPIS','Der Benutzer gehört zu');
+define('_USERS_SEARCHSUBSTRING', 'Partial strings are matched with all fields');
+
+// search results
+define('_USERS_DESELECTALL','Alle abwählen');
+define('_USERS_MAIL','Mail');
+define('_USERS_SELECTALL','Alle wählen');
+
+// mail users template
+define('_USERS_FROM','Absender');
+define('_USERS_MAILUSERS','Benutzer anmailen');
+define('_USERS_MESSAGE','Nachricht:');
+define('_USERS_REPLYTOADDRESS','Antwort-Adresse:');
+define('_USERS_SEND_MAIL','E-Mail-Nachricht(en) senden');
+define('_USERS_SUBJECT','Thema:');
+
+// pending applications template
+define('_USERS_APPROVEUSERAPPLICATION','Neue Benutzer bestätigen');
+define('_USERS_APPROVEUSERAPPLICATIONBUT','Bestätigen');
+define('_USERS_CONFIRMAPPLICATION', 'Aktion für Benutzerapplikation bestätigen');
+define('_USERS_DENYUSERAPPLICATION', 'Neuen Benutzer ablehnen');
+
+// user statuses
+define('_USERS_ACTIVE', 'Benutzer ist aktiv');
+define('_USERS_INACTIVE', 'Benutzer ist inaktiv');
+define('_USERS_MUSTACCEPTTOU', 'Benutzer ist inaktiv bis Zustimmung zu Nutzungsbedingungen erteilt');
+define('_USERS_SEARCHRESULTS','Suchergebnisse');
+
+// error status messages
+define('_USERS_MAILSENT','Mail gesendet');
+define('_USERS_MAILSENTFAILED','Fehler! Mailversand fehlgeschlagen');
+define('_USERS_NOPASS','Kennwort fehlt');
+define('_USERS_NOUSERSELECTED','Fehler! Kein Benutzer ausgewählt');
 
 ?>

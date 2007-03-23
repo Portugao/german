@@ -11,7 +11,6 @@
  * @subpackage   Example
  */
 
-define('_SEARCH_OPTIONS','Suchoptionen');
-define('_SEARCH_SHOW_BTN', 'Suchbutton anzeigen');
+define('_SEARCH_BLOCK_SHOWBUTTON', 'Suchbutton anzeigen');
 
 ?>
