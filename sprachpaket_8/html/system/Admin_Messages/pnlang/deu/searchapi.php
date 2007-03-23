@@ -10,9 +10,7 @@
  * @subpackage  PostNuke_AdminMessages
 */
 
-define('_ADMINMESSAGESSEARCH', 'Admin-Nachrichten');
-define('_ADMINMESSAGESACTIVEONLY', 'nur aktive');
-define('_ADMINMESSAGESSEARCHRESULTS', 'Admin-Nachricht(en) gefunden');
-define('_ADMINMESSAGESSEACHNONEFOUND', 'keine Admin-Nachrichten gefunden');
+define('_ADMINMESSAGES_ACTIVEONLY', 'nur aktive');
+define('_ADMINMESSAGES_SEARCH', 'Admin-Nachrichten');
 
 ?>
