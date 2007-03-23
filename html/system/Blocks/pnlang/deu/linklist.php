@@ -10,12 +10,12 @@
  * @subpackage Blocks
  */
 
-define('_FQUESTIONS','Frequently-asked questions');
-define('_OTHEROPTIONS','Other options');
-define('_SUBMISSIONS','Submissions');
+define('_FQUESTIONS','FAQ');
+define('_OTHEROPTIONS','Andere Optionen');
+define('_SUBMISSIONS','Eingereichte Beiträge');
 define('_UDOWNLOADS','Downloads');
-define('_WAITINGCONT', 'Waiting content');
-define('_WLINKS','Waiting links');
-define('_WREVIEWS','Waiting reviews');
+define('_WAITINGCONT', 'Auf Freigabe wartende Inhalte');
+define('_WLINKS','Auf Freigabe wartende Links');
+define('_WREVIEWS','Auf Freigabe wartende Reviews');
 
 ?>

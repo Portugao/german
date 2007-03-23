@@ -10,15 +10,15 @@
  * @subpackage Blocks
  */
 
-define('_MENU_DISPLAY','Display');
-define('_MENU_INSERT_BLANK_AFTER','Insert blank after');
-define('_MENU_AS_DROPDOWN','Display menu as drop-down');
-define('_MENU_AS_LIST','Display menu as list');
-define('_MENU_CONTENT','Content');
-define('_MENU_DESCRIPTION','Description');
-define('_MENU_FORMAT','Menu format');
-define('_MENU_MODULES','Modules');
-define('_MENU_NEWONE','New row');
-define('_MENU_STYLESHEET', 'Stylesheet for this menu');
+define('_MENU_DISPLAY','Anzeige');
+define('_MENU_INSERT_BLANK_AFTER','Zeile dahinter einfügen');
+define('_MENU_AS_DROPDOWN','Menü als Dropdown anzeigen');
+define('_MENU_AS_LIST','Menü als Liste anzeigen');
+define('_MENU_CONTENT','Inhalt');
+define('_MENU_DESCRIPTION','Beschreibung');
+define('_MENU_FORMAT','Menüformat');
+define('_MENU_MODULES','Module');
+define('_MENU_NEWONE','Neue Zeile');
+define('_MENU_STYLESHEET', 'Stylesheet für dieses Menü');
 
 ?>

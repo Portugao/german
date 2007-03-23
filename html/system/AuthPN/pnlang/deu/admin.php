@@ -14,7 +14,7 @@
  */
 
 define('_AUTHPN', 'PostNuke Authentifizierung');
-define('_AUTHPNMODULES', 'Authentifizierungs-Module');
-define('_AUTHPNHELP', 'Kommaseparierte Liste der Module');
+define('_AUTHPN_HELP', 'Kommaseparierte Liste der Module');
+define('_AUTHPN_MODULES', 'Authentifizierungs-Module');
 
 ?>

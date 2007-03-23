@@ -10,6 +10,6 @@
  * @subpackage Blocks
  */
 
-define('_MENUFOR','Menu for');
+define('_MENUFOR','Menu für');
 
 ?>

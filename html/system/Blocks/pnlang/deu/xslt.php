@@ -10,10 +10,9 @@
  * @subpackage Blocks
  */
 
-define('_SELECTGUILANG','Bevorzugte Sprache:');
-define('_BLOCKS_THELANG_FORMAT', 'Format');
-define('_BLOCKS_THELANG_FLAGS', 'Flaggen anzeigen');
-define('_BLOCKS_THELANG_DROPDOWN', 'Dropdown-Liste');
-define('_BLOCKS_THELANG_LIST', 'Liste');
+define('_XSLT_DOCURL', 'Dokument URL');
+define('_XSLT_DOCCONTENTS', 'Dokument Inhalt');
+define('_XSLT_STYLESHEETURL', 'Stylesheet URL');
+define('_XSLT_STYLESHEETCONTENTS', 'Stylesheet Inhalt');
 
 ?>

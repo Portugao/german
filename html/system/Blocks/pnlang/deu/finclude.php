@@ -10,9 +10,9 @@
  * @subpackage Blocks
  */
 
-define('_FILE','File');
-define('_FILEDOESNOTEXIST', 'File: %f% does not exist.');
-define('_FILETYPE','File type');
+define('_FILE','Datei');
+define('_FILEDOESNOTEXIST', 'Datei: %f% existiert nicht');
+define('_FILETYPE','Dateityp');
 define('_HTML','HTML');
 define('_PHP','PHP');
 define('_TXT','Text');

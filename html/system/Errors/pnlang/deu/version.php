@@ -13,6 +13,6 @@
 
 define('_ERRORS_NAME',        'Errors');
 define('_ERRORS_DISPLAYNAME', 'Errors');
-define('_ERRORS_DESCRIPTION', 'Error Logging');
+define('_ERRORS_DESCRIPTION', 'Fehler Logging');
 
 ?>

@@ -11,35 +11,36 @@
  */
 
 // 404 template
-define('_ERRORS_404', 'Page not found');
-define('_ERRORS_COMMONH','Below are the most common mistakes in accessing %sitename%');
-define('_ERRORS_COMMONM','Common mistakes');
-define('_ERRORS_MAILED','The details of this error have automatically been mailed to the site administrator.');
-define('_ERRORS_SORRY_404','We\'re sorry. The page you requested, %page%, doesn\'t exist on "%sitename%".');
-define('_ERRORS_UPPERCASE','Using UPPER CASE CHARACTERS- <strong>all names should be in lower case only</strong>.');
-define('_ERRORS_SEARCH', 'Search');
-define('_ERRORS_USESEARCH', 'You can also like to <a href="%url%">search</a> this site.');
+define('_ERRORS_404', 'Seite nicht gefunden');
+define('_ERRORS_MAILED','Die Details zu diesem Fehlers wurden automatisch an den Administrator der Site gesendet.');
+define('_ERRORS_SORRY_404','Schade. Die angeforderte Seite %page%, existiert nicht auf "%sitename%".');
+define('_ERRORS_SEARCH', 'Suche');
+define('_ERRORS_USESEARCH', 'Vielleicht möchten Sie auch auf dieser Site die <a href="%url%">Suche</a> benutzen.');
 
 // 403 template
-define('_ERRORS_403', 'Access Denied');
+define('_ERRORS_403', 'Zugriff verweigert');
 define('_ERRORS_LOGIN', 'Login');
-define('_ERRORS_LOGINTEXT', 'You are not logged in. <a href="%url%">Logging in</a> <em>may</em> give you the permission to access this page.');
-define('_ERRORS_SORRY_403', 'Sorry! You do not have authorization to access this page');
+define('_ERRORS_LOGINTEXT', 'Sie sind nicht angemeldet. Eine <a href="%url%">Anmeldung</a> <em>kann</em> Ihnen den Zugriff auf diese Seite ermöglichen.');
+define('_ERRORS_SORRY_403', 'Stop! Sie sind zum Zugriff auf diese Seite nicht berechtigt');
 
 // error type text
-define('_ERRORS_USER_NOTICE', 'Non critical error');
-define('_ERRORS_USER_NOTICE_TEXT', 'A non-critical error has occured. The following error message was returned by the system');
-define('_ERRORS_USER_WARNING', 'Non critical error');
-define('_ERRORS_USER_WARNING_TEXT', 'A non-critical error has occured. The following error message was returned by the system');
-define('_ERRORS_USER_ERROR', 'Critical error');
-define('_ERRORS_USER_ERROR_TEXT', 'A critical error has occured. The following error message was returned by the system');
+define('_ERRORS_USER_NOTICE', 'Unkritischer Fehler');
+define('_ERRORS_USER_NOTICE_TEXT', 'Ein unkritischer Fehler ist aufgetreten. Die folgende Fehlermeldung wurde vom System zurückgegeben');
+define('_ERRORS_USER_WARNING', 'Unkritischer Fehler');
+define('_ERRORS_USER_WARNING_TEXT', 'Ein unkritischer Fehler ist aufgetreten. Die folgende Fehlermeldung wurde vom System zurückgegeben');
+define('_ERRORS_USER_ERROR', 'Kritischer Fehler');
+define('_ERRORS_USER_ERROR_TEXT', 'Ein kritischer Fehler ist aufgetreten. Die folgende Fehlermeldung wurde vom System zurückgegeben');
+define('_ERRORS_USER_UNKNOWN', 'Unkritischer Fehler');
+define('_ERRORS_USER_UNKNOWN_TEXT', 'Ein unbekannter Fehler ist aufgetreten. Die folgende Fehlermeldung wurde vom System zurückgegeben');
 
 // system error template
-define('_ERRORS_SYSTEMERROR', 'System Error');
-define('_ERRORS_TECHNICALINFO', 'Additional technical information');
-define('_ERRORS_LOCATION', 'in file <strong>%file%</strong> on line %line%');
+define('_ERRORS_SYSTEMERROR', 'Systemfehler');
+define('_ERRORS_TECHNICALINFO', 'Zusätzliche technische Informationen');
+// additional text appended to any error mesages should the user have administrative permissions
+// format is error message (_ERRORS_LOCATION)
+define('_ERRORS_LOCATION', 'in Datei <strong>%file%</strong> in Zeile %line%');
 
-// postnuke error template
-define('_ERRORS_POSTNUKEERROR', 'PostNuke Error');
+// general error template
+define('_ERRORS_ERROR', '%sitename%-Fehler');
 
 ?>
