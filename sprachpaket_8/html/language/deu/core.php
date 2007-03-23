@@ -62,10 +62,13 @@ define('_OK','OK');
 define('_ON','am');
 define('_OR', 'oder');
 define('_TO','an');
-define('_THE', 'Ein');
 define('_UP','hoch');
 define('_URL', 'URL');
 define('_YES','Ja');
+
+// on/off states
+define('_ONOFF_ON','Ein');
+define('_ONOFF_OFF', 'Aus');
 
 // standard permissions levels
 define('_ACCESS_ADD','Hinzufügen');
@@ -78,7 +81,7 @@ define('_ACCESS_NONE','Keine Rechte');
 define('_ACCESS_OVERVIEW','Übersicht');
 define('_ACCESS_READ','Lesen');
 
-// common actions
+// common actions & results
 define('_ACTIONS', 'Aktion');
 define('_ACTIVATE','Aktivieren');
 define('_ACTIVE','Aktiv');
@@ -87,7 +90,11 @@ define('_ADD','Hinzufügen');
 define('_BACK', 'zurück');
 define('_CANCEL', 'Abbruch');
 define('_CLEAR', 'Löschen');
+define('_CLOSE', 'Schließen');
+define('_CONFIRM', 'Bestätigen');
+define('_CONTINUE', 'Weiter');
 define('_COMMIT', 'Bestätigen');
+define('_COPY', 'Kopieren');
 define('_CREATE', 'Anlegen');
 define('_DEACTIVATE','Deaktivieren');
 define('_DEACTIVATED', 'deaktiviert');
@@ -100,12 +107,16 @@ define('_INACTIVE','Inaktiv');
 define('_LOGIN','Anmelden');
 define('_LOGOUT','Abmelden');
 define('_MODIFY','Modifizieren');
+define('_MOVE', 'Bewegen');
 define('_NEW','Neu');
 define('_NEXT', 'weiter');
+define('_OPEN', 'Öffnen');
 define('_PREVIOUS', 'zurück');
 define('_REMOVE', 'entfernen');
 define('_RESET', 'Reset');
+define('_SAVE', 'Speichern');
 define('_SEARCH', 'Suchen');
+define('_STATE','Status');
 define('_SUBMIT','Abschicken');
 define('_UPDATE', 'Aktualisieren');
 define('_VIEW', 'Ansicht');
@@ -118,12 +129,20 @@ define('_ID', 'ID');
 define('_LANGUAGE', 'Sprache');
 define('_META', 'Metadata');
 define('_NAME', 'Name');
+define('_OPTIONAL', 'Optional');
 define('_OPTIONS', 'Optionen');
 define('_PASSWORD', 'Kennwort');
+define('_REQUIRED', 'Notwendig');
+define('_TITLE', 'Titel');
+define('_USERID', 'Benutzer ID');
+define('_USERNAME' ,'Benutzername');
+define('_VALUE', 'Wert');
+
+// permalinks system
+define('_PERMALINKS', 'Permalinks');
 define('_PERMALINKTITLE', 'URL (für Permalinks)');
 define('_PERMALINKTITLEBLANK', 'Leer lassen für automatischen Permalink Titel');
-define('_TITLE', 'Titel');
-define('_USERNAME' ,'Benutzername');
+define('_ADDCATEGORYTITLETOPERMALINK', 'Kategorietitel zum Permalink hinzufügen');
 
 // member descriptors
 define('_GUEST','Gast');
@@ -140,10 +159,17 @@ define('_OFFLINE','offline');
 // common postnuke terms
 define('_BLOCK' ,'Block');
 define('_BLOCKS' ,'Blöcke');
+define('_CUSTOMARGS', 'Benutzderfinierte Argument');
+define('_FUNCTIONTYPE', 'Funktionstyp');
+define('_FUNCTIONTYPES', 'Funktionstyp(en)');
+define('_FUNCTION', 'Funktion');
+define('_FUNCTIONS', 'Funktionen');
 define('_HOOK', 'Hook');
 define('_HOOKS', 'Hooks');
+define('_LEGACY', 'Legacy');
 define('_MODULE', 'Modul');
 define('_MODULES', 'Module');
+define('_PARAMETERS', 'Parameter');
 define('_PLUGIN', 'Plugin');
 define('_PLUGINS', 'Plugins');
 define('_TEMPLATE', 'Template');
@@ -153,29 +179,38 @@ define('_THEMES', 'Themes');
 
 // other common terms
 define('_DIRECTORY', 'Directory');
+define('_POWEREDBY', 'Powered by <a title="PostNuke Application Framework" href="http://www.postnuke.com">PostNuke</a>');
 define('_VERSION', 'Version');
 
 // module system
 define('_BADAUTHKEY', 'Ungültiger Authkey:  Mögliche Fehlerquellen: Navigation via Browser-Back oder aber der "Authkey" ist abgelaufen. Bitte die Seite neu laden und erneut probieren.');
 define('_CANCELDELETE', 'Löschen abbrechen');
+define('_CANCELEDIT', 'Bearbeiten abbrechen');
 define('_CONFIGUPDATED', 'Modulkonfiguration aktualisiert');
 define('_CONFIGUPDATEFAILED', 'Modulkonfiguration konnte nicht aktualisiert werden');
 define('_CONFIRMDELETE', 'Löschen bestätigen');
 define('_CONFIRMDELETEITEM', 'Löschen bestätigen von: %i%');
 define('_CREATEDBY', 'Angelegt von');
+define('_CREATEDBYON', 'Angelegt von %username% am %date%');
 define('_CREATEDON', 'Angelegt am');
 define('_CREATEITEM', '%i% anlegen');
 define('_CREATEFAILED','Fehler! Anlegen fehlgeschlagen');
 define('_CREATEINDEXFAILED', 'Fehler! Index konnte nicht angelegt werden');
+define('_CREATEITEMSUCCEDED','%i% angelegt.');
 define('_CREATESUCCEDED','Eintrag angelegt');
 define('_CREATETABLEFAILED','Fehler! Tabelle konnte nicht angelegt werden');
 define('_DELETEITEM', '%i% löschen');
 define('_DELETEFAILED','Fehler! Eintrag konnte nicht gelöscht werden');
-define('_DELETESUCCEDED','Eintrag gelöscht');
+define('_DELETEITEMSUCCEDED','%i% gelöscht.');
+define('_DELETESUCCEDED','Eintrag gelöscht.');
 define('_DELETETABLEFAILED','Fehler! Tabelle konnte nicht gelöscht werden');
+define('_DROPCOLUMNFAILED', 'Fehler! Feld konnte nicht gelöscht werden');
+define('_DROPINDEXFAILED', 'Fehler! Der Index konnte nicht gelöscht werden');
 define('_FAILEDTOLOADMODULE', 'Modul <strong>%m%<strong> konnte nicht geladen werden');
 define('_FAILEDTOLOADMODULEATFUNC', 'Modul <strong>%m%</strong> konnte nicht geladen werden (Funktion: <strong>%f%</strong>)');
 define('_GETFAILED', 'Fehler! Eintrag konnte nicht geladen werden');
+define('_GETITEMSFAILED', 'Fehler! %i% konnte nicht geladen werden');
+define('_GENERALSETTINGS', 'Allgemeine Einstellungen');
 define('_LOADAPIFAILED', 'Fehler! Beim Laden der API ist ein Problem aufgetreten');
 define('_LOADFAILED','Fehler! Beim Laden des Moduls ist ein Fehler aufgetreten');
 define('_MODARGSERROR','Fehler! Variablen wurden von der API Funktion nicht akzeptiert');
@@ -185,20 +220,31 @@ define('_MODULENOAUTH', 'Fehler! Keine Berechtigung für das Modul');
 define('_MODULENODIRECTACCESS', 'Fehler! Das Modul kann nicht direkt aufgerufen werden');
 define('_MODULENOTAVAILABLE', 'Modul <strong>%m%</strong> nicht verfügbar');
 define('_MODULERETURNED', 'Funktion <strong>%f%</strong> im Modul <strong>%m%</strong> abgeschlossen.');
+define('_MUSTBENUMERIC', 'Die \'%s%\' Einstellung muss numerisch sein.');
 define('_NEWITEM', 'Neu %i%');
+define('_NOITEMSFOUND', 'Keine Einträge gefunden');
+define('_NOFOUND', 'Kein %i% gefunden');
 define('_NOSUCHITEM', 'Keine entsprechenden Einträge');
-define('_NOSUCH', 'Kein %i%');
+define('_NOSUCHITEMFOUND', 'Kein %i%');
 define('_REGISTERFAILED', 'Fehler! Hook konnte nicht registriert werden');
+define('_RENAMECOLUMNFAILED', 'Fehler! Feld konnte nicht umbenannt werden');
+define('_RENAMETABLEFAILED', 'Fehler! Tabelle konnte nicht umbenannt werden');
+define('_SEARCHITEMS', 'Suche nach %i%');
+define('_SEARCHRESULTSFOUND', '%x% Ergebnis(se) gefunden.');
+define('_SEARCHRESULTSNOITEMSFOUND', 'Kein %i% gefunden.');
 define('_TEMPLATENOTAVAILABLE', 'Template <strong>%t%</strong> für Modul <strong>%m%</strong> nicht gefunden');
 define('_TRANSACTIONFAILED', 'Transaction fehlgeschlagen ... Rollback erfolgt!<br />');
 define('_UNKNOWNFUNC', 'Fehler: Unbekannte Funktion');
+define('_UNKNOWNUSER', 'unbekannter Benutzer');
 define('_UNREGISTERFAILED', 'Fehler: Hook konnte nicht unregistriert werden');
 define('_UPDATEITEM', 'Aktualisiere %i%');
 define('_UPDATECONFIG', 'Aktualisieren');
 define('_UPDATEDBY', 'Aktualisiert von');
+define('_UPDATEDBYON', 'Aktualisiert von %username% am %date%');
 define('_UPDATEDON', 'Aktualisiert am');
 define('_UPDATEFAILED','Fehler! Aktualisierungsversuch fehlgeschlagen');
 define('_UPDATETABLEFAILED','Fehler! Tabellenaktualisierung fehlgeschlagen');
+define('_UPDATEITEMSUCCEDED','%i% aktualisiert');
 define('_UPDATESUCCEDED','Eintrag aktualisiert');
 define('_VIEWCONFIG', 'Konfiguration anzeigen');
 define('_VIEWITEMS', 'Zeige %i%');
@@ -219,15 +265,23 @@ define('_NEXTPAGE_TITLE', 'Nächste Seite');
 define('_NONEXTPAGE', 'Keine weiteren Seiten');
 define('_NOPREVIOUSPAGE', 'Keine vorherige Seiten');
 define('_PAGE', 'Seite');
+define('_PERPAGE', '%i% pro Seite');
 define('_TOTAL', 'Insgesamt');
+
+// defines for other pnRender/Theme plugns
+define('_ALLOWEDHTML', 'Erlaubte HTML Tags');
 
 // WorkflowUtil
 define('_PNWF_STATEERROR', 'Workflow Statusfehler');
 
 // Form utilities
 define('_PNFORM_MANDATORYERROR', 'Bitte dieses Feld ausfüllen');
+define('_PNFORM_MANDATORYSELECTERROR', 'Bitte etwas auswählen');
 define('_PNFORM_MAXLENGTHERROR', 'Text darf maximal %s Zeichen lang sein');
 define('_PNFORM_SELECTDATE', 'Datum wählen');
+define('_PNFORM_RANGEERROR', 'Der Wert ist nicht im gültigen Bereich');
+define('_PNFORM_RANGEMINERROR', 'Der Wert muss größer oder gleich %i% sein');
+define('_PNFORM_RANGEMAXERROR', 'Der Wert muss kleiner oder gleich %i% sein');
 
 // categories system
 define('_ALLCATEGORIES', '-- Alle --');
@@ -236,6 +290,7 @@ define('_CATEGORIES', 'Katgeorien');
 define('_CATEGORIESMAPPINGS', 'Multi-Kategorie Mappings');
 define('_CATEGORIESMAPPINGSCOUNT', 'Anzahl der Multi-Kategorie Mappings');
 define('_CHOOSECATEGORY', '-- wählen --');
+define('_ENABLECATEGORISATION', 'Kategorisierung aktivieren');
 
 // 'templates' for error message
 define('_ERROR_TEXT', '%s [%s]');
@@ -251,5 +306,10 @@ define('_LOGOUTFORCED', 'Es erfolgte eine Abmeldung durch einen Administrator. B
 
 // jscalendar
 define('_DATE_SELECTOR', 'Datum wählen');
+
+// mailer
+define('_ERROR_SENDINGMAIL', 'Beim Senden einer Mail ist ein Fehler aufgetreten');
+define('_ERROR_SENDINGMAIL_ADMINLOG', 'Beim Senden einer Mail von %fromname% (%fromaddress%) an %toname% (%toaddress%) mit dem Betreff \'%subject\' ist ein Fehler aufgetreten: %errorinfo%');
+define('_ERROR_UNKNOWNMAILERERROR', 'unbekannter Fehler beim Mailversand');
 
 ?>
