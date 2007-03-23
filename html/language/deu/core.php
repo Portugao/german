@@ -286,7 +286,7 @@ define('_PNFORM_RANGEMAXERROR', 'Der Wert muss kleiner oder gleich %i% sein');
 // categories system
 define('_ALLCATEGORIES', '-- Alle --');
 define('_CATEGORY', 'Kategorie');
-define('_CATEGORIES', 'Katgeorien');
+define('_CATEGORIES', 'Kategorien');
 define('_CATEGORIESMAPPINGS', 'Multi-Kategorie Mappings');
 define('_CATEGORIESMAPPINGSCOUNT', 'Anzahl der Multi-Kategorie Mappings');
 define('_CHOOSECATEGORY', '-- wählen --');
