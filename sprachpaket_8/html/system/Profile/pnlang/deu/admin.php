@@ -10,86 +10,67 @@
  * @subpackage  PostNuke_Profile
  */
 
-define('_PROFILEDUD','Dynamische Benutzerdaten');
-define('_PROFILENEW','Dynamische Benutzerdaten anlegen');
-define('_PROFILEADD','Dynamische Benutzerdaten hinzufügen');
-define('_PROFILEVIEWDUD','Dynamische Benutzerdaten anzeigen');
-define('_PROFILEEDIT', 'Dynamische Benutzerdaten editieren');
-define('_PROFILEFIELDACTIVE','Aktiv');
-define('_PROFILEFIELDLABEL','Feldname');
-define('_PROFILEFIELDWEIGHT','Geichtung');
-define('_PROFILEFIELDTYPE','Datentyp');
-define('_PROFILEFIELDLENGTH','Länge');
-define('_PROFILEFIELDVALIDATION','Validierungs-Regel');
-define('_PROFILEOPTIONS','Optionen');
-define('_PROFILEITEMSPERPAGE','Einträge pro Seite');
-define('_PROFILEITEMSPERROW','Einträge pro Reihe (Icons)');
-define('_PROFILEUPDATE','Dynamische Benutzerdaten aktualisieren');
-define('_PROFILECREATED','Dynamische Benutzerdaten angelegt');
-define('_PROFILENOSUCHITEM', 'Kein Eintrag in den Dynamischen Benutzerdaten');
-define('_PROFILEADDINSTRUCTIONS', 'Beispiel: _MYINT - entsprechendes Sprachdefine in config/languages/(Sprache)/global.php anlegen');
-define('_PROFILESTRINGINSTRUCTIONS', 'Bei Strings: Längenbereich (1,254)');
-define('_DYNAMICUSETDATANOSUCHITEM', 'Kein Eintrag in den Dynamischen Benutzerdaten');
-define('_PROFILEUPDATEFAILED', 'Dynamische Benutzerdaten konnten nicht aktualisiert werden');
-define('_PROFILECREATEFAILED', 'Dynamische Benutzerdaten konnten nicht angelegt werden');
-define('_PROFILEDELETEFAILED', 'Dynamische Benutzerdaten konnten nicht gelöscht werden');
-define('_PROFILEUPDATED', 'Dynamische Benutzerdaten aktualisiert');
-define('_PROFILEDELETED', 'Dynamische Benutzerdaten gelöscht');
-define('_PROFILEDELETE', 'DUD Werte löschen');
-define('_PROFILECONFIRMDELETE', 'DUD Löschung bestätigen');
-define('_PROFILECANCELDELETE', 'DUD Löschung abbrechen');
-define('_FIELD_DEACTIVATE', 'deaktivieren');
-define('_FIELD_ACTIVATE', 'aktivieren');
-define('_FIELD_REQUIRED', 'Pflichtfeld');
-if (!defined('UDCONST_MANDATORY')) {
-    define('UDCONST_MANDATORY',-1);
-}
-if (!defined('UDCONST_CORE')) {
-    define('UDCONST_CORE', 0);
-}
-if (!defined('UDCONST_STRING')) {
-    define('UDCONST_STRING', 1);
-}
-if (!defined('UDCONST_TEXT')) {
-    define('UDCONST_TEXT', 2);
-}
-if (!defined('UDCONST_FLOAT')) {
-    define('UDCONST_FLOAT', 3);
-}
-if (!defined('UDCONST_INTEGER')) {
-    define('UDCONST_INTEGER', 4);
-}
-define('_UDT_CORE','Core');
-define('_UDT_COREREQUIRED','Core-Pflichtfeld');
-define('_UDT_FLOAT','Float');
-define('_UDT_FLOATREQUIRED','Float-Pflichtfeld');
-define('_UDT_INTEGER','Integer');
-define('_UDT_INTEGERREQUIRED','Integer-Pflichtfeld');
-define('_UDT_MANDATORY','Core-Pflichtfeld');
-define('_UDT_STRING','String');
-define('_UDT_STRINGREQUIRED','String-Pflichtfeld');
-define('_UDT_TEXT','Text');
-define('_UDT_TEXTREQUIRED','Text-Pflichtfeld');
-define('_FIELD_NA','nicht verfügbar');
-define('_PROFILEDISPLAYGRAPHICS', 'Icons auf der Profilseite anzeigen');
-define('_PROFILERREQUIRED', 'Pflichtfeld');
-define('_PROFILEFORADMINONLY', 'nur für Adminstratoren');
-define('_PROFILEVIEWABLEBY', 'Leseberechtiung für');
-define('_PROFILEVIEWBYOPTIONADM', 'nur Admins');
-define('_PROFILEVIEWBYOPTIONUSR', 'nur registrierte Benutzer');
-define('_PROFILEVIEWBYOPTIONALL', 'Jeder');
-define('_PROFILEDISPLAYTYPE', 'Display Typ');
-define('_PROFILELISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');
-define('_PROFILENOTE', 'Hinweis');
-define('_PROFILEVALIDATION', 'Validierung');
-define('_PROFILEFIELDTEXT', 'TEXT');
-define('_PROFILEFIELDTEXTAREA', 'TEXTAREA');
-define('_PROFILEFIELDCHECKBOX', 'CHECKBOX');
-define('_PROFILEFIELDRADIO', 'RADIO');
-define('_PROFILEFIELDSELECT', 'SELECT');
-define('_PROFILEFIELDDATE', 'CALENDAR');
-define('_PROFILEFIELDEXTDATE', 'DATE (Extended)');
-define('_PROFILEFIELDCOMBOTEXT', 'COMBO (Text)');
-define('_PROFILEFIELDCOMBONOTE', 'Combos : id1,item1;id2,item2; - Feldtrennung mit ";" - ID und Label mit ","');
-define('_PROFILEDRAGANDDROPHINT', 'Anordnung via Drag and Drop, die neue Reihenfolge wird sofort gültig.');
+ // general 
+define('_PROFILE__DUD','Dynamische Benutzerdaten');
+
+// singular
+define('_PROFILE_PROPERTIES', 'Eigenschaften');
+define('_PROFILE_PROPERTY', 'Eigenschaft');
+
+// view template
+define('_PROFILE_DRAGANDDROPHINT', 'Anordnung via Drag and Drop, die neue Reihenfolge wird sofort gültig.');
+define('_PROFILE_NA','nicht verfügbar');
+
+// modify config template
+define('_PROFILE_DISPLAYGRAPHICS', 'Icons auf der Profilseite anzeigen');
+define('_PROFILE_ITEMSPERROW','Einträge pro Reihe (Icons)');
+
+// new/modify templates
+define('_PROFILE_ADDINSTRUCTIONS', 'Beispiel: _MYINT - entsprechendes Sprachdefine in config/languages/(Sprache)/global.php anlegen');
+define('_PROFILE_DISPLAYTYPE', 'Display Typ');
+define('_PROFILE_FIELDCOMBONOTE', 'Combos : id1,item1;id2,item2; - Feldtrennung mit ";" - ID und Label mit ","');
+define('_PROFILE_FIELDLABEL','Feldname');
+define('_PROFILE_FIELDLENGTH','Länge');
+define('_PROFILE_FIELDTYPE','Datentyp');
+define('_PROFILE_FIELDVALIDATION','Validierungs-Regel');
+define('_PROFILE_LISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');
+define('_PROFILE_NOTE', 'Hinweis');
+define('_PROFILE_STRINGINSTRUCTIONS', 'Bei Strings: Längenbereich (1,254)');
+define('_PROFILE_VALIDATION', 'Validierung');
+define('_PROFILE_VIEWABLEBY', 'Leseberechtiung für');
+
+// error/status messages
+define('_PROFILE_ACTIVATIONFAILED', 'Fehler! Aktivierung fehlgeschlagen');
+define('_PROFILE_DEACTIVATIONFAILED', 'Fehler! Deaktivierung fehlgeschlagen');
+define('_PROFILE_EMPTYLABEL', 'Fehler! Das Feld muss einen Namen haben, Beipiel: _MYINT');
+define('_PROFILE_LABELEXISTS', 'Fehler! Dieser Feldname existiert bereits');
+
+// viewable by drop down
+define('_PROFILE_VIEWBYOPTIONADM', 'nur Admins');
+define('_PROFILE_VIEWBYOPTIONUSR', 'nur registrierte Benutzer');
+define('_PROFILE_VIEWBYOPTIONALL', 'Jeder');
+
+// field types
+define('_PROFILE_CORE','Core');
+define('_PROFILE_COREREQUIRED','Core-Pflichtfeld');
+define('_PROFILE_FLOAT','Float');
+define('_PROFILE_FLOATREQUIRED','Float-Pflichtfeld');
+define('_PROFILE_INTEGER','Integer');
+define('_PROFILE_INTEGERREQUIRED','Integer-Pflichtfeld');
+define('_PROFILE_MANDATORY','Core-Pflichtfeld');
+define('_PROFILE_STRING','String');
+define('_PROFILE_STRINGREQUIRED','String-Pflichtfeld');
+define('_PROFILE_TEXT','Text');
+define('_PROFILE_TEXTREQUIRED','Text-Pflichtfeld');
+
+// field control types
+define('_PROFILE_FIELDTEXT', 'TEXT');
+define('_PROFILE_FIELDTEXTAREA', 'TEXTAREA');
+define('_PROFILE_FIELDCHECKBOX', 'CHECKBOX');
+define('_PROFILE_FIELDRADIO', 'RADIO');
+define('_PROFILE_FIELDSELECT', 'SELECT');
+define('_PROFILE_FIELDDATE', 'CALENDAR');
+define('_PROFILE_FIELDEXTDATE', 'DATE (Extended)');
+define('_PROFILE_FIELDCOMBOTEXT', 'COMBO (Text)');
+
 ?>

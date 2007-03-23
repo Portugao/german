@@ -10,45 +10,49 @@
  * @subpackage  PostNuke_Mailer
  */
 
+ // general
 define('_PROFILE',                'Profil');
-define('_PROFILEEMPTYMAIL',       'Keine E-Mail-Adresse angegeben');
-define('_PROFILEINVALIDMAIL',     'Ungültige E-Mail-Adresse angegeben');
-define('_PROFILEMAILEXISTS',      'E-Mail-Adresse wird bereits verwendet');
-define('_PROFILELABEL',           'Label');
-define('_PROFILEID',              'Beispieleinträge anzeigen');
-define('_PROFILEMAIN',            'Account');
-define('_PROFILEVIEW',            'Profil-Information anzeigen');
-define('_PROFILEMODIFY',          'Profil-Information modifizieren');
-define('_PROFILEVALUE',           'Wert');
-define('_UANOTE',                 'Anmerkung: ');
-define('_TEST',                   'Testfeld DUD');
-define('_PROFILEITEMFAILED',      'Profil-Wert konnte nicht geladen werden');
 
-define('_PROFILEREQUIRED',        '*');
-define('_PROFILEREQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
-define('_PROFILEREQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
-define('_PROFILESAVEOK',          'Profil-Information gespeichert');
+// main template
+define('_PROFILE_FOR',             'Benutzerprofil für %username%');
+define('_PROFILE_VIEW',            'Profil-Information anzeigen');
 
-define('_PROFILEUNINDENTIFIED',   'Benutzer nicht bekannt');
+// view template
+define('_PROFILE_HOME',            'Zurück zur Site');
+define('_PROFILE_MAIN',            'Account');
+define('_PROFILE_MODIFY',          'Profil-Information modifizieren');
 
-// Legacy constants
-define('_UREALNAME',              'Name');
-define('_UREALEMAIL',             'E-Mail-Adresse');
-define('_UFAKEMAIL',              'Fake-E-Mail-Adresse');
-define('_YOURHOMEPAGE',           'Homepage');
+// modify template
+define('_PROFILE_255CHARMAX',      'maximal 255 Zeichen');
+define('_PROFILE_NOTE',            'Anmerkung: ');
+define('_PROFILE_REQUIREDLABEL',   '*');
+define('_PROFILE_REQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
+define('_PROFILE_REQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
+
+// status/error messages
+define('_PROFILE_EMPTYMAIL',      'Keine E-Mail-Adresse angegeben');
+define('_PROFILE_INVALIDMAIL',     'Ungültige E-Mail-Adresse angegeben');
+define('_PROFILE_MAILEXISTS',      'E-Mail-Adresse wird bereits verwendet');
+define('_PROFILE_SAVEOK',          'Profil-Information gespeichert');
+define('_PROFILE_UNINDENTIFIED',   'Benutzer nicht bekannt');
+define('_PROFILE_WRONGPASS',       'Das Kennwort stimmt nicht überein');
+
+// Property strings
+define('_EXTRAINFO',               'Zusatzinformation');
+define('_SIGNATURE',               'Signatur');
+define('_TEST',                    'Testfeld DUD');
 define('_TIMEZONEOFFSET',         'Zeitzone');
-define('_YOURAVATAR',             'Avatar');
-define('_YICQ',                   'ICQ ID');
+define('_UFAKEMAIL',              'Fake-E-Mail-Adresse');
+define('_UREALEMAIL',             'E-Mail-Adresse');
+define('_UREALNAME',              'Name');
 define('_YAIM',                   'AOL ID');
-define('_YYIM',                   'Yahoo ID');
+define('_YICQ',                   'ICQ ID');
+define('_YINTERESTS',             'Interessen');
 define('_YMSNM',                  'MSN ID');
 define('_YLOCATION',              'Ort');
 define('_YOCCUPATION',            'Beruf');
-define('_YINTERESTS',             'Interessen');
-define('_EXTRAINFO',              'Zusatzinformation');
-define('_SIGNATURE',              'Signatur');
-define('_PROFILEPASSWORD',        'Kennwort');
-define('_OPTIONAL',               'Optional');
-define('_255CHARMAX',             'maximal 255 Zeichen');
-define('_ALLOWEDHTML',            'Freigegebene HTML tags:');
+define('_YOURAVATAR',             'Avatar');
+define('_YOURHOMEPAGE',           'Homepage');
+define('_YYIM',                   'Yahoo ID');
+
 ?>

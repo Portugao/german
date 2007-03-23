@@ -11,8 +11,8 @@
  * @subpackage   Admin
  */
 
-define('_GROUPSMOD_NAME',        'Gruppen');
-define('_GROUPSMOD_DISPLAYNAME', 'Gruppen');
-define('_GROUPSMOD_DESCRIPTION', 'Gruppen bearbeiten');
+define('_GROUPS_NAME',        'Gruppen');
+define('_GROUPS_DISPLAYNAME', 'Gruppen');
+define('_GROUPS_DESCRIPTION', 'Gruppen bearbeiten');
 
 ?>

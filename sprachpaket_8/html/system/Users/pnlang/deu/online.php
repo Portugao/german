@@ -8,12 +8,10 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_CURRENTLY', 'Derzeit sind');
-define('_PRIVATEMSG','private Nachricht.');
-define('_PRIVATEMSGS','private Nachrichten.');
-define('_WHOSONLINE','Wer ist angemeldet');
-define('_YOUAREANON','Noch nicht registriert oder angemeldet - <a href="%u%">Anmeldung</a>.');
-define('_YOUARELOGGED','Angemeldet als');
-define('_YOUHAVE','Es gibt');
+define('_USERS_ONLINEBLOCK_CURRENTLYONLINE', 'Derzeit sind %g% %gs% und %m% %ms% online.');
+define('_USERS_ONLINEBLOCK_PRIVATEMSGS','Sie haben %m% neue Nachricht(en).');
+define('_USERS_ONLINEBLOCK_WHOSONLINE','Wer ist angemeldet');
+define('_USERS_ONLINEBLOCK_YOUAREANON','Noch nicht registriert oder angemeldet - <a href="%u%">Anmeldung</a>.');
+define('_USERS_ONLINEBLOCK_YOUARELOGGED','Angemeldet als <strong>%uname%</strong>.');
 
 ?>

@@ -10,10 +10,10 @@
  * @subpackage  PostNuke_Groups
  */
 
-define('_GROUPSMAILWARNINGADMIN', 'Webmaster');
-define('_GROUPSMAILWARNINGTEXT',  ' hat sich für eine Gruppenmitgliedschaft beworben! Kommentar: ');
-define('_GROUPSMAILWARNINGTITLE', 'Neue Bewerbung für Gruppenmitgliedschaft');
+define('_GROUPS_APPALREADYPENDING', 'Es besteht schon eine Bewerbung');
 
-define('_GROUPSAPPALREADYPENDING', 'Es besteht schon eine Bewerbung');
+define('_GROUPS_MAILWARNINGADMIN', 'Webmaster');
+define('_GROUPS_MAILWARNINGTEXT',  ' hat sich für eine Gruppenmitgliedschaft beworben! Kommentar: ');
+define('_GROUPS_MAILWARNINGTITLE', 'Neue Bewerbung für Gruppenmitgliedschaft');
 
 ?>
