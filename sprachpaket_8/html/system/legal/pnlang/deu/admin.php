@@ -11,13 +11,10 @@
  * @subpackage   legal
  */
 
-define('_LEGAL', 'Allgemeine Nutzungsbedingungen');
-define('_LEGALALLUSERS', 'Alle Benutzer');
-define('_LEGALNOGROUPS', 'Gruppe wählen');
-define('_LEGALTERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
-define('_LEGALPRIVACYPOLICY', 'Hinweise zum Datenschutz');
-define('_LEGALACCESSIBILITYSTATEMENT', 'Hinweise zur Barrierefreiheit');
-define('_LEGALRESETAGREEMENT', 'Zustimmung zu Nutzungsbedingungen zurücksetzen');
-define('_LEGALRESETAGREEMENTHINT', 'Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Mitglieder der entsprechenden Gruppe (außer Hauptadmin) können sich erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden.');
+define('_LEGAL_ALLUSERS', 'Alle Benutzer');
+define('_LEGAL_NOGROUPS', 'Gruppe wählen');
+define('_LEGAL_NOTICE', '<strong>Wichtige Hinweise zur Verwendung</strong>: Die bereitgestellten Nutzungsbedingungen sind nur Beispiele. Sie erfordern eine Anpassung an besondere Anforderungen und den Einsatzort. Sie finden den Inhalt der Bedingungen in Dateien im system/legal/pntemplates/deu/ Verzeichnis. Diese Templates können <a href="http://community.postnuke.com/Wiki-TemplateOverridng.htm">überlagert</a> werden durch Bestandteile des eingesetzten Themes.');
+define('_LEGAL_RESETAGREEMENT', 'Zustimmung zu Nutzungsbedingungen zurücksetzen');
+define('_LEGAL_RESETAGREEMENTHINT', 'Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Mitglieder der entsprechenden Gruppe (außer Hauptadmin) können sich erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden.');
 
 ?>
