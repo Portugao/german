@@ -13,7 +13,7 @@
  // singular/plural
 define('_BLOCKS_BLOCK', 'Block');
 define('_BLOCKS_BLOCKS', 'Blöcke'); 
-define('_BLOCKS_POSITION','Position');
+define('_BLOCKS_BLOCKPOSITION','Position');
 define('_BLOCKS_BLOCKPOSITIONS', 'Positionen');
 
 // menu 
