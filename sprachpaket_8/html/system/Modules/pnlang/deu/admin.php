@@ -26,6 +26,7 @@ define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeit
 define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind werden bei Entfernung des Moduls ebenfalls entfernt.');
 
 // errors, warnings and statuses
+define('_MODULES_MODULEISSTARTMODULE', 'Das Modul kann nicht deaktiviert werden, weil es als Systemstart-Modul eingestellt ist.');
 define('_MODULES_ACTIVATED', 'Modul aktiviert');
 define('_MODULES_BLOCKSEXIST', 'Modul kann nicht entfernt werden weil noch zugehörige Blöcke aktiv sind.');
 define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiederruflich ALLE Daten des Moduls und der zugeordneten Hooks!');
@@ -43,17 +44,23 @@ define('_MODULES_REGENERATED', 'Modul-Liste mit Dateisystem abgeglichen');
 define('_MODULES_REMOVED', 'Modul entfernt');
 define('_MODULES_UPDATEDINFORMATION', 'Modul-Information aktualisiert');
 
+define('_MODULES_ERRORS', 'Die Modulliste konnte nicht neu erzeugt werden');
+define('_MODULES_ERRORS_EXPLAIN', 'Die Modulliste konnte nicht neu erzeugt werden, da die folgenden Fehler im Dateisystem gefunden wurden. Bevor Sie fortfahren, müssen diese beseitigt werden.');
+define('_MODULES_ERRORS_MODULENAMES', 'Die folgende Tabelle zeigt eine Liste der Modulnamen, die scheinbar in mehr als einem Verzeichnis auftauchen. Sie müssen eines davon löschen.');
+define('_MODULES_ERRORS_DISPLAYNAMES', 'Die folgende Tabelle zeigt eine Liste der Anzeigenamen von Modulen, die scheinbar in mehr als einem Verzeichnis auftauchen. Sie müssen eines davon löschen.');
+
 // interface components
 define('_MODULES_ADMIN', 'Zur Administration');
 define('_MODULES_CONFIRMINITIALISE', 'Initialisierung bestätigen');
 define('_MODULES_DELETE', 'Modul entfernen');
-define('_MODULES_DISPNAME', 'Displayname');
+define('_MODULES_DISPNAME', 'Anzeigename');
 define('_MODULES_GENERATE', 'Modul-Liste neu generieren');
 define('_MODULES_INITIALISE', 'Installieren');
 define('_MODULES_FILTERBYSTATE', 'Filter auf Status');
 define('_MODULES_INVALID', 'ungültig');
 define('_MODULES_LOADLEGACY', 'Legacy-Unterstützung für Module');
 define('_MODULES_MODIFY', 'Modul modifizieren');
+define('_MODULES_NAME', 'Modulname');
 define('_MODULES_NEWDESCRIPTION', 'Neue Beschreibung');
 define('_MODULES_NEWNAME', 'Neuer Name');
 define('_MODULES_REGENERATE', 'Liste mit Dateisystem abgleichen');

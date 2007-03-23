@@ -10,39 +10,52 @@
  * @subpackage  PostNuke_Mailer
  */
 
+// general 
 define('_MAILER','Mailer');
-define('_MAILERTESTCONFIG', 'Konfiguration testen');
-define('_MAILERUPDATECONFIG', 'Konfiguration aktualisieren');
-define('_MAILERTRANSPORT', 'Mail-Transport');
-define('_MAILERPHPMAIL', 'PHP mail()');
-define('_MAILERSENDMAIL', 'Sendmail');
-define('_MAILERQMAIL', 'QMail');
-define('_MAILERSMTPMAIL', 'SMTP');
-define('_MAILERCHARSET', 'Characterset (Default: iso-8859-1)');
-define('_MAILERENCODING', 'Encoding (Default: 8-bit)');
-define('_MAILERCONTENTTYPE', 'E-Mails HTML-kodiert senden');
-define('_MAILERWORDWRAP', 'Zeilenlänge (Default: 50 Zeichen)');
-define('_MAILERMSMAILHEADERS', 'Microsoft Mailclient Header setzen');
-define('_MAILERSENDMAILPATH', 'Sendmail Path');
-define('_MAILERSMTPSERVER','SMTP Server (Default: localhost)');
-define('_MAILERSMTPPORT','SMTP Port (default: 25)');
-define('_MAILERSMTPTIMEOUT', 'SMTP timeout (Sekunden, Default: 10)');
-define('_MAILERSMTPAUTH', 'SMTP Authentifizierung');
-define('_MAILERSMTPUSERNAME', 'SMTP username');
-define('_MAILERSMTPPASSWORD', 'SMTP password');
-define('_MAILERFROMADDRESS', 'Absender E-Mail');
-define('_MAILERFROMNAME', 'Absender Name');
-define('_MAILERTOADDRESS', 'Empfänger E-Mail');
-define('_MAILERSUBJECT', 'Thema');
-define('_MAILERHTML', 'HTML-formatiert');
-define('_MAILERTONAME', 'Empfänger Name');
-define('_MAILERBODY', 'Nachricht');
-define('_MAILERMESSAGESENT', 'Nachricht gesendet');
-define('_MAILERMESSAGENOTSENT', 'Nachricht nicht gesendet');
-define('_MAILERADMIN', 'Administrator');
-define('_MAILERPNMAIL', 'Nachricht via pnMail-API senden');
-define('_MAILERGENERALSETTINGS', 'Grundeinstellungen');
-define('_MAILERSENDMAILSETTINGS', 'SendMail Einstellungen');
-define('_MAILERSMTPSETTINGS', 'SMTP Einstellungen');
+
+// navigation
+define('_MAILER_TESTCONFIG', 'Konfiguration testen');
+
+// modify config
+define('_MAILER_CHARSET', 'Characterset (Default: iso-8859-1)');
+define('_MAILER_CONTENTTYPE', 'E-Mails HTML-kodiert senden');
+define('_MAILER_ENCODING', 'Encoding (Default: 8-bit)');
+define('_MAILER_GENERALSETTINGS', 'Grundeinstellungen');
+define('_MAILER_MSMAILHEADERS', 'Microsoft Mailclient Header setzen');
+define('_MAILER_SENDMAILSETTINGS', 'SendMail Einstellungen');
+define('_MAILER_TRANSPORT', 'Mail-Transport');
+define('_MAILER_WORDWRAP', 'Zeilenlänge (Default: 50 Zeichen)');
+
+// send mail settings
+define('_MAILER_SENDMAIL', 'Sendmail');
+define('_MAILER_SENDMAILPATH', 'Sendmail Path');
+
+// smtp settings
+define('_MAILER_SMTPAUTH', 'SMTP Authentifizierung');
+define('_MAILER_SMTPMAIL', 'SMTP');
+define('_MAILER_SMTPPASSWORD', 'SMTP password');
+define('_MAILER_SMTPPORT','SMTP Port (default: 25)');
+define('_MAILER_SMTPSERVER','SMTP Server (Default: localhost)');
+define('_MAILER_SMTPSETTINGS', 'SMTP Einstellungen');
+define('_MAILER_SMTPTIMEOUT', 'SMTP timeout (Sekunden, Default: 10)');
+define('_MAILER_SMTPUSERNAME', 'SMTP username');
+
+// other mail transports
+define('_MAILER_PHPMAIL', 'PHP mail()');
+define('_MAILER_QMAIL', 'QMail');
+
+// test configuration
+define('_MAILER_HTML', 'HTML-formatiert');
+define('_MAILER_BODY', 'Nachricht');
+define('_MAILER_FROMADDRESS', 'Absender E-Mail');
+define('_MAILER_FROMNAME', 'Absender Name');
+define('_MAILER_PNMAIL', 'Nachricht via pnMail-API senden');
+define('_MAILER_SUBJECT', 'Betreff');
+define('_MAILER_TOADDRESS', 'Empfänger E-Mail');
+define('_MAILER_TONAME', 'Empfänger Name');
+
+// errors/statuses
+define('_MAILER_MESSAGESENT', 'Nachricht gesendet');
+define('_MAILER_MESSAGENOTSENT', 'Nachricht nicht gesendet');
 
 ?>
