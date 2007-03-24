@@ -10,7 +10,7 @@
  */
 
 // general
-define('_SECURITYCENTER_','Security Center');
+define('_SECURITYCENTER','Security Center');
 
 // singular/plural
 define('_SECURITYCENTER_HACKATTEMPT', 'Angriffsversuch');
