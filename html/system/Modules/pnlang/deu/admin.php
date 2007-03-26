@@ -21,6 +21,7 @@ define('_MODULES_DEPENDENCYSTATE', 'Level');
 define('_MODULES_DEPENDENCY_NOTFOUND', 'Nicht im System gefunden');
 define('_MODULES_DEPENDENCY_NOTFOUNDREGENERATE', 'Sicherstellen, dass das Modul im System verfügbar ist (und die Liste regeneriert wird!)');
 define('_MODULES_DEPENDENCY_REQUIRED', 'notwendig');
+define('_MODULES_DEPENDENCY_OPTIONAL', 'optional');
 define('_MODULES_DEPENDENCY_RECOMMENDED', 'empfohlen');
 define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeitigen System nicht erfüllt werden.');
 define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind werden bei Entfernung des Moduls ebenfalls entfernt.');
