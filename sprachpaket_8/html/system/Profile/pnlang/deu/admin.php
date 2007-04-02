@@ -34,7 +34,6 @@ define('_PROFILE_FIELDLENGTH','Länge');
 define('_PROFILE_FIELDTYPE','Datentyp');
 define('_PROFILE_FIELDVALIDATION','Validierungs-Regel');
 define('_PROFILE_LISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');
-define('_PROFILE_NOTE', 'Hinweis');
 define('_PROFILE_STRINGINSTRUCTIONS', 'Bei Strings: Längenbereich (1,254)');
 define('_PROFILE_VALIDATION', 'Validierung');
 define('_PROFILE_VIEWABLEBY', 'Leseberechtiung für');

@@ -89,10 +89,12 @@ define('_SETTINGS_REFERERONPRINT','Referrer auf der Druckansicht prüfen');
 
 define('_SETTINGS_SECHIGH','Hoch (Benutzer müssen sich bei jedem Besuch anmelden)');
 define('_SETTINGS_SECINACTIVELENGTH','Benutzer werden inaktiv nach');
+define('_SETTINGS_SECINACTIVETXT','Minuten ohne Aktivität');
 define('_SETTINGS_SECLEVEL','Sicherheitsstufe');
 define('_SETTINGS_SECLOW','Niedrig (Benutzer bleiben dauerhaft angemeldet)');
 define('_SETTINGS_SECMEDIUM','Mittel (Benutzer bleiben für eine definierte Tageszahl angemeldet)');
 define('_SETTINGS_SECMEDLENGTH','Bei mittlerer Sicherheitsstufe bleiben Benutzer angemeldet für');
+define('_SETTINGS_SECMEDTXT','Tagen (bei aktivierter Erinnerung)');
 define('_SETTINGS_SECOPT','Sicherheit');
 define('_SETTINGS_SELLANGUAGE','Default Sprache für diese Webseite');
 define('_SETTINGS_SESSIONIPCHECK', 'IP Check für Session (eventuell Probleme mit AOL Benutzern)');

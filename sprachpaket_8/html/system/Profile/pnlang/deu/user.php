@@ -24,7 +24,6 @@ define('_PROFILE_MODIFY',          'Profil-Information modifizieren');
 
 // modify template
 define('_PROFILE_255CHARMAX',      'maximal 255 Zeichen');
-define('_PROFILE_NOTE',            'Anmerkung: ');
 define('_PROFILE_REQUIREDLABEL',   '*');
 define('_PROFILE_REQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
 define('_PROFILE_REQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
