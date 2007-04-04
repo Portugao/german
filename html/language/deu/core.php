@@ -69,6 +69,8 @@ define('_YES','Ja');
 // on/off states
 define('_ONOFF_ON','Ein');
 define('_ONOFF_OFF', 'Aus');
+define('_OFF_UC','Aus');
+define('_ON_UC','Ein');
 
 // standard permissions levels
 define('_ACCESS_ADD','Hinzufügen');
