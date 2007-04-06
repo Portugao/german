@@ -10,29 +10,29 @@
  * @subpackage Members_List
  */
 
-define('_MEMBERSLISTCURRENTONLINE','Benutzer online');
-define('_MEMBERSLISTLAST10REG','Letzte 10 registrierte Benutzer');
-define('_MEMBERSLISTAVATAR','Avatar');
-define('_MEMBERSLISTNICKNAME','Nickname');
-define('_MEMBERSLISTREALNAME','realer Name');
-define('_MEMBERSLISTREGDATE', 'Registrierdatum');
-define('_MEMBERSLISTURL','URL');
-define('_MEMBERSLISTNEWESTUSER','Neuester BEnutzer');
-define('_MEMBERSLISTONLINE','Online');
-define('_MEMBERSLISTREG','Registriert');
-define('_MEMBERSLISTNEXTPAGE','Nächste Seite');
-define('_MEMBERSLISTNOMEMBERS','Keine Mitglieder gefunden für');
-define('_MEMBERSLISTONLINESTATUS','Status');
-define('_MEMBERSLISTOTHER','Andere / Unbekannt');
-define('_MEMBERSLISTPAGES','Seiten');
-define('_MEMBERSLISTPM','PN');
-define('_MEMBERSLISTSENDPM','Private Nachricht senden');
-define('_MEMBERSLISTSTATUSOFFLINE','Offline');
-define('_MEMBERSLISTSTATUSONLINE','Online');
-define('_MEMBERSLISTUSERSFOUND','Benutzer gefunden für');
-define('_MEMBERSLISTUSERSSHOWN','Benutzer angezeigt');
-define('_MEMBERSLISTVIEW', 'Members List');
+define('_MEMBERSLIST_CURRENTONLINE','Benutzer online');
+define('_MEMBERSLIST_LASTXREG','Letzte registrierte Benutzer');
+define('_MEMBERSLIST_AVATAR','Avatar');
+define('_MEMBERSLIST_NICKNAME','Nickname');
+define('_MEMBERSLIST_REALNAME','realer Name');
+define('_MEMBERSLIST_REGDATE', 'Registrierdatum');
+define('_MEMBERSLIST_URL','URL');
+define('_MEMBERSLIST_NEWESTUSER','Neuester Benutzer');
+define('_MEMBERSLIST_ONLINE','Online');
+define('_MEMBERSLIST_REG','Registriert');
+define('_MEMBERSLIST_NEXTPAGE','Nächste Seite');
+define('_MEMBERSLIST_NOMEMBERS','Keine Mitglieder gefunden für');
+define('_MEMBERSLIST_ONLINESTATUS','Status');
+define('_MEMBERSLIST_OTHER','Andere / Unbekannt');
+define('_MEMBERSLIST_PAGES','Seiten');
+define('_MEMBERSLIST_PM','PN');
+define('_MEMBERSLIST_SENDPM','Private Nachricht senden');
+define('_MEMBERSLIST_STATUSOFFLINE','Offline');
+define('_MEMBERSLIST_STATUSONLINE','Online');
+define('_MEMBERSLIST_USERSFOUND','Benutzer gefunden für');
+define('_MEMBERSLIST_USERSSHOWN','Benutzer angezeigt');
+define('_MEMBERSLIST_VIEW', 'Members List');
 define('_MEMBERSLIST', 'Members List');
-define('_MEMBERSLISTSUMMARY', 'Übersicht Mitgliedschaft');
+define('_MEMBERSLIST_SUMMARY', 'Übersicht Mitgliedschaft');
 
 ?>

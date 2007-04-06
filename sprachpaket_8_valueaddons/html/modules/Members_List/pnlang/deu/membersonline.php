@@ -12,15 +12,16 @@
 
 // Ported from : i-Block [Members Online 2.5] - MagicX - Portalzine.de
 
-define('_MBLISTBLOCK_BLOCKNAME',    'Members Online');
-define('_MBLISTBLOCK_BLOCKDESC',    'Members Online anzeigen');
+define('_MEMBERSLIST_MEMBERSONLINE_BLOCKNAME',    'Mitglieder Online');
+define('_MEMBERSLIST_MEMBERSONLINE_BLOCKDESC',    'Mitglieder Online anzeigen');
 
-define('_MBLISTBLOCK_MAXCHARS',     'Anzahl Buchstaben max.');
+define('_MEMBERSLIST_MAXCHARS',     'Anzahl Buchstaben max.');
 
-define('_MBLISTBLOCK_ONLINECOUNT1', 'Es sind');
-define('_MBLISTBLOCK_ONLINECOUNT2', ' %a% unregistrierte Benutzer und');
-define('_MBLISTBLOCK_ONLINECOUNT3', ' %u% registrierte Benutzer online.');
-define('_MBLISTBLOCK_YOURMESSAGES', 'Deine Nachrichten');
-define('_MBLISTBLOCK_PM',           'PN');
+define('_MEMBERSLIST_ONLINECOUNT1', 'Es sind %a% unregistrierte Benutzer und %u% registrierte Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT2', 'Es sind %a% unregistrierter Benutzer und %u% registrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT3', 'Es sind %a% unregistrierter Benutzer und %u% registrierte Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT4', 'Es sind %a% unregistrierte Benutzer und %u% registrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT5', 'Es ist %u% unregistrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT6', 'Es sind %u% registrierte Benutzer online.');
 
 ?>
