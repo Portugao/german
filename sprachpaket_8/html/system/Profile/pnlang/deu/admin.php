@@ -11,7 +11,7 @@
  */
 
  // general 
-define('_PROFILE__DUD','Dynamische Benutzerdaten');
+define('_PROFILE_DUD','Dynamische Benutzerdaten');
 
 // singular
 define('_PROFILE_PROPERTIES', 'Eigenschaften');
