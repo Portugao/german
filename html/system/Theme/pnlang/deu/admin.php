@@ -34,7 +34,7 @@ define('_THEME_COULDNOTINCLUDE', 'Theme Versionsdatei konnte nicht eingebunden w
 define('_THEME_DEFAULTCHANGED', 'Standard Theme geändert');
 define('_THEME_FAILEDTOOPENFILEFORWRITING', 'Datei konnte nicht zum schreiben geöffnet werden');
 define('_THEME_FAILEDTOWRITETOFILE', 'Datei konnte nicht beschrieben werden');
-define('_THEMES_REGENERATED', 'Themeliste neu eingelesen');
+define('_THEME_REGENERATED', 'Themeliste neu eingelesen');
 define('_THEME_SETTINGSUPDATED', 'Einstellugen aktualisiert');
 define('_THEME_THEMEDIRMUSTBEWRITABLE', 'Theme-Verzeichnis muss beschreibbar sein');
 define('_THEME_UNDEFINEDBLOCKPOSITIONS', '<p>Die folgenden Blockpositionen in der Seitenkonfiguration sind nicht im Block-Modul eingerichtet</p>%p%<p>Zum Anlegen Blockposition anklicken.</p>');
