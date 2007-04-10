@@ -13,6 +13,6 @@
 
 define('_ADMINMESSAGES_NAME',        'Admin-Nachrichten');
 define('_ADMINMESSAGES_DISPLAYNAME', 'Admin-Nachrichten');
-define('_ADMINMESSAGES_DESCRIPTION', 'Admin-Nachrichten für bestimmte Gruppen anzeigen.');
+define('_ADMINMESSAGES_DESCRIPTION', 'Stellt ein System zur Verfügung, dass automatisierte und termingesteuerte Nachrichten des Administrators anzeigt.');
 
 ?>

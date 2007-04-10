@@ -65,6 +65,7 @@ define('_CATEGORIES_EDITCAT_INVALID',         'Ungültige Kategorie kann nicht ed
 define('_CATEGORIES_EDITCAT_NOT_VALUEPARENT', 'Angegebene Kategorie ist keine übergeordnete Werte-Kategorie');
 define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Tochter-Kateogorie von docroot');
 define('_CATEGORIES_ROOT_CANT_EDIT',          'Das root Verzeichnis kann nicht im User-Modus editiert werden');
+define('_CATEGORIES_NAME_EMPTY',              'Name darf nicht leer sein');
 define('_CATEGORIES_VALUE_EMPTY',             'Wert darf nicht leer sein');
 
 ?>

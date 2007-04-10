@@ -10,6 +10,10 @@
  * @subpackage Blocks
  */
 
+// help texts
+define('_BLOCKS_ADMINHINT1', 'Dies ist eine Liste aller im System befindlichen Blöcke (abhängig von der Option  \'Alle Blöcke zeigen\' oder \'Aktive Blöcke zeigen\' im oberen Abschnitt dieser Seite. Diese Liste stellt nicht die Sortierung innerhalb der Blockpositionen dar. Um diese einzustellen, scrollen Sie weiter nach unten (oder <a href="#blockpositions">klicken Sie hier</a>) und beabreiten Sie dann eine Blockposition.');
+define('_BLOCKS_ADMINHINT2', 'Diese Liste zeigt alle erstellten Blockpositionen. Um eine Blockposition zu bearbeiten oder die Sortierung der Blöcke innerhalb eine Blockposition zu ändern, klicken Sie auf das Icon zur Bearbeitung.');
+
  // singular/plural
 define('_BLOCKS_BLOCK', 'Block');
 define('_BLOCKS_BLOCKS', 'Blöcke'); 
@@ -31,6 +35,8 @@ define('_BLOCKS_FUNCTIONFILTERING', 'Im folgenden kann die Blockanzeige auf best
 define('_BLOCKS_PLACEMENT', 'Filterung nach Platzierung');
 define('_BLOCKS_POSITIONS','Position(en)');
 define('_BLOCKS_REFRESH','Cache-Intervall (nur für Blöcke die externe Inhalte einbinden)');
+define('_BLOCKS_CLICKTOACTIVATE', 'klicken, um den Block zu aktivieren');
+define('_BLOCKS_CLICKTODEACTIVATE', 'klicken, um den Block zu deaktivieren');
 
 // new/modify position 
 define('_BLOCKS_ASSIGNEDBLOCKS', 'Dieser Poition zugewiesene Blöcke');

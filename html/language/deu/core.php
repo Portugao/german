@@ -180,9 +180,25 @@ define('_THEME', 'Theme');
 define('_THEMES', 'Themes');
 
 // other common terms
-define('_DIRECTORY', 'Directory');
+define('_DIRECTORY', 'Verzeichnis');
 define('_POWEREDBY', 'Powered by <a title="PostNuke Application Framework" href="http://www.postnuke.com">PostNuke</a>');
 define('_VERSION', 'Version');
+define('_COPYRIGHT', 'Copyright 2007');
+define('_VALIDXHTML', 'Valid XHTML');
+define('_VALIDCSS', 'Valid CSS');
+define('_MOREINFOHERE_LC', 'weitere Informationen hier');
+define('_MOREINFOHERE_UC', 'Weitere Informationen hier');
+define('_PUNC_PERIOD', '.');
+define('_PUNC_COLON', ':');
+define('_PUNC_SEMICOLON', ';');
+define('_PUNC_QUESTIONMARK', '?');
+define('_PUNC_OPENPARENTHESIS','(');
+define('_PUNC_CLOSEPARENTHESIS', ')');
+define('_PUNC_OPENDOUBLEQUOTE', '\"');
+define('_PUNC_CLOSEDOUBLEQUOTE', '\"');
+define('_PUNC_OPENSINGLEQUOTE', '\'');
+define('_PUNC_CLOSESINGLEQUOTE', '\'');
+
 
 // module system
 define('_BADAUTHKEY', 'Ungültiger Authkey:  Mögliche Fehlerquellen: Navigation via Browser-Back oder aber der "Authkey" ist abgelaufen. Bitte die Seite neu laden und erneut probieren.');
@@ -293,9 +309,11 @@ define('_CATEGORIESMAPPINGS', 'Multi-Kategorie Mappings');
 define('_CATEGORIESMAPPINGSCOUNT', 'Anzahl der Multi-Kategorie Mappings');
 define('_CHOOSECATEGORY', '-- wählen --');
 define('_ENABLECATEGORISATION', 'Kategorisierung aktivieren');
+define('_MODULECATEGORY', 'Modulkategorie');
+define('_MODULECATEGORIES', 'Modulkategorien');
+define('_CATEGORIZATION', 'Kategorisierung');
 
 // 'templates' for error message
-define('_ERROR_TEXT', '%s [%s]');
 define('_ERROR_ADMIN', ' in Zeile %d in Datei %s');
 
 // userlinks plugin
