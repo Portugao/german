@@ -107,7 +107,7 @@ define('_USERS_USERSBLOCK', 'Benutzer-Block');
 define('_USERS_USERSBLOCKCONFIG', 'Benutzer-Block konfigurieren');
 define('_USERS_USERBLOCKENABLEHELP', 'Mit dieser Option kann ein individueller Block konfiguriert werden.');
 define('_USERS_USERBLOCKENABLE', 'Benutzer-Block aktivieren');
-define('_USERS_USERBLOCKCONTENTTIP', 'Tipp: Es kann für Links etc. HTML verwendet werden');
+//define('_USERS_USERBLOCKCONTENTTIP', 'Tipp: Es kann für Links etc. HTML verwendet werden');
 define('_USERS_USERBLOCKUPDATED', 'Benutzer-block aktualisiert');
 define('_USERS_USERBLOCKMENUFOR', 'Block für %user%');
 

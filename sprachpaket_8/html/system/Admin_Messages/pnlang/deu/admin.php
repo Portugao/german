@@ -16,6 +16,7 @@ define('_ADMINMESSAGES', 'Administration Admin-Nachrichten');
 // singular/plural
 define('_ADMINMESSAGES_MESSAGE', 'Nachricht');
 define('_ADMINMESSAGES_MESSAGES', 'Nachrichten');
+define('_ADMINMESSAGES_MESSAGE_LC', 'Nachricht');
 
 // new/modify
 define('_ADMINMESSAGES_ACTIVEQ', 'Aktiv');
@@ -34,5 +35,8 @@ define('_ADMINMESSAGES_ALL', 'Alle Besucher');
 define('_ADMINMESSAGES_ADMIN', 'nur Administratoren');
 define('_ADMINMESSAGES_ANON', 'nur Unregistrierte');
 define('_ADMINMESSAGES_USERS', 'nur Angemeldete');
+
+// modify config
+define('_ADMIN_MESSAGES_ALLOWSEARCHINACTIVE', 'Durchsuchen inaktiver Nachrichten erlauben');
 
 ?>

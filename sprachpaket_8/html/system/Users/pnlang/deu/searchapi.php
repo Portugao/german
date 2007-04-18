@@ -11,8 +11,6 @@
 */
 
 define('_USERS_SEARCH', 'Registrierte Benutzer');
-define('_USERS_SEARCHMEMBERS', 'Durchsuche registrierte Benutzer');
-define('_USERS_SEARCHRESULTS', '%u% registrierte Benutzer gefunden');
-define('_USERS_SEACHNONEFOUND', 'Keine registrierten Benutzer gefunden');
+define('_USERS_SEARCHNOEXTRAINFOVIEWPROFILE', 'Der Benutzer hat seine Daten nicht ergänzt. Zur Anzeige des gesamten Benutzerprofils bitte auf den Benutzernamen klicken');
 
 ?>

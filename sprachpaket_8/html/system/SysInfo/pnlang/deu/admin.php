@@ -25,8 +25,14 @@ define('_SYSINFO_DATABASEHOST', 'Datenbank-Host');
 define('_SYSINFO_DATABASENAME', 'Datenbankname');
 define('_SYSINFO_DATABASEDESCRIPTION', 'Datenbank-Server-Beschreibung');
 define('_SYSINFO_DATABASEVERSION', 'Datenbank-Version:');
+define('_SYSINFO_DATABASEVERSIONNOTFOUND', 'Datenbankversion kann nicht ermittelt werden!');
 define('_SYSINFO_DISPLAYNAME', 'Anzeigename');
 
+define('_SYSINFO_EXTADODB', 'Die <a href="http://adodb.sourceforge.net/#extension">ADOdb-Erweiterung</a> bietet bis zu 100% Beschleunigung durch das Ersetzen von Teilen von ADOdb mit C Code');
+define('_SYSINFO_EXTMYSQL', 'PostNuke kann mit dieser Datenbank verwendet werden, wenn diese Erweiterung geladen ist');
+define('_SYSINFO_EXTMYSQLI', 'PostNuke kann mit dieser Datenbank verwendet werden, wenn diese Erweiterung geladen ist');
+define('_SYSINFO_EXTPATCHSUHOSIN', 'Der <a href="http://www.suhosin.org">Suhosin-Patch</a> ist ein weiterentwickelter Schutz für PHP Installationen');
+define('_SYSINFO_EXTSUHOSIN', 'Die <a href="http://www.suhosin.org">Suhosin-Erweiterung</a> ist ein weiterentwickelter Schutz für PHP Installationen');
 define('_SYSINFO_EXTTEXTMOD', 'Liste aller installierten Module mit Versionsangabe.');
 define('_SYSINFO_EXTTEXTTHEME', 'Liste aller installierten Themes mit Versionsangabe.');
 

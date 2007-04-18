@@ -10,12 +10,19 @@
  * @subpackage  PostNuke_Profile
  */
 
- // general 
+// general 
 define('_PROFILE_DUD','Dynamische Benutzerdaten');
+define('_MODIFYACCOUNTPANELCONFIG', 'Konfiguration der dynamische Benutzerdaten');
+define('_NEWPANELCONTROL', 'Dynamische Benutzereigenschaft erstellen');
+define('_ACCOUNTPANELCONTROLSLISTVIEW', 'Liste der dynamischen Benutzerdaten');
+define('_DISPLAYSETTINGS', 'Anzeige');
 
 // singular
 define('_PROFILE_PROPERTIES', 'Eigenschaften');
 define('_PROFILE_PROPERTY', 'Eigenschaft');
+define('_PROFILE_PROPERTY_LC', 'Eigenschaft');
+define('_PROFILE_EXISTINGPROPERTY', 'Bestehende Eigenschaft');
+define('_PROFILE_NEWPROPERTY', 'Neue Eigenschaft');
 
 // view template
 define('_PROFILE_DRAGANDDROPHINT', 'Anordnung via Drag and Drop, die neue Reihenfolge wird sofort gültig.');
@@ -29,8 +36,10 @@ define('_PROFILE_ITEMSPERROW','Einträge pro Reihe (Icons)');
 define('_PROFILE_ADDINSTRUCTIONS', 'Beispiel: _MYINT - entsprechendes Sprachdefine in config/languages/(Sprache)/global.php anlegen');
 define('_PROFILE_DISPLAYTYPE', 'Display Typ');
 define('_PROFILE_FIELDCOMBONOTE', 'Combos : id1,item1;id2,item2; - Feldtrennung mit ";" - ID und Label mit ","');
+define('_PROFILE_FIELDLABEL_FLC','Feldname');
 define('_PROFILE_FIELDLABEL','Feldname');
 define('_PROFILE_FIELDLENGTH','Länge');
+define('_PROFILE_FIELDTYPE_FLC','Datentyp');
 define('_PROFILE_FIELDTYPE','Datentyp');
 define('_PROFILE_FIELDVALIDATION','Validierungs-Regel');
 define('_PROFILE_LISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');

@@ -11,12 +11,23 @@
  */
 
 define('_SEARCH_ALLWORDS','Alle Begriffe [UND]');
+define('_SEARCH_ALPHABETICAL', 'Alphabetisch');
 define('_SEARCH_ANYWORDS','Einzelne Begriffe [ODER]');
+define('_SEARCH_CHECKSPELLING', 'Bitte prüfen, ob alle Worte korrekt geschrieben wurden.');
+define('_SEARCH_CONTENTTYPE', 'Nach Inhaltstypen gruppieren');
 define('_SEARCH_COUNT', 'Anzahl der Suchanfragen');
+define('_SEARCH_DIFFERENTKEYWORDS', 'Versuchen Sie andere Schlüsselbegriffe.');
 define('_SEARCH_ERROREMPTYSTRING', 'Fehler: leerer Ausdruck');
+define('_SEARCH_EXACTPHRASE', 'Exakte Phrase');
+define('_SEARCH_FEWERLKEYWORDS', 'Versuchen Sie es mit weniger Schlüsselbegriffen.');
+define('_SEARCH_MOREGENERALKEYWORDS', 'Versuchen Sie es mit allgemeineren Schlüsselbegriffen.');
 define('_SEARCH_LASTDATE', 'Datum der letzten Suchanfrage');
+define('_SEARCH_NEWEST', 'Neueste zuerst');
 define('_SEARCH_NOPLUGINSFOUND','Fehler! Keine Such-Plugins gefunden');
+define('_SEARCH_NORESULTSREFINESEARCH', 'Die Suchkriterien lieferten kein Ergebnis. Versuchen Sie anhand der folgenden Empfehlungen noch einmal.');
+define('_SEARCH_OLDEST', 'Alteste zuerst');
 define('_SEARCH_OPTIONS', 'Suche nach Typ einschränken');
+define('_SEARCH_ORDER', 'Suchreihenfolge');
 define('_SEARCH_RECENT', 'Aktuelle Suchanfragen');
 define('_SEARCH_RECENTSEARCHES', 'Liste der <a href="%u%">aktuellen Suchanfragen</a> auf dieser Seite anzeigen');
 define('_SEARCH_RESULTCOUNT','Anzahl der Treffer: %count%');
