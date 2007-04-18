@@ -16,8 +16,10 @@ define('_BLOCKS_ADMINHINT2', 'Diese Liste zeigt alle erstellten Blockpositionen.
 
  // singular/plural
 define('_BLOCKS_BLOCK', 'Block');
+define('_BLOCKS_BLOCK_LC', 'Block');
 define('_BLOCKS_BLOCKS', 'Blöcke'); 
 define('_BLOCKS_BLOCKPOSITION','Position');
+define('_BLOCKS_BLOCKPOSITION_LC', 'Position');
 define('_BLOCKS_BLOCKPOSITIONS', 'Positionen');
 
 // menu 

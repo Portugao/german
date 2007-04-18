@@ -44,6 +44,8 @@ define('_ACCEPTLICENCE', 'Lizenz akzeptieren');
 
 // _requirements.htm
 define('_INSTALLERPHP', 'PHP');
+define('_INSTALLERPHPMBSTRINGOK', 'In der PHP-Version ist die "multibyte string" Funktion verfügbar.');
+define('_INSTALLERPHPMBSTRINGNOTOK', 'In der PHP-Version ist die "multibyte string" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung für das PostNuke AJAX System.');
 define('_INSTALLERPHPTOKENOK', 'In der PHP-Version ist die "token" Funktion verfügbar.');
 define('_INSTALLERPHPTOKENNOTOK', 'In der PHP-Version ist die "token" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung.');
 define('_INSTALLERPHPVEROK', 'und erfüllt die Mindestanforderung (4.3.0).');

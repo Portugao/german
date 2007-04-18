@@ -17,13 +17,20 @@ define('_SETTINGS_ADMINGRAPHIC','Icons in Administration');
 define('_SETTINGS_ALLOWEDHTML', 'Erlaubtes HTML');
 define('_SETTINGS_ALLOWUSERS','Benutzern die E-Mail-Adresse zeigen');
 define('_SETTINGS_ANONYMOUSSESSIONS', 'Sessions für Gäste benutzen');
-define('_SETTINGS_AUTHKEY', 'Authkey');
 define('_SETTINGS_AUTHKEYUA', 'Authkey an UserAgent binden');
 
 define('_SETTINGS_BACKENDCONF','Backend Konfiguration');
 define('_SETTINGS_BACKENDLANG','Backend Sprache');
 define('_SETTINGS_BACKENDTITLE','Backend Titel');
 define('_SETTINGS_BASESITECONFIG', 'Basiskonfiguration');
+define('_SETTINGS_BASESITEINFO', 'Owner Info');
+define('_SETTINGS_HTMLENTITIESBOX', 'HTML Entitäten');
+define('_SETTINGS_HTMLALLOWEDBOX', 'HTML Tags');
+define('_SETTINGS_MULTILINGUALBOX', 'Sprachsystem');
+define('_SETTINGS_BROWSERBOX', 'Browser');
+define('_SETTINGS_SERVERBOX', 'Server');
+define('_SETTINGS_SCREENMESSAGESBOX', 'Fehlermeldungen');
+define('_SETTINGS_ERRORLOGGINGBOX', 'Fehler-Log');
 
 define('_SETTINGS_CENSORTEXT','Censor-Modul verwenden');
 
@@ -35,6 +42,7 @@ define('_SETTINGS_ENTRYPOINT', 'Einstiegspunkt für die Seite');
 define('_SETTINGS_ENTRYPOINTDESC', 'Datei über die der Seiteneinstieg erfolgt (Default: index.php)');
 define('_SETTINGS_ERRORDISPLAY','Welche Fehlertypen sollen angezeigt werden?');
 define('_SETTINGS_ERRORHANDLING','Errorhandling');
+define('_SETTINGS_ERRORREPORTINGLEVEL', 'Fehlerberichtsebene');
 define('_SETTINGS_ERRORLOGGING','Welche Fehlertypen sollen geloggt werden?');
 define('_SETTINGS_ERRORLOGTYPE','Typ des Error Logs');
 define('_SETTINGS_ERRORMAILTO','Fehler E-Mail schicken an');
@@ -47,7 +55,7 @@ define('_SETTINGS_GC_RATIO', 'von 10000');
 define('_SETTINGS_GENERAL', 'Grundeinstellungen');
 define('_SETTINGS_GENSITEINFO','Allgemein');
 
-define('_SETTINGS_HTMLALLOWED','erlaubte HTML Tags');
+/* define('_SETTINGS_HTMLALLOWED','erlaubte HTML Tags'); */
 define('_SETTINGS_HTMLALLOWENTITIES','HTML Entitäten in Zeichen wandeln');
 define('_SETTINGS_HTMLOPT','HTML');
 define('_SETTINGS_HTMLTAGABOUT', 'Info "&lt;%t%&gt;"');
@@ -55,15 +63,11 @@ define('_SETTINGS_HTMLTAGALLOWED','erlaubt');
 define('_SETTINGS_HTMLTAGALLOWEDWITHPARAMS','erlaubt mit Parametern');
 define('_SETTINGS_HTMLTAGNAME','Tag');
 define('_SETTINGS_HTMLTAGNOTALLOWED','nicht erlaubt');
-define('_SETTINGS_HTMLTAGUSAGE', 'Tag-Info (aus <a href="http://www.w3schools.com">W3Schools</a>)');
 define('_SETTINGS_HTMLWARNING','HINWEIS: Um das Risiko von Cross-Site-Scripting zu minimieren sollte - insbesondere bei Freigabe von Tags mit Parametern - der safehtml-Outputfilter im SecurityCenter aktiviert werden.');
-
 define('_SETTINGS_INVALIDEMAIL', 'Ungültige E-Mail-Adresse - bitte prüfen');
-
 define('_SETTINGS_JSQUICKTAGS', 'Use JS Quicktags buttons');
 define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags adds a set of buttons for common html tags to enabled textareas. An \'enabled\'
 textarea will have a quicktags template tag in the template. Disable this setting if using a visual editor.');
-
 define('_SETTINGS_KEYEXPIRY', 'Zeitlimit für Authkeys in Sekunden (default 0)');
 
 define('_SETTINGS_LANGDETECTBROWSER','Browser Sprache');
@@ -81,6 +85,7 @@ define('_SETTINGS_MLOPT', 'Multilingual');
 define('_SETTINGS_MLSETTINGS', 'Multilingual Einstellungen');
 
 define('_SETTINGS_OTHERSEC', 'Weitere Sicherheitsoptionen');
+define('_SETTINGS_COOKIES', 'Cookie-Einstellungen');
 
 define('_SETTINGS_PASSBYMAIL','(Benutzern nach Registrierung das Kennwort via E-Mail schicken)');
 define('_SETTINGS_PHPSYSTEMLOG', 'Das PHP System Log (definiert in php.ini) nutzen');
@@ -133,9 +138,6 @@ define('_SETTINGS_SITEOFF', 'Seite deaktivieren');
 define('_SETTINGS_SITEOFFREASON', 'Grund für Deaktivierung');
 define('_SETTINGS_SITESECUREURL','Secure Hostname');
 define('_SETTINGS_SITESECUREURL1','Nur angeben wenn ein anderer Hostname für HTTPS verwendet wird');
-define('_SETTINGS_SITESECUREURL2','Führenden Slash angeben');
-define('_SETTINGS_SITESECUREURL3','z.B.:  secure.yourdomain.com/');
-define('_SETTINGS_SITESECUREURL4','z.B.: secure.host.com/~username/');
 define('_SETTINGS_SITESLOGAN','Beschreibung');
 define('_SETTINGS_STARTARGS', 'Argumente für die Start Function');
 define('_SETTINGS_STARTARGSDESCR', 'kommasepariert (name=value,name2=value2)');

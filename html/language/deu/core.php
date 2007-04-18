@@ -50,7 +50,14 @@ define('_CHARSET','ISO-8859-15');
 define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 
+// common footer defines
+define('_CMSHOMELINK', '<a href="http://www.postnuke.com">PostNuke</a>');
+define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
+define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
+define('_ISPOWEREDBY', 'is powered by');
+
 // common words
+define('_POSTNUKE', 'PostNuke');
 define('_ALL','Alle');
 define('_AND','und');
 define('_BY','von');
@@ -104,6 +111,9 @@ define('_DELETE','Löschen');
 define('_EDIT','Editieren');
 define('_FORWARD', 'weiter');
 define('_HELP', 'Hilfe');
+define('_HELPPAGE', 'Hilfeseite');
+define('_MESSAGESYOUMIGHTSEE', 'Mögliche Meldungen');
+define('_CONFIRMATIONPROMPT', 'Bestätigungsaufforderung');
 define('_IGNORE','Ignorieren');
 define('_INACTIVE','Inaktiv');
 define('_LOGIN','Anmelden');
@@ -118,10 +128,19 @@ define('_REMOVE', 'entfernen');
 define('_RESET', 'Reset');
 define('_SAVE', 'Speichern');
 define('_SEARCH', 'Suchen');
+define('_SEARCHUSERS', 'Benutzer suchen');
 define('_STATE','Status');
 define('_SUBMIT','Abschicken');
 define('_UPDATE', 'Aktualisieren');
 define('_VIEW', 'Ansicht');
+
+//common module names
+define('_WEB_LINKS', 'Weblinks');
+define('_SUBMITNEWS', 'News einreichen');
+define('_DOWNLOADS', 'Downloads');
+define('_SEARCH', 'Suche');
+define('_YOURACCOUNT', 'Profil');
+define('_USERSMANAGER', 'Benutzer');
 
 //common module fields
 define('_CONTENT', 'Inhalt');
@@ -138,7 +157,9 @@ define('_REQUIRED', 'Notwendig');
 define('_TITLE', 'Titel');
 define('_USERID', 'Benutzer ID');
 define('_USERNAME' ,'Benutzername');
+define('_USERNAME_FLC', 'Benutzername');
 define('_VALUE', 'Wert');
+define('_LINKSPERPAGE', 'Links pro Seite');
 
 // permalinks system
 define('_PERMALINKS', 'Permalinks');
@@ -188,6 +209,7 @@ define('_VALIDXHTML', 'Valid XHTML');
 define('_VALIDCSS', 'Valid CSS');
 define('_MOREINFOHERE_LC', 'weitere Informationen hier');
 define('_MOREINFOHERE_UC', 'Weitere Informationen hier');
+define('_PERMITTEDHTMLTAGSREMINDER', '(Optional. Maximal 255 Zeichen. Erlaubte HTML Tags:');
 define('_PUNC_PERIOD', '.');
 define('_PUNC_COLON', ':');
 define('_PUNC_SEMICOLON', ';');
@@ -233,6 +255,7 @@ define('_LOADAPIFAILED', 'Fehler! Beim Laden der API ist ein Problem aufgetreten
 define('_LOADFAILED','Fehler! Beim Laden des Moduls ist ein Fehler aufgetreten');
 define('_MODARGSERROR','Fehler! Variablen wurden von der API Funktion nicht akzeptiert');
 define('_MODIFYCONFIG', 'Konfiguration modifizieren');
+define('_MODIFYCONFIGITEM', '%1% Konfiguration');
 define('_MODIFYITEM', '%i% modifizieren');
 define('_MODULENOAUTH', 'Fehler! Keine Berechtigung für das Modul');
 define('_MODULENODIRECTACCESS', 'Fehler! Das Modul kann nicht direkt aufgerufen werden');
@@ -304,17 +327,19 @@ define('_PNFORM_RANGEMAXERROR', 'Der Wert muss kleiner oder gleich %i% sein');
 // categories system
 define('_ALLCATEGORIES', '-- Alle --');
 define('_CATEGORY', 'Kategorie');
+define('_CATEGORY_LC', 'Kategorie');
 define('_CATEGORIES', 'Kategorien');
 define('_CATEGORIESMAPPINGS', 'Multi-Kategorie Mappings');
 define('_CATEGORIESMAPPINGSCOUNT', 'Anzahl der Multi-Kategorie Mappings');
 define('_CHOOSECATEGORY', '-- wählen --');
 define('_ENABLECATEGORISATION', 'Kategorisierung aktivieren');
 define('_MODULECATEGORY', 'Modulkategorie');
+define('_MODULECATEGORY_LC', 'Modulkategorie');
 define('_MODULECATEGORIES', 'Modulkategorien');
 define('_CATEGORIZATION', 'Kategorisierung');
 
 // 'templates' for error message
-define('_ERROR_ADMIN', ' in Zeile %d in Datei %s');
+define('_ERROR_ADMIN', '%message% %func% in Zeile %line% in Datei %file%.');
 
 // userlinks plugin
 define('_YOURACCOUNT', 'Profil');

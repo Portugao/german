@@ -16,6 +16,7 @@ define('_PERMISSIONS_INSTANCE','Instanz');
 
 // singular/plural
 define('_PERMISSIONS_PERMISSION', 'Zugriffsrecht');
+define('_PERMISSIONS_PERMISSION_LC', 'Zugriffsrecht');
 define('_PERMISSIONS_PERMISSIONS', 'Zugriffsrechte');
 
 // view template

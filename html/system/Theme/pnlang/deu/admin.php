@@ -17,9 +17,11 @@ define('_THEME_ENGINE', 'Xanthia Theme Engine');
 define('_THEME_PAGECONFIGURATION' , 'Seitenkonfiguration');
 define('_THEME_PAGECONFIGURATIONS', 'Seitenkonfigurationen');
 define('_THEME_PAGECONFIGURATIONASSIGNMENT' , 'Seitenkonfiguration Zuordnung');
+define('_THEME_PAGECONFIGURATIONASSIGNMENT_LC', 'Seitenkonfiguration Zuordnung');
 define('_THEME_PAGECONFIGURATIONASSIGNMENTS', 'Seitenkonfiguration Zuordnungen');
 define('_THEME_PALETTE', 'Farbpalette');
 define('_THEME_THEME', 'Theme');
+define('_THEME_THEME_LC', 'Theme');
 define('_THEME_THEMES', 'Themes');
 define('_THEME_VARIABLE', 'Variable');
 
