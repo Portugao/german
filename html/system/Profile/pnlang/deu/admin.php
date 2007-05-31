@@ -41,6 +41,7 @@ define('_PROFILE_FIELDLABEL','Feldname');
 define('_PROFILE_FIELDLENGTH','Länge');
 define('_PROFILE_FIELDTYPE_FLC','Datentyp');
 define('_PROFILE_FIELDTYPE','Datentyp');
+define('_PROFILE_FIELDSTATUS', 'Status');
 define('_PROFILE_FIELDVALIDATION','Validierungs-Regel');
 define('_PROFILE_LISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');
 define('_PROFILE_STRINGINSTRUCTIONS', 'Bei Strings: Längenbereich (1,254)');

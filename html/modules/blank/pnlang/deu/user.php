@@ -8,7 +8,4 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_BLANKMOD_TITLE',   'Leermodul Titel');
-define('_BLANKMOD_CONTENT', 'Leermodul Inhalt');
-
 ?>
