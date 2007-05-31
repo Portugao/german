@@ -52,6 +52,7 @@ define('_LOCALEWIN', 'deu');
 
 // common footer defines
 define('_CMSHOMELINK', '<a href="http://www.postnuke.com">PostNuke</a>');
+define('_POSTNUKED', '<a href="http://www.postnuke.com">PostNuked</a>');
 define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
 define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
 define('_ISPOWEREDBY', 'is powered by');
@@ -92,6 +93,7 @@ define('_ACCESS_READ','Lesen');
 
 // common actions & results
 define('_ACTIONS', 'Aktion');
+define('_ACTION', 'Action');
 define('_ACTIVATE','Aktivieren');
 define('_ACTIVE','Aktiv');
 define('_ACTIVATED', 'aktiviert');
@@ -138,23 +140,24 @@ define('_VIEW', 'Ansicht');
 define('_WEB_LINKS', 'Weblinks');
 define('_SUBMITNEWS', 'News einreichen');
 define('_DOWNLOADS', 'Downloads');
-define('_SEARCH', 'Suche');
-define('_YOURACCOUNT', 'Profil');
 define('_USERSMANAGER', 'Benutzer');
 
 //common module fields
+define('_PROPERTIES', 'Eigenschaften');
 define('_CONTENT', 'Inhalt');
 define('_DESCRIPTION', 'Beschreibung');
 define('_EMAIL' ,'E-Mail-Adresse');
 define('_ID', 'ID');
 define('_LANGUAGE', 'Sprache');
 define('_META', 'Metadata');
+define('_META_FLC', 'Metadata');
 define('_NAME', 'Name');
 define('_OPTIONAL', 'Optional');
 define('_OPTIONS', 'Optionen');
 define('_PASSWORD', 'Kennwort');
 define('_REQUIRED', 'Notwendig');
 define('_TITLE', 'Titel');
+define('_TITLE_FLC', 'Titel');
 define('_USERID', 'Benutzer ID');
 define('_USERNAME' ,'Benutzername');
 define('_USERNAME_FLC', 'Benutzername');
@@ -216,8 +219,8 @@ define('_PUNC_SEMICOLON', ';');
 define('_PUNC_QUESTIONMARK', '?');
 define('_PUNC_OPENPARENTHESIS','(');
 define('_PUNC_CLOSEPARENTHESIS', ')');
-define('_PUNC_OPENDOUBLEQUOTE', '\"');
-define('_PUNC_CLOSEDOUBLEQUOTE', '\"');
+define('_PUNC_OPENDOUBLEQUOTE', '"');
+define('_PUNC_CLOSEDOUBLEQUOTE', '"');
 define('_PUNC_OPENSINGLEQUOTE', '\'');
 define('_PUNC_CLOSESINGLEQUOTE', '\'');
 

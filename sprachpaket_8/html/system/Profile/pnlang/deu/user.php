@@ -12,6 +12,7 @@
 
  // general
 define('_PROFILE',                'Profil');
+define('_PROFILE_ACCOUNTPANEL',    'Profil - Übersicht');
 
 // main template
 define('_PROFILE_FOR',             'Benutzerprofil für %username%');
@@ -21,6 +22,7 @@ define('_PROFILE_VIEW',            'Profil-Information anzeigen');
 define('_PROFILE_HOME',            'Zurück zur Site');
 define('_PROFILE_MAIN',            'Account');
 define('_PROFILE_MODIFY',          'Profil-Information modifizieren');
+define('_PROFILE_YOURINFO',        'Info');
 
 // modify template
 define('_PROFILE_255CHARMAX',      'maximal 255 Zeichen');
@@ -53,5 +55,6 @@ define('_YOCCUPATION',            'Beruf');
 define('_YOURAVATAR',             'Avatar');
 define('_YOURHOMEPAGE',           'Homepage');
 define('_YYIM',                   'Yahoo ID');
+define('_YSKYPE',                 'Skype ID');
 
 ?>

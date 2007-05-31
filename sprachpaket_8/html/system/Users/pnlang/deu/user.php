@@ -33,14 +33,6 @@ define('_USERS_UNDERAGE','Ich bin jünger als %a% Jahre und das Einverständnis de
 define('_USERS_SUBMITREGISTRATION', 'Registrierung senden');
 define('_USERS_ADDITIONALINFO', 'Optionale Informationen');
 define('_USERS_ALLOWEMAILVIEW','E-Mail-Adresse im Profil anzeigen');
-define('_USERS_ASREG1','');
-define('_USERS_ASREG2','');
-define('_USERS_ASREG3','');
-define('_USERS_ASREG4','');
-define('_USERS_ASREG5','');
-define('_USERS_ASREG6','');
-define('_USERS_ASREG7','');
-define('_USERS_ASREGUSER','');
 define('_USERS_COOKIEWARNING','Diese Seite verwendet für die Session-Authentifizierung und teilweise für individuelle Einstellungen Cookies');
 define('_USERS_EMAILAGAIN','E-Mail-Adresse bestätigen');
 define('_USERS_PASSWDAGAIN','Kennwort (Wiederholung)');
@@ -48,8 +40,9 @@ define('_USERS_PASSWILLSEND','Das Kennwort wird an die hinterlegte E-Mail-Adress
 define('_USERS_REGNEWUSER','Benutzer-Registrierung');
 define('_USERS_REGISTRATIONAGREEMENT','Einverständniserklärung zu');
 define('_USERS_REGISTRATIONCHECK', 'Angaben prüfen');
-define('_USERS_REGISTERNOW','Jetzt registrieren!');
-define('_USERS_WEDONTGIVE','Persönliche Daten werden gemäß Bundesdatenschutzgesetz vertraulich behandelt.');
+// define('_USERS_REGISTERNOW','Jetzt registrieren!');
+// define('_USERS_WEDONTGIVE','Persönliche Daten werden gemäß Bundesdatenschutzgesetz vertraulich behandelt.');
+define('_USERS_REQUIREDTEXT','Mit (*) markierte Angaben sind erforderlich.');
 
 // terms of use (tied to the legal module
 define('_USERS_CONFIRMTERMSOFUSEHINT', 'Die Allgemeinen Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Allgemeinen Nutzungsbedingungen nicht akzeptiert wurden ist keine Anmeldung möglich.');
@@ -108,7 +101,7 @@ define('_USERS_USERSBLOCKCONFIG', 'Benutzer-Block konfigurieren');
 define('_USERS_USERBLOCKENABLEHELP', 'Mit dieser Option kann ein individueller Block konfiguriert werden.');
 define('_USERS_USERBLOCKENABLE', 'Benutzer-Block aktivieren');
 //define('_USERS_USERBLOCKCONTENTTIP', 'Tipp: Es kann für Links etc. HTML verwendet werden');
-define('_USERS_USERBLOCKUPDATED', 'Benutzer-block aktualisiert');
+define('_USERS_USERBLOCKUPDATED', 'Benutzer-Block aktualisiert');
 define('_USERS_USERBLOCKMENUFOR', 'Block für %user%');
 
 ?>

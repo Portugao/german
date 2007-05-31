@@ -23,9 +23,10 @@ define('_SEARCH_FEWERLKEYWORDS', 'Versuchen Sie es mit weniger Schlüsselbegriffe
 define('_SEARCH_MOREGENERALKEYWORDS', 'Versuchen Sie es mit allgemeineren Schlüsselbegriffen.');
 define('_SEARCH_LASTDATE', 'Datum der letzten Suchanfrage');
 define('_SEARCH_NEWEST', 'Neueste zuerst');
+define('_SEARCH_NEWSEARCH', 'Neue Suche beginnen');
 define('_SEARCH_NOPLUGINSFOUND','Fehler! Keine Such-Plugins gefunden');
 define('_SEARCH_NORESULTSREFINESEARCH', 'Die Suchkriterien lieferten kein Ergebnis. Versuchen Sie anhand der folgenden Empfehlungen noch einmal.');
-define('_SEARCH_OLDEST', 'Alteste zuerst');
+define('_SEARCH_OLDEST', 'Älteste zuerst');
 define('_SEARCH_OPTIONS', 'Suche nach Typ einschränken');
 define('_SEARCH_ORDER', 'Suchreihenfolge');
 define('_SEARCH_RECENT', 'Aktuelle Suchanfragen');

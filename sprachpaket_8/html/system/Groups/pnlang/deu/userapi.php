@@ -13,7 +13,7 @@
 define('_GROUPS_APPALREADYPENDING', 'Es besteht schon eine Bewerbung');
 
 define('_GROUPS_MAILWARNINGADMIN', 'Webmaster');
-define('_GROUPS_MAILWARNINGTEXT',  ' hat sich für eine Gruppenmitgliedschaft beworben! Kommentar: ');
+define('_GROUPS_MAILWARNINGTEXT',  '%uname% hat sich für eine Gruppenmitgliedschaft beworben! Kommentar: %text%');
 define('_GROUPS_MAILWARNINGTITLE', 'Neue Bewerbung für Gruppenmitgliedschaft');
 
 ?>

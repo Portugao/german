@@ -26,6 +26,7 @@ define('_ADMIN_EXISTINGCATEGORY', 'Bestehende Modulkategorie');
 define('_ADMIN_DELETEFAILEDDEFAULT', 'Die Default-Kategorie kann nicht gelöscht werden');
 define('_ADMIN_DELETEFAILEDSTART', 'Die Start-Kategorie kann nicht gelsöcht werden');
 define('_ADMIN_FAILEDADDMODTOCAT', 'Fehler! Modul konnte nicht zur Kategorie hinzugefügt werden');
+define('_ADMIN_NOADMINLINKS', 'Die Administrationskategorie ist leer. Sie sehen diese Meldung vermutlich, weil Sie administrativen Zugriff auf ein Modul besitzen, das nicht in der Standardkategorie der Administration eingeordnet ist.');
 
 // modify config
 define('_ADMIN_GENERALSETTINGS', 'Allgemein');
