@@ -15,8 +15,9 @@ define('_INSTALLERTASK3', 'Voraussetzungen');
 define('_INSTALLERTASK4', 'Datenbank Information');
 define('_INSTALLERTASK5', 'Installationstyp wählen');
 define('_INSTALLERTASK6', 'Administrator anlegen');
-define('_INSTALLERTASK7', 'Theme wählen');
-define('_INSTALLERTASK8', 'Fertig!');
+define('_INSTALLERTASK7', 'Startseite wählen');
+define('_INSTALLERTASK8', 'Theme wählen');
+define('_INSTALLERTASK9', 'Fertig!');
 
 // installer resources
 define('_INSTALLERESOURCES', 'Zusätzliche Informationen');
