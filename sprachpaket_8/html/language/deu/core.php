@@ -119,6 +119,7 @@ define('_CONFIRMATIONPROMPT', 'Bestätigungsaufforderung');
 define('_IGNORE','Ignorieren');
 define('_INACTIVE','Inaktiv');
 define('_LOGIN','Anmelden');
+define('_LOGIN_FLC','Anmelden');
 define('_LOGOUT','Abmelden');
 define('_MODIFY','Modifizieren');
 define('_MOVE', 'Bewegen');
