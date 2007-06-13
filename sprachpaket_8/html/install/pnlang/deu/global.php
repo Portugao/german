@@ -106,8 +106,14 @@ define('_INSTALLERTEAM', 'Das sind die Skripte und Personen, welche PostNuke aus
 define('_INSTALLERPROBLEMS', 'Die PostNuke Installation ist abgeschlossen. Falls Probleme oder Schwierigkeiten aufgetreten sind bitte eine Rückmeldung in den Support-Foren. Das install-Skript und der /install-Ordner sollten jetzt gelöscht werden.');
 define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
 
+// _selectmodule.htm
+define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Site. Viele weitere Module sind im <a href="">Value Addons Paket</a> verfügbar und in der <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulveröffentlichungs-Datenbank</a> durch Drittanbieter. Bitte ein Standardmodul für die neue Site wählen - dies kann später geändert werden.');
+define('_INSTALLERPNMODULESSURL', 'http://community.postnuke.com/module-Database-main-tid-3.htm');
+define('_INSTALLERPNMODULES', 'Modulveröffentlichungs-Datenbank');
+
 // _selecttheme.htm
-define('_INSTALLERSELECTHEME', 'Default Theme der Seite');
+define('_INSTALLERSELECTHEME', 'Standard-Theme der Seite');
 define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später verändert werden.');
 define('_INSTALLERPNTHEMESURL', 'http://community.postnuke.com/module-Database-main-tid-4.htm');
 define('_INSTALLERPNTHEMES', 'Theme Release Database');
