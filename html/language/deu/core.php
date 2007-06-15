@@ -51,8 +51,8 @@ define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 
 // common footer defines
-define('_CMSHOMELINK', '<a href="http://www.postnuke.com">PostNuke</a>');
-define('_POSTNUKED', '<a href="http://www.postnuke.com">PostNuked</a>');
+define('_CMSHOMELINK', '<a href="http://www.pn-cms.de">PostNuke CMS</a>');
+define('_POSTNUKED', '<a href="http://support.pn-cms.de">PostNuked</a>');
 define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
 define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
 define('_ISPOWEREDBY', 'is powered by');
@@ -92,8 +92,8 @@ define('_ACCESS_OVERVIEW','Übersicht');
 define('_ACCESS_READ','Lesen');
 
 // common actions & results
-define('_ACTIONS', 'Aktion');
-define('_ACTION', 'Action');
+define('_ACTIONS', 'Aktionen');
+define('_ACTION', 'Aktion');
 define('_ACTIVATE','Aktivieren');
 define('_ACTIVE','Aktiv');
 define('_ACTIVATED', 'aktiviert');
@@ -206,7 +206,7 @@ define('_THEMES', 'Themes');
 
 // other common terms
 define('_DIRECTORY', 'Verzeichnis');
-define('_POWEREDBY', 'Powered by <a title="PostNuke Application Framework" href="http://www.postnuke.com">PostNuke</a>');
+define('_POWEREDBY', 'Powered by <a title="PostNuke Application Framework" href="http://www.pn-cms.de">PostNuke</a>');
 define('_VERSION', 'Version');
 define('_COPYRIGHT', 'Copyright 2007');
 define('_VALIDXHTML', 'Valid XHTML');
@@ -361,4 +361,4 @@ define('_DATE_SELECTOR', 'Datum wählen');
 // mailer
 define('_ERROR_SENDINGMAIL', 'Beim Senden einer Mail ist ein Fehler aufgetreten');
 define('_ERROR_SENDINGMAIL_ADMINLOG', 'Beim Senden einer Mail von %fromname% (%fromaddress%) an %toname% (%toaddress%) mit dem Betreff \'%subject\' ist ein Fehler aufgetreten: %errorinfo%');
-define('_ERROR_UNKNOWNMAILERERROR', 'unbekannter Fehler beim Mailversand');
+define('_ERROR_UNKNOWNMAILERERROR', 'Unbekannter Fehler beim Mailversand');
