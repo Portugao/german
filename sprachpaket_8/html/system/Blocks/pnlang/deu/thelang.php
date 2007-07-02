@@ -11,9 +11,8 @@
  */
 
 define('_SELECTGUILANG','Bevorzugte Sprache:');
+define('_SELECTLANGUAGE', 'Sprache wählen');
 define('_BLOCKS_THELANG_FORMAT', 'Format');
 define('_BLOCKS_THELANG_FLAGS', 'Flaggen anzeigen');
 define('_BLOCKS_THELANG_DROPDOWN', 'Dropdown-Liste');
 define('_BLOCKS_THELANG_LIST', 'Liste');
-
-?>

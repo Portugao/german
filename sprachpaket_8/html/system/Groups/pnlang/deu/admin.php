@@ -68,7 +68,8 @@ define('_GROUPS_USERAPPLICATION',              'Benutzer Bewerbung');
 define('_GROUPS_USERAPPLICATIONTEXT',          'Benutzer Text');
 
 // errors/statuses
-define('_GROUPS__ACCEPTTITLE',                  'Hinzugefügt in die Gruppe ');
+define('_GROUPS_ACCEPTTITLE',                  'Hinzugefügt in die Gruppe ');
+define('_GROUPS_ACCEPTUSERFAILED',             'Fehler beim Hinzufügen in die Gruppe');
 define('_GROUPS_ADDERROR',                     'Fehler beim Einrichten der Gruppe');
 define('_GROUPS_ALREADYEXISTS',                'Gruppe existiert bereits');
 define('_GROUPS_DEFAULTGROUPCANNOTBEDELETED',  'Die Startgruppe kann nicht gelöscht werden');

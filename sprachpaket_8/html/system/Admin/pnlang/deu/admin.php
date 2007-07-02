@@ -22,6 +22,7 @@ define('_MODULECATEGORIESLISTVIEW', 'Liste der Modulkategorisierung');
 define('_NEWMODULECATEGORY', 'Modulkategorie erstellen');
 define('_ADMIN_NEWCATEGORY', 'Neue Modulkategorie');
 define('_ADMIN_EXISTINGCATEGORY', 'Bestehende Modulkategorie');
+
 // error messages
 define('_ADMIN_DELETEFAILEDDEFAULT', 'Die Default-Kategorie kann nicht gelöscht werden');
 define('_ADMIN_DELETEFAILEDSTART', 'Die Start-Kategorie kann nicht gelsöcht werden');
@@ -96,5 +97,3 @@ define('_ADMIN_SECURITYCENTERNOTENABLED_HELP','Nach der Installation ist das Sec
 define('_ADMIN_UPGRADE_PHP_HELP','Die Datei \'upgrade.php\' wird vom Installationsskript verwendet, falls eine bereits existierende Postnuke Site der Version 0.8x auf eine neuere Version aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei Datei gelöscht werden, da sie nicht länger benötigt wird und ein mögliches Sicherheitsrisiko darstellt.');
 define('_ADMIN_UPGRADE76_PHP_HELP','Die Datei \'upgrade76.php\' wird vom Installationsskript verwendet, falls eine bereits existierende Postnuke Site der Version 0.76 auf eine neuere Version 0.8x aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei Datei gelöscht werden, da sie nicht länger benötigt wird und ein mögliches Sicherheitsrisiko darstellt.');
 define('_ADMIN_MODULESCATEGORIZATIONEXPLAINED', 'Alle derzeit installierten und aktivierten Module werden aufgelistet. Neben jedem Modul kann anhand einer Dropdownliste ausgewählt werden, in welche Kategorie das jeweilige Module eingeordnet werden soll.');
-
-?>

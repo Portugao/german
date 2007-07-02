@@ -61,6 +61,7 @@ define('_USERS_SENDPASSWORD','Anforderung senden');
 define('_USERS_LOGGINGREDIRECT', 'Falls keine Weiterleitung erfolgt bitte hier klicken');
 define('_USERS_LOGGINGYOUIN','Anmeldung -- bitte warten!');
 define('_USERS_YOUARELOGGEDOUT','Abmeldung erfolgt.');
+define('_USERS_YOUARENOTLOGGEDOUT','Keine Abmeldung erfolgt.');
 
 // status/error messages
 define('_USERS_ACTIVATIONINFO','Use the link in the e-mail to activate your account.');
@@ -84,6 +85,7 @@ define('_USERS_PASSWORDMAILED','Kennwort für %uname% wurde gesendet');
 define('_USERS_PASSWORDREQUIRED','Bitte Kennwort eingeben');
 define('_USERS_PPROFILEMODULENOTAVAILABLE','Error! Sorry! Please install PostNuke\'s Profile module first!');
 define('_USERS_REGISTRATIONFAILED','Fehler! Registrierung nicht erfolgreich, bitte Seitenbetreiber verständigen');
+define('_USERS_USERACTIVATIONFAILED', 'Fehler! Aktivierung des Accounts nicht erfolgreich, bitte Seitenbetreiber verständigen');
 define('_USERS_USERACTIVATED','Der Account wurde aktiviert.');
 define('_USERS_USERAGENTBANNED','Fehler! Der verwendete Useragent ist gesperrt');
 define('_USERS_USERNAMEINVALID','Fehler! Der Benutzername kann nicht verwendet werden, Leerzeichen sind beispielsweise nicht erlaubt');
@@ -103,5 +105,3 @@ define('_USERS_USERBLOCKENABLE', 'Benutzer-Block aktivieren');
 //define('_USERS_USERBLOCKCONTENTTIP', 'Tipp: Es kann für Links etc. HTML verwendet werden');
 define('_USERS_USERBLOCKUPDATED', 'Benutzer-Block aktualisiert');
 define('_USERS_USERBLOCKMENUFOR', 'Block für %user%');
-
-?>

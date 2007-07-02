@@ -34,8 +34,10 @@ define('_THEME_CACHE_CLEARED', 'Template-Cache gelöscht');
 define('_THEME_COMPILED_CLEARED', 'Compile-Cache gelöscht');
 define('_THEME_COULDNOTINCLUDE', 'Theme Versionsdatei konnte nicht eingebunden werden: ');
 define('_THEME_DEFAULTCHANGED', 'Standard Theme geändert');
+define('_THEME_FAILEDCREATECONFIGDIR', 'Verzeichnis für die Theme-Konfiguration konnte nicht angelegt werden');
 define('_THEME_FAILEDTOOPENFILEFORWRITING', 'Datei konnte nicht zum schreiben geöffnet werden');
 define('_THEME_FAILEDTOWRITETOFILE', 'Datei konnte nicht beschrieben werden');
+define('_THEME_INCORRECTTYPE', 'Upgrade für dieses Theme nicht möglich (kein Xanthia 2 Theme)');
 define('_THEME_REGENERATED', 'Themeliste neu eingelesen');
 define('_THEME_SETTINGSUPDATED', 'Einstellugen aktualisiert');
 define('_THEME_THEMEDIRMUSTBEWRITABLE', 'Theme-Verzeichnis muss beschreibbar sein');
@@ -133,5 +135,3 @@ define('_THEME_STATE', 'Status');
 define('_THEME_TYPE', 'Typ');
 define('_THEME_VERSION', 'Version');
 define('_THEME_XHTML', 'XHTML');
-
-?>

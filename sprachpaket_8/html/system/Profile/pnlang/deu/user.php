@@ -17,23 +17,26 @@ define('_PROFILE_ACCOUNTPANEL',    'Profil - Übersicht');
 // main template
 define('_PROFILE_FOR',             'Benutzerprofil für %username%');
 define('_PROFILE_VIEW',            'Profil-Information anzeigen');
+define('_PROFILE_YOURINFO',        'Benutzerprofil');
 
 // view template
 define('_PROFILE_HOME',            'Zurück zur Site');
 define('_PROFILE_MAIN',            'Account');
 define('_PROFILE_MODIFY',          'Profil-Information modifizieren');
-define('_PROFILE_YOURINFO',        'Info');
 
 // modify template
-define('_PROFILE_255CHARMAX',      'maximal 255 Zeichen');
 define('_PROFILE_REQUIREDLABEL',   '*');
 define('_PROFILE_REQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
 define('_PROFILE_REQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
+define('_TYPENEWPASSWORD',         'Neues Kennwort');
+define('_PASSWORDAGAIN',           'Kennwortwiederholung (zur Verifikation)');
 
 // status/error messages
 define('_PROFILE_EMPTYMAIL',      'Keine E-Mail-Adresse angegeben');
 define('_PROFILE_INVALIDMAIL',     'Ungültige E-Mail-Adresse angegeben');
 define('_PROFILE_MAILEXISTS',      'E-Mail-Adresse wird bereits verwendet');
+define('_PROFILE_SAVEFAILED',      'Fehler! Die Profil-Informationen konnten nicht gespeichert werden.');
+define('_PROFILE_SAVEFIELDFAILED', 'Fehler! Das Feld %field% konnte nicht gespeichert werden.');
 define('_PROFILE_SAVEOK',          'Profil-Information gespeichert');
 define('_PROFILE_UNINDENTIFIED',   'Benutzer nicht bekannt');
 define('_PROFILE_WRONGPASS',       'Das Kennwort stimmt nicht überein');
