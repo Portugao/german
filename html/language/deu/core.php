@@ -24,6 +24,7 @@ define('_MONTH_LONG','Januar Februar März April Mai Juni Juli August September O
 define('_MONTH_SHORT','Jan Feb Mar Apr Mai Jun Jul Aug Sep Okt Nov Dez');
 define('_TIME', 'Zeit');
 define('_TIMEBRIEF', '%H:%M');
+define('_TIMELONG','%T %p');
 define('_TIMEFORMAT', 24);  // use 24 here in other countries
 define('_SECOND', 'Sekunde');
 define('_SECONDS', 'Sekunden');
@@ -52,7 +53,6 @@ define('_LOCALEWIN', 'deu');
 
 // common footer defines
 define('_CMSHOMELINK', '<a href="http://www.pn-cms.de">PostNuke CMS</a>');
-define('_POSTNUKED', '<a href="http://support.pn-cms.de">PostNuked</a>');
 define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
 define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
 define('_ISPOWEREDBY', 'is powered by');
@@ -91,6 +91,24 @@ define('_ACCESS_NONE','Keine Rechte');
 define('_ACCESS_OVERVIEW','Übersicht');
 define('_ACCESS_READ','Lesen');
 
+// extended (pnobjlib) permission levels
+define('_PN_TEXT_PERMISSION_BASIC_PRIVATE', 'Privat');
+define('_PN_TEXT_PERMISSION_BASIC_GROUP', 'Gruppe');
+define('_PN_TEXT_PERMISSION_BASIC_PUBLIC', 'Öffentlich');
+define('_PN_TEXT_PERMISSION_BASIC_USER', 'Benutzer');
+define('_PN_TEXT_PERMISSION_LEVEL_NONE', 'Keine');
+define('_PN_TEXT_PERMISSION_LEVEL_READ', 'Lesen');
+define('_PN_TEXT_PERMISSION_LEVEL_WRITE', 'Schreiben');
+define('_PN_TEXT_NOAUTH_NONE', 'Keine Zugriffsrechte für dieses Modul.');
+define('_PN_TEXT_NOAUTH_OVERVIEW', 'Keine Rechte zur Übersicht für dieses Modul.');
+define('_PN_TEXT_NOAUTH_READ',  'Keine Leserechte für dieses Modul.');
+define('_PN_TEXT_NOAUTH_COMMENT', 'Keine Rechte zur Kommentierung für dieses Modul.');
+define('_PN_TEXT_NOAUTH_MODERATION', 'Keine Moderationsrechte für dieses Modul.');
+define('_PN_TEXT_NOAUTH_EDIT', 'Keine Bearbeitungsrechte für dieses Modul.');
+define('_PN_TEXT_NOAUTH_ADD', 'Keine Rechte zum Hinzufügen für dieses Modul.');
+define('_PN_TEXT_NOAUTH_DELETE', 'Keine Rechte zum Löschen für dieses Modul.');
+define('_PN_TEXT_NOAUTH_ADMIN', 'Keine Administrationsrechte für dieses Modul.');
+
 // common actions & results
 define('_ACTIONS', 'Aktionen');
 define('_ACTION', 'Aktion');
@@ -109,7 +127,10 @@ define('_COPY', 'Kopieren');
 define('_CREATE', 'Anlegen');
 define('_DEACTIVATE','Deaktivieren');
 define('_DEACTIVATED', 'deaktiviert');
+define('_DEFAULT', 'Vorgabe');
+define('_DEFAULTS', 'Vorgaben');
 define('_DELETE','Löschen');
+define('_DETAILS', 'Details');
 define('_EDIT','Editieren');
 define('_FORWARD', 'weiter');
 define('_HELP', 'Hilfe');
@@ -131,7 +152,6 @@ define('_REMOVE', 'entfernen');
 define('_RESET', 'Reset');
 define('_SAVE', 'Speichern');
 define('_SEARCH', 'Suchen');
-define('_SEARCHUSERS', 'Benutzer suchen');
 define('_STATE','Status');
 define('_SUBMIT','Abschicken');
 define('_UPDATE', 'Aktualisieren');
@@ -158,7 +178,6 @@ define('_OPTIONS', 'Optionen');
 define('_PASSWORD', 'Kennwort');
 define('_REQUIRED', 'Notwendig');
 define('_TITLE', 'Titel');
-define('_TITLE_FLC', 'Titel');
 define('_USERID', 'Benutzer ID');
 define('_USERNAME' ,'Benutzername');
 define('_USERNAME_FLC', 'Benutzername');
@@ -329,6 +348,7 @@ define('_PNFORM_SELECTDATE', 'Datum wählen');
 define('_PNFORM_RANGEERROR', 'Der Wert ist nicht im gültigen Bereich');
 define('_PNFORM_RANGEMINERROR', 'Der Wert muss größer oder gleich %i% sein');
 define('_PNFORM_RANGEMAXERROR', 'Der Wert muss kleiner oder gleich %i% sein');
+define('_PNFORM_UPLOADERROR', 'Fehler beim Upload der Datei.');
 
 // categories system
 define('_ALLCATEGORIES', '-- Alle --');
@@ -350,6 +370,12 @@ define('_ERROR_ADMIN', '%message% %func% in Zeile %line% in Datei %file%.');
 // userlinks plugin
 define('_YOURACCOUNT', 'Profil');
 define('_CREATEACCOUNT', 'Profil anlegen');
+
+// onlune plugin
+define('_CURRENTLYONLINE', 'Zur Zeit sind %numguests% %gueststext% und %numusers% %userstext% online.');
+
+// user welcome plugin
+define('_WELCOMEUSER', 'Willkommen %username%');
 
 // login/logout procedure
 define('_UNABLETOSAVELOGINDATE', 'Anmeldedatum konnte nicht gespeichert werden');

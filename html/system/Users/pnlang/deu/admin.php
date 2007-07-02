@@ -37,7 +37,6 @@ define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
 define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
 define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-mail\' eingestellt ist, muss die Option \'Eindeutige E-Mail-Adresse\' weiter unten mit \'Ja\' aktiviert sein.');
 define('_USERS_MINAGE','Mindestalter:');
-//define('_USERS_MINAGEDESCR','(Das Mindestalter wird während der Registrierung abgefragt; 0 = keine Prüfung)');
 define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
 define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
 
@@ -46,17 +45,12 @@ define('_USERS_ALLOWREGISTRATIONS','Registrierung von Accounts ermöglichen:');
 define('_USERS_ALLOWREGISTRATIONSDISABLED','(Falls \'Nein\' können im folgenden Feld die Gründe angegeben werden)');
 define('_USERS_ILLEGALDOMAINS', 'Kommagetrennte Liste an E-Mail-Domains über die keine Registrierung erlaubt ist');
 define('_USERS_ILLEGALUNAME','Gesperrte Benutzernamen: ');
-//define('_USERS_ILLEGALUNAMEDESC',' (Mit Leerzeichen getrennte Liste an Benutzernamen die nicht erlaubt sind)');
 define('_USERS_ILLEGALUSERAGENTS', 'Gesperrte Useragents: ');
-//define('_USERS_ILLEGALUSERAGENTDESC', '(Kommagetrennte Liste an Userragents über die keine Registrierung erlaubt ist)');
 define('_USERS_REGISTRATIONSETTINGS','Benutzerregistrierung');
 define('_USERS_MODERATION','Benutzerregistrierung moderieren');
 define('_USERS_NOTIFYEMAIL','Info-Mail über neue Benutzer: ');
-//define('_USERS_NOTIFYEMAILDESC',' (Falls hier eine E-Mail-Adresse hinterlegt wird erfolgt nach Freischaltung von Accounts eine Benachrichtigung)');
 define('_USERS_OPTIONALITEMS', 'Dynamische Benutzerdaten anzeigen:');
-//define('_USERS_OPTIONALITEMSDESC', '(Zusätzliche Profildaten während der Registrierung anzeigen)');
 define('_USERS_UNIQUEEMAIL','Eindeutige E-Mail-Adresse');
-//define('_USERS_UNIQUEEMAILDESC','(E-Mail-Adresse muß systemweit einmalig sein)');
 define('_USERS_VERIFYEMAIL','E-Mail-Adresse während der Registrierung verifizieren ');
 define('_USERS_VERIFYEMAIL_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort während der Registrierung wählen, muß den Account aber via Mail-Benachrichtung bestätigen');
 define('_USERS_VERIFYEMAIL_YES_PASSWORDMAIL','Ja: Vom System generiertes Kennwort wird zur Verifizierung an die E-Mail-Adresse geschickt');
@@ -94,10 +88,14 @@ define('_USERS_SEND_MAIL','E-Mail-Nachricht(en) senden');
 define('_USERS_SUBJECT','Thema:');
 
 // pending applications template
+define('_USERS_VIEWAPPLICATIONS', 'Benutzerapplikationen anzeigen');
 define('_USERS_APPROVEUSERAPPLICATION','Neue Benutzer bestätigen');
 define('_USERS_APPROVEUSERAPPLICATIONBUT','Bestätigen');
 define('_USERS_CONFIRMAPPLICATION', 'Aktion für Benutzerapplikation bestätigen');
 define('_USERS_DENYUSERAPPLICATION', 'Neuen Benutzer ablehnen');
+
+// application details template
+define('_USERS_VIEWAPPLICATION', 'Benutzerapplikation anzeigen');
 
 // user statuses
 define('_USERS_ACTIVE', 'Benutzer ist aktiv');
@@ -110,11 +108,3 @@ define('_USERS_MAILSENT','Mail gesendet');
 define('_USERS_MAILSENTFAILED','Fehler! Mailversand fehlgeschlagen');
 define('_USERS_NOPASS','Kennwort fehlt');
 define('_USERS_NOUSERSELECTED','Fehler! Kein Benutzer ausgewählt');
-
-/*
-define('_AREYOUSUREDEL','Are you sure you want to delete this/these user(s)?');
-define('_DETAILS', 'Details');
-define('_USERDELETED', 'User deleted');
-*/
-
-?>

@@ -22,6 +22,7 @@ define('_SECURITYCENTER_VIEWHACKATTEMPTSFROMDB','Angriffsversuche in der Datenba
 define('_SECURITYCENTER_VIEWLOGGEDEVENTS', 'Logeinträge anzeigen');
 
 // view templates
+define('_SECURITYCENTER_CLEAR_FITLER', 'Filter löschen');
 define('_SECURITYCENTER_COMPONENT', 'Komponente');
 define('_SECURITYCENTER_FILE','Datei');
 define('_SECURITYCENTER_FUNCTION', 'Funktion');
@@ -66,5 +67,3 @@ define('_SECURITYCENTER_OUTPUTFILTERSAFEHTML', 'SafeHTML als Augabefilter verwen
 define('_SECURITYCENTER_SELECTOUTPUTFILTER', 'Ausgabefilter wählen');
 define('_SECURITYCENTER_SUMMARYCONTENT', 'Inhalt der Zusammenfassung');
 define('_SECURITYCENTER_VARIABLECLEANSING', 'Bereinigung von HTTP-Variablen');
-
-?>
