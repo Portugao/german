@@ -108,7 +108,7 @@ define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
 
 // _selectmodule.htm
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
-define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Site. Viele weitere Module sind im <a href="">Value Addons Paket</a> verfügbar und in der <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulveröffentlichungs-Datenbank</a> durch Drittanbieter. Bitte ein Standardmodul für die neue Site wählen - dies kann später geändert werden.');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Site. Viele weitere Module sind im <a href="http://noc.postnuke.com/frs/?group_id=5">Value Addons package</a> verfügbar und in der <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulveröffentlichungs-Datenbank</a> durch Drittanbieter. Bitte ein Standardmodul für die neue Site wählen - dies kann später geändert werden.');
 define('_INSTALLERPNMODULESSURL', 'http://community.postnuke.com/module-Database-main-tid-3.htm');
 define('_INSTALLERPNMODULES', 'Modulveröffentlichungs-Datenbank');
 
