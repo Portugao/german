@@ -11,7 +11,7 @@
  * @subpackage   Admin
  */
 
-define('_ADMIN_NAME',        'Administration');
+define('_ADMIN_NAME',        'Admin');
 define('_ADMIN_DISPLAYNAME', 'Administration');
 define('_ADMIN_DESCRIPTION', 'Admin-Kategorien und Modulzuordnungen bearbeiten');
 

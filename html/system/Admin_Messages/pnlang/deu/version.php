@@ -11,7 +11,7 @@
  * @subpackage   Admin_Messages
  */
 
-define('_ADMINMESSAGES_NAME',        'Admin-Nachrichten');
+define('_ADMINMESSAGES_NAME',        'Admin_Messages');
 define('_ADMINMESSAGES_DISPLAYNAME', 'Admin-Nachrichten');
 define('_ADMINMESSAGES_DESCRIPTION', 'Stellt ein System zur Verfügung, dass automatisierte und termingesteuerte Nachrichten des Administrators anzeigt.');
 
