@@ -11,17 +11,18 @@
  */
 
 // module title
-define('_FAQ_', 'FAQs');
+define('_FAQ', 'FAQs');
 
 // singular and plural
 define('_FAQ_FAQ', 'FAQ');
 define('_FAQ_FAQS', 'FAQs');
 
 // defines unique to this module
-define('_FAQ_QUESTION',      'Frage');
 define('_FAQ_ANSWER',        'Antwort');
 define('_FAQ_ANSWERED',      'Beantwortet');
+define('_FAQ_ANSWEREDBY',    'Beantwortet von %username%');
+define('_FAQ_GENERAL',       'Allgemeine Einstellungen');
+define('_FAQ_QUESTION',      'Frage');
 define('_FAQ_SUBMITTEDBY',   'Eingesandt von');
-define('_FAQ_ANSWEREDBY',    'Beantwortet von');
 
 ?>
