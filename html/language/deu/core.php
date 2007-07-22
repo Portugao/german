@@ -158,10 +158,11 @@ define('_UPDATE', 'Aktualisieren');
 define('_VIEW', 'Ansicht');
 
 //common module names
-define('_WEB_LINKS', 'Weblinks');
-define('_SUBMITNEWS', 'News einreichen');
+define('_COMMENTS', 'Kommentare');
 define('_DOWNLOADS', 'Downloads');
+define('_SUBMITNEWS', 'News einreichen');
 define('_USERSMANAGER', 'Benutzer');
+define('_WEB_LINKS', 'Weblinks');
 
 //common module fields
 define('_PROPERTIES', 'Eigenschaften');
