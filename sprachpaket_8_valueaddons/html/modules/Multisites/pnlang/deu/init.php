@@ -11,4 +11,4 @@
  */
 
 define('_MULTISITES_MASTERNAME', 'Hauptseite');
-define('_MULTISITES_MASTERDESCRIPTION', 'Hauptseite - any shared tables will be based on this site; This site cannot be deleted.');
+define('_MULTISITES_MASTERDESCRIPTION', 'Hauptseite - alle geteilten Tabellen basieren auf dieser Seite; Diese Seite kann nicht gelöscht werden.');
