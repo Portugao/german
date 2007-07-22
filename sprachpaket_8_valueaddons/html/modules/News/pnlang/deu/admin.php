@@ -13,7 +13,7 @@
 // view template
 define('_NEWS_ARCHIVED', 'Archiviert');
 define('_NEWS_INHOMEQUESTION', 'Startseite');
-define('_NEWS_NEWSPUBLISHER', 'News-Herausgeber');
+define('_NEWS_NEWSPUBLISHER', 'Newsbeiträge');
 define('_NEWS_PENDING', 'Wartend');
 define('_NEWS_PUBLISHEDSTATUS', 'Status');
 define('_NEWS_PUBLISHED', 'Veröffentlicht');
