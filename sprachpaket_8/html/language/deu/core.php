@@ -10,22 +10,22 @@
 
 // date and time defines
 define('_DATE','Datum');
-define('_DATEBRIEF', '%d. %b %Y');
-define('_DATELONG', '%A, %d. %B %Y');
-define("_DATESTRING","%A, %d. %B %Y um %H:%M Uhr");
-define('_DATETIMEBRIEF', '%d.%m.%Y, %H:%M Uhr');
-define('_DATETIMELONG', '%A, %d. %B %Y, %H:%M Uhr');
+define('_DATEBRIEF','%d. %b %Y');
+define('_DATELONG','%A, %d. %B %Y');
+define('_DATESTRING','%A, %d. %B %Y um %H:%M Uhr');
+define('_DATETIMEBRIEF','%d.%m.%Y, %H:%M Uhr');
+define('_DATETIMELONG','%A, %d. %B %Y, %H:%M Uhr');
 define('_DATEINPUT', '%Y-%m-%d'); // Dateformat for input fields (parsable - do not try other formats!)
 define('_DATETIMEINPUT', '%Y-%m-%d %H:%M'); // Date+time format for input fields (parsable - do not try other formats!)
-define('_DATEFIRSTWEEKDAY', 0); // 0 = sunday, 1 monday and so on
+define('_DATEFIRSTWEEKDAY', 0); // 0 = Sunday, 1 Monday and so on
 define('_DAY_OF_WEEK_LONG','Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag');
 define('_DAY_OF_WEEK_SHORT','Son Mon Die Mit Don Fre Sam');
 define('_MONTH_LONG','Januar Februar März April Mai Juni Juli August September Oktober November Dezember');
-define('_MONTH_SHORT','Jan Feb Mar Apr Mai Jun Jul Aug Sep Okt Nov Dez');
+define('_MONTH_SHORT','Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec');
 define('_TIME', 'Zeit');
-define('_TIMEBRIEF', '%H:%M');
+define('_TIMEBRIEF','%H:%M');
 define('_TIMELONG','%T %p');
-define('_TIMEFORMAT', 24);  // use 24 here in other countries
+define('_TIMEFORMAT', 24);  // use 12/24 depending on country
 define('_SECOND', 'Sekunde');
 define('_SECONDS', 'Sekunden');
 define('_MINUTE', 'Minute');
@@ -389,3 +389,5 @@ define('_DATE_SELECTOR', 'Datum wählen');
 define('_ERROR_SENDINGMAIL', 'Beim Senden einer Mail ist ein Fehler aufgetreten');
 define('_ERROR_SENDINGMAIL_ADMINLOG', 'Beim Senden einer Mail von %fromname% (%fromaddress%) an %toname% (%toaddress%) mit dem Betreff \'%subject\' ist ein Fehler aufgetreten: %errorinfo%');
 define('_ERROR_UNKNOWNMAILERERROR', 'Unbekannter Fehler beim Mailversand');
+
+?>
