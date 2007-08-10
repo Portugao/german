@@ -130,5 +130,3 @@ define('_BLOCKS_01_b','Sprachen');
 define('_BLOCKS_02_b','Admin-Nachrichten');
 define('_USER_LOGINBLOCK_TITLE', 'Anmeldung');
 define('_USER_ONLINEBLOCK_TITLE', 'Wer ist angemeldet');
-
-?>
