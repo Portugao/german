@@ -15,6 +15,6 @@
 
 define('_AUTHLDAP_NAME',        'AuthLDAP');
 define('_AUTHLDAP_DISPLAYNAME', 'AuthLDAP');
-define('_AUTHLDAP_DESCRIPTION', 'LDAP authentication');
+define('_AUTHLDAP_DESCRIPTION', 'LDAP Authentifikation');
 
 ?>

@@ -3,22 +3,20 @@
  * PostNuke Application Framework
  * @copyright (c) 2001, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: admin.php 19260 2006-06-12 13:08:15Z markwest $
+ * @version $Id: admin.php 22139 2007-06-01 10:57:16Z markwest $
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_AUTHLDAP','LDAP authentication');
-define('_AUTHLDAPPN','PN only');
-define('_AUTHLDAPLDAP','LDAP only');
-define('_AUTHLDAPPNLDAP','PN and LDAP');
-define('_AUTHLDAPPNLDAPTEXT','Authentication using');
-define('_AUTHLDAPBASEDN','Base DN');
-define('_AUTHLDAPBINDAS','Bind as');
-define('_AUTHLDAPBINDPASS','Bind password');
-define('_AUTHLDAPSEARCHDN','Search base');
-define('_AUTHLDAPUPDOK','Configuration updated');
-define('_AUTHLDAPDEFAULTGROUP','Add new user to group');
-define('_AUTHLDAPSERVADR','Server address');
-define('_AUTHLDAPSEARCHATTR', 'Search user using attribute');
+// general
+define('_AUTHLDAP','LDAP Authentifikation');
+
+// modify config
+define('_AUTHLDAP_BASEDN','Base DN');
+define('_AUTHLDAP_BINDAS','Bind als');
+define('_AUTHLDAP_BINDPASS','Bind Passwort');
+define('_AUTHLDAP_DEFAULTGROUP','Einen neuen User dieser Gruppe hinzufügen');
+define('_AUTHLDAP_SEARCHATTR', 'Search user using attribute');
+define('_AUTHLDAP_SEARCHDN','Search base');
+define('_AUTHLDAP_SERVADR','Server Addresse');
 
 ?>
