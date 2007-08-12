@@ -15,4 +15,3 @@ define('_AVANTGOVIEW', 'AvantGo Ausgabe anzeigen');
 define('_AVANTGOITEMSPERPAGE', 'Angezeigte Beiträge');
 define('_AVANTGOARTICLE', 'Beitrag');
 
-?>
