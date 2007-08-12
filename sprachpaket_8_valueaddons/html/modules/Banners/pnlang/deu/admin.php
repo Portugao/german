@@ -60,6 +60,7 @@ define('_BANNERS_SURETODELCLIENT','Mit dem Löschen des Klienten werden auch sein
 define('_BANNERS_WARNING', 'Warnung!');
 define('_BANNERS_CLIENTWITHOUTBANNERS','Dieser Klient hat jetzt keine Banner mehr.');
 define('_BANNERS_CLIENTHASBANNERS','Dieser Klient hat folgende Banner derzeit aktiv');
+define('_BANNERS_NUMBERACTIVEBANNERS','Derzeit aktive Banner');
 define('_BANNERS_ADDIMPRESSIONS','Impressions hinzufügen');
 define('_BANNERS_IMPMADE','Imp. verbraucht');
 define('_BANNERS_PURCHASED','gekauft');
@@ -101,4 +102,6 @@ define('_BANNERS_URLCHANGED','URL aktualisiert');
 define('_BANNERS_STATSSENT', 'Statistik gesendet');
 define('_BANNERS_CONTACTADMIN','Bitte Administrator benachrichtigen.');
 
-?>
+
+
+
