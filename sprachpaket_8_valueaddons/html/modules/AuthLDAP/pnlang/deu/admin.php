@@ -19,4 +19,3 @@ define('_AUTHLDAP_SEARCHATTR', 'Search user using attribute');
 define('_AUTHLDAP_SEARCHDN','Search base');
 define('_AUTHLDAP_SERVADR','Server Addresse');
 
-?>
