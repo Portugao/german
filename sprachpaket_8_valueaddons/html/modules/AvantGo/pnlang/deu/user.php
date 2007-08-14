@@ -14,4 +14,3 @@ define('_AVANTGONOARTICLES','Es konnten keine Beiträge abgerufen werden!');
 define('_AVANTGOARTICLE', 'Beitrag');
 define('_AVANTGOARTICLES', 'Beiträge');
 
-?>
