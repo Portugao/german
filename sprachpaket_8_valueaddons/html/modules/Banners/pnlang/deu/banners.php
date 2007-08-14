@@ -11,6 +11,5 @@
  */
 
 define('_BANNERSBLOCK_BTYPE','Eigene Banner-ID');
-define('_BANNERSBLOCK_DEFINE',' (0,1,2) sind reserviertfür Default-Banner. Bitte größere Zahlen benutzen!');
+define('_BANNERSBLOCK_DEFINE',' (0,1,2) sind reserviert für Default-Banner. Bitte größere Zahlen benutzen!');
 
-?>
