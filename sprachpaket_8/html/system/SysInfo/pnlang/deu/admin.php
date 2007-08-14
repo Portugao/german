@@ -88,4 +88,3 @@ define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezw
 
 define('_SYSINFO_VERSION', 'Version');
 
-?>

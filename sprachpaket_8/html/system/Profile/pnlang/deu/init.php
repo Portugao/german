@@ -105,4 +105,3 @@ define('_USER_PROPERTY_16_b','-1');
 define('_USER_PROPERTY_16_c','255');
 define('_USER_PROPERTY_16_d','16');
 define('_USER_PROPERTY_16_e','a:6:{s:8:"required";s:1:"1";s:6:"viewby";s:1:"0";s:11:"displaytype";s:1:"0";s:11:"listoptions";s:0:"";s:4:"note";s:0:"";s:10:"validation";s:0:"";}');
-?>

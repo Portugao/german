@@ -21,4 +21,3 @@ define('_FXP_ERROR','FXP Fehler');
 define('_INSERT','Einfügen');
 define('_QUOTE','QUOTE');
 
-?>

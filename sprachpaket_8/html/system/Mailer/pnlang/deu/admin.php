@@ -58,4 +58,3 @@ define('_MAILER_TONAME', 'Empfänger Name');
 define('_MAILER_MESSAGESENT', 'Nachricht gesendet');
 define('_MAILER_MESSAGENOTSENT', 'Nachricht nicht gesendet');
 
-?>

@@ -15,4 +15,3 @@
 define('_USERS_INVALIDEMAIL','Fehler! Es ist ein Fehler in der von Ihnen angegebenen Email-Adresse aufgetaucht.');
 define('_USERS_PASSDIFFERENT','Fehler! Sie haben nicht dasselbe Kennwort in beide Felder eingegeben. Bitte geben Sie zweimal dasselbe Kennwort ein (dies dient der Verifikation).');
 
-?>

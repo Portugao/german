@@ -14,4 +14,3 @@ define('_SEARCH_NAME',        'Search');
 define('_SEARCH_DISPLAYNAME', 'Suche');
 define('_SEARCH_DESCRIPTION', 'Seitenweite Suchoptionen bearbeiten');
 
-?>

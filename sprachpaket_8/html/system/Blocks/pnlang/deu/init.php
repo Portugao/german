@@ -14,4 +14,3 @@ define('_BLOCKS_LEFTBLOCKS', 'Blöcke Links');
 define('_BLOCKS_RIGHTBLOCKS', 'Blöcke Rechts');
 define('_BLOCKS_CENTERBLOCKS', 'Blöcke Mitte');
 
-?>

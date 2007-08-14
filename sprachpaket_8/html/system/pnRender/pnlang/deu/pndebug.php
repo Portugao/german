@@ -41,4 +41,3 @@ define('_PNDEBUG_SESSIONVARS', 'PostNuke session variables');
 define('_PNDEBUG_CONFIGVARS', 'assigned config file variables (outer template scope)');
 define('_PNDEBUG_NOCONFIGVARS', 'no config vars assigned');
 
-?>

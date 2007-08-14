@@ -12,4 +12,3 @@ define('_HEADFOOTMOD_NAME',        'Header_Footer');
 define('_HEADFOOTMOD_DISPLAYNAME', 'Header_Footer');
 define('_HEADFOOTMOD_DESCRIPTION', 'Stellt die Header- und Footerbereiche für ältere oder Nicht-Xanthia-Themes zur Verfügung.');
 
-?>

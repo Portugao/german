@@ -11,4 +11,3 @@
 define('_THEMEMAIN', 'Theme Inhaltsbereich (Tabelle)');
 define('_THEMEWELCOMETO', 'Willkommen bei');
 
-?>

@@ -49,4 +49,3 @@ define('_PNRENDER_CACHETIMENOTE2',       'Cache-Lifetime von -1 sorgt für dauerh
 define('_PNRENDER_DEBUG_SETTINGS',       'Debug Einstellungen');
 define('_PNRENDER_EXPOSE_TEMPLATE',      'Template Informationen als Kommentar in die Ausgabe integrieren');
 
-?>

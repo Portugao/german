@@ -82,4 +82,3 @@ define('_PROFILE_FIELDDATE', 'CALENDAR');
 define('_PROFILE_FIELDEXTDATE', 'DATE (Extended)');
 define('_PROFILE_FIELDCOMBOTEXT', 'COMBO (Text)');
 
-?>

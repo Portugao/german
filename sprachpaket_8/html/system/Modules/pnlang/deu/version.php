@@ -14,4 +14,3 @@ define('_MODULES_MOD_NAME',        'Modules');
 define('_MODULES_MOD_DISPLAYNAME', 'Module');
 define('_MODULES_MOD_DESCRIPTION', 'Module installieren/aktivieren/deaktivieren, Modulinformationen anzeigen');
 
-?>

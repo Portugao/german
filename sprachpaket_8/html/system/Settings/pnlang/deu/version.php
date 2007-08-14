@@ -12,4 +12,3 @@ define('_SETTINGS_NAME',        'Settings');
 define('_SETTINGS_DISPLAYNAME', 'Einstellungen');
 define('_SETTINGS_DESCRIPTION', 'Grundkonfiguration der Webseite');
 
-?>

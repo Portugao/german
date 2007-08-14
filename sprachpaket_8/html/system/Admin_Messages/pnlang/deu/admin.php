@@ -39,4 +39,3 @@ define('_ADMINMESSAGES_USERS', 'nur Angemeldete');
 // modify config
 define('_ADMIN_MESSAGES_ALLOWSEARCHINACTIVE', 'Durchsuchen inaktiver Nachrichten erlauben');
 
-?>

@@ -54,4 +54,3 @@ define('_GROUP_PERMS_5_e','.*');
 define('_GROUP_PERMS_5_f','200');
 define('_GROUP_PERMS_5_g','0');
 
-?>

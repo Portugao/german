@@ -30,4 +30,3 @@ define('_EMENU_FORMAT','Format');
 define('_EMENU_MODULES','Module');
 define('_EMENU_STYLESHEET', 'Stylesheet für das Menü');
 
-?>

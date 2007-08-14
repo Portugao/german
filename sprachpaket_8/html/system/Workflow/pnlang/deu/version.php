@@ -13,4 +13,4 @@ define('_WORKFLOW_NAME','Workflow');
 define('_WORKFLOW_DISPLAYNAME','Workflow');
 define('_WORKFLOW_DESCRIPTION','PostNuke Workflow Engine');
 
-?>
+

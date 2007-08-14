@@ -15,4 +15,3 @@ define('_GROUPS_NAME',        'Groups');
 define('_GROUPS_DISPLAYNAME', 'Gruppen');
 define('_GROUPS_DESCRIPTION', 'Administration der Benutzergruppen');
 
-?>

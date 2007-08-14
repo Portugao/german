@@ -37,4 +37,3 @@ define('_SEARCH_SEARCHDISABLED', 'Die Suche wurde durch den Administrator deakti
 define('_SEARCH_SUMMARY','Das Suchformular hilft, bestimmte Inhalte zu finden');
 define('_SEARCH_TERM', 'Suchbegriff');
 
-?>

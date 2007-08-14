@@ -48,4 +48,3 @@ define('_USERS_NOTIFYEMAILBODY','Ein neuer Benutzer hat sich registriert. Benutz
 define('_USERS_SESSIONEXPIREDHEADER', 'Die Benutzer-Session ist abgelaufen.');
 define('_USERS_SESSIONEXPIREDTEXT', 'Aus Sicherheitsgründen wurde die Benutzer-Session nach Inaktivität abgemeldet. Bitte erneut <a href="%u%">anmelden</a>.');
 
-?>

@@ -17,4 +17,3 @@ define('_THEME_YOUHAVENONEWPRIVATEMESSAGES', 'Sie haben keine <a href="%url%">ne
 define('_THEME_YOUHAVEXPRIVATEMESSAGES', 'Sie haben %x% <a href="%url%">neue Nachricht(en)</a>, %u% ungelesen');
 define('_THEME_YOUHAVENOPRIVATEMESSAGES', 'Sie haben keine <a href="%url%">Nachrichten</a>');
 
-?>

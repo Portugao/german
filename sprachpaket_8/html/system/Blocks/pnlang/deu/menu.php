@@ -21,4 +21,3 @@ define('_MENU_MODULES','Module');
 define('_MENU_NEWONE','Neue Zeile');
 define('_MENU_STYLESHEET', 'Stylesheet für dieses Menü');
 
-?>

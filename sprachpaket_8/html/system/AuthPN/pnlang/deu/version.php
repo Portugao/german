@@ -17,4 +17,3 @@ define('_AUTHPN_NAME',        'AuthPN');
 define('_AUTHPN_DISPLAYNAME', 'AuthPN');
 define('_AUTHPN_DESCRIPTION', 'PN Authentifizierungssystem');
 
-?>

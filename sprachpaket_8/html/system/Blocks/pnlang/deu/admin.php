@@ -70,4 +70,3 @@ define('_BLOCKS_SEVENDAY','7 Tage');
 define('_BLOCKS_ACTIVATED','Block jetzt aktiv');
 define('_BLOCKS_DEACTIVATED','Block jetzt inaktiv');
 
-?>

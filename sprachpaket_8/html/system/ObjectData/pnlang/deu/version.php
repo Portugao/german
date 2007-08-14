@@ -15,4 +15,3 @@ define('_OBJECTDATA_NAME', 'ObjectData');
 define('_OBJECTDATA_DISPLAYNAME', 'Object Data');
 define('_OBJECTDATA_DESCRIPTION', 'Stellt ein Framework für Objektmodell-Daten zur Verfügung.');
 
-?>
