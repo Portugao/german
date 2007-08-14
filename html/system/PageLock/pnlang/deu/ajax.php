@@ -13,4 +13,3 @@
 
 define('_PAGELOCK_LOCKBREAKED', 'Sperre aufgehoben!');
 
-?>

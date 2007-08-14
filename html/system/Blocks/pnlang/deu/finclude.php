@@ -17,4 +17,3 @@ define('_HTML','HTML');
 define('_PHP','PHP');
 define('_TXT','Text');
 
-?>

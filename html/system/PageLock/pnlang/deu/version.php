@@ -14,4 +14,3 @@ define('_PAGELOCK_NAME', 'PageLock');
 define('_PAGELOCK_DISPLAYNAME', 'PageLock');
 define('_PAGELOCK_DESCRIPTION', 'System zur temporären Sperrung von Seiten');
 
-?>

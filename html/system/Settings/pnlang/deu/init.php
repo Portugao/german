@@ -46,4 +46,3 @@ define('_MODULE_VARS_057', '1');
 define('_MODULE_VARS_058', '0');
 define('_MODULE_VARS_059', '0');
 define('_MODULE_VARS_061', '0');
-?>

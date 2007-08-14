@@ -12,5 +12,3 @@
  */
 
 define('_ATOMTHEME_SHOWDESCRIPTION', 'Beschreibung der Einträge anzeigen');
-
-?>

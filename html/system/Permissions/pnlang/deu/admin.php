@@ -82,4 +82,3 @@ define('_PERMISSIONS_UPDATINGPERMISSION', '...aktualisiere Zugriffsrecht...');
 define('_PERMISSIONS_VWSHOWONLY','Nur Zugriffsrechte anzeigen für: ');
 define('_PERMISSIONS_YOUCANNOTDELETETHEMAINADMINPERMISSION', 'Achtung: Die generische Admin-Berechtigung kann nicht gelöscht werden');
 
-?>

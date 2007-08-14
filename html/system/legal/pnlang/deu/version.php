@@ -14,4 +14,3 @@ define('_LEGAL_NAME',        'legal');
 define('_LEGAL_DISPLAYNAME', 'Nutzungsbedingungen');
 define('_LEGAL_DESCRIPTION', 'Allgemeine Nutzungsbedingungen, Hinweise zum Datenschutz, Hinweise zur Barrierefreiheit');
 
-?>

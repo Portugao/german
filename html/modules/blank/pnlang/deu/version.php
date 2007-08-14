@@ -12,4 +12,3 @@ define('_BLANK_NAME',               'blank');
 define('_BLANK_DISPLAYNAME',        'Leermodul');
 define('_BLANK_DESCRIPTION',        'Dies ist ein Leermodul für das PostNuke CMS');
 
-?>

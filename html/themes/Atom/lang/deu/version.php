@@ -15,4 +15,3 @@ define('_ATOM_THEME_NAME', 'Atom');
 define('_ATOM_DISPLAYNAME', 'Atom');
 define('_ATOM_DESCRIPTION', 'Das \'Atom\' Theme, zur Gestaltung von Seiten in Atom-Auszeichnung');
 
-?>

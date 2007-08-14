@@ -71,4 +71,3 @@ define('_MODULES_REMOVE', 'Modul entfernen');
 define('_MODULES_STATE', 'Status');
 define('_MODULES_VERSION', 'Version');
 
-?>

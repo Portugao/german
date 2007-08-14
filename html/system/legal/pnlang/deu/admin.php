@@ -17,4 +17,3 @@ define('_LEGAL_NOTICE', '<strong>Wichtige Hinweise zur Verwendung</strong>: Die 
 define('_LEGAL_RESETAGREEMENT', 'Zustimmung zu Nutzungsbedingungen zurücksetzen');
 define('_LEGAL_RESETAGREEMENTHINT', 'Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Mitglieder der entsprechenden Gruppe (außer Hauptadmin) können sich erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden.');
 
-?>

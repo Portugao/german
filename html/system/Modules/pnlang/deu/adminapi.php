@@ -17,4 +17,3 @@ define('_MODULES_APIUPGRADED','Module wurde upgegradet; jetzt inaktiv');
 define('_MODULES_COULDNOTINCLUDE', 'Konnte notwendige Datei nicht laden: ');
 define('_MODULES_DUPLICATEDEFINE', 'Doppelter Define-Name gefunden');
 
-?>

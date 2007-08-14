@@ -68,4 +68,3 @@ define('_CATEGORIES_ROOT_CANT_EDIT',          'Das root Verzeichnis kann nicht i
 define('_CATEGORIES_NAME_EMPTY',              'Name darf nicht leer sein');
 define('_CATEGORIES_VALUE_EMPTY',             'Wert darf nicht leer sein');
 
-?>

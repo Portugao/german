@@ -153,4 +153,4 @@ define('_SETTINGS_USERCONFIGURATION', 'Benutzerkonfiguration');
 
 define('_SETTINGS_WHERETOSAVE', 'Session-Speicherung');
 define('_SETTINGS_WHERETOSAVETXT1', 'Warnung! Änderungen führen zur Abmeldung.');
-?>
+

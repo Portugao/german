@@ -21,4 +21,3 @@ define('_THEME_SWITCHER', 'Theme Switcher');
 define('_THEME_SWITCHTHEMENOTALLOWED', 'Theme Switching ist nicht aktiv');
 define('_THEME_USE', 'Theme nutzen');
 
-?>

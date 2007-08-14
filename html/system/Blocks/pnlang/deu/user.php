@@ -12,4 +12,3 @@
 
 define('_MENUFOR','Menu für');
 
-?>

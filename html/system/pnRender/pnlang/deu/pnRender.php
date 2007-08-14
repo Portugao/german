@@ -26,4 +26,3 @@ define('_PNRENDERBLOCK_NOBLOCK',      'Fehler! Kein entsprechender Block');
 define('_PNRENDERBLOCK_NOMODULE',     'Fehler! Kein Modul: ');
 define('_PNRENDERBLOCK_PARAMETERS',   'Parameter (Format: assign=value;assign2=value2...)');
 
-?>

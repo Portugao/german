@@ -59,5 +59,3 @@ define('_YOURAVATAR',             'Avatar');
 define('_YOURHOMEPAGE',           'Homepage');
 define('_YYIM',                   'Yahoo ID');
 define('_YSKYPE',                 'Skype ID');
-
-?>

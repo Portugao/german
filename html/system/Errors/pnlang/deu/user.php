@@ -43,4 +43,3 @@ define('_ERRORS_LOCATION', 'in Datei <strong>%file%</strong> in Zeile %line%');
 // general error template
 define('_ERRORS_ERROR', '%sitename%-Fehler');
 
-?>

@@ -15,4 +15,3 @@ define('_PNFORM_NAME',        'pnForm');
 define('_PNFORM_DISPLAYNAME', 'pnForm');
 define('_PNFORM_DESCRIPTION', 'Das Web-Formular-Framework für PostNuke');
 
-?>

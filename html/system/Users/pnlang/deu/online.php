@@ -14,4 +14,3 @@ define('_USERS_ONLINEBLOCK_WHOSONLINE','Wer ist angemeldet');
 define('_USERS_ONLINEBLOCK_YOUAREANON','Noch nicht registriert oder angemeldet - <a href="%u%">Anmeldung</a>.');
 define('_USERS_ONLINEBLOCK_YOUARELOGGED','Angemeldet als <strong>%uname%</strong>.');
 
-?>

@@ -27,4 +27,3 @@ define('_GROUP_MEMBERSHIP_1_b','1');
 define('_GROUP_MEMBERSHIP_2_a','2');
 define('_GROUP_MEMBERSHIP_2_b','2');
 
-?>

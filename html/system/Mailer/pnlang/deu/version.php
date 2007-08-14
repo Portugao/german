@@ -14,4 +14,3 @@ define('_MAILER_NAME',        'Mailer');
 define('_MAILER_DISPLAYNAME', 'Mailer');
 define('_MAILER_DESCRIPTION', 'Konfiguration der Mailing-Funktionalität');
 
-?>

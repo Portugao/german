@@ -12,4 +12,3 @@ define('_LEGAL_ASNOTACTIVE', 'Hinweise zur Barrierefreiheit nicht aktiv');
 define('_LEGAL_PPNOTACTIVE', 'Hinweise zum Datenschutz nicht aktiv');
 define('_LEGAL_TOUNOTACTIVE', 'Allgemeine Nutzungsbedingungen nicht aktiv');
 
-?>

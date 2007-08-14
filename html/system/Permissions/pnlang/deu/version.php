@@ -15,4 +15,3 @@ define('_PERMSMOD_NAME',        'Permissions');
 define('_PERMSMOD_DISPLAYNAME', 'Zugriffsrechte');
 define('_PERMSMOD_DESCRIPTION', 'Zugriffsrechte für Gruppen bearbeiten');
 
-?>

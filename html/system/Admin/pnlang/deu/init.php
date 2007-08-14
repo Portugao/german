@@ -26,4 +26,3 @@ define('_ADMIN_CATEGORY_05_a',    'Sicherheit');
 define('_ADMIN_CATEGORY_05_b',    'Module für Sicherheitseinstellungen der Webseite');
 define('_ADMIN_CATEGORY_06_a',    'Hooks');
 define('_ADMIN_CATEGORY_06_b',    'Hook-Module können verschiedenen Modulen Funktionalitäten hinzufügen');
-?>

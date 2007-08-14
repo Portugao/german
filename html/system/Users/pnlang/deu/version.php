@@ -15,4 +15,3 @@ define('_USERS_MODNAME',        'Users');
 define('_USERS_DISPLAYNAME',    'Benutzer');
 define('_USERS_MODDESCRIPTION', 'Konfiguration und Administration der Benutzer-Accounts');
 
-?>

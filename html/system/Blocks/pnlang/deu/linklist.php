@@ -18,4 +18,3 @@ define('_WAITINGCONT', 'Auf Freigabe wartende Inhalte');
 define('_WLINKS','Auf Freigabe wartende Links');
 define('_WREVIEWS','Auf Freigabe wartende Reviews');
 
-?>

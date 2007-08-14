@@ -25,4 +25,3 @@ define('_MESSAGE_00_e','1');
 define('_MESSAGE_00_f','1');
 define('_MESSAGE_00_g','');
 
-?>

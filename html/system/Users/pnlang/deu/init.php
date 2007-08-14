@@ -78,4 +78,3 @@ define('_USER_2_af','1');
 
 define('_USER_REGDISABLED', 'Die Registrierung ist derzeit nicht aktiviert.');
 
-?>

@@ -13,4 +13,3 @@
 define('_ADMINMESSAGES_ACTIVEONLY', 'nur aktive');
 define('_ADMINMESSAGES_SEARCH', 'Admin-Nachrichten');
 
-?>

@@ -17,4 +17,3 @@ define('_LEGAL_PRIVACYPOLICY', 'Hinweise zum Datenschutz');
 define('_LEGAL_ACCESSIBILITYSTATEMENT', 'Accessibility statement');
 define('_LEGAL_TERMSOFUSE', 'Allgemeine Nutzungsbedingungen');
 
-?>

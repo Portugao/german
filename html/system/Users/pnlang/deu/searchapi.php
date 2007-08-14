@@ -13,4 +13,3 @@
 define('_USERS_SEARCH', 'Registrierte Benutzer');
 define('_USERS_SEARCHNOEXTRAINFOVIEWPROFILE', 'Der Benutzer hat seine Daten nicht ergänzt. Zur Anzeige des gesamten Benutzerprofils bitte auf den Benutzernamen klicken');
 
-?>

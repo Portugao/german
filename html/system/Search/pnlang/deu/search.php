@@ -13,4 +13,3 @@
 
 define('_SEARCH_BLOCK_SHOWBUTTON', 'Suchbutton anzeigen');
 
-?>

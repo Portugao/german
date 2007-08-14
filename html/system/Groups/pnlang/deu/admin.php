@@ -83,4 +83,3 @@ define('_GROUPS_USERNOTADDED',                 'Benutzer nicht zur Gruppe hinzug
 define('_GROUPS_USERREMOVED',                  'Benutzer aus der Gruppe entfernt');
 define('_GROUPS_USERREMOVEDERROR',             'Entfernen des Benutzers fehlgeschlagen');
 
-?>

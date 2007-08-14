@@ -10,4 +10,3 @@
 
 define('_LINKS','Links');
 
-?>

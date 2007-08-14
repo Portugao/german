@@ -14,4 +14,3 @@ define('_PNRENDER_NAME',        'pnRender');
 define('_PNRENDER_DISPLAYNAME', 'pnRender');
 define('_PNRENDER_DESCRIPTION', 'Die Smarty Implementierung von PostNuke');
 
-?>

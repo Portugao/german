@@ -14,4 +14,3 @@ define('_BLOCKS_ACTIVATEERROR','Fehler! Block konnte nicht aktiviert werden');
 define('_BLOCKS_DEACTIVATEERROR','Fehler! Block konnte nicht deaktiviert werden');
 define('_BLOCKS_DELETEERROR','Fehler! Block konnte nicht gelöscht werden');
 define('_BLOCKS_POSITIONALREADYEXISTS', 'Eine Block-Position mit diesem Namen existiert bereits');
-?>

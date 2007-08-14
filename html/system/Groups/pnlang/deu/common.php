@@ -12,4 +12,3 @@
 
 define('_GROUPS', 'Gruppen');
 
-?>

@@ -15,4 +15,3 @@ define('_XSLT_DOCCONTENTS', 'Dokument Inhalt');
 define('_XSLT_STYLESHEETURL', 'Stylesheet URL');
 define('_XSLT_STYLESHEETCONTENTS', 'Stylesheet Inhalt');
 
-?>
