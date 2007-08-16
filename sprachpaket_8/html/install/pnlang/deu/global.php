@@ -74,6 +74,14 @@ define('_INSTALLERCREATEDBFAILED', 'Datenbank konnte nicht angelegt werden - bit
 define('_INSTALLERDBINFOFROMHOST', 'Die entsprechenden Informationen liefert normalerweise der Provider bzw. Administrator.');
 define('_INSTALLERCONNECTDBFAILED', 'Keine Verbindung zur Datenbank - bitte die Account-Informationen kontrollieren');
 
+// database types (used in dbtypes plugin)
+define('_INSTALLERDBTYPEMYSQL', 'MySQL');
+define('_INSTALLERDBTYPEMYSQLI', 'MySQL Improved');
+define('_INSTALLERDBTYPEMSSQL', 'MS SQL (Alpha)');
+define('_INSTALLERDBTYPEOCI', 'Oracle (Alpha) über oci8 treiber');
+define('_INSTALLERDBTYPEORACLE', 'Oracle (Alpha) über oracle treiber');
+define('_INSTALLERDBTYPEPOSTGRES', 'PostgreSQL');
+
 // _login.htm
 define('_INSTALLERADMINLOGINREQUIRED', 'Es besteht bereits eine Installation. Bitte als Administrator anmelden.');
 define('_INSTALLERLOGINUSERNAME', 'Name:');
@@ -108,20 +116,20 @@ define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
 
 // _selectmodule.htm
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
-define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://noc.postnuke.com/frs/?group_id=5">Value Addons Paket</a> verfügbar und sind zudem in einer losen <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter verfügbar. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://noc.postnuke.com/frs/?group_id=5">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
 define('_INSTALLERPNMODULESSURL', 'http://community.postnuke.com/module-Database-main-tid-3.htm');
 define('_INSTALLERPNMODULES', 'Modulveröffentlichungs-Datenbank');
 
 // _selecttheme.htm
 define('_INSTALLERSELECTHEME', 'Standard-Theme der Seite');
-define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später verändert werden.');
+define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
 define('_INSTALLERPNTHEMESURL', 'http://community.postnuke.com/module-Database-main-tid-4.htm');
 define('_INSTALLERPNTHEMES', 'Theme Release Database');
 
 // modify_config.php
 define('_INSTALLERMODIFYFILE_1','Fehler: kein Lesezugriff:');
 define('_INSTALLERMODIFYFILE_2','Fehler: kein Schreibzugriff:');
-define('_INSTALLERMODIFYFILE_3','0 Zeilen geändert, nicht gemacht');
+define('_INSTALLERMODIFYFILE_3','0 Zeilen geändert, nichts gemacht');
 
 // default blocks
 define('_BLOCKS_00_b','Navigation');
@@ -130,3 +138,4 @@ define('_BLOCKS_01_b','Sprachen');
 define('_BLOCKS_02_b','Admin-Nachrichten');
 define('_USER_LOGINBLOCK_TITLE', 'Anmeldung');
 define('_USER_ONLINEBLOCK_TITLE', 'Wer ist angemeldet');
+
