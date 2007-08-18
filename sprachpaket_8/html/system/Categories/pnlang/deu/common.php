@@ -23,6 +23,7 @@ define('_CATEGORIES_VIEW_TITLE',              'Alle Kategorien');
 
 // new/edit template
 define('_CATEGORIES_ADDITIONALDATA',          'Zusätzliche Datenfelder');
+define('_CATEGORIES_ADVANCED',                'Umschalten zum erwiterten Modus');
 define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
 define('_CATEGORIES_DATA',                    'Datenfeld');
 define('_CATEGORIES_DOMAIN',                  'Domain');
