@@ -2,7 +2,7 @@
 
 // installer page language strings
 define('_INSTALLER', 'PostNuke Installation');
-define('_INSTALLERPLEASEREFERTOGUIDE', 'Bitte die <a style="color:red" href="docs/install.html" onclick="window.open(\'docs/install.html\');return false;">
+define('_INSTALLERPLEASEREFERTOGUIDE', 'Bitte die <a style="color:red" href="docs/install_deu.html" onclick="window.open(\'docs/install_deu.html\');return false;">
 Installationsanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 define('_INSTALLERQUALITY', 'HINWEIS: PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="http://community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
 
