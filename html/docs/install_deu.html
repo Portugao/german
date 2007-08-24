@@ -1,0 +1,94 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>PostNuke .8 Installations Anleitung</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"  />
+</head>
+
+<body>
+<p><strong>HINWEIS: DIESE ANLEITUNG BEINHALTET WICHTIGE INFORMATIONEN ZUR INSTALLATION VON POSTNUKE. BITTE VOR DER INSTALLATION EINMAL DURCHLESEN.</strong></p>
+
+<div style="border: 1px dotted black; margin: 10px; padding: 5px; text-align: center;">
+Diese Version von PostNuke ist ein Release Candidate (RC) und sollte nicht auf Liveseiten eingesetzt werden. Eine RC Version wird nur zum Testen freigegeben.<br />
+Bitte testet diese Version und meldet gefundene Fehler im <a href="http://noc.postnuke.com/tracker/?group_id=5">Bug Tracker</a>. Je früher Fehler gefunden und dadurch behoben werden können, desto schneller kommt es zu einer finalen Version.
+</div>
+
+
+<h1>PostNuke Installations Anleitung</h1>
+<p>Weitere Informationen zur Installation in Deutscher Sprache finden Sie im <a href="http://support.pn-cms.de/modules/dokuwiki/doku.php?id=handbuch:index" title="PostNuke .8 Handbuch">PostNuke .8 Handbuch (vorläufige Version)</a>
+oder in Englischer Sprache im  
+<a href="http://community.postnuke.com/Wiki-tag-UserDocs.htm" title="Documentation Wiki">Dokumentations Wiki</a> auf 
+<a href="http://community.postnuke.com" title="The PostNuke Community">http://community.postnuke.com</a></p>
+
+
+<h2>Inhalt</h2>
+<ol>
+	<li>PostNuke: Das adam_baum Release</li>
+	<li>Neue Installation</li>
+	<li>Web-Browser-basierte Installation.</li>
+  <li>Manueller Import des SQL dumps.</li>
+  <li>Abschließende Anmerkung</li>
+</ol>
+
+<h2>PostNuke: Das adam_baum Release</h2>
+<p>PostNuke ist ein Open Source Content Management System (CMS), das Inhalte von Design und Technik trennt. Die Inhalte einer Internetpräsenz 
+(zum Beispiel Beiträge, Links, Downloads, FAQs, Bildergalerien, Foren etc.) können dabei direkt via Browser verwaltet werden. 
+Durch die klare Aufgliederung in Form, Funktion, Inhalt und Gestaltung hilft PostNuke, die Kosten und den Aufwand beim Betrieb einer Webseite zu reduzieren.
+
+PostNuke ist modular aufgebaut - die zentralen Funktionen (Benutzermanagement, Berechtigungssystem, API) werden vom sogenannten Core übernommen, 
+der Leistungsumfang kann darüberhinaus individuell angepasst und nahezu beliebig erweitert werden.<p>
+
+<p>PostNuke hat eine sehr große Community und bietet ausgezeichneten Support in den Foren. Die Deutsche Community mit Dokumentation, Support und Download von PostNuke
+finden Sie unter <a href="http://support.pn-cms.de" title="Die deutsche PostNuke Community">http://support.pn-cms.de</a>.</p>
+
+<p>Wir begrüßen Beiträge von jedem, unabhängig von seinen Kenntnissen in PostNuke.  
+<a href="http://support.pn-cms.de/module-content-display-pid-4.htm" title="Mitmachen">Wie Sie helfen können.</a>.</p>
+
+
+<h2>Neue Installation</h2>
+<p>Es gibt zwei Möglichkeiten PostNuke zu installieren:</p>
+<ol>
+	<li>Die Web-Browser-basierte Installation.</li>
+	<li>oder über einen manuellen Import des SQL dumps.</li>
+</ol>
+
+
+<h2>1. Die Web-Browser-basierte Installation</h2>
+<p>Starten Sie die Installation, indem Sie die “install.php” mit Ihrem Browser öffnen. Die exakte Url hängt von der jeweiligen Domain ab, aber wenn 
+die Seite zum Beispiel “http://www.example.com” ist, so lautet die Url <em>http://www.example.com/install.php</em>.</p>
+<p>Wen Sie PostNuke in ein Unterverzeichnis
+"pn" kopiert haben, so lautet diese Url <em>http://www.example.com/pn/install.php</em></p>
+
+<p>Das Installationsscript führt Sie Schritt für Schritt durch die gesamte Installation. Dauer dieses Vorgangs etwa 5 bis 10 Minuten</p> 
+<p>ACHTUNG</p>
+<p>PostNuke benötigt <em>bevor</em> Sie das Installationsscript aufrufen eine Datenbank. Erstellen Sie bitte eine Datenbank. 
+Dann notieren Sie sich den Datenbanknutzer, das Datenbank Passwort und den Datenbanknamen. Sie werden diese Angaben im Laufe der Installation benötigen.</p>
+
+<p>Nachdem die Installation abgeschlossen ist, können Sie ihre PostNuke Seite ganz einfach mit ihren Webbrowser aufrufen.(z.B. http://www.example.com)</p>
+
+
+<h2>2. Manueller Import des SQL dumps (Nicht empfohlen)</h2> 
+<p>Die zweite Möglichkeit der Installation von PostNuke ist ein manuelles hinzufügen des SQL dumps.
+Diese Möglichkeit ist aber nicht einfach durchzuführen und sollte nur von erfahrenen PostNuke Benutzer durchgeführt werden.
+Der MySQL Dump ist mit einer MySQL 5.x Datenbank erstellt worden, und wird nicht mit einer MySQL Version vor 5.x oder einen
+anderen Datenbank Typ funktionieren.
+Nachdem Sie den dump ihrer Datenbank hinzugefügt haben, müssen sie noch die config.php bearbeiten. Die Werte für den Benutzernamen und das Passwort
+sollten aus Sicherheitsgründen base64 decodiert werden. (Freie Tools hierfür findet man im Internet)</p> 
+
+<p>Hinweis:</p>
+<p>Der Name zum Login ist hierbei "Admin" und das Passwort ist "Password" (beides ohne "")</p>
+
+<h2>Abschließende Anmerkung</h2>
+<p>Modifizierungen "´hacks" am PostNuke Systemcode oder der Datenbank werden nicht unterstützt. Auf diese  Modifizierungen wird auch kein Support geleistet.
+Diese Modifizierungen können bei einen zukünftigen Upgrade umfassende Probleme verursachen, und deshalb werden diese 'hacks' nicht empfohlen.  
+Wir empfehlen stattdessen, dass Sie sich einmal die <a href="http://community.postnuke.com/Wiki-tag-DeveloperDocs.htm">Entwickler Dokumentation</a> ansehen.</p>
+
+<p>Wir hoffen ihnen gefällt diese Version von Postnuke</p>
+
+<p>Das PostNuke Team</p>
+
+</body>
+</html>
