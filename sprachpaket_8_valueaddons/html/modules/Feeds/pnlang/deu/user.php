@@ -11,10 +11,10 @@
  */
 
 if (!defined('_FEEDSVIEW')) {
-    define('_FEEDSVIEW','News Feeds anzeigen');
+    define('_FEEDSVIEW','Feeds anzeigen');
 }
 if (!defined('_FEEDS')){
-    define('_FEEDS', 'News Feeds');
+    define('_FEEDS', 'Feeds');
 }
 if (!defined('_FEEDSNAME')) {
     define('_FEEDSNAME', 'Name');

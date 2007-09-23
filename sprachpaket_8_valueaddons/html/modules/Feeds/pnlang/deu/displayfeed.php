@@ -11,7 +11,7 @@
  */
 
 define('_FEEDSNUMITEMS', 'Anzahl der Feeds zum Anzeigen (bis zum bereitgestellten Maximum des Feeds oder -1 für alle Artikel)');
-define('_FEEDSFEEDID', 'News Feed');
+define('_FEEDSFEEDID', 'Feed');
 define('_FEEDSDISPLAYIMAGE', 'Feed Bild anzeigen (wenn im Feed verfügbar)');
 
 ?>

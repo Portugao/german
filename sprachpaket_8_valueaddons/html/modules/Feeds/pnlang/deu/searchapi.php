@@ -10,7 +10,7 @@
  * @subpackage RSS
  */
 
-define('_FEEDS_SEARCH', 'News Feeds');
+define('_FEEDS_SEARCH', 'Feeds');
 define('_FEEDS_SEARCHRESULTS', 'gefunden');
 define('_FEEDS_FROMFEED', 'vom Feed');
 
