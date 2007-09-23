@@ -39,7 +39,7 @@ define('_SETTINGS_DETECTLANGUAGE','Spracherkennung');
 define('_SETTINGS_DYNKEYWORDS','Dynamische Meta-Keywords');
 
 define('_SETTINGS_ENTRYPOINT', 'Einstiegspunkt für die Seite');
-define('_SETTINGS_ENTRYPOINTDESC', 'Datei über die der Seiteneinstieg erfolgt (Default: index.php)');
+define('_SETTINGS_ENTRYPOINTDESC', 'Datei, über die der Seiteneinstieg erfolgt (Default: index.php)');
 define('_SETTINGS_ERRORDISPLAY','Welche Fehlertypen sollen angezeigt werden?');
 define('_SETTINGS_ERRORHANDLING','Errorhandling');
 define('_SETTINGS_ERRORREPORTINGLEVEL', 'Fehlerberichtsebene');
@@ -63,12 +63,12 @@ define('_SETTINGS_HTMLTAGALLOWED','erlaubt');
 define('_SETTINGS_HTMLTAGALLOWEDWITHPARAMS','erlaubt mit Parametern');
 define('_SETTINGS_HTMLTAGNAME','Tag');
 define('_SETTINGS_HTMLTAGNOTALLOWED','nicht erlaubt');
-define('_SETTINGS_HTMLTAGUSAGE', 'Tag usage (from <a href="http://www.w3schools.com">W3Schools</a>)');
+define('_SETTINGS_HTMLTAGUSAGE', 'Taginfo (von <a href="http://www.w3schools.com">W3Schools</a>)');
 define('_SETTINGS_HTMLWARNING','HINWEIS: Um das Risiko von Cross-Site-Scripting zu minimieren sollte - insbesondere bei Freigabe von Tags mit Parametern - der safehtml-Outputfilter im SecurityCenter aktiviert werden.');
 define('_SETTINGS_INVALIDEMAIL', 'Ungültige E-Mail-Adresse - bitte prüfen');
-define('_SETTINGS_JSQUICKTAGS', 'Use JS Quicktags buttons');
-define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags adds a set of buttons for common html tags to enabled textareas. An \'enabled\'
-textarea will have a quicktags template tag in the template. Disable this setting if using a visual editor.');
+define('_SETTINGS_JSQUICKTAGS', 'JS Quicktags Buttons benutzen');
+define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags sind Buttons für häufige HTML-Tags in bestimmten Textareas. Eine \'aktivierte\'
+Textarea sollte ein Quicktags-Template Tag im Template haben. Deaktivieren, falls ein visueller Editor verwendet wird.');
 define('_SETTINGS_KEYEXPIRY', 'Zeitlimit für Authkeys in Sekunden (default 0)');
 
 define('_SETTINGS_LANGDETECTBROWSER','Browser Sprache');
@@ -93,7 +93,7 @@ define('_SETTINGS_PHPSYSTEMLOG', 'Das PHP System Log (definiert in php.ini) nutz
 
 define('_SETTINGS_REFERERONPRINT','Referrer auf der Druckansicht prüfen');
 
-define('_SETTINGS_SAFEHTMLWARNING', 'Warning! Use of the <a href="%url%">SafeHTML output filter</a> will override settings from some HTML tags (e.g. object and embed)');
+define('_SETTINGS_SAFEHTMLWARNING', 'Achtung! Der <a href="%url%">SafeHTML Output-Filter</a> überschreibt einige Einstellungen von HTML-Tags (z.B. object und embed)');
 define('_SETTINGS_SECHIGH','Hoch (Benutzer müssen sich bei jedem Besuch anmelden)');
 define('_SETTINGS_SECINACTIVELENGTH','Benutzer werden inaktiv nach');
 define('_SETTINGS_SECINACTIVETXT','Minuten ohne Aktivität');
@@ -104,7 +104,7 @@ define('_SETTINGS_SECMEDLENGTH','Bei mittlerer Sicherheitsstufe bleiben Benutzer
 define('_SETTINGS_SECMEDTXT','Tagen (bei aktivierter Erinnerung)');
 define('_SETTINGS_SECOPT','Sicherheit');
 define('_SETTINGS_SELLANGUAGE','Default Sprache für diese Webseite');
-define('_SETTINGS_SESSIONIPCHECK', 'IP Check für Session (eventuell Probleme mit AOL Benutzern)');
+define('_SETTINGS_SESSIONIPCHECK', 'IP Check für Session (eventuell Probleme mit AOL und Proxy-Benutzern)');
 define('_SETTINGS_SESSIONNAME', 'Session-Cookie Name');
 define('_SETTINGS_SESSIONNAMEWARNING', 'Nach Änderung müssen sich alle Benutzer neu anmelden');
 define('_SETTINGS_SESSIONPATHNOTWRITABLE', 'Pfad für Sessions nicht beschreibbar!');
@@ -119,12 +119,12 @@ define('_SETTINGS_SHORTURLS', 'Short URLs');
 define('_SETTINGS_SHORTURLSDIRECTORY', 'Directory');
 define('_SETTINGS_SHORTURLSENABLE', 'Short URLs aktivieren');
 define('_SETTINGS_SHORTURLSFILE', 'File');
-define('_SETTINGS_SHORTURLSHTACCESS', 'File basierende Short URLs und \'strip entry point from directory based urls\' benötigen eine .htaccess Datei im PostNuke Root. .htaccess-Vorlagen finden sich im /docs Verzeichnis');
-define('_SETTINGS_SHORTURLSNOTE', "Tip: If running PHP as CGI, you must ensure the line 'cgi.fix_pathinfo = 0' is present in your php.ini configuration file for short URLs to function correctly.");
+define('_SETTINGS_SHORTURLSHTACCESS', 'Filebasierende Short-URLs und die Option \'Strip entry point from directory based urls\' benötigen eine .htaccess Datei im Rootverzeichnis. .htaccess-Vorlagen finden sich im /docs Verzeichnis');
+define('_SETTINGS_SHORTURLSNOTE', "Tipp: Falls PHP im CGI-Modus läuft, sollte die Option 'cgi.fix_pathinfo = 0' in der php.ini aktiv sein, damit Short URLs einwandfrei funktionieren.");
 define('_SETTINGS_SHORTURLSSTRIPENTRYPOINT', 'Strip entry point from directory based urls');
 define('_SETTINGS_SHORTURLSTYPE', 'Typ der verwendeten Short URLs');
-define('_SETTINGS_SHORTURLS_EXTENSION', 'Erweiterung für File-basierende URLs');
-define('_SETTINGS_SHORTURLS_SEPARATOR', 'Separator für den permalink titel');
+define('_SETTINGS_SHORTURLS_EXTENSION', 'Erweiterung für Filebasierende URLs');
+define('_SETTINGS_SHORTURLS_SEPARATOR', 'Separator für den Permalink Titel');
 define('_SETTINGS_SHOWALLERRORS','notices, warnings und errors anzeigen');
 define('_SETTINGS_SHOWERRORSONLY','real errors anzeigen');
 define('_SETTINGS_SHOWNOERRORS','errors nicht anzeigen');
@@ -145,7 +145,7 @@ define('_SETTINGS_STARTDATE','Startdatum');
 define('_SETTINGS_STARTFUNC','Start Funktion');
 define('_SETTINGS_STARTMODULE', 'Startseite');
 define('_SETTINGS_STARTPAGE','Startmodul');
-define('_SETTINGS_STARTPAGEDESCR','(Modul auf das index.php verweist)');
+define('_SETTINGS_STARTPAGEDESCR','(Modul, auf das index.php verweist)');
 define('_SETTINGS_STARTTYPE', 'Start Function Type');
 
 define('_SETTINGS_TIMEZONEOFFSET', 'Timezone für unregistrierte Benutzer');
