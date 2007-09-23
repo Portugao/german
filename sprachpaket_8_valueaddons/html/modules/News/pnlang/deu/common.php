@@ -25,10 +25,10 @@ define('_NEWS_STORIES_FLC', 'Beiträge');
 // the following string is used in javascript, #{chars} is like %chars% in pnML
 // for more information see http://prototypejs.org/api/template
 // modules/News/pnjavascript/sizecheck.js
-define('_NEWS_CHARSUSED', 'Zeichen von 65536');
+define('_NEWS_CHARSUSED', '#{chars} Zeichen von 65536');
 define('_NEWS_CONTENTTYPE', 'Formatierungstyp');
 define('_NEWS_EXTENDEDTEXT', 'Erweiterter Text');
-define('_NEWS_FOOTNOTES', 'Footer-Anmerkungen');
+define('_NEWS_FOOTNOTES', 'Anmerkungen');
 define('_ARTICLETITLE_FLC', 'Beitragstitel');
 define('_NEWS_NEWSARTICLEPREVIEW', 'Beitragsvorschau');
 
@@ -38,7 +38,7 @@ define('_NEWS_HOMETEXT', 'Textanlauf');
 define('_NEWS_INHOME', 'Auf der Homepage anzeigen');
 define('_NEWS_MAXCHARS', '(max. 65536 Zeichen)');
 define('_NEWS_NOTES', 'Anmerkungen');
-define('_NEWS_OVERVIEW', 'Heading Info');
+define('_NEWS_OVERVIEW', 'Info');
 define('_NEWS_ARTICLECONTENT', 'Beitragsinhalt');
 define('_NEWS_PLAINTEXT', 'normaler Text');
 define('_NEWS_POSTORPREVIEW', 'Aktion');

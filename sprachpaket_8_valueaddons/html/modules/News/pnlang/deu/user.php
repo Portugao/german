@@ -15,7 +15,7 @@ define('_NEWS_ARCHIVES', 'Archiv');
 define('_NEWS_VIEW', 'Beiträge ansehen');
 
 // archives
-define('_NEWS_ARCHIVESFORDATE', 'Archiv von %month%, %year%');
+define('_NEWS_ARCHIVESFORDATE', 'Archiv für %month% %year%');
 define('_NEWS_POSTED', 'geschrieben am');
-define('_NEWS_STORIESSSORTEDBYMONTH', 'Alle Newsbeiträge, sortiert nach Monat');
+define('_NEWS_STORIESSSORTEDBYMONTH', 'Alle Beiträge, sortiert nach Monat');
 define('_NEWS_VIEWS', 'gelesen');
