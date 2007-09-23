@@ -10,7 +10,5 @@
  * @subpackage News
 */
 
-define('_NEWSSTORIES', 'Newsbeiträge');
 define('_NEWS_SEARCH', 'Newsbeiträge Suche');
-define('_NEWS_SEARCHRESULTS', 'Newsbeiträge gefunden');
 define('_NEWS_SEACHNONEFOUND', 'keine Newsbeiträge gefunden');
