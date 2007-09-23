@@ -22,6 +22,9 @@ define('_NEWS_STORIES_FLC', 'Beiträge');
 
 // new/modify templates
 // these are located in the common file to support user submission
+// the following string is used in javascript, #{chars} is like %chars% in pnML
+// for more information see http://prototypejs.org/api/template
+// modules/News/pnjavascript/sizecheck.js
 define('_NEWS_CHARSUSED', 'Zeichen von 65536');
 define('_NEWS_CONTENTTYPE', 'Formatierungstyp');
 define('_NEWS_EXTENDEDTEXT', 'Erweiterter Text');
