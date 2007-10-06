@@ -11,6 +11,5 @@
 define('_USERS_ONLINEBLOCK_CURRENTLYONLINE', 'Derzeit sind %g% %gs% und %m% %ms% online.');
 define('_USERS_ONLINEBLOCK_PRIVATEMSGS','Sie haben %m% neue Nachricht(en).');
 define('_USERS_ONLINEBLOCK_WHOSONLINE','Wer ist angemeldet');
-define('_USERS_ONLINEBLOCK_YOUAREANON','Noch nicht registriert oder angemeldet - <a href="%u%">Anmeldung</a>.');
+define('_USERS_ONLINEBLOCK_YOUAREANON','Noch nicht registriert oder angemeldet? Sie können sich <a href="%u%">hier Registrieren</a>.');
 define('_USERS_ONLINEBLOCK_YOUARELOGGED','Angemeldet als <strong>%uname%</strong>.');
-
