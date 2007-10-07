@@ -23,4 +23,4 @@ define('_CATDISP_ACTIVITYSTATUS', 'Aktivitätsstatus');
 define('_CATDISP_ACTIVE', 'Aktiv');
 define('_CATDISP_INACTIVE', 'Inaktiv');
 define('_CATDISP_PENDINGSTATUSBASIC', 'Basis des Warte-Status');
-
+define('_CATDISP_USERS', 		'Benutzer');
