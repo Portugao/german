@@ -27,6 +27,8 @@ define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeit
 define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind werden bei Entfernung des Moduls ebenfalls entfernt.');
 
 // errors, warnings and statuses
+define('_MODULES_HASBLOCKSLEFT', 'Für dieses Modul sind noch Blöcke aktiv, die vorher entfernt werden müssen!');
+define('_MODULES_MANDATORYCOREMODULE', 'Diese Modul ist ein notwendiges Kernmodul, welches vom System benötigt wird und somit nicht deaktiviert werden kann.');
 define('_MODULES_MODULEISSTARTMODULE', 'Das Modul kann nicht deaktiviert werden, weil es als Systemstart-Modul eingestellt ist.');
 define('_MODULES_ACTIVATED', 'Modul aktiviert');
 define('_MODULES_BLOCKSEXIST', 'Modul kann nicht entfernt werden weil noch zugehörige Blöcke aktiv sind.');
