@@ -83,7 +83,7 @@ define('_CATEGORIES_EDITCAT_NOT_VALUEPARENT', 'Angegebene Kategorie ist keine üb
 define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Tochter-Kateogorie von docroot');
 define('_CATEGORIES_NAME_EMPTY',              'Name darf nicht leer sein');
 define('_CATEGORIES_NO_USERCATNAME',		      'Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden');
-define('_CATEGORIES_ROOT_CANT_EDIT',          'Das root Verzeichnis kann nicht im User-Modus editiert werden');
+define('_CATEGORIES_ROOT_CANT_EDIT',          'Fehler! Das Stammverzeichnis kann nicht im Benutzermodus editiert werden');
 define('_CATEGORIES_USERCAT_NOAUTOCREATE',  	'Fehler! Der Benutzerstammknoten für diesen Benutzer existiert nicht und das automatische Erstellung ist nicht gesetzt.');
 define('_CATEGORIES_USERCAT_LOGGED_IN',	    	'Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich');
 define('_CATEGORIES_USERDOCROOT_EMPTY',	    	'Fehler! Der Benutzerstammknoten konnte nicht ermittelt werden');
