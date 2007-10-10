@@ -12,5 +12,3 @@
 
 // general
 define('_MEMBERSLIST','Mitgliederliste');
-
-?>

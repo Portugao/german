@@ -14,5 +14,3 @@ define('_MEMBERSLIST_MEMBERSPERPAGE', 'Objekte pro Seite auf der Members List Se
 define('_MEMBERSLIST_ONLINEMEMBERSITEMSPERPAGE', 'Objekte pro Seite auf der Members Online Seite');
 define('_MEMBERSLIST_RECENTMEMBERSITEMSPERPAGE', 'Objekte pro Seite auf der Members Letzte Benutzer Seite');
 define('_MEMBERSLIST_UNVERIFIED', 'unregistrierte Benutzer von der Members List filtern');
-
-?>

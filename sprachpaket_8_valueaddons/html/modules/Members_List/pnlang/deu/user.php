@@ -34,5 +34,3 @@ define('_MEMBERSLIST_USERSSHOWN','Benutzer angezeigt');
 define('_MEMBERSLIST_VIEW', 'Members List');
 define('_MEMBERSLIST', 'Members List');
 define('_MEMBERSLIST_SUMMARY', 'Übersicht Mitgliedschaft');
-
-?>

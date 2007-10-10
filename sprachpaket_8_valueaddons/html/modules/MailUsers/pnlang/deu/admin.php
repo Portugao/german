@@ -52,5 +52,3 @@ define('_NM_USERNAMEIS', 'Benutzername ist:');
 define('_NM_USERNAMECONTAINS','Benutzername enthält:');
 define('_NM_USERS',' Benutzer');
 define('_NM_YIMCONTAINS','und Yahoo Messenger enthält:');
-
-?>

@@ -30,4 +30,3 @@ define('_CREDITSMODULES','Installierte Module');
 define('_CREDITSREADPNCR','PostNuke Credits anzeigen');
 define('_CREDITSREADPNHP','PostNuke Hilfe anzeigen');
 define('_CREDITSREADPNLIC','PostNuke Lizenz anzeigen');
-?>

@@ -16,5 +16,3 @@ define('_HITCOUNTMODSWERECOUNTING', 'Module für die im Moment Hits gezählt werde
 define('_HITCOUNTHITS', 'Hits');
 define('_HITCOUNTITEM', 'Objekt');
 define('_HITCOUNTITEMS', 'Objekte');
-
-?>

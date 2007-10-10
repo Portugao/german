@@ -16,5 +16,3 @@ define('_MEMBERSLIST_FEATUREDUSER_BLOCKNAME', 'Besondere Benutzer');
 define('_MEMBERSLIST_FEATUREDUSER_BLOCKDESC', 'Zeige besondere Benutzer');
 
 define('_MEMBERSLIST_REGISTEREDONDATE', 'Registriert am %date%');
-
-?>
