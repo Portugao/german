@@ -25,4 +25,5 @@ define('_FAQ_GENERAL',       'Allgemeine Einstellungen');
 define('_FAQ_QUESTION',      'Frage');
 define('_FAQ_SUBMITTEDBY',   'Eingesandt von');
 
-?>
+define('_FAQ_CREATEDBYON',   'Erstellt von %username% am %date%');
+define('_FAQ_UPDATEDBYON',   'Aktualisiert von %username% am %date%');

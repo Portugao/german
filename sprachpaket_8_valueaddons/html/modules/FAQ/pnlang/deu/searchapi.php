@@ -14,5 +14,3 @@ define('_FAQ_CATEGORIES', 'FAQs');
 define('_FAQ_SEARCH', 'FAQ Suche');
 define('_FAQ_SEARCHRESULTS', 'FAQs gefunden');
 define('_FAQ_SEACHNONEFOUND', 'Keine FAQs gefunden');
-
-?>

@@ -24,5 +24,3 @@ define('_FAQ_RECENTFAQS',  'Aktuellste FAQs');
 define('_FAQ_SUBMITTEDBY', 'Eingesandt von');
 define('_FAQ_VIEW',        'FAQ\'s ansehen');
 define('_FAQ_YOURNAME',    'Name');
-
-?>
