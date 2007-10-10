@@ -30,10 +30,12 @@ define('_THEME_NEW_DISABLED', 'Theme-Erzeugung deaktiviert da das Verzeichnis ni
 define('_THEME_REGENERATE', 'Themeliste neu einlesen');
 
 // status/error messages
+define('_THEME_UNABLETODELETEFILES', 'Die Themedateien können nicht gelöscht werden, weil das System kein Schreibzugriff auf das Themeverzeichnis themes/%themedirectory% bzw. die Dateien hat.');
 define('_THEME_CACHE_CLEARED', 'Template-Cache gelöscht');
 define('_THEME_COMPILED_CLEARED', 'Compile-Cache gelöscht');
 define('_THEME_COULDNOTINCLUDE', 'Theme Versionsdatei konnte nicht eingebunden werden: ');
 define('_THEME_DEFAULTCHANGED', 'Standard Theme geändert');
+define('_THEME_ERRORDELETINGTHEMEFILES', 'Beim Versuch, die Dateien zu löschen, ist ein Fehler aufgetreten. Bitte entfernen Sie die Dateien mit einem FTP-Client.');
 define('_THEME_FAILEDCREATECONFIGDIR', 'Verzeichnis für die Theme-Konfiguration konnte nicht angelegt werden');
 define('_THEME_FAILEDTOOPENFILEFORWRITING', 'Datei konnte nicht zum schreiben geöffnet werden');
 define('_THEME_FAILEDTOWRITETOFILE', 'Datei konnte nicht beschrieben werden');
@@ -41,6 +43,7 @@ define('_THEME_INCORRECTTYPE', 'Upgrade für dieses Theme nicht möglich (kein Xan
 define('_THEME_REGENERATED', 'Themeliste neu eingelesen');
 define('_THEME_SETTINGSUPDATED', 'Einstellugen aktualisiert');
 define('_THEME_THEMEDIRMUSTBEWRITABLE', 'Theme-Verzeichnis muss beschreibbar sein');
+define('_THEME_THEMEFILESDELETED', 'Die Themedateien wurden erfolgreich im Dateisystem gelöscht');
 define('_THEME_UNDEFINEDBLOCKPOSITIONS', '<p>Die folgenden Blockpositionen in der Seitenkonfiguration sind nicht im Block-Modul eingerichtet</p>%p%<p>Zum Anlegen Blockposition anklicken.</p>');
 define('_THEME_UPGRADED', 'Theme aktualisiert');
 
@@ -78,6 +81,7 @@ define('_THEME_2COLRIGHT', '2 Spalten - Menü rechts');
 define('_THEME_3COL', '3 Spalten - Menüs beidseitig');
 define('_THEME_ADMINTHEME', 'Admin Theme');
 define('_THEME_ADMINTHEMENOTE', 'Themes für den Adminbereich');
+define('_THEME_CONFIRMDELETEFILES', 'Falls möglich, Themedateien löschen');
 define('_THEME_DISPLAYNAME', 'Displayname');
 define('_THEME_LAYOUT', 'Layout');
 define('_THEME_LAYOUTSBLUEROBOT', 'Layout von <a href="http://www.bluerobot.com/web/layouts/">Layout reservoir</a> unter <a href="http://www.bluerobot.com/">BlueRobot.com</a>.');
@@ -102,6 +106,7 @@ define('_THEME_CONFIGURATIONEXISTS', 'Existiert eine Konfigurationsdatei?');
 define('_THEME_CONFIGURATIONEXISTSNOTE', 'Fehlende Konfigurationsdateien müssen erstellt werden in <em>%path%</em>.');
 define('_THEME_CONFIGURATIONFILE', 'Konfigurationsdatei');
 define('_THEME_CONFIGURATIONNAME', 'Name');
+define('_THEME_CUSTOMARGSNOTE', 'Liste der Argumente in der URL getrennt nach /.');
 define('_THEME_DEFAULTTEMPLATE', 'Standard Template');
 define('_THEME_HOMEPAGE', 'Homepage');
 define('_THEME_MASTER', 'Master');
