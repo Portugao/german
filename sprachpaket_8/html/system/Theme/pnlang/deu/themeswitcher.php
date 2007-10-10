@@ -14,5 +14,3 @@ define('_THEME_CHANGE','Theme wechseln');
 define('_THEME_FORMAT', 'Output Format');
 define('_THEME_IMAGEDROPDOWN', 'Dropdown mit Vorschaubildern');
 define('_THEME_SIMPLELIST', 'Einfache Liste');
-
-?>
