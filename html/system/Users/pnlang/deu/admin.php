@@ -39,6 +39,10 @@ define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-m
 define('_USERS_MINAGE','Mindestalter:');
 define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
 define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
+define('_USERS_SPAMQUESTION', 'Registrierungsfrage');
+define('_USERS_SPAMQUESTIONHINT', 'individuelle Fragen können helfen, Spamregistrierungen zu vermeiden');
+define('_USERS_SPAMANSWER', 'Registrierungsantwort');
+define('_USERS_SPAMANSWERHINT', 'Antwort auf die Spamprotect-Frage');
 
 //  registration options
 define('_USERS_ALLOWREGISTRATIONS','Registrierung von Accounts ermöglichen:');
