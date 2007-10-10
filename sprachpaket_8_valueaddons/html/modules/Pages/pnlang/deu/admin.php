@@ -11,8 +11,8 @@
  */
 
 define('_PAGES', 'Pages');
-define('_PAGES_PAGE', 'Eine neue Seite');
-define('_PAGES_PAGES', 'alle Seiten');
+define('_PAGES_PAGE', 'Seite');
+define('_PAGES_PAGES', 'Seiten');
 
 define('_PAGES_DISPLAYWRAPPER', 'Erweiterte Informationen zum Artikel anzeigen?');
 define('_PAGES_GENERAL', 'Generelle Einstellungen');
