@@ -11,18 +11,20 @@
 */
 
 define('_QUOTES', 'Zitate');
-define('_QUOTESNEW', 'Neues Zitat');
-define('_QUOTESVIEW', 'Zitate anzeigen');
-define('_QUOTESUPDATED', 'Zitat aktualisert');
+define('_QUOTES_QUOTE', 'Zitat');
+define('_QUOTES_QUOTES', 'Zitate');
+
+// view template
+define('_QUOTES_SEARCH','Nach Schlüsselwort suchen:');
+
+// form fields
+define('_QUOTES_AUTHOR','Autor');
+define('_QUOTES_TEXT','Zitattext');
+
+/*
 define('_QUOTESCONFIRMDELETE','Zitat löschen?');
-define('_QUOTESAUTHOR','Autor');
-define('_QUOTESTEXT','Zitattext:');
-define('_QUOTESQUOTE','Zitat');
-define('_QUOTESCREATE', 'Zitat erstellen');
-define('_QUOTESADDSUCCESS','Zitat erfolgreich erstellt.');
-define('_QUOTESDELETED','Zitat gelöscht.');
 define('_QUOTESMODIFY','Zitate ändern');
 define('_QUOTESNOQUOTES','keine Zitate gefunden.');
-define('_QUOTESSEARCH','Suchen:');
 define('_QUOTESUPDATE', 'Zitat ändern');
 define('_QUOTESDELETE', 'Zitat löschen');
+*/
