@@ -16,9 +16,7 @@ define('_NEWS', 'News');
 // singular/plural
 define('_NEWS_STORY', 'Beitrag');
 define('_NEWS_STORY_LC', 'Beitrag');
-define('_NEWS_STORY_FLC', 'Beitrag');
 define('_NEWS_STORIES', 'Beiträge');
-define('_NEWS_STORIES_FLC', 'Beiträge');
 
 // new/modify templates
 // these are located in the common file to support user submission
