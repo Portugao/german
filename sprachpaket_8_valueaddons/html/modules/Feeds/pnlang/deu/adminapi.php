@@ -12,5 +12,3 @@
 
 define('_FEEDSINVALIDPROTOCOL', 'Falsches Protokoll - nur http und https sind möglich.');
 define('_FEEDSURLTOOLONG', 'Die angegebene URL ist zu lang (max. 200 Zeichen).');
-
-?>

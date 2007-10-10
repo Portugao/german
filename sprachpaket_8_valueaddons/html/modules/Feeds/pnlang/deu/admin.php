@@ -26,5 +26,3 @@ define('_FEEDSNAME', 'Feed Name');
 define('_FEEDSLINKSOPENINNEWWINDOW', 'Link in neuem Fenster öffnen');
 define('_FEEDSCACHEINTERVAL', 'Cacheinterval für Feeds');
 define('_FEEDSCACHEDIRECTORY', 'Cacheverzeichnis für Feeds (relativ zu pnTemp)');
-
-?>

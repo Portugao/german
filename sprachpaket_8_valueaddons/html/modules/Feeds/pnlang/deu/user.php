@@ -22,4 +22,3 @@ if (!defined('_FEEDSNAME')) {
 define('_FEEDSBYAUTHOR', 'von');
 define('_FEEDSREADMORE', 'mehr lesen....');
 define('_FEEDSAVAILABLEFEEDS', 'Verfügbare Feeds');
-?>
