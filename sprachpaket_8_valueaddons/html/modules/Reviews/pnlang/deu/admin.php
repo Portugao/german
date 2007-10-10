@@ -14,4 +14,4 @@ define('_REVIEWS', 'Reviews');
 define('_REVIEWS_REVIEW', 'Review');
 define('_REVIEWS_REVIEWS', 'Reviews');
 
-define('_REVIEWS_GENERAL', 'Generelle Einstellungen');
+define('_REVIEWS_GENERAL', 'Allgemeine Einstellungen');
