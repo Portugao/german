@@ -36,5 +36,3 @@ define('_EPHEMERIDSMONTH', 'Monat');
 define('_EPHEMERIDSYEAR', 'Jahr');
 define('_EPHEMERIDSDATE', 'Datum');
 define('_EPHEMERIDSNOSUCHITEM', 'Keinen entsprechenden Eintrag gefunden');
-
-?>

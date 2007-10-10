@@ -14,5 +14,3 @@ if (!defined('_EPHEMERIDS')) {
     define('_EPHEMERIDS','Ephemeriden');
 }
 define('_ONEDAY','An einem Tag wie heute...');
-
-?>
