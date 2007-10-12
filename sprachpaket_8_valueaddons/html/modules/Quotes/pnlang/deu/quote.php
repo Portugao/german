@@ -10,4 +10,4 @@
  * @subpackage Quotes
 */
 
-define('_QUOTESERRORMSG', 'Zu wenig Zitate in der Datenbank!');
+define('_QUOTES_ERRORMSG', 'Zu wenig Zitate in der Datenbank!');
