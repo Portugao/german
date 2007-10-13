@@ -48,6 +48,8 @@ define('_CATEGORIES_PREFS',		               	'Einstellungen');
 define('_CATEGORIES_PREFS_USERROOTCAT',		    'Stammkategorie für Benutzerkategorien');
 define('_CATEGORIES_PREFS_ALLOWUSERCATEDIT',	'Benutzer erlauben, die eigenen Kategorien bearbeiten zu dürfen');
 define('_CATEGORIES_PREFS_AUTOCREATEUSERCAT',	'Automatisches Erstellen des Stammverzeichnis für Benutzerkategorien');
+define('_CATEGORIES_PREFS_AUTOCREATEUSERDEFAULTCAT',	'Automatisches Erstellen der Standard-Benutzerkategorien');
+define('_CATEGORIES_PREFS_USERDEFAULTCATNAME',	'Standard-Benutzerkategorien');
 define('_CATEGORIES_REBUILDPATHS', 	        	'Pfade neu erstellen');
 
 // list template
