@@ -26,7 +26,6 @@ define('_NEWS_STORIES', 'Beiträge');
 define('_NEWS_CHARSUSED', '#{chars} Zeichen von 65536');
 define('_NEWS_CONTENTTYPE', 'Formatierungstyp');
 define('_NEWS_EXTENDEDTEXT', 'Erweiterter Text');
-define('_NEWS_FOOTNOTES', 'Anmerkungen');
 define('_ARTICLETITLE_FLC', 'Beitragstitel');
 define('_NEWS_NEWSARTICLEPREVIEW', 'Beitragsvorschau');
 

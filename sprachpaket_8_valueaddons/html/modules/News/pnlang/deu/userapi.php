@@ -19,3 +19,4 @@ define('_NEWS_FRIEND', 'Empfehlen');
 define('_NEWS_FULLTEXTOFARTICLE', 'Mehr zu %title% lesen');
 define('_NEWS_PRINTER', 'Druckerfreundliche Ansicht');
 define('_NEWS_POSTEDBYANDON', 'Geschrieben von %username% am %date%');
+define('_NEWS_FOOTNOTES', 'Anmerkungen: %notes%');
