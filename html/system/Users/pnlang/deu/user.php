@@ -66,7 +66,7 @@ define('_USERS_YOUARENOTLOGGEDOUT','Keine Abmeldung erfolgt.');
 // status/error messages
 define('_USERS_ACTIVATIONINFO','Bitte nutzen Sie den Link in der Mail, um den Zugang zu aktivieren.');
 define('_USERS_AGEREQUIREMENTNOTMET','Fehler! Sie müssen mindestens %a% Jahre sein oder über eine Genehmigung der Eltern für die Registrierung verfügen.');
-define('_USERS_APPLICATIONRECEIVED', 'Vielen Dank für die Registrierung. Thanks for registering! We will review your application soon.');
+define('_USERS_APPLICATIONRECEIVED', 'Vielen Dank für die Registrierung. Die Anmeldung wird in Kürze vom Seitenbetreiber freigeschaltet.');
 define('_USERS_CODEMAILED','Der Bestätigungscode für %uname% wurde gedendet.');
 define('_USERS_EMAILDOMAINBANNED','Fehler! Domain ist für Registrierung gesperrt');
 define('_USERS_EMAILREGISTERED','Fehler! Die E-Mail-Adresse wurde bereits registriert');

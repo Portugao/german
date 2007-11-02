@@ -12,10 +12,10 @@
 */
 
 // welcome e-mail
-define('_USERS_YOURACCOUNTPENDING', 'Die Anmeldung muß noch durch den Seitenbetreiber freigeschaltet werden, nach der Freigabe erfolgt eine E-Mail-Benachrichtigung.');
+define('_USERS_YOURACCOUNTPENDING', 'Die Anmeldung muß noch durch den Seitenbetreiber freigeschaltet werden. Nach der Freigabe erfolgt eine E-Mail-Benachrichtigung.');
 define('_USERS_FOLLOWINGMEM','Die gespeicherte Information ist:');
-define('_USERS_KEEPTHISEMAILSAFE', 'Bitte diese E-Mail speichern, es ist die einzige Kennwort-Benachrichtigung!');
-define('_USERS_USEDEMAILTOREGISTER','Jemand mit der E-Mail-Adresse (%email%) hat ein Benutzerkonto eingerichtet bei %sitename%.');
+define('_USERS_KEEPTHISEMAILSAFE', 'Bitte diese E-Mail speichern, da es ist die einzige Kennwort-Benachrichtigung ist!');
+define('_USERS_USEDEMAILTOREGISTER','Jemand mit der E-Mail-Adresse (%email%) hat ein Benutzerkonto eingerichtet bei: %sitename%.');
 define('_USERS_WELCOMESUBJECT','Zugangsdaten für %uname% von %sitename%');
 define('_USERS_WELCOMETOSITE', 'Willkommen bei %sitename% (%siteurl%)!');
 define('_USERS_YOURAPPLICATIONAPPROVED', 'Die Anmeldung wurde jetzt freigeschaltet. Das Kennwort wurde bereits per E-Mail versendet.');

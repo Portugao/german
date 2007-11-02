@@ -72,8 +72,8 @@ define('_USERS_MEMBEROF', 'Mitglied');
 // Note: all of the strings ending in 'Contains' precede an input field so incomplete sentences here are fine.
 define('_USERS_ANYGROUP','alle');
 define('_USERS_CLICKTOFINDALL','Um alle Benutzer anzuzeigen,<br />diesen Knopf klicken ohne vorher eine Wahl getroffen zu haben');
-define('_USERS_REGDATEAFTER','Registrierung erfolgte nach<br />(yyyy-mm-dd)');
-define('_USERS_REGDATEBEFORE','Registrierung erfolgte vor<br />(yyyy-mm-dd)');
+define('_USERS_REGDATEAFTER','Registrierung erfolgte nach (yyyy-mm-dd)');
+define('_USERS_REGDATEBEFORE','Registrierung erfolgte vor (yyyy-mm-dd)');
 define('_USERS_STATUS', 'Benutzer Status');
 define('_USERS_USERGROUPIS','Der Benutzer gehört zu');
 define('_USERS_SEARCHSUBSTRING', 'Partial strings are matched with all fields');
