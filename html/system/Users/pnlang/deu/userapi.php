@@ -16,8 +16,8 @@ define('_USERS_YOURACCOUNTPENDING', 'Die Anmeldung muß noch durch den Seitenbetr
 define('_USERS_FOLLOWINGMEM','Die gespeicherte Information ist:');
 define('_USERS_KEEPTHISEMAILSAFE', 'Bitte diese E-Mail speichern, es ist die einzige Kennwort-Benachrichtigung!');
 define('_USERS_USEDEMAILTOREGISTER','Jemand mit der E-Mail-Adresse (%email%) hat ein Benutzerkonto eingerichtet bei %sitename%.');
-define('_USERS_WELCOMESUBJECT','Kennwort für %uname%');
-define('_USERS_WELCOMETOSITE', 'Willkommen bei %sitename% ($siteurl%)!');
+define('_USERS_WELCOMESUBJECT','Zugangsdaten für %uname% von %sitename%');
+define('_USERS_WELCOMETOSITE', 'Willkommen bei %sitename% (%siteurl%)!');
 define('_USERS_YOURAPPLICATIONAPPROVED', 'Die Anmeldung wurde jetzt freigeschaltet. Das Kennwort wurde bereits per E-Mail versendet.');
 define('_USERS_YOUCANCHANGEITAT','Sie können es ändern nach einem <a href="%url%">Login</a>.');
 
@@ -29,7 +29,7 @@ define('_USERS_PASSWORDFOR','Benutzer-Kennwort für %uname%');
 define('_USERS_YOURNEWPASSWORDIS','Das neue Kennwort ist: %password%.');
 
 // lost password code e-mail
-define('_USERS_CODEFOR','Confirmation code for %uname%');
+define('_USERS_CODEFOR','Bestätigungscode für %uname%');
 define('_USERS_AWEBUSERHASREQUESTEDCODE', 'Jemand mit der IP-Adresse %hostname% hat eine Bestätigung angefordert um das Kennwort zu ändern.');
 define('_USERS_YOURCODEIS','Der Bestätigungs-Code ist: %code%');
 define('_USERS_WITHTHISCODE','Mit diesem Bestätigungs-Code kann ein <a href="%url%">neues Kennwort</a> angelegt werden.');

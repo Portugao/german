@@ -30,6 +30,11 @@ define('_CATEGORIES_EDIT_USER_NOT_OWN',	    	'Die Bearbeitung von fremden Benutz
 // new/edit template
 define('_CATEGORIES_ADDITIONALDATA',          'Zusätzliche Datenfelder');
 define('_CATEGORIES_ADVANCED',                'Umschalten zum erweiterten Modus');
+define('_CATEGORIES_ATTRIBUTES',              'Attribute');
+define('_CATEGORIES_ATTRIBUTE_ADD',           'Attribut hinzufügen');
+define('_CATEGORIES_ATTRIBUTE_NAME',          'Attributname');
+define('_CATEGORIES_ATTRIBUTE_VALUE',         'Attributwert');
+define('_CATEGORIES_BACK_TO_REFERER',	      	'Zurück zum verweisenden Modul');
 define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
 define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet werden.');
 define('_CATEGORIES_IS_LEAF',		             	'Kategorie ist eine Unterkategorie');
@@ -81,7 +86,7 @@ define('_CATEGORIES_CONFIG_REBUILD_PATHS',    'Pfade neu erstellen');
 define('_CATEGORIES_DOCROOT_CANT_RETRIEVE',   'Kann docroot nicht laden');
 define('_CATEGORIES_DOCROOT_INVALID',         'Ungültiger docroot Parameter im URL');
 define('_CATEGORIES_EDITCAT_INVALID',         'Ungültige Kategorie kann nicht editiert werden');
-define('_CATEGORIES_EDITCAT_NOT_VALUEPARENT', 'Angegebene Kategorie ist keine übergeordnete Werte-Kategorie');
+define('_CATEGORIES_EDITCAT_NOT_LEAF',        'Angegebene Kategorie ist keine übergeordnete Werte-Kategorie');
 define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Unterkateogorie von docroot');
 define('_CATEGORIES_NAME_EMPTY',              'Name darf nicht leer sein');
 define('_CATEGORIES_NO_USERCATNAME',		      'Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden');
