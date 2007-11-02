@@ -21,5 +21,5 @@ define('_MEMBERSLIST_ONLINECOUNT1', 'Es sind %a% unregistrierte Benutzer und %u%
 define('_MEMBERSLIST_ONLINECOUNT2', 'Es sind %a% unregistrierter Benutzer und %u% registrierter Benutzer online.');
 define('_MEMBERSLIST_ONLINECOUNT3', 'Es sind %a% unregistrierter Benutzer und %u% registrierte Benutzer online.');
 define('_MEMBERSLIST_ONLINECOUNT4', 'Es sind %a% unregistrierte Benutzer und %u% registrierter Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT5', 'Es ist %u% unregistrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT5', 'Es ist %u% registrierter Benutzer online.');
 define('_MEMBERSLIST_ONLINECOUNT6', 'Es sind %u% registrierte Benutzer online.');
