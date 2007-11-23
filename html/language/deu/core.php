@@ -41,6 +41,8 @@ define('_YEARS', 'Jahre');
 define('_NOTAVALIDDATE', 'ungültiges Datum');
 define('_NOTAVALIDINT', 'ungültige Zahl');
 define('_NOTAVALIDNUMBER', 'ungültige Zahl');
+define('_NOTAVALIDEMAIL', 'ungültige Emailadresse');
+define('_NOTAVALIDURL', 'ungültige URL');
 
 // time zone defines
 define('_TIMEZONES','GMT-12 GMT-11 HST GMT-9:30 AKST PST MST CST EST AST GMT-3:30 GMT-3 GMT-2 GMT-1 GMT CET EET GMT+3 GMT+3:30 GMT+4 GMT+4:30 GMT+5 GMT+5:30 GMT+5:45 GMT+6 GMT+6:30 GMT+7 AWST ACDT JST ACST AEST GMT+11 GMT+11:30 GMT+12 GMT+12:45 GMT+13 GMT+14');
