@@ -12,7 +12,6 @@
 
 define('_HITCOUNT', 'Hit Counter');
 define('_HITCOUNTVIEW', 'Hit Count Übersicht');
-define('_HITCOUNTMODSWERECOUNTING', 'Module für die im Moment Hits gezählt werden');
+define('_HITCOUNTMODSWERECOUNTING', 'Module für die derzeit Hits gezählt werden');
 define('_HITCOUNTHITS', 'Hits');
-define('_HITCOUNTITEM', 'Objekt');
 define('_HITCOUNTITEMS', 'Objekte');

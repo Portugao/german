@@ -10,12 +10,12 @@
  * @subpackage Referers
  */
 
-define('_REFERERS','HTTP referers');
+define('_REFERERS','HTTP Referer');
 define('_REFERERSACTIVATE','HTTP-Referer aktivieren?');
 define('_REFERERSDELETEALL', 'Alle Referer löschen?');
 define('_REFERERSDELETED', 'Alle Referer gelöscht!');
 define('_REFERERSEXCLUDED','Ausnahmen (kommasepariert)');
-define('_REFERERSFREQUENCY','Frequency');
-define('_REFERERSPERCENT','per cent');
+define('_REFERERSFREQUENCY','Häufigkeit');
+define('_REFERERSPERCENT','Prozent');
 define('_REFERERSTOTAL','Insgesamt:');
 define('_REFERERSWHOLINKS','Folgende Seiten haben Links auf uns gesetzt');
