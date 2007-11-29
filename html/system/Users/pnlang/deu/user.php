@@ -31,17 +31,15 @@ define('_USERS_UNDERAGE','Ich bin jünger als %a% Jahre und das Einverständnis de
 
 // registration page
 define('_USERS_SUBMITREGISTRATION', 'Registrierung senden');
-define('_USERS_ADDITIONALINFO', 'Optionale Informationen');
 define('_USERS_ALLOWEMAILVIEW','E-Mail-Adresse im Profil anzeigen');
 define('_USERS_COOKIEWARNING','Diese Seite verwendet für die Session-Authentifizierung und teilweise für individuelle Einstellungen Cookies');
 define('_USERS_EMAILAGAIN','E-Mail-Adresse bestätigen');
 define('_USERS_PASSWDAGAIN','Kennwort (Wiederholung)');
 define('_USERS_PASSWILLSEND','Das Kennwort wird an die hinterlegte E-Mail-Adresse gesendet');
+define('_USERS_REGANSWERINCORRECT', 'Die Antwort auf die zusätzliche Spamschutzfrage ist nicht korrekt. Bitte versuche Sie es erneut.');
 define('_USERS_REGNEWUSER','Benutzer-Registrierung');
 define('_USERS_REGISTRATIONAGREEMENT','Einverständniserklärung zu <a href="%touurl%">Nutzungsbedingungen</a> und <a href="%ppurl%">Datensicherheit</a>');
 define('_USERS_REGISTRATIONCHECK', 'Angaben prüfen');
-// define('_USERS_REGISTERNOW','Jetzt registrieren!');
-// define('_USERS_WEDONTGIVE','Persönliche Daten werden gemäß Bundesdatenschutzgesetz vertraulich behandelt.');
 define('_USERS_REQUIREDTEXT','Mit (*) markierte Angaben sind erforderlich.');
 
 // terms of use (tied to the legal module
@@ -107,8 +105,11 @@ define('_USERS_USERBLOCKUPDATED', 'Benutzer-Block aktualisiert');
 define('_USERS_USERBLOCKMENUFOR', 'Block für %user%');
 
 //new reg template
-define('_USERS_REGTEXT', 'Auf nur einer Seite richten Sie in vier einfachen Schritten Ihr kostenloses Benutzerkonto bei %s% ein und erhalten Zugriff auf viele weitere Dienstleistungen .');
+define('_USERS_REGTEXT', 'Auf nur einer Seite richten Sie in wenigen einfachen Schritten Ihr kostenloses Benutzerkonto bei %s% ein und erhalten Zugriff auf viele weitere Dienstleistungen .');
 define('_USERS_REG_STEP1', 'Schritt 1: Benutzernamen eintragen');
 define('_USERS_REG_STEP2_WITHPASSWORD', 'Schritt 2: Email Adresse bzw. Passwort eintragen');
 define('_USERS_REG_STEP3', 'Schritt 3: AGB und Email prüfen  ');
-define('_USERS_REG_STEP4', 'Schritt 4: prüfen und absenden');
+define('_USERS_REG_STEP4_ADDITIONALINFO', 'Schritt 4: Die Registrierung benötigt folgende optionale Informationen');
+define('_USERS_REG_STEP4_SPAM', 'Schritt 4: Um automatisierte Registrierungen zu vermeinden, beantworten Sie bitte die folgende Spamschutz-Frage');
+define('_USERS_REG_STEP5_SPAM', 'Schritt 5: Um automatisierte Registrierungen zu vermeinden, beantworten Sie bitte die folgende Spamschutz-Frage');
+define('_USERS_REG_LASTSTEP', 'Letzter Schritt: Prüfen und absenden');
