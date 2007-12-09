@@ -46,7 +46,7 @@ define('_PROFILE_FIELDVALIDATION','Validierungs-Regel');
 define('_PROFILE_LISTOPTIONS', 'Inhalt: <br /> Option mit @@ beginnen');
 define('_PROFILE_STRINGINSTRUCTIONS', 'Bei Strings: Längenbereich (1,254)');
 define('_PROFILE_VALIDATION', 'Validierung');
-define('_PROFILE_VIEWABLEBY', 'Leseberechtiung für');
+define('_PROFILE_VIEWABLEBY', 'Leseberechtigung für');
 
 // error/status messages
 define('_PROFILE_ACTIVATIONFAILED', 'Fehler! Aktivierung fehlgeschlagen');
