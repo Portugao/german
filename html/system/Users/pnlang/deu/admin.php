@@ -22,7 +22,7 @@ define('_USERS_USERS', 'Benutzer');
 
 // navigation
 define('_USERS_DYNAMICDATA','Dynamische Benutzerdaten');
-define('_USERS_PENDINGAPPLICATIONS', 'Wartende Applikationen');
+define('_USERS_PENDINGAPPLICATIONS', 'Wartende Anmeldungen');
 define('_MODIFYUSERSCONFIG', 'Benutzerkonfiguration bearbeiten');
 define('_SEARCHUSERS', 'Benutzer suchen');
 define('_USERPROPERTIES', 'Benutzereigenschaften');
@@ -92,14 +92,14 @@ define('_USERS_SEND_MAIL','E-Mail-Nachricht(en) senden');
 define('_USERS_SUBJECT','Thema:');
 
 // pending applications template
-define('_USERS_VIEWAPPLICATIONS', 'Benutzerapplikationen anzeigen');
+define('_USERS_VIEWAPPLICATIONS', 'Benutzeranmeldungen anzeigen');
 define('_USERS_APPROVEUSERAPPLICATION','Neue Benutzer bestätigen');
 define('_USERS_APPROVEUSERAPPLICATIONBUT','Bestätigen');
-define('_USERS_CONFIRMAPPLICATION', 'Aktion für Benutzerapplikation bestätigen');
+define('_USERS_CONFIRMAPPLICATION', 'Neuen Benutzer akzeptieren');
 define('_USERS_DENYUSERAPPLICATION', 'Neuen Benutzer ablehnen');
 
 // application details template
-define('_USERS_VIEWAPPLICATION', 'Benutzerapplikation anzeigen');
+define('_USERS_VIEWAPPLICATION', 'Benutzeranmeldungen anzeigen');
 
 // user statuses
 define('_USERS_ACTIVE', 'Benutzer ist aktiv');
