@@ -24,7 +24,7 @@ define('_CATEGORIES_VIEW_TITLE',              'Alle Kategorien');
 // user template
 define('_CATEGORIES_EDIT_SUBCATEGORIES',    	'Kategorien für Modul bearbeiten');
 define('_CATEGORIES_EDIT_USER',			          'Benutzerkategorien bearbeiten');
-define('_CATEGORIES_EDIT_USER_DISABLED',     	'Die Bearbeitung von Benutzerkategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren.');
+define('_CATEGORIES_EDIT_USER_DISABLED',     	'Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren.');
 define('_CATEGORIES_EDIT_USER_NOT_OWN',	    	'Die Bearbeitung von fremden Benutzerkategorien ist nicht möglich. Diese Funktion kann nur vom Administrator durchgeführt werden.');
 
 // new/edit template
@@ -36,7 +36,7 @@ define('_CATEGORIES_ATTRIBUTE_NAME',          'Attributname');
 define('_CATEGORIES_ATTRIBUTE_VALUE',         'Attributwert');
 define('_CATEGORIES_BACK_TO_REFERER',	      	'Zurück zum verweisenden Modul');
 define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
-define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet werden.');
+define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet oder gelöscht werden.');
 define('_CATEGORIES_IS_LEAF',		             	'Kategorie ist eine Unterkategorie');
 define('_CATEGORIES_IS_LOCKED',		           	'Kategorie ist gesperrt');
 define('_CATEGORIES_LOCALISATION',            'Lokalisierte Ausgabe');
@@ -46,6 +46,7 @@ define('_CATEGORIES_ROOT_PARENT_LOCKED',	    'Die Stammkategorie eines Startknot
 define('_CATEGORIES_SECURITY_DOMAIN',         'Sicherheitsdomain');
 define('_CATEGORIES_SORT_VALUE',              'Sortierwert');
 define('_CATEGORIES_STATUS',                  'Aktiv');
+define('_CATEGORIES_UPDATE_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich aktualisiert');
 define('_CATEGORIES_VALUE',                   'Wert');
 
 // preferences template
@@ -88,9 +89,13 @@ define('_CATEGORIES_DOCROOT_INVALID',         'Ungültiger docroot Parameter im U
 define('_CATEGORIES_EDITCAT_INVALID',         'Ungültige Kategorie kann nicht editiert werden');
 define('_CATEGORIES_EDITCAT_NOT_LEAF',        'Angegebene Kategorie ist keine übergeordnete Werte-Kategorie');
 define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Unterkateogorie von docroot');
+define('_CATEGORIES_INVALID_CID',             'Fehler! Eine ungültige Kategorie-ID wurde empfangen');
+define('_CATEGORIES_INVALID_DIRECTION',       'Fehler! Eine ungültige Direction wurde empfangen');
+define('_CATEGORIES_INVALID_DOCROOT',         'Fehler! Ein ungültiger Benutzerstammknoten wurde empfangen');
 define('_CATEGORIES_NAME_EMPTY',              'Name darf nicht leer sein');
 define('_CATEGORIES_NO_USERCATNAME',		      'Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden');
 define('_CATEGORIES_ROOT_CANT_EDIT',          'Fehler! Das Stammverzeichnis kann nicht im Benutzermodus editiert werden');
+define('_CATEGORIES_UNABLE_TO_RETRIEVE',      'Fehler! Kann Kategorie mit ID [%d] nicht ermitteln');
 define('_CATEGORIES_USERCAT_NOAUTOCREATE',  	'Fehler! Der Benutzerstammknoten für diesen Benutzer existiert nicht und das automatische Erstellung ist nicht gesetzt.');
 define('_CATEGORIES_USERCAT_LOGGED_IN',	    	'Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich');
 define('_CATEGORIES_USERDOCROOT_EMPTY',	    	'Fehler! Der Benutzerstammknoten konnte nicht ermittelt werden');
