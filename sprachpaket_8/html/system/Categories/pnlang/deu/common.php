@@ -37,6 +37,9 @@ define('_CATEGORIES_ATTRIBUTE_VALUE',         'Attributwert');
 define('_CATEGORIES_BACK_TO_REFERER',	      	'Zurück zum verweisenden Modul');
 define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
 define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet oder gelöscht werden.');
+define('_CATEGORIES_CATEGORY_DELETE_CONFIRM', 'Soll die Kategorie wirklich gelöscht werden [');
+define('_CATEGORIES_CATEGORY_DELETE_CONFIRM_QM','] ?');
+define('_CATEGORIES_INSERT_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich eingefügt');
 define('_CATEGORIES_IS_LEAF',		             	'Kategorie ist eine Unterkategorie');
 define('_CATEGORIES_IS_LOCKED',		           	'Kategorie ist gesperrt');
 define('_CATEGORIES_LOCALISATION',            'Lokalisierte Ausgabe');
@@ -46,6 +49,7 @@ define('_CATEGORIES_ROOT_PARENT_LOCKED',	    'Die Stammkategorie eines Startknot
 define('_CATEGORIES_SECURITY_DOMAIN',         'Sicherheitsdomain');
 define('_CATEGORIES_SORT_VALUE',              'Sortierwert');
 define('_CATEGORIES_STATUS',                  'Aktiv');
+define('_CATEGORIES_SYSTEM_INFO',             'Kategorie Systeminformationen');
 define('_CATEGORIES_UPDATE_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich aktualisiert');
 define('_CATEGORIES_VALUE',                   'Wert');
 
