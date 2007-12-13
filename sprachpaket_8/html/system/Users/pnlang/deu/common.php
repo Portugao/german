@@ -12,6 +12,6 @@
 */
 
 // error/status messages
-define('_USERS_INVALIDEMAIL','Fehler! Es ist ein Fehler in der von Ihnen angegebenen Email-Adresse aufgetaucht.');
-define('_USERS_PASSDIFFERENT','Fehler! Sie haben nicht dasselbe Kennwort in beide Felder eingegeben. Bitte geben Sie zweimal dasselbe Kennwort ein (dies dient der Verifikation).');
+define('_USERS_INVALIDEMAIL','Problem mit der angegebene E-Mail-Adresse!');
+define('_USERS_PASSDIFFERENT','Die beiden Kennworte sind nicht identisch, zur Überprüfung bitte gleiche Kennworte eingeben');
 
