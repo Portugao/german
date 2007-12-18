@@ -16,4 +16,5 @@ define('_THEME_YOUHAVEXNEWPRIVATEMESSAGES', 'Sie haben %x% <a href="%url%">neue 
 define('_THEME_YOUHAVENONEWPRIVATEMESSAGES', 'Sie haben keine <a href="%url%">neuen Nachrichten</a>');
 define('_THEME_YOUHAVEXPRIVATEMESSAGES', 'Sie haben %x% <a href="%url%">neue Nachricht(en)</a>, %u% ungelesen');
 define('_THEME_YOUHAVENOPRIVATEMESSAGES', 'Sie haben keine <a href="%url%">Nachrichten</a>');
+define('_THEME_PAGECREATEDINSECONDS', 'Seite erstellt in %sec% Sekunden.');
 
