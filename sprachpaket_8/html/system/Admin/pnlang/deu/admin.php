@@ -18,10 +18,17 @@ define('_ADMIN_TITLE', 'Administration');
 define('_ADMIN_PNSECURITYANALYZER', 'Warnungen der Sicherheitsanalyse');
 define('_MODULESCATEGORIZATION', 'Modulkategorisierung');
 define('_MODIFYADMINPANELCONFIG', 'Administration-Einstellungen');
-define('_MODULECATEGORIESLISTVIEW', 'Liste der Modulkategorisierung');
+define('_MODULECATEGORIESLISTVIEW', 'Liste der Modulkategorien');
 define('_NEWMODULECATEGORY', 'Modulkategorie erstellen');
 define('_ADMIN_NEWCATEGORY', 'Neue Modulkategorie');
 define('_ADMIN_EXISTINGCATEGORY', 'Bestehende Modulkategorie');
+
+// menu
+define('_VIEWMODULECATEGORIES', 'Listenansicht der Modulkategorien');
+define('_ADMIN_MODIFYMODULECATEGORY', 'Modulkategorie bearbeiten');
+define('_ADMIN_CREATEMODULECATEGORY', 'Modulkategorie anlegen');
+define('_ADMIN_DELETEMODULECATEGORY', 'Modulkategorie löschen');
+define('_ADMIN_CONFIRMDELETEMODULECATEGORY', 'Soll die Modulkategorie wirklich gelöscht werden?');
 
 // error messages
 define('_ADMIN_DELETEFAILEDDEFAULT', 'Die Default-Kategorie kann nicht gelöscht werden');

@@ -19,6 +19,13 @@ define('_PERMISSIONS_PERMISSION', 'Zugriffsrecht');
 define('_PERMISSIONS_PERMISSION_LC', 'Zugriffsrecht');
 define('_PERMISSIONS_PERMISSIONS', 'Zugriffsrechte');
 
+// links
+define('_PERMISSIONS_MODIFYPERMISSION', 'Zugriffsrecht bearbeiten');
+define('_PERMISSIONS_CREATEPERMISSION', 'Zugriffsrecht anlegen');
+define('_PERMISSIONS_VIEWPERMISSIONS', 'Zugriffsrechte anzeigen');
+define('_PERMISSIONS_DELETEPERMISSION', 'Zugriffsrecht löschen');
+define('_PERMISSIONS_CONFIRMDELETE', 'Soll das Zugriffsrecht wirklich gelöscht werden?');
+
 // view template
 define('_PERMISSIONS_APPEND', 'Zugriffsrecht hinzufügen');
 define('_PERMISSIONS_BEFOREALTTEXT','Zugriffsrecht oberhalb einfügen');

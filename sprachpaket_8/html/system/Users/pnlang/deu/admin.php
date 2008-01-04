@@ -26,6 +26,11 @@ define('_USERS_PENDINGAPPLICATIONS', 'Wartende Anmeldungen');
 define('_MODIFYUSERSCONFIG', 'Benutzerkonfiguration bearbeiten');
 define('_SEARCHUSERS', 'Benutzer suchen');
 define('_USERPROPERTIES', 'Benutzereigenschaften');
+define('_USERS_VIEWUSERS', 'Benutzer anzeigen');
+define('_USERS_CREATEUSER', 'Benutzer anlegen');
+define('_USERS_MODIFYUSER', 'Benutzer bearbeiten');
+define('_USERS_DELETEUSER', 'Benutzer löschen');
+define('_USERS_CONFIRMDELETE', 'Soll der Benutzer wirklich gelöscht werden?');
 
 // modify config template
 //  general settings

@@ -25,6 +25,14 @@ define('_BLOCKS_BLOCKPOSITIONS', 'Positionen');
 // menu 
 define('_BLOCKS_SHOWACTIVEBLOCKS','Aktive Blöcke zeigen');
 define('_BLOCKS_SHOWALLBLOCKS','Alle Blöcke zeigen');
+define('_BLOCKS_CREATEBLOCK', 'Block anlegen');
+define('_BLOCKS_CREATEBLOCKPOSITION', 'Blockposition anlegen');
+define('_BLOCKS_VIEWBLOCKS', 'Blöcke anzeigen');
+define('_BLOCKS_VIEWBLOCKPOSITIONS', 'Blockpositionen anzeigen');
+define('_BLOCKS_DELETEBLOCK', 'Block löschen');
+define('_BLOCKS_CONFIRMDELETEBLOCK', 'Soll der Block wirklich gelöscht werden?');
+define('_BLOCKS_DELETEBLOCKPOSITION', 'Blockposition löschen');
+define('_BLOCKS_CONFIRMDELETEBLOCKPOSITION', 'Soll die Blockposition wirklich gelöscht werden?');	 
 
 // new/modify
 define('_BLOCKS_COLLAPSABLE', 'Blockverkleinerung');
