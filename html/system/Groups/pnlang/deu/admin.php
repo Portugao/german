@@ -18,6 +18,11 @@ define('_GROUPS_PENDINGDENY',                  'Ablehnen');
 define('_GROUPS_GROUP',                         'Gruppe');
 define('_GROUPS_GROUPS',                        'Gruppen');
 
+ // menus
+define('_GROUPS_VIEWGROUPS',                   'Gruppen anzeigen'); 	 
+define('_GROUPS_MODIFYGROUP',                  'Gruppe bearbeiten');
+define('_GROUPS_CREATEGROUP',                  'Gruppe anlegen');
+
 // ajax interface
 define('_GROUPS_ADDINGNEW',                    '--neue Gruppe--');
 define('_GROUPS_DELETINGGROUP',                '...lösche Gruppe...');

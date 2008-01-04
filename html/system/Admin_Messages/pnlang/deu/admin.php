@@ -18,6 +18,12 @@ define('_ADMINMESSAGES_MESSAGE', 'Nachricht');
 define('_ADMINMESSAGES_MESSAGES', 'Nachrichten');
 define('_ADMINMESSAGES_MESSAGE_LC', 'Nachricht');
 
+// menu
+define('_ADMINMESSAGES_VIEWMESSAGES', 'Admin-Nachrichten anzeigen');
+define('_ADMINMESSAGES_CREATEMESSAGE', 'Admin-Nachricht anlegen');
+define('_ADMINMESSAGES_DELETEMESSAGE', 'Admin-Nachricht löschen');
+define('_ADMINMESSAGES_CONFIRMDELETEMESSAGE', 'Soll die Admin-Nachricht wirklich gelöscht werden?');
+
 // new/modify
 define('_ADMINMESSAGES_ACTIVEQ', 'Aktiv');
 define('_ADMINMESSAGES_CHANGEQ', 'Startdatum auf aktuelles Datum setzen');

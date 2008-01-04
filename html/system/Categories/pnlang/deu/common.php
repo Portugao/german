@@ -17,6 +17,11 @@ define('_CATEGORIES_ROOTCAT',                'Stammkategorie');
 
 // navigation
 define('_CATEGORIES_REGISTRY',                'Kategoriezuweisung bearbeiten');
+define('_CATEGORIES_VIEWCATEGORIES',          'Kategorien anzeigen');
+define('_CATEGORIES_CREATECATEGORY',          'Kategorie anlegen');
+define('_CATEGORIES_MODIFYCATEGORY',          'Kategorie bearbeiten');
+define('_CATEGORIES_DELETECATEGORY',          'Kategorie löschen');
+define('_CATEGORIES_CONFIRMDELETECATEGORY',   'Soll die Kategorie wirklich gelöscht werden?');
 
 // view template
 define('_CATEGORIES_VIEW_TITLE',              'Alle Kategorien');

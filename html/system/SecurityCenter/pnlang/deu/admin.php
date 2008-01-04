@@ -20,6 +20,9 @@ define('_SECURITYCENTER_HACKATTEMPTS', 'Angriffsversuche');
 // navigation
 define('_SECURITYCENTER_VIEWHACKATTEMPTSFROMDB','Angriffsversuche in der Datenbank anzeigen');
 define('_SECURITYCENTER_VIEWLOGGEDEVENTS', 'Logeinträge anzeigen');
+define('_SECURITYCENTER_VIEWHACKATTEMPTS', 'Angriffsversuche anzeigen');
+define('_SECURITYCENTER_DELETEHACKATTEMPT', 'Angriffsversuch löschen');
+define('_SECURITYCENTER_CONFIRMDELETEHACKATTEMPT', 'Soll der Angriffsversuch wirklich gelöscht werden?');
 
 // view templates
 define('_SECURITYCENTER_CLEAR_FITLER', 'Filter löschen');

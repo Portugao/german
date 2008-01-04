@@ -16,6 +16,11 @@ define('_MODIFYACCOUNTPANELCONFIG', 'Konfiguration der dynamische Benutzerdaten'
 define('_NEWPANELCONTROL', 'Dynamische Benutzereigenschaft erstellen');
 define('_ACCOUNTPANELCONTROLSLISTVIEW', 'Liste der dynamischen Benutzerdaten');
 define('_DISPLAYSETTINGS', 'Anzeige');
+define('_PROFILE_CREATEPROPERTY', 'Eigenschaft anlegen');
+define('_PROFILE_VIEWPROPERTIES', 'Eigenschaft anzeigen');
+define('_PROFILE_MODIFYPROPERTY', 'Eigenschaft bearbeiten');
+define('_PROFILE_DELETEPROPERTY', 'Eigenschaft löschen');
+define('_PROFILE_CONFIRMDELETEPROPERTY', 'Sollen die Eigenschaft wirklich gelöscht werden?');
 
 // singular
 define('_PROFILE_PROPERTIES', 'Eigenschaften');

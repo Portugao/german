@@ -28,6 +28,18 @@ define('_THEME_VARIABLE', 'Variable');
 // nav menu
 define('_THEME_NEW_DISABLED', 'Theme-Erzeugung deaktiviert da das Verzeichnis nicht beschreibbar ist.');
 define('_THEME_REGENERATE', 'Themeliste neu einlesen');
+define('_THEME_VIEWTHEMES', 'Themes anzeigen');
+define('_THEME_CREATETHEME', 'Theme anlegen');
+define('_THEME_MODIFYTHEME', 'Theme berabeiten');
+define('_THEME_DELETETHEME', 'Theme löschen');
+define('_THEME_CONFIRMDELETETHEME', 'Soll das Theme wirklich gelöscht werden?');
+define('_THEME_CREATEPAGECONFIGURATIONASSIGNMENT', 'Seitenkonfiguration Zuordnung anlegen');
+define('_THEME_MODIFYPAGECONFIGURATIONASSIGNMENT', 'Seitenkonfiguration Zuordnung bearbeiten');
+define('_THEME_MODIFYPAGECONFIGURATION', 'Seitenkonfiguration bearbeiten');
+define('_THEME_DELETEPAGECONFIGURATIONASSIGNMENT', 'Seitenkonfiguration Zuordnung löschen');
+define('_THEME_CONFIRMDELETEPAGECONFIGURATIONASSIGNMENT', 'Soll die Seitenkonfiguration Zuordnung wirklich gelöscht werden?');
+define('_THEME_CREATEPALETTE', 'Farbpalette anlegen');
+define('_THEME_ADDNEWVARIABLE', 'Variable hinzufügen');
 
 // status/error messages
 define('_THEME_UNABLETODELETEFILES', 'Die Themedateien können nicht gelöscht werden, weil das System kein Schreibzugriff auf das Themeverzeichnis themes/%themedirectory% bzw. die Dateien hat.');
