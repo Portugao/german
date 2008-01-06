@@ -11,5 +11,5 @@
  */
 
 if (!defined('_THANKYOUFORRATING')) {
-    define('_THANKYOUFORRATING', 'Danke für die Bewertung dieses Artikels');
+    define('_THANKYOUFORRATING', 'Danke für die Bewertung');
 }

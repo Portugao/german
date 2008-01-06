@@ -27,6 +27,6 @@ define('_RATINGSUPDATECONFIG','Die Konfiguration aktualisieren');
 define('_RATINGSUSEAJAX', 'Soll Ajax für die Bewertung genutzt werden?');
 define('_RATINGSUSEFANCYCONTROLS', 'Die modernere Anzeige der Bewertung nutzen? (nur bei den Sternen)');
 define('_RATINGSVIEWITEMS', 'Alle Bewertungen anzeigen');
-define('_RATINGSVIEWLOG', 'Zeige log');
+define('_RATINGSVIEWLOG', 'Zeige Log');
 define('_RATINGSRATING', 'Rating');
 define('_RATINGSITEMID', 'Item ID');

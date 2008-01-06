@@ -10,5 +10,5 @@
  * @subpackage News
 */
 
-define('_BIGSTORY','heutiger meistgelesener Beitrag');
+define('_BIGSTORY','meistgelesener Beitrag heute');
 define('_TODAYBIG','heutiger Top-Beitrag');

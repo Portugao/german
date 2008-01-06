@@ -11,7 +11,7 @@
 */
 
 define('_NEWS_BYTESMORE', '%bytes% weitere Zeichen');
-define('_NEWS_COMMENT', '1 Kommentar');
+define('_NEWS_COMMENT', 'ein Kommentar');
 define('_NEWS_COMMENTS', '%count% Kommentare');
 define('_NEWS_COMMENTSFORARTICLE', '%comments% zu %title%');
 define('_NEWS_COMMENTSQ', 'Kommentare?');

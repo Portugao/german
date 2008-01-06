@@ -11,9 +11,9 @@
  */
 
 define('_RATING','Rating');
-define('_RATING_BETHEFIRST', 'Noch niemand hat diesen Artikel bewertet - sei der erste!');
+define('_RATING_BETHEFIRST', 'Bislang noch keine Bewertung erfolgt');
 define('_RATETHISITEM','Diesen Artikel bewerten');
 if (!defined('_THANKYOUFORRATING')) {
-    define('_THANKYOUFORRATING', 'Danke für die Bewertung dieses Artikels.');
+    define('_THANKYOUFORRATING', 'Danke für die Bewertung');
 }
-define('_RATING_RECORDING', 'Recording rating');
+define('_RATING_RECORDING', 'Bewertung wird gespeichert');

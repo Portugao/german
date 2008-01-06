@@ -29,7 +29,7 @@ define('_NEWS_EXTENDEDTEXT', 'Erweiterter Text');
 define('_ARTICLETITLE_FLC', 'Beitragstitel');
 define('_NEWS_NEWSARTICLEPREVIEW', 'Beitragsvorschau');
 
-define('_NEWS_FORMATTEDTEXT', 'Formartierter Text');
+define('_NEWS_FORMATTEDTEXT', 'Formatierter Text');
 define('_NEWS_FROM', 'Startdatum');
 define('_NEWS_HOMETEXT', 'Textanlauf');
 define('_NEWS_INHOME', 'Auf der Homepage anzeigen');

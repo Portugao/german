@@ -10,7 +10,7 @@
  * @subpackage Members_List
  */
 
-define('_MEMBERSLIST_MEMBERSPERPAGE', 'Objekte pro Seite auf der Members List Seite');
-define('_MEMBERSLIST_ONLINEMEMBERSITEMSPERPAGE', 'Objekte pro Seite auf der Members Online Seite');
-define('_MEMBERSLIST_RECENTMEMBERSITEMSPERPAGE', 'Objekte pro Seite auf der Members Letzte Benutzer Seite');
-define('_MEMBERSLIST_UNVERIFIED', 'unregistrierte Benutzer von der Members List filtern');
+define('_MEMBERSLIST_MEMBERSPERPAGE', 'Einträge pro Seite bei \'Mitgliederliste\'');
+define('_MEMBERSLIST_ONLINEMEMBERSITEMSPERPAGE', 'Einträge pro Seite bei \'Mitglieder Online\'');
+define('_MEMBERSLIST_RECENTMEMBERSITEMSPERPAGE', 'Einträge pro Seite bei \'Letzte Benutzer\'');
+define('_MEMBERSLIST_UNVERIFIED', 'unregistrierte Benutzer ausfiltern');

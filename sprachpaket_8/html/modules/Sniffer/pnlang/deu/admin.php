@@ -11,9 +11,9 @@
  */
 
 define('_SNIFFER', 'Browser Sniffer');
-define('_SNIFFERBASICINFO', 'Basisinformationen zum Browser');
+define('_SNIFFERBASICINFO', 'Informationen zum Browser');
 define('_SNIFFERBROWSERNAME', 'Browser');
-define('_SNIFFERBROWSERVERSION', 'Browser version');
+define('_SNIFFERBROWSERVERSION', 'Browser Version');
 define('_SNIFFEROSNAME', 'Betriebssystem');
 define('_SNIFFEROSVERSION', 'Version des Betriebssystems');
 define('_SNIFFERUA', 'User Agent');
