@@ -54,7 +54,7 @@ define('_INSTALLERPHPVERNOTOK', 'und erfüllt die Mindestanforderung (4.3.0) nich
 define('_INSTALLERFILESYSTEMPERMS', 'Datei Zugriffsrechte');
 define('_INSTALLERFILEWRITABLE', '%f ist beschreibbar.');
 define('_INSTALLERFILENOTWRITABLE', '%f kann nicht verändert werden - bitte die Zugriffsrechte kontrollieren.');
-define('_INSTALLERWPPERMISSIONURL', 'http://www.wikipedia.org/wiki/File_system_permissions');
+define('_INSTALLERWPPERMISSIONURL', 'http://de.wikipedia.org/wiki/Dateiberechtigung');
 define('_INSTALLERWPPERMISSIONLINKTEXT', 'Datei Zugriffsrechte');
 define('_INSTALLERPERSONALCONFIG', 'Eigene Konfigurationsdatei');
 define('_INSTALLERPERSONALCONFIGDOESNOTEXIST', '%f existiert nicht');
@@ -106,7 +106,7 @@ define('_INSTALLERADMINURL', 'URL');
 define('_INSTALLERPASSWORDCOMPAREFAILED', 'Adminbenutzer konnte nicht angelegt werden - bitte Eingaben überprüfen');
 define('_INSTALLEREMAILVALIDATEFAILED', 'E-Mail-Adresse scheinbar ungültig - bitte Eingabe überprüfen');
 define('_INSTALLERURLVALIDATECOMPAREFAILED', 'URL-Angabe scheinbar ungültig - bitte Eingabe überprüfen');
-define('_INSTALLERUSERVALIDATECOMPAREFAILED', 'Im Benutzernamen sind Leerzeichen und Symbole nicht zuässig');
+define('_INSTALLERUSERVALIDATECOMPAREFAILED', 'Im Benutzernamen sind Leerzeichen und Symbole nicht zulässig');
 
 // _gotosite.htm
 define('_INSTALLERCREDITS', 'Credits');
@@ -118,13 +118,13 @@ define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
 define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://noc.postnuke.com/frs/?group_id=5">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
 define('_INSTALLERPNMODULESSURL', 'http://community.postnuke.com/module-Database-main-tid-3.htm');
-define('_INSTALLERPNMODULES', 'Modulveröffentlichungs-Datenbank');
+define('_INSTALLERPNMODULES', 'Offizielle Modul-Datenbank');
 
 // _selecttheme.htm
 define('_INSTALLERSELECTHEME', 'Standard-Theme der Seite');
-define('_INSTALLERTHEMES', 'Die Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
+define('_INSTALLERTHEMES', 'Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
 define('_INSTALLERPNTHEMESURL', 'http://community.postnuke.com/module-Database-main-tid-4.htm');
-define('_INSTALLERPNTHEMES', 'Theme Release Database');
+define('_INSTALLERPNTHEMES', 'Offizielle Theme-Datenbank');
 
 // modify_config.php
 define('_INSTALLERMODIFYFILE_1','Fehler: kein Lesezugriff:');
