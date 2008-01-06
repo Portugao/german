@@ -17,7 +17,7 @@ define('_DATETIMEBRIEF','%d.%m.%Y, %H:%M Uhr');
 define('_DATETIMELONG','%A, %d. %B %Y, %H:%M Uhr');
 define('_DATEINPUT', '%Y-%m-%d'); // Dateformat for input fields (parsable - do not try other formats!)
 define('_DATETIMEINPUT', '%Y-%m-%d %H:%M'); // Date+time format for input fields (parsable - do not try other formats!)
-define('_DATEFIRSTWEEKDAY', 0); // 0 = Sunday, 1 Monday and so on
+define('_DATEFIRSTWEEKDAY', 1); // 0 = Sunday, 1 Monday and so on
 define('_DAY_OF_WEEK_LONG','Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag');
 define('_DAY_OF_WEEK_SHORT','Son Mon Die Mit Don Fre Sam');
 define('_MONTH_LONG','Januar Februar März April Mai Juni Juli August September Oktober November Dezember');
@@ -380,7 +380,7 @@ define('_ERROR_ADMIN', '%message% %func% in Zeile %line% in Datei %file%.');
 define('_YOURACCOUNT', 'Profil');
 define('_CREATEACCOUNT', 'Profil anlegen');
 
-// onlune plugin
+// online plugin
 define('_CURRENTLYONLINE', 'Zur Zeit sind %numguests% %gueststext% und %numusers% %userstext% online.');
 
 // user welcome plugin
