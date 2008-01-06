@@ -75,9 +75,9 @@ define('_BANNERS_CLIENTUPDATED','Klient aktualisiert');
 define('_BANNERS_UNLIMITED', 'Unbegrenzt');
 
 define('_BANNERS_CLIENTLOGIN','Klient Login');
-define('_BANNERS_PASSWORD','Passwort');
+define('_BANNERS_PASSWORD','Kennwort');
 define('_BANNERS_LOGIN','Login');
-define('_BANNERS_LOGININCORR','Passwort falsch!');
+define('_BANNERS_LOGININCORR','Kennwort falsch!');
 
 define('_BANNERS_ADVSTATS','Banner-Statistik.');
 define('_BANNERS_CURRACTIVE','Momentan aktive Banner für');

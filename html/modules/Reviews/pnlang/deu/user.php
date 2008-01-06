@@ -37,7 +37,7 @@ define('_REVIEWSYOUREMAILADDRESS','vollständige E-Mail-Adresse (notwendig)');
 define('_REVIEWSPRODUCTWEBSITE','Offizielle Website, muss mit http:// beginnen (optional)');
 define('_REVIEWSREQUIREDTITLE','nur notwendig bei Angabe eines zugehörigen Links');
 define('_REVIEWSNAMEOFIMAGE','ein 150*150 Pixel grosses Bild in modules/Reviews/images speichern');
-define('_REVIEWSGRAMMER','Bitte darauf achten, daß die Informationeb korrekt sind. Reviews werden nicht sofort freigeschaltet.');
+define('_REVIEWSGRAMMER','Bitte darauf achten, dass die Informationen korrekt sind. Reviews werden nicht sofort freigeschaltet.');
 
 define('_REVIEWSCREATED', 'Der Review wurde in die Datenbank eingetragen');
 define('_REVIEWSAVAILABLESOON', 'Reviews erscheinen erst nach Freischaltung!');

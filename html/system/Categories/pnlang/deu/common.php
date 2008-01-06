@@ -89,7 +89,7 @@ define('_CATEGORIES_COPY_TITLE',              'Kategorie kopieren');
 
 // modify config template
 define('_CATEGORIES_CONFIG_REBUILD',          'Hier können alle systeminternen Pfade neu erstellt werden');
-define('_CATEGORIES_CONFIG_REBUILD_INFO', 	  '<br /><br />Sie können die Aktion auslösen, wenn Sie auf den Submit-Button klicken. Je nach Anzahl der Kategorien könnte ein Time-Out auftreten oder das PHP-Speicherlimit überschritten werden.');
+define('_CATEGORIES_CONFIG_REBUILD_INFO', 	  '<br /><br />Via Submit-Button die Aktion starten - je nach Anzahl der Kategorien könnte ein Time-Out auftreten oder das PHP-Speicherlimit überschritten werden.');
 define('_CATEGORIES_CONFIG_REBUILD_PATHS',    'Pfade neu erstellen');
 
 // error/status messages
