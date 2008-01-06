@@ -11,7 +11,7 @@
  */
 
 define('_SNIFFERBLOCKBROWSERNAME', 'Browser');
-define('_SNIFFERBLOCKBROWSERVERSION', 'Browser version');
+define('_SNIFFERBLOCKBROWSERVERSION', 'Browser Version');
 define('_SNIFFERBLOCKOSNAME', 'Betriebssystem');
 define('_SNIFFERBLOCKOSVERSION', 'Version des Betriebssystems');
 define('_SNIFFERBLOCKUAID', 'User Agent ID');

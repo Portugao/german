@@ -12,4 +12,4 @@
 
 define('_PAGES_NAME',        'Pages');
 define('_PAGES_DISPLAYNAME', 'Pages');
-define('_PAGES_DESCRIPTION', 'Anlegen von statische Seiten');
+define('_PAGES_DESCRIPTION', 'Anlegen von statischen Seiten');

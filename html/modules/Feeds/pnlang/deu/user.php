@@ -13,4 +13,4 @@
 define('_FEEDS_AVAILABLEFEEDS', 'Verfügbare Feeds');
 define('_FEEDS_BYAUTHOR', 'von %author%');
 define('_FEEDS_VIEW','Feeds anzeigen');
-define('_FEEDS_READMORE', 'mehr lesen....');
+define('_FEEDS_READMORE', 'mehr lesen...');

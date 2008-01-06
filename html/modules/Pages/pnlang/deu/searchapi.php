@@ -10,7 +10,7 @@
  * @subpackage Pages
  */
 
-define('_PAGES_SECTIONS', 'Pages');
-define('_PAGES_SEARCH', 'Suche in den Kategorien');
-define('_PAGES_SEARCHRESULTS', 'seiten gefunden');
+define('_PAGES_SECTIONS', 'Seiten');
+define('_PAGES_SEARCH', 'Suche in den Seiten');
+define('_PAGES_SEARCHRESULTS', 'Seiten gefunden');
 define('_PAGES_SEACHNONEFOUND', 'Keine Seiten gefunden');

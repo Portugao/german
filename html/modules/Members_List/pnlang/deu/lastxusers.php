@@ -15,4 +15,4 @@
 define('_MEMBERSLIST_LASTXUSERS_BLOCKNAME', 'Letzte X registrierte Benutzer');
 define('_MEMBERSLIST_LASTXUSERS_BLOCKDESC', 'Zeige die X neuesten Registrierungen');
 
-define('_MEMBERSLIST_HOWMANYRECENTREGUSERS', 'Anzahl der neuesten registrierten Benutzer');
+define('_MEMBERSLIST_HOWMANYRECENTREGUSERS', 'Anzahl der \'neuesten registrierten Benutzer\'');

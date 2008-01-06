@@ -11,12 +11,12 @@
  */
 
 define('_PENDINGTITLE', 'Pending Content');
-define('_PENDINGADD', 'Element hinzufügen');
+define('_PENDINGADD', 'Eintrag hinzufügen');
 define('_PENDINGCANCELDELETE', 'Löschen abbrechen');
 define('_PENDINGCONFIRMDELETE', 'Soll der Eintrag wirklich gelöscht werden?');
 define('_PENDINGCREATEFAILED', 'Das Erstellen des Eintrages ist fehlgeschlagen!');
-define('_PENDINGDELETEFAILED', 'Error deleting element');
-define('_PENDINGDELETE', 'Element löschen');
+define('_PENDINGDELETEFAILED', 'Fehler beim Löschen eines Eintrages');
+define('_PENDINGDELETE', 'Eintrag löschen');
 define('_PENDINGNEW', 'Neuen Eintrag erstellen');
 define('_PENDINGCREATED', 'Neuer Eintrag erstellt');
 define('_PENDINGDELETED', 'Eintrag gelöscht');

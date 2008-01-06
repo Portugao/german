@@ -18,4 +18,4 @@ define('_REFERERSEXCLUDED','Ausnahmen (kommasepariert)');
 define('_REFERERSFREQUENCY','Häufigkeit');
 define('_REFERERSPERCENT','Prozent');
 define('_REFERERSTOTAL','Insgesamt:');
-define('_REFERERSWHOLINKS','Folgende Seiten haben Links auf uns gesetzt');
+define('_REFERERSWHOLINKS','Folgende Seiten haben Links gesetzt');

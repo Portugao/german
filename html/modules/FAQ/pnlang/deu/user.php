@@ -12,15 +12,13 @@
 
 define('_FAQ',             'Häufig gestellte Fragen');
 define('_FAQ_ANSWER',      'Antwort');
-define('_FAQ_ANSWEREDBY',  'Beantworted von');
+define('_FAQ_ANSWEREDBY',  'Beantwortet von');
 define('_FAQ_ASK',         'Eine Frage stellen');
-define('_FAQ_ASKDETAIL',   'Vorm stellen einer Frage bitte überprüfen ob die Frage schon in den FAQ\'s vorhanden ist.
- Wenn nicht dann die Frage mit dem unten stehenden Formular. Die Frage sollte klar und deutlich formuliert werden. 
-Nach der Übermittlung der Frage wird sie von den Redakteuren der Seite überprüft.');
+define('_FAQ_ASKDETAIL',   'Vor der Fragestellung bitte überprüfen, ob die Frage nicht schon in den FAQs vorhanden ist. Falls nicht, einfach die Frage über das Formular einreichen, sie wird dann von den Redakteuren der Seite überprüft und ggfs. beantwortet.');
 define('_FAQ_CREATED',     'Danke für die Frage');
-define('_FAQ_ITEMFAILED',  'Objekte anzeigen fehlgeschlagen');
+define('_FAQ_ITEMFAILED',  'Anzeige von Objekten fehlgeschlagen');
 define('_FAQ_QUESTION',    'Frage');
 define('_FAQ_RECENTFAQS',  'Aktuellste FAQs');
 define('_FAQ_SUBMITTEDBY', 'Eingesandt von');
-define('_FAQ_VIEW',        'FAQ\'s ansehen');
+define('_FAQ_VIEW',        'FAQs ansehen');
 define('_FAQ_YOURNAME',    'Name');

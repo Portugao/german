@@ -14,8 +14,8 @@ define('_AUTHLDAP','LDAP Authentifikation');
 define('_AUTHLDAP_BASEDN','Base DN');
 define('_AUTHLDAP_BINDAS','Bind als');
 define('_AUTHLDAP_BINDPASS','Bind Passwort');
-define('_AUTHLDAP_DEFAULTGROUP','Einen neuen User dieser Gruppe hinzufügen');
-define('_AUTHLDAP_SEARCHATTR', 'Search user using attribute');
-define('_AUTHLDAP_SEARCHDN','Search base');
-define('_AUTHLDAP_SERVADR','Server Addresse');
+define('_AUTHLDAP_DEFAULTGROUP','Dieser Gruppe einen neuen Benutzer hinzufügen');
+define('_AUTHLDAP_SEARCHATTR', 'Benutzer durchsuchen mit Attribut');
+define('_AUTHLDAP_SEARCHDN','Such DN');
+define('_AUTHLDAP_SERVADR','Serveradresse');
 
