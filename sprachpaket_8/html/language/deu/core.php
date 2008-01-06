@@ -41,7 +41,7 @@ define('_YEARS', 'Jahre');
 define('_NOTAVALIDDATE', 'ungültiges Datum');
 define('_NOTAVALIDINT', 'ungültige Zahl');
 define('_NOTAVALIDNUMBER', 'ungültige Zahl');
-define('_NOTAVALIDEMAIL', 'ungültige Emailadresse');
+define('_NOTAVALIDEMAIL', 'ungültige E-Mail-Adresse');
 define('_NOTAVALIDURL', 'ungültige URL');
 
 // time zone defines

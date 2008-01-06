@@ -12,8 +12,8 @@
 
 define('_NM_AIMCONTAINS','und AIM Screenname enthält:');
 define('_NM_ANY', 'Alle');
-define('_NM_EMAIL','Email:');
-define('_NM_EMAILCONTAINS','und Email enthält:');
+define('_NM_EMAIL','E-Mail:');
+define('_NM_EMAILCONTAINS','und E-Mail enthält:');
 define('_NM_ERROR2','Kein Absender eingegeben');
 define('_NM_ERROR3','Falsche Antwortadresse');
 define('_NM_ERROR4','Kein Betreff eingegeben');
@@ -22,7 +22,7 @@ define('_NM_FINISH','Alle benendet');
 define('_NM_FROM','Absender:');
 define('_NM_HOMEPAGECONTAINS','und Homepage enthält:');
 define('_NM_ICQCONTAINS','und ICQ Nummer enthält:');
-define('_NM_MAILUSERWHERE','Email an Benutzer die:');
+define('_NM_MAILUSERWHERE','E-Mail an Benutzer die:');
 define('_NM_MESSAGE','Nachricht:');
 define('_NM_MODNAME','Benutzer anmailen');
 define('_NM_MSNMCONTAINS','und MSN Passport enthält:');

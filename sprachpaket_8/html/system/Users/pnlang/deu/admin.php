@@ -40,7 +40,7 @@ define('_USERS_ENABLEGRAPHICS','Icons auf Benutzerebene aktivieren');
 define('_USERS_HASHMETHOD','Kennwort-Verschlüsselung (Default SHA256):');
 define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
 define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
-define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-mail\' eingestellt ist, muss die Option \'Eindeutige E-Mail-Adresse\' weiter unten mit \'Ja\' aktiviert sein.');
+define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-Mail\' eingestellt ist, muss die Option \'Eindeutige E-Mail-Adresse\' weiter unten mit \'Ja\' aktiviert sein.');
 define('_USERS_MINAGE','Mindestalter:');
 define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
 define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');

@@ -86,7 +86,7 @@ define('_BANNERS_SUMMARY', 'Zusammenfassung');
 define('_BANNERS_UPDATE', 'Aktualisieren');
 define('_BANNERS_ONYOURSITE', 'Folgende Banner sind aktiv auf');
 
-define('_BANNERS_EMAIL_STATS','Email-Stat.');
+define('_BANNERS_EMAIL_STATS','E-Mail Stats');
 define('_BANNERS_SEND','Senden');
 define('_BANNERS_FORTHIS','für diesen Banner');
 define('_BANNERS_THISURL','diese URL');

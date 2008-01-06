@@ -1,7 +1,7 @@
 <?php
 define('_ADDSTORY','Beitrag hinzufügen');
 define('_DOWNLOAD','Downloads');
-define('_EMAILTOAFRIEND', 'E-mail an einen Bekannten senden');
+define('_EMAILTOAFRIEND', 'E-Mail an einen Bekannten senden');
 define('_FAQ','FAQ');
 define('_FORUMS','Forum');
 define('_GROUPADMIN','Gruppen');

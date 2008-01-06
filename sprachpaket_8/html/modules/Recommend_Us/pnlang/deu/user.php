@@ -9,21 +9,21 @@
  * @subpackage Recommend_Us
  */
 
-define('_RECOMMENDUSATSOCIALBOOKMARKSITES', 'Post this page at...');
+define('_RECOMMENDUSATSOCIALBOOKMARKSITES', 'Diese Seite an folgende Dienste senden: ');
 
 define('_RECOMMENDUS', 'Diese Webseite weiterempfehlen');
 define('_RECOMMENDUSVIEW', 'Diese Beitrag weiterempfehlen');
-define('_RECOMMENDUSYOUREMAIL','Absender-E-Mail:');
-define('_RECOMMENDUSYOURNAME','Absender-Name:');
-define('_RECOMMENDUSYOURFRIENDEMAIL','Empfänger-E-Mail:');
-define('_RECOMMENDUSYOURFRIENDNAME','Empfänger-Name:');
-define('_RECOMMENDUSFEMAILWRONG','Die E-Mail Adresse des Empfängers ist falsch!');
-define('_RECOMMENDUSEMAILWRONG','Die E-Mail Adresse des Absenders scheint falsch zu sein.');
-define('_RECOMMENDUSNAMETOOLONG','Ein Name (Empfänger oder Absender) ist zu lamg!');
+define('_RECOMMENDUSYOUREMAIL','Absender E-Mail:');
+define('_RECOMMENDUSYOURNAME','Absender Name:');
+define('_RECOMMENDUSYOURFRIENDEMAIL','Empfänger E-Mail:');
+define('_RECOMMENDUSYOURFRIENDNAME','Empfänger Name:');
+define('_RECOMMENDUSFEMAILWRONG','Die E-Mail-Adresse des Empfängers ist nicht korrekt.');
+define('_RECOMMENDUSEMAILWRONG','Die E-Mail-Adresse des Absenders ist nicht korrekt.');
+define('_RECOMMENDUSNAMETOOLONG','Empfänger- oder Absendername ist zu lang!');
 define('_RECOMMENDUSINTSITE','Interessante Seite:');
 define('_RECOMMENDUSINTITEM','Interessanter Beitrag:');
 define('_RECOMMENDUSHELLO', 'Hallo');
-define('_RECOMMENDUSYOURFRIEND','Ihr Freund');
+define('_RECOMMENDUSYOURFRIEND','Ein Freund');
 define('_RECOMMENDUSOURSITE','empfiehlt diese Seite');
 define('_RECOMMENDUSTHEITEM','empfiehlt folgenden Beitrag');
 define('_RECOMMENDUSINTSENT','interessant und hat diese E-Mail gesendet.');

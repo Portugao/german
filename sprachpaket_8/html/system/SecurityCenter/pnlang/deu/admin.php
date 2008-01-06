@@ -54,16 +54,16 @@ define('_SECURITYCENTER_VARIABLE', 'Variable');
 define('_SECURITYCENTER_VARIABLEVALUE', 'Variablenwert');
 
 // modify config
-define('_SECURITYCENTER_DISPLAYEMAIL','Bei Angriffen via Email benachrichtigen');
+define('_SECURITYCENTER_DISPLAYEMAIL','Bei Angriffen via E-Mail benachrichtigen');
 define('_SECURITYCENTER_DISPLAYENABLE','Angiffsschutz aktivieren');
 define('_SECURITYCENTER_DISPLAYLOGTODB','Angriffsversuche in der Datenbank speichern');
 define('_SECURITYCENTER_FILTERCOOKIEVARS', '\'$_COOKIE\'-Variable bereinigen');
 define('_SECURITYCENTER_FILTERGETVARS', '\'$_GET\'-Variable bereinigen');
 define('_SECURITYCENTER_FILTERPOSTVARS', '\'$_POST\'-Variable bereinigen');
-define('_SECURITYCENTER_FULLCONTENT', 'Weiterer Inhalt für komplette Mailnachrichten');
+define('_SECURITYCENTER_FULLCONTENT', 'Weiterer Inhalt für komplette Mail-Nachrichten');
 define('_SECURITYCENTER_GENERALCONFIG', 'Allgemeine Einstellungen');
 define('_SECURITYCENTER_MAILTEXT', 'Mail-Text');
-define('_SECURITYCENTER_ONLYSENDSUMMARYBYEMAIL','Bei Speicherung in der Datenbank, nur eine Zusammenfassung per Email senden');
+define('_SECURITYCENTER_ONLYSENDSUMMARYBYEMAIL','Bei Speicherung in der Datenbank, nur eine Zusammenfassung per E-Mail senden');
 define('_SECURITYCENTER_OUTPUTFILTER', 'Einstellungen des Ausgabefilters');
 define('_SECURITYCENTER_OUTPUTFILTERINTERNAL', 'interner Ausgabefilter');
 define('_SECURITYCENTER_OUTPUTFILTERSAFEHTML', 'SafeHTML als Augabefilter verwenden');
