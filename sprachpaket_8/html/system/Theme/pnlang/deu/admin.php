@@ -47,7 +47,7 @@ define('_THEME_CACHE_CLEARED', 'Template-Cache gelöscht');
 define('_THEME_COMPILED_CLEARED', 'Compile-Cache gelöscht');
 define('_THEME_COULDNOTINCLUDE', 'Theme Versionsdatei konnte nicht eingebunden werden: ');
 define('_THEME_DEFAULTCHANGED', 'Standard Theme geändert');
-define('_THEME_ERRORDELETINGTHEMEFILES', 'Beim Versuch, die Dateien zu löschen, ist ein Fehler aufgetreten. Bitte entfernen Sie die Dateien mit einem FTP-Client.');
+define('_THEME_ERRORDELETINGTHEMEFILES', 'Beim Versuch, die Dateien zu löschen, ist ein Fehler aufgetreten. Bitte die Dateien mit einem FTP-Client entfernen.');
 define('_THEME_FAILEDCREATECONFIGDIR', 'Verzeichnis für die Theme-Konfiguration konnte nicht angelegt werden');
 define('_THEME_FAILEDTOOPENFILEFORWRITING', 'Datei konnte nicht zum schreiben geöffnet werden');
 define('_THEME_FAILEDTOWRITETOFILE', 'Datei konnte nicht beschrieben werden');

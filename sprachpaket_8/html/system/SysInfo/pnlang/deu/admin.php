@@ -22,7 +22,7 @@ define('_SYSINFO_CACHEDIRECTORY', 'Cache-Verzeichnis');
 define('_SYSINFO_DATABASETYPE', 'Datenbank-Typ');
 define('_SYSINFO_DATAPROVIDER', 'Datenbank-Provider');
 define('_SYSINFO_DATABASEHOST', 'Datenbank-Host');
-define('_SYSINFO_DATABASENAME', 'Datenbankname');
+define('_SYSINFO_DATABASENAME', 'Datenbank-Name');
 define('_SYSINFO_DATABASEDESCRIPTION', 'Datenbank-Server-Beschreibung');
 define('_SYSINFO_DATABASEVERSION', 'Datenbank-Version:');
 define('_SYSINFO_DATABASEVERSIONNOTFOUND', 'Datenbankversion kann nicht ermittelt werden!');

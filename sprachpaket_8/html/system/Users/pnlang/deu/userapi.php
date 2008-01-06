@@ -33,7 +33,7 @@ define('_USERS_CODEFOR','Bestätigungscode für %uname%');
 define('_USERS_AWEBUSERHASREQUESTEDCODE', 'Jemand mit der IP-Adresse %hostname% hat eine Bestätigung angefordert um das Kennwort zu ändern.');
 define('_USERS_YOURCODEIS','Der Bestätigungs-Code ist: %code%');
 define('_USERS_WITHTHISCODE','Mit diesem Bestätigungs-Code kann ein <a href="%url%">neues Kennwort</a> angelegt werden.');
-define('_USERS_IFYOUDIDNOTASK2','Falls keine entsprechende Anforderung gestellt wurde, kann diese Benachrichtigung gelöscht werden.');
+define('_USERS_IFYOUDIDNOTASK2','Falls keine entsprechende Anforderung gestellt wurde, kann diese Benachrichtigung ignoriert werden.');
 
 // activation e-mail
 define('_USERS_ACTIVATIONSUBJECT', 'Aktivierung von %uname%');

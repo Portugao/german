@@ -24,7 +24,7 @@ define('_MODULES_DEPENDENCY_REQUIRED', 'notwendig');
 define('_MODULES_DEPENDENCY_OPTIONAL', 'optional');
 define('_MODULES_DEPENDENCY_RECOMMENDED', 'empfohlen');
 define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeitigen System nicht erfüllt werden.');
-define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind werden bei Entfernung des Moduls ebenfalls entfernt.');
+define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind, werden bei Entfernung des Moduls ebenfalls entfernt.');
 
 // errors, warnings and statuses
 define('_MODULES_HASBLOCKSLEFT', 'Für dieses Modul sind noch Blöcke aktiv, die vorher entfernt werden müssen!');
@@ -32,7 +32,7 @@ define('_MODULES_MANDATORYCOREMODULE', 'Diese Modul ist ein notwendiges Kernmodu
 define('_MODULES_MODULEISSTARTMODULE', 'Das Modul kann nicht deaktiviert werden, weil es als Systemstart-Modul eingestellt ist.');
 define('_MODULES_ACTIVATED', 'Modul aktiviert');
 define('_MODULES_BLOCKSEXIST', 'Modul kann nicht entfernt werden weil noch zugehörige Blöcke aktiv sind.');
-define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiderruflich ALLE Daten des Moduls und der zugeordneten Hooks!');
+define('_MODULES_CONFIRMDELETE', 'WARNUNG: Dies löscht unwiderruflich ALLE Datenbank-Daten des Moduls und der zugeordneten Hooks!');
 define('_MODULES_DEACTIVATED', 'Modul deaktiviert');
 define('_MODULES_DUPLICATEDISPLAYNAME', 'Display Info kann nicht aktualisiert werden - der Displayname existiert bereits!');
 define('_MODULES_FILESMISSING', 'Dateien fehlen');
@@ -48,9 +48,9 @@ define('_MODULES_REMOVED', 'Modul entfernt');
 define('_MODULES_UPDATEDINFORMATION', 'Modul-Information aktualisiert');
 
 define('_MODULES_ERRORS', 'Die Modulliste konnte nicht neu erzeugt werden');
-define('_MODULES_ERRORS_EXPLAIN', 'Die Modulliste konnte nicht neu erzeugt werden, da die folgenden Fehler im Dateisystem gefunden wurden. Bevor Sie fortfahren, müssen diese beseitigt werden.');
-define('_MODULES_ERRORS_MODULENAMES', 'Die folgende Tabelle zeigt eine Liste der Modulnamen, die scheinbar in mehr als einem Verzeichnis auftauchen. Sie müssen eines davon löschen.');
-define('_MODULES_ERRORS_DISPLAYNAMES', 'Die folgende Tabelle zeigt eine Liste der Anzeigenamen von Modulen, die scheinbar in mehr als einem Verzeichnis auftauchen. Sie müssen eines davon löschen.');
+define('_MODULES_ERRORS_EXPLAIN', 'Die Modulliste konnte nicht neu erzeugt werden, da die folgenden Fehler im Dateisystem gefunden wurden. Bevor fortgefahren werden kann, müssen diese beseitigt werden.');
+define('_MODULES_ERRORS_MODULENAMES', 'Die folgende Tabelle zeigt eine Liste der Modulnamen, die scheinbar in mehr als einem Verzeichnis auftauchen. Modulnamen müssen einmalig vergeben sein.');
+define('_MODULES_ERRORS_DISPLAYNAMES', 'Die folgende Tabelle zeigt eine Liste der Anzeigenamen von Modulen, die scheinbar in mehr als einem Verzeichnis auftauchen. Anzeigenamen müssen einmalig vergeben sein.');
 
 // interface components
 define('_MODULES_ADMIN', 'Zur Administration');

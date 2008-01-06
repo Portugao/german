@@ -20,7 +20,7 @@ define('_PROFILE_CREATEPROPERTY', 'Eigenschaft anlegen');
 define('_PROFILE_VIEWPROPERTIES', 'Eigenschaft anzeigen');
 define('_PROFILE_MODIFYPROPERTY', 'Eigenschaft bearbeiten');
 define('_PROFILE_DELETEPROPERTY', 'Eigenschaft löschen');
-define('_PROFILE_CONFIRMDELETEPROPERTY', 'Sollen die Eigenschaft wirklich gelöscht werden?');
+define('_PROFILE_CONFIRMDELETEPROPERTY', 'Sollen die Eigenschaften wirklich gelöscht werden?');
 
 // singular
 define('_PROFILE_PROPERTIES', 'Eigenschaften');

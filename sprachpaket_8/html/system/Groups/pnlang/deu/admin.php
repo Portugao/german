@@ -58,7 +58,7 @@ define('_GROUPS_HIDECLOSEDGROUPS',             'Geschlossene Gruppen verstecken'
 
 // group applications template
 define('_GROUPS_DEFAULTACCEPTTEXT',            'Die Bewerbung für die Gruppe wurde akzeptiert, die entsprechenden Zugriffsrechte sind eingerichtet.');
-define('_GROUPS_DEFAULTDENYREASON',            'Die Bewerbung für die Gruppe wurde leider nicht akzeptiert.');
+define('_GROUPS_DEFAULTDENYREASON',            'Die Bewerbung für die Gruppe wurde nicht akzeptiert.');
 
 // group membership template
 define('_GROUPS_ADDUSER',                      'Benutzer zu Gruppe hinzufügen');
