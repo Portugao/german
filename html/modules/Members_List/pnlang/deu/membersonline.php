@@ -17,9 +17,9 @@ define('_MEMBERSLIST_MEMBERSONLINE_BLOCKDESC',    'Mitglieder Online anzeigen');
 
 define('_MEMBERSLIST_MAXCHARS',     'Anzahl Buchstaben max.');
 
-define('_MEMBERSLIST_ONLINECOUNT1', 'Es sind %a% Gäste und %u% registrierte Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT2', 'Es ist %a% Gast und %u% registrierter Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT3', 'Es ist %a% Gast und %u% registrierte Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT4', 'Es sind %a% Gäste und %u% registrierter Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT5', 'Es ist %u% registrierter Benutzer online.');
-define('_MEMBERSLIST_ONLINECOUNT6', 'Es sind %u% registrierte Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT1', 'Aktuell sind %a% Gäste und %u% registrierte Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT2', 'Aktuell ist %a% Gast und %u% registrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT3', 'Aktuell ist %a% Gast und %u% registrierte Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT4', 'Aktuell sind %a% Gäste und %u% registrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT5', 'Aktuell ist %u% registrierter Benutzer online.');
+define('_MEMBERSLIST_ONLINECOUNT6', 'Aktuell sind %u% registrierte Benutzer online.');
