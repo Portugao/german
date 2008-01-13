@@ -133,6 +133,9 @@ define('_THEME_SETDEFAULT', 'Standard Theme setzen');
 define('_THEME_DEFAULTNOTE', 'Setzt %t% als aktives Theme für alle Benutzer!');
 define('_THEME_RESETUSERSELECTED', 'individuelle Benutzer-Themes übersteuern');
 
+// colour palettes
+define('_THEME_PALETTE_ALLREQUIRED', 'Bitte stellen Sie sicher, dass alle einzelnen Felder gefüllt sind. Ansonsten kann die Farbpalette nicht gespeichert werden.');
+
 // theme types
 define('_THEME_AUTOTHEME', 'Autotheme');
 define('_THEME_LEGACY', 'Legacy');
