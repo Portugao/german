@@ -11,7 +11,7 @@
 */
 
 define('_THEME_CURRENTTHEMEIS', 'Das aktuelle Theme ist %t%.');
-define('_THEME_CURRNTTHEMENOTDEFAULT', 'Das gewählte Theme ist nicht das Default Theme. Ein <a href="%r%">Reset</a> des gewählten Themes zum Default <a href="index.php?theme=%p%">%d%</a>.');
+define('_THEME_CURRNTTHEMENOTDEFAULT', 'Das gewählte Theme ist nicht das Default Theme. Ein <a href="%r%">Reset</a> des gewählten Themes zum Default <a href="' . pnConfigGetVar('entrypoint', 'index.php') . '?theme=%p%">%d%</a>.');
 define('_THEME_INSTRUCTIONS', 'Themes ermöglichen angemeldeten Benutzern die Seitengestaltung zu individualisieren.');
 define('_THEME_OTHERTHEMES', 'Weitere verfügbare Themes sind');
 define('_THEME_PREVIEW', 'Theme Vorschau');

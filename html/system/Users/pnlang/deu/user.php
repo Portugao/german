@@ -44,7 +44,7 @@ define('_USERS_REQUIREDTEXT','Mit (*) markierte Angaben sind erforderlich.');
 
 // terms of use (tied to the legal module
 define('_USERS_CONFIRMTERMSOFUSEHINT', 'Die Allgemeinen Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Allgemeinen Nutzungsbedingungen nicht akzeptiert wurden ist keine Anmeldung möglich.');
-define('_USERS_CONFIRMTERMSOFUSE', 'Ich akzeptiere die <a href="index.php?module=Legal&amp;func=termsofuse">Allgemeinen Nutzungsbedingungen</a>');
+define('_USERS_CONFIRMTERMSOFUSE', 'Ich akzeptiere die <a href="' . pnConfigGetVar('entrypoint', 'index.php') . '?module=Legal&amp;func=termsofuse">Allgemeinen Nutzungsbedingungen</a>');
 
 // finished registration template
 define('_USERS_RETURNTOSTART', 'Zurück zur Startseite');

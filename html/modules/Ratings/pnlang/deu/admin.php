@@ -30,3 +30,4 @@ define('_RATINGSVIEWITEMS', 'Alle Bewertungen anzeigen');
 define('_RATINGSVIEWLOG', 'Zeige Log');
 define('_RATINGSRATING', 'Rating');
 define('_RATINGSITEMID', 'Item ID');
+define('_RATINGSDELETE', 'Alle Bewertungen für ein Item löschen');
