@@ -25,7 +25,6 @@ define('_SYSINFO_DATABASEHOST', 'Datenbank-Host');
 define('_SYSINFO_DATABASENAME', 'Datenbank-Name');
 define('_SYSINFO_DATABASEDESCRIPTION', 'Datenbank-Server-Beschreibung');
 define('_SYSINFO_DATABASEVERSION', 'Datenbank-Version:');
-define('_SYSINFO_DATABASEVERSIONNOTFOUND', 'Datenbankversion kann nicht ermittelt werden!');
 define('_SYSINFO_DISPLAYNAME', 'Anzeigename');
 
 define('_SYSINFO_EXTADODB', 'Die <a href="http://adodb.sourceforge.net/#extension">ADOdb-Erweiterung</a> bietet bis zu 100% Beschleunigung durch das Ersetzen von Teilen von ADOdb mit C Code');
@@ -83,6 +82,7 @@ define('_SYSINFO_REQUIREDPHPEXT', 'Notwendige PHP Erweiterungen');
 
 define('_SYSINFO_SERVERINFO', 'Server Information:');
 define('_SYSINFO_STATUS', 'Status');
+define('_SUHOSIN_PATCH', 'Suhosin');
 define('_SYSINFO_SYSTEMSUMMARY', 'System Zusammenfassung');
 define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href="http://support.pn-cms.de/modules/dokuwiki/doku.php?id=postnuke:sicherheit">postnuke:sicherheit</a> bei pn-cms.de.');
 
