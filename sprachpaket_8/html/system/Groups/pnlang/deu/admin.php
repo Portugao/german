@@ -22,6 +22,7 @@ define('_GROUPS_GROUPS',                        'Gruppen');
 define('_GROUPS_VIEWGROUPS',                   'Gruppen anzeigen'); 	 
 define('_GROUPS_MODIFYGROUP',                  'Gruppe bearbeiten');
 define('_GROUPS_CREATEGROUP',                  'Gruppe anlegen');
+define('_GROUPS_CONFIRMDELETE',                'Soll die Gruppe wirklich gelöscht werden?');
 
 // ajax interface
 define('_GROUPS_ADDINGNEW',                    '--neue Gruppe--');

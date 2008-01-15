@@ -12,7 +12,7 @@
 
 define('_RATINGS','Ratings');
 define('_RATINGSDEFAULTSTYLE','Stil der Bewertung');
-define('_RATINGSNUMRATINGS','Anzahl der Bewertungen');
+define('_RATINGSNUMRATINGS','Anzahl der Stimmen');
 define('_RATINGSOUTOFFIVE','Noten 1-5');
 define('_RATINGSOUTOFFIVESTARS','Sterne 1-5');
 define('_RATINGSOUTOFTEN','Noten 1-10');
@@ -30,4 +30,5 @@ define('_RATINGSVIEWITEMS', 'Alle Bewertungen anzeigen');
 define('_RATINGSVIEWLOG', 'Zeige Log');
 define('_RATINGSRATING', 'Rating');
 define('_RATINGSITEMID', 'Item ID');
-define('_RATINGSDELETE', 'Alle Bewertungen für ein Item löschen');
+define('_RATINGSDELETE', 'Bewertungen für ein Item löschen');
+define('_RATINGSCONFIRMDELETE', 'Sollen wie Bewertungen für das Item wirklich gelöscht werden?');

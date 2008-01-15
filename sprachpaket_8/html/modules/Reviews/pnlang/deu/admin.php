@@ -10,8 +10,19 @@
  * @subpackage Reviews
  */
 
+// module title
 define('_REVIEWS', 'Reviews');
+
+// singular/plural
 define('_REVIEWS_REVIEW', 'Review');
 define('_REVIEWS_REVIEWS', 'Reviews');
 
+// menu
+define('_REVIEWS_CONFIRMDELETE', 'Soll das Review wirklich gelöscht werden?');
+define('_REVIEWS_CREATE', 'Review anlegen');
+define('_REVIEWS_DELETE', 'Review löschen');
+define('_REVIEWS_MODIFY', 'Review bearbeiten');
+define('_REVIEWS_VIEW', 'Reviews anzeigen');
+
+// general
 define('_REVIEWS_GENERAL', 'Allgemeine Einstellungen');

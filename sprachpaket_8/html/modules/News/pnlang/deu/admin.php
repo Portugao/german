@@ -20,6 +20,13 @@ define('_NEWS_PUBLISHED', 'Veröffentlicht');
 define('_NEWS_REJECTED', 'Zurückgezogen');
 define('_NEWS_UNKNOWN', 'Unbekannt');
 
+// menu
+define('_NEWS_CONFIRMDELETE', 'Soll der Newsbeitrag wirklich gelöscht werden?');
+define('_NEWS_CREATE', 'Newsbeitrag anlegen');
+define('_NEWS_DELETE', 'Newsbeitrag löschen');
+define('_NEWS_MODIFY', 'Newsbeitrag bearbeiten');
+define('_NEWS_VIEW', 'Newsbeiträge anzeigen');
+
 // ajax modify
 define('_NEWS_MAKEPENDING', 'Setze Warten-Status');
 
