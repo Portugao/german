@@ -10,9 +10,19 @@
  * @subpackage Quotes
 */
 
+// module name
 define('_QUOTES', 'Zitate');
+
+// singular/plural
 define('_QUOTES_QUOTE', 'Zitat');
 define('_QUOTES_QUOTES', 'Zitate');
+
+// menu
+define('_QUOTES_CONFIRMDELETE', 'Soll das Zitat wirklich gelöscht werden?');
+define('_QUOTES_CREATE', 'Zitat anlegen');
+define('_QUOTES_DELETE', 'Zitat löschen');
+define('_QUOTES_MODIFY', 'Zitat ändern');
+define('_QUOTES_VIEW', 'Zitate anzeigen');
 
 // view template
 define('_QUOTES_SEARCH','Nach Schlüsselwort suchen:');
@@ -22,9 +32,5 @@ define('_QUOTES_AUTHOR','Autor');
 define('_QUOTES_TEXT','Zitattext');
 
 /*
-define('_QUOTESCONFIRMDELETE','Zitat löschen?');
-define('_QUOTESMODIFY','Zitate ändern');
 define('_QUOTESNOQUOTES','keine Zitate gefunden.');
-define('_QUOTESUPDATE', 'Zitat ändern');
-define('_QUOTESDELETE', 'Zitat löschen');
 */

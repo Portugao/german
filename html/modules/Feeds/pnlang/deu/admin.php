@@ -10,6 +10,13 @@
  * @subpackage Feeds
  */
 
+// general
+define('_FEEDS_CONFIRMDELETE', 'Soll das Feed wirklich gelöscht werden?');
+define('_FEEDS_CREATE', 'Feed anlegen');
+define('_FEEDS_MODIFY', 'Feed bearbeiten');
+define('_FEEDS_DELETE', 'Feed löschen');
+define('_FEEDS_VIEW', 'Feeds anzeigen');
+
 // modify config template
 define('_FEEDS_CACHEDIRECTORY', 'Cacheverzeichnis für Feeds (relativ zu pnTemp)');
 define('_FEEDS_CACHEINTERVAL', 'Cacheinterval für Feeds');
