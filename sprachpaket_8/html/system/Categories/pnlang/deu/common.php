@@ -44,12 +44,17 @@ define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
 define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet oder gelöscht werden.');
 define('_CATEGORIES_CATEGORY_DELETE_CONFIRM', 'Soll die Kategorie wirklich gelöscht werden [');
 define('_CATEGORIES_CATEGORY_DELETE_CONFIRM_QM','] ?');
+define('_CATEGORIES_COPY_SUCCESS',            'Die Kategorie [%s] wurde erfolgreich kopiert'); 	 
+define('_CATEGORIES_DELETE_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich gelöscht');
 define('_CATEGORIES_INSERT_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich eingefügt');
 define('_CATEGORIES_IS_LEAF',		             	'Kategorie ist eine Unterkategorie');
 define('_CATEGORIES_IS_LOCKED',		           	'Kategorie ist gesperrt');
+define('_CATEGORIES_LOCALNAME_UNDEFINED',     'Lokalisierter Name nicht definiert');
 define('_CATEGORIES_LOCALISATION',            'Lokalisierte Ausgabe');
 define('_CATEGORIES_META',                    'Metadaten der Kategorie');
+define('_CATEGORIES_MOVE_SUCCESS',            'Die Kategorie [%s] wurde erfolgreich verschoben');
 define('_CATEGORIES_PARENT',                  'Parent');
+define('_CATEGORIES_REBUILD_SUCCESS',         'Der Kategoriepfad wurde erfolgreich neu erstellt');
 define('_CATEGORIES_ROOT_PARENT_LOCKED',	    'Die Stammkategorie eines Startknoten kann nicht geändert werden.');
 define('_CATEGORIES_SECURITY_DOMAIN',         'Sicherheitsdomain');
 define('_CATEGORIES_SORT_VALUE',              'Sortierwert');
@@ -78,6 +83,8 @@ define('_CATEGORIES_SUBCATS_WARNING',        'Was soll mit den Unterkategorien d
 
 // module registry template
 define('_CATEGORIES_REGISTRY_PROPERTY',       'Name der Eigenschaft');
+define('_CATEGORIES_REGISTRY_DELETE_SUCCESS', 'Kategoriezuweisung wurde erfolgreich gelöscht'); 	 
+define('_CATEGORIES_REGISTRY_SAVE_SUCCESS',   'Kategoriezuweisung wurde erfolgreich gespeichert');
 define('_CATEGORIES_REGISTRY_TABLE',          'Tabelle');
 
 // move template
