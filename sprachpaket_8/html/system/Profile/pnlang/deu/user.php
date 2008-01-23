@@ -48,7 +48,7 @@ define('_TEST',                    'Testfeld DUD');
 define('_TIMEZONEOFFSET',          'Zeitzone');
 define('_UFAKEMAIL',               'angezeigte E-Mail-Adresse');
 define('_UREALEMAIL',              'E-Mail-Adresse');
-define('_UREALNAME',               'Name');
+define('_UREALNAME',               'Echter Name');
 define('_YAIM',                    'AOL ID');
 define('_YICQ',                    'ICQ ID');
 define('_YINTERESTS',              'Interessen');
