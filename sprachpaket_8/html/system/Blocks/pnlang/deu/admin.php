@@ -35,6 +35,7 @@ define('_BLOCKS_DELETEBLOCKPOSITION', 'Blockposition löschen');
 define('_BLOCKS_CONFIRMDELETEBLOCKPOSITION', 'Soll die Blockposition wirklich gelöscht werden?');	 
 
 // new/modify
+define('_BLOCKS_ADVANCEDPLACEMENTTOGGLE', 'Klicken zum Anzeigen/Verstecken der erweiterten Blockpositionierungsoptionen');
 define('_BLOCKS_COLLAPSABLE', 'Blockverkleinerung');
 define('_BLOCKS_COLLAPSED', 'verkleinert');
 define('_BLOCKS_COLLAPSIBILITY', 'Blockverkleinung');
