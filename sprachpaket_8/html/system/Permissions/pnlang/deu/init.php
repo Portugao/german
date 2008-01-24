@@ -22,8 +22,8 @@ define('_GROUP_PERMS_1_g','0');
 define('_GROUP_PERMS_2_a','-1');
 define('_GROUP_PERMS_2_b','2');
 define('_GROUP_PERMS_2_c','0');
-define('_GROUP_PERMS_2_d','Menublock::');
-define('_GROUP_PERMS_2_e','Navigation:Administration:');
+define('_GROUP_PERMS_2_d','ExtendedMenublock::');
+define('_GROUP_PERMS_2_e','1:2:');
 define('_GROUP_PERMS_2_f','0');
 define('_GROUP_PERMS_2_g','0');
 
@@ -40,8 +40,8 @@ define('_GROUP_PERMS_3_g','0');
 define('_GROUP_PERMS_4_a','0');
 define('_GROUP_PERMS_4_b','4');
 define('_GROUP_PERMS_4_c','0');
-define('_GROUP_PERMS_4_d','Menublock::');
-define('_GROUP_PERMS_4_e','Navigation:(Profil|Abmeldung):');
+define('_GROUP_PERMS_4_d','ExtendedMenublock::');
+define('_GROUP_PERMS_4_e','1:(1|3):');
 define('_GROUP_PERMS_4_f','0');
 define('_GROUP_PERMS_4_g','0');
 

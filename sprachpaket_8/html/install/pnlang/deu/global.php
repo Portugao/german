@@ -131,11 +131,3 @@ define('_INSTALLERMODIFYFILE_1','Fehler: kein Lesezugriff:');
 define('_INSTALLERMODIFYFILE_2','Fehler: kein Schreibzugriff:');
 define('_INSTALLERMODIFYFILE_3','0 Zeilen geändert, nichts gemacht');
 
-// default blocks
-define('_BLOCKS_00_b','Navigation');
-define('_BLOCKS_00_c','a:5:{s:14:"displaymodules";i:0;s:5:"style";i:1;s:10:"stylesheet";s:0:"";s:8:"template";s:4:"menu";s:7:"content";s:199:"index.php|Startseite|Zur StartseiteLINESPLITuser.php|Profil|Individuelle ProfilseiteLINESPLITadmin.php|Administration|Administration der SeiteLINESPLIT{Users:logout}|Abmeldung|Abmeldung von der Seite";}');
-define('_BLOCKS_01_b','Sprachen');
-define('_BLOCKS_02_b','Admin-Nachrichten');
-define('_USER_LOGINBLOCK_TITLE', 'Anmeldung');
-define('_USER_ONLINEBLOCK_TITLE', 'Wer ist angemeldet');
-
