@@ -14,6 +14,6 @@
  */
 
 define('_SECURITYCENTER_NAME',        'SecurityCenter');
-define('_SECURITYCENTER_DISPLAYNAME', 'Security Center');
+define('_SECURITYCENTER_DISPLAYNAME', 'SecurityCenter');
 define('_SECURITYCENTER_DESCRIPTION', 'Einstellungen zur Sicherheit der Webseite');
 

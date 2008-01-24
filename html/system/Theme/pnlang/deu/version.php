@@ -12,6 +12,6 @@
  */
 
 define('_THEME_NAME',        'Theme');
-define('_THEME_DISPLAYNAME', 'Theme Manager');
+define('_THEME_DISPLAYNAME', 'Theme-Manager');
 define('_THEME_DESCRIPTION', 'Themes bestimmen das Aussehen der Webseite');
 

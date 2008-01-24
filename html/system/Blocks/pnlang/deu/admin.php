@@ -35,15 +35,15 @@ define('_BLOCKS_DELETEBLOCKPOSITION', 'Blockposition löschen');
 define('_BLOCKS_CONFIRMDELETEBLOCKPOSITION', 'Soll die Blockposition wirklich gelöscht werden?');	 
 
 // new/modify
-define('_BLOCKS_ADVANCEDPLACEMENTTOGGLE', 'Klicken zum Anzeigen/Verstecken der erweiterten Blockpositionierungsoptionen');
+define('_BLOCKS_ADVANCEDPLACEMENTTOGGLE', 'Erweiterte Filterungsoptionen anzeigen/verstecken');
 define('_BLOCKS_COLLAPSABLE', 'Blockverkleinerung');
 define('_BLOCKS_COLLAPSED', 'verkleinert');
 define('_BLOCKS_COLLAPSIBILITY', 'Blockverkleinung');
 define('_BLOCKS_CUSTOMBLOCKSETTINGS', 'Blockspezifische Eigenschaften');
 define('_BLOCKS_DEFAULTSTATE', 'Statusvorgabe für Block');
 define('_BLOCKS_EXPANDED', 'erweitert');
-define('_BLOCKS_FUNCTIONFILTERING', 'Im folgenden kann die Blockanzeige auf bestimmte Module (und Modulfunktionen) eingeschränkt werden');
-define('_BLOCKS_PLACEMENT', 'Filterung nach Platzierung');
+define('_BLOCKS_FUNCTIONFILTERING', 'Im folgenden kann die Blockanzeige auf bestimmte Module (und Modulfunktionen) eingeschränkt werden.');
+define('_BLOCKS_PLACEMENT', 'Filterung der Blockpositionierung');
 define('_BLOCKS_POSITIONS','Position(en)');
 define('_BLOCKS_REFRESH','Cache-Intervall (nur für Blöcke die externe Inhalte einbinden)');
 define('_BLOCKS_CLICKTOACTIVATE', 'klicken, um den Block zu aktivieren');

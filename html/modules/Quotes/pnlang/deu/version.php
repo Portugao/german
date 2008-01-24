@@ -10,6 +10,6 @@
  * @subpackage Quotes
  */
 
-define('_QUOTES_NAME',        'Random Quote');
-define('_QUOTES_DISPLAYNAME', 'Random Quote');
+define('_QUOTES_NAME',        'Quotes');
+define('_QUOTES_DISPLAYNAME', 'Zitate');
 define('_QUOTES_DESCRIPTION', 'Im Modul Quotes kann man Zitate eintragen, die dann zufällig auf der Website angezeigt werden.');
