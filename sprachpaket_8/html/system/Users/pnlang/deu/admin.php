@@ -21,7 +21,7 @@ define('_USERS_USER_LC', 'Benutzer');
 define('_USERS_USERS', 'Benutzer');
 
 // navigation
-define('_USERS_DYNAMICDATA','Dynamische Benutzerdaten');
+define('_USERS_DYNAMICDATA','Benutzerattribute');
 define('_USERS_PENDINGAPPLICATIONS', 'Wartende Anmeldungen');
 define('_MODIFYUSERSCONFIG', 'Benutzerkonfiguration bearbeiten');
 define('_SEARCHUSERS', 'Benutzer suchen');
@@ -58,7 +58,7 @@ define('_USERS_ILLEGALUSERAGENTS', 'Gesperrte Useragents: ');
 define('_USERS_REGISTRATIONSETTINGS','Benutzerregistrierung');
 define('_USERS_MODERATION','Benutzerregistrierung moderieren');
 define('_USERS_NOTIFYEMAIL','Info-Mail über neue Benutzer: ');
-define('_USERS_OPTIONALITEMS', 'Dynamische Benutzerdaten anzeigen:');
+define('_USERS_OPTIONALITEMS', 'Attribute anzeigen:');
 define('_USERS_UNIQUEEMAIL','Eindeutige E-Mail-Adresse');
 define('_USERS_VERIFYEMAIL','E-Mail-Adresse während der Registrierung verifizieren ');
 define('_USERS_VERIFYEMAIL_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort während der Registrierung wählen, muß den Account aber via Mail-Benachrichtung bestätigen');

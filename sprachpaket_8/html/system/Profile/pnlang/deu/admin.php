@@ -11,23 +11,23 @@
  */
 
 // general 
-define('_PROFILE_DUD','Dynamische Benutzerdaten');
-define('_MODIFYACCOUNTPANELCONFIG', 'Konfiguration der dynamische Benutzerdaten');
-define('_NEWPANELCONTROL', 'Dynamische Benutzereigenschaft erstellen');
-define('_ACCOUNTPANELCONTROLSLISTVIEW', 'Liste der dynamischen Benutzerdaten');
+define('_PROFILE_DUD','Benutzerattribute');
+define('_MODIFYACCOUNTPANELCONFIG', 'Konfiguration der Attribute');
+define('_NEWPANELCONTROL', 'Attribut erstellen');
+define('_ACCOUNTPANELCONTROLSLISTVIEW', 'Liste der Attribute');
 define('_DISPLAYSETTINGS', 'Anzeige');
-define('_PROFILE_CREATEPROPERTY', 'Eigenschaft anlegen');
-define('_PROFILE_VIEWPROPERTIES', 'Eigenschaft anzeigen');
-define('_PROFILE_MODIFYPROPERTY', 'Eigenschaft bearbeiten');
-define('_PROFILE_DELETEPROPERTY', 'Eigenschaft löschen');
-define('_PROFILE_CONFIRMDELETEPROPERTY', 'Sollen die Eigenschaften wirklich gelöscht werden?');
+define('_PROFILE_CREATEPROPERTY', 'Attribut anlegen');
+define('_PROFILE_VIEWPROPERTIES', 'Attribut anzeigen');
+define('_PROFILE_MODIFYPROPERTY', 'Attribut bearbeiten');
+define('_PROFILE_DELETEPROPERTY', 'Attribut löschen');
+define('_PROFILE_CONFIRMDELETEPROPERTY', 'Sollen die Attribute wirklich gelöscht werden?');
 
 // singular
-define('_PROFILE_PROPERTIES', 'Eigenschaften');
-define('_PROFILE_PROPERTY', 'Eigenschaft');
-define('_PROFILE_PROPERTY_LC', 'Eigenschaft');
-define('_PROFILE_EXISTINGPROPERTY', 'Bestehende Eigenschaft');
-define('_PROFILE_NEWPROPERTY', 'Neue Eigenschaft');
+define('_PROFILE_PROPERTIES', 'Attribute');
+define('_PROFILE_PROPERTY', 'Attribut');
+define('_PROFILE_PROPERTY_LC', 'Attribut');
+define('_PROFILE_EXISTINGPROPERTY', 'Bestehendes Attribut');
+define('_PROFILE_NEWPROPERTY', 'Neues Attribut');
 
 // view template
 define('_PROFILE_DRAGANDDROPHINT', 'Anordnung via Drag and Drop, die neue Reihenfolge wird sofort gültig.');
@@ -39,8 +39,8 @@ define('_PROFILE_ITEMSPERROW','Einträge pro Reihe (Icons)');
 
 // new/modify templates
 define('_PROFILE_ADDINSTRUCTIONS', 'Beispiel: _MYINT - entsprechendes Sprachdefine in config/languages/(Sprache)/global.php anlegen');
-define('_PROFILE_DISPLAYTYPE', 'Display Typ');
-define('_PROFILE_FIELDCOMBONOTE', 'Combos : id1,item1;id2,item2; - Feldtrennung mit ";" - ID und Label mit ","');
+define('_PROFILE_DISPLAYTYPE', 'Anzeigetyp');
+define('_PROFILE_FIELDCOMBONOTE', 'Kombos : id1,item1;id2,item2; - Feldtrennung mit ";" - ID und Label mit ","');
 define('_PROFILE_FIELDLABEL_FLC','Feldname');
 define('_PROFILE_FIELDLABEL','Feldname');
 define('_PROFILE_FIELDLENGTH','Länge');
