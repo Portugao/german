@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2002, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: membersonline.php 21541 2007-02-26 21:25:39Z markwest $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package PostNuke_Value_Addons
  * @subpackage Members_List

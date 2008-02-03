@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2002, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: extmenu.php 19808 2006-08-23 16:49:26Z landseer $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package PostNuke_System_Modules
  * @subpackage Blocks
