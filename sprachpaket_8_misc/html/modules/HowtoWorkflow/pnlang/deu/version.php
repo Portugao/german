@@ -1,5 +1,5 @@
 <?php
-// $Id: version.php 18007 2006-02-21 18:00:03Z drak $
+// $Id$
 // ----------------------------------------------------------------------
 // PostNuke Application Framework
 // Copyright (C) 2006 PostNuke Software Foundation, Delaware, USA

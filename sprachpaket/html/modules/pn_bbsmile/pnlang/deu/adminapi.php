@@ -1,5 +1,5 @@
 <?php
-// $Id: adminapi.php 59 2006-09-09 17:48:08Z landseer $
+// $Id$
 // ----------------------------------------------------------------------
 // PostNuke Content Management System
 // Copyright (C) 2001 by the PostNuke Development Team.
