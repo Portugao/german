@@ -3,7 +3,7 @@
  * PostNuke Application Framework
  * @copyright (c) 2002, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: adminapi.php 19800 2006-08-23 12:10:39Z markwest $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package PostNuke_System_Modules
  * @subpackage  PostNuke_Modules

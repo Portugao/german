@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: admin.php 19260 2006-06-12 13:08:15Z markwest $
+ * $Id$
  *
  * * pnRender *
  *

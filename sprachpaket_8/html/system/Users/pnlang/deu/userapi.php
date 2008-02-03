@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2001, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: userapi.php 20196 2006-10-04 19:30:17Z markwest $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @author Xiaoyu Huang
  * @package PostNuke_System_Modules

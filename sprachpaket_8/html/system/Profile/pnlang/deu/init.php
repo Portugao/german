@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2002, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: init.php 18332 2006-03-26 16:14:33Z chestnut $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package     PostNuke_System_Modules
  * @subpackage  PostNuke_Profile

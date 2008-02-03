@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2001, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: init.php 20590 2006-11-23 13:58:11Z markwest $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package     PostNuke_System_Modules
  * @subpackage  PostNuke_Admin_Messages

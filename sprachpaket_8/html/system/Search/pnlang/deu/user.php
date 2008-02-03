@@ -4,7 +4,7 @@
  *
  * @copyright (c) 2004, PostNuke Development Team
  * @link http://www.postnuke.com
- * @version $Id: user.php 19818 2006-08-24 10:44:15Z markwest $
+ * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @package PostNuke_System_Modules
  * @subpackage  PostNuke_Search
