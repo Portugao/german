@@ -56,7 +56,6 @@ define('_ADMIN_INSTALLWARNING','Warnung! Bitte die Datei "install.php" und den "
 
 // PostNuke Security Analyzer defines
 define('_ADMIN_UPGRADE_PHP','Hinweis: upgrade.php im Root der Präsenz sollte gelöscht werden!');
-define('_ADMIN_UPGRADE76_PHP','Hinweis: upgrade76.php im Root der Präsenz sollte gelöscht werden!');
 define('_ADMIN_CONFIG_PHP','Hinweis: config/config.php ist beschreibbar (ggfs. chmod 644 oder chmod 444 setzen)!');
 define('_ADMIN_MAGIC_QUOTES','Hinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist aktiv!');
 define('_ADMIN_REGISTER_GLOBALS','Hinweis: <a href="http://php.net/register_globals">register_globals</a> ist aktiv!');
