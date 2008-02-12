@@ -12,7 +12,7 @@
 
 // user navigation
 define('_NEWS_ARCHIVES', 'Archiv');
-define('_NEWS_VIEW', 'Beiträge ansehen');
+define('_NEWS_FRONTPAGE', 'Startseite');
 
 // archives
 define('_NEWS_ARCHIVESFORDATE', 'Archiv für %month% %year%');
