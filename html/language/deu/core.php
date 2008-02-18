@@ -367,7 +367,7 @@ define('_CHOOSECATEGORY', '-- wählen --');
 define('_CHOOSEMODULE', 'Modul wählen');
 define('_CHOOSETABLE', 'Tabelle wählen');
 define('_CHOOSEONE', 'Bitte auswählen');
-define('_ENABLECATEGORISATION', 'Kategorisierung aktivieren');
+define('_ENABLECATEGORIZATION', 'Kategorisierung aktivieren');
 define('_MODULECATEGORY', 'Modulkategorie');
 define('_MODULECATEGORY_LC', 'Modulkategorie');
 define('_MODULECATEGORIES', 'Modulkategorien');
