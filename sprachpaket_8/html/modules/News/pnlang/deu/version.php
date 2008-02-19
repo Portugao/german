@@ -12,4 +12,4 @@
 
 define('_NEWS_NAME',        'News');
 define('_NEWS_DISPLAYNAME', 'News');
-define('_NEWS_DESCRIPTION', 'Stellt das Hinzufügen, Bearbeiten und Löschen von Newsbeiträgen zur Verfügung.');
+define('_NEWS_DESCRIPTION', 'Hinzufügen, Bearbeiten und Löschen von Newsbeiträgen');

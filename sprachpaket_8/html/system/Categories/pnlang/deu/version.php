@@ -13,5 +13,5 @@
 
 define('_CATEGORIES_NAME', 'Categories');
 define('_CATEGORIES_DISPLAYNAME', 'Kategorie-Management');
-define('_CATEGORIES_DESCRIPTION', 'Administration modulübergreifender Kategorien.');
+define('_CATEGORIES_DESCRIPTION', 'Administration modulübergreifender Kategorien');
 

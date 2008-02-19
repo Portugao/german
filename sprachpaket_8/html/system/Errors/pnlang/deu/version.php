@@ -12,6 +12,6 @@
  */
 
 define('_ERRORS_NAME',        'Errors');
-define('_ERRORS_DISPLAYNAME', 'Fehlerprotokolle');
+define('_ERRORS_DISPLAYNAME', 'Errors');
 define('_ERRORS_DESCRIPTION', 'Fehlerprotokollierung');
 

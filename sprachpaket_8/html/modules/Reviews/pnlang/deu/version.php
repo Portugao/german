@@ -11,5 +11,5 @@
  */
 
 define('_REVIEWS_NAME',        'Reviews');
-define('_REVIEWS_DISPLAYNAME', 'Reviews');
-define('_REVIEWS_DESCRIPTION', 'Reviews Modul');
+define('_REVIEWS_DISPLAYNAME', 'Rezensionen');
+define('_REVIEWS_DESCRIPTION', 'Rezensionen-Modul');
