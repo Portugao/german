@@ -12,6 +12,6 @@
  */
 
 define('_OBJECTDATA_NAME', 'ObjectData');
-define('_OBJECTDATA_DISPLAYNAME', 'Object Data');
-define('_OBJECTDATA_DESCRIPTION', 'Stellt ein Framework für Objektmodell-Daten zur Verfügung.');
+define('_OBJECTDATA_DISPLAYNAME', 'ObjectData');
+define('_OBJECTDATA_DESCRIPTION', 'Framework für Objektmodell-Daten');
 
