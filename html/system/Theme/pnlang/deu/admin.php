@@ -120,6 +120,7 @@ define('_THEME_CONFIGURATIONFILE', 'Konfigurationsdatei');
 define('_THEME_CONFIGURATIONNAME', 'Name');
 define('_THEME_CUSTOMARGSNOTE', 'Liste der Argumente in der URL getrennt nach /.');
 define('_THEME_DEFAULTTEMPLATE', 'Standard Template');
+define('_THEME_BLOCKTEMPLATE', 'Block Template');
 define('_THEME_HOMEPAGE', 'Homepage');
 define('_THEME_MASTER', 'Master');
 define('_THEME_MODULEWRAPPER', 'Module Wrapper DIV anzeigen');
