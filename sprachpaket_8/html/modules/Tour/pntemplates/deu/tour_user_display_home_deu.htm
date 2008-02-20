@@ -1,0 +1,38 @@
+<!--[include file="tour_user_menu.htm"]-->
+
+<h1>Willkommen zu PostNuke!</h1>
+<p>Vielen Dank für die Installation des <em>PostNuke Application Frameworks</em>. PostNuke ist eine frei verfügbare Open Source Software, die unter Berücksichtigung der GPL-Lizenzbestimmungen genutzt werden kann.</p>
+<p>Diese Seiten wurden entworfen, um sich mit dem System vertraut zu machen. Die Links sollen Ihnen beim Einstieg helfen. Wählen Sie einfach ein Thema, das für Sie interessiert sein könnte.</p>
+
+
+
+<h2>Weitere Informationsquellen</h2>
+<ul>
+  <li><strong>Deutschsprachiger Support und Dokumentation</strong>
+  <ul>
+  	<li><a href="http://support.pn-cms.de" title="support.pn-cms.de">Deutsche Community</a></li>
+  	<li><a href="http://support.pn-cms.de/modules/dokuwiki/doku.php" title="Dokumentations-Wiki">Dokumentations-Wiki</a></li>
+  	<li><a href="http://support.pn-cms.de/module-CMS_Support_Forum.htm" title="Supportforum">Supportforum</a></li>  	
+	</ul>
+	</li>
+  <li><strong>International</strong>
+  <ul>
+  	<li><a href="http://community.postnuke.com" title="PostNuke Community">PostNuke Community</a></li>
+  	<li><a href="http://community.postnuke.com/Wiki.htm" title="PostNuke Documentation Wiki">PostNuke Documentation Wiki</a></li>
+  	<li><a href="http://community.postnuke.com/module-Forum.htm" title="PostNuke Support Forums">PostNuke Support Forums</a></li>
+  	<li><a href="http://community.postnuke.com/module-Database-main-tid-3.htm" title="Extensions Database">Extensions Database</a></li>
+  	<li><a href="http://community.postnuke.com/module-Database-main-tid-4.htm" title="Themes database">Themes database</a></li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Direkteinstieg</h2>  
+<!--[pnsecauthaction component="::" instance="::" level=ACCESS_ADMIN assign="perm"]-->
+<!--[if $perm]-->
+<p>Sie können diese Website administrieren, indem Sie auf den Link <a href="<!--[pnmodurl modname=Admin type=admin func=adminpanel]-->">Administration</a> klicken (in der Regel befindet sich dieser in der oberen linken Ecke). Wenn Sie sich abmelden wird dieser Link wieder verschwinden. Anschließend können Sie sich über den Login-Block (in der Regel auf der rechten Seite) oder über die <a href="<!--[pnmodurl modname=Users func=loginscreen]-->">Login-Seite</a> erneut anmelden.</p>
+<!--[else]-->
+<p>Sie sind derzeit nicht angemeldet. Sie können sich mit den Benutzerdaten, die während der Installation festgelegt wurden, über den Login-Block (normalerweise auf der rechten Seite) oder alternativ über die <a href="<!--[pnmodurl modname=Users func=loginscreen]-->">Login-Seite</a> anmelden. Nachdem die Anmeldung durchgeführt wurde, erscheint im Hauptmenü (links oben) der Link zur Administration dieser Webseite.</p>
+<!--[/if]-->
+<p><strong>Schließlich, um dieses Tour-Modul zu entfernen und mit der Erstellung der Website zu beginnen...</strong></p>
+	
+</p>...gehen Sie einfach in die Administration, klicken auf die Registerkarte "System" und öffnen das Modul "Einstellungen". Um ein anderes Modul auf der Startseite anzuzeigen, ändern Sie die Auswahl im Abschnitt "Startseite" auf ein beliebiges Modul. Dieses Modul kann dauerhaft über die Moduladministration entfernt werden. Bis dahin steht das Modul unter folgenden Link zur Verfügung: <a href="<!--[pnmodurl modname=Tour]-->"><!--[pnmodurl modname=Tour]--></a>.</p>
