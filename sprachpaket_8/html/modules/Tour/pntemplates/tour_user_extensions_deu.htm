@@ -5,18 +5,18 @@
 
 <h2>Module</h2>
 <ul>
-<!--[foreach from=$modpages item="mod"]-->
-<li><a href="<!--[pnmodurl modname="tour" func="exttour" ext=$mod exttype="module" page=1]-->"><!--[$mod]--></a></li>
-<!--[foreachelse]-->
-<li>Keine Einstiegshilfen für Module vorhanden!</li>
-<!--[/foreach]-->
+  <!--[foreach from=$modpages item="mod"]-->
+    <li><a href="<!--[pnmodurl modname="tour" func="exttour" ext=$mod exttype="module" page=1]-->"><!--[$mod]--></a></li>
+    <!--[foreachelse]-->
+    <li>Keine Einstiegshilfen für Module vorhanden!</li>
+  <!--[/foreach]-->
 </ul>
 
 <h2>Themes</h2>
 <ul>
-<!--[foreach from=$themepages item="theme"]-->
-<li><a href="<!--[pnmodurl modname="tour" func="exttour" ext=$theme exttype="theme" page=1]-->"><!--[$theme]--></a></li>
-<!--[foreachelse]-->
-<li>Keine Einstiegshilfen für Themes vorhanden!</li>
-<!--[/foreach]-->
+  <!--[foreach from=$themepages item="theme"]-->
+    <li><a href="<!--[pnmodurl modname="tour" func="exttour" ext=$theme exttype="theme" page=1]-->"><!--[$theme]--></a></li>
+    <!--[foreachelse]-->
+    <li>Keine Einstiegshilfen für Themes vorhanden!</li>
+  <!--[/foreach]-->
 </ul>

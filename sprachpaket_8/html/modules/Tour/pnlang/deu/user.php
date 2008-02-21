@@ -13,4 +13,4 @@ define('_TOUR_BLOCKS', 'Blöcke');
 define('_TOUR_THEMES', 'Themes');
 define('_TOUR_PAGE', 'Seite %p%');
 define('_TOUR_START', 'Start');
-define('_TOUR_FINISH', 'Ende');
+define('_TOUR_FINISH', 'Letzte Schritte');
