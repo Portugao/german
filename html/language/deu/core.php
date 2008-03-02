@@ -397,3 +397,6 @@ define('_DATE_SELECTOR', 'Datum wählen');
 define('_ERROR_SENDINGMAIL', 'Beim Senden einer Mail ist ein Fehler aufgetreten');
 define('_ERROR_SENDINGMAIL_ADMINLOG', 'Beim Senden einer Mail von %fromname% (%fromaddress%) an %toname% (%toaddress%) mit dem Betreff \'%subject\' ist ein Fehler aufgetreten: %errorinfo%');
 define('_ERROR_UNKNOWNMAILERERROR', 'Unbekannter Fehler beim Mailversand');
+
+// module vars
+define('_ERROR_NONULLVALUEALLOWED', 'Modulevariablen mit NULL-Werten sind nicht erlaubt (%modname%/%varname%)');
