@@ -36,7 +36,6 @@ define('_USERS_CONFIRMDELETE', 'Soll der Benutzer wirklich gelöscht werden?');
 //  general settings
 define('_USERS_ANONYMOUSNAME','Name für unregistrierte Benutzer:');
 define('_USERS_GENERALSETTINGS', 'Einstellungen');
-define('_USERS_ENABLEGRAPHICS','Icons auf Benutzerebene aktivieren');
 define('_USERS_HASHMETHOD','Kennwort-Verschlüsselung (Default SHA256):');
 define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
 define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
