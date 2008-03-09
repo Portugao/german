@@ -10,8 +10,10 @@
  * @subpackage Pages
  */
 
+define('_PAGES_AVAILABLEPAGES', 'Verfügbare Seiten auf %sitename%:');
 define('_PAGES_AVAILABLESECTIONS', 'Die vorhandenen Kategorien sind:');
 define('_PAGES_PAGESINSECTION', 'Die Seiten in dieser Sektion sind');
+define('_PAGES_PAGESLIST', 'Seitenliste');
 define('_PAGES_PRINT', 'Seite ausdrucken');
 define('_PAGES_READS', '%x% gelesen');
 define('_PAGES_SECTION', 'Kategorie: %title%');
