@@ -38,6 +38,7 @@ define('_MONTH', 'Monat');
 define('_MONTHS', 'Monate');
 define('_YEAR', 'Jahr');
 define('_YEARS', 'Jahre');
+define('_NOTAVALIDCATEGORY', 'ungültige Kategorie');
 define('_NOTAVALIDDATE', 'ungültiges Datum');
 define('_NOTAVALIDINT', 'ungültige Zahl');
 define('_NOTAVALIDNUMBER', 'ungültige Zahl');

@@ -44,5 +44,6 @@ define('_NEWS_SUBMIT', 'Beitrag einreichen');
 define('_NEWS_PREVIEW', 'Vorschau');
 define('_NEWS_PREVIEWSTORY', 'Vorschau');
 define('_NEWS_PUBLICATION', 'Freigabeoptionen');
+define('_NEWS_NOLIMIT', 'Kein Enddatum');
 define('_NEWS_TO', 'Enddatum');
 define('_NEWS_UNLIMITED', 'ohne Zeitsteuerung');
