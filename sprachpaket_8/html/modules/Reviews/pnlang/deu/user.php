@@ -10,8 +10,6 @@
  * @subpackage Reviews
  */
 
-define('_REVIEWS', 'Reviews');
-
 define('_REVIEWSSEARCH', 'Durchsuche Reviews');
 define('_REVIEWSSEARCHRESULTS', 'Ergebnis der Suche in den Reviews');
 define('_REVIEWSSEACHNONEFOUND', 'Kein Review gefunden.');
