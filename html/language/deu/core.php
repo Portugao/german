@@ -135,6 +135,7 @@ define('_DEFAULTS', 'Vorgaben');
 define('_DELETE','Löschen');
 define('_DETAILS', 'Details');
 define('_EDIT','Editieren');
+define('_FILTER', 'Filter');
 define('_FORWARD', 'weiter');
 define('_HELP', 'Hilfe');
 define('_HELPPAGE', 'Hilfeseite');
