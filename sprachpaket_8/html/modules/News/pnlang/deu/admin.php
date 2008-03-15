@@ -13,7 +13,7 @@
 // view template
 define('_NEWS_ARCHIVED', 'Archiviert');
 define('_NEWS_INHOMEQUESTION', 'Startseite');
-define('_NEWS_NEWSPUBLISHER', 'Newsbeiträge');
+define('_NEWS_NEWSPUBLISHER', 'Beiträge');
 define('_NEWS_PENDING', 'Wartend');
 define('_NEWS_PUBLISHEDSTATUS', 'Status');
 define('_NEWS_PUBLISHED', 'Veröffentlicht');
@@ -21,11 +21,11 @@ define('_NEWS_REJECTED', 'Zurückgezogen');
 define('_NEWS_UNKNOWN', 'Unbekannt');
 
 // menu
-define('_NEWS_CONFIRMDELETE', 'Soll der Newsbeitrag wirklich gelöscht werden?');
-define('_NEWS_CREATE', 'Newsbeitrag anlegen');
-define('_NEWS_DELETE', 'Newsbeitrag löschen');
-define('_NEWS_MODIFY', 'Newsbeitrag bearbeiten');
-define('_NEWS_VIEW', 'Newsbeiträge anzeigen');
+define('_NEWS_CONFIRMDELETE', 'Soll der Beitrag wirklich gelöscht werden?');
+define('_NEWS_CREATE', 'Beitrag anlegen');
+define('_NEWS_DELETE', 'Beitrag löschen');
+define('_NEWS_MODIFY', 'Beitrag bearbeiten');
+define('_NEWS_VIEW', 'Beiträge anzeigen');
 
 // ajax modify
 define('_NEWS_MAKEPENDING', 'Setze Warten-Status');
