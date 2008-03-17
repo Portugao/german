@@ -91,7 +91,7 @@ define('_USERS_USERNAMENOSPACES','Fehler! Der Benutzername darf keine Leerzeiche
 define('_USERS_USERNAMETAKEN','Fehler! Der Benutzername wurde bereits registriert');
 define('_USERS_USERNAMERESERVED','Fehler! Der Benutzername ist nicht verfügbar');
 define('_USERS_USERNAMETOOLONG','Fehler! Der Benutzername ist zu lang - er muss kürzer als 25 Zeichen sein.');
-define('_USERS_YOUAREREGISTERED','Registrierung abgeschlossen. Die Zugangsinformationen werden an die hinterlegt E-Mail-Adresse verschickt.');
+define('_USERS_YOUAREREGISTERED','Registrierung abgeschlossen. Die Zugangsinformationen werden an die hinterlegte E-Mail-Adresse verschickt.');
 define('_USERS_YOURPASSMUSTBETHISLONG','Fehler! Das Kennwort muß mindestens %x% Zeichen lang sein');
 define('_USERS_ACCOUNTPOSSIBLYINACTIVE', 'Möglicherweise wurde die Registrierung auf dieser Seite noch nicht abgeschlossen. Bitte die Emails überprüfen und den Zugang ggf. aktivieren.');
 
