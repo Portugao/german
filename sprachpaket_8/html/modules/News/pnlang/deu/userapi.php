@@ -15,6 +15,7 @@ define('_NEWS_COMMENT', 'ein Kommentar');
 define('_NEWS_COMMENTS', '%count% Kommentare');
 define('_NEWS_COMMENTSFORARTICLE', '%comments% zu %title%');
 define('_NEWS_COMMENTSQ', 'Kommentare?');
+define('_NEWS_FILEDUNDER', 'abgelegt unter');
 define('_NEWS_FRIEND', 'Empfehlen');
 define('_NEWS_FULLTEXTOFARTICLE', 'Mehr zu %title% lesen');
 define('_NEWS_PRINTER', 'Druckerfreundliche Ansicht');
