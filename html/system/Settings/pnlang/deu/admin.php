@@ -14,7 +14,6 @@ define('_SETTINGS_ACTAUTODETECT', 'Erkennung der Browser-Sprache');
 define('_SETTINGS_ACTMULTILINGUAL','Multilingual-Umgebung aktivieren');
 define('_SETTINGS_ADMINEMAIL','Administrator E-Mail-Adresse');
 define('_SETTINGS_ADMINGRAPHIC','Icons in Administration');
-define('_SETTINGS_ALLOWEDHTML', 'Erlaubtes HTML');
 define('_SETTINGS_ALLOWUSERS','Benutzern die E-Mail-Adresse zeigen');
 define('_SETTINGS_ANONYMOUSSESSIONS', 'Sessions für Gäste benutzen');
 define('_SETTINGS_AUTHKEYUA', 'Authkey an UserAgent binden');
@@ -57,7 +56,6 @@ define('_SETTINGS_GC_RATIO', 'von 10000');
 define('_SETTINGS_GENERAL', 'Grundeinstellungen');
 define('_SETTINGS_GENSITEINFO','Allgemein');
 
-/* define('_SETTINGS_HTMLALLOWED','erlaubte HTML Tags'); */
 define('_SETTINGS_HTMLALLOWENTITIES','HTML Entitäten in Zeichen wandeln');
 define('_SETTINGS_HTMLOPT','HTML');
 define('_SETTINGS_HTMLTAGABOUT', 'Info "&lt;%t%&gt;"');
@@ -69,8 +67,7 @@ define('_SETTINGS_HTMLTAGUSAGE', 'Taginfo (von <a href="http://www.w3schools.com
 define('_SETTINGS_HTMLWARNING','HINWEIS: Um das Risiko von Cross-Site-Scripting zu minimieren sollte - insbesondere bei Freigabe von Tags mit Parametern - der safehtml-Outputfilter im SecurityCenter aktiviert werden.');
 define('_SETTINGS_INVALIDEMAIL', 'Ungültige E-Mail-Adresse - bitte prüfen');
 define('_SETTINGS_JSQUICKTAGS', 'JS Quicktags Buttons benutzen');
-define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags sind Buttons für häufige HTML-Tags in bestimmten Textareas. Eine \'aktivierte\'
-Textarea sollte ein Quicktags-Template Tag im Template haben. Deaktivieren, falls ein visueller Editor verwendet wird.');
+define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags sind Buttons für häufige HTML-Tags in bestimmten Textareas. Eine \'aktivierte\' Textarea sollte ein Quicktags-Template Tag im Template haben. Deaktivieren, falls ein visueller Editor verwendet wird.');
 define('_SETTINGS_KEYEXPIRY', 'Zeitlimit für Authkeys in Sekunden (default 0)');
 
 define('_SETTINGS_LANGDETECTBROWSER','Browser Sprache');

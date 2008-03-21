@@ -237,7 +237,7 @@ define('_VALIDXHTML', 'Valid XHTML');
 define('_VALIDCSS', 'Valid CSS');
 define('_MOREINFOHERE_LC', 'weitere Informationen hier');
 define('_MOREINFOHERE_UC', 'Weitere Informationen hier');
-define('_PERMITTEDHTMLTAGSREMINDER', '(Optional. Maximal 255 Zeichen. Erlaubte HTML Tags:');
+define('_PERMITTEDHTMLTAGSREMINDER', 'Optional. Maximal 255 Zeichen. Erlaubte HTML Tags:');
 define('_PERMITTEDHTMLTAGSSHORTREMINDER', 'HTML erlaubt');
 define('_PUNC_PERIOD', '.');
 define('_PUNC_COLON', ':');
@@ -340,10 +340,6 @@ define('_NOPREVIOUSPAGE', 'Keine vorherige Seiten');
 define('_PAGE', 'Seite');
 define('_PERPAGE', '%i% pro Seite');
 define('_TOTAL', 'Insgesamt');
-
-// defines for other pnRender/Theme plugns
-define('_ALLOWEDHTML', 'Erlaubte HTML Tags');
-define('_HTMLPERMITTED', 'HTML erlaubt');
 
 // WorkflowUtil
 define('_PNWF_STATEERROR', 'Workflow Statusfehler');
