@@ -44,9 +44,9 @@ define('_COMMENTSPOSTED','Kommentare:');
 define('_LINKSCAT','Kategorien in Links:');
 define('_LINKSINLINKS','Links:');
 define('_NEWSWAITING','Beiträge zur Veröffentlichung:');
+define('_NEWSPUBLISHED','Beiträge veröffentlicht:');
 define('_SACTIVETOPICS','Topics:');
 define('_SSPECIALSECT','Sektionen:');
-define('_STORIESPUBLISHED','Beiträge veröffentlicht:');
 
 // section headings
 define('_BROWSERS','Browser');
