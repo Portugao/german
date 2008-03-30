@@ -53,6 +53,7 @@ define('_TZOFFSETS','-12 -11 -10 -9.5 -9 -8 -7 -6 -5 -4 -3.5 -3 -2 -1 0 1 2 3 3.
 define('_CHARSET','ISO-8859-15');
 define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
+define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
 
 // common footer defines
 define('_CMSHOMELINK', '<a href="http://www.pn-cms.de">PostNuke CMS</a>');

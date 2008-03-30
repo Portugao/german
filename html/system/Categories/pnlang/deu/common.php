@@ -99,6 +99,9 @@ define('_CATEGORIES_CONFIG_REBUILD',          'Hier können alle systeminternen P
 define('_CATEGORIES_CONFIG_REBUILD_INFO', 	  '<br /><br />Via Submit-Button die Aktion starten - je nach Anzahl der Kategorien könnte ein Time-Out auftreten oder das PHP-Speicherlimit überschritten werden.');
 define('_CATEGORIES_CONFIG_REBUILD_PATHS',    'Pfade neu erstellen');
 
+// user editing
+define('_CATEGORIES_YOURCATEGORIES',          'Eigene Kategorien');
+
 // error/status messages
 define('_CATEGORIES_DOCROOT_CANT_RETRIEVE',   'Kann docroot nicht laden');
 define('_CATEGORIES_DOCROOT_INVALID',         'Ungültiger docroot Parameter im URL');
@@ -117,5 +120,8 @@ define('_CATEGORIES_USERCAT_LOGGED_IN',	    	'Fehler! Das Bearbeiten der Benutze
 define('_CATEGORIES_USERDOCROOT_EMPTY',	    	'Fehler! Der Benutzerstammknoten konnte nicht ermittelt werden');
 define('_CATEGORIES_USERDOCROOT_INVALID',   	'Fehler! Der Benutzerstammknoten scheint auf eine ungültige Kategorie zu verweisen');
 define('_CATEGORIES_VALUE_EMPTY',             'Wert darf nicht leer sein');
-
-
+define('_CATEGORIES_REGISTRY_MODULE_EMPTY',   'Fehler! Es muss ein Modul ausgewählt werden');
+define('_CATEGORIES_REGISTRY_TABLE_EMPTY',    'Fehler! Es muss eine Modultabelle ausgewählt werden');
+define('_CATEGORIES_REGISTRY_PROPERTY_EMPTY', 'Fehler! Es muss ein Name der Eigenschaft angegeben werden');
+define('_CATEGORIES_REGISTRY_CATEGORY_EMPTY', 'Fehler! Es muss eine Kategorie ausgewählt werden');
+define('_CATEGORIES_REGISTRY_PROPERTY_DUPLICATE','Fehler! Der Name der Eigenschaft existiert bereits für das angegebene Modul/Tabelle');
