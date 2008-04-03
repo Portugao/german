@@ -11,7 +11,7 @@
  */
 
 define('_MEMBERSLIST_CURRENTONLINE','Benutzer online');
-define('_MEMBERSLIST_LASTXREG','Letzte registrierte Benutzer');
+define('_MEMBERSLIST_LASTXREG','Letzte %x% registrierte Benutzer');
 define('_MEMBERSLIST_AVATAR','Avatar');
 define('_MEMBERSLIST_NICKNAME','Nickname');
 define('_MEMBERSLIST_REALNAME','realer Name');
