@@ -128,6 +128,12 @@ define('_THEME_PAGEPALETTE', 'Palette');
 define('_THEME_PAGESETTINGS', 'Page Settings');
 define('_THEME_PAGETEMPLATE', 'Seiten Template');
 define('_THEME_UNTITLEDBLOCK', 'Namenloser Block vom Typ %k%, ID %b%');
+define('_THEME_FILTERSETTINGS', 'Filter Einstellungen');
+define('_THEME_OUTPUTFILTERS', 'Outputfilter');
+define('_THEME_PREFILTERS', 'Prefilter');
+define('_THEME_POSTFILTERS', 'Postfilter');
+define('_THEME_REMOVEDUNKNOWNFILTERS', 'Unbekannter %filtertype% entfernt: %removed%');
+define('_THEME_FILTERHINT', 'Kommaseparierte Liste mit Filtern. Beispiel (als Outputfilter): myfilter steht für die Datei outputfilter.myfilter.php. Weitere Informationen über Outputfilter in der <a href="http://www.smarty.net/manual/en/advanced.features.php">Smarty Dokumentation</a>.');
 
 // set as default template
 define('_THEME_SETDEFAULT', 'Standard Theme setzen');
