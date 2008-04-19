@@ -238,7 +238,7 @@ define('_VALIDXHTML', 'Valid XHTML');
 define('_VALIDCSS', 'Valid CSS');
 define('_MOREINFOHERE_LC', 'weitere Informationen hier');
 define('_MOREINFOHERE_UC', 'Weitere Informationen hier');
-define('_PERMITTEDHTMLTAGSREMINDER', 'Optional. Maximal 255 Zeichen. Erlaubte HTML Tags:');
+define('_PERMITTEDHTMLTAGSREMINDER', 'Erlaubte HTML Tags:');
 define('_PERMITTEDHTMLTAGSSHORTREMINDER', 'HTML erlaubt');
 define('_PUNC_PERIOD', '.');
 define('_PUNC_COLON', ':');
