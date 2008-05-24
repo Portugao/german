@@ -70,6 +70,7 @@ define('_CATEGORIES_PREFS_ALLOWUSERCATEDIT',	'Benutzer erlauben, die eigenen Kat
 define('_CATEGORIES_PREFS_AUTOCREATEUSERCAT',	'Automatisches Erstellen des Stammverzeichnis für Benutzerkategorien');
 define('_CATEGORIES_PREFS_AUTOCREATEUSERDEFAULTCAT',	'Automatisches Erstellen der Standard-Benutzerkategorien');
 define('_CATEGORIES_PREFS_USERDEFAULTCATNAME',	'Standard-Benutzerkategorien');
+define('_CATEGORIES_PREFS_PERMISSIONSALL',   'Zugriff auf alle Kategorien für ein Element (relevant, wenn mehrere Kategorien in den Inhalten benutzt werden)');
 define('_CATEGORIES_REBUILDPATHS', 	        	'Pfade neu erstellen');
 
 // list template
