@@ -38,6 +38,7 @@ define('_NEWS_ITEMSONINDEXPAGE', 'anzuzeigende Beiträge im Index');
 define('_NEWS_STORIESORDER','Sortiere Beiträge nach');
 define('_NEWS_STORIESORDER0','News ID');
 define('_NEWS_STORIESORDER1','News Datum/Zeit');
+define('_NEWS_TOPICPROPERTY', 'Kategorie für Legacy Topic Templatevariable');
 define('_NEWS_URLS', 'Permalinks');
 define('_NEWS_URLSCUSTOM', 'Individuell');
 define('_NEWS_URLSCUSTOMREQUIRED', 'Achtung: Bei individuellen Permalinks muß entweder %storyid% oder %storytitle% enthalten sein.');
