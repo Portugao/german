@@ -1,10 +1,10 @@
 <?php
 
 // installer page language strings
-define('_INSTALLER', 'PostNuke Installation');
+define('_INSTALLER', 'Zikula Installation');
 define('_INSTALLERPLEASEREFERTOGUIDE', 'Bitte die <a style="color:red" href="docs/install_deu.html" onclick="window.open(\'docs/install_deu.html\');return false;">
-Installationsanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
-define('_INSTALLERQUALITY', 'HINWEIS: PostNuke-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="http://community.postnuke.com">community.postnuke.com</a> bzw. <a href="http://support.pn-cms.de">support.pn-cms.de</a>.');
+Installationsanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.zikula.de">support.zikula.de</a>.');
+define('_INSTALLERQUALITY', 'HINWEIS: Zikula-Download-Pakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href="http://community.zikula.org">community.zikula.org</a> bzw. <a href="http://support.zikula.de">support.zikula.de</a>.');
 
 // installer tasks
 define('_INSTALLERTASKS', 'Installer Aufgaben');
@@ -22,7 +22,7 @@ define('_INSTALLERTASK9', 'Fertig!');
 // installer resources
 define('_INSTALLERESOURCES', 'Zusätzliche Informationen');
 define('_INSTALLERGUIDE', 'Anleitung zur Installation');
-define('_INSTALLERDOCS', 'PostNuke Dokumentation');
+define('_INSTALLERDOCS', 'Zikula Dokumentation');
 define('_INSTALLERFORUMS', 'Support Foren');
 
 // standard buttons
@@ -33,9 +33,9 @@ define('_RECHECK', 'erneut prüfen');
 define('_INSTALLERCHOOSELANG', 'Sprache wählen');
 
 // _licence.htm
-define('_INSTALLERTHISSCRIPT', 'Die Installationsroutine hilft bei der Grundeinrichtung einer neuen PostNuke Webseite.
+define('_INSTALLERTHISSCRIPT', 'Die Installationsroutine hilft bei der Grundeinrichtung einer neuen Zikula Webseite.
 Die Installation erfolgt in mehreren Schritten in ca. 5-10 Minuten.');
-define('_INSTALLERLICENSE', 'Bitte vor der Installation die zugrundeliegende GNU General Public License durchlesen. PostNuke wird als "freie" Software entwickelt,
+define('_INSTALLERLICENSE', 'Bitte vor der Installation die zugrundeliegende GNU General Public License durchlesen. Zikula wird als "freie" Software entwickelt,
 es gibt aber Richtlinien zur Verteilung und Bearbeitung.');
 define('_INSTALLERGNUURL1', 'http://www.gnu.org/licenses/gpl.html');
 define('_INSTALLERGNULINKTEXT1', 'GNU General Public License');
@@ -46,7 +46,7 @@ define('_ACCEPTLICENCE', 'Lizenz akzeptieren');
 // _requirements.htm
 define('_INSTALLERPHP', 'PHP');
 define('_INSTALLERPHPMBSTRINGOK', 'In der PHP-Version ist die "multibyte string" Funktion verfügbar.');
-define('_INSTALLERPHPMBSTRINGNOTOK', 'In der PHP-Version ist die "multibyte string" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung für das PostNuke AJAX System.');
+define('_INSTALLERPHPMBSTRINGNOTOK', 'In der PHP-Version ist die "multibyte string" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung für das Zikula AJAX System.');
 define('_INSTALLERPHPTOKENOK', 'In der PHP-Version ist die "token" Funktion verfügbar.');
 define('_INSTALLERPHPTOKENNOTOK', 'In der PHP-Version ist die "token" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung.');
 define('_INSTALLERPHPVEROK', 'und erfüllt die Mindestanforderung (4.3.0).');
@@ -110,20 +110,20 @@ define('_INSTALLERUSERVALIDATECOMPAREFAILED', 'Im Benutzernamen sind Leerzeichen
 
 // _gotosite.htm
 define('_INSTALLERCREDITS', 'Credits');
-define('_INSTALLERTEAM', 'Das sind die Skripte und Personen, welche PostNuke ausmachen - wir freuen uns über jede Art von Feedback unserer Benutzer.<br />Wir können immer Hilfe gebrauchen - wer hier gelistet werden möchte, sollte uns einfach kontaktieren.');
-define('_INSTALLERPROBLEMS', 'Die PostNuke Installation ist abgeschlossen. Falls Probleme oder Schwierigkeiten aufgetreten sind bitte eine Rückmeldung in den Support-Foren. Das install-Skript und der /install-Ordner sollten jetzt gelöscht werden.');
-define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten PostNuke-Seite');
+define('_INSTALLERTEAM', 'Das sind die Skripte und Personen, welche Zikula ausmachen - wir freuen uns über jede Art von Feedback unserer Benutzer.<br />Wir können immer Hilfe gebrauchen - wer hier gelistet werden möchte, sollte uns einfach kontaktieren.');
+define('_INSTALLERPROBLEMS', 'Die Zikula Installation ist abgeschlossen. Falls Probleme oder Schwierigkeiten aufgetreten sind bitte eine Rückmeldung in den Support-Foren. Das install-Skript und der /install-Ordner sollten jetzt gelöscht werden.');
+define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten Zikula-Seite');
 
 // _selectmodule.htm
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
-define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://noc.postnuke.com/frs/?group_id=5">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.postnuke.com/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
-define('_INSTALLERPNMODULESSURL', 'http://community.postnuke.com/module-Database-main-tid-3.htm');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://trac.zikula.org/core/">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.zikula.org/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
+define('_INSTALLERPNMODULESSURL', 'http://community.zikula.org/module-Database-main-tid-3.htm');
 define('_INSTALLERPNMODULES', 'Offizielle Modul-Datenbank');
 
 // _selecttheme.htm
 define('_INSTALLERSELECTHEME', 'Standard-Theme der Seite');
-define('_INSTALLERTHEMES', 'Themes bestimmen das Aussehen der Webseite. In der PostNuke Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
-define('_INSTALLERPNTHEMESURL', 'http://community.postnuke.com/module-Database-main-tid-4.htm');
+define('_INSTALLERTHEMES', 'Themes bestimmen das Aussehen der Webseite. In der Zikula Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.zikula.de">support.zikula.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
+define('_INSTALLERPNTHEMESURL', 'http://community.zikula.org/module-Database-main-tid-4.htm');
 define('_INSTALLERPNTHEMES', 'Offizielle Theme-Datenbank');
 
 // modify_config.php

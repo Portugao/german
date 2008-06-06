@@ -1,9 +1,9 @@
 <?php
-// Generated: $d$ by $id$
+// $Id$
 // ----------------------------------------------------------------------
-// PostNuke Content Management System
-// Copyright (C) 2001 by the PostNuke Development Team.
-// http://www.postnuke.com/
+// Zikula Content Management System
+// Copyright (C) 2001 by the Zikula Development Team.
+// http://www.zikula.org/
 // ----------------------------------------------------------------------
 // LICENSE
 //

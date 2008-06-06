@@ -1,9 +1,9 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2001, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2001, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
@@ -56,13 +56,13 @@ define('_LOCALEWIN', 'deu');
 define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
 
 // common footer defines
-define('_CMSHOMELINK', '<a href="http://www.pn-cms.de">PostNuke CMS</a>');
+define('_CMSHOMELINK', '<a href="http://zikula.de">Zikula CMS</a>');
 define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
 define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
 define('_ISPOWEREDBY', 'is powered by');
 
 // common words
-define('_POSTNUKE', 'PostNuke');
+define('_ZIKULA', 'Zikula');
 define('_ALL','Alle');
 define('_AND','und');
 define('_BY','von');
@@ -208,7 +208,7 @@ define('_MEMBERS','registrierte Benutzer');
 define('_ONLINE','online');
 define('_OFFLINE','offline');
 
-// common postnuke terms
+// common Zikula terms
 define('_BLOCK' ,'Block');
 define('_BLOCKS' ,'Blöcke');
 define('_CUSTOMARGS', 'Benutzderfinierte Argument');
@@ -231,7 +231,7 @@ define('_THEMES', 'Themes');
 
 // other common terms
 define('_DIRECTORY', 'Verzeichnis');
-define('_POWEREDBY', 'Powered by <a title="PostNuke Application Framework" href="http://www.pn-cms.de">PostNuke</a>');
+define('_POWEREDBY', 'Powered by <a title="Zikula Application Framework" href="http://zikula.de">Zikula</a>');
 define('_VERSION', 'Version');
 define('_COPYRIGHT', 'Copyright 2007');
 define('_VALIDXHTML', 'Valid XHTML');

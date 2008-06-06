@@ -4,9 +4,9 @@
 
 // upgrade76.php
 define('_UPG_PROCEEDTOUPGRADE', 'Mit dem Upgrade fortfahren');
-define('_UPG_TITLE', 'PostNuke 0.764 - 0.8 Upgradeskript (für Version .764)');
-define('_UPG_SUBTITLE', 'PostNuke Upgradeskript (nur für Version .764)');
-define('_UPG_DESCRIPTION', 'Dieses Skript aktualisiert PostNuke 0.764 auf die aktuelle Version. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.');
+define('_UPG_TITLE', 'Zikula 1.0 Upgradeskript (ab Postnuke Version .764)');
+define('_UPG_SUBTITLE', 'Zikula Upgradeskript (nur für die Postnuke Version .764)');
+define('_UPG_DESCRIPTION', 'Dieses Skript aktualisiert Postnuke 0.764 auf die aktuelle Version Zikula Version. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.');
 define('_UPG_BACKUPNOTICE', 'Unbedingt VOR dem Fortfahren eine Sicherung der Datenbanken anlegen');
 define('_UPG_BACKINGUPDB', 'Sichere Benutzerdatenbank...');
 define('_UPG_DONE', 'erledigt');
@@ -18,7 +18,7 @@ define('_UPG_BLOCKSTABLEUPGRADED', 'Blocktabelle aktualisiert');
 define('_UPG_RESETTHEMETOEXTRALITE', 'Theme auf ExtraLite zurückgesetzt');
 define('_UPG_DUDMIGRATED', 'Benutzerattribute migriert');
 define('_UPG_SEARCHMODULEREINSTALLED', 'Suchmodul reinstalliert');
-define('_UPG_FOOTERINFO', 'Bitte unbedingt die <a href="docs/upgrade.html">Upgradeanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>');
+define('_UPG_FOOTERINFO', 'Bitte unbedingt die <a href="docs/upgrade.html">Upgradeanleitung</a> beachten. Weitere deutschsprachige Informationen gibt es auch unter <a href="http://support.zikula.de">support.zikula.de</a>');
 define('_UPG_TIMEHINT', 'Achtung: Je nachdem wie viele Benutzer in der Installation vorhanden sind, kann das Upgrade einige Zeit in Anspruch nehmen. Vorsichtshalber sollte ein Upgrade mit einer lokalen Sicherung getestet werden.');
 define('_UPG_STARTUPGRADE', 'Upgrade starten');
 define('_UPG_USERSACTIVATED', 'existierende Benutzer wurden aktiviert');

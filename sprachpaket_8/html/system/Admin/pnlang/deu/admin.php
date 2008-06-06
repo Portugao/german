@@ -1,13 +1,13 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2002, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2002, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package     PostNuke_System_Modules
- * @subpackage  PostNuke_Admin
+ * @package     Zikula_System_Modules
+ * @subpackage  Zikula_Admin
  */
 
 // general defines
@@ -54,7 +54,7 @@ define('_ADMIN_DEFAULTCATEGORY', 'Default-Kategorie für neue Module');
 define('_ADMIN_PSAKWARNING', 'Warnung! Bitte das "Swiss army knife tool" im Root der Präsenz löschen');
 define('_ADMIN_INSTALLWARNING','Warnung! Bitte die Datei "install.php" und den "install" Ordner im Root der Präsenz löschen');
 
-// PostNuke Security Analyzer defines
+// Zikula Security Analyzer defines
 define('_ADMIN_UPGRADE_PHP','Hinweis: upgrade.php im Root der Präsenz sollte gelöscht werden!');
 define('_ADMIN_CONFIG_PHP','Hinweis: config/config.php ist beschreibbar (ggfs. chmod 644 oder chmod 444 setzen)!');
 define('_ADMIN_MAGIC_QUOTES','Hinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist aktiv!');
@@ -93,7 +93,7 @@ define('_ADMINSECURITYWARNINGSHELP','Falls die Sicherheitsanalyse potentielle Ge
 define('_ADMIN_INSTALLWARNING_HELP','Nach erfolgreicher Installtion sollte die Installationsdatei \'install.php\' sowie das Verzeichnis \'install\' unbedingt aus dem Wurzelverzeichnis gelöscht werden, da andernfalls eine Sicherheitslücke besteht. Wenn die Sicherheitsanalyse diese Gefährdung erkennt, wird der Zugriff auf die Adminstration solange verhindert, bis die entsprechende Datei und das Verzeichnis gelöscht wurden. Bitte auch die Dokumentation zur optimalen Konfiguration der Webseite lesen.');
 define('_ADMIN_PSAKWARNING_HELP','Das Tool Swiss Army Knife (eine Datei namens \'psak.php\') ist ein nützliches Werkzeug, um bestimmte Probleme zu lösen, aber es sollte niemals innerhalb eines Verzeichnis bleiben, auf das über das Internet zugegriffen werden kann, weil dies ein Sicherheitsrisiko darstellt. Wenn die Sicherheitsanalyse diese Gefährdung erkennt, wird der Zugriff auf die Adminstration solange verhindert, bis die Datei \'psak.php\' gelöscht wurde.');
 define('_ADMIN_CONFIG_PHP_HELP','Nach erfolgter Installation erzeugt das Installationsskript eine Konfigurationsdatei \'config.php\', die im Unterverzeichnis \'config\' des Rootverzeichnis zu finden ist. Falls diese Datei beschreibbar ist, stellt dies ein Sicherheitsrisiko dar. Das Zugriffsrecht für diese Datei sollte auf nur-lesbar (644 or 444) gesetzt werden. Bitte auch die Dokumentation zur optimalen Konfiguration der Webseite lesen.');
-define('_ADMIN_LEGACY_MODE_HELP','PostNuke ermöglicht die Unterstützung älterer Modulversionen bzw. der früheren API-Schnittstelle. Solche Module können jedoch Sicherheitsrisiken enthalten, die die Website kompromittieren können. Es wird dringend empfohlen, nur aktuelle Modulversionen zu verwenden, die konform zur aktuellen PostNuke API sind. In einem solchen Fall kann die Unterstützung älterer Module ausgeschaltet werden (dies ist die Standardeinstellung nach der erstmaligen Installation).');
+define('_ADMIN_LEGACY_MODE_HELP','Zikula ermöglicht die Unterstützung älterer Modulversionen bzw. der früheren API-Schnittstelle. Solche Module können jedoch Sicherheitsrisiken enthalten, die die Website kompromittieren können. Es wird dringend empfohlen, nur aktuelle Modulversionen zu verwenden, die konform zur aktuellen Zikula API sind. In einem solchen Fall kann die Unterstützung älterer Module ausgeschaltet werden (dies ist die Standardeinstellung nach der erstmaligen Installation).');
 define('_ADMIN_MAGIC_QUOTES_HELP','In einigen Hostingumgebungen ist die PHP-Einstellung \'magic_quotes_gpc\' aktiv. Dies kann jedoch Probleme bei Uploads und auch Performance-Einbußen bedeuten. Es wird empfohlen, dass diese Einstellung für \'magic_quotes_gpc\' deaktiviert ist. Anleitungen hierzu finden sich in der Dokumentation.');
 define('_ADMIN_PNTEMP_HTACCESS_HELP','Nach erfolgter Installation enthält das Verzeichnis \'/pnTemp\' eine Datei \'.htaccess\'. Teilweise wird diese Datei aber beim Upload nicht übertragen, in einem solchen Fall wird dringend empfohlen, die Datei zu erzeugen (und sicher zu stellen, dass die Dateien \'.htaccess\' in einigen anderen Verzeichnissen ebenfalls existiert). Weitere Informationen hierzu finden sich in der Dokumentation.');
 define('_ADMIN_REGISTER_GLOBALS_HELP','In einigen Hostingumgebungen ist die PHP-Einstellung \'register_globals\' aktiv. Dies stellt jedoch ein erhebliches Sicherheitsrisiko dar. Falls das Web über das Internet verfügbar ist, wird dringend empfohlen, sicher zu stellen, dass die Einstellung für \'register_globals\' deaktiviert ist. Anleitungen hierzu finden sich in der Dokumentation.');

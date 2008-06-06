@@ -1,10 +1,10 @@
 <?php
 
-define('_TOUR_TOUR', 'PostNuke Tour');
+define('_TOUR_TOUR', 'Zikula Tour');
 define('_TOUR_HOME', 'Startseite');
 define('_TOUR_FTTOUR', 'Ersteinstieg');
 define('_TOUR_YOURDISTRIBUTION', 'Diese Distribution');
-define('_TOUR_NEWIN', 'Neu in PostNuke 0.8');
+define('_TOUR_NEWIN', 'Neu in Zikula 1.0');
 define('_TOUR_BASICCONFIG', 'Basiskonfiguration');
 define('_TOUR_EXTENSIONTOURS', 'Erweiterungen');
 define('_TOUR_EXTENSIONS', 'Erweiterungen');

@@ -1,21 +1,21 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2002, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2002, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  *
- * pnRender - PostNuke wrapper class for Smarty
+ * pnRender - Zikula wrapper class for Smarty
  *
  * Language file for pnRender block
  *
  * @author      Frank Schummertz
  * @version     .7/.8
- * @link        http://www.post-nuke.net              PostNuke home page
+ * @link        http://zikula.de              Zikula home page
  * @link        http://smarty.php.net                 Smarty home page
- * @package     PostNuke_System_Modules
+ * @package     Zikula_System_Modules
  * @subpackage  pnRender
  */
 

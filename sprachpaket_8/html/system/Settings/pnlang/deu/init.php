@@ -1,14 +1,14 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2002, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2002, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  *
- * @package PostNuke_System_Modules
- * @subpackage  PostNuke_Settings
+ * @package Zikula_System_Modules
+ * @subpackage  Zikula_Settings
  */
 
 // TODO Move user, censor, news etc. vars to relevant module
@@ -17,7 +17,7 @@ define('_MODULE_VARS_000', '0');
 define('_MODULE_VARS_001', 'Seitenname');
 define('_MODULE_VARS_002', 'logo.gif');
 define('_MODULE_VARS_003', 'Seitenbeschreibung');
-define('_MODULE_VARS_004', 'postnuke, community, portal, portal web, open source, gpl, web site, website, weblog, blog, content management, content management system, web content management, web content management system, enterprise web content management, cms, application framework');
+define('_MODULE_VARS_004', 'zikula, community, portal, portal web, open source, gpl, web site, website, weblog, blog, content management, content management system, web content management, web content management system, enterprise web content management, cms, application framework');
 define('_MODULE_VARS_005', '0');
 define('_MODULE_VARS_006', date('m/Y', time()));
 define('_MODULE_VARS_007', 'noreply@example.com');

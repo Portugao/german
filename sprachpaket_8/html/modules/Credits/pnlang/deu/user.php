@@ -1,12 +1,12 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2002, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2002, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package PostNuke_Value_Addons
+ * @package Zikula_Value_Addons
  * @subpackage Credits
  */
 
@@ -25,8 +25,9 @@ define('_CREDITSHELP','Hilfe');
 define('_CREDITSLICENSE','Lizenz');
 define('_CREDITSCHANGELOG','Changelog');
 define('_CREDITSTITLE','Credits & Lizenz-Information');
-define('_CREDITSPOSTNUKE','Powered by <a href="http://www.pn-cms.de">PostNuke</a>, einem Open Source GPL basierendem Content Management System.');
+define('_CREDITSPOSTNUKE','Powered by <a href="http://zikula.de">Zikula</a>, einem Open Source GPL basierendem Content Management System.');
+define('_CREDITSZIKULA','Powered by <a href="http://zikula.de">Zikula</a>, einem Open Source GPL basierendem Content Management System.');
 define('_CREDITSMODULES','Installierte Module');
-define('_CREDITSREADPNCR','PostNuke Credits anzeigen');
-define('_CREDITSREADPNHP','PostNuke Hilfe anzeigen');
-define('_CREDITSREADPNLIC','PostNuke Lizenz anzeigen');
+define('_CREDITSREADPNCR','Zikula Credits anzeigen');
+define('_CREDITSREADPNHP','Zikula Hilfe anzeigen');
+define('_CREDITSREADPNLIC','Zikula Lizenz anzeigen');

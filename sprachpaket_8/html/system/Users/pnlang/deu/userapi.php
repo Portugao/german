@@ -1,14 +1,14 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2001, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2001, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  * @author Xiaoyu Huang
- * @package PostNuke_System_Modules
- * @subpackage  PostNuke_Users
+ * @package Zikula_System_Modules
+ * @subpackage  Zikula_Users
 */
 
 // welcome e-mail
