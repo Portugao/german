@@ -1,13 +1,13 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2001, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2001, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package     PostNuke_System_Modules
- * @subpackage  PostNuke_Users
+ * @package     Zikula_System_Modules
+ * @subpackage  Zikula_Users
 */
 
 // general
@@ -81,7 +81,7 @@ define('_USERS_NOTALLOWREGREASONS','Begründung:');
 define('_USERS_NOUSERINFOFOUND','Fehler! Keine entsprechende Benutzerinformationen gefunden');
 define('_USERS_PASSWORDMAILED','Kennwort für %uname% wurde gesendet');
 define('_USERS_PASSWORDREQUIRED','Bitte Kennwort eingeben');
-define('_USERS_PPROFILEMODULENOTAVAILABLE','Fehler! Bitte das PostNuke Profile-Modul installieren und aktivieren!');
+define('_USERS_PPROFILEMODULENOTAVAILABLE','Fehler! Bitte das Profile-Modul installieren und aktivieren!');
 define('_USERS_REGISTRATIONFAILED','Fehler! Registrierung nicht erfolgreich, bitte Seitenbetreiber verständigen');
 define('_USERS_USERACTIVATIONFAILED', 'Fehler! Aktivierung des Accounts nicht erfolgreich, bitte Seitenbetreiber verständigen');
 define('_USERS_USERACTIVATED','Der Account wurde aktiviert.');

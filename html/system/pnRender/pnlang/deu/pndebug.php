@@ -4,7 +4,7 @@
  *
  * * pnRender *
  *
- * PostNuke wrapper class for Smarty
+ * Zikula wrapper class for Smarty
  *
  * * License *
  *
@@ -18,12 +18,12 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
- * @author      PostNuke development team
+ * @author      Zikula Development Team
  * @version     .7/.8
- * @link        http://www.post-nuke.net              PostNuke home page
+ * @link        http://zikula.de              Zikula home page
  * @link        http://smarty.php.net                 Smarty home page
  * @license      http://www.gnu.org/copyleft/gpl.html GNU General Public License
- * @package     PostNuke_System_Modules
+ * @package     Zikula_System_Modules
  * @subpackage  pnRender
  */
 
@@ -37,7 +37,7 @@ define('_PNDEBUG_INCLUDEDTEMPLATES', 'included templates & config files (load ti
 define('_PNDEBUG_NOTEMPLATES', 'no templates included');
 define('_PNDEBUG_ASSIGNEDVARS' ,'assigned template variables');
 define('_PNDEBUG_NOVARS', 'no template variables assigned');
-define('_PNDEBUG_SESSIONVARS', 'PostNuke session variables');
+define('_PNDEBUG_SESSIONVARS', 'Zikula session variables');
 define('_PNDEBUG_CONFIGVARS', 'assigned config file variables (outer template scope)');
 define('_PNDEBUG_NOCONFIGVARS', 'no config vars assigned');
 

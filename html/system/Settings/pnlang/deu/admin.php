@@ -1,13 +1,13 @@
 <?php
 /**
- * PostNuke Application Framework
+ * Zikula Application Framework
  *
- * @copyright (c) 2002, PostNuke Development Team
- * @link http://www.postnuke.com
+ * @copyright (c) 2002, Zikula Development Team
+ * @link http://www.zikula.org
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package PostNuke_System_Modules
- * @subpackage  PostNuke_Settings
+ * @package Zikula_System_Modules
+ * @subpackage  Zikula_Settings
  */
 
 define('_SETTINGS_ACTAUTODETECT', 'Erkennung der Browser-Sprache');
@@ -39,8 +39,8 @@ define('_SETTINGS_DYNKEYWORDS','Dynamische Meta-Keywords');
 
 define('_SETTINGS_ENTRYPOINT', 'Einstiegspunkt für die Seite');
 define('_SETTINGS_ENTRYPOINTDESC', 'Datei, über die der Seiteneinstieg erfolgt (Default: index.php)');
-define('_SETTINGS_ENTRYPOINTERROR', 'Fehler! Ungüliger Seiteneinstieg oder Seiteneinstieg existiert nicht im PostNuke-Rootverzeichnis');
-define('_SETTINGS_ENTRYPOINTTIP', 'Tipp: Der Seiteneinstieg muss vor der Änderung im PostNuke-Rootverzeichnis existieren.');
+define('_SETTINGS_ENTRYPOINTERROR', 'Fehler! Ungüliger Seiteneinstieg oder Seiteneinstieg existiert nicht im Zikula-Rootverzeichnis');
+define('_SETTINGS_ENTRYPOINTTIP', 'Tipp: Der Seiteneinstieg muss vor der Änderung im Zikula-Rootverzeichnis existieren.');
 define('_SETTINGS_ERRORDISPLAY','Welche Fehlertypen sollen angezeigt werden?');
 define('_SETTINGS_ERRORHANDLING','Errorhandling');
 define('_SETTINGS_ERRORREPORTINGLEVEL', 'Fehlerberichtsebene');
