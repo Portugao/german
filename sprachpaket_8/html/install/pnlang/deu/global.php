@@ -116,7 +116,7 @@ define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten Zikula-Seite');
 
 // _selectmodule.htm
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
-define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://trac.zikula.org/core/">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.zikula.org/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://code.zikula.org/core/downloads">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.zikula.org/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
 define('_INSTALLERPNMODULESSURL', 'http://community.zikula.org/module-Database-main-tid-3.htm');
 define('_INSTALLERPNMODULES', 'Offizielle Modul-Datenbank');
 

@@ -12,7 +12,7 @@
  * Language file for pnRender block
  *
  * @author      Frank Schummertz
- * @version     .7/.8
+ * @version     .7/.8/1.0
  * @link        http://zikula.de              Zikula home page
  * @link        http://smarty.php.net                 Smarty home page
  * @package     Zikula_System_Modules
