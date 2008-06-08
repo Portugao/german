@@ -19,7 +19,7 @@
  * GNU General Public License for more details.
  *
  * @author      Zikula Development Team
- * @version     .7/.8
+ * @version     .7/.8/1.0
  * @link        http://zikula.de              Zikula home page
  * @link        http://smarty.php.net                 Smarty home page
  * @license      http://www.gnu.org/copyleft/gpl.html GNU General Public License
