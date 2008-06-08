@@ -14,3 +14,5 @@ define('_SETTINGS','Einstellungen');
 define('_SUBMITNEWS','Beiträge einreichen');
 define('_USERADMIN','Benutzeradministration');
 define('_WORDSMORE', 'weitere(s) Wort(e)');
+define('_NICKNAME', 'Benutzername');
+define('_REMEMBERME', 'speichern');
