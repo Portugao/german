@@ -60,7 +60,7 @@ define('_SYSINFO_OPTIONALDPHPPATCHES', 'Optionale PHP Patches');
 define('_SYSINFO_PATH', 'Pfad');
 define('_SYSINFO_PHP_ALLOW_URL_FOPEN', 'allow_url_fopen=on - sollte off sein');
 define('_SYSINFO_PHP_ALLOW_URL_INCLUDE', 'allow_url_include=on - sollte off sein');
-define('_SYSINFO_PHP_ADDITIONAL_SECURITY', 'Die <a href="http://lists.zikula.org/mailman/listinfo/zikula-security">Zikula Security Mailingliste</a> sollte abonniert werden<br />Security Trackers: <a href="http://secunia.com/product/350/">Secunia</a>, <a href="http://www.securitytracker.com/archives/target/1275.html">Securitytracker</a>, <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=zikula">Common Vulnerabilities and Exposures</a>.');
+define('_SYSINFO_PHP_ADDITIONAL_SECURITY', 'Die <a href="http://groups.google.com/group/zikula-announce?hl=de">Zikula Announce Gruppe</a> sollte abonniert werden<br />Security Trackers: <a href="http://secunia.com/product/350/">Secunia</a>, <a href="http://www.securitytracker.com/archives/target/1275.html">Securitytracker</a>, <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=zikula">Common Vulnerabilities and Exposures</a>.');
 define('_SYSINFO_PHP_DISABLE_FUNCTIONS', 'empfohlene disable_functions: show_source, system, shell_exec, passthru, exec, popen, proc_open');
 define('_SYSINFO_PHP_DISABLE_FUNCTIONS_CURRENT', 'aktuelle disable_functions:');
 define('_SYSINFO_PHP_DISPLAY_ERRORS', 'display_errors=on - sollte off sein');
