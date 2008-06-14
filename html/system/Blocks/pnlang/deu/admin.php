@@ -50,7 +50,7 @@ define('_BLOCKS_CLICKTOACTIVATE', 'klicken, um den Block zu aktivieren');
 define('_BLOCKS_CLICKTODEACTIVATE', 'klicken, um den Block zu deaktivieren');
 
 // new/modify position 
-define('_BLOCKS_ASSIGNEDBLOCKS', 'Dieser Poition zugewiesene Blöcke');
+define('_BLOCKS_ASSIGNEDBLOCKS', 'Dieser Position zugewiesene Blöcke');
 define('_BLOCKS_BLOCKASSIGNMENTS', 'Blockzuweisungen');
 define('_BLOCKS_DRAGANDDROPHINT','Die Blöcke können via "Drag and Drop" sortiert werden. Die Reihenfolge ist sofort gültig.');
 define('_BLOCKS_UNASSIGNEDBLOCKS', 'Dieser Position nicht zugewiesene Blöcke');
