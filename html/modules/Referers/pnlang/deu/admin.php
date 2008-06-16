@@ -26,3 +26,4 @@ define('_REFERERSFREQUENCY','Häufigkeit');
 define('_REFERERSPERCENT','Prozent');
 define('_REFERERSTOTAL','Insgesamt:');
 define('_REFERERSWHOLINKS','Folgende Seiten haben Links gesetzt');
+define('_REFERERSDELETED', 'Referer gelöscht');
