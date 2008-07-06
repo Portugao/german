@@ -261,7 +261,7 @@ define('_CONFIGUPDATEFAILED', 'Modulkonfiguration konnte nicht aktualisiert werd
 define('_CONFIRMDELETE', 'Löschen bestätigen');
 define('_CONFIRMDELETEITEM', 'Löschen bestätigen von: %i%');
 define('_CREATEDBY', 'Angelegt von %username%');
-define('_CREATEDBYON', 'Angelegt von %username% on %date%');
+define('_CREATEDBYON', 'Angelegt von %username% am %date%');
 define('_CREATEDON', 'Angelegt am %date%');
 define('_CREATEITEM', '%i% anlegen');
 define('_CREATEFAILED','Fehler! Anlegen fehlgeschlagen');
