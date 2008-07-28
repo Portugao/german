@@ -399,3 +399,8 @@ define('_ERROR_UNKNOWNMAILERERROR', 'Unbekannter Fehler beim Mailversand');
 
 // module vars
 define('_ERROR_NONULLVALUEALLOWED', 'Modulevariablen mit NULL-Werten sind nicht erlaubt (%modname%/%varname%)');
+
+// site disabled template 
+define('_THISSITEDISABLED', 'Diese Seite wurde deaktiviert.'); 
+define('_ADMINLOGINREQUIRED', 'Admin-Login erforderlich, um fortzufahren'); 
+define('_ADMINLOGIN', 'Administrator Login'); 
