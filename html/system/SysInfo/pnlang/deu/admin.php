@@ -61,6 +61,7 @@ define('_SYSINFO_PATH', 'Pfad');
 define('_SYSINFO_PHP_ALLOW_URL_FOPEN', 'allow_url_fopen=on - sollte off sein');
 define('_SYSINFO_PHP_ALLOW_URL_INCLUDE', 'allow_url_include=on - sollte off sein');
 define('_SYSINFO_PHP_ADDITIONAL_SECURITY', 'Die <a href="http://groups.google.com/group/zikula-announce?hl=de">Zikula Announce Gruppe</a> sollte abonniert werden<br />Security Trackers: <a href="http://secunia.com/product/350/">Secunia</a>, <a href="http://www.securitytracker.com/archives/target/1275.html">Securitytracker</a>, <a href="http://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=zikula">Common Vulnerabilities and Exposures</a>.');
+define('_SYSINFO_PHP_CONFIG', 'PHP Konfiguration');
 define('_SYSINFO_PHP_DISABLE_FUNCTIONS', 'empfohlene disable_functions: show_source, system, shell_exec, passthru, exec, popen, proc_open');
 define('_SYSINFO_PHP_DISABLE_FUNCTIONS_CURRENT', 'aktuelle disable_functions:');
 define('_SYSINFO_PHP_DISPLAY_ERRORS', 'display_errors=on - sollte off sein');
@@ -68,12 +69,11 @@ define('_SYSINFO_PHP_DISPLAY_STARTUP_ERRORS', 'display_startup_errors=on - sollt
 define('_SYSINFO_PHP_EXPOSE_PHP', 'expose_php=on - sollte off sein');
 define('_SYSINFO_PHP_MAGIC_QUOTES_GPC', 'magic_quotes_gpc=on - sollte off sein');
 define('_SYSINFO_PHP_MAGIC_QUOTES_RUNTIME', 'magic_quotes_runtime=on - sollte off sein');
+define('_SYSINFO_PHP_MODULES', 'PHP Module');
 define('_SYSINFO_PHP_RECOMMENDED_SECURITY_SETTINGS', 'Das Zikula Development Team empfiehlt die folgenden Server-Einstellungen zur optimalen Sicherheit:<br />(Infos zur PHP Konfiguration unter <a href="http://php.net/manual/de/ini.php">Liste von php.ini Einstellungen</a> und <a href="http://php.net/manual/de/configuration.changes.php">Wie man Konfigurationseinstellungen ändert</a>.)');
 define('_SYSINFO_PHP_REGISTER_GLOBALS', 'register_globals=on - sollte off sein');
+define('_SYSINFO_PHP_VARIABLES', 'PHP Variablen');
 define('_SYSINFO_PHP_VERSION', 'PHP Version:');
-define('_SYSINFO_ZIKULA_EXTENSIONS', 'Zikula Extensions');
-define('_SYSINFO_ZIKULA_VERSION', 'Zikula Version:');
-define('_SYSINFO_ZIKULA_FILESYSTEM', 'Dateisystem-Check');
 
 define('_SYSINFO_QUERYCACHEINTERVAL', 'Datenbankabfrage Caching-Intervall (Sekunden)');
 
@@ -81,10 +81,16 @@ define('_SYSINFO_REASON', 'Grund');
 define('_SYSINFO_REQUIREDPHPEXT', 'Notwendige PHP Erweiterungen');
 
 define('_SYSINFO_SERVERINFO', 'Server Information:');
+define('_SYSINFO_SERVERENV', 'Server Environment');
 define('_SYSINFO_STATUS', 'Status');
 define('_SUHOSIN_PATCH', 'Suhosin');
+define('_SYSINFO_SUMMARY', 'Zusammenfassung');
 define('_SYSINFO_SYSTEMSUMMARY', 'System Zusammenfassung');
 define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href="http://support.zikula.de/modules/dokuwiki/doku.php?id=zikula:sicherheit">zikula:sicherheit</a> bei zikula.de.');
 
 define('_SYSINFO_VERSION', 'Version');
 
+define('_SYSINFO_ZIKULA_EXTENSIONS', 'Zikula Extensions');
+define('_SYSINFO_ZIKULA_TEMP', 'Zikula pnTemp Check');
+define('_SYSINFO_ZIKULA_FILESYSTEM', 'Zikula Filesystem Check');
+define('_SYSINFO_ZIKULA_VERSION', 'Zikula Version:');
