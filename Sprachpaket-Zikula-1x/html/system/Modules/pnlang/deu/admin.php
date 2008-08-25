@@ -10,6 +10,7 @@
 */
 
 // hooks
+define('_MODULES_SETSYSTEMHOOKS', 'System-Hooks'); 
 define('_MODULES_ENABLEHOOKSEXTENDED', 'Für das Modul verfügbare Hooks (erweiterte Einstellungen)');
 define('_MODULES_ENABLEHOOKS', 'Für das Modul verfügbare Hooks');
 define('_MODULES_EXTENDEDHOOKS', 'Erweiterte Hook Einstellungen');
