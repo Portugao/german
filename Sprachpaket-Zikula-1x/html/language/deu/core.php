@@ -404,3 +404,8 @@ define('_ERROR_NONULLVALUEALLOWED', 'Modulevariablen mit NULL-Werten sind nicht 
 define('_THISSITEDISABLED', 'Diese Seite wurde deaktiviert.'); 
 define('_ADMINLOGINREQUIRED', 'Admin-Login erforderlich, um fortzufahren'); 
 define('_ADMINLOGIN', 'Administrator Login'); 
+
+// exit functionality 
+define('_EXITINSTALLERROR', 'Installationsfehler:'); 
+define('_EXITHANDLER', 'Exit-Handler: '); 
+define('_EXITSTACKTRACE', 'Stack Trace:'); 
