@@ -11,4 +11,4 @@
  */
 
 define('_GROUPS', 'Gruppen');
-
+define('_GROUPS_ALREADYMEMBER', 'Sie sind bereits Mitglied dieser Gruppe');
