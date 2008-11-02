@@ -41,8 +41,10 @@ define('_USERS_ACIVATEYOURACCOUNTLINK', 'Bitte den folgenden Link anklicken um d
 define('_USERS_ONCEACTIVATED', 'Nach der Freischaltung sind die Account-Daten:');
 
 // admin notification e-mail
-define('_USERS_NOTIFYEMAILSUBJECT','Benutzerregistrierung');
-define('_USERS_NOTIFYEMAILBODY','Ein neuer Benutzer hat sich registriert. Benutzername: %uname% ');
+define('_USERS_NOTIFYREGEMAILSUBJECT','Ein neuer Benutzer hat sich auf der Webseite registriert!');
+define('_USERS_NOTIFYREGEMAILBODY','Ein neuer Benutzer hat sich registriert. Benutzername: %uname% ');
+define('_USERS_NOTIFYACTEMAILSUBJECT','Ein neues Benutzerkonto wurde auf der Webseite aktiviert!');
+define('_USERS_NOTIFYACTEMAILBODY','Ein neues Benutzerkonto wurde aktiviert. Benutzername: %uname% ');
 
 // session expired template
 define('_USERS_SESSIONEXPIREDHEADER', 'Die Benutzer-Session ist abgelaufen.');

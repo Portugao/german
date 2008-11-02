@@ -54,6 +54,8 @@ define('_CHARSET','ISO-8859-15');
 define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
+define('_PERMLINK_LOCALESEARCH',  'ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñß');
+define('_PERMLINK_LOCALEREPLACE', 'aaaaaaaaaaaaooooooooooooeeeeeeeecciiiiiiiiuuuuuuuuynns');
 
 // common footer defines
 define('_CMSHOMELINK', '<a href="http://zikula.de">Zikula Application Framework</a>');
@@ -224,6 +226,7 @@ define('_MODULES', 'Module');
 define('_PARAMETERS', 'Parameter');
 define('_PLUGIN', 'Plugin');
 define('_PLUGINS', 'Plugins');
+define('_PROFILE', 'Persönliche Informationen'); 
 define('_TEMPLATE', 'Template');
 define('_TEMPLATES', 'Templates');
 define('_THEME', 'Theme');
@@ -367,6 +370,7 @@ define('_CHOOSEMODULE', 'Modul wählen');
 define('_CHOOSETABLE', 'Tabelle wählen');
 define('_CHOOSEONE', 'Bitte auswählen');
 define('_ENABLECATEGORIZATION', 'Kategorisierung aktivieren');
+define('_NOASSIGNECATEGORIES', 'Keine Kategorie zugeordnet'); 
 define('_MODULECATEGORY', 'Modulkategorie');
 define('_MODULECATEGORY_LC', 'Modulkategorie');
 define('_MODULECATEGORIES', 'Modulkategorien');

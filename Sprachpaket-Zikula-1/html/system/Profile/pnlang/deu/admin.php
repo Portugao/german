@@ -87,3 +87,8 @@ define('_PROFILE_FIELDDATE', 'CALENDAR');
 define('_PROFILE_FIELDEXTDATE', 'DATE (Extended)');
 define('_PROFILE_FIELDCOMBOTEXT', 'COMBO (Text)');
 
+// members list
+define('_PROFILE_MEMBERSPERPAGE', 'Einträge pro Seite bei \'Mitgliederliste\'');
+define('_PROFILE_ONLINEMEMBERSITEMSPERPAGE', 'Einträge pro Seite bei \'Mitglieder Online\'');
+define('_PROFILE_RECENTMEMBERSITEMSPERPAGE', 'Einträge pro Seite bei \'Letzte Benutzer\'');
+define('_PROFILE_UNVERIFIED', 'unregistrierte Benutzer ausfiltern');

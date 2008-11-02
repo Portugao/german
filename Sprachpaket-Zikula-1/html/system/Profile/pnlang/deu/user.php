@@ -59,3 +59,19 @@ define('_YOURAVATAR',              'Avatar');
 define('_YOURHOMEPAGE',            'Homepage');
 define('_YYIM',                    'Yahoo ID');
 define('_YSKYPE',                  'Skype ID');
+
+// navigation
+define('_PROFILE_CURRENTONLINE', 'Benutzer online');
+define('_PROFILE_LASTXREG', 'Letzte %x% registrierte Benutzer');
+
+// view template
+define('_PROFILE_NEWESTUSER', 'Neuester Benutzer');
+define('_PROFILE_REG', 'Registriert');
+define('_PROFILE_SUMMARY', 'Mitgliederübersicht');
+
+// recent template
+define('_PROFILE_REGDATE', 'Registrierungsdatum');
+
+// online/offline status
+define('_PROFILE_STATUSOFFLINE', 'Offline');
+define('_PROFILE_STATUSONLINE', 'Online');

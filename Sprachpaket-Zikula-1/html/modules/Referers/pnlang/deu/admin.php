@@ -21,6 +21,7 @@ define('_REFERERS_RESET', 'Referer zurücksetzen');
 define('_REFERERSACTIVATE','HTTP-Referer aktivieren?');
 define('_REFERERSDELETE', 'Alle Referer löschen');
 define('_REFERERSCONFIRMDELETE', 'Sollen wirklich alle Referer gelöscht werden?');
+define('_REFERERSDELETED', 'Alle Referer gelöscht');  
 define('_REFERERSEXCLUDED','Ausnahmen (kommasepariert)');
 define('_REFERERSFREQUENCY','Häufigkeit');
 define('_REFERERSPERCENT','Prozent');
