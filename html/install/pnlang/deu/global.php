@@ -92,9 +92,6 @@ define('_INSTALLERNOTADMINUSER', 'Der Benutzer hat keine administrativen Rechte.
 
 // _installationtype.htm
 define('_INSTALLERSELECTTYPE', 'Installationstyp wählen');
-define('_INSTALLERBASIC', 'Basis - nur Grundinstallation des Core');
-define('_INSTALLERCOMPLETE', 'Komplett - alle verfügbaren Module installieren');
-define('_INSTALLERBLOG', 'Blogging Webseite');
 
 // _createadmin.htm
 define('_INSTALLERADMINNAME', 'Name');
@@ -105,7 +102,6 @@ define('_INSTALLERADMINEMAIL', 'E-Mail-Adresse');
 define('_INSTALLERADMINURL', 'URL');
 define('_INSTALLERPASSWORDCOMPAREFAILED', 'Adminbenutzer konnte nicht angelegt werden - bitte Eingaben überprüfen');
 define('_INSTALLEREMAILVALIDATEFAILED', 'E-Mail-Adresse scheinbar ungültig - bitte Eingabe überprüfen');
-define('_INSTALLERURLVALIDATECOMPAREFAILED', 'URL-Angabe scheinbar ungültig - bitte Eingabe überprüfen');
 define('_INSTALLERUSERVALIDATECOMPAREFAILED', 'Im Benutzernamen sind Leerzeichen und Symbole nicht zulässig');
 
 // _gotosite.htm

@@ -89,6 +89,8 @@ define('_SETTINGS_COOKIES', 'Cookie-Einstellungen');
 
 define('_SETTINGS_PASSBYMAIL','(Benutzern nach Registrierung das Kennwort via E-Mail schicken)');
 define('_SETTINGS_PHPSYSTEMLOG', 'Das PHP System Log (definiert in php.ini) nutzen');
+define('_SETTINGS_PROFILEMODULE', 'Modul für die Benutzerprofilverwaltung'); 
+define('_SETTINGS_PROFILEMODULE_NONE', 'Keine Benutzerprofile'); 
 
 define('_SETTINGS_REFERERONPRINT','Referrer auf der Druckansicht prüfen');
 
@@ -122,7 +124,9 @@ define('_SETTINGS_SHORTURLSHTACCESS', 'Short URLs benötigen eine .htaccess Datei
 define('_SETTINGS_SHORTURLSNOTE', "Für Short URLs muß die Apache-Option modrewrite aktiv sein. Falls PHP im CGI-Modus läuft, sollte die Option 'cgi.fix_pathinfo = 0' in der php.ini aktiv sein, damit Short URLs einwandfrei funktionieren.");
 define('_SETTINGS_SHORTURLSSTRIPENTRYPOINT', 'Einstiegspunkt aus Verzeichnisbasierenden URLs entfernen');
 define('_SETTINGS_SHORTURLSTYPE', 'Typ der Short URLs');
+define('_SETTINGS_SHORTURLS_DEFAULTMODULE', 'Zu benutzendes Modul, wenn Permalink keinen Modulnamen beinhaltet'); 
 define('_SETTINGS_SHORTURLS_EXTENSION', 'Erweiterung für Dateibasierende URLs');
+define('_SETTINGS_SHORTURLS_NODEFAULTMODULE', 'Keine Standardmodul'); 
 define('_SETTINGS_SHORTURLS_SEPARATOR', 'Trennzeichen im Permalink Titel');
 define('_SETTINGS_SHOWALLERRORS','notices, warnings und errors anzeigen');
 define('_SETTINGS_SHOWERRORSONLY','real errors anzeigen');
@@ -145,6 +149,7 @@ define('_SETTINGS_STARTFUNC','Modulfunktion');
 define('_SETTINGS_STARTMODULE', 'Startseite');
 define('_SETTINGS_STARTPAGE','Startmodul');
 define('_SETTINGS_STARTPAGEDESCR','(Modul, auf das index.php verweist)');
+define('_SETTINGS_STARTPAGE_NOMODULE', 'Kein Startmodul (statische Startseite)'); 
 define('_SETTINGS_STARTTYPE', 'Funktionstyp');
 
 define('_SETTINGS_TIMEZONEOFFSET', 'Timezone für unregistrierte Benutzer');

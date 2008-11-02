@@ -12,4 +12,6 @@
 
 define('_FEEDS_NUMITEMS', 'Anzahl der Feeds zum Anzeigen (bis zum bereitgestellten Maximum des Feeds oder -1 für alle Artikel)');
 define('_FEEDS_FEEDID', 'Feed');
-define('_FEEDS_DISPLAYIMAGE', 'Feed-Bild anzeigen (wenn im Feed verfügbar)');
+define('_FEEDS_DISPLAYIMAGE', 'Feed-Bild anzeigen (wenn im Feed vorhanden)');
+define('_FEEDS_DISPLAYDESCRIPTION', 'Feed-Beschreibung anzeigen (wenn im Feed vorhanden)'); 
+define('_FEEDS_ALTERNATELAYOUT', 'Alternatives Layout benutzen'); 

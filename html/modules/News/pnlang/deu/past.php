@@ -10,7 +10,6 @@
  * @subpackage News
 */
 
-define('_DATESTRING2','%A, %B %d');
 define('_OLDERARTICLES','ältere Beiträge');
 define('_PASTARTICLES','frühere Beiträge');
 define('_MAXNUMSTORIES', 'maximal anzuzeigende Beiträge');
