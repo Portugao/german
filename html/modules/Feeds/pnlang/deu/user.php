@@ -19,3 +19,7 @@ define('_FEEDS_FEEDSLIST', 'Feed-Liste');
 define('_FEEDS_READMORE', 'mehr lesen...');
 define('_FEEDS_VIEW','Feeds anzeigen');
 define('_FEEDS_WELCOME', 'Willkommen bei den Feeds von %sitename%');
+define('_FEEDS_VIEWALL', 'Alle Feeds anzeigen');
+define('_FEEDS_KEYERROR', 'Fehlerhafter Schlüssel angegeben. Keine Aktualisierung durchgeführt.');
+define('_FEEDS_CACHEUPDATE', 'Eintrag im Feed-Cache aktualisiert:');
+define('_FEEDS_CACHEERROR', 'Fehler: ');
