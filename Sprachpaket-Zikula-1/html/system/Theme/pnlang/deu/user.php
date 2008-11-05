@@ -2,13 +2,11 @@
 /**
  * Zikula Application Framework
  *
- * @copyright (c) 2001, Zikula Development Team
- * @link http://www.zikula.org
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package Zikula_System_Modules
- * @subpackage Theme
-*/
+ */
 
 define('_THEME_CURRENTTHEMEIS', 'Das aktuelle Theme ist %t%.');
 define('_THEME_CURRNTTHEMENOTDEFAULT', 'Das gewählte Theme ist nicht das Default Theme. Ein <a href="%r%">Reset</a> des gewählten Themes zum Default <a href="' . pnConfigGetVar('entrypoint', 'index.php') . '?theme=%p%">%d%</a>.');

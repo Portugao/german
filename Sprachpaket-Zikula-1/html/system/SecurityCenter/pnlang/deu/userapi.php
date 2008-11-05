@@ -1,13 +1,12 @@
 <?php
 /**
  * Zikula Application Framework
- * @copyright (c) 2001, Zikula Development Team
- * @link http://www.zikula.org
+ *
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package Zikula_System_Modules
- * @subpackage SecurityCenter
-*/
+ */
 
 define('_SECURITYCENTER_EMAILEMAILSECTIONBREAKER','\n=====================================\n');
 define('_SECURITYCENTER_EMAILATTENTION','Information für den Administrator der Seite %sitename.\n');

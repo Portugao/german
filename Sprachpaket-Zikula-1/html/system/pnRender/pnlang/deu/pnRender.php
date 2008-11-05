@@ -2,21 +2,10 @@
 /**
  * Zikula Application Framework
  *
- * @copyright (c) 2002, Zikula Development Team
- * @link http://www.zikula.org
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- *
- * pnRender - Zikula wrapper class for Smarty
- *
- * Language file for pnRender block
- *
- * @author      Frank Schummertz
- * @version     .7/.8/1.0
- * @link        http://zikula.de              Zikula home page
- * @link        http://smarty.php.net                 Smarty home page
- * @package     Zikula_System_Modules
- * @subpackage  pnRender
  */
 
 define('_PNRENDERBLOCK_MODULENAME',   'Modulname');
