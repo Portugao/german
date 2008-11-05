@@ -1,13 +1,12 @@
 <?php
 /**
  * Zikula Application Framework
- * @copyright (c) 2001, Zikula Development Team
- * @link http://www.zikula.org
+ *
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @package Zikula_System_Modules
- * @subpackage SecurityCenter
-*/
+ */
 
 define('_SECURITYCENTER_EMAILEMAILSECTIONBREAKER','\n=====================================\n');
 define('_SECURITYCENTER_EMAILATTENTION','Information für den Administrator der Seite %sitename.\n');
@@ -30,4 +29,3 @@ define('_SECURITYCENTER_EMAILCOOKIEARRAY','Inhalt der \$_COOKIE Daten\n');
 define('_SECURITYCENTER_EMAILFILESARRAY','Inhalt der \$_FILES Daten\n');
 define('_SECURITYCENTER_EMAILSESSIONARRAY','Inhalt der \$_SESSION Daten\n(Dies sind Informationen aus der Session. Die Variablen,\ndie mit PNSV beginnen, sind PostNukeSessionVariablen)\n');
 define('_SECURITYCENTER_EMAILEMAILSUBJECT','Security Center Meldung (Typ: %hack_type)');
-

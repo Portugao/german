@@ -1,5 +1,12 @@
 <?php
-
-define('_NM_NAME', 'Mail_Users');
+/**
+ * Zikula Application Framework
+ *
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
+ * @version $Id$
+ * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
+ */
+ 
 define('_NM_DISPLAYNAME', 'Mail_Users');
 define('_NM_DESCRIPTION', 'Erweiterte Version des Mail-Moduls');

@@ -1,27 +1,12 @@
 <?php
-// $Id$
-// ----------------------------------------------------------------------
-// Zikula Content Management System
-// Copyright (C) 2001 by the Zikula Development Team.
-// http://www.zikula.org/
-// ----------------------------------------------------------------------
-// LICENSE
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License (GPL)
-// as published by the Free Software Foundation; either version 2
-// of the License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// To read the license please visit http://www.gnu.org/copyleft/gpl.html
-// ----------------------------------------------------------------------
-// Original Author of file: Everyone
-// Purpose of file: Translation files
-// Translation team: Read credits in /docs/CREDITS.txt
-// ----------------------------------------------------------------------
+/**
+ * Zikula Application Framework
+ *
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
+ * @version $Id$
+ * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
+ */
+
 define('_WIKICOULDNOTREGISTER','Hook für Wiki-Modul konnte nicht registriert werden');
 define('_WIKICOULDNOTUNREGISTER','Hook für Wiki-Modul konnte nicht unregistriert werden');

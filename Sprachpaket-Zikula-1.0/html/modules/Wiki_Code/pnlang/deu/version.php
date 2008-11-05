@@ -1,5 +1,12 @@
 <?php
+/**
+ * Zikula Application Framework
+ *
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
+ * @version $Id$
+ * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
+ */
 
-define('_WIKI_NAME', 'Wiki_Code');
 define('_WIKI_DISPLAYNAME', 'Wiki-Code');
 define('_WIKI_DESCRIPTION', 'Nutzung von Wiki-Formatierungen in Beiträgen');

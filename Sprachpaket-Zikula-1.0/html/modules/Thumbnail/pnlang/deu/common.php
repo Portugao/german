@@ -1,4 +1,12 @@
-<?php 
+<?php
+/**
+* Zikula Application Framework
+*
+* @copyright (c) 2008, Zikula Development Team
+* @link http://www.zikula.org
+* @version $Id$
+* @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
+*/
 
 define('_THUMBNAIL_TITLE_PREFERENCES',	   	'Thumbnail Moduleinstellungen');
 define('_THUMBNAIL_PREFERENCES_SIZE',		    'Standard Thumbnailgröße');
@@ -37,15 +45,15 @@ define('_THUMBNAIL_CACHE_CULLING_DESC',			'phpThumb can automatically limit the 
 define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_AGE',			'Cache Max Age');
 define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_AGE_DESC',			'EMPTY] never delete cached thumbnails based on last-access time delete cached thumbnails that haven\'t been accessed in more than [Cache Max Adge] days (value is maximum time since last access in days to avoid deletion).');
 define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_SIZE',			'Cache Max Size');
-define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_SIZE_DESC',			'[EMPTY] never delete cached thumbnails based on byte size of cache directory delete least-recently-accessed cached thumbnails when more than [Cache Max Size]MB of cached files are present (value is maximum bytesize of all cached files).');  
+define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_SIZE_DESC',			'[EMPTY] never delete cached thumbnails based on byte size of cache directory delete least-recently-accessed cached thumbnails when more than [Cache Max Size]MB of cached files are present (value is maximum bytesize of all cached files).');
 define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_FILES',			'Cache Max Files');
-define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_FILES_DESC',			'EMPTY] never delete cached thumbnails based on number of cached files delete least-recently-accessed cached thumbnails when more than [Cache Max Files] cached files are present (value is maximum number of cached files to keep).');    
-                
+define('_THUMBNAIL_CACHE_CULLING_CACHE_MAX_FILES_DESC',			'EMPTY] never delete cached thumbnails based on number of cached files delete least-recently-accessed cached thumbnails when more than [Cache Max Files] cached files are present (value is maximum number of cached files to keep).');
+
 //Source image cache configuration
 define('_THUMBNAIL_SOURCE_IMG_CACHE_CONF',			'Source image cache configuration');
 define('_THUMBNAIL_SOURCE_IMG_CACHE_ENABLED',			'Cache Source Enabled');
 define('_THUMBNAIL_SOURCE_IMG_CACHE_ENABLED_DESC',			'if true, source images obtained via HTTP are cached to [Cache Source Directory].');
-            
+
 define('_THUMBNAIL_CACHE_SOURCE_DIR',			'Cache Source Directory');
 define('_THUMBNAIL_CACHE_SOURCE_DIR_DESC',			'set the cache directory for unprocessed source images');
 
@@ -55,19 +63,19 @@ define('_THUMBNAIL_CACHE_SOURCE_FILETIME_IGNORE_LOCAL',			'Cache Source Filemtim
 define('_THUMBNAIL_CACHE_SOURCE_FILETIME_IGNORE_LOCAL_DESC',			'if true, local source images will not be checked for modification date and cached image will be used if available, even if source image is changed or removed.');
 define('_THUMBNAIL_CACHE_SOURCE_FILETIME_IGNORE_REMOTE',			'Cache Source Filemtime Ignore Remote');
 define('_THUMBNAIL_CACHE_SOURCE_FILETIME_IGNORE_REMOTE_DESC',			'if true, remote source images will not be checked for modification date and cached image will be used if available, even if source image is changed or removed. <strong>WARNING</strong> cached performance MUCH slower if this is set to false.');
-                
+
 //Simplified cache filename configuration
 define('_THUMBNAIL_SIMPLE_CACHE_FILENAME_CONF',			'Simplified cache filename configuration');
 define('_THUMBNAIL_SIMPLE_CACHE_FILENAME_CONF_DESC',			'Instead of creating unique cache filenames for all parameter combinations, create "simple" cache files (e.g.: "pic_thumb.jpg")<br />If cache_default_only_suffix is non-empty, GETstring parameters (except \'src\') are ignored and only $PHPTHUMB_DEFAULTS parameters (set at the bottom of phpThumb.config.php) are used for processing.<br />The \'*\' character MUST be used to represent the source image name.');
-        
+
 define('_THUMBNAIL_CACHE_DEFAULT_ONLY_SUFFIX',			'Cache Default Only Suffix');
 define('_THUMBNAIL_CACHE_DEFAULT_ONLY_SUFFIX_DESC',			'[EMPTY] cached in normal phpThumb manner<br />\'*_thumb\'  cache \'pic.jpg\' becomes \'pic_thumb.jpg\' (or \'pic_thumb.png\' if PNG output is selected, etc)<br />\'small-*\'  cache \'pic.jpg\' becomes \'small-pic.jpg\' (or \'small-pic.png\' if PNG output is selected, etc).');
-            
+
 define('_THUMBNAIL_CACHE_FORCE_PASSTHRU',			'Cache Force Passthru');
 define('_THUMBNAIL_CACHE_FORCE_PASSTHRU_DESC',			'if true, cached image data will always be passed to browser; if false, HTTP redirect will be used instead.');
 
 //Temp directory configuration
-define('_THUMBNAIL_TEMP_DIR_CONF',			'Temp directory configuration');   
+define('_THUMBNAIL_TEMP_DIR_CONF',			'Temp directory configuration');
 define('_THUMBNAIL_TEMP_DIR_CONF_DESC',			'phpThumb() may need to create temp files. Usually the system temp dir is writable and can be used. Leave this value as NULL in most cases. If you get errors about "failed to open &lt;filename&gt; for writing" you should change this to a full pathname to a directory you do have write access to.');
 define('_THUMBNAIL_TEMP_DIR',			'Temp Directory');
 
@@ -75,14 +83,14 @@ define('_THUMBNAIL_TEMP_DIR',			'Temp Directory');
 define('_THUMBNAIL_MAX_PIXELS_SOURCE_IMG_HEAD',			'maximum number of pixels in source image to attempt to process entire image');
 define('_THUMBNAIL_MAX_PIXELS_SOURCE_IMG_HEAD_DESC',			'If this is zero then no limit on source image dimensions. If this is nonzero then this is the maximum number of pixels the source image can have to be processed normally, otherwise the embedded EXIF thumbnail will be used (if available) or an "image too large" notice will be displayed. This is to be used for large source images (> 1600x1200) and low PHP memory limits. If PHP runs out of memory the script will usually just die with no output. To calculate this number, multiply the dimensions of the largest image you can process with your memory limitation (e.g. 1600 * 1200 = 1920000). As a general guideline, this number will be about 20% of your PHP memory configuration, so 8M = 1,677,722; 16M = 3,355,443; 32M = 6,710,886; etc.');
 define('_THUMBNAIL_MAX_PIXELS_SOURCE_IMG',			'Max Source Pixels');
-define('_THUMBNAIL_MAX_PIXELS_SOURCE_IMG_DESC',			'<ul><li>0 no memory limit</li><li>1920000 allow 1600x1200 images (2Mpx), no larger (about 10MB memory required)</li><li>3355443 16MB memory limit</li><li>3871488 allow 2272x1704 images (4Mpx), no larger (about 16MB memory required)</li></ul>');    
-  
+define('_THUMBNAIL_MAX_PIXELS_SOURCE_IMG_DESC',			'<ul><li>0 no memory limit</li><li>1920000 allow 1600x1200 images (2Mpx), no larger (about 10MB memory required)</li><li>3355443 16MB memory limit</li><li>3871488 allow 2272x1704 images (4Mpx), no larger (about 16MB memory required)</li></ul>');
+
 //ImageMagick configuration
 define('_THUMBNAIL_IMG_MAGIC_CONF',			'ImageMagick configuration');
 define('_THUMBNAIL_IMG_MAGIC_CONF_DESC',			'If source image is larger than available memory limits as defined above in \'max_source_pixels\' AND ImageMagick\'s "convert" program is available, phpThumb() will call ImageMagick to perform the thumbnailing of the source image to bypass the memory limitation. Leaving the value as NULL will cause phpThumb() to attempt to detect ImageMagick\'s presence with `which`.');
 define('_THUMBNAIL_IMG_MAGIC_PAHT',			'Imagemagick Path');
 define('_THUMBNAIL_IMG_MAGIC_PAHT_DESC',			'Windows: set absolute pathname or empty for no use of Image Magic<br />*nix: set absolute pathname to "convert", or leave as null if "convert" is in the path');
-                
+
 //Default output configuration
 define('_THUMBNAIL_DEFAULT_OUTPUT_CONF',			'Default output configuration');
 define('_THUMBNAIL_DEFAULT_OUTPUT_FORMAT',			'Output Format');
@@ -90,7 +98,7 @@ define('_THUMBNAIL_DEFAULT_OUTPUT_FORMAT_DESC',			'default output format (\'jpeg
 define('_THUMBNAIL_DEFAULT_OUTPUT_MAXWIDTH',			'Output Maxwidth');
 define('_THUMBNAIL_DEFAULT_OUTPUT_MAXWIDTH_DESC',			'default maximum thumbnail width.  If this is zero then default width  is the width  of the source image.');
 define('_THUMBNAIL_DEFAULT_OUTPUT_MAXHEIGHT',			'Output Maxheigh');
-define('_THUMBNAIL_DEFAULT_OUTPUT_MAXHEIGHT_DESC',			'default maximum thumbnail height. If this is zero then default height is the height of the source image.');        
+define('_THUMBNAIL_DEFAULT_OUTPUT_MAXHEIGHT_DESC',			'default maximum thumbnail height. If this is zero then default height is the height of the source image.');
 define('_THUMBNAIL_DEFAULT_OUTPUT_INTERLACE',			'Output Interlace');
 define('_THUMBNAIL_DEFAULT_OUTPUT_INTERLACE_DESC',			'if true interlaced output for GIF/PNG, progressive output for JPEG; if false non-interlaced for GIF/PNG, baseline for JPEG.');
 
@@ -141,30 +149,30 @@ define('_THUMBNAIL_OFF_SRV_LINKING_CONF_REQ_REFERER_DESC',			'If false will allo
 define('_THUMBNAIL_OFF_SRV_LINKING_CONF_ERASE_IMG',			'Erase Image');
 define('_THUMBNAIL_OFF_SRV_LINKING_CONF_ERASE_IMG_DESC',			'if true thumbnail is covered up with $PHPTHUMB_CONFIG[\'nohotlink_fill_color\'] before text is applied, if false text is written over top of thumbnail.');
 define('_THUMBNAIL_OFF_SRV_LINKING_CONF_ERR_MSG_TXT',			'Text Message');
-define('_THUMBNAIL_OFF_SRV_LINKING_CONF_ERR_MSG_TXT_DESC',			'Text of error message. Your Host Name will be appanded to this text'); 
- 
+define('_THUMBNAIL_OFF_SRV_LINKING_CONF_ERR_MSG_TXT_DESC',			'Text of error message. Your Host Name will be appanded to this text');
+
 //Border &amp; Background default colors
-define('_THUMBNAIL_BORDER_BACKGROUND_CONF',			'Border &amp; Background default colors'); 
-define('_THUMBNAIL_BORDER_BACKGROUND_BORDER_COLOR',			'Border Hexcolor');                 
-define('_THUMBNAIL_BORDER_BACKGROUND_BORDER_COLOR_DESC',			'Default border color - usual HTML-style hex color notation.');                
-define('_THUMBNAIL_BORDER_BACKGROUND_BACKGROUND_COLOR',			'Background Hexcolor');                 
-define('_THUMBNAIL_BORDER_BACKGROUND_BACKGROUND_COLOR_DESC',			'Default background color when thumbnail aspect ratio does not match fixed-dimension box - usual HTML-style hex color notation'); 
+define('_THUMBNAIL_BORDER_BACKGROUND_CONF',			'Border &amp; Background default colors');
+define('_THUMBNAIL_BORDER_BACKGROUND_BORDER_COLOR',			'Border Hexcolor');
+define('_THUMBNAIL_BORDER_BACKGROUND_BORDER_COLOR_DESC',			'Default border color - usual HTML-style hex color notation.');
+define('_THUMBNAIL_BORDER_BACKGROUND_BACKGROUND_COLOR',			'Background Hexcolor');
+define('_THUMBNAIL_BORDER_BACKGROUND_BACKGROUND_COLOR_DESC',			'Default background color when thumbnail aspect ratio does not match fixed-dimension box - usual HTML-style hex color notation');
 
 //Watermark configuration
-define('_THUMBNAIL_WATERMARK_CONF',			'Watermark configuration');                
+define('_THUMBNAIL_WATERMARK_CONF',			'Watermark configuration');
 define('_THUMBNAIL_WATERMARK_TTF_DIR',			'TTF Directory');
 define('_THUMBNAIL_WATERMARK_TTF_DIR_DESC',			'Base directory for TTF font files');
 
 //MySQL configuration
-define('_THUMBNAIL_MYSQL_CONF',			'MySQL configuration');   
+define('_THUMBNAIL_MYSQL_CONF',			'MySQL configuration');
 define('_THUMBNAIL_MYSQL_CONF_DESC',			'You may want to pull data from a database rather than a physical file. If so, modify the $PHPTHUMB_CONFIG[\'mysql_query\'] line to suit your database structure. Note: the data retrieved must be the actual binary data of the image, not a URL or filename see http://www.billy-corgan.com/blog/archive/000143.php for a brief tutorial on this section. <strong>Because of security reasons, this settings can only be changed in the config File.</strong>');
 
 //Security configuration
 define('_THUMBNAIL_SECURITY_CONF',			'Security configuration');
-define('_THUMBNAIL_SECURITY_HIGH_SEC_ENABLED',			'High Security Enabled');   
-define('_THUMBNAIL_SECURITY_HIGH_SEC_ENABLED_DESC',			'if enabled, requires \'high_security_password\' set to at least 5 characters, and requires the use of phpThumbURL() function (at the bottom of phpThumb.config.php) to generate hashed URLs.'); 
-define('_THUMBNAIL_SECURITY_HIGH_SEC_PW',			'High Security Password');  
-define('_THUMBNAIL_SECURITY_HIGH_SEC_PW_DESC',			'required if \'high_security_enabled\' is true, must be at least 5 characters long');  
+define('_THUMBNAIL_SECURITY_HIGH_SEC_ENABLED',			'High Security Enabled');
+define('_THUMBNAIL_SECURITY_HIGH_SEC_ENABLED_DESC',			'if enabled, requires \'high_security_password\' set to at least 5 characters, and requires the use of phpThumbURL() function (at the bottom of phpThumb.config.php) to generate hashed URLs.');
+define('_THUMBNAIL_SECURITY_HIGH_SEC_PW',			'High Security Password');
+define('_THUMBNAIL_SECURITY_HIGH_SEC_PW_DESC',			'required if \'high_security_enabled\' is true, must be at least 5 characters long');
 define('_THUMBNAIL_SECURITY_DISABLE_DEBUG',			'Disable Debug');
 define('_THUMBNAIL_SECURITY_DISABLE_DEBUG_DESC',			'prevent phpThumb from displaying any information about your system. If true, phpThumbDebug and error messages will be disabled.');
 define('_THUMBNAIL_SECURITY_ALLOW_SRC_ABOVE_DOCROOT',			'Allow SRC above DOCROOT');
@@ -191,7 +199,7 @@ define('_THUMBNAIL_SPEED_CONFIG',			'Speed optimizations configuration');
 define('_THUMBNAIL_SPEED_PREFER_IMAGEMAGICK',			'Prefer Imagemagick');
 define('_THUMBNAIL_SPEED_PREFER_IMAGEMAGICK_DESC',			'If true, use ImageMagick to resize thumbnails if possible, since it is usually faster than GD functions; if false only use ImageMagick if PHP memory limit is too low.');
 define('_THUMBNAIL_SPEED_USE_EXIF_THUMBNAIL',			'use exif thumbnail for speed');
-define('_THUMBNAIL_SPEED_USE_EXIF_THUMBNAIL_DESC',			'IIf true, and EXIF thumbnail is available, and is larger or equal to output image dimensions, use EXIF thumbnail rather than actual source image for generating thumbnail. Benefit is only speed, avoiding resizing large image.');                  
+define('_THUMBNAIL_SPEED_USE_EXIF_THUMBNAIL_DESC',			'IIf true, and EXIF thumbnail is available, and is larger or equal to output image dimensions, use EXIF thumbnail rather than actual source image for generating thumbnail. Benefit is only speed, avoiding resizing large image.');
 
 //Set parameters
 define('_THUMBNAIL_SET_PARAM',			'If any parameters are constant across ALL images, you can set them here');

@@ -2,12 +2,10 @@
 /**
  * Zikula Application Framework
  *
- * @copyright value4business GmbH
- * @link http://www.zikula.org
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @author Robert Gasch robert.gasch@value4business.com
- * @package Zikula_Core
  */
 
 // general
