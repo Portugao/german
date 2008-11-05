@@ -2,14 +2,11 @@
 /**
  * Zikula Application Framework
  *
- * @copyright (c) 2001, Zikula Development Team
- * @link http://www.zikula.org
+ * @copyright (c) 2008, Zikula German Translation Team
+ * @link http://www.zikula.de
  * @version $Id$
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- * @author Xiaoyu Huang
- * @package Zikula_System_Modules
- * @subpackage  Zikula_Users
-*/
+ */
 
 // welcome e-mail
 define('_USERS_YOURACCOUNTPENDING', 'Die Anmeldung muﬂ noch durch den Seitenbetreiber freigeschaltet werden. Nach der Freigabe erfolgt eine E-Mail-Benachrichtigung.');
