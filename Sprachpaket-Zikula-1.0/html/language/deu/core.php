@@ -56,10 +56,10 @@ define('_LOCALEWIN', 'deu');
 define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
 
 // common footer defines
-define('_CMSHOMELINK', '<a href="http://zikula.de">Zikula Application Framework</a>');
+define('_CMSHOMELINK', 'Diese Seiten wurden mit Liebe und dem <a href="http://zikula.de">Zikula Application Framework</a> erstellt');
 define('_XHTMLVALIDATORLINK', '<a href="http://validator.w3.org/check?uri=referer">XHTML</a>');
 define('_CSSVALIDATORLINK', '<a href="http://jigsaw.w3.org/css-validator/">CSS</a>');
-define('_ISPOWEREDBY', 'is powered by');
+define('_ISPOWEREDBY', 'Erstellt mit');
 
 // common words
 define('_ZIKULA', 'Zikula');
@@ -231,9 +231,9 @@ define('_THEMES', 'Themes');
 
 // other common terms
 define('_DIRECTORY', 'Verzeichnis');
-define('_POWEREDBY', 'Powered by');
+define('_POWEREDBY', 'Erstellt mit');
 define('_VERSION', 'Version');
-define('_COPYRIGHT', 'Copyright 2007');
+define('_COPYRIGHT', 'Copyright 2008');
 define('_VALIDXHTML', 'Valid XHTML');
 define('_VALIDCSS', 'Valid CSS');
 define('_MOREINFOHERE_LC', 'weitere Informationen hier');
