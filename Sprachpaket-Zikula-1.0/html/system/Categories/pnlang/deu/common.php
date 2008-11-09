@@ -85,6 +85,7 @@ define('_CATEGORIES_REGISTRY_PROPERTY',       'Name der Eigenschaft');
 define('_CATEGORIES_REGISTRY_DELETE_SUCCESS', 'Kategoriezuweisung wurde erfolgreich gelöscht'); 	 
 define('_CATEGORIES_REGISTRY_SAVE_SUCCESS',   'Kategoriezuweisung wurde erfolgreich gespeichert');
 define('_CATEGORIES_REGISTRY_TABLE',          'Tabelle');
+define('_CATEGORIES_REGISTRY_DELETE_CONFIRM', 'Sollen die Kategoriezuweisungen wirklich gelöscht werden?'); 
 
 // move template
 define('_CATEGORIES_MOVE_TITLE',              'Kategorie verschieben');
