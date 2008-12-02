@@ -24,3 +24,4 @@ define('_USERADMIN','Benutzeradministration');
 define('_WORDSMORE', 'weitere(s) Wort(e)');
 define('_NICKNAME', 'Benutzername');
 define('_REMEMBERME', 'speichern');
+define('_THEMEBY', 'Theme erstellt von <a href="http://www.ithinkmedia.com">iThinkMedia.com</a>'); 
