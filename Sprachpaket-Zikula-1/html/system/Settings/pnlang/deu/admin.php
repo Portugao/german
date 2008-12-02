@@ -76,6 +76,8 @@ define('_SETTINGS_LOGERRORSONLY','Loggen von ausschliesslich errors');
 define('_SETTINGS_LOGFILEPERMODULE','Modulabhängig Logfile schreiben');
 define('_SETTINGS_LOGNOERRORS','Errors nicht loggen');
 
+define('_SETTINGS_MESSAGEMODULE', 'Modul für interne Kurzmitteilungen'); 
+define('_SETTINGS_MESSAGEMODULE_NONE', 'Kein internes Mitteilungssystem'); 
 define('_SETTINGS_METAKEYWORDS','Meta-Keywords');
 define('_SETTINGS_METATAGSETTINGS', 'Meta-Keywords');
 define('_SETTINGS_MISCSETTINGS', 'Verschiedenes');

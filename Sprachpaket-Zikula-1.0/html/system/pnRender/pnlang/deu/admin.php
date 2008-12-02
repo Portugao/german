@@ -9,7 +9,7 @@
  */
 
 define('_PNRENDER_ADMIN',                'pnRender Administration');
-define('_PNRENDER_SMARTYVERSION',        'Smarty Version');
+define('_PNRENDER_SMARTYVERSION',        '<a href="http://smarty.net">Smarty</a> Version');
 
 define('_PNRENDER_COMPILE_SETTINGS',     'Kompilierung (für Arbeiten an Modul-Templates)');
 define('_PNRENDER_COMPILE_CHECK',        'Aktualisierte Templates neu kompilieren');
