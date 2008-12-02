@@ -38,7 +38,8 @@ define('_USERS_REGANSWERINCORRECT', 'Die Antwort auf die Spamschutzfrage ist nic
 define('_USERS_REGNEWUSER','Benutzer-Registrierung');
 define('_USERS_REGISTRATIONAGREEMENT','Einverständniserklärung zu den <a href="%touurl%">Allgemeinen Nutzungsbedingungen</a> und den <a href="%ppurl%">Hinweisen zum Datenschutz</a>');
 define('_USERS_REGISTRATIONCHECK', 'Angaben prüfen');
-define('_USERS_REQUIREDTEXT','Mit (*) markierte Angaben sind erforderlich.');
+define('_USERS_REQUIREDLABEL', '*'); 
+define('_USERS_REQUIREDTEXT', 'Mit (*) markierte Angaben sind erforderlich.'); 
 
 // terms of use (tied to the legal module
 define('_USERS_CONFIRMTERMSOFUSEHINT', 'Die Allgemeinen Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Allgemeinen Nutzungsbedingungen nicht akzeptiert wurden ist keine Anmeldung möglich.');
