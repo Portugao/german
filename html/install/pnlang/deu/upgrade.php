@@ -47,7 +47,7 @@ define('_UPG_STARTUPGRADE', 'Upgrade starten');
 define('_UPG_USERSACTIVATED', 'existierende Benutzer wurden aktiviert');
 
 // upgrade.php
-define('_UPG_CONTINUETOYOURSITE', 'Continue to your site'); 
+define('_UPG_CONTINUETOYOURSITE', 'Zur aktualisierten Zikula-Seite'); 
 define('_UPG_MODULELISTREGENERATED', 'Modulliste abgeglichen');
 define('_UPG_INSTALLNEWMODULES', 'Neue Systemmodule installieren');
 define('_UPG_STARTNEWMODULEINSTALL', 'Starte Installation der neuen Systemmodule.');
