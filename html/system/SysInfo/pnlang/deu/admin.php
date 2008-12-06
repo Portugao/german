@@ -66,7 +66,7 @@ define('_SYSINFO_PHP_DISPLAY_ERRORS', 'display_errors=on - sollte off sein');
 define('_SYSINFO_PHP_DISPLAY_STARTUP_ERRORS', 'display_startup_errors=on - sollte off sein');
 define('_SYSINFO_PHP_EXPOSE_PHP', 'expose_php=on - sollte off sein');
 define('_SYSINFO_PHP_MAGIC_QUOTES_GPC', 'magic_quotes_gpc=on - sollte off sein');
-define('_SYSINFO_PHP_MAGIC_QUOTES_RUNTIME', 'magic_quotes_runtime=on - sollte off sein');
+define('_SYSINFO_PHP_MAGIC_QUOTES_RUNTIME', 'magic_quotes_runtime=on - muss off sein - Zikula unterstützt das nicht');
 define('_SYSINFO_PHP_MODULES', 'PHP Module');
 define('_SYSINFO_PHP_RECOMMENDED_SECURITY_SETTINGS', 'Das Zikula Development Team empfiehlt die folgenden Server-Einstellungen zur optimalen Sicherheit:<br />(Infos zur PHP Konfiguration unter <a href="http://php.net/manual/de/ini.php">Liste von php.ini Einstellungen</a> und <a href="http://php.net/manual/de/configuration.changes.php">Wie man Konfigurationseinstellungen ändert</a>.)');
 define('_SYSINFO_PHP_REGISTER_GLOBALS', 'register_globals=on - sollte off sein');
