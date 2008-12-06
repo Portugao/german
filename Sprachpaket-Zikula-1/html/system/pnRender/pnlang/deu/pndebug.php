@@ -9,6 +9,7 @@
  */
 
 define('_PNDEBUG_TITLE',          'pnRender Debug Console');
+define('_PNDEBUG_PNDEBUGFOUNDAT', 'Das Plugin pndebug wurde in Zeile <strong>%line%</strong> des Templates <strong>%path%/%template%</strong> gefunden'); 
 define('_PNDEBUG_THEME',          'Theme (module)');
 define('_PNDEBUG_COMPILE_CHECK',  'pnRender compile check');
 define('_PNDEBUG_FORCE_COMPILE',  'pnRender force compilation');

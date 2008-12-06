@@ -194,6 +194,9 @@ define('_LINKSPERPAGE', 'Links pro Seite');
 define('_PERMALINKS', 'Permalinks');
 define('_PERMALINKTITLE', 'URL (für Permalinks)');
 define('_PERMALINKTITLEBLANK', 'Leer lassen für automatischen Permalink Titel');
+define('_PURGEPERMALINKS', 'PermaLinks bereinigen'); 
+define('_PURGEPERMALINKSSUCCESFUL', 'Das Bereinigen der Permalinks war erfolgreich'); 
+define('_PURGEPERMALINKSFAILED', 'Das Bereinigen der Permalinks ist fehlgeschlagen'); 
 define('_ADDCATEGORYTITLETOPERMALINK', 'Kategorietitel zum Permalink hinzufügen');
 
 // member descriptors

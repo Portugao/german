@@ -61,6 +61,9 @@ define('_USERS_UNIQUEEMAIL','Eindeutige E-Mail-Adresse');
 define('_USERS_VERIFYEMAIL','E-Mail-Adresse w‰hrend der Registrierung verifizieren ');
 define('_USERS_VERIFYEMAIL_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort w‰hrend der Registrierung w‰hlen, muﬂ den Account aber via Mail-Benachrichtung best‰tigen');
 define('_USERS_VERIFYEMAIL_YES_PASSWORDMAIL','Ja: Vom System generiertes Kennwort wird zur Verifizierung an die E-Mail-Adresse geschickt');
+define('_USERS_IDNNAMES','IDN-Domains:'); 
+define('_USERS_IDNNAMESDESC', 'Erlaube Umlaute und Sonderzeichen in E-Mailadressen und URLs'); 
+
 //  login options
 define('_USERS_LOGINSETTINGS', 'Konfiguration der Benutzerregistrierung');
 define('_USERS_LOGIN_REDIRECT_WCAG', 'WCAG-konforme An- und Abmeldung');

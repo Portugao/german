@@ -37,6 +37,10 @@ define('_ADMIN_NOADMINLINKS', 'Die Administrationskategorie ist leer. Diese Meld
 // modify config
 define('_ADMIN_GENERALSETTINGS', 'Allgemein');
 define('_ADMIN_DISPLAYICONS', 'Icons in der Administration anzeigen');
+define('_ADMIN_DISPLAYNAMETYPE', 'Anzeige der Modulnamen'); 
+define('_ADMIN_DISPLAYNAMETYPE_DISPLAYNAME', 'Anzeigename'); 
+define('_ADMIN_DISPLAYNAMETYPE_REALNAME', 'Echter Name'); 
+define('_ADMIN_DISPLAYNAMETYPE_BOTH', 'Beides'); 
 define('_ADMIN_DISPLAYJSMENU', 'Javaskript-Menü anzeigen');
 define('_ADMIN_IGNOREINSTALLERCHECK', 'Installer-Check deaktivieren');
 define('_ADMIN_IGNOREINSTALLERCHECKWARNING', 'WARNUNG: nur in Entwicklungsumgebungen setzen!');
