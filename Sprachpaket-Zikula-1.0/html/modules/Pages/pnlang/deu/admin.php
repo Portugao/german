@@ -8,6 +8,11 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
+// wrong permalinks 
+define('_PAGES_TITLEFORPERMALINKMUSTBEUNIQUE', 'Der Permalink, der aus dem Titel ermittelt wird, muss eindeutig sein!'); 
+define('_PAGES_PERMALINKMUSTBEUNIQUE', 'Der Permalink muss eindeutig sein!'); 
+define('_PAGES_PERMALINKHASBEENREMOVED', 'Der Permalink wurde entfernt. Bitte die Seite mit einem korrekten und eindeutigen Permalink aktualisieren'); 
+
 // module name
 define('_PAGES', 'Pages');
 
