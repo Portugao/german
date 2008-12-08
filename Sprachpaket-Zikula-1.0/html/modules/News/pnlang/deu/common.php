@@ -30,7 +30,7 @@ define('_NEWS_NEWSARTICLEPREVIEW', 'Beitragsvorschau');
 define('_NEWS_FORMATTEDTEXT', 'Formatierter Text');
 define('_NEWS_FROM', 'Startdatum');
 define('_NEWS_HOMETEXT', 'Textanlauf');
-define('_NEWS_INHOME', 'Auf der Homepage anzeigen');
+define('_NEWS_INHOME', 'Auf der Einleitungsseite anzeigen');
 define('_NEWS_MAXCHARS', '(max. 65536 Zeichen)');
 define('_NEWS_NOTES', 'Anmerkungen');
 define('_NEWS_OVERVIEW', 'Info');

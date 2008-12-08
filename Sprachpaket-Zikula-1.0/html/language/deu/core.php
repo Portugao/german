@@ -54,6 +54,8 @@ define('_CHARSET','ISO-8859-15');
 define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
+define('_PERMLINK_LOCALESEARCH', 'ÄÀÁÂÃÅäàáâãåÖÒÓÔÕØöòóôõøÈÉÊËèéêëÇçÌÍÎÏìíîïÜÙÚÛüùúûÿÑñß');
+define('_PERMLINK_LOCALEREPLACE', 'AAAAAAaaaaaaOOOOOOooooooEEEEeeeeCcIIIIiiiiUUUUuuuuyNns');
 
 // common footer defines
 define('_CMSHOMELINK', 'Diese Seiten wurden mit Liebe und dem <a href="http://zikula.de">Zikula Application Framework</a> erstellt');

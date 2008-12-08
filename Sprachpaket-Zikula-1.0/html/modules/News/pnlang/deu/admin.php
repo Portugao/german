@@ -10,7 +10,8 @@
 
 // view template
 define('_NEWS_ARCHIVED', 'Archiviert');
-define('_NEWS_INHOMEQUESTION', 'Startseite');
+define('_NEWS_INFUTURE', 'In Warteschlange'); 
+define('_NEWS_INHOMEQUESTION', 'Einleitungsseite');
 define('_NEWS_NEWSPUBLISHER', 'Beiträge');
 define('_NEWS_PENDING', 'Wartend');
 define('_NEWS_PUBLISHEDSTATUS', 'Status');
