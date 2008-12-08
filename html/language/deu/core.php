@@ -54,8 +54,8 @@ define('_CHARSET','ISO-8859-15');
 define('_LOCALE','de_DE');
 define('_LOCALEWIN', 'deu');
 define('_ERROR_LOCALENOTSET', 'Konnte Sprache nicht setzen: %locale%');
-define('_PERMLINK_LOCALESEARCH',  'ְֱֲֳִֵאבגדהוׂ׃װױײ״עףפץצרָֹÊֻטיךכַחּֽ־ֿלםמןÙÚÛÜשתûüÿׁסß');
-define('_PERMLINK_LOCALEREPLACE', 'aaaaaaaaaaaaooooooooooooeeeeeeeecciiiiiiiiuuuuuuuuynns');
+define('_PERMLINK_LOCALESEARCH', 'ְֱֲֳִֵהאבגדוײׂ׃װױ״צעףפץרָֹÊֻטיךכַחּֽ־ֿלםמןÜÙÚÛüשתûÿׁסß');
+define('_PERMLINK_LOCALEREPLACE', 'AAAAAAaaaaaaOOOOOOooooooEEEEeeeeCcIIIIiiiiUUUUuuuuyNns');
 define('_ALPHABET', 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'); 
 
 // common footer defines
