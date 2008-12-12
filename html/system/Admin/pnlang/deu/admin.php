@@ -35,6 +35,7 @@ define('_ADMIN_FAILEDADDMODTOCAT', 'Fehler! Modul konnte nicht zur Kategorie hin
 define('_ADMIN_NOADMINLINKS', 'Die Administrationskategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil administrativer Zugriff auf ein Modul besteht, das nicht in der Standardkategorie ist.');
 
 // modify config
+define('_ADMIN_DISPLAYJSMENU', 'Javaskript-Menü in der Administration benutzen'); 
 define('_ADMIN_GENERALSETTINGS', 'Allgemein');
 define('_ADMIN_DISPLAYICONS', 'Icons in der Administration anzeigen');
 define('_ADMIN_DISPLAYNAMETYPE', 'Anzeige der Modulnamen'); 
@@ -54,11 +55,14 @@ define('_ADMIN_STARTCATEGORY', 'Start-Kategorie');
 define('_ADMIN_DEFAULTCATEGORY', 'Default-Kategorie für neue Module');
 
 // checks for install/upgrade files prior to admin panel being displayed
-define('_ADMIN_PSAKWARNING', 'Warnung! Bitte das "Swiss army knife tool" im Root der Präsenz löschen');
-define('_ADMIN_INSTALLWARNING','Warnung! Bitte die Datei "install.php" und den "install" Ordner im Root der Präsenz löschen');
+define('_ADMIN_PSAKWARNING', 'Warnung! Zum Fortfahren bitte vorher das "Swiss army knife tool" im Root der Präsenz löschen');
+define('_ADMIN_INSTALLWARNING','Warnung! Zum Fortfahren bitte vorher die Datei "install.php" und den "install" Ordner im Root der Präsenz löschen');
+define('_ADMIN_UPGRADEWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade.php\') im Root der Präsenz löschen.'); 
+define('_ADMIN_UPGRADE10XWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade10xto11x.php\') im Root der Präsenz löschen.'); 
 
 // Zikula Security Analyzer defines
 define('_ADMIN_UPGRADE_PHP','Hinweis: upgrade.php im Root der Präsenz sollte gelöscht werden!');
+define('_ADMIN_UPGRADE10X_PHP','Hinweis: upgrade10xto11x.php im Root der Präsenz sollte gelöscht werden!'); 
 define('_ADMIN_CONFIG_PHP','Hinweis: config/config.php ist beschreibbar (ggfs. chmod 644 oder chmod 444 setzen)!');
 define('_ADMIN_MAGIC_QUOTES','Hinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist aktiv!');
 define('_ADMIN_REGISTER_GLOBALS','Hinweis: <a href="http://php.net/register_globals">register_globals</a> ist aktiv!');
