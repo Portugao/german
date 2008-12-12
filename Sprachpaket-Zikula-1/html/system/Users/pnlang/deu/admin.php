@@ -9,6 +9,7 @@
  */
 
 // general
+define('_PASSWORDAGAIN',           'Kennwortwiederholung (zur Verifikation)');
 define('_USERADMINISTRATION','Benutzer Administration');
 define('_USERS_NEWUSER', 'Neuer Benutzer');
 define('_WARNINGALLFIELDSREQUIRED', 'Hinweis: In jedem Feld muss ein Eintrag erfolgen. In den Kennwort-Feldern bitte jeweils dasselbe Kennwort eingeben.');

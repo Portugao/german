@@ -57,6 +57,7 @@ define('_BLOCKS_UNASSIGNEDBLOCKS', 'Dieser Position nicht zugewiesene Blöcke');
 define('_BLOCKS_COLLAPSEABLE','Symbole zur Blockverkleinerung aktivieren (ggfs. Theme-abhängig)');
 
 // view
+define('_BLOCKS_ID', 'Block ID');
 define('_BLOCKS_THEMETAG', 'Theme Tag');
 
 // time drop down   
