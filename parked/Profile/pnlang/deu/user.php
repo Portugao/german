@@ -23,13 +23,16 @@ define('_PROFILE_YOURINFO',        'Benutzerprofil');
 define('_PROFILE_HOME',            'Zurück zur Webseite');
 define('_PROFILE_MAIN',            'Account');
 define('_PROFILE_MODIFY',          'Profil-Information modifizieren');
+define('_PROFILE_PM',              'PN');
+define('_PROFILE_SENDPM',          'Private Nachricht senden');
+define('_PROFILE_UNREAD',          'ungelesen');
+define('_PROFILE_TOTAL',           'gesamt');
 
 // modify template
 define('_PROFILE_REQUIREDLABEL',   '*');
 define('_PROFILE_REQUIREDTEXT',    'Felder mit * sind Pflichtfelder');
 define('_PROFILE_REQUIREDMISSING', 'Nicht alle Pflichtfelder ausgefüllt');
 define('_TYPENEWPASSWORD',         'Neues Kennwort');
-define('_PASSWORDAGAIN',           'Kennwortwiederholung (zur Verifikation)');
 
 // status/error messages
 define('_PROFILE_EMPTYMAIL',       'Keine E-Mail-Adresse angegeben');
