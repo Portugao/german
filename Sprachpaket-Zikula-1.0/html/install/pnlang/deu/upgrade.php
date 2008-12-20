@@ -26,7 +26,7 @@ define('_UPG_BLOCKSTABLEUPGRADED', 'Blocktabelle aktualisiert');
 define('_UPG_RESETTHEMETOEXTRALITE', 'Theme auf ExtraLite zurückgesetzt');
 define('_UPG_DUDMIGRATED', 'Benutzerattribute migriert');
 define('_UPG_SEARCHMODULEREINSTALLED', 'Suchmodul reinstalliert');
-define('_UPG_FOOTERINFO', 'Bitte unbedingt die <a href="docs/upgrade.html">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href="http://code.zikula.org/community-german">Deutschen Dokumentationsprojekt</a> und im Forum unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>');
+define('_UPG_FOOTERINFO', 'Bitte unbedingt die <a href="docs/upgrade_deu.html">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href="http://code.zikula.org/community-german">Deutschen Dokumentationsprojekt</a> und im Forum unter <a href="http://support.pn-cms.de">support.pn-cms.de</a>');
 define('_UPG_TIMEHINT', 'Achtung: Je nachdem wie umfangreich die Ausgansinstallation (z.B. Anzahl der Benutzer) ist, kann das Upgrade einige Zeit in Anspruch nehmen. Vorsichtshalber sollte ein Upgrade lokal mit einer Sicherung getestet werden.');
 define('_UPG_STARTUPGRADE', 'Upgrade starten');
 define('_UPG_USERSACTIVATED', 'existierende Benutzer wurden aktiviert');

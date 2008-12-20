@@ -1,0 +1,112 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Zikula Upgrade-Anleitung</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"  />
+</head>
+
+<body>
+
+<h1>Zikula Upgrade-Anleitung</h1>
+<em><strong>Hinweis: Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application Framework. Bitte vor dem Fortfahren, die Inhalte sorgfältig durchlesen.</strong></em>
+<p>Eine ausführliche und permanent gepflegte Installations- und Upgradeanleitung steht auch im <a href="http://code.zikula.org/community-german/">Deutschen Dokumentationsprojekt</a> zur Verfügung.</p>
+
+<h2>Inhaltsverzeichnis</h2>
+<ul>
+	<li><a href="#Warning">1 Warnung</a></li>
+	<li><a href="#Server">2 Serverumgebung</a></li>
+	<li><a href="#Upgrade764">3 Aktualisierung von PostNuke v0.764</a></li>
+	<li><a href="#Themes">4 Themes aktualisieren</a></li>
+	<li><a href="#Final">5 Abschlussbemerkung</a></li>
+</ul>
+
+<h2 id="Warning">1 Warning</h2>
+<p>Ein Upgrade auf Zikula 1.0 auf Basis einer PostNuke-Installation kann nur durchgeführt werden, wenn PostNuke in der Version 0.764 oder größer vorliegt. Upgrades von älteren Versionen werden nicht unterstützt. Bitte beachten, dass PostNuke nur noch bis zum 1. Juli 2009 unterstützt wird.</p>
+
+<h2 id="Server">2 Serverumgebung</h2>
+<p>Im Vergleich zu anderen Web-Frameworks stellt Zikula wenige Anforderungen an den Webserver. Es unterstützt PHP5 und das noch weit verbreitete PHP4. Es benötigt keine eigene Datenbank für die Anwendung, sondern erlaubt, Datenbanktabellen mit Präfixen zu verwenden. Zikula benötigt mindestens:</p>
+<ul>
+  <li>Webserver: Apache 2 (empfohlen) oder Apache 1.3, IIS, Lighttpd oder andere</li>
+  <li>Programmiersprache: PHP ≥ 4.4 (empfohlen: 5.x)</li>
+  <li>Datenbank: MySQL, Oracle, MSSQL oder PostgreSQL</li>
+</ul>
+<p>Weitere Informationen zur Serverumgebung befinden sich im deutschen Dokumentationsprojekt unter “<a href="http://code.zikula.org/community-german/wiki/Installation#Serverumgebung" title="Installation">Installation</a>”, sowie im englischsprachigen Dokument “<a href="softwarerecommendations.html">Softwareempfehlungen</a>”.</p>
+
+<h2 id="Upgrade764">3 Aktualisierung von PostNuke v0.764</h2>
+<p>Bitte die folgenden Schritte in der aufgeführten Reihenfolge abarbeiten und die jeweilige Beschreibung vorab gründlich durchlesen. Werden die Anweisungen befolgt, sollten keine Probleme auftreten.</p>
+<ul>
+	<li><a href="#Backup">3.1 Datenbank und Dateisystem sichern</a></li>
+	<li><a href="#Prepare">3.2 v0.7x Installation vorbereiten</a></li>
+	<li><a href="#Config">3.3 config.php aktualisieren</a></li>
+	<li><a href="#Run">3.4 Upgrade durchführen</a></li>
+	<li><a href="#Clean">3.5 Aufräumarbeiten</a></li>
+</ul>
+
+<h3 id="Backup">3.1 Datenbank und Dateisystem sichern</h3>
+<p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt. 
+Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden. 
+Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
+
+<h3 id="Prepare">3.2 V0.7x Installation vorbereiten</h3>
+<p>Als Administrator in der PostNuke-Seite anmelden und unbedingt sicherstellen, dass die folgenden Module installiert und aktiviert sind:</p>
+
+<ol>
+<li>Admin</li>
+<li>Admin_Messages</li>
+<li>Blocks</li>
+<li>Groups</li>
+<li>Header_Footer</li>
+<li>legal</li>
+<li>Mailer</li>
+<li>Permissions</li>
+<li>pnRender</li>
+<li>Search</li>
+<li>Settings</li>
+<li>User</li>
+<li>Xanthia</li>
+</ol>
+
+<p>Weitere Module sind optional, da der Core von Zikula 1.0 auf die notwendigsten Module eingeschränkt wurde. Die sonstigen Module aus einer alten PostNuke-Installation können später getrennt von der Upgraderoutine aktualisiert werden. Dafür steht unter anderem das Paket mit den ValueAddons (Download unter code.zikula.org/core) zur Verfügung. Sobald dieser Schritt abgeschlossen wurde, kann die Datenbank aktualisiert werden.</p>
+<p>Löschen Sie schlussendlich alle Dateien der PostNuke v.07x-Installation, da die Dateistruktur in Zikula enorm verändert wurde. Vorsichtshalber können die Dateien temporär in ein Backup-Verzeichnis ausserhalb der Installation verschoben werden, aus welchen vereinzelt Dateien (Bilder, Downloads, Module, Themes oder Plugins) nach dem erfolgtem Upgrade zurückgesichert werden können. Nachdem sämtliche .7x-Dateien entfernt wurden, können die Dateien von Zikula 1.x hochgeladen werden. Bitte beachtem dass das pnTemp-Verzeichnis inkl. Unterverzeichnisse beschreibbar gemacht werden muss (chmod -R 777).</p>
+
+<h3 id="Config">3.3 config.php aktualisieren</h3>
+<p>Der Speicherort der config.php wurde in das Verzeichnis /config verschoben. In der mitgelieferten Originaldatei müssen in folgende Zeilen die Zugangsdaten für die Datenbank manuell eingepflegt werden:</p>
+
+<pre>$PNConfig['System']['prefix']
+$PNConfig['DBInfo']['default']['dbuname']
+$PNConfig['DBInfo']['default']['dbpass']
+$PNConfig['DBInfo']['default']['dbname']</pre>
+
+<p>Wurden verschlüsselte Werte aus der config.php von PostNuke eingefügt, muss folgende Zeile abgeändert werden:</p>
+<pre>$PNConfig['DBInfo']['default']['encoded'] = 1;</pre>
+
+<p>Weiterhin sollte die folgende Zeile angepasst werden:</p>
+<pre>$PNConfig['System']['installed'] = 1;</pre>
+
+<p>Wenn nicht mit den Standardwerten gearbeitet wird, wird es in einigen Fällen auch notwendig sein, den Datenbanktyp, Table und Host zu bearbeiten. Das ist jedoch eher die Ausnahme und unter anderem auch Providerabhängig.</p>
+
+<h3 id="Run">3.4 Upgrade durchführen</h3>
+<p>Um die Datenbank zu aktualisieren muss die Datei upgrade.php im Browser aufgerufen werden. Hier werden auch Benutzername und Kennwort der vorhandenen PostNuke-Installation benötigt. Danach müssen nur noch die Anweisungen in dem Skript befolgt werden.</p>
+
+<p><strong>Hinweis:</strong> Zikula v1.0 entfernt die Fußnachricht (Footer) aus der Admin-Oberfläche. Somit wird eine vorhandene Footer-Nachricht anschließend verschwinden. Es wird empfohlen etwaiger Footer-Nachrichten im Theme fest zu integrieren. Die alte Nachricht wird in Kopie im pnTemp-Verzeichnis abgelegt.</p>
+
+<p><strong>Hinweis:</strong> Aus Performancegründen sind ab Zikula 1.0 keine Benutzerzugriffsrechte mehr möglich. Es wird empfohlen die Benutzer in einer Gruppe aufzunehmen und darüber die Zugriffsrechte zu verwalten.</p>
+
+<h3 id="Clean">3.5 Aufräumarbeiten</h3>
+<p>Abschließend müssen die Dateien upgrade.php, install.php und das Install-Verzeichnis aus dem Dateisystem entfernt werden.</p>
+
+<h2 id="Themes">4 Themes aktualisieren</h2>
+
+<p>Mit Zikula v1.0.0 wurde die Struktur der Themeverwaltung geändert. Das Modul heißt nun Themes und intern lautet die Version 'Xanthia Version 3'. Falls vorher ein Xanthia 2 Theme genutzt wurde, kann dieses über das Modul automatisch konvertiert werden. Dazu muss das Theme-Verzeichnis beschreibbar gemacht werden (chmod -R 777). Bitte beachten, dass diese Konvertierung bei einem komplexen Ausgangstheme vielleicht nicht immer 100%ig funktioniert. Sowieso müssen weitere Änderungen am Theme manuell durchgeführt werden. Nach der Konvertierung sollte das Theme-Verzeichnis wieder auf 'nur-lesbar' gesetzt werden.!</p>
+
+<h2 id="Final">5 Abschlussbemerkung</h2>
+<p>Herzlichen Glückwunsch. Das Upgrade ist vollständig durchgeführt. Wir wünschen viel Spaß mit der neuen Zikula-Version.</p>
+
+<p><strong>Das deutsche Zikula-Team<br />
+<a href="http://zikula.de/">zikula.de</a></strong></p>
+
+</body>
+</html>
