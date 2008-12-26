@@ -35,6 +35,7 @@ define('_MODIFYNEWSCONFIG', 'Konfiguration modifizieren');
 define('_NEWS_DISPLAY', 'Anzeigeeinstellungen');
 define('_NEWS_STORIESHOME','anzuzeigende Beiträge auf der Startseite');
 define('_NEWS_ITEMSONINDEXPAGE', 'anzuzeigende Beiträge im Index');
+define('_NEWS_REFERERONPRINT','Referrer auf der Druckansicht prüfen'); 
 define('_NEWS_STORIESORDER','Sortiere Beiträge nach');
 define('_NEWS_STORIESORDER0','News ID');
 define('_NEWS_STORIESORDER1','News Datum/Zeit');

@@ -17,7 +17,6 @@ define('_SETTINGS_ANONYMOUSSESSIONS', 'Sessions für Gäste benutzen');
 define('_SETTINGS_AUTHKEYUA', 'Authkey an UserAgent binden');
 
 define('_SETTINGS_BACKENDCONF','Backend Konfiguration');
-define('_SETTINGS_BACKENDTITLE','Backend Titel');
 define('_SETTINGS_BASESITECONFIG', 'Basiskonfiguration');
 define('_SETTINGS_BASESITEINFO', 'Info');
 define('_SETTINGS_HTMLENTITIESBOX', 'HTML Entitäten');
@@ -63,8 +62,6 @@ define('_SETTINGS_HTMLTAGNOTALLOWED','nicht erlaubt');
 define('_SETTINGS_HTMLTAGUSAGE', 'Taginfo (von <a href="http://www.w3schools.com">W3Schools</a>)');
 define('_SETTINGS_HTMLWARNING','HINWEIS: Um das Risiko von Cross-Site-Scripting zu minimieren sollte - insbesondere bei Freigabe von Tags mit Parametern - der safehtml-Outputfilter im SecurityCenter aktiviert werden.');
 define('_SETTINGS_INVALIDEMAIL', 'Ungültige E-Mail-Adresse - bitte prüfen');
-define('_SETTINGS_JSQUICKTAGS', 'JS Quicktags Buttons benutzen');
-define('_SETTINGS_JSQUICKTAGSNOTE', 'JS Quicktags sind Buttons für häufige HTML-Tags in bestimmten Textareas. Eine \'aktivierte\' Textarea sollte ein Quicktags-Template Tag im Template haben. Deaktivieren, falls ein visueller Editor verwendet wird.');
 define('_SETTINGS_KEYEXPIRY', 'Zeitlimit für Authkeys in Sekunden (default 0)');
 
 define('_SETTINGS_LANGDETECTBROWSER','Browser Sprache');
@@ -90,8 +87,6 @@ define('_SETTINGS_PASSBYMAIL','(Benutzern nach Registrierung das Kennwort via E-
 define('_SETTINGS_PHPSYSTEMLOG', 'Das PHP System Log (definiert in php.ini) nutzen');
 define('_SETTINGS_PROFILEMODULE', 'Modul für die Benutzerprofilverwaltung'); 
 define('_SETTINGS_PROFILEMODULE_NONE', 'Keine Benutzerprofile'); 
-
-define('_SETTINGS_REFERERONPRINT','Referrer auf der Druckansicht prüfen');
 
 define('_SETTINGS_SAFEHTMLWARNING', 'Achtung! Der <a href="%url%">SafeHTML Output-Filter</a> überschreibt einige Einstellungen von HTML-Tags (z.B. object und embed)');
 define('_SETTINGS_SECHIGH','Hoch (Benutzer müssen sich bei jedem Besuch anmelden)');
