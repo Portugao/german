@@ -8,7 +8,7 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-// TODO Move user, censor, news etc. vars to relevant module
+// TODO Move user, censor etc. vars to relevant module
 // Module_Vars
 define('_MODULE_VARS_000', '0');
 define('_MODULE_VARS_001', 'Seitenname');
@@ -26,7 +26,6 @@ define('_MODULE_VARS_015', '1');
 define('_MODULE_VARS_016', '0');
 define('_MODULE_VARS_017', 'blank');
 define('_MODULE_VARS_020', 'Backend für Seitenname');
-define('_MODULE_VARS_021', 'de-de');
 define('_MODULE_VARS_022', 'Medium');
 define('_MODULE_VARS_023', '7');
 define('_MODULE_VARS_024', '20');

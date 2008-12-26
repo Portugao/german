@@ -17,7 +17,6 @@ define('_SETTINGS_ANONYMOUSSESSIONS', 'Sessions für Gäste benutzen');
 define('_SETTINGS_AUTHKEYUA', 'Authkey an UserAgent binden');
 
 define('_SETTINGS_BACKENDCONF','Backend Konfiguration');
-define('_SETTINGS_BACKENDLANG','Backend Sprache');
 define('_SETTINGS_BACKENDTITLE','Backend Titel');
 define('_SETTINGS_BASESITECONFIG', 'Basiskonfiguration');
 define('_SETTINGS_BASESITEINFO', 'Info');
@@ -135,7 +134,7 @@ define('_SETTINGS_SIGNCOOKIES', 'Cookies signieren?');
 define('_SETTINGS_SIGNINGKEY', 'Signatur Key');
 define('_SETTINGS_SINGLELOGFILE','In das Global Logfile schreiben');
 define('_SETTINGS_SITECONFIG','Webseite Konfiguration');
-define('_SETTINGS_SITELOGO','Beschreibung (nur für Backend-Seiten wie Druckeransicht und RSS Feed)');
+define('_SETTINGS_SITELOGO','Logo für RSS und Druckerthemes');
 define('_SETTINGS_SITENAME', 'Name');
 define('_SETTINGS_SITEOFF', 'Seite deaktivieren');
 define('_SETTINGS_SITEOFFREASON', 'Grund für Deaktivierung');
@@ -144,7 +143,6 @@ define('_SETTINGS_SITESECUREURL1','Nur angeben wenn ein anderer Hostname für HTT
 define('_SETTINGS_SITESLOGAN','Beschreibung');
 define('_SETTINGS_STARTARGS', 'optional: Argumente für die Modulfunktion');
 define('_SETTINGS_STARTARGSDESCR', 'kommasepariert (name=value,name2=value2)');
-define('_SETTINGS_STARTDATE','Startdatum');
 define('_SETTINGS_STARTFUNC','Modulfunktion');
 define('_SETTINGS_STARTMODULE', 'Startseite');
 define('_SETTINGS_STARTPAGE','Startmodul');
