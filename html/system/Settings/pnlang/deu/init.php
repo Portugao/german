@@ -12,7 +12,6 @@
 // Module_Vars
 define('_MODULE_VARS_000', '0');
 define('_MODULE_VARS_001', 'Seitenname');
-define('_MODULE_VARS_002', 'logo.gif');
 define('_MODULE_VARS_003', 'Seitenbeschreibung');
 define('_MODULE_VARS_004', 'zikula, community, portal, portal web, open source, gpl, web site, website, weblog, blog, content management, content management system, web content management, web content management system, enterprise web content management, cms, application framework');
 define('_MODULE_VARS_005', '0');
