@@ -8,6 +8,11 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
+// links for installation support 
+define('_INSTALLERDOCSFILE',   'docs/install_deu.html'); 
+define('_INSTALLERWIKILINK'  , 'http://code.zikula.org/community-german/'); 
+define('_INSTALLERFORUMSLINK', 'http://support.pn-cms.de'); 
+
 // installer page language strings
 define('_INSTALLER', 'Zikula Installation');
 define('_INSTALLERPLEASEREFERTOGUIDE', 'Bitte die <a style="color:red" href="docs/install_deu.html" onclick="window.open(\'docs/install_deu.html\');return false;">

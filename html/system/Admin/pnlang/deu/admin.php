@@ -35,7 +35,6 @@ define('_ADMIN_FAILEDADDMODTOCAT', 'Fehler! Modul konnte nicht zur Kategorie hin
 define('_ADMIN_NOADMINLINKS', 'Die Administrationskategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil administrativer Zugriff auf ein Modul besteht, das nicht in der Standardkategorie ist.');
 
 // modify config
-define('_ADMIN_DISPLAYJSMENU', 'Javaskript-Menü in der Administration benutzen'); 
 define('_ADMIN_GENERALSETTINGS', 'Allgemein');
 define('_ADMIN_DISPLAYICONS', 'Icons in der Administration anzeigen');
 define('_ADMIN_DISPLAYNAMETYPE', 'Anzeige der Modulnamen'); 
@@ -109,3 +108,7 @@ define('_ADMIN_SECURITYCENTERNOTINSTALLED_HELP','Nach der Installation ist das S
 define('_ADMIN_SECURITYCENTERNOTENABLED_HELP','Nach der Installation ist das Security Center standardmäßig installiert und aktiviert. Der obenstehende Hinweis, falls das Security Center deaktiviert wurde. Es wird empfohlen, das \'Security Center\' zu aktivieren, da es helfen kann, die Sicherheit der Webseite zu erhöhen.');
 define('_ADMIN_UPGRADE_PHP_HELP','Die Datei \'upgrade.php\' wird vom Installationsskript verwendet, falls eine bereits existierende Installation auf eine neuere Version aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei gelöscht werden, da sie nicht länger benötigt wird und ein mögliches Sicherheitsrisiko darstellt.');
 define('_ADMIN_MODULESCATEGORIZATIONEXPLAINED', 'Alle derzeit installierten und aktivierten Module werden aufgelistet. Neben jedem Modul kann anhand einer Dropdownliste ausgewählt werden, in welche Kategorie das jeweilige Module eingeordnet werden soll.');
+
+// update checker defines 
+define('_ADMIN_UPDATE_AVAILABLE', 'Es ist eine neue Version von Zikula verfügbar.'); 
+define('_ADMIN_NEW_VERSION', 'Bitte die Version herunterladen'); 

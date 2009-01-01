@@ -148,6 +148,13 @@ define('_SETTINGS_STARTTYPE', 'Funktionstyp');
 define('_SETTINGS_TIMEZONEOFFSET', 'Timezone für unregistrierte Benutzer');
 define('_SETTINGS_TIMEZONESERVER', 'Timezone des Servers');
 
+define('_SETTINGS_UPDATESETTINGS', 'Automatische Updateüberprüfung'); 
+define('_SETTINGS_UPDATECHECK', 'Nach Updates suchen'); 
+define('_SETTINGS_UPDATEFREQUENCY', 'Häufigkeit'); 
+define('_SETTINGS_DAILY', 'Täglich'); 
+define('_SETTINGS_WEEKLY', 'Wöchentlich'); 
+define('_SETTINGS_MONTHLY', 'Monatlich'); 
+
 define('_SETTINGS_USECOMPRESSION','GZip-Kompression aktivieren');
 define('_SETTINGS_USERCONFIGURATION', 'Benutzerkonfiguration');
 
