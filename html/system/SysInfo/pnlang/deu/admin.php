@@ -84,7 +84,7 @@ define('_SYSINFO_STATUS', 'Status');
 define('_SUHOSIN_PATCH', 'Suhosin');
 define('_SYSINFO_SUMMARY', 'Zusammenfassung');
 define('_SYSINFO_SYSTEMSUMMARY', 'System Zusammenfassung');
-define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href="http://support.zikula.de/modules/dokuwiki/doku.php?id=zikula:sicherheit">zikula:sicherheit</a> bei zikula.de.');
+define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href="http://code.zikula.org/community-german/wiki/Sicherheit">Zikula-Sicherheit</a>.');
 
 define('_SYSINFO_VERSION', 'Version');
 
