@@ -11,7 +11,7 @@
 // links for installation support 
 define('_INSTALLERDOCSFILE',   'docs/install_deu.html'); 
 define('_INSTALLERWIKILINK'  , 'http://code.zikula.org/community-german/'); 
-define('_INSTALLERFORUMSLINK', 'http://support.pn-cms.de'); 
+define('_INSTALLERFORUMSLINK', 'http://support.zikula.de'); 
 
 // installer page language strings
 define('_INSTALLER', 'Zikula Installation');
@@ -125,14 +125,14 @@ define('_INSTALLERGOTOSITE', 'Zur neu eingerichteten Zikula-Seite');
 
 // _selectmodule.htm
 define('_INSTALLERSELECTMODULE', 'Modul für die Startseite wählen');
-define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://code.zikula.org/core/downloads">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.zikula.org/module-Database-main-tid-3.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
-define('_INSTALLERPNMODULESSURL', 'http://community.zikula.org/module-Database-main-tid-3.htm');
+define('_INSTALLERMODULES', 'Module erweitern die Funktionalität einer Seite. Viele weitere Module sind im <a href="http://code.zikula.org/core/downloads">Value Addons Paket</a> verfügbar oder in einer <a href="http://community.zikula.org/module-Extensions.htm">Modulliste</a> durch Drittanbieter veröffentlicht. Bitte ein Standardmodul für die neue Seite wählen - dies kann später geändert werden.');
+define('_INSTALLERPNMODULESSURL', 'http://community.zikula.org/module-Extensions.htm');
 define('_INSTALLERPNMODULES', 'Offizielle Modul-Datenbank');
 
 // _selecttheme.htm
 define('_INSTALLERSELECTHEME', 'Standard-Theme der Seite');
 define('_INSTALLERTHEMES', 'Themes bestimmen das Aussehen der Webseite. In der Zikula Grundinstallation sind nur einige Themes enthalten, weitere gibt es z.B. unter <a href="http://support.zikula.de">support.zikula.de</a>.<br />Bitte ein Theme für die Grundinstallation wählen, es kann später jederzeit verändert werden.');
-define('_INSTALLERPNTHEMESURL', 'http://community.zikula.org/module-Database-main-tid-4.htm');
+define('_INSTALLERPNTHEMESURL', 'http://community.zikula.org/module-Extensions.htm');
 define('_INSTALLERPNTHEMES', 'Offizielle Theme-Datenbank');
 
 // modify_config.php
