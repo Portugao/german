@@ -46,6 +46,7 @@ define('_UPG_FOOTERINFO', 'Bitte unbedingt die <a href="docs/upgrade_deu.html">U
 define('_UPG_TIMEHINT', 'Achtung: Je nachdem wie umfangreich die Ausgansinstallation (z.B. Anzahl der Benutzer) ist, kann das Upgrade einige Zeit in Anspruch nehmen. Vorsichtshalber sollte ein Upgrade lokal mit einer Sicherung getestet werden.');
 define('_UPG_STARTUPGRADE', 'Upgrade starten');
 define('_UPG_USERSACTIVATED', 'existierende Benutzer wurden aktiviert');
+define('_UPG_MEMHINT', 'Das Speicherlimit kann nicht verändert werden (64 MB). Es könnten Probleme beim Upgrade größerer Sites auftreten.');
 
 // upgrade.php
 define('_UPG_CONTINUETOYOURSITE', 'Zur aktualisierten Zikula-Seite'); 
