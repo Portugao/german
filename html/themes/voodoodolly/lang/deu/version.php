@@ -8,7 +8,6 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_VOODOODOLLY_THEME_NAME', 'voodoodolly');
 define('_VOODOODOLLY_DISPLAYNAME', 'voodoodolly');
 define('_VOODOODOLLY_DESCRIPTION', 'voodoo dolly OWD template');
 

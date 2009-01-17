@@ -8,7 +8,6 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_ANDREAS08_THEME_NAME', 'andreas08');
 define('_ANDREAS08_DISPLAYNAME', 'andreas08');
 define('_ANDREAS08_DESCRIPTION', 'andreas08 OWD template');
 
