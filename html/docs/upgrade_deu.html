@@ -114,7 +114,7 @@ Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http:/
 Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
 
 <h3 id="Prepare10x">4.2 v1.0.x Installation vorbereiten</h3>
-<p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Alle Dateien der Downloaddatei hochladen, aber <strong>nicht das Verzeichnis config</strong>! Ansonsten würde die config.php überschrieben werden und somit den Internetauftritt zerstören.</p>
+<p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Danach muss in der Moduladministration unbedingt das Modul Members_List deaktiviert und entfernt werden. Erst danach sollten die Dateien des Downloadarchivs hochgeladen werden. Dabei bitte das <strong>Verzeichnis /config</strong> auslassen, da sonst die individuelle Konfiguration in der config.php überschrieben wird und der Internetauftritt nicht mehr funktionieren würde. Bitte außerdem sichersteleln, dass das Verzeichnis modules/Members_List/ wirklich entfernt wird.</p>
 
 <h3 id="Run10x">4.3 Upgrade durchführen</h3>
 <p>Das Upgrade-Skript upgrade10xto11x.php im Browser öffnen und die dort folgenden Schritte, wie beschrieben, durchführen. Es sind kaum Interaktionen notwendig - abgesehen vom Klicken auf 'Fortfahren'. Sämtliche notwendige Datenbankänderungen werden automatisch durchgeführt. Zum Schluss wird man automatisch zur Administration weitergeleitet.</p>
