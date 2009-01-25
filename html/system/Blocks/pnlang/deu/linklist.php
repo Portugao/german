@@ -8,7 +8,6 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_FQUESTIONS','FAQ');
 define('_OTHEROPTIONS','Andere Optionen');
 define('_SUBMISSIONS','Eingereichte Beiträge');
 define('_UDOWNLOADS','Downloads');

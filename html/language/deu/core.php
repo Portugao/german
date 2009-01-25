@@ -13,6 +13,7 @@ define('_DATE','Datum');
 define('_DATEBRIEF','%d. %b %Y');
 define('_DATELONG','%A, %d. %B %Y');
 define('_DATESTRING','%A, %d. %B %Y um %H:%M Uhr');
+define('_DATESTRING2', '%A, %B %d');
 define('_DATETIMEBRIEF','%d.%m.%Y, %H:%M Uhr');
 define('_DATETIMELONG','%A, %d. %B %Y, %H:%M Uhr');
 define('_DATEINPUT', '%Y-%m-%d'); // Dateformat for input fields (parsable - do not try other formats!)
@@ -72,6 +73,7 @@ define('_BY','von');
 define('_DOWN','runter');
 define('_FOR', 'für');
 define('_NO','Nein');
+define('_NO_SHORT','N');
 define('_OF','von');
 define('_OK','OK');
 define('_ON','am');
@@ -80,6 +82,7 @@ define('_TO','an');
 define('_UP','hoch');
 define('_URL', 'URL');
 define('_YES','Ja');
+define('_YES_SHORT','J');
 
 // on/off states
 define('_ONOFF_ON','Ein');
@@ -350,7 +353,7 @@ define('_PERPAGE', '%i% pro Seite');
 define('_TOTAL', 'Insgesamt');
 
 // WorkflowUtil
-define('_PNWF_STATEERROR', 'Workflow Statusfehler');
+define('_WF_STATEERROR', 'Workflow Statusfehler');
 
 // Form utilities
 define('_PNFORM_MANDATORYERROR', 'Bitte dieses Feld ausfüllen');
