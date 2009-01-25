@@ -42,7 +42,6 @@ define('_GROUPS_USRSTATUS',                    'Status');
 define('_GROUPS_USRURL',                       'Homepage');
 
 //error/statuses
-define('_GROUPS_ALREADYMEMBER',                'Es besteht bereits Mitgliedschaft in dieser Gruppe');
 define('_GROUPS_CANTAPPLY',                    'Für diese Gruppe kann keine Anmeldung erfolgen');
 define('_GROUPS_DOESNTEXISTS',                 'Diese Gruppe existiert nicht');
 define('_GROUPS_ISCLOSED',                     'Die Gruppe ist geschlossen');
