@@ -114,7 +114,7 @@ Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http:/
 Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
 
 <h3 id="Prepare10x">4.2 v1.0.x Installation vorbereiten</h3>
-<p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Danach muss in der Moduladministration unbedingt das Modul Members_List deaktiviert und entfernt werden. Erst danach sollten die Dateien des Downloadarchivs hochgeladen werden. Dabei bitte das <strong>Verzeichnis /config</strong> auslassen, da sonst die individuelle Konfiguration in der config.php überschrieben wird und der Internetauftritt nicht mehr funktionieren würde. Bitte außerdem sichersteleln, dass das Verzeichnis modules/Members_List/ wirklich entfernt wird.</p>
+<p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Danach muss in der Moduladministration unbedingt das Modul Members_List deaktiviert und entfernt werden. Erst danach sollten die Dateien des Downloadarchivs hochgeladen werden. Dabei bitte das <strong>Verzeichnis /config</strong> auslassen, da sonst die individuelle Konfiguration in der config.php überschrieben wird und der Internetauftritt nicht mehr funktionieren würde. Bitte außerdem sicherstellen, dass die Verzeichnisse modules/Members_List/ und system/Profile wirklich entfernt werden. Diese beiden Module sind nun im neuen Profile-Modul enthalten, dass sich nun unter /modules befinden muss.</p>
 
 <h3 id="Run10x">4.3 Upgrade durchführen</h3>
 <p>Das Upgrade-Skript upgrade10xto11x.php im Browser öffnen und die dort folgenden Schritte, wie beschrieben, durchführen. Es sind kaum Interaktionen notwendig - abgesehen vom Klicken auf 'Fortfahren'. Sämtliche notwendige Datenbankänderungen werden automatisch durchgeführt. Zum Schluss wird man automatisch zur Administration weitergeleitet.</p>
@@ -122,9 +122,10 @@ Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet
 <h3 id="Clean10x">4.4 Aufräumarbeiten und zusätzliche Konfiguration</h3>
 <p>Nach einer erfolgreichen Aktualisierung können folgende Dateien und Verzeichnisse gelöscht werden:</p>
 <ol>
-    <li>das Modul MailUsers - in der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen (in modules/MailUsers),</li>
-    <li>das Modul Members_List - in der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen (in modules/Members_List),</li>
-    <li>das Verzeichnis includes/pnobjlib - diese Dateien befinden sich nun direkt im includes-Verzeichnis und können hier gelöscht werden,</li>
+    <li>MailUsers (modules/MailUsers): In der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
+    <li>Members_List (modules/Members_List): Wenn noch nicht geschehen, dann in der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
+    <li>Profil-Modul (system/Profile): Das Modul muss dort physikalisch entfernt werden. Aber bitte nicht das neue Zielverzeichnis /modules/Profile löschen. Das ist der neue Speicherort für das Modul.</li>
+    <li>das Verzeichnis includes/pnobjlib - diese Dateien befinden sich nun direkt im includes-Verzeichnis und können hier gelöscht werden.</li>
     <li>das Verzeichnis install, sowie die Dateien install.php, upgrade.php und upgrade10xto11x.php aus dem Root der Präsenz.</li>
 </ol>
 <p>Falls in einem Menü-Block auf das alte Members_List Modul verlinkt wird, muss dies auf index.php?module=Profile&amp;func=viewmembers geändert werden. Die Zugriffsrechte wurde auf 'Profile:Members:' geändert.</p>
