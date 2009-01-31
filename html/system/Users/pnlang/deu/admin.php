@@ -8,8 +8,12 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
+// change account data 
+define('_USERS_CHANGEPASSWORD', 'Das Users-Modul zur Passwortverwaltung benutzen'); 
+define('_USERS_CHANGEEMAIL', 'Das Users-Modul zur E-Mailverwaltung benutzen'); 
+
 // general
-define('_PASSWORDAGAIN',           'Kennwortwiederholung (zur Verifikation)');
+define('_PASSWORDAGAIN', 'Kennwortwiederholung (zur Verifikation)');
 define('_USERADMINISTRATION','Benutzer Administration');
 define('_USERS_NEWUSER', 'Neuer Benutzer');
 define('_WARNINGALLFIELDSREQUIRED', 'Hinweis: In jedem Feld muss ein Eintrag erfolgen. In den Kennwort-Feldern bitte jeweils dasselbe Kennwort eingeben.');

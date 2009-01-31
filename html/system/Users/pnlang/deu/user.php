@@ -8,6 +8,10 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
+// change account data 
+define('_USERS_MYPASSWORD', 'Mein Kennwort'); 
+define('_USERS_MYEMAIL', 'Meine E-Mailadresse'); 
+
 // general
 define('_USERS', 'Registrierung und Anmeldung');
 
