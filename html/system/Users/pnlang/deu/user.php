@@ -8,9 +8,25 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
+// change email 
+define('_USERS_CHANGEYOUREMAILHERE', 'E-Mail-Adresse ändern');
+define('_USERS_CHANGEEMAILHINT', 'Hier kann die E-Mail-Adresse geändert werden, die für den internen Mailversand benötigt wird. Die aktuelle E-Mail-Adresse lautet %email%.');
+define('_USERS_ENTERNEWEMAIL', 'Neue E-Mail-Adresse:');
+define('_USERS_EMAILHASBEENCHANGED', 'Die E-Mail-Adresse wurde erfolgreich geändert.');
+
+// change password 
+define('_USERS_CHANGEYOURPASSWORDHERE', 'Kennwort ändern');
+define('_USERS_CHANGEPASSWORDHINT', 'Für die Kennwortänderung wird das aktuelle Kennwort benötigt, sowie die Eingabe des neuen Kennworts inkl. Kennwortwiederholung.');
+define('_USERS_ENTEROLDPASSWORD', 'Aktuelles Kennwort:');
+define('_USERS_ENTERNEWPASSWORD', 'Neues Kennwort:');
+define('_USERS_CONFIRMNEWPASSWORD', 'Neues Kennwort wiederholen:');
+define('_USERS_OLDPASSWORDWRONG', 'Das angegebene Kennwort ist nicht korrekt.');
+define('_USERS_NEWPASSWORDSDONTMATCH', 'Die neuen Kennwörter stimmen nicht überein.');
+define('_USERS_PASSWORDHASBEENCHANGED', 'Das Kennwort wurde erfolgreich geändert.');
+
 // change account data 
-define('_USERS_MYPASSWORD', 'Mein Kennwort'); 
-define('_USERS_MYEMAIL', 'Meine E-Mailadresse'); 
+define('_USERS_MYPASSWORD', 'Kennwort ändern');
+define('_USERS_MYEMAIL', 'E-Mail-Adresse ändern');
 
 // general
 define('_USERS', 'Registrierung und Anmeldung');

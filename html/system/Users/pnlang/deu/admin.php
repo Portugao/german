@@ -9,8 +9,12 @@
  */
 
 // change account data 
-define('_USERS_CHANGEPASSWORD', 'Das Users-Modul zur Passwortverwaltung benutzen'); 
-define('_USERS_CHANGEEMAIL', 'Das Users-Modul zur E-Mailverwaltung benutzen'); 
+define('_USERS_ACCOUNTSETTINGS', 'Benutzerkonten-Einstellungen'); 
+define('_USERS_ACCOUNTDISPLAYGRAPHICS', 'Icons auf der Profilseite anzeigen');
+define('_USERS_ACCOUNTLINKSPERPAGE', 'Einträge pro Seite');
+define('_USERS_ACCOUNTITEMSPERROW', 'Icons pro Reihe');
+define('_USERS_CHANGEPASSWORD', 'Users-Modul zur Passwortverwaltung benutzen');
+define('_USERS_CHANGEEMAIL', 'Users-Modul zur E-Mailverwaltung benutzen');
 
 // general
 define('_PASSWORDAGAIN', 'Kennwortwiederholung (zur Verifikation)');
