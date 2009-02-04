@@ -28,9 +28,9 @@ define('_USERS_USER_LC', 'Benutzer');
 define('_USERS_USERS', 'Benutzer');
 
 // navigation
-define('_USERS_DYNAMICDATA','Benutzerattribute');
+define('_USERS_DYNAMICDATA','Profilverwaltung');
 define('_USERS_PENDINGAPPLICATIONS', 'Wartende Anmeldungen');
-define('_MODIFYUSERSCONFIG', 'Benutzerkonfiguration bearbeiten');
+define('_MODIFYUSERSCONFIG', 'Konfiguration modifizieren');
 define('_SEARCHUSERS', 'Benutzer suchen');
 define('_USERS_MAILUSERS', 'Benutzer anschreiben'); 
 define('_USERPROPERTIES', 'Benutzereigenschaften');

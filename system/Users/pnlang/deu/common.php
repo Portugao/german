@@ -10,5 +10,5 @@
 
 // error/status messages
 define('_USERS_INVALIDEMAIL','Problem mit der angegebenen E-Mail-Adresse!');
-define('_USERS_PASSDIFFERENT','Die beiden Kennworte sind nicht identisch - bitte gleiche Kennworte eingeben');
+define('_USERS_PASSDIFFERENT','Die beiden Kennwörter sind nicht identisch . Bitte identisches Kennwort wiederholen.');
 

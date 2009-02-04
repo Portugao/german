@@ -1,12 +1,12 @@
 <?php
 /**
- * Zikula Application Framework
- *
- * @copyright (c) 2008, Zikula German Translation Team
- * @link http://www.zikula.de
- * @version $Id$
- * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
- */
+* Zikula Application Framework
+*
+* @copyright (c) 2008, Zikula German Translation Team
+* @link http://www.zikula.de
+* @version $Id$
+* @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
+*/
 
 // general
 define('_CATEGORIES_IPATH',                  'IPfad');
@@ -42,7 +42,7 @@ define('_CATEGORIES_BASEINFO',                'Basisinformation zur Kategorie');
 define('_CATEGORIES_CATEGORY_IS_LOCKED',    	'Diese Kategorie ist gesperrt und kann nur vom Administrator bearbeitet oder gelöscht werden.');
 define('_CATEGORIES_CATEGORY_DELETE_CONFIRM', 'Soll die Kategorie wirklich gelöscht werden [');
 define('_CATEGORIES_CATEGORY_DELETE_CONFIRM_QM','] ?');
-define('_CATEGORIES_COPY_SUCCESS',            'Die Kategorie [%s] wurde erfolgreich kopiert'); 	 
+define('_CATEGORIES_COPY_SUCCESS',            'Die Kategorie [%s] wurde erfolgreich kopiert');
 define('_CATEGORIES_DELETE_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich gelöscht');
 define('_CATEGORIES_INSERT_SUCCESS',          'Die Kategorie [%s] wurde erfolgreich eingefügt');
 define('_CATEGORIES_IS_LEAF',		             	'Kategorie ist eine Unterkategorie');
@@ -51,7 +51,7 @@ define('_CATEGORIES_LOCALNAME_UNDEFINED',     'Lokalisierter Name nicht definier
 define('_CATEGORIES_LOCALISATION',            'Lokalisierte Ausgabe');
 define('_CATEGORIES_META',                    'Metadaten der Kategorie');
 define('_CATEGORIES_MOVE_SUCCESS',            'Die Kategorie [%s] wurde erfolgreich verschoben');
-define('_CATEGORIES_PARENT',                  'Parent');
+define('_CATEGORIES_PARENT',                  'Elternkategorie');
 define('_CATEGORIES_REBUILD_SUCCESS',         'Der Kategoriepfad wurde erfolgreich neu erstellt');
 define('_CATEGORIES_ROOT_PARENT_LOCKED',	    'Die Stammkategorie eines Startknoten kann nicht geändert werden.');
 define('_CATEGORIES_SECURITY_DOMAIN',         'Sicherheitsdomain');
@@ -64,7 +64,7 @@ define('_CATEGORIES_VALUE',                   'Wert');
 // preferences template
 define('_CATEGORIES_PREFS',		               	'Einstellungen');
 define('_CATEGORIES_PREFS_USERROOTCAT',		    'Stammkategorie für Benutzerkategorien');
-define('_CATEGORIES_PREFS_ALLOWUSERCATEDIT',	'Benutzer erlauben, die eigenen Kategorien bearbeiten zu dürfen');
+define('_CATEGORIES_PREFS_ALLOWUSERCATEDIT',	'Benutzer erlauben, eigene Kategorien bearbeiten zu dürfen');
 define('_CATEGORIES_PREFS_AUTOCREATEUSERCAT',	'Automatisches Erstellen des Stammverzeichnis für Benutzerkategorien');
 define('_CATEGORIES_PREFS_AUTOCREATEUSERDEFAULTCAT',	'Automatisches Erstellen der Standard-Benutzerkategorien');
 define('_CATEGORIES_PREFS_USERDEFAULTCATNAME',	'Standard-Benutzerkategorien');
@@ -82,10 +82,10 @@ define('_CATEGORIES_SUBCATS_WARNING',        'Was soll mit den Unterkategorien d
 
 // module registry template
 define('_CATEGORIES_REGISTRY_PROPERTY',       'Name der Eigenschaft');
-define('_CATEGORIES_REGISTRY_DELETE_SUCCESS', 'Kategoriezuweisung wurde erfolgreich gelöscht'); 	 
+define('_CATEGORIES_REGISTRY_DELETE_SUCCESS', 'Kategoriezuweisung wurde erfolgreich gelöscht');
 define('_CATEGORIES_REGISTRY_SAVE_SUCCESS',   'Kategoriezuweisung wurde erfolgreich gespeichert');
 define('_CATEGORIES_REGISTRY_TABLE',          'Tabelle');
-define('_CATEGORIES_REGISTRY_DELETE_CONFIRM', 'Sollen die Kategoriezuweisungen wirklich gelöscht werden?'); 
+define('_CATEGORIES_REGISTRY_DELETE_CONFIRM', 'Sollen die Kategoriezuweisungen wirklich gelöscht werden?');
 
 // move template
 define('_CATEGORIES_MOVE_TITLE',              'Kategorie verschieben');
@@ -96,7 +96,7 @@ define('_CATEGORIES_COPY_TITLE',              'Kategorie kopieren');
 
 // modify config template
 define('_CATEGORIES_CONFIG_REBUILD',          'Hier können alle systeminternen Pfade neu erstellt werden');
-define('_CATEGORIES_CONFIG_REBUILD_INFO', 	  '<br /><br />Via Submit-Button die Aktion starten - je nach Anzahl der Kategorien könnte ein Time-Out auftreten oder das PHP-Speicherlimit überschritten werden.');
+define('_CATEGORIES_CONFIG_REBUILD_INFO', 	  '<br /><br />Der Vorgang kann über den Bestätigen-Button gestartet werden. Je nach Anzahl der Kategorien könnte ein Time-Out auftreten oder das PHP-Speicherlimit überschritten werden.');
 define('_CATEGORIES_CONFIG_REBUILD_PATHS',    'Pfade neu erstellen');
 
 // user editing
@@ -107,7 +107,7 @@ define('_CATEGORIES_DOCROOT_CANT_RETRIEVE',   'Kann docroot nicht laden');
 define('_CATEGORIES_DOCROOT_INVALID',         'Ungültiger docroot Parameter im URL');
 define('_CATEGORIES_EDITCAT_INVALID',         'Ungültige Kategorie kann nicht editiert werden');
 define('_CATEGORIES_EDITCAT_NOT_LEAF',        'Angegebene Kategorie ist keine übergeordnete Werte-Kategorie');
-define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Unterkateogorie von docroot');
+define('_CATEGORIES_EDITCAT_NOT_SUBCAT',      'Angegebene Kategorie ist keine Unterkategorie von docroot');
 define('_CATEGORIES_INVALID_CID',             'Fehler! Eine ungültige Kategorie-ID wurde empfangen');
 define('_CATEGORIES_INVALID_DIRECTION',       'Fehler! Eine ungültige Direction wurde empfangen');
 define('_CATEGORIES_INVALID_DOCROOT',         'Fehler! Ein ungültiger Benutzerstammknoten wurde empfangen');

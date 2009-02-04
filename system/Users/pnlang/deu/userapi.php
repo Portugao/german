@@ -22,7 +22,7 @@ define('_USERS_YOUCANCHANGEITAT','Es kann nach einem Login unter %url% geändert 
 define('_USERS_ACCOUNTHASEMAIL','Der Benutzer-Account %uname% bei %sitename% hat diese E-Mail-Adresse hinterlegt.');
 define('_USERS_AWEBUSERHASREQUESTEDPASSWORD','Jemand mit der IP-Adresse %hostname% hat einen Kennwort-Versand angefordert.');
 define('_USERS_IFYOUDIDNOTASK','Falls keine entsprechende Anforderung gestellt wurde, kann diese Benachrichtigung ignoriert werden.');
-define('_USERS_PASSWORDFOR','Benutzer-Kennwort für %uname%');
+define('_USERS_PASSWORDFOR','Benutzerkennwort für %uname%');
 define('_USERS_YOURNEWPASSWORDIS','Das neue Kennwort ist: %password%');
 
 // lost password code e-mail

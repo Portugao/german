@@ -10,8 +10,8 @@
 
 define('_SETTINGS_ACTAUTODETECT', 'Erkennung der Browser-Sprache');
 define('_SETTINGS_ACTMULTILINGUAL','Multilingual-Umgebung aktivieren');
-define('_SETTINGS_ADMINEMAIL','Administrator E-Mail-Adresse');
-define('_SETTINGS_ADMINGRAPHIC','Icons in Administration');
+define('_SETTINGS_ADMINEMAIL','E-Mail-Adresse des Administrators');
+define('_SETTINGS_ADMINGRAPHIC','Symbole in Administration');
 define('_SETTINGS_ALLOWUSERS','Benutzern die E-Mail-Adresse zeigen');
 
 define('_SETTINGS_BACKENDCONF','Backend Konfiguration');
@@ -53,8 +53,8 @@ define('_SETTINGS_LOGERRORSONLY','Loggen von ausschliesslich errors');
 define('_SETTINGS_LOGFILEPERMODULE','Modulabhängig Logfile schreiben');
 define('_SETTINGS_LOGNOERRORS','Errors nicht loggen');
 
-define('_SETTINGS_MESSAGEMODULE', 'Modul für interne Kurzmitteilungen');
-define('_SETTINGS_MESSAGEMODULE_NONE', 'Kein internes Mitteilungssystem');
+define('_SETTINGS_MESSAGEMODULE', 'Modul für interne Mitteilungen (PN)');
+define('_SETTINGS_MESSAGEMODULE_NONE', 'Kein Mitteilungsmodul');
 define('_SETTINGS_METAKEYWORDS','Meta-Keywords');
 define('_SETTINGS_METATAGSETTINGS', 'Meta-Keywords');
 define('_SETTINGS_MISCSETTINGS', 'Verschiedenes');
@@ -63,10 +63,10 @@ define('_SETTINGS_MLSETTINGS', 'Multilingual Einstellungen');
 
 define('_SETTINGS_PASSBYMAIL','(Benutzern nach Registrierung das Kennwort via E-Mail schicken)');
 define('_SETTINGS_PHPSYSTEMLOG', 'Das PHP System Log (definiert in php.ini) nutzen');
-define('_SETTINGS_PROFILEMODULE', 'Modul für die Benutzerprofilverwaltung');
-define('_SETTINGS_PROFILEMODULE_NONE', 'Keine Benutzerprofile');
+define('_SETTINGS_PROFILEMODULE', 'Modul für Benutzerprofilverwaltung');
+define('_SETTINGS_PROFILEMODULE_NONE', 'Kein Profilmodul');
 
-define('_SETTINGS_SELLANGUAGE','Default Sprache für diese Webseite');
+define('_SETTINGS_SELLANGUAGE','Standardsprache für diese Webseite');
 define('_SETTINGS_SHORTURLS', 'Short URLs');
 define('_SETTINGS_SHORTURLSDIRECTORY', 'Verzeichnis');
 define('_SETTINGS_SHORTURLSENABLE', 'Short URLs aktivieren');
@@ -85,21 +85,21 @@ define('_SETTINGS_SHOWNOERRORS','errors nicht anzeigen');
 define('_SETTINGS_SINGLELOGFILE','In das Global Logfile schreiben');
 define('_SETTINGS_SITECONFIG','Webseite Konfiguration');
 define('_SETTINGS_SITELOGO','Logo für RSS und Druckerthemes');
-define('_SETTINGS_SITENAME', 'Name');
+define('_SETTINGS_SITENAME', 'Seitenname');
 define('_SETTINGS_SITEOFF', 'Seite deaktivieren');
 define('_SETTINGS_SITEOFFREASON', 'Grund für Deaktivierung');
 define('_SETTINGS_SITESLOGAN','Beschreibung');
-define('_SETTINGS_STARTARGS', 'optional: Argumente für die Modulfunktion');
-define('_SETTINGS_STARTARGSDESCR', 'kommasepariert (name=value,name2=value2)');
-define('_SETTINGS_STARTFUNC','Modulfunktion');
+define('_SETTINGS_STARTARGS', 'Parameter für die Modulfunktion (optional)');
+define('_SETTINGS_STARTARGSDESCR', '(kommasepariert z.B. pid=1,tid=2)');
+define('_SETTINGS_STARTFUNC','Modulfunktion (func=xyz)');
 define('_SETTINGS_STARTMODULE', 'Startseite');
 define('_SETTINGS_STARTPAGE','Startmodul');
-define('_SETTINGS_STARTPAGEDESCR','(Modul, auf das index.php verweist)');
+define('_SETTINGS_STARTPAGEDESCR','(Modul für die Startseite)');
 define('_SETTINGS_STARTPAGE_NOMODULE', 'Kein Startmodul (statische Startseite)');
-define('_SETTINGS_STARTTYPE', 'Funktionstyp');
+define('_SETTINGS_STARTTYPE', 'Funktionstyp (Standard=user)');
 
-define('_SETTINGS_TIMEZONEOFFSET', 'Timezone für unregistrierte Benutzer');
-define('_SETTINGS_TIMEZONESERVER', 'Timezone des Servers');
+define('_SETTINGS_TIMEZONEOFFSET', 'Zeitzone für unregistrierte Benutzer');
+define('_SETTINGS_TIMEZONESERVER', 'Zeitzone des Servers');
 
 define('_SETTINGS_USECOMPRESSION','GZip-Kompression aktivieren');
 define('_SETTINGS_USERCONFIGURATION', 'Benutzerkonfiguration');

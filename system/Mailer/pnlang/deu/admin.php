@@ -15,9 +15,9 @@ define('_MAILER','Mailer');
 define('_MAILER_TESTCONFIG', 'Konfiguration testen');
 
 // modify config
-define('_MAILER_CHARSET', 'Characterset (Default: iso-8859-1)');
+define('_MAILER_CHARSET', 'Zeichensatz (Standard: iso-8859-1)');
 define('_MAILER_CONTENTTYPE', 'E-Mails HTML-kodiert senden');
-define('_MAILER_ENCODING', 'Encoding (Default: 8-bit)');
+define('_MAILER_ENCODING', 'Codierung (Standard: 8-bit)');
 define('_MAILER_GENERALSETTINGS', 'Grundeinstellungen');
 define('_MAILER_MSMAILHEADERS', 'Microsoft Mailclient Header setzen');
 define('_MAILER_SENDMAILSETTINGS', 'SendMail Einstellungen');
@@ -31,12 +31,12 @@ define('_MAILER_SENDMAILPATH', 'Sendmail Path');
 // smtp settings
 define('_MAILER_SMTPAUTH', 'SMTP Authentifizierung');
 define('_MAILER_SMTPMAIL', 'SMTP');
-define('_MAILER_SMTPPASSWORD', 'SMTP password');
-define('_MAILER_SMTPPORT','SMTP Port (default: 25)');
-define('_MAILER_SMTPSERVER','SMTP Server (Default: localhost)');
+define('_MAILER_SMTPPASSWORD', 'SMTP Passwort');
+define('_MAILER_SMTPPORT','SMTP Port (Standard: 25)');
+define('_MAILER_SMTPSERVER','SMTP Server (Standard: localhost)');
 define('_MAILER_SMTPSETTINGS', 'SMTP Einstellungen');
-define('_MAILER_SMTPTIMEOUT', 'SMTP timeout (Sekunden, Default: 10)');
-define('_MAILER_SMTPUSERNAME', 'SMTP username');
+define('_MAILER_SMTPTIMEOUT', 'SMTP Timeout (Sekunden, Standard: 10)');
+define('_MAILER_SMTPUSERNAME', 'SMTP Benutzername');
 
 // other mail transports
 define('_MAILER_PHPMAIL', 'PHP mail()');

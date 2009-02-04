@@ -8,6 +8,6 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_BLOCKMOD_DISPLAYNAME', 'Blocks');
+define('_BLOCKMOD_DISPLAYNAME', 'Bloecke');
 define('_BLOCKMOD_DESCRIPTION', 'Administration von Blöcken');
 

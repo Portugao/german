@@ -15,14 +15,14 @@ define('_ADMIN_ONLINEMANUAL', 'Online-Handbuch');
 define('_ADMIN_TITLE', 'Administration');
 define('_ADMIN_PNSECURITYANALYZER', 'Warnungen der Sicherheitsanalyse');
 define('_MODULESCATEGORIZATION', 'Modulkategorisierung');
-define('_MODIFYADMINPANELCONFIG', 'Administration-Einstellungen');
+define('_MODIFYADMINPANELCONFIG', 'Konfiguration modifizieren');
 define('_MODULECATEGORIESLISTVIEW', 'Liste der Modulkategorien');
 define('_NEWMODULECATEGORY', 'Modulkategorie erstellen');
 define('_ADMIN_NEWCATEGORY', 'Neue Modulkategorie');
 define('_ADMIN_EXISTINGCATEGORY', 'Bestehende Modulkategorie');
 
 // menu
-define('_VIEWMODULECATEGORIES', 'Listenansicht der Modulkategorien');
+define('_VIEWMODULECATEGORIES', 'Liste der Modulkategorien');
 define('_ADMIN_MODIFYMODULECATEGORY', 'Modulkategorie bearbeiten');
 define('_ADMIN_CREATEMODULECATEGORY', 'Modulkategorie anlegen');
 define('_ADMIN_DELETEMODULECATEGORY', 'Modulkategorie löschen');
@@ -32,36 +32,36 @@ define('_ADMIN_CONFIRMDELETEMODULECATEGORY', 'Soll die Modulkategorie wirklich g
 define('_ADMIN_DELETEFAILEDDEFAULT', 'Die Default-Kategorie kann nicht gelöscht werden');
 define('_ADMIN_DELETEFAILEDSTART', 'Die Start-Kategorie kann nicht gelöscht werden');
 define('_ADMIN_FAILEDADDMODTOCAT', 'Fehler! Modul konnte nicht zur Kategorie hinzugefügt werden');
-define('_ADMIN_NOADMINLINKS', 'Die Administrationskategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil administrativer Zugriff auf ein Modul besteht, das nicht in der Standardkategorie ist.');
+define('_ADMIN_NOADMINLINKS', 'Diese Kategorie der Administration ist leer. Diese Meldung wird vermutlich angezeigt, weil entweder kein Modul in dieser Kategorie vorhanden ist. Oder weil kein administrativer Zugriff auf ein Modul besteht, das dieser Standardkategorie zugeordnet wurde.');
 
 // modify config
 define('_ADMIN_GENERALSETTINGS', 'Allgemein');
-define('_ADMIN_DISPLAYICONS', 'Icons in der Administration anzeigen');
+define('_ADMIN_DISPLAYICONS', 'Symbole in der Administration anzeigen');
 define('_ADMIN_DISPLAYNAMETYPE', 'Anzeige der Modulnamen'); 
 define('_ADMIN_DISPLAYNAMETYPE_DISPLAYNAME', 'Anzeigename'); 
 define('_ADMIN_DISPLAYNAMETYPE_REALNAME', 'Echter Name'); 
 define('_ADMIN_DISPLAYNAMETYPE_BOTH', 'Beides'); 
 define('_ADMIN_DISPLAYJSMENU', 'Javaskript-Menü anzeigen');
-define('_ADMIN_IGNOREINSTALLERCHECK', 'Installer-Check deaktivieren');
+define('_ADMIN_IGNOREINSTALLERCHECK', 'Installer-Prüfung deaktivieren');
 define('_ADMIN_IGNOREINSTALLERCHECKWARNING', 'WARNUNG: nur in Entwicklungsumgebungen setzen!');
 define('_ADMIN_PANELDISPLAYSETTINGS', 'Ansicht');
-define('_ADMIN_MODULESPERPAGE', 'Module pro Seite');
-define('_ADMIN_MODULESPERROW', 'Module pro Reihe');
+define('_ADMIN_MODULESPERPAGE', 'Modulsymbole pro Seite');
+define('_ADMIN_MODULESPERROW', 'Modulsymbole pro Reihe');
 define('_ADMIN_THEME', 'Theme für Administration');
 define('_ADMIN_THEMESITE', 'Theme der Webseite nutzen');
 define('_ADMIN_SKIN', 'Stylesheet für Administration');
-define('_ADMIN_STARTCATEGORY', 'Start-Kategorie');
-define('_ADMIN_DEFAULTCATEGORY', 'Default-Kategorie für neue Module');
+define('_ADMIN_STARTCATEGORY', 'Startkategorie');
+define('_ADMIN_DEFAULTCATEGORY', 'Standardkategorie für neue Module');
 
 // checks for install/upgrade files prior to admin panel being displayed
 define('_ADMIN_PSAKWARNING', 'Warnung! Zum Fortfahren bitte vorher das "Swiss army knife tool" im Root der Präsenz löschen');
-define('_ADMIN_INSTALLWARNING','Warnung! Zum Fortfahren bitte vorher die Datei "install.php" und den "install" Ordner im Root der Präsenz löschen');
-define('_ADMIN_UPGRADEWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade.php\') im Root der Präsenz löschen.'); 
-define('_ADMIN_UPGRADE10XWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade10xto11x.php\') im Root der Präsenz löschen.'); 
+define('_ADMIN_INSTALLWARNING','Warnung! Zum Fortfahren bitte vorher die Datei "install.php" und den "install" Ordner im Root der Installation löschen');
+define('_ADMIN_UPGRADEWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade.php\') im Root der Installation löschen.'); 
+define('_ADMIN_UPGRADE10XWARNING', 'Warnung! Zum Fortfahren bitte vorher das Upgradeskript (Datei \'upgrade10xto11x.php\') im Root der Installation löschen.'); 
 
 // Zikula Security Analyzer defines
-define('_ADMIN_UPGRADE_PHP','Hinweis: upgrade.php im Root der Präsenz sollte gelöscht werden!');
-define('_ADMIN_UPGRADE10X_PHP','Hinweis: upgrade10xto11x.php im Root der Präsenz sollte gelöscht werden!'); 
+define('_ADMIN_UPGRADE_PHP','Hinweis: upgrade.php im Root der Installation sollte gelöscht werden!');
+define('_ADMIN_UPGRADE10X_PHP','Hinweis: upgrade10xto11x.php im Root der Installation sollte gelöscht werden!'); 
 define('_ADMIN_CONFIG_PHP','Hinweis: config/config.php ist beschreibbar (ggfs. chmod 644 oder chmod 444 setzen)!');
 define('_ADMIN_MAGIC_QUOTES','Hinweis: <a href="http://php.net/magic_quotes">magic_quotes_gpc</a> ist aktiv!');
 define('_ADMIN_REGISTER_GLOBALS','Hinweis: <a href="http://php.net/register_globals">register_globals</a> ist aktiv!');

@@ -8,7 +8,7 @@
  * @license GNU/GPL - http://www.gnu.org/copyleft/gpl.html
  */
 
-define('_SYSINFO', 'System Information');
+define('_SYSINFO', 'Systeminformation');
 
 define('_SYSINFO_ADODB', 'ADODB Database Layer');
 define('_SYSINFO_ADODBVERSION', 'ADODB Version');
@@ -79,16 +79,16 @@ define('_SYSINFO_REASON', 'Grund');
 define('_SYSINFO_REQUIREDPHPEXT', 'Notwendige PHP Erweiterungen');
 
 define('_SYSINFO_SERVERINFO', 'Server Information:');
-define('_SYSINFO_SERVERENV', 'Server Environment');
+define('_SYSINFO_SERVERENV', 'Serverumgebung');
 define('_SYSINFO_STATUS', 'Status');
 define('_SUHOSIN_PATCH', 'Suhosin');
 define('_SYSINFO_SUMMARY', 'Zusammenfassung');
-define('_SYSINFO_SYSTEMSUMMARY', 'System Zusammenfassung');
+define('_SYSINFO_SYSTEMSUMMARY', 'Systemzusammenfassung');
 define('_SYSINFO_SYSSUMTEXT', 'Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href="http://code.zikula.org/community-german/wiki/Sicherheit">Zikula-Sicherheit</a>.');
 
 define('_SYSINFO_VERSION', 'Version');
 
-define('_SYSINFO_ZIKULA_EXTENSIONS', 'Zikula Extensions');
-define('_SYSINFO_ZIKULA_TEMP', 'Zikula pnTemp Check');
-define('_SYSINFO_ZIKULA_FILESYSTEM', 'Zikula Filesystem Check');
+define('_SYSINFO_ZIKULA_EXTENSIONS', 'Zikula Erweiterungen');
+define('_SYSINFO_ZIKULA_TEMP', 'Zikula pnTemp Prüfung');
+define('_SYSINFO_ZIKULA_FILESYSTEM', 'Zikula Dateisystemprüfung');
 define('_SYSINFO_ZIKULA_VERSION', 'Zikula Version:');

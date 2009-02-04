@@ -48,16 +48,16 @@ define('_GROUPS_ISDEFAULTUSERGROUP',           '(*) = Startgruppe - kann nicht g
 define('_GROUPS_MEMBERSHIP',                   'Gruppen-Mitgliedschaft');
 define('_GROUPS_NBUMAX',                       'Maximum');
 define('_GROUPS_NBUSERS',                      'Mitglieder');
-define('_GROUPS_PENDINGTITLE',                 'Ausstehende Bewerbungen');
+define('_GROUPS_PENDINGTITLE',                 'Ausstehende Anfragen');
 
 // modify config template
-define('_GROUPS_ADMMAILWARNING',               'E-Mail für neue Gruppen-Bewerbungen');
+define('_GROUPS_ADMMAILWARNING',               'E-Mail bei neuen Gruppenanfragen');
 define('_GROUPS_DEFAULTGROUP',                 'Startgruppe für registrierte Benutzer');
 define('_GROUPS_HIDECLOSEDGROUPS',             'Geschlossene Gruppen verstecken');
 
 // group applications template
-define('_GROUPS_DEFAULTACCEPTTEXT',            'Die Bewerbung für die Gruppe wurde akzeptiert, die entsprechenden Zugriffsrechte sind eingerichtet.');
-define('_GROUPS_DEFAULTDENYREASON',            'Die Bewerbung für die Gruppe wurde nicht akzeptiert.');
+define('_GROUPS_DEFAULTACCEPTTEXT',            'Die Anfrage für die Gruppe wurde akzeptiert, die entsprechenden Zugriffsrechte sind eingerichtet.');
+define('_GROUPS_DEFAULTDENYREASON',            'Die Anfrage für die Gruppe wurde nicht akzeptiert.');
 
 // group membership template
 define('_GROUPS_ADDUSER',                      'Benutzer zu Gruppe hinzufügen');
@@ -68,7 +68,7 @@ define('_GROUPS_UID',                          'User ID');
 // user pending template
 define('_GROUPS_REASON',                       'Grund');
 define('_GROUPS_SENDREASONBYMAIL',             'Grund/Benachrichtigung schicken');
-define('_GROUPS_USERAPPLICATION',              'Benutzer Bewerbung');
+define('_GROUPS_USERAPPLICATION',              'Benutzeranfrage');
 define('_GROUPS_USERAPPLICATIONTEXT',          'Benutzer Text');
 
 // errors/statuses
@@ -78,11 +78,11 @@ define('_GROUPS_ADDERROR',                     'Fehler beim Einrichten der Grupp
 define('_GROUPS_ALREADYEXISTS',                'Gruppe existiert bereits');
 define('_GROUPS_DEFAULTGROUPCANNOTBEDELETED',  'Die Startgruppe kann nicht gelöscht werden');
 define('_GROUPS_DELETEERROR',                  'Fehler beim Löschen der Gruppe ');
-define('_GROUPS_DENYTITLE',                    'Fehler! Die Bewerbung wurde abgelehnt ');
+define('_GROUPS_DENYTITLE',                    'Fehler! Die Anfrage wurde abgelehnt ');
 define('_GROUPS_DENYUSERFAILED',               'Ablehnung fehlgeschlagen');
 define('_GROUPS_MISSINGNAME',                  'Fehlender Gruppenname');
 define('_GROUPS_USERADDED',                    'Benutzer zu Gruppe hinzugefügt');
-define('_GROUPS_USERDENIED',                   'Bewerbung abgelehnt');
+define('_GROUPS_USERDENIED',                   'Anfrage abgelehnt');
 define('_GROUPS_USERNOTADDED',                 'Benutzer nicht zur Gruppe hinzugefügt');
 define('_GROUPS_USERREMOVED',                  'Benutzer aus der Gruppe entfernt');
 define('_GROUPS_USERREMOVEDERROR',             'Entfernen des Benutzers fehlgeschlagen');

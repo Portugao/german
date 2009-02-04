@@ -32,11 +32,11 @@ define('_PERMISSIONS_CHECK', 'prüfen');
 define('_PERMISSIONS_CHECKCOMPONENT', 'Komponente');
 define('_PERMISSIONS_CHECKINSTANCE', 'Instanz');
 define('_PERMISSIONS_CHECKLEVEL', 'Zugriffsrecht');
-define('_PERMISSIONS_CHECKPERMISSIONS', 'Benutzer-Berechtigung prüfen');
+define('_PERMISSIONS_CHECKPERMISSIONS', 'Benutzerberechtigung prüfen');
 define('_PERMISSIONS_CHECKRESULT', 'Ergebnis der Prüfung');
-define('_PERMISSIONS_DRAGANDDROPHINT','Die Zugriffsrechte können via "Drag and Drop" sortiert werden. Die Reihenfolge ist sofort gültig.');
+define('_PERMISSIONS_DRAGANDDROPHINT','Die Zugriffsrechte können mittels "Drag and Drop" sortiert werden. Die neue Reihenfolge muss nicht gespeichert werden, sondern ist sofort gültig.');
 define('_PERMISSIONS_GROUPPERMS','Gruppe');
-define('_PERMISSIONS_LOCKADMINLOCKEDHINT','Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>fixiert</strong>, kann also nicht editiert, verschoben oder gelöscht werden. Falls notwendig die Freigabe in der Konfiguration erteilen.');
+define('_PERMISSIONS_LOCKADMINLOCKEDHINT','Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>fixiert</strong>, kann also nicht editiert, verschoben oder gelöscht werden. Falls das dennoch notwendig sein sollte, kann die Sperre in der Modulkonfiguration aufgehoben werden.');
 define('_PERMISSIONS_LOCKADMINUNLOCKEDHINT','Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>nicht fixiert</strong>, kann also editiert, verschoben oder gelöscht werden. In der Konfiguration sollte die Fixierung aktiviert werden um Konfigurationsprobleme zu vermeiden.');
 define('_PERMISSIONS_PERMISSIONLOCKED', 'Dieses Zugriffsrecht ist fixiert, erst in der Konfiguration freigeben');
 define('_PERMISSIONS_PERMLEVEL','Zugriffsrecht');
@@ -59,8 +59,8 @@ define('_PERMISSIONS_ADMINPERMISSIONID', 'ID der generischen Admin-Berechtigung'
 define('_PERMISSIONS_DISPLAYWARNING','Infomeldung bei aktivem Filter anzeigen');
 define('_PERMISSIONS_ENABLEFILTER','Filter in der Ansicht aktivieren');
 define('_PERMISSIONS_LOCKADMINPERMISSION', 'Generische Admin-Berechtigung fixieren');
-define('_PERMISSIONS_ROWHEIGHTVIEW','Zeilenhöhe in Ansicht (min, in Pixel)');
-define('_PERMISSIONS_ROWHEIGHTEDIT','Zeilenhöhe in Beabeitung (min, in Pixel)');
+define('_PERMISSIONS_ROWHEIGHTVIEW','Zeilenhöhe in Ansicht (Minimum/in Pixel)');
+define('_PERMISSIONS_ROWHEIGHTEDIT','Zeilenhöhe in Beabeitung (Minimum/in Pixel)');
 
 // siernbar template
 define('_PERMISSIONS_PARTLY','TEILANSICHT :: aktiver Filter');
