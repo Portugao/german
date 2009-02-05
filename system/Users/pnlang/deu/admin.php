@@ -44,17 +44,17 @@ define('_USERS_CONFIRMDELETE', 'Soll der Benutzer wirklich gelöscht werden?');
 //  general settings
 define('_USERS_ANONYMOUSNAME','Name für unregistrierte Benutzer:');
 define('_USERS_GENERALSETTINGS', 'Einstellungen');
-define('_USERS_HASHMETHOD','Kennwort-Verschlüsselung (Default SHA256):');
+define('_USERS_HASHMETHOD','Kennwort-Verschlüsselung (Standard:SHA256):');
 define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
 define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
 define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-Mail\' eingestellt ist, muss die Option \'Eindeutige E-Mail-Adresse\' weiter unten mit \'Ja\' aktiviert sein.');
-define('_USERS_MINAGE','Mindestalter:');
+define('_USERS_MINAGE','Mindestalter (0=aus)');
 define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
 define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
 define('_USERS_SPAMQUESTION', 'Registrierungsfrage');
 define('_USERS_SPAMQUESTIONHINT', 'individuelle Fragen können helfen, Spamregistrierungen zu vermeiden');
 define('_USERS_SPAMANSWER', 'Registrierungsantwort');
-define('_USERS_SPAMANSWERHINT', 'Antwort auf die Spamprotect-Frage');
+define('_USERS_SPAMANSWERHINT', 'Antwort auf Spamschutz-Frage');
 
 //  registration options
 define('_USERS_ALLOWREGISTRATIONS','Registrierung von Accounts ermöglichen:');
@@ -65,7 +65,7 @@ define('_USERS_ILLEGALUSERAGENTS', 'Gesperrte Useragents: ');
 define('_USERS_REGISTRATIONSETTINGS','Benutzerregistrierung');
 define('_USERS_MODERATION','Benutzerregistrierung moderieren');
 define('_USERS_NOTIFYEMAIL','Info-Mail über neue Benutzer: ');
-define('_USERS_OPTIONALITEMS', 'Attribute anzeigen:');
+define('_USERS_OPTIONALITEMS', 'Attribute während Registrierung anzeigen:');
 define('_USERS_UNIQUEEMAIL','Eindeutige E-Mail-Adresse');
 define('_USERS_VERIFYEMAIL','E-Mail-Adresse während der Registrierung verifizieren ');
 define('_USERS_VERIFYEMAIL_YES_ACTIVEMAIL','Ja: Benutzer kann das Kennwort während der Registrierung wählen, muß den Account aber via Mail-Benachrichtung bestätigen');
