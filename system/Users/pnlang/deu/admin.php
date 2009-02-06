@@ -158,7 +158,7 @@ define('_USERS_NM_SEND_MAIL','Sende Mail');
 define('_USERS_NM_SIGNCONTAINS','und Signatur enthält:');
 define('_USERS_NM_SUBJECT','Betreff:');
 define('_USERS_NM_TESTING','Teste...');
-define('_USERS_NM_TESTONLY','nur zum Testen.');
+define('_USERS_NM_TESTONLY','Nur ein Testlauf');
 define('_USERS_NM_USERGROUPIS','und Benutzergruppe ist:');
 define('_USERS_NM_USERNAMEIS', 'Benutzername ist:');
 define('_USERS_NM_USERNAMECONTAINS','Benutzername enthält:');
