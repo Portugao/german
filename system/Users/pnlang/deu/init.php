@@ -77,4 +77,6 @@ define('_USER_2_ae','0');
 define('_USER_2_af','1');
 
 define('_USER_REGDISABLED', 'Die Registrierung ist derzeit nicht aktiviert.');
+define('_USERS_OBJECTDATAMINVERSION102', 'Das Modul ObjectData muss, vor der Aktualisierung des Users-Moduls, auf die Version v1.02 aktualisiert werden!');
+define('_USERS_PROFILEMODULENEEDED', 'Das Modul Profile muss für diesen Upgradeschritt installiert und verfügbar sein.');
 

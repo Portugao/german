@@ -47,5 +47,5 @@ define('_GROUPS_DOESNTEXISTS',                 'Diese Gruppe existiert nicht');
 define('_GROUPS_ISCLOSED',                     'Die Gruppe ist geschlossen');
 define('_GROUPS_ISFULL',                       'Die Gruppe ist voll');
 define('_GROUPS_LOGINLONG',                    'Nur registrierte und angemeldete Benutzer können die Mitgliedschaft beantragen');
-define('_GROUPS_MUSTCONFIRM',                  'Die Checkbox muß als Bestätiugung markiert sein');
+define('_GROUPS_MUSTCONFIRM',                  'Die Checkbox muss aktiviert sein');
 define('_GROUPS_SUBUPDATEOK',                  'Aktion gespeichert');
