@@ -9,6 +9,11 @@
  */
 
 // change account data 
+define('_USERS_SENDMAILHINT', 'Die folgende E-Mail wird an die eigene E-Mailadresse verschickt. Sämtliche Empfänger sind unter Blindkopie aufgeführt. Die Anzahl der Blindkopie-Empfänger je Mail kann in den Einstellungen festgelegt werden. Falls die Anzahl der ausgewählten Benutzer größer als dieser Wert ist, wird je Vorgang eine zusätzliche Mail erstellt. Die maximale Anzahl der Vorgänge hängt vom jeweiligem Hoster ab!');
+define('_USERS_MAILINFOINSUFFICIENT', 'Ein oder mehrere benötigte Informationen zum Versenden einer E-Mail fehlen!');
+define('_USERS_SEARCHANDMAILUSERS', 'Suche und Benutzer anschreiben');
+define('_USER_NORECIPIENTS', 'Kein Empfänger ausgewählt');
+define('_USERS_EMAILSSENT', '%mailssent% E-Mail(s) wurde(n) an %count% Benutzer verschickt');
 define('_USERS_ACCOUNTSETTINGS', 'Benutzerkonten-Einstellungen'); 
 define('_USERS_ACCOUNTDISPLAYGRAPHICS', 'Icons auf der Profilseite anzeigen');
 define('_USERS_ACCOUNTLINKSPERPAGE', 'Einträge pro Seite');
@@ -151,7 +156,7 @@ define('_USERS_NM_REGDATEBEFORE','und Registrierungs-Datum ist vor:<br />(yyyy-m
 define('_USERS_NM_REPLYTOADDRESS','Antwort-an-Adresse:');
 define('_USERS_NM_RESET','zurücksetzen');
 define('_USERS_NM_SEND','Senden');
-define('_USERS_NM_SEND2','Mails pro Seite');
+define('_USERS_NM_SEND2','Mails pro Lauf');
 define('_USERS_NM_SENDING','Sende...');
 define('_USERS_NM_SENDNEXTPAGE','Sende nächste Seite');
 define('_USERS_NM_SEND_MAIL','Sende Mail');
