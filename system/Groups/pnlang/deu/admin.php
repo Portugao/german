@@ -61,7 +61,7 @@ define('_GROUPS_DEFAULTDENYREASON',            'Die Anfrage für die Gruppe wurde
 
 // group membership template
 define('_GROUPS_ADDUSER',                      'Benutzer zu Gruppe hinzufügen');
-define('_GROUPS_NOMOREUSERS',                  'Für die Gruppe verfügbare Benutzer.');
+define('_GROUPS_NOMOREUSERS',                  'Keine Benutzer für diese Gruppe verfügbar.');
 define('_GROUPS_REMOVEUSER',                   'Benutzer entfernen');
 define('_GROUPS_UID',                          'User ID');
 

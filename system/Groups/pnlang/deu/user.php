@@ -31,8 +31,8 @@ define('_GROUPS_VIEWMEMBERS',                  'Mitglieder anzeigen');
 
 // membership template
 define('_GROUPS_APPLYTEXT',                    'Kommentar zur Anfrage');
-define('_GROUPS_SUBSCRIBETO',                  'Anfrage für Gruppe : ');
-define('_GROUPS_UNSUBSCRIBEFROM',              'Austreten aus der Gruppe ');
+define('_GROUPS_SUBSCRIBETO',                  'Anfrage für Gruppe');
+define('_GROUPS_UNSUBSCRIBEFROM',              'Austreten aus der Gruppe');
 
 // members list template
 define('_GROUPS_USRAVATAR',                    'Avatar');
