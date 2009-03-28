@@ -28,7 +28,7 @@ define('_THEME_NEW_DISABLED', 'Theme-Erzeugung deaktiviert da das Verzeichnis ni
 define('_THEME_REGENERATE', 'Themeliste neu einlesen');
 define('_THEME_VIEWTHEMES', 'Themes anzeigen');
 define('_THEME_CREATETHEME', 'Theme anlegen');
-define('_THEME_MODIFYTHEME', 'Theme berabeiten');
+define('_THEME_MODIFYTHEME', 'Theme bearbeiten');
 define('_THEME_DELETETHEME', 'Theme löschen');
 define('_THEME_CONFIRMDELETETHEME', 'Soll das Theme wirklich gelöscht werden?');
 define('_THEME_CREATEPAGECONFIGURATIONASSIGNMENT', 'Seitenkonfiguration Zuordnung anlegen');
