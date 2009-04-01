@@ -24,7 +24,7 @@ define('_GROUPS_UNLIMITED',                    'Unbegrenzt');
 define('_GROUPS_EXTRAS',                       'Extras');
 define('_GROUPS_FUNCTIONS',                    'Funktionen');
 define('_GROUPS_NBMAXSHORT',                   'Max Benutzer');
-define('_GROUPS_NOGROUPSAVAILABLE',            'Keine Gruppen zur Anfragen verfügbar.');
+define('_GROUPS_NOGROUPSAVAILABLE',            'Keine anzufragenen Gruppen verfügbar.');
 define('_GROUPS_SUBSCRIBE',                    'Anfragen');
 define('_GROUPS_UNSUBSCRIBE',                  'Austreten');
 define('_GROUPS_VIEWMEMBERS',                  'Mitglieder anzeigen');

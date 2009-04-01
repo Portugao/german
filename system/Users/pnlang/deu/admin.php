@@ -34,7 +34,7 @@ define('_USERS_USERS', 'Benutzer');
 
 // navigation
 define('_USERS_DYNAMICDATA','Profilverwaltung');
-define('_USERS_PENDINGAPPLICATIONS', 'Wartende Anmeldungen');
+define('_USERS_PENDINGAPPLICATIONS', 'Wartende Registrierungen');
 define('_MODIFYUSERSCONFIG', 'Konfiguration modifizieren');
 define('_SEARCHUSERS', 'Benutzer suchen');
 define('_USERS_MAILUSERS', 'Benutzer anschreiben'); 
@@ -54,7 +54,6 @@ define('_USERS_IMAGEPATH','Pfade für die Bilder der Benutzerebene');
 define('_USERS_LOGINVIA', 'Benutzernanmeldung über (E-Mail-Adresse nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich) ');
 define('_USERS_UNIQUEMAILADDRESSWARNING', 'Falls \'Benutzeranmeldung\' auf \'E-Mail\' eingestellt ist, muss die Option \'Eindeutige E-Mail-Adresse\' weiter unten mit \'Ja\' aktiviert sein.');
 define('_USERS_MINAGE','Mindestalter (0=aus)');
-define('_USERS_PASSWDLEN','Mindestlänge für Kennwort:');
 define('_USERS_SAVELASTLOGINDATE', 'Letzte Benutzeranmeldung in Datenbank speichern');
 define('_USERS_SPAMQUESTION', 'Registrierungsfrage');
 define('_USERS_SPAMQUESTIONHINT', 'individuelle Fragen können helfen, Spamregistrierungen zu vermeiden');
@@ -107,7 +106,7 @@ define('_USERS_SELECTALL','Alle wählen');
 define('_USERS_VIEWAPPLICATIONS', 'Benutzeranmeldungen anzeigen');
 define('_USERS_APPROVEUSERAPPLICATION','Neue Benutzer bestätigen');
 define('_USERS_APPROVEUSERAPPLICATIONBUT','Bestätigen');
-define('_USERS_CONFIRMAPPLICATION', 'Neuen Benutzer akzeptieren');
+define('_USERS_CONFIRMAPPLICATION', 'Aktion durchführen');
 define('_USERS_DENYUSERAPPLICATION', 'Neuen Benutzer ablehnen');
 
 // application details template

@@ -12,3 +12,4 @@
 define('_USERS_INVALIDEMAIL','Problem mit der angegebenen E-Mail-Adresse!');
 define('_USERS_PASSDIFFERENT','Die beiden Kennwörter sind nicht identisch . Bitte identisches Kennwort wiederholen.');
 
+define('_USERS_PASSWDLEN','Mindestlänge für Kennwort');
