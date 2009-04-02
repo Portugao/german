@@ -18,13 +18,13 @@ define('_MODULES_STANDARDHOOKS', 'Standard Hook Einstellungen');
 
 // module dependencies
 define('_MODULES_DEPENDENCYSTATE', 'Level');
-define('_MODULES_DEPENDENCY_NOTFOUND', 'Nicht im System gefunden');
-define('_MODULES_DEPENDENCY_NOTFOUNDREGENERATE', 'Sicherstellen, dass das Modul im System verfügbar ist (und die Liste regeneriert wird!)');
+define('_MODULES_DEPENDENCY_NOTFOUND', 'Konnte im System nicht gefunden werden');
+define('_MODULES_DEPENDENCY_NOTFOUNDREGENERATE', 'Bitte sicherstellen, dass das Modul im System verfügbar ist und die Modulliste neu eingelesen wird!)');
 define('_MODULES_DEPENDENCY_REQUIRED', 'notwendig');
 define('_MODULES_DEPENDENCY_OPTIONAL', 'optional');
 define('_MODULES_DEPENDENCY_RECOMMENDED', 'empfohlen');
-define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten die vom derzeitigen System nicht erfüllt werden.');
-define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind, werden bei Entfernung des Moduls ebenfalls entfernt.');
+define('_MODULES_HASDEPENDENCIES', 'Das Modul hat Abhängigkeiten, die vom derzeitigen System nicht erfüllt werden.');
+define('_MODULES_REMOVEDEPENDENTS', 'Das Modul ist mit anderen Modulen verknüpft. Module, die als notwendige Abhängigkeit gelistet sind, werden bei Entfernung des Moduls ebenfalls entfernt.');
 
 // errors, warnings and statuses
 define('_MODULES_HASBLOCKSLEFT', 'Für dieses Modul sind noch Blöcke aktiv, die vorher entfernt werden müssen!');
