@@ -22,7 +22,7 @@ define('_DATEFIRSTWEEKDAY', 1); // 0 = Sunday, 1 Monday and so on
 define('_DAY_OF_WEEK_LONG','Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag');
 define('_DAY_OF_WEEK_SHORT','Son Mon Die Mit Don Fre Sam');
 define('_MONTH_LONG','Januar Februar März April Mai Juni Juli August September Oktober November Dezember');
-define('_MONTH_SHORT','Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec');
+define('_MONTH_SHORT','Jan Feb Mar Apr Mai Jun Jul Aug Sep Okt Nov Dez');
 define('_TIME', 'Zeit');
 define('_TIMEBRIEF','%H:%M');
 define('_TIMELONG','%T %p');
