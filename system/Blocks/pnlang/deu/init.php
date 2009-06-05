@@ -16,8 +16,6 @@ define('_BLOCKS_CENTERBLOCKS', 'Blöcke Mitte');
 define('_BLOCKS_MENU_TITLE', 'Navigation');
 define('_BLOCKS_MENU_1LINK', 'Startseite');
 define('_BLOCKS_MENU_1TITLE', 'Zurück zur Homepage');
-define('_BLOCKS_MENU_2LINK', 'Benutzerprofil');
-define('_BLOCKS_MENU_2TITLE', 'Individuelle Profilseite');
 define('_BLOCKS_MENU_3LINK', 'Administration');
 define('_BLOCKS_MENU_3TITLE', 'Administration der Seite');
 define('_BLOCKS_MENU_4LINK', 'Abmeldung');
