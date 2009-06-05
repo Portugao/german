@@ -377,7 +377,7 @@ define('_CHOOSEMODULE', 'Modul wählen');
 define('_CHOOSETABLE', 'Tabelle wählen');
 define('_CHOOSEONE', 'Bitte auswählen');
 define('_ENABLECATEGORIZATION', 'Kategorisierung aktivieren');
-define('_NOASSIGNECATEGORIES', 'Keine Kategorie zugeordnet'); 
+define('_NOASSIGNEDCATEGORIES', 'Keine Kategorie zugeordnet'); 
 define('_MODULECATEGORY', 'Modulkategorie');
 define('_MODULECATEGORY_LC', 'Modulkategorie');
 define('_MODULECATEGORIES', 'Modulkategorien');
