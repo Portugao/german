@@ -93,6 +93,7 @@ define('_CATEGORIES_MOVE_TITLE',              'Kategorie verschieben');
 // copy template
 define('_CATEGORIES_COPY_DESCRIPTION',        'Diese Kategorie und ihre Unterkategorien unter folgende Kategorie kopieren');
 define('_CATEGORIES_COPY_TITLE',              'Kategorie kopieren');
+define('_CATEGORIES_COPY_NAME',               'Kopie von'); 
 
 // modify config template
 define('_CATEGORIES_CONFIG_REBUILD',          'Hier können alle systeminternen Pfade neu erstellt werden');
