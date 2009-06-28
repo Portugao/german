@@ -11,6 +11,7 @@
 // help texts
 define('_BLOCKS_ADMINHINT1', 'Dies ist eine Liste aller im System befindlichen bzw. aktiven Blöcke (abhängig von der Option  \'Alle Blöcke zeigen\' oder \'Aktive Blöcke zeigen\' im oberen Abschnitt dieser Seite). Diese Liste stellt nicht die Sortierung innerhalb der Blockpositionen dar. Um diese einzustellen, weiter nach unten scrollen (oder <a href="#blockpositions">hier</a> klicken) und dann eine Blockposition bearbeiten.');
 define('_BLOCKS_ADMINHINT2', 'Diese Liste zeigt alle erstellten Blockpositionen. Um eine Blockposition zu bearbeiten oder die Sortierung der Blöcke innerhalb eine Blockposition zu ändern, auf das Icon zur Bearbeitung klicken.');
+define('_BLOCKS_ADMINHINT3', 'Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_).');
 
  // singular/plural
 define('_BLOCKS_BLOCK', 'Block');

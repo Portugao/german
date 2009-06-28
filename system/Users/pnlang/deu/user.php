@@ -56,14 +56,16 @@ define('_USERS_PASSWDAGAIN','Kennwort (Wiederholung)');
 define('_USERS_PASSWILLSEND','Hinweis: Das Kennwort wird an die hinterlegte E-Mail-Adresse gesendet');
 define('_USERS_REGANSWERINCORRECT', 'Die Antwort auf die Spamschutzfrage ist nicht korrekt');
 define('_USERS_REGNEWUSER','Benutzer-Registrierung');
-define('_USERS_REGISTRATIONAGREEMENT','Einverständniserklärung zu den <a href="%touurl%">Allgemeinen Nutzungsbedingungen</a> und den <a href="%ppurl%">Hinweisen zum Datenschutz</a>');
+define('_USERS_REGISTRATIONAGREEMENT','Einverständniserklärung zu den <a href="%touurl%">Nutzungsbedingungen</a> und der <a href="%ppurl%">Erklärung zum Datenschutz</a>');
+define('_USERS_REGISTRATIONAGREEMENTTOU','Ich bin mit den <a href="%touurl%">Nutzungsbedingungen</a> einverstanden.');
+define('_USERS_REGISTRATIONAGREEMENTPP','Ich bin mit der <a href="%ppurl%">Erklärung zum Datenschutz</a> einverstanden.');
 define('_USERS_REGISTRATIONCHECK', 'Angaben prüfen');
 define('_USERS_REQUIREDLABEL', '*'); 
 define('_USERS_REQUIREDTEXT', 'Mit (*) markierte Angaben sind erforderlich.'); 
 
 // terms of use (tied to the legal module
-define('_USERS_CONFIRMTERMSOFUSEHINT', 'Die Allgemeinen Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Allgemeinen Nutzungsbedingungen nicht akzeptiert wurden ist keine Anmeldung möglich.');
-define('_USERS_CONFIRMTERMSOFUSE', 'Ich akzeptiere die <a href="' . pnConfigGetVar('entrypoint', 'index.php') . '?module=Legal&amp;func=termsofuse">Allgemeinen Nutzungsbedingungen</a>');
+define('_USERS_CONFIRMTERMSOFUSEHINT', 'Die Nutzungsbedingungen wurden aktualisiert, bitte lesen und durch Markierung der Checkbox akzeptieren. Solange die Nutzungsbedingungen nicht akzeptiert wurden ist keine Anmeldung möglich.');
+define('_USERS_CONFIRMTERMSOFUSE', 'Ich akzeptiere die <a href="' . pnConfigGetVar('entrypoint', 'index.php') . '?module=Legal&amp;func=termsofuse">Nutzungsbedingungen</a>');
 
 // finished registration template
 define('_USERS_RETURNTOSTART', 'Zurück zur Startseite');
@@ -89,7 +91,9 @@ define('_USERS_EMAILDOMAINBANNED','Fehler! Domain ist für Registrierung gesperrt
 define('_USERS_EMAILREGISTERED','Fehler! Die E-Mail-Adresse wurde bereits registriert');
 define('_USERS_EMAILSDIFF','Fehler! Die beiden E-Mail-Adressen sind unterschiedlich');
 define('_USERS_ERRORINREQUIREDFIELDS', 'Fehler! Ein Pflichfeld ist leer bzw. nicht gesetzt');
-define('_USERS_ERRORMUSTAGREE','Fehler! Für die Registrierung muss den Allgemeinen Nutzungsbedingungen und der Erklärung zum Datenschutz zugestimmt werden');
+define('_USERS_ERRORMUSTAGREE','Fehler! Für die Registrierung muss den Nutzungsbedingungen und der Erklärung zum Datenschutz zugestimmt werden.');
+define('_USERS_ERRORMUSTAGREETOU','Fehler! Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden.');
+define('_USERS_ERRORMUSTAGREEPP','Fehler! Für die Registrierung muss der Erklärung zum Datenschutz zugestimmt werden.');
 define('_USERS_INVALIDREGCODE','Fehler! Der Registrierungscode ist ungültig');
 define('_USERS_LOGININCOMPLETE', 'Anmeldung nicht vollständig, bitte Hinweis lesen');
 define('_USERS_LOGININCORRECT','Fehler! Falscher Benutzername bzw. ungültiges Kennwort');
@@ -129,7 +133,7 @@ define('_USERS_REGTEXT', 'Ein Benutzerkonto bei %s% kann in wenigen Schritten ei
 define('_USERS_REG_STEP1', 'Schritt 1: Benutzername wählen');
 define('_USERS_REG_STEP2', 'Schritt 2: E-Mail-Adresse angeben');
 define('_USERS_REG_STEP2_WITHPASSWORD', 'Schritt 2: E-Mail-Adresse und Kennwort angeben');
-define('_USERS_REG_STEP3', 'Schritt 3: Angaben zum Datenschutz, Nutzungsbedingungen und Hinweise zum Datenschutz bestätigen');
+define('_USERS_REG_STEP3', 'Schritt 3: Angaben zur Datenschutzerklärung und den Nutzungsbedingungen bestätigen');
 define('_USERS_REG_STEP4_ADDITIONALINFO', 'Schritt 4: Optionale Angaben');
 define('_USERS_REG_STEP4_SPAM', 'Schritt 4: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten');
 define('_USERS_REG_STEP5_SPAM', 'Schritt 5: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten');
