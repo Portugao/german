@@ -10,4 +10,4 @@
 
 // Modules
 define('_MODULES_1_c','Module');
-define('_MODULES_1_d','Modulkonfiguration');
+define('_MODULES_1_d','Moduladministration und Schnittstelle für das Hinzufügen, Entfernen und Verwalten von Core- und Zusatzmodulen.');
