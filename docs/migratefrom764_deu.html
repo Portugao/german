@@ -3,28 +3,37 @@
     <head>
         <title>PostNuke Upgrade-Anleitung</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <link rel="stylesheet" href="style.css" type="text/css" media="screen"  />
+            <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
             </head>
 
             <body>
 
-                <h1>PostNuke .764 -> Zikula 1.1.2 Upgrade-Anleitung</h1>
+                <h1>PostNuke .764 -&gt; Zikula 1.1.2 Upgrade-Anleitung</h1>
 
                 <em><strong>Hinweis: Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application Framework. Bitte vor dem Fortfahren, die Inhalte sorgfältig durchlesen.</strong></em>
                 <p>Eine ausführliche und stets aktuelle Installations- und Upgradeanleitung steht auch im <a href="http://code.zikula.org/community-german/">Deutschen Dokumentationsprojekt</a> zur Verfügung.</p>
 
                 <h2>Wichtig</h2>
-                <p>Diese Anweisungen beziehen sich auf die Migration von PostNuke zu Zikula, wofür eine spezielle <strong><a href='http://code.zikula.org/core/wiki/downloads#PostNukeMigrationDistributionbasedon1.1.2'>Migrationsdistribution</a></strong> zur Verfügung steht. Falls die vorhandene PostNuke-Version älter als .764 sein sollte, so ist unbedingt eine Aktualisierung auf PostNuke .764 (<a href='http://www.postnuke.com/module-Content-view-pid-2.html' title="The PostNuke Legacy Site">Download</a>) notwendig. Migrationen ausgehend von älteren PostNuke-Versionen werden nicht unterstützt.</p>
-                <p>Falls bereits eine Zikula-Version vorhanden sein sollte, so ist die <a href='upgrade_deu.html'>Standard Upgradeanleitung</a> zu nutzen.</p>
-
+                <p>
+                    Diese Anweisungen beziehen sich auf die Migration von PostNuke zu Zikula, wofür eine spezielle <strong><a href='http://code.zikula.org/core/wiki/downloads#PostNukeMigrationDistributionbasedon1.1.2'>Migrationsdistribution</a></strong> zur Verfügung steht. Falls die vorhandene PostNuke-Version älter als .764 sein sollte, so ist unbedingt eine Aktualisierung auf PostNuke .764 (<a href='http://www.postnuke.com/module-Content-view-pid-2.html' title="The PostNuke Legacy Site">Download</a>) notwendig. Migrationen ausgehend von älteren PostNuke-Versionen werden nicht unterstützt.
+                </p>
+                <p>
+                    Falls bereits eine Zikula-Version vorhanden sein sollte, so ist die <a href='upgrade_deu.html'>Standard Upgradeanleitung</a> zu nutzen.
+                </p>
 
                 <h2>Erstellen einer Testumgebung</h2>
 
-                <p>Sicherlich ist die Erstellung einer Testumgebung zeitraubend und mit viel Aufwand verbunden. Doch es ist die beste Möglichkeit eine Migration zu testen, bevor man sich an das Echtsystem wagt.</p>
-                <p>Testumgebungen können z.B. mittels lokalem Webserver (z.B. XAMPP) oder in einem Unterverzeichnis auf dem Webserver eingerichtet werden. Falls der aktuelle Webserver genutzt wird, kann man auch die vorhandene Datenbank weiternutzen. Jedoch sollte man darauf achten, für die Testumgebung einen anderen Tabellenpräfix auszuwählen, damit die Tabellen der verschiedenen Installationen nicht miteinander kollidieren.</p>
+                <p>
+                    Sicherlich ist die Erstellung einer Testumgebung zeitraubend und mit viel Aufwand verbunden. Doch es ist die beste Möglichkeit eine Migration zu testen, bevor man sich an das Echtsystem wagt.
+                </p>
+                <p>
+                    Testumgebungen können z.B. mittels lokalem Webserver (z.B. XAMPP) oder in einem Unterverzeichnis auf dem Webserver eingerichtet werden. Falls der aktuelle Webserver genutzt wird, kann man auch die vorhandene Datenbank weiternutzen. Jedoch sollte man darauf achten, für die Testumgebung einen anderen Tabellenpräfix auszuwählen, damit die Tabellen der verschiedenen Installationen nicht miteinander kollidieren. Dies ist ein manueller Vorgang und sollte sehr sorgfältig durchgeführt werden.
+                </p>
 
                 <h2 id="Upgrade764">1 Aktualisierung von PostNuke v0.764</h2>
-                <p>Bitte die folgenden Schritte in der aufgeführten Reihenfolge abarbeiten und die jeweilige Beschreibung vorab gründlich durchlesen. Werden die Anweisungen befolgt, sollten keine Probleme auftreten.</p>
+                <p>
+                    Bitte die folgenden Schritte in der aufgeführten Reihenfolge abarbeiten und die jeweilige Beschreibung vorab gründlich durchlesen. Werden die Anweisungen befolgt, sollten keine Probleme auftreten.
+                </p>
                 <ul>
                     <li><a href="#Backup">1.1 Datenbank und Dateisystem sichern</a></li>
                     <li><a href="#Prepare">1.2 v0.7x Installation vorbereiten</a></li>
@@ -34,9 +43,11 @@
                 </ul>
 
                 <h3 id="Backup">1.1 Datenbank und Dateisystem sichern</h3>
-                <p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
+                <p>
+                    Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
                     Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden.
-                Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
+                    Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.
+                </p>
 
                 <h3 id="Prepare">1.2 V0.7x Installation vorbereiten</h3>
                 <p>Als Administrator in der PostNuke-Seite anmelden und unbedingt sicherstellen, dass die folgenden Module installiert und aktiviert sind:</p>
@@ -51,23 +62,26 @@
                     <li>Mailer</li>
                     <li>Permissions</li>
                     <li>pnRender</li>
-                    <li>Profile</li>
                     <li>Search</li>
                     <li>Settings</li>
                     <li>User</li>
                     <li>Xanthia</li>
+                    <li>Your_Account</li>
                 </ol>
 
                 <p>Weitere Module sind optional, da der Core von Zikula auf die notwendigsten Module eingeschränkt wurde. Die sonstigen Module aus einer alten PostNuke-Installation können später getrennt von der Upgraderoutine aktualisiert werden. Dafür steht unter anderem das Paket mit den ValueAddons (Download unter code.zikula.org/core) zur Verfügung. Sobald dieser Schritt abgeschlossen wurde, kann die Datenbank aktualisiert werden.</p>
                 <p>Löschen Sie schlussendlich alle Dateien der PostNuke v.07x-Installation, da die Dateistruktur in Zikula enorm verändert wurde. Vorsichtshalber können die Dateien temporär in ein Backup-Verzeichnis ausserhalb der Installation verschoben werden, aus welchen vereinzelt Dateien (Bilder, Downloads, Module, Themes oder Plugins) nach dem erfolgtem Upgrade zurückgesichert werden können. Nachdem sämtliche .7x-Dateien entfernt wurden, können die Dateien von Zikula hochgeladen werden. Bitte beachtem dass das pnTemp-Verzeichnis inkl. Unterverzeichnisse beschreibbar gemacht werden muss (chmod -R 777).</p>
+                <p>Einige Provider verbieten spezielle Parameter in der Datei .htaccess. Falls beim Aufruf der Seiten der Fehler "500 Internal Server Error" erscheinen sollte, so kann die Datei gefahrlos gelöscht werden. Die benötigten Konfigurationen könnte (abhängig vom Provider) auch über die php.ini definiert werden. Bitte dann den Provider auf die Möglichkeiten der Deaktivierung von <em>register_globals</em> und <em>magic_quotes_gpc</em> ansprechen. Alternativ einen Blick in das deutsche Doku-Wiki werfen.</p>
 
                 <h3 id="Config">1.3 config.php aktualisieren</h3>
                 <p>Der Speicherort der config.php wurde in das Verzeichnis /config verschoben. In der mitgelieferten Originaldatei müssen in folgende Zeilen die Zugangsdaten für die Datenbank manuell eingepflegt werden:</p>
 
-                <pre>$PNConfig['System']['prefix']
+                <pre>
+                    $PNConfig['System']['prefix']
                     $PNConfig['DBInfo']['default']['dbuname']
                     $PNConfig['DBInfo']['default']['dbpass']
-                $PNConfig['DBInfo']['default']['dbname']</pre>
+                    $PNConfig['DBInfo']['default']['dbname']
+                </pre>
 
                 <p>Wurden verschlüsselte Werte aus der config.php von PostNuke eingefügt, muss folgende Zeile abgeändert werden:</p>
                 <pre>$PNConfig['DBInfo']['default']['encoded'] = 1;</pre>
@@ -76,23 +90,6 @@
                 <pre>$PNConfig['System']['installed'] = 1;</pre>
 
                 <p>Wenn nicht mit den Standardwerten gearbeitet wird, wird es in einigen Fällen auch notwendig sein, den Datenbanktyp, Table und Host zu bearbeiten. Das ist jedoch eher die Ausnahme und unter anderem auch Providerabhängig.</p>
-
-                <h3 id="ChangeMigDist">1.35 Notwendigen Anpassungen für die Migrationsdistribution</h3>
-                <p>Seit der Veröffentlichung der Migrationsdistribution wurden einige Optimierungsmöglichkeiten entdeckt. Die folgenden Änderungen sollten vor dem Ausführen des Upgradeskriptes vorgenommen werden.</p>
-
-                <b>system/Users/pninit.php</b>
-                <p>Folgende Zeilen auskommentieren:</p>
-                <pre>function users_migrate_userdatafields76x_post()
-                    {
-                    /*
-                    if (!pnModAvailable('Profile')) {
-                    return true;
-                    }
-                */</pre>
-
-                <b>modules/Profile/pnversion.php</b>
-                <p>Die folgende Zeile hinter $modversion['version'] hinzufügen</p>
-                <pre>$modversion['profile']        = '1';</pre>
 
                 <h3 id="Run">1.4 Upgrade durchführen</h3>
                 <p>Um die Datenbank zu aktualisieren muss die Datei upgrade.php im Browser aufgerufen werden. Hier werden auch Benutzername und Kennwort der vorhandenen PostNuke-Installation benötigt. Danach müssen nur noch die Anweisungen in dem Skript befolgt werden.</p>
@@ -108,8 +105,8 @@
                 <p>Herzlichen Glückwunsch. Das Upgrade ist vollständig durchgeführt. Wir wünschen viel Spaß mit der neuen Zikula-Version.</p>
 
                 <p>
-                    <strong>Das deutsche Zikula-Team<br /><a href="http://zikula.de/">zikula.de</a></strong>
-                    </p>
+                    <strong>Das deutsche Zikula-Team (<a href="http://zikula.de/">zikula.de</a>)</strong>
+                </p>
 
-                </body>
-            </html>
+            </body>
+        </html>
