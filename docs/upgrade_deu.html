@@ -1,112 +1,115 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
-        <title>Zikula Upgrade-Anleitung</title>
+        <title>Zikula Upgradeanleitung</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    </head>
+            <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+            </head>
 
-    <body>
-        <h1>Zikula Upgrade-Anleitung</h1>
-        <em><strong>Hinweis: Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application Framework. Bitte vor dem Fortfahren, die Inhalte sorgfältig durchlesen.</strong></em>
-        <p>Eine ausführliche und permanent gepflegte Installations- und Upgradeanleitung steht auch im <a href="http://code.zikula.org/community-german/">Deutschen Dokumentationsprojekt</a> zur Verfügung.</p>
+            <body>
+                <h1>Zikula Upgrade-Anleitung</h1>
 
-        <h2>Inhaltsverzeichnis</h2>
-        <ul>
-            <li><a href="#Warning">1. Warnung</a></li>
-            <li><a href="#Server">2. Serverumgebung</a></li>
-            <li><a href="#Upgrade764">3. Migration von PostNuke v0.764</a></li>
-            <li><a href="#Upgrade10x">4. Aktualisierung von Zikula v1.0.x</a></li>
-            <li><a href="#Upgrade11x">5. Patchen von Zikula 1.1.x</a></li>
-            <li><a href="#Themes">6. Themes aktualisieren</a></li>
-            <li><a href="#Final">7. Abschlussbemerkung</a></li>
-        </ul>
+                <h2>Wichtig</h2>
+                <p>
+                    Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application Framework. Bitte vor dem Fortfahren die Inhalte sorgfältig durchlesen! Natürlich wurde versucht hier sämtliche Informationen für ein erfolgreiches Upgrade aufzunehmen. Doch in unserem <a href="http://code.zikula.org/community-german/">deutschen DokuWiki</a> können Ergänzungen schneller und aktueller gepflegt werden. Daher wird empfohlen, vor einem Upgrade auch die dortigen Anleitungen zu sichten.
+                </p>
 
-        <h2 id="Warning">1. Warning</h2>
-        <p>Eine Migration dieser Version auf Basis einer PostNuke-Installation kann nur durchgeführt werden, wenn PostNuke in der Version 0.764 oder größer vorliegt. Migrationen von älteren Versionen werden nicht unterstützt. Bitte beachten, dass die PostNuke-Versionen nicht mehr unterstützt werden.</p>
+                <h2>Inhaltsverzeichnis</h2>
+                <ul>
+                    <li><a href="#Warning">1. Warnung</a></li>
+                    <li><a href="#Server">2. Serverumgebung</a></li>
+                    <li><a href="#Upgrade764">3. Migration von PostNuke v0.764</a></li>
+                    <li><a href="#Upgrade10x">4. Aktualisierung von Zikula v1.0.x</a></li>
+                    <li><a href="#Upgrade11x">5. Patchen von Zikula 1.1.x</a></li>
+                    <li><a href="#Themes">6. Themes aktualisieren</a></li>
+                    <li><a href="#Final">7. Abschlussbemerkung</a></li>
+                </ul>
 
-        <h2 id="Server">2. Serverumgebung</h2>
-        <p>Im Vergleich zu anderen Web-Frameworks stellt Zikula wenige Anforderungen an den Webserver. Es unterstützt PHP5 und das noch weit verbreitete PHP4. Es benötigt keine eigene Datenbank für die Anwendung, sondern erlaubt, Datenbanktabellen mit Präfixen zu verwenden. Zikula benötigt mindestens:</p>
-        <ul>
-            <li>Webserver: Apache 2 (empfohlen) oder Apache 1.3, IIS, Lighttpd oder andere</li>
-            <li>Programmiersprache: PHP ≥ 4.4 (empfohlen: 5.x)</li>
-            <li>Datenbank: MySQL, Oracle, MSSQL oder PostgreSQL</li>
-        </ul>
-        <p>Weitere Informationen zur Serverumgebung befinden sich im deutschen Dokumentationsprojekt unter “<a href="http://code.zikula.org/community-german/wiki/Installation#Serverumgebung" title="Installation">Installation</a>”, sowie im englischsprachigen Dokument “<a href="softwarerecommendations.html">Softwareempfehlungen</a>”.</p>
+                <h2 id="Warning">1. Warning</h2>
+                <p>Eine Migration dieser Version auf Basis einer PostNuke-Installation kann nur durchgeführt werden, wenn PostNuke in der Version 0.764 oder größer vorliegt. Migrationen von älteren Versionen werden nicht unterstützt. Bitte beachten, dass die PostNuke-Versionen nicht mehr unterstützt werden.</p>
 
-        <h2 id="Upgrade764">3. Migration von PostNuke v0.764</h2>
-        <p>Eine PostNuke-Migration wird in dieser Anleitung nicht mehr angeboten. Weitere Informationen in der <a href='migratefrom764_deu.html'>0.764- Migrationsanleitung</a>.</p>
+                <h2 id="Server">2. Serverumgebung</h2>
+                <p>Im Vergleich zu anderen Web-Frameworks stellt Zikula wenige Anforderungen an den Webserver. Es unterstützt PHP5 und das noch weit verbreitete PHP4. Es benötigt keine eigene Datenbank für die Anwendung, sondern erlaubt, Datenbanktabellen mit Präfixen zu verwenden. Zikula benötigt mindestens:</p>
+                <ul>
+                    <li>Webserver: Apache 2 (empfohlen) oder Apache 1.3, IIS, Lighttpd oder andere</li>
+                    <li>Programmiersprache: PHP ≥ 4.4 (empfohlen: 5.x)</li>
+                    <li>Datenbank: MySQL, Oracle, MSSQL oder PostgreSQL</li>
+                </ul>
+                <p>Weitere Informationen zur Serverumgebung befinden sich im deutschen Dokumentationsprojekt unter “<a href="http://code.zikula.org/community-german/wiki/Installation#Serverumgebung" title="Installation">Installation</a>”, sowie im englischsprachigen Dokument “<a href="softwarerecommendations.html">Softwareempfehlungen</a>”.</p>
 
-        <h2 id="Upgrade10x">4. Aktualisierung von Zikula v1.0.x</h2>
-        <p>Bitte die folgenden Schritte in der aufgeführten Reihenfolge abarbeiten und die jeweilige Beschreibung vorab gründlich durchlesen. Werden die Anweisungen befolgt, sollten keine Probleme auftreten.</p>
-        <ul>
-            <li><a href="#Backup10x">4.1 Datenbank und Dateisystem sichern</a></li>
-            <li><a href="#Prepare10x">4.2 Installation vorbereiten</a></li>
-            <li><a href="#Run10x">4.3 Upgrade durchführen</a></li>
-            <li><a href="#Clean10x">4.4 Aufräumarbeiten und zusätzliche Konfiguration</a></li>
-        </ul>
+                <h2 id="Upgrade764">3. Migration von PostNuke v0.764</h2>
+                <p>Eine PostNuke-Migration wird in dieser Anleitung nicht mehr angeboten. Weitere Informationen in der <a href='migratefrom764_deu.html'>0.764- Migrationsanleitung</a>.</p>
 
-        <h3 id="Backup10x">4.1 Datenbank und Dateisystem sichern</h3>
-        <p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
-            Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden.
-        Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
+                <h2 id="Upgrade10x">4. Aktualisierung von Zikula v1.0.x</h2>
+                <p>Bitte die folgenden Schritte in der aufgeführten Reihenfolge abarbeiten und die jeweilige Beschreibung vorab gründlich durchlesen. Werden die Anweisungen befolgt, sollten keine Probleme auftreten.</p>
+                <ul>
+                    <li><a href="#Backup10x">4.1 Datenbank und Dateisystem sichern</a></li>
+                    <li><a href="#Prepare10x">4.2 Installation vorbereiten</a></li>
+                    <li><a href="#Run10x">4.3 Upgrade durchführen</a></li>
+                    <li><a href="#Clean10x">4.4 Aufräumarbeiten und zusätzliche Konfiguration</a></li>
+                </ul>
 
-        <h3 id="Prepare10x">4.2 Installation vorbereiten</h3>
-        <p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Danach muss in der Moduladministration unbedingt das Modul Members_List deaktiviert und entfernt werden. Erst danach sollten die Dateien des Downloadarchivs hochgeladen werden. Dabei bitte das <strong>Verzeichnis /config</strong> auslassen, da sonst die individuelle Konfiguration in der config.php überschrieben wird und der Internetauftritt nicht mehr funktionieren würde. Bitte außerdem sicherstellen, dass die Verzeichnisse modules/Members_List/ und system/Profile wirklich entfernt werden. Diese beiden Module sind nun im neuen Profile-Modul enthalten, dass sich nun unter /modules befinden muss.</p>
+                <h3 id="Backup10x">4.1 Datenbank und Dateisystem sichern</h3>
+                <p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
+                    Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden.
+                Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
 
-        <h3 id="Run10x">4.3 Upgrade durchführen</h3>
-        <p>Das Upgrade-Skript upgrade10xto11x.php im Browser öffnen und die dort folgenden Schritte, wie beschrieben, durchführen. Es sind kaum Interaktionen notwendig - abgesehen vom Klicken auf 'Fortfahren'. Sämtliche notwendige Datenbankänderungen werden automatisch durchgeführt. Zum Schluss wird man automatisch zur Administration weitergeleitet.</p>
+                <h3 id="Prepare10x">4.2 Installation vorbereiten</h3>
+                <p>Vorab ist eine Anmeldung in der Zikula-Seite als Administrator erforderlich. Bei Bedarf kann die Seite während des Upgrades unter index.php?module=Settings&amp;type=admin deaktiviert werden. Danach muss in der Moduladministration unbedingt das Modul Members_List deaktiviert und entfernt werden. Erst danach sollten die Dateien des Downloadarchivs hochgeladen werden. Dabei bitte das <strong>Verzeichnis /config</strong> auslassen, da sonst die individuelle Konfiguration in der config.php überschrieben wird und der Internetauftritt nicht mehr funktionieren würde. Bitte außerdem sicherstellen, dass die Verzeichnisse modules/Members_List/ und system/Profile wirklich entfernt werden. Diese beiden Module sind nun im neuen Profile-Modul enthalten, dass sich nun unter /modules befinden muss.</p>
 
-        <h3 id="Clean10x">4.4 Aufräumarbeiten und zusätzliche Konfiguration</h3>
-        <p>Nach einer erfolgreichen Aktualisierung müssen folgende Dateien und Verzeichnisse unbedingt gelöscht werden:</p>
-        <ol>
-            <li>MailUsers (modules/MailUsers): In der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
-            <li>Members_List (modules/Members_List): Wenn noch nicht geschehen, dann in der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
-            <li>Profil-Modul (system/Profile): Das Modul muss dort physikalisch entfernt werden. Aber bitte nicht das neue Zielverzeichnis /modules/Profile löschen. Das ist der neue Speicherort für das Modul.</li>
-            <li>das Verzeichnis includes/pnobjlib - diese Dateien befinden sich nun direkt im includes-Verzeichnis und können hier gelöscht werden.</li>
-            <li>das Verzeichnis install, sowie die Dateien install.php, upgrade.php und upgrade10xto11x.php aus dem Root der Präsenz.</li>
-        </ol>
+                <h3 id="Run10x">4.3 Upgrade durchführen</h3>
+                <p>Das Upgrade-Skript upgrade10xto11x.php im Browser öffnen und die dort folgenden Schritte, wie beschrieben, durchführen. Es sind kaum Interaktionen notwendig - abgesehen vom Klicken auf 'Fortfahren'. Sämtliche notwendige Datenbankänderungen werden automatisch durchgeführt. Zum Schluss wird man automatisch zur Administration weitergeleitet.</p>
 
-        <p>Falls in einem Menü-Block auf das alte Members_List Modul verlinkt wird, muss dies auf index.php?module=Profile&amp;func=viewmembers geändert werden. Die Zugriffsrechte wurde auf 'Profile:Members:' geändert.</p>
-        <p>Zikula v1.1 bietet und die freie Auswahl eines Profil-Moduls sowie eines Mitteilungs-Moduls an. Nach der automatischen Aktualisierung sollte im Modul Einstellungen die korrekte Auswahl überprüft werden.</p>
-        <p>Zum Zeitpunkt der Erstellung dieser Anleitung sind folgende Module verfügbar:</p>
-        <ol>
-            <li>Profil-Modul: das bisher bekannte Profil-Modul (in der <a href="http://community.zikula.org/module-Extensions.htm">Erweiterungsdatenbank</a> erhältlich)</li>
-            <li>Mitteilungs-Modul: <a href="http://code.zikula.org/intercom/">InterCom</a></li>
-        </ol>
-        <p><a href="http://code.zikula.org/myprofile/">MyProfile</a> wird zukünftig als weitere Alternative zur Verfügung stehen.</p>
-        <p>Falls die Seite vor dem Upgrade deaktiviert wurde (siehe 4.2), so sollte dies nun rückgängig gemacht werden.</p>
+                <h3 id="Clean10x">4.4 Aufräumarbeiten und zusätzliche Konfiguration</h3>
+                <p>Nach einer erfolgreichen Aktualisierung müssen folgende Dateien und Verzeichnisse unbedingt gelöscht werden:</p>
+                <ol>
+                    <li>MailUsers (modules/MailUsers): In der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
+                    <li>Members_List (modules/Members_List): Wenn noch nicht geschehen, dann in der Moduladministration deinstallieren und entfernen, sowie im Dateisystem löschen.</li>
+                    <li>Profil-Modul (system/Profile): Das Modul muss dort physikalisch entfernt werden. Aber bitte nicht das neue Zielverzeichnis /modules/Profile löschen. Das ist der neue Speicherort für das Modul.</li>
+                    <li>das Verzeichnis includes/pnobjlib - diese Dateien befinden sich nun direkt im includes-Verzeichnis und können hier gelöscht werden.</li>
+                    <li>das Verzeichnis install, sowie die Dateien install.php, upgrade.php und upgrade10xto11x.php aus dem Root der Präsenz.</li>
+                </ol>
 
-        <h2 id="Upgrade11x">5. Zikula 1.1.x mittels Patch aktualisieren</h2>
-        <p>Fehlerkorrekturen dieser Art benötigen kein Installations- oder Upgradeskript. Ein Patch-Paket wurde für einen bestimmten Zweck bzw. Upgradepfad veröffentlicht und man sollte sich exakt an diese Vorgehensweise halten.</p>
+                <p>Falls in einem Menü-Block auf das alte Members_List Modul verlinkt wird, muss dies auf index.php?module=Profile&amp;func=viewmembers geändert werden. Die Zugriffsrechte wurde auf 'Profile:Members:' geändert.</p>
+                <p>Zikula v1.1 bietet und die freie Auswahl eines Profil-Moduls sowie eines Mitteilungs-Moduls an. Nach der automatischen Aktualisierung sollte im Modul Einstellungen die korrekte Auswahl überprüft werden.</p>
+                <p>Zum Zeitpunkt der Erstellung dieser Anleitung sind folgende Module verfügbar:</p>
+                <ol>
+                    <li>Profil-Modul: das bisher bekannte Profil-Modul (in der <a href="http://community.zikula.org/module-Extensions.htm">Erweiterungsdatenbank</a> erhältlich)</li>
+                    <li>Mitteilungs-Modul: <a href="http://code.zikula.org/intercom/">InterCom</a></li>
+                </ol>
+                <p><a href="http://code.zikula.org/myprofile/">MyProfile</a> wird zukünftig als weitere Alternative zur Verfügung stehen.</p>
+                <p>Falls die Seite vor dem Upgrade deaktiviert wurde (siehe 4.2), so sollte dies nun rückgängig gemacht werden.</p>
 
-        <ul>
-            <li><a href="#Backup11x">5.1 Datenbank und Dateisystem sichern</a></li>
-            <li><a href="#Copy11x">5.2 Patchdateien kopieren</a></li>
-            <li><a href="#Finish11x">5.3 Zusätzliche Konfiguration</a></li>
-        </ul>
+                <h2 id="Upgrade11x">5. Zikula 1.1.x mittels Patch aktualisieren</h2>
+                <p>Fehlerkorrekturen dieser Art benötigen kein Installations- oder Upgradeskript. Ein Patch-Paket wurde für einen bestimmten Zweck bzw. Upgradepfad veröffentlicht und man sollte sich exakt an diese Vorgehensweise halten.</p>
 
-        <h3 id="Backup11x">5.1 Datenbank und Dateisystem sichern</h3>
-        <p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
-            Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden.
-        Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
+                <ul>
+                    <li><a href="#Backup11x">5.1 Datenbank und Dateisystem sichern</a></li>
+                    <li><a href="#Copy11x">5.2 Patchdateien kopieren</a></li>
+                    <li><a href="#Finish11x">5.3 Zusätzliche Konfiguration</a></li>
+                </ul>
+
+                <h3 id="Backup11x">5.1 Datenbank und Dateisystem sichern</h3>
+                <p>Vor dem Upgrade ist es sehr wichtig, ein Backup der v0.7x Datenbank, sowie des Dateisystems anzulegen. Einmal vorgenommene Aktualisierungen können nicht rückgängig gemacht werden, wenn keine Datensicherung vorliegt.
+                    Eine Sicherung der Datenbank kann beispielsweise über die Tools <a href="http://www.mysqldumper.de/">MySQLDumper</a>, <a href="http://www.phpmyadmin.org">phpMyAdmin</a> oder alternativ über SSH durchgeführt werden.
+                Tiefergehende Anleitungen zum Sichern der Datenbanken gibt es zuhauf im Internet und in den Dokumentationen der oben genannten Tools.</p>
 
 
-        <h3 id="Copy11x">5.2 Patchdateien kopieren</h3>
-        <p>Die Patchdateien per FTP auf den Server übertragen. Bitte beachten, dass die Datei config/config.php nicht überschrieben wird.</p>
+                <h3 id="Copy11x">5.2 Patchdateien kopieren</h3>
+                <p>Die Patchdateien per FTP auf den Server übertragen. Bitte beachten, dass die Datei config/config.php nicht überschrieben wird.</p>
 
-        <h3 id="Finish11x">5.3 Zusätzliche Konfiguration</h3>
-        <p>In der Zikula-Administration überprüfen, ob die neueste Version aktiv ist. Anschließend in der Moduladministration mögliche Modulugprade durchführen.</p>
+                <h3 id="Finish11x">5.3 Zusätzliche Konfiguration</h3>
+                <p>In der Zikula-Administration überprüfen, ob die neueste Version aktiv ist. Anschließend in der Moduladministration mögliche Modulugprade durchführen.</p>
 
-        <h2 id="Themes">6. Themes aktualisieren</h2>
+                <h2 id="Themes">6. Themes aktualisieren</h2>
 
-        <p>Mit der Einführung von Zikula v1.0.0 wurde die Struktur der Themeverwaltung geändert. Das Modul heißt nun Themes und intern lautet die Version 'Xanthia Version 3'. Falls vorher ein Xanthia 2 Theme genutzt wurde, kann dieses über das Modul automatisch konvertiert werden. Dazu muss das Theme-Verzeichnis beschreibbar gemacht werden (chmod -R 777). Bitte beachten, dass diese Konvertierung bei einem komplexen Ausgangstheme vielleicht nicht immer 100%ig funktioniert. Sowieso müssen weitere Änderungen am Theme manuell durchgeführt werden. Nach der Konvertierung sollte das Theme-Verzeichnis wieder auf 'nur-lesbar' gesetzt werden.!</p>
+                <p>Mit der Einführung von Zikula v1.0.0 wurde die Struktur der Themeverwaltung geändert. Das Modul heißt nun Themes und intern lautet die Version 'Xanthia Version 3'. Falls vorher ein Xanthia 2 Theme genutzt wurde, kann dieses über das Modul automatisch konvertiert werden. Dazu muss das Theme-Verzeichnis beschreibbar gemacht werden (chmod -R 777). Bitte beachten, dass diese Konvertierung bei einem komplexen Ausgangstheme vielleicht nicht immer 100%ig funktioniert. Sowieso müssen weitere Änderungen am Theme manuell durchgeführt werden. Nach der Konvertierung sollte das Theme-Verzeichnis wieder auf 'nur-lesbar' gesetzt werden.!</p>
 
-        <h2 id="Final">7. Abschlussbemerkung</h2>
-        <p>Herzlichen Glückwunsch. Das Upgrade ist vollständig durchgeführt. Wir wünschen viel Spaß mit der neuen Zikula-Version.</p>
+                <h2 id="Final">7. Abschlussbemerkung</h2>
+                <p>Herzlichen Glückwunsch. Das Upgrade ist vollständig durchgeführt. Wir wünschen viel Spaß mit der neuen Zikula-Version.</p>
 
-        <p>
-            <strong>Das deutsche Zikula-Team<br /><a href="http://zikula.de/">zikula.de</a></strong>
-        </p>
-    </body>
-</html>
+                <p>
+                    <strong>Das deutsche Zikula-Team<br /><a href="http://zikula.de/">zikula.de</a></strong>
+                    </p>
+                </body>
+            </html>
