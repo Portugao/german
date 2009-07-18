@@ -8,12 +8,14 @@
 
             <body>
 
-                <h1>PostNuke .764 -&gt; Zikula 1.1.2 Upgrade-Anleitung</h1>
+                <h1>PostNuke .764 =&gt; Zikula 1.1.2 Upgrade-Anleitung</h1>
 
                 <em><strong>Hinweis: Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application Framework. Bitte vor dem Fortfahren, die Inhalte sorgfältig durchlesen.</strong></em>
-                <p>Eine ausführliche und stets aktuelle Installations- und Upgradeanleitung steht auch im <a href="http://code.zikula.org/community-german/">Deutschen Dokumentationsprojekt</a> zur Verfügung.</p>
 
                 <h2>Wichtig</h2>
+                <p>
+                    Natürlich wurde versucht, in dieser Anleitung die benötigten Information für eine erfolgreiche Migration aufzunehmen. Doch in unserem <a href="http://code.zikula.org/community-german/">deutschen DokuWiki</a> können Ergänzungen schneller und aktueller gepflegt werden. Daher wird empfohlen vor einer Migration auch diese Installations- und Upgradeanleitungen zu lesen.
+                </p>                
                 <p>
                     Diese Anweisungen beziehen sich auf die Migration von PostNuke zu Zikula, wofür eine spezielle <strong><a href='http://code.zikula.org/core/wiki/downloads#PostNukeMigrationDistributionbasedon1.1.2'>Migrationsdistribution</a></strong> zur Verfügung steht. Falls die vorhandene PostNuke-Version älter als .764 sein sollte, so ist unbedingt eine Aktualisierung auf PostNuke .764 (<a href='http://www.postnuke.com/module-Content-view-pid-2.html' title="The PostNuke Legacy Site">Download</a>) notwendig. Migrationen ausgehend von älteren PostNuke-Versionen werden nicht unterstützt.
                 </p>
@@ -66,7 +68,6 @@
                     <li>Settings</li>
                     <li>User</li>
                     <li>Xanthia</li>
-                    <li>Your_Account</li>
                 </ol>
 
                 <p>Weitere Module sind optional, da der Core von Zikula auf die notwendigsten Module eingeschränkt wurde. Die sonstigen Module aus einer alten PostNuke-Installation können später getrennt von der Upgraderoutine aktualisiert werden. Dafür steht unter anderem das Paket mit den ValueAddons (Download unter code.zikula.org/core) zur Verfügung. Sobald dieser Schritt abgeschlossen wurde, kann die Datenbank aktualisiert werden.</p>
@@ -94,19 +95,25 @@
                 <h3 id="Run">1.4 Upgrade durchführen</h3>
                 <p>Um die Datenbank zu aktualisieren muss die Datei upgrade.php im Browser aufgerufen werden. Hier werden auch Benutzername und Kennwort der vorhandenen PostNuke-Installation benötigt. Danach müssen nur noch die Anweisungen in dem Skript befolgt werden.</p>
 
-                <p><strong>Hinweis:</strong> Zikula entfernt die Fußnachricht (Footer) aus der Admin-Oberfläche. Somit wird eine vorhandene Footer-Nachricht anschließend verschwinden. Es wird empfohlen etwaiger Footer-Nachrichten im Theme fest zu integrieren. Die alte Nachricht wird in Kopie im pnTemp-Verzeichnis abgelegt.</p>
+                <dl>
+                    <dt><strong>Hinweis 1:</strong></dt>
+                    <dd>Zikula entfernt die Fußnachricht (Footer) aus der Admin-Oberfläche. Somit wird eine vorhandene Footer-Nachricht anschließend verschwinden. Es wird empfohlen etwaiger Footer-Nachrichten im Theme fest zu integrieren. Die alte Nachricht wird in Kopie im pnTemp-Verzeichnis abgelegt.</dd>
+                    <dt><strong>Hinweis 2:</strong></dt>
+                    <dd>Aus Performancegründen sind seit Zikula v1.0 keine Benutzerzugriffsrechte mehr möglich. Es wird empfohlen die Benutzer in einer Gruppe aufzunehmen und darüber die Zugriffsrechte zu verwalten.</dd>
 
-                <p><strong>Hinweis:</strong> Aus Performancegründen sind seit Zikula v1.0 keine Benutzerzugriffsrechte mehr möglich. Es wird empfohlen die Benutzer in einer Gruppe aufzunehmen und darüber die Zugriffsrechte zu verwalten.</p>
+                    <dt><strong>Hinweis 3:</strong></dt>
+                    <dd>Im Modul "Einstellungen" bitte sicherstellen, dass beim Startmodul auch ein Modul ausgewählt ist, welches in der Distribution vorhanden ist (z.B. News, Umfragen, Suche). Ansonsten kann nach der Migration zu einem Fehler kommen, da das ausgewählte Modul nicht vorhanden ist. Diese Einstellung kann natürlich nach der erfolgreichen Migration wieder auf ein beliebiges Modul zurückgeändert werden.</dd>
+                </dl>
 
                 <h3 id="Clean">1.5 Aufräumarbeiten</h3>
                 <p>Abschließend müssen die Dateien upgrade.php, install.php und das Install-Verzeichnis aus dem Dateisystem entfernt werden.</p>
 
-                <h2 id="Final">1.6 Abschlussbemerkung</h2>
+                <h3 id="Final">1.6 Abschlussbemerkung</h3>
                 <p>Herzlichen Glückwunsch. Das Upgrade ist vollständig durchgeführt. Wir wünschen viel Spaß mit der neuen Zikula-Version.</p>
 
                 <p>
-                    <strong>Das deutsche Zikula-Team (<a href="http://zikula.de/">zikula.de</a>)</strong>
-                </p>
+                    <strong>Das deutsche Zikula-Team <br /><a href="http://zikula.de/">zikula.de</a></strong>
+                    </p>
 
-            </body>
-        </html>
+                </body>
+            </html>
