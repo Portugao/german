@@ -10,8 +10,8 @@
 
 // language defines for the upgrade process
 define('_UPG_DONOTFORGETTOREMOVEFILES', 'Bitte nicht vergessen die Dateien install.php, upgrade.php, upgrade10xto11x.php und das Verzeichnis install aus dem Webspace zu löschen. Diese sind nicht mehr erforderlich und könnten den Internetauftritt gefährden.');
-define('_UPG_NEWFEATURESINTRO', 'Hier ist eine grobe Übersicht über die wichtigsten Änderungen in Zikula 1.1.0. Eine komplette Liste der Änderungen und Bugfixes befindet sich in <a href="http://code.zikula.org/core/milestone/1.1.0">dieser Liste</a>');
-define('_UPG_THANKSFORUPGRADINGTO110', 'Vielen Dank für das Aktualisieren der Installation auf Zikula 1.1.0.');
+define('_UPG_NEWFEATURESINTRO', 'Hier ist eine grobe Übersicht über die wichtigsten Änderungen in Zikula. Eine komplette Liste der Änderungen und Bugfixes befindet sich in <a href="http://code.zikula.org/core/roadmap?show=all">dieser Liste</a>');
+define('_UPG_THANKSFORUPGRADINGTO110', 'Vielen Dank für das Aktualisieren der Zikula-Installation.');
 define('_UPG_CONTINUETO110NEWS', '<a href="upgrade10xto11x.php?action=learnmore&lang=deu">Hier klicken</a>, um mehr über die neuen Funktionen in dieser Version zu erfahren oder mit dem <a href="admin.php">Besuch der Seite fortfahren</a>.');
 define('_UPG_110FEATURE01', 'Neu: System Init Hooks: Funktionen können nun automatisch während des Systemstarts ausgeführt werden, um z.B. Code für spezielle Module wie <a title="scribite!: der WYSIWYG Editor für Zikula" href="http://code.zikula.org/scribite">scribite!</a> einzubinden. Änderungen im Theme, z.B. über Smarty-Plugins, sind nicht mehr notwendig (<a href="http://code.zikula.org/core/ticket/214">#214</a>).');
 define('_UPG_110FEATURE02', 'Neu: Das Plugin modulestylesheet wird mehr benötigt. Die Stylesheets eines Modules werden nun automatisch geladen, wenn eine Modulfunktion aufgerufen wird. Falls das Plugin noch in den Theme-Templates vorhanden ist, wird ein entsprechender Hinweis für die Administratoren eingeblendet. (<a href="http://code.zikula.org/core/ticket/269">#269</a>).');
@@ -25,11 +25,11 @@ define('_UPG_110FEATURE08', 'Änderungen: sonstige Fehler');
 // upgrade76.php
 define('_UPG_PROCEEDTOUPGRADE', 'Mit dem Upgrade fortfahren');
 define('_UPG_TITLE', 'Zikula 1.0 Upgradeskript (ab Postnuke Version .764)');
-define('_UPG_TITLE10X', 'Zikula v1.1.0 Upgradeskript (ab Zikula Version 1.0.x)'); 
-define('_UPG_SUBTITLE', 'Zikula Upgradeskript (nur für die Postnuke Version .764)');
-define('_UPG_SUBTITLE10X', 'Zikula Upgradeskript (nur für die Zikula Versionen 1.0.x)'); 
-define('_UPG_DESCRIPTION', 'Dieses Skript aktualisiert Postnuke 0.764 auf die aktuellste Zikula 1.1.x Version. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.');
-define('_UPG_DESCRIPTION10X', 'Dieses Skript aktualisiert Zikula 1.0.x auf Zikula v1.1.x. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.'); 
+define('_UPG_TITLE10X', 'Zikula v1.1 Upgradeskript (für Zikula-Serie 1.0)'); 
+define('_UPG_SUBTITLE', 'Zikula Migrationsskript (nur für die Postnuke Version .764)');
+define('_UPG_SUBTITLE10X', 'Zikula Upgradeskript (nur für die Zikula-Serie 1.0)'); 
+define('_UPG_DESCRIPTION', 'Dieses Skript aktualisiert Postnuke 0.764 auf die aktuellste Version der Zikula 1.1-Serie. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.');
+define('_UPG_DESCRIPTION10X', 'Dieses Skript aktualisiert Zikula 1.0 auf Zikula v1.1. Upgrades von älteren Veröffentlichungen werden nicht unterstützt.'); 
 define('_UPG_BACKUPNOTICE', 'Bitte unbedingt VOR dem Fortfahren eine Sicherung der Datenbanken anlegen!');
 define('_UPG_BACKUPHINT', 'Ein empfehlenswertes Tool zum Sicherung und Rücksicherung von Datenbanken ist <a href="http://mysqldumper.de/">MySQLDumper</a>. Die meisten Provider bieten zudem auch <a href="http://www.phpmyadmin.net">phpMyAdmin</a> an, was den gleichen Zweck erfüllt - jedoch mit weniger Komfort.'); 
 define('_UPG_BACKINGUPDB', 'Sichere Benutzerdatenbank...');
