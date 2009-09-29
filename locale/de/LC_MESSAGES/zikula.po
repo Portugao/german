@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-23 11:06-0400\n"
-"PO-Revision-Date: 2009-09-25 20:17+0100\n"
+"PO-Revision-Date: 2009-09-29 19:21+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer\n"
 "Language: de\n"
@@ -927,7 +927,7 @@ msgstr "gt: if using plural or count you must use both params together"
 #: system/Users/pntemplates/users_admin_modify.htm:38
 #: system/Users/pntemplates/users_admin_new_dud.htm:3
 msgid "Personal Info"
-msgstr "Persönliche Info"
+msgstr "Profilinformation"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:30
 #: system/Modules/pnadmin.php:267
@@ -2211,7 +2211,7 @@ msgstr "Neue Modulkategorie anlegen"
 #: system/Admin/pntemplates/admin_admin_help.htm:29
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:2
 msgid "Admin Panel Settings"
-msgstr "Admin-Panel"
+msgstr "Panelkonfiguration"
 
 #: system/Admin/pnadmin.php:71
 msgid "Done! Category created."
@@ -7065,7 +7065,7 @@ msgstr "Bitte die gewünschte Sprache auswählen"
 
 #: upgrade.php:132
 msgid "BEFORE proceeding you should backup your database!"
-msgstr "Bitte VOR dem Fortfahren unbedingt eine Sicherung der Datenbanken anlegen!"
+msgstr "Bitte unbedingt vor dem Fortfahren eine Sicherung der Datenbank anlegen!"
 
 #: upgrade.php:143
 msgid "Failed to login to your site"
@@ -7102,7 +7102,7 @@ msgstr "Bitte überprüfen, dass der Zeichensatz der Datenbank auf UTF8 gesetzt 
 
 #: upgrade.php:187
 msgid "Your database is already in utf8 characterset."
-msgstr "Die Datenbank läuft bereits im UTF8 Zeichensatz"
+msgstr "Die Datenbank läuft bereits im UTF8 Zeichensatz."
 
 #: upgrade.php:190
 #, php-format
@@ -7111,7 +7111,7 @@ msgstr "Dieses Skript ist nur für MySQL-Datenbanken bestimmt. Aktuell wird %s g
 
 #: upgrade.php:191
 msgid "You have to convert your database to utf8 yourself manually, before you can use this version of Zikula."
-msgstr "Die Datenbank muss manuell auf UTF8 konvertiert werden, damit diese Zikula-Version genutzt werden kann."
+msgstr "Die Datenbank muss leider manuell auf UTF8 konvertiert werden, damit diese Zikula-Version genutzt werden kann."
 
 #: upgrade.php:194
 msgid "config/config.php must be writable before this script will run. Please correct this and try again"
@@ -7151,7 +7151,7 @@ msgstr "Aktualisiere Module"
 
 #: upgrade.php:275
 msgid "Starting upgrade"
-msgstr "Start Aktualisierung"
+msgstr "Starte Aktualisierung"
 
 #: upgrade.php:296
 msgid "upgraded"
@@ -7829,7 +7829,7 @@ msgstr "Blockspezifische Eigenschaften"
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:104
 msgid "Refresh time for block (only used for blocks that retrieve information from outside sources)"
-msgstr "Aktualisierungsintervall (nur für Blöcke die Inhalte aus externen Quellen einbinden)"
+msgstr "Aktualisierungsintervall (nur für Blöcke, die Inhalte aus externen Quellen einbinden)"
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:113
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:23
@@ -9629,7 +9629,7 @@ msgstr "Mögliche Mitteilung"
 #: system/Admin/pntemplates/admin_admin_help.htm:59
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:5
 msgid "Security Analyzer Warnings"
-msgstr "Warnungen der Sicherheitsanalyse"
+msgstr "Warnung des Sicherheitscenters"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:60
 msgid "In the Admin panel, you will see security warnings displayed if the Security Analyzer detects potential security vulnerabilities in your site's installation. If you see no warning box then it means that no vulnerabilities have been found. Please read the security documentation for more security-related information. Below are explanations for each vulnerability possibly identified."
