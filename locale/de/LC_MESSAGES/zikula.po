@@ -4,13 +4,13 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-23 11:06-0400\n"
-"PO-Revision-Date: 2009-09-29 19:21+0100\n"
-"Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
+"PO-Revision-Date: 2009-10-01 15:34+0100\n"
+"Last-Translator: \n"
 "Language-Team: Carsten Volmer\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 1.2.1\n"
 
@@ -1989,7 +1989,6 @@ msgid "Error! Unable to retrieve category with id [%s]"
 msgstr "Fehler! Kategorie mit der ID [%s] konnte nicht ermitteln werden"
 
 #. ! %1$s is the id, %2$s is the name
-#. ! %1$s is the id, %2$s is the name
 #: system/Categories/pnuserform.php:50
 #: system/Categories/pnuserform.php:98
 #: system/Categories/pnuser.php:104
@@ -2054,7 +2053,6 @@ msgstr "Die Kategoriezuweisung wurde erfolgreich gespeichert"
 msgid "Error! Invalid 'document root' parameter in URL"
 msgstr "Fehler! Ungültiger Parameter für Dokumentenstamm in der URL"
 
-#. ! %s represents the root path (id), passed in the url
 #. ! %s represents the root path (id), passed in the url
 #: system/Categories/pnuser.php:93
 #, php-format
@@ -2719,12 +2717,12 @@ msgstr "(GMT +14:00 hours) Kiribati (Line Islands)"
 #: system/Settings/pnadminapi.php:28
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:6
 msgid "Owner Settings"
-msgstr "Verschiedenes"
+msgstr "Allgemein"
 
 #: system/Settings/pnadminapi.php:29
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:5
 msgid "Localisation Settings"
-msgstr "Multilingual Einstellungen"
+msgstr "Multilingual"
 
 #: system/Settings/pnadminapi.php:30
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:5
@@ -6929,7 +6927,7 @@ msgstr "VoodooDolly"
 
 #: themes/voodoodolly/version.php:5
 msgid "The 'Voodoo Dolly' theme - a conservative but Web 2.0 look and feel, ready to go."
-msgstr "Das Voodoo Dooly-Theme ist ein konservatives Theme"
+msgstr "Das Theme 'VoodooDolly' ist ein älteres Theme - jedoch in einfacher Web 2.0 Optik"
 
 #: themes/Atom/version.php:15
 msgid "Atom"
@@ -7731,7 +7729,7 @@ msgstr "Blockposition löschen"
 #: system/Theme/pntemplates/theme_admin_delete.htm:9
 #: system/Users/pntemplates/users_admin_deleteusers.htm:15
 msgid "Confirmation Prompt"
-msgstr "Bestätigungsmeldung"
+msgstr "Sicherheitsabfrage"
 
 #: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:15
 msgid "Do you really want to delete this block position?"
