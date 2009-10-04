@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-23 11:06-0400\n"
-"PO-Revision-Date: 2009-10-04 15:29+0100\n"
+"POT-Creation-Date: 2009-10-03 22:36-0400\n"
+"PO-Revision-Date: 2009-10-04 20:30+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer\n"
 "MIME-Version: 1.0\n"
@@ -44,22 +44,22 @@ msgstr ""
 #: system/Modules/pnadminapi.php:38
 #: system/Modules/pnadminapi.php:76
 #: system/Modules/pnadminapi.php:131
-#: system/Modules/pnadminapi.php:281
-#: system/Modules/pnadminapi.php:353
-#: system/Modules/pnadminapi.php:641
-#: system/Modules/pnadminapi.php:819
-#: system/Modules/pnadminapi.php:898
-#: system/Modules/pnadminapi.php:1048
-#: system/Modules/pnadminapi.php:1105
-#: system/Modules/pnadminapi.php:1157
-#: system/Modules/pnadminapi.php:1186
-#: system/Modules/pnadminapi.php:1239
-#: system/Modules/pnadminapi.php:1339
-#: system/Modules/pnadminapi.php:1357
-#: system/Modules/pnadminapi.php:1382
+#: system/Modules/pnadminapi.php:286
+#: system/Modules/pnadminapi.php:365
+#: system/Modules/pnadminapi.php:666
+#: system/Modules/pnadminapi.php:851
+#: system/Modules/pnadminapi.php:930
+#: system/Modules/pnadminapi.php:1080
+#: system/Modules/pnadminapi.php:1137
+#: system/Modules/pnadminapi.php:1189
+#: system/Modules/pnadminapi.php:1218
+#: system/Modules/pnadminapi.php:1271
+#: system/Modules/pnadminapi.php:1371
+#: system/Modules/pnadminapi.php:1389
+#: system/Modules/pnadminapi.php:1414
 #: system/Modules/pnadmin.php:45
-#: system/Modules/pnadmin.php:753
-#: system/Modules/pnadmin.php:800
+#: system/Modules/pnadmin.php:779
+#: system/Modules/pnadmin.php:826
 #: system/Admin_Messages/pnuserapi.php:32
 #: system/Admin_Messages/pnuserapi.php:70
 #: system/Admin_Messages/pnuserapi.php:112
@@ -129,7 +129,7 @@ msgstr ""
 #: system/Theme/pnadmin.php:815
 #: system/Theme/pnadmin.php:938
 #: system/Theme/pnadmin.php:944
-#: system/Theme/pnadmin.php:997
+#: system/Theme/pnadmin.php:1005
 #: system/Users/pnuserapi.php:70
 #: system/Users/pnadmin.php:351
 #: system/Users/pnadmin.php:731
@@ -183,6 +183,11 @@ msgstr "Einbinden"
 #: system/Blocks/pnblocks/finclude.php:34
 msgid "Simple File Include"
 msgstr "Dateieinbindung"
+
+#: system/Blocks/pnblocks/finclude.php:68
+#, php-format
+msgid "File does not exist: %s"
+msgstr "Datei existiert nicht: %s"
 
 #: system/Blocks/pnblocks/thelang.php:32
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:18
@@ -283,6 +288,7 @@ msgstr "Zurück zur Startseite"
 
 #: system/Blocks/pninit.php:182
 #: system/Admin/pnaccountapi.php:27
+#: system/Admin/pntemplates/admin_admin_adminpanel.htm:40
 msgid "Administration"
 msgstr "Administration"
 
@@ -387,7 +393,7 @@ msgstr "Eine Blockposition mit dem gleichen Namen existiert bereits."
 #: system/Theme/pnadminapi.php:343
 #: system/Theme/pnadminapi.php:505
 #: system/Theme/pnadmin.php:884
-#: system/Theme/pnadmin.php:1182
+#: system/Theme/pnadmin.php:1190
 #: system/Users/pnadmin.php:661
 #: system/Groups/pnuserapi.php:335
 #: system/Groups/pnuserapi.php:527
@@ -400,7 +406,7 @@ msgid "No such item found."
 msgstr "Ein entsprechendes Element konnte nicht gefunden werden."
 
 #: system/Blocks/pnadminapi.php:405
-#: system/Blocks/pntemplates/blocks_admin_view.htm:4
+#: system/Blocks/pntemplates/blocks_admin_view.htm:7
 msgid "View blocks"
 msgstr "Blöcke anzeigen"
 
@@ -425,7 +431,7 @@ msgstr "Alle Blöcke anzeigen"
 #: system/Blocks/pnadminapi.php:421
 #: system/SecurityCenter/pnadminapi.php:67
 #: system/Permissions/pnadminapi.php:512
-#: system/Modules/pnadminapi.php:1311
+#: system/Modules/pnadminapi.php:1343
 #: system/Admin_Messages/pnadminapi.php:199
 #: system/Categories/pnadminapi.php:34
 #: system/Theme/pnadminapi.php:217
@@ -446,7 +452,7 @@ msgstr "Alle Blöcke anzeigen"
 #: system/Search/pntemplates/search_admin_modifyconfig.htm:5
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:4
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:5
-#: system/legal/pntemplates/legal_admin_modifyconfig.htm:8
+#: system/legal/pntemplates/legal_admin_modifyconfig.htm:9
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:2
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:4
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:5
@@ -486,7 +492,6 @@ msgstr "SQL-Fehler"
 #: system/pnForm/plugins/function.pnformlanguageselector.php:63
 #: system/Admin_Messsages/pnadmin.php:304
 #: system/Admin_Messages/pnadmin.php:304
-#: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:5
 #: system/Modules/pntemplates/modules_admin_view.htm:10
 msgid "All"
 msgstr "Alle"
@@ -505,7 +510,7 @@ msgstr "Aktivieren"
 
 #: system/Blocks/pnadmin.php:106
 #: system/Blocks/pnadmin.php:128
-#: system/Modules/pnadmin.php:257
+#: system/Modules/pnadmin.php:263
 #: system/Admin_Messsages/pnadmin.php:353
 #: system/Admin_Messages/pnadmin.php:353
 #: system/Admin/pnadmin.php:228
@@ -539,36 +544,36 @@ msgstr "Bearbeiten"
 #: system/Users/pnadmin.php:242
 #: system/Users/pnadmin.php:312
 #: system/Groups/pnadmin.php:103
-#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:20
-#: system/Blocks/pntemplates/blocks_admin_delete.htm:18
+#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:16
+#: system/Blocks/pntemplates/blocks_admin_delete.htm:15
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:19
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:75
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:125
 #: system/SecurityCenter/pntemplates/securitycenter_admin_delete.htm:18
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:50
-#: system/Permissions/pntemplates/permissions_admin_delete.htm:19
+#: system/Permissions/pntemplates/permissions_admin_delete.htm:17
 #: system/Permissions/pntemplates/permissions_admin_view.htm:105
 #: system/Permissions/pntemplates/permissions_admin_view.htm:111
 #: system/Permissions/pntemplates/permissions_admin_view.htm:153
-#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:21
+#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:16
 #: system/Categories/pntemplates/categories_admin_edit.htm:116
 #: system/Categories/pntemplates/categories_admin_delete.htm:32
 #: system/Categories/pntemplates/categories_user_list.htm:18
 #: system/Categories/pntemplates/categories_user_list.htm:66
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:40
 #: system/Admin/pntemplates/admin_admin_help.htm:16
-#: system/Admin/pntemplates/admin_admin_delete.htm:20
+#: system/Admin/pntemplates/admin_admin_delete.htm:16
 #: system/Theme/pntemplates/theme_admin_pageconfigurations.htm:23
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:23
-#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:19
+#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:16
 #: system/Theme/pntemplates/theme_admin_delete.htm:20
 #: system/Theme/pntemplates/theme_admin_view.htm:35
 #: system/Users/pntemplates/users_admin_listusers.htm:70
 #: system/Users/pntemplates/users_admin_listusers.htm:119
 #: system/Users/pntemplates/users_admin_view.htm:13
-#: system/Users/pntemplates/users_admin_deleteusers.htm:22
+#: system/Users/pntemplates/users_admin_deleteusers.htm:23
 #: system/Groups/pntemplates/groups_admin_delete.htm:3
-#: system/Groups/pntemplates/groups_admin_delete.htm:19
+#: system/Groups/pntemplates/groups_admin_delete.htm:16
 #: system/Groups/pntemplates/groups_admin_view.htm:88
 #: system/Groups/pntemplates/groups_admin_view.htm:100
 #: system/Groups/pntemplates/groups_admin_view.htm:172
@@ -670,7 +675,7 @@ msgstr "Fertig! Der Block wurde erfolgreich gelöscht!"
 #: system/Permissions/pnajax.php:126
 #: system/Permissions/pnajax.php:167
 #: system/Permissions/pnajax.php:207
-#: system/Modules/pnadminapi.php:298
+#: system/Modules/pnadminapi.php:303
 #: system/Admin/pnadmin.php:39
 #: system/Admin/pnadmin.php:104
 #: system/Admin/pnadmin.php:177
@@ -720,16 +725,16 @@ msgstr "Fertig! Die Blockposition wurde gelöscht."
 #: system/pnRender/pnadmin.php:83
 #: system/AuthPN/pnadmin.php:96
 #: system/SecurityCenter/pnadmin.php:409
-#: system/SecurityCenter/pnadmin.php:581
+#: system/SecurityCenter/pnadmin.php:579
 #: system/Search/pnadmin.php:124
 #: system/legal/pnadmin.php:121
 #: system/Permissions/pnadmin.php:722
-#: system/Modules/pnadmin.php:893
+#: system/Modules/pnadmin.php:919
 #: system/Admin_Messsages/pnadmin.php:436
 #: system/Admin_Messages/pnadmin.php:436
 #: system/Categories/pnadminform.php:311
 #: system/Admin/pnadmin.php:523
-#: system/Theme/pnadmin.php:1317
+#: system/Theme/pnadmin.php:1325
 #: system/Settings/pnadmin.php:112
 #: system/Settings/pnadmin.php:277
 #: system/Users/pnadmin.php:837
@@ -776,12 +781,12 @@ msgid "Provides the core system with a Smarty-based engine to control content re
 msgstr "Smarty Implementierung von Zikula"
 
 #: system/pnRender/pnadmin.php:110
-#: system/Theme/pnadmin.php:1137
+#: system/Theme/pnadmin.php:1145
 msgid "Compiled templates deleted"
 msgstr "Kompilierte Templates wurden gelöscht"
 
 #: system/pnRender/pnadmin.php:134
-#: system/Theme/pnadmin.php:1161
+#: system/Theme/pnadmin.php:1169
 msgid "Cache cleared"
 msgstr "Template-Cache gelöscht"
 
@@ -930,16 +935,16 @@ msgid "Personal Info"
 msgstr "Profilinformation"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:30
-#: system/Modules/pnadmin.php:267
+#: system/Modules/pnadmin.php:273
 #: system/Categories/pninit.php:338
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:44
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:45
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:46
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:49
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:73
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:47
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:50
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:74
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:75
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:77
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:76
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:78
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:51
 #: system/Blocks/pntemplates/blocks_admin_view.htm:34
 #: system/Blocks/pntemplates/blocks_admin_view.htm:35
@@ -954,16 +959,16 @@ msgid "Active"
 msgstr "Aktiv"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:32
-#: system/Modules/pnadmin.php:263
+#: system/Modules/pnadmin.php:269
 #: system/Categories/pninit.php:350
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:44
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:49
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:45
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:50
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:51
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:73
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:77
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:52
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:74
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:78
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:79
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:80
 #: system/Blocks/pntemplates/blocks_admin_view.htm:38
 #: system/Blocks/pntemplates/blocks_admin_view.htm:39
 #: system/Blocks/pntemplates/blocks_admin_view.htm:88
@@ -994,10 +999,10 @@ msgid "Provides the ability to use custom user authentication systems within a s
 msgstr "Nutzung sonstiger Benutzerauthentifizierungssysteme, insbesondere LDAP oder OpenID."
 
 #: system/SecurityCenter/pnuserapi.php:55
-#: system/Modules/pnadminapi.php:263
-#: system/Modules/pnadminapi.php:651
-#: system/Modules/pnadminapi.php:701
-#: system/Modules/pnadminapi.php:1026
+#: system/Modules/pnadminapi.php:268
+#: system/Modules/pnadminapi.php:676
+#: system/Modules/pnadminapi.php:726
+#: system/Modules/pnadminapi.php:1058
 #: system/Admin_Messages/pnuserapi.php:53
 #: system/Admin_Messages/pnuserapi.php:150
 #: system/Admin_Messages/pnsearchapi.php:83
@@ -1065,7 +1070,7 @@ msgstr "Klasse %s konnte nicht geladen werden"
 
 #: system/SecurityCenter/pnadmin.php:94
 #: system/Theme/pnadmin.php:919
-#: system/Theme/pnadmin.php:1215
+#: system/Theme/pnadmin.php:1223
 msgid "Done! Item deleted."
 msgstr "Erledigt! Element gelöscht."
 
@@ -1424,6 +1429,31 @@ msgstr "Ungültige E-Mail Adresse"
 msgid "Invalid URL"
 msgstr "Ungültige URL"
 
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:44
+msgid "pnformdropdownrelationlist: module parameter must be specified."
+msgstr "pnformdropdownrelationlist: module parameter must be specified."
+
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:49
+msgid "pnformdropdownrelationlist: invalid module parameter received."
+msgstr "pnformdropdownrelationlist: invalid module parameter received."
+
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:53
+msgid "pnformdropdownrelationlist: objecttype parameter must be specified."
+msgstr "pnformdropdownrelationlist: objecttype parameter must be specified."
+
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:59
+msgid "pnformdropdownrelationlist: idField parameter must be specified."
+msgstr "pnformdropdownrelationlist: idField parameter must be specified."
+
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:65
+msgid "pnformdropdownrelationlist: displayField parameter must be specified."
+msgstr "pnformdropdownrelationlist: displayField parameter must be specified."
+
+#: system/pnForm/plugins/function.pnformdropdownrelationlist.php:106
+#, php-format
+msgid "Unable to load module array class %s"
+msgstr "Klasse %s konnte nicht geladen werden"
+
 #: system/pnForm/plugins/function.pnformdateinput.php:109
 #: system/pnForm/plugins/function.pnformdateinput.php:217
 msgid "%Y-%m-%d"
@@ -1462,50 +1492,51 @@ msgstr "Moduladministration und Hook-Zuordnung"
 msgid "Cannot update module display info - a duplicate display name was detected!"
 msgstr "Die Modulinformationen konnten nicht aktualisiert werden, da der Anzeigename bereits existiert!"
 
-#: system/Modules/pnadminapi.php:309
-#: system/Modules/pnadminapi.php:317
-#: system/Modules/pnadminapi.php:324
+#: system/Modules/pnadminapi.php:316
+#: system/Modules/pnadminapi.php:319
+#: system/Modules/pnadminapi.php:329
+#: system/Modules/pnadminapi.php:336
 msgid "Invalid module state transition"
 msgstr "Fehler! Ungültiger Wechsel des Modulstatus"
 
-#: system/Modules/pnadminapi.php:370
-#: system/Modules/pnadminapi.php:825
-#: system/Modules/pnadminapi.php:903
+#: system/Modules/pnadminapi.php:382
+#: system/Modules/pnadminapi.php:857
+#: system/Modules/pnadminapi.php:935
 msgid "Error! No such module"
 msgstr "Fehler! Kein solches Modul gefunden!"
 
-#: system/Modules/pnadminapi.php:385
-#: system/Modules/pnadminapi.php:398
-#: system/Modules/pnadminapi.php:534
-#: system/Modules/pnadminapi.php:540
-#: system/Modules/pnadminapi.php:551
-#: system/Modules/pnadminapi.php:557
-#: system/Modules/pnadminapi.php:836
-#: system/Modules/pnadminapi.php:849
-#: system/Modules/pnadminapi.php:914
-#: system/Modules/pnadminapi.php:927
+#: system/Modules/pnadminapi.php:397
+#: system/Modules/pnadminapi.php:410
+#: system/Modules/pnadminapi.php:559
+#: system/Modules/pnadminapi.php:565
+#: system/Modules/pnadminapi.php:576
+#: system/Modules/pnadminapi.php:582
+#: system/Modules/pnadminapi.php:868
+#: system/Modules/pnadminapi.php:881
+#: system/Modules/pnadminapi.php:946
+#: system/Modules/pnadminapi.php:959
 #, php-format
 msgid "Could not load required file: %s"
 msgstr "Folgende benötigte Datei konnte nicht geladen werden: %s"
 
-#: system/Modules/pnadminapi.php:877
+#: system/Modules/pnadminapi.php:909
 msgid "Error! Module state change failed"
 msgstr "Fehler! Der Statuswechsel des Moduls ist fehlgeschlagen."
 
-#: system/Modules/pnadminapi.php:980
+#: system/Modules/pnadminapi.php:1012
 msgid "Module has been upgraded; it's status now is Inactive"
 msgstr "Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt inaktiv."
 
-#: system/Modules/pnadminapi.php:1192
-#: system/Modules/pnadminapi.php:1245
+#: system/Modules/pnadminapi.php:1224
+#: system/Modules/pnadminapi.php:1277
 #: system/Modules/pnadmin.php:55
-#: system/Modules/pnadmin.php:561
-#: system/Modules/pnadmin.php:759
-#: system/Modules/pnadmin.php:806
+#: system/Modules/pnadmin.php:579
+#: system/Modules/pnadmin.php:785
+#: system/Modules/pnadmin.php:832
 msgid "Error! No such module ID"
 msgstr "Fehler! Keine entsprechende Modul-ID gefunden."
 
-#: system/Modules/pnadminapi.php:1304
+#: system/Modules/pnadminapi.php:1336
 #: system/Blocks/pntemplates/blocks_admin_view.htm:6
 #: system/Modules/pntemplates/modules_admin_view.htm:4
 #: system/Modules/pntemplates/modules_admin_view.htm:5
@@ -1513,11 +1544,11 @@ msgstr "Fehler! Keine entsprechende Modul-ID gefunden."
 msgid "View"
 msgstr "Anzeigen"
 
-#: system/Modules/pnadminapi.php:1307
+#: system/Modules/pnadminapi.php:1339
 msgid "Regenerate List"
 msgstr "Liste mit Dateisystem abgleichen"
 
-#: system/Modules/pnadminapi.php:1310
+#: system/Modules/pnadminapi.php:1342
 #: system/Modules/pntemplates/modules_admin_hooks.htm:13
 msgid "System hooks"
 msgstr "System Hooks"
@@ -1535,10 +1566,11 @@ msgstr "Hooks"
 #: system/Modules/pnadmin.php:225
 #: system/Modules/pnadmin.php:230
 #: system/Modules/pnadmin.php:240
-#: system/Modules/pnadmin.php:249
+#: system/Modules/pnadmin.php:245
+#: system/Modules/pnadmin.php:255
 #: system/Modules/pntemplates/modules_admin_remove.htm:4
 #: system/Modules/pntemplates/modules_admin_remove.htm:5
-#: system/Modules/pntemplates/modules_admin_remove.htm:25
+#: system/Modules/pntemplates/modules_admin_remove.htm:30
 msgid "Remove module"
 msgstr "Modul entfernen"
 
@@ -1547,80 +1579,89 @@ msgstr "Modul entfernen"
 msgid "Upgrade"
 msgstr "Upgrade"
 
-#: system/Modules/pnadmin.php:246
+#: system/Modules/pnadmin.php:251
 #: system/Modules/pntemplates/modules_admin_initialise.htm:4
 #: system/Modules/pntemplates/modules_admin_initialise.htm:5
 #: system/Modules/pntemplates/modules_admin_initialise.htm:21
 msgid "Install"
 msgstr "Installieren"
 
-#: system/Modules/pnadmin.php:271
+#: system/Modules/pnadmin.php:277
 #: system/Modules/pntemplates/modules_admin_view.htm:14
 msgid "Files missing"
 msgstr "Dateien fehlen"
 
-#: system/Modules/pnadmin.php:275
-#: system/Modules/pnadmin.php:520
+#: system/Modules/pnadmin.php:281
+#: system/Modules/pnadmin.php:538
 #: system/Modules/pntemplates/modules_admin_view.htm:15
 msgid "New version installed"
 msgstr "Neue Version installiert."
 
-#: system/Modules/pnadmin.php:279
-#: system/Modules/pntemplates/modules_admin_view.htm:16
+#: system/Modules/pnadmin.php:285
+#: system/Modules/pntemplates/modules_admin_view.htm:19
 msgid "Invalid"
 msgstr "Ungültig"
 
-#: system/Modules/pnadmin.php:284
+#: system/Modules/pnadmin.php:289
+#: system/Modules/pntemplates/modules_admin_view.htm:17
+msgid "Not allowed"
+msgstr "Nicht erlaubt"
+
+#: system/Modules/pnadmin.php:294
 #: system/Modules/pntemplates/modules_admin_view.htm:11
 msgid "Not installed"
 msgstr "Nicht installiert"
 
-#: system/Modules/pnadmin.php:397
-#: system/Modules/pnadmin.php:459
-#: system/Modules/pnadmin.php:506
-#: system/Modules/pnadmin.php:555
-#: system/Modules/pnadmin.php:621
+#: system/Modules/pnadmin.php:409
+#: system/Modules/pnadmin.php:471
+#: system/Modules/pnadmin.php:524
+#: system/Modules/pnadmin.php:573
+#: system/Modules/pnadmin.php:639
 msgid "No module ID supplied"
 msgstr "Keine Modul-ID übergeben"
 
-#: system/Modules/pnadmin.php:423
+#: system/Modules/pnadmin.php:435
 msgid "Module installed"
 msgstr "Das Modul wurde installiert."
 
-#: system/Modules/pnadmin.php:430
+#: system/Modules/pnadmin.php:442
 msgid "Module activated"
 msgstr "Das Modul wurde aktiviert."
 
-#: system/Modules/pnadmin.php:467
-#: system/Modules/pnadmin.php:526
+#: system/Modules/pnadmin.php:476
+msgid "Module not allowed"
+msgstr "Das Modul ist nicht erlaubt."
+
+#: system/Modules/pnadmin.php:485
+#: system/Modules/pnadmin.php:544
 msgid "Activated"
 msgstr "Aktiviert"
 
-#: system/Modules/pnadmin.php:565
+#: system/Modules/pnadmin.php:583
 msgid "This module cannot be deactivated as it is configured as the systems start module."
 msgstr "Dieses Modul kann zur Zeit nicht deaktiviert werden, da es als Startseiten-Modul ausgewählt wurde."
 
-#: system/Modules/pnadmin.php:570
+#: system/Modules/pnadmin.php:588
 msgid "This module is a mandatory core module needed by the system and cannot be deactivated"
 msgstr "Dieses Modul wird vom System benötigt und kann daher nicht deaktiviert werden."
 
-#: system/Modules/pnadmin.php:578
+#: system/Modules/pnadmin.php:596
 msgid "Module deactivated"
 msgstr "Das Modul wurde deaktiviert."
 
-#: system/Modules/pnadmin.php:667
+#: system/Modules/pnadmin.php:685
 msgid "This module cannot be removed as there are blocks related to this module active."
 msgstr "Dieses Modul kann nicht entfernt werden, da noch aktive Blöcke zugeordnet sind."
 
-#: system/Modules/pnadmin.php:689
+#: system/Modules/pnadmin.php:707
 msgid "Module uninstalled"
 msgstr "Das Modul wurde deinstalliert."
 
-#: system/Modules/pnadmin.php:717
+#: system/Modules/pnadmin.php:743
 msgid "Modules list regenerated from file system"
 msgstr "Die Modulliste wurde mit Dateisystem abgeglichen."
 
-#: system/Modules/pnadmin.php:881
+#: system/Modules/pnadmin.php:907
 msgid "The setting 'Items per page' must be a positive integer. The value you entered was corrected."
 msgstr "Der Wert 'Einträge pro Seite' muss eine positive Zahl sein. Der eingetragene Wert wurde entsprechend korrigiert."
 
@@ -1808,9 +1849,7 @@ msgid "Error! The root directory cannot be modified in 'user' mode"
 msgstr "Fehler! Das Stammverzeichnis kann nicht im Benutzermodus editiert werden"
 
 #: system/Categories/pnversion.php:15
-#: system/Categories/pntemplates/categories_admin_menu.htm:4
-#: themes/SeaBreeze/templates/modules/admin.htm:30
-msgid "Categories"
+msgid "Categories Module"
 msgstr "Kategorien"
 
 #: system/Categories/pnversion.php:16
@@ -1868,8 +1907,8 @@ msgstr "weiblich"
 #: system/Categories/pninit.php:283
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:14
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:16
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:32
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:61
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:33
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:62
 #: system/Blocks/pntemplates/blocks_admin_new.htm:12
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:50
 #: system/Blocks/pntemplates/blocks_admin_view.htm:13
@@ -1957,7 +1996,7 @@ msgstr "Kategoriezuweisung"
 
 #: system/Categories/pnadminapi.php:33
 #: system/Categories/pntemplates/categories_admin_config.htm:2
-#: system/Categories/pntemplates/categories_admin_config.htm:16
+#: system/Categories/pntemplates/categories_admin_config.htm:13
 msgid "Rebuild paths"
 msgstr "Pfade neu erstellen"
 
@@ -2100,13 +2139,16 @@ msgid "Unable to determine valid [cid] for edit mode in Categories_admin_edit"
 msgstr "Fehler! Es konnte keine gültige [cid] zur Bearbeitung in 'Categories_admin_edit' ermittelt werden"
 
 #: system/Admin/pnblocks/adminnav.php:30
-#: system/Admin/pnversion.php:14
-msgid "Admin"
-msgstr "Admin"
+msgid "Admin Module"
+msgstr "Administration"
 
 #: system/Admin/pnblocks/adminnav.php:31
 msgid "Show admin categories and modules"
 msgstr "Liste der Modulkategorien"
+
+#: system/Admin/pnversion.php:14
+msgid "Admin"
+msgstr "Admin"
 
 #: system/Admin/pnversion.php:15
 msgid "Provides the site's Admin Panel, and the ability to configure and manage it."
@@ -2387,27 +2429,27 @@ msgstr "Unbekannter %1$s entfernt: %2$s"
 msgid "No such Page Configuration Assignment found."
 msgstr "Keine entsprechende Seitenkonfigurationszuordnung gefunden."
 
-#: system/Theme/pnadmin.php:978
+#: system/Theme/pnadmin.php:986
 msgid "Regenerated themes list"
 msgstr "Die Themeliste wurde neu eingelesen"
 
-#: system/Theme/pnadmin.php:1031
+#: system/Theme/pnadmin.php:1039
 msgid "Default theme changed"
 msgstr "Das Standard Theme wurde geändert"
 
-#: system/Theme/pnadmin.php:1052
+#: system/Theme/pnadmin.php:1060
 msgid "Theme directory must be writable"
 msgstr "Das Themeverzeichnis muss beschreibbar sein"
 
-#: system/Theme/pnadmin.php:1057
+#: system/Theme/pnadmin.php:1065
 msgid "This theme cannot be upgraded as it isn't a Xanthia 2 theme"
 msgstr "Das Theme konnte nicht aktualisiert werden, da es kein Xanthia2-Theme ist."
 
-#: system/Theme/pnadmin.php:1063
+#: system/Theme/pnadmin.php:1071
 msgid "Failed to create theme configuration directory"
 msgstr "Fehler bei der Erstellung des Verzeichnisses für die Themekonfiguration"
 
-#: system/Theme/pnadmin.php:1112
+#: system/Theme/pnadmin.php:1120
 msgid "Theme upgraded"
 msgstr "Das Theme wurde aktualisiert"
 
@@ -2467,6 +2509,7 @@ msgstr "Neuen Benutzer registrieren"
 #: system/Users/pntemplates/users_block_login.htm:6
 #: system/Users/pntemplates/users_admin_view.htm:29
 #: system/Users/pntemplates/users_userapi_welcomeemail.htm:7
+#: system/Users/pntemplates/users_admin_deleteusers.htm:18
 #: system/Users/pntemplates/users_user_loginscreen.htm:19
 #: system/Users/pntemplates/users_admin_viewapplications.htm:10
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:11
@@ -2477,7 +2520,7 @@ msgid "User Name"
 msgstr "Benutzername"
 
 #: system/Theme/plugins/function.userlogin.php:61
-#: upgrade.php:149
+#: upgrade.php:144
 #: install/pntemplates/installer_dbinformation.htm:40
 #: install/pntemplates/installer_login.htm:19
 #: install/pntemplates/installer_createadmin.htm:24
@@ -4146,58 +4189,58 @@ msgstr "Invalid column key [%s] in HtmlUtil::getSelector_TableField ..."
 msgid "January February March April May June July August September October November December"
 msgstr "Januar Februar März April Mai Juni Juli August September Oktober November Dezember"
 
-#: includes/pnAPI.php:636
+#: includes/pnAPI.php:641
 msgid "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 msgstr "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 
-#: includes/pnAPI.php:687
+#: includes/pnAPI.php:692
 msgid "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 msgstr "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 
-#: includes/pnAPI.php:719
+#: includes/pnAPI.php:724
 msgid "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 msgstr "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 
-#: includes/pnAPI.php:750
+#: includes/pnAPI.php:755
 msgid "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 msgstr "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 
-#: includes/pnAPI.php:782
+#: includes/pnAPI.php:787
 msgid "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 msgstr "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 
-#: includes/pnAPI.php:804
+#: includes/pnAPI.php:809
 #, php-format
 msgid "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 msgstr "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 
-#: includes/pnAPI.php:1505
+#: includes/pnAPI.php:1512
 msgid "System error"
 msgstr "Systemfehler"
 
-#: includes/pnAPI.php:1583
+#: includes/pnAPI.php:1590
 #, php-format
 msgid "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 msgstr "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 
-#: includes/pnAPI.php:1589
+#: includes/pnAPI.php:1596
 msgid "STOP: PHP-function token_get_all() is needed, but not available."
 msgstr "STOP: PHP-function token_get_all() is needed, but not available."
 
-#: includes/pnAPI.php:1595
+#: includes/pnAPI.php:1602
 msgid "STOP: The mbstring extension for PHP is needed, but not available."
 msgstr "STOP: The mbstring extension for PHP is needed, but not available."
 
-#: includes/pnAPI.php:1601
+#: includes/pnAPI.php:1608
 msgid "PHP-function fsockopen() is needed within the Mailer, but not available."
 msgstr "PHP-function fsockopen() is needed within the Mailer, but not available."
 
-#: includes/pnAPI.php:1619
+#: includes/pnAPI.php:1626
 #, php-format
 msgid "STOP: %s has not been found or is not writable for the web server."
 msgstr "STOP: %s has not been found or is not writable for the web server."
 
-#: includes/pnAPI.php:1625
+#: includes/pnAPI.php:1632
 msgid "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 msgstr "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 
@@ -7042,44 +7085,44 @@ msgstr "Module %s, function %s returned."
 msgid "Error! Could not load %s module."
 msgstr "Fehler! Modul %s konnte nicht geladen werden."
 
-#: upgrade.php:89
-#: upgrade.php:98
+#: upgrade.php:83
+#: upgrade.php:92
 #, php-format
 msgid "Zikula version %1$s Upgrade script (for Zikula version %2$s and up)"
 msgstr "Zikula Version %1$s Upgradeskript (für Zikula Version %2$s und aktueller)"
 
-#: upgrade.php:99
+#: upgrade.php:93
 #, php-format
 msgid "This script will upgrade Zikula v%2$s to Zikula v%1$s. Upgrades from prior releases of Zikula are not supported by this script."
 msgstr "Dieses Skript führt eine Aktualisierung von Zikula v%2$s auf Zikula v%1$s durch. Upgrades von älteren Zikula-Versionen werden nicht unterstützt."
 
-#: upgrade.php:106
+#: upgrade.php:100
 msgid "For more information about the upgrade process, please read the <a href=\"docs/upgrade.html\">upgrade documentation</a>, visit our <a href=\"http://community.zikula.org/Wiki.htm\">wiki</a> or the <a href=\"http://community.zikula.org/module-Forum.htm\">support forum</a>"
 msgstr "Bitte unbedingt die <a href=\"docs/upgrade_deu.html\">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href=\"http://code.zikula.org/community-german\">deutschen Dokumentationsprojekt</a> und im Forum unter <a href=\"http://support.zikula.de\">support.zikula.de</a>"
 
-#: upgrade.php:116
+#: upgrade.php:111
 msgid "Please select your language"
 msgstr "Bitte die gewünschte Sprache auswählen"
 
-#: upgrade.php:132
+#: upgrade.php:127
 msgid "BEFORE proceeding you should backup your database!"
 msgstr "Bitte unbedingt vor dem Fortfahren eine Sicherung der Datenbank anlegen!"
 
-#: upgrade.php:143
+#: upgrade.php:138
 msgid "Failed to login to your site"
 msgstr "Fehler bei der Benutzeranmeldung"
 
-#: upgrade.php:145
+#: upgrade.php:140
 msgid "For the next upgrade steps you need to be logged in. Please provide your admin account credentials"
 msgstr "Für die nächsten Aktualisierungsschritte ist eine Anmeldung erforderlich. Bitte die Zugangsdaten für das Administrationskonto eingeben."
 
-#: upgrade.php:148
+#: upgrade.php:143
 #: install/pntemplates/installer_dbinformation.htm:35
 #: install/pntemplates/installer_createadmin.htm:19
 msgid "Username"
 msgstr "Benutzername"
 
-#: upgrade.php:155
+#: upgrade.php:150
 #: system/Permissions/pntemplates/permissions_admin_view.htm:110
 #: system/Permissions/pntemplates/permissions_admin_view.htm:152
 #: system/Permissions/pntemplates/permissions_admin_view.htm:197
@@ -7094,126 +7137,131 @@ msgstr "Benutzername"
 msgid "Submit"
 msgstr "Absenden"
 
-#: upgrade.php:167
+#: upgrade.php:162
 msgid "Check the database character set: UTF8"
-msgstr "Bitte überprüfen, dass der Zeichensatz der Datenbank auf UTF8 gesetzt ist."
+msgstr "Zeichensatzüberprüfung der Datenbank: UTF8"
 
-#: upgrade.php:187
+#: upgrade.php:182
 msgid "Your database is already in utf8 characterset."
 msgstr "Die Datenbank läuft bereits im UTF8 Zeichensatz."
 
-#: upgrade.php:190
+#: upgrade.php:185
 #, php-format
 msgid "This script is only for MySQL databases, you are using %s."
 msgstr "Dieses Skript ist nur für MySQL-Datenbanken bestimmt. Aktuell wird %s genutzt."
 
-#: upgrade.php:191
+#: upgrade.php:186
 msgid "You have to convert your database to utf8 yourself manually, before you can use this version of Zikula."
 msgstr "Die Datenbank muss leider manuell auf UTF8 konvertiert werden, damit diese Zikula-Version genutzt werden kann."
 
-#: upgrade.php:194
+#: upgrade.php:189
 msgid "config/config.php must be writable before this script will run. Please correct this and try again"
 msgstr "Zur Ausführung dieses Skripts muss die Datei config/config.php beschreibbar sein. Bitte berichtigen und erneut probieren."
 
-#: upgrade.php:195
+#: upgrade.php:190
 #: system/PageLock/pntemplates/PageLock_lockedwindow.html:14
 msgid "Check again"
 msgstr "Erneut überprüfen"
 
-#: upgrade.php:225
+#: upgrade.php:220
 #, php-format
 msgid "SKIPPED %s"
 msgstr "Übersprungen %s"
 
-#: upgrade.php:237
+#: upgrade.php:232
 #, php-format
 msgid "SUCCESS: updated %s"
 msgstr "Erfolgreich aktualisiert %s"
 
-#: upgrade.php:239
+#: upgrade.php:234
 #, php-format
 msgid "ERROR: failed to update %s"
 msgstr "Fehler beim Aktualisieren von %s"
 
-#: upgrade.php:246
+#: upgrade.php:241
 msgid "Conversion to UTF8 completed - now move to next step"
 msgstr "Die Konvertierung auf UTF8 wurde vollständig durchgeführt. Bitte mit dem nächsten Schritt fortfahren."
 
-#: upgrade.php:249
+#: upgrade.php:244
 msgid "Unable to connect to the database. Please check the details in config/config.php"
 msgstr "Keine Verbindung zur Datenbank möglich. Bitte die Angaben in der Datei config/config.php überprüfen."
 
-#: upgrade.php:261
+#: upgrade.php:257
 msgid "Upgrade modules"
 msgstr "Aktualisiere Module"
 
-#: upgrade.php:275
+#: upgrade.php:271
 msgid "Starting upgrade"
 msgstr "Starte Aktualisierung"
 
-#: upgrade.php:296
+#: upgrade.php:292
 msgid "upgraded"
 msgstr "aktualisiert"
 
-#: upgrade.php:298
+#: upgrade.php:294
 msgid "not upgraded"
 msgstr "nicht aktualisiert"
 
-#: upgrade.php:303
+#: upgrade.php:299
 msgid "No modules required upgrading"
 msgstr "Aktualisierung ist für kein Modul notwendig"
 
-#: upgrade.php:314
+#: upgrade.php:310
 msgid "Finished upgrade"
 msgstr "Aktualisierung abgeschlossen"
 
-#: upgrade.php:317
+#: upgrade.php:313
 #, php-format
 msgid "Go to the startpage for %s"
 msgstr "Gehe zur Startseite von %s"
 
-#: upgrade.php:320
+#: upgrade.php:316
 #, php-format
 msgid "Go to the admin panel for %s"
 msgstr "Gehe zum Admin-Panel von %s"
 
-#: upgrade.php:347
+#: upgrade.php:343
 msgid "version info not available"
 msgstr "Versionsinformationen nicht verfügbar"
 
-#: upgrade.php:352
+#: upgrade.php:348
 msgid "Possible incompatible version found"
 msgstr "Mögliche inkompatible Version gefunden"
 
-#: upgrade.php:353
+#: upgrade.php:349
 #, php-format
 msgid "The current installed version of Zikula is reporting (%1$s).  This may not be accurate so if you know you have definitely upgraded to %2$s then please ignore this message and proceed.  If you have not upgraded already to version %2$s then please do so and come back to this step."
 msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Diese Angabe muss nicht zwangsläufig stimmen. Falls eine Aktualisierung auf %2$s definitiv schon durchgeführt wurde, so kann der Hinweis ingoriert werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt durchgeführt werden."
 
-#: upgrade.php:357
+#: upgrade.php:353
 msgid "Already up to date"
 msgstr ""
 "\t\n"
 "Bereits auf dem neuesten Stand"
 
-#: upgrade.php:358
+#: upgrade.php:354
 #, php-format
 msgid "It seems that you have already installed version %s. Please remove this upgrade script, you won't be needing it anymore"
 msgstr "Anscheinend wurde die Version %s bereits installiert. Bitte das Upgradeskript entfernen, da es nicht mehr benötigt wird."
 
-#: upgrade.php:366
+#: upgrade.php:362
 msgid "Proceed to Converting DB to UTF8"
 msgstr "Mit der Konvertierung der Datenbank auf UTF8 fortfahren"
 
-#: upgrade.php:374
+#: upgrade.php:370
 #, php-format
 msgid "FAILED: %s"
 msgstr "Fehlgeschlagen: %s"
 
-#: upgrade.php:377
+#: upgrade.php:373
 #, php-format
 msgid "SUCCESS: %s"
 msgstr "Erfolgreich: %s"
+
+#: install/pntemplates/installer_requirements.htm:1
+#: install/pntemplates/installer_page.htm:14
+msgid "System requirements"
+msgstr "Vorausetzungen"
 
 #: install/pntemplates/installer_requirements.htm:2
 #: system/Blocks/pntemplates/blocks_block_finclude_modify.htm:11
@@ -7292,12 +7340,12 @@ msgid "Cannot write to %s - please ensure that the file permissions are correct.
 msgstr "Kann nicht auf %s schreiben. Bitte die Zugriffsrechte für diese Datei kontrollieren."
 
 #: install/pntemplates/installer_requirements.htm:94
-#: install/pntemplates/installer_selecttheme.htm:15
+#: install/pntemplates/installer_selecttheme.htm:14
 #: install/pntemplates/installer_dbinformation.htm:64
 #: install/pntemplates/installer_installtype.htm:11
 #: install/pntemplates/installer_login.htm:25
-#: install/pntemplates/installer_lang.htm:17
-#: install/pntemplates/installer_selectmodule.htm:24
+#: install/pntemplates/installer_lang.htm:14
+#: install/pntemplates/installer_selectmodule.htm:23
 #: install/pntemplates/installer_createadmin.htm:41
 #: system/pnRender/pntemplates/pagerintervals.html:32
 #: system/pnRender/pntemplates/pageritems.html:26
@@ -7308,19 +7356,24 @@ msgstr "Weiter"
 msgid "Recheck"
 msgstr "Erneut prüfen"
 
-#: install/pntemplates/installer_selecttheme.htm:2
+#: install/pntemplates/installer_selecttheme.htm:1
 msgid "Select default theme"
 msgstr "Standardtheme auswählen"
 
-#: install/pntemplates/installer_selecttheme.htm:3
+#: install/pntemplates/installer_selecttheme.htm:2
 #: install/pntemplates/installer_page.htm:64
 msgid "Theme Release Database"
 msgstr "offiziellen Theme-Datenbank"
 
-#: install/pntemplates/installer_selecttheme.htm:5
+#: install/pntemplates/installer_selecttheme.htm:4
 #, php-format
 msgid "Themes are used to alter the entire look of a site. Zikula ships with a small number of default themes. Many more are available from %s. Please select a default theme for your new site - you may change the theme later."
 msgstr "Themes bestimmen das Aussehen der Webseite. In der Zikula Grundinstallation sind einige Standardthemes enthalten. Weitere gibt es beispielsweise in der %s. Bitte aber nun vorweg ein Theme für die Grundinstallation wählen. Diese Einstellung kann natürlich später immer wieder geändert werden."
+
+#: install/pntemplates/installer_dbinformation.htm:1
+#: install/pntemplates/installer_page.htm:15
+msgid "Enter database information"
+msgstr "DB-Informationen"
 
 #: install/pntemplates/installer_dbinformation.htm:2
 msgid "Database credentials are provided to you by your host or administrator."
@@ -7368,6 +7421,11 @@ msgstr "Tabellenpräfix (für Table-Sharing)"
 msgid "Create the database"
 msgstr "Datenbank anlegen"
 
+#: install/pntemplates/installer_installtype.htm:1
+#: install/pntemplates/installer_page.htm:16
+msgid "Select installation type"
+msgstr "Installationstyp"
+
 #: install/pntemplates/installer_installtype.htm:2
 msgid "Please select your installation type"
 msgstr "Bitte den Installationstyp wählen"
@@ -7392,6 +7450,11 @@ msgstr "Der angegebene Benutzername hat keine administrativen Rechte."
 msgid "Administrative username"
 msgstr "Benutzername eines Administrators"
 
+#: install/pntemplates/installer_gotosite.htm:1
+#: install/pntemplates/installer_page.htm:20
+msgid "All done!"
+msgstr "Fertig!"
+
 #: install/pntemplates/installer_gotosite.htm:2
 msgid "The Credits"
 msgstr "Danksagungen"
@@ -7408,40 +7471,45 @@ msgstr "Die Zikula Installation ist jetzt abgeschlossen. Falls Probleme oder Sch
 msgid "Go to your Zikula site"
 msgstr "Zur neu eingerichteten Zikula-Seite"
 
-#: install/pntemplates/installer_lang.htm:9
+#: install/pntemplates/installer_lang.htm:1
 #: install/pntemplates/installer_page.htm:12
 msgid "Select language"
 msgstr "Sprachauswahl"
 
-#: install/pntemplates/installer_lang.htm:13
+#: install/pntemplates/installer_lang.htm:10
 msgid "Choose language"
 msgstr "Sprache auswählen"
 
-#: install/pntemplates/installer_selectmodule.htm:2
+#: install/pntemplates/installer_selectmodule.htm:1
 msgid "Select module for start page"
 msgstr "Bitte das Modul für die Startseite auswählen"
 
-#: install/pntemplates/installer_selectmodule.htm:3
+#: install/pntemplates/installer_selectmodule.htm:2
 msgid "Value Addons package"
 msgstr "Value Addons Paket"
 
-#: install/pntemplates/installer_selectmodule.htm:4
+#: install/pntemplates/installer_selectmodule.htm:3
 msgid "Modules Release Database"
 msgstr "offiziellen Moduldatenbank"
 
-#: install/pntemplates/installer_selectmodule.htm:5
+#: install/pntemplates/installer_selectmodule.htm:4
 msgid "Note:"
 msgstr "Anmerkung:"
 
-#: install/pntemplates/installer_selectmodule.htm:9
+#: install/pntemplates/installer_selectmodule.htm:8
 #, php-format
 msgid "Modules are used to extend the functionality of a site. Many more are available from the %1$s and the 3rd party %2$s. Please select a default module for your new site. %3$s You may change this later."
 msgstr "Um den Funktionsumfang von Zikula zu erweitern, werden so genannte Module eingesetzt. Im %1$s und in der %2$s stehen eine Vielzahl an Modulen zum Download zur Verfügung. Bitte jetzt vorweg ein Standardmodul für die neue Seite wählen. %3$s Diese Einstellung kann später jederzeit wieder geändert werden."
 
-#: install/pntemplates/installer_selectmodule.htm:17
+#: install/pntemplates/installer_selectmodule.htm:16
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:58
 msgid "No start module (static frontpage)"
 msgstr "Kein Startmodul (statische Startseite)"
+
+#: install/pntemplates/installer_licence.htm:1
+#: install/pntemplates/installer_page.htm:13
+msgid "Accept licence"
+msgstr "Lizenz akzpetieren"
 
 #: install/pntemplates/installer_licence.htm:6
 msgid "This script will install the Zikula database and help you set up the variables that you need to start. You will be taken through a variety of pages. Each page sets a different portion of the script. We estimate that this entire process will take about ten minutes. At any time that you get stuck, please visit our support forums for help."
@@ -7460,23 +7528,8 @@ msgstr "Lizenz akzeptieren"
 msgid "Zikula installation"
 msgstr "Zikula Installation"
 
-#: install/pntemplates/installer_page.htm:13
-msgid "Accept licence"
-msgstr "Lizenz akzpetieren"
-
-#: install/pntemplates/installer_page.htm:14
-msgid "System requirements"
-msgstr "Vorausetzungen"
-
-#: install/pntemplates/installer_page.htm:15
-msgid "Enter database information"
-msgstr "DB-Informationen"
-
-#: install/pntemplates/installer_page.htm:16
-msgid "Select installation type"
-msgstr "Installationstyp"
-
 #: install/pntemplates/installer_page.htm:17
+#: install/pntemplates/installer_createadmin.htm:1
 msgid "Create admin user"
 msgstr "Admin anlegen"
 
@@ -7487,10 +7540,6 @@ msgstr "Startmodul"
 #: install/pntemplates/installer_page.htm:19
 msgid "Select theme"
 msgstr "Theme auswählen"
-
-#: install/pntemplates/installer_page.htm:20
-msgid "All done!"
-msgstr "Fertig!"
 
 #: install/pntemplates/installer_page.htm:30
 #: install/pntemplates/installer_page.htm:52
@@ -7560,12 +7609,12 @@ msgstr "Dateityp"
 
 #: system/Blocks/pntemplates/blocks_admin_newposition.htm:12
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:14
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:34
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:63
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:35
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:64
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:48
 #: system/Blocks/pntemplates/blocks_admin_view.htm:15
 #: system/Blocks/pntemplates/blocks_admin_view.htm:61
-#: system/Modules/pntemplates/modules_admin_view.htm:25
+#: system/Modules/pntemplates/modules_admin_view.htm:28
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:13
 #: system/Categories/pntemplates/categories_admin_move.htm:13
 #: system/Categories/pntemplates/categories_include_editattributes.html:5
@@ -7587,7 +7636,7 @@ msgstr "Dateityp"
 #: system/Theme/pntemplates/theme_admin_variables.htm:53
 #: system/Theme/pntemplates/theme_admin_new.htm:12
 #: system/Theme/pntemplates/theme_admin_view.htm:10
-#: system/Theme/pntemplates/theme_admin_credits.htm:13
+#: system/Theme/pntemplates/theme_admin_credits.htm:15
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:49
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:71
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:93
@@ -7600,23 +7649,23 @@ msgstr "Dateityp"
 msgid "Name"
 msgstr "Name"
 
-#: system/Blocks/pntemplates/blocks_admin_newposition.htm:12
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:14
+#: system/Blocks/pntemplates/blocks_admin_newposition.htm:14
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:16
 msgid "Allowed chars are a-z, A-Z, 0-9, dash (-) and underscore (_)."
 msgstr "Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_)."
 
-#: system/Blocks/pntemplates/blocks_admin_newposition.htm:16
+#: system/Blocks/pntemplates/blocks_admin_newposition.htm:17
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:18
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:18
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:19
 #: system/Blocks/pntemplates/blocks_admin_view.htm:62
-#: system/Modules/pntemplates/modules_admin_view.htm:27
+#: system/Modules/pntemplates/modules_admin_view.htm:30
 #: system/Categories/pntemplates/categories_admin_edit.htm:77
 #: system/Categories/pntemplates/categories_user_edit.htm:91
 #: system/Admin/pntemplates/admin_admin_modify.htm:18
 #: system/Admin/pntemplates/admin_admin_help.htm:26
 #: system/Admin/pntemplates/admin_admin_new.htm:17
 #: system/Theme/pntemplates/theme_admin_new.htm:20
-#: system/Theme/pntemplates/theme_admin_credits.htm:16
+#: system/Theme/pntemplates/theme_admin_credits.htm:18
 #: system/Groups/pntemplates/groups_admin_new.htm:33
 #: system/Groups/pntemplates/groups_user_memberslist.htm:10
 #: system/Groups/pntemplates/groups_user_view.htm:11
@@ -7626,7 +7675,7 @@ msgstr "Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_)."
 msgid "Description"
 msgstr "Beschreibung"
 
-#: system/Blocks/pntemplates/blocks_admin_newposition.htm:21
+#: system/Blocks/pntemplates/blocks_admin_newposition.htm:22
 #: system/Blocks/pntemplates/blocks_admin_new.htm:59
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:57
 #: system/Categories/pntemplates/categories_admin_edit.htm:122
@@ -7638,12 +7687,12 @@ msgstr "Beschreibung"
 msgid "Create"
 msgstr "Erstellen"
 
-#: system/Blocks/pntemplates/blocks_admin_newposition.htm:22
-#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:21
-#: system/Blocks/pntemplates/blocks_admin_delete.htm:19
+#: system/Blocks/pntemplates/blocks_admin_newposition.htm:23
+#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:17
+#: system/Blocks/pntemplates/blocks_admin_delete.htm:16
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:114
 #: system/Blocks/pntemplates/blocks_admin_modifyconfig.htm:22
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:24
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:25
 #: system/Blocks/pntemplates/blocks_admin_new.htm:60
 #: system/AuthPN/pntemplates/authpn_admin_modifyconfig.htm:19
 #: system/SecurityCenter/pntemplates/securitycenter_admin_delete.htm:19
@@ -7651,21 +7700,21 @@ msgstr "Erstellen"
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:63
 #: system/Search/pntemplates/search_admin_modifyconfig.htm:32
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:56
-#: system/Permissions/pntemplates/permissions_admin_delete.htm:20
+#: system/Permissions/pntemplates/permissions_admin_delete.htm:18
 #: system/Permissions/pntemplates/permissions_admin_view.htm:112
 #: system/Permissions/pntemplates/permissions_admin_view.htm:154
 #: system/Permissions/pntemplates/permissions_admin_view.htm:199
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:30
 #: system/Modules/pntemplates/modules_admin_modify.htm:23
 #: system/Modules/pntemplates/modules_admin_initialise.htm:58
-#: system/Modules/pntemplates/modules_admin_remove.htm:67
+#: system/Modules/pntemplates/modules_admin_remove.htm:62
 #: system/Modules/pntemplates/modules_admin_hooks.htm:29
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:27
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:58
-#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:22
+#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:17
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:86
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:25
-#: system/Categories/pntemplates/categories_admin_config.htm:17
+#: system/Categories/pntemplates/categories_admin_config.htm:14
 #: system/Categories/pntemplates/categories_admin_move.htm:27
 #: system/Categories/pntemplates/categories_admin_preferences.htm:37
 #: system/Categories/pntemplates/categories_admin_edit.htm:120
@@ -7676,15 +7725,15 @@ msgstr "Erstellen"
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:62
 #: system/Admin/pntemplates/admin_admin_modify.htm:26
 #: system/Admin/pntemplates/admin_admin_new.htm:25
-#: system/Admin/pntemplates/admin_admin_delete.htm:21
+#: system/Admin/pntemplates/admin_admin_delete.htm:17
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:108
 #: system/Theme/pntemplates/theme_admin_pageconfigurations.htm:84
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:124
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:84
-#: system/Theme/pntemplates/theme_admin_setasdefault.htm:20
+#: system/Theme/pntemplates/theme_admin_setasdefault.htm:21
 #: system/Theme/pntemplates/theme_admin_palettes.htm:129
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:76
-#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:20
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:77
+#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:17
 #: system/Theme/pntemplates/theme_admin_variables.htm:63
 #: system/Theme/pntemplates/theme_admin_new.htm:65
 #: system/Theme/pntemplates/theme_admin_modify.htm:40
@@ -7697,13 +7746,13 @@ msgstr "Erstellen"
 #: system/Users/pntemplates/users_user_changeemail.htm:17
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:206
 #: system/Users/pntemplates/users_user_changepassword.htm:28
-#: system/Users/pntemplates/users_admin_deleteusers.htm:23
+#: system/Users/pntemplates/users_admin_deleteusers.htm:24
 #: system/Users/pntemplates/users_admin_new.htm:36
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:45
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:90
 #: system/SysInfo/pntemplates/sysinfo_admin_flushdbcache.htm:17
 #: system/Groups/pntemplates/groups_admin_new.htm:40
-#: system/Groups/pntemplates/groups_admin_delete.htm:20
+#: system/Groups/pntemplates/groups_admin_delete.htm:17
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:35
 #: system/Groups/pntemplates/groups_user_memberslist.htm:31
 #: system/Groups/pntemplates/groups_user_membership.htm:38
@@ -7718,29 +7767,32 @@ msgstr "Abbrechen"
 msgid "Delete block position"
 msgstr "Blockposition löschen"
 
-#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:13
-#: system/Blocks/pntemplates/blocks_admin_delete.htm:12
-#: system/SecurityCenter/pntemplates/securitycenter_admin_delete.htm:12
-#: system/Permissions/pntemplates/permissions_admin_delete.htm:13
-#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:14
-#: system/Categories/pntemplates/categories_admin_delete.htm:11
-#: system/Admin/pntemplates/admin_admin_delete.htm:13
-#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:9
-#: system/Theme/pntemplates/theme_admin_delete.htm:9
-#: system/Users/pntemplates/users_admin_deleteusers.htm:15
-msgid "Confirmation Prompt"
-msgstr "Sicherheitsabfrage"
-
-#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:15
+#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:8
 msgid "Do you really want to delete this block position?"
 msgstr "Soll die Blockposition wirklich gelöscht werden?"
+
+#: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:14
+#: system/Blocks/pntemplates/blocks_admin_delete.htm:13
+#: system/SecurityCenter/pntemplates/securitycenter_admin_delete.htm:12
+#: system/Permissions/pntemplates/permissions_admin_delete.htm:15
+#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:14
+#: system/Categories/pntemplates/categories_admin_config.htm:10
+#: system/Categories/pntemplates/categories_admin_delete.htm:11
+#: system/Admin/pntemplates/admin_admin_delete.htm:14
+#: system/Theme/pntemplates/theme_admin_setasdefault.htm:9
+#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:10
+#: system/Theme/pntemplates/theme_admin_delete.htm:10
+#: system/Users/pntemplates/users_admin_deleteusers.htm:16
+#: system/Groups/pntemplates/groups_admin_delete.htm:11
+msgid "Confirmation Prompt"
+msgstr "Sicherheitsabfrage"
 
 #: system/Blocks/pntemplates/blocks_admin_delete.htm:2
 msgid "Delete block"
 msgstr "Block löschen"
 
-#: system/Blocks/pntemplates/blocks_admin_delete.htm:14
-msgid "Do you really want to delete this  block?"
+#: system/Blocks/pntemplates/blocks_admin_delete.htm:7
+msgid "Do you really want to delete this block?"
 msgstr "Soll der Block wirklich gelöscht werden?"
 
 #: system/Blocks/pntemplates/blocks_block_extmenu.htm:22
@@ -7830,12 +7882,12 @@ msgid "Refresh time for block (only used for blocks that retrieve information fr
 msgstr "Aktualisierungsintervall (nur für Blöcke, die Inhalte aus externen Quellen einbinden)"
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:113
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:23
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:24
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:85
 #: system/Categories/pntemplates/categories_admin_edit.htm:113
 #: system/Categories/pntemplates/categories_user_edit.htm:131
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:123
-#: system/Theme/pntemplates/theme_admin_setasdefault.htm:19
+#: system/Theme/pntemplates/theme_admin_setasdefault.htm:20
 #: system/Theme/pntemplates/theme_admin_modify.htm:39
 #: system/Groups/pntemplates/groups_admin_modify.htm:41
 msgid "Update"
@@ -7864,7 +7916,7 @@ msgstr "URL"
 
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:18
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:50
-#: system/Modules/pntemplates/modules_admin_remove.htm:36
+#: system/Modules/pntemplates/modules_admin_remove.htm:41
 msgid "Optional"
 msgstr "Optional"
 
@@ -7892,7 +7944,7 @@ msgstr "Symbole zur Blockverkleinerung aktivieren (ggfs. Theme-abhängig)"
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:24
 #: system/Categories/pntemplates/categories_admin_preferences.htm:36
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:75
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:76
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:60
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:173
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:65
@@ -7927,20 +7979,20 @@ msgstr "Liste"
 msgid "Update Block Position"
 msgstr "Blockposition aktualisieren"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:27
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:28
 msgid "Block assignments"
 msgstr "Blockzuweisungen"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:28
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:29
 msgid "Blocks assigned to this position"
 msgstr "Dieser Position zugewiesene Blöcke"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:29
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:30
 msgid "Arrange your blocks for this position using drag and drop. The block order will also be saved when you drop an assigned block into another place."
 msgstr "Die Blöcke können mittels Drag und Drop sortiert werden. Die neue Reihenfolge ist sofort gültig."
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:33
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:62
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:34
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:63
 #: system/Blocks/pntemplates/blocks_admin_view.htm:14
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:14
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:30
@@ -7951,11 +8003,11 @@ msgstr "Die Blöcke können mittels Drag und Drop sortiert werden. Die neue Reih
 msgid "Module"
 msgstr "Modul"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:35
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:64
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:36
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:65
 #: system/Blocks/pntemplates/blocks_admin_view.htm:18
-#: system/Modules/pntemplates/modules_admin_view.htm:30
-#: system/Theme/pntemplates/theme_admin_credits.htm:26
+#: system/Modules/pntemplates/modules_admin_view.htm:33
+#: system/Theme/pntemplates/theme_admin_credits.htm:28
 #: system/Groups/pntemplates/groups_admin_new.htm:23
 #: system/Groups/pntemplates/groups_user_memberslist.htm:11
 #: system/Groups/pntemplates/groups_user_view.htm:13
@@ -7964,21 +8016,21 @@ msgstr "Modul"
 msgid "State"
 msgstr "Status"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:44
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:73
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:45
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:74
 #: system/Blocks/pntemplates/blocks_admin_view.htm:33
 #: system/Blocks/pntemplates/blocks_admin_view.htm:37
 msgid "click to deactivate this block"
 msgstr "Hier klicken, um den Block zu deaktivieren"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:49
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:77
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:50
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:78
 #: system/Blocks/pntemplates/blocks_admin_view.htm:33
 #: system/Blocks/pntemplates/blocks_admin_view.htm:37
 msgid "click to activate this block"
 msgstr "Hier klicken, um den Block zu aktivieren"
 
-#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:58
+#: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:59
 msgid "Blocks not assigned to this position"
 msgstr "Dieser Position nicht zugewiesene Blöcke"
 
@@ -8071,7 +8123,7 @@ msgstr "Optionen"
 #: system/Blocks/pntemplates/blocks_admin_view.htm:80
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:53
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view.htm:41
-#: system/Modules/pntemplates/modules_admin_view.htm:61
+#: system/Modules/pntemplates/modules_admin_view.htm:64
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:39
 #: system/Admin/pntemplates/admin_admin_view.htm:27
 #: system/Theme/pntemplates/theme_admin_variables.htm:46
@@ -8079,7 +8131,7 @@ msgstr "Optionen"
 msgid "No items found."
 msgstr "Keine Einträge gefunden"
 
-#: system/Blocks/pntemplates/blocks_admin_view.htm:55
+#: system/Blocks/pntemplates/blocks_admin_view.htm:56
 msgid "View block positions"
 msgstr "Blockpositionen anzeigen"
 
@@ -8226,7 +8278,7 @@ msgstr "Achtung: Bei der Benutzung von RSS-Themes könnten Probleme auftreten!"
 
 #: system/pnRender/pntemplates/pnrender_block_pnrender.htm:25
 #: system/Modules/pntemplates/modules_admin_initialise.htm:19
-#: system/Modules/pntemplates/modules_admin_remove.htm:23
+#: system/Modules/pntemplates/modules_admin_remove.htm:28
 msgid "Module name"
 msgstr "Modulname"
 
@@ -8515,6 +8567,18 @@ msgstr "Warnung! Wenn der Wert für 'Session-Cookie Name' geändert wird, werden
 msgid "HTTP variable cleansing"
 msgstr "Bereinigung von HTTP-Variablen"
 
+#: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:195
+msgid "Sanitize \"$_GET\" variables"
+msgstr "\"$_GET\" Variable bereinigen"
+
+#: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:204
+msgid "Sanitize \"$_POST\" variables"
+msgstr "\"$_POST\" Variable bereinigen"
+
+#: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:213
+msgid "Sanitize \"$_COOKIE\" variables"
+msgstr "\"$_COOKIE\" Variable bereinigen"
+
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:223
 msgid "Output filter settings"
 msgstr "Ausgabefilter"
@@ -8561,7 +8625,7 @@ msgstr "Komponente"
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:31
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view.htm:13
 #: system/Theme/pntemplates/theme_admin_view.htm:11
-#: system/Theme/pntemplates/theme_admin_credits.htm:14
+#: system/Theme/pntemplates/theme_admin_credits.htm:16
 #: system/SysInfo/pntemplates/sysinfo_admin_filesystem.htm:9
 #: system/Groups/pntemplates/groups_admin_new.htm:17
 #: system/Groups/pntemplates/groups_user_memberslist.htm:9
@@ -8594,7 +8658,7 @@ msgstr "Angriffsversuche anzeigen"
 #: system/Categories/pntemplates/categories_admin_edit.htm:98
 #: system/Categories/pntemplates/categories_user_list.htm:7
 #: system/Categories/pntemplates/categories_user_edit.htm:115
-#: system/Theme/pntemplates/theme_admin_credits.htm:12
+#: system/Theme/pntemplates/theme_admin_credits.htm:14
 #: system/Users/pntemplates/users_admin_view.htm:30
 #: system/Groups/pntemplates/groups_admin_view.htm:18
 msgid "Internal ID"
@@ -8797,7 +8861,7 @@ msgstr "Allgemeinere Schlüsselbegriffe benutzen."
 msgid "Try fewer keywords."
 msgstr "Bitte weniger Schlüsselbegriffe benutzen."
 
-#: system/legal/pntemplates/legal_admin_modifyconfig.htm:10
+#: system/legal/pntemplates/legal_admin_modifyconfig.htm:6
 msgid "<strong>Important Usage Note</strong>: The provided legal statements are samples only. They require adapting to specific needs and locales. You will find the content of the statements in files in the system/legal/pntemplates/eng/ directory. These templates can be <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">overridden</a> as part of your theme."
 msgstr "<strong>Wichtige Hinweise zur Benutzung</strong>: Die bereitgestellten Nutzungsbedingungen sind nur Beispiele. Sie erfordern eine Anpassung an besondere Anforderungen und den Einsatzort. Der Inhalt der Bedingungen findet sich in Dateien im system/legal/pntemplates/deu/ Verzeichnis. Diese Templates können durch <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">Templates im Theme-Ordner</a> überlagert werden."
 
@@ -8833,7 +8897,7 @@ msgstr "Mindeszeilenhöhe im Bearbeitungsmodus (Pixel)"
 msgid "Delete permission"
 msgstr "Zugriffsrecht löschen"
 
-#: system/Permissions/pntemplates/permissions_admin_delete.htm:15
+#: system/Permissions/pntemplates/permissions_admin_delete.htm:8
 #: system/Permissions/pntemplates/permissions_admin_view.htm:215
 msgid "Do you really want to delete this permission?"
 msgstr "Soll das Zugriffsrecht wirklich gelöscht werden?"
@@ -8988,7 +9052,7 @@ msgid "This module has dependencies that are currently not met by the system."
 msgstr "Das Modul hat Abhängigkeiten, die vom derzeitigen System nicht erfüllt werden."
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:20
-#: system/Modules/pntemplates/modules_admin_remove.htm:24
+#: system/Modules/pntemplates/modules_admin_remove.htm:29
 msgid "Level"
 msgstr "Level"
 
@@ -8997,7 +9061,7 @@ msgid "Not found in system"
 msgstr "Nicht im System gefunden"
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:32
-#: system/Modules/pntemplates/modules_admin_remove.htm:34
+#: system/Modules/pntemplates/modules_admin_remove.htm:39
 msgid "Required"
 msgstr "Erforderlich"
 
@@ -9014,60 +9078,60 @@ msgstr "Sicherstellen, dass das Modul im System verfügbar ist (und die Liste re
 msgid "Confirm initialisation of module"
 msgstr "Initialisierung bestätigen"
 
-#: system/Modules/pntemplates/modules_admin_remove.htm:15
-#: system/Modules/pntemplates/modules_admin_remove.htm:65
+#: system/Modules/pntemplates/modules_admin_remove.htm:6
+msgid "Warning: This action will permantly remove all data associated with this module including data held by modules hooked to this module!"
+msgstr "Warnung! Diese Aktion löscht in der Datenbank unwiderruflich alle Daten des Moduls. Außerdem werden auch die Inhalte aus anderen Modulen gelöscht, die über Hooks mit diesem Modul verbunden sind."
+
+#: system/Modules/pntemplates/modules_admin_remove.htm:16
+#: system/Modules/pntemplates/modules_admin_remove.htm:60
 msgid "Confirm deletion?"
 msgstr "Löschen bestätigen"
 
 #: system/Modules/pntemplates/modules_admin_remove.htm:19
-msgid "This module is used by other modules present in your system. Any modules listed as required dependents will be removed when removing this module."
-msgstr "Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind, werden bei Entfernung des Moduls ebenfalls entfernt."
-
-#: system/Modules/pntemplates/modules_admin_remove.htm:56
 msgid "This module has some blocks active, you need to remove them first!"
 msgstr "Für dieses Modul sind noch Blöcke aktiv, die vorher entfernt werden müssen!"
 
-#: system/Modules/pntemplates/modules_admin_remove.htm:60
-msgid "Warning: This action will permantly remove all data associated with this module including data held by modules hooked to this module!"
-msgstr "Warnung! Diese Aktion löscht in der Datenbank unwiderruflich alle Daten des Moduls. Außerdem werden auch die Inhalte aus anderen Modulen gelöscht, die über Hooks mit diesem Modul verbunden sind."
+#: system/Modules/pntemplates/modules_admin_remove.htm:24
+msgid "This module is used by other modules present in your system. Any modules listed as required dependents will be removed when removing this module."
+msgstr "Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige Abhängigkeit gelistet sind, werden bei Entfernung des Moduls ebenfalls entfernt."
 
-#: system/Modules/pntemplates/modules_admin_view.htm:26
+#: system/Modules/pntemplates/modules_admin_view.htm:29
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:35
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:38
 #: system/Theme/pntemplates/theme_admin_new.htm:16
 #: system/Theme/pntemplates/theme_admin_modify.htm:13
-#: system/Theme/pntemplates/theme_admin_credits.htm:15
+#: system/Theme/pntemplates/theme_admin_credits.htm:17
 msgid "Display name"
 msgstr "Anzeigename"
 
-#: system/Modules/pntemplates/modules_admin_view.htm:28
+#: system/Modules/pntemplates/modules_admin_view.htm:31
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:14
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:15
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:36
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:37
-#: system/Theme/pntemplates/theme_admin_credits.htm:18
+#: system/Theme/pntemplates/theme_admin_credits.htm:20
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:131
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:136
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: system/Modules/pntemplates/modules_admin_view.htm:29
-#: system/Theme/pntemplates/theme_admin_credits.htm:19
+#: system/Modules/pntemplates/modules_admin_view.htm:32
+#: system/Theme/pntemplates/theme_admin_credits.htm:21
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:11
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:30
 #: system/SysInfo/pntemplates/sysinfo_admin_adodb.htm:8
 msgid "Version"
 msgstr "Version"
 
-#: system/Modules/pntemplates/modules_admin_view.htm:31
+#: system/Modules/pntemplates/modules_admin_view.htm:34
 #: system/Admin/pntemplates/admin_admin_view.htm:12
 #: system/Users/pntemplates/users_admin_listusers.htm:53
 #: system/Users/pntemplates/users_admin_view.htm:31
 msgid "Actions"
 msgstr "Aktionen"
 
-#: system/Modules/pntemplates/modules_admin_view.htm:39
-#: system/Modules/pntemplates/modules_admin_view.htm:41
+#: system/Modules/pntemplates/modules_admin_view.htm:42
+#: system/Modules/pntemplates/modules_admin_view.htm:44
 msgid "Go to module administration panel"
 msgstr "Gehe zum Admin-Panel"
 
@@ -9138,7 +9202,7 @@ msgstr "Seite nicht gefunden"
 
 #: system/Errors/pntemplates/errors_user_404.htm:6
 #, php-format
-msgid "We're sorry. The page you requested, %1$s, doesn"
+msgid "We're sorry. The page you requested, %1$s, doesn't exist on %2$s"
 msgstr "Die angeforderte Seite %1$s existiert leider nicht auf %2$s"
 
 #: system/Errors/pntemplates/errors_user_404.htm:18
@@ -9184,7 +9248,7 @@ msgstr "Nur aktive Nachrichten"
 msgid "Delete Admin Message"
 msgstr "Admin-Nachricht löschen"
 
-#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:16
+#: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:8
 msgid "Do you really want to delete this Admin Message?"
 msgstr "Soll die Admin-Nachricht wirklich gelöscht werden?"
 
@@ -9217,11 +9281,11 @@ msgstr "Zielgruppe"
 msgid "Expiry date"
 msgstr "Ablaufdatum"
 
-#: system/Categories/pntemplates/categories_admin_config.htm:12
+#: system/Categories/pntemplates/categories_admin_config.htm:7
 msgid "This page allows you to rebuild all system internal paths"
 msgstr "Hier können alle systeminternen Pfade neu erstellt werden"
 
-#: system/Categories/pntemplates/categories_admin_config.htm:12
+#: system/Categories/pntemplates/categories_admin_config.htm:7
 msgid "You can trigger this action by clicking on the submit button below. Depending on the number of categories in your system, this action could either time out or exceed your configured PHP memory limit."
 msgstr "Über die Schaltfläche kann diese Aktion gestartet werden. Je nach Anzahl der Kategorien könnte möglicherweise ein Time-Out auftreten oder evtl. das PHP-Speicherlimit überschritten werden."
 
@@ -9404,6 +9468,11 @@ msgstr "Systeminformationen"
 msgid "New"
 msgstr "Neu"
 
+#: system/Categories/pntemplates/categories_admin_menu.htm:4
+#: themes/SeaBreeze/templates/modules/admin.htm:30
+msgid "Categories"
+msgstr "Kategorien"
+
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:7
 msgid "Choose Category"
 msgstr "Kategorie auswählen"
@@ -9447,7 +9516,6 @@ msgid "Continue"
 msgstr "Fortfahren"
 
 #: system/Admin/pntemplates/admin_admin_categorymenu.htm:3
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:40
 msgid "Admin Panel"
 msgstr "Admin-Panel"
 
@@ -9474,10 +9542,10 @@ msgstr "OK"
 #: system/Admin/pntemplates/admin_admin_modify.htm:27
 #: system/Admin/pntemplates/admin_admin_help.htm:4
 #: system/Admin/pntemplates/admin_admin_new.htm:26
-#: system/Admin/pntemplates/admin_admin_delete.htm:22
+#: system/Admin/pntemplates/admin_admin_delete.htm:18
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:109
 #: system/Admin/pntemplates/admin_admin_view.htm:32
-#: system/Theme/pntemplates/theme_admin_credits.htm:29
+#: system/Theme/pntemplates/theme_admin_credits.htm:31
 msgid "Help"
 msgstr "Hilfe"
 
@@ -9757,7 +9825,7 @@ msgstr "Neue Modulkategorie"
 msgid "Delete module category"
 msgstr "Modulkategorie löschen"
 
-#: system/Admin/pntemplates/admin_admin_delete.htm:15
+#: system/Admin/pntemplates/admin_admin_delete.htm:8
 msgid "Do you really want to delete this module category?"
 msgstr "Soll die Modulkategorie wirklich gelöscht werden?"
 
@@ -9931,7 +9999,7 @@ msgstr "Template für Blockpositionen"
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:85
 #, php-format
 msgid "The following block positions, used by this page configuration, are not defined in the blocks module;</p>%s<p>Click on a block position to create it."
-msgstr "Die folgenden Blockpositionen in der Seitenkonfiguration sind nicht im Blockmodul eingerichtet</p>%p%<p>Zum Anlegen die Blockposition anklicken."
+msgstr "Die folgenden Blockpositionen in der Seitenkonfiguration sind nicht im Blockmodul eingerichtet</p>%s<p>Zum Anlegen die Blockposition anklicken."
 
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:89
 msgid "Block type templates"
@@ -9951,12 +10019,12 @@ msgstr "Block ohne Titel vom Typ %1$s, ID %2$s"
 msgid "Set default theme"
 msgstr "Standard Theme setzen"
 
-#: system/Theme/pntemplates/theme_admin_setasdefault.htm:8
+#: system/Theme/pntemplates/theme_admin_setasdefault.htm:6
 #, php-format
 msgid "This will set %s as the active theme for all users of your site!"
 msgstr "Setzt %s als aktives Theme für alle Benutzer!"
 
-#: system/Theme/pntemplates/theme_admin_setasdefault.htm:14
+#: system/Theme/pntemplates/theme_admin_setasdefault.htm:15
 msgid "Reset user theme overrides"
 msgstr "individuelle Benutzerthemes übersteuern"
 
@@ -10017,11 +10085,15 @@ msgstr "Filter"
 msgid "Use trimwhitespace output filter"
 msgstr "Ausgabefilter 'trimwhitespace' benutzen"
 
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:71
+msgid "Trim leading white space and blank lines from template source after it gets interpreted, cleaning up code and saving bandwidth."
+msgstr "Entfernt führende Leerzeichen und leere Zeilen aus dem Quellcode der verarbeiteten Templates, um z.B. Bandbreite zu sparen."
+
 #: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:3
 msgid "Delete page configuration assignment"
 msgstr "Lösche Zuordnung der Seitenkonfiguration"
 
-#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:15
+#: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:7
 msgid "Do you really want to delete this page configuration assignment?"
 msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
 
@@ -10081,18 +10153,18 @@ msgid "Theme Engine"
 msgstr "Theme Engine"
 
 #: system/Theme/pntemplates/theme_admin_new.htm:24
-#: system/Theme/pntemplates/theme_admin_credits.htm:21
+#: system/Theme/pntemplates/theme_admin_credits.htm:23
 msgid "Author"
 msgstr "Autor"
 
 #: system/Theme/pntemplates/theme_admin_new.htm:28
-#: system/Theme/pntemplates/theme_admin_credits.htm:22
+#: system/Theme/pntemplates/theme_admin_credits.htm:24
 msgid "Contact"
 msgstr "Kontakt"
 
 #: system/Theme/pntemplates/theme_admin_new.htm:32
 #: system/Theme/pntemplates/theme_admin_modify.htm:17
-#: system/Theme/pntemplates/theme_admin_credits.htm:24
+#: system/Theme/pntemplates/theme_admin_credits.htm:26
 msgid "User theme"
 msgstr "Benutzertheme"
 
@@ -10103,7 +10175,7 @@ msgstr "Themes, das Benutzer für die Seitenansicht wählen können"
 
 #: system/Theme/pntemplates/theme_admin_new.htm:39
 #: system/Theme/pntemplates/theme_admin_modify.htm:24
-#: system/Theme/pntemplates/theme_admin_credits.htm:25
+#: system/Theme/pntemplates/theme_admin_credits.htm:27
 msgid "System theme"
 msgstr "Systemtheme"
 
@@ -10114,7 +10186,7 @@ msgstr "Themes für Backend-Dienste (z.B. RSS)"
 
 #: system/Theme/pntemplates/theme_admin_new.htm:46
 #: system/Theme/pntemplates/theme_admin_modify.htm:31
-#: system/Theme/pntemplates/theme_admin_credits.htm:23
+#: system/Theme/pntemplates/theme_admin_credits.htm:25
 msgid "Admin theme"
 msgstr "Admintheme"
 
@@ -10147,7 +10219,7 @@ msgstr "Layout von <a href=\"http://www.bluerobot.com/web/layouts/\">Layout rese
 msgid "Delete theme"
 msgstr "Theme löschen"
 
-#: system/Theme/pntemplates/theme_admin_delete.htm:13
+#: system/Theme/pntemplates/theme_admin_delete.htm:7
 msgid "Do you really want to delete this theme?"
 msgstr "Soll das Theme wirklich gelöscht werden?"
 
@@ -10174,8 +10246,8 @@ msgstr "Als Standard setzen"
 
 #: system/Theme/pntemplates/theme_admin_view.htm:40
 #: system/Theme/pntemplates/theme_admin_credits.htm:4
-#: system/Theme/pntemplates/theme_admin_credits.htm:6
-#: system/Theme/pntemplates/theme_admin_credits.htm:27
+#: system/Theme/pntemplates/theme_admin_credits.htm:5
+#: system/Theme/pntemplates/theme_admin_credits.htm:29
 msgid "Credits"
 msgstr "Danksagungen"
 
@@ -10183,23 +10255,23 @@ msgstr "Danksagungen"
 msgid "Default theme"
 msgstr "Standardtheme"
 
-#: system/Theme/pntemplates/theme_admin_credits.htm:17
+#: system/Theme/pntemplates/theme_admin_credits.htm:19
 msgid "Registration ID"
 msgstr "Registrierungs-ID"
 
-#: system/Theme/pntemplates/theme_admin_credits.htm:20
+#: system/Theme/pntemplates/theme_admin_credits.htm:22
 msgid "Official"
 msgstr "Offiziell"
 
-#: system/Theme/pntemplates/theme_admin_credits.htm:28
+#: system/Theme/pntemplates/theme_admin_credits.htm:30
 msgid "Changelog"
 msgstr "Änderungsprotokoll"
 
-#: system/Theme/pntemplates/theme_admin_credits.htm:30
+#: system/Theme/pntemplates/theme_admin_credits.htm:32
 msgid "License"
 msgstr "Lizenz"
 
-#: system/Theme/pntemplates/theme_admin_credits.htm:31
+#: system/Theme/pntemplates/theme_admin_credits.htm:33
 msgid "XHTML capable"
 msgstr "XHTML"
 
@@ -10606,10 +10678,10 @@ msgstr "Schritt 1: Benutzername wählen"
 #: system/Users/pntemplates/users_user_register.htm:37
 #: system/Users/pntemplates/users_user_register.htm:43
 #: system/Users/pntemplates/users_user_register.htm:47
+#: system/Users/pntemplates/users_user_register.htm:65
 #: system/Users/pntemplates/users_user_register.htm:67
 #: system/Users/pntemplates/users_user_register.htm:69
-#: system/Users/pntemplates/users_user_register.htm:71
-#: system/Users/pntemplates/users_user_register.htm:93
+#: system/Users/pntemplates/users_user_register.htm:91
 msgid "*"
 msgstr "*"
 
@@ -10649,49 +10721,41 @@ msgid "Allow other users to view your e-mail address"
 msgstr "Benutzer dürfen die E-Mail-Adresse sehen"
 
 #: system/Users/pntemplates/users_user_register.htm:65
-msgid "Privacy Policy"
-msgstr "Datenschutzrichtlinie"
-
-#: system/Users/pntemplates/users_user_register.htm:66
-msgid "Terms of Use"
-msgstr "Nutzungsbedingungen"
+#, php-format
+msgid "I agree to be bound by this site's <a href=\"%1$s\">Privacy Policy</a> and <a href=\"%2$s\">Terms of Use</a>"
+msgstr "Ich bin mit der <a href=\"%1$s\">Erklärung zum Datenschutz</a> und den <a href=\"%2$s\">Nutzungsbedingungen</a> einverstanden."
 
 #: system/Users/pntemplates/users_user_register.htm:67
-#, php-format
-msgid "I agree to be bound by this site's %1$s and %2$s"
-msgstr "Einverständniserklärung zu den %1$s und %2$s"
-
-#: system/Users/pntemplates/users_user_register.htm:69
 #, php-format
 msgid "I agree to be bound by this site's <a href=\"%s\">Terms of Use</a>"
 msgstr "Ich bin mit den <a href=\"%s\">Nutzungsbedingungen</a> einverstanden."
 
-#: system/Users/pntemplates/users_user_register.htm:71
+#: system/Users/pntemplates/users_user_register.htm:69
 #, php-format
 msgid "I agree to be bound by this site's <a href=\"%s\">Privacy Policy</a>"
 msgstr "Ich bin mit der <a href=\"%s\">Erklärung zum Datenschutz</a> einverstanden."
 
-#: system/Users/pntemplates/users_user_register.htm:79
+#: system/Users/pntemplates/users_user_register.htm:77
 msgid "Since various features of this site use cookies, it is recommended to have cookies enabled in your browser's settings."
 msgstr "Bitte die Cookies im Browser aktivieren, da diese Seite Cookies für die Session-Authentifizierung und teilweise für das Speichern von individuellen Einstellungen verwendet."
 
-#: system/Users/pntemplates/users_user_register.htm:88
+#: system/Users/pntemplates/users_user_register.htm:86
 msgid "Step5: In order to prevent automated sign-ups please answer the following question"
 msgstr "Schritt 5: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
-#: system/Users/pntemplates/users_user_register.htm:90
+#: system/Users/pntemplates/users_user_register.htm:88
 msgid "Step4: In order to prevent automated sign-ups please answer the following question"
 msgstr "Schritt 4: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
-#: system/Users/pntemplates/users_user_register.htm:100
+#: system/Users/pntemplates/users_user_register.htm:98
 msgid "Finally, check your input and submit"
 msgstr "Letzter Schritt: Angaben prüfen und Registrierung senden"
 
-#: system/Users/pntemplates/users_user_register.htm:102
+#: system/Users/pntemplates/users_user_register.htm:100
 msgid "Verify Your Entries"
 msgstr "Eingaben überprüfen"
 
-#: system/Users/pntemplates/users_user_register.htm:103
+#: system/Users/pntemplates/users_user_register.htm:101
 msgid "Submit Registration"
 msgstr "Registrierung absenden"
 
@@ -10723,8 +10787,8 @@ msgid "View user application"
 msgstr "Benutzeranfragen anzeigen"
 
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:35
-msgid "_YOURHOMEPAGE"
-msgstr "_YOURHOMEPAGE"
+msgid "Your homepage"
+msgstr "Homepage"
 
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:55
 msgid "Approve"
@@ -11086,7 +11150,7 @@ msgstr "Neues Kennwort wiederholen"
 msgid "Delete user"
 msgstr "Benutzer löschen"
 
-#: system/Users/pntemplates/users_admin_deleteusers.htm:18
+#: system/Users/pntemplates/users_admin_deleteusers.htm:8
 msgid "Do you really want to delete this user?"
 msgstr "Soll der Benutzer wirklich gelöscht werden?"
 
@@ -11458,7 +11522,7 @@ msgstr "Benutzer zur Gruppe hinzufügen"
 msgid "Users available to add to this group."
 msgstr "Für die Gruppe verfügbare Benutzer."
 
-#: system/Groups/pntemplates/groups_admin_delete.htm:15
+#: system/Groups/pntemplates/groups_admin_delete.htm:8
 #: system/Groups/pntemplates/groups_admin_view.htm:223
 msgid "Do you really want to delete this group?"
 msgstr "Soll die Gruppe wirklich gelöscht werden?"
@@ -11694,4 +11758,13 @@ msgstr "Weblinks"
 #: themes/andreas08/templates/modules/home.htm:25
 msgid "Your Account"
 msgstr "Benutzerprofil"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Datenschutzrichtlinie"
+#~ msgid "Terms of Use"
+#~ msgstr "Nutzungsbedingungen"
+#~ msgid "I agree to be bound by this site's %1$s and %2$s"
+#~ msgstr "Einverständniserklärung zu den %1$s und %2$s"
+#~ msgid "_YOURHOMEPAGE"
+#~ msgstr "_YOURHOMEPAGE"
 
