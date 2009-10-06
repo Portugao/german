@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-03 22:36-0400\n"
-"PO-Revision-Date: 2009-10-05 19:12+0100\n"
+"POT-Creation-Date: 2009-10-05 13:39-0400\n"
+"PO-Revision-Date: 2009-10-06 09:22+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,17 +49,17 @@ msgstr ""
 #: system/Modules/pnadminapi.php:131
 #: system/Modules/pnadminapi.php:286
 #: system/Modules/pnadminapi.php:365
-#: system/Modules/pnadminapi.php:666
-#: system/Modules/pnadminapi.php:851
-#: system/Modules/pnadminapi.php:930
-#: system/Modules/pnadminapi.php:1080
-#: system/Modules/pnadminapi.php:1137
-#: system/Modules/pnadminapi.php:1189
-#: system/Modules/pnadminapi.php:1218
-#: system/Modules/pnadminapi.php:1271
-#: system/Modules/pnadminapi.php:1371
-#: system/Modules/pnadminapi.php:1389
-#: system/Modules/pnadminapi.php:1414
+#: system/Modules/pnadminapi.php:669
+#: system/Modules/pnadminapi.php:854
+#: system/Modules/pnadminapi.php:933
+#: system/Modules/pnadminapi.php:1083
+#: system/Modules/pnadminapi.php:1140
+#: system/Modules/pnadminapi.php:1192
+#: system/Modules/pnadminapi.php:1221
+#: system/Modules/pnadminapi.php:1274
+#: system/Modules/pnadminapi.php:1374
+#: system/Modules/pnadminapi.php:1392
+#: system/Modules/pnadminapi.php:1417
 #: system/Modules/pnadmin.php:45
 #: system/Modules/pnadmin.php:779
 #: system/Modules/pnadmin.php:826
@@ -203,11 +203,10 @@ msgid "Language"
 msgstr "Sprache"
 
 #: system/Blocks/pnblocks/thelang.php:33
-#: system/Blocks/pninit.php:216
-msgid "Languages"
-msgstr "Sprachen"
+msgid "Languages block"
+msgstr "Sprachenblock"
 
-#: system/Blocks/pnblocks/thelang.php:85
+#: system/Blocks/pnblocks/thelang.php:84
 msgid "Select Language"
 msgstr "Sprache auswählen"
 
@@ -241,7 +240,7 @@ msgstr "XSLT"
 
 #: system/Blocks/pnversion.php:13
 #: system/Blocks/pntemplates/blocks_admin_menu.htm:4
-#: themes/SeaBreeze/templates/modules/admin.htm:25
+#: themes/SeaBreeze/templates/modules/admin.htm:26
 msgid "Blocks"
 msgstr "Bloecke"
 
@@ -270,18 +269,18 @@ msgid "Main menu"
 msgstr "Hauptmenü"
 
 #: system/Blocks/pninit.php:174
-#: themes/SeaBreeze/templates/master.htm:23
-#: themes/SeaBreeze/templates/modules/admin.htm:22
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:25
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:25
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:25
-#: themes/SeaBreeze/templates/modules/home.htm:23
-#: themes/voodoodolly/templates/master.htm:24
-#: themes/voodoodolly/templates/modules/admin.htm:24
-#: themes/voodoodolly/templates/modules/home.htm:24
-#: themes/andreas08/templates/master.htm:21
-#: themes/andreas08/templates/modules/admin.htm:21
-#: themes/andreas08/templates/modules/home.htm:21
+#: themes/SeaBreeze/templates/master.htm:24
+#: themes/SeaBreeze/templates/modules/admin.htm:23
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:26
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:26
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:26
+#: themes/SeaBreeze/templates/modules/home.htm:24
+#: themes/voodoodolly/templates/master.htm:25
+#: themes/voodoodolly/templates/modules/admin.htm:25
+#: themes/voodoodolly/templates/modules/home.htm:25
+#: themes/andreas08/templates/master.htm:22
+#: themes/andreas08/templates/modules/admin.htm:22
+#: themes/andreas08/templates/modules/home.htm:22
 msgid "Home"
 msgstr "Startseite"
 
@@ -307,6 +306,10 @@ msgstr "Abmelden"
 #: system/Blocks/pninit.php:192
 msgid "Log out of your account"
 msgstr "Benutzer abmelden"
+
+#: system/Blocks/pninit.php:216
+msgid "Languages"
+msgstr "Sprachen"
 
 #: system/Blocks/pninit.php:226
 msgid "User log-in"
@@ -434,7 +437,7 @@ msgstr "Alle Blöcke anzeigen"
 #: system/Blocks/pnadminapi.php:421
 #: system/SecurityCenter/pnadminapi.php:67
 #: system/Permissions/pnadminapi.php:512
-#: system/Modules/pnadminapi.php:1343
+#: system/Modules/pnadminapi.php:1346
 #: system/Admin_Messages/pnadminapi.php:199
 #: system/Categories/pnadminapi.php:34
 #: system/Theme/pnadminapi.php:217
@@ -476,7 +479,7 @@ msgstr "Alle Blöcke anzeigen"
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:5
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:6
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:3
-#: themes/SeaBreeze/templates/modules/admin.htm:23
+#: themes/SeaBreeze/templates/modules/admin.htm:24
 msgid "Settings"
 msgstr "Konfiguration"
 
@@ -779,6 +782,14 @@ msgstr "pnRender"
 msgid "custom pnRender block"
 msgstr "pnRender-Block"
 
+#: system/pnRender/pnblocks/pnRender.php:65
+msgid "No block"
+msgstr "kein Block"
+
+#: system/pnRender/pnblocks/pnRender.php:74
+msgid "No module"
+msgstr "kein Modul"
+
 #: system/pnRender/pnversion.php:14
 msgid "Provides the core system with a Smarty-based engine to control content rendering and presentation."
 msgstr "Smarty Implementierung von Zikula"
@@ -1003,9 +1014,9 @@ msgstr "Nutzung sonstiger Benutzerauthentifizierungssysteme, insbesondere LDAP o
 
 #: system/SecurityCenter/pnuserapi.php:55
 #: system/Modules/pnadminapi.php:268
-#: system/Modules/pnadminapi.php:676
-#: system/Modules/pnadminapi.php:726
-#: system/Modules/pnadminapi.php:1058
+#: system/Modules/pnadminapi.php:679
+#: system/Modules/pnadminapi.php:729
+#: system/Modules/pnadminapi.php:1061
 #: system/Admin_Messages/pnuserapi.php:53
 #: system/Admin_Messages/pnuserapi.php:150
 #: system/Admin_Messages/pnsearchapi.php:83
@@ -1134,12 +1145,12 @@ msgstr "Session Pfad ist nicht beschreibbar!"
 #: system/Errors/pntemplates/errors_user_404.htm:16
 #: system/Users/pntemplates/users_admin_search.htm:43
 #: system/Users/pntemplates/users_admin_view.htm:11
-#: themes/voodoodolly/templates/master.htm:28
-#: themes/voodoodolly/templates/modules/admin.htm:28
-#: themes/voodoodolly/templates/modules/home.htm:28
-#: themes/andreas08/templates/master.htm:22
-#: themes/andreas08/templates/modules/admin.htm:22
-#: themes/andreas08/templates/modules/home.htm:22
+#: themes/voodoodolly/templates/master.htm:29
+#: themes/voodoodolly/templates/modules/admin.htm:29
+#: themes/voodoodolly/templates/modules/home.htm:29
+#: themes/andreas08/templates/master.htm:23
+#: themes/andreas08/templates/modules/admin.htm:23
+#: themes/andreas08/templates/modules/home.htm:23
 msgid "Search"
 msgstr "Suchen"
 
@@ -1215,7 +1226,7 @@ msgstr "Header- und Footerbereiche für ältere oder Nicht-Xanthia-Themes"
 
 #: system/Permissions/pnversion.php:13
 #: system/Permissions/pntemplates/permissions_admin_menu.htm:5
-#: themes/SeaBreeze/templates/modules/admin.htm:28
+#: themes/SeaBreeze/templates/modules/admin.htm:29
 msgid "Permissions"
 msgstr "Zugriffsrechte"
 
@@ -1482,7 +1493,7 @@ msgstr "Ungültiges Datum"
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:9
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:23
 #: system/Modules/pntemplates/modules_admin_menu.htm:4
-#: themes/SeaBreeze/templates/modules/admin.htm:24
+#: themes/SeaBreeze/templates/modules/admin.htm:25
 msgid "Modules"
 msgstr "Module"
 
@@ -1503,35 +1514,35 @@ msgid "Invalid module state transition"
 msgstr "Fehler! Ungültiger Wechsel des Modulstatus"
 
 #: system/Modules/pnadminapi.php:382
-#: system/Modules/pnadminapi.php:857
-#: system/Modules/pnadminapi.php:935
+#: system/Modules/pnadminapi.php:860
+#: system/Modules/pnadminapi.php:938
 msgid "Error! No such module"
 msgstr "Fehler! Kein solches Modul gefunden!"
 
 #: system/Modules/pnadminapi.php:397
 #: system/Modules/pnadminapi.php:410
-#: system/Modules/pnadminapi.php:559
-#: system/Modules/pnadminapi.php:565
-#: system/Modules/pnadminapi.php:576
-#: system/Modules/pnadminapi.php:582
-#: system/Modules/pnadminapi.php:868
-#: system/Modules/pnadminapi.php:881
-#: system/Modules/pnadminapi.php:946
-#: system/Modules/pnadminapi.php:959
+#: system/Modules/pnadminapi.php:562
+#: system/Modules/pnadminapi.php:568
+#: system/Modules/pnadminapi.php:579
+#: system/Modules/pnadminapi.php:585
+#: system/Modules/pnadminapi.php:871
+#: system/Modules/pnadminapi.php:884
+#: system/Modules/pnadminapi.php:949
+#: system/Modules/pnadminapi.php:962
 #, php-format
 msgid "Could not load required file: %s"
 msgstr "Folgende benötigte Datei konnte nicht geladen werden: %s"
 
-#: system/Modules/pnadminapi.php:909
+#: system/Modules/pnadminapi.php:912
 msgid "Error! Module state change failed"
 msgstr "Fehler! Der Statuswechsel des Moduls ist fehlgeschlagen."
 
-#: system/Modules/pnadminapi.php:1012
+#: system/Modules/pnadminapi.php:1015
 msgid "Module has been upgraded; it's status now is Inactive"
 msgstr "Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt inaktiv."
 
-#: system/Modules/pnadminapi.php:1224
-#: system/Modules/pnadminapi.php:1277
+#: system/Modules/pnadminapi.php:1227
+#: system/Modules/pnadminapi.php:1280
 #: system/Modules/pnadmin.php:55
 #: system/Modules/pnadmin.php:579
 #: system/Modules/pnadmin.php:785
@@ -1539,7 +1550,7 @@ msgstr "Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt inaktiv."
 msgid "Error! No such module ID"
 msgstr "Fehler! Keine entsprechende Modul-ID gefunden."
 
-#: system/Modules/pnadminapi.php:1336
+#: system/Modules/pnadminapi.php:1339
 #: system/Blocks/pntemplates/blocks_admin_view.htm:6
 #: system/Modules/pntemplates/modules_admin_view.htm:4
 #: system/Modules/pntemplates/modules_admin_view.htm:5
@@ -1547,11 +1558,11 @@ msgstr "Fehler! Keine entsprechende Modul-ID gefunden."
 msgid "View"
 msgstr "Anzeigen"
 
-#: system/Modules/pnadminapi.php:1339
+#: system/Modules/pnadminapi.php:1342
 msgid "Regenerate List"
 msgstr "Liste mit Dateisystem abgleichen"
 
-#: system/Modules/pnadminapi.php:1342
+#: system/Modules/pnadminapi.php:1345
 #: system/Modules/pntemplates/modules_admin_hooks.htm:13
 msgid "System hooks"
 msgstr "System Hooks"
@@ -1782,13 +1793,12 @@ msgstr "Admin-Nachrichten"
 msgid "Provides a system for displaying automated messages from the administrator in the site's pages, and an interface for managing and scheduling them."
 msgstr "Automatisierte und termingesteuerte Anzeige von Administrator-Nachrichten"
 
-#: system/Admin_Messages/pninit.php:106
+#: system/Admin_Messages/pninit.php:94
 msgid "Welcome to Zikula"
 msgstr "Willkommen bei Zikula"
 
-#: system/Admin_Messages/pninit.php:107
-#, php-format
-msgid "%1$s is a weblog/content management system (CMS). It is far more secure and stable than competing products, and is able to work in high-volume environments with ease.%2$s Some of the key features of Zikula are:%3$s customization of all aspects of the web site's appearance through themes, with support for CSS stylesheets%4$s the ability to specify items as being suitable for either a single language or for all languages%5$s the best guarantee of properly displaying your web pages in all browsers, thanks to full compliance with W3C HTML standards%6$s a standard API (application programming interface) and extensive documentation to allow for easy extension of your web site's functionality through modules and blocks%7$s Zikula has a very active developer and support community at %8$s We hope you will enjoy using Zikula.%9$s The Zikula development team%10$s Note: you can edit or remove this message by going to the Administration page and clicking on the 'Administration messages' entry%11$s"
+#: system/Admin_Messages/pninit.php:95
+msgid "<p><a href=\"http://www.zikula.org\">Zikula</a> is a weblog/content management system (CMS). It is far more secure and stable than competing products, and is able to work in high-volume environments with ease.<br /><br />Some of the key features of Zikula are:</p><ul><li>customization of all aspects of the web site's appearance through themes, with support for CSS stylesheets</li><li>the ability to specify items as being suitable for either a single language or for all languages</li><li>the best guarantee of properly displaying your web pages in all browsers, thanks to full compliance with W3C HTML standards</li><li>a standard API (application programming interface) and extensive documentation to allow for easy extension of your web site's functionality through modules and blocks</li></ul><p>Zikula has a very active developer and support community at <a href=\\\"http://www.zikula.org\\\">zikula.org</a>.</p><p>We hope you will enjoy using Zikula.<br /><br /><strong>The Zikula development team</strong></p><p><em>Note: you can edit or remove this message by going to the Administration page and clicking on the 'Administration messages' entry</em></p>"
 msgstr "<p><a href=\"http://zikula.de\">Zikula</a> ist ein unter GPL lizenziertes und frei verfügbares Web-Toolkit. Das bedeutet, dass es die Eigenschaften von klassischen Content Management Systemen mit denen von modernen Web-Frameworks vereinigt:</p><ul><li>Zum Einen kann man ein Basissystem per Installation von Zusatzmodulen funktional erweitern. </li><li>Zum Anderen steht ein mächtiges Framework zur Verfügung, das es Entwicklern leicht macht, effizient individuelle Web-Applikationen zu erstellen.</li></ul><p>Zikula bietet damit die ideale Ausgangsbasis für langfristige Projekte: Einsteiger und Neulinge können zunächst mit den vorhandenen Modulen arbeiten und mit steigendem Wissensstand auch die höheren Funktionen für völlig eigene Entwicklungen nutzen.</p><p>Einige der Hauptfeatures sind:</p><ul><li>Flexibles, umfangreiches und fein granulierbares Berechtigungssystem</li><li>Überwachung von Ein- und Ausgabedaten (SecurityCenter, SafeHTML)</li><li>Verschiedene Authentifizierungsmechanismen möglich (LDAP, OpenID)</li><li>Die Zikula API ermöglicht eine schlanke und effektive Programmierung (pnAPI)</li><li>Smarty-basiertes Templating-System (pnRender)</li><li>Globales und Theme-spezifisches Überschreiben von Templates, Stylesheets, Funktionen, etc.</li><li>Erweiterbarkeit: umfangreiches Angebot an Modulen und Blöcken</li><li>Modulübergreifende Funktionalität (Modul-API)</li><li>Wiederverwendung modulunabhängiger Komponenten (Hooks)</li><li>Ajax-Support im Core (Prototype und Script.aculo.us)</li></ul><p>Das deutsche Sprachpaket sowie Support und Dokumentation zu Zikula gibt es bei <a href=\"http://support.zikula.de\">support.zikula.de</a>.</p><em>Anmerkung: Diese Meldung kann in Administration-Admin Nachrichten bearbeitet werden.</em>"
 
 #: system/Admin_Messages/pnadminapi.php:193
@@ -1942,7 +1952,7 @@ msgid "Pending status basic"
 msgstr "Wartestatus (einfach)"
 
 #: system/Categories/pninit.php:397
-#: system/Admin/pninit.php:140
+#: system/Admin/pninit.php:143
 #: system/Users/pnversion.php:15
 #: system/Groups/pninit.php:117
 #: install/functions.php:367
@@ -2157,7 +2167,7 @@ msgstr "Admin"
 msgid "Provides the site's Admin Panel, and the ability to configure and manage it."
 msgstr "Zuordnung der Adminkategorien bearbeiten"
 
-#: system/Admin/pninit.php:136
+#: system/Admin/pninit.php:139
 #: install/functions.php:367
 #: install/pninstalltypes/basic.php:32
 #: install/pninstalltypes/basic.php:34
@@ -2167,11 +2177,11 @@ msgstr "Zuordnung der Adminkategorien bearbeiten"
 msgid "System"
 msgstr "System"
 
-#: system/Admin/pninit.php:137
+#: system/Admin/pninit.php:140
 msgid "Core modules at the heart of operation of this site"
 msgstr "System-Module sind Teil der Core-Funktionalität"
 
-#: system/Admin/pninit.php:138
+#: system/Admin/pninit.php:141
 #: install/functions.php:367
 #: install/pninstalltypes/basic.php:28
 #: install/pninstalltypes/basic.php:36
@@ -2179,15 +2189,15 @@ msgstr "System-Module sind Teil der Core-Funktionalität"
 msgid "Layout"
 msgstr "Layout"
 
-#: system/Admin/pninit.php:139
+#: system/Admin/pninit.php:142
 msgid "Layout modules for controlling this site's look and feel"
 msgstr "Layout-Module bestimmen das Aussehen der Webseite"
 
-#: system/Admin/pninit.php:141
+#: system/Admin/pninit.php:144
 msgid "Modules for controlling user membership, access rights and profiles"
 msgstr "Einstellungen für Benutzer, Gruppen und Zugriffsrechte"
 
-#: system/Admin/pninit.php:142
+#: system/Admin/pninit.php:145
 #: install/pninstalltypes/basic.php:20
 #: install/pninstalltypes/basic.php:24
 #: install/pninstalltypes/basic.php:26
@@ -2201,34 +2211,34 @@ msgstr "Einstellungen für Benutzer, Gruppen und Zugriffsrechte"
 msgid "Content"
 msgstr "Inhalt"
 
-#: system/Admin/pninit.php:143
+#: system/Admin/pninit.php:146
 msgid "Modules for providing content to your users"
 msgstr "Module die für den Inhalt der Webseite zuständig sind"
 
-#: system/Admin/pninit.php:144
+#: system/Admin/pninit.php:147
 msgid "3rd-Party"
 msgstr "Drittanbieter"
 
-#: system/Admin/pninit.php:145
+#: system/Admin/pninit.php:148
 msgid "3rd-party add-on modules and newly-installed modules"
 msgstr "Zusätzliche Module werden nach der Installation hier angezeigt"
 
-#: system/Admin/pninit.php:146
+#: system/Admin/pninit.php:149
 #: install/pninstalltypes/basic.php:22
 #: install/pninstalltypes/basic.php:46
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:33
 msgid "Security"
 msgstr "Sicherheit"
 
-#: system/Admin/pninit.php:147
+#: system/Admin/pninit.php:150
 msgid "Modules for controlling the security of this site"
 msgstr "Module für Sicherheitseinstellungen der Webseite"
 
-#: system/Admin/pninit.php:148
+#: system/Admin/pninit.php:151
 msgid "Hooked"
 msgstr "Hooks"
 
-#: system/Admin/pninit.php:149
+#: system/Admin/pninit.php:152
 msgid "Modules to be hooked to other modules, to provide them with enhanced functionality"
 msgstr "Hook-Module können verschiedenen Modulen Funktionalitäten hinzufügen"
 
@@ -2353,7 +2363,7 @@ msgstr "ThemeSwitcher"
 #: system/Theme/pnadmin.php:72
 #: system/Users/pntemplates/users_admin_modify.htm:64
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:28
-#: themes/SeaBreeze/templates/modules/admin.htm:29
+#: themes/SeaBreeze/templates/modules/admin.htm:30
 msgid "Theme"
 msgstr "Theme"
 
@@ -3384,7 +3394,7 @@ msgstr "Datenbank-Cache geleert"
 #: system/Groups/pntemplates/groups_user_menu.htm:3
 #: system/Groups/pntemplates/groups_admin_menu.htm:5
 #: system/Groups/pntemplates/groups_user_view.htm:2
-#: themes/SeaBreeze/templates/modules/admin.htm:27
+#: themes/SeaBreeze/templates/modules/admin.htm:28
 msgid "Groups"
 msgstr "Gruppen"
 
@@ -4192,58 +4202,58 @@ msgstr "Invalid column key [%s] in HtmlUtil::getSelector_TableField ..."
 msgid "January February March April May June July August September October November December"
 msgstr "Januar Februar März April Mai Juni Juli August September Oktober November Dezember"
 
-#: includes/pnAPI.php:641
+#: includes/pnAPI.php:623
 msgid "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 msgstr "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 
-#: includes/pnAPI.php:692
+#: includes/pnAPI.php:674
 msgid "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 msgstr "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 
-#: includes/pnAPI.php:724
+#: includes/pnAPI.php:706
 msgid "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 msgstr "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 
-#: includes/pnAPI.php:755
+#: includes/pnAPI.php:737
 msgid "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 msgstr "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 
-#: includes/pnAPI.php:787
+#: includes/pnAPI.php:769
 msgid "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 msgstr "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 
-#: includes/pnAPI.php:809
+#: includes/pnAPI.php:791
 #, php-format
 msgid "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 msgstr "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 
-#: includes/pnAPI.php:1512
+#: includes/pnAPI.php:1494
 msgid "System error"
 msgstr "Systemfehler"
 
-#: includes/pnAPI.php:1590
+#: includes/pnAPI.php:1572
 #, php-format
 msgid "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 msgstr "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 
-#: includes/pnAPI.php:1596
+#: includes/pnAPI.php:1578
 msgid "STOP: PHP-function token_get_all() is needed, but not available."
 msgstr "STOP: PHP-function token_get_all() is needed, but not available."
 
-#: includes/pnAPI.php:1602
+#: includes/pnAPI.php:1584
 msgid "STOP: The mbstring extension for PHP is needed, but not available."
 msgstr "STOP: The mbstring extension for PHP is needed, but not available."
 
-#: includes/pnAPI.php:1608
+#: includes/pnAPI.php:1590
 msgid "PHP-function fsockopen() is needed within the Mailer, but not available."
 msgstr "PHP-function fsockopen() is needed within the Mailer, but not available."
 
-#: includes/pnAPI.php:1626
+#: includes/pnAPI.php:1608
 #, php-format
 msgid "STOP: %s has not been found or is not writable for the web server."
 msgstr "STOP: %s has not been found or is not writable for the web server."
 
-#: includes/pnAPI.php:1632
+#: includes/pnAPI.php:1614
 msgid "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 msgstr "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 
@@ -4494,8 +4504,8 @@ msgstr "Blocktyp %s nicht gefunden"
 msgid "The block type %s doesn't seem to exist.  Please check corresponding blocks directory."
 msgstr "Der Blocktyp %s scheint nicht zu existieren. Bitte das dazugehörige Blockverzeichnis überprüfen."
 
-#: includes/pnBlocks.php:451
-#: includes/pnBlocks.php:458
+#: includes/pnBlocks.php:456
+#: includes/pnBlocks.php:463
 #, php-format
 msgid "DB Error %1$s: %2$s"
 msgstr "Datenbankfehler %1$s: %2$s"
@@ -7193,70 +7203,70 @@ msgstr "Keine Verbindung zur Datenbank möglich. Bitte die Angaben in der Datei 
 msgid "Upgrade modules"
 msgstr "Aktualisiere Module"
 
-#: upgrade.php:271
+#: upgrade.php:270
 msgid "Starting upgrade"
 msgstr "Starte Aktualisierung"
 
-#: upgrade.php:292
+#: upgrade.php:315
 msgid "upgraded"
 msgstr "aktualisiert"
 
-#: upgrade.php:294
+#: upgrade.php:317
 msgid "not upgraded"
 msgstr "nicht aktualisiert"
 
-#: upgrade.php:299
+#: upgrade.php:322
 msgid "No modules required upgrading"
 msgstr "Aktualisierung ist für kein Modul notwendig"
 
-#: upgrade.php:310
+#: upgrade.php:334
 msgid "Finished upgrade"
 msgstr "Aktualisierung abgeschlossen"
 
-#: upgrade.php:313
+#: upgrade.php:337
 #, php-format
 msgid "Go to the startpage for %s"
 msgstr "Gehe zur Startseite von %s"
 
-#: upgrade.php:316
+#: upgrade.php:340
 #, php-format
 msgid "Go to the admin panel for %s"
 msgstr "Gehe zum Admin-Panel von %s"
 
-#: upgrade.php:343
+#: upgrade.php:367
 msgid "version info not available"
 msgstr "Versionsinformationen nicht verfügbar"
 
-#: upgrade.php:348
+#: upgrade.php:372
 msgid "Possible incompatible version found"
 msgstr "Mögliche inkompatible Version gefunden"
 
-#: upgrade.php:349
+#: upgrade.php:373
 #, php-format
 msgid "The current installed version of Zikula is reporting (%1$s).  This may not be accurate so if you know you have definitely upgraded to %2$s then please ignore this message and proceed.  If you have not upgraded already to version %2$s then please do so and come back to this step."
 msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Diese Angabe muss nicht zwangsläufig stimmen. Falls eine Aktualisierung auf %2$s definitiv schon durchgeführt wurde, so kann der Hinweis ingoriert werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt durchgeführt werden."
 
-#: upgrade.php:353
+#: upgrade.php:377
 msgid "Already up to date"
 msgstr ""
 "\t\n"
 "Bereits auf dem neuesten Stand"
 
-#: upgrade.php:354
+#: upgrade.php:378
 #, php-format
 msgid "It seems that you have already installed version %s. Please remove this upgrade script, you won't be needing it anymore"
 msgstr "Anscheinend wurde die Version %s bereits installiert. Bitte das Upgradeskript entfernen, da es nicht mehr benötigt wird."
 
-#: upgrade.php:362
+#: upgrade.php:386
 msgid "Proceed to Converting DB to UTF8"
 msgstr "Mit der Konvertierung der Datenbank auf UTF8 fortfahren"
 
-#: upgrade.php:370
+#: upgrade.php:394
 #, php-format
 msgid "FAILED: %s"
 msgstr "Fehlgeschlagen: %s"
 
-#: upgrade.php:373
+#: upgrade.php:397
 #, php-format
 msgid "SUCCESS: %s"
 msgstr "Erfolgreich: %s"
@@ -7312,7 +7322,7 @@ msgid "%s exists. Rename this file before continuing with this installation."
 msgstr "%s existiert. Vor dem Fortfahren die Datei bitte umbenennen."
 
 #: install/pntemplates/installer_requirements.htm:32
-#: install/pntemplates/installer_page.htm:61
+#: install/pntemplates/installer_page.htm:60
 msgid "File system permissions"
 msgstr "Rechte im Dateisystem"
 
@@ -7364,7 +7374,7 @@ msgid "Select default theme"
 msgstr "Standardtheme auswählen"
 
 #: install/pntemplates/installer_selecttheme.htm:2
-#: install/pntemplates/installer_page.htm:64
+#: install/pntemplates/installer_page.htm:63
 msgid "Theme Release Database"
 msgstr "offiziellen Theme-Datenbank"
 
@@ -7545,42 +7555,68 @@ msgid "Select theme"
 msgstr "Theme auswählen"
 
 #: install/pntemplates/installer_page.htm:30
-#: install/pntemplates/installer_page.htm:52
-msgid "Installation guide"
-msgstr "Anleitung"
+msgid "Please refer to the <a style=\"color: red\" href=\"docs/install.html\" onclick=\"window.open('docs/install.html');return false;\">Installation guide</a> during this process"
+msgstr "Bitte während der Installation die <a style=\"color: red\" href=\"docs/install_deu.html\" onclick=\"window.open('docs/install_deu.html');return false;\">Installationsanleitung</a> beachten."
 
-#: install/pntemplates/installer_page.htm:32
-#, php-format
-msgid "Please refer to the %s during this process"
-msgstr "Bitte diese %s während der Installation beachten."
-
-#: install/pntemplates/installer_page.htm:35
+#: install/pntemplates/installer_page.htm:33
 msgid "NOTE: Official Zikula distributions are ONLY available from zikula.org. For certitude of quality, please ensure you are installing an official distribution."
 msgstr "Hinweis: Die Zikula-Downloadpakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href=\"http://community.zikula.org\">community.zikula.org</a> bzw. <a href=\"http://support.zikula.de\">support.zikula.de</a>."
 
-#: install/pntemplates/installer_page.htm:38
+#: install/pntemplates/installer_page.htm:36
 msgid "Installer tasks"
 msgstr "Installationsschritte"
 
+#: install/pntemplates/installer_page.htm:48
+msgid "Free Software"
+msgstr "Freie Software"
+
 #: install/pntemplates/installer_page.htm:50
+msgid "http://www.gnu.org/licenses/gpl.html"
+msgstr "http://www.gnu.org/licenses/gpl.html"
+
+#: install/pntemplates/installer_page.htm:50
+msgid "GNU/GPL License"
+msgstr "GNU/GPL Lizenz"
+
+#: install/pntemplates/installer_page.htm:51
+msgid "http://www.gnu.org/philosophy/"
+msgstr "http://www.gnu.org/philosophy/"
+
+#: install/pntemplates/installer_page.htm:51
+msgid "GNU Philosophy"
+msgstr "GNU Philosophie"
+
+#: install/pntemplates/installer_page.htm:53
 msgid "Useful resources"
 msgstr "Hilfreiche Informationen"
 
-#: install/pntemplates/installer_page.htm:53
+#: install/pntemplates/installer_page.htm:55
+msgid "docs/install.html"
+msgstr "docs/install_deu.html"
+
+#: install/pntemplates/installer_page.htm:55
+msgid "Installation guide"
+msgstr "Anleitung"
+
+#: install/pntemplates/installer_page.htm:56
+msgid "http://community.zikula.org/module-Wiki.htm"
+msgstr "http://code.zikula.org/community-german"
+
+#: install/pntemplates/installer_page.htm:56
 msgid "Zikula Documentation"
 msgstr "Dokumentation"
 
-#: install/pntemplates/installer_page.htm:54
+#: install/pntemplates/installer_page.htm:57
+msgid "http://community.zikula.org/module-Forum.htm"
+msgstr "http://support.zikula.de"
+
+#: install/pntemplates/installer_page.htm:57
 msgid "Support Forums"
 msgstr "Supportforum"
 
-#: install/pntemplates/installer_page.htm:57
-msgid "GNU General Public License"
-msgstr "GNU General Public License"
-
-#: install/pntemplates/installer_page.htm:58
-msgid "Philosophy of the GNU Project"
-msgstr "Philosophie des GNU Projektes"
+#: install/pntemplates/installer_page.htm:60
+msgid "http://www.wikipedia.org/wiki/File_system_permissions"
+msgstr "http://de.wikipedia.org/wiki/Dateiberechtigung"
 
 #: install/pntemplates/installer_createadmin.htm:5
 msgid "Failed to create admin user - please verify user credentials"
@@ -7748,7 +7784,7 @@ msgstr "Erstellen"
 #: system/Users/pntemplates/users_admin_modify.htm:78
 #: system/Users/pntemplates/users_user_changeemail.htm:17
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:206
-#: system/Users/pntemplates/users_user_changepassword.htm:28
+#: system/Users/pntemplates/users_user_changepassword.htm:25
 #: system/Users/pntemplates/users_admin_deleteusers.htm:24
 #: system/Users/pntemplates/users_admin_new.htm:36
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:45
@@ -7971,7 +8007,8 @@ msgid "Display flags"
 msgstr "Flaggen anzeigen"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:6
-msgid "Drop down box"
+#, fuzzy
+msgid "Drop down box domain='zikula'"
 msgstr "Auswahlfeld"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:7
@@ -8760,7 +8797,7 @@ msgid "Show search button"
 msgstr "Suchschaltfläche anzeigen"
 
 #: system/Search/pntemplates/search_block_search_modify.htm:11
-msgid "SearchOptions"
+msgid "Search Options"
 msgstr "Suchoptionen"
 
 #: system/Search/pntemplates/search_user_form.htm:13
@@ -9472,7 +9509,7 @@ msgid "New"
 msgstr "Neu"
 
 #: system/Categories/pntemplates/categories_admin_menu.htm:4
-#: themes/SeaBreeze/templates/modules/admin.htm:30
+#: themes/SeaBreeze/templates/modules/admin.htm:31
 msgid "Categories"
 msgstr "Kategorien"
 
@@ -9538,7 +9575,7 @@ msgstr "Bestehende Modulkategorie"
 #: system/Users/pntemplates/users_user_changeemail.htm:16
 #: system/Users/pntemplates/users_user_lostpassword.htm:27
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:205
-#: system/Users/pntemplates/users_user_changepassword.htm:27
+#: system/Users/pntemplates/users_user_changepassword.htm:24
 msgid "OK"
 msgstr "OK"
 
@@ -11137,15 +11174,15 @@ msgstr "Kennwort ändern"
 msgid "To change it you have to enter the recent password once and then the new password twice for confirmation."
 msgstr "Für die Kennwortänderung wird das aktuelle Kennwort benötigt, sowie die Eingabe des neuen Kennworts inkl. Kennwortwiederholung."
 
-#: system/Users/pntemplates/users_user_changepassword.htm:12
+#: system/Users/pntemplates/users_user_changepassword.htm:11
 msgid "Enter your old password"
 msgstr "Aktuelles Kennwort"
 
-#: system/Users/pntemplates/users_user_changepassword.htm:16
+#: system/Users/pntemplates/users_user_changepassword.htm:15
 msgid "Enter your new password"
 msgstr "Neues Kennwort"
 
-#: system/Users/pntemplates/users_user_changepassword.htm:20
+#: system/Users/pntemplates/users_user_changepassword.htm:19
 msgid "Repeat your new password"
 msgstr "Neues Kennwort wiederholen"
 
@@ -11662,63 +11699,63 @@ msgstr "Gruppe wird aktualisiert"
 msgid "Deleting group"
 msgstr "Gruppe wird gelöscht"
 
-#: themes/SeaBreeze/templates/master.htm:26
-#: themes/SeaBreeze/templates/modules/admin.htm:34
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:28
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:28
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:28
-#: themes/SeaBreeze/templates/modules/home.htm:26
-#: themes/voodoodolly/templates/master.htm:26
-#: themes/voodoodolly/templates/modules/admin.htm:26
-#: themes/voodoodolly/templates/modules/home.htm:26
+#: themes/SeaBreeze/templates/master.htm:27
+#: themes/SeaBreeze/templates/modules/admin.htm:35
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:29
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:29
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:29
+#: themes/SeaBreeze/templates/modules/home.htm:27
+#: themes/voodoodolly/templates/master.htm:27
+#: themes/voodoodolly/templates/modules/admin.htm:27
+#: themes/voodoodolly/templates/modules/home.htm:27
 msgid "Downloads"
 msgstr "Downloads"
 
-#: themes/SeaBreeze/templates/master.htm:30
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:32
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:32
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:32
-#: themes/SeaBreeze/templates/modules/home.htm:30
+#: themes/SeaBreeze/templates/master.htm:31
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:33
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:33
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:33
+#: themes/SeaBreeze/templates/modules/home.htm:31
 msgid "Submit Article"
 msgstr "Beitrag einreichen"
 
-#: themes/SeaBreeze/templates/master.htm:34
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:36
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:36
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:36
-#: themes/SeaBreeze/templates/modules/home.htm:34
+#: themes/SeaBreeze/templates/master.htm:35
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:37
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:37
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:37
+#: themes/SeaBreeze/templates/modules/home.htm:35
 msgid "Reviews"
 msgstr "Rezensionen"
 
-#: themes/SeaBreeze/templates/master.htm:38
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:40
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:40
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:40
-#: themes/SeaBreeze/templates/modules/home.htm:38
+#: themes/SeaBreeze/templates/master.htm:39
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:41
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:41
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:41
+#: themes/SeaBreeze/templates/modules/home.htm:39
 msgid "FAQ"
 msgstr "FAQ"
 
-#: themes/SeaBreeze/templates/master.htm:75
-#: themes/SeaBreeze/templates/modules/admin.htm:61
-#: themes/SeaBreeze/templates/modules/home.htm:79
+#: themes/SeaBreeze/templates/master.htm:76
+#: themes/SeaBreeze/templates/modules/admin.htm:62
+#: themes/SeaBreeze/templates/modules/home.htm:80
 msgid "Theme by"
 msgstr "Theme erstellt von"
 
-#: themes/SeaBreeze/templates/modules/admin.htm:26
+#: themes/SeaBreeze/templates/modules/admin.htm:27
 msgid "User Admin"
 msgstr "Benutzeradministration"
 
-#: themes/SeaBreeze/templates/modules/admin.htm:31
+#: themes/SeaBreeze/templates/modules/admin.htm:32
 msgid "Add Article"
 msgstr "Beitrag hinzufügen"
 
-#: themes/SeaBreeze/templates/modules/admin.htm:38
+#: themes/SeaBreeze/templates/modules/admin.htm:39
 msgid "Forums"
 msgstr "Forum"
 
-#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:15
-#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:15
-#: themes/SeaBreeze/templates/modules/NoColumns.htm:15
+#: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:16
+#: themes/SeaBreeze/templates/modules/NoRightColumn.htm:16
+#: themes/SeaBreeze/templates/modules/NoColumns.htm:16
 msgid "Search Site"
 msgstr "Suchen"
 
@@ -11726,42 +11763,48 @@ msgstr "Suchen"
 msgid "Links"
 msgstr "Links"
 
-#: themes/voodoodolly/templates/master.htm:25
+#: themes/voodoodolly/templates/master.htm:26
 msgid "Submit news"
 msgstr "Beitrag einreichen"
 
-#: themes/voodoodolly/templates/master.htm:27
+#: themes/voodoodolly/templates/master.htm:28
 msgid "Web Links"
 msgstr "Weblinks"
 
-#: themes/voodoodolly/templates/master.htm:31
+#: themes/voodoodolly/templates/master.htm:32
 msgid "Your account"
 msgstr "Benutzerprofil"
 
-#: themes/voodoodolly/templates/master.htm:48
-#: themes/voodoodolly/templates/modules/admin.htm:40
-#: themes/voodoodolly/templates/modules/home.htm:49
+#: themes/voodoodolly/templates/master.htm:49
+#: themes/voodoodolly/templates/modules/admin.htm:41
+#: themes/voodoodolly/templates/modules/home.htm:50
 msgid "Copyright"
 msgstr "Copyright"
 
-#: themes/voodoodolly/templates/modules/admin.htm:25
-#: themes/voodoodolly/templates/modules/home.htm:25
+#: themes/voodoodolly/templates/modules/admin.htm:26
+#: themes/voodoodolly/templates/modules/home.htm:26
 msgid "Submit News"
 msgstr "Beitrag einreichen"
 
-#: themes/voodoodolly/templates/modules/admin.htm:27
-#: themes/voodoodolly/templates/modules/home.htm:27
+#: themes/voodoodolly/templates/modules/admin.htm:28
+#: themes/voodoodolly/templates/modules/home.htm:28
 msgid "Weblinks"
 msgstr "Weblinks"
 
-#: themes/voodoodolly/templates/modules/admin.htm:31
-#: themes/voodoodolly/templates/modules/home.htm:31
-#: themes/andreas08/templates/master.htm:25
-#: themes/andreas08/templates/modules/admin.htm:25
-#: themes/andreas08/templates/modules/home.htm:25
+#: themes/voodoodolly/templates/modules/admin.htm:32
+#: themes/voodoodolly/templates/modules/home.htm:32
+#: themes/andreas08/templates/master.htm:26
+#: themes/andreas08/templates/modules/admin.htm:26
+#: themes/andreas08/templates/modules/home.htm:26
 msgid "Your Account"
 msgstr "Benutzerprofil"
 
+#~ msgid "Please refer to the %s during this process"
+#~ msgstr "Bitte diese %s während der Installation beachten."
+#~ msgid "GNU General Public License"
+#~ msgstr "GNU General Public License"
+#~ msgid "Philosophy of the GNU Project"
+#~ msgstr "Philosophie des GNU Projektes"
 #~ msgid "Privacy Policy"
 #~ msgstr "Datenschutzrichtlinie"
 #~ msgid "Terms of Use"
