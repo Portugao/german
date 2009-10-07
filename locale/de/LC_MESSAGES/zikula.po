@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-05 13:39-0400\n"
-"PO-Revision-Date: 2009-10-06 09:22+0100\n"
+"POT-Creation-Date: 2009-10-06 07:38-0400\n"
+"PO-Revision-Date: 2009-10-07 16:54+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -290,7 +290,7 @@ msgstr "Zurück zur Startseite"
 
 #: system/Blocks/pninit.php:182
 #: system/Admin/pnaccountapi.php:27
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:40
+#: system/Admin/pntemplates/admin_admin_adminpanel.htm:42
 msgid "Administration"
 msgstr "Administration"
 
@@ -496,7 +496,6 @@ msgstr "SQL-Fehler"
 #: system/pnRender/plugins/function.html_select_locales.php:45
 #: system/pnRender/plugins/function.html_select_languages.php:47
 #: system/pnForm/plugins/function.pnformlanguageselector.php:63
-#: system/Admin_Messsages/pnadmin.php:304
 #: system/Admin_Messages/pnadmin.php:304
 #: system/Modules/pntemplates/modules_admin_view.htm:10
 msgid "All"
@@ -517,7 +516,6 @@ msgstr "Aktivieren"
 #: system/Blocks/pnadmin.php:106
 #: system/Blocks/pnadmin.php:128
 #: system/Modules/pnadmin.php:263
-#: system/Admin_Messsages/pnadmin.php:353
 #: system/Admin_Messages/pnadmin.php:353
 #: system/Admin/pnadmin.php:228
 #: system/Users/pnadmin.php:238
@@ -544,7 +542,6 @@ msgstr "Bearbeiten"
 #: system/Blocks/pnadmin.php:110
 #: system/Blocks/pnadmin.php:132
 #: system/SecurityCenter/pnadmin.php:160
-#: system/Admin_Messsages/pnadmin.php:357
 #: system/Admin_Messages/pnadmin.php:357
 #: system/Admin/pnadmin.php:232
 #: system/Users/pnadmin.php:242
@@ -688,7 +685,7 @@ msgstr "Fertig! Der Block wurde erfolgreich gelöscht!"
 #: system/Admin/pnadmin.php:210
 #: system/Admin/pnadmin.php:401
 #: system/Admin/pnadmin.php:450
-#: system/Admin/pnadmin.php:638
+#: system/Admin/pnadmin.php:642
 #: system/Theme/pnadmin.php:538
 #: system/Theme/pnadmin.php:889
 #: system/Users/pnuser.php:315
@@ -736,11 +733,10 @@ msgstr "Fertig! Die Blockposition wurde gelöscht."
 #: system/legal/pnadmin.php:121
 #: system/Permissions/pnadmin.php:722
 #: system/Modules/pnadmin.php:919
-#: system/Admin_Messsages/pnadmin.php:436
 #: system/Admin_Messages/pnadmin.php:436
 #: system/Categories/pnadminform.php:311
-#: system/Admin/pnadmin.php:523
-#: system/Theme/pnadmin.php:1325
+#: system/Admin/pnadmin.php:527
+#: system/Theme/pnadmin.php:1344
 #: system/Settings/pnadmin.php:112
 #: system/Settings/pnadmin.php:277
 #: system/Users/pnadmin.php:837
@@ -802,7 +798,7 @@ msgstr "Kompilierte Templates wurden gelöscht"
 #: system/pnRender/pnadmin.php:134
 #: system/Theme/pnadmin.php:1169
 msgid "Cache cleared"
-msgstr "Template-Cache gelöscht"
+msgstr "Template-Cache wurde gelöscht"
 
 #: system/pnRender/plugins/modifier.gt.php:28
 msgid "gt_modifier: you must use gt in the form: $var|gt:$renderObject"
@@ -826,7 +822,6 @@ msgstr "Locale konnte nicht gesetzt werden: %s"
 
 #: system/pnRender/plugins/modifier.yesno.php:39
 #: system/pnRender/plugins/modifier.yesno.php:42
-#: system/Admin_Messsages/pnadmin.php:327
 #: system/Admin_Messages/pnadmin.php:327
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:65
 #: system/Blocks/pntemplates/blocks_admin_new.htm:43
@@ -867,7 +862,6 @@ msgstr "Ja"
 
 #: system/pnRender/plugins/modifier.yesno.php:47
 #: system/pnRender/plugins/modifier.yesno.php:50
-#: system/Admin_Messsages/pnadmin.php:329
 #: system/Admin_Messages/pnadmin.php:329
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:66
 #: system/Blocks/pntemplates/blocks_admin_new.htm:44
@@ -932,7 +926,7 @@ msgid "Error! Unable to load module array class [%1$s] for module [%2$s]"
 msgstr "Fehler! Modul-Array-Klasse [%1$s] kann nicht für Modul [%2$s] geladen werden."
 
 #: system/pnRender/plugins/function.gt.php:62
-#: install/pntemplates/plugins/function.gt.php:10
+#: install/pntemplates/plugins/function.gt.php:12
 msgid "gt: attribute text required"
 msgstr "gt: attribute text required"
 
@@ -1089,7 +1083,6 @@ msgid "Done! Item deleted."
 msgstr "Erledigt! Element gelöscht."
 
 #: system/SecurityCenter/pnadmin.php:130
-#: system/Admin_Messsages/pnadmin.php:343
 #: system/Admin_Messages/pnadmin.php:343
 msgid "%b %d, %Y - %I:%M %p"
 msgstr "%b %d, %Y - %I:%M %p"
@@ -1679,82 +1672,6 @@ msgstr "Die Modulliste wurde mit Dateisystem abgeglichen."
 msgid "The setting 'Items per page' must be a positive integer. The value you entered was corrected."
 msgstr "Der Wert 'Einträge pro Seite' muss eine positive Zahl sein. Der eingetragene Wert wurde entsprechend korrigiert."
 
-#: system/Admin_Messsages/pnadmin.php:98
-#: system/Admin_Messages/pnadmin.php:98
-msgid "Done! Admin Message created."
-msgstr "Erledigt. Die Admin-Nachricht wurde erstellt."
-
-#: system/Admin_Messsages/pnadmin.php:131
-#: system/Admin_Messsages/pnadmin.php:225
-#: system/Admin_Messages/pnadmin.php:131
-#: system/Admin_Messages/pnadmin.php:225
-msgid "No such Admin Message found."
-msgstr "Keine entsprechende Admin-Nachricht gefunden."
-
-#: system/Admin_Messsages/pnadmin.php:187
-#: system/Admin_Messages/pnadmin.php:187
-msgid "Done! Admin Message updated."
-msgstr "Erledigt. Die Admin-Nachricht wurde aktualisiert."
-
-#: system/Admin_Messsages/pnadmin.php:258
-#: system/Admin_Messages/pnadmin.php:258
-msgid "Done! Admin Message deleted."
-msgstr "Erledigt. Die Admin-Nachricht wurde gelöscht."
-
-#: system/Admin_Messsages/pnadmin.php:309
-#: system/Admin_Messsages/pnadmin.php:312
-#: system/Admin_Messages/pnadmin.php:309
-#: system/Admin_Messages/pnadmin.php:312
-#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:47
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:60
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:62
-msgid "All visitors"
-msgstr "Alle Besucher"
-
-#: system/Admin_Messsages/pnadmin.php:315
-#: system/Admin_Messages/pnadmin.php:315
-#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:48
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:65
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:67
-msgid "Registered users only"
-msgstr "Nur registrierte Benutzer"
-
-#: system/Admin_Messsages/pnadmin.php:318
-#: system/Admin_Messages/pnadmin.php:318
-#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:49
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:70
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:72
-msgid "Anonymous users only"
-msgstr "Nur unregistrierte Benutzer"
-
-#: system/Admin_Messsages/pnadmin.php:321
-#: system/Admin_Messages/pnadmin.php:321
-#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:50
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:75
-#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:77
-msgid "Administrators only"
-msgstr "Nur Administratoren"
-
-#: system/Admin_Messsages/pnadmin.php:333
-#: system/Admin_Messages/pnadmin.php:333
-msgid "Never"
-msgstr "Nie"
-
-#: system/Admin_Messsages/pnadmin.php:335
-#: system/Admin_Messages/pnadmin.php:335
-msgid "day"
-msgstr "Tag"
-
-#: system/Admin_Messsages/pnadmin.php:337
-#: system/Admin_Messages/pnadmin.php:337
-msgid "days"
-msgstr "Tage"
-
-#: system/Admin_Messsages/pnadmin.php:341
-#: system/Admin_Messages/pnadmin.php:341
-msgid "No expiry date"
-msgstr "Kein Ablaufdatum"
-
 #: system/Errors/pnversion.php:14
 msgid "Errors"
 msgstr "Fehler"
@@ -1810,6 +1727,68 @@ msgstr "Admin-Nachrichten anzeigen"
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:2
 msgid "Create Admin Message"
 msgstr "Admin-Nachricht anlegen"
+
+#: system/Admin_Messages/pnadmin.php:98
+msgid "Done! Admin Message created."
+msgstr "Erledigt. Die Admin-Nachricht wurde erstellt."
+
+#: system/Admin_Messages/pnadmin.php:131
+#: system/Admin_Messages/pnadmin.php:225
+msgid "No such Admin Message found."
+msgstr "Keine entsprechende Admin-Nachricht gefunden."
+
+#: system/Admin_Messages/pnadmin.php:187
+msgid "Done! Admin Message updated."
+msgstr "Erledigt. Die Admin-Nachricht wurde aktualisiert."
+
+#: system/Admin_Messages/pnadmin.php:258
+msgid "Done! Admin Message deleted."
+msgstr "Erledigt. Die Admin-Nachricht wurde gelöscht."
+
+#: system/Admin_Messages/pnadmin.php:309
+#: system/Admin_Messages/pnadmin.php:312
+#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:47
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:60
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:62
+msgid "All visitors"
+msgstr "Alle Besucher"
+
+#: system/Admin_Messages/pnadmin.php:315
+#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:48
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:65
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:67
+msgid "Registered users only"
+msgstr "Nur registrierte Benutzer"
+
+#: system/Admin_Messages/pnadmin.php:318
+#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:49
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:70
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:72
+msgid "Anonymous users only"
+msgstr "Nur unregistrierte Benutzer"
+
+#: system/Admin_Messages/pnadmin.php:321
+#: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:50
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:75
+#: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:77
+msgid "Administrators only"
+msgstr "Nur Administratoren"
+
+#: system/Admin_Messages/pnadmin.php:333
+msgid "Never"
+msgstr "Nie"
+
+#: system/Admin_Messages/pnadmin.php:335
+msgid "day"
+msgstr "Tag"
+
+#: system/Admin_Messages/pnadmin.php:337
+msgid "days"
+msgstr "Tage"
+
+#: system/Admin_Messages/pnadmin.php:341
+msgid "No expiry date"
+msgstr "Kein Ablaufdatum"
 
 #: system/Categories/pnaccountapi.php:30
 msgid "Your categories"
@@ -1952,7 +1931,7 @@ msgid "Pending status basic"
 msgstr "Wartestatus (einfach)"
 
 #: system/Categories/pninit.php:397
-#: system/Admin/pninit.php:143
+#: system/Admin/pninit.php:145
 #: system/Users/pnversion.php:15
 #: system/Groups/pninit.php:117
 #: install/functions.php:367
@@ -2161,13 +2140,13 @@ msgstr "Liste der Modulkategorien"
 
 #: system/Admin/pnversion.php:14
 msgid "Admin"
-msgstr "Admin"
+msgstr "Administration"
 
 #: system/Admin/pnversion.php:15
 msgid "Provides the site's Admin Panel, and the ability to configure and manage it."
 msgstr "Zuordnung der Adminkategorien bearbeiten"
 
-#: system/Admin/pninit.php:139
+#: system/Admin/pninit.php:141
 #: install/functions.php:367
 #: install/pninstalltypes/basic.php:32
 #: install/pninstalltypes/basic.php:34
@@ -2177,11 +2156,11 @@ msgstr "Zuordnung der Adminkategorien bearbeiten"
 msgid "System"
 msgstr "System"
 
-#: system/Admin/pninit.php:140
+#: system/Admin/pninit.php:142
 msgid "Core modules at the heart of operation of this site"
 msgstr "System-Module sind Teil der Core-Funktionalität"
 
-#: system/Admin/pninit.php:141
+#: system/Admin/pninit.php:143
 #: install/functions.php:367
 #: install/pninstalltypes/basic.php:28
 #: install/pninstalltypes/basic.php:36
@@ -2189,15 +2168,15 @@ msgstr "System-Module sind Teil der Core-Funktionalität"
 msgid "Layout"
 msgstr "Layout"
 
-#: system/Admin/pninit.php:142
+#: system/Admin/pninit.php:144
 msgid "Layout modules for controlling this site's look and feel"
 msgstr "Layout-Module bestimmen das Aussehen der Webseite"
 
-#: system/Admin/pninit.php:144
+#: system/Admin/pninit.php:146
 msgid "Modules for controlling user membership, access rights and profiles"
 msgstr "Einstellungen für Benutzer, Gruppen und Zugriffsrechte"
 
-#: system/Admin/pninit.php:145
+#: system/Admin/pninit.php:147
 #: install/pninstalltypes/basic.php:20
 #: install/pninstalltypes/basic.php:24
 #: install/pninstalltypes/basic.php:26
@@ -2211,34 +2190,34 @@ msgstr "Einstellungen für Benutzer, Gruppen und Zugriffsrechte"
 msgid "Content"
 msgstr "Inhalt"
 
-#: system/Admin/pninit.php:146
+#: system/Admin/pninit.php:148
 msgid "Modules for providing content to your users"
 msgstr "Module die für den Inhalt der Webseite zuständig sind"
 
-#: system/Admin/pninit.php:147
+#: system/Admin/pninit.php:149
 msgid "3rd-Party"
 msgstr "Drittanbieter"
 
-#: system/Admin/pninit.php:148
+#: system/Admin/pninit.php:150
 msgid "3rd-party add-on modules and newly-installed modules"
 msgstr "Zusätzliche Module werden nach der Installation hier angezeigt"
 
-#: system/Admin/pninit.php:149
+#: system/Admin/pninit.php:151
 #: install/pninstalltypes/basic.php:22
 #: install/pninstalltypes/basic.php:46
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:33
 msgid "Security"
 msgstr "Sicherheit"
 
-#: system/Admin/pninit.php:150
+#: system/Admin/pninit.php:152
 msgid "Modules for controlling the security of this site"
 msgstr "Module für Sicherheitseinstellungen der Webseite"
 
-#: system/Admin/pninit.php:151
+#: system/Admin/pninit.php:153
 msgid "Hooked"
 msgstr "Hooks"
 
-#: system/Admin/pninit.php:152
+#: system/Admin/pninit.php:154
 msgid "Modules to be hooked to other modules, to provide them with enhanced functionality"
 msgstr "Hook-Module können verschiedenen Modulen Funktionalitäten hinzufügen"
 
@@ -2291,7 +2270,7 @@ msgstr "Der Wert 'Module pro Reihe' muss numerisch."
 msgid "'The 'Modules per page' setting must be numeric."
 msgstr "Der Wert 'Module pro Seite' muss numerisch."
 
-#: system/Admin/pnadmin.php:513
+#: system/Admin/pnadmin.php:517
 msgid "Could not add module to module category."
 msgstr "Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
 
@@ -2466,6 +2445,10 @@ msgstr "Fehler bei der Erstellung des Verzeichnisses für die Themekonfiguration
 msgid "Theme upgraded"
 msgstr "Das Theme wurde aktualisiert"
 
+#: system/Theme/pnadmin.php:1375
+msgid "Done! Files deleted."
+msgstr "Dateien wurden gelöscht."
+
 #: system/Theme/plugins/function.user.php:31
 #: system/Theme/plugins/function.userwelcome.php:31
 msgid "anonymous user"
@@ -2514,6 +2497,7 @@ msgstr "Neuen Benutzer registrieren"
 
 #: system/Theme/plugins/function.userlogin.php:40
 #: system/Theme/plugins/function.userlogin.php:59
+#: includes/templates/siteoff.htm:53
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:10
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:28
 #: system/Permissions/pntemplates/permissions_admin_view.htm:169
@@ -2533,6 +2517,7 @@ msgid "User Name"
 msgstr "Benutzername"
 
 #: system/Theme/plugins/function.userlogin.php:61
+#: includes/templates/siteoff.htm:54
 #: upgrade.php:144
 #: install/pntemplates/installer_dbinformation.htm:40
 #: install/pntemplates/installer_login.htm:19
@@ -2547,12 +2532,14 @@ msgid "Password"
 msgstr "Kennwort"
 
 #: system/Theme/plugins/function.userlogin.php:66
+#: includes/templates/siteoff.htm:55
 #: system/Users/pntemplates/users_block_login.htm:15
 #: system/Users/pntemplates/users_user_loginscreen.htm:31
 msgid "Remember me"
 msgstr "Anmeldung speichern"
 
 #: system/Theme/plugins/function.userlogin.php:70
+#: includes/templates/siteoff.htm:56
 #: system/Users/pntemplates/users_block_login.htm:19
 #: system/Users/pntemplates/users_user_view.htm:7
 #: system/Users/pntemplates/users_user_loginscreen.htm:46
@@ -2944,12 +2931,12 @@ msgstr "Benutzer suchen"
 #: system/Users/pnadminapi.php:488
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:5
 msgid "Users Manager Settings"
-msgstr "Benutzerkonfiguration"
+msgstr "Konfiguration"
 
 #: system/Users/pnadminapi.php:495
 #: system/Users/pnadminapi.php:497
 msgid "Account Panel Manager"
-msgstr "Benutzerprofilverwaltung"
+msgstr "Profilverwaltung"
 
 #: system/Users/pnsearchapi.php:137
 msgid "User has not entered any extra info. Click user's name to view full profile."
@@ -4660,7 +4647,7 @@ msgstr "Empty field passed to FormUtil::hasValidationErrors() ..."
 msgid "Error! Unable to save login date."
 msgstr "Error! Unable to save login date."
 
-#: includes/pnRender.class.php:640
+#: includes/pnRender.class.php:642
 #, php-format
 msgid "Template %1$s not available module %2$s"
 msgstr "Template %1$s nicht verfügbar für das Modul %2$s"
@@ -7047,6 +7034,20 @@ msgstr "Basis - Grundinstallation der wichtigsten Core-Module"
 msgid "Complete - all modules with non-interactive installations found in the system are installed"
 msgstr "Komplett - Installation aller verfügbaren Module (ohne Module mit interaktiver Installation)"
 
+#: includes/templates/siteoff.htm:5
+#: includes/templates/siteoff.htm:46
+#: includes/templates/siteoff.htm:47
+msgid "This site has been disabled"
+msgstr "Die Seite ist momentan deaktiviert."
+
+#: includes/templates/siteoff.htm:49
+msgid "Administrator login"
+msgstr "Administratoren Anmeldung"
+
+#: includes/templates/siteoff.htm:52
+msgid "Admin login required to proceed"
+msgstr "Administratoranmeldung zum Fortfahren notwendig"
+
 #: ajax.php:27
 msgid "Site is currently disabled"
 msgstr "Die Seite ist momentan deaktiviert"
@@ -7765,13 +7766,13 @@ msgstr "Erstellen"
 #: system/Admin/pntemplates/admin_admin_modify.htm:26
 #: system/Admin/pntemplates/admin_admin_new.htm:25
 #: system/Admin/pntemplates/admin_admin_delete.htm:17
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:108
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:116
 #: system/Theme/pntemplates/theme_admin_pageconfigurations.htm:84
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:124
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:84
 #: system/Theme/pntemplates/theme_admin_setasdefault.htm:21
 #: system/Theme/pntemplates/theme_admin_palettes.htm:129
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:77
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:105
 #: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:17
 #: system/Theme/pntemplates/theme_admin_variables.htm:63
 #: system/Theme/pntemplates/theme_admin_new.htm:65
@@ -7983,7 +7984,7 @@ msgstr "Symbole zur Blockverkleinerung aktivieren (ggfs. Theme-abhängig)"
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:24
 #: system/Categories/pntemplates/categories_admin_preferences.htm:36
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:76
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:104
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:60
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:173
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:65
@@ -8007,8 +8008,7 @@ msgid "Display flags"
 msgstr "Flaggen anzeigen"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:6
-#, fuzzy
-msgid "Drop down box domain='zikula'"
+msgid "Drop down box"
 msgstr "Auswahlfeld"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:7
@@ -8288,6 +8288,7 @@ msgstr "Dauer des Cachings"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:47
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:46
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:88
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -9137,7 +9138,7 @@ msgstr "Das Modul ist mit anderen Modulen verknüpft. Module die als notwendige 
 
 #: system/Modules/pntemplates/modules_admin_view.htm:29
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:35
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:38
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:46
 #: system/Theme/pntemplates/theme_admin_new.htm:16
 #: system/Theme/pntemplates/theme_admin_modify.htm:13
 #: system/Theme/pntemplates/theme_admin_credits.htm:17
@@ -9557,7 +9558,7 @@ msgstr "Fortfahren"
 
 #: system/Admin/pntemplates/admin_admin_categorymenu.htm:3
 msgid "Admin Panel"
-msgstr "Admin-Panel"
+msgstr "Administration"
 
 #: system/Admin/pntemplates/admin_admin_modify.htm:2
 msgid "Modify module category"
@@ -9569,7 +9570,7 @@ msgstr "Bestehende Modulkategorie"
 
 #: system/Admin/pntemplates/admin_admin_modify.htm:25
 #: system/Admin/pntemplates/admin_admin_new.htm:24
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:107
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:115
 #: system/Users/pntemplates/users_admin_listusers.htm:122
 #: system/Users/pntemplates/users_admin_modify.htm:77
 #: system/Users/pntemplates/users_user_changeemail.htm:16
@@ -9583,7 +9584,7 @@ msgstr "OK"
 #: system/Admin/pntemplates/admin_admin_help.htm:4
 #: system/Admin/pntemplates/admin_admin_new.htm:26
 #: system/Admin/pntemplates/admin_admin_delete.htm:18
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:109
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:117
 #: system/Admin/pntemplates/admin_admin_view.htm:32
 #: system/Theme/pntemplates/theme_admin_credits.htm:31
 msgid "Help"
@@ -9661,7 +9662,7 @@ msgid "When checked, this option causes graphic icons to be displayed for each m
 msgstr "Bei Auswahl dieser Option werden für jedes Modul ein Symbol im Admin-Panel angezeigt."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:42
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:44
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:52
 msgid "Modules per page"
 msgstr "Module pro Seite"
 
@@ -9670,7 +9671,7 @@ msgid "Enter a whole number for the number of modules to be displayed on each pa
 msgstr "Die Anzahl der Module eingeben, die auf einer Seite im Admin-Panel angezeigt werden sollen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:43
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:48
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:56
 msgid "Modules per row"
 msgstr "Module pro Reihe"
 
@@ -9679,7 +9680,7 @@ msgid "Enter a whole number for the number of modules to be displayed on each li
 msgstr "Die Anzahl der Module eingeben, die pro Reihe im Admin-Panel angezeigt werden sollen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:44
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:52
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:60
 msgid "Theme to use"
 msgstr "Theme für die Administration"
 
@@ -9688,7 +9689,7 @@ msgid "Open the dropdown list and choose the theme to be applied to the Admin Pa
 msgstr "Im Auswahlfeld das Theme auswählen, das dem Admin-Panel zugewiesen werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:45
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:59
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:67
 msgid "Stylesheet to use"
 msgstr "Stylesheet für Administration"
 
@@ -9697,7 +9698,7 @@ msgid "Open the dropdown list and choose the style sheet to be used to render th
 msgstr "Im Auswahlfeld das Stylesheet auswählen, das dem Admin-Panel zugewiesen werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:46
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:63
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:71
 msgid "Category initially selected"
 msgstr "Startkategorie"
 
@@ -9707,7 +9708,7 @@ msgstr "Im Auswahlfeld die Modulkategorie auswählen, die beim Erstaufruf des Ad
 
 #: system/Admin/pntemplates/admin_admin_help.htm:49
 #: system/Admin/pntemplates/admin_admin_help.htm:53
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:76
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:84
 msgid "Modules Categorization"
 msgstr "Modulkategorisierung"
 
@@ -9716,7 +9717,7 @@ msgid "In the Modules Categorization section, you can choose two things"
 msgstr "Im Abschnitt Modulkategorisierung können zwei Optionen gewählt werden:"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:52
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:78
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:86
 msgid "Default category for newly-added modules"
 msgstr "Standardkategorie für neu hinzugefügte Module"
 
@@ -9874,18 +9875,22 @@ msgid "Warning! Only enable the above option if this site is isolated from the I
 msgstr "Warnung! Diese Option bitte nur aktivieren, wenn die Seite nicht mit dem Internet verbunden ist. Anderenfalls könnte die Sicherheit gefährdet sein, wenn die Installationsskripte weiterhin zugreifbar sind."
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:36
+msgid "Display description and context menu"
+msgstr "Modulbeschreibung und Kontextmenü anzeigen"
+
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:44
 msgid "Display of module names"
 msgstr "Modulnamen anzeigen"
 
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:39
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:47
 msgid "Real name"
 msgstr "Echter Name"
 
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:40
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:48
 msgid "Both"
 msgstr "Beides"
 
-#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:54
+#: system/Admin/pntemplates/admin_admin_modifyconfig.htm:62
 msgid "Use site's theme"
 msgstr "Theme der Webseite nutzen"
 
@@ -9893,7 +9898,7 @@ msgstr "Theme der Webseite nutzen"
 msgid "This administration category is empty. You have probably ended up here because you have administrative access to a module which is not in the default administration category."
 msgstr "Diese Adminkategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil entweder kein Modul in dieser Kategorie vorhanden ist oder kein administrativer Zugriff auf ein Modul besteht, das dieser Standardkategorie zugeordnet wurde."
 
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:29
+#: system/Admin/pntemplates/admin_admin_adminpanel.htm:31
 #: system/Groups/pntemplates/groups_user_memberslist.htm:14
 #: system/Groups/pntemplates/groups_user_view.htm:16
 msgid "Functions"
@@ -10118,16 +10123,44 @@ msgid "Delete cached templates"
 msgstr "Template-Cache löschen"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:67
+msgid "CSS/JS optimization"
+msgstr "CSS/JS Optimierungen"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:69
+msgid "Combining and compressing JS and CSS can vastly speed up your site."
+msgstr "Das Kombinieren und Komprimieren der JS und CSS Dateien kann den Server entlasten und die Seitengeschwindigkeit enorm erhöhen."
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:72
+msgid "Enable CSS/JS combine"
+msgstr "CSS/JS Combine aktivieren"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:77
+msgid "Use Compression"
+msgstr "Komprimierung aktivieren"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:81
+msgid "Minify CSS/JS"
+msgstr "Minify CSS/JS"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:85
+msgid "Length of time for combine cache"
+msgstr "Dauer des Cachings"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:92
+msgid "Delete combine cache"
+msgstr "Combine-Cache löschen"
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:95
 msgid "Filters"
 msgstr "Filter"
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:69
-msgid "Use trimwhitespace output filter"
-msgstr "Ausgabefilter 'trimwhitespace' benutzen"
-
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:71
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:96
 msgid "Trim leading white space and blank lines from template source after it gets interpreted, cleaning up code and saving bandwidth."
 msgstr "Entfernt führende Leerzeichen und leere Zeilen aus dem Quellcode der verarbeiteten Templates, um z.B. Bandbreite zu sparen."
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:98
+msgid "Use trimwhitespace output filter"
+msgstr "Ausgabefilter 'trimwhitespace' benutzen"
 
 #: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:3
 msgid "Delete page configuration assignment"
@@ -11700,7 +11733,7 @@ msgid "Deleting group"
 msgstr "Gruppe wird gelöscht"
 
 #: themes/SeaBreeze/templates/master.htm:27
-#: themes/SeaBreeze/templates/modules/admin.htm:35
+#: themes/SeaBreeze/templates/modules/admin.htm:38
 #: themes/SeaBreeze/templates/modules/NoLeftColumn.htm:29
 #: themes/SeaBreeze/templates/modules/NoRightColumn.htm:29
 #: themes/SeaBreeze/templates/modules/NoColumns.htm:29
@@ -11736,7 +11769,7 @@ msgid "FAQ"
 msgstr "FAQ"
 
 #: themes/SeaBreeze/templates/master.htm:76
-#: themes/SeaBreeze/templates/modules/admin.htm:62
+#: themes/SeaBreeze/templates/modules/admin.htm:65
 #: themes/SeaBreeze/templates/modules/home.htm:80
 msgid "Theme by"
 msgstr "Theme erstellt von"
@@ -11745,11 +11778,11 @@ msgstr "Theme erstellt von"
 msgid "User Admin"
 msgstr "Benutzeradministration"
 
-#: themes/SeaBreeze/templates/modules/admin.htm:32
+#: themes/SeaBreeze/templates/modules/admin.htm:34
 msgid "Add Article"
 msgstr "Beitrag hinzufügen"
 
-#: themes/SeaBreeze/templates/modules/admin.htm:39
+#: themes/SeaBreeze/templates/modules/admin.htm:42
 msgid "Forums"
 msgstr "Forum"
 
