@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-06 07:38-0400\n"
-"PO-Revision-Date: 2009-10-09 14:11+0100\n"
+"PO-Revision-Date: 2009-10-09 16:58+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -7042,7 +7042,7 @@ msgstr "Die Seite ist momentan deaktiviert."
 
 #: includes/templates/siteoff.htm:49
 msgid "Administrator login"
-msgstr "Administratoren Anmeldung"
+msgstr "Admin-Login"
 
 #: includes/templates/siteoff.htm:52
 msgid "Admin login required to proceed"
