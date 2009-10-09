@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-06 07:38-0400\n"
-"PO-Revision-Date: 2009-10-07 16:54+0100\n"
+"PO-Revision-Date: 2009-10-09 14:11+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -1329,12 +1329,12 @@ msgstr "Zugriffsrecht bearbeiten"
 #: system/Permissions/pnadmin.php:447
 #: system/Permissions/pnadmin.php:513
 msgid " [Illegal input in component!] "
-msgstr "[Ungültige Eingabe im Feld Komponente!]"
+msgstr " [Ungültige Eingabe im Feld Komponente!] "
 
 #: system/Permissions/pnadmin.php:452
 #: system/Permissions/pnadmin.php:518
 msgid " [Illegal input in instance!] "
-msgstr "[Ungültige Eingabe im Feld Instanz!]"
+msgstr " [Ungültige Eingabe im Feld Instanz!] "
 
 #: system/Permissions/pnadmin.php:467
 msgid "Done! Permission Rule updated."
@@ -1378,7 +1378,7 @@ msgstr "Fehler beim Löschen des Zugriffsrecht mit der ID %s"
 
 #: system/Permissions/pnajax.php:217
 msgid "Result of permission check: "
-msgstr "Ergebnis der Zugriffsrechtprüfung:"
+msgstr "Ergebnis der Prüfung:"
 
 #: system/pnForm/pnversion.php:15
 msgid "pnForm"
@@ -8987,7 +8987,7 @@ msgstr "Zugriffsrecht oberhalb einfügen"
 #: system/Permissions/pntemplates/permissions_admin_view.htm:149
 #: system/Permissions/pntemplates/permissions_admin_view.htm:167
 msgid "Check a users permission"
-msgstr "Benutzerberechtigung überprüfen"
+msgstr "Zugriffregel für bestimmten Benutzer überprüfen"
 
 #: system/Permissions/pntemplates/permissions_admin_view.htm:173
 msgid "Component to check"
@@ -9174,7 +9174,7 @@ msgstr "Aktionen"
 #: system/Modules/pntemplates/modules_admin_view.htm:42
 #: system/Modules/pntemplates/modules_admin_view.htm:44
 msgid "Go to module administration panel"
-msgstr "Gehe zum Admin-Panel"
+msgstr "Gehe zur Moduladministration"
 
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:5
 msgid "The module list could not be regenerated"
@@ -10692,7 +10692,7 @@ msgstr "E-Mail-Nachricht(en) senden"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:85
 msgid "The following email is being sent to your email address, all recipients are in BCC. You can define how many BCC's will be used in each email. If the number of selected users is larger than this setting you will get an additional email for each batch. The maximum batch size may depend on your hoster!"
-msgstr "Die folgende E-Mail wird von der unten angegebenen Antwort-an-Adresse an die eigene E-Mail-Adresse verschickt. Die markierten Empfänger werden unter Blindkopie aufgeführt. Die Anzahl der Blindkopie-Empfänger je Vorgang kann vorab festgelegt werden. Falls die Anzahl der ausgewählten Benutzer größer als dieser Wert ist, wird ein zusätzlicher Mailversand durchgeführt. Die maximal mögliche Anzahl der Vorgänge hängt vom jeweiligen Hoster ab!"
+msgstr "Die folgende E-Mail wird von der unten angegebenen Antwort-an-Adresse an die eigene E-Mail-Adresse verschickt. Die markierten Empfänger werden unter Blindkopie aufgeführt. Die Anzahl der Blindkopie-Empfänger je Durchlauf kann vorab festgelegt werden. Falls die Anzahl der ausgewählten Benutzer größer als dieser Wert ist, wird ein zusätzlicher Mailversand durchgeführt. Die maximal mögliche Anzahl der Durchläufe hängt vom jeweiligen Hoster ab!"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:87
 msgid "From Name"
@@ -10700,7 +10700,7 @@ msgstr "Absendername"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:91
 msgid "Reply-to-address"
-msgstr "Antwort-an-Adresse:"
+msgstr "Antwort-an-Adresse"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:95
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:27
@@ -10713,7 +10713,7 @@ msgstr "Senden"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:106
 msgid "mails per batch"
-msgstr "Mails pro Vorgang"
+msgstr "Mails pro Durchlauf"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:116
 msgid "Mail"
@@ -11637,7 +11637,7 @@ msgstr "Bitte registrieren"
 #: system/Groups/pntemplates/groups_user_memberslist.htm:36
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:19
 msgid "Unsubscribe"
-msgstr "Anfragen"
+msgstr "Abmelden"
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:39
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:22
@@ -11666,7 +11666,7 @@ msgstr "Extras"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:3
 msgid "Registering to Group : "
-msgstr "Anfrage für Gruppe : "
+msgstr "Anfrage für Gruppe"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:5
 msgid "Unregister from group "
@@ -11674,7 +11674,7 @@ msgstr "Aus der Gruppe austreten"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:7
 msgid "Cancel Application for group "
-msgstr "Anfrage abbrechen für Gruppe "
+msgstr "Anfrage abbrechen für Gruppe"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:30
 msgid "Comment attached to the application"
