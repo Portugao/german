@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-10 13:55-0400\n"
-"PO-Revision-Date: 2009-10-11 15:16+0100\n"
+"POT-Creation-Date: 2009-10-14 04:08-0400\n"
+"PO-Revision-Date: 2009-10-14 10:53+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +79,7 @@ msgstr "Es wurden keine Änderungen vorgenommen"
 msgid "Error: unable to open %s for write"
 msgstr "Fehler! Kann %s nicht schreiben"
 
-#: install/functions.php:367
+#: install/functions.php:369
 #: install/pninstalltypes/basic.php:32
 #: install/pninstalltypes/basic.php:34
 #: install/pninstalltypes/basic.php:38
@@ -89,15 +89,15 @@ msgstr "Fehler! Kann %s nicht schreiben"
 msgid "System"
 msgstr "System"
 
-#: install/functions.php:367
+#: install/functions.php:369
 #: system/Users/pnversion.php:15
-#: system/Categories/pninit.php:397
+#: system/Categories/pninit.php:357
 #: system/Admin/pninit.php:145
 #: system/Groups/pninit.php:117
 msgid "Users"
 msgstr "Benutzer"
 
-#: install/functions.php:367
+#: install/functions.php:369
 #: install/pninstalltypes/basic.php:28
 #: install/pninstalltypes/basic.php:36
 #: system/Admin/pninit.php:143
@@ -335,8 +335,8 @@ msgid "Unable to load array class [category]"
 msgstr "Fehler! Die Klasse [category] konnte nicht geladen werden"
 
 #: includes/ObjectUtil.class.php:1119
-#: includes/CategoryUtil.class.php:803
-#: includes/CategoryUtil.class.php:1040
+#: includes/CategoryUtil.class.php:802
+#: includes/CategoryUtil.class.php:1039
 msgid "Root Category"
 msgstr "Stammkategorie"
 
@@ -362,2195 +362,2195 @@ msgstr "Multilingual functionality is not enabled.  Cannot display this page in 
 msgid "The requested language '%s' is not available"
 msgstr "The requested language '%s' is not available"
 
-#: includes/ZLanguage.php:387
+#: includes/ZLanguage.php:397
 #, php-format
 msgid "Unable to set encoding based on database charset '%s'"
 msgstr "Unable to set encoding based on database charset '%s'"
 
-#: includes/ZLanguage.php:425
+#: includes/ZLanguage.php:435
 #, php-format
 msgid "Unable to load %s - please check it exists"
 msgstr "Unable to load %s - please check it exists"
 
-#: includes/ZLanguage.php:436
+#: includes/ZLanguage.php:446
 #, php-format
 msgid "%1$s is missing in %2$s"
 msgstr "%1$s is missing in %2$s"
 
-#: includes/ZLanguage.php:439
+#: includes/ZLanguage.php:449
 #, php-format
 msgid "Invalid value for %1$s in %2$s"
 msgstr "Invalid value for %1$s in %2$s"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Afar"
 msgstr "Afar"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Abkhazian"
 msgstr "Abkhazian"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Avestan"
 msgstr "Avestan"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Akan"
 msgstr "Akan"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Amharic"
 msgstr "Amharic"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Aragonese"
 msgstr "Aragonese"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Arabic "
 msgstr "Arabic "
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Assamese"
 msgstr "Assamese"
 
-#: includes/ZLanguage.php:526
+#: includes/ZLanguage.php:529
 msgid "Avaric"
 msgstr "Avaric"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Aymara"
 msgstr "Aymara"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Azerbaijani"
 msgstr "Azerbaijani"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Bashkir"
 msgstr "Bashkir"
 
-#: includes/ZLanguage.php:527
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:593
 msgid "Belarusian"
 msgstr "Belarusian"
 
-#: includes/ZLanguage.php:527
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:594
 msgid "Bulgarian"
 msgstr "Bulgarian"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Bihari"
 msgstr "Bihari"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Bislama"
 msgstr "Bislama"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Bambara"
 msgstr "Bambara"
 
-#: includes/ZLanguage.php:527
+#: includes/ZLanguage.php:530
 msgid "Bengali"
 msgstr "Bengali"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Tibetan"
 msgstr "Tibetan"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Breton"
 msgstr "Breton"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Bosnian"
 msgstr "Bosnian"
 
-#: includes/ZLanguage.php:528
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:594
 msgid "Catalan"
 msgstr "Catalan"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Chechen"
 msgstr "Chechen"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Chamorro"
 msgstr "Chamorro"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Corsican"
 msgstr "Corsican"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Cree"
 msgstr "Cree"
 
-#: includes/ZLanguage.php:528
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:594
 msgid "Czech"
 msgstr "Czech"
 
-#: includes/ZLanguage.php:528
+#: includes/ZLanguage.php:531
 msgid "Church Slavic"
 msgstr "Church Slavic"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Chuvash"
 msgstr "Chuvash"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Welsh"
 msgstr "Welsh"
 
-#: includes/ZLanguage.php:529
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:594
 msgid "Danish"
 msgstr "Danish"
 
-#: includes/ZLanguage.php:529
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:595
 msgid "German"
 msgstr "Deutsch"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Divehi"
 msgstr "Divehi"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Dzongkha"
 msgstr "Dzongkha"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Ewe"
 msgstr "Ewe"
 
-#: includes/ZLanguage.php:529
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:595
 msgid "Greek"
 msgstr "Greek"
 
-#: includes/ZLanguage.php:529
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:596
 msgid "English"
 msgstr "Englisch"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:598
 msgid "Spanish"
 msgstr "Spanish"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:601
 msgid "Estonian"
 msgstr "Estonian"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Basque"
 msgstr "Basque"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Persian"
 msgstr "Persian"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Fulah"
 msgstr "Fulah"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:601
 msgid "Finnish"
 msgstr "Finnish"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Fijian"
 msgstr "Fijian"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Faroese"
 msgstr "Faroese"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:602
 msgid "French"
 msgstr "French"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:533
 msgid "Frisian"
 msgstr "Frisian"
 
-#: includes/ZLanguage.php:531
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:602
 msgid "Irish"
 msgstr "Irish"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Scottish Gaelic"
 msgstr "Scottish Gaelic"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Galician"
 msgstr "Galician"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Guarani"
 msgstr "Guarani"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Gujarati"
 msgstr "Gujarati"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Manx"
 msgstr "Manx"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Hausa"
 msgstr "Hausa"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Hawaiian"
 msgstr "Hawaiian"
 
-#: includes/ZLanguage.php:531
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:604
 msgid "Hebrew"
 msgstr "Hebrew"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:534
 msgid "Hindi"
 msgstr "Hindi"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Hiri Motu"
 msgstr "Hiri Motu"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:603
 msgid "Croatian"
 msgstr "Croatian"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Haitian"
 msgstr "Haitian"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:603
 msgid "Hungarian"
 msgstr "Hungarian"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Armenian"
 msgstr "Armenian"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Herero"
 msgstr "Herero"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Interlingua"
 msgstr "Interlingua"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:603
 msgid "Indonesian"
 msgstr "Indonesian"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:535
 msgid "Interlingue"
 msgstr "Interlingue"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Igbo"
 msgstr "Igbo"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Sichuan Yi"
 msgstr "Sichuan Yi"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Inupiaq"
 msgstr "Inupiaq"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Ido"
 msgstr "Ido"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:604
 msgid "Icelandic"
 msgstr "Icelandic"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:604
 msgid "Italian"
 msgstr "Italian"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Inuktitut"
 msgstr "Inuktitut"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:536
 msgid "Javanese"
 msgstr "Javanese"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:605
 msgid "Japanese"
 msgstr "Japanese"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Georgian"
 msgstr "Georgian"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kongo"
 msgstr "Kongo"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kikuyu"
 msgstr "Kikuyu"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kwanyama"
 msgstr "Kwanyama"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kazakh"
 msgstr "Kazakh"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kalaallisut"
 msgstr "Kalaallisut"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Khmer"
 msgstr "Khmer"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kannada"
 msgstr "Kannada"
 
-#: includes/ZLanguage.php:534
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:605
 msgid "Korean"
 msgstr "Korean"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:537
 msgid "Kanuri"
 msgstr "Kanuri"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Kashmiri"
 msgstr "Kashmiri"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Kurdish"
 msgstr "Kurdish"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Komi"
 msgstr "Komi"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Cornish"
 msgstr "Cornish"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Kirghiz"
 msgstr "Kirghiz"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Latin"
 msgstr "Latin"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Luxembourgish"
 msgstr "Luxembourgish"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Ganda"
 msgstr "Ganda"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:538
 msgid "Limburgish"
 msgstr "Limburgish"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Lingala"
 msgstr "Lingala"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Lao"
 msgstr "Lao"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:605
 msgid "Lithuanian"
 msgstr "Lithuanian"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Luba-Katanga"
 msgstr "Luba-Katanga"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:606
 msgid "Latvian"
 msgstr "Latvian"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Malagasy"
 msgstr "Malagasy"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Marshallese"
 msgstr "Marshallese"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:539
 msgid "Maori"
 msgstr "Maori"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:606
 msgid "Macedonian"
 msgstr "Macedonian"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "Malayalam"
 msgstr "Malayalam"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "Mongolian"
 msgstr "Mongolian"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "Marathi"
 msgstr "Marathi"
 
-#: includes/ZLanguage.php:537
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:606
 msgid "Malay"
 msgstr "Malay"
 
-#: includes/ZLanguage.php:537
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:606
 msgid "Maltese"
 msgstr "Maltese"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "Burmese"
 msgstr "Burmese"
 
-#: includes/ZLanguage.php:537
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:574
 msgid "Nauru"
 msgstr "Nauru"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "Norwegian Bokmal"
 msgstr "Norwegian Bokmal"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:540
 msgid "North Ndebele"
 msgstr "North Ndebele"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Nepali"
 msgstr "Nepali"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Ndonga"
 msgstr "Ndonga"
 
-#: includes/ZLanguage.php:538
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:607
 msgid "Dutch"
 msgstr "Dutch"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Norwegian Nynorsk"
 msgstr "Norwegian Nynorsk"
 
-#: includes/ZLanguage.php:538
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:607
 msgid "Norwegian"
 msgstr "Norwegian"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "South Ndebele"
 msgstr "South Ndebele"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Navajo"
 msgstr "Navajo"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Chichewa"
 msgstr "Chichewa"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:541
 msgid "Occitan"
 msgstr "Occitan"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Ojibwa"
 msgstr "Ojibwa"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Oromo"
 msgstr "Oromo"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Oriya"
 msgstr "Oriya"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Ossetian"
 msgstr "Ossetian"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Panjabi"
 msgstr "Panjabi"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Pali"
 msgstr "Pali"
 
-#: includes/ZLanguage.php:539
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:607
 msgid "Polish"
 msgstr "Polish"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Pushto"
 msgstr "Pushto"
 
-#: includes/ZLanguage.php:539
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:608
 msgid "Portuguese"
 msgstr "Portuguese"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:542
 msgid "Quechua"
 msgstr "Quechua"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Raeto-Romance"
 msgstr "Raeto-Romance"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Rundi"
 msgstr "Rundi"
 
-#: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:608
 msgid "Romanian"
 msgstr "Romanian"
 
-#: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:608
 msgid "Russian"
 msgstr "Russian"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Kinyarwanda"
 msgstr "Kinyarwanda"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Sanskrit"
 msgstr "Sanskrit"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Sardinian"
 msgstr "Sardinian"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Sindhi"
 msgstr "Sindhi"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:543
 msgid "Northern Sami"
 msgstr "Northern Sami"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Sango"
 msgstr "Sango"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Sinhalese"
 msgstr "Sinhalese"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:609
 msgid "Slovak"
 msgstr "Slovak"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:609
 msgid "Slovenian"
 msgstr "Slovenian"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Samoan"
 msgstr "Samoan"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Shona"
 msgstr "Shona"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Somali"
 msgstr "Somali"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:609
 msgid "Albanian"
 msgstr "Albanian"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:609
 msgid "Serbian"
 msgstr "Serbian"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:544
 msgid "Swati"
 msgstr "Swati"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Southern Sotho"
 msgstr "Southern Sotho"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Sundanese"
 msgstr "Sundanese"
 
-#: includes/ZLanguage.php:542
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:610
 msgid "Swedish"
 msgstr "Swedish"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Swahili"
 msgstr "Swahili"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Tamil "
 msgstr "Tamil "
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Telugu"
 msgstr "Telugu"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Tajik"
 msgstr "Tajik"
 
-#: includes/ZLanguage.php:542
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:611
 msgid "Thai"
 msgstr "Thai"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:545
 msgid "Tigrinya"
 msgstr "Tigrinya"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Turkmen"
 msgstr "Turkmen"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Tagalog"
 msgstr "Tagalog"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Tswana"
 msgstr "Tswana"
 
-#: includes/ZLanguage.php:543
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:580
 msgid "Tonga"
 msgstr "Tonga"
 
-#: includes/ZLanguage.php:543
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:611
 msgid "Turkish"
 msgstr "Turkish"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Tsonga"
 msgstr "Tsonga"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Tatar"
 msgstr "Tatar"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Twi"
 msgstr "Twi"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Tahitian"
 msgstr "Tahitian"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:546
 msgid "Uighur"
 msgstr "Uighur"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:611
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Urdu"
 msgstr "Urdu"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Venda"
 msgstr "Venda"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:611
 msgid "Vietnamese"
 msgstr "Vietnamese"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Volapuk"
 msgstr "Volapuk"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Walloon"
 msgstr "Walloon"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Wolof"
 msgstr "Wolof"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:547
 msgid "Yiddish"
 msgstr "Yiddish"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:548
 msgid "Yoruba"
 msgstr "Yoruba"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:548
 msgid "Zhuang"
 msgstr "Zhuang"
 
-#: includes/ZLanguage.php:545
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:548
+#: includes/ZLanguage.php:612
 msgid "Chinese"
 msgstr "Chinese"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:548
 msgid "Zulu"
 msgstr "Zulu"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Andorra"
 msgstr "Andorra"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "United Arab Emirates"
 msgstr "United Arab Emirates"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Afghanistan"
 msgstr "Afghanistan"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Antigua & Barbuda"
 msgstr "Antigua & Barbuda"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Anguilla"
 msgstr "Anguilla"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Albania"
 msgstr "Albania"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Armenia"
 msgstr "Armenia"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Netherlands Antilles"
 msgstr "Netherlands Antilles"
 
-#: includes/ZLanguage.php:553
+#: includes/ZLanguage.php:556
 msgid "Angola"
 msgstr "Angola"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Antarctica"
 msgstr "Antarctica"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Argentina"
 msgstr "Argentina"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "American Samoa"
 msgstr "American Samoa"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Austria"
 msgstr "Austria"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Australia"
 msgstr "Australia"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Aruba"
 msgstr "Aruba"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia and Herzegovina"
 
-#: includes/ZLanguage.php:554
+#: includes/ZLanguage.php:557
 msgid "Barbados"
 msgstr "Barbados"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Bangladesh"
 msgstr "Bangladesh"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Belgium"
 msgstr "Belgium"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Bahrain"
 msgstr "Bahrain"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Burundi"
 msgstr "Burundi"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Benin"
 msgstr "Benin"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Bermuda"
 msgstr "Bermuda"
 
-#: includes/ZLanguage.php:555
+#: includes/ZLanguage.php:558
 msgid "Brunei Darussalam"
 msgstr "Brunei Darussalam"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Bolivia"
 msgstr "Bolivia"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Brazil"
 msgstr "Brazil"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Bahama"
 msgstr "Bahama"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Bhutan"
 msgstr "Bhutan"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Bouvet Island"
 msgstr "Bouvet Island"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Botswana"
 msgstr "Botswana"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Belarus"
 msgstr "Belarus"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Belize"
 msgstr "Belize"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:559
 msgid "Canada"
 msgstr "Canada"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Cocos (Keeling) Islands"
 msgstr "Cocos (Keeling) Islands"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Central African Republic"
 msgstr "Central African Republic"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Congo"
 msgstr "c"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Switzerland"
 msgstr "Switzerland"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Cote d'Ivoire (Ivory Coast)"
 msgstr "Cote d'Ivoire (Ivory Coast)"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Cook Iislands"
 msgstr "Cook Iislands"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:560
 msgid "Chile"
 msgstr "Chile"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Cameroon"
 msgstr "Cameroon"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "China"
 msgstr "China"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Colombia"
 msgstr "Colombia"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Cuba"
 msgstr "Cuba"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Cape Verde"
 msgstr "Cape Verde"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Christmas Island"
 msgstr "Christmas Island"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Cyprus"
 msgstr "Cyprus"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:561
 msgid "Czech Republic"
 msgstr "Czech Republic"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Germany"
 msgstr "Deutschland"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Djibouti"
 msgstr "Djibouti"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Denmark"
 msgstr "Denmark"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Dominica"
 msgstr "Dominica"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Dominican Republic"
 msgstr "Dominican Republic"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Algeria"
 msgstr "Algerien"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Ecuador"
 msgstr "Ecuador"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Estonia"
 msgstr "Estonia"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:562
 msgid "Egypt"
 msgstr "Egypt"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Western Sahara"
 msgstr "Western Sahara"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Eritrea"
 msgstr "Eritrea"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Spain"
 msgstr "Spain"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Ethiopia"
 msgstr "Ethiopia"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Finland"
 msgstr "Finland"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Fiji"
 msgstr "Fiji"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Falkland Islands (Malvinas)"
 msgstr "Falkland Islands (Malvinas)"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Micronesia"
 msgstr "Micronesia"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:563
 msgid "Faroe Islands"
 msgstr "Faroe Islands"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "France"
 msgstr "France"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "France, Metropolitan"
 msgstr "France, Metropolitan"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "Gabon"
 msgstr "Gabon"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "United Kingdom (Great Britain)"
 msgstr "United Kingdom (Great Britain)"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "Grenada"
 msgstr "Grenada"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "Georgia"
 msgstr "Georgia"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "French Guiana"
 msgstr "French Guiana"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:564
 msgid "Ghana"
 msgstr "Ghana"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Greenland"
 msgstr "Greenland"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Gambia"
 msgstr "Gambia"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Guinea"
 msgstr "Guinea"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Guadeloupe"
 msgstr "Guadeloupe"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Equatorial Guinea"
 msgstr "Equatorial Guinea"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "Greece"
 msgstr "Griechenland"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:565
 msgid "South Georgia and the South Sandwich Islands"
 msgstr "South Georgia and the South Sandwich Islands"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Guatemala"
 msgstr "Guatemala"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Guam"
 msgstr "Guam"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Guinea-Bissau"
 msgstr "Guinea-Bissau"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Guyana"
 msgstr "Guyana"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Hong Kong"
 msgstr "Hong Kong"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Heard & McDonald Islands"
 msgstr "Heard & McDonald Islands"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Honduras"
 msgstr "Honduras"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Croatia"
 msgstr "Croatia"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:566
 msgid "Haiti"
 msgstr "Haiti"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Hungary"
 msgstr "Hungary"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Indonesia"
 msgstr "Indonesia"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Ireland"
 msgstr "Ireland"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Israel"
 msgstr "Israel"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Isle of Man"
 msgstr "Isle of Man"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "India"
 msgstr "India"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "British Indian Ocean Territory"
 msgstr "British Indian Ocean Territory"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:567
 msgid "Iraq"
 msgstr "Iraq"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Islamic Republic of Iran"
 msgstr "Islamic Republic of Iran"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Iceland"
 msgstr "Iceland"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Italy"
 msgstr "Italy"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Jamaica"
 msgstr "Jamaica"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Jordan"
 msgstr "Jordan"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Japan"
 msgstr "Japan"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Kenya"
 msgstr "Kenya"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Kyrgyzstan"
 msgstr "Kyrgyzstan"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:568
 msgid "Cambodia"
 msgstr "Cambodia"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Kiribati"
 msgstr "Kiribati"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Comoros"
 msgstr "Comoros"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "St. Kitts and Nevis"
 msgstr "St. Kitts and Nevis"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Korea, Democratic People's Republic of"
 msgstr "Korea, Democratic People's Republic of"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Korea, Republic of"
 msgstr "Korea, Republic of"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Kuwait"
 msgstr "Kuwait"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:569
 msgid "Cayman Islands"
 msgstr "Cayman Islands"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Lao People's Democratic Republic"
 msgstr "Lao People's Democratic Republic"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Lebanon"
 msgstr "Lebanon"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Saint Lucia"
 msgstr "Saint Lucia"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Liberia"
 msgstr "Liberia"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:570
 msgid "Lesotho"
 msgstr "Lesotho"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Lithuania"
 msgstr "Lithuania"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Luxembourg"
 msgstr "Luxembourg"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Latvia"
 msgstr "Latvia"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Libyan Arab Jamahiriya"
 msgstr "Libyan Arab Jamahiriya"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Morocco"
 msgstr "Morocco"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Monaco"
 msgstr "Monaco"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Moldova, Republic of"
 msgstr "Moldova, Republic of"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:571
 msgid "Madagascar"
 msgstr "Madagascar"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Marshall Islands"
 msgstr "Marshall Islands"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Mali"
 msgstr "Mali"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Mongolia"
 msgstr "Mongolia"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Myanmar"
 msgstr "Myanmar"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Macau"
 msgstr "Macau"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Northern Mariana Islands"
 msgstr "Northern Mariana Islands"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Martinique"
 msgstr "Martinique"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Mauritania"
 msgstr "Mauritania"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:572
 msgid "Monserrat"
 msgstr "Monserrat"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Malta"
 msgstr "Malta"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Mauritius"
 msgstr "Mauritius"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Maldives"
 msgstr "Maldives"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Malawi"
 msgstr "Malawi"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Mexico"
 msgstr "Mexico"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Malaysia"
 msgstr "Malaysia"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Mozambique"
 msgstr "Mozambique"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Namibia"
 msgstr "Namibia"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "New Caledonia"
 msgstr "New Caledonia"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:573
 msgid "Niger"
 msgstr "Niger"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Norfolk Island"
 msgstr "Norfolk Island"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Nigeria"
 msgstr "Nigeria"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Netherlands"
 msgstr "Netherlands"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Norway"
 msgstr "Norway"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Nepal"
 msgstr "Nepal"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Niue"
 msgstr "Niue"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "New Zealand"
 msgstr "New Zealand"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:574
 msgid "Oman"
 msgstr "Oman"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Panama"
 msgstr "Panama"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Peru"
 msgstr "Peru"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "French Polynesia"
 msgstr "French Polynesia"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Papua New Guinea"
 msgstr "Papua New Guinea"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Philippines"
 msgstr "Philippines"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Pakistan"
 msgstr "Pakistan"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Poland"
 msgstr "Polen"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "St. Pierre & Miquelon"
 msgstr "St. Pierre & Miquelon"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:575
 msgid "Pitcairn"
 msgstr "Pitcairn"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Portugal"
 msgstr "Portugal"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Palau"
 msgstr "Palau"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Paraguay"
 msgstr "Paraguay"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Qatar"
 msgstr "Qatar"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Reunion"
 msgstr "Reunion"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Romania"
 msgstr "Romania"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Russian Federation"
 msgstr "Russian Federation"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:576
 msgid "Rwanda"
 msgstr "Rwanda"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Saudi Arabia"
 msgstr "Saudi Arabia"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Solomon Islands"
 msgstr "Solomon Islands"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Seychelles"
 msgstr "Seychelles"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Sudan"
 msgstr "Sudan"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Sweden"
 msgstr "Sweden"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Singapore"
 msgstr "Singapore"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "St. Helena"
 msgstr "St. Helena"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:577
 msgid "Slovenia"
 msgstr "Slovenia"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Svalbard & Jan Mayen Islands"
 msgstr "Svalbard & Jan Mayen Islands"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Slovakia"
 msgstr "Slovakia"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "San Marino"
 msgstr "San Marino"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Senegal"
 msgstr "Senegal"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Somalia"
 msgstr "Somalia"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Suriname"
 msgstr "Suriname"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:578
 msgid "Sao Tome & Principe"
 msgstr "Sao Tome & Principe"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "El Salvador"
 msgstr "El Salvador"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Syrian Arab Republic"
 msgstr "Syrian Arab Republic"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Swaziland"
 msgstr "Swaziland"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Turks & Caicos Islands"
 msgstr "Turks & Caicos Islands"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Chad"
 msgstr "Chad"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "French Southern Territories"
 msgstr "French Southern Territories"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Togo"
 msgstr "Togo"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:579
 msgid "Thailand"
 msgstr "Thailand"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Tokelau"
 msgstr "Tokelau"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Tunisia"
 msgstr "Tunisia"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "East Timor"
 msgstr "East Timor"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Turkey"
 msgstr "Turkey"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Trinidad & Tobago"
 msgstr "Trinidad & Tobago"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:580
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "Taiwan, Province of China"
 msgstr "Taiwan, Province of China"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "Tanzania, United Republic of"
 msgstr "Tanzania, United Republic of"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "Ukraine"
 msgstr "Ukraine"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "Uganda"
 msgstr "Uganda"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "United States Minor Outlying Islands"
 msgstr "United States Minor Outlying Islands"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:581
 msgid "United States of America"
 msgstr "United States of America"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "Uruguay"
 msgstr "Uruguay"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "Vatican City State (Holy See)"
 msgstr "Vatican City State (Holy See)"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "St. Vincent & the Grenadines"
 msgstr "St. Vincent & the Grenadines"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "Venezuela"
 msgstr "Venezuela"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:582
 msgid "British Virgin Islands"
 msgstr "British Virgin Islands"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "United States Virgin Islands"
 msgstr "United States Virgin Islands"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Viet Nam"
 msgstr "Viet Nam"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Wallis & Futuna Islands"
 msgstr "Wallis & Futuna Islands"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Samoa"
 msgstr "Samoa"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Yemen"
 msgstr "Yemen"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Mayotte"
 msgstr "Mayotte"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:583
 msgid "Yugoslavia"
 msgstr "Yugoslavia"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:584
 msgid "South Africa"
 msgstr "South Africa"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:584
 msgid "Zambia"
 msgstr "Zambia"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:584
 msgid "Zaire"
 msgstr "Zaire"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:584
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:584
 msgid "Unknown or unspecified country"
 msgstr "Unknown or unspecified country"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic"
 msgstr "Arabic"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic (United Arab Emirates)"
 msgstr "Arabic (United Arab Emirates)"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic (Bahrain)"
 msgstr "Arabic (Bahrain)"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic (Algeria)"
 msgstr "Arabic (Algeria)"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic (Egypt)"
 msgstr "Arabic (Egypt)"
 
-#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:591
 msgid "Arabic (Iraq)"
 msgstr "Arabic (Iraq)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Jordan)"
 msgstr "Arabic (Jordan)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Kuwait)"
 msgstr "Arabic (Kuwait)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Lebanon)"
 msgstr "Arabic (Lebanon)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Libya)"
 msgstr "Arabic (Libya)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Morocco)"
 msgstr "Arabic (Morocco)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Oman)"
 msgstr "Arabic (Oman)"
 
-#: includes/ZLanguage.php:589
+#: includes/ZLanguage.php:592
 msgid "Arabic (Qatar)"
 msgstr "Arabic (Qatar)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Arabic (Saudi Arabia)"
 msgstr "Arabic (Saudi Arabia)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Arabic (Sudan)"
 msgstr "Arabic (Sudan)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Arabic (Syria)"
 msgstr "Arabic (Syria)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Arabic (Tunisia)"
 msgstr "Arabic (Tunisia)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Arabic (Yemen)"
 msgstr "Arabic (Yemen)"
 
-#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:593
 msgid "Belarusian (Belarus)"
 msgstr "Belarusian (Belarus)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:594
 msgid "Bulgarian (Bulgaria)"
 msgstr "Bulgarian (Bulgaria)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:594
 msgid "Catalan (Spain)"
 msgstr "Catalan (Spain)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:594
 msgid "Czech (Czech Republic)"
 msgstr "Czech (Czech Republic)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:594
 msgid "Danish (Denmark)"
 msgstr "Danish (Denmark)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:595
 msgid "German (Austria)"
 msgstr "German (Austria)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:595
 msgid "German (Switzerland)"
 msgstr "German (Switzerland)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:595
 msgid "German (Germany)"
 msgstr "German (Germany)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:595
 msgid "German (Luxembourg)"
 msgstr "German (Luxembourg)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:595
 msgid "Greek (Cyprus)"
 msgstr "Greek (Cyprus)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "Greek (Greece)"
 msgstr "Greek (Greece)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "English (Australia)"
 msgstr "English (Australia)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "English (Canada)"
 msgstr "English (Canada)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "English (United Kingdom)"
 msgstr "English (United Kingdom)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "English (Ireland)"
 msgstr "English (Ireland)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:596
 msgid "English (India)"
 msgstr "English (India)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (Malta)"
 msgstr "English (Malta)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (New Zealand)"
 msgstr "English (New Zealand)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (Philippines)"
 msgstr "English (Philippines)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (Singapore)"
 msgstr "English (Singapore)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (United States)"
 msgstr "English (United States)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:597
 msgid "English (South Africa)"
 msgstr "English (South Africa)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:598
 msgid "Spanish (Argentina)"
 msgstr "Spanish (Argentina)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:598
 msgid "Spanish (Bolivia)"
 msgstr "Spanish (Bolivia)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:598
 msgid "Spanish (Chile)"
 msgstr "Spanish (Chile)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:598
 msgid "Spanish (Colombia)"
 msgstr "Spanish (Colombia)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:598
 msgid "Spanish (Costa Rica)"
 msgstr "Spanish (Costa Rica)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Dominican Republic)"
 msgstr "Spanish (Dominican Republic)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Ecuador)"
 msgstr "Spanish (Ecuador)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Spain)"
 msgstr "Spanish (Spain)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Guatemala)"
 msgstr "Spanish (Guatemala)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Honduras)"
 msgstr "Spanish (Honduras)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:599
 msgid "Spanish (Mexico)"
 msgstr "Spanish (Mexico)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (Nicaragua)"
 msgstr "Spanish (Nicaragua)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (Panama)"
 msgstr "Spanish (Panama)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (Peru)"
 msgstr "Spanish (Peru)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (Puerto Rico)"
 msgstr "Spanish (Puerto Rico)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (Paraguay)"
 msgstr "Spanish (Paraguay)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:600
 msgid "Spanish (El Salvador)"
 msgstr "Spanish (El Salvador)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:601
 msgid "Spanish (United States)"
 msgstr "Spanish (United States)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:601
 msgid "Spanish (Uruguay)"
 msgstr "Spanish (Uruguay)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:601
 msgid "Spanish (Venezuela)"
 msgstr "Spanish (Venezuela)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:601
 msgid "Estonian (Estonia)"
 msgstr "Estonian (Estonia)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:601
 msgid "Finnish (Finland)"
 msgstr "Finnish (Finland)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:602
 msgid "French (Belgium)"
 msgstr "French (Belgium)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:602
 msgid "French (Canada)"
 msgstr "French (Canada)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:602
 msgid "French (Switzerland)"
 msgstr "French (Switzerland)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:602
 msgid "French (France)"
 msgstr "French (France)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:602
 msgid "French (Luxembourg)"
 msgstr "French (Luxembourg)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:603
 msgid "Irish (Ireland)"
 msgstr "Irish (Ireland)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:603
 msgid "Hindi (India)"
 msgstr "Hindi (India)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:603
 msgid "Croatian (Croatia)"
 msgstr "Croatian (Croatia)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:603
 msgid "Hungarian (Hungary)"
 msgstr "Hungarian (Hungary)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:604
 msgid "Indonesian (Indonesia)"
 msgstr "Indonesian (Indonesia)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:604
 msgid "Icelandic (Iceland)"
 msgstr "Icelandic (Iceland)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:604
 msgid "Italian (Switzerland)"
 msgstr "Italian (Switzerland)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:604
 msgid "Italian (Italy)"
 msgstr "Italian (Italy)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:605
 msgid "Hebrew (Israel)"
 msgstr "Hebrew (Israel)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:605
 msgid "Japanese (Japan)"
 msgstr "Japanese (Japan)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:605
 msgid "Korean (South Korea)"
 msgstr "Korean (South Korea)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:605
 msgid "Lithuanian (Lithuania)"
 msgstr "Lithuanian (Lithuania)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:606
 msgid "Latvian (Latvia)"
 msgstr "Latvian (Latvia)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:606
 msgid "Macedonian (Macedonia)"
 msgstr "Macedonian (Macedonia)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:606
 msgid "Malay (Malaysia)"
 msgstr "Malay (Malaysia)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:606
 msgid "Maltese (Malta)"
 msgstr "Maltese (Malta)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:607
 msgid "Dutch (Belgium)"
 msgstr "Dutch (Belgium)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:607
 msgid "Dutch (Netherlands)"
 msgstr "Dutch (Netherlands)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:607
 msgid "Norwegian (Norway)"
 msgstr "Norwegian (Norway)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:607
 msgid "Norwegian (Norway,Nynorsk)"
 msgstr "Norwegian (Norway,Nynorsk)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:608
 msgid "Polish (Poland)"
 msgstr "Polish (Poland)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:608
 msgid "Portuguese (Brazil)"
 msgstr "Portuguese (Brazil)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:608
 msgid "Portuguese (Portugal)"
 msgstr "Portuguese (Portugal)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:608
 msgid "Romanian (Romania)"
 msgstr "Romanian (Romania)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:609
 msgid "Russian (Russia)"
 msgstr "Russian (Russia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:609
 msgid "Slovak (Slovakia)"
 msgstr "Slovak (Slovakia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:609
 msgid "Slovenian (Slovenia)"
 msgstr "Slovenian (Slovenia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:609
 msgid "Albanian (Albania)"
 msgstr "Albanian (Albania)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:610
 msgid "Serbian (Bosnia and Herzegovina)"
 msgstr "Serbian (Bosnia and Herzegovina)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:610
 msgid "Serbian (Serbia and Montenegro)"
 msgstr "Serbian (Serbia and Montenegro)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:610
 msgid "Serbian (Montenegro)"
 msgstr "Serbian (Montenegro)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:610
 msgid "Serbian (Serbia)"
 msgstr "Serbian (Serbia)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:610
 msgid "Swedish (Sweden)"
 msgstr "Swedish (Sweden)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:611
 msgid "Thai (Thailand)"
 msgstr "Thai (Thailand)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:611
 msgid "Thai (Thailand,TH)"
 msgstr "Thai (Thailand,TH)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:611
 msgid "Turkish (Turkey)"
 msgstr "Turkish (Turkey)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:611
 msgid "Ukrainian (Ukraine)"
 msgstr "Ukrainian (Ukraine)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:612
 msgid "Vietnamese (Vietnam)"
 msgstr "Vietnamese (Vietnam)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:612
 msgid "Chinese (China)"
 msgstr "Chinese (China)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:612
 msgid "Chinese (Hong Kong)"
 msgstr "Chinese (Hong Kong)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:612
 msgid "Chinese (Singapore)"
 msgstr "Chinese (Singapore)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:612
 msgid "Chinese (Taiwan)"
 msgstr "Chinese (Taiwan)"
 
@@ -2655,9 +2655,9 @@ msgstr "Ungültiger 'AuthKey': Das könnte daran liegen, dass der 'Zurück' Butt
 #: system/Admin/pnadmin.php:104
 #: system/Admin/pnadmin.php:177
 #: system/Admin/pnadmin.php:210
-#: system/Admin/pnadmin.php:401
-#: system/Admin/pnadmin.php:450
-#: system/Admin/pnadmin.php:642
+#: system/Admin/pnadmin.php:404
+#: system/Admin/pnadmin.php:453
+#: system/Admin/pnadmin.php:645
 #: system/Modules/pnadminapi.php:303
 #: system/Groups/pnadmin.php:45
 #: system/Groups/pnadmin.php:132
@@ -2979,58 +2979,58 @@ msgstr "Attempted to get connection from empty connection stack"
 msgid "Attempted to pop connection from empty connection stack"
 msgstr "Attempted to pop connection from empty connection stack"
 
-#: includes/pnAPI.php:623
+#: includes/pnAPI.php:624
 msgid "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 msgstr "Function pnVarCleanFromInput() is deprecated. Please use FormUtil::getPassedValue() instead."
 
-#: includes/pnAPI.php:674
+#: includes/pnAPI.php:675
 msgid "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 msgstr "Function pnVarPrepForDisplay() is deprecated. Please use DataUtil::formatForDisplay() instead."
 
-#: includes/pnAPI.php:706
+#: includes/pnAPI.php:707
 msgid "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 msgstr "Function pnVarPrepHTMLDisplay() is deprecated. Please use DataUtil::formatForDisplayHTML() instead."
 
-#: includes/pnAPI.php:737
+#: includes/pnAPI.php:738
 msgid "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 msgstr "Function pnVarPrepForStore() is deprecated. Please use DataUtil::formatForStore() instead."
 
-#: includes/pnAPI.php:769
+#: includes/pnAPI.php:770
 msgid "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 msgstr "Function pnVarPrepForOS() is deprecated. Please use DataUtil::formatForOS() instead."
 
-#: includes/pnAPI.php:791
+#: includes/pnAPI.php:792
 #, php-format
 msgid "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 msgstr "using deprecated function pnVarCensor in %s, please activate the MultiHook for this module instead"
 
-#: includes/pnAPI.php:1494
+#: includes/pnAPI.php:1495
 msgid "System error"
 msgstr "Systemfehler"
 
-#: includes/pnAPI.php:1572
+#: includes/pnAPI.php:1573
 #, php-format
 msgid "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 msgstr "STOP: PHP 4.3.0 or newer is needed (latest PHP 5.x is recommended), %s has been found."
 
-#: includes/pnAPI.php:1578
+#: includes/pnAPI.php:1579
 msgid "STOP: PHP-function token_get_all() is needed, but not available."
 msgstr "STOP: PHP-function token_get_all() is needed, but not available."
 
-#: includes/pnAPI.php:1584
+#: includes/pnAPI.php:1585
 msgid "STOP: The mbstring extension for PHP is needed, but not available."
 msgstr "STOP: The mbstring extension for PHP is needed, but not available."
 
-#: includes/pnAPI.php:1590
+#: includes/pnAPI.php:1591
 msgid "PHP-function fsockopen() is needed within the Mailer, but not available."
 msgstr "PHP-function fsockopen() is needed within the Mailer, but not available."
 
-#: includes/pnAPI.php:1608
+#: includes/pnAPI.php:1609
 #, php-format
 msgid "STOP: %s has not been found or is not writable for the web server."
 msgstr "STOP: %s has not been found or is not writable for the web server."
 
-#: includes/pnAPI.php:1614
+#: includes/pnAPI.php:1615
 msgid "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 msgstr "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 
@@ -3924,7 +3924,7 @@ msgstr "Fehler! Es wurde kein Benutzer ausgewählt"
 #: system/Blocks/pnadminapi.php:342
 #: system/Blocks/pnadminapi.php:376
 #: system/pnRender/plugins/function.selectmodobject.php:63
-#: system/Categories/pnadmin.php:102
+#: system/Categories/pnadmin.php:98
 #: system/Admin/pnadminapi.php:62
 #: system/Admin/pnadminapi.php:130
 #: system/Admin_Messages/pnadminapi.php:83
@@ -3950,9 +3950,9 @@ msgstr "Ein entsprechendes Element konnte nicht gefunden werden."
 #: system/Permissions/pnadmin.php:722
 #: system/pnRender/pnadmin.php:83
 #: system/Categories/pnadminform.php:311
-#: system/Settings/pnadmin.php:120
-#: system/Settings/pnadmin.php:285
-#: system/Admin/pnadmin.php:527
+#: system/Settings/pnadmin.php:142
+#: system/Settings/pnadmin.php:319
+#: system/Admin/pnadmin.php:530
 #: system/Admin_Messages/pnadmin.php:436
 #: system/Modules/pnadmin.php:919
 #: system/Mailer/pnadmin.php:141
@@ -3998,7 +3998,7 @@ msgid "Confirmation code for %s"
 msgstr "Bestätigungscode für %s"
 
 #: system/Users/pnblocks/online.php:20
-#: system/Blocks/pninit.php:235
+#: system/Blocks/pninit.php:172
 msgid "Who's online"
 msgstr "Wer ist online"
 
@@ -4290,7 +4290,7 @@ msgid "Custom block"
 msgstr "Individueller Block"
 
 #: system/Users/pnaccountapi.php:64
-#: system/Blocks/pninit.php:190
+#: system/Blocks/pninit.php:163
 msgid "Log out"
 msgstr "Abmelden"
 
@@ -4482,8 +4482,8 @@ msgstr "Erweitertes Menu"
 msgid "Extended Menu block"
 msgstr "Erweiterter Menüblock"
 
-#: system/Blocks/pnblocks/extmenu.php:328
-#: system/Blocks/pnblocks/extmenu.php:330
+#: system/Blocks/pnblocks/extmenu.php:331
+#: system/Blocks/pnblocks/extmenu.php:333
 msgid "--new link--"
 msgstr "-- Neuer Link --"
 
@@ -4579,7 +4579,7 @@ msgstr "Alle Blöcke anzeigen"
 
 #: system/Blocks/pnadminapi.php:421
 #: system/Permissions/pnadminapi.php:512
-#: system/Categories/pnadminapi.php:34
+#: system/Categories/pnadminapi.php:32
 #: system/Settings/pnversion.php:14
 #: system/Admin_Messages/pnadminapi.php:199
 #: system/Modules/pnadminapi.php:1346
@@ -4596,7 +4596,7 @@ msgstr "Alle Blöcke anzeigen"
 #: system/Categories/pntemplates/categories_admin_preferences.htm:4
 #: system/Categories/pntemplates/categories_admin_preferences.htm:5
 #: system/Categories/pntemplates/categories_admin_preferences.htm:8
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:4
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:5
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:5
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:2
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:4
@@ -4626,27 +4626,27 @@ msgstr "Alle Blöcke anzeigen"
 msgid "Settings"
 msgstr "Konfiguration"
 
-#: system/Blocks/pninit.php:89
-#: system/Blocks/pninit.php:149
+#: system/Blocks/pninit.php:87
+#: system/Blocks/pninit.php:145
 msgid "Left blocks"
 msgstr "Linke Blöcke"
 
-#: system/Blocks/pninit.php:92
-#: system/Blocks/pninit.php:152
+#: system/Blocks/pninit.php:88
+#: system/Blocks/pninit.php:146
 msgid "Right blocks"
 msgstr "Rechte Blöcke"
 
-#: system/Blocks/pninit.php:95
-#: system/Blocks/pninit.php:155
+#: system/Blocks/pninit.php:89
+#: system/Blocks/pninit.php:147
 msgid "Center blocks"
 msgstr "Mittlere Blöcke"
 
-#: system/Blocks/pninit.php:171
-#: system/Blocks/pninit.php:206
+#: system/Blocks/pninit.php:159
+#: system/Blocks/pninit.php:169
 msgid "Main menu"
 msgstr "Hauptmenü"
 
-#: system/Blocks/pninit.php:174
+#: system/Blocks/pninit.php:161
 #: themes/andreas08/templates/modules/admin.htm:22
 #: themes/andreas08/templates/modules/home.htm:22
 #: themes/andreas08/templates/master.htm:22
@@ -4662,33 +4662,33 @@ msgstr "Hauptmenü"
 msgid "Home"
 msgstr "Startseite"
 
-#: system/Blocks/pninit.php:176
+#: system/Blocks/pninit.php:161
 msgid "Back to the home page"
 msgstr "Zurück zur Startseite"
 
-#: system/Blocks/pninit.php:182
+#: system/Blocks/pninit.php:162
 #: system/Admin/pnaccountapi.php:27
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:42
+#: system/Admin/pntemplates/admin_admin_adminpanel_inc1.htm:31
 msgid "Administration"
 msgstr "Administration"
 
-#: system/Blocks/pninit.php:184
+#: system/Blocks/pninit.php:162
 msgid "Go to the administration panel"
 msgstr "Gehe zum Administrationsbereich"
 
-#: system/Blocks/pninit.php:192
+#: system/Blocks/pninit.php:163
 msgid "Log out of your account"
 msgstr "Benutzer abmelden"
 
-#: system/Blocks/pninit.php:216
+#: system/Blocks/pninit.php:170
 msgid "Languages"
 msgstr "Sprachen"
 
-#: system/Blocks/pninit.php:226
+#: system/Blocks/pninit.php:171
 msgid "User log-in"
 msgstr "Anmeldung"
 
-#: system/Blocks/pninit.php:244
+#: system/Blocks/pninit.php:173
 msgid "Administration Messages"
 msgstr "Nachrichten vom Admin"
 
@@ -4887,6 +4887,18 @@ msgstr "kein Modul"
 msgid "Provides the core system with a Smarty-based engine to control content rendering and presentation."
 msgstr "Smarty Implementierung von Zikula"
 
+#: system/pnRender/plugins/block.securityutil_checkpermission_block.php:41
+msgid "securityutil_checkpermission_block: attribute component required"
+msgstr "securityutil_checkpermission_block: attribute component required"
+
+#: system/pnRender/plugins/block.securityutil_checkpermission_block.php:45
+msgid "securityutil_checkpermission_block: attribute instance required"
+msgstr "securityutil_checkpermission_block: attribute instance required"
+
+#: system/pnRender/plugins/block.securityutil_checkpermission_block.php:49
+msgid "securityutil_checkpermission_block: attribute level required"
+msgstr "securityutil_checkpermission_block: attribute level required"
+
 #: system/pnRender/plugins/function.selectmodobjectarray.php:52
 #, php-format
 msgid "Error! Unable to load module array class [%1$s] for module [%2$s]"
@@ -4897,7 +4909,7 @@ msgid "gt_modifier: you must use gt in the form: $var|gt:$renderObject"
 msgstr "gt_modifier: you must use gt in the form: $var|gt:$renderObject"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:30
-#: system/Categories/pninit.php:338
+#: system/Categories/pninit.php:304
 #: system/Modules/pnadmin.php:273
 #: system/Users/pntemplates/users_admin_modify.htm:60
 #: system/Blocks/pntemplates/blocks_admin_view.htm:36
@@ -4913,7 +4925,7 @@ msgstr "gt_modifier: you must use gt in the form: $var|gt:$renderObject"
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:76
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:78
 #: system/Categories/pntemplates/categories_admin_edit.htm:56
-#: system/Categories/pntemplates/categories_user_edit.htm:104
+#: system/Categories/pntemplates/categories_user_edit.htm:105
 #: system/Categories/pntemplates/categories_user_list.htm:10
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:15
 #: system/Modules/pntemplates/modules_admin_view.htm:13
@@ -4921,7 +4933,7 @@ msgid "Active"
 msgstr "Aktiv"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:32
-#: system/Categories/pninit.php:350
+#: system/Categories/pninit.php:316
 #: system/Modules/pnadmin.php:269
 #: system/Users/pntemplates/users_admin_modify.htm:58
 #: system/Blocks/pntemplates/blocks_admin_view.htm:40
@@ -4939,11 +4951,19 @@ msgstr "Aktiv"
 msgid "Inactive"
 msgstr "Inaktiv"
 
+#: system/pnRender/plugins/block.checkgroup.php:42
+msgid "checkgroup: attribute component required"
+msgstr "checkgroup: attribute component required"
+
 #: system/pnRender/plugins/modifier.pndate_format.php:64
 #: system/pnRender/plugins/modifier.pndate_format.php:80
 #, php-format
 msgid "Could not set locale: %s"
 msgstr "Locale konnte nicht gesetzt werden: %s"
+
+#: system/pnRender/plugins/block.case.php:36
+msgid "{case}: block not inside switch}-context"
+msgstr "{case}: block not inside switch}-context"
 
 #: system/pnRender/plugins/function.selectmodobject.php:52
 #, php-format
@@ -4960,6 +4980,10 @@ msgstr "online"
 msgid "offline"
 msgstr "offline"
 
+#: system/pnRender/plugins/block.switch.php:34
+msgid "{switch}: parameter 'expr' not given"
+msgstr "{switch}: parameter 'expr' not given"
+
 #: system/pnRender/plugins/modifier.yesno.php:39
 #: system/pnRender/plugins/modifier.yesno.php:42
 #: system/Admin_Messages/pnadmin.php:327
@@ -4974,13 +4998,14 @@ msgstr "offline"
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:194
 #: system/Blocks/pntemplates/blocks_admin_new.htm:43
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:65
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:14
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:35
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:15
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:33
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:49
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:27
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:47
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:89
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:137
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:164
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:135
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:162
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:31
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:34
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:43
@@ -5015,13 +5040,14 @@ msgstr "Ja"
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:198
 #: system/Blocks/pntemplates/blocks_admin_new.htm:44
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:66
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:16
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:37
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:17
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:35
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:51
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:29
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:49
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:91
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:139
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:166
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:137
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:164
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:33
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:36
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:45
@@ -5055,12 +5081,28 @@ msgstr "Aus"
 msgid "No assigned categories"
 msgstr "Keine Kategorien zugeordnet"
 
-#: system/pnRender/plugins/function.pncalendarinput.php:98
+#: system/pnRender/plugins/block.pnsecauthaction_block.php:45
+msgid "pnsecauthaction_block: attribute component required"
+msgstr "pnsecauthaction_block: attribute component required"
+
+#: system/pnRender/plugins/block.pnsecauthaction_block.php:49
+msgid "pnsecauthaction_block: attribute instance required"
+msgstr "pnsecauthaction_block: attribute instance required"
+
+#: system/pnRender/plugins/block.pnsecauthaction_block.php:53
+msgid "pnsecauthaction_block: attribute level required"
+msgstr "pnsecauthaction_block: attribute level required"
+
+#: system/pnRender/plugins/function.selector_user_category.php:52
+msgid "Edit subcategories"
+msgstr "Unterkategorie bearbeiten"
+
+#: system/pnRender/plugins/function.pncalendarinput.php:99
 msgid "Date selector"
 msgstr "Datumsauswahl"
 
 #. ! Should be 12 or 24 for the hours in the clock
-#: system/pnRender/plugins/function.pncalendarinput.php:118
+#: system/pnRender/plugins/function.pncalendarinput.php:119
 msgid "clockformat"
 msgstr "Zeitformat"
 
@@ -5071,29 +5113,29 @@ msgstr "Zeitformat"
 msgid "Personal Info"
 msgstr "Profilinformation"
 
-#: system/pnRender/plugins/function.selector_category.php:101
+#: system/pnRender/plugins/function.selector_category.php:92
 msgid "Edit Subcategory"
 msgstr "Unterkategorie bearbeiten"
 
-#: system/Categories/pnadmin.php:96
+#: system/Categories/pnadmin.php:92
 msgid "Unable to determine valid [cid] for edit mode in Categories_admin_edit"
 msgstr "Fehler! Es konnte keine gültige [cid] zur Bearbeitung in 'Categories_admin_edit' ermittelt werden"
 
 #: system/Categories/pnuserapi.php:24
-#: system/Categories/pnuser.php:161
+#: system/Categories/pnuser.php:157
 msgid "Error! Could not determine the User root node"
 msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden"
 
 #: system/Categories/pnuserapi.php:30
 #: system/Categories/pnuserapi.php:62
-#: system/Categories/pnuser.php:167
+#: system/Categories/pnuser.php:163
 #, php-format
 msgid "Error! The User root node seems to point towards an invalid category [%s]"
 msgstr "Fehler! Der Benutzerstammknoten scheint auf eine ungültige Kategorie zu verweisen [%s]"
 
 #: system/Categories/pnuserapi.php:34
 #: system/Categories/pnuser.php:64
-#: system/Categories/pnuser.php:171
+#: system/Categories/pnuser.php:167
 msgid "Error! The root directory cannot be modified in 'user' mode"
 msgstr "Fehler! Das Stammverzeichnis kann nicht im Benutzermodus editiert werden"
 
@@ -5129,29 +5171,29 @@ msgstr "Fehler! Angegebene Kategorie ist keine übergeordnete Werte-Kategorie  (
 msgid "Error! The specified category is not a child of the document root (%1$s, %2$s)"
 msgstr "Fehler! Die angegebene Kategorie ist keine Unterkategorie des Dokumentenstamms  (%1$s, %2$s)"
 
-#: system/Categories/pnuser.php:151
+#: system/Categories/pnuser.php:147
 msgid "Error! The user category edit mode is only available logged-in users"
 msgstr "Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich"
 
-#: system/Categories/pnuser.php:156
+#: system/Categories/pnuser.php:152
 #: system/Categories/pntemplates/categories_user_editcategories.htm:4
 msgid "Error! User-owned category editing has not been enabled. Your site admin can enable this feature."
 msgstr "Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
 
-#: system/Categories/pnuser.php:176
+#: system/Categories/pnuser.php:172
 msgid "Error! Unable to determine user category root node name"
 msgstr "Fehler! Der Name des Benutzerstammknoten konnte nicht ermittelt werden."
 
-#: system/Categories/pnuser.php:186
+#: system/Categories/pnuser.php:182
 msgid "Error! The user root category node for this user doesn't exist and the autocreate flag is not set"
 msgstr "Fehler! Der Benutzerstammknoten für diesen Benutzer existiert nicht und das automatische Erstellung ist nicht gesetzt."
 
-#: system/Categories/pnuser.php:199
+#: system/Categories/pnuser.php:195
 msgid "Unable to load class [category]"
 msgstr "Fehler! Die Klasse [category] konnte nicht geladen werden"
 
-#: system/Categories/pnuser.php:212
-#: system/Categories/pninit.php:430
+#: system/Categories/pnuser.php:208
+#: system/Categories/pninit.php:386
 msgid "Default"
 msgstr "Standard"
 
@@ -5167,7 +5209,7 @@ msgstr "Verwaltung der modulübergreifenden Kategorien"
 msgid "Error! Name cannot be left blank"
 msgstr "Fehler! Der Name darf nicht leer sein."
 
-#: system/Categories/classes/PNCategory.class.php:76
+#: system/Categories/classes/PNCategory.class.php:72
 msgid "Localised name undefined"
 msgstr "Lokalisierter Name nicht definiert"
 
@@ -5234,22 +5276,22 @@ msgstr "Die Kategoriezuweisung wurde erfolgreich gelöscht"
 msgid "Category registry entry has been successfully saved"
 msgstr "Die Kategoriezuweisung wurde erfolgreich gespeichert"
 
-#: system/Categories/pnadminapi.php:26
+#: system/Categories/pnadminapi.php:24
 msgid "View categories"
 msgstr "Kategorien anzeigen"
 
-#: system/Categories/pnadminapi.php:29
+#: system/Categories/pnadminapi.php:27
 #: system/Categories/pntemplates/categories_admin_edit.htm:10
 #: system/Categories/pntemplates/categories_user_edit.htm:6
 msgid "Create category"
 msgstr "Kategorie erstellen"
 
-#: system/Categories/pnadminapi.php:32
+#: system/Categories/pnadminapi.php:30
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:2
 msgid "Category Registry"
 msgstr "Kategoriezuweisung"
 
-#: system/Categories/pnadminapi.php:33
+#: system/Categories/pnadminapi.php:31
 #: system/Categories/pntemplates/categories_admin_config.htm:2
 #: system/Categories/pntemplates/categories_admin_config.htm:13
 msgid "Rebuild paths"
@@ -5297,7 +5339,7 @@ msgstr "Fehler! Die Klasse [CategoryUtil] konnte nicht geladen werden"
 msgid "Error! An invalid direction was received"
 msgstr "Fehler! Es wurde eine ungültige 'Direction' empfangen"
 
-#: system/Categories/pninit.php:120
+#: system/Categories/pninit.php:100
 #: system/Modules/pnversion.php:15
 #: system/Modules/pninit.php:151
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:23
@@ -5308,55 +5350,55 @@ msgstr "Fehler! Es wurde eine ungültige 'Direction' empfangen"
 msgid "Modules"
 msgstr "Module"
 
-#: system/Categories/pninit.php:131
+#: system/Categories/pninit.php:101
 msgid "General"
 msgstr "Allgemein"
 
-#: system/Categories/pninit.php:142
+#: system/Categories/pninit.php:108
 msgid "Yes/No"
 msgstr "Ja/Nein"
 
-#: system/Categories/pninit.php:177
+#: system/Categories/pninit.php:143
 msgid "Pending status"
 msgstr "Wartestatus (erweitert)"
 
-#: system/Categories/pninit.php:188
-#: system/Categories/pninit.php:373
+#: system/Categories/pninit.php:154
+#: system/Categories/pninit.php:339
 #: system/Groups/pntemplates/groups_user_memberslist.htm:31
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:16
 msgid "Pending"
 msgstr "Wartend"
 
-#: system/Categories/pninit.php:200
+#: system/Categories/pninit.php:166
 msgid "Checked"
 msgstr "Geprüft"
 
-#: system/Categories/pninit.php:212
-#: system/Categories/pninit.php:385
+#: system/Categories/pninit.php:178
+#: system/Categories/pninit.php:351
 msgid "Approved"
 msgstr "Freigegeben"
 
-#: system/Categories/pninit.php:224
+#: system/Categories/pninit.php:190
 msgid "Online"
 msgstr "Online"
 
-#: system/Categories/pninit.php:236
+#: system/Categories/pninit.php:202
 msgid "Rejected"
 msgstr "Abgelehnt"
 
-#: system/Categories/pninit.php:248
+#: system/Categories/pninit.php:214
 msgid "Gender"
 msgstr "Geschlecht"
 
-#: system/Categories/pninit.php:259
+#: system/Categories/pninit.php:225
 msgid "Male"
 msgstr "männlich"
 
-#: system/Categories/pninit.php:271
+#: system/Categories/pninit.php:237
 msgid "Female"
 msgstr "weiblich"
 
-#: system/Categories/pninit.php:283
+#: system/Categories/pninit.php:249
 #: system/Blocks/pntemplates/blocks_admin_new.htm:12
 #: system/Blocks/pntemplates/blocks_admin_view.htm:15
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:50
@@ -5370,51 +5412,51 @@ msgstr "weiblich"
 msgid "Title"
 msgstr "Titel"
 
-#: system/Categories/pninit.php:294
+#: system/Categories/pninit.php:260
 msgid "Dr."
 msgstr "Dr."
 
-#: system/Categories/pninit.php:305
+#: system/Categories/pninit.php:271
 msgid "Prof."
 msgstr "Prof."
 
-#: system/Categories/pninit.php:316
+#: system/Categories/pninit.php:282
 msgid "Mag."
 msgstr "Mag."
 
-#: system/Categories/pninit.php:327
+#: system/Categories/pninit.php:293
 msgid "Activity status"
 msgstr "Aktivitätsstatus"
 
-#: system/Categories/pninit.php:362
+#: system/Categories/pninit.php:328
 msgid "Pending status basic"
 msgstr "Wartestatus (einfach)"
 
-#: system/Categories/pninit.php:408
+#: system/Categories/pninit.php:364
 msgid "Global"
 msgstr "Global"
 
-#: system/Categories/pninit.php:419
+#: system/Categories/pninit.php:375
 msgid "Arts & Entertainment"
 msgstr "Kunst und Unterhaltung"
 
-#: system/Categories/pninit.php:441
+#: system/Categories/pninit.php:397
 msgid "Information Technology"
 msgstr "Informationstechnologie"
 
-#: system/Categories/pninit.php:452
+#: system/Categories/pninit.php:408
 msgid "Politics"
 msgstr "Politik"
 
-#: system/Categories/pninit.php:463
+#: system/Categories/pninit.php:419
 msgid "Science"
 msgstr "Wissenschaft"
 
-#: system/Categories/pninit.php:474
+#: system/Categories/pninit.php:430
 msgid "Society"
 msgstr "Gesellschaft"
 
-#: system/Categories/pninit.php:485
+#: system/Categories/pninit.php:441
 msgid "Sports"
 msgstr "Sport"
 
@@ -5422,31 +5464,23 @@ msgstr "Sport"
 msgid "Error! Invalid Entry point or entry point file doesn't exist in the Zikula root"
 msgstr "Fehler! Ungültiger Seiteneinstieg oder Datei existiert nicht im Zikula-Rootverzeichnis"
 
-#: system/Settings/pnadmin.php:101
-msgid "Error! Permalink search and replace strings are not 1:1 equivalent"
-msgstr "Fehler! Der Inhalt der Zeichenketten 'Suchen nach' und 'Ersetzen durch' ist nicht 1:1 identisch."
+#: system/Settings/pnadmin.php:104
+msgid "Error! Permalink settings: Strings cannot end with a comma."
+msgstr "Fehler bei den Permalinkeinstellungen: Die Zeichenkette darf nicht mit einem Komma enden."
 
-#. ! this is a comma-separated list of special characters to search for in permalinks
-#: system/Settings/pnadmin.php:103
-#: system/Settings/pninit.php:76
-#: system/Settings/pninit.php:199
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:121
-msgid "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
-msgstr "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
+#: system/Settings/pnadmin.php:121
+msgid "Error! Permalink settings: The search and replace lists for permalinks have a different number of comma separated elements.  If you have 3 elements in search list, there must be 3 elements in the replacement list."
+msgstr "Fehler bei den Permalinkeinstellungen: Die Suche- und Ersetzenlisten haben eine unterschiedliche Anzahl an Elementen. Wenn drei Elemente in der Suchliste eingetragen wurden, so müssen auch drei Elemente in der Ersetzenliste vorhanden sein."
 
-#. ! this is a comma-separated list of special characters to replace in permalinks
-#: system/Settings/pnadmin.php:105
-#: system/Settings/pninit.php:78
-#: system/Settings/pninit.php:201
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:126
-msgid "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
-msgstr "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
-
-#: system/Settings/pnadmin.php:190
+#: system/Settings/pnadmin.php:213
 msgid "Language detection was automatically disabled the multilingual feature was disabled"
 msgstr "Die Spracherkennung wurde automatisch deaktiviert, da die \"Multilingual\" deaktiviert wurde."
 
-#: system/Settings/pnadmin.php:214
+#: system/Settings/pnadmin.php:224
+msgid "Because language variations were disabled, the system language has been altered too."
+msgstr "Da die Sprachvariationen deaktiviert wurden, hat sich ebenfalls die Sprache des Systems verändert."
+
+#: system/Settings/pnadmin.php:248
 msgid "Localisation configuration updated"
 msgstr "Multilingual Einstellungen wurden aktualisiert"
 
@@ -5460,7 +5494,7 @@ msgid "Owner Settings"
 msgstr "Allgemein"
 
 #: system/Settings/pnadminapi.php:29
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:5
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:6
 msgid "Localisation Settings"
 msgstr "Multilingual"
 
@@ -5484,6 +5518,18 @@ msgstr "zikula, community, portal, portal web, open source, gpl, web site, websi
 #: system/Settings/pninit.php:36
 msgid "Anonymous"
 msgstr "Unregistriert"
+
+#. ! this is a comma-separated list of special characters to search for in permalinks
+#: system/Settings/pninit.php:74
+#: system/Settings/pninit.php:199
+msgid "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
+msgstr "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
+
+#. ! this is a comma-separated list of special characters to replace in permalinks
+#: system/Settings/pninit.php:76
+#: system/Settings/pninit.php:201
+msgid "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
+msgstr "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
 
 #: system/Settings/pninit.php:231
 msgid "(GMT -12:00 hours) Baker Island"
@@ -5654,15 +5700,15 @@ msgstr "Erledigt! Die Kategorie wurde aktualisiert."
 msgid "Done! category deleted."
 msgstr "Erledigt! Die Kategorie wurde gelöscht."
 
-#: system/Admin/pnadmin.php:460
+#: system/Admin/pnadmin.php:463
 msgid "The 'Modules per row' setting must be numeric."
 msgstr "Der Wert 'Module pro Reihe' muss numerisch."
 
-#: system/Admin/pnadmin.php:472
+#: system/Admin/pnadmin.php:475
 msgid "'The 'Modules per page' setting must be numeric."
 msgstr "Der Wert 'Module pro Seite' muss numerisch."
 
-#: system/Admin/pnadmin.php:517
+#: system/Admin/pnadmin.php:520
 msgid "Could not add module to module category."
 msgstr "Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
 
@@ -6722,13 +6768,13 @@ msgstr "Überprüfung des Dateisystems"
 msgid "Zikula pnTemp Check"
 msgstr "pnTemp-Überprüfung"
 
-#: system/SysInfo/pnadminapi.php:109
+#: system/SysInfo/pnadminapi.php:110
 msgid "Folder"
 msgstr "Ordner"
 
-#: system/SysInfo/pnadminapi.php:125
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:151
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:156
+#: system/SysInfo/pnadminapi.php:126
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:149
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:154
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view.htm:11
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:124
 msgid "File"
@@ -6933,7 +6979,7 @@ msgstr "Benutzername"
 
 #: system/Theme/plugins/function.userlogin.php:61
 #: includes/templates/siteoff.htm:54
-#: upgrade.php:144
+#: upgrade.php:145
 #: install/pntemplates/installer_dbinformation.htm:40
 #: install/pntemplates/installer_login.htm:19
 #: install/pntemplates/installer_createadmin.htm:24
@@ -7122,44 +7168,44 @@ msgstr "Module %s, function %s returned."
 msgid "Error! Could not load %s module."
 msgstr "Fehler! Modul %s konnte nicht geladen werden."
 
-#: upgrade.php:83
-#: upgrade.php:92
+#: upgrade.php:84
+#: upgrade.php:93
 #, php-format
 msgid "Zikula version %1$s Upgrade script (for Zikula version %2$s and up)"
 msgstr "Zikula Version %1$s Upgradeskript (für Zikula Version %2$s und aktueller)"
 
-#: upgrade.php:93
+#: upgrade.php:94
 #, php-format
 msgid "This script will upgrade Zikula v%2$s to Zikula v%1$s. Upgrades from prior releases of Zikula are not supported by this script."
 msgstr "Dieses Skript führt eine Aktualisierung von Zikula v%2$s auf Zikula v%1$s durch. Upgrades von älteren Zikula-Versionen werden nicht unterstützt."
 
-#: upgrade.php:100
+#: upgrade.php:101
 msgid "For more information about the upgrade process, please read the <a href=\"docs/upgrade.html\">upgrade documentation</a>, visit our <a href=\"http://community.zikula.org/Wiki.htm\">wiki</a> or the <a href=\"http://community.zikula.org/module-Forum.htm\">support forum</a>"
 msgstr "Bitte unbedingt die <a href=\"docs/upgrade_deu.html\">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href=\"http://code.zikula.org/community-german\">deutschen Dokumentationsprojekt</a> und im Forum unter <a href=\"http://support.zikula.de\">support.zikula.de</a>"
 
-#: upgrade.php:111
+#: upgrade.php:112
 msgid "Please select your language"
 msgstr "Bitte die gewünschte Sprache auswählen"
 
-#: upgrade.php:127
+#: upgrade.php:128
 msgid "BEFORE proceeding you should backup your database!"
 msgstr "Bitte unbedingt vor dem Fortfahren eine Sicherung der Datenbank anlegen!"
 
-#: upgrade.php:138
+#: upgrade.php:139
 msgid "Failed to login to your site"
 msgstr "Fehler bei der Benutzeranmeldung"
 
-#: upgrade.php:140
+#: upgrade.php:141
 msgid "For the next upgrade steps you need to be logged in. Please provide your admin account credentials"
 msgstr "Für die nächsten Aktualisierungsschritte ist eine Anmeldung erforderlich. Bitte die Zugangsdaten für das Administrationskonto eingeben."
 
-#: upgrade.php:143
+#: upgrade.php:144
 #: install/pntemplates/installer_dbinformation.htm:35
 #: install/pntemplates/installer_createadmin.htm:19
 msgid "Username"
 msgstr "Benutzername"
 
-#: upgrade.php:150
+#: upgrade.php:151
 #: system/Users/pntemplates/users_admin_pendingaction.htm:26
 #: system/Users/pntemplates/users_user_usersblock.htm:11
 #: system/Permissions/pntemplates/permissions_admin_view.htm:110
@@ -7176,123 +7222,123 @@ msgstr "Benutzername"
 msgid "Submit"
 msgstr "Absenden"
 
-#: upgrade.php:162
+#: upgrade.php:163
 msgid "Check the database character set: UTF8"
 msgstr "Zeichensatzüberprüfung der Datenbank: UTF8"
 
-#: upgrade.php:182
+#: upgrade.php:183
 msgid "Your database is already in utf8 characterset."
 msgstr "Die Datenbank läuft bereits im UTF8 Zeichensatz."
 
-#: upgrade.php:185
+#: upgrade.php:186
 #, php-format
 msgid "This script is only for MySQL databases, you are using %s."
 msgstr "Dieses Skript ist nur für MySQL-Datenbanken bestimmt. Aktuell wird %s genutzt."
 
-#: upgrade.php:186
+#: upgrade.php:187
 msgid "You have to convert your database to utf8 yourself manually, before you can use this version of Zikula."
 msgstr "Die Datenbank muss leider manuell auf UTF8 konvertiert werden, damit diese Zikula-Version genutzt werden kann."
 
-#: upgrade.php:189
+#: upgrade.php:190
 msgid "config/config.php must be writable before this script will run. Please correct this and try again"
 msgstr "Zur Ausführung dieses Skripts muss die Datei config/config.php beschreibbar sein. Bitte berichtigen und erneut probieren."
 
-#: upgrade.php:190
+#: upgrade.php:191
 #: system/PageLock/pntemplates/PageLock_lockedwindow.html:14
 msgid "Check again"
 msgstr "Erneut überprüfen"
 
-#: upgrade.php:236
+#: upgrade.php:237
 #, php-format
 msgid "SKIPPED %s"
 msgstr "Übersprungen %s"
 
-#: upgrade.php:276
+#: upgrade.php:267
 #, php-format
 msgid "SUCCESS: updated %s"
 msgstr "Erfolgreich aktualisiert %s"
 
-#: upgrade.php:278
+#: upgrade.php:269
 #, php-format
 msgid "ERROR: failed to update %s"
 msgstr "Fehler beim Aktualisieren von %s"
 
-#: upgrade.php:285
+#: upgrade.php:276
 msgid "Conversion to UTF8 completed - now move to next step"
 msgstr "Die Konvertierung auf UTF8 wurde vollständig durchgeführt. Bitte mit dem nächsten Schritt fortfahren."
 
-#: upgrade.php:288
+#: upgrade.php:279
 msgid "Unable to connect to the database. Please check the details in config/config.php"
 msgstr "Keine Verbindung zur Datenbank möglich. Bitte die Angaben in der Datei config/config.php überprüfen."
 
-#: upgrade.php:300
+#: upgrade.php:291
 msgid "Upgrade modules"
 msgstr "Aktualisiere Module"
 
-#: upgrade.php:313
+#: upgrade.php:304
 msgid "Starting upgrade"
 msgstr "Starte Aktualisierung"
 
-#: upgrade.php:352
+#: upgrade.php:343
 msgid "upgraded"
 msgstr "aktualisiert"
 
-#: upgrade.php:354
+#: upgrade.php:345
 msgid "not upgraded"
 msgstr "nicht aktualisiert"
 
-#: upgrade.php:359
+#: upgrade.php:350
 msgid "No modules required upgrading"
 msgstr "Aktualisierung ist für kein Modul notwendig"
 
-#: upgrade.php:371
+#: upgrade.php:363
 msgid "Finished upgrade"
 msgstr "Aktualisierung abgeschlossen"
 
-#: upgrade.php:374
+#: upgrade.php:366
 #, php-format
 msgid "Go to the startpage for %s"
 msgstr "Gehe zur Startseite von %s"
 
-#: upgrade.php:377
+#: upgrade.php:369
 #, php-format
 msgid "Go to the admin panel for %s"
 msgstr "Gehe zum Admin-Panel von %s"
 
-#: upgrade.php:404
+#: upgrade.php:396
 msgid "version info not available"
 msgstr "Versionsinformationen nicht verfügbar"
 
-#: upgrade.php:409
+#: upgrade.php:401
 msgid "Possible incompatible version found"
 msgstr "Mögliche inkompatible Version gefunden"
 
-#: upgrade.php:410
+#: upgrade.php:402
 #, php-format
 msgid "The current installed version of Zikula is reporting (%1$s).  This may not be accurate so if you know you have definitely upgraded to %2$s then please ignore this message and proceed.  If you have not upgraded already to version %2$s then please do so and come back to this step."
 msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Diese Angabe muss nicht zwangsläufig stimmen. Falls eine Aktualisierung auf %2$s definitiv schon durchgeführt wurde, so kann der Hinweis ingoriert werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt durchgeführt werden."
 
-#: upgrade.php:416
+#: upgrade.php:408
 msgid "Already up to date"
 msgstr ""
 "\t\n"
 "Bereits auf dem neuesten Stand"
 
-#: upgrade.php:417
+#: upgrade.php:409
 #, php-format
 msgid "It seems that you have already installed version %s. Please remove this upgrade script, you won't be needing it anymore"
 msgstr "Anscheinend wurde die Version %s bereits installiert. Bitte das Upgradeskript entfernen, da es nicht mehr benötigt wird."
 
-#: upgrade.php:425
+#: upgrade.php:417
 msgid "Proceed to Converting DB to UTF8"
 msgstr "Mit der Konvertierung der Datenbank auf UTF8 fortfahren"
 
-#: upgrade.php:433
+#: upgrade.php:425
 #, php-format
 msgid "FAILED: %s"
 msgstr "Fehlgeschlagen: %s"
 
-#: upgrade.php:436
+#: upgrade.php:428
 #, php-format
 msgid "SUCCESS: %s"
 msgstr "Erfolgreich: %s"
@@ -7849,13 +7895,13 @@ msgstr "Sicherheitsabfrage"
 #: system/Categories/pntemplates/categories_admin_delete.htm:33
 #: system/Categories/pntemplates/categories_admin_edit.htm:120
 #: system/Categories/pntemplates/categories_admin_edit.htm:123
-#: system/Categories/pntemplates/categories_user_edit.htm:132
+#: system/Categories/pntemplates/categories_user_edit.htm:133
 #: system/Categories/pntemplates/categories_admin_move.htm:27
 #: system/Categories/pntemplates/categories_admin_config.htm:14
 #: system/Categories/pntemplates/categories_admin_preferences.htm:37
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:61
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:75
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:66
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:192
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:190
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:116
 #: system/Admin/pntemplates/admin_admin_modify.htm:26
 #: system/Admin/pntemplates/admin_admin_new.htm:25
@@ -7894,7 +7940,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Theme/pntemplates/theme_admin_new.htm:65
 #: system/Theme/pntemplates/theme_admin_palettes.htm:129
 #: system/Theme/pntemplates/theme_admin_delete.htm:21
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:105
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:108
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:124
 #: system/Theme/pntemplates/theme_admin_variables.htm:63
 #: system/Search/pntemplates/search_admin_modifyconfig.htm:32
@@ -8073,9 +8119,9 @@ msgstr "Benutzung von Meta-Refresh"
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:67
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
 #: system/Categories/pntemplates/categories_admin_preferences.htm:36
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:60
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:74
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:65
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:191
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:189
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:24
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:26
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:89
@@ -8084,7 +8130,7 @@ msgstr "Benutzung von Meta-Refresh"
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:62
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:35
 #: system/AuthPN/pntemplates/authpn_admin_modifyconfig.htm:18
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:104
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:107
 #: system/Search/pntemplates/search_admin_modifyconfig.htm:31
 msgid "Update Configuration"
 msgstr "Konfiguration aktualisieren"
@@ -8293,7 +8339,7 @@ msgstr "Bitte diese E-Mail sorgfältig und sicher aufbewahren, da es ist die ein
 
 #: system/Users/pntemplates/users_admin_view.htm:30
 #: system/Categories/pntemplates/categories_admin_edit.htm:98
-#: system/Categories/pntemplates/categories_user_edit.htm:115
+#: system/Categories/pntemplates/categories_user_edit.htm:116
 #: system/Categories/pntemplates/categories_user_list.htm:7
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:11
 #: system/Groups/pntemplates/groups_admin_view.htm:18
@@ -8352,7 +8398,7 @@ msgstr "Schritt 1: Benutzername wählen"
 #: system/Users/pntemplates/users_user_register.htm:65
 #: system/Users/pntemplates/users_user_register.htm:67
 #: system/Users/pntemplates/users_user_register.htm:69
-#: system/Users/pntemplates/users_user_register.htm:91
+#: system/Users/pntemplates/users_user_register.htm:90
 msgid "*"
 msgstr "*"
 
@@ -8388,34 +8434,34 @@ msgstr "Benutzer dürfen die E-Mail-Adresse sehen"
 
 #: system/Users/pntemplates/users_user_register.htm:65
 #, php-format
-msgid "I agree to be bound by this site's <a href=\"%1$s\">Privacy Policy</a> and <a href=\"%2$s\">Terms of Use</a>"
-msgstr "Ich bin mit der <a href=\"%1$s\">Erklärung zum Datenschutz</a> und den <a href=\"%2$s\">Nutzungsbedingungen</a> einverstanden."
+msgid "I agree to be bound by this site's <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Privacy Policy</a> and <a href=\"%2$s\" onclick=\"window.open('%2$s');return false;\">Terms of Use</a>"
+msgstr "Ich bin mit der <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Erklärung zum Datenschutz</a> und den <a href=\"%2$s\" onclick=\"window.open('%2$s');return false;\">Nutzungsbedingungen</a> einverstanden."
 
 #: system/Users/pntemplates/users_user_register.htm:67
 #, php-format
-msgid "I agree to be bound by this site's <a href=\"%s\">Terms of Use</a>"
-msgstr "Ich bin mit den <a href=\"%s\">Nutzungsbedingungen</a> einverstanden."
+msgid "I agree to be bound by this site's <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Terms of Use</a>"
+msgstr "Ich bin mit den <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Nutzungsbedingungen</a> einverstanden."
 
 #: system/Users/pntemplates/users_user_register.htm:69
 #, php-format
-msgid "I agree to be bound by this site's <a href=\"%s\">Privacy Policy</a>"
-msgstr "Ich bin mit der <a href=\"%s\">Erklärung zum Datenschutz</a> einverstanden."
+msgid "I agree to be bound by this site's <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Privacy Policy</a>"
+msgstr "Ich bin mit der <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Erklärung zum Datenschutz</a> einverstanden."
 
-#: system/Users/pntemplates/users_user_register.htm:77
-msgid "Since various features of this site use cookies, it is recommended to have cookies enabled in your browser's settings."
-msgstr "Bitte die Cookies im Browser aktivieren, da diese Seite Cookies für die Session-Authentifizierung und teilweise für das Speichern von individuellen Einstellungen verwendet."
-
-#: system/Users/pntemplates/users_user_register.htm:86
+#: system/Users/pntemplates/users_user_register.htm:85
 msgid "Step5: In order to prevent automated sign-ups please answer the following question"
 msgstr "Schritt 5: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
-#: system/Users/pntemplates/users_user_register.htm:88
+#: system/Users/pntemplates/users_user_register.htm:87
 msgid "Step4: In order to prevent automated sign-ups please answer the following question"
 msgstr "Schritt 4: Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
-#: system/Users/pntemplates/users_user_register.htm:98
+#: system/Users/pntemplates/users_user_register.htm:97
 msgid "Finally, check your input and submit"
 msgstr "Letzter Schritt: Angaben prüfen und Registrierung senden"
+
+#: system/Users/pntemplates/users_user_register.htm:98
+msgid "Since various features of this site use cookies, it is recommended to have cookies enabled in your browser's settings."
+msgstr "Bitte die Cookies im Browser aktivieren, da diese Seite Cookies für die Session-Authentifizierung und teilweise für das Speichern von individuellen Einstellungen verwendet."
 
 #: system/Users/pntemplates/users_user_register.htm:100
 msgid "Verify Your Entries"
@@ -8677,8 +8723,8 @@ msgid "List"
 msgstr "Liste"
 
 #: system/Blocks/pntemplates/blocks_block_thelang.htm:3
-#: system/Blocks/pntemplates/blocks_block_thelang.htm:12
-#: system/Blocks/pntemplates/blocks_block_thelang.htm:25
+#: system/Blocks/pntemplates/blocks_block_thelang.htm:13
+#: system/Blocks/pntemplates/blocks_block_thelang.htm:26
 msgid "Preferred language"
 msgstr "Bevorzugte Sprache"
 
@@ -8709,8 +8755,8 @@ msgstr "Soll der Block wirklich gelöscht werden?"
 #: system/Categories/pntemplates/categories_admin_copy.htm:13
 #: system/Categories/pntemplates/categories_admin_edit.htm:21
 #: system/Categories/pntemplates/categories_admin_edit.htm:64
-#: system/Categories/pntemplates/categories_user_edit.htm:53
-#: system/Categories/pntemplates/categories_user_edit.htm:78
+#: system/Categories/pntemplates/categories_user_edit.htm:54
+#: system/Categories/pntemplates/categories_user_edit.htm:79
 #: system/Categories/pntemplates/categories_admin_move.htm:13
 #: system/Categories/pntemplates/categories_user_list.htm:8
 #: system/Admin/pntemplates/admin_admin_modify.htm:14
@@ -8750,7 +8796,7 @@ msgstr "Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_)."
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:19
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:18
 #: system/Categories/pntemplates/categories_admin_edit.htm:77
-#: system/Categories/pntemplates/categories_user_edit.htm:91
+#: system/Categories/pntemplates/categories_user_edit.htm:92
 #: system/Admin/pntemplates/admin_admin_modify.htm:18
 #: system/Admin/pntemplates/admin_admin_new.htm:17
 #: system/Admin/pntemplates/admin_admin_help.htm:26
@@ -8913,7 +8959,7 @@ msgstr "Blockposition aktualisieren"
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:24
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:113
 #: system/Categories/pntemplates/categories_admin_edit.htm:113
-#: system/Categories/pntemplates/categories_user_edit.htm:131
+#: system/Categories/pntemplates/categories_user_edit.htm:132
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:85
 #: system/Groups/pntemplates/groups_admin_modify.htm:41
 #: system/Theme/pntemplates/theme_admin_setasdefault.htm:20
@@ -9263,7 +9309,7 @@ msgstr "Dauer des Cachings"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:47
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:46
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:88
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:91
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -9359,7 +9405,7 @@ msgstr "Parameter (Format: assign=value;assign2=value2...)"
 
 #: system/Categories/pntemplates/categories_include_editattributes.html:6
 #: system/Categories/pntemplates/categories_admin_edit.htm:46
-#: system/Categories/pntemplates/categories_user_edit.htm:68
+#: system/Categories/pntemplates/categories_user_edit.htm:69
 #: system/Categories/pntemplates/categories_user_list.htm:9
 #: system/Theme/pntemplates/theme_admin_palettes.htm:15
 #: system/Theme/pntemplates/theme_admin_variables.htm:16
@@ -9367,7 +9413,7 @@ msgstr "Parameter (Format: assign=value;assign2=value2...)"
 msgid "Value"
 msgstr "Wert"
 
-#: system/Categories/pntemplates/categories_user_editcategories.htm:8
+#: system/Categories/pntemplates/categories_user_editcategories.htm:9
 msgid "Edit your user categories"
 msgstr "Eigene Benutzerkategorien bearbeiten"
 
@@ -9406,7 +9452,7 @@ msgstr "Kategorie kopieren"
 
 #: system/Categories/pntemplates/categories_admin_copy.htm:17
 #: system/Categories/pntemplates/categories_admin_edit.htm:102
-#: system/Categories/pntemplates/categories_user_edit.htm:119
+#: system/Categories/pntemplates/categories_user_edit.htm:120
 #: system/Categories/pntemplates/categories_admin_move.htm:17
 #: system/SysInfo/pntemplates/sysinfo_admin_filesystem.htm:10
 msgid "Path"
@@ -9479,7 +9525,7 @@ msgid "Category is a leaf node"
 msgstr "Kategorie ist eine Unterkategorie"
 
 #: system/Categories/pntemplates/categories_admin_edit.htm:51
-#: system/Categories/pntemplates/categories_user_edit.htm:73
+#: system/Categories/pntemplates/categories_user_edit.htm:74
 #: system/Categories/pntemplates/categories_user_list.htm:11
 msgid "Sort value"
 msgstr "Sortierwert"
@@ -9489,7 +9535,7 @@ msgid "Localised output"
 msgstr "Lokalisierte Ausgabe"
 
 #: system/Categories/pntemplates/categories_admin_edit.htm:91
-#: system/Categories/pntemplates/categories_user_edit.htm:109
+#: system/Categories/pntemplates/categories_user_edit.htm:110
 #: system/Categories/pntemplates/categories_user_list.htm:13
 msgid "Attributes"
 msgstr "Attribute"
@@ -9499,7 +9545,7 @@ msgid "Category meta data"
 msgstr "Metadaten der Kategorie"
 
 #: system/Categories/pntemplates/categories_admin_edit.htm:106
-#: system/Categories/pntemplates/categories_user_edit.htm:123
+#: system/Categories/pntemplates/categories_user_edit.htm:124
 msgid "I-path"
 msgstr "I-Pfad"
 
@@ -9512,19 +9558,19 @@ msgstr "Verschieben"
 msgid "Categories List"
 msgstr "Kategorienliste"
 
-#: system/Categories/pntemplates/categories_user_edit.htm:15
+#: system/Categories/pntemplates/categories_user_edit.htm:16
 msgid "Re-sequence"
 msgstr "Index erneuern"
 
-#: system/Categories/pntemplates/categories_user_edit.htm:17
+#: system/Categories/pntemplates/categories_user_edit.htm:18
 msgid "Back to referring module"
 msgstr "Zurück zum verweisenden Modul"
 
-#: system/Categories/pntemplates/categories_user_edit.htm:113
+#: system/Categories/pntemplates/categories_user_edit.htm:114
 msgid "Category System Information"
 msgstr "Systeminformationen"
 
-#: system/Categories/pntemplates/categories_user_edit.htm:134
+#: system/Categories/pntemplates/categories_user_edit.htm:135
 msgid "New"
 msgstr "Neu"
 
@@ -9573,47 +9619,59 @@ msgstr "Bearbeiten"
 msgid "Are you sure you wish to delete the category [%s] ?"
 msgstr "Soll die Kategorie [%s] wirklich gelöscht werden?"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:9
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:10
 msgid "Language System"
 msgstr "Sprachsystem"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:11
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:12
 msgid "Activate multilingual features"
 msgstr "Multilingual-Umgebung aktivieren"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:20
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:21
 msgid "Add language to URL"
 msgstr "Sprache an URL anhängen"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:23
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:24
 msgid "Always"
 msgstr "Immer"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:25
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:26
 msgid "Only for non default languages"
 msgstr "Nicht bei der Standardsprache"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:30
+msgid "Enable language variations?"
+msgstr "Sprachvariationen aktivieren"
+
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:38
+msgid "Disables any language packs matching LL_*"
+msgstr "Deaktiviert alle Pakete mit Sprachvariationen, wie beispielsweise EN_GB und EN_US."
+
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:39
+msgid "Warning: If disabled, it may cause data stored in that language variation to be lost depending on how the module handles multi-linguagal content.  This setting is designed for legacy modules that rely on the 3 letter ISO-639-1 language codes where there is no matching ISO-639-2 code."
+msgstr "Warnung: Je nachdem wie ein Modul mit der Mehrsprachigkeit umgeht, könnten bei der Deaktivierung dieser Option die mehrsprachigen Daten für die Sprachvariationen verlorengehen. Diese Einstellung ist für ältere Module integriert worden, die die 3 Buchstaben ISO-639-1-Sprachcodes benötigen, bei denen keine passenden ISO-639-2 Code vorhanden sind."
+
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:44
 msgid "Browser"
 msgstr "Browser"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:32
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:46
 msgid "Auto-detect language from browser settings"
 msgstr "Erkennung der Browser-Sprache"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:42
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:56
 msgid "Server"
 msgstr "Server"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:44
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:58
 msgid "Default language to use for this site"
 msgstr "Standardsprache für diese Webseite"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:48
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:62
 msgid "Unregistered users time zone"
 msgstr "Zeitzone für unregistrierte Benutzer"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:54
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:68
 msgid "Server time zone"
 msgstr "Zeitzone des Servers"
 
@@ -9790,39 +9848,47 @@ msgid "Tip: Increase this in case of problems with mobile connections."
 msgstr "Tipp: Den Wert erhöhen, falls Probleme mit Mobilgeräten auftreten sollten."
 
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:116
-msgid "Permalinks Settings"
+msgid "Permalinks settings"
 msgstr "Permalinks"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:118
-msgid "Important! The following strings are used to purge the permalinks of special characters and must correspond 1:1."
-msgstr "Wichtig! Die folgenden Zeichenketten werden zur Bereinigung der Permalinks von Sonderzeichen benötigt und müssen 1:1 übereinstimmen."
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:117
+msgid "The following settings will rewrite your permalinks.  Sometimes international characters like ñ &amp; ß may be re-coded by your browser.  Although this is technically correct, it may not be aesthetically pleasing.  These settings allow you to replace those characters using a pair of comma-separated lists.  The two fields below should look similar to the default examples given: The first element of 'List to search for' will replace the first element in the 'List to replace with' and so on.  In the example below, 'À' would be replace with 'A', and 'Á' with 'A'.  If you do not want this feature simply delete both lists."
+msgstr "Die folgenden Einstellungen werden benötigt, um Permalinks umzuschreiben. Manchmal werden internationale Zeichen, wie ñ &amp; ß vom Browser umcodiert. Das ist zwar technisch korrekt, aber optisch nicht sehr ansprechend. Diese Zeichen können dann über die beiden kommagetrennten Listen durch Alternativzeichen ersetzt werden. Die unteren Felder sollten den Standardbeispielen ähneln. Das erste Listenelement aus der Suchliste wird das das erste Element der Ersetzenliste ausgetauscht. Analog zum unteren Beispiel: 'À' wird ersetzt mit 'A', und 'Á' auch mit einem 'A'. Wenn diese Umschreibung nicht gewünscht ist, sollten die Inhalte beider Listen einfach gelöscht werden."
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:122
-msgid "Characters to search"
-msgstr "Datum der letzten Suche"
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:119
+msgid "List to search for"
+msgstr "Suchen nach"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:127
-msgid "Characters to replace"
-msgstr "Zu ersetzende Zeichen"
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:121
+msgid "Default: À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
+msgstr "Standard: À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:132
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:124
+msgid "List to replace with"
+msgstr "Ersetzen durch"
+
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:126
+msgid "Default: A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
+msgstr "Standard: A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
+
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:130
 msgid "Short URL Settings"
 msgstr "Short URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:134
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:132
 msgid "Enable short URLs"
 msgstr "Short URLs aktivieren"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:141
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:139
 msgid "Tip: If running PHP as CGI, you must ensure the line 'cgi.fix_pathinfo = 0' is present in your php.ini configuration file for short URLs to function correctly."
 msgstr "Tipp: Für Short URLs muß die Apache-Option modrewrite aktiv sein. Falls PHP im CGI-Modus läuft, sollte die Option 'cgi.fix_pathinfo = 0' in der php.ini aktiv sein, damit Short URLs einwandfrei funktionieren."
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:145
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:143
 msgid "Type of URLs generated"
 msgstr "Typ der Short URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:149
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:154
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:147
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:152
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:14
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:15
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:36
@@ -9832,27 +9898,27 @@ msgstr "Typ der Short URLs"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:161
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:159
 msgid "Strip entry point from directory-based URLs"
 msgstr "Einstiegspunkt aus verzeichnisbasierenden URLs entfernen"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:170
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:168
 msgid "Separator for permalink titles"
 msgstr "Trennzeichen im Permalink Titel"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:174
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:172
 msgid "Extension for file-based URLs"
 msgstr "Erweiterung für dateibasierende URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:178
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:176
 msgid "Module to use when permalink contains no module name"
 msgstr "Zu benutzendes Modul, wenn Permalink keinen Modulnamen beinhaltet"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:180
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:178
 msgid "No default module"
 msgstr "Keine Standardmodul"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:185
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:183
 msgid "Important! You must place an '.htaccess' file in the site root if you set 'Type of URL generated' to 'File', or if you set 'Strip entry point from directory-based URLs' to 'Yes' or if a PermaLink title separator is used. Copies of each .htaccess can be found in the docs directory."
 msgstr "Short URLs benötigen eine .htaccess Datei im Rootverzeichnis. Entsprechende .htaccess-Vorlagen finden sich im /docs Verzeichnis"
 
@@ -9960,15 +10026,19 @@ msgid "Stop, please! Swiss Army Knife tool (file 'psak.php') is in the site root
 msgstr "Warnung! Zum Fortfahren bitte das \"Swiss army knife tool\" im Rootverzeichnis löschen."
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:9
+msgid "Stop, please! Zikula Recovery Console (file 'zrc.php') is in the site root, but must be removed before you can access the Admin Panel."
+msgstr "Warnung! Zum Fortfahren bitte die \"Zikula Recovery Console\" im Rootverzeichnis löschen."
+
+#: system/Admin/pntemplates/admin_admin_warning.htm:12
 #: system/Admin/pntemplates/admin_admin_help.htm:65
 msgid "Stop, please! Installer file 'install.php' and directory 'install' are in the site root, but must be removed before you can access the Admin Panel."
 msgstr "Warnung! Zum Fortfahren bitte die Datei install.php im Root und das Installationsverzeichnis löschen"
 
-#: system/Admin/pntemplates/admin_admin_warning.htm:12
+#: system/Admin/pntemplates/admin_admin_warning.htm:15
 msgid "Stop, please! An upgrade script (file 'upgrade.php') is in the site root, but must be removed before you can access the Admin Panel."
 msgstr "Warnung! Zum Fortfahren bitte das Upgradeskript (Datei 'upgrade.php') im Rootverzeichnis löschen."
 
-#: system/Admin/pntemplates/admin_admin_warning.htm:15
+#: system/Admin/pntemplates/admin_admin_warning.htm:18
 msgid "Continue"
 msgstr "Fortfahren"
 
@@ -10201,15 +10271,9 @@ msgstr "Die 'Legacy-Unterstützung' ist aktiv. Es wird empfohlen, diesen Modus z
 msgid "You have the possibility of enabling support for legacy PostNuke modules. However, legacy modules can contain security holes that can compromise a site's security. You are strongly recommended to only use up-to-date versions of modules that are compliant with the project's official API (Application Programming Interface). In this case, legacy module support can be disabled (this is the default setting when a site is first installed)."
 msgstr "Zikula ermöglicht die Unterstützung älterer Modulversionen bzw. der früheren API-Schnittstelle. Solche Module können jedoch Sicherheitsrisiken enthalten, die den Internetauftritt kompromittieren können. Es wird dringend empfohlen, nur aktuelle Modulversionen zu verwenden, die konform zur aktuellen Zikula API sind. In einem solchen Fall kann die Unterstützung älterer Module ausgeschaltet werden (dies ist die Standardeinstellung nach der erstmaligen Installation)."
 
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:11
+#: system/Admin/pntemplates/admin_admin_adminpanel.htm:9
 msgid "This administration category is empty. You have probably ended up here because you have administrative access to a module which is not in the default administration category."
 msgstr "Diese Adminkategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil entweder kein Modul in dieser Kategorie vorhanden ist oder kein administrativer Zugriff auf ein Modul besteht, das dieser Standardkategorie zugeordnet wurde."
-
-#: system/Admin/pntemplates/admin_admin_adminpanel.htm:31
-#: system/Groups/pntemplates/groups_user_view.htm:16
-#: system/Groups/pntemplates/groups_user_memberslist.htm:14
-msgid "Functions"
-msgstr "Funktionen"
 
 #: system/Admin/pntemplates/admin_admin_updatechecker.htm:5
 msgid "A new version of the Zikula Core is available."
@@ -10218,6 +10282,12 @@ msgstr "Es ist eine neue Version des Zikula-Cores verfügbar."
 #: system/Admin/pntemplates/admin_admin_updatechecker.htm:5
 msgid "Please download Zikula Core "
 msgstr "Bitte Zikula-Core herunterladen"
+
+#: system/Admin/pntemplates/admin_admin_adminpanel_inc1.htm:20
+#: system/Groups/pntemplates/groups_user_view.htm:16
+#: system/Groups/pntemplates/groups_user_memberslist.htm:14
+msgid "Functions"
+msgstr "Funktionen"
 
 #: system/Admin/pntemplates/admin_admin_delete.htm:2
 msgid "Delete module category"
@@ -10654,7 +10724,7 @@ msgstr "Geschlossene Gruppen verstecken"
 msgid "Receive Email for new applicants"
 msgstr "Mailbenachrichtigung bei neuen Gruppenanfragen"
 
-#: system/Groups/pntemplates/groups_user_menu.htm:6
+#: system/Groups/pntemplates/groups_user_menu.htm:7
 msgid "Back to groups index"
 msgstr "Zurück zum Gruppen-Index"
 
@@ -11517,7 +11587,7 @@ msgstr "CSS/JS Optimierungen"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:69
 msgid "Combining and compressing JS and CSS can vastly speed up your site."
-msgstr "Das Kombinieren und Komprimieren der JS und CSS Dateien kann den Server entlasten und die Seitengeschwindigkeit enorm erhöhen."
+msgstr "Das Kombinieren und Komprimieren der Javascripts und Stylesheets kann den Server entlasten und die Seitengeschwindigkeit enorm erhöhen."
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:72
 msgid "Enable CSS/JS combine"
@@ -11531,23 +11601,27 @@ msgstr "Komprimierung aktivieren"
 msgid "Minify CSS/JS"
 msgstr "Minify CSS/JS"
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:85
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:84
+msgid "The 'Minify CSS/JS' option may require more PHP memory.  If you get errors you must increase memory_limit in your php.ini configuration file or add the following (without the quotation) to your .htaccess 'php_value memory_limit 64M'.  64M is just an example, please find the lowest value that works."
+msgstr "Das 'Minify CSS/JS' Feature könnte womöglich mehr PHP Speicher benötigen. Falls Fehlermeldungen dieser Art auftreten, dann sollte das 'memory_limit' in der Konfigurationsdatei php.ini erhöht werden. Oder alternativ die Zeile (ohne Anführungszeichen) 'php_value memory_limit 64M' in der .htaccess Datei hinzufügen. Der Wert 64M ist nur ein Beispiel und sollte auf die individuellen Bedürfnisse angepasst werden."
+
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:88
 msgid "Length of time for combine cache"
 msgstr "Dauer des Cachings"
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:92
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:95
 msgid "Delete combine cache"
 msgstr "Combine-Cache löschen"
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:95
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:98
 msgid "Filters"
 msgstr "Filter"
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:96
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:99
 msgid "Trim leading white space and blank lines from template source after it gets interpreted, cleaning up code and saving bandwidth."
 msgstr "Entfernt führende Leerzeichen und leere Zeilen aus dem Quellcode der verarbeiteten Templates, um z.B. Bandbreite zu sparen."
 
-#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:98
+#: system/Theme/pntemplates/theme_admin_modifyconfig.htm:101
 msgid "Use trimwhitespace output filter"
 msgstr "Ausgabefilter 'trimwhitespace' benutzen"
 
@@ -11873,21 +11947,4 @@ msgstr "Weblinks"
 #: themes/voodoodolly/templates/master.htm:32
 msgid "Your account"
 msgstr "Benutzerprofil"
-
-#~ msgid "Result of permission check: "
-#~ msgstr "Ergebnis der Prüfung:"
-#~ msgid "Please refer to the %s during this process"
-#~ msgstr "Bitte diese %s während der Installation beachten."
-#~ msgid "GNU General Public License"
-#~ msgstr "GNU General Public License"
-#~ msgid "Philosophy of the GNU Project"
-#~ msgstr "Philosophie des GNU Projektes"
-#~ msgid "Privacy Policy"
-#~ msgstr "Datenschutzrichtlinie"
-#~ msgid "Terms of Use"
-#~ msgstr "Nutzungsbedingungen"
-#~ msgid "I agree to be bound by this site's %1$s and %2$s"
-#~ msgstr "Einverständniserklärung zu den %1$s und %2$s"
-#~ msgid "_YOURHOMEPAGE"
-#~ msgstr "_YOURHOMEPAGE"
 
