@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-14 04:08-0400\n"
-"PO-Revision-Date: 2009-10-14 10:53+0100\n"
+"POT-Creation-Date: 2009-10-14 23:37-0400\n"
+"PO-Revision-Date: 2009-10-15 10:40+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -181,48 +181,48 @@ msgstr "FileUtil::getBasename: filename is empty"
 msgid "FileUtil::getExtension: filename is empty"
 msgstr "FileUtil::getExtension: filename is empty"
 
-#: includes/FileUtil.class.php:279
+#: includes/FileUtil.class.php:288
 msgid "FileUtil::readFile: filename is empty"
 msgstr "FileUtil::readFile: filename is empty"
 
-#: includes/FileUtil.class.php:364
+#: includes/FileUtil.class.php:373
 msgid "FileUtil::writeFile: filename is empty"
 msgstr "FileUtil::writeFile: filename is empty"
 
-#: includes/FileUtil.class.php:408
+#: includes/FileUtil.class.php:417
 msgid "FileUtil::uploadFile called with invalid field key ..."
 msgstr "FileUtil::uploadFile called with invalid field key ..."
 
-#: includes/FileUtil.class.php:412
+#: includes/FileUtil.class.php:421
 msgid "FileUtil::uploadFile called with invalid destination ..."
 msgstr "FileUtil::uploadFile called with invalid destination ..."
 
-#: includes/FileUtil.class.php:418
+#: includes/FileUtil.class.php:427
 #, php-format
 msgid "The destination path [%s] does not exist or is not writable"
 msgstr "Der Zielpfad [%s] existiert nicht oder ist nicht beschreibbar"
 
-#: includes/FileUtil.class.php:420
+#: includes/FileUtil.class.php:429
 msgid "The destination path does not exist or is not writable"
 msgstr "Der Zielpfad existiert nicht oder ist nicht beschreibbar"
 
-#: includes/FileUtil.class.php:440
+#: includes/FileUtil.class.php:449
 msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
 msgstr "The uploaded file exceeds the upload_max_filesize directive in php.ini."
 
-#: includes/FileUtil.class.php:443
+#: includes/FileUtil.class.php:452
 msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the html form."
 msgstr "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the html form."
 
-#: includes/FileUtil.class.php:446
+#: includes/FileUtil.class.php:455
 msgid "The uploaded file was only partially uploaded."
 msgstr "Die Datei wurde nur teilweise hochgeladen."
 
-#: includes/FileUtil.class.php:449
+#: includes/FileUtil.class.php:458
 msgid "No file was uploaded."
 msgstr "Keine Datei hochgeladen."
 
-#: includes/FileUtil.class.php:452
+#: includes/FileUtil.class.php:461
 msgid "Uploaded file size 0 bytes"
 msgstr "Hochgeladene Dateigröße 0 Bytes"
 
@@ -362,2195 +362,2221 @@ msgstr "Multilingual functionality is not enabled.  Cannot display this page in 
 msgid "The requested language '%s' is not available"
 msgstr "The requested language '%s' is not available"
 
-#: includes/ZLanguage.php:397
+#: includes/ZLanguage.php:398
 #, php-format
 msgid "Unable to set encoding based on database charset '%s'"
 msgstr "Unable to set encoding based on database charset '%s'"
 
-#: includes/ZLanguage.php:435
+#: includes/ZLanguage.php:436
 #, php-format
 msgid "Unable to load %s - please check it exists"
 msgstr "Unable to load %s - please check it exists"
 
-#: includes/ZLanguage.php:446
+#: includes/ZLanguage.php:447
 #, php-format
 msgid "%1$s is missing in %2$s"
 msgstr "%1$s is missing in %2$s"
 
-#: includes/ZLanguage.php:449
+#: includes/ZLanguage.php:450
 #, php-format
 msgid "Invalid value for %1$s in %2$s"
 msgstr "Invalid value for %1$s in %2$s"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:530
 msgid "Afar"
 msgstr "Afar"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:531
 msgid "Abkhazian"
 msgstr "Abkhazian"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:532
 msgid "Avestan"
 msgstr "Avestan"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:968
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:534
 msgid "Akan"
 msgstr "Akan"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:535
 msgid "Amharic"
 msgstr "Amharic"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:536
 msgid "Aragonese"
 msgstr "Aragonese"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:537
 msgid "Arabic "
 msgstr "Arabic "
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:538
 msgid "Assamese"
 msgstr "Assamese"
 
-#: includes/ZLanguage.php:529
+#: includes/ZLanguage.php:539
 msgid "Avaric"
 msgstr "Avaric"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:540
 msgid "Aymara"
 msgstr "Aymara"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:541
 msgid "Azerbaijani"
 msgstr "Azerbaijani"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:542
 msgid "Bashkir"
 msgstr "Bashkir"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:987
 msgid "Belarusian"
 msgstr "Belarusian"
 
-#: includes/ZLanguage.php:530
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:989
 msgid "Bulgarian"
 msgstr "Bulgarian"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:545
 msgid "Bihari"
 msgstr "Bihari"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:546
 msgid "Bislama"
 msgstr "Bislama"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:547
 msgid "Bambara"
 msgstr "Bambara"
 
-#: includes/ZLanguage.php:530
+#: includes/ZLanguage.php:548
 msgid "Bengali"
 msgstr "Bengali"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:549
 msgid "Tibetan"
 msgstr "Tibetan"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:550
 msgid "Breton"
 msgstr "Breton"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:551
 msgid "Bosnian"
 msgstr "Bosnian"
 
-#: includes/ZLanguage.php:531
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:552
+#: includes/ZLanguage.php:992
 msgid "Catalan"
 msgstr "Catalan"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:553
 msgid "Chechen"
 msgstr "Chechen"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:554
 msgid "Chamorro"
 msgstr "Chamorro"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:555
 msgid "Corsican"
 msgstr "Corsican"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:556
 msgid "Cree"
 msgstr "Cree"
 
-#: includes/ZLanguage.php:531
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:994
 msgid "Czech"
 msgstr "Czech"
 
-#: includes/ZLanguage.php:531
+#: includes/ZLanguage.php:558
 msgid "Church Slavic"
 msgstr "Church Slavic"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:559
 msgid "Chuvash"
 msgstr "Chuvash"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:560
 msgid "Welsh"
 msgstr "Welsh"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:996
 msgid "Danish"
 msgstr "Danish"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:998
 msgid "German"
 msgstr "Deutsch"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:563
 msgid "Divehi"
 msgstr "Divehi"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:564
 msgid "Dzongkha"
 msgstr "Dzongkha"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:565
 msgid "Ewe"
 msgstr "Ewe"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:1003
 msgid "Greek"
 msgstr "Greek"
 
-#: includes/ZLanguage.php:532
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:1006
 msgid "English"
 msgstr "Englisch"
 
-#: includes/ZLanguage.php:532
+#: includes/ZLanguage.php:568
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:1018
 msgid "Spanish"
 msgstr "Spanish"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:1039
 msgid "Estonian"
 msgstr "Estonian"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:1041
 msgid "Basque"
 msgstr "Basque"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:1042
 msgid "Persian"
 msgstr "Persian"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:573
 msgid "Fulah"
 msgstr "Fulah"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:1043
 msgid "Finnish"
 msgstr "Finnish"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:575
 msgid "Fijian"
 msgstr "Fijian"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:576
 msgid "Faroese"
 msgstr "Faroese"
 
-#: includes/ZLanguage.php:533
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:1045
 msgid "French"
 msgstr "French"
 
-#: includes/ZLanguage.php:533
+#: includes/ZLanguage.php:578
 msgid "Frisian"
 msgstr "Frisian"
 
-#: includes/ZLanguage.php:534
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:1052
 msgid "Irish"
 msgstr "Irish"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:580
 msgid "Scottish Gaelic"
 msgstr "Scottish Gaelic"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:1054
 msgid "Galician"
 msgstr "Galician"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:582
 msgid "Guarani"
 msgstr "Guarani"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:583
 msgid "Gujarati"
 msgstr "Gujarati"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:584
 msgid "Manx"
 msgstr "Manx"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:585
 msgid "Hausa"
 msgstr "Hausa"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:586
 msgid "Hawaiian"
 msgstr "Hawaiian"
 
-#: includes/ZLanguage.php:534
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:587
+#: includes/ZLanguage.php:1069
 msgid "Hebrew"
 msgstr "Hebrew"
 
-#: includes/ZLanguage.php:534
+#: includes/ZLanguage.php:588
+#: includes/ZLanguage.php:1055
 msgid "Hindi"
 msgstr "Hindi"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:589
 msgid "Hiri Motu"
 msgstr "Hiri Motu"
 
-#: includes/ZLanguage.php:535
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:590
+#: includes/ZLanguage.php:1057
 msgid "Croatian"
 msgstr "Croatian"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:591
 msgid "Haitian"
 msgstr "Haitian"
 
-#: includes/ZLanguage.php:535
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:1059
 msgid "Hungarian"
 msgstr "Hungarian"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:593
 msgid "Armenian"
 msgstr "Armenian"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:594
 msgid "Herero"
 msgstr "Herero"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:595
 msgid "Interlingua"
 msgstr "Interlingua"
 
-#: includes/ZLanguage.php:535
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1061
+#: includes/ZLanguage.php:1062
 msgid "Indonesian"
 msgstr "Indonesian"
 
-#: includes/ZLanguage.php:535
+#: includes/ZLanguage.php:597
 msgid "Interlingue"
 msgstr "Interlingue"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:598
 msgid "Igbo"
 msgstr "Igbo"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:599
 msgid "Sichuan Yi"
 msgstr "Sichuan Yi"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:600
 msgid "Inupiaq"
 msgstr "Inupiaq"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:601
 msgid "Ido"
 msgstr "Ido"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1064
 msgid "Icelandic"
 msgstr "Icelandic"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:1066
 msgid "Italian"
 msgstr "Italian"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:604
 msgid "Inuktitut"
 msgstr "Inuktitut"
 
-#: includes/ZLanguage.php:536
+#: includes/ZLanguage.php:605
 msgid "Javanese"
 msgstr "Javanese"
 
-#: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:1071
 msgid "Japanese"
 msgstr "Japanese"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:1073
 msgid "Georgian"
 msgstr "Georgian"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:608
 msgid "Kongo"
 msgstr "Kongo"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:609
 msgid "Kikuyu"
 msgstr "Kikuyu"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:610
 msgid "Kwanyama"
 msgstr "Kwanyama"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:611
 msgid "Kazakh"
 msgstr "Kazakh"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:612
 msgid "Kalaallisut"
 msgstr "Kalaallisut"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:613
 msgid "Khmer"
 msgstr "Khmer"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:614
 msgid "Kannada"
 msgstr "Kannada"
 
-#: includes/ZLanguage.php:537
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:615
+#: includes/ZLanguage.php:1074
 msgid "Korean"
 msgstr "Korean"
 
-#: includes/ZLanguage.php:537
+#: includes/ZLanguage.php:616
 msgid "Kanuri"
 msgstr "Kanuri"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:617
 msgid "Kashmiri"
 msgstr "Kashmiri"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:618
 msgid "Kurdish"
 msgstr "Kurdish"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:619
 msgid "Komi"
 msgstr "Komi"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:620
 msgid "Cornish"
 msgstr "Cornish"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:621
 msgid "Kirghiz"
 msgstr "Kirghiz"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:622
 msgid "Latin"
 msgstr "Latin"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:623
 msgid "Luxembourgish"
 msgstr "Luxembourgish"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:624
 msgid "Ganda"
 msgstr "Ganda"
 
-#: includes/ZLanguage.php:538
+#: includes/ZLanguage.php:625
 msgid "Limburgish"
 msgstr "Limburgish"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:626
 msgid "Lingala"
 msgstr "Lingala"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:627
 msgid "Lao"
 msgstr "Lao"
 
-#: includes/ZLanguage.php:539
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:628
+#: includes/ZLanguage.php:1076
 msgid "Lithuanian"
 msgstr "Lithuanian"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:629
 msgid "Luba-Katanga"
 msgstr "Luba-Katanga"
 
-#: includes/ZLanguage.php:539
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:630
+#: includes/ZLanguage.php:1078
 msgid "Latvian"
 msgstr "Latvian"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:631
 msgid "Malagasy"
 msgstr "Malagasy"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:632
 msgid "Marshallese"
 msgstr "Marshallese"
 
-#: includes/ZLanguage.php:539
+#: includes/ZLanguage.php:633
 msgid "Maori"
 msgstr "Maori"
 
-#: includes/ZLanguage.php:539
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:634
+#: includes/ZLanguage.php:1080
 msgid "Macedonian"
 msgstr "Macedonian"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:635
+#: includes/ZLanguage.php:1082
 msgid "Malayalam"
 msgstr "Malayalam"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:636
 msgid "Mongolian"
 msgstr "Mongolian"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:637
 msgid "Marathi"
 msgstr "Marathi"
 
-#: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:638
+#: includes/ZLanguage.php:1083
 msgid "Malay"
 msgstr "Malay"
 
-#: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:639
+#: includes/ZLanguage.php:1085
 msgid "Maltese"
 msgstr "Maltese"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:640
 msgid "Burmese"
 msgstr "Burmese"
 
-#: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:641
+#: includes/ZLanguage.php:881
 msgid "Nauru"
 msgstr "Nauru"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:642
 msgid "Norwegian Bokmal"
 msgstr "Norwegian Bokmal"
 
-#: includes/ZLanguage.php:540
+#: includes/ZLanguage.php:643
 msgid "North Ndebele"
 msgstr "North Ndebele"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:644
+#: includes/ZLanguage.php:1088
 msgid "Nepali"
 msgstr "Nepali"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:645
 msgid "Ndonga"
 msgstr "Ndonga"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:646
+#: includes/ZLanguage.php:1089
 msgid "Dutch"
 msgstr "Dutch"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:647
 msgid "Norwegian Nynorsk"
 msgstr "Norwegian Nynorsk"
 
-#: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:648
+#: includes/ZLanguage.php:1092
 msgid "Norwegian"
 msgstr "Norwegian"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:649
 msgid "South Ndebele"
 msgstr "South Ndebele"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:650
 msgid "Navajo"
 msgstr "Navajo"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:651
 msgid "Chichewa"
 msgstr "Chichewa"
 
-#: includes/ZLanguage.php:541
+#: includes/ZLanguage.php:652
 msgid "Occitan"
 msgstr "Occitan"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:653
 msgid "Ojibwa"
 msgstr "Ojibwa"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:654
 msgid "Oromo"
 msgstr "Oromo"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:655
 msgid "Oriya"
 msgstr "Oriya"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:656
 msgid "Ossetian"
 msgstr "Ossetian"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:657
 msgid "Panjabi"
 msgstr "Panjabi"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:658
 msgid "Pali"
 msgstr "Pali"
 
-#: includes/ZLanguage.php:542
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:659
+#: includes/ZLanguage.php:1095
 msgid "Polish"
 msgstr "Polish"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:660
 msgid "Pushto"
 msgstr "Pushto"
 
-#: includes/ZLanguage.php:542
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:661
+#: includes/ZLanguage.php:1097
 msgid "Portuguese"
 msgstr "Portuguese"
 
-#: includes/ZLanguage.php:542
+#: includes/ZLanguage.php:662
 msgid "Quechua"
 msgstr "Quechua"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:663
 msgid "Raeto-Romance"
 msgstr "Raeto-Romance"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:664
 msgid "Rundi"
 msgstr "Rundi"
 
-#: includes/ZLanguage.php:543
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:665
+#: includes/ZLanguage.php:1100
 msgid "Romanian"
 msgstr "Romanian"
 
-#: includes/ZLanguage.php:543
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:666
+#: includes/ZLanguage.php:1102
 msgid "Russian"
 msgstr "Russian"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:667
 msgid "Kinyarwanda"
 msgstr "Kinyarwanda"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:668
 msgid "Sanskrit"
 msgstr "Sanskrit"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:669
 msgid "Sardinian"
 msgstr "Sardinian"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:670
 msgid "Sindhi"
 msgstr "Sindhi"
 
-#: includes/ZLanguage.php:543
+#: includes/ZLanguage.php:671
 msgid "Northern Sami"
 msgstr "Northern Sami"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:672
 msgid "Sango"
 msgstr "Sango"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:673
 msgid "Sinhalese"
 msgstr "Sinhalese"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:674
+#: includes/ZLanguage.php:1104
 msgid "Slovak"
 msgstr "Slovak"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:675
+#: includes/ZLanguage.php:1106
 msgid "Slovenian"
 msgstr "Slovenian"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:676
 msgid "Samoan"
 msgstr "Samoan"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:677
 msgid "Shona"
 msgstr "Shona"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:678
 msgid "Somali"
 msgstr "Somali"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:679
+#: includes/ZLanguage.php:1108
 msgid "Albanian"
 msgstr "Albanian"
 
-#: includes/ZLanguage.php:544
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:680
+#: includes/ZLanguage.php:1110
 msgid "Serbian"
 msgstr "Serbian"
 
-#: includes/ZLanguage.php:544
+#: includes/ZLanguage.php:681
 msgid "Swati"
 msgstr "Swati"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:682
 msgid "Southern Sotho"
 msgstr "Southern Sotho"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:683
 msgid "Sundanese"
 msgstr "Sundanese"
 
-#: includes/ZLanguage.php:545
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:684
+#: includes/ZLanguage.php:1116
 msgid "Swedish"
 msgstr "Swedish"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:685
 msgid "Swahili"
 msgstr "Swahili"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:686
 msgid "Tamil "
 msgstr "Tamil "
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:687
 msgid "Telugu"
 msgstr "Telugu"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:688
 msgid "Tajik"
 msgstr "Tajik"
 
-#: includes/ZLanguage.php:545
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:689
+#: includes/ZLanguage.php:1118
 msgid "Thai"
 msgstr "Thai"
 
-#: includes/ZLanguage.php:545
+#: includes/ZLanguage.php:690
 msgid "Tigrinya"
 msgstr "Tigrinya"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:691
 msgid "Turkmen"
 msgstr "Turkmen"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:692
 msgid "Tagalog"
 msgstr "Tagalog"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:693
 msgid "Tswana"
 msgstr "Tswana"
 
-#: includes/ZLanguage.php:546
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:694
+#: includes/ZLanguage.php:931
 msgid "Tonga"
 msgstr "Tonga"
 
-#: includes/ZLanguage.php:546
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:695
+#: includes/ZLanguage.php:1121
 msgid "Turkish"
 msgstr "Turkish"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:696
 msgid "Tsonga"
 msgstr "Tsonga"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:697
 msgid "Tatar"
 msgstr "Tatar"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:698
 msgid "Twi"
 msgstr "Twi"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:699
 msgid "Tahitian"
 msgstr "Tahitian"
 
-#: includes/ZLanguage.php:546
+#: includes/ZLanguage.php:700
 msgid "Uighur"
 msgstr "Uighur"
 
-#: includes/ZLanguage.php:547
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:701
+#: includes/ZLanguage.php:1123
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:702
 msgid "Urdu"
 msgstr "Urdu"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:703
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:704
 msgid "Venda"
 msgstr "Venda"
 
-#: includes/ZLanguage.php:547
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:705
+#: includes/ZLanguage.php:1125
 msgid "Vietnamese"
 msgstr "Vietnamese"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:706
 msgid "Volapuk"
 msgstr "Volapuk"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:707
 msgid "Walloon"
 msgstr "Walloon"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:708
+#: includes/ZLanguage.php:1127
 msgid "Wolof"
 msgstr "Wolof"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:709
 msgid "Xhosa"
 msgstr "Xhosa"
 
-#: includes/ZLanguage.php:547
+#: includes/ZLanguage.php:710
 msgid "Yiddish"
 msgstr "Yiddish"
 
-#: includes/ZLanguage.php:548
+#: includes/ZLanguage.php:711
 msgid "Yoruba"
 msgstr "Yoruba"
 
-#: includes/ZLanguage.php:548
+#: includes/ZLanguage.php:712
 msgid "Zhuang"
 msgstr "Zhuang"
 
-#: includes/ZLanguage.php:548
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:713
+#: includes/ZLanguage.php:1128
 msgid "Chinese"
 msgstr "Chinese"
 
-#: includes/ZLanguage.php:548
+#: includes/ZLanguage.php:714
 msgid "Zulu"
 msgstr "Zulu"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:721
 msgid "Andorra"
 msgstr "Andorra"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:722
 msgid "United Arab Emirates"
 msgstr "United Arab Emirates"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:723
 msgid "Afghanistan"
 msgstr "Afghanistan"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:724
 msgid "Antigua & Barbuda"
 msgstr "Antigua & Barbuda"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:725
 msgid "Anguilla"
 msgstr "Anguilla"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:726
 msgid "Albania"
 msgstr "Albania"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:727
 msgid "Armenia"
 msgstr "Armenia"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:728
 msgid "Netherlands Antilles"
 msgstr "Netherlands Antilles"
 
-#: includes/ZLanguage.php:556
+#: includes/ZLanguage.php:729
 msgid "Angola"
 msgstr "Angola"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:730
 msgid "Antarctica"
 msgstr "Antarctica"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:731
 msgid "Argentina"
 msgstr "Argentina"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:732
 msgid "American Samoa"
 msgstr "American Samoa"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:733
 msgid "Austria"
 msgstr "Austria"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:734
 msgid "Australia"
 msgstr "Australia"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:735
 msgid "Aruba"
 msgstr "Aruba"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:736
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:737
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia and Herzegovina"
 
-#: includes/ZLanguage.php:557
+#: includes/ZLanguage.php:738
 msgid "Barbados"
 msgstr "Barbados"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:739
 msgid "Bangladesh"
 msgstr "Bangladesh"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:740
 msgid "Belgium"
 msgstr "Belgium"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:741
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:742
 msgid "Bulgaria"
 msgstr "Bulgaria"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:743
 msgid "Bahrain"
 msgstr "Bahrain"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:744
 msgid "Burundi"
 msgstr "Burundi"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:745
 msgid "Benin"
 msgstr "Benin"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:746
 msgid "Bermuda"
 msgstr "Bermuda"
 
-#: includes/ZLanguage.php:558
+#: includes/ZLanguage.php:747
 msgid "Brunei Darussalam"
 msgstr "Brunei Darussalam"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:748
 msgid "Bolivia"
 msgstr "Bolivia"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:749
 msgid "Brazil"
 msgstr "Brazil"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:750
 msgid "Bahama"
 msgstr "Bahama"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:751
 msgid "Bhutan"
 msgstr "Bhutan"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:752
 msgid "Bouvet Island"
 msgstr "Bouvet Island"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:753
 msgid "Botswana"
 msgstr "Botswana"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:754
 msgid "Belarus"
 msgstr "Belarus"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:755
 msgid "Belize"
 msgstr "Belize"
 
-#: includes/ZLanguage.php:559
+#: includes/ZLanguage.php:756
 msgid "Canada"
 msgstr "Canada"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:757
 msgid "Cocos (Keeling) Islands"
 msgstr "Cocos (Keeling) Islands"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:758
 msgid "Central African Republic"
 msgstr "Central African Republic"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:759
 msgid "Congo"
 msgstr "c"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:760
 msgid "Switzerland"
 msgstr "Switzerland"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:761
 msgid "Cote d'Ivoire (Ivory Coast)"
 msgstr "Cote d'Ivoire (Ivory Coast)"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:762
 msgid "Cook Iislands"
 msgstr "Cook Iislands"
 
-#: includes/ZLanguage.php:560
+#: includes/ZLanguage.php:763
 msgid "Chile"
 msgstr "Chile"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:764
 msgid "Cameroon"
 msgstr "Cameroon"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:765
 msgid "China"
 msgstr "China"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:766
 msgid "Colombia"
 msgstr "Colombia"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:767
 msgid "Costa Rica"
 msgstr "Costa Rica"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:768
 msgid "Cuba"
 msgstr "Cuba"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:769
 msgid "Cape Verde"
 msgstr "Cape Verde"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:770
 msgid "Christmas Island"
 msgstr "Christmas Island"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:771
 msgid "Cyprus"
 msgstr "Cyprus"
 
-#: includes/ZLanguage.php:561
+#: includes/ZLanguage.php:772
 msgid "Czech Republic"
 msgstr "Czech Republic"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:773
 msgid "Germany"
 msgstr "Deutschland"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:774
 msgid "Djibouti"
 msgstr "Djibouti"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:775
 msgid "Denmark"
 msgstr "Denmark"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:776
 msgid "Dominica"
 msgstr "Dominica"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:777
 msgid "Dominican Republic"
 msgstr "Dominican Republic"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:778
 msgid "Algeria"
 msgstr "Algerien"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:779
 msgid "Ecuador"
 msgstr "Ecuador"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:780
 msgid "Estonia"
 msgstr "Estonia"
 
-#: includes/ZLanguage.php:562
+#: includes/ZLanguage.php:781
 msgid "Egypt"
 msgstr "Egypt"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:782
 msgid "Western Sahara"
 msgstr "Western Sahara"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:783
 msgid "Eritrea"
 msgstr "Eritrea"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:784
 msgid "Spain"
 msgstr "Spain"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:785
 msgid "Ethiopia"
 msgstr "Ethiopia"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:786
 msgid "Finland"
 msgstr "Finland"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:787
 msgid "Fiji"
 msgstr "Fiji"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:788
 msgid "Falkland Islands (Malvinas)"
 msgstr "Falkland Islands (Malvinas)"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:789
 msgid "Micronesia"
 msgstr "Micronesia"
 
-#: includes/ZLanguage.php:563
+#: includes/ZLanguage.php:790
 msgid "Faroe Islands"
 msgstr "Faroe Islands"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:791
 msgid "France"
 msgstr "France"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:792
 msgid "France, Metropolitan"
 msgstr "France, Metropolitan"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:793
 msgid "Gabon"
 msgstr "Gabon"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:794
 msgid "United Kingdom (Great Britain)"
 msgstr "United Kingdom (Great Britain)"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:795
 msgid "Grenada"
 msgstr "Grenada"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:796
 msgid "Georgia"
 msgstr "Georgia"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:797
 msgid "French Guiana"
 msgstr "French Guiana"
 
-#: includes/ZLanguage.php:564
+#: includes/ZLanguage.php:798
 msgid "Ghana"
 msgstr "Ghana"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:799
 msgid "Gibraltar"
 msgstr "Gibraltar"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:800
 msgid "Greenland"
 msgstr "Greenland"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:801
 msgid "Gambia"
 msgstr "Gambia"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:802
 msgid "Guinea"
 msgstr "Guinea"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:803
 msgid "Guadeloupe"
 msgstr "Guadeloupe"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:804
 msgid "Equatorial Guinea"
 msgstr "Equatorial Guinea"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:805
 msgid "Greece"
 msgstr "Griechenland"
 
-#: includes/ZLanguage.php:565
+#: includes/ZLanguage.php:806
 msgid "South Georgia and the South Sandwich Islands"
 msgstr "South Georgia and the South Sandwich Islands"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:807
 msgid "Guatemala"
 msgstr "Guatemala"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:808
 msgid "Guam"
 msgstr "Guam"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:809
 msgid "Guinea-Bissau"
 msgstr "Guinea-Bissau"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:810
 msgid "Guyana"
 msgstr "Guyana"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:811
 msgid "Hong Kong"
 msgstr "Hong Kong"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:812
 msgid "Heard & McDonald Islands"
 msgstr "Heard & McDonald Islands"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:813
 msgid "Honduras"
 msgstr "Honduras"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:814
 msgid "Croatia"
 msgstr "Croatia"
 
-#: includes/ZLanguage.php:566
+#: includes/ZLanguage.php:815
 msgid "Haiti"
 msgstr "Haiti"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:816
 msgid "Hungary"
 msgstr "Hungary"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:817
 msgid "Indonesia"
 msgstr "Indonesia"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:818
 msgid "Ireland"
 msgstr "Ireland"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:819
 msgid "Israel"
 msgstr "Israel"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:820
 msgid "Isle of Man"
 msgstr "Isle of Man"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:821
 msgid "India"
 msgstr "India"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:822
 msgid "British Indian Ocean Territory"
 msgstr "British Indian Ocean Territory"
 
-#: includes/ZLanguage.php:567
+#: includes/ZLanguage.php:823
 msgid "Iraq"
 msgstr "Iraq"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:824
 msgid "Islamic Republic of Iran"
 msgstr "Islamic Republic of Iran"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:825
 msgid "Iceland"
 msgstr "Iceland"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:826
 msgid "Italy"
 msgstr "Italy"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:827
 msgid "Jamaica"
 msgstr "Jamaica"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:828
 msgid "Jordan"
 msgstr "Jordan"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:829
 msgid "Japan"
 msgstr "Japan"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:830
 msgid "Kenya"
 msgstr "Kenya"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:831
 msgid "Kyrgyzstan"
 msgstr "Kyrgyzstan"
 
-#: includes/ZLanguage.php:568
+#: includes/ZLanguage.php:832
 msgid "Cambodia"
 msgstr "Cambodia"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:833
 msgid "Kiribati"
 msgstr "Kiribati"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:834
 msgid "Comoros"
 msgstr "Comoros"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:835
 msgid "St. Kitts and Nevis"
 msgstr "St. Kitts and Nevis"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:836
 msgid "Korea, Democratic People's Republic of"
 msgstr "Korea, Democratic People's Republic of"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:837
 msgid "Korea, Republic of"
 msgstr "Korea, Republic of"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:838
 msgid "Kuwait"
 msgstr "Kuwait"
 
-#: includes/ZLanguage.php:569
+#: includes/ZLanguage.php:839
 msgid "Cayman Islands"
 msgstr "Cayman Islands"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:840
 msgid "Kazakhstan"
 msgstr "Kazakhstan"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:841
 msgid "Lao People's Democratic Republic"
 msgstr "Lao People's Democratic Republic"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:842
 msgid "Lebanon"
 msgstr "Lebanon"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:843
 msgid "Saint Lucia"
 msgstr "Saint Lucia"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:844
 msgid "Liechtenstein"
 msgstr "Liechtenstein"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:845
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:846
 msgid "Liberia"
 msgstr "Liberia"
 
-#: includes/ZLanguage.php:570
+#: includes/ZLanguage.php:847
 msgid "Lesotho"
 msgstr "Lesotho"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:848
 msgid "Lithuania"
 msgstr "Lithuania"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:849
 msgid "Luxembourg"
 msgstr "Luxembourg"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:850
 msgid "Latvia"
 msgstr "Latvia"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:851
 msgid "Libyan Arab Jamahiriya"
 msgstr "Libyan Arab Jamahiriya"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:852
 msgid "Morocco"
 msgstr "Morocco"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:853
 msgid "Monaco"
 msgstr "Monaco"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:854
 msgid "Moldova, Republic of"
 msgstr "Moldova, Republic of"
 
-#: includes/ZLanguage.php:571
+#: includes/ZLanguage.php:855
 msgid "Madagascar"
 msgstr "Madagascar"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:856
 msgid "Marshall Islands"
 msgstr "Marshall Islands"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:857
 msgid "Mali"
 msgstr "Mali"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:858
 msgid "Mongolia"
 msgstr "Mongolia"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:859
 msgid "Myanmar"
 msgstr "Myanmar"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:860
 msgid "Macau"
 msgstr "Macau"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:861
 msgid "Northern Mariana Islands"
 msgstr "Northern Mariana Islands"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:862
 msgid "Martinique"
 msgstr "Martinique"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:863
 msgid "Mauritania"
 msgstr "Mauritania"
 
-#: includes/ZLanguage.php:572
+#: includes/ZLanguage.php:864
 msgid "Monserrat"
 msgstr "Monserrat"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:865
 msgid "Malta"
 msgstr "Malta"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:866
 msgid "Mauritius"
 msgstr "Mauritius"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:867
 msgid "Maldives"
 msgstr "Maldives"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:868
 msgid "Malawi"
 msgstr "Malawi"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:869
 msgid "Mexico"
 msgstr "Mexico"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:870
 msgid "Malaysia"
 msgstr "Malaysia"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:871
 msgid "Mozambique"
 msgstr "Mozambique"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:872
 msgid "Namibia"
 msgstr "Namibia"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:873
 msgid "New Caledonia"
 msgstr "New Caledonia"
 
-#: includes/ZLanguage.php:573
+#: includes/ZLanguage.php:874
 msgid "Niger"
 msgstr "Niger"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:875
 msgid "Norfolk Island"
 msgstr "Norfolk Island"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:876
 msgid "Nigeria"
 msgstr "Nigeria"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:877
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:878
 msgid "Netherlands"
 msgstr "Netherlands"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:879
 msgid "Norway"
 msgstr "Norway"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:880
 msgid "Nepal"
 msgstr "Nepal"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:882
 msgid "Niue"
 msgstr "Niue"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:883
 msgid "New Zealand"
 msgstr "New Zealand"
 
-#: includes/ZLanguage.php:574
+#: includes/ZLanguage.php:884
 msgid "Oman"
 msgstr "Oman"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:885
 msgid "Panama"
 msgstr "Panama"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:886
 msgid "Peru"
 msgstr "Peru"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:887
 msgid "French Polynesia"
 msgstr "French Polynesia"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:888
 msgid "Papua New Guinea"
 msgstr "Papua New Guinea"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:889
 msgid "Philippines"
 msgstr "Philippines"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:890
 msgid "Pakistan"
 msgstr "Pakistan"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:891
 msgid "Poland"
 msgstr "Polen"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:892
 msgid "St. Pierre & Miquelon"
 msgstr "St. Pierre & Miquelon"
 
-#: includes/ZLanguage.php:575
+#: includes/ZLanguage.php:893
 msgid "Pitcairn"
 msgstr "Pitcairn"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:894
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:895
 msgid "Portugal"
 msgstr "Portugal"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:896
 msgid "Palau"
 msgstr "Palau"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:897
 msgid "Paraguay"
 msgstr "Paraguay"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:898
 msgid "Qatar"
 msgstr "Qatar"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:899
 msgid "Reunion"
 msgstr "Reunion"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:900
 msgid "Romania"
 msgstr "Romania"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:901
 msgid "Russian Federation"
 msgstr "Russian Federation"
 
-#: includes/ZLanguage.php:576
+#: includes/ZLanguage.php:902
 msgid "Rwanda"
 msgstr "Rwanda"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:903
 msgid "Saudi Arabia"
 msgstr "Saudi Arabia"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:904
 msgid "Solomon Islands"
 msgstr "Solomon Islands"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:905
 msgid "Seychelles"
 msgstr "Seychelles"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:906
 msgid "Sudan"
 msgstr "Sudan"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:907
 msgid "Sweden"
 msgstr "Sweden"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:908
 msgid "Singapore"
 msgstr "Singapore"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:909
 msgid "St. Helena"
 msgstr "St. Helena"
 
-#: includes/ZLanguage.php:577
+#: includes/ZLanguage.php:910
 msgid "Slovenia"
 msgstr "Slovenia"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:911
 msgid "Svalbard & Jan Mayen Islands"
 msgstr "Svalbard & Jan Mayen Islands"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:912
 msgid "Slovakia"
 msgstr "Slovakia"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:913
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:914
 msgid "San Marino"
 msgstr "San Marino"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:915
 msgid "Senegal"
 msgstr "Senegal"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:916
 msgid "Somalia"
 msgstr "Somalia"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:917
 msgid "Suriname"
 msgstr "Suriname"
 
-#: includes/ZLanguage.php:578
+#: includes/ZLanguage.php:918
 msgid "Sao Tome & Principe"
 msgstr "Sao Tome & Principe"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:919
 msgid "El Salvador"
 msgstr "El Salvador"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:920
 msgid "Syrian Arab Republic"
 msgstr "Syrian Arab Republic"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:921
 msgid "Swaziland"
 msgstr "Swaziland"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:922
 msgid "Turks & Caicos Islands"
 msgstr "Turks & Caicos Islands"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:923
 msgid "Chad"
 msgstr "Chad"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:924
 msgid "French Southern Territories"
 msgstr "French Southern Territories"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:925
 msgid "Togo"
 msgstr "Togo"
 
-#: includes/ZLanguage.php:579
+#: includes/ZLanguage.php:926
 msgid "Thailand"
 msgstr "Thailand"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:927
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:928
 msgid "Tokelau"
 msgstr "Tokelau"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:929
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:930
 msgid "Tunisia"
 msgstr "Tunisia"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:932
 msgid "East Timor"
 msgstr "East Timor"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:933
 msgid "Turkey"
 msgstr "Turkey"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:934
 msgid "Trinidad & Tobago"
 msgstr "Trinidad & Tobago"
 
-#: includes/ZLanguage.php:580
+#: includes/ZLanguage.php:935
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:936
 msgid "Taiwan, Province of China"
 msgstr "Taiwan, Province of China"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:937
 msgid "Tanzania, United Republic of"
 msgstr "Tanzania, United Republic of"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:938
 msgid "Ukraine"
 msgstr "Ukraine"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:939
 msgid "Uganda"
 msgstr "Uganda"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:940
 msgid "United States Minor Outlying Islands"
 msgstr "United States Minor Outlying Islands"
 
-#: includes/ZLanguage.php:581
+#: includes/ZLanguage.php:941
 msgid "United States of America"
 msgstr "United States of America"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:942
 msgid "Uruguay"
 msgstr "Uruguay"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:943
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:944
 msgid "Vatican City State (Holy See)"
 msgstr "Vatican City State (Holy See)"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:945
 msgid "St. Vincent & the Grenadines"
 msgstr "St. Vincent & the Grenadines"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:946
 msgid "Venezuela"
 msgstr "Venezuela"
 
-#: includes/ZLanguage.php:582
+#: includes/ZLanguage.php:947
 msgid "British Virgin Islands"
 msgstr "British Virgin Islands"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:948
 msgid "United States Virgin Islands"
 msgstr "United States Virgin Islands"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:949
 msgid "Viet Nam"
 msgstr "Viet Nam"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:950
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:951
 msgid "Wallis & Futuna Islands"
 msgstr "Wallis & Futuna Islands"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:952
 msgid "Samoa"
 msgstr "Samoa"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:953
 msgid "Yemen"
 msgstr "Yemen"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:954
 msgid "Mayotte"
 msgstr "Mayotte"
 
-#: includes/ZLanguage.php:583
+#: includes/ZLanguage.php:955
 msgid "Yugoslavia"
 msgstr "Yugoslavia"
 
-#: includes/ZLanguage.php:584
+#: includes/ZLanguage.php:956
 msgid "South Africa"
 msgstr "South Africa"
 
-#: includes/ZLanguage.php:584
+#: includes/ZLanguage.php:957
 msgid "Zambia"
 msgstr "Zambia"
 
-#: includes/ZLanguage.php:584
+#: includes/ZLanguage.php:958
 msgid "Zaire"
 msgstr "Zaire"
 
-#: includes/ZLanguage.php:584
+#: includes/ZLanguage.php:959
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
-#: includes/ZLanguage.php:584
+#: includes/ZLanguage.php:960
 msgid "Unknown or unspecified country"
 msgstr "Unknown or unspecified country"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:969
 msgid "Arabic"
 msgstr "Arabic"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:970
 msgid "Arabic (United Arab Emirates)"
 msgstr "Arabic (United Arab Emirates)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:971
 msgid "Arabic (Bahrain)"
 msgstr "Arabic (Bahrain)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:972
 msgid "Arabic (Algeria)"
 msgstr "Arabic (Algeria)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:973
 msgid "Arabic (Egypt)"
 msgstr "Arabic (Egypt)"
 
-#: includes/ZLanguage.php:591
+#: includes/ZLanguage.php:974
 msgid "Arabic (Iraq)"
 msgstr "Arabic (Iraq)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:975
 msgid "Arabic (Jordan)"
 msgstr "Arabic (Jordan)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:976
 msgid "Arabic (Kuwait)"
 msgstr "Arabic (Kuwait)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:977
 msgid "Arabic (Lebanon)"
 msgstr "Arabic (Lebanon)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:978
 msgid "Arabic (Libya)"
 msgstr "Arabic (Libya)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:979
 msgid "Arabic (Morocco)"
 msgstr "Arabic (Morocco)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:980
 msgid "Arabic (Oman)"
 msgstr "Arabic (Oman)"
 
-#: includes/ZLanguage.php:592
+#: includes/ZLanguage.php:981
 msgid "Arabic (Qatar)"
 msgstr "Arabic (Qatar)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:982
 msgid "Arabic (Saudi Arabia)"
 msgstr "Arabic (Saudi Arabia)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:983
 msgid "Arabic (Sudan)"
 msgstr "Arabic (Sudan)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:984
 msgid "Arabic (Syria)"
 msgstr "Arabic (Syria)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:985
 msgid "Arabic (Tunisia)"
 msgstr "Arabic (Tunisia)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:986
 msgid "Arabic (Yemen)"
 msgstr "Arabic (Yemen)"
 
-#: includes/ZLanguage.php:593
+#: includes/ZLanguage.php:988
 msgid "Belarusian (Belarus)"
 msgstr "Belarusian (Belarus)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:990
 msgid "Bulgarian (Bulgaria)"
 msgstr "Bulgarian (Bulgaria)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:991
+msgid "Bengali (India)"
+msgstr "Bengali (India)"
+
+#: includes/ZLanguage.php:993
 msgid "Catalan (Spain)"
 msgstr "Catalan (Spain)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:995
 msgid "Czech (Czech Republic)"
 msgstr "Czech (Czech Republic)"
 
-#: includes/ZLanguage.php:594
+#: includes/ZLanguage.php:997
 msgid "Danish (Denmark)"
 msgstr "Danish (Denmark)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:999
 msgid "German (Austria)"
 msgstr "German (Austria)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:1000
 msgid "German (Switzerland)"
 msgstr "German (Switzerland)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:1001
 msgid "German (Germany)"
 msgstr "German (Germany)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:1002
 msgid "German (Luxembourg)"
 msgstr "German (Luxembourg)"
 
-#: includes/ZLanguage.php:595
+#: includes/ZLanguage.php:1004
 msgid "Greek (Cyprus)"
 msgstr "Greek (Cyprus)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1005
 msgid "Greek (Greece)"
 msgstr "Greek (Greece)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1007
 msgid "English (Australia)"
 msgstr "English (Australia)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1008
 msgid "English (Canada)"
 msgstr "English (Canada)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1009
 msgid "English (United Kingdom)"
 msgstr "English (United Kingdom)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1010
 msgid "English (Ireland)"
 msgstr "English (Ireland)"
 
-#: includes/ZLanguage.php:596
+#: includes/ZLanguage.php:1011
 msgid "English (India)"
 msgstr "English (India)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1012
 msgid "English (Malta)"
 msgstr "English (Malta)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1013
 msgid "English (New Zealand)"
 msgstr "English (New Zealand)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1014
 msgid "English (Philippines)"
 msgstr "English (Philippines)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1015
 msgid "English (Singapore)"
 msgstr "English (Singapore)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1016
 msgid "English (United States)"
 msgstr "English (United States)"
 
-#: includes/ZLanguage.php:597
+#: includes/ZLanguage.php:1017
 msgid "English (South Africa)"
 msgstr "English (South Africa)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:1019
 msgid "Spanish (Argentina)"
 msgstr "Spanish (Argentina)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:1020
 msgid "Spanish (Bolivia)"
 msgstr "Spanish (Bolivia)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:1021
 msgid "Spanish (Chile)"
 msgstr "Spanish (Chile)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:1022
 msgid "Spanish (Colombia)"
 msgstr "Spanish (Colombia)"
 
-#: includes/ZLanguage.php:598
+#: includes/ZLanguage.php:1023
 msgid "Spanish (Costa Rica)"
 msgstr "Spanish (Costa Rica)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1024
 msgid "Spanish (Dominican Republic)"
 msgstr "Spanish (Dominican Republic)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1025
 msgid "Spanish (Ecuador)"
 msgstr "Spanish (Ecuador)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1026
 msgid "Spanish (Spain)"
 msgstr "Spanish (Spain)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1027
 msgid "Spanish (Guatemala)"
 msgstr "Spanish (Guatemala)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1028
 msgid "Spanish (Honduras)"
 msgstr "Spanish (Honduras)"
 
-#: includes/ZLanguage.php:599
+#: includes/ZLanguage.php:1029
 msgid "Spanish (Mexico)"
 msgstr "Spanish (Mexico)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1030
 msgid "Spanish (Nicaragua)"
 msgstr "Spanish (Nicaragua)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1031
 msgid "Spanish (Panama)"
 msgstr "Spanish (Panama)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1032
 msgid "Spanish (Peru)"
 msgstr "Spanish (Peru)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1033
 msgid "Spanish (Puerto Rico)"
 msgstr "Spanish (Puerto Rico)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1034
 msgid "Spanish (Paraguay)"
 msgstr "Spanish (Paraguay)"
 
-#: includes/ZLanguage.php:600
+#: includes/ZLanguage.php:1035
 msgid "Spanish (El Salvador)"
 msgstr "Spanish (El Salvador)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:1036
 msgid "Spanish (United States)"
 msgstr "Spanish (United States)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:1037
 msgid "Spanish (Uruguay)"
 msgstr "Spanish (Uruguay)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:1038
 msgid "Spanish (Venezuela)"
 msgstr "Spanish (Venezuela)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:1040
 msgid "Estonian (Estonia)"
 msgstr "Estonian (Estonia)"
 
-#: includes/ZLanguage.php:601
+#: includes/ZLanguage.php:1044
 msgid "Finnish (Finland)"
 msgstr "Finnish (Finland)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1046
 msgid "French (Belgium)"
 msgstr "French (Belgium)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1047
 msgid "French (Canada)"
 msgstr "French (Canada)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1048
 msgid "French (Switzerland)"
 msgstr "French (Switzerland)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1049
 msgid "French (France)"
 msgstr "French (France)"
 
-#: includes/ZLanguage.php:602
+#: includes/ZLanguage.php:1050
 msgid "French (Luxembourg)"
 msgstr "French (Luxembourg)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:1051
+msgid "Friulian"
+msgstr "Friulian"
+
+#: includes/ZLanguage.php:1053
 msgid "Irish (Ireland)"
 msgstr "Irish (Ireland)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:1056
 msgid "Hindi (India)"
 msgstr "Hindi (India)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:1058
 msgid "Croatian (Croatia)"
 msgstr "Croatian (Croatia)"
 
-#: includes/ZLanguage.php:603
+#: includes/ZLanguage.php:1060
 msgid "Hungarian (Hungary)"
 msgstr "Hungarian (Hungary)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:1063
 msgid "Indonesian (Indonesia)"
 msgstr "Indonesian (Indonesia)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:1065
 msgid "Icelandic (Iceland)"
 msgstr "Icelandic (Iceland)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:1067
 msgid "Italian (Switzerland)"
 msgstr "Italian (Switzerland)"
 
-#: includes/ZLanguage.php:604
+#: includes/ZLanguage.php:1068
 msgid "Italian (Italy)"
 msgstr "Italian (Italy)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:1070
 msgid "Hebrew (Israel)"
 msgstr "Hebrew (Israel)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:1072
 msgid "Japanese (Japan)"
 msgstr "Japanese (Japan)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:1075
 msgid "Korean (South Korea)"
 msgstr "Korean (South Korea)"
 
-#: includes/ZLanguage.php:605
+#: includes/ZLanguage.php:1077
 msgid "Lithuanian (Lithuania)"
 msgstr "Lithuanian (Lithuania)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:1079
 msgid "Latvian (Latvia)"
 msgstr "Latvian (Latvia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:1081
 msgid "Macedonian (Macedonia)"
 msgstr "Macedonian (Macedonia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:1084
 msgid "Malay (Malaysia)"
 msgstr "Malay (Malaysia)"
 
-#: includes/ZLanguage.php:606
+#: includes/ZLanguage.php:1086
 msgid "Maltese (Malta)"
 msgstr "Maltese (Malta)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:1087
+msgid "German (Low Saxon)"
+msgstr "German (Low Saxon)"
+
+#: includes/ZLanguage.php:1090
 msgid "Dutch (Belgium)"
 msgstr "Dutch (Belgium)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:1091
 msgid "Dutch (Netherlands)"
 msgstr "Dutch (Netherlands)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:1093
 msgid "Norwegian (Norway)"
 msgstr "Norwegian (Norway)"
 
-#: includes/ZLanguage.php:607
+#: includes/ZLanguage.php:1094
 msgid "Norwegian (Norway,Nynorsk)"
 msgstr "Norwegian (Norway,Nynorsk)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:1096
 msgid "Polish (Poland)"
 msgstr "Polish (Poland)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:1098
 msgid "Portuguese (Brazil)"
 msgstr "Portuguese (Brazil)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:1099
 msgid "Portuguese (Portugal)"
 msgstr "Portuguese (Portugal)"
 
-#: includes/ZLanguage.php:608
+#: includes/ZLanguage.php:1101
 msgid "Romanian (Romania)"
 msgstr "Romanian (Romania)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:1103
 msgid "Russian (Russia)"
 msgstr "Russian (Russia)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:1105
 msgid "Slovak (Slovakia)"
 msgstr "Slovak (Slovakia)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:1107
 msgid "Slovenian (Slovenia)"
 msgstr "Slovenian (Slovenia)"
 
-#: includes/ZLanguage.php:609
+#: includes/ZLanguage.php:1109
 msgid "Albanian (Albania)"
 msgstr "Albanian (Albania)"
 
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:1111
 msgid "Serbian (Bosnia and Herzegovina)"
 msgstr "Serbian (Bosnia and Herzegovina)"
 
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:1112
 msgid "Serbian (Serbia and Montenegro)"
 msgstr "Serbian (Serbia and Montenegro)"
 
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:1113
 msgid "Serbian (Montenegro)"
 msgstr "Serbian (Montenegro)"
 
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:1114
 msgid "Serbian (Serbia)"
 msgstr "Serbian (Serbia)"
 
-#: includes/ZLanguage.php:610
+#: includes/ZLanguage.php:1115
+msgid "Sotho, Southern"
+msgstr "Sotho, Southern"
+
+#: includes/ZLanguage.php:1117
 msgid "Swedish (Sweden)"
 msgstr "Swedish (Sweden)"
 
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:1119
 msgid "Thai (Thailand)"
 msgstr "Thai (Thailand)"
 
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:1120
 msgid "Thai (Thailand,TH)"
 msgstr "Thai (Thailand,TH)"
 
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:1122
 msgid "Turkish (Turkey)"
 msgstr "Turkish (Turkey)"
 
-#: includes/ZLanguage.php:611
+#: includes/ZLanguage.php:1124
 msgid "Ukrainian (Ukraine)"
 msgstr "Ukrainian (Ukraine)"
 
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:1126
 msgid "Vietnamese (Vietnam)"
 msgstr "Vietnamese (Vietnam)"
 
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:1129
 msgid "Chinese (China)"
 msgstr "Chinese (China)"
 
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:1130
 msgid "Chinese (Hong Kong)"
 msgstr "Chinese (Hong Kong)"
 
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:1131
 msgid "Chinese (Singapore)"
 msgstr "Chinese (Singapore)"
 
-#: includes/ZLanguage.php:612
+#: includes/ZLanguage.php:1132
 msgid "Chinese (Taiwan)"
 msgstr "Chinese (Taiwan)"
 
@@ -3998,7 +4024,7 @@ msgid "Confirmation code for %s"
 msgstr "Bestätigungscode für %s"
 
 #: system/Users/pnblocks/online.php:20
-#: system/Blocks/pninit.php:172
+#: system/Blocks/pninit.php:171
 msgid "Who's online"
 msgstr "Wer ist online"
 
@@ -4290,7 +4316,7 @@ msgid "Custom block"
 msgstr "Individueller Block"
 
 #: system/Users/pnaccountapi.php:64
-#: system/Blocks/pninit.php:163
+#: system/Blocks/pninit.php:162
 msgid "Log out"
 msgstr "Abmelden"
 
@@ -4627,26 +4653,26 @@ msgid "Settings"
 msgstr "Konfiguration"
 
 #: system/Blocks/pninit.php:87
-#: system/Blocks/pninit.php:145
+#: system/Blocks/pninit.php:143
 msgid "Left blocks"
 msgstr "Linke Blöcke"
 
 #: system/Blocks/pninit.php:88
-#: system/Blocks/pninit.php:146
+#: system/Blocks/pninit.php:144
 msgid "Right blocks"
 msgstr "Rechte Blöcke"
 
 #: system/Blocks/pninit.php:89
-#: system/Blocks/pninit.php:147
+#: system/Blocks/pninit.php:145
 msgid "Center blocks"
 msgstr "Mittlere Blöcke"
 
-#: system/Blocks/pninit.php:159
-#: system/Blocks/pninit.php:169
+#: system/Blocks/pninit.php:158
+#: system/Blocks/pninit.php:168
 msgid "Main menu"
 msgstr "Hauptmenü"
 
-#: system/Blocks/pninit.php:161
+#: system/Blocks/pninit.php:160
 #: themes/andreas08/templates/modules/admin.htm:22
 #: themes/andreas08/templates/modules/home.htm:22
 #: themes/andreas08/templates/master.htm:22
@@ -4662,33 +4688,33 @@ msgstr "Hauptmenü"
 msgid "Home"
 msgstr "Startseite"
 
-#: system/Blocks/pninit.php:161
+#: system/Blocks/pninit.php:160
 msgid "Back to the home page"
 msgstr "Zurück zur Startseite"
 
-#: system/Blocks/pninit.php:162
+#: system/Blocks/pninit.php:161
 #: system/Admin/pnaccountapi.php:27
 #: system/Admin/pntemplates/admin_admin_adminpanel_inc1.htm:31
 msgid "Administration"
 msgstr "Administration"
 
-#: system/Blocks/pninit.php:162
+#: system/Blocks/pninit.php:161
 msgid "Go to the administration panel"
 msgstr "Gehe zum Administrationsbereich"
 
-#: system/Blocks/pninit.php:163
+#: system/Blocks/pninit.php:162
 msgid "Log out of your account"
 msgstr "Benutzer abmelden"
 
-#: system/Blocks/pninit.php:170
+#: system/Blocks/pninit.php:169
 msgid "Languages"
 msgstr "Sprachen"
 
-#: system/Blocks/pninit.php:171
+#: system/Blocks/pninit.php:170
 msgid "User log-in"
 msgstr "Anmeldung"
 
-#: system/Blocks/pninit.php:173
+#: system/Blocks/pninit.php:172
 msgid "Administration Messages"
 msgstr "Nachrichten vom Admin"
 
@@ -4962,8 +4988,8 @@ msgid "Could not set locale: %s"
 msgstr "Locale konnte nicht gesetzt werden: %s"
 
 #: system/pnRender/plugins/block.case.php:36
-msgid "{case}: block not inside switch}-context"
-msgstr "{case}: block not inside switch}-context"
+msgid "{case}: block not inside {switch}-context"
+msgstr "{case}: block not inside {switch}-context"
 
 #: system/pnRender/plugins/function.selectmodobject.php:52
 #, php-format
@@ -5000,7 +5026,7 @@ msgstr "{switch}: parameter 'expr' not given"
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:65
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:15
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:33
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:49
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:51
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:27
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:47
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:89
@@ -5042,7 +5068,7 @@ msgstr "Ja"
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:66
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:17
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:35
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:51
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:53
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:29
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:49
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:91
@@ -7899,7 +7925,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Categories/pntemplates/categories_admin_move.htm:27
 #: system/Categories/pntemplates/categories_admin_config.htm:14
 #: system/Categories/pntemplates/categories_admin_preferences.htm:37
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:75
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:77
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:66
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:190
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:116
@@ -8119,7 +8145,7 @@ msgstr "Benutzung von Meta-Refresh"
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:67
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
 #: system/Categories/pntemplates/categories_admin_preferences.htm:36
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:74
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:76
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:65
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:189
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:24
@@ -9643,35 +9669,35 @@ msgstr "Nicht bei der Standardsprache"
 msgid "Enable language variations?"
 msgstr "Sprachvariationen aktivieren"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:38
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:39
 msgid "Disables any language packs matching LL_*"
 msgstr "Deaktiviert alle Pakete mit Sprachvariationen, wie beispielsweise EN_GB und EN_US."
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:39
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:40
 msgid "Warning: If disabled, it may cause data stored in that language variation to be lost depending on how the module handles multi-linguagal content.  This setting is designed for legacy modules that rely on the 3 letter ISO-639-1 language codes where there is no matching ISO-639-2 code."
 msgstr "Warnung: Je nachdem wie ein Modul mit der Mehrsprachigkeit umgeht, könnten bei der Deaktivierung dieser Option die mehrsprachigen Daten für die Sprachvariationen verlorengehen. Diese Einstellung ist für ältere Module integriert worden, die die 3 Buchstaben ISO-639-1-Sprachcodes benötigen, bei denen keine passenden ISO-639-2 Code vorhanden sind."
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:44
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:46
 msgid "Browser"
 msgstr "Browser"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:46
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:48
 msgid "Auto-detect language from browser settings"
 msgstr "Erkennung der Browser-Sprache"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:56
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:58
 msgid "Server"
 msgstr "Server"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:58
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:60
 msgid "Default language to use for this site"
 msgstr "Standardsprache für diese Webseite"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:62
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:64
 msgid "Unregistered users time zone"
 msgstr "Zeitzone für unregistrierte Benutzer"
 
-#: system/Settings/pntemplates/settings_admin_multilingual.htm:68
+#: system/Settings/pntemplates/settings_admin_multilingual.htm:70
 msgid "Server time zone"
 msgstr "Zeitzone des Servers"
 
@@ -11602,7 +11628,7 @@ msgid "Minify CSS/JS"
 msgstr "Minify CSS/JS"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:84
-msgid "The 'Minify CSS/JS' option may require more PHP memory.  If you get errors you must increase memory_limit in your php.ini configuration file or add the following (without the quotation) to your .htaccess 'php_value memory_limit 64M'.  64M is just an example, please find the lowest value that works."
+msgid "The 'Minify CSS/JS' option may require more PHP memory. If you get errors you must increase memory_limit in your php.ini configuration file or add the following (without the quotation) to your .htaccess 'php_value memory_limit 64M'.  64M is just an example, please find the lowest value that works."
 msgstr "Das 'Minify CSS/JS' Feature könnte womöglich mehr PHP Speicher benötigen. Falls Fehlermeldungen dieser Art auftreten, dann sollte das 'memory_limit' in der Konfigurationsdatei php.ini erhöht werden. Oder alternativ die Zeile (ohne Anführungszeichen) 'php_value memory_limit 64M' in der .htaccess Datei hinzufügen. Der Wert 64M ist nur ein Beispiel und sollte auf die individuellen Bedürfnisse angepasst werden."
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:88
