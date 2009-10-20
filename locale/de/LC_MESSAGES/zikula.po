@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-15 09:28-0400\n"
-"PO-Revision-Date: 2009-10-20 15:34+0100\n"
+"PO-Revision-Date: 2009-10-20 18:15+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -7365,7 +7365,7 @@ msgstr "Mögliche inkompatible Version gefunden"
 #: upgrade.php:402
 #, php-format
 msgid "The current installed version of Zikula is reporting (%1$s).  This may not be accurate so if you know you have definitely upgraded to %2$s then please ignore this message and proceed.  If you have not upgraded already to version %2$s then please do so and come back to this step."
-msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Diese Angabe muss nicht zwangsläufig stimmen. Falls eine Aktualisierung auf %2$s definitiv schon durchgeführt wurde, so kann der Hinweis ingoriert werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt durchgeführt werden."
+msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Diese Angabe muss nicht zwangsläufig stimmen. Falls eine Aktualisierung auf %2$s definitiv schon durchgeführt wurde, so kann der Hinweis ignoriert werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt durchgeführt werden."
 
 #: upgrade.php:408
 msgid "Already up to date"
