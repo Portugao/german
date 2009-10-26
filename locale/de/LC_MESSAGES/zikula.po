@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-18 14:08-0400\n"
-"PO-Revision-Date: 2009-10-26 12:18+0100\n"
+"PO-Revision-Date: 2009-10-26 21:09+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -143,7 +143,7 @@ msgstr "Basis - Grundinstallation der wichtigsten Core-Module"
 
 #: install/pntemplates/plugins/function.installtypes.php:57
 msgid "Complete - all modules with non-interactive installations found in the system are installed"
-msgstr "Komplett - Installation aller verfügbaren Module (ohne Module mit interaktiver Installation)"
+msgstr "Vollständig - Installation aller verfügbaren Module (ohne Module mit interaktiver Installation)"
 
 #: install/pntemplates/plugins/function.gt.php:12
 #: system/pnRender/plugins/function.gt.php:62
@@ -169,11 +169,11 @@ msgstr "MSSQL (alpha)"
 
 #: install/pntemplates/plugins/function.dbtypes.php:64
 msgid "Oracle (alpha) via OCI8 driver"
-msgstr "Oracle (alpha) via OCI8 driver"
+msgstr "Oracle (alpha) via OCI8 Treiber"
 
 #: install/pntemplates/plugins/function.dbtypes.php:66
 msgid "Oracle (alpha) via Oracle driver"
-msgstr "Oracle (alpha) via Oracle driver"
+msgstr "Oracle (alpha) via Oracle Treiber"
 
 #: install/pntemplates/plugins/function.dbtypes.php:70
 msgid "PostgreSQL"
@@ -2706,7 +2706,7 @@ msgstr "%s Der Ursprung dieser Meldung war '%s' in Zeile %s in Datei '%s'."
 
 #: includes/LogUtil.class.php:277
 msgid "Error! The action you wanted to perform was not successful for some reason, maybe because of a problem with what you input. Please check and try again."
-msgstr "Error! The action you wanted to perform was not successful for some reason, maybe because of a problem with what you input. Please check and try again."
+msgstr "Fehler! Die gewünschte Aktion war aus einem unbekannten Grund nicht erfolgreich. Möglichweise aufgrund fehlerhafter Eingaben. Bitte überprüfen und erneut versuchen."
 
 #: includes/LogUtil.class.php:301
 msgid "Logging configuration can't be loaded .... logging is disabled"
@@ -3013,41 +3013,49 @@ msgstr "Error! Attempted to get a connection from an empty stack."
 msgid "Error! Attempted to pop a connection from an empty connection stack."
 msgstr "Error! Attempted to pop a connection from an empty connection stack."
 
+# _DATELONG
 #: includes/DateUtil.class.php:40
 #: system/pnForm/plugins/function.pnformdateinput.php:174
 msgid "%A, %B %d, %Y"
-msgstr "%A, %B, %d, %Y"
+msgstr "%A, %d. %B %Y"
 
+# _DATEBRIEF
 #: includes/DateUtil.class.php:43
 #: system/SecurityCenter/pnuserapi.php:296
 msgid "%b %d, %Y"
-msgstr "%b %d, %Y"
+msgstr "%d. %b %Y"
 
+# _DATESTRING
 #: includes/DateUtil.class.php:46
 msgid "%A, %B %d @ %H:%M:%S"
-msgstr "%A, %B %d @ %H:%M:%S"
+msgstr "%A, %d. %B %Y um %H:%M Uhr"
 
+# _DATESTRING2
 #: includes/DateUtil.class.php:49
 msgid "%A, %B %d"
 msgstr "%A, %B %d"
 
+# _DATETIMEBRIEF
 #: includes/DateUtil.class.php:52
 #: system/Admin_Messages/pnadmin.php:343
 #: system/SecurityCenter/pnadmin.php:130
 #: system/Theme/plugins/function.datetime.php:51
 msgid "%b %d, %Y - %I:%M %p"
-msgstr "%b %d, %Y - %I:%M %p"
+msgstr "%d. %b %Y -  %H:%M Uhr"
 
+# _DATETIMELONG
 #: includes/DateUtil.class.php:55
 #: system/pnForm/plugins/function.pnformdateinput.php:174
 msgid "%A, %B %d, %Y - %I:%M %p"
-msgstr "%A, %B %d, %Y - %H:%M"
+msgstr "%A, %d. %B %Y, %H:%M Uhr"
 
+# _TIMEBRIEF
 #: includes/DateUtil.class.php:58
 #: system/SecurityCenter/pnuserapi.php:297
 msgid "%I:%M %p"
-msgstr "%I:%M %p"
+msgstr "%H:%M"
 
+# _TIMELONG
 #: includes/DateUtil.class.php:61
 msgid "%T %p"
 msgstr "%T %p"
@@ -3058,7 +3066,7 @@ msgstr "So Mo Di Mi Do Fr Sa"
 
 #: includes/DateUtil.class.php:685
 msgid "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec"
-msgstr "Januar Februar März April Mai Juni Juli August September Oktober November Dezember"
+msgstr "Jan Feb Mär Apr Mai Jun Jul Aug Sep Okt Nov Dez"
 
 #: includes/DateUtil.class.php:686
 msgid "Sunday Monday Tuesday Wednesday Thursday Friday Saturday"
@@ -3930,7 +3938,7 @@ msgstr "Wer ist online"
 
 #: system/Users/pnblocks/online.php:21
 msgid "On-line block"
-msgstr "Online Block"
+msgstr "Online-Block"
 
 #: system/Users/pnblocks/login.php:20
 #: system/Errors/pntemplates/errors_user_403.htm:16
@@ -3939,7 +3947,7 @@ msgstr "Anmelden"
 
 #: system/Users/pnblocks/login.php:21
 msgid "Log-in block"
-msgstr "Anmelde Block"
+msgstr "Anmelde-Block"
 
 #: system/Users/pnblocks/user.php:34
 msgid "User"
@@ -3947,7 +3955,7 @@ msgstr "Benutzer"
 
 #: system/Users/pnblocks/user.php:35
 msgid "User's custom box"
-msgstr "Benutzerblock"
+msgstr "Benutzer-Block"
 
 #: system/Users/pnblocks/user.php:59
 #, php-format
@@ -4124,7 +4132,7 @@ msgstr "benutzer"
 
 #: system/Users/pnversion.php:17
 msgid "Provides an interface for configuring and administering registered user accounts. Incorporates all needed functionality, but can be configured to work in close unison with profile management modules from third parties."
-msgstr "Konfiguration und Administration der Benutzerkonten"
+msgstr "Konfiguration und Administration der Benutzerkonten."
 
 #: system/Users/pnsearchapi.php:137
 msgid "Notice: There is no further information about this user. Please click the user's name to view his/her complete profile."
@@ -4163,7 +4171,7 @@ msgstr "Entschuldigung! Die angegebene E-Mail Adresse wird bereits verwendet."
 
 #: system/Users/pnajax.php:176
 msgid "Please click on the checkbox to accept the site's 'Terms of use'."
-msgstr "Für die Registrierung muss den 'Nutzungsbedingungen' zugestimmt werden."
+msgstr "Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden."
 
 #: system/Users/pnajax.php:179
 msgid "Please click on the checkbox to accept the site's 'Privacy policy'."
@@ -4198,7 +4206,7 @@ msgstr "Freizugebene Registrierungen"
 #: system/Users/pnadminapi.php:480
 #: system/Users/pntemplates/users_admin_new.htm:2
 msgid "Create new user"
-msgstr "Neuen Benutzer anlegen"
+msgstr "Benutzer anlegen"
 
 #: system/Users/pnadminapi.php:483
 #: system/Users/pntemplates/users_admin_search.htm:2
@@ -4505,16 +4513,16 @@ msgstr "Fehler! Es ist ein SQL Fehler aufgetreten."
 #: system/Blocks/pntemplates/blocks_admin_menu.htm:4
 #: themes/SeaBreeze/templates/modules/admin.htm:26
 msgid "Blocks manager"
-msgstr "Blockverwaltung"
+msgstr "Blockadministration"
 
 #. !module name that appears in URL
 #: system/Blocks/pnversion.php:14
 msgid "blocksmanager"
-msgstr "blockverwaltung"
+msgstr "bloecke"
 
 #: system/Blocks/pnversion.php:15
 msgid "Provides an interface for adding, removing and administering the site's side and centre blocks."
-msgstr "Administration der Blöcke und Blockpositionen"
+msgstr "Administration der Blöcke und Blockpositionen."
 
 #: system/Blocks/pnajax.php:69
 msgid "No block ID."
@@ -4596,17 +4604,17 @@ msgstr "Entschuldigung! Das entsprechende Element konnte nicht gefunden werden."
 #: system/Blocks/pnadminapi.php:405
 #: system/Blocks/pntemplates/blocks_admin_view.htm:9
 msgid "Blocks list"
-msgstr "Blöcke"
+msgstr "Blockliste"
 
 #: system/Blocks/pnadminapi.php:408
 #: system/Blocks/pntemplates/blocks_admin_new.htm:2
 msgid "Create new block"
-msgstr "Neuen Block anlegen"
+msgstr "Block anlegen"
 
 #: system/Blocks/pnadminapi.php:411
 #: system/Blocks/pntemplates/blocks_admin_newposition.htm:2
 msgid "Create new block position"
-msgstr "Neue Blockposition anlegen"
+msgstr "Blockposition anlegen"
 
 #: system/Blocks/pnadminapi.php:415
 msgid "Display active blocks"
@@ -4664,7 +4672,7 @@ msgstr "Verwaltung des Benutzerkontos"
 #: system/Admin/pnaccountapi.php:27
 #: system/Admin/pntemplates/admin_admin_categorymenu.htm:3
 msgid "Site admin panel"
-msgstr "Admin-Panel"
+msgstr "Administration"
 
 #: system/Blocks/pninit.php:154
 msgid "Go to the site admin panel"
@@ -4740,12 +4748,11 @@ msgstr "Gruppe"
 #: system/Permissions/pnadminapi.php:509
 #: system/Permissions/pntemplates/permissions_admin_view.htm:19
 msgid "Create new permission rule"
-msgstr "Neues Zugriffsrecht hinzufügen"
+msgstr "Zugriffsrecht hinzufügen"
 
 #: system/Permissions/pnadmin.php:342
-#, fuzzy
 msgid "Error! No permission rules of this kind were found. Please add some first."
-msgstr "Fehler! Keine Zugriffsrechte dieses Typs feststellbar. Bitte zuerst ein Recht anlegen!"
+msgstr "Fehler! Keine Zugriffsrechte dieses Typs feststellbar. Bitte zuerst ein Recht anlegen."
 
 #: system/Permissions/pnadmin.php:362
 msgid "Edit permission rule"
@@ -4785,15 +4792,14 @@ msgid "Unregistered"
 msgstr "Unregistriert"
 
 #: system/Permissions/pnadmin.php:719
-#, fuzzy
 msgid "Error! Could not save configuration: unknown permission rule ID."
-msgstr "Fehler beim Aktualisieren der Konfiguration: unbekannte Zugriffsrecht-ID"
+msgstr "Fehler beim Speichern der Konfiguration: unbekannte Zugriffsrecht-ID."
 
 #: system/Permissions/pnversion.php:13
 #: system/Permissions/pntemplates/permissions_admin_menu.htm:5
 #: themes/SeaBreeze/templates/modules/admin.htm:29
 msgid "Permission rules manager"
-msgstr "Zugriffsrechte verwalten"
+msgstr "Zugriffsrechte"
 
 #. !module name that appears in URL
 #: system/Permissions/pnversion.php:14
@@ -4805,19 +4811,17 @@ msgid "Provides an interface for fine-grained management of accessibility of the
 msgstr "Zugriffsrechte für Gruppen bearbeiten."
 
 #: system/Permissions/pnajax.php:144
-#, fuzzy
 msgid "Error! Could not create new permission rule."
-msgstr "Fehler! Das neue Benutzerkonto konnte nicht erstellt werden."
+msgstr "Fehler! Das neue Zugriffsrecht konnte nicht erstellt werden."
 
 #: system/Permissions/pnajax.php:180
-#, fuzzy
 msgid "Notice: You cannot delete the main administration permission rule."
-msgstr "Achtung: Die generische Admin-Berechtigung kann nicht gelöscht werden"
+msgstr "Hinweis: Die generische Admin-Berechtigung kann nicht gelöscht werden."
 
 #: system/Permissions/pnajax.php:191
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not delete permission rule with ID %s."
-msgstr "Fehler! Zugriffsrechte konnten nicht aktualisiert werden"
+msgstr "Fehler! Das Zugriffsrecht mit der ID %s konnte nicht gelöscht werden."
 
 #: system/Permissions/pnajax.php:217
 #: system/Permissions/pntemplates/permissions_admin_view.htm:189
@@ -4826,40 +4830,36 @@ msgstr "Ergebnis der Zugriffsprüfung:"
 
 #: system/Permissions/pnadminapi.php:50
 #: system/Permissions/pnadminapi.php:120
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Permission rule ID %s does not exist."
-msgstr "operation file: %s: does not exist"
+msgstr "Fehler! Das Zugriffsrecht mit der ID %s existiert nicht."
 
 #: system/Permissions/pnadminapi.php:65
 #: system/Permissions/pnadminapi.php:136
-#, fuzzy
 msgid "Error! Permission rule-swapping in partial view can only be done if both affected permission rules are visible. Please switch to full view."
-msgstr "Fehler! In der Teilansicht können nur sichtbare Zugriffsrechte beeinflusst werden. Bitte den Filter deaktivieren"
+msgstr "Fehler! In der Teilansicht können nur sichtbare Zugriffsrechte beeinflusst werden. Bitte den Filter deaktivieren."
 
 #: system/Permissions/pnadminapi.php:67
-#, fuzzy
 msgid "Error! No permission rule directly above that one."
-msgstr "Kein Zugriffsrecht direkt oberhalb dieser Berechtigung"
+msgstr "Fehler! Kein Zugriffsrecht direkt oberhalb dieser Berechtigung."
 
 #: system/Permissions/pnadminapi.php:138
-#, fuzzy
 msgid "Error! No permission rule directly below that one."
-msgstr "Kein Zugriffsrecht direkt unterhalb dieser Berechtigung"
+msgstr "Fehler! Kein Zugriffsrecht direkt unterhalb dieser Berechtigung."
 
 #: system/Permissions/pnadminapi.php:199
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not save group permission rule %s."
-msgstr "Fehler! Zugriffsrechte konnten nicht aktualisiert werden"
+msgstr "Fehler! Das Zugriffsrecht %s konnte nicht gespeichert werden."
 
 #: system/Permissions/pnadminapi.php:259
-#, fuzzy
 msgid "Error! Could not save permission rule sequences."
-msgstr "Fehler! Zugriffsrechte konnten nicht aktualisiert werden"
+msgstr "Fehler! Die Zugriffsrechte konnten nicht aktualisiert werden."
 
 #: system/Permissions/pnadminapi.php:307
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not delete group permission rule %s."
-msgstr "Fehler! Zugriffsrechte konnten nicht aktualisiert werden"
+msgstr "Fehler! Das Zugriffsrecht %s konnte nicht gelöscht werden."
 
 #: system/Permissions/pnadminapi.php:506
 #: system/Permissions/pntemplates/permissions_admin_view.htm:2
@@ -4878,11 +4878,11 @@ msgstr "Erledigt! Der Seitencache der Rendering Engine wurde gelöscht."
 #: system/pnRender/pnversion.php:13
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:5
 msgid "Rendering engine"
-msgstr "Rendering Engine"
+msgstr "Renderer"
 
 #: system/pnRender/pnblocks/pnRender.php:40
 msgid "Custom rendering engine block"
-msgstr "Individueller Rendering Engine Block"
+msgstr "Renderer-Block"
 
 #: system/pnRender/pnblocks/pnRender.php:65
 #: system/pnRender/pnblocks/pnRender.php:74
@@ -4896,11 +4896,11 @@ msgstr "Kein Modul."
 #. !module name that appears in URL
 #: system/pnRender/pnversion.php:14
 msgid "pnrender"
-msgstr "pnrender"
+msgstr "renderer"
 
 #: system/pnRender/pnversion.php:15
 msgid "Provides the core system with a Smarty-based engine to control content rendering and presentation."
-msgstr "Smarty Implementierung von Zikula"
+msgstr "Smarty-basierte Rendering-Engine (pnRender) zur Steuerung von Inhalt und Darstellung."
 
 #: system/pnRender/plugins/block.securityutil_checkpermission_block.php:41
 msgid "Error! In 'securityutil_checkpermission_block', an attribute component is required."
@@ -4974,9 +4974,9 @@ msgstr "Error! In 'checkgroup', an attribute component is required."
 
 #: system/pnRender/plugins/modifier.pndate_format.php:67
 #: system/pnRender/plugins/modifier.pndate_format.php:85
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not set locale: %s."
-msgstr "Fehler! Der Block konnte nicht aktiviert werden."
+msgstr "Error! Could not set locale: %s."
 
 #: system/pnRender/plugins/block.case.php:55
 msgid "smarty_block_case: case not inside a switch block"
@@ -4992,9 +4992,9 @@ msgstr "html_select_languages:  parameter [name] required"
 #: system/Categories/pnuserform.php:165
 #: system/Categories/pnuserform.php:201
 #: system/Categories/pnuserform.php:247
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not load module class '%1$s' for the %2$s module."
-msgstr "Fehler! Modul-Klasse [%1$s] kann nicht für Modul [%2$s] geladen werden."
+msgstr "Error! Could not load module class '%1$s' for the %2$s module."
 
 #: system/pnRender/plugins/modifier.onlineoffline.php:30
 #: system/Groups/pnuser.php:306
@@ -5152,22 +5152,20 @@ msgid "html_select_modulestylesheets: parameter [modname] required"
 msgstr "html_select_modulestylesheets: parameter [modname] required"
 
 #: system/Categories/pnadmin.php:92
-#, fuzzy
 msgid "Error! Cannot determine valid 'cid' for edit mode in 'Categories_admin_edit'."
-msgstr "Fehler! Es konnte keine gültige [cid] zur Bearbeitung in 'Categories_admin_edit' ermittelt werden"
+msgstr "Fehler! Es konnte keine gültige 'cid' zur Bearbeitung in 'Categories_admin_edit' ermittelt werden."
 
 #: system/Categories/pnuserapi.php:24
 #: system/Categories/pnuser.php:157
-#, fuzzy
 msgid "Error! Could not determine the user root node."
-msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden"
+msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden."
 
 #: system/Categories/pnuserapi.php:30
 #: system/Categories/pnuserapi.php:62
 #: system/Categories/pnuser.php:163
-#, fuzzy, php-format
+#, php-format
 msgid "Error! The user root node seems to point towards an invalid category: %s."
-msgstr "Fehler! Der Benutzerstammknoten scheint auf eine ungültige Kategorie zu verweisen [%s]"
+msgstr "Fehler! Der Benutzerstammknoten scheint auf eine ungültige Kategorie zu verweisen: %s."
 
 #: system/Categories/pnuserapi.php:34
 #: system/Categories/pnuser.php:64
@@ -5176,15 +5174,14 @@ msgid "Error! The root directory cannot be modified in 'user' mode"
 msgstr "Fehler! Das Stammverzeichnis kann nicht im Benutzermodus editiert werden"
 
 #: system/Categories/pnuser.php:61
-#, fuzzy
 msgid "Error! The URL contains an invalid 'document root' parameter."
-msgstr "Fehler! Ungültiger Parameter für Dokumentenstamm in der URL"
+msgstr "Error! The URL contains an invalid 'document root' parameter."
 
 #. ! %s represents the root path (id), passed in the url
 #: system/Categories/pnuser.php:93
-#, fuzzy, php-format
+#, php-format
 msgid "Error! It looks like you are trying to edit another user's categories. Only site administrators can do that (%s)."
-msgstr "Die Bearbeitung von fremden Benutzerkategorien ist nicht möglich. Diese Funktion kann nur vom Administrator durchgeführt werden.  (%s)"
+msgstr "Fehler! Die Bearbeitung von fremden Benutzerkategorien ist nicht möglich. Diese Funktion kann nur vom Administrator durchgeführt werden. (%s)"
 
 #. ! %1$s is the id, %2$s is the name
 #: system/Categories/pnuser.php:104
@@ -5194,37 +5191,33 @@ msgid "Notice: The administrator has locked the category '%2$s' (ID '%$1s'). You
 msgstr "Hinweis: Die Kategorie '%2$s' (ID '%$1s') ist gesperrt und kann nur vom Administrator bearbeitet oder gelöscht werden."
 
 #: system/Categories/pnuser.php:109
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Cannot access root directory (%s)."
-msgstr "Fehler! Auf das Stammverzeichnis (%s) konnte nicht zugegriffen werden"
+msgstr "Fehler! Auf das Stammverzeichnis (%s) konnte nicht zugegriffen werden."
 
 #: system/Categories/pnuser.php:112
-#, fuzzy, php-format
+#, php-format
 msgid "Error! The specified category is not a leaf-level category (%s)."
-msgstr "Fehler! Angegebene Kategorie ist keine übergeordnete Werte-Kategorie  (%s)"
+msgstr "Fehler! Angegebene Kategorie ist keine übergeordnete Werte-Kategorie  (%s)."
 
 #: system/Categories/pnuser.php:115
-#, fuzzy, php-format
+#, php-format
 msgid "Error! The specified category is not a child of the document root (%1$s; %2$s)."
-msgstr "Fehler! Die angegebene Kategorie ist keine Unterkategorie des Dokumentenstamms  (%1$s, %2$s)"
+msgstr "Fehler! Die angegebene Kategorie ist keine Unterkategorie des Dokumentenstamms  (%1$s, %2$s)."
 
 #: system/Categories/pnuser.php:147
-#, fuzzy
 msgid "Error! Editing mode for user-owned categories is only available to users who have logged-in."
-msgstr "Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich"
+msgstr "Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich."
 
 #: system/Categories/pnuser.php:152
-#, fuzzy
 msgid "Error! User-owned category editing has not been enabled. This feature can be enabled by the site administrator."
-msgstr "Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
+msgstr "Fehler! Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
 
 #: system/Categories/pnuser.php:172
-#, fuzzy
 msgid "Error! Cannot determine user category root node name."
 msgstr "Fehler! Der Name des Benutzerstammknoten konnte nicht ermittelt werden."
 
 #: system/Categories/pnuser.php:182
-#, fuzzy
 msgid "Error! The user root category node for this user does not exist, and the automatic creation flag (autocreate) has not been set."
 msgstr "Fehler! Der Benutzerstammknoten für diesen Benutzer existiert nicht und das automatische Erstellung ist nicht gesetzt."
 
@@ -5245,7 +5238,7 @@ msgstr "Standard"
 #: system/Categories/pnaccountapi.php:30
 #: system/Categories/pntemplates/categories_admin_menu.htm:4
 msgid "Categories manager"
-msgstr "Kategorien verwalten"
+msgstr "Kategorienverwaltung"
 
 #. !module name that appears in URL
 #: system/Categories/pnversion.php:16
@@ -5257,39 +5250,32 @@ msgid "Provides support for categorisation of content in other modules, and an i
 msgstr "Verwaltung der modulübergreifenden Kategorien."
 
 #: system/Categories/classes/PNCategory.class.php:40
-#, fuzzy
 msgid "Error! You did not enter a name."
-msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden"
+msgstr "Fehler! Es wurde kein Namen angegeben."
 
 #: system/Categories/classes/PNCategory.class.php:72
-#, fuzzy
 msgid "Error! The localised name has not been defined."
-msgstr "Lokalisierter Name nicht definiert"
+msgstr "Fehler! Der lokalisierte Name ist nicht definiert."
 
 #: system/Categories/classes/PNCategoryRegistry.class.php:31
-#, fuzzy
 msgid "Error! You did not select a module."
-msgstr "Fehler! Es muss eine Modul-Tabelle ausgewählt werden."
+msgstr "Fehler! Es muss ein Modul ausgewählt werden."
 
 #: system/Categories/classes/PNCategoryRegistry.class.php:32
-#, fuzzy
 msgid "Error! You did not select a module table."
-msgstr "Fehler! Es muss eine Modul-Tabelle ausgewählt werden."
+msgstr "Fehler! Es muss eine Modultabelle ausgewählt werden."
 
 #: system/Categories/classes/PNCategoryRegistry.class.php:33
-#, fuzzy
 msgid "Error! You did not enter a property name."
-msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden"
+msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden."
 
 #: system/Categories/classes/PNCategoryRegistry.class.php:34
-#, fuzzy
 msgid "Error! You did not select a category."
 msgstr "Fehler! Es muss eine Kategorie ausgewählt werden."
 
 #: system/Categories/classes/PNCategoryRegistry.class.php:56
-#, fuzzy
 msgid "Error! There is already a property with this name in the specified module and table."
-msgstr "Fehler! Der Name der Eigenschaft existiert bereits für das angegebene Modul"
+msgstr "Fehler! Der Name der Eigenschaft existiert bereits für das angegebene Modul."
 
 #: system/Categories/pnadminform.php:86
 #: system/Categories/pnuserform.php:128
@@ -5323,19 +5309,16 @@ msgid "Done! Rebuilt the category paths."
 msgstr "Erledigt! Der Kategoriepfad wurde erfolgreich neu erstellt."
 
 #: system/Categories/pnadminform.php:252
-#, fuzzy
 msgid "Error! Cannot load 'category_registry' class."
-msgstr "Fehler! Die Klasse [category_registry] konnte nicht geladen werden"
+msgstr "Error! Cannot load 'category_registry' class."
 
 #: system/Categories/pnadminform.php:260
-#, fuzzy
 msgid "Done! Deleted the category registry entry."
-msgstr "Die Kategoriezuweisung wurde erfolgreich gelöscht"
+msgstr "Erledigt! Die Kategoriezuweisung wurde gelöscht."
 
 #: system/Categories/pnadminform.php:281
-#, fuzzy
 msgid "Done! Saved the category registry entry."
-msgstr "Die Kategoriezuweisung wurde erfolgreich gespeichert"
+msgstr "Erledigt! Die Kategoriezuweisung wurde gespeichert."
 
 #: system/Categories/pnadminapi.php:24
 #: system/Categories/pntemplates/categories_admin_view.htm:2
@@ -5346,7 +5329,7 @@ msgstr "Kategorienliste"
 #: system/Categories/pntemplates/categories_admin_edit.htm:11
 #: system/Categories/pntemplates/categories_user_edit.htm:6
 msgid "Create new category"
-msgstr "Modulkategorie anlegen"
+msgstr "Kategorie anlegen"
 
 #: system/Categories/pnadminapi.php:30
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:2
@@ -5364,26 +5347,23 @@ msgstr "Pfade neu erstellen"
 #: system/Categories/pnuserform.php:148
 #: system/Categories/pnuserform.php:197
 #: system/Categories/pnuserform.php:235
-#, fuzzy
 msgid "Error! The document root is invalid."
-msgstr "Fehler! Ungültiger Parameter für Dokumentenstamm in der URL"
+msgstr "Fehler! Der 'Document Root' ist ungültig."
 
 #: system/Categories/pnuserform.php:32
 #: system/Categories/pnuserform.php:152
-#, fuzzy
 msgid "Error! The category ID is invalid."
-msgstr "Fehler! Eine ungültige Kategorie-ID wurde empfangen"
+msgstr "Fehler! Ungültige Kategorie-ID."
 
 #: system/Categories/pnuserform.php:44
 #: system/Categories/pnuserform.php:92
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Cannot retrieve category with ID %s."
-msgstr "Fehler! Kategorie mit der ID [%s] konnte nicht ermitteln werden"
+msgstr "Fehler! Eine Kategorie mit der ID %s konnte nicht ermittelt werden."
 
 #: system/Categories/pnuserform.php:156
-#, fuzzy
 msgid "Error! An invalid direction was received."
-msgstr "Fehler! Es wurde eine ungültige 'Direction' empfangen"
+msgstr "Fehler! Es wurde eine ungültige 'Direction' empfangen."
 
 #: system/Categories/pninit.php:100
 msgid "Modules"
@@ -5398,9 +5378,8 @@ msgid "Yes/No"
 msgstr "Ja/Nein"
 
 #: system/Categories/pninit.php:143
-#, fuzzy
 msgid "Publication status (extended)"
-msgstr "Veröffentlichungsstatus (einfach)"
+msgstr "Veröffentlichungsstatus (erweitert)"
 
 #: system/Categories/pninit.php:154
 #: system/Categories/pninit.php:361
@@ -5454,21 +5433,19 @@ msgstr "Titel"
 
 #: system/Categories/pninit.php:260
 msgid "Mr."
-msgstr "Herr"
+msgstr "Mr."
 
-# herr.vorragend: Mir ist bekannt, dass die Übersetzung nicht richtig ist.
 #: system/Categories/pninit.php:271
 msgid "Mrs."
-msgstr "Herren"
+msgstr "Mrs."
 
 #: system/Categories/pninit.php:282
 msgid "Ms."
-msgstr "Frau"
+msgstr "Ms."
 
-# herr.vorragend: Mir ist bekannt, dass die Übersetzung nicht richtig ist.
 #: system/Categories/pninit.php:293
 msgid "Miss"
-msgstr "Eheleute"
+msgstr "Miss"
 
 #: system/Categories/pninit.php:304
 msgid "Dr."
@@ -5531,34 +5508,29 @@ msgid "Error! Either you entered an invalid entry point, or else the file specif
 msgstr "Fehler! Ungültiger Seiteneinstieg oder Datei existiert nicht im Zikula-Rootverzeichnis"
 
 #: system/Settings/pnadmin.php:104
-#, fuzzy
 msgid "Error! In your permalink settings, strings cannot be terminated with a comma."
-msgstr "Fehler bei den Permalinkeinstellungen: Die Zeichenkette darf nicht mit einem Komma enden."
+msgstr "Fehler! Die Zeichenkette bei den Permalinkeinstellungen darf nicht mit einem Komma enden."
 
 #: system/Settings/pnadmin.php:121
-#, fuzzy
 msgid "Error! In your permalink settings, the search list and the replacement list for permalink cleansing have a different number of comma-separated elements. If you have 3 elements in the search list then there must be 3 elements in the replacement list."
-msgstr "Fehler bei den Permalinkeinstellungen: Die Suche- und Ersetzenlisten haben eine unterschiedliche Anzahl an Elementen. Wenn drei Elemente in der Suchliste eingetragen wurden, so müssen auch drei Elemente in der Ersetzenliste vorhanden sein."
+msgstr "Fehler! Fehler bei den Permalinkeinstellungen: Die Suche- und Ersetzenlisten haben eine unterschiedliche Anzahl an Elementen. Wenn drei Elemente in der Suchliste eingetragen wurden, so müssen auch drei Elemente in der Ersetzenliste vorhanden sein."
 
 #: system/Settings/pnadmin.php:213
-#, fuzzy
 msgid "Notice: Language detection is automatically disabled when multi-lingual features are disabled."
-msgstr "Die Spracherkennung wurde automatisch deaktiviert, da die \"Multilingual\" deaktiviert wurde."
+msgstr "Hinweis: Die Spracherkennung wurde automatisch deaktiviert, da die Multilingualität deaktiviert wurde."
 
 #: system/Settings/pnadmin.php:224
-#, fuzzy
 msgid "Warning! The system language has been changed because language variations have been disabled."
-msgstr "Da die Sprachvariationen deaktiviert wurden, hat sich ebenfalls die Sprache des Systems verändert."
+msgstr "Warnung! Da die Sprachvariationen deaktiviert wurden, hat sich ebenfalls die Sprache des Systems verändert."
 
 #: system/Settings/pnadmin.php:248
-#, fuzzy
 msgid "Done! Saved localisation settings."
-msgstr "Erledigt! Die Profil-Information wurden erfolgreich gespeichert."
+msgstr "Erledigt! Die Multilingualeinstellungen wurden gespeichert."
 
 #: system/Settings/pnversion.php:14
 #: system/Settings/pntemplates/settings_admin_menu.htm:4
 msgid "General settings manager"
-msgstr "Allgemeine Konfiguration"
+msgstr "Hauptkonfiguration"
 
 #. !module name that appears in URL
 #: system/Settings/pnversion.php:15
@@ -5577,7 +5549,7 @@ msgstr "Allgemein"
 #: system/Settings/pnadminapi.php:29
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:6
 msgid "Localisation settings"
-msgstr "Multilingual"
+msgstr "Multilingualität"
 
 #: system/Settings/pnadminapi.php:30
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:5
@@ -5783,19 +5755,16 @@ msgid "Done! Category deleted."
 msgstr "Erledigt! Die Kategorie wurde gelöscht."
 
 #: system/Admin/pnadmin.php:463
-#, fuzzy
 msgid "Error! You must enter a number for the 'Modules per row' setting."
-msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden"
+msgstr "Fehler! Es muss eine Zahl bei 'Module pro Reihe' eingegeben werden."
 
 #: system/Admin/pnadmin.php:475
-#, fuzzy
 msgid "Error! You must enter a number for the 'Modules per page' setting."
-msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden"
+msgstr "Fehler! Es muss eine Zahl bei 'Module pro Seite' eingegeben werden."
 
 #: system/Admin/pnadmin.php:520
-#, fuzzy
 msgid "Error! Could not add module to module category."
-msgstr "Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
+msgstr "Fehler! Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
 
 #: system/Admin/pnblocks/adminnav.php:30
 msgid "Administration panel manager"
@@ -5803,17 +5772,17 @@ msgstr "Admin-Panel Block"
 
 #: system/Admin/pnblocks/adminnav.php:31
 msgid "Display administration categories and modules"
-msgstr "Adminkategorien und Modul anzeigen"
+msgstr "Adminkategorien"
 
 #: system/Admin/pnversion.php:14
 #: system/Admin/pntemplates/admin_admin_menu.htm:4
 msgid "Admin panel manager"
-msgstr "Admin-Panel verwalten"
+msgstr "Admin-Panel"
 
 #. !module name that appears in URL
 #: system/Admin/pnversion.php:15
 msgid "adminpanel"
-msgstr "adminpanel"
+msgstr "admin"
 
 #: system/Admin/pnversion.php:16
 msgid "Provides the site's administration panel, and the ability to configure and manage it."
@@ -5881,7 +5850,7 @@ msgstr "Hook-Module können verschiedenen Modulen neue Funktionalitäten hinzuf�
 
 #: system/PageLock/pnversion.php:13
 msgid "Page lock manager"
-msgstr "Seitensperre verwalten"
+msgstr "Pagelock"
 
 #. !module name that appears in URL
 #: system/PageLock/pnversion.php:14
@@ -5903,7 +5872,7 @@ msgstr "Fehler! Auf dieses Modul kann nicht direkt zugegriffen werden."
 
 #: system/Header_Footer/pnversion.php:15
 msgid "Header and footer handler"
-msgstr "Header- und Footer Handler"
+msgstr "Header- und Footer"
 
 #. !module name that appears in URL
 #: system/Header_Footer/pnversion.php:16
@@ -5982,11 +5951,11 @@ msgstr "Nachrichten"
 
 #: system/Admin_Messages/pnblocks/messages.php:35
 msgid "Display administrator messages"
-msgstr "Anzeige von Nachrichten des Administrators"
+msgstr "Adminnachrichten"
 
 #: system/Admin_Messages/pnversion.php:14
 msgid "Admin messages manager"
-msgstr "Adminnachrichten verwalten"
+msgstr "Adminnachrichten"
 
 #. !module name that appears in URL
 #: system/Admin_Messages/pnversion.php:15
@@ -5995,12 +5964,12 @@ msgstr "adminnachrichten"
 
 #: system/Admin_Messages/pnversion.php:16
 msgid "Provides a means of publishing, editing and scheduling special announcements from the site administrator."
-msgstr "Header- und Footerbereiche für ältere oder Nicht-Xanthia-Themes."
+msgstr "Automatisierte und termingesteuerte Anzeige von Administrator-Nachrichten."
 
 #: system/Admin_Messages/pnadminapi.php:193
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:2
 msgid "Messages list"
-msgstr "Adminnachrichten"
+msgstr "Adminnachrichten anzeigen"
 
 #: system/Admin_Messages/pnadminapi.php:196
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:2
@@ -6017,7 +5986,7 @@ msgstr "<p><a href=\"http://zikula.de\">Zikula</a> ist ein unter GPL lizenzierte
 
 #: system/Workflow/pnversion.php:14
 msgid "Workflow manager"
-msgstr "Workflow verwalten"
+msgstr "Workflow"
 
 #: system/Workflow/pnversion.php:15
 msgid "Provides a workflow engine, and an interface for designing and administering workflows comprised of actions and events."
@@ -6034,9 +6003,8 @@ msgstr "workflow"
 #: system/Modules/pnadmin.php:834
 #: system/Modules/pnadminapi.php:1244
 #: system/Modules/pnadminapi.php:1297
-#, fuzzy
 msgid "Error! No such module ID exists."
-msgstr "Fehler! Das entsprechende Modul konnte nicht gefunden werden."
+msgstr "Fehler! Es konnte keine entsprechende Modul-ID gefunden werden."
 
 #: system/Modules/pnadmin.php:106
 #: system/Modules/pnadmin.php:132
@@ -6147,7 +6115,7 @@ msgstr "Erledigt! Das Modul wurde deinstalliert."
 
 #: system/Modules/pnadmin.php:745
 msgid "Done! Regenerated modules list from file system."
-msgstr "Erledigt! Die Modulliste wurde mit Dateisystem abgeglichen."
+msgstr "Erledigt! Die Modulliste wurde mit dem Dateisystem abgeglichen."
 
 #: system/Modules/pnadmin.php:909
 msgid "Warning! The 'Items per page' setting must be a positive integer. The value you entered was corrected."
@@ -6352,9 +6320,8 @@ msgstr "Gruppenmitgliedschaft"
 
 #: system/Groups/pnadmin.php:216
 #: system/Groups/pnadminapi.php:144
-#, fuzzy
 msgid "Error! There is already a group with that name."
-msgstr "Fehler! Es existiert bereits eine Blockposition mit dem Namen."
+msgstr "Fehler! Es existiert bereits eine Gruppe mit diesem Namen."
 
 #: system/Groups/pnadmin.php:228
 msgid "Done! Created the group."
@@ -6362,20 +6329,17 @@ msgstr "Erledigt! Die Gruppe wurde erfolgreich angelegt."
 
 #: system/Groups/pnadmin.php:261
 #: system/Groups/pnadmin.php:372
-#, fuzzy
 msgid "Sorry! No such group found."
-msgstr "Entschuldigung! Die entsprechende Block konnte nicht gefunden werden."
+msgstr "Entschuldigung! Es konnte keine entsprechende Gruppe gefunden werden."
 
 #: system/Groups/pnadmin.php:332
-#, fuzzy
 msgid "Done! Saved group changes."
-msgstr "Erledigt! Die Änderungen wurden erfolgreich gespeichert."
+msgstr "Erledigt! Die Änderungen der Gruppe wurden erfolgreich gespeichert."
 
 #: system/Groups/pnadmin.php:384
 #: system/Groups/pnajax.php:181
-#, fuzzy
 msgid "Error! You cannot delete the default user group."
-msgstr "Die Standard Modulkategorie des Admin-Panels kann nicht gelöscht werden."
+msgstr "Fehler! Die Standardgruppe für Benutzer kann nicht gelöscht werden."
 
 #: system/Groups/pnadmin.php:415
 msgid "Done! Deleted the group."
@@ -6417,56 +6381,48 @@ msgid "E-mail"
 msgstr "E-Mail"
 
 #: system/Groups/pnadmin.php:698
-#, fuzzy, php-format
+#, php-format
 msgid "Concerning your %s group membership application"
-msgstr "Die Anfrage auf Mitgliedschaft in die Gruppe %s wurde leider abgelehnt"
+msgstr "Anfrage auf Mitgliedschaft in die Gruppe %s"
 
 #: system/Groups/pnadmin.php:702
 #: system/Groups/pntemplates/groups_admin_userpending.htm:31
-#, fuzzy
 msgid "Sorry! This is a message to inform you with regret that your application for membership of the aforementioned private group has been rejected."
-msgstr "Leider wurde die Anfrage auf Mitgliedschaft in die private Gruppe abgelehnt."
+msgstr "Entschuldigung! Leider wurde die Anfrage auf Mitgliedschaft in die private Gruppe abgelehnt."
 
 #: system/Groups/pnadmin.php:707
-#, fuzzy, php-format
+#, php-format
 msgid "Done! The user has been added to the %s group."
-msgstr "Erledigt! %1$c Mail wurde an %2$c Benutzer verschickt"
+msgstr "Erledigt! Der Benutzer wurde zur Gruppe %s hinzugefügt."
 
 #: system/Groups/pnadmin.php:711
-#, fuzzy
 msgid "Done! Your application has been accepted. You have been granted all the privileges assigned to the group of which you are now member."
-msgstr "Die Anfrage für die Gruppe wurde akzeptiert und die entsprechenden Rechte sind zugewiesen."
+msgstr "Erledigt! Die Anfrage für die Gruppe wurde akzeptiert und die entsprechenden Rechte sind zugewiesen."
 
 #: system/Groups/pnadmin.php:726
-#, fuzzy
 msgid "Error! Could not execute 'Reject' action."
-msgstr "Fehler! Modulkonfiguration konnte nicht aktualisiert werden."
+msgstr "Fehler! Die Aktion 'Ablehnen' konnte nicht ausgeführt werden."
 
 #: system/Groups/pnadmin.php:728
-#, fuzzy
 msgid "Error! Could not execute 'Accept' action."
-msgstr "Fehler! Modulkonfiguration konnte nicht aktualisiert werden."
+msgstr "Fehler! Die Aktion 'Akzeptieren' konnte nicht ausgeführt werden."
 
 #: system/Groups/pnadmin.php:736
-#, fuzzy
 msgid "Done! The user's application for group membership has been rejected."
-msgstr "Die Anfrage auf Mitgliedschaft in die Gruppe %s wurde leider abgelehnt"
+msgstr "Erledigt! Die Anfrage auf Mitgliedschaft in die Gruppe %s wurde abgelehnt."
 
 #: system/Groups/pnadmin.php:807
-#, fuzzy
 msgid "Error! Could not save the module configuration."
-msgstr "Fehler! Modulkonfiguration konnte nicht aktualisiert werden."
+msgstr "Fehler! Die Modulkonfiguration konnte nicht gespeichert werden."
 
 #: system/Groups/pnuserapi.php:348
-#, fuzzy
 msgid "Error! You have already applied for membership of this group."
-msgstr "Es besteht bereits eine Mitgliedschaft in dieser Gruppe"
+msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
 
 #: system/Groups/pnuserapi.php:443
 #: system/Groups/pnuser.php:141
-#, fuzzy
 msgid "Error! You must register for a user account on this site before you can apply for membership of a group."
-msgstr "Entschuldigung! Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website erstellt werden."
+msgstr "Entschuldigung! Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website eingerichtet werden."
 
 #: system/Groups/pnuserapi.php:468
 #: themes/rss/templates/master.htm:14
@@ -6475,7 +6431,6 @@ msgid "Administrator"
 msgstr "Administrator"
 
 #: system/Groups/pnuserapi.php:470
-#, fuzzy
 msgid "Group membership application registered"
 msgstr "Neue Anfrage auf Mitgliedschaft in einer Gruppe"
 
@@ -6485,51 +6440,42 @@ msgid "The registered user %1$s has applied for membership of a group. The detai
 msgstr "Der Benutzer %1$s bittet um Mitgliedschaft in einer Gruppe. Folgende Details wurde der Anfrage hinzugefügt: %2$s"
 
 #: system/Groups/pnuserapi.php:481
-#, fuzzy
 msgid "Error! Could not add the user to the group."
-msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden"
+msgstr "Fehler! Der Benutzer konnte nicht zur Gruppe hinzugefügt werden."
 
 #: system/Groups/pnuserapi.php:492
 #: system/Groups/pnuserapi.php:502
-#, fuzzy
 msgid "Error! Could not remove the user from the group."
-msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden"
+msgstr "Fehler! Der Benutzer konnte nicht aus der Gruppe entfernt werden."
 
 #: system/Groups/pnuserapi.php:547
 #: system/Groups/pnuser.php:158
-#, fuzzy
 msgid "Error! You are already a member of this group."
-msgstr "Es besteht bereits eine Mitgliedschaft in dieser Gruppe"
+msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
 
 #: system/Groups/pnuser.php:150
-#, fuzzy
 msgid "Error! That group does not exist."
-msgstr "Diese Gruppe existiert nicht"
+msgstr "Fehler! Diese Gruppe existiert nicht."
 
 #: system/Groups/pnuser.php:162
-#, fuzzy
 msgid "Sorry! You cannot apply for membership of that group."
-msgstr "Für diese Gruppe kann keine Mitgliedschaft angefragt werden"
+msgstr "Entschuldigung! Für diese Gruppe kann keine Mitgliedschaft beantragt werden."
 
 #: system/Groups/pnuser.php:167
-#, fuzzy
 msgid "Sorry! That group has reached full membership."
 msgstr "Entschuldigung! Alle Mitgliedschaften in dieser Gruppe sind bereits vergeben."
 
 #: system/Groups/pnuser.php:172
-#, fuzzy
 msgid "Sorry! That group is closed."
-msgstr "Diese Gruppe ist geschlossen"
+msgstr "Entschuldigung! Diese Gruppe ist geschlossen."
 
 #: system/Groups/pnuser.php:213
-#, fuzzy
 msgid "Error! You must click on the checkbox to confirm your action."
-msgstr "Zum Fortfahren muss die Checkbox aktiviert sein"
+msgstr "Fehler! Zum Fortfahren muss die Checkbox aktiviert sein."
 
 #: system/Groups/pnuser.php:227
-#, fuzzy
 msgid "Done! Saved the action."
-msgstr "Erledigt! Die Blöcke wurden erfolgreich gespeichert."
+msgstr "Erledigt! Aktion gespeichert."
 
 #: system/Groups/pnversion.php:14
 #: system/Groups/pnaccountapi.php:31
@@ -6538,7 +6484,7 @@ msgstr "Erledigt! Die Blöcke wurden erfolgreich gespeichert."
 #: system/Groups/pntemplates/groups_admin_menu.htm:5
 #: themes/SeaBreeze/templates/modules/admin.htm:28
 msgid "Groups manager"
-msgstr "Gruppen verwalten"
+msgstr "Gruppenverwaltung"
 
 #. !module name that appears in URL
 #: system/Groups/pnversion.php:15
@@ -6546,19 +6492,16 @@ msgid "groupsmanager"
 msgstr "gruppen"
 
 #: system/Groups/pnversion.php:16
-#, fuzzy
 msgid "Provides support for user groups, and incorporates an interface for adding, removing and administering them."
-msgstr "Verwaltung der modulübergreifenden Kategorien"
+msgstr "Benutzergruppen hinzufügen, löschen und verwalten."
 
 #: system/Groups/pnajax.php:49
-#, fuzzy
 msgid "Error! The group name is missing."
-msgstr "Fehler! Kennworteingabe fehlt"
+msgstr "Fehler! Der Name der Gruppe fehlt."
 
 #: system/Groups/pnajax.php:137
-#, fuzzy
 msgid "Error! Could not create the new group."
-msgstr "Fehler! Das neue Ephemerid konnte nicht erstellt werden."
+msgstr "Fehler! Die neue Gruppe konnte nicht angelegt werden."
 
 #: system/Groups/pnajax.php:141
 #, php-format
@@ -6566,30 +6509,28 @@ msgid "Group %s"
 msgstr "Gruppe %s"
 
 #: system/Groups/pnajax.php:188
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not delete the '%s' group."
-msgstr "Fehler! Das Ephemerid konnte nicht gelöscht werden."
+msgstr "Fehler! Die Gruppe '%s' konnte nicht gelöscht werden."
 
 #: system/Groups/pnadminapi.php:422
-#, fuzzy
 msgid "Error! Could not send the private message to the user."
-msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden"
+msgstr "Fehler! Die persönliche Nachricht an den Benutzer konnte nicht übermittelt werden."
 
 #: system/Groups/pnadminapi.php:467
 #: system/Groups/pntemplates/groups_admin_view.htm:3
 msgid "Groups list"
-msgstr "Gruppen"
+msgstr "Gruppenliste"
 
 #: system/Groups/pnadminapi.php:470
 #: system/Groups/pntemplates/groups_admin_new.htm:2
 #: system/Groups/pntemplates/groups_admin_view.htm:10
 msgid "Create new group"
-msgstr "Neue Gruppe hinzufügen"
+msgstr "Gruppe hinzufügen"
 
 #: system/Groups/pninit.php:118
-#, fuzzy
 msgid "By default, all users are made members of this group."
-msgstr "Es besteht bereits eine Mitgliedschaft in dieser Gruppe"
+msgstr "Standardgruppe für Benutzer"
 
 #: system/Groups/pninit.php:119
 msgid "usr"
@@ -6600,9 +6541,8 @@ msgid "Administrators"
 msgstr "Administratoren"
 
 #: system/Groups/pninit.php:121
-#, fuzzy
 msgid "By default, all administrators are made members of this group."
-msgstr "Es besteht bereits eine Mitgliedschaft in dieser Gruppe"
+msgstr "Standardgruppe für Administratoren"
 
 #: system/Groups/pninit.php:122
 msgid "adm"
@@ -6615,9 +6555,8 @@ msgid "Done! Deleted it."
 msgstr "Erledigt! Erfolgreich gelöscht."
 
 #: system/SecurityCenter/pnadmin.php:141
-#, fuzzy
 msgid "Browser information list"
-msgstr "Liste der Modulkategorien"
+msgstr "Browserinformationen"
 
 #: system/SecurityCenter/pnadmin.php:143
 msgid "View 'request' array"
@@ -6679,7 +6618,7 @@ msgid "Error! Received a non-numeric object ID '%s'."
 msgstr "Error! Received a non-numeric object ID '%s'."
 
 #: system/SecurityCenter/pnadminform.php:41
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not load the '%s' class."
 msgstr "Fehler! Klasse '%s' kann nicht geladen werden."
 
@@ -6700,7 +6639,7 @@ msgstr "HTML Einstellungen"
 
 #: system/pnForm/pnversion.php:15
 msgid "Forms manager"
-msgstr "Formulare verwalten"
+msgstr "pnForm"
 
 #. !module name that appears in URL
 #: system/pnForm/pnversion.php:16
@@ -6712,9 +6651,8 @@ msgid "Provides a framework for standardised presentation of the site's forms."
 msgstr "Web-Formular-Framework für Entwickler."
 
 #: system/pnForm/plugins/function.pnformfloatinput.php:66
-#, fuzzy
 msgid "Error! Invalid number."
-msgstr "Error! Received invalid specifications '%s', '%s'."
+msgstr "Fehler! Ungültige Nummer."
 
 #: system/pnForm/plugins/function.pnformfloatinput.php:79
 #: system/pnForm/plugins/function.pnformintinput.php:74
@@ -6816,25 +6754,25 @@ msgstr "Keine Gruppen"
 
 #: system/legal/pnuser.php:47
 msgid "'Terms of use' not activated."
-msgstr "Die 'Nutzungsbedingungen' sind nicht aktiviert."
+msgstr "Die Nutzungsbedingungen sind nicht aktiviert."
 
 #: system/legal/pnuser.php:87
 msgid "'Privacy policy' not activated."
-msgstr "Die 'Hinweise zum Datenschutz' sind nicht aktiviert."
+msgstr "Die Hinweise zum Datenschutz sind nicht aktiviert."
 
 #: system/legal/pnuser.php:126
 msgid "'Accessibility statement' not activated."
-msgstr "Die 'Hinweise zur Barrierefreiheit' sind nicht aktiviert."
+msgstr "Die Hinweise zur Barrierefreiheit sind nicht aktiviert."
 
 #: system/legal/pnversion.php:15
 #: system/legal/pntemplates/legal_admin_menu.htm:4
 msgid "Legal info manager"
-msgstr "Gesetzliche Informationen"
+msgstr "Rechtliches"
 
 #. !module name that appears in URL
 #: system/legal/pnversion.php:16
 msgid "legalmod"
-msgstr "gesetzliches"
+msgstr "rechtliches"
 
 #: system/legal/pnversion.php:17
 msgid "Provides an interface for managing the site's 'Terms of use', 'Privacy statement' and 'Accessibility statement'."
@@ -6857,7 +6795,7 @@ msgstr "Erklärung zur Barrierefreiheit"
 
 #: system/ObjectData/pnversion.php:15
 msgid "Object data manager"
-msgstr "Object Data Verwaltung"
+msgstr "ObjectData"
 
 #. !module name that appears in URL
 #: system/ObjectData/pnversion.php:16
@@ -6869,15 +6807,13 @@ msgid "Provides a framework for implementing and managing object-model data item
 msgstr "Framework für Objektmodell-Daten."
 
 #: system/ObjectData/pninit.php:57
-#, fuzzy
 msgid "Error! Could not save the attributes table."
-msgstr "Fehler! Änderungen konnte nicht gespeichert werden."
+msgstr "Fehler! Die Attributtabelle konnte nicht gespeichert werden."
 
 #: system/SysInfo/pnadmin.php:54
 #: system/SysInfo/pnadmin.php:55
-#, fuzzy
 msgid "Zikula can operate with a database of the associated type if this extension is loaded."
-msgstr "Zikula kann mit dieser Datenbank verwendet werden, wenn diese Erweiterung geladen ist"
+msgstr "Zikula kann mit dieser Datenbank verwendet werden, wenn diese Erweiterung geladen ist."
 
 #: system/SysInfo/pnadmin.php:56
 msgid "The <a href=\"http://adodb.sourceforge.net/#extension\">ADOdb-ext extension</a> can considerably boost a site's performance, by replacing parts of ADODB with C code."
@@ -6990,7 +6926,7 @@ msgstr "Nutzung sonstiger Benutzerauthentifizierungssysteme, insbesondere LDAP o
 #: system/Theme/pntemplates/theme_admin_menu.htm:4
 #: themes/SeaBreeze/templates/modules/admin.htm:30
 msgid "Themes manager"
-msgstr "Themes verwalten"
+msgstr "Themeverwaltung"
 
 #: system/Theme/pnadmin.php:70
 #, php-format
@@ -7013,68 +6949,57 @@ msgid "Notice: Please make sure you type an entry in every field. Your palette c
 msgstr "Hinweis: Bitte stellen Sie sicher, dass alle einzelnen Felder gefüllt sind. Ansonsten kann die Farbpalette nicht gespeichert werden."
 
 #: system/Theme/pnadmin.php:696
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Removed unknown '%1$s': '%2$s'."
-msgstr "Unbekannter Mailfehler"
+msgstr "Fehler! Unbekannter '%1$s': '%2$s' entfernt."
 
 #: system/Theme/pnadmin.php:747
-#, fuzzy
 msgid "Error! No such page configuration assignment found."
-msgstr "Keine entsprechende Seitenkonfigurationszuordnung gefunden."
+msgstr "Fehler! Keine entsprechende Seitenkonfigurationszuordnung gefunden."
 
 #: system/Theme/pnadmin.php:890
-#, fuzzy
 msgid "Sorry! Invalid authorization key ('authkey'). This is probably either because you pressed the 'Back' button to return to a page which does not allow that, or else because the page's authorization key expired due to prolonged inactivity. Please try again."
 msgstr "Entschuldigung! Ungültiger Authentifizierungsschlüssel ('AuthKey)': Das könnte daran liegen, dass der 'Zurück' Button im Browser benutzt wurde oder der 'AuthKey' abgelaufen ist. Bitte die Seite neu laden und es erneut versuchen."
 
 #: system/Theme/pnadmin.php:963
-#, fuzzy
 msgid "Done! Regenerated themes list."
-msgstr "Die Modulliste wurde mit Dateisystem abgeglichen."
+msgstr "Erledigt! Die Themeliste wurde mit dem Dateisystem abgeglichen."
 
 #: system/Theme/pnadmin.php:1015
-#, fuzzy
 msgid "Done! Changed default theme."
-msgstr "individuelle Benutzer-Themes überschreiben"
+msgstr "Erledigt! Das Standardtheme wurde geändert."
 
 #: system/Theme/pnadmin.php:1036
 msgid "Notice: Permissions for the theme directory must be set so that it can be written to."
 msgstr "Hinweis: Es müssen Schreibrechte auf das Themeverzeichnis vorhanden sein."
 
 #: system/Theme/pnadmin.php:1041
-#, fuzzy
 msgid "Error! This theme cannot be upgraded because it is not a Xanthia 2 theme."
-msgstr "Das Theme konnte nicht aktualisiert werden, da es kein Xanthia2-Theme ist."
+msgstr "Fehler! Das Theme konnte nicht aktualisiert werden, da es kein Xanthia2-Theme ist."
 
 #: system/Theme/pnadmin.php:1047
-#, fuzzy
 msgid "Error! Could not create theme configuration directory."
-msgstr "Fehler bei der Erstellung des Verzeichnisses für die Themekonfiguration"
+msgstr "Fehler! Bei der Erstellung des Verzeichnisses für die Themekonfiguration ist ein Fehler aufgetreten."
 
 #: system/Theme/pnadmin.php:1096
-#, fuzzy
 msgid "Done! Upgraded theme."
-msgstr "Das Standard Theme wurde geändert"
+msgstr "Erledigt! Das Theme wurde aktualisiert."
 
 #: system/Theme/pnadmin.php:1121
-#, fuzzy
 msgid "Done! Deleted theme engine compiled templates."
-msgstr "Erledigt! Die kompilierten Templates der Rendering Engine wurde gelöscht."
+msgstr "Erledigt! Die kompilierten Templates der Theme Engine wurden gelöscht."
 
 #: system/Theme/pnadmin.php:1145
-#, fuzzy
 msgid "Done! Deleted theme engine cached templates."
-msgstr "Erledigt! Die kompilierten Templates der Rendering Engine wurde gelöscht."
+msgstr "Erledigt! Die kompilierten Templates der Rendering Engine wurden gelöscht."
 
 #: system/Theme/pnadmin.php:1166
-#, fuzzy
 msgid "Sorry! No such theme found."
-msgstr "Entschuldigung! Die entsprechende Block konnte nicht gefunden werden."
+msgstr "Entschuldigung! Es konnte kein entsprechendes Theme gefunden werden."
 
 #: system/Theme/pnadmin.php:1351
-#, fuzzy
 msgid "Done! Deleted combination cache files."
-msgstr "Combine-Cache löschen"
+msgstr "Erledigt! Der Combination-Cache wurde geleert."
 
 #: system/Theme/pnuserapi.php:184
 #: system/Theme/pnuserapi.php:188
@@ -7088,9 +7013,9 @@ msgstr "Combine-Cache löschen"
 #: system/Theme/pnupgradeapi.php:339
 #: system/Theme/pnupgradeapi.php:359
 #: system/Theme/pnupgradeapi.php:419
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not open file so that it could be written to: %s"
-msgstr "Error! Could not load %s module (at function: %s)."
+msgstr "Fehler! Die Datei konnte nicht im Schreibzugriff geöffnet werden: %s"
 
 #: system/Theme/pnuserapi.php:192
 #: system/Theme/pnadminapi.php:613
@@ -7102,15 +7027,14 @@ msgstr "Error! Could not load %s module (at function: %s)."
 #: system/Theme/pnupgradeapi.php:293
 #: system/Theme/pnupgradeapi.php:363
 #: system/Theme/pnupgradeapi.php:423
-#, fuzzy, php-format
+#, php-format
 msgid "Error! could not write to file: %s"
-msgstr "Fehler! Die benötigte Datei '%s' konnte nicht geladen werden."
+msgstr "Fehler! Die Datei konnte nicht geschrieben werden: %s"
 
 #: system/Theme/pnuserapi.php:318
 #: system/Theme/pnuser.php:21
-#, fuzzy
 msgid "Notice: Theme switching is currently disabled."
-msgstr "Das Wechseln von Themes ist momentan deaktiviert"
+msgstr "Hinweis: Das Wechseln von Themes ist momentan deaktiviert."
 
 #: system/Theme/pnblocks/themeswitcher.php:41
 #: system/Theme/pnblocks/themeswitcher.php:42
@@ -7120,9 +7044,8 @@ msgid "Theme switcher"
 msgstr "Theme-Switcher"
 
 #: system/Theme/pnuser.php:68
-#, fuzzy
 msgid "Done! Theme has been reset to the default site theme."
-msgstr "individuelle Benutzer-Themes überschreiben"
+msgstr "Erledigt! Das Theme wurde auf das Standardtheme zurückgesetzt."
 
 #. !module name that appears in URL
 #: system/Theme/pnversion.php:17
@@ -7131,7 +7054,7 @@ msgstr "theme"
 
 #: system/Theme/pnversion.php:18
 msgid "Provides the site's theming system, and an interface for managing themes, to control the site's presentation and appearance."
-msgstr "Theme-System mit Verwaltung und Steuerung von Themezonen, Templates, etc."
+msgstr "Themesystem mit Verwaltung von Themezonen, Templates und Steuerung der Seitendarstellung."
 
 #: system/Theme/plugins/function.userlinks.php:42
 msgid "Your Account"
@@ -7187,7 +7110,7 @@ msgstr "Es gibt keine <a href=\"%s\">neuen Nachrichten</a>"
 #: system/Users/pntemplates/users_block_login.htm:22
 #: system/Users/pntemplates/users_user_loginscreen.htm:8
 msgid "New account"
-msgstr "Neues Benutzerkonto anlegen"
+msgstr "Neuen Benutzer registrieren"
 
 #: system/Theme/plugins/function.online.php:53
 #, php-format
@@ -7270,9 +7193,9 @@ msgstr "Willkommen %s"
 #: system/Theme/pnadminapi.php:84
 #: system/Theme/pnadminapi.php:88
 #: system/Theme/pnadminapi.php:96
-#, fuzzy, php-format
+#, php-format
 msgid "Error! Could not include theme version file: %s"
-msgstr "Die Versionsdatei des Themes konnte nicht eingebunden werden: %s"
+msgstr "Fehler! Die Versionsdatei des Themes konnte nicht eingebunden werden: %s"
 
 #: system/Theme/pnadminapi.php:198
 #: system/Theme/pntemplates/theme_admin_view.htm:5
@@ -7283,9 +7206,8 @@ msgstr "Themeliste"
 #: system/Theme/pnadminapi.php:202
 #: system/Theme/pnadminapi.php:204
 #: system/Theme/pntemplates/theme_admin_new.htm:3
-#, fuzzy
 msgid "Create new theme"
-msgstr "Neue Palette anlegen"
+msgstr "Theme anlegen"
 
 #: system/Theme/pnadminapi.php:204
 msgid "Notice: Theme creation from within the themes manager is disabled because Zikula does not have write permissions for the theme directory."
@@ -7296,19 +7218,17 @@ msgid "Regenerate themes list"
 msgstr "Themeliste neu einlesen"
 
 #: system/Theme/pnadminapi.php:407
-#, fuzzy
 msgid "Done! Removed theme files from the file system."
-msgstr "Die Themedateien wurden erfolgreich im Dateisystem gelöscht."
+msgstr "Erledigt! Die Themedateien wurden im Dateisystem erfolgreich gelöscht."
 
 #: system/Theme/pnadminapi.php:410
-#, fuzzy
 msgid "Error! Could not delete theme files from the file system. Please remove them by another means (FTP, SSH, ...)."
-msgstr "Beim Versuch, die Dateien zu löschen, ist ein Fehler aufgetreten. Bitte die Dateien mit einem FTP-Client entfernen."
+msgstr "Fehler! Beim Versuch, die Dateien zu löschen, ist ein Fehler aufgetreten. Bitte die Dateien mit einem FTP-Client entfernen."
 
 #: system/Theme/pnadminapi.php:412
-#, fuzzy, php-format
+#, php-format
 msgid "Notice: Theme files cannot be deleted because Zikula does not have write permissions for the themes folder and/or themes/%s folder."
-msgstr "Die Themedateien können nicht gelöscht werden, weil kein Schreibzugriff auf das Themeverzeichnis themes/%s bzw. die Dateien vorhanden ist."
+msgstr "Hinweis: Die Themedateien können nicht gelöscht werden, da kein Schreibzugriff auf das Themeverzeichnis themes/%s möglich ist bzw. die Dateien nicht vorhanden sind."
 
 #: system/Theme/pntemplates/plugins/modifier.themetype.php:37
 msgid "Xanthia 2.0"
@@ -7338,43 +7258,41 @@ msgstr "Suchen"
 
 #: system/Search/pnblocks/search.php:34
 msgid "Search box"
-msgstr "Suchblock"
+msgstr "Such-Block"
 
 #: system/Search/pnuser.php:299
 msgid "Error! You did not enter any keywords to search for."
 msgstr "Fehler! Es wurden keine Suchbegriffe eingegeben."
 
 #: system/Search/pnuser.php:357
-#, fuzzy, php-format
+#, php-format
 msgid "Error! '%1$s' module returned false in search function '%2$s'."
-msgstr "Interner Fehler: Modul %1$s lieferte einen Fehler in der Suchfunktion %2$s"
+msgstr "Fehler! Modul '%1$s' lieferte einen Fehler in der Suchfunktion '%2$s'."
 
 #: system/Search/pnversion.php:14
 #: system/Search/pntemplates/search_admin_menu.htm:4
 msgid "Site search engine"
-msgstr "Suche Modul"
+msgstr "Suchmodul"
 
 #. !module name that appears in URL
 #: system/Search/pnversion.php:15
 msgid "search"
-msgstr "suchen"
+msgstr "suche"
 
 #: system/Search/pnversion.php:16
 msgid "Provides an engine for searching within the site, and an interface for managing search page settings."
-msgstr "Seitenweite Suchoptionen bearbeiten"
+msgstr "Seitenweite Suchoptionen bearbeiten."
 
 #: includes/templates/siteoff.htm:5
 #: includes/templates/siteoff.htm:46
 #: includes/templates/siteoff.htm:47
 #: ajax.php:27
-#, fuzzy
 msgid "The site is currently off-line."
-msgstr "Es ist momentan %s Benutzer online."
+msgstr "Diese Website ist moment deaktiviert."
 
 #: includes/templates/siteoff.htm:49
-#, fuzzy
 msgid "Administrator log-in"
-msgstr "Benutzeranmeldung über E-Mail Adresse (nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich)"
+msgstr "Admin-Login"
 
 #: includes/templates/siteoff.htm:52
 msgid "An administrator log-in is required."
@@ -7386,19 +7304,18 @@ msgid "Missing parameter '%s'"
 msgstr "Fehlender Parameter '%s'"
 
 #: ajax.php:37
-#, fuzzy, php-format
+#, php-format
 msgid "Error! The '%s' module is unknown."
-msgstr "Modul ist nicht aktiv"
+msgstr "Fehler! Das Modul '%s' ist unbekannt."
 
 #: ajax.php:41
-#, fuzzy, php-format
+#, php-format
 msgid "Error! The '%s' module is not available."
-msgstr "Error! Das Template \"%1$s\" ist für das Modul \"%2$s\" nicht verfügbar."
+msgstr "Fehler! Das Modul '%s' ist nicht verfügbar."
 
 #: ajax.php:62
-#, fuzzy
 msgid "Error! The transaction failed. Please perform a rollback."
-msgstr "Transaction failed.  Rollback!"
+msgstr "Error! The transaction failed. Please perform a rollback."
 
 #: ajax.php:80
 #, php-format
@@ -7406,34 +7323,32 @@ msgid "Failed to load module %1$s (at function: \"%2$s\")"
 msgstr "Failed to load module %1$s (at function: \"%2$s\")"
 
 #: ajax.php:86
-#, fuzzy
 msgid "Error! Ajax support is not implemented for old-style modules."
-msgstr "Ajax support for old style modules not supported"
+msgstr "Error! Ajax support is not implemented for old-style modules."
 
 #: index.php:76
-#, fuzzy, php-format
+#, php-format
 msgid "The '%s' module is not currently accessible."
-msgstr "Error! Das Template \"%1$s\" ist für das Modul \"%2$s\" nicht verfügbar."
+msgstr "Auf das Modul '%s' kann momentan nicht zugegriffen werden."
 
 #: index.php:103
-#, fuzzy
 msgid "The transaction failed. Please perform a rollback."
-msgstr "Transaction failed.  Rollback!"
+msgstr "The transaction failed. Please perform a rollback."
 
 #: index.php:120
-#, fuzzy, php-format
+#, php-format
 msgid "Could not load the '%s' module (at '%s' function)."
-msgstr "Error! Could not load %s module (at function: %s)."
+msgstr "Could not load the '%s' module (at '%s' function)."
 
 #: index.php:138
-#, fuzzy, php-format
+#, php-format
 msgid "The '%1$s' module returned at the '%2$s' function."
-msgstr "Failed to load module %1$s (at function: \"%2$s\")"
+msgstr "The '%1$s' module returned at the '%2$s' function."
 
 #: index.php:154
-#, fuzzy, php-format
+#, php-format
 msgid "Could not load the '%s' module."
-msgstr "Fehler! Modul %s konnte nicht geladen werden."
+msgstr "Das Modul '%s' konnte nicht geladen werden."
 
 #: upgrade.php:85
 #: upgrade.php:94
@@ -7590,16 +7505,14 @@ msgid "SUCCESS: %s"
 msgstr "Erfolgreich: %s"
 
 #: install/pntemplates/installer_selectmodule.htm:1
-#, fuzzy
 msgid "Choose a module for your site's start page"
-msgstr "Bitte das Modul für die Startseite auswählen"
+msgstr "Modul für die Startseite auswählen"
 
 #: install/pntemplates/installer_selectmodule.htm:2
 msgid "Value add-ons package"
 msgstr "Value Addons Paket"
 
 #: install/pntemplates/installer_selectmodule.htm:3
-#, fuzzy
 msgid "Module extensions database"
 msgstr "offiziellen Theme-Datenbank"
 
@@ -7608,7 +7521,7 @@ msgid "Note:"
 msgstr "Anmerkung:"
 
 #: install/pntemplates/installer_selectmodule.htm:8
-#, fuzzy, php-format
+#, php-format
 msgid "Modules are software that extends the functionality of a site. There is a wide choice of add-on modules available from the Zikula project's %1$s and the 3rd-party %2$s. Please choose a default module for your new site. %3$s You can easily change this later."
 msgstr "Um den Funktionsumfang von Zikula zu erweitern, werden so genannte Module eingesetzt. Im %1$s und in der %2$s stehen eine Vielzahl an Modulen zum Download zur Verfügung. Bitte jetzt vorweg ein Standardmodul für die neue Seite wählen. %3$s Diese Einstellung kann später jederzeit wieder geändert werden."
 
@@ -7633,17 +7546,15 @@ msgstr "Weiter"
 #: install/pntemplates/installer_licence.htm:12
 #: install/pntemplates/installer_page.htm:13
 msgid "Accept licence"
-msgstr "Lizenz akzpetieren"
+msgstr "Lizenz akzeptieren"
 
 #: install/pntemplates/installer_licence.htm:6
-#, fuzzy
 msgid "Welcome to the Zikula installer script. This script will set-up the Zikula database and will guide you through choosing the various options for installing your new site. You will be walked through a series of pages. Each page constitutes one step in the installation process. The entire process commonly takes about ten minutes. If you have questions or problems, please visit the project support forums for help."
-msgstr "Dieses Skript führt die Installation der Zikula-Datenbank und die Grundeinrichtung der neuen Seite durch. Die Installation erfolgt in mehreren Schritten und dauert ungefährt 5-10 Minuten."
+msgstr "Willkommen beim Zikula Installationskript. Dieses Skript führt die Installation der Zikula-Datenbank und die Grundeinrichtung der neuen Seite durch. Die Installation erfolgt in mehreren Schritten und dauert ungefährt 5-10 Minuten."
 
 #: install/pntemplates/installer_licence.htm:7
-#, fuzzy
 msgid "Zikula is Open Source software licensed under the GNU General Public License (GPL). Zikula is free software, but the GPL lays down requirements governing distribution and modification. Please read the terms and conditions below."
-msgstr "Bitte vor der Installation die hier zugrundeliegende GNU General Public License durchlesen. Zikula wird zwar als \"freie\" Software entwickelt, es gelten aber dennoch grundsätzliche Richtlinien zur Verteilung und Bearbeitung."
+msgstr "Bitte vor der Installation die hier zugrundeliegende GNU General Public License durchlesen. Zikula wird zwar als 'freie' Software entwickelt, es gelten aber dennoch grundsätzliche Richtlinien zur Verteilung und Bearbeitung."
 
 #: install/pntemplates/installer_dbinformation.htm:1
 #: install/pntemplates/installer_page.htm:15
@@ -7651,24 +7562,20 @@ msgid "Enter database information"
 msgstr "DB-Informationen"
 
 #: install/pntemplates/installer_dbinformation.htm:2
-#, fuzzy
 msgid "Database information"
 msgstr "DB-Informationen"
 
 #: install/pntemplates/installer_dbinformation.htm:5
-#, fuzzy
 msgid "Error! Some of the required information was not entered. Please check your entries and try again."
-msgstr "Fehler! Die gewünschte Aktion konnte nicht ausgeführt werden. Bitte die Eingaben überprüfen."
+msgstr "Fehler! Einige der benötigten Informationen wurden nicht angegeben. Bitte überprüfen und erneut versuchen."
 
 #: install/pntemplates/installer_dbinformation.htm:6
-#, fuzzy
 msgid "Error! Invalid table prefix. Please use only letters or numbers."
-msgstr "Ungültiger Tabellenpräfix. Bitte nur Buchstaben oder Zahlen benutzen."
+msgstr "Fehler! Ungültiger Tabellenpräfix. Bitte nur Buchstaben oder Zahlen benutzen."
 
 #: install/pntemplates/installer_dbinformation.htm:7
-#, fuzzy
 msgid "Error! Could not connect to the database. Please check that you have entered the correct database information and try again."
-msgstr "Fehler bei der Anlage der Datenbank. Bitte die Datenbankinformationen kontrollieren."
+msgstr "Fehler! Es konnte keine Verbindung zur Datenbank aufgebaut werden. Bitte die Angaben zur Datenbank kontrollieren und erneut versuchen."
 
 #: install/pntemplates/installer_dbinformation.htm:8
 msgid "Error! Could not create database. Please check that you have entered the correct database information and try again."
@@ -7693,7 +7600,6 @@ msgid "Database name"
 msgstr "Datenbankname"
 
 #: install/pntemplates/installer_dbinformation.htm:50
-#, fuzzy
 msgid "Table prefix (for table sharing)"
 msgstr "Tabellenpräfix (für Table-Sharing)"
 
@@ -7706,41 +7612,34 @@ msgid "Log-in for existing installation"
 msgstr "Benutzeranmeldung über E-Mail Adresse (nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich)"
 
 #: install/pntemplates/installer_login.htm:2
-#, fuzzy
 msgid "An existing Zikula installation has been found. Please log-in as administrator before proceeding further."
 msgstr "Es wurde eine bestehende Installation festgestellt. Zum Fortfahren bitte als Administrator anmelden."
 
 #: install/pntemplates/installer_login.htm:5
-#, fuzzy
 msgid "Error! Could not log you in. Please check your user name and password then try again."
-msgstr "Fehler! Die gewünschte Aktion konnte nicht ausgeführt werden. Bitte die Eingaben überprüfen."
+msgstr "Fehler! Eine Anmeldung konnte nicht durchgeführt werden. Bitte Benutzernamen und Kennwort überprüfen und erneut versuchen."
 
 #: install/pntemplates/installer_login.htm:6
-#, fuzzy
 msgid "Error! The user name you entered in order to log-in does not have administration rights."
-msgstr "Der angegebene Benutzername hat keine administrativen Rechte."
+msgstr "Fehler! Der angegebene Benutzername hat keine administrativen Rechte."
 
 #: install/pntemplates/installer_login.htm:14
-#, fuzzy
 msgid "Administrator's user name"
-msgstr "SMTP Benutzername"
+msgstr "Benuzername des Administrators"
 
 #: install/pntemplates/installer_installtype.htm:1
 #: install/pntemplates/installer_page.htm:16
-#, fuzzy
 msgid "Select installation scope"
-msgstr "Installationstyp"
+msgstr "Installationsumfang"
 
 #: install/pntemplates/installer_installtype.htm:2
-#, fuzzy
 msgid "Installation scope"
-msgstr "Anleitung"
+msgstr "Installationsumfang auswählen"
 
 #: install/pntemplates/installer_requirements.htm:1
 #: install/pntemplates/installer_page.htm:14
-#, fuzzy
 msgid "Check system requirements"
-msgstr "Systeminformationen"
+msgstr "Anforderungen"
 
 #: install/pntemplates/installer_requirements.htm:2
 #: system/Blocks/pntemplates/blocks_block_finclude_modify.htm:11
@@ -7748,34 +7647,30 @@ msgid "PHP"
 msgstr "PHP"
 
 #: install/pntemplates/installer_requirements.htm:6
-#, fuzzy, php-format
+#, php-format
 msgid "Your PHP version is %s, which is OK: it satisfies the Zikula system requirement of 4.3.0 or later."
-msgstr "Die aktuelle PHP Version ist %s und erfüllt somit leider nicht die Mindestanforderung (4.3.0)."
+msgstr "Die aktuelle PHP Version ist %s und erfüllt somit die Mindestanforderung von Zikula (4.3.0 oder aktueller). OK."
 
 #: install/pntemplates/installer_requirements.htm:8
-#, fuzzy, php-format
+#, php-format
 msgid "You have got a problem! Your PHP version is %s, which does not satisfy the Zikula system requirement of version 4.3.0 or later."
-msgstr "Die aktuelle PHP Version ist %s und erfüllt somit leider nicht die Mindestanforderung (4.3.0)."
+msgstr "Es gibt ein Problem! Die aktuelle PHP Version ist %s und erfüllt somit leider nicht die Mindestanforderung von Zikula (4.3.0 oder aktueller)."
 
 #: install/pntemplates/installer_requirements.htm:12
-#, fuzzy
 msgid "Your PHP installation has the necessary token functions available. This is OK."
-msgstr "In der PHP-Version ist die \"token\" Funktion verfügbar."
+msgstr "In der PHP-Version ist die 'token' Funktion verfügbar. OK."
 
 #: install/pntemplates/installer_requirements.htm:14
-#, fuzzy
 msgid "You have got a problem! Your PHP installation does not have the token functions available, but they are necessary for Zikula's output system. You "
-msgstr "In der PHP-Version ist die \"token\" Funktion nicht verfügbar - diese Funktion ist aber Voraussetzung."
+msgstr "Es gibt ein Problem! In der PHP-Version ist die 'token' Funktion nicht verfügbar, die aber eine zwingende Voraussetzung für Zikula ist. "
 
 #: install/pntemplates/installer_requirements.htm:18
-#, fuzzy
 msgid "Your PHP installation has the multi-byte string functions available. This is OK, and enables Zikula to handle multi-byte character sets."
-msgstr "In der PHP-Version ist die \"multibyte string\" Funktion nicht verfügbar. Diese Funktion ist jedoch eine wichtige Voraussetzung für das Zikula AJAX System."
+msgstr "In der PHP-Version ist die ''multibyte string' Funktion verfügbar. OK."
 
 #: install/pntemplates/installer_requirements.htm:20
-#, fuzzy
 msgid "Your PHP installation does not have the multi-byte string functions available. This does not prevent installation, but Zikula will not be able to handle multi-byte character sets."
-msgstr "In der PHP-Version ist die \"multibyte string\" Funktion nicht verfügbar. Diese Funktion ist jedoch eine wichtige Voraussetzung für das Zikula AJAX System."
+msgstr "In der PHP-Version ist die 'multibyte string' Funktion nicht verfügbar. Eine Installation ist zwar dennoch möglich. Jedoch ist diese Funktion eine wichtige Voraussetzung für das Zikula AJAX System."
 
 #: install/pntemplates/installer_requirements.htm:23
 msgid "Personal configuration file"
@@ -7784,12 +7679,12 @@ msgstr "Persönliche Konfigurationsdatei"
 #: install/pntemplates/installer_requirements.htm:27
 #, php-format
 msgid "'%s' has not been found. This is OK."
-msgstr "'%s' wurde nicht gefunden. Das ist in Odnung."
+msgstr "'%s' wurde nicht gefunden. OK."
 
 #: install/pntemplates/installer_requirements.htm:29
-#, fuzzy, php-format
+#, php-format
 msgid "'%s' has been found. This is not OK: please rename this file before continuing the installation process."
-msgstr "%s existiert. Vor dem Fortfahren die Datei bitte umbenennen."
+msgstr "'%s' wurde gefunden. Vor dem Fortfahren die Datei bitte umbenennen."
 
 #: install/pntemplates/installer_requirements.htm:32
 #: install/pntemplates/installer_page.htm:60
@@ -7805,9 +7700,9 @@ msgstr "Rechte im Dateisystem"
 #: install/pntemplates/installer_requirements.htm:72
 #: install/pntemplates/installer_requirements.htm:78
 #: install/pntemplates/installer_requirements.htm:84
-#, fuzzy, php-format
+#, php-format
 msgid "%s is writeable. This is OK."
-msgstr "Diese Gruppe ist geschlossen"
+msgstr "%s ist beschreibbar. OK."
 
 #: install/pntemplates/installer_requirements.htm:38
 #: install/pntemplates/installer_requirements.htm:44
@@ -7818,15 +7713,14 @@ msgstr "Diese Gruppe ist geschlossen"
 #: install/pntemplates/installer_requirements.htm:74
 #: install/pntemplates/installer_requirements.htm:80
 #: install/pntemplates/installer_requirements.htm:86
-#, fuzzy, php-format
+#, php-format
 msgid "You have a problem! '%s' is not writeable. Please ensure that the file permissions are set correctly for the installation process."
-msgstr "Kann nicht auf %s schreiben. Bitte die Zugriffsrechte für diese Datei kontrollieren."
+msgstr "Er gibt ein Problem! '%s' ist nicht beschreibbar Bitte die Zugriffsrechte für diese Datei kontrollieren."
 
 #: install/pntemplates/installer_gotosite.htm:1
 #: install/pntemplates/installer_page.htm:20
-#, fuzzy
 msgid "Finished!"
-msgstr "Aktualisierung abgeschlossen"
+msgstr "Fertig!"
 
 #: install/pntemplates/installer_gotosite.htm:2
 msgid "Zikula credits"
@@ -7842,7 +7736,7 @@ msgstr "Die Zikula Installation ist jetzt abgeschlossen. Falls Probleme oder Sch
 
 #: install/pntemplates/installer_gotosite.htm:8
 msgid "Please delete 'install.php', 'upgrade.php' and the 'install/' directory, because you will not need them again."
-msgstr "Die Installationsdateien ('install.php', 'upgrade.php' und das '/install'- Verzeichnis) können jetzt gefahrlos gelöscht werden."
+msgstr "Die Installationsdateien ('install.php', 'upgrade.php' und das '/install'- Verzeichnis) werden jetzt nicht mehr benötigt und sollten jetzt gelöscht werden."
 
 #: install/pntemplates/installer_lang.htm:1
 #: install/pntemplates/installer_page.htm:12
@@ -7851,40 +7745,34 @@ msgstr "Sprachauswahl"
 
 #: install/pntemplates/installer_page.htm:4
 #: install/pntemplates/installer_page.htm:27
-#, fuzzy
 msgid "Zikula installer script"
-msgstr "Willkommen bei Zikula"
+msgstr "Zikula Installationsskript"
 
 #: install/pntemplates/installer_page.htm:17
 #: install/pntemplates/installer_createadmin.htm:1
-#, fuzzy
 msgid "Create administrator's user account"
-msgstr "Erledigt! Das Benutzerkonto wurde erstellt."
+msgstr "Adminkonto"
 
 #: install/pntemplates/installer_page.htm:18
-#, fuzzy
 msgid "Select site's start page"
-msgstr "Bitte das Modul für die Startseite auswählen"
+msgstr "Startmodul"
 
 #: install/pntemplates/installer_page.htm:19
 #: install/pntemplates/installer_selecttheme.htm:1
 msgid "Select default theme"
-msgstr "Standardtheme auswählen"
+msgstr "Standardtheme"
 
 #: install/pntemplates/installer_page.htm:30
-#, fuzzy
 msgid "Please refer to the <a style=\"color: red\" href=\"docs/install.html\" onclick=\"window.open('docs/install.html');return false;\">Installation guide</a> during the process."
 msgstr "Bitte während der Installation die <a style=\"color: red\" href=\"docs/install_deu.html\" onclick=\"window.open('docs/install_deu.html');return false;\">Installationsanleitung</a> beachten."
 
 #: install/pntemplates/installer_page.htm:33
-#, fuzzy
 msgid "Note: Official Zikula distributions are only available from zikula.org. For certitude of quality, please ensure that you are installing an official distribution."
 msgstr "Hinweis: Die Zikula-Downloadpakete sollten vor der Installation über die MD5 bzw. SHA1 Prüfsummen validiert werden. Die entsprechenden Angaben dazu finden sich im Downloadbereich bei <a href=\"http://community.zikula.org\">community.zikula.org</a> bzw. <a href=\"http://support.zikula.de\">support.zikula.de</a>."
 
 #: install/pntemplates/installer_page.htm:36
-#, fuzzy
 msgid "Installation steps"
-msgstr "Anleitung"
+msgstr "Installationsschritte"
 
 #: install/pntemplates/installer_page.htm:48
 msgid "Free software"
@@ -7944,14 +7832,13 @@ msgid "Theme extensions database"
 msgstr "offiziellen Theme-Datenbank"
 
 #: install/pntemplates/installer_selecttheme.htm:4
-#, fuzzy, php-format
+#, php-format
 msgid "Themes control the visual presentation of a site. Zikula ships with a small selection of themes, but many more are available from the %s. Please select a default theme for your new site (you can easily choose another later)."
 msgstr "Themes bestimmen das Aussehen der Webseite. In der Zikula Grundinstallation sind einige Standardthemes enthalten. Weitere gibt es beispielsweise in der %s. Bitte aber nun vorweg ein Theme für die Grundinstallation wählen. Diese Einstellung kann natürlich später immer wieder geändert werden."
 
 #: install/pntemplates/installer_createadmin.htm:5
-#, fuzzy
 msgid "Error! Could not create the administrator's user account. Please check your entries and try again."
-msgstr "Fehler! Die gewünschte Aktion konnte nicht ausgeführt werden. Bitte die Eingaben überprüfen."
+msgstr "Fehler! Das Benutzerkonto für den Administrator konnte nicht angelegt werden. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: install/pntemplates/installer_createadmin.htm:7
 msgid "Error! The administrator's e-mail address is not correctly formed. Please correct your entry and try again."
@@ -7962,7 +7849,6 @@ msgid "Error! Spaces and special characters are not allowed in a user name. Plea
 msgstr "Fehler! Leerzeichen und Sonderzeichen sind in Benutzernamen nicht erlaubt. Bitte berichtigen und erneut versuchen."
 
 #: install/pntemplates/installer_createadmin.htm:29
-#, fuzzy
 msgid "Password (repetition for verification)"
 msgstr "Kennwortwiederholung (zur Verifikation)"
 
@@ -7981,22 +7867,20 @@ msgid "E-mail address"
 msgstr "E-Mail Adresse"
 
 #: system/Errors/pntemplates/errors_user_main.htm:4
-#, fuzzy, php-format
+#, php-format
 msgid "Error on %s"
-msgstr "Erstellt am %s"
+msgstr "Fehler bei %s"
 
 #: system/Errors/pntemplates/errors_user_main.htm:10
 #: system/Errors/pntemplates/errors_user_404.htm:28
 #: system/Errors/pntemplates/errors_user_system.htm:12
 #: system/Errors/pntemplates/errors_user_403.htm:28
-#, fuzzy
 msgid "Go back to previous page"
 msgstr "Hier klicken, um zur vorherigen Seiten zurückzukehren"
 
 #: system/Errors/pntemplates/errors_user_404.htm:3
-#, fuzzy
 msgid "Page not found (error 404)"
-msgstr "Fehler! Die Datei '%s' konnte nicht gefunden werden."
+msgstr "Seite nicht gefunden (Fehler 404)"
 
 #: system/Errors/pntemplates/errors_user_404.htm:6
 #, php-format
@@ -8005,14 +7889,13 @@ msgstr "Entschuldigung! Die gewünschte Seite '%1$s' konnte nicht auf '%2$s' gef
 
 #: system/Errors/pntemplates/errors_user_404.htm:9
 #: system/Errors/pntemplates/errors_user_403.htm:9
-#, fuzzy
 msgid "Details have been automatically e-mailed to the site administrator."
 msgstr "Die Details zu diesem Fehlers wurden automatisch an den Administrator der Seite gesendet."
 
 #: system/Errors/pntemplates/errors_user_404.htm:18
-#, fuzzy, php-format
+#, php-format
 msgid "You could try a search from the <a href=\"%s\">site search page</a>."
-msgstr "Hier <a href=\"%s\">registrieren</a>."
+msgstr "Es kann auch die <a href=\"%s\">Suchfunktion</a> dieser Website genutzt werden."
 
 #: system/Errors/pntemplates/errors_user_404.htm:21
 #: system/Errors/pntemplates/errors_user_system.htm:14
@@ -8026,19 +7909,17 @@ msgid "System error"
 msgstr "Systemfehler"
 
 #: system/Errors/pntemplates/errors_user_system.htm:9
-#, fuzzy, php-format
+#, php-format
 msgid "(Check file '%1$s' at line %2$s.)"
-msgstr "%s in %s in Zeile %s der Datei %s."
+msgstr "(Datei '%1$s' bei Zeile %2$s.)"
 
 #: system/Errors/pntemplates/errors_user_403.htm:3
-#, fuzzy
 msgid "Access denied (error 403)"
-msgstr "Fehler! Auf das Stammverzeichnis (%s) konnte nicht zugegriffen werden"
+msgstr "Zugriff verweigert (Fehler 403)"
 
 #: system/Errors/pntemplates/errors_user_403.htm:6
-#, fuzzy
 msgid "Sorry! You don't have authorisation for the page you wanted."
-msgstr "Ein Zugriff auf diese Seite konnte nicht authorisiert werden"
+msgstr "Entschuldigung! Ein Zugriff auf die gewünschte Seite konnte nicht authorisiert werden."
 
 #: system/Errors/pntemplates/errors_user_403.htm:18
 #, php-format
@@ -8046,28 +7927,26 @@ msgid "You are not logged-in. You might have access if you <a href=\"%s\">log in
 msgstr "Es liegt keine Anmeldung. Möglicherweise ist der Zugriff nach einer <a href=\"%s\">Anmeldung</a> möglich."
 
 #: system/Users/pntemplates/users_admin_new_dud.htm:8
-#, fuzzy
 msgid "Required information"
 msgstr "Erforderliche Informationen"
 
 #: system/Users/pntemplates/users_block_online.htm:2
-#, fuzzy, php-format
+#, php-format
 msgid "%s registered user and"
 msgid_plural "%s registered users and"
-msgstr[0] "Ein neues Benutzerkonto wurde registriert"
-msgstr[1] "Nur registrierte Benutzer"
+msgstr[0] "%s registrierter Benutzer und"
+msgstr[1] "%s registrierte Benutzer und"
 
 #: system/Users/pntemplates/users_block_online.htm:2
-#, fuzzy, php-format
+#, php-format
 msgid "%s anonymous guest on-line."
 msgid_plural "%s anonymous guests on-line."
-msgstr[0] "in Datei <strong>%1$s</strong> in Zeile %2$s"
-msgstr[1] "Nur unregistrierte Benutzer"
+msgstr[0] "%s Gast online."
+msgstr[1] "%s Gäste online."
 
 #: system/Users/pntemplates/users_block_online.htm:6
-#, fuzzy
 msgid "You have no new messages."
-msgstr "Es gibt keine <a href=\"%s\">neuen Nachrichten</a>"
+msgstr "Es gibt keine neuen Nachrichten."
 
 #: system/Users/pntemplates/users_block_online.htm:6
 #, php-format
@@ -8077,14 +7956,13 @@ msgstr[0] "Es gibt <a href=\"%1$s\">%2$s</a> neue Nachricht."
 msgstr[1] "Es gibt <a href=\"%1$s\">%2$s</a> neue Nachrichten."
 
 #: system/Users/pntemplates/users_block_online.htm:8
-#, fuzzy, php-format
+#, php-format
 msgid "You are logged-in as <strong>%s</strong>."
 msgstr "Angemeldet als <strong>%s</strong>."
 
 #: system/Users/pntemplates/users_block_online.htm:11
-#, fuzzy
 msgid "You are an anonymous guest."
-msgstr "Es besteht bereits eine Mitgliedschaft in dieser Gruppe"
+msgstr "Noch nicht registriert oder angemeldet."
 
 #: system/Users/pntemplates/users_block_online.htm:13
 #, php-format
@@ -8093,22 +7971,18 @@ msgstr "Hier <a href=\"%s\">registrieren</a>."
 
 #: system/Users/pntemplates/users_block_login.htm:23
 #: system/Users/pntemplates/users_user_loginscreen.htm:9
-#, fuzzy
 msgid "Lost password"
-msgstr "Kennwort vergessen?"
+msgstr "Kennwort vergessen"
 
 #: system/Users/pntemplates/users_admin_pendingaction.htm:3
-#, fuzzy
 msgid "Approve registration application"
-msgstr "Anfrage abgelehnt"
+msgstr "Neue Benutzer bestätigen"
 
 #: system/Users/pntemplates/users_admin_pendingaction.htm:5
-#, fuzzy
 msgid "Deny registration application"
-msgstr "Anfrage abgelehnt"
+msgstr "Neue Benutzer ablehnen"
 
 #: system/Users/pntemplates/users_admin_pendingaction.htm:22
-#, fuzzy
 msgid "Confirm action for registration application"
 msgstr "Aktion durchführen"
 
@@ -8122,14 +7996,12 @@ msgstr "Akzeptieren"
 
 #: system/Users/pntemplates/users_admin_deleteusers.htm:2
 #: system/Users/pntemplates/users_admin_deleteusers.htm:24
-#, fuzzy
 msgid "Delete user account"
-msgstr "Einstellung Benutzerprofile"
+msgstr "Benutzerkonto löschen"
 
 #: system/Users/pntemplates/users_admin_deleteusers.htm:8
-#, fuzzy
 msgid "Do you really want to delete this user account?"
-msgstr "Soll die Admin-Nachricht wirklich gelöscht werden?"
+msgstr "Soll dieses Benutzerkonto wirklich gelöscht werden?"
 
 #: system/Users/pntemplates/users_admin_deleteusers.htm:17
 #: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:15
@@ -8145,7 +8017,6 @@ msgstr "Soll die Admin-Nachricht wirklich gelöscht werden?"
 #: system/Theme/pntemplates/theme_admin_setasdefault.htm:13
 #: system/Theme/pntemplates/theme_admin_deletepageconfigurationassignment.htm:15
 #: system/Theme/pntemplates/theme_admin_delete.htm:14
-#, fuzzy
 msgid "Confirmation prompt"
 msgstr "Sicherheitsabfrage"
 
@@ -8259,7 +8130,6 @@ msgid "Links per page"
 msgstr "Links pro Seite"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:18
-#, fuzzy
 msgid "Minimum age for new user registration (0 for no age check)"
 msgstr "Mindestalter (0 = keine Überprüfung)"
 
@@ -8284,9 +8154,8 @@ msgid "Notice: If the 'Credential required for user log-in' is set to 'E-mail ad
 msgstr "Falls 'Benutzeranmeldung' auf 'E-Mail' eingestellt ist, muss die Option 'Eindeutige E-Mail Adresse' weiter unten mit 'Ja' aktiviert sein."
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:49
-#, fuzzy
 msgid "Password hashing method (default: SHA256)"
-msgstr "Kennwortverschlüsselung (Standard SHA256)"
+msgstr "Kennwortverschlüsselung (Standard: SHA256)"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:59
 msgid "User account settings"
@@ -8294,24 +8163,21 @@ msgstr "Einstellung Benutzerprofile"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:61
 msgid "Display graphics in user's account panel"
-msgstr "Icons auf der Profilseite anzeigen"
+msgstr "Symbole im Benuzerkonto anzeigen"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:71
 msgid "Links per row"
 msgstr "Links pro Reihe"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:75
-#, fuzzy
 msgid "Users module handles password maintenance"
-msgstr "Users-Modul zur Passwortverwaltung benutzen"
+msgstr "Benutzermodul zur Passwortverwaltung benutzen"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:84
-#, fuzzy
 msgid "Users module handles e-mail address maintenance"
-msgstr "Users-Modul zur E-Mailverwaltung benutzen"
+msgstr "Benutzermodul zur E-Mailverwaltung benutzen"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:95
-#, fuzzy
 msgid "User registration"
 msgstr "Benutzerregistrierung"
 
@@ -8328,9 +8194,8 @@ msgid "Show account panel properties"
 msgstr "Benutzerattribute anzeigen"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:124
-#, fuzzy
 msgid "Allow new user account registrations"
-msgstr "Erledigt! Das neue Benutzerkonto wurde erfolgreich angelegt."
+msgstr "Registrierungen von neuen Benutzer ermöglichen"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:133
 msgid "Statement displayed if registration disabled"
@@ -8361,19 +8226,16 @@ msgid "Banned user agents (comma-separated)"
 msgstr "Gesperrte Useragents (kommagetrennt)"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:164
-#, fuzzy
 msgid "Banned domains (comma-separated)"
 msgstr "Kommagetrennte Liste an Domains bei denen keine Registrierung erlaubt ist"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:168
-#, fuzzy
 msgid "IDN domains"
-msgstr "IDN-Domains"
+msgstr "IDN Domains"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:175
-#, fuzzy
 msgid "Notice: With IDN domains, special characters are allowed in e-mail addresses and URLs."
-msgstr "Umlaute und Sonderzeichen in E-Mailadressen und URLs erlauben"
+msgstr "Hinweis: Umlaute und Sonderzeichen in E-Mail Adressen und URLs erlauben."
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:178
 msgid "Spam protection question"
@@ -8392,7 +8254,6 @@ msgid "Notice: Registering users will have to provide this response when answeri
 msgstr "Hinweis: Antwort auf Spamschutz-Frage während der Registrierung."
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:189
-#, fuzzy
 msgid "User log-in settings"
 msgstr "Konfiguration Benutzeranmeldung"
 
@@ -8401,9 +8262,8 @@ msgid "WCAG-compliant log-in and log-out"
 msgstr "WCAG-konforme An- und Abmeldung"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:199
-#, fuzzy
 msgid "Notice: Uses meta refresh."
-msgstr "Benutzung von Meta-Refresh"
+msgstr "Hinweis: Benutzung von Meta-Refresh."
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:205
 #: system/Users/pntemplates/users_user_changeemail.htm:16
@@ -8461,7 +8321,6 @@ msgstr "Benutzung von Meta-Refresh"
 #: system/Theme/pntemplates/theme_admin_modifypageconfigtemplates.htm:124
 #: system/Theme/pntemplates/theme_admin_variables.htm:62
 #: system/Search/pntemplates/search_admin_modifyconfig.htm:32
-#, fuzzy
 msgid "Save"
 msgstr "Speichern"
 
@@ -8472,7 +8331,7 @@ msgstr "Hier kann die E-Mail-Adresse geändert werden, die für den internen Mai
 
 #: system/Users/pntemplates/users_user_changeemail.htm:9
 msgid "Update e-mail address"
-msgstr "E-Mail Adresse des Administrators"
+msgstr "E-Mail Adresse aktualisieren"
 
 #: system/Users/pntemplates/users_user_changeemail.htm:11
 msgid "New e-mail address"
@@ -8492,24 +8351,21 @@ msgstr "Jemand mit der E-Mail Adresse (%1$s) hat ein Benutzerkonto bei %2$s eing
 
 #: system/Users/pntemplates/users_userapi_activationemail.htm:5
 #: system/Users/pntemplates/users_userapi_welcomeemail.htm:5
-#, fuzzy
 msgid "The personal information registered is as follows:"
 msgstr "Die gespeicherten Informationen sind:"
 
 #: system/Users/pntemplates/users_userapi_activationemail.htm:7
-#, fuzzy
 msgid "Please click on the following link to complete the e-mail address check: "
 msgstr "Bitte über den folgenden Link die Registrierung abzuschließen."
 
 #: system/Users/pntemplates/users_userapi_activationemail.htm:8
-#, fuzzy
 msgid "Once activated, your account details will be as follows:"
 msgstr "Nach der Freischaltung lauten die Zugangsdaten wie folgt:"
 
 #: system/Users/pntemplates/users_userapi_activationemail.htm:9
-#, fuzzy, php-format
+#, php-format
 msgid "User name: %s"
-msgstr "Benutzername"
+msgstr "Benutzername: %s"
 
 #: system/Users/pntemplates/users_userapi_activationemail.htm:10
 #, php-format
@@ -8517,34 +8373,28 @@ msgid "Password: %s"
 msgstr "Neues Kennwort: %s"
 
 #: system/Users/pntemplates/users_user_changelang.htm:10
-#, fuzzy
 msgid "Change language"
 msgstr "Sprache auswählen"
 
 #: system/Users/pntemplates/users_user_changelang.htm:12
-#, fuzzy
 msgid "New language"
-msgstr "Sprache auswählen"
+msgstr "Neue Sprache"
 
 #: system/Users/pntemplates/users_user_view.htm:2
-#, fuzzy
 msgid "Log-in and registration"
-msgstr "WCAG-konforme An- und Abmeldung"
+msgstr "Anmeldung und Registrierung"
 
 #: system/Users/pntemplates/users_user_view.htm:5
-#, fuzzy
 msgid "Please choose an action:"
-msgstr "Bitte Auswahl treffen"
+msgstr "Bitte Auswahl treffen:"
 
 #: system/Users/pntemplates/users_user_view.htm:11
-#, fuzzy
 msgid "Notice: New user registration is currently disabled."
-msgstr "Die Registrierung von neuen Benutzern ist momentan deaktiviert"
+msgstr "Hinweis: Die Registrierung von neuen Benutzern ist momentan deaktiviert."
 
 #: system/Users/pntemplates/users_user_view.htm:11
-#, fuzzy
 msgid "Reasons:"
-msgstr "Gründe"
+msgstr "Gründe:"
 
 #: system/Users/pntemplates/users_user_view.htm:14
 msgid "Recover lost password"
@@ -8557,48 +8407,45 @@ msgstr "Gründe"
 #: system/Users/pntemplates/users_user_checkage.htm:8
 #: system/Users/pntemplates/users_user_register.htm:3
 msgid "New account registration"
-msgstr "Neuen Account anlegen"
+msgstr "Neues Benutzerkonto anlegen"
 
 #: system/Users/pntemplates/users_user_checkage.htm:9
-#, fuzzy, php-format
+#, php-format
 msgid "You are required to be %s years of age or older to register for an account on this site. Please choose your case below:"
-msgstr "Das Mindestalter für diese Seite ist %s Jahre und älter bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten"
+msgstr "Das Mindestalter für diese Seite ist %s Jahre und älter bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten."
 
 #: system/Users/pntemplates/users_user_checkage.htm:11
-#, fuzzy, php-format
+#, php-format
 msgid "I am %s or over."
 msgstr "Ich bin %s Jahre oder älter bzw. das Einverständnis der Erziehungsberechtigten liegt vor."
 
 #: system/Users/pntemplates/users_user_checkage.htm:12
 #, php-format
 msgid "I am under %s."
-msgstr "Ich bin jünger als %s Jahre ."
+msgstr "Ich bin jünger als %s Jahre."
 
 #: system/Users/pntemplates/users_userapi_adminnotificationmail.htm:3
-#, fuzzy, php-format
+#, php-format
 msgid "A new user account has been registered on the site. User name: %s"
 msgstr "Ein neues Benutzerkonto wurde aktiviert. Benutzername: %s"
 
 #: system/Users/pntemplates/users_user_loginscreen.htm:20
-#, fuzzy
 msgid "User account"
-msgstr "Benutzerprofil"
+msgstr "Benutzerkonto"
 
 #: system/Users/pntemplates/users_user_loginscreen.htm:48
 msgid "Notice: Please be informed that the site's 'Terms of use' have changed. You are asked to read the new terms of use, and to state your acceptance of them by activating the following checkbox. This is required before you can log in. Thank you for your understanding."
 msgstr "Hinweis: Für die Registrierung muss den Nutzungsbedingungen zugestimmt werden."
 
 #: system/Users/pntemplates/users_user_loginscreen.htm:50
-#, fuzzy
 msgid "I accept the <a href=\"index.php?module=Legal&amp;func=termsofuse\">'Terms of use'</a>"
-msgstr "Ich akzeptiere die <a href=\"index.php?module=Legal&amp;func=termsofuse\">Nutzungsbedingungen</a>"
+msgstr "Ich akzeptiere die <a href=\"index.php?module=Legal&amp;func=termsofuse\">'Nutzungsbedingungen'</a>"
 
 #: system/Users/pntemplates/users_user_usersblock.htm:5
 msgid "Block content"
 msgstr "Blockinhalt"
 
 #: system/Users/pntemplates/users_user_usersblock.htm:6
-#, fuzzy
 msgid "Enable your personal custom block"
 msgstr "Persönlichen Menüblock aktivieren"
 
@@ -8607,12 +8454,11 @@ msgid "Notice: Your personal custom block is a special block that will display i
 msgstr "Hinweis: Der persönliche benutzerdefinierte Block wird auf allen Seiten angezeigt, wenn eine entsprechende Anmeldung vorliegt. Der Block wird nur für den aktuellen Benutzer angezeigt, der auch die Inhalte individuell bestimmen kann. Man könnte beispielsweise Links zu anderen Internetseiten einfügen, die häufig benutzt werden."
 
 #: system/Users/pntemplates/users_userapi_expiredsession.htm:4
-#, fuzzy
 msgid "Sorry! Your session has expired."
-msgstr "Die Benutzer-Session ist abgelaufen."
+msgstr "Entschuldigung! Die Benutzer-Session ist abgelaufen."
 
 #: system/Users/pntemplates/users_userapi_expiredsession.htm:6
-#, fuzzy, php-format
+#, php-format
 msgid "For your security, this session has expired because you have been inactive for too long. Please <a href=\"%s\">log in</a> again to access services."
 msgstr "Aus Sicherheitsgründen wurde die Sitzung nach einer gewissen Inaktivität beendet. Bitte erneut <a href=\"%s\">anmelden</a>."
 
@@ -8651,7 +8497,6 @@ msgid "Registration date before (yyyy-mm-dd)"
 msgstr "Registrierung erfolgte vor (yyyy-mm-dd)"
 
 #: system/Users/pntemplates/users_userapi_welcomeemail.htm:11
-#, fuzzy
 msgid "Hello! Your account application has been approved. Thank you for your understanding about the account registration review process. Your password has been sent to you in a separate message."
 msgstr "Vielen Dank. Die Anmeldung wurde jetzt freigeschaltet. Das Kennwort wurde bereits per E-Mail versendet."
 
@@ -8699,38 +8544,35 @@ msgstr "Aktionen"
 
 #: system/Users/pntemplates/users_admin_viewapplications.htm:2
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:2
-#, fuzzy
 msgid "Registration applications list"
-msgstr "Liste der Modulkategorien"
+msgstr "Benutzeranfragen anzeigen"
 
 #: system/Users/pntemplates/users_user_register.htm:9
-#, fuzzy
 msgid "Reason:"
-msgstr "Grund"
+msgstr "Gründe:"
 
 #: system/Users/pntemplates/users_user_register.htm:15
-#, fuzzy, php-format
+#, php-format
 msgid "<a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">'Privacy policy'</a>"
-msgstr "Ich bin mit der <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Erklärung zum Datenschutz</a> einverstanden."
+msgstr "<a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Erklärung zum Datenschutz</a>"
 
 #: system/Users/pntemplates/users_user_register.htm:16
-#, fuzzy, php-format
+#, php-format
 msgid "<a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">'Terms of use'</a>"
-msgstr "Ich bin mit den <a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Nutzungsbedingungen</a> einverstanden."
+msgstr "<a href=\"%1$s\" onclick=\"window.open('%1$s');return false;\">Nutzungsbedingungen</a>"
 
 #: system/Users/pntemplates/users_user_register.htm:19
 #, php-format
 msgid "Registering for a user account is easy. Registration can give you access to content and to features of the site that are not available to anonymous guests. Please read the site's %1$s and %2$s beforehand. During your visits, you are recommended to set your browser to accept cookies from this site, because various features of the site use cookies."
-msgstr "Die Registrierung eines neuen Benutzerkontos ist recht einfach. Mittels einer Registrierung können für den Benutzer Inhalte und Funktionen der Website verfügbar gemacht werden, die für Gäste sichtbar sind. Bitte auch die %1$s und %2$s der Website lesen. Der Browser sollte so eingestellt werden, dass Cookies dieser Website akzeptiert werden, da dies für verschiedene Funktionen notwendig sein könnte."
+msgstr "Die Registrierung eines neuen Benutzerkontos ist recht einfach. Durch die Registrierung auf dieser Website können für den Benutzer Inhalte und Funktionen verfügbar gemacht werden, die für Gäste nicht sichtbar sind. Bitte auch die %1$s und %2$s der Website lesen. Der Browser sollte so eingestellt werden, dass Cookies dieser Website akzeptiert werden, da dies für verschiedene Funktionen notwendig sein könnte."
 
 #: system/Users/pntemplates/users_user_register.htm:20
 msgid "The items that are marked with an asterisk ('*') are required entries."
-msgstr "Mit (*) markierte Angaben sind erforderlich."
+msgstr "Mit (*) markierte Angaben sind für die Registrierung zwingend erforderlich."
 
 #: system/Users/pntemplates/users_user_register.htm:26
-#, fuzzy
 msgid "Choose a user name"
-msgstr "SMTP Benutzername"
+msgstr "Benutzernamen wählen"
 
 #: system/Users/pntemplates/users_user_register.htm:28
 #: system/Users/pntemplates/users_user_register.htm:37
@@ -8746,11 +8588,11 @@ msgstr "*"
 
 #: system/Users/pntemplates/users_user_register.htm:34
 msgid "Set a password and enter your e-mail address"
-msgstr "Schritt 2: E-Mail Adresse und Kennwort angeben"
+msgstr "E-Mail Adresse und Kennwort angeben"
 
 #: system/Users/pntemplates/users_user_register.htm:34
 msgid "Enter your e-mail address"
-msgstr "Neue E-Mail Adresse"
+msgstr "E-Mail Adresse angeben"
 
 #: system/Users/pntemplates/users_user_register.htm:41
 #: system/Users/pntemplates/users_admin_modify.htm:53
@@ -8759,9 +8601,8 @@ msgid "Password (repeat for verification)"
 msgstr "Kennwortwiederholung (zur Verifikation)"
 
 #: system/Users/pntemplates/users_user_register.htm:43
-#, fuzzy
 msgid "Notice: The minimum length for user passwords is:"
-msgstr "(Mindestlänge für Kennwort: %s)"
+msgstr "Hinweis: Die Mindestlänge der Kennwörter liegt bei:"
 
 #: system/Users/pntemplates/users_user_register.htm:51
 msgid "E-mail address (repeat for verification)"
@@ -8769,12 +8610,11 @@ msgstr "E-Mail Adresse wiederholen"
 
 #: system/Users/pntemplates/users_user_register.htm:53
 msgid "Notice: Once your registration has been checked and accepted, your password will be sent to the e-mail address you enter here."
-msgstr "Wenn der Registrierungsprozess abgeschlossen ist wird das Kennwort an die angegebene E-Mail Adresse verschickt."
+msgstr "Wenn der Registrierungsprozess abgeschlossen ist, wird das Kennwort an diese E-Mail Adresse verschickt."
 
 #: system/Users/pntemplates/users_user_register.htm:58
-#, fuzzy
 msgid "Accept the site's 'Terms of use', and select your preferences for e-mail"
-msgstr "Schritt 3: Angaben zur Datenschutzerklärung und den Nutzungsbedingungen bestätigen"
+msgstr "Rechtliche Angaben bestätigen und E-Mail Einstellung auwählen"
 
 #: system/Users/pntemplates/users_user_register.htm:60
 msgid "Allow other users to see your e-mail address"
@@ -8797,21 +8637,18 @@ msgid "Answer the security question (this prevents automated sign-ups by bots an
 msgstr "Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
 #: system/Users/pntemplates/users_user_register.htm:99
-#, fuzzy
 msgid "Check your entries and submit your registration"
-msgstr "Letzter Schritt: Angaben prüfen und Registrierung senden"
+msgstr "Eingaben prüfen und Registrierung absenden"
 
 #: system/Users/pntemplates/users_user_register.htm:100
 msgid "Notice: When you are ready, click on 'Check your entries' to have your entries checked. When your entries are OK, click on 'Submit registration' to continue."
 msgstr "Hinweis: Wenn alle Angaben gemacht wurden, bitte auf 'Eingaben überprüfen' klicken. Ist die Prüfung erfolgreich, so kann mit einem Klick auf 'Registrierung absenden' die Registrierung fortgesetzt werden."
 
 #: system/Users/pntemplates/users_user_register.htm:102
-#, fuzzy
 msgid "Check your entries"
 msgstr "Eingaben überprüfen"
 
 #: system/Users/pntemplates/users_user_register.htm:103
-#, fuzzy
 msgid "Submit registration"
 msgstr "Registrierung absenden"
 
@@ -8856,7 +8693,7 @@ msgid "The new password is: %s"
 msgstr "Das neue Kennwort lautet: %s"
 
 #: system/Users/pntemplates/users_userapi_passwordmail.htm:5
-#, fuzzy, php-format
+#, php-format
 msgid "It can be changed after logging-in here: %s"
 msgstr "Es kann nach einem Login unter %s geändert werden."
 
@@ -8877,7 +8714,6 @@ msgid "User status"
 msgstr "Benutzerstatus"
 
 #: system/Users/pntemplates/users_admin_modify.htm:60
-#, fuzzy
 msgid "Inactive until 'Terms of use' accepted"
 msgstr "Benutzer ist inaktiv bis zur Zustimmung zu den Nutzungsbedingungen"
 
@@ -8887,22 +8723,21 @@ msgid "Theme"
 msgstr "Theme"
 
 #: system/Users/pntemplates/users_admin_modify.htm:67
-#, fuzzy
 msgid "Site's default theme"
-msgstr "individuelle Benutzer-Themes überschreiben"
+msgstr "Standardtheme der Website"
 
 #: system/Users/pntemplates/users_userapi_lostpasscodemail.htm:3
-#, fuzzy, php-format
+#, php-format
 msgid "Hello! Someone with the IP address %s has just requested a confirmation code for a change of password."
 msgstr "Jemand mit der IP-Adresse %s hat einen Bestätigungscode angefordert, um das Kennwort zu ändern."
 
 #: system/Users/pntemplates/users_userapi_lostpasscodemail.htm:4
-#, fuzzy, php-format
+#, php-format
 msgid "The confirmation code is: %s"
 msgstr "Der Bestätigungscode lautet: %s"
 
 #: system/Users/pntemplates/users_userapi_lostpasscodemail.htm:5
-#, fuzzy, php-format
+#, php-format
 msgid "With this confirmation code, you can now create a new password by clicking on this link: %s"
 msgstr "Mit diesem Bestätigungscode kann ein neues Kennwort unter %s vergeben werden."
 
@@ -8911,7 +8746,6 @@ msgid "If it was not you that made this request, you don't need to take any acti
 msgstr "Falls keine entsprechende Anforderung gestellt wurde, kann diese Benachrichtigung ignoriert werden. Dieses neue Kennwort wurde nicht an andere Empfänger geschickt."
 
 #: system/Users/pntemplates/users_admin_new.htm:7
-#, fuzzy
 msgid "Notice: Please type an entry in each box. In the 'Password' boxes, enter the same password in each box."
 msgstr "Hinweis: In jedem Feld muss ein Eintrag erfolgen. In den Kennwort-Feldern bitte jeweils dasselbe Kennwort eingeben."
 
@@ -8920,14 +8754,13 @@ msgid "New user account"
 msgstr "Neues Benutzerkonto"
 
 #: system/Users/pntemplates/users_admin_new.htm:22
-#, fuzzy, php-format
+#, php-format
 msgid "Notice: The minimum length for user passwords is %s characters."
-msgstr "(Mindestlänge für Kennwort: %s)"
+msgstr "Hinweis: Die Mindestlänge der Kennwörter liegt bei %s Zeichen."
 
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:35
-#, fuzzy
 msgid "Your own site"
-msgstr "Fehler bei der Benutzeranmeldung"
+msgstr "Homepage"
 
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:55
 msgid "Approve"
@@ -8954,9 +8787,8 @@ msgid "De-select all"
 msgstr "Auswahl aufheben"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:84
-#, fuzzy
 msgid "Send e-mail message"
-msgstr "E-Mail-Nachricht(en) senden"
+msgstr "E-Mail Nachricht senden"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:85
 msgid "Notice: This e-mail message will be sent to your address and to all other recipients you select. Your address will be the entered as the main recipient, and all your selected recipients will be included in the blind carbon copies ('Bcc') list. You can specify the number of 'Bcc' recipients to be added to each e-mail message. If the number of your selected recipients exceeds the number you enter here, then repeat messages will be sent until everyone in your selection has been mailed (you will receive a copy of each message). The allowed batch size may be set by your hosting provider."
@@ -8964,9 +8796,8 @@ msgstr "Hinweis: Die folgende E-Mail wird von der unten angegebenen Antwort-an-A
 
 #: system/Users/pntemplates/users_admin_listusers.htm:87
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:12
-#, fuzzy
 msgid "Sender's name"
-msgstr "Datenbankname"
+msgstr "Absendername"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:91
 msgid "Address to which replies should be sent"
@@ -8985,12 +8816,10 @@ msgid "Message"
 msgstr "Mitteilung"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:103
-#, fuzzy
 msgid "Send e-mail messages in batches"
-msgstr "Sende Fehlermeldungen per Mail an"
+msgstr "E-Mail Nachricht in Durchläufen versenden"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:106
-#, fuzzy
 msgid "messages per batch"
 msgstr "Mails pro Durchlauf"
 
@@ -8999,9 +8828,9 @@ msgid "Send"
 msgstr "Senden"
 
 #: system/Users/pntemplates/users_userapi_adminnotificationemail.htm:3
-#, fuzzy, php-format
+#, php-format
 msgid "A new user account has been activated on the site. User name: '%s'."
-msgstr "Ein neues Benutzerkonto wurde aktiviert. Benutzername: %s"
+msgstr "Ein neues Benutzerkonto wurde aktiviert. Benutzername: '%s'."
 
 #: system/Blocks/pntemplates/blocks_admin_new.htm:11
 msgid "New block"
@@ -9048,9 +8877,8 @@ msgid "Collapsed"
 msgstr "Komprimiert"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:3
-#, fuzzy
 msgid "Form of display"
-msgstr "Anzeigename"
+msgstr "Anzeigeart"
 
 #: system/Blocks/pntemplates/blocks_block_thelang_modify.htm:5
 msgid "Flags"
@@ -9183,7 +9011,7 @@ msgstr "Dies ist eine Liste aller - im System - existierenden Blöcke (abhängig
 
 #: system/Blocks/pntemplates/blocks_admin_view.htm:14
 msgid "Block ID"
-msgstr "Block-ID"
+msgstr "Block ID"
 
 #: system/Blocks/pntemplates/blocks_admin_view.htm:16
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:35
@@ -9225,11 +9053,11 @@ msgstr "Keine Einträge gefunden"
 
 #: system/Blocks/pntemplates/blocks_admin_view.htm:58
 msgid "Block positions list"
-msgstr "Blockpositionen anzeigen"
+msgstr "Blockpositionen"
 
 #: system/Blocks/pntemplates/blocks_admin_view.htm:59
 msgid "This is the list of block positions currently existing for your site's pages. You can create a new block position by clicking 'Create block position' in the menu. To edit the settings for a block position, or to reorder the blocks within a block position, click on the 'Edit' icon beside that particular position. To delete a block position, click on the 'Delete' icon and confirm the action in the confirmation prompt that will display."
-msgstr "Diese Liste zeigt alle erstellten Blockpositionen. Bitte auf das Bearbeitungs-Icon klicken, um eine Blockposition zu bearbeiten oder die Sortierung der Blöcke innerhalb eine Blockposition zu verändern."
+msgstr "Diese Liste zeigt alle erstellten Blockpositionen. Bitte auf das Bearbeitungssymbol klicken, um eine Blockposition zu bearbeiten oder die Sortierung der Blöcke innerhalb eine Blockposition zu verändern."
 
 #: system/Blocks/pntemplates/blocks_admin_view.htm:65
 msgid "Theme tag"
@@ -9255,9 +9083,8 @@ msgstr "Stylesheet"
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:21
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:7
-#, fuzzy
 msgid "Visibility within block"
-msgstr "Template für Blockinstanzen"
+msgstr "Anzeige im Block"
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:27
 msgid "Block titles"
@@ -9268,14 +9095,12 @@ msgid "These block titles override the title entered in the Blocks/extmenu secti
 msgstr "Dieser Blocktitel überschreibt die obige Einstellungen. Der hier eingegebene Titel wird auf allen Seiten mit dem Block angezeigt. Der obere Titel wird nur in der Administration der Blöcke angezeigt."
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:39
-#, fuzzy
 msgid "In the table below, drag and drop the menu items into your desired order. The item order and the contents of each menu item are saved when you click the 'Save' button. The number in the left-hand column is the ID of the menu item. Use this ID number if you want to use permission rules to restrict access to the menu item."
-msgstr "Die Einträge können mittels Drag und Drop angeordnet werden. Die neue Anordnung muss manuell über die Aktualisieren-Schaltfläche gespeichert werden."
+msgstr "Die Einträge können mittels Drag und Drop angeordnet werden. Die neue Anordnung muss manuell über die Schaltfläche gespeichert werden. Die angezeigte Nummer kann für die Vergabe von Zugriffsrechten genutzt werden."
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:40
-#, fuzzy
 msgid "Create new menu item"
-msgstr "Neuen Eintrag hinzufügen"
+msgstr "Neuen Menüeintrag hinzufügen"
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:47
 msgid "Image"
@@ -9294,7 +9119,6 @@ msgid "optional"
 msgstr "Optional"
 
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:85
-#, fuzzy
 msgid "Error! Oh! Wow! An 'unidentified error' occurred."
 msgstr "Fehler! Es ist ein unbekannter Systemfehler aufgetreten."
 
@@ -9339,7 +9163,6 @@ msgid "Edit block"
 msgstr "Block bearbeiten"
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:32
-#, fuzzy
 msgid "Show/hide advanced placement options"
 msgstr "Weitere Filtermöglichkeiten anzeigen/verstecken"
 
@@ -9349,7 +9172,7 @@ msgstr "Im folgenden Abschnitt kann die Blockanzeige auf bestimmte Module und Mo
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:38
 msgid "Display links to installed modules"
-msgstr "Links zu installierten Modulen anzeigen"
+msgstr "Installierte Module"
 
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:47
 msgid "Function type(s)"
@@ -9418,14 +9241,12 @@ msgid "Notice: Arrange your permission rules in the desired order of evaluation,
 msgstr "Hinweis: Die Zugriffsrechte können mittels Drag und Drop angeordnet werden. Die neue Reihenfolge wird sofort gültig und abgespeichert."
 
 #: system/Permissions/pntemplates/permissions_admin_view.htm:12
-#, fuzzy
 msgid "The permission rule you have defined as your main administration permission rule (highlighted in the list below) has been <strong>locked</strong>, which means you cannot edit it, move it or delete it. If this permission rule is not at the top of the list, other permission rules can be moved around it. If you need to perform an operation on the main administration permission rule then you must go to the Permission rules manager Settings page to unlock it beforehand. Otherwise, it is safer to keep it locked."
 msgstr "Die in der Konfiguration definierte generische Admin-Berechtigung ist <strong>fixiert</strong>. Die Berechtigung in hier der Liste hervorgehoben und kann nicht bearbeitet, verschoben oder gelöscht werden. Nur falls unbedingt notwendig kann die Fixierung in der Konfiguration aufgehoben werden."
 
 #: system/Permissions/pntemplates/permissions_admin_view.htm:14
-#, fuzzy
 msgid "The permission rule you have defined as your main administration permission rule (highlighted in the list below) is <strong>unlocked</strong>, which means you can currently edit it, move it or delete it. Once you have finished any operations you want to perform on it, you are recommended to go to the Permission rules manager Settings page and lock it again."
-msgstr "Die in der Konfiguration definierte generische Admin-Berechtigung ist <strong>fixiert</strong>. Die Berechtigung in hier der Liste hervorgehoben und kann nicht bearbeitet, verschoben oder gelöscht werden. Nur falls unbedingt notwendig kann die Fixierung in der Konfiguration aufgehoben werden."
+msgstr "Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>nicht fixiert</strong> und kann also bearbeitet, verschoben oder gelöscht werden. In der Konfiguration sollte die Fixierung aktiviert werden, um Konfigurationsprobleme zu vermeiden."
 
 #: system/Permissions/pntemplates/permissions_admin_view.htm:23
 #: system/Permissions/pntemplates/permissions_admin_view.htm:51
@@ -9509,11 +9330,11 @@ msgstr "Teste Zugriffsrecht..."
 
 #: system/Permissions/pntemplates/permissions_admin_view.htm:217
 msgid "Error! This permission rule has been locked. If you need to unlock it, go to the Permission rules manager Settings page."
-msgstr "Fehler! Dieses Zugriffsrecht ist fixiert und muss vorweg in der Konfiguration freigeben werden."
+msgstr "Dieses Zugriffsrecht ist fixiert und muss vorweg in der Konfiguration freigeben werden."
 
 #: system/Permissions/pntemplates/permissions_admin_viewinstanceinfo.htm:12
 msgid "Permission rule information"
-msgstr "Zugriffsrecht Information"
+msgstr "Informationen über die Zugriffsrechte"
 
 #: system/Permissions/pntemplates/permissions_admin_viewinstanceinfo.htm:17
 msgid "Registered component"
@@ -9532,12 +9353,10 @@ msgid "Delete permission rule"
 msgstr "Zugriffsrecht löschen"
 
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:14
-#, fuzzy
 msgid "Lock main administration permission rule"
 msgstr "Generische Admin-Berechtigung fixieren"
 
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:22
-#, fuzzy
 msgid "ID of main administration permission rule"
 msgstr "ID der generischen Admin-Berechtigung"
 
@@ -9546,19 +9365,16 @@ msgid "Enable filtering of group permissions"
 msgstr "Filterung der Rechte ermöglichen"
 
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:33
-#, fuzzy
 msgid "Minimum row height for permission rules list view (in pixels)"
-msgstr "Mindeszeilenhöhe im Ansichtsmodus (Pixel)"
+msgstr "Mindestzeilenhöhe im Ansichtsmodus (Pixel)"
 
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:43
-#, fuzzy
 msgid "Minimum row height for rule editing view (in pixels)"
-msgstr "Mindeszeilenhöhe im Ansichtsmodus (Pixel)"
+msgstr "Mindestzeilenhöhe im Ansichtsmodus (Pixel)"
 
 #: system/pnRender/pntemplates/pndebug.html:12
-#, fuzzy
 msgid "Rendering engine debug console"
-msgstr "Individueller Rendering Engine Block"
+msgstr "Rendering Engine Debug Console"
 
 #: system/pnRender/pntemplates/pndebug.html:28
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:26
@@ -9575,7 +9391,6 @@ msgid "URI"
 msgstr "URI"
 
 #: system/pnRender/pntemplates/pndebug.html:40
-#, fuzzy
 msgid "Included templates and configuration files (load time in seconds)"
 msgstr "Einschließlich Template- und Konfigurationsdateien (Ladezeit in Sekunden)"
 
@@ -9633,12 +9448,12 @@ msgstr "Kompilierungseinstellungen"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:22
 msgid "Compiled templates directory"
-msgstr "Compile-Verzeichnis"
+msgstr "Kompilierungsverzeichnis"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:34
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:35
 msgid "Delete compiled templates"
-msgstr "Compile-Cache löschen"
+msgstr "Kompilierungscache löschen"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:38
 msgid "Cache settings"
@@ -9681,7 +9496,6 @@ msgid "Debug settings"
 msgstr "Debug-Einstellungen"
 
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:64
-#, fuzzy
 msgid "Embed template information within comments inside the source code of pages"
 msgstr "Template-Informationen als Kommentar in die Ausgabe integrieren"
 
@@ -9761,9 +9575,8 @@ msgid "Template file"
 msgstr "Templatedatei"
 
 #: system/pnRender/pntemplates/pnrender_block_pnrender.htm:41
-#, fuzzy
 msgid "Notice: The template file must be placed in the '/pntemplates' subdirectory of the specified module."
-msgstr "Die Template-Datei muss im /pntemplates Verzeichnis des Moduls sein"
+msgstr "Hinweis: Die Template-Datei muss im /pntemplates Verzeichnis des Moduls sein."
 
 #: system/pnRender/pntemplates/pnrender_block_pnrender.htm:46
 msgid "Parameters (format: assign=value;assign2=value2...)"
@@ -9780,9 +9593,8 @@ msgid "Value"
 msgstr "Wert"
 
 #: system/Categories/pntemplates/categories_user_editcategories.htm:4
-#, fuzzy
 msgid "Sorry! User-owned category editing has not been enabled. This feature can be enabled by the site administrator."
-msgstr "Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
+msgstr "Entschuldigung! Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
 
 #: system/Categories/pntemplates/categories_user_editcategories.htm:9
 msgid "Edit your user categories"
@@ -9817,9 +9629,8 @@ msgid "Category"
 msgstr "Kategorie"
 
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:40
-#, fuzzy
 msgid "Do you really want to delete this registry entry?"
-msgstr "Soll die Admin-Nachricht wirklich gelöscht werden?"
+msgstr "Soll diese Registrierung wirklich gelöscht werden?"
 
 #: system/Categories/pntemplates/categories_admin_copy.htm:2
 msgid "Copy category"
@@ -9834,7 +9645,6 @@ msgid "Path"
 msgstr "Pfad"
 
 #: system/Categories/pntemplates/categories_admin_copy.htm:22
-#, fuzzy
 msgid "Copy this category and all sub-categories of this category"
 msgstr "Diese Kategorie inkl. der dazugehörigen Unterkategorien unter folgende Kategorie kopieren"
 
@@ -9852,23 +9662,20 @@ msgid "Do you really want to delete this category?"
 msgstr "Soll die Kategorie wirklich gelöscht werden?"
 
 #: system/Categories/pntemplates/categories_admin_delete.htm:16
-#, fuzzy, php-format
+#, php-format
 msgid "It contains %s direct sub-categories."
 msgstr "Diese Kategorie enthält %s direkte Unterkategorien."
 
 #: system/Categories/pntemplates/categories_admin_delete.htm:17
-#, fuzzy
 msgid "Please also choose what to do with this category's sub-categories:"
-msgstr "Was soll mit den Unterkategorien dieser Kategorie passieren?"
+msgstr "Bitte auswählen, was mit den Unterkategorien passieren soll?"
 
 #: system/Categories/pntemplates/categories_admin_delete.htm:20
-#, fuzzy
 msgid "Delete all sub-categories"
 msgstr "Alle Unterkategorien löschen"
 
 #: system/Categories/pntemplates/categories_admin_delete.htm:22
 #: system/Categories/pntemplates/categories_admin_move.htm:22
-#, fuzzy
 msgid "Move all sub-categories to next category"
 msgstr "Unterkategorien in folgende Kategorie verschieben"
 
@@ -9882,9 +9689,8 @@ msgid "Parent"
 msgstr "Parent"
 
 #: system/Categories/pntemplates/categories_admin_edit.htm:34
-#, fuzzy
 msgid "No parent category."
-msgstr "Keine entsprechende Kategorie gefunden."
+msgstr "Keine Elternkategorie."
 
 #: system/Categories/pntemplates/categories_admin_edit.htm:39
 #: system/Categories/pntemplates/categories_user_list.htm:56
@@ -9962,31 +9768,26 @@ msgid "Move category"
 msgstr "Kategorie verschieben"
 
 #: system/Categories/pntemplates/categories_admin_config.htm:7
-#, fuzzy
 msgid "Are you sure you want to rebuild all the internal paths for categories?"
-msgstr "Soll die Kategorie [%s] wirklich gelöscht werden?"
+msgstr "Soll die Kategoriepfade wirklich neu erstellt werden?"
 
 #: system/Categories/pntemplates/categories_admin_config.htm:7
 msgid "Warning! If you have a large number of categories then this action may time out, or may exceed the memory limit configured within your PHP installation."
 msgstr "Warnung! Je nach Anzahl der Kategorien könnte möglicherweise ein Time-Out auftreten oder evtl. das PHP-Speicherlimit überschritten werden."
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:12
-#, fuzzy
 msgid "Root category for user categories"
 msgstr "Stammkategorie für Benutzerkategorien"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:16
-#, fuzzy
 msgid "Allow users to edit their own categories"
 msgstr "Benutzer erlauben, die eigenen Kategorien bearbeiten zu dürfen"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:20
-#, fuzzy
 msgid "Automatically create user category root folder"
 msgstr "Automatisches Erstellen des Stammverzeichnis für Benutzerkategorien"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:24
-#, fuzzy
 msgid "Automatically create user default category"
 msgstr "Automatisches Erstellen der Standard-Benutzerkategorien"
 
@@ -9999,9 +9800,9 @@ msgid "Default user category"
 msgstr "Standard Benutzerkategorie"
 
 #: system/Categories/pntemplates/categories_user_list.htm:64
-#, fuzzy, php-format
+#, php-format
 msgid "Do you really want to delete the category '%s'?"
-msgstr "Soll die Kategorie wirklich gelöscht werden?"
+msgstr "Soll die Kategorie '%s' wirklich gelöscht werden?"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:12
 msgid "Language system"
@@ -10009,7 +9810,7 @@ msgstr "Sprachsystem"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:14
 msgid "Activate multi-lingual features"
-msgstr "Multilingual-Umgebung aktivieren"
+msgstr "Multilingualität aktivieren"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:23
 msgid "Add language to URL"
@@ -10073,7 +9874,7 @@ msgstr "Protokollierungsstufe"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:15
 msgid "Display messages for all notices, warnings and errors (system must be in development mode)"
-msgstr "Hinweise, Warnungen und Fehler anzeigen."
+msgstr "Hinweise, Warnungen und Fehler anzeigen (System muss im Development-Modus sein)"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:19
 msgid "Display messages for errors only"
@@ -10081,7 +9882,7 @@ msgstr "Nur echte Fehler anzeigen"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:23
 msgid "Suppress all error messages"
-msgstr "Fehlermeldungen nicht anzeigen."
+msgstr "Keine Fehlermeldungen anzeigen"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:28
 msgid "Error logging"
@@ -10093,7 +9894,7 @@ msgstr "Welche Fehlertypen sollen geloggt werden?"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:33
 msgid "Log all notices, warnings and errors"
-msgstr "Hinweise, Warnung und Fehler protokollieren"
+msgstr "Hinweise, Warnungen und Fehler protokollieren"
 
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:37
 msgid "Log errors only"
@@ -10323,16 +10124,15 @@ msgstr "Anzeigeeinstellungen"
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:29
 #: system/Admin/pntemplates/admin_admin_help.htm:41
 msgid "Display icons"
-msgstr "Icons anzeigen"
+msgstr "Symbole anzeigen"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:37
 msgid "Display description and context menu"
 msgstr "Modulbeschreibung und Kontextmenü anzeigen"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:45
-#, fuzzy
 msgid "Form of display for module names"
-msgstr "Modulnamen anzeigen"
+msgstr "Art der Modulanzeige"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:47
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:35
@@ -10370,9 +10170,8 @@ msgstr "Theme der Webseite nutzen"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:68
 #: system/Admin/pntemplates/admin_admin_help.htm:45
-#, fuzzy
 msgid "Style sheet to use"
-msgstr "Zustimmung zu Nutzungsbedingungen zurücksetzen"
+msgstr "Stylesheet für die Administration"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:72
 #: system/Admin/pntemplates/admin_admin_help.htm:46
@@ -10382,9 +10181,8 @@ msgstr "Startkategorie"
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:85
 #: system/Admin/pntemplates/admin_admin_help.htm:49
 #: system/Admin/pntemplates/admin_admin_help.htm:53
-#, fuzzy
 msgid "Modules categorisation"
-msgstr "Authentifizierungsmodule"
+msgstr "Modulkategorisierung"
 
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:87
 #: system/Admin/pntemplates/admin_admin_help.htm:52
@@ -10402,41 +10200,34 @@ msgid "Help"
 msgstr "Hilfe"
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:6
-#, fuzzy
 msgid "Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site root, but must be removed before you can access the site admin panel. Moreover, for your information, this tool is now deprecated in favor of the Zikula recovery console ('zrc.php')."
-msgstr "Warnung! Zum Fortfahren bitte das \"Swiss army knife tool\" im Rootverzeichnis löschen."
+msgstr "Stopp! Zum Fortfahren bitte das 'Swiss army knife tool' (Datei 'psak.php') im Rootverzeichnis löschen. Hinweis am Rande: Dieses Tool ist mittlerweile veraltet und wurde durch die 'Zikula Recovery Console' (Datei 'zrc.php') ersetzt."
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:9
-#, fuzzy
 msgid "Stop, please! The Zikula recovery console tool (file 'zrc.php') is in the site root, but must be removed before you can access the site admin panel."
-msgstr "Warnung! Zum Fortfahren bitte die \"Zikula Recovery Console\" im Rootverzeichnis löschen."
+msgstr "Stopp! Zum Fortfahren bitte die 'Zikula Recovery Console' (Datei 'zrc.php') im Rootverzeichnis löschen."
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:12
-#, fuzzy
 msgid "Stop, please! The installer file 'install.php' and directory 'install' are in the site root, but must be removed before you can access the site admin panel."
-msgstr "Warnung! Zum Fortfahren bitte die Datei install.php im Root und das Installationsverzeichnis löschen"
+msgstr "Stopp! Zum Fortfahren bitte die Datei 'install.php' und das Installationsverzeichnis im Root löschen."
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:15
-#, fuzzy
 msgid "Stop, please! An upgrade script ('upgrade.php' file) is in the site root, but must be removed before you can access the site admin panel."
-msgstr "Warnung! Zum Fortfahren bitte das Upgradeskript (Datei 'upgrade.php') im Rootverzeichnis löschen."
+msgstr "Stopp! Zum Fortfahren bitte das Upgradeskript (Datei 'upgrade.php') im Rootverzeichnis löschen."
 
 #: system/Admin/pntemplates/admin_admin_warning.htm:18
 msgid "Continue"
 msgstr "Fortfahren"
 
 #: system/Admin/pntemplates/admin_admin_modify.htm:2
-#, fuzzy
 msgid "Edit module category"
-msgstr "Neue Modulkategorie anlegen"
+msgstr "Modulkategorie bearbeiten"
 
 #: system/Admin/pntemplates/admin_admin_modify.htm:13
-#, fuzzy
 msgid "Module category"
-msgstr "Neue Modulkategorie anlegen"
+msgstr "Modulkategorie"
 
 #: system/Admin/pntemplates/admin_admin_new.htm:12
-#, fuzzy
 msgid "New module category"
 msgstr "Neue Modulkategorie"
 
@@ -10465,67 +10256,54 @@ msgid "Enter the name to be displayed within the categories tab menu."
 msgstr "Bitte den Namen eingeben, der in den Kategorien-Tabs angezeigt werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:26
-#, fuzzy
 msgid "Enter an informative description to be displayed after the category name, when this category is displayed in the Administration panel."
 msgstr "Bitte hier eine informative Beschreibung eingeben, die zu jeder Kategorie im Admin-Panel angezeigt wird."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:30
-#, fuzzy
 msgid "The 'Settings' page contains three sections: 'General settings', 'Display settings' and 'Modules categorisation'. Each is covered below."
-msgstr "Zu Beginn der Konfigurationsseite kann die Anzeige des Admin-Panels konfiguriert werden (Theme und Stylesheet), sowie die Anzahl der anzuzeigenden Module pro Seite.<br /><br />Weiter unten kann über die Auswahlfelder für jedes installierte und aktivierte Modul eine entspechende Kategorie ausgewählt werden."
+msgstr "Zu Beginn der Konfigurationsseite kann die Anzeige des Admin-Panels konfiguriert werden (Theme und Stylesheet), sowie die Anzahl der anzuzeigenden Module pro Seite. Weiter unten kann über die Auswahlfelder für jedes installierte und aktivierte Modul eine entspechende Kategorie ausgewählt werden."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:33
-#, fuzzy
 msgid "There is currently only one option in the General settings section."
-msgstr "Es gibt derzeit nur eine Option in den allgemeinen Einstellungen"
+msgstr "Es gibt derzeit nur eine Option in den allgemeinen Einstellungen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:36
-#, fuzzy
 msgid "This option enables you to disable the Security analyser's check to see if the Installer is present in your site's root directory. Preferably, you should leave the check enabled, as a security breach could easily occur if you omit to remove the Installer's components after completing installation."
-msgstr "Diese Option ermöglicht die Deaktivierung der Prüfung ob die Installationsroutine noch im Rootverzeichnis vorhanden ist. Diese Option sollte nur in Entwicklungsumgebungen gesetzt werden, da sonst ein Sicherheitsrisiko entstehen kann."
+msgstr "Diese Option ermöglicht die Deaktivierung der Prüfung, ob die Installationsroutine noch im Rootverzeichnis vorhanden ist. Diese Option sollte nur in Entwicklungsumgebungen gesetzt werden, da sonst ein Sicherheitsrisiko entstehen kann."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:39
-#, fuzzy
 msgid "There are six display settings."
-msgstr "Es gibt sechs Anzeigeeinstellungen"
+msgstr "Es gibt sechs Anzeigeeinstellungen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:41
-#, fuzzy
 msgid "When checked, this option causes graphic icons to be displayed for each module in the Administration panel."
 msgstr "Bei Auswahl dieser Option werden für jedes Modul ein Symbol im Admin-Panel angezeigt."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:42
-#, fuzzy
 msgid "Enter a whole number for the number of modules to be displayed on each page of the Administration panel."
 msgstr "Die Anzahl der Module eingeben, die auf einer Seite im Admin-Panel angezeigt werden sollen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:43
-#, fuzzy
 msgid "Enter a whole number for the number of modules to be displayed on each line of the Administration panel."
 msgstr "Die Anzahl der Module eingeben, die pro Reihe im Admin-Panel angezeigt werden sollen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:44
-#, fuzzy
 msgid "Open the dropdown list and choose the theme to be applied to the Administration panel."
 msgstr "Im Auswahlfeld das Theme auswählen, das dem Admin-Panel zugewiesen werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:45
-#, fuzzy
 msgid "Open the dropdown list and choose the style sheet to be used to render the Administration panel."
 msgstr "Im Auswahlfeld das Stylesheet auswählen, das dem Admin-Panel zugewiesen werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:46
-#, fuzzy
 msgid "Open the dropdown list and choose the modules category to be shown when the Administration panel first displays."
 msgstr "Im Auswahlfeld die Modulkategorie auswählen, die beim Erstaufruf des Admin-Panels angezeigt werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:50
-#, fuzzy
 msgid "In the Modules categorisation section, you can choose two things:"
 msgstr "Im Abschnitt Modulkategorisierung können zwei Optionen gewählt werden:"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:52
-#, fuzzy
 msgid "Open the dropdown list and choose the module category in which to put all newly-installed and activated modules."
 msgstr "Im Auswahlfeld die Modulkategorie auswählen, die für alle neu installierten und aktivierten Module gelten soll."
 
@@ -10534,18 +10312,15 @@ msgid "You will see listed all the modules currently installed and activated. Op
 msgstr "Alle derzeit installierten und aktivierten Module werden aufgelistet. Neben jedem Modul kann anhand eines Auswahlfeldes festgelegt werden, in welche Kategorie das jeweilige Module eingeordnet werden soll."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:58
-#, fuzzy
 msgid "Messages you might see"
-msgstr "Mögliche Mitteilung"
+msgstr "Mögliche Mitteilungen"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:59
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:5
-#, fuzzy
 msgid "Security analyser warnings"
 msgstr "Warnung des Sicherheitscenters"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:60
-#, fuzzy
 msgid "In the Administration panel, you will see security warnings displayed if the Security analyser detects potential security vulnerabilities in your site's installation. If you see no warning box then it means that no vulnerabilities have been found. Please read the security documentation for more security-related information. Below are explanations for each vulnerability possibly identified."
 msgstr "Falls die Sicherheitsanalyse potentielle Gefahren innerhalb der Installation erkennt, werden Sicherheitswarnungen angezeigt. Bitte in diesem Fall die Dokumentation für sicherheitsrelevante Informationen lesen. Weiter unten stehen Erläuterungen für jedes möglicherweise identifiziertes Sicherheitsrisiko. Hierbei handelt es sich nur um Beispiele für mögliche Sicherheitsrisiken und sie bedeuten nicht, dass diese tatsächlich entdeckt wurden. Um den Sicherheitsstatus des Internetauftritts zu prüfen, bitte den etwaigen Warnhinweis im oberen Bereich des Admin-Panels beachten. Falls kein solcher Hinweis angezeigt wird, wurden keine Sicherheitsrisiken entdeckt."
 
@@ -10565,33 +10340,27 @@ msgid "You see the message"
 msgstr "Mitteilung"
 
 #: system/Admin/pntemplates/admin_admin_help.htm:62
-#, fuzzy
 msgid "Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site root, but must be removed before you can access the Administration panel. Moreover, for your information, this tool is now deprecated in favor of the Zikula recovery console ('zrc.php')."
-msgstr "Warnung! Zum Fortfahren bitte das \"Swiss army knife tool\" im Rootverzeichnis löschen."
+msgstr "Stopp! Zum Fortfahren bitte das 'Swiss army knife tool' (Datei 'psak.php') im Rootverzeichnis löschen. Hinweis am Rande: Dieses Tool ist mittlerweile veraltet und wurde durch die 'Zikula Recovery Console' (Datei 'zrc.php') ersetzt."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:63
-#, fuzzy
 msgid "The Zikula recovery console tool (a file called 'zrc.php') is a useful utility for resolving certain problems, but should not be left in any directory accessible from the Internet, because this leaves an easy opportunity for a security breach. If the Security analyser detects this vulnerability, you will have to remove 'zrc.php' before you can access the Administration panel."
-msgstr "Das Tool Swiss Army Knife (psak.php) ist ein nützliches Werkzeug, um bestimmte Probleme zu lösen, aber es sollte niemals innerhalb eines Verzeichnis bleiben, auf das über das Internet zugegriffen werden kann, weil dies ein Sicherheitsrisiko darstellt. Wenn die Sicherheitsanalyse diese Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange verhindert, bis die Datei 'psak.php' gelöscht wurde."
+msgstr "Das Tool Swiss Army Knife ('psak.php') ist ein nützliches Werkzeug, um bestimmte Probleme zu lösen, aber es sollte niemals innerhalb eines Verzeichnis bleiben, auf das über das Internet zugegriffen werden kann, weil dies ein Sicherheitsrisiko darstellt. Wenn die Sicherheitsanalyse diese Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange verhindert, bis die Datei 'psak.php' gelöscht wurde."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:65
-#, fuzzy
 msgid "Stop, please! The installer file 'install.php' and directory 'install' are in the site root, but must be removed before you can access the Administration panel."
-msgstr "Warnung! Zum Fortfahren bitte die Datei install.php im Root und das Installationsverzeichnis löschen"
+msgstr "Warnung! Zum Fortfahren bitte die Datei install.php im Root und das Installationsverzeichnis löschen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:66
-#, fuzzy
 msgid "After completing the installation process, it is very important to delete the Installer's file 'install.php' and directory 'install' from the site root directory, especially if it is on-line on the Internet, because otherwise there is an opportunity for a security breach. If the Security analyser detects this vulnerability, you will have to remove them before you can access the Administration panel. In addition, please consult the security documentation for more information about how to optimally configure a site from the security viewpoint."
 msgstr "Nach erfolgreicher Installtion sollte die Installationsdatei 'install.php' sowie das Verzeichnis 'install' unbedingt aus dem Wurzelverzeichnis gelöscht werden, da andernfalls eine Sicherheitslücke besteht. Wenn die Sicherheitsanalyse diese Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange verhindert, bis die entsprechende Datei und das Verzeichnis gelöscht wurden. Bitte auch die Dokumentation zur optimalen Konfiguration der Webseite lesen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:68
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:8
-#, fuzzy
 msgid "Configuration file 'config/config.php' is writeable, but should be read-only (644 or 444)."
-msgstr "Die Konfigurationsdatei 'config/config.php' ist beschreibbar und sollte eigentlich nur lesbar sein (ggfs. chmod 644 oder chmod 444 setzen)."
+msgstr "Die Konfigurationsdatei 'config/config.php' ist beschreibbar und sollte jedoch nur lesbar sein (ggfs. chmod 644  bzw. 444 setzen)."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:69
-#, fuzzy
 msgid "When a site is originally installed, the Installer script creates a configuration file called 'config.php' that is located in the sub-directory 'config' within the site's root directory. It should not be left writeable, because this leaves an opportunity for a security breach. You should set the file's permissions to read-only (644 or 444). In addition, please consult the security documentation for more information about how to optimally configure a site from the security viewpoint."
 msgstr "Nach erfolgter Installation erzeugt das Installationsskript eine Konfigurationsdatei 'config.php', die im Unterverzeichnis 'config' des Rootverzeichnis zu finden ist. Falls diese Datei beschreibbar ist, stellt dies ein Sicherheitsrisiko dar. Das Zugriffsrecht für diese Datei sollte auf nur-lesbar (644 or 444) gesetzt werden. Bitte auch die Dokumentation zur optimalen Konfiguration der Webseite lesen."
 
@@ -10601,17 +10370,14 @@ msgid "Installer file 'upgrade.php' is in the site root, but should be removed."
 msgstr "Die Datei 'upgrade.php' befindet sich noch im Rootverzeichnis und sollte entfernt werden."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:72
-#, fuzzy
 msgid "The file 'upgrade.php' is used by the Installer script if a previously-existing site is upgraded to a more-recent version. Once the new site is working properly, you should delete this file, as it is no longer required and could make a security breach possible."
 msgstr "Die Datei 'upgrade.php' wird vom Installationsskript verwendet, falls eine bereits existierende Installation auf eine neuere Version aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei gelöscht werden, da sie nicht länger benötigt wird und ein mögliches Sicherheitsrisiko darstellt."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:74
-#, fuzzy
 msgid "Installer file 'upgrade.php' is in the site root, but should be removed (after a PostNuke-to-Zikula upgrade)."
 msgstr "Die Datei 'upgrade.php' befindet sich noch im Rootverzeichnis und sollte entfernt werden."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:75
-#, fuzzy
 msgid "The file 'upgrade.php' is used by the Installer script if a legacy PostNuke site is upgraded to a more-recent version. Once the new site is working properly, you should delete this file as it is no longer required and could make a security breach possible."
 msgstr "Die Datei 'upgrade.php' wird vom Installationsskript verwendet, falls eine bereits existierende Installation auf eine neuere Version aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei gelöscht werden, da sie nicht länger benötigt wird und ein mögliches Sicherheitsrisiko darstellt."
 
@@ -10635,45 +10401,37 @@ msgstr "In einigen Hostingumgebungen ist die PHP-Einstellung 'register_globals' 
 
 #: system/Admin/pntemplates/admin_admin_help.htm:83
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:20
-#, fuzzy
 msgid "There is no '.htaccess' file in the temporary directory ('/pnTemp' or other location), but one should be present."
 msgstr "Es befindet sich keine '.htaccess'-Datei im temporären Verzeichnis (z.B. '/pnTemp'), die vor einem externen Zugriff schützen könnte."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:84
-#, fuzzy
 msgid "If properly installed, a site will include an '.htaccess' file in the site's temporary directory (which is called '/pnTemp', unless another location is used). However, some methods used for transferring the package's files to a web space may lead to this file not being transferred. In this case, you are strongly recommended to create one (and to ensure that '.htaccess' files exist in certain other directories, too). For more information about this, please consult the security documentation."
 msgstr "Nach erfolgter Installation enthält das Verzeichnis '/pnTemp' eine Datei '.htaccess'. Teilweise wird diese Datei aber beim Upload nicht übertragen, in einem solchen Fall wird dringend empfohlen, die Datei zu erzeugen (und sicher zu stellen, dass die Dateien '.htaccess' in einigen anderen Verzeichnissen ebenfalls existiert). Weitere Informationen hierzu finden sich in der Dokumentation."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:86
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:29
-#, fuzzy
 msgid "'SafeHTML' output filter is not enabled in the Security centre module, but preferably should be."
 msgstr "Der SafeHTML-Outputfilter ist nicht aktiviert. Es wird empfohlen, den Ausgabefilter zu aktivieren."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:87
-#, fuzzy
 msgid "The 'SafeHTML' output filter is a feature of the Security centre module that enhances the security of a site, and the Security analyser has detected that it is not enabled. You are recommended to ensure that it is enabled. You will also see this message if the Security centre module is not installed or is not activated. For more information about this, please consult the Security centre on-line help."
 msgstr "Der Ausgabefilter SafeHTML ist eine Option des Security-Center Moduls, dass die Sicherheit dieser Webseite erhöht. Die Sicherheitsanalyse hat entdeckt, dass dieser Filter nicht aktiviert ist. Es wird empfohlen, den Filter zu aktivieren. Dieser Hinweis wird auch angezeigt, wenn das Security-Center Modul nicht installiert oder deaktiviert ist."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:89
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:23
-#, fuzzy
 msgid "Security centre module is not installed, but preferably should be."
-msgstr "Das Security-Center Modul ist nicht installiert! Es wird empfohlen, das Modul zu installieren."
+msgstr "Das Security-Center Modul ist nicht installiert. Es wird empfohlen, das Modul zu installieren."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:90
-#, fuzzy
 msgid "When a site is originally installed, the Security centre is installed and activated by default. You will see the above message if the Security centre has been removed. You are recommended to leave the Security centre installed, as it enhances a site's security."
 msgstr "Nach der Installation ist das Security-Center standardmäßig installiert und aktiviert. Der obenstehende Hinweis wird angezeigt, falls das Security Center entfernt wurde. Es wird empfohlen, das Security-Center zu aktivieren, da es helfen kann, die Sicherheit der Webseite zu erhöhen."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:92
 #: system/Admin/pntemplates/admin_admin_securityanalyzer.htm:26
-#, fuzzy
 msgid "Security centre module is not activated, but preferably should be."
 msgstr "Das Security-Center Modul ist nicht aktiv. Es wird empfohlen, das Modul zu aktivieren."
 
 #: system/Admin/pntemplates/admin_admin_help.htm:93
-#, fuzzy
 msgid "When a site is originally installed, the Security centre is installed and activated by default. You will see the above message if the Security centre has been deactivated. You are recommended to leave the Security centre activated, as it enhances a site's security."
 msgstr "Nach der Installation ist das Security-Center standardmäßig installiert und aktiviert. Der obenstehende Hinweis wird angezeigt, falls das Security Center entfernt wurde. Es wird empfohlen, das Security-Center zu aktivieren, da es helfen kann, die Sicherheit der Webseite zu erhöhen."
 
@@ -10687,19 +10445,16 @@ msgid "You have the possibility of enabling support for legacy PostNuke modules.
 msgstr "Zikula ermöglicht die Unterstützung älterer Modulversionen bzw. der früheren API-Schnittstelle. Solche Module können jedoch Sicherheitsrisiken enthalten, die den Internetauftritt kompromittieren können. Es wird dringend empfohlen, nur aktuelle Modulversionen zu verwenden, die konform zur aktuellen Zikula API sind. In einem solchen Fall kann die Unterstützung älterer Module ausgeschaltet werden (dies ist die Standardeinstellung nach der erstmaligen Installation)."
 
 #: system/Admin/pntemplates/admin_admin_adminpanel.htm:9
-#, fuzzy
 msgid "There are currently no modules in this category."
-msgstr "Es ist momentan %s Gast online."
+msgstr "Diese Adminkategorie ist leer. Diese Meldung wird vermutlich angezeigt, weil entweder kein Modul in dieser Kategorie vorhanden ist oder kein administrativer Zugriff auf ein Modul besteht, das dieser Standardkategorie zugeordnet wurde."
 
 #: system/Admin/pntemplates/admin_admin_updatechecker.htm:5
-#, fuzzy
 msgid "Upgrade found! A new version of the Zikula core is available."
-msgstr "Es ist eine neue Version des Zikula-Cores verfügbar."
+msgstr "Es ist eine neue Version des Zikula Cores verfügbar."
 
 #: system/Admin/pntemplates/admin_admin_updatechecker.htm:5
-#, fuzzy
 msgid "Please download the new Zikula core"
-msgstr "Es ist eine neue Version des Zikula-Cores verfügbar."
+msgstr "Bitte den neuen Zikula Core herunterladen."
 
 #: system/Admin/pntemplates/admin_admin_adminpanel_inc1.htm:20
 #: system/Groups/pntemplates/groups_user_view.htm:16
@@ -10708,9 +10463,8 @@ msgid "Functions"
 msgstr "Funktionen"
 
 #: system/Admin/pntemplates/admin_admin_adminpanel_inc1.htm:31
-#, fuzzy
 msgid "Module administration"
-msgstr "Nachrichten vom Admin"
+msgstr "Moduladministration"
 
 #: system/Admin/pntemplates/admin_admin_delete.htm:2
 msgid "Delete module category"
@@ -10725,14 +10479,13 @@ msgid "This page is locked"
 msgstr "Diese Seite ist gesperrt"
 
 #: system/PageLock/pntemplates/PageLock_lockedwindow.html:9
-#, fuzzy
 msgid "This page is locked because another user is working on it. Please wait: the page will be unlocked automatically when the other user has finished, and you will be informed."
 msgstr "Diese Seite ist durch einen anderen Benutzer gesperrt. Das Fenster wird automatisch aktiv, sobald der andere Benutzer seine Bearbeitung beendet hat."
 
 #: system/PageLock/pntemplates/PageLock_lockedwindow.html:10
-#, fuzzy, php-format
+#, php-format
 msgid "Locked by '%s'."
-msgstr "Gesperrt von %s"
+msgstr "Gesperrt von '%s'."
 
 #: system/PageLock/pntemplates/PageLock_lockedwindow.html:13
 msgid "Ignore lock"
@@ -10743,16 +10496,14 @@ msgid "Back"
 msgstr "Zurück"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:12
-#, fuzzy
 msgid "New message"
 msgstr "Adminnachricht anlegen"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:38
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:16
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:50
-#, fuzzy
 msgid "Expiration"
-msgstr "Kein Ablaufdatum"
+msgstr "Ablauf"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:41
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:53
@@ -10762,29 +10513,25 @@ msgstr "Tage (0 = nie)"
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:45
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:14
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:57
-#, fuzzy
 msgid "Visibility"
-msgstr "Blockverkleinerung"
+msgstr "Sichtbar für"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:17
-#, fuzzy
 msgid "Expiration date"
-msgstr "Kein Ablaufdatum"
+msgstr "Ablaufdatum"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:2
-#, fuzzy
 msgid "admin message"
-msgstr "Admin-Nachricht"
+msgstr "Adminnachricht"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:3
-#, fuzzy, php-format
+#, php-format
 msgid "Edit %s"
-msgstr "Bearbeiten"
+msgstr "%s bearbeiten"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:41
-#, fuzzy
 msgid "Reset publication date"
-msgstr "Datum der letzten Suche"
+msgstr "Veröffentlichungsdatum zurücksetzen"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modifyconfig.htm:14
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:12
@@ -10800,24 +10547,20 @@ msgid "Allow searching of inactive messages"
 msgstr "Durchsuchen inaktiver Nachrichten erlauben"
 
 #: system/Admin_Messages/pntemplates/admin_messages_search_options.htm:4
-#, fuzzy
 msgid "Administrator messages"
-msgstr "Anzeige von Nachrichten des Administrators"
+msgstr "Nachrichten des Administrators"
 
 #: system/Admin_Messages/pntemplates/admin_messages_search_options.htm:7
-#, fuzzy
 msgid "Include active messages only"
-msgstr "Nur echte Fehler anzeigen"
+msgstr "Nur aktive Nachrichten anzeigen"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:2
-#, fuzzy
 msgid "Delete administrator message"
-msgstr "Admin-Nachricht löschen"
+msgstr "Adminnachricht löschen"
 
 #: system/Admin_Messages/pntemplates/admin_messages_admin_delete.htm:8
-#, fuzzy
 msgid "Do you really want to delete this administrator message?"
-msgstr "Soll die Admin-Nachricht wirklich gelöscht werden?"
+msgstr "Soll diese Adminnachricht wirklich gelöscht werden?"
 
 #: system/Modules/pntemplates/modules_admin_hooks.htm:5
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:5
@@ -10825,19 +10568,16 @@ msgid "Hooks to enable for this module"
 msgstr "Für das Modul verfügbare Hooks"
 
 #: system/Modules/pntemplates/modules_admin_hooks.htm:6
-#, fuzzy
 msgid "Hooked modules to enable for this module (basic settings)"
-msgstr "Für das Modul verfügbare Hooks (erweiterte Einstellungen)"
+msgstr "Für das Modul verfügbare Hooks (einfache Einstellungen)"
 
 #: system/Modules/pntemplates/modules_admin_hooks.htm:9
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:9
-#, fuzzy
 msgid "Basic hook settings"
-msgstr "Erweiterte Hook Einstellungen"
+msgstr "Standard Hook Einstellungen"
 
 #: system/Modules/pntemplates/modules_admin_hooks.htm:10
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:10
-#, fuzzy
 msgid "Extended hook settings"
 msgstr "Erweiterte Hook Einstellungen"
 
@@ -10848,23 +10588,20 @@ msgstr "für"
 
 #: system/Modules/pntemplates/modules_admin_hooks.htm:38
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:37
-#, fuzzy
 msgid "No hookable modules installed."
-msgstr "Aktualisierung ist für kein Modul notwendig"
+msgstr "Keine Hook-fähigen Module installiert."
 
 #: system/Modules/pntemplates/modules_admin_modifyconfig.htm:16
 msgid "Load legacy module support"
 msgstr "Legacy-Unterstützung für Module"
 
 #: system/Modules/pntemplates/modules_admin_remove.htm:6
-#, fuzzy
 msgid "Warning! Removing this module will also permanently remove all data associated with it, including all data held by other modules that are hooked to this module."
 msgstr "Warnung! Diese Aktion löscht in der Datenbank unwiderruflich alle Daten des Moduls. Außerdem werden auch die Inhalte aus anderen Modulen gelöscht, die über Hooks mit diesem Modul verbunden sind."
 
 #: system/Modules/pntemplates/modules_admin_remove.htm:17
-#, fuzzy
 msgid "Do you really want to delete this module?"
-msgstr "Soll die Modulkategorie wirklich gelöscht werden?"
+msgstr "Soll das Modul wirklich gelöscht werden?"
 
 #: system/Modules/pntemplates/modules_admin_remove.htm:20
 msgid "Error! This module still has active blocks. Please remove those blocks before trying to remove this module."
@@ -10881,61 +10618,50 @@ msgstr "Level"
 
 #: system/Modules/pntemplates/modules_admin_remove.htm:40
 #: system/Modules/pntemplates/modules_admin_initialise.htm:32
-#, fuzzy
 msgid "Required."
-msgstr "Erforderlich"
+msgstr "Erforderlich."
 
 #: system/Modules/pntemplates/modules_admin_modify.htm:4
 #: system/Modules/pntemplates/modules_admin_modify.htm:5
-#, fuzzy
 msgid "Edit module"
-msgstr "Administration"
+msgstr "Modul bearbeiten"
 
 #: system/Modules/pntemplates/modules_admin_modify.htm:13
-#, fuzzy
 msgid "Module Display Name"
-msgstr "Modulnamen anzeigen"
+msgstr "Modul Anzeigename"
 
 #: system/Modules/pntemplates/modules_admin_modify.htm:17
 #: system/Modules/pntemplates/modules_admin_view.htm:30
-#, fuzzy
 msgid "Module URL"
-msgstr "URL des Dokuments"
+msgstr "URL-Name"
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:12
-#, fuzzy
 msgid "Error! This module has dependencies that are currently not met by the system."
-msgstr "Das Modul hat Abhängigkeiten, die vom derzeitigen System nicht erfüllt werden."
+msgstr "Fehler! Das Modul hat Abhängigkeiten, die vom derzeitigen System nicht erfüllt werden."
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:30
-#, fuzzy
 msgid "Not found in file system."
-msgstr "Fehler! Die Datei '%s' konnte nicht gefunden werden."
+msgstr "Im Dateisystem nicht gefunden."
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:34
-#, fuzzy
 msgid "Recommended."
-msgstr "Empfohlen"
+msgstr "Empfohlen."
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:39
-#, fuzzy
 msgid "Please ensure that this module is present in the file system (remember to regenerate the modules list)."
-msgstr "Sicherstellen, dass das Modul im System verfügbar ist (und die Liste regeneriert wird)!"
+msgstr "Bitte sicherstellen, dass das Modul im System verfügbar ist (und die Liste regeneriert wird)."
 
 #: system/Modules/pntemplates/modules_admin_initialise.htm:54
-#, fuzzy
 msgid "Do you really want to initialise this module?"
-msgstr "Soll die Modulkategorie wirklich gelöscht werden?"
+msgstr "Soll das Modul wirklich initialisiert werden?"
 
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:5
-#, fuzzy
 msgid "Error! Could not regenerate the modules list."
-msgstr "Fehler! Modul %s konnte nicht geladen werden."
+msgstr "Fehler! Die Modulliste konnte nicht neu erzeugt werden."
 
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:7
-#, fuzzy
 msgid "Error! The modules list could not be regenerated because there are one or more problems in the Zikula file system. You need to correct them before you can proceed. Please read this explanation:"
-msgstr "Die Modulliste konnte nicht neu erzeugt werden, da die folgenden Fehler im Dateisystem gefunden wurden. Bevor fortgefahren werden kann, müssen diese beseitigt werden."
+msgstr "Fehler! Die Modulliste konnte nicht neu erzeugt werden, da die folgenden Fehler im Dateisystem gefunden wurden. Bevor fortgefahren werden kann, müssen diese beseitigt werden."
 
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:9
 msgid "In the table below, the left-hand column lists the internal name of a module that has duplicate instances present in different directories (the module is seen as being 'present more than one time' in the file system). The centre and right-hand columns list the directories concerned (which are inside Zikula's '/modules' directory). Please delete any duplicate copy of the listed module(s), leaving only one instance. Each module internal name can only be associated with one single instance of a module."
@@ -10946,14 +10672,12 @@ msgid "In the table below, the left-hand column lists the display name of a modu
 msgstr "In der linken Spalte der Tabelle sind die Anzeigenamen der Module aufgelistet, die in verschiedenen Verzeichnissen mehr als nur einmal vorhanden sind. Bitte, bis auf eins, alle Duplikate aus dem System entfernen. Jeder Anzeigename darf nur einmal zugeordnet sein."
 
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:6
-#, fuzzy
 msgid "Hooked modules to enable for this module (extended settings)"
 msgstr "Für das Modul verfügbare Hooks (erweiterte Einstellungen)"
 
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:13
-#, fuzzy
 msgid "Notice: In this page, you can enable individual hooked modules and change the order in which they are invoked. If you are not sure about the effects, you are recommended to not change their order. You can drag and drop hooked modules to position them where you want <strong>within</strong> sections. You cannot move a hooked module from one section to another."
-msgstr "Achtung! Hier können einzelne Hooks aktiviert werden und auch deren Reihenfolge. Diese individuelle Konfiguration sollte nur von erfahrenen Anwendern vorgenommen werden.<br /><br />Innerhalb des jeweiligen Bereichs können die Hooks mittels Drag und Drop angeordnet werden. Das Verschieben in andere Gruppen wird nicht unterstützt."
+msgstr "Hinweis: Hier können einzelne Hooks aktiviert werden und auch deren Reihenfolge. Diese individuelle Konfiguration sollte nur von erfahrenen Anwendern vorgenommen werden. Innerhalb des jeweiligen Bereichs können die Hooks mittels Drag und Drop angeordnet werden. Das Verschieben in andere Gruppen wird nicht unterstützt."
 
 #: system/Modules/pntemplates/modules_admin_view.htm:33
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:13
@@ -10965,29 +10689,25 @@ msgstr "Version"
 
 #: system/Modules/pntemplates/modules_admin_view.htm:43
 #: system/Modules/pntemplates/modules_admin_view.htm:45
-#, fuzzy
 msgid "Go to the module's administration panel"
 msgstr "Gehe zur Moduladministration"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:13
-#, fuzzy
 msgid "Mail transport"
 msgstr "Mail-Transport"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:18
-#, fuzzy, php-format
+#, php-format
 msgid "Character set (default: '%s')"
-msgstr "Standardzeichensatz (Standard: %s)"
+msgstr "Zeichensatz (Standard: '%s')"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:22
-#, fuzzy
 msgid "Encoding (default: '8bit')"
-msgstr "Encoding (Standard: 8-bit)"
+msgstr "Encoding (Standard: '8-bit')"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:32
-#, fuzzy
 msgid "HTML-formatted messages"
-msgstr "HTML-formatiert"
+msgstr "HTML-formatierte Nachricht"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:36
 msgid "Word wrap (default: 50)"
@@ -10998,19 +10718,16 @@ msgid "Use Microsoft mail client headers"
 msgstr "Microsoft Mailclient Header nutzen"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:49
-#, fuzzy
 msgid "'Sendmail' settings"
-msgstr "SendMail Einstellungen"
+msgstr "'Sendmail' Einstellungen"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:51
-#, fuzzy
 msgid "Path to 'Sendmail'"
-msgstr "Pfade für die Bilder im Profilbereich"
+msgstr "Pfad zu 'Sendmail'"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:56
-#, fuzzy
 msgid "SMTP settings"
-msgstr "STMP Einstellungen"
+msgstr "SMTP Einstellungen"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:58
 msgid "SMTP server (default: localhost)"
@@ -11021,9 +10738,8 @@ msgid "SMTP port (default: 25)"
 msgstr "SMTP Port (Standard: 25)"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:66
-#, fuzzy
 msgid "SMTP time-out (default: 10 seconds)"
-msgstr "SMTP Timeout (Sekunden, Standard: 10)"
+msgstr "SMTP Timeout (Standard: 10 Sekunden)"
 
 #: system/Mailer/pntemplates/mailer_admin_modifyconfig.htm:70
 msgid "Enable SMTP authentication"
@@ -11038,41 +10754,36 @@ msgid "SMTP password"
 msgstr "SMTP Passwort"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:10
-#, fuzzy
 msgid "Settings test"
 msgstr "Konfiguration testen"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:16
 msgid "Sender's e-mail address"
-msgstr "E-Mail Adresse des Administrators"
+msgstr "E-Mail Adresse des Absenders"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:20
-#, fuzzy
 msgid "Recipient's name"
-msgstr "Datenbankname"
+msgstr "Empfängername"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:24
 msgid "Recipient's e-mail address"
-msgstr "E-Mail Adresse des Administrators"
+msgstr "E-Mail Adresse der Empfänger"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:32
 msgid "HTML-formatted message"
 msgstr "HTML-formatiert"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:36
-#, fuzzy
 msgid "Send message via Mailer API"
-msgstr "Nachricht via pnMail-API senden"
+msgstr "Nachricht mittels Mailer API versenden"
 
 #: system/Mailer/pntemplates/mailer_admin_testconfig.htm:45
-#, fuzzy
 msgid "Test settings now"
 msgstr "Konfiguration testen"
 
 #: system/Groups/pntemplates/groups_user_view.htm:5
-#, fuzzy
 msgid "There are currently no groups that can be joined."
-msgstr "Es ist momentan %s Gast online."
+msgstr "Es stehen aktuell keine anzufragenen Gruppen zur Verfügung."
 
 #: system/Groups/pntemplates/groups_user_view.htm:12
 #: system/Groups/pntemplates/groups_user_memberslist.htm:9
@@ -11099,9 +10810,8 @@ msgstr "Mitglieder"
 #: system/Groups/pntemplates/groups_admin_modify.htm:31
 #: system/Groups/pntemplates/groups_admin_new.htm:30
 #: system/Groups/pntemplates/groups_admin_view.htm:24
-#, fuzzy
 msgid "Maximum membership"
-msgstr "Gruppenmitgliedschaft"
+msgstr "Max. Benutzer"
 
 #: system/Groups/pntemplates/groups_user_view.htm:17
 msgid "Extras"
@@ -11110,7 +10820,6 @@ msgstr "Extras"
 #: system/Groups/pntemplates/groups_user_memberslist.htm:2
 #: system/Groups/pntemplates/groups_user_grouprow_overview.htm:18
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:29
-#, fuzzy
 msgid "Members list"
 msgstr "Mitgliederliste"
 
@@ -11126,15 +10835,13 @@ msgstr "Entschuldigung! Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto a
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:28
 #: system/Groups/pntemplates/groups_user_grouprow_overview.htm:15
-#, fuzzy
 msgid "Log in or register"
-msgstr "Konfiguration Benutzeranmeldung"
+msgstr "Anmelden oder registrieren"
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:36
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:19
-#, fuzzy
 msgid "Resign"
-msgstr "Grund"
+msgstr "Austreten"
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:39
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:22
@@ -11158,9 +10865,8 @@ msgid "Avatar"
 msgstr "Avatar"
 
 #: system/Groups/pntemplates/groups_admin_modify.htm:2
-#, fuzzy
 msgid "Edit group"
-msgstr "--neue Gruppe-- (%s)"
+msgstr "Gruppe bearbeiten"
 
 #: system/Groups/pntemplates/groups_user_grouprow_overview.htm:9
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:9
@@ -11168,23 +10874,20 @@ msgid "Unlimited"
 msgstr "Unbegrenzt"
 
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:18
-#, fuzzy
 msgid "Initial user group"
-msgstr "Benutzer zur Gruppe hinzufügen"
+msgstr "Startgruppe für Benutzer"
 
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:24
 msgid "Hide closed groups"
 msgstr "Geschlossene Gruppen verstecken"
 
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:28
-#, fuzzy
 msgid "Receive e-mail alert when there are new applicants"
 msgstr "Mailbenachrichtigung bei neuen Gruppenanfragen"
 
 #: system/Groups/pntemplates/groups_user_menu.htm:7
-#, fuzzy
 msgid "Go to groups index page"
-msgstr "Zur Startseite der Website"
+msgstr "Zur Gruppenübersicht"
 
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:12
 #: system/Groups/pntemplates/groups_admin_view.htm:188
@@ -11193,30 +10896,26 @@ msgid "User ID"
 msgstr "Benutzer ID"
 
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:32
-#, fuzzy
 msgid "Add users to group"
-msgstr "Für die Gruppe verfügbare Benutzer."
+msgstr "Benutzer zur Gruppe hinzufügen"
 
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:45
-#, fuzzy
 msgid "Users to add"
-msgstr "Sprache an URL anhängen"
+msgstr "Hinzuzufügende Benutzer"
 
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:57
 msgid "Notice: Please select one or more users to add to the group. To select multiple users, use 'Shift-Click' or 'Control-Click'."
 msgstr "Hinweis: Zum Hinzufügen in einer Gruppe bitte einen oder mehrere Benutzer auswählen. Eine Mehrfachauswahl ist mittels 'UMSCHALT+Click' oder 'STRG+Click' möglich."
 
 #: system/Groups/pntemplates/groups_admin_new.htm:12
-#, fuzzy
 msgid "New group"
-msgstr "--neue Gruppe-- (%s)"
+msgstr "Neue Gruppe"
 
 #: system/Groups/pntemplates/groups_admin_userpending.htm:2
 #: system/Groups/pntemplates/groups_admin_userpending.htm:25
 #: system/Groups/pntemplates/groups_user_membership.htm:3
-#, fuzzy
 msgid "Membership application"
-msgstr "Ausstehende Anfragen"
+msgstr "Mitgliedsanträge"
 
 #: system/Groups/pntemplates/groups_admin_userpending.htm:30
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:52
@@ -11226,7 +10925,6 @@ msgid "Reason"
 msgstr "Grund"
 
 #: system/Groups/pntemplates/groups_admin_userpending.htm:35
-#, fuzzy
 msgid "Send notification"
 msgstr "Grund/Benachrichtigung schicken"
 
@@ -11236,19 +10934,16 @@ msgid "Deny"
 msgstr "Ablehnen"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:5
-#, fuzzy
 msgid "Membership resignation"
-msgstr "Gruppenmitgliedschaft"
+msgstr "Aus Gruppe austreten"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:7
-#, fuzzy
 msgid "Membership application cancellation"
-msgstr "Anfrage abgelehnt"
+msgstr "Anfrage auf Mitgliedschaft abgelehnt"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:29
-#, fuzzy
 msgid "Comment to attach to your application"
-msgstr "Kommentar zum Vorgang"
+msgstr "Kommentar der Anfrage anhängen"
 
 #: system/Groups/pntemplates/groups_admin_delete.htm:8
 #: system/Groups/pntemplates/groups_admin_view.htm:223
@@ -11256,12 +10951,10 @@ msgid "Do you really want to delete this group?"
 msgstr "Soll die Gruppe wirklich gelöscht werden?"
 
 #: system/Groups/pntemplates/groups_admin_view.htm:181
-#, fuzzy
 msgid "* Default user group. Cannot be deleted."
-msgstr "(*) = Standardbenutzergruppe - Kann nicht gelöscht werden!"
+msgstr "* Standardbenutzergruppe. Kann nicht gelöscht werden."
 
 #: system/Groups/pntemplates/groups_admin_view.htm:184
-#, fuzzy
 msgid "Pending applications"
 msgstr "Ausstehende Anfragen"
 
@@ -11314,7 +11007,6 @@ msgid "Do you really want to delete this hacking attempt?"
 msgstr "Soll dieser Angriffsversuch wirklich gelöscht werden?"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:16
-#, fuzzy
 msgid "Enable hacker protection"
 msgstr "Hackerschutz aktivieren"
 
@@ -11335,7 +11027,6 @@ msgid "Automatic update settings"
 msgstr "Automatische Updateprüfung"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:39
-#, fuzzy
 msgid "Check for updates"
 msgstr "Auf Updates prüfen"
 
@@ -11356,17 +11047,14 @@ msgid "Daily"
 msgstr "Täglich"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:57
-#, fuzzy
 msgid "Host settings"
-msgstr "Host-Sicherheit"
+msgstr "Host Einstellungen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:59
-#, fuzzy
 msgid "Time limit for authorisation keys ('authkeys') in seconds (default: 0)"
-msgstr "Zeitlimit für AuthKeys in Sekunden (Standard=0)"
+msgstr "Zeitlimit für Authentifizierungsschlüssel in Sekunden (Standard=0)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:63
-#, fuzzy
 msgid "Bind authkey to user agent ('UserAgent')"
 msgstr "AuthKey an UserAgent binden"
 
@@ -11375,14 +11063,12 @@ msgid "Secure host name"
 msgstr "Secure Hostname"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:74
-#, fuzzy
 msgid "Notice: If you use a different host name for HTTPS secure sessions and you insert an address in the 'Secure host name' box, make sure you include a trailing slash at the end of the address."
 msgstr "Hinweis: Nur angeben, wenn ein anderer Hostname für die sicheren HTTPS Session verwendet wird. Bitte auch eine Adresse bei 'Secure Hostname' angeben und auf das zusätzliche Slash am Ende der Adresse achten."
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:78
-#, fuzzy
 msgid "Cookies settings"
-msgstr "Cookies"
+msgstr "Cookie Einstellungen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:80
 msgid "Sign cookies"
@@ -11393,26 +11079,22 @@ msgid "Signing key"
 msgstr "Signaturschlüssel"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:94
-#, fuzzy
 msgid "Session settings"
-msgstr "Sessions"
+msgstr "Session Einstellungen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:96
 msgid "Security level"
 msgstr "Sicherheitsstufe"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:98
-#, fuzzy
 msgid "High (user is logged-out after X minutes of inactivity)"
 msgstr "Hoch (Benutzer werden nach x Minuten Inaktivität abgemeldet)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:99
-#, fuzzy
 msgid "Medium (user is logged-out after X minutes of inactivity, unless 'Remember me' checkbox is activated during log-in)"
 msgstr "Mittel (Benutzer werden nach x Minuten Inaktivität abgemeldet. Es sei denn, die Option \"Anmeldung speichern\" wurde aktiviert)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:100
-#, fuzzy
 msgid "Low (user stays logged-in until user logs-out)"
 msgstr "Niedrig (Benutzer bleiben bis zur manuellen Abmeldung dauerhaft angemeldet)"
 
@@ -11421,9 +11103,8 @@ msgid "Automatically log user out after"
 msgstr "Automatische Benutzerabmeldung nach"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:108
-#, fuzzy
 msgid "days (if 'Remember me' is activated)"
-msgstr "Tagen (wenn 'Anmeldung speichern' aktiviert wurde)"
+msgstr "Tage (wenn 'Anmeldung speichern' aktiviert wurde)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:114
 msgid "Expire session after"
@@ -11442,16 +11123,14 @@ msgid "Database (recommended)"
 msgstr "Datenbank (empfohlen)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:129
-#, fuzzy
 msgid "Notice: If you change this setting, you will be logged-out immediately and will have to log back in again."
-msgstr "Änderungen an diesen Werten führen zu einer unverzüglichen Benutzerabmeldung im System."
+msgstr "Hinweis: Änderungen an diesen Werten führen zu einer unverzüglichen Benutzerabmeldung im System."
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:133
 msgid "Path for saving session files"
 msgstr "Pfad für Speicherung der Session-Dateien"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:135
-#, fuzzy
 msgid "Notice: If you change 'Where to save sessions' to 'File' then you must enter a path in the 'Path for saving session files' box above. The path must be writeable."
 msgstr "Hinweis: Wenn die Option 'Session-Speicherung' auf  'Datei' gesetzt wird, muss der Pfad für Speicherung der Session-Dateien unbedingt angegeben werden und auch beschreibbar sein."
 
@@ -11464,16 +11143,14 @@ msgid "/10000"
 msgstr "von 10000"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:145
-#, fuzzy
 msgid "Use sessions for anonymous guests"
-msgstr "Zeitzone für Gäste"
+msgstr "Sessions für Gäste benutzen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:154
 msgid "Periodically regenerate session ID"
 msgstr "Session ID periodisch neu erzeugen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:163
-#, fuzzy
 msgid "Regenerate session ID during log-in and log-out"
 msgstr "Session ID bei An-/Abmeldung neu erzeugen"
 
@@ -11486,7 +11163,6 @@ msgid "% (0 to disable)"
 msgstr "% (0 = deaktiviert)"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:179
-#, fuzzy
 msgid "IP checks on session (may cause problems for AOL users)"
 msgstr "IP Überprüfung für Session (eventuell Probleme mit AOL und Proxy-Benutzern)"
 
@@ -11495,65 +11171,54 @@ msgid "Session cookie name"
 msgstr "Name des Session-Cookie"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:190
-#, fuzzy
 msgid "Notice: If you change the 'Session cookie name' setting, all registered users who are currently logged-in will then be logged-out automatically, and they will have to log back in again."
-msgstr "Warnung! Wenn der Wert für 'Session-Cookie Name' geändert wird, werden alle aktuell angemeldeten Benutzer abgemeldet und müssen sich danach erneut im System anmelden."
+msgstr "Hinweis! Wenn der Wert für 'Session-Cookie Name' geändert wird, werden alle aktuell angemeldeten Benutzer abgemeldet und müssen sich danach erneut im System anmelden."
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:194
 msgid "HTTP variable cleansing"
 msgstr "Bereinigung von HTTP-Variablen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:196
-#, fuzzy
 msgid "Sanitise '$_GET' variables"
-msgstr "\"$_GET\" Variable bereinigen"
+msgstr "'$_GET' Variable bereinigen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:205
-#, fuzzy
 msgid "Sanitise '$_POST' variables"
-msgstr "\"$_POST\" Variable bereinigen"
+msgstr "'$_POST' Variable bereinigen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:214
-#, fuzzy
 msgid "Sanitise '$_COOKIE' variables"
-msgstr "\"$_COOKIE\" Variable bereinigen"
+msgstr "'$_COOKIE' Variable bereinigen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:224
 msgid "Output filter settings"
 msgstr "Ausgabefilter"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:226
-#, fuzzy
 msgid "Select output filter"
-msgstr "Ausgabefilter"
+msgstr "Ausgabefilter auswählen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:228
-#, fuzzy
 msgid "Use internal output filter"
-msgstr "Ausgabefilter 'trimwhitespace' benutzen"
+msgstr "Internen Ausgabefilter verwenden"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:229
-#, fuzzy
 msgid "Use 'SafeHTML' as output filter"
 msgstr "SafeHTML als Augabefilter verwenden"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:234
-#, fuzzy
 msgid "E-mail message"
-msgstr "E-Mail-Nachricht(en) senden"
+msgstr "E-Mail Nachricht"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:236
-#, fuzzy
 msgid "Content of summary e-mail message"
-msgstr "Weiterer Inhalt für komplette Mail-Nachrichten"
+msgstr "Zusammenfassung der E-Mail Nachricht"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:240
-#, fuzzy
 msgid "Additional content for full e-mail message"
-msgstr "Weiterer Inhalt für komplette Mail-Nachrichten"
+msgstr "Zusätzliche Inhalte für die vollständige E-Mail Nachricht"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:10
-#, fuzzy
 msgid "HTML entities"
 msgstr "HTML Entitäten"
 
@@ -11562,19 +11227,17 @@ msgid "Translate embedded HTML entities into real characters"
 msgstr "HTML Entitäten in echte Zeichen übersetzen"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:22
-#, fuzzy
 msgid "HTML tags"
 msgstr "HTML Tags"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:24
-#, fuzzy
 msgid "Warning! Enabling the &lt;img&gt;, &lt;span&gt;, &lt;marquee&gt;, &lt;script&gt;, &lt;embed&gt;, &lt;object&gt; or &lt;iframe&gt; tags increases the opportunity for attacks against your users that might reveal their personal information. Therefore, you are recommended to keep these tags set to 'Not allowed' unless you are sure that you really understand the consequences of enabling them."
 msgstr "Warnung! Das Aktivieren der Tags &lt;img&gt;, &lt;span&gt;, &lt;marquee&gt;, &lt;script&gt;, &lt;embed&gt;, &lt;object&gt; or &lt;iframe&gt; erhöht die Wahrscheinlichkeit möglicher Angriffe durch Cross-Site-Scripting. Es wird empfohlen, diese Tags nicht zu erlauben. Es sei denn, die möglichen Konsequenzen sind bekannt."
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:25
-#, fuzzy, php-format
+#, php-format
 msgid "Warning! Using the <a href=\"%s\">SafeHTML output filter</a> will override settings for some HTML tags (such as &lt;object&gt; and &lt;embed&gt;)."
-msgstr "Achtung! Der <a href=\"%s\">SafeHTML Ausgabefilter</a> überschreibt einige HTML-Tag-Einstellungen, wie beispielsweise &lt;object&gt; und &lt;embed&gt; ."
+msgstr "Warnung! Der <a href=\"%s\">SafeHTML Ausgabefilter</a> überschreibt einige HTML-Tag-Einstellungen, wie beispielsweise &lt;object&gt; und &lt;embed&gt; ."
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:30
 msgid "Tag"
@@ -11585,7 +11248,6 @@ msgid "Allowed"
 msgstr "Erlaubt"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:33
-#, fuzzy
 msgid "Allowed with attributes"
 msgstr "Erlaubt mit Attributen"
 
@@ -11606,56 +11268,49 @@ msgid "About \"&lt;%s&gt;\""
 msgstr "Info \"&lt;%s&gt;\""
 
 #: system/legal/pntemplates/legal_user_menu.htm:3
-#, fuzzy
 msgid "Legal information"
-msgstr "Zusätzliche Informationen"
+msgstr "Rechtliche Informationen"
 
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:6
-#, fuzzy
 msgid "<strong>Important Usage Note</strong>: The provided legal statements are samples only. They need to be adapted to specific needs and locales. You will find the content of the statements in files in the 'system/legal/pntemplates/' directory. These templates can be <a href="
-msgstr "<strong>Wichtige Hinweise zur Benutzung</strong>: Die bereitgestellten Nutzungsbedingungen sind nur Beispiele. Sie erfordern eine Anpassung an besondere Anforderungen und den Einsatzort. Der Inhalt der Bedingungen findet sich in Dateien im system/legal/pntemplates/deu/ Verzeichnis. Diese Templates können durch <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">Templates im Theme-Ordner</a> überlagert werden."
+msgstr "<strong>Wichtige Nutzungshinweise</strong>: Die bereitgestellten Nutzungsbedingungen sind nur Beispiele. Sie erfordern eine Anpassung an besondere Anforderungen und den Einsatzort. Der Inhalt der Bedingungen findet sich in Dateien im system/legal/pntemplates/de/ Verzeichnis. Diese Templates können durch <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">Templates im Theme-Ordner</a> überlagert werden."
 
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:25
-#, fuzzy
 msgid "Reset user group's acceptance of 'Terms of use'"
-msgstr "Zustimmung zu Nutzungsbedingungen zurücksetzen"
+msgstr "Zustimmung zu den Nutzungsbedingungen zurücksetzen"
 
 #: system/legal/pntemplates/legal_admin_modifyconfig.htm:31
-#, fuzzy
 msgid "Notice: This setting resets the acceptance of the 'Terms of use' for all users in this group. Next time they want to log-in, they will have to acknowledge their acceptance of them again, and will not be able to log-in if they do not. This action does not affect the main administrator account. You can perform the same operation for individual users by visiting the Users manager in the site admin panel."
-msgstr "Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Abgesehen von den Administratoren können sich die Mitglieder der entsprechenden Gruppen erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden."
+msgstr "Hinweis: Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Abgesehen von den Administratoren können sich die Mitglieder der entsprechenden Gruppen erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden."
 
 #: system/SysInfo/pntemplates/sysinfo_admin_filesystem.htm:3
 msgid "Zikula file system and 'pnTemp' directory"
 msgstr "Zikula Dateisystem und 'pnTemp' Verzeichnis"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_filesystem.htm:7
-#, fuzzy
 msgid "Notice: You are recommended to ensure that all writeable files and folders are secured from outside access. For best security, the 'pnTemp' folder should not be located in a browseable directory of your site. <strong>Current path to 'pnTemp':</strong>"
-msgstr "Prüfen ob alle beschreibbaren Dateien und Ordner vor externem Zugriff geschützt sind.<br />Das pnTemp-Verzeichnis sollte nach Möglichkeit ausserhalb der Webroot platziert werden. Der aktuelle pnTemp-Pfad ist:"
+msgstr "Hinweis: Prüfen ob alle beschreibbaren Dateien und Ordner vor externem Zugriff geschützt sind.<br />Das pnTemp-Verzeichnis sollte nach Möglichkeit ausserhalb der Webroot platziert werden. Der aktuelle pnTemp-Pfad ist:"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_flushdbcache.htm:3
 msgid "Flush cache"
-msgstr "Flush Cache"
+msgstr "Cache leeren"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_flushdbcache.htm:7
-#, fuzzy
 msgid "Do you really want to flush the database cache?"
-msgstr "Soll das Theme wirklich gelöscht werden?"
+msgstr "Soll der Datenbankcache wirklich geleert werden?"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_flushdbcache.htm:15
 #: system/SysInfo/pntemplates/sysinfo_admin_adodb.htm:39
 msgid "Flush database cache"
-msgstr "Datenbank Cache leeren"
+msgstr "Datenbankcache leeren"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:7
 msgid "Notice: This is a list of all the modules present within the file system of your site, with the versions of the modules. It includes both modules that are installed and modules that are not installed."
 msgstr "Hinweis: Liste aller - im System vorhandenen - Module mit Versionsangabe."
 
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:26
-#, fuzzy
 msgid "Notice: This is a list of all the themes installed on your site, with the versions of the themes."
-msgstr "Liste aller installierten Themes mit Versionsangabe."
+msgstr "Hinweis: Dieses ist eine Liste aller installierten Themes mit Versionsangabe."
 
 #: system/SysInfo/pntemplates/sysinfo_admin_adodb.htm:3
 msgid "ADODB database layer"
@@ -11682,7 +11337,6 @@ msgid "Cache directory"
 msgstr "Cache-Verzeichnis"
 
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:7
-#, fuzzy
 msgid "This system summary and the other pages of the 'System info panel' provide information about your system that can be used to help diagnose problems with your Zikula installation."
 msgstr "Zusammenfassung der Systemumgebung für Diagnosezwecke. Weitere Informationen zur Sicherheit auch unter <a href=\"http://code.zikula.org/community-german/wiki/Sicherheit\">Zikula-Sicherheit</a>."
 
@@ -11792,7 +11446,7 @@ msgstr "Authentifizierungsmodule"
 
 #: system/AuthPN/pntemplates/authpn_admin_modifyconfig.htm:14
 msgid "Comma-separated list of modules"
-msgstr "Kommagetrennte Liste von Modulen"
+msgstr "Kommagetrennte Liste an Modulnamen"
 
 #: system/AuthPN/pntemplates/authpn_admin_modifyconfig.htm:19
 msgid "Update Configuration"
@@ -11897,7 +11551,7 @@ msgstr "Hinweis: Fehlende Konfigurationsdateien müssen in 'themes/%s/templates/
 #: system/Theme/pntemplates/theme_admin_pageconfigurations.htm:49
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:49
 msgid "Create new page configuration assignment"
-msgstr "Neue Seitenkonfigurationszuordnung erstellen"
+msgstr "Seitenkonfigurationszuordnung anlegen"
 
 #: system/Theme/pntemplates/theme_admin_pageconfigurations.htm:60
 msgid "Admin panel pages"
@@ -12082,7 +11736,7 @@ msgstr "Vom Caching ausgenommene Module"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:66
 msgid "Delete cached templates"
-msgstr "Template-Cache löschen"
+msgstr "Theme-Cache löschen"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:70
 msgid "CSS/JS optimisation"
@@ -12094,7 +11748,7 @@ msgstr "Hinweis: Das Kombinieren und Komprimieren der Javascripts und Stylesheet
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:73
 msgid "Enable CSS/JS combination"
-msgstr "CSS/JS Combine aktivieren"
+msgstr "CSS/JS Combination aktivieren"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:78
 msgid "Use compression"
@@ -12110,11 +11764,11 @@ msgstr "Das 'Minify CSS/JS' Feature könnte womöglich mehr PHP Speicher benöti
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:89
 msgid "Length of time to keep combination cache"
-msgstr "Dauer des Combine Cachings"
+msgstr "Dauer des Combination-Cachings"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:97
 msgid "Delete combination cache"
-msgstr "Combine Cache löschen"
+msgstr "Combination-Cache löschen"
 
 #: system/Theme/pntemplates/theme_admin_modifyconfig.htm:101
 msgid "Filters"
