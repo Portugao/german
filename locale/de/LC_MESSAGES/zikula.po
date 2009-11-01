@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-30 10:20-0400\n"
-"PO-Revision-Date: 2009-10-31 17:58+0100\n"
+"PO-Revision-Date: 2009-11-01 01:11+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -7448,7 +7448,7 @@ msgstr "Bitte vor der Installation die hier zugrundeliegende GNU General Public 
 
 #: install/pntemplates/installer_dbinformation.htm:1
 msgid "Enter database information"
-msgstr "DB-Informationen"
+msgstr "Bitte die Informationen zur Datenbank eingeben"
 
 #: install/pntemplates/installer_dbinformation.htm:4
 msgid "Error! Some of the required information was not entered. Please check your entries and try again."
@@ -7469,7 +7469,7 @@ msgstr "Fehler! Die Datenbank konnte leider nicht angelegt werden. Bitte die ang
 #: install/pntemplates/installer_dbinformation.htm:16
 #: install/pntemplates/installer_page.htm:14
 msgid "Database information"
-msgstr "DB-Informationen"
+msgstr "Datenankinformationen"
 
 #: install/pntemplates/installer_dbinformation.htm:18
 #: system/SysInfo/pntemplates/sysinfo_admin_adodb.htm:14
@@ -7531,16 +7531,16 @@ msgstr "Benuzername des Administrators"
 
 #: install/pntemplates/installer_installtype.htm:1
 msgid "Select installation scope"
-msgstr "Installationsumfang"
+msgstr "Bitte den Installationsumfang auswählen"
 
 #: install/pntemplates/installer_installtype.htm:7
 #: install/pntemplates/installer_page.htm:15
 msgid "Select installation"
-msgstr "Installationsumfang auswählen"
+msgstr "Installationsumfang"
 
 #: install/pntemplates/installer_requirements.htm:1
 msgid "Check system requirements"
-msgstr "Anforderungen"
+msgstr "Überprüfung der Systemvorausetzungen"
 
 #: install/pntemplates/installer_requirements.htm:6
 #: system/Blocks/pntemplates/blocks_block_finclude_modify.htm:11
@@ -7657,7 +7657,7 @@ msgstr "Systemvorausetzungen"
 #: install/pntemplates/installer_page.htm:16
 #: install/pntemplates/installer_createadmin.htm:19
 msgid "Create administrator's account"
-msgstr "Benutzerkonto für Administrator anlegen"
+msgstr "Administrator anlegen"
 
 #: install/pntemplates/installer_page.htm:18
 #: install/pntemplates/installer_selecttheme.htm:11
@@ -7735,7 +7735,7 @@ msgstr "Bitte während der Installation die <a style=\"color: red\" href=\"docs/
 
 #: install/pntemplates/installer_selecttheme.htm:1
 msgid "Select default theme"
-msgstr "Standardtheme"
+msgstr "Standardtheme der Website auswählen"
 
 #: install/pntemplates/installer_selecttheme.htm:4
 #, php-format
@@ -7744,7 +7744,7 @@ msgstr "Themes bestimmen das Aussehen der Webseite. In der Zikula Grundinstallat
 
 #: install/pntemplates/installer_createadmin.htm:1
 msgid "Create administrator's user account"
-msgstr "Adminkonto"
+msgstr "Benutzerkonto für den Administrator anlegen"
 
 #: install/pntemplates/installer_createadmin.htm:5
 msgid "Error! Could not create the administrator's user account. Please check your entries and try again."
