@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 09:56-0500\n"
-"PO-Revision-Date: 2009-11-01 12:30+0100\n"
+"PO-Revision-Date: 2009-11-02 14:47+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -7359,7 +7359,7 @@ msgstr "Value Addons Paket"
 
 #: install/pntemplates/installer_selectmodule.htm:3
 msgid "Module extensions database"
-msgstr "offiziellen Theme-Datenbank"
+msgstr "offiziellen Moduldatenbank"
 
 #: install/pntemplates/installer_selectmodule.htm:4
 msgid "Note:"
@@ -8115,7 +8115,7 @@ msgstr "Registrierungsfrage"
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:180
 msgid "Notice: You can set a question to be answered at registration time, to protect the site against spam automated registrations by bots and scripts."
-msgstr "Hinweis: Individuelle Fragen können helfen, Spamregistrierungen über Bots und Srkipte zu vermeiden."
+msgstr "Hinweis: Individuelle Fragen können helfen, Spamregistrierungen über Bots und Skripte zu vermeiden."
 
 #: system/Users/pntemplates/users_admin_modifyconfig.htm:183
 msgid "Spam protection answer"
@@ -8588,7 +8588,7 @@ msgstr "Benutzerstatus"
 
 #: system/Users/pntemplates/users_admin_modify.htm:60
 msgid "Inactive until 'Terms of use' accepted"
-msgstr "Benutzer ist inaktiv bis zur Zustimmung zu den Nutzungsbedingungen"
+msgstr "Benutzer ist inaktiv (bis zur Zustimmung zu den Nutzungsbedingungen)"
 
 #: system/Users/pntemplates/users_admin_modify.htm:65
 #: system/pnRender/pntemplates/pndebug.html:23
