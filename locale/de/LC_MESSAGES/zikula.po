@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-01 09:56-0500\n"
-"PO-Revision-Date: 2009-11-02 14:47+0100\n"
+"PO-Revision-Date: 2009-11-02 18:57+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -5414,7 +5414,7 @@ msgstr "Wirtschaft und Arbeit"
 
 #: system/Categories/pninit.php:553
 msgid "Activism and action"
-msgstr "Aktivismus und Aktionen"
+msgstr "Aktivitäten und Tätigkeiten"
 
 #: system/Settings/pnadmin.php:96
 msgid "Error! Either you entered an invalid entry point, or else the file specified as being the entry point was not found in the Zikula root directory."
