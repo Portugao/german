@@ -48,13 +48,13 @@
         <p>Das Upgradeskript <strong>upgrade.php</strong> im Browser öffnen und die dort beschriebenen Schritte durchführen. Abgesehen vom Weiterklicken sind kaum Interaktionen notwendig. Sämtliche notwendige Datenbankänderungen werden vollständig automatisiert durchgeführt und abschließend wird man zum Admin-Panel weitergeleitet.</p>
 
         <h3 id="Clean120">2.4 Aufräumarbeiten und zusätzliche Konfiguration</h3>
-        <p>Nach einer erfolgreichen Aktualisierung sollten die folgenden Installations- und Upgradedateien unbedingt entfernt werden.</p>
-        <ul>
-            <li>install.php</li>
-            <li>upgrade.php</li>
-            <li>/install/...</li>
-        </ul>
-        <p>Weiterhin wäre es von Vorteil, wenn auch die Schreibrechte auf die Datei config.php wieder zurückgesetzt werden. Zikula muss auf diese Datei nur noch lesend zugreifen. Und falls der Internetauftritt, wie oben beschrieben, zwischenzeitlich deaktiviert wurde, so kann dies nun auch wieder rückgängig gemacht werden.</p>
+        <p>Nach einer erfolgreichen Aktualisierung sind noch die folgenden Aufräumearbeiten notwendig:</p>
+        <ol>
+            <li>Das Installationsverzeichnis /install und die Dateien install.php und upgrade.php im Rootverzeichnis von Zikula-</li>
+            <li>Falls individuell angepasste Themes genutzt werden, so sollten die Headerinformationen aktualisiert werden. Und zwar müssen die Attribute <em>lang</em>, <em>langdirection</em> und <em>charset</em> über die entsprechenden Plugins angepasst werden. Das Template <em>master.htm</em> aus den Themes 'andreas08' und 'voodoodolly' kann hierzu als Referenz genommen werden. Die Themes unterscheiden sich in den Varianten XHTML 1.0 STRICT und HTML 1.1</li>
+        <li>Weiterhin wäre es von Vorteil, wenn auch die Schreibrechte auf die Datei config.php wieder zurückgesetzt werden. Zikula muss auf diese Datei nur noch lesend zugreifen.</li>
+        <li>Und falls der Internetauftritt, wie oben beschrieben, zwischenzeitlich deaktiviert wurde, so kann dies nun auch wieder rückgängig gemacht werden.</li>
+        </ol>
 
         <h2 id="Caution">3. Wichtiger Hinweis</h2>
 
