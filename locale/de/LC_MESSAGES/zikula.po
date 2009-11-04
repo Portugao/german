@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-04 08:31-0500\n"
-"PO-Revision-Date: 2009-11-04 11:03+0100\n"
+"PO-Revision-Date: 2009-11-04 18:48+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -4034,7 +4034,7 @@ msgstr "Bitte den Link in der Mail nutzen, um den Zugang zu aktivieren."
 
 #: system/Users/pnuser.php:423
 msgid "Click here to go back to the previous page"
-msgstr "Hier klicken, um zur vorherigen Seiten zurückzukehren"
+msgstr "Hier klicken, um zur vorherigen Seite zurückzukehren"
 
 #: system/Users/pnuser.php:425
 #, php-format
@@ -5133,7 +5133,7 @@ msgstr "Fehler! Es konnte keine gültige 'cid' zur Bearbeitung in 'Categories_ad
 #: system/Categories/pnuserapi.php:24
 #: system/Categories/pnuser.php:154
 msgid "Error! Could not determine the user root node."
-msgstr "Fehler! Der Name des Stammknoten für die Benutzerkategorie konnte nicht ermittelt werden."
+msgstr "Fehler! Der Name des Stammknoten für die persönliche Kategorie konnte nicht ermittelt werden."
 
 #: system/Categories/pnuserapi.php:30
 #: system/Categories/pnuserapi.php:62
@@ -5156,7 +5156,7 @@ msgstr "Error! The URL contains an invalid 'document root' parameter."
 #: system/Categories/pnuser.php:91
 #, php-format
 msgid "Error! It looks like you are trying to edit another user's categories. Only site administrators can do that (%s)."
-msgstr "Fehler! Die Bearbeitung von fremden Benutzerkategorien ist nicht möglich. Diese Funktion kann nur vom Administrator durchgeführt werden. (%s)"
+msgstr "Fehler! Die Bearbeitung von fremden Kategorien ist nicht möglich. Diese Funktion kann nur vom Administrator durchgeführt werden. (%s)"
 
 #. ! %1$s is the id, %2$s is the name
 #: system/Categories/pnuser.php:102
@@ -5182,7 +5182,7 @@ msgstr "Fehler! Die angegebene Kategorie ist keine Unterkategorie des Dokumenten
 
 #: system/Categories/pnuser.php:144
 msgid "Error! Editing mode for user-owned categories is only available to users who have logged-in."
-msgstr "Fehler! Das Bearbeiten der Benutzerkategorien ist nur für angemeldete Benutzer möglich."
+msgstr "Fehler! Das Bearbeiten der persönlichen Kategorien ist nur für angemeldete Benutzer möglich."
 
 #: system/Categories/pnuser.php:149
 msgid "Error! User-owned category editing has not been enabled. This feature can be enabled by the site administrator."
@@ -9538,7 +9538,7 @@ msgstr "Entschuldigung! Die Bearbeitung von benutzereigenen Kategorien ist deakt
 
 #: system/Categories/pntemplates/categories_user_editcategories.htm:9
 msgid "Edit your user categories"
-msgstr "Eigene Benutzerkategorien bearbeiten"
+msgstr "Persönliche Kategorien bearbeiten"
 
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:7
 msgid "Choose category"
@@ -9717,7 +9717,7 @@ msgstr "Warnung! Je nach Anzahl der Kategorien könnte möglicherweise ein Time-
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:12
 msgid "Root category for user categories"
-msgstr "Stammkategorie für Benutzerkategorien"
+msgstr "Stammkategorie für persönliche Kategorien"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:16
 msgid "Allow users to edit their own categories"
@@ -9725,11 +9725,11 @@ msgstr "Benutzer erlauben, die eigenen Kategorien bearbeiten zu dürfen"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:20
 msgid "Automatically create user category root folder"
-msgstr "Automatisches Erstellen des Stammverzeichnis für Benutzerkategorien"
+msgstr "Automatisches Erstellen des Stammverzeichnis für persönliche Kategorien"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:24
 msgid "Automatically create user default category"
-msgstr "Automatisches Erstellen der Standard-Benutzerkategorien"
+msgstr "Automatisches Erstellen der persönlichen Standardkategorie"
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:28
 msgid "Require access to all categories for one item (relevant when using multiple categories per content item)"
@@ -9737,7 +9737,7 @@ msgstr "Zugriff auf alle Kategorien für ein Element erforderlich (relevant, wen
 
 #: system/Categories/pntemplates/categories_admin_preferences.htm:32
 msgid "Default user category"
-msgstr "Standard Benutzerkategorie"
+msgstr "Persönliche Standardkategorie"
 
 #: system/Categories/pntemplates/categories_user_list.htm:64
 #, php-format
@@ -10725,7 +10725,7 @@ msgstr "Konfiguration testen"
 
 #: system/Groups/pntemplates/groups_user_view.htm:5
 msgid "There are currently no groups that can be joined."
-msgstr "Es stehen aktuell keine anzufragenen Gruppen zur Verfügung."
+msgstr "Es stehen aktuell keine offenen oder privaten Gruppen zur Verfügung, in denen man sich eintragen könnte."
 
 #: system/Groups/pntemplates/groups_user_view.htm:12
 #: system/Groups/pntemplates/groups_user_memberslist.htm:11
@@ -10882,7 +10882,7 @@ msgstr "Aus Gruppe austreten"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:7
 msgid "Membership application cancellation"
-msgstr "Anfrage auf Mitgliedschaft abgelehnt"
+msgstr "Anfrage auf Mitgliedschaft abbrechen"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:29
 msgid "Comment to attach to your application"
