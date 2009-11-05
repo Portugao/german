@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-04 08:31-0500\n"
-"PO-Revision-Date: 2009-11-04 18:48+0100\n"
+"POT-Creation-Date: 2009-11-05 11:20-0500\n"
+"PO-Revision-Date: 2009-11-05 12:32+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -2961,7 +2961,7 @@ msgstr "Lesen"
 msgid "Write access"
 msgstr "Schreibzugriff"
 
-#: includes/HtmlUtil.class.php:680
+#: includes/HtmlUtil.class.php:682
 #: includes/DateUtil.class.php:720
 msgid "January February March April May June July August September October November December"
 msgstr "Januar Februar März April Mai Juni Juli August September Oktober November Dezember"
@@ -4458,8 +4458,8 @@ msgstr "Erweitertes Menu"
 msgid "Extended menu block"
 msgstr "Erweiterter Menüblock"
 
-#: system/Blocks/pnblocks/extmenu.php:331
-#: system/Blocks/pnblocks/extmenu.php:333
+#: system/Blocks/pnblocks/extmenu.php:337
+#: system/Blocks/pnblocks/extmenu.php:339
 msgid "--New link--"
 msgstr "--Neuer Link--"
 
@@ -6428,7 +6428,7 @@ msgstr "Erledigt! Aktion gespeichert."
 
 #: system/Groups/pnversion.php:14
 #: system/Groups/pnaccountapi.php:30
-#: system/Groups/pntemplates/groups_user_view.htm:2
+#: system/Groups/pntemplates/groups_user_view.htm:5
 #: system/Groups/pntemplates/groups_user_menu.htm:3
 #: system/Groups/pntemplates/groups_admin_menu.htm:5
 #: themes/SeaBreeze/templates/includes/adminheader.htm:15
@@ -7972,7 +7972,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Categories/pntemplates/categories_admin_delete.htm:40
 #: system/Categories/pntemplates/categories_admin_edit.htm:133
 #: system/Categories/pntemplates/categories_admin_edit.htm:136
-#: system/Categories/pntemplates/categories_user_edit.htm:132
+#: system/Categories/pntemplates/categories_user_edit.htm:131
 #: system/Categories/pntemplates/categories_admin_move.htm:28
 #: system/Categories/pntemplates/categories_admin_config.htm:15
 #: system/Categories/pntemplates/categories_admin_preferences.htm:38
@@ -8000,7 +8000,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:16
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:36
 #: system/Groups/pntemplates/groups_admin_new.htm:41
-#: system/Groups/pntemplates/groups_user_membership.htm:36
+#: system/Groups/pntemplates/groups_user_membership.htm:40
 #: system/Groups/pntemplates/groups_admin_delete.htm:18
 #: system/Groups/pntemplates/groups_admin_view.htm:101
 #: system/Groups/pntemplates/groups_admin_view.htm:173
@@ -8221,8 +8221,8 @@ msgstr "Hinweis: Benutzung von Meta-Refresh."
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
 #: system/Categories/pntemplates/categories_admin_edit.htm:126
 #: system/Categories/pntemplates/categories_admin_edit.htm:135
-#: system/Categories/pntemplates/categories_user_edit.htm:131
-#: system/Categories/pntemplates/categories_user_edit.htm:134
+#: system/Categories/pntemplates/categories_user_edit.htm:130
+#: system/Categories/pntemplates/categories_user_edit.htm:133
 #: system/Categories/pntemplates/categories_admin_preferences.htm:37
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:83
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:66
@@ -8242,7 +8242,7 @@ msgstr "Hinweis: Benutzung von Meta-Refresh."
 #: system/Groups/pntemplates/groups_admin_modifyconfig.htm:35
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:52
 #: system/Groups/pntemplates/groups_admin_new.htm:40
-#: system/Groups/pntemplates/groups_user_membership.htm:35
+#: system/Groups/pntemplates/groups_user_membership.htm:39
 #: system/Groups/pntemplates/groups_admin_view.htm:99
 #: system/Groups/pntemplates/groups_admin_view.htm:171
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:247
@@ -8908,7 +8908,7 @@ msgstr "Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_)."
 #: system/Groups/pntemplates/groups_user_memberslist.htm:12
 #: system/Groups/pntemplates/groups_admin_modify.htm:35
 #: system/Groups/pntemplates/groups_admin_new.htm:34
-#: system/Groups/pntemplates/groups_user_membership.htm:24
+#: system/Groups/pntemplates/groups_user_membership.htm:28
 #: system/Groups/pntemplates/groups_admin_view.htm:21
 #: system/Theme/pntemplates/theme_admin_new.htm:21
 #: system/Theme/pntemplates/theme_admin_credits.htm:18
@@ -9532,13 +9532,9 @@ msgstr "Parameter (Format: assign=value;assign2=value2...)"
 msgid "Value"
 msgstr "Wert"
 
-#: system/Categories/pntemplates/categories_user_editcategories.htm:4
+#: system/Categories/pntemplates/categories_user_editcategories.htm:3
 msgid "Sorry! User-owned category editing has not been enabled. This feature can be enabled by the site administrator."
 msgstr "Entschuldigung! Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
-
-#: system/Categories/pntemplates/categories_user_editcategories.htm:9
-msgid "Edit your user categories"
-msgstr "Persönliche Kategorien bearbeiten"
 
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:7
 msgid "Choose category"
@@ -10723,7 +10719,7 @@ msgstr "Nachricht mittels Mailer API versenden"
 msgid "Test settings now"
 msgstr "Konfiguration testen"
 
-#: system/Groups/pntemplates/groups_user_view.htm:5
+#: system/Groups/pntemplates/groups_user_view.htm:3
 msgid "There are currently no groups that can be joined."
 msgstr "Es stehen aktuell keine offenen oder privaten Gruppen zur Verfügung, in denen man sich eintragen könnte."
 
@@ -10884,7 +10880,15 @@ msgstr "Aus Gruppe austreten"
 msgid "Membership application cancellation"
 msgstr "Anfrage auf Mitgliedschaft abbrechen"
 
+#: system/Groups/pntemplates/groups_user_membership.htm:24
+msgid "Group name"
+msgstr "Gruppenname"
+
 #: system/Groups/pntemplates/groups_user_membership.htm:29
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: system/Groups/pntemplates/groups_user_membership.htm:33
 msgid "Comment to attach to your application"
 msgstr "Kommentar an Anfrage anhängen"
 
@@ -11974,6 +11978,8 @@ msgstr "Benutzerprofil"
 msgid "Copyright"
 msgstr "Copyright"
 
+#~ msgid "Edit your user categories"
+#~ msgstr "Persönliche Kategorien bearbeiten"
 #~ msgid "PHP: register_globals=on - Should be off."
 #~ msgstr "PHP: register_globals=on - Sollte ausgeschaltet sein."
 #~ msgid "PHP: allow_url_include=on - Should be off."
