@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula Core 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-28 04:59-0500\n"
-"PO-Revision-Date: 2009-12-29 15:20+0100\n"
+"POT-Creation-Date: 2010-02-06 01:50+0545\n"
+"PO-Revision-Date: 2010-03-27 17:49+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Pootle 2.0.1\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -79,19 +79,19 @@ msgstr "Durchgeführt! Aber es wurden keine Änderungen vorgenommen."
 msgid "Error! Could not open '%s' for writing."
 msgstr "Fehler! Kann '%s' nicht schreiben"
 
-#: install/functions.php:272
-#: upgrade.php:374
+#: install/functions.php:279
+#: upgrade.php:377
 #, php-format
 msgid "Go to the startpage for %s"
 msgstr "Gehe zur Startseite von %s"
 
-#: install/functions.php:275
-#: upgrade.php:378
+#: install/functions.php:282
+#: upgrade.php:381
 #, php-format
 msgid "Go to the admin panel for %s"
 msgstr "Gehe zum Admin-Panel von %s"
 
-#: install/functions.php:445
+#: install/functions.php:452
 #: install/pninstalltypes/basic.php:32
 #: install/pninstalltypes/basic.php:34
 #: install/pninstalltypes/basic.php:38
@@ -101,14 +101,14 @@ msgstr "Gehe zum Admin-Panel von %s"
 msgid "System"
 msgstr "System"
 
-#: install/functions.php:445
+#: install/functions.php:452
 #: system/Categories/pninit.php:432
 #: system/Admin/pninit.php:121
 #: system/Groups/pninit.php:101
 msgid "Users"
 msgstr "Benutzer"
 
-#: install/functions.php:445
+#: install/functions.php:452
 #: install/pninstalltypes/basic.php:28
 #: install/pninstalltypes/basic.php:36
 #: system/Admin/pninit.php:119
@@ -150,7 +150,7 @@ msgid "Error! Gettext 'gt' requires an attribute text."
 msgstr "Error! Gettext 'gt' requires an attribute text."
 
 #: install/pntemplates/plugins/function.gt.php:19
-#: system/pnRender/plugins/function.gt.php:69
+#: system/pnRender/plugins/function.gt.php:71
 msgid "Error! If you use a plural or count in gettext, you must use both parameters together."
 msgstr "Error! If you use a plural or count in gettext, you must use both parameters together."
 
@@ -403,7 +403,7 @@ msgid "Avestan"
 msgstr "Avestan"
 
 #: includes/ZLanguage.php:512
-#: includes/ZLanguage.php:946
+#: includes/ZLanguage.php:947
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
@@ -420,7 +420,7 @@ msgid "Aragonese"
 msgstr "Aragonese"
 
 #: includes/ZLanguage.php:516
-#: includes/ZLanguage.php:947
+#: includes/ZLanguage.php:948
 msgid "Arabic"
 msgstr "Arabic"
 
@@ -445,12 +445,12 @@ msgid "Bashkir"
 msgstr "Bashkir"
 
 #: includes/ZLanguage.php:522
-#: includes/ZLanguage.php:965
+#: includes/ZLanguage.php:966
 msgid "Belarusian"
 msgstr "Belarusian"
 
 #: includes/ZLanguage.php:523
-#: includes/ZLanguage.php:967
+#: includes/ZLanguage.php:968
 msgid "Bulgarian"
 msgstr "Bulgarian"
 
@@ -483,7 +483,7 @@ msgid "Bosnian"
 msgstr "Bosnian"
 
 #: includes/ZLanguage.php:531
-#: includes/ZLanguage.php:970
+#: includes/ZLanguage.php:971
 msgid "Catalan"
 msgstr "Catalan"
 
@@ -504,7 +504,7 @@ msgid "Cree"
 msgstr "Cree"
 
 #: includes/ZLanguage.php:536
-#: includes/ZLanguage.php:972
+#: includes/ZLanguage.php:973
 msgid "Czech"
 msgstr "Czech"
 
@@ -521,12 +521,12 @@ msgid "Welsh"
 msgstr "Welsh"
 
 #: includes/ZLanguage.php:540
-#: includes/ZLanguage.php:974
+#: includes/ZLanguage.php:975
 msgid "Danish"
 msgstr "Danish"
 
 #: includes/ZLanguage.php:541
-#: includes/ZLanguage.php:976
+#: includes/ZLanguage.php:977
 msgid "German"
 msgstr "Deutsch"
 
@@ -543,12 +543,12 @@ msgid "Ewe"
 msgstr "Ewe"
 
 #: includes/ZLanguage.php:545
-#: includes/ZLanguage.php:981
+#: includes/ZLanguage.php:982
 msgid "Greek"
 msgstr "Greek"
 
 #: includes/ZLanguage.php:546
-#: includes/ZLanguage.php:984
+#: includes/ZLanguage.php:985
 msgid "English"
 msgstr "Englisch"
 
@@ -557,22 +557,22 @@ msgid "Esperanto"
 msgstr "Esperanto"
 
 #: includes/ZLanguage.php:548
-#: includes/ZLanguage.php:996
+#: includes/ZLanguage.php:997
 msgid "Spanish"
 msgstr "Spanish"
 
 #: includes/ZLanguage.php:549
-#: includes/ZLanguage.php:1017
+#: includes/ZLanguage.php:1018
 msgid "Estonian"
 msgstr "Estonian"
 
 #: includes/ZLanguage.php:550
-#: includes/ZLanguage.php:1019
+#: includes/ZLanguage.php:1020
 msgid "Basque"
 msgstr "Basque"
 
 #: includes/ZLanguage.php:551
-#: includes/ZLanguage.php:1020
+#: includes/ZLanguage.php:1021
 msgid "Persian"
 msgstr "Persian"
 
@@ -581,7 +581,7 @@ msgid "Fulah"
 msgstr "Fulah"
 
 #: includes/ZLanguage.php:553
-#: includes/ZLanguage.php:1021
+#: includes/ZLanguage.php:1022
 msgid "Finnish"
 msgstr "Finnish"
 
@@ -594,7 +594,7 @@ msgid "Faroese"
 msgstr "Faroese"
 
 #: includes/ZLanguage.php:556
-#: includes/ZLanguage.php:1023
+#: includes/ZLanguage.php:1024
 msgid "French"
 msgstr "French"
 
@@ -603,7 +603,7 @@ msgid "Frisian"
 msgstr "Frisian"
 
 #: includes/ZLanguage.php:558
-#: includes/ZLanguage.php:1030
+#: includes/ZLanguage.php:1031
 msgid "Irish"
 msgstr "Irish"
 
@@ -612,7 +612,7 @@ msgid "Scottish Gaelic"
 msgstr "Scottish Gaelic"
 
 #: includes/ZLanguage.php:560
-#: includes/ZLanguage.php:1032
+#: includes/ZLanguage.php:1033
 msgid "Galician"
 msgstr "Galician"
 
@@ -637,12 +637,12 @@ msgid "Hawaiian"
 msgstr "Hawaiian"
 
 #: includes/ZLanguage.php:566
-#: includes/ZLanguage.php:1047
+#: includes/ZLanguage.php:1048
 msgid "Hebrew"
 msgstr "Hebrew"
 
 #: includes/ZLanguage.php:567
-#: includes/ZLanguage.php:1033
+#: includes/ZLanguage.php:1034
 msgid "Hindi"
 msgstr "Hindi"
 
@@ -651,7 +651,7 @@ msgid "Hiri Motu"
 msgstr "Hiri Motu"
 
 #: includes/ZLanguage.php:569
-#: includes/ZLanguage.php:1035
+#: includes/ZLanguage.php:1036
 msgid "Croatian"
 msgstr "Croatian"
 
@@ -660,7 +660,7 @@ msgid "Haitian"
 msgstr "Haitian"
 
 #: includes/ZLanguage.php:571
-#: includes/ZLanguage.php:1037
+#: includes/ZLanguage.php:1038
 msgid "Hungarian"
 msgstr "Hungarian"
 
@@ -677,8 +677,8 @@ msgid "Interlingua"
 msgstr "Interlingua"
 
 #: includes/ZLanguage.php:575
-#: includes/ZLanguage.php:1039
 #: includes/ZLanguage.php:1040
+#: includes/ZLanguage.php:1041
 msgid "Indonesian"
 msgstr "Indonesian"
 
@@ -703,12 +703,12 @@ msgid "Ido"
 msgstr "Ido"
 
 #: includes/ZLanguage.php:581
-#: includes/ZLanguage.php:1042
+#: includes/ZLanguage.php:1043
 msgid "Icelandic"
 msgstr "Icelandic"
 
 #: includes/ZLanguage.php:582
-#: includes/ZLanguage.php:1044
+#: includes/ZLanguage.php:1045
 msgid "Italian"
 msgstr "Italian"
 
@@ -721,12 +721,12 @@ msgid "Javanese"
 msgstr "Javanese"
 
 #: includes/ZLanguage.php:585
-#: includes/ZLanguage.php:1049
+#: includes/ZLanguage.php:1050
 msgid "Japanese"
 msgstr "Japanese"
 
 #: includes/ZLanguage.php:586
-#: includes/ZLanguage.php:1051
+#: includes/ZLanguage.php:1052
 msgid "Georgian"
 msgstr "Georgian"
 
@@ -759,7 +759,7 @@ msgid "Kannada"
 msgstr "Kannada"
 
 #: includes/ZLanguage.php:594
-#: includes/ZLanguage.php:1052
+#: includes/ZLanguage.php:1053
 msgid "Korean"
 msgstr "Korean"
 
@@ -812,7 +812,7 @@ msgid "Lao"
 msgstr "Lao"
 
 #: includes/ZLanguage.php:607
-#: includes/ZLanguage.php:1054
+#: includes/ZLanguage.php:1055
 msgid "Lithuanian"
 msgstr "Lithuanian"
 
@@ -821,7 +821,7 @@ msgid "Luba-Katanga"
 msgstr "Luba-Katanga"
 
 #: includes/ZLanguage.php:609
-#: includes/ZLanguage.php:1056
+#: includes/ZLanguage.php:1057
 msgid "Latvian"
 msgstr "Latvian"
 
@@ -838,12 +838,12 @@ msgid "Maori"
 msgstr "Maori"
 
 #: includes/ZLanguage.php:613
-#: includes/ZLanguage.php:1058
+#: includes/ZLanguage.php:1059
 msgid "Macedonian"
 msgstr "Macedonian"
 
 #: includes/ZLanguage.php:614
-#: includes/ZLanguage.php:1060
+#: includes/ZLanguage.php:1061
 msgid "Malayalam"
 msgstr "Malayalam"
 
@@ -856,12 +856,12 @@ msgid "Marathi"
 msgstr "Marathi"
 
 #: includes/ZLanguage.php:617
-#: includes/ZLanguage.php:1061
+#: includes/ZLanguage.php:1062
 msgid "Malay"
 msgstr "Malay"
 
 #: includes/ZLanguage.php:618
-#: includes/ZLanguage.php:1063
+#: includes/ZLanguage.php:1064
 msgid "Maltese"
 msgstr "Maltese"
 
@@ -870,7 +870,7 @@ msgid "Burmese"
 msgstr "Burmese"
 
 #: includes/ZLanguage.php:620
-#: includes/ZLanguage.php:860
+#: includes/ZLanguage.php:861
 msgid "Nauru"
 msgstr "Nauru"
 
@@ -883,7 +883,7 @@ msgid "North Ndebele"
 msgstr "North Ndebele"
 
 #: includes/ZLanguage.php:623
-#: includes/ZLanguage.php:1066
+#: includes/ZLanguage.php:1067
 msgid "Nepali"
 msgstr "Nepali"
 
@@ -892,7 +892,7 @@ msgid "Ndonga"
 msgstr "Ndonga"
 
 #: includes/ZLanguage.php:625
-#: includes/ZLanguage.php:1067
+#: includes/ZLanguage.php:1068
 msgid "Dutch"
 msgstr "Dutch"
 
@@ -901,7 +901,7 @@ msgid "Norwegian Nynorsk"
 msgstr "Norwegian Nynorsk"
 
 #: includes/ZLanguage.php:627
-#: includes/ZLanguage.php:1070
+#: includes/ZLanguage.php:1071
 msgid "Norwegian"
 msgstr "Norwegian"
 
@@ -946,7 +946,7 @@ msgid "Pali"
 msgstr "Pali"
 
 #: includes/ZLanguage.php:638
-#: includes/ZLanguage.php:1073
+#: includes/ZLanguage.php:1074
 msgid "Polish"
 msgstr "Polish"
 
@@ -955,7 +955,7 @@ msgid "Pushto"
 msgstr "Pushto"
 
 #: includes/ZLanguage.php:640
-#: includes/ZLanguage.php:1075
+#: includes/ZLanguage.php:1076
 msgid "Portuguese"
 msgstr "Portuguese"
 
@@ -972,12 +972,12 @@ msgid "Rundi"
 msgstr "Rundi"
 
 #: includes/ZLanguage.php:644
-#: includes/ZLanguage.php:1078
+#: includes/ZLanguage.php:1079
 msgid "Romanian"
 msgstr "Romanian"
 
 #: includes/ZLanguage.php:645
-#: includes/ZLanguage.php:1080
+#: includes/ZLanguage.php:1081
 msgid "Russian"
 msgstr "Russian"
 
@@ -1010,12 +1010,12 @@ msgid "Sinhalese"
 msgstr "Sinhalese"
 
 #: includes/ZLanguage.php:653
-#: includes/ZLanguage.php:1082
+#: includes/ZLanguage.php:1083
 msgid "Slovak"
 msgstr "Slovak"
 
 #: includes/ZLanguage.php:654
-#: includes/ZLanguage.php:1084
+#: includes/ZLanguage.php:1085
 msgid "Slovenian"
 msgstr "Slovenian"
 
@@ -1032,12 +1032,12 @@ msgid "Somali"
 msgstr "Somali"
 
 #: includes/ZLanguage.php:658
-#: includes/ZLanguage.php:1086
+#: includes/ZLanguage.php:1087
 msgid "Albanian"
 msgstr "Albanian"
 
 #: includes/ZLanguage.php:659
-#: includes/ZLanguage.php:1088
+#: includes/ZLanguage.php:1089
 msgid "Serbian"
 msgstr "Serbian"
 
@@ -1054,7 +1054,7 @@ msgid "Sundanese"
 msgstr "Sundanese"
 
 #: includes/ZLanguage.php:663
-#: includes/ZLanguage.php:1094
+#: includes/ZLanguage.php:1095
 msgid "Swedish"
 msgstr "Swedish"
 
@@ -1075,7 +1075,7 @@ msgid "Tajik"
 msgstr "Tajik"
 
 #: includes/ZLanguage.php:668
-#: includes/ZLanguage.php:1096
+#: includes/ZLanguage.php:1097
 msgid "Thai"
 msgstr "Thai"
 
@@ -1096,12 +1096,12 @@ msgid "Tswana"
 msgstr "Tswana"
 
 #: includes/ZLanguage.php:673
-#: includes/ZLanguage.php:909
+#: includes/ZLanguage.php:911
 msgid "Tonga"
 msgstr "Tonga"
 
 #: includes/ZLanguage.php:674
-#: includes/ZLanguage.php:1099
+#: includes/ZLanguage.php:1100
 msgid "Turkish"
 msgstr "Turkish"
 
@@ -1126,7 +1126,7 @@ msgid "Uighur"
 msgstr "Uighur"
 
 #: includes/ZLanguage.php:680
-#: includes/ZLanguage.php:1101
+#: includes/ZLanguage.php:1102
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
@@ -1143,7 +1143,7 @@ msgid "Venda"
 msgstr "Venda"
 
 #: includes/ZLanguage.php:684
-#: includes/ZLanguage.php:1103
+#: includes/ZLanguage.php:1104
 msgid "Vietnamese"
 msgstr "Vietnamese"
 
@@ -1156,7 +1156,7 @@ msgid "Walloon"
 msgstr "Walloon"
 
 #: includes/ZLanguage.php:687
-#: includes/ZLanguage.php:1105
+#: includes/ZLanguage.php:1106
 msgid "Wolof"
 msgstr "Wolof"
 
@@ -1177,7 +1177,7 @@ msgid "Zhuang"
 msgstr "Zhuang"
 
 #: includes/ZLanguage.php:692
-#: includes/ZLanguage.php:1106
+#: includes/ZLanguage.php:1107
 msgid "Chinese"
 msgstr "Chinese"
 
@@ -1339,7 +1339,7 @@ msgstr "Central African Republic"
 
 #: includes/ZLanguage.php:738
 msgid "Congo"
-msgstr "c"
+msgstr "Kongo"
 
 #: includes/ZLanguage.php:739
 msgid "Switzerland"
@@ -1730,862 +1730,866 @@ msgid "Marshall Islands"
 msgstr "Marshall Islands"
 
 #: includes/ZLanguage.php:836
+msgid "Macedonia, the form Republic of"
+msgstr "Macedonia, the former Yugoslavian Republic"
+
+#: includes/ZLanguage.php:837
 msgid "Mali"
 msgstr "Mali"
 
-#: includes/ZLanguage.php:837
+#: includes/ZLanguage.php:838
 msgid "Mongolia"
 msgstr "Mongolia"
 
-#: includes/ZLanguage.php:838
+#: includes/ZLanguage.php:839
 msgid "Myanmar"
 msgstr "Myanmar"
 
-#: includes/ZLanguage.php:839
+#: includes/ZLanguage.php:840
 msgid "Macau"
 msgstr "Macau"
 
-#: includes/ZLanguage.php:840
+#: includes/ZLanguage.php:841
 msgid "Northern Mariana Islands"
 msgstr "Northern Mariana Islands"
 
-#: includes/ZLanguage.php:841
+#: includes/ZLanguage.php:842
 msgid "Martinique"
 msgstr "Martinique"
 
-#: includes/ZLanguage.php:842
+#: includes/ZLanguage.php:843
 msgid "Mauritania"
 msgstr "Mauritania"
 
-#: includes/ZLanguage.php:843
+#: includes/ZLanguage.php:844
 msgid "Monserrat"
 msgstr "Monserrat"
 
-#: includes/ZLanguage.php:844
+#: includes/ZLanguage.php:845
 msgid "Malta"
 msgstr "Malta"
 
-#: includes/ZLanguage.php:845
+#: includes/ZLanguage.php:846
 msgid "Mauritius"
 msgstr "Mauritius"
 
-#: includes/ZLanguage.php:846
+#: includes/ZLanguage.php:847
 msgid "Maldives"
 msgstr "Maldives"
 
-#: includes/ZLanguage.php:847
+#: includes/ZLanguage.php:848
 msgid "Malawi"
 msgstr "Malawi"
 
-#: includes/ZLanguage.php:848
+#: includes/ZLanguage.php:849
 msgid "Mexico"
 msgstr "Mexico"
 
-#: includes/ZLanguage.php:849
+#: includes/ZLanguage.php:850
 msgid "Malaysia"
 msgstr "Malaysia"
 
-#: includes/ZLanguage.php:850
+#: includes/ZLanguage.php:851
 msgid "Mozambique"
 msgstr "Mozambique"
 
-#: includes/ZLanguage.php:851
+#: includes/ZLanguage.php:852
 msgid "Namibia"
 msgstr "Namibia"
 
-#: includes/ZLanguage.php:852
+#: includes/ZLanguage.php:853
 msgid "New Caledonia"
 msgstr "New Caledonia"
 
-#: includes/ZLanguage.php:853
+#: includes/ZLanguage.php:854
 msgid "Niger"
 msgstr "Niger"
 
-#: includes/ZLanguage.php:854
+#: includes/ZLanguage.php:855
 msgid "Norfolk Island"
 msgstr "Norfolk Island"
 
-#: includes/ZLanguage.php:855
+#: includes/ZLanguage.php:856
 msgid "Nigeria"
 msgstr "Nigeria"
 
-#: includes/ZLanguage.php:856
+#: includes/ZLanguage.php:857
 msgid "Nicaragua"
 msgstr "Nicaragua"
 
-#: includes/ZLanguage.php:857
+#: includes/ZLanguage.php:858
 msgid "Netherlands"
 msgstr "Netherlands"
 
-#: includes/ZLanguage.php:858
+#: includes/ZLanguage.php:859
 msgid "Norway"
 msgstr "Norway"
 
-#: includes/ZLanguage.php:859
+#: includes/ZLanguage.php:860
 msgid "Nepal"
 msgstr "Nepal"
 
-#: includes/ZLanguage.php:861
+#: includes/ZLanguage.php:862
 msgid "Niue"
 msgstr "Niue"
 
-#: includes/ZLanguage.php:862
+#: includes/ZLanguage.php:863
 msgid "New Zealand"
 msgstr "New Zealand"
 
-#: includes/ZLanguage.php:863
+#: includes/ZLanguage.php:864
 msgid "Oman"
 msgstr "Oman"
 
-#: includes/ZLanguage.php:864
+#: includes/ZLanguage.php:865
 msgid "Panama"
 msgstr "Panama"
 
-#: includes/ZLanguage.php:865
+#: includes/ZLanguage.php:866
 msgid "Peru"
 msgstr "Peru"
 
-#: includes/ZLanguage.php:866
+#: includes/ZLanguage.php:867
 msgid "French Polynesia"
 msgstr "French Polynesia"
 
-#: includes/ZLanguage.php:867
+#: includes/ZLanguage.php:868
 msgid "Papua New Guinea"
 msgstr "Papua New Guinea"
 
-#: includes/ZLanguage.php:868
+#: includes/ZLanguage.php:869
 msgid "Philippines"
 msgstr "Philippines"
 
-#: includes/ZLanguage.php:869
+#: includes/ZLanguage.php:870
 msgid "Pakistan"
 msgstr "Pakistan"
 
-#: includes/ZLanguage.php:870
+#: includes/ZLanguage.php:871
 msgid "Poland"
 msgstr "Polen"
 
-#: includes/ZLanguage.php:871
+#: includes/ZLanguage.php:872
 msgid "St. Pierre & Miquelon"
 msgstr "St. Pierre & Miquelon"
 
-#: includes/ZLanguage.php:872
+#: includes/ZLanguage.php:873
 msgid "Pitcairn"
 msgstr "Pitcairn"
 
-#: includes/ZLanguage.php:873
+#: includes/ZLanguage.php:874
 msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
-#: includes/ZLanguage.php:874
+#: includes/ZLanguage.php:875
 msgid "Portugal"
 msgstr "Portugal"
 
-#: includes/ZLanguage.php:875
+#: includes/ZLanguage.php:876
 msgid "Palau"
 msgstr "Palau"
 
-#: includes/ZLanguage.php:876
+#: includes/ZLanguage.php:877
 msgid "Paraguay"
 msgstr "Paraguay"
 
-#: includes/ZLanguage.php:877
+#: includes/ZLanguage.php:878
 msgid "Qatar"
 msgstr "Qatar"
 
-#: includes/ZLanguage.php:878
+#: includes/ZLanguage.php:879
 msgid "Reunion"
 msgstr "Reunion"
 
-#: includes/ZLanguage.php:879
+#: includes/ZLanguage.php:880
 msgid "Romania"
 msgstr "Romania"
 
-#: includes/ZLanguage.php:880
+#: includes/ZLanguage.php:881
+msgid "Serbia"
+msgstr "Serbia"
+
+#: includes/ZLanguage.php:882
 msgid "Russian Federation"
 msgstr "Russian Federation"
 
-#: includes/ZLanguage.php:881
+#: includes/ZLanguage.php:883
 msgid "Rwanda"
 msgstr "Rwanda"
 
-#: includes/ZLanguage.php:882
+#: includes/ZLanguage.php:884
 msgid "Saudi Arabia"
 msgstr "Saudi Arabia"
 
-#: includes/ZLanguage.php:883
+#: includes/ZLanguage.php:885
 msgid "Solomon Islands"
 msgstr "Solomon Islands"
 
-#: includes/ZLanguage.php:884
+#: includes/ZLanguage.php:886
 msgid "Seychelles"
 msgstr "Seychelles"
 
-#: includes/ZLanguage.php:885
+#: includes/ZLanguage.php:887
 msgid "Sudan"
 msgstr "Sudan"
 
-#: includes/ZLanguage.php:886
+#: includes/ZLanguage.php:888
 msgid "Singapore"
 msgstr "Singapore"
 
-#: includes/ZLanguage.php:887
+#: includes/ZLanguage.php:889
 msgid "St. Helena"
 msgstr "St. Helena"
 
-#: includes/ZLanguage.php:888
+#: includes/ZLanguage.php:890
 msgid "Slovenia"
 msgstr "Slovenia"
 
-#: includes/ZLanguage.php:889
+#: includes/ZLanguage.php:891
 msgid "Svalbard & Jan Mayen Islands"
 msgstr "Svalbard & Jan Mayen Islands"
 
-#: includes/ZLanguage.php:890
+#: includes/ZLanguage.php:892
 msgid "Slovakia"
 msgstr "Slovakia"
 
-#: includes/ZLanguage.php:891
+#: includes/ZLanguage.php:893
 msgid "Sierra Leone"
 msgstr "Sierra Leone"
 
-#: includes/ZLanguage.php:892
+#: includes/ZLanguage.php:894
 msgid "San Marino"
 msgstr "San Marino"
 
-#: includes/ZLanguage.php:893
+#: includes/ZLanguage.php:895
 msgid "Senegal"
 msgstr "Senegal"
 
-#: includes/ZLanguage.php:894
+#: includes/ZLanguage.php:896
 msgid "Somalia"
 msgstr "Somalia"
 
-#: includes/ZLanguage.php:895
+#: includes/ZLanguage.php:897
 msgid "Suriname"
 msgstr "Suriname"
 
-#: includes/ZLanguage.php:896
+#: includes/ZLanguage.php:898
 msgid "Sao Tome & Principe"
 msgstr "Sao Tome & Principe"
 
-#: includes/ZLanguage.php:897
+#: includes/ZLanguage.php:899
 msgid "Sweden"
 msgstr "Sweden"
 
-#: includes/ZLanguage.php:898
+#: includes/ZLanguage.php:900
 msgid "Syrian Arab Republic"
 msgstr "Syrian Arab Republic"
 
-#: includes/ZLanguage.php:899
+#: includes/ZLanguage.php:901
 msgid "Swaziland"
 msgstr "Swaziland"
 
-#: includes/ZLanguage.php:900
+#: includes/ZLanguage.php:902
 msgid "Turks & Caicos Islands"
 msgstr "Turks & Caicos Islands"
 
-#: includes/ZLanguage.php:901
+#: includes/ZLanguage.php:903
 msgid "Chad"
 msgstr "Chad"
 
-#: includes/ZLanguage.php:902
+#: includes/ZLanguage.php:904
 msgid "French Southern Territories"
 msgstr "French Southern Territories"
 
-#: includes/ZLanguage.php:903
+#: includes/ZLanguage.php:905
 msgid "Togo"
 msgstr "Togo"
 
-#: includes/ZLanguage.php:904
+#: includes/ZLanguage.php:906
 msgid "Thailand"
 msgstr "Thailand"
 
-#: includes/ZLanguage.php:905
+#: includes/ZLanguage.php:907
 msgid "Tajikistan"
 msgstr "Tajikistan"
 
-#: includes/ZLanguage.php:906
+#: includes/ZLanguage.php:908
 msgid "Tokelau"
 msgstr "Tokelau"
 
-#: includes/ZLanguage.php:907
+#: includes/ZLanguage.php:909
 msgid "Turkmenistan"
 msgstr "Turkmenistan"
 
-#: includes/ZLanguage.php:908
+#: includes/ZLanguage.php:910
 msgid "Tunisia"
 msgstr "Tunisia"
 
-#: includes/ZLanguage.php:910
+#: includes/ZLanguage.php:912
 msgid "East Timor"
 msgstr "East Timor"
 
-#: includes/ZLanguage.php:911
+#: includes/ZLanguage.php:913
 msgid "Turkey"
 msgstr "Turkey"
 
-#: includes/ZLanguage.php:912
+#: includes/ZLanguage.php:914
 msgid "Trinidad & Tobago"
 msgstr "Trinidad & Tobago"
 
-#: includes/ZLanguage.php:913
+#: includes/ZLanguage.php:915
 msgid "Tuvalu"
 msgstr "Tuvalu"
 
-#: includes/ZLanguage.php:914
+#: includes/ZLanguage.php:916
 msgid "Taiwan, Province of China"
 msgstr "Taiwan, Province of China"
 
-#: includes/ZLanguage.php:915
+#: includes/ZLanguage.php:917
 msgid "Tanzania, United Republic of"
 msgstr "Tanzania, United Republic of"
 
-#: includes/ZLanguage.php:916
+#: includes/ZLanguage.php:918
 msgid "Ukraine"
 msgstr "Ukraine"
 
-#: includes/ZLanguage.php:917
+#: includes/ZLanguage.php:919
 msgid "Uganda"
 msgstr "Uganda"
 
-#: includes/ZLanguage.php:918
+#: includes/ZLanguage.php:920
 msgid "United States Minor Outlying Islands"
 msgstr "United States Minor Outlying Islands"
 
-#: includes/ZLanguage.php:919
+#: includes/ZLanguage.php:921
 msgid "United States of America"
 msgstr "United States of America"
 
-#: includes/ZLanguage.php:920
+#: includes/ZLanguage.php:922
 msgid "Uruguay"
 msgstr "Uruguay"
 
-#: includes/ZLanguage.php:921
+#: includes/ZLanguage.php:923
 msgid "Uzbekistan"
 msgstr "Uzbekistan"
 
-#: includes/ZLanguage.php:922
+#: includes/ZLanguage.php:924
 msgid "Vatican City State (Holy See)"
 msgstr "Vatican City State (Holy See)"
 
-#: includes/ZLanguage.php:923
+#: includes/ZLanguage.php:925
 msgid "St. Vincent & the Grenadines"
 msgstr "St. Vincent & the Grenadines"
 
-#: includes/ZLanguage.php:924
+#: includes/ZLanguage.php:926
 msgid "Venezuela"
 msgstr "Venezuela"
 
-#: includes/ZLanguage.php:925
+#: includes/ZLanguage.php:927
 msgid "British Virgin Islands"
 msgstr "British Virgin Islands"
 
-#: includes/ZLanguage.php:926
+#: includes/ZLanguage.php:928
 msgid "United States Virgin Islands"
 msgstr "United States Virgin Islands"
 
-#: includes/ZLanguage.php:927
+#: includes/ZLanguage.php:929
 msgid "Vietnam"
 msgstr "Vietnam"
 
-#: includes/ZLanguage.php:928
+#: includes/ZLanguage.php:930
 msgid "Vanuatu"
 msgstr "Vanuatu"
 
-#: includes/ZLanguage.php:929
+#: includes/ZLanguage.php:931
 msgid "Wallis & Futuna Islands"
 msgstr "Wallis & Futuna Islands"
 
-#: includes/ZLanguage.php:930
+#: includes/ZLanguage.php:932
 msgid "Samoa"
 msgstr "Samoa"
 
-#: includes/ZLanguage.php:931
+#: includes/ZLanguage.php:933
 msgid "Yemen"
 msgstr "Yemen"
 
-#: includes/ZLanguage.php:932
+#: includes/ZLanguage.php:934
 msgid "Mayotte"
 msgstr "Mayotte"
 
-#: includes/ZLanguage.php:933
-msgid "Yugoslavia"
-msgstr "Yugoslavia"
-
-#: includes/ZLanguage.php:934
+#: includes/ZLanguage.php:935
 msgid "South Africa"
 msgstr "South Africa"
 
-#: includes/ZLanguage.php:935
+#: includes/ZLanguage.php:936
 msgid "Zambia"
 msgstr "Zambia"
 
-#: includes/ZLanguage.php:936
+#: includes/ZLanguage.php:937
 msgid "Zaire"
 msgstr "Zaire"
 
-#: includes/ZLanguage.php:937
+#: includes/ZLanguage.php:938
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
-#: includes/ZLanguage.php:938
+#: includes/ZLanguage.php:939
 msgid "Unknown or unspecified country"
 msgstr "Unknown or unspecified country"
 
-#: includes/ZLanguage.php:948
+#: includes/ZLanguage.php:949
 msgid "Arabic (United Arab Emirates)"
 msgstr "Arabic (United Arab Emirates)"
 
-#: includes/ZLanguage.php:949
+#: includes/ZLanguage.php:950
 msgid "Arabic (Bahrain)"
 msgstr "Arabic (Bahrain)"
 
-#: includes/ZLanguage.php:950
+#: includes/ZLanguage.php:951
 msgid "Arabic (Algeria)"
 msgstr "Arabic (Algeria)"
 
-#: includes/ZLanguage.php:951
+#: includes/ZLanguage.php:952
 msgid "Arabic (Egypt)"
 msgstr "Arabic (Egypt)"
 
-#: includes/ZLanguage.php:952
+#: includes/ZLanguage.php:953
 msgid "Arabic (Iraq)"
 msgstr "Arabic (Iraq)"
 
-#: includes/ZLanguage.php:953
+#: includes/ZLanguage.php:954
 msgid "Arabic (Jordan)"
 msgstr "Arabic (Jordan)"
 
-#: includes/ZLanguage.php:954
+#: includes/ZLanguage.php:955
 msgid "Arabic (Kuwait)"
 msgstr "Arabic (Kuwait)"
 
-#: includes/ZLanguage.php:955
+#: includes/ZLanguage.php:956
 msgid "Arabic (Lebanon)"
 msgstr "Arabic (Lebanon)"
 
-#: includes/ZLanguage.php:956
+#: includes/ZLanguage.php:957
 msgid "Arabic (Libya)"
 msgstr "Arabic (Libya)"
 
-#: includes/ZLanguage.php:957
+#: includes/ZLanguage.php:958
 msgid "Arabic (Morocco)"
 msgstr "Arabic (Morocco)"
 
-#: includes/ZLanguage.php:958
+#: includes/ZLanguage.php:959
 msgid "Arabic (Oman)"
 msgstr "Arabic (Oman)"
 
-#: includes/ZLanguage.php:959
+#: includes/ZLanguage.php:960
 msgid "Arabic (Qatar)"
 msgstr "Arabic (Qatar)"
 
-#: includes/ZLanguage.php:960
+#: includes/ZLanguage.php:961
 msgid "Arabic (Saudi Arabia)"
 msgstr "Arabic (Saudi Arabia)"
 
-#: includes/ZLanguage.php:961
+#: includes/ZLanguage.php:962
 msgid "Arabic (Sudan)"
 msgstr "Arabic (Sudan)"
 
-#: includes/ZLanguage.php:962
+#: includes/ZLanguage.php:963
 msgid "Arabic (Syria)"
 msgstr "Arabic (Syria)"
 
-#: includes/ZLanguage.php:963
+#: includes/ZLanguage.php:964
 msgid "Arabic (Tunisia)"
 msgstr "Arabic (Tunisia)"
 
-#: includes/ZLanguage.php:964
+#: includes/ZLanguage.php:965
 msgid "Arabic (Yemen)"
 msgstr "Arabic (Yemen)"
 
-#: includes/ZLanguage.php:966
+#: includes/ZLanguage.php:967
 msgid "Belarusian (Belarus)"
 msgstr "Belarusian (Belarus)"
 
-#: includes/ZLanguage.php:968
+#: includes/ZLanguage.php:969
 msgid "Bulgarian (Bulgaria)"
 msgstr "Bulgarian (Bulgaria)"
 
-#: includes/ZLanguage.php:969
+#: includes/ZLanguage.php:970
 msgid "Bengali (India)"
 msgstr "Bengali (India)"
 
-#: includes/ZLanguage.php:971
+#: includes/ZLanguage.php:972
 msgid "Catalan (Spain)"
 msgstr "Catalan (Spain)"
 
-#: includes/ZLanguage.php:973
+#: includes/ZLanguage.php:974
 msgid "Czech (Czech Republic)"
 msgstr "Czech (Czech Republic)"
 
-#: includes/ZLanguage.php:975
+#: includes/ZLanguage.php:976
 msgid "Danish (Denmark)"
 msgstr "Danish (Denmark)"
 
-#: includes/ZLanguage.php:977
+#: includes/ZLanguage.php:978
 msgid "German (Austria)"
 msgstr "German (Austria)"
 
-#: includes/ZLanguage.php:978
+#: includes/ZLanguage.php:979
 msgid "German (Switzerland)"
 msgstr "German (Switzerland)"
 
-#: includes/ZLanguage.php:979
+#: includes/ZLanguage.php:980
 msgid "German (Germany)"
 msgstr "German (Germany)"
 
-#: includes/ZLanguage.php:980
-#: includes/ZLanguage.php:1065
+#: includes/ZLanguage.php:981
+#: includes/ZLanguage.php:1066
 msgid "German (Luxembourg)"
 msgstr "German (Luxembourg)"
 
-#: includes/ZLanguage.php:982
+#: includes/ZLanguage.php:983
 msgid "Greek (Cyprus)"
 msgstr "Greek (Cyprus)"
 
-#: includes/ZLanguage.php:983
+#: includes/ZLanguage.php:984
 msgid "Greek (Greece)"
 msgstr "Greek (Greece)"
 
-#: includes/ZLanguage.php:985
+#: includes/ZLanguage.php:986
 msgid "English (Australia)"
 msgstr "English (Australia)"
 
-#: includes/ZLanguage.php:986
+#: includes/ZLanguage.php:987
 msgid "English (Canada)"
 msgstr "English (Canada)"
 
-#: includes/ZLanguage.php:987
+#: includes/ZLanguage.php:988
 msgid "English (United Kingdom)"
 msgstr "English (United Kingdom)"
 
-#: includes/ZLanguage.php:988
+#: includes/ZLanguage.php:989
 msgid "English (Ireland)"
 msgstr "English (Ireland)"
 
-#: includes/ZLanguage.php:989
+#: includes/ZLanguage.php:990
 msgid "English (India)"
 msgstr "English (India)"
 
-#: includes/ZLanguage.php:990
+#: includes/ZLanguage.php:991
 msgid "English (Malta)"
 msgstr "English (Malta)"
 
-#: includes/ZLanguage.php:991
+#: includes/ZLanguage.php:992
 msgid "English (New Zealand)"
 msgstr "English (New Zealand)"
 
-#: includes/ZLanguage.php:992
+#: includes/ZLanguage.php:993
 msgid "English (Philippines)"
 msgstr "English (Philippines)"
 
-#: includes/ZLanguage.php:993
+#: includes/ZLanguage.php:994
 msgid "English (Singapore)"
 msgstr "English (Singapore)"
 
-#: includes/ZLanguage.php:994
+#: includes/ZLanguage.php:995
 msgid "English (United States)"
 msgstr "English (United States)"
 
-#: includes/ZLanguage.php:995
+#: includes/ZLanguage.php:996
 msgid "English (South Africa)"
 msgstr "English (South Africa)"
 
-#: includes/ZLanguage.php:997
+#: includes/ZLanguage.php:998
 msgid "Spanish (Argentina)"
 msgstr "Spanish (Argentina)"
 
-#: includes/ZLanguage.php:998
+#: includes/ZLanguage.php:999
 msgid "Spanish (Bolivia)"
 msgstr "Spanish (Bolivia)"
 
-#: includes/ZLanguage.php:999
+#: includes/ZLanguage.php:1000
 msgid "Spanish (Chile)"
 msgstr "Spanish (Chile)"
 
-#: includes/ZLanguage.php:1000
+#: includes/ZLanguage.php:1001
 msgid "Spanish (Colombia)"
 msgstr "Spanish (Colombia)"
 
-#: includes/ZLanguage.php:1001
+#: includes/ZLanguage.php:1002
 msgid "Spanish (Costa Rica)"
 msgstr "Spanish (Costa Rica)"
 
-#: includes/ZLanguage.php:1002
+#: includes/ZLanguage.php:1003
 msgid "Spanish (Dominican Republic)"
 msgstr "Spanish (Dominican Republic)"
 
-#: includes/ZLanguage.php:1003
+#: includes/ZLanguage.php:1004
 msgid "Spanish (Ecuador)"
 msgstr "Spanish (Ecuador)"
 
-#: includes/ZLanguage.php:1004
+#: includes/ZLanguage.php:1005
 msgid "Spanish (Spain)"
 msgstr "Spanish (Spain)"
 
-#: includes/ZLanguage.php:1005
+#: includes/ZLanguage.php:1006
 msgid "Spanish (Guatemala)"
 msgstr "Spanish (Guatemala)"
 
-#: includes/ZLanguage.php:1006
+#: includes/ZLanguage.php:1007
 msgid "Spanish (Honduras)"
 msgstr "Spanish (Honduras)"
 
-#: includes/ZLanguage.php:1007
+#: includes/ZLanguage.php:1008
 msgid "Spanish (Mexico)"
 msgstr "Spanish (Mexico)"
 
-#: includes/ZLanguage.php:1008
+#: includes/ZLanguage.php:1009
 msgid "Spanish (Nicaragua)"
 msgstr "Spanish (Nicaragua)"
 
-#: includes/ZLanguage.php:1009
+#: includes/ZLanguage.php:1010
 msgid "Spanish (Panama)"
 msgstr "Spanish (Panama)"
 
-#: includes/ZLanguage.php:1010
+#: includes/ZLanguage.php:1011
 msgid "Spanish (Peru)"
 msgstr "Spanish (Peru)"
 
-#: includes/ZLanguage.php:1011
+#: includes/ZLanguage.php:1012
 msgid "Spanish (Puerto Rico)"
 msgstr "Spanish (Puerto Rico)"
 
-#: includes/ZLanguage.php:1012
+#: includes/ZLanguage.php:1013
 msgid "Spanish (Paraguay)"
 msgstr "Spanish (Paraguay)"
 
-#: includes/ZLanguage.php:1013
+#: includes/ZLanguage.php:1014
 msgid "Spanish (El Salvador)"
 msgstr "Spanish (El Salvador)"
 
-#: includes/ZLanguage.php:1014
+#: includes/ZLanguage.php:1015
 msgid "Spanish (United States)"
 msgstr "Spanish (United States)"
 
-#: includes/ZLanguage.php:1015
+#: includes/ZLanguage.php:1016
 msgid "Spanish (Uruguay)"
 msgstr "Spanish (Uruguay)"
 
-#: includes/ZLanguage.php:1016
+#: includes/ZLanguage.php:1017
 msgid "Spanish (Venezuela)"
 msgstr "Spanish (Venezuela)"
 
-#: includes/ZLanguage.php:1018
+#: includes/ZLanguage.php:1019
 msgid "Estonian (Estonia)"
 msgstr "Estonian (Estonia)"
 
-#: includes/ZLanguage.php:1022
+#: includes/ZLanguage.php:1023
 msgid "Finnish (Finland)"
 msgstr "Finnish (Finland)"
 
-#: includes/ZLanguage.php:1024
+#: includes/ZLanguage.php:1025
 msgid "French (Belgium)"
 msgstr "French (Belgium)"
 
-#: includes/ZLanguage.php:1025
+#: includes/ZLanguage.php:1026
 msgid "French (Canada)"
 msgstr "French (Canada)"
 
-#: includes/ZLanguage.php:1026
+#: includes/ZLanguage.php:1027
 msgid "French (Switzerland)"
 msgstr "French (Switzerland)"
 
-#: includes/ZLanguage.php:1027
+#: includes/ZLanguage.php:1028
 msgid "French (France)"
 msgstr "French (France)"
 
-#: includes/ZLanguage.php:1028
+#: includes/ZLanguage.php:1029
 msgid "French (Luxembourg)"
 msgstr "French (Luxembourg)"
 
-#: includes/ZLanguage.php:1029
+#: includes/ZLanguage.php:1030
 msgid "Friulian"
 msgstr "Friulian"
 
-#: includes/ZLanguage.php:1031
+#: includes/ZLanguage.php:1032
 msgid "Irish (Ireland)"
 msgstr "Irish (Ireland)"
 
-#: includes/ZLanguage.php:1034
+#: includes/ZLanguage.php:1035
 msgid "Hindi (India)"
 msgstr "Hindi (India)"
 
-#: includes/ZLanguage.php:1036
+#: includes/ZLanguage.php:1037
 msgid "Croatian (Croatia)"
 msgstr "Croatian (Croatia)"
 
-#: includes/ZLanguage.php:1038
+#: includes/ZLanguage.php:1039
 msgid "Hungarian (Hungary)"
 msgstr "Hungarian (Hungary)"
 
-#: includes/ZLanguage.php:1041
+#: includes/ZLanguage.php:1042
 msgid "Indonesian (Indonesia)"
 msgstr "Indonesian (Indonesia)"
 
-#: includes/ZLanguage.php:1043
+#: includes/ZLanguage.php:1044
 msgid "Icelandic (Iceland)"
 msgstr "Icelandic (Iceland)"
 
-#: includes/ZLanguage.php:1045
+#: includes/ZLanguage.php:1046
 msgid "Italian (Switzerland)"
 msgstr "Italian (Switzerland)"
 
-#: includes/ZLanguage.php:1046
+#: includes/ZLanguage.php:1047
 msgid "Italian (Italy)"
 msgstr "Italian (Italy)"
 
-#: includes/ZLanguage.php:1048
+#: includes/ZLanguage.php:1049
 msgid "Hebrew (Israel)"
 msgstr "Hebrew (Israel)"
 
-#: includes/ZLanguage.php:1050
+#: includes/ZLanguage.php:1051
 msgid "Japanese (Japan)"
 msgstr "Japanese (Japan)"
 
-#: includes/ZLanguage.php:1053
+#: includes/ZLanguage.php:1054
 msgid "Korean (South Korea)"
 msgstr "Korean (South Korea)"
 
-#: includes/ZLanguage.php:1055
+#: includes/ZLanguage.php:1056
 msgid "Lithuanian (Lithuania)"
 msgstr "Lithuanian (Lithuania)"
 
-#: includes/ZLanguage.php:1057
+#: includes/ZLanguage.php:1058
 msgid "Latvian (Latvia)"
 msgstr "Latvian (Latvia)"
 
-#: includes/ZLanguage.php:1059
+#: includes/ZLanguage.php:1060
 msgid "Macedonian (Macedonia)"
 msgstr "Macedonian (Macedonia)"
 
-#: includes/ZLanguage.php:1062
+#: includes/ZLanguage.php:1063
 msgid "Malay (Malaysia)"
 msgstr "Malay (Malaysia)"
 
-#: includes/ZLanguage.php:1064
+#: includes/ZLanguage.php:1065
 msgid "Maltese (Malta)"
 msgstr "Maltese (Malta)"
 
-#: includes/ZLanguage.php:1068
+#: includes/ZLanguage.php:1069
 msgid "Dutch (Belgium)"
 msgstr "Dutch (Belgium)"
 
-#: includes/ZLanguage.php:1069
+#: includes/ZLanguage.php:1070
 msgid "Dutch (Netherlands)"
 msgstr "Dutch (Netherlands)"
 
-#: includes/ZLanguage.php:1071
+#: includes/ZLanguage.php:1072
 msgid "Norwegian (Norway)"
 msgstr "Norwegian (Norway)"
 
-#: includes/ZLanguage.php:1072
+#: includes/ZLanguage.php:1073
 msgid "Norwegian (Norway, Nynorsk)"
 msgstr "Norwegian (Norway, Nynorsk)"
 
-#: includes/ZLanguage.php:1074
+#: includes/ZLanguage.php:1075
 msgid "Polish (Poland)"
 msgstr "Polish (Poland)"
 
-#: includes/ZLanguage.php:1076
+#: includes/ZLanguage.php:1077
 msgid "Portuguese (Brazil)"
 msgstr "Portuguese (Brazil)"
 
-#: includes/ZLanguage.php:1077
+#: includes/ZLanguage.php:1078
 msgid "Portuguese (Portugal)"
 msgstr "Portuguese (Portugal)"
 
-#: includes/ZLanguage.php:1079
+#: includes/ZLanguage.php:1080
 msgid "Romanian (Romania)"
 msgstr "Romanian (Romania)"
 
-#: includes/ZLanguage.php:1081
+#: includes/ZLanguage.php:1082
 msgid "Russian (Russia)"
 msgstr "Russian (Russia)"
 
-#: includes/ZLanguage.php:1083
+#: includes/ZLanguage.php:1084
 msgid "Slovak (Slovakia)"
 msgstr "Slovak (Slovakia)"
 
-#: includes/ZLanguage.php:1085
+#: includes/ZLanguage.php:1086
 msgid "Slovenian (Slovenia)"
 msgstr "Slovenian (Slovenia)"
 
-#: includes/ZLanguage.php:1087
+#: includes/ZLanguage.php:1088
 msgid "Albanian (Albania)"
 msgstr "Albanian (Albania)"
 
-#: includes/ZLanguage.php:1089
+#: includes/ZLanguage.php:1090
 msgid "Serbian (Bosnia and Herzegovina)"
 msgstr "Serbian (Bosnia and Herzegovina)"
 
-#: includes/ZLanguage.php:1090
+#: includes/ZLanguage.php:1091
 msgid "Serbian (Serbia and Montenegro)"
 msgstr "Serbian (Serbia and Montenegro)"
 
-#: includes/ZLanguage.php:1091
+#: includes/ZLanguage.php:1092
 msgid "Serbian (Montenegro)"
 msgstr "Serbian (Montenegro)"
 
-#: includes/ZLanguage.php:1092
+#: includes/ZLanguage.php:1093
 msgid "Serbian (Serbia)"
 msgstr "Serbian (Serbia)"
 
-#: includes/ZLanguage.php:1093
+#: includes/ZLanguage.php:1094
 msgid "Sotho, Southern"
 msgstr "Sotho, Southern"
 
-#: includes/ZLanguage.php:1095
+#: includes/ZLanguage.php:1096
 msgid "Swedish (Sweden)"
 msgstr "Swedish (Sweden)"
 
-#: includes/ZLanguage.php:1097
+#: includes/ZLanguage.php:1098
 msgid "Thai (Thailand)"
 msgstr "Thai (Thailand)"
 
-#: includes/ZLanguage.php:1098
+#: includes/ZLanguage.php:1099
 msgid "Thai (Thailand, TH)"
 msgstr "Thai (Thailand, TH)"
 
-#: includes/ZLanguage.php:1100
+#: includes/ZLanguage.php:1101
 msgid "Turkish (Turkey)"
 msgstr "Turkish (Turkey)"
 
-#: includes/ZLanguage.php:1102
+#: includes/ZLanguage.php:1103
 msgid "Ukrainian (Ukraine)"
 msgstr "Ukrainian (Ukraine)"
 
-#: includes/ZLanguage.php:1104
+#: includes/ZLanguage.php:1105
 msgid "Vietnamese (Vietnam)"
 msgstr "Vietnamese (Vietnam)"
 
-#: includes/ZLanguage.php:1107
+#: includes/ZLanguage.php:1108
 msgid "Chinese (China)"
 msgstr "Chinese (China)"
 
-#: includes/ZLanguage.php:1108
+#: includes/ZLanguage.php:1109
 msgid "Chinese (Hong Kong)"
 msgstr "Chinese (Hong Kong)"
 
-#: includes/ZLanguage.php:1109
+#: includes/ZLanguage.php:1110
 msgid "Chinese (Singapore)"
 msgstr "Chinese (Singapore)"
 
-#: includes/ZLanguage.php:1110
+#: includes/ZLanguage.php:1111
 msgid "Chinese (Taiwan)"
 msgstr "Chinese (Taiwan)"
 
 #: includes/ValidationUtil.class.php:37
-#: includes/DBUtil.class.php:1689
-#: includes/DBUtil.class.php:1717
-#: includes/DBUtil.class.php:1732
-#: includes/DBUtil.class.php:1873
-#: includes/DBUtil.class.php:1993
-#: includes/DBUtil.class.php:2168
-#: includes/DBUtil.class.php:2502
+#: includes/DBUtil.class.php:1691
+#: includes/DBUtil.class.php:1719
+#: includes/DBUtil.class.php:1734
+#: includes/DBUtil.class.php:1875
+#: includes/DBUtil.class.php:1995
+#: includes/DBUtil.class.php:2172
+#: includes/DBUtil.class.php:2506
 #, php-format
 msgid "%s: %s is not an array"
 msgstr "%s: %s is not an array"
@@ -2644,22 +2648,22 @@ msgstr "Stack trace:"
 msgid "Maximum recursion level reached"
 msgstr "Maximum recursion level reached"
 
-#: includes/ZLocale.php:70
+#: includes/ZLocale.php:72
 #, php-format
 msgid "Error! Could not load '%s'. Please check that it exists."
 msgstr "Fehler! Konnte '%s' nicht laden. Bitte überprüfen, ob Datei existiert."
 
-#: includes/ZLocale.php:78
+#: includes/ZLocale.php:80
 #, php-format
 msgid "Error! The locale file %s contains invalid data."
 msgstr "Error! The locale file %s contains invalid data."
 
-#: includes/ZLocale.php:84
+#: includes/ZLocale.php:86
 #, php-format
 msgid "Error! %1$s is missing in %2$s."
 msgstr "Fehler! %1$s fehlt in %2$s."
 
-#: includes/ZLocale.php:89
+#: includes/ZLocale.php:91
 #, php-format
 msgid "Error! There is an invalid value for %1$s in %2$s."
 msgstr "Fehler! Ungültiger Wert für %1$s in %2$s."
@@ -2681,8 +2685,9 @@ msgstr "Empty %s received."
 #: system/Groups/pnajax.php:111
 #: system/Groups/pnajax.php:160
 msgid "Sorry! Invalid authorisation key ('authkey'). This is probably either because you pressed the 'Back' button to return to a page which does not allow that, or else because the page's authorisation key expired due to prolonged inactivity. Please refresh the page and try again."
-msgstr "Entschuldigung! Ungültiger Authentifizierungsschlüssel ('AuthKey)': Das könnte daran liegen, dass der 'Zurück' Button im Browser benutzt wurde oder der 'AuthKey' abgelaufen ist. Bitte die Seite neu laden und es erneut versuchen."
+msgstr "Ungültiger Authentifizierungsschlüssel ('AuthKey'): Möglichweise wurde der 'Zurück' Button im Browser benutzt, gesicherte Formulare in mehreren Browser-Tabs gespeichert oder der 'AuthKey' ist abgelaufen. Bitte die Seite neu laden und es erneut versuchen."
 
+#: includes/LogUtil.class.php:187
 #: includes/LogUtil.class.php:192
 #: includes/LogUtil.class.php:194
 #: system/Blocks/pnajax.php:24
@@ -2696,7 +2701,7 @@ msgstr "Entschuldigung! Ungültiger Authentifizierungsschlüssel ('AuthKey)': Da
 #: system/Groups/pnajax.php:107
 #: system/Groups/pnajax.php:167
 msgid "Sorry! You have not been granted access to this page."
-msgstr "Entschuldigung! Es sind keine Rechte für den Zugriff auf diese Seite vorhanden."
+msgstr "Es sind leider keine Rechte für den Zugriff auf diese Seite vorhanden."
 
 #: includes/LogUtil.class.php:234
 #, php-format
@@ -2765,9 +2770,9 @@ msgstr "Fehler! Konnte Anmeldedatum nicht speichern."
 #: system/Admin_Messages/pnsearchapi.php:82
 #: system/Admin_Messages/pnsearchapi.php:107
 #: system/Modules/pnadminapi.php:277
-#: system/Modules/pnadminapi.php:700
-#: system/Modules/pnadminapi.php:760
-#: system/Modules/pnadminapi.php:1062
+#: system/Modules/pnadminapi.php:699
+#: system/Modules/pnadminapi.php:759
+#: system/Modules/pnadminapi.php:1061
 #: system/Groups/pnuserapi.php:52
 #: system/Groups/pnuserapi.php:201
 #: system/Groups/pnuserapi.php:249
@@ -2833,8 +2838,8 @@ msgstr "Invalid %1$s [%2$s] in %3$s."
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:55
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:31
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:88
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:134
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:161
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:136
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:163
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:34
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:37
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:46
@@ -2876,8 +2881,8 @@ msgstr "Nein"
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:53
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:29
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:86
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:132
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:159
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:134
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:161
 #: system/Admin_Messages/pntemplates/admin_messages_admin_new.htm:32
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:35
 #: system/Admin_Messages/pntemplates/admin_messages_admin_modify.htm:44
@@ -2924,8 +2929,8 @@ msgstr "Privat"
 #: includes/HtmlUtil.class.php:455
 #: system/Permissions/pnadmin.php:335
 #: system/Users/pntemplates/users_admin_modify.htm:21
-#: system/Permissions/pntemplates/permissions_admin_view.htm:29
-#: system/Permissions/pntemplates/permissions_admin_view.htm:54
+#: system/Permissions/pntemplates/permissions_admin_view.htm:26
+#: system/Permissions/pntemplates/permissions_admin_view.htm:51
 msgid "Group"
 msgstr "Gruppe"
 
@@ -2962,7 +2967,7 @@ msgid "Write access"
 msgstr "Schreibzugriff"
 
 #: includes/HtmlUtil.class.php:682
-#: includes/DateUtil.class.php:793
+#: includes/DateUtil.class.php:810
 msgid "January February March April May June July August September October November December"
 msgstr "Januar Februar März April Mai Juni Juli August September Oktober November Dezember"
 
@@ -3004,11 +3009,11 @@ msgstr "Administrieren"
 #: includes/pnSecurity.php:152
 #: includes/pnSecurity.php:174
 #: includes/pnSecurity.php:190
-#: includes/pnAPI.php:624
-#: includes/pnAPI.php:676
-#: includes/pnAPI.php:709
-#: includes/pnAPI.php:740
-#: includes/pnAPI.php:772
+#: includes/pnAPI.php:628
+#: includes/pnAPI.php:680
+#: includes/pnAPI.php:713
+#: includes/pnAPI.php:744
+#: includes/pnAPI.php:776
 #: includes/pnTheme.php:23
 #: includes/pnTheme.php:35
 #: includes/pnTheme.php:56
@@ -3087,33 +3092,33 @@ msgstr "Error! Attempted to pop a connection from an empty connection stack."
 
 # _DATELONG
 #. ! datelong
-#: includes/DateUtil.class.php:45
-#: system/pnForm/plugins/function.pnformdateinput.php:183
+#: includes/DateUtil.class.php:46
+#: system/pnForm/plugins/function.pnformdateinput.php:72
 msgid "%A, %B %d, %Y"
 msgstr "%A, %d. %B %Y"
 
 # _DATEBRIEF
 #. ! datebrief
-#: includes/DateUtil.class.php:49
+#: includes/DateUtil.class.php:50
 #: system/SecurityCenter/pnuserapi.php:296
 msgid "%b %d, %Y"
 msgstr "%d. %b %Y"
 
 # _DATESTRING
 #. ! datestring
-#: includes/DateUtil.class.php:53
+#: includes/DateUtil.class.php:54
 msgid "%A, %B %d @ %H:%M:%S"
 msgstr "%A, %d. %B %Y um %H:%M Uhr"
 
 # _DATESTRING2
 #. ! datestring2
-#: includes/DateUtil.class.php:57
+#: includes/DateUtil.class.php:58
 msgid "%A, %B %d"
 msgstr "%A, %B %d"
 
 # _DATETIMEBRIEF
 #. ! datetimebrief
-#: includes/DateUtil.class.php:61
+#: includes/DateUtil.class.php:62
 #: system/Admin_Messages/pnadmin.php:343
 #: system/SecurityCenter/pnadmin.php:130
 #: system/Theme/plugins/function.datetime.php:51
@@ -3122,228 +3127,256 @@ msgstr "%d. %b %Y -  %H:%M Uhr"
 
 # _DATETIMELONG
 #. ! datetimelong
-#: includes/DateUtil.class.php:65
-#: system/pnForm/plugins/function.pnformdateinput.php:183
+#: includes/DateUtil.class.php:66
+#: system/pnForm/plugins/function.pnformdateinput.php:72
 msgid "%A, %B %d, %Y - %I:%M %p"
 msgstr "%A, %d. %B %Y, %H:%M Uhr"
 
 # _TIMEBRIEF
 #. ! timebrief
-#: includes/DateUtil.class.php:69
+#: includes/DateUtil.class.php:70
 #: system/SecurityCenter/pnuserapi.php:297
 msgid "%I:%M %p"
 msgstr "%H:%M"
 
 # _TIMELONG
 #. ! timelong
-#: includes/DateUtil.class.php:73
+#: includes/DateUtil.class.php:74
 msgid "%T %p"
 msgstr "%T %p"
 
-#: includes/DateUtil.class.php:706
+#: includes/DateUtil.class.php:723
 msgid "(GMT -12:00 hours) Baker Island"
 msgstr "(GMT -12:00 hours) Baker Island"
 
-#: includes/DateUtil.class.php:707
+#: includes/DateUtil.class.php:724
 msgid "(GMT -11:00 hours) Midway Island, Samoa"
 msgstr "(GMT -11:00 hours) Midway Island, Samoa"
 
-#: includes/DateUtil.class.php:708
+#: includes/DateUtil.class.php:725
 msgid "(GMT -10:00 hours) Hawaii"
 msgstr "(GMT -10:00 hours) Hawaii"
 
-#: includes/DateUtil.class.php:709
+#: includes/DateUtil.class.php:726
 msgid "(GMT -9:30 hours) French Polynesia"
 msgstr "(GMT -9:30 hours) French Polynesia"
 
-#: includes/DateUtil.class.php:710
+#: includes/DateUtil.class.php:727
 msgid "(GMT -9:00 hours) Alaska"
 msgstr "(GMT -9:00 hours) Alaska"
 
-#: includes/DateUtil.class.php:711
+#: includes/DateUtil.class.php:728
 msgid "(GMT -8:00 hours) Pacific Time (US & Canada)"
 msgstr "(GMT -8:00 hours) Pacific Time (US & Canada)"
 
-#: includes/DateUtil.class.php:712
+#: includes/DateUtil.class.php:729
 msgid "(GMT -7:00 hours) Mountain Time (US & Canada)"
 msgstr "(GMT -7:00 hours) Mountain Time (US & Canada)"
 
-#: includes/DateUtil.class.php:713
+#: includes/DateUtil.class.php:730
 msgid "(GMT -6:00 hours) Central Time (US & Canada), Mexico City"
 msgstr "(GMT -6:00 hours) Central Time (US & Canada), Mexico City"
 
-#: includes/DateUtil.class.php:714
+#: includes/DateUtil.class.php:731
 msgid "(GMT -5:00 hours) Eastern Time (US & Canada), Bogota, Lima, Quito"
 msgstr "(GMT -5:00 hours) Eastern Time (US & Canada), Bogota, Lima, Quito"
 
-#: includes/DateUtil.class.php:715
+#: includes/DateUtil.class.php:732
 msgid "(GMT -4:00 hours) Atlantic Time (Canada), Caracas, La Paz"
 msgstr "(GMT -4:00 hours) Atlantic Time (Canada), Caracas, La Paz"
 
-#: includes/DateUtil.class.php:716
+#: includes/DateUtil.class.php:733
 msgid "(GMT -3:30 hours) Newfoundland"
 msgstr "(GMT -3:30 hours) Newfoundland"
 
-#: includes/DateUtil.class.php:717
+#: includes/DateUtil.class.php:734
 msgid "(GMT -3:00 hours) Brazil, Buenos Aires, Georgetown"
 msgstr "(GMT -3:00 hours) Brazil, Buenos Aires, Georgetown"
 
-#: includes/DateUtil.class.php:718
+#: includes/DateUtil.class.php:735
 msgid "(GMT -2:00 hours) Mid-Atlantic"
 msgstr "(GMT -2:00 hours) Mid-Atlantic"
 
-#: includes/DateUtil.class.php:719
+#: includes/DateUtil.class.php:736
 msgid "(GMT -1:00 hours) Azores, Cape Verde Islands"
 msgstr "(GMT -1:00 hours) Azores, Cape Verde Islands"
 
-#: includes/DateUtil.class.php:720
+#: includes/DateUtil.class.php:737
 msgid "(GMT) Western Europe Time, London, Lisbon, Casablanca, Monrovia"
 msgstr "(GMT) Western Europe Time, London, Lisbon, Casablanca, Monrovia"
 
-#: includes/DateUtil.class.php:721
+#: includes/DateUtil.class.php:738
 msgid "(GMT +1:00 hours) CET (Central Europe Time), Brussels, Copenhagen, Madrid, Paris"
 msgstr "(GMT +1:00 hours) CET (Central Europe Time), Brussels, Copenhagen, Madrid, Paris"
 
-#: includes/DateUtil.class.php:722
+#: includes/DateUtil.class.php:739
 msgid "(GMT +2:00 hours) EET (Eastern Europe Time), Kaliningrad, South Africa"
 msgstr "(GMT +2:00 hours) EET (Eastern Europe Time), Kaliningrad, South Africa"
 
-#: includes/DateUtil.class.php:723
+#: includes/DateUtil.class.php:740
 msgid "(GMT +3:00 hours) Baghdad, Kuwait, Riyadh, Moscow, St. Petersburg"
 msgstr "(GMT +3:00 hours) Baghdad, Kuwait, Riyadh, Moscow, St. Petersburg"
 
-#: includes/DateUtil.class.php:724
+#: includes/DateUtil.class.php:741
 msgid "(GMT +3:30 hours) Tehran"
 msgstr "(GMT +3:30 hours) Tehran"
 
-#: includes/DateUtil.class.php:725
+#: includes/DateUtil.class.php:742
 msgid "(GMT +4:00 hours) Abu Dhabi, Muscat, Baku, Tbilisi"
 msgstr "(GMT +4:00 hours) Abu Dhabi, Muscat, Baku, Tbilisi"
 
-#: includes/DateUtil.class.php:726
+#: includes/DateUtil.class.php:743
 msgid "(GMT +4:30 hours) Kabul"
 msgstr "(GMT +4:30 hours) Kabul"
 
-#: includes/DateUtil.class.php:727
+#: includes/DateUtil.class.php:744
 msgid "(GMT +5:00 hours) Ekaterinburg, Islamabad, Karachi, Tashkent"
 msgstr "(GMT +5:00 hours) Ekaterinburg, Islamabad, Karachi, Tashkent"
 
-#: includes/DateUtil.class.php:728
+#: includes/DateUtil.class.php:745
 msgid "(GMT +5:30 hours) Bombay, Calcutta, Madras, New Delhi"
 msgstr "(GMT +5:30 hours) Bombay, Calcutta, Madras, New Delhi"
 
-#: includes/DateUtil.class.php:729
+#: includes/DateUtil.class.php:746
 msgid "(GMT +5:45 hours) Kathmandu"
 msgstr "(GMT +5:45 hours) Kathmandu"
 
-#: includes/DateUtil.class.php:730
+#: includes/DateUtil.class.php:747
 msgid "(GMT +6:00 hours) Almaty, Dhaka, Colombo"
 msgstr "(GMT +6:00 hours) Almaty, Dhaka, Colombo"
 
-#: includes/DateUtil.class.php:731
+#: includes/DateUtil.class.php:748
 msgid "(GMT +6:30 hours) Cocos Islands, Myanmar"
 msgstr "(GMT +6:30 hours) Cocos Islands, Myanmar"
 
-#: includes/DateUtil.class.php:732
+#: includes/DateUtil.class.php:749
 msgid "(GMT +7:00 hours) Bangkok, Hanoi, Jakarta"
 msgstr "(GMT +7:00 hours) Bangkok, Hanoi, Jakarta"
 
-#: includes/DateUtil.class.php:733
+#: includes/DateUtil.class.php:750
 msgid "(GMT +8:00 hours) Beijing, Perth, Singapore, Hong Kong, Chongqing, Urumqi, Taipei"
 msgstr "(GMT +8:00 hours) Beijing, Perth, Singapore, Hong Kong, Chongqing, Urumqi, Taipei"
 
-#: includes/DateUtil.class.php:734
+#: includes/DateUtil.class.php:751
 msgid "(GMT +9:00 hours) Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
 msgstr "(GMT +9:00 hours) Tokyo, Seoul, Osaka, Sapporo, Yakutsk"
 
-#: includes/DateUtil.class.php:735
+#: includes/DateUtil.class.php:752
 msgid "(GMT +9:30 hours) Adelaide, Darwin"
 msgstr "(GMT +9:30 hours) Adelaide, Darwin"
 
-#: includes/DateUtil.class.php:736
+#: includes/DateUtil.class.php:753
 msgid "(GMT +10:00 hours) EAST (East Australian Standard)"
 msgstr "(GMT +10:00 hours) EAST (East Australian Standard)"
 
-#: includes/DateUtil.class.php:737
+#: includes/DateUtil.class.php:754
 msgid "(GMT +10:30 hours) Lord Howe Island (NSW, Australia)"
 msgstr "(GMT +10:30 hours) Lord Howe Island (NSW, Australia)"
 
-#: includes/DateUtil.class.php:738
+#: includes/DateUtil.class.php:755
 msgid "(GMT +11:00 hours) Magadan, Solomon Islands, New Caledonia"
 msgstr "(GMT +11:00 hours) Magadan, Solomon Islands, New Caledonia"
 
-#: includes/DateUtil.class.php:739
+#: includes/DateUtil.class.php:756
 msgid "(GMT +11:30 hours) Norfolk Island"
 msgstr "(GMT +11:30 hours) Norfolk Island"
 
-#: includes/DateUtil.class.php:740
+#: includes/DateUtil.class.php:757
 msgid "(GMT +12:00 hours) Auckland, Wellington, Fiji, Kamchatka, Marshall Island"
 msgstr "(GMT +12:00 hours) Auckland, Wellington, Fiji, Kamchatka, Marshall Island"
 
-#: includes/DateUtil.class.php:741
+#: includes/DateUtil.class.php:758
 msgid "(GMT +12:45 hours) Chatham Islands"
 msgstr "(GMT +12:45 hours) Chatham Islands"
 
-#: includes/DateUtil.class.php:742
+#: includes/DateUtil.class.php:759
 msgid "(GMT +13:00 hours Tonga, Kiribati (Phoenix Islands)"
 msgstr "(GMT +13:00 hours Tonga, Kiribati (Phoenix Islands)"
 
-#: includes/DateUtil.class.php:743
+#: includes/DateUtil.class.php:760
 msgid "(GMT +14:00 hours) Kiribati (Line Islands)"
 msgstr "(GMT +14:00 hours) Kiribati (Line Islands)"
 
-#: includes/DateUtil.class.php:790
+#: includes/DateUtil.class.php:807
 msgid "Sun Mon Tue Wed Thu Fri Sat"
 msgstr "So Mo Di Mi Do Fr Sa"
 
-#: includes/DateUtil.class.php:791
+#: includes/DateUtil.class.php:808
 msgid "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec"
 msgstr "Jan Feb Mär Apr Mai Jun Jul Aug Sep Okt Nov Dez"
 
-#: includes/DateUtil.class.php:792
+#: includes/DateUtil.class.php:809
 msgid "Sunday Monday Tuesday Wednesday Thursday Friday Saturday"
 msgstr "Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag"
 
-#: includes/DateUtil.class.php:796
+#: includes/DateUtil.class.php:813
 msgid "GMT-12 GMT-11 HST GMT-9:30 AKST PST MST CST EST AST GMT-3:30 GMT-3 GMT-2 GMT-1 GMT CET EET GMT+3 GMT+3:30 GMT+4 GMT+4:30 GMT+5 GMT+5:30 GMT+5:45 GMT+6 GMT+6:30 GMT+7 AWST ACDT JST ACST AEST GMT+11 GMT+11:30 GMT+12 GMT+12:45 GMT+13 GMT+14"
 msgstr "GMT-12 GMT-11 HST GMT-9:30 AKST PST MST CST EST AST GMT-3:30 GMT-3 GMT-2 GMT-1 GMT CET EET GMT+3 GMT+3:30 GMT+4 GMT+4:30 GMT+5 GMT+5:30 GMT+5:45 GMT+6 GMT+6:30 GMT+7 AWST ACDT JST ACST AEST GMT+11 GMT+11:30 GMT+12 GMT+12:45 GMT+13 GMT+14"
 
-#: includes/DateUtil.class.php:797
+#: includes/DateUtil.class.php:814
 msgid "-12 -11 -10 -9.5 -9 -8 -7 -6 -5 -4 -3.5 -3 -2 -1 0 1 2 3 3.5 4 4.5 5 5.5 5.75 6 6.5 7 8 9 9.5 10 10.5 11 11.5 12 12.75 13 14"
 msgstr "-12 -11 -10 -9.5 -9 -8 -7 -6 -5 -4 -3.5 -3 -2 -1 0 1 2 3 3.5 4 4.5 5 5.5 5.75 6 6.5 7 8 9 9.5 10 10.5 11 11.5 12 12.75 13 14"
 
-#: includes/pnAPI.php:794
+#: includes/DateUtil.class.php:851
+#: system/pnRender/plugins/function.pncalendarinput.php:61
+#: system/pnRender/plugins/function.pncalendarinput.php:69
+#: system/pnForm/plugins/function.pnformdateinput.php:113
+#: system/pnForm/plugins/function.pnformdateinput.php:177
+#: system/pnForm/plugins/function.pnformdateinput.php:234
+msgid "%Y-%m-%d"
+msgstr "%d.%m.%Y"
+
+#: includes/DateUtil.class.php:873
+msgid "Dateformat must be with 8, 14 or 17 characters long."
+msgstr "Dateformat must be with 8, 14 or 17 characters long."
+
+#: includes/DateUtil.class.php:881
+#, php-format
+msgid "Dateformat separators must be the same in %s"
+msgstr "Dateformat separators must be the same in %s"
+
+#: includes/DateUtil.class.php:908
+#, php-format
+msgid "Dateformat time separators must be the same in %s"
+msgstr "Dateformat time separators must be the same in %s"
+
+#: includes/DateUtil.class.php:946
+#, php-format
+msgid "Dateformat did not match known format in %s"
+msgstr "Dateformat did not match known format in %s"
+
+#: includes/pnAPI.php:798
 #, php-format
 msgid "Error! The 'pnVarCensor' function used in '%s' is deprecated. Instead, please activate the 'MultiHook' for this module."
 msgstr "Error! The 'pnVarCensor' function used in '%s' is deprecated. Instead, please activate the 'MultiHook' for this module."
 
-#: includes/pnAPI.php:1519
+#: includes/pnAPI.php:1523
 msgid "Error! Oh! Wow! An 'unidentified system error' has occurred."
 msgstr "Fehler! Es ist ein unbekannter Systemfehler aufgetreten."
 
-#: includes/pnAPI.php:1597
+#: includes/pnAPI.php:1601
 #, php-format
 msgid "Error! Stop, please! PHP version 4.3.0 or a newer version is needed. The latest version of PHP 5.x is what is actually recommended. Your server seems to be using version %s."
 msgstr "Fehler! Stopp! Es wird die PHP Version 4.3.0 oder neuer vorausgesetzt. Empfohlen wird der Einsatz einer PHP 5.x Version. Der aktuelle Server scheint die Version %s zu nutzen."
 
-#: includes/pnAPI.php:1603
+#: includes/pnAPI.php:1607
 msgid "Error! Stop, please! The PHP function 'token_get_all()' is needed, but is not available."
 msgstr "Error! Stop, please! The PHP function 'token_get_all()' is needed, but is not available."
 
-#: includes/pnAPI.php:1609
+#: includes/pnAPI.php:1613
 msgid "Error! Stop, please! The 'mbstring' extension for PHP is needed, but is not available."
 msgstr "Error! Stop, please! The 'mbstring' extension for PHP is needed, but is not available."
 
-#: includes/pnAPI.php:1615
+#: includes/pnAPI.php:1619
 msgid "Error! The PHP function 'fsockopen()' is needed within the Zikula mailer module, but is not available."
 msgstr "Error! The PHP function 'fsockopen()' is needed within the Zikula mailer module, but is not available."
 
-#: includes/pnAPI.php:1633
+#: includes/pnAPI.php:1637
 #, php-format
 msgid "Error! Stop, please! '%s' was not found, or else the server does not have write permission for it."
 msgstr "Fehler! Stopp! '%s' wurde nicht gefunden oder der Server hat darauf keine Schreibrechte."
 
-#: includes/pnAPI.php:1639
+#: includes/pnAPI.php:1643
 msgid "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 msgstr "This message is shown to you, the Administrator, because the system is in development mode ($PNConfig['System']['development'] = 1; in config/config.php). This helps you to avoid common problems with Zikula."
 
@@ -3357,7 +3390,7 @@ msgid "Paging parameters can only be used for SELECT statements"
 msgstr "Paging parameters can only be used for SELECT statements"
 
 #: includes/DBUtil.class.php:128
-#: includes/DBUtil.class.php:2201
+#: includes/DBUtil.class.php:2205
 msgid "Exiting after SQL-error"
 msgstr "Exiting after SQL-error"
 
@@ -3432,196 +3465,196 @@ msgstr "%s got no rows to select from"
 msgid "%s got no columns to select from"
 msgstr "%s got no columns to select from"
 
-#: includes/DBUtil.class.php:1835
+#: includes/DBUtil.class.php:1837
 #, php-format
 msgid "%s: unable to find anything to insert in the supplied object"
 msgstr "%s: unable to find anything to insert in the supplied object"
 
-#: includes/DBUtil.class.php:1877
+#: includes/DBUtil.class.php:1879
 #, php-format
 msgid "%s: no object ID and no where"
 msgstr "%s: no object ID and no where"
 
-#: includes/DBUtil.class.php:2060
+#: includes/DBUtil.class.php:2064
 #, php-format
 msgid "%s: empty %s passed"
 msgstr "%s: empty %s passed"
 
-#: includes/DBUtil.class.php:2096
+#: includes/DBUtil.class.php:2100
 #, php-format
 msgid "%s: %s is not an array or null"
 msgstr "%s: %s is not an array or null"
 
-#: includes/DBUtil.class.php:2100
+#: includes/DBUtil.class.php:2104
 #, php-format
 msgid "%s: can't specify both object and where-clause"
 msgstr "%s: can't specify both object and where-clause"
 
-#: includes/DBUtil.class.php:2104
+#: includes/DBUtil.class.php:2108
 #, php-format
 msgid "%s: missing either object or where-clause"
 msgstr "%s: missing either object or where-clause"
 
-#: includes/DBUtil.class.php:2114
+#: includes/DBUtil.class.php:2118
 #, php-format
 msgid "%s: object does not have an ID"
 msgstr "%s: object does not have an ID"
 
-#: includes/DBUtil.class.php:2120
+#: includes/DBUtil.class.php:2124
 msgid "Fake entry to mark deleteWhere() return as valid object"
 msgstr "Fake entry to mark deleteWhere() return as valid object"
 
-#: includes/DBUtil.class.php:2215
-#: includes/DBUtil.class.php:2254
-#: includes/DBUtil.class.php:2415
-#: includes/DBUtil.class.php:2445
-#: includes/DBUtil.class.php:2494
-#: includes/DBUtil.class.php:2555
-#: includes/DBUtil.class.php:2585
-#: includes/DBUtil.class.php:2624
-#: includes/DBUtil.class.php:2664
-#: includes/DBUtil.class.php:2725
-#: includes/DBUtil.class.php:2824
-#: includes/DBUtil.class.php:2844
-#: includes/DBUtil.class.php:2865
-#: includes/DBUtil.class.php:2886
-#: includes/DBUtil.class.php:2943
+#: includes/DBUtil.class.php:2219
+#: includes/DBUtil.class.php:2258
+#: includes/DBUtil.class.php:2419
+#: includes/DBUtil.class.php:2449
+#: includes/DBUtil.class.php:2498
+#: includes/DBUtil.class.php:2559
+#: includes/DBUtil.class.php:2589
+#: includes/DBUtil.class.php:2628
+#: includes/DBUtil.class.php:2668
+#: includes/DBUtil.class.php:2729
+#: includes/DBUtil.class.php:2828
+#: includes/DBUtil.class.php:2848
+#: includes/DBUtil.class.php:2869
+#: includes/DBUtil.class.php:2890
+#: includes/DBUtil.class.php:2947
 #, php-format
 msgid "%s: must specify a table name"
 msgstr "%s: must specify a table name"
 
-#: includes/DBUtil.class.php:2242
+#: includes/DBUtil.class.php:2246
 #, php-format
 msgid "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s]"
 msgstr "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s]"
 
-#: includes/DBUtil.class.php:2284
+#: includes/DBUtil.class.php:2288
 #, php-format
 msgid "%s: must specify the table to create"
 msgstr "%s: must specify the table to create"
 
-#: includes/DBUtil.class.php:2292
+#: includes/DBUtil.class.php:2296
 #, php-format
 msgid "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s] to create"
 msgstr "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s] to create"
 
-#: includes/DBUtil.class.php:2318
+#: includes/DBUtil.class.php:2322
 #, php-format
 msgid "Error! Table creation failed. (%1$s, %2$s, %3$s)"
 msgstr "Error! Table creation failed. (%1$s, %2$s, %3$s)"
 
-#: includes/DBUtil.class.php:2335
+#: includes/DBUtil.class.php:2339
 #, php-format
 msgid "%s: must specify the table to change"
 msgstr "%s: must specify the table to change"
 
-#: includes/DBUtil.class.php:2343
+#: includes/DBUtil.class.php:2347
 #, php-format
 msgid "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s] to change"
 msgstr "%1$s: neither the sql parameter nor the pntable array contain the ADODB dictionary representation of table [%2$s] to change"
 
-#: includes/DBUtil.class.php:2379
+#: includes/DBUtil.class.php:2383
 #, php-format
 msgid "Error! Table update failed. (%1$s, %2$s, %3$s)"
 msgstr "Error! Table update failed. (%1$s, %2$s, %3$s)"
 
-#: includes/DBUtil.class.php:2393
+#: includes/DBUtil.class.php:2397
 #, php-format
 msgid "%s: must specify the table to truncate"
 msgstr "%s: must specify the table to truncate"
 
-#: includes/DBUtil.class.php:2418
+#: includes/DBUtil.class.php:2422
 #, php-format
 msgid "%s: must specify the new table name"
 msgstr "%s: must specify the new table name"
 
-#: includes/DBUtil.class.php:2431
+#: includes/DBUtil.class.php:2435
 #, php-format
 msgid "Error! Table rename failed. (%1$s, %2$s, %3$s)"
 msgstr "Error! Table rename failed. (%1$s, %2$s, %3$s)"
 
-#: includes/DBUtil.class.php:2469
+#: includes/DBUtil.class.php:2473
 #, php-format
 msgid "Error! Table deletion failed. (%1$s, %2$s, %3$s)"
 msgstr "Error! Table deletion failed. (%1$s, %2$s, %3$s)"
 
-#: includes/DBUtil.class.php:2490
-#: includes/DBUtil.class.php:2551
+#: includes/DBUtil.class.php:2494
+#: includes/DBUtil.class.php:2555
 #, php-format
 msgid "%s: must specify an index name"
 msgstr "%s: must specify an index name"
 
-#: includes/DBUtil.class.php:2498
+#: includes/DBUtil.class.php:2502
 #, php-format
 msgid "%s: must specify an index field or fields as non-associative array"
 msgstr "%s: must specify an index field or fields as non-associative array"
 
-#: includes/DBUtil.class.php:2535
+#: includes/DBUtil.class.php:2539
 #, php-format
 msgid "Error! Index creation failed. (%1$s, %2$s, %3$s, %4$s)"
 msgstr "Error! Index creation failed. (%1$s, %2$s, %3$s, %4$s)"
 
-#: includes/DBUtil.class.php:2567
+#: includes/DBUtil.class.php:2571
 #, php-format
 msgid "Error! Index deletion failed. (%1$s, %2$s, %3$s, %4$s)"
 msgstr "Error! Index deletion failed. (%1$s, %2$s, %3$s, %4$s)"
 
-#: includes/DBUtil.class.php:2588
+#: includes/DBUtil.class.php:2592
 #, php-format
 msgid "%s: must specify an existing column name"
 msgstr "%s: must specify an existing column name"
 
-#: includes/DBUtil.class.php:2591
+#: includes/DBUtil.class.php:2595
 #, php-format
 msgid "%s: must specify the new column name"
 msgstr "%s: must specify the new column name"
 
-#: includes/DBUtil.class.php:2608
+#: includes/DBUtil.class.php:2612
 #, php-format
 msgid "Error! Column rename failed. (%1$s, %2$s, %3$s, %4$s)"
 msgstr "Error! Column rename failed. (%1$s, %2$s, %3$s, %4$s)"
 
-#: includes/DBUtil.class.php:2628
+#: includes/DBUtil.class.php:2632
 #, php-format
 msgid "%s: must specify fields to add"
 msgstr "%s: must specify fields to add"
 
-#: includes/DBUtil.class.php:2632
+#: includes/DBUtil.class.php:2636
 #, php-format
 msgid "%s: fields must be an array (actually an array of field arrays)"
 msgstr "%s: fields must be an array (actually an array of field arrays)"
 
-#: includes/DBUtil.class.php:2636
+#: includes/DBUtil.class.php:2640
 #, php-format
 msgid "%s: fields must be an array of field arrays"
 msgstr "%s: fields must be an array of field arrays"
 
-#: includes/DBUtil.class.php:2648
-#: includes/DBUtil.class.php:2681
+#: includes/DBUtil.class.php:2652
+#: includes/DBUtil.class.php:2685
 #, php-format
 msgid "Error! Column deletion failed. (%1$s, %2$s, %3$s)"
 msgstr "Error! Column deletion failed. (%1$s, %2$s, %3$s)"
 
-#: includes/DBUtil.class.php:2668
+#: includes/DBUtil.class.php:2672
 #, php-format
 msgid "%s: must specify the fields to drop"
 msgstr "%s: must specify the fields to drop"
 
-#: includes/DBUtil.class.php:2758
+#: includes/DBUtil.class.php:2762
 #, php-format
 msgid "%s: must specify a column name"
 msgstr "%s: must specify a column name"
 
-#: includes/DBUtil.class.php:2791
+#: includes/DBUtil.class.php:2795
 msgid "Error! Unable to instantiate data dictionary."
 msgstr "Error! Unable to instantiate data dictionary."
 
-#: includes/DBUtil.class.php:2917
+#: includes/DBUtil.class.php:2921
 #, php-format
 msgid "%s: must specify a database name"
 msgstr "%s: must specify a database name"
 
-#: includes/DBUtil.class.php:2963
+#: includes/DBUtil.class.php:2967
 #, php-format
 msgid "%1$s: unable to limit tablename [%2$s] because database prefix is too long for Oracle, please shorten it (recommended length is 4 chars)"
 msgstr "%1$s: unable to limit tablename [%2$s] because database prefix is too long for Oracle, please shorten it (recommended length is 4 chars)"
@@ -3802,14 +3835,14 @@ msgstr "Es ist ein unbekannter Fehler aufgetreten. Die folgende Fehlermeldung wu
 #: system/Users/pnuser.php:750
 #: system/Users/pnuser.php:765
 msgid "Sorry! You have not been granted access to this module."
-msgstr "Entschuldigung! Es sind keine Rechte für den Zugriff auf dieses Modul vorhanden."
+msgstr "Es sind leider keine Rechte für den Zugriff auf dieses Modul vorhanden."
 
 #: system/Users/pnadmin.php:100
 #: system/Users/pnuser.php:309
 #: system/Users/pnuser.php:753
 #: system/Users/pnajax.php:129
 msgid "Sorry! The e-mail address you entered was incorrectly formatted or is unacceptable for other reasons. Please correct your entry and try again."
-msgstr "Entschuldigung! Die angegebene E-Mail Adresse ist fehlerhaft formatiert oder aus sonstigen Gründen nicht akzeptabel. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Die angegebene E-Mail Adresse ist leider fehlerhaft formatiert oder aus sonstigen Gründen nicht akzeptabel. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnadmin.php:103
 #: system/Users/pnuser.php:312
@@ -3821,47 +3854,47 @@ msgstr "Fehler! Für die Registrierung muss den Nutzungsbedingungen und der Erkl
 #: system/Users/pnuser.php:315
 #: system/Users/pnajax.php:88
 msgid "Sorry! The user name you entered is not acceptable. Please correct your entry and try again."
-msgstr "Entschuldigung! Der Benutzername kann nicht verwendet werden. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Der Benutzername kann nicht verwendet werden. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnadmin.php:109
 #: system/Users/pnuser.php:318
 #: system/Users/pnajax.php:92
 msgid "Sorry! The user name you entered is too long. The maximum length is 25 characters."
-msgstr "Entschuldigung! Der eingegebene Benutzername ist zu lang. Die maximale Länge liegt bei 25 Zeichen."
+msgstr "Der eingegebene Benutzername ist leider zu lang. Die maximale Länge liegt bei 25 Zeichen."
 
 #: system/Users/pnadmin.php:112
 #: system/Users/pnuser.php:321
 msgid "Sorry! The user name you entered is reserved and cannot be registered. Please choose another name and try again."
-msgstr "Entschuldigung! Der angegebene Benutzername ist reserviert und kann nicht verwendet werden. Bitte einen anderen Namen wählen es erneut versuchen."
+msgstr "Der angegebene Benutzername ist leider reserviert und kann nicht verwendet werden. Bitte einen anderen Namen wählen es erneut versuchen."
 
 #: system/Users/pnadmin.php:115
 #: system/Users/pnuser.php:324
 msgid "Sorry! Your user name cannot contain spaces. Please correct your entry and try again."
-msgstr "Entschuldigung! Der Benutzername darf keine Leerzeichen enthalten. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Der Benutzername darf keine Leerzeichen enthalten. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnadmin.php:118
 #: system/Users/pnuser.php:327
 msgid "Sorry! This user name has already been registered. Please choose another name and try again."
-msgstr "Entschuldigung! Der Benutzername wird bereits verwendet. Bitte einen anderen Namen wählen und erneut versuchen."
+msgstr "Der Benutzername wird bereits verwendet. Bitte einen anderen Namen wählen und erneut versuchen."
 
 #: system/Users/pnadmin.php:121
 #: system/Users/pnuser.php:330
 #: system/Users/pnuser.php:756
 msgid "Sorry! This e-mail address has already been registered, and it cannot be used again for creating another account."
-msgstr "Entschuldigung! Diese E-Mail Adresse ist bereits registriert und kann nicht noch einmal verwendet werden. "
+msgstr "Diese E-Mail Adresse ist bereits registriert und kann nicht noch einmal verwendet werden. "
 
 #: system/Users/pnadmin.php:136
 #, php-format
 msgid "Sorry! A required item is missing from your profile information (%s)."
-msgstr "Entschuldigung! Ein benötigter Eintrag aus dem Benutzerprofil fehlt (%s)."
+msgstr "Die Eingabe eines Pflichtfeldes im Benutzerprofil wurde nicht vorgenommen (%s)."
 
 #: system/Users/pnadmin.php:143
 msgid "Sorry! You did not provide a password. Please correct your entry and try again."
-msgstr "Entschuldigung! Es wurde kein Kennwort angegeben. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Es wurde kein Kennwort angegeben. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnadmin.php:146
 msgid "Sorry! You did not enter the same password in each password field. Please enter the same password once in each password field (this is required for verification)."
-msgstr "Entschuldigung! Die eingegebenen Kennwörter waren nicht identisch. Zur Verifizierung bitte das gleiche Kennwort wiederholen."
+msgstr "Die eingegebenen Kennwörter waren nicht identisch. Zur Verifizierung bitte das gleiche Kennwort wiederholen."
 
 #: system/Users/pnadmin.php:149
 #: system/Users/pnuser.php:356
@@ -3891,13 +3924,14 @@ msgstr "Benutzerprofil anzeigen"
 #: system/Blocks/pnadmin.php:128
 #: system/Admin/pnadmin.php:231
 #: system/Admin_Messages/pnadmin.php:353
-#: system/Modules/pnadmin.php:344
+#: system/Modules/pnadmin.php:345
 #: system/Groups/pnadmin.php:97
+#: system/pnForm/plugins/function.pnformcategorycheckboxlist.php:56
 #: system/Users/pntemplates/users_admin_view.htm:14
 #: system/Users/pntemplates/users_admin_listusers.htm:72
-#: system/Permissions/pntemplates/permissions_admin_view.htm:107
-#: system/Permissions/pntemplates/permissions_admin_view.htm:109
-#: system/Permissions/pntemplates/permissions_admin_view.htm:151
+#: system/Permissions/pntemplates/permissions_admin_view.htm:104
+#: system/Permissions/pntemplates/permissions_admin_view.htm:106
+#: system/Permissions/pntemplates/permissions_admin_view.htm:148
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:39
 #: system/Categories/pntemplates/categories_admin_edit.htm:131
 #: system/Categories/pntemplates/categories_user_list.htm:17
@@ -3915,7 +3949,6 @@ msgid "Edit"
 msgstr "Bearbeiten"
 
 #: system/Users/pnadmin.php:225
-#: system/Users/pnadmin.php:291
 #: system/Blocks/pnadmin.php:110
 #: system/Blocks/pnadmin.php:132
 #: system/Admin/pnadmin.php:236
@@ -3930,9 +3963,9 @@ msgstr "Bearbeiten"
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:75
 #: system/Blocks/pntemplates/blocks_block_extmenu_modify.htm:125
 #: system/Blocks/pntemplates/blocks_block_menu_modify.htm:19
-#: system/Permissions/pntemplates/permissions_admin_view.htm:108
-#: system/Permissions/pntemplates/permissions_admin_view.htm:114
-#: system/Permissions/pntemplates/permissions_admin_view.htm:156
+#: system/Permissions/pntemplates/permissions_admin_view.htm:105
+#: system/Permissions/pntemplates/permissions_admin_view.htm:111
+#: system/Permissions/pntemplates/permissions_admin_view.htm:153
 #: system/Permissions/pntemplates/permissions_admin_delete.htm:18
 #: system/Categories/pntemplates/categories_include_editattributes.html:20
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:40
@@ -3964,9 +3997,16 @@ msgid "Details"
 msgstr "Details"
 
 #: system/Users/pnadmin.php:287
-#: system/Categories/pntemplates/categories_include_editattributes.html:14
-msgid "Add"
-msgstr "Hinzufügen"
+#: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:34
+msgid "Approve"
+msgstr "Bestätigen"
+
+#: system/Users/pnadmin.php:291
+#: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:35
+#: system/Groups/pntemplates/groups_admin_userpending.htm:45
+#: system/Groups/pntemplates/groups_admin_view.htm:204
+msgid "Deny"
+msgstr "Ablehnen"
 
 #: system/Users/pnadmin.php:402
 msgid "Sorry! No matching users found."
@@ -4000,7 +4040,7 @@ msgstr[1] "%1$c Mails wurden an %2$c Benutzer verschickt"
 #: system/Users/pnadmin.php:553
 #: system/Users/pnuser.php:438
 msgid "Sorry! Could not find any matching user account."
-msgstr "Entschuldigung! Es konnten keine entsprechenden Benutzerkonten gefunden werden."
+msgstr "Es konnten leider keine entsprechenden Benutzerkonten gefunden werden."
 
 #: system/Users/pnadmin.php:575
 msgid "Done! Created the new user account."
@@ -4012,10 +4052,10 @@ msgstr "Fehler! Es wurde kein Benutzer ausgewählt."
 
 #: system/Users/pnadmin.php:617
 msgid "Sorry! No items found."
-msgstr "Entschuldigung! Es konnten keine entsprechenden Einträge gefunden werden."
+msgstr "Es konnten leider keine entsprechenden Einträge gefunden werden."
 
 #: system/Users/pnadmin.php:782
-#: system/Blocks/pnadmin.php:851
+#: system/Blocks/pnadmin.php:855
 #: system/Permissions/pnadmin.php:722
 #: system/pnRender/pnadmin.php:83
 #: system/Categories/pnadminform.php:309
@@ -4023,7 +4063,7 @@ msgstr "Entschuldigung! Es konnten keine entsprechenden Einträge gefunden werde
 #: system/Settings/pnadmin.php:323
 #: system/Admin/pnadmin.php:552
 #: system/Admin_Messages/pnadmin.php:436
-#: system/Modules/pnadmin.php:1066
+#: system/Modules/pnadmin.php:1067
 #: system/Mailer/pnadmin.php:141
 #: system/Groups/pnadmin.php:822
 #: system/SecurityCenter/pnadmin.php:409
@@ -4102,7 +4142,7 @@ msgstr "Fehler! Keine Treffer gefunden."
 #: system/Users/pnuser.php:107
 #, php-format
 msgid "Sorry! You must be %s or over to register for a user account here."
-msgstr "Entschuldigung! Die Voraussetzung für eine Registrierung auf dieser Seite ist ein  Mindestalter von %s Jahre oder älter bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten."
+msgstr "Die Voraussetzung für eine Registrierung auf dieser Seite ist ein Mindestalter von %s Jahre oder älter bzw. das Vorliegen einer Erlaubnis der Erziehungsberechtigten."
 
 #: system/Users/pnuser.php:186
 msgid "Error! Log-in was not completed. Please read the information below."
@@ -4114,7 +4154,7 @@ msgstr "Die Anmeldung wird durchgeführt. Bitte warten..."
 
 #: system/Users/pnuser.php:207
 msgid "Sorry! Unrecognised user name or password. Please try again."
-msgstr "Entschuldigung! Der Benutzername oder das Kennwort sind nicht bekannt. Bitte erneut versuchen."
+msgstr "Der Benutzername oder das Kennwort sind nicht bekannt. Bitte erneut versuchen."
 
 #: system/Users/pnuser.php:210
 msgid "Notice: If you have just registered a new account then please check your e-mail and activate your account before trying to log in."
@@ -4138,24 +4178,24 @@ msgstr "Fehler! Ein oder mehrere Felder sind leer oder unvollständig (%s)."
 #: system/Users/pnuser.php:333
 #: system/Users/pnuser.php:759
 msgid "Sorry! Your user agent is not accepted for registering an account on this site."
-msgstr "Entschuldigung! Der User-Agent wurde für die Registrierung auf dieser Website nicht akzeptiert."
+msgstr "Der User-Agent wurde für die Registrierung auf dieser Website leider nicht akzeptiert."
 
 #: system/Users/pnuser.php:336
 #: system/Users/pnuser.php:762
 #: system/Users/pnajax.php:207
 msgid "Sorry! E-mail addresses from the domain you entered are not accepted for registering an account on this site."
-msgstr "Entschuldigung! Die E-Mail Adresse der angegebenen Domain wird für eine Registrierung auf dieser Website nicht akzeptiert."
+msgstr "Die E-Mail Adresse der angegebenen Domain wird für eine Registrierung auf dieser Website nicht akzeptiert."
 
 #: system/Users/pnuser.php:346
 #: system/Users/pnajax.php:154
 msgid "Sorry! You did not enter the same e-mail address in each box. Please correct your entry and try again."
-msgstr "Entschuldigung! Die eingegebenen Mailadressen waren nicht identisch. Bitte die Eingaben überprüfen und es erneut versuchen."
+msgstr "Die eingegebenen Mailadressen waren leider nicht identisch. Bitte die Eingaben überprüfen und es erneut versuchen."
 
 #: system/Users/pnuser.php:353
 #: system/Users/pnajax.php:159
 #: system/Users/pnadminapi.php:176
 msgid "Error! You did not enter the same password in each password field. Please enter the same password once in each password field (this is required for verification)."
-msgstr "Entschuldigung! Die eingegebenen Kennwörter waren nicht identisch. Zur Verifizierung bitte das gleiche Kennwort wiederholen."
+msgstr "Die eingegebenen Kennwörter waren leider nicht identisch. Zur Verifizierung bitte das gleiche Kennwort wiederholen."
 
 #: system/Users/pnuser.php:359
 #: system/Users/pnajax.php:163
@@ -4165,7 +4205,7 @@ msgstr "Fehler! Bitte das Kennwort eingeben."
 #: system/Users/pnuser.php:365
 #: system/Users/pnajax.php:220
 msgid "Sorry! You gave the wrong answer to the anti-spam registration question. Please correct your entry and try again."
-msgstr "Entschuldigung! Die Antwort auf die Spamschutzfrage war fehlerhaft. Bitte berichtigen und erneut versuchen."
+msgstr "Die Antwort auf die Spamschutzfrage war leider fehlerhaft. Bitte berichtigen und erneut versuchen."
 
 #: system/Users/pnuser.php:383
 msgid "Error! The registration process failed. Please contact the site administrator."
@@ -4227,7 +4267,7 @@ msgstr "Erledigt! Das Benutzerkonto wurde aktiviert."
 
 #: system/Users/pnuser.php:508
 msgid "Sorry! You entered an invalid confirmation code. Please correct your entry and try again."
-msgstr "Entschuldigung! Es wurde ein ungültiger Bestätigungscode eingegeben. Bitte berichtigen und erneut versuchen."
+msgstr "Es wurde ein ungültiger Bestätigungscode eingegeben. Bitte berichtigen und erneut versuchen."
 
 #: system/Users/pnuser.php:539
 msgid "If you are not automatically re-directed then please click here."
@@ -4239,11 +4279,11 @@ msgstr "Erledigt! Der individuelle Block wurde gespeichert."
 
 #: system/Users/pnuser.php:688
 msgid "Sorry! The password you entered is not correct. Please correct your entry and try again."
-msgstr "Entschuldigung! Das angegebene Kennwort ist nicht richtig. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Das angegebene Kennwort ist nicht richtig. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnuser.php:693
 msgid "Sorry! The two passwords you entered do not match. Please correct your entries and try again."
-msgstr "Entschuldigung! Die beiden angegebenen Kennwörter stimmen nicht überein. Bitte die Eingaben überprüfen und erneut versuchen."
+msgstr "Die beiden angegebenen Kennwörter stimmen leider nicht überein. Bitte die Eingaben überprüfen und erneut versuchen."
 
 #: system/Users/pnuser.php:699
 msgid "Done! Saved your new password."
@@ -4285,26 +4325,26 @@ msgstr "Registrierte Benutzer"
 #: system/Users/pntemplates/users_user_checkage.htm:7
 #: system/Users/pntemplates/users_user_register.htm:8
 msgid "Sorry! New user registration is currently disabled."
-msgstr "Entschuldigung! Die Registrierung von neuen Benutzern ist momentan deaktiviert."
+msgstr "Die Registrierung von neuen Benutzern ist momentan deaktiviert."
 
 #: system/Users/pnajax.php:108
 msgid "Sorry! The user name you entered is a reserved name."
-msgstr "Entschuldigung! Der angegebene Benutzername ist reserviert."
+msgstr "Der angegebene Benutzername ist leider schon reserviert."
 
 #: system/Users/pnajax.php:113
 msgid "Sorry! A user name cannot contain any space characters."
-msgstr "Entschuldigung! Der angegebene Benutzername darf keine Leerzeichen enthalten."
+msgstr "Der angegebene Benutzername darf keine Leerzeichen enthalten."
 
 #: system/Users/pnajax.php:119
 #: system/Users/pnajax.php:125
 #: system/Users/pnajax.php:142
 msgid "Sorry! The user name you entered has already been registered."
-msgstr "Entschuldigung! Der angegebene Benutzername wird bereits verwendet."
+msgstr "Der angegebene Benutzername wird bereits verwendet."
 
 #: system/Users/pnajax.php:135
 #: system/Users/pnajax.php:148
 msgid "Sorry! The e-mail address you entered has already been registered."
-msgstr "Entschuldigung! Die angegebene E-Mail Adresse wird bereits verwendet."
+msgstr "Die angegebene E-Mail Adresse wird bereits verwendet."
 
 #: system/Users/pnajax.php:174
 msgid "Please click on the checkbox to accept the site's 'Terms of use'."
@@ -4316,7 +4356,7 @@ msgstr "Für die Registrierung muss der 'Erklärung zum Datenschutz' zugestimmt 
 
 #: system/Users/pnajax.php:196
 msgid "Sorry! The user agent specified is banned."
-msgstr "Entschuldigung! Der verwendete User-Agent ist gesperrt."
+msgstr "Der verwendete User-Agent ist gesperrt."
 
 #: system/Users/pnajax.php:224
 msgid "Your entries seem to be OK. Please click on 'Submit registration' when you are ready to continue."
@@ -4361,7 +4401,7 @@ msgstr "Benutzer suchen"
 #: system/Categories/pnadminapi.php:32
 #: system/Admin/pnadminapi.php:404
 #: system/Admin_Messages/pnadminapi.php:197
-#: system/Modules/pnadminapi.php:1345
+#: system/Modules/pnadminapi.php:1344
 #: system/Mailer/pnadminapi.php:28
 #: system/Groups/pnadminapi.php:471
 #: system/SecurityCenter/pnadminapi.php:65
@@ -4440,12 +4480,12 @@ msgid "Notice: The profile manager module ('Profile') must be installed and acti
 msgstr "Hinweis: Das Profilverwaltungsmodul ('Profile') muss für diesen Upgradeschritt installiert und verfügbar sein."
 
 #: system/Blocks/pnadmin.php:94
-#: system/Modules/pnadmin.php:243
+#: system/Modules/pnadmin.php:244
 msgid "Deactivate"
 msgstr "Deaktivieren"
 
 #: system/Blocks/pnadmin.php:100
-#: system/Modules/pnadmin.php:259
+#: system/Modules/pnadmin.php:260
 #: system/Modules/pntemplates/modules_admin_hooks.htm:22
 #: system/Modules/pntemplates/modules_admin_extendedhooks.htm:24
 msgid "Activate"
@@ -4461,90 +4501,90 @@ msgstr "Erledigt! Der Block ist jetzt aktiviert."
 
 #: system/Blocks/pnadmin.php:243
 #: system/Blocks/pnadmin.php:257
-#: system/Blocks/pnadmin.php:407
-#: system/Blocks/pnadmin.php:568
+#: system/Blocks/pnadmin.php:411
+#: system/Blocks/pnadmin.php:572
 msgid "Sorry! No such block found."
-msgstr "Entschuldigung! Die entsprechende Block konnte nicht gefunden werden."
+msgstr "Die entsprechende Block konnte leider nicht gefunden werden."
 
-#: system/Blocks/pnadmin.php:327
+#: system/Blocks/pnadmin.php:331
 msgid "Half an hour"
 msgstr "Halbe Stunde"
 
-#: system/Blocks/pnadmin.php:328
+#: system/Blocks/pnadmin.php:332
 msgid "One hour"
 msgstr "Eine Stunde"
 
-#: system/Blocks/pnadmin.php:329
+#: system/Blocks/pnadmin.php:333
 msgid "Two hours"
 msgstr "Zwei Stunden"
 
-#: system/Blocks/pnadmin.php:330
+#: system/Blocks/pnadmin.php:334
 msgid "Four hours"
 msgstr "Vier Stunden"
 
-#: system/Blocks/pnadmin.php:331
+#: system/Blocks/pnadmin.php:335
 msgid "Twelve hours"
 msgstr "Zwölf Stunden"
 
-#: system/Blocks/pnadmin.php:332
+#: system/Blocks/pnadmin.php:336
 msgid "One day"
 msgstr "Ein Tag"
 
-#: system/Blocks/pnadmin.php:333
+#: system/Blocks/pnadmin.php:337
 msgid "Two days"
 msgstr "Zwei Tage"
 
-#: system/Blocks/pnadmin.php:334
+#: system/Blocks/pnadmin.php:338
 msgid "Three days"
 msgstr "Drei Tage"
 
-#: system/Blocks/pnadmin.php:335
+#: system/Blocks/pnadmin.php:339
 msgid "Four days"
 msgstr "Vier Tage"
 
-#: system/Blocks/pnadmin.php:336
+#: system/Blocks/pnadmin.php:340
 msgid "Five days"
 msgstr "Fünf Tage"
 
-#: system/Blocks/pnadmin.php:337
+#: system/Blocks/pnadmin.php:341
 msgid "Six days"
 msgstr "Sechs Tage"
 
-#: system/Blocks/pnadmin.php:338
+#: system/Blocks/pnadmin.php:342
 msgid "Seven days"
 msgstr "Sieben Tage"
 
-#: system/Blocks/pnadmin.php:434
+#: system/Blocks/pnadmin.php:438
 msgid "Done! Saved blocks."
 msgstr "Erledigt! Die Blöcke wurden erfolgreich gespeichert."
 
-#: system/Blocks/pnadmin.php:469
+#: system/Blocks/pnadmin.php:473
 msgid "Error! Could not load blocks."
 msgstr "Fehler! Die Blöcke konnten nicht geladen werden."
 
-#: system/Blocks/pnadmin.php:477
+#: system/Blocks/pnadmin.php:481
 #: system/Theme/pntemplates/plugins/modifier.themetype.php:35
 msgid "Legacy"
 msgstr "Legacy"
 
-#: system/Blocks/pnadmin.php:539
-#: system/Blocks/pnadmin.php:654
+#: system/Blocks/pnadmin.php:543
+#: system/Blocks/pnadmin.php:658
 msgid "Done! Created block."
 msgstr "Erledigt! Der Block wurde erfolgreich angelegt."
 
-#: system/Blocks/pnadmin.php:602
+#: system/Blocks/pnadmin.php:606
 msgid "Done! Deleted block."
 msgstr "Erledigt! Der Block wurde erfolgreich gelöscht."
 
-#: system/Blocks/pnadmin.php:747
+#: system/Blocks/pnadmin.php:751
 msgid "Done! Saved block."
 msgstr "Erledigt! Der Block wurde erfolgreich angelegt."
 
-#: system/Blocks/pnadmin.php:774
+#: system/Blocks/pnadmin.php:778
 msgid "Error! No such block position found."
 msgstr "Fehler! Die entsprechende Blockposition konnte nicht gefunden werden."
 
-#: system/Blocks/pnadmin.php:795
+#: system/Blocks/pnadmin.php:799
 msgid "Done! Deleted block position."
 msgstr "Erledigt! Die Blockposition wurde gelöscht."
 
@@ -4721,7 +4761,7 @@ msgstr "Fehler! Es existiert bereits eine Blockposition mit dem Namen."
 #: system/Theme/pnadminapi.php:336
 #: system/Theme/pnadminapi.php:498
 msgid "Sorry! No such item found."
-msgstr "Entschuldigung! Das entsprechende Element konnte nicht gefunden werden."
+msgstr "Der entsprechende Eintrag konnte leider nicht gefunden werden."
 
 #: system/Blocks/pnadminapi.php:403
 #: system/Blocks/pntemplates/blocks_admin_view.htm:9
@@ -4868,7 +4908,7 @@ msgstr "Zugriffsrecht bearbeiten"
 #: system/Permissions/pnadmin.php:370
 #: system/Permissions/pnadmin.php:379
 #: system/Permissions/pnadminapi.php:507
-#: system/Permissions/pntemplates/permissions_admin_view.htm:22
+#: system/Permissions/pntemplates/permissions_admin_view.htm:19
 msgid "Create new permission rule"
 msgstr "Zugriffsrecht hinzufügen"
 
@@ -4946,7 +4986,7 @@ msgid "Error! Could not delete permission rule with ID %s."
 msgstr "Fehler! Das Zugriffsrecht mit der ID %s konnte nicht gelöscht werden."
 
 #: system/Permissions/pnajax.php:209
-#: system/Permissions/pntemplates/permissions_admin_view.htm:192
+#: system/Permissions/pntemplates/permissions_admin_view.htm:189
 msgid "Permission check result:"
 msgstr "Ergebnis der Zugriffsprüfung:"
 
@@ -4987,6 +5027,10 @@ msgstr "Fehler! Das Zugriffsrecht %s konnte nicht gelöscht werden."
 #: system/Permissions/pntemplates/permissions_admin_view.htm:2
 msgid "Permission rules list"
 msgstr "Liste der Zugriffsrechte"
+
+#: system/Permissions/pnadminapi.php:513
+msgid "Permission rules information"
+msgstr "Informationen zu den Zugriffsrechten"
 
 #: system/pnRender/pnadmin.php:110
 msgid "Done! Deleted rendering engine compiled templates."
@@ -5055,7 +5099,7 @@ msgstr "renderer"
 #: system/pnRender/plugins/function.pnsecauthaction.php:44
 #: system/pnRender/plugins/function.pnmodcallhooks.php:55
 #: system/pnRender/plugins/function.pnmodcallhooks.php:59
-#: system/pnRender/plugins/function.pnmodfunc.php:55
+#: system/pnRender/plugins/function.pnmodfunc.php:56
 #: system/pnRender/plugins/function.securityutil_generateauthkey.php:45
 #: system/pnRender/plugins/function.pnconfiggetvar.php:47
 #: system/pnRender/plugins/function.pnusergetidfromname.php:34
@@ -5065,7 +5109,7 @@ msgstr "renderer"
 #: system/pnRender/plugins/function.pnpagegetvar.php:55
 #: system/pnRender/plugins/function.pnmodurl.php:73
 #: system/pnRender/plugins/function.html_select_languages.php:39
-#: system/pnRender/plugins/function.gt.php:62
+#: system/pnRender/plugins/function.gt.php:64
 #: system/pnRender/plugins/function.pnservergetvar.php:44
 #: system/pnRender/plugins/function.pnworkflow_getactionsbystate.php:19
 #: system/pnRender/plugins/function.pnworkflow_getactionsbystate.php:24
@@ -5102,7 +5146,7 @@ msgstr "renderer"
 #: system/pnRender/plugins/function.pnblock.php:58
 #: system/pnRender/plugins/function.array_field_isset.php:33
 #: system/pnRender/plugins/function.array_field_isset.php:38
-#: system/pnRender/plugins/function.pnmodapifunc.php:58
+#: system/pnRender/plugins/function.pnmodapifunc.php:59
 #: system/pnRender/plugins/function.html_select_modulestylesheets.php:34
 #: system/pnForm/plugins/function.pnformdropdownrelationlist.php:44
 #: system/pnForm/plugins/function.pnformdropdownrelationlist.php:53
@@ -5133,7 +5177,7 @@ msgid "Error! Cannot load module array class %1$s for module %2$s."
 msgstr "Error! Cannot load module array class %1$s for module %2$s."
 
 #: system/pnRender/plugins/function.moduleadminlinks.php:47
-#: system/pnRender/plugins/function.pnajaxheader.php:72
+#: system/pnRender/plugins/function.pnajaxheader.php:68
 #: ajax.php:41
 #, php-format
 msgid "Error! The '%s' module is not available."
@@ -5160,16 +5204,9 @@ msgstr "Error! in %1$s: the %2$s parameter must be specified to get the required
 msgid "Error! With modifier_gt, you must use the following form for the gettext modifier ('gt'): $var|gt:$renderObject."
 msgstr "Error! With modifier_gt, you must use the following form for the gettext modifier ('gt'): $var|gt:$renderObject."
 
-#: system/pnRender/plugins/function.pnmodfunc.php:80
-#: system/pnRender/plugins/function.pnmodapifunc.php:63
-#: index.php:154
-#, php-format
-msgid "Could not load the '%s' module."
-msgstr "Das Modul '%s' konnte nicht geladen werden."
-
 #: system/pnRender/plugins/modifier.activeinactive.php:30
 #: system/Categories/pninit.php:373
-#: system/Modules/pnadmin.php:354
+#: system/Modules/pnadmin.php:355
 #: system/Users/pntemplates/users_admin_modify.htm:64
 #: system/Blocks/pntemplates/blocks_admin_view.htm:36
 #: system/Blocks/pntemplates/blocks_admin_view.htm:37
@@ -5195,7 +5232,7 @@ msgstr "Aktiv"
 
 #: system/pnRender/plugins/modifier.activeinactive.php:32
 #: system/Categories/pninit.php:385
-#: system/Modules/pnadmin.php:350
+#: system/Modules/pnadmin.php:351
 #: system/Users/pntemplates/users_admin_modify.htm:62
 #: system/Blocks/pntemplates/blocks_admin_view.htm:40
 #: system/Blocks/pntemplates/blocks_admin_view.htm:41
@@ -5249,7 +5286,15 @@ msgstr "Keine Kategorien zugeordnet."
 msgid "Edit sub-categories"
 msgstr "Unterkategorien bearbeiten"
 
-#: system/pnRender/plugins/function.pncalendarinput.php:114
+#: system/pnRender/plugins/function.pncalendarinput.php:65
+#: system/pnRender/plugins/function.pncalendarinput.php:69
+#: system/pnForm/plugins/function.pnformdateinput.php:113
+#: system/pnForm/plugins/function.pnformdateinput.php:171
+#: system/pnForm/plugins/function.pnformdateinput.php:234
+msgid "%Y-%m-%d %H:%M"
+msgstr "%Y-%m-%d %H:%M"
+
+#: system/pnRender/plugins/function.pncalendarinput.php:125
 msgid "Date selector"
 msgstr "Datumsauswahl"
 
@@ -5335,7 +5380,7 @@ msgstr "Fehler! Der Benutzerstammknoten für diesen Benutzer existiert nicht und
 
 #: system/Categories/pnuser.php:206
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:118
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:123
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:124
 msgid "Default"
 msgstr "Standard"
 
@@ -5608,7 +5653,7 @@ msgstr "Fehler! Fehler bei den Permalinkeinstellungen: Die Suche- und Ersetzenli
 
 #: system/Settings/pnadmin.php:214
 msgid "Notice: Language detection is automatically disabled when multi-lingual features are disabled."
-msgstr "Hinweis: Die Spracherkennung wurde automatisch deaktiviert, da die Multilingualität deaktiviert wurde."
+msgstr "Hinweis: Die Spracherkennung wurde automatisch deaktiviert, da die Mehrsprachigkeit deaktiviert wurde."
 
 #: system/Settings/pnadmin.php:226
 msgid "Warning! The system language has been changed because language variations have been disabled."
@@ -5616,7 +5661,7 @@ msgstr "Warnung! Da die Sprachvariationen deaktiviert wurden, hat sich ebenfalls
 
 #: system/Settings/pnadmin.php:251
 msgid "Done! Saved localisation settings."
-msgstr "Erledigt! Die Multilingualeinstellungen wurden gespeichert."
+msgstr "Erledigt! Die Einstellungen zur Mehrsprachigkeit wurden gespeichert."
 
 #: system/Settings/pnversion.php:14
 #: system/Settings/pntemplates/settings_admin_menu.htm:4
@@ -5640,7 +5685,7 @@ msgstr "Allgemein"
 #: system/Settings/pnadminapi.php:27
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:6
 msgid "Localisation settings"
-msgstr "Multilingualität"
+msgstr "Mehrsprachigkeit"
 
 #: system/Settings/pnadminapi.php:28
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:5
@@ -5667,14 +5712,14 @@ msgstr "Gast"
 #. ! this is a comma-separated list of special characters to search for in permalinks
 #: system/Settings/pninit.php:72
 #: system/Settings/pninit.php:129
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:118
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:119
 msgid "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 msgstr "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 
 #. ! this is a comma-separated list of special characters to replace in permalinks
 #: system/Settings/pninit.php:74
 #: system/Settings/pninit.php:131
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:123
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:125
 msgid "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
 msgstr "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
 
@@ -5802,7 +5847,7 @@ msgstr "Hook-Module können verschiedenen Modulen neue Funktionalitäten hinzuf�
 
 #: system/PageLock/pnuserapi.php:72
 msgid "Are you sure you want to break this lock?"
-msgstr "Soll der Schreibschutz wirklich aufgehoben werden?"
+msgstr "Soll die Seitensperre wirklich aufgehoben werden?"
 
 #: system/PageLock/pnversion.php:13
 msgid "Page lock manager"
@@ -5842,7 +5887,7 @@ msgstr "Erledigt! Die Adminnachricht wurde erstellt."
 #: system/Admin_Messages/pnadmin.php:131
 #: system/Admin_Messages/pnadmin.php:225
 msgid "Sorry! No such administrator message found."
-msgstr "Entschuldigung! Es konnte keine entsprechende Adminnachricht gefunden werden."
+msgstr "Es konnte keine entsprechende Adminnachricht gefunden werden."
 
 #: system/Admin_Messages/pnadmin.php:187
 msgid "Done! Saved administrator message."
@@ -5950,132 +5995,132 @@ msgid "workflow"
 msgstr "workflow"
 
 #: system/Modules/pnadmin.php:47
-#: system/Modules/pnadmin.php:691
-#: system/Modules/pnadmin.php:932
-#: system/Modules/pnadmin.php:979
+#: system/Modules/pnadmin.php:692
+#: system/Modules/pnadmin.php:933
+#: system/Modules/pnadmin.php:980
 #: system/Modules/pnadminapi.php:391
-#: system/Modules/pnadminapi.php:845
-#: system/Modules/pnadminapi.php:930
-#: system/Modules/pnadminapi.php:1228
-#: system/Modules/pnadminapi.php:1281
+#: system/Modules/pnadminapi.php:844
+#: system/Modules/pnadminapi.php:929
+#: system/Modules/pnadminapi.php:1227
+#: system/Modules/pnadminapi.php:1280
 msgid "Error! No such module ID exists."
 msgstr "Fehler! Es konnte keine entsprechende Modul-ID gefunden werden."
 
 #: system/Modules/pnadmin.php:62
-#: system/Modules/pnadmin.php:73
+#: system/Modules/pnadmin.php:74
 msgid "Error! Unable to load version file for this module."
 msgstr "Error! Unable to load version file for this module."
 
-#: system/Modules/pnadmin.php:125
-#: system/Modules/pnadmin.php:153
-#: system/Modules/pnadmin.php:180
+#: system/Modules/pnadmin.php:126
+#: system/Modules/pnadmin.php:154
+#: system/Modules/pnadmin.php:181
 msgid "Done! Saved module information."
 msgstr "Erledigt! Die Modulinformationen wurde gespeichert."
 
-#: system/Modules/pnadmin.php:248
+#: system/Modules/pnadmin.php:249
 msgid "Hook settings"
 msgstr "Hook Einstellungen"
 
-#: system/Modules/pnadmin.php:268
-#: system/Modules/pnadmin.php:279
-#: system/Modules/pnadmin.php:301
-#: system/Modules/pnadmin.php:312
-#: system/Modules/pnadmin.php:334
+#: system/Modules/pnadmin.php:269
+#: system/Modules/pnadmin.php:280
+#: system/Modules/pnadmin.php:302
+#: system/Modules/pnadmin.php:313
+#: system/Modules/pnadmin.php:335
 #: system/Modules/pntemplates/modules_admin_remove.htm:4
 #: system/Modules/pntemplates/modules_admin_remove.htm:5
 #: system/Modules/pntemplates/modules_admin_remove.htm:31
 msgid "Remove module"
 msgstr "Modul entfernen"
 
-#: system/Modules/pnadmin.php:290
+#: system/Modules/pnadmin.php:291
 #: system/Theme/pntemplates/theme_admin_view.htm:34
 msgid "Upgrade"
 msgstr "Upgrade"
 
-#: system/Modules/pnadmin.php:324
+#: system/Modules/pnadmin.php:325
 #: system/Modules/pntemplates/modules_admin_initialise.htm:4
 #: system/Modules/pntemplates/modules_admin_initialise.htm:5
 #: system/Modules/pntemplates/modules_admin_initialise.htm:21
 msgid "Install"
 msgstr "Installieren"
 
-#: system/Modules/pnadmin.php:358
+#: system/Modules/pnadmin.php:359
 #: system/Modules/pntemplates/modules_admin_view.htm:27
 msgid "Files missing"
 msgstr "Dateien fehlen"
 
-#: system/Modules/pnadmin.php:362
-#: system/Modules/pnadmin.php:644
+#: system/Modules/pnadmin.php:363
+#: system/Modules/pnadmin.php:645
 #: system/Modules/pntemplates/modules_admin_view.htm:28
 msgid "New version uploaded"
 msgstr "Neue Version gefunden"
 
-#: system/Modules/pnadmin.php:366
+#: system/Modules/pnadmin.php:367
 #: system/Modules/pntemplates/modules_admin_view.htm:32
 msgid "Invalid structure"
 msgstr "Ungültige Struktur"
 
-#: system/Modules/pnadmin.php:370
+#: system/Modules/pnadmin.php:371
 #: system/Modules/pntemplates/modules_admin_view.htm:30
 #: system/SecurityCenter/pntemplates/securitycenter_admin_allowedhtml.htm:31
 msgid "Not allowed"
 msgstr "Nicht erlaubt"
 
-#: system/Modules/pnadmin.php:375
+#: system/Modules/pnadmin.php:376
 #: system/Modules/pntemplates/modules_admin_view.htm:24
 msgid "Not installed"
 msgstr "Nicht installiert"
 
-#: system/Modules/pnadmin.php:494
-#: system/Modules/pnadmin.php:571
-#: system/Modules/pnadmin.php:630
-#: system/Modules/pnadmin.php:685
-#: system/Modules/pnadmin.php:764
+#: system/Modules/pnadmin.php:495
+#: system/Modules/pnadmin.php:572
+#: system/Modules/pnadmin.php:631
+#: system/Modules/pnadmin.php:686
+#: system/Modules/pnadmin.php:765
 msgid "Error! No module ID provided."
 msgstr "Fehler! Keine entsprechende Modul-ID gefunden."
 
-#: system/Modules/pnadmin.php:529
+#: system/Modules/pnadmin.php:530
 msgid "Done! Installed module."
 msgstr "Erledigt! Das Modul wurde installiert."
 
-#: system/Modules/pnadmin.php:536
-#: system/Modules/pnadmin.php:588
+#: system/Modules/pnadmin.php:537
+#: system/Modules/pnadmin.php:589
 msgid "Done! Activated module."
 msgstr "Erledigt! Das Modul wurde aktiviert."
 
-#: system/Modules/pnadmin.php:576
+#: system/Modules/pnadmin.php:577
 msgid "Error! Module not allowed."
 msgstr "Fehler! Das Modul ist nicht erlaubt."
 
-#: system/Modules/pnadmin.php:650
+#: system/Modules/pnadmin.php:651
 msgid "Activated"
 msgstr "Aktiviert"
 
-#: system/Modules/pnadmin.php:695
+#: system/Modules/pnadmin.php:696
 msgid "Error! This module is currently set as the site's home page. You must choose another module for the home page before you can deactivate this one."
 msgstr "Fehler! Dieses Modul ist derzeit als Startseitenmodul ausgewählt. Vor dem Deaktivieren muss ein anderes Modul für die Startseite aktiviert werden."
 
-#: system/Modules/pnadmin.php:710
+#: system/Modules/pnadmin.php:711
 msgid "Error! You cannot deactivate this module. It is a mandatory core module, and is needed by the system."
 msgstr "Fehler! Dieses Modul wird vom System benötigt und kann daher nicht deaktiviert werden."
 
-#: system/Modules/pnadmin.php:718
+#: system/Modules/pnadmin.php:719
 msgid "Done! Deactivated module."
 msgstr "Erledigt! Das Modul wurde deaktiviert."
 
-#: system/Modules/pnadmin.php:813
+#: system/Modules/pnadmin.php:814
 msgid "Error! This module cannot be removed at the moment because there are active blocks that interact with it. You must deactivate those blocks first before you can deactivate this module."
 msgstr "Fehler! Dieses Modul kann aktuell nicht entfernt werden, da noch aktive Blöcke zugeordnet sind. Vor dem Deaktivieren des Moduls müssen auch die vorhanden Blöcke deaktiviert werden."
 
-#: system/Modules/pnadmin.php:840
+#: system/Modules/pnadmin.php:841
 msgid "Done! De-installed module."
 msgstr "Erledigt! Das Modul wurde deinstalliert."
 
-#: system/Modules/pnadmin.php:888
+#: system/Modules/pnadmin.php:889
 msgid "Done! Regenerated modules list from file system."
 msgstr "Erledigt! Die Modulliste wurde mit dem Dateisystem abgeglichen."
 
-#: system/Modules/pnadmin.php:1054
+#: system/Modules/pnadmin.php:1055
 msgid "Warning! The 'Items per page' setting must be a positive integer. The value you entered was corrected."
 msgstr "Warnung! Der Wert 'Einträge pro Seite' muss eine positive Zahl sein. Der eingetragene Wert wurde entsprechend korrigiert."
 
@@ -6116,39 +6161,39 @@ msgstr "Fehler! Ungültiger Statuswechsel des Moduls."
 
 #: system/Modules/pnadminapi.php:413
 #: system/Modules/pnadminapi.php:426
-#: system/Modules/pnadminapi.php:560
-#: system/Modules/pnadminapi.php:566
-#: system/Modules/pnadminapi.php:582
-#: system/Modules/pnadminapi.php:588
-#: system/Modules/pnadminapi.php:861
-#: system/Modules/pnadminapi.php:875
-#: system/Modules/pnadminapi.php:947
+#: system/Modules/pnadminapi.php:564
+#: system/Modules/pnadminapi.php:570
+#: system/Modules/pnadminapi.php:581
+#: system/Modules/pnadminapi.php:587
+#: system/Modules/pnadminapi.php:860
+#: system/Modules/pnadminapi.php:874
+#: system/Modules/pnadminapi.php:946
 #, php-format
 msgid "Error! Could not load a required file: '%s'."
 msgstr "Fehler! Die benötigte Datei '%s' konnte nicht geladen werden."
 
-#: system/Modules/pnadminapi.php:765
+#: system/Modules/pnadminapi.php:764
 msgid "Error! Could not retrieve module ID."
 msgstr "Fehler! Die Modul-ID konnte nicht ermittelt werden."
 
-#: system/Modules/pnadminapi.php:903
+#: system/Modules/pnadminapi.php:902
 msgid "Error! Could not change module state."
 msgstr "Fehler! Der Modulstatus konnte nicht geändert werden."
 
-#: system/Modules/pnadminapi.php:993
+#: system/Modules/pnadminapi.php:992
 msgid "Done! Module has been upgraded. Its status is now 'Active'."
 msgstr "Erledigt! Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt 'Aktiv'."
 
-#: system/Modules/pnadminapi.php:1338
+#: system/Modules/pnadminapi.php:1337
 #: system/Modules/pntemplates/modules_admin_view.htm:7
 msgid "Modules list"
 msgstr "Modulliste"
 
-#: system/Modules/pnadminapi.php:1341
+#: system/Modules/pnadminapi.php:1340
 msgid "Regenerate modules list"
 msgstr "Liste mit Dateisystem abgleichen"
 
-#: system/Modules/pnadminapi.php:1344
+#: system/Modules/pnadminapi.php:1343
 msgid "System hooks"
 msgstr "System Hooks"
 
@@ -6263,7 +6308,7 @@ msgstr "Erledigt! Die Gruppe wurde erfolgreich angelegt."
 #: system/Groups/pnadmin.php:261
 #: system/Groups/pnadmin.php:372
 msgid "Sorry! No such group found."
-msgstr "Entschuldigung! Es konnte keine entsprechende Gruppe gefunden werden."
+msgstr "Es konnte keine entsprechende Gruppe gefunden werden."
 
 #: system/Groups/pnadmin.php:332
 msgid "Done! Saved group changes."
@@ -6322,7 +6367,7 @@ msgstr "Anfrage auf Mitgliedschaft in die Gruppe %s"
 #: system/Groups/pnadmin.php:702
 #: system/Groups/pntemplates/groups_admin_userpending.htm:31
 msgid "Sorry! This is a message to inform you with regret that your application for membership of the aforementioned private group has been rejected."
-msgstr "Entschuldigung! Leider wurde die Anfrage auf Mitgliedschaft in die private Gruppe abgelehnt."
+msgstr "Leider wurde die Anfrage auf Mitgliedschaft in die private Gruppe abgelehnt."
 
 #: system/Groups/pnadmin.php:707
 #, php-format
@@ -6356,11 +6401,11 @@ msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
 #: system/Groups/pnuserapi.php:453
 #: system/Groups/pnuser.php:138
 msgid "Error! You must register for a user account on this site before you can apply for membership of a group."
-msgstr "Entschuldigung! Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website eingerichtet werden."
+msgstr "Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website eingerichtet werden."
 
 #: system/Groups/pnuserapi.php:478
-#: themes/rss/templates/master.htm:14
 #: themes/rss/templates/master.htm:15
+#: themes/rss/templates/master.htm:16
 msgid "Administrator"
 msgstr "Administrator"
 
@@ -6393,15 +6438,15 @@ msgstr "Fehler! Diese Gruppe existiert nicht."
 
 #: system/Groups/pnuser.php:159
 msgid "Sorry! You cannot apply for membership of that group."
-msgstr "Entschuldigung! Für diese Gruppe kann keine Mitgliedschaft beantragt werden."
+msgstr "Für diese Gruppe kann keine Mitgliedschaft beantragt werden."
 
 #: system/Groups/pnuser.php:164
 msgid "Sorry! That group has reached full membership."
-msgstr "Entschuldigung! Alle Mitgliedschaften in dieser Gruppe sind bereits vergeben."
+msgstr "Alle Mitgliedschaften in dieser Gruppe sind leider bereits vergeben."
 
 #: system/Groups/pnuser.php:169
 msgid "Sorry! That group is closed."
-msgstr "Entschuldigung! Diese Gruppe ist geschlossen."
+msgstr "Diese Gruppe ist geschlossen."
 
 #: system/Groups/pnuser.php:207
 msgid "Error! You must click on the checkbox to confirm your action."
@@ -6606,12 +6651,12 @@ msgid "Error! Did not succeed in uploading file."
 msgstr "Fehler! Es ist ein Fehler beim Hochladen aufgetreten."
 
 #: system/pnForm/plugins/function.pnformuploadinput.php:101
-#: system/pnForm/plugins/function.pnformtextinput.php:344
+#: system/pnForm/plugins/function.pnformtextinput.php:342
 msgid "Error! An entry in this field is mandatory."
 msgstr "Fehler! Ein Eintrag in diesem Feld ist zwingend erforderlich."
 
-#: system/pnForm/plugins/function.pnformradiobutton.php:268
-#: system/pnForm/plugins/function.pnformdropdownlist.php:312
+#: system/pnForm/plugins/function.pnformradiobutton.php:293
+#: system/pnForm/plugins/function.pnformdropdownlist.php:322
 #: system/pnForm/plugins/function.pnformcheckboxlist.php:241
 msgid "Error! You must make a selection."
 msgstr "Fehler! Es muss eine Auswahl getroffen werden."
@@ -6638,14 +6683,6 @@ msgstr "Datum auswählen"
 msgid "Error! Invalid date."
 msgstr "Fehler! Ungültiges Datum."
 
-#: system/pnForm/plugins/function.pnformdateinput.php:231
-msgid "%Y-%m-%d %H:%M"
-msgstr "%Y-%m-%d %H:%M"
-
-#: system/pnForm/plugins/function.pnformdateinput.php:231
-msgid "%Y-%m-%d"
-msgstr "%d.%m.%Y"
-
 #: system/pnForm/plugins/function.pnformintinput.php:53
 msgid "Error! Invalid integer."
 msgstr "Fehler! Ungültiger Integer."
@@ -6654,7 +6691,7 @@ msgstr "Fehler! Ungültiger Integer."
 msgid "Error! Invalid URL."
 msgstr "Fehler! Ungültige URL."
 
-#: system/pnForm/plugins/function.pnformtextinput.php:348
+#: system/pnForm/plugins/function.pnformtextinput.php:346
 #, php-format
 msgid "Error! Input text must be no longer than %s characters."
 msgstr "Fehler! Der eingegebene Text darf nicht länger als %s Zeichen sein."
@@ -6766,8 +6803,8 @@ msgid "Folder"
 msgstr "Ordner"
 
 #: system/SysInfo/pnadminapi.php:126
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:146
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:151
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:148
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:153
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view.htm:11
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:125
 msgid "File"
@@ -6854,7 +6891,7 @@ msgstr "Erledigt! Die kompilierten Templates der Rendering Engine wurden gelösc
 
 #: system/Theme/pnadmin.php:1165
 msgid "Sorry! No such theme found."
-msgstr "Entschuldigung! Es konnte kein entsprechendes Theme gefunden werden."
+msgstr "Es konnte kein entsprechendes Theme gefunden werden."
 
 #: system/Theme/pnadmin.php:1350
 msgid "Done! Deleted combination cache files."
@@ -7024,13 +7061,14 @@ msgstr[1] "Es sind %s registrierter Benutzer online."
 #: system/Users/pntemplates/users_admin_new.htm:17
 #: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:19
 #: system/Users/pntemplates/users_admin_listusers.htm:52
-#: system/Permissions/pntemplates/permissions_admin_view.htm:172
+#: system/Permissions/pntemplates/permissions_admin_view.htm:169
 #: system/Groups/pntemplates/groups_user_memberslist.htm:58
 #: system/Groups/pntemplates/groups_admin_groupmembership.htm:11
 #: system/Groups/pntemplates/groups_admin_userpending.htm:21
 #: system/Groups/pntemplates/groups_admin_view.htm:189
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:10
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:28
+#: system/Theme/pntemplates/siteoff.htm:53
 msgid "User name"
 msgstr "Benutzername"
 
@@ -7060,12 +7098,14 @@ msgstr "E-Mail Adresse"
 #: system/Users/pntemplates/users_user_register.htm:37
 #: system/Users/pntemplates/users_admin_modify.htm:52
 #: system/Users/pntemplates/users_admin_new.htm:25
+#: system/Theme/pntemplates/siteoff.htm:54
 msgid "Password"
 msgstr "Kennwort"
 
 #: system/Theme/plugins/function.userlogin.php:70
 #: system/Users/pntemplates/users_block_login.htm:17
 #: system/Users/pntemplates/users_user_loginscreen.htm:43
+#: system/Theme/pntemplates/siteoff.htm:55
 msgid "Remember me"
 msgstr "Anmeldung speichern"
 
@@ -7074,6 +7114,7 @@ msgstr "Anmeldung speichern"
 #: system/Users/pntemplates/users_user_view.htm:8
 #: system/Users/pntemplates/users_user_loginscreen.htm:57
 #: system/Users/pntemplates/users_user_lostpassword.htm:10
+#: system/Theme/pntemplates/siteoff.htm:56
 msgid "Log in"
 msgstr "Anmelden"
 
@@ -7176,8 +7217,11 @@ msgid "search"
 msgstr "suche"
 
 #: ajax.php:27
+#: system/Theme/pntemplates/siteoff.htm:5
+#: system/Theme/pntemplates/siteoff.htm:46
+#: system/Theme/pntemplates/siteoff.htm:47
 msgid "The site is currently off-line."
-msgstr "Diese Website ist moment deaktiviert."
+msgstr "Diese Website ist momentan deaktiviert."
 
 #: ajax.php:31
 #, php-format
@@ -7214,6 +7258,11 @@ msgstr "Auf das Modul '%s' kann momentan nicht zugegriffen werden."
 msgid "The '%1$s' module returned at the '%2$s' function."
 msgstr "The '%1$s' module returned at the '%2$s' function."
 
+#: index.php:154
+#, php-format
+msgid "Could not load the '%s' module."
+msgstr "Das Modul '%s' konnte nicht geladen werden."
+
 #: upgrade.php:85
 #: upgrade.php:99
 #, php-format
@@ -7222,7 +7271,7 @@ msgstr "Zikula Version %1$s Upgradeskript (für Zikula Version %2$s und aktuelle
 
 #: upgrade.php:96
 msgid "For more information about the upgrade process, please read the <a href=\"docs/upgrade.html\">upgrade documentation</a>, visit our <a href=\"http://community.zikula.org/Wiki.htm\">wiki</a> or the <a href=\"http://community.zikula.org/module-Forum.htm\">support forum</a>"
-msgstr "Bitte unbedingt die <a href=\"docs/upgrade_deu.html\">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href=\"http://code.zikula.org/community-german\">deutschen Dokumentationsprojekt</a> und im Forum unter <a href=\"http://support.zikula.de\">support.zikula.de</a>"
+msgstr "Bitte unbedingt die <a href=\"docs/upgrade_de.html\">Upgradeanleitung</a> beachten. Weitere Informationen gibt es im <a href=\"http://code.zikula.org/community-german\">deutschen Dokumentationsprojekt</a> und im Forum unter <a href=\"http://support.zikula.de\">support.zikula.de</a>"
 
 #: upgrade.php:100
 #, php-format
@@ -7325,57 +7374,55 @@ msgstr "nicht aktualisiert"
 msgid "No modules required upgrading"
 msgstr "Aktualisierung ist für kein Modul notwendig"
 
-#: upgrade.php:371
+#: upgrade.php:374
 msgid "Finished upgrade"
 msgstr "Aktualisierung abgeschlossen"
 
-#: upgrade.php:405
+#: upgrade.php:408
 msgid "version info not available"
 msgstr "Versionsinformationen nicht verfügbar"
 
-#: upgrade.php:410
+#: upgrade.php:413
 msgid "Already up to date"
-msgstr ""
-"\t\n"
-"Bereits auf dem neuesten Stand"
+msgstr "Bereits auf dem neuesten Stand"
 
-#: upgrade.php:411
+#: upgrade.php:414
 #, php-format
 msgid "It seems that you have already installed version %s. Please remove this upgrade script, you do not need it anymore"
 msgstr "Anscheinend wurde die Version %s bereits installiert. Bitte das Upgradeskript entfernen, da es nicht mehr benötigt wird."
 
-#: upgrade.php:414
-#: upgrade.php:418
+#: upgrade.php:417
+#: upgrade.php:421
 #, php-format
 msgid "Duplicate %1$s module found in %2$s."
 msgstr "Doppelt vorhandenes Modul '%1$s' unter '%2$s' gefunden."
 
-#: upgrade.php:415
-#: upgrade.php:419
+#: upgrade.php:418
+#: upgrade.php:422
 #, php-format
 msgid "In order to proceed with this upgrade the duplicated %1$s module in <strong>system/</strong> should be removed.  Please delete %1$s from the system/ directory and re-run this script."
 msgstr "Das Upgrade kann nicht fortgesetzt werden, da das Modul %1$s doppelt vorhanden ist. Bitte das Modul %1$s im Systemverzeichnis <strong>/system</strong> löschen und dieses Skript erneut starten."
 
-#: upgrade.php:422
+#: upgrade.php:425
 #, php-format
 msgid "Missing %s module."
 msgstr "Modul '%s' fehlt."
 
-#: upgrade.php:423
+#: upgrade.php:426
 #, php-format
 msgid "In order to proceed with this upgrade the %1$s module must be present in the <strong>%2$s/</strong> directory.  Please copy the %1$s module to the %2$s/ directory and re-run this script."
 msgstr "Das Upgrade kann nicht fortgesetzt werden, da das Modul %1$s nicht im Verzeichnis <strong>%2$s/</strong> vorhanden ist. Bitte das Modul %1$s in das Modulverzeichnis kopieren und dieses Skript erneut starten."
 
-#: upgrade.php:427
+#: upgrade.php:430
 msgid "Possible incompatible version found."
 msgstr "Mögliche inkompatible Version gefunden."
 
-#: upgrade.php:428
+#: upgrade.php:431
 #, php-format
 msgid "The current installed version of Zikula is reporting (%1$s). You must upgrade to version (%2$s) before you can use this upgrade."
 msgstr "Die aktuell installierte Zikula-Version meldet sich mit (%1$s). Für dieses Upgrade wird mindestens die Version (%2$s) vorausgesetzt."
 
-#: upgrade.php:436
+#: upgrade.php:439
 msgid "Proceed to convert the database to UTF8"
 msgstr "Mit der UTF8-Konvertierung der Datenbank fortfahren"
 
@@ -7422,6 +7469,7 @@ msgstr "Kein Startmodul (statische Startseite)"
 #: install/pntemplates/installer_selecttheme.htm:17
 #: install/pntemplates/installer_createadmin.htm:38
 #: system/pnRender/pntemplates/pagerintervals.html:32
+#: system/pnRender/pntemplates/pagercss2.html:48
 #: system/pnRender/pntemplates/pageritems.html:26
 msgid "Next"
 msgstr "Weiter"
@@ -7457,11 +7505,11 @@ msgstr "Fehler! Die Datenbank konnte leider nicht angelegt werden. Bitte die ang
 
 #: install/pntemplates/installer_dbinformation.htm:8
 msgid "Error! Could not dump the database. Please check that the file zikulacms.sql is located within the folder install/sql and it is readable."
-msgstr "Fehler! Die Inhalte konnten nicht in die Datenbank importiert werden. Bitte überprüfen, ob sich die Datei zikulacms.sql im Verzeichnis install/sql befindet und auch lesbar ist."
+msgstr "Fehler! Der Datenbank-Dump konnte nicht eingefügt werden. Bitte überprüfen, ob sich die Datei zikulacms.sql im Verzeichnis /install/sql befindet und auch lesbar ist."
 
 #: install/pntemplates/installer_dbinformation.htm:9
 msgid "Error! The database exists and contain tables. Please delete all tables before to proceed."
-msgstr "Fehler! Die Datenbank existiert bereits und beinhaltet Tabellen. Bitte vor dem Fortfahren die Tabellen löschen."
+msgstr "Fehler! Die Datenbank existiert und beinhaltet Tabellen. Bitte vor dem Fortfahren die Tabellen löschen."
 
 #: install/pntemplates/installer_dbinformation.htm:18
 #: install/pntemplates/installer_page.htm:18
@@ -7699,7 +7747,7 @@ msgstr "Hilfreiche Informationen"
 
 #: install/pntemplates/installer_page.htm:54
 msgid "docs/install.html"
-msgstr "docs/install_deu.html"
+msgstr "docs/install_de.html"
 
 #: install/pntemplates/installer_page.htm:54
 msgid "Installation guide"
@@ -7736,7 +7784,7 @@ msgstr "Hinweis: Die Zikula-Downloadpakete sollten vor der Installation über di
 
 #: install/pntemplates/installer_page.htm:74
 msgid "Please refer to the <a style=\"color: red\" href=\"docs/install.html\" onclick=\"window.open('docs/install.html');return false;\">Installation guide</a> during the process."
-msgstr "Bitte während der Installation die <a style=\"color: red\" href=\"docs/install_deu.html\" onclick=\"window.open('docs/install_deu.html');return false;\">Installationsanleitung</a> beachten."
+msgstr "Bitte während der Installation die <a style=\"color: red\" href=\"docs/install_de.html\" onclick=\"window.open('docs/install_de.html');return false;\">Installationsanleitung</a> beachten."
 
 #: install/pntemplates/installer_selecttheme.htm:1
 msgid "Select default theme"
@@ -7786,7 +7834,7 @@ msgstr "Seite nicht gefunden (Fehler 404)"
 #: system/Errors/pntemplates/errors_user_404.htm:6
 #, php-format
 msgid "Sorry! Could not find the page you wanted on %2$s: '%1$s'."
-msgstr "Entschuldigung! Die gewünschte Seite '%1$s' konnte nicht auf '%2$s' gefunden werden."
+msgstr "Die gewünschte Seite '%1$s' konnte leider nicht auf '%2$s' gefunden werden."
 
 #: system/Errors/pntemplates/errors_user_404.htm:9
 #: system/Errors/pntemplates/errors_user_403.htm:9
@@ -7820,7 +7868,7 @@ msgstr "Zugriff verweigert (Fehler 403)"
 
 #: system/Errors/pntemplates/errors_user_403.htm:6
 msgid "Sorry! You don't have authorisation for the page you wanted."
-msgstr "Entschuldigung! Ein Zugriff auf die gewünschte Seite konnte nicht authorisiert werden."
+msgstr "Ein Zugriff auf die gewünschte Seite konnte leider nicht authorisiert werden."
 
 #: system/Errors/pntemplates/errors_user_403.htm:18
 #, php-format
@@ -7929,7 +7977,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Users/pntemplates/users_user_changepassword.htm:26
 #: system/Users/pntemplates/users_admin_modify.htm:85
 #: system/Users/pntemplates/users_admin_new.htm:44
-#: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:35
+#: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:36
 #: system/Blocks/pntemplates/blocks_admin_new.htm:61
 #: system/Blocks/pntemplates/blocks_admin_deleteposition.htm:18
 #: system/Blocks/pntemplates/blocks_admin_delete.htm:17
@@ -7937,9 +7985,9 @@ msgstr "Sicherheitsabfrage"
 #: system/Blocks/pntemplates/blocks_admin_modifyconfig.htm:23
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:25
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:115
-#: system/Permissions/pntemplates/permissions_admin_view.htm:115
-#: system/Permissions/pntemplates/permissions_admin_view.htm:157
-#: system/Permissions/pntemplates/permissions_admin_view.htm:201
+#: system/Permissions/pntemplates/permissions_admin_view.htm:112
+#: system/Permissions/pntemplates/permissions_admin_view.htm:154
+#: system/Permissions/pntemplates/permissions_admin_view.htm:198
 #: system/Permissions/pntemplates/permissions_admin_delete.htm:19
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:57
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:72
@@ -7954,7 +8002,7 @@ msgstr "Sicherheitsabfrage"
 #: system/Categories/pntemplates/categories_admin_preferences.htm:38
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:84
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:67
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:187
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:189
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:117
 #: system/Admin/pntemplates/admin_admin_modify.htm:26
 #: system/Admin/pntemplates/admin_admin_new.htm:25
@@ -8190,8 +8238,8 @@ msgstr "Hinweis: Benutzung von Meta-Refresh."
 #: system/Blocks/pntemplates/blocks_admin_modifyconfig.htm:22
 #: system/Blocks/pntemplates/blocks_admin_modifyposition.htm:24
 #: system/Blocks/pntemplates/blocks_admin_modify.htm:114
-#: system/Permissions/pntemplates/permissions_admin_view.htm:113
-#: system/Permissions/pntemplates/permissions_admin_view.htm:155
+#: system/Permissions/pntemplates/permissions_admin_view.htm:110
+#: system/Permissions/pntemplates/permissions_admin_view.htm:152
 #: system/Permissions/pntemplates/permissions_admin_modifyconfig.htm:56
 #: system/pnRender/pntemplates/pnrender_admin_modifyconfig.htm:71
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:61
@@ -8202,7 +8250,7 @@ msgstr "Hinweis: Benutzung von Meta-Refresh."
 #: system/Categories/pntemplates/categories_admin_preferences.htm:37
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:83
 #: system/Settings/pntemplates/settings_admin_errorhandling.htm:66
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:186
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:188
 #: system/Admin/pntemplates/admin_admin_modifyconfig.htm:116
 #: system/Admin/pntemplates/admin_admin_modify.htm:25
 #: system/Admin/pntemplates/admin_admin_new.htm:24
@@ -8364,7 +8412,7 @@ msgstr "Hinweis: Der persönliche benutzerdefinierte Block wird auf allen Seiten
 
 #: system/Users/pntemplates/users_userapi_expiredsession.htm:5
 msgid "Sorry! Your session has expired."
-msgstr "Entschuldigung! Die Benutzersession ist leider abgelaufen."
+msgstr "Die Benutzersession ist leider abgelaufen."
 
 #: system/Users/pntemplates/users_userapi_expiredsession.htm:7
 #, php-format
@@ -8433,7 +8481,7 @@ msgstr "ID"
 #: system/Users/pntemplates/users_admin_listusers.htm:57
 #: system/Blocks/pntemplates/blocks_admin_view.htm:21
 #: system/Blocks/pntemplates/blocks_admin_view.htm:66
-#: system/Permissions/pntemplates/permissions_admin_view.htm:58
+#: system/Permissions/pntemplates/permissions_admin_view.htm:55
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:19
 #: system/Admin/pntemplates/admin_admin_view.htm:12
 #: system/Admin_Messages/pntemplates/admin_messages_admin_view.htm:18
@@ -8492,10 +8540,10 @@ msgstr "Benutzernamen wählen"
 #: system/Users/pntemplates/users_user_register.htm:41
 #: system/Users/pntemplates/users_user_register.htm:47
 #: system/Users/pntemplates/users_user_register.htm:51
-#: system/Users/pntemplates/users_user_register.htm:68
-#: system/Users/pntemplates/users_user_register.htm:70
-#: system/Users/pntemplates/users_user_register.htm:72
-#: system/Users/pntemplates/users_user_register.htm:90
+#: system/Users/pntemplates/users_user_register.htm:74
+#: system/Users/pntemplates/users_user_register.htm:76
+#: system/Users/pntemplates/users_user_register.htm:78
+#: system/Users/pntemplates/users_user_register.htm:96
 msgid "*"
 msgstr "*"
 
@@ -8525,42 +8573,46 @@ msgstr "E-Mail Adresse wiederholen"
 msgid "Notice: Once your registration has been checked and accepted, your password will be sent to the e-mail address you enter here."
 msgstr "Wenn der Registrierungsprozess abgeschlossen ist, wird das Kennwort an diese E-Mail Adresse verschickt."
 
-#: system/Users/pntemplates/users_user_register.htm:60
-msgid "Accept the site's 'Terms of use', and select your preferences for e-mail"
-msgstr "Rechtliche Angaben bestätigen und E-Mail Einstellung auwählen"
-
 #: system/Users/pntemplates/users_user_register.htm:62
+msgid "Accept the site's 'Terms of use', and select your preferences for e-mail"
+msgstr "Rechtliche Angaben bestätigen und E-Mail Einstellung auswählen"
+
+#: system/Users/pntemplates/users_user_register.htm:64
+msgid "Select your preferences for e-mail"
+msgstr "E-Mail Einstellungen auswählen"
+
+#: system/Users/pntemplates/users_user_register.htm:68
 msgid "Allow other users to see your e-mail address"
 msgstr "Benutzer dürfen die E-Mail Adresse sehen"
 
-#: system/Users/pntemplates/users_user_register.htm:68
+#: system/Users/pntemplates/users_user_register.htm:74
 #, php-format
 msgid "I agree to be bound by this site's %1$s and %2$s"
 msgstr "Ich bin mit der %1$s und den %2$s einverstanden."
 
-#: system/Users/pntemplates/users_user_register.htm:70
-#: system/Users/pntemplates/users_user_register.htm:72
+#: system/Users/pntemplates/users_user_register.htm:76
+#: system/Users/pntemplates/users_user_register.htm:78
 #, php-format
 msgid "I agree to be bound by this site's %1$s"
 msgstr "Ich bin mit der/den %1$s einverstanden."
 
-#: system/Users/pntemplates/users_user_register.htm:88
+#: system/Users/pntemplates/users_user_register.htm:94
 msgid "Answer the security question (this prevents automated sign-ups by bots and scripts)"
 msgstr "Um automatisierte Registrierungen zu vermeiden, bitte die folgende Spamschutz-Frage beantworten"
 
-#: system/Users/pntemplates/users_user_register.htm:97
+#: system/Users/pntemplates/users_user_register.htm:103
 msgid "Check your entries and submit your registration"
 msgstr "Eingaben prüfen und Registrierung absenden"
 
-#: system/Users/pntemplates/users_user_register.htm:98
+#: system/Users/pntemplates/users_user_register.htm:104
 msgid "Notice: When you are ready, click on 'Check your entries' to have your entries checked. When your entries are OK, click on 'Submit registration' to continue."
 msgstr "Hinweis: Wenn alle Angaben gemacht wurden, bitte auf 'Eingaben überprüfen' klicken. Ist die Prüfung erfolgreich, so kann mit einem Klick auf 'Registrierung absenden' die Registrierung fortgesetzt werden."
 
-#: system/Users/pntemplates/users_user_register.htm:100
+#: system/Users/pntemplates/users_user_register.htm:106
 msgid "Check your entries"
 msgstr "Eingaben überprüfen"
 
-#: system/Users/pntemplates/users_user_register.htm:101
+#: system/Users/pntemplates/users_user_register.htm:107
 msgid "Submit registration"
 msgstr "Registrierung absenden"
 
@@ -8666,10 +8718,6 @@ msgstr "Neues Benutzerkonto"
 #, php-format
 msgid "Notice: The minimum length for user passwords is %s characters."
 msgstr "Hinweis: Die Mindestlänge der Kennwörter liegt bei %s Zeichen."
-
-#: system/Users/pntemplates/users_admin_viewtempuserdetails.htm:34
-msgid "Approve"
-msgstr "Bestätigen"
 
 #: system/Users/pntemplates/users_admin_listusers.htm:3
 #: system/Search/pntemplates/search_user_results.htm:3
@@ -9143,103 +9191,99 @@ msgstr "Zeile dahinter einfügen"
 msgid "New row"
 msgstr "Nächste Reihe"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:9
-msgid "Permission rules information"
-msgstr "Informationen zu der Vergabe der Zugriffsrechte"
-
-#: system/Permissions/pntemplates/permissions_admin_view.htm:13
+#: system/Permissions/pntemplates/permissions_admin_view.htm:10
 msgid "Notice: Arrange your permission rules in the desired order of evaluation, using drag and drop. The sort order will be saved immediately and automatically."
 msgstr "Hinweis: Die Zugriffsrechte können mittels Drag und Drop angeordnet werden. Die neue Reihenfolge wird sofort gültig und abgespeichert."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:15
+#: system/Permissions/pntemplates/permissions_admin_view.htm:12
 msgid "The permission rule you have defined as your main administration permission rule (highlighted in the list below) has been <strong>locked</strong>, which means you cannot edit it, move it or delete it. If this permission rule is not at the top of the list, other permission rules can be moved around it. If you need to perform an operation on the main administration permission rule then you must go to the Permission rules manager Settings page to unlock it beforehand. Otherwise, it is safer to keep it locked."
 msgstr "Die in der Konfiguration definierte generische Admin-Berechtigung ist <strong>fixiert</strong>. Die Berechtigung in hier der Liste hervorgehoben und kann nicht bearbeitet, verschoben oder gelöscht werden. Nur falls unbedingt notwendig kann die Fixierung in der Konfiguration aufgehoben werden."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:17
+#: system/Permissions/pntemplates/permissions_admin_view.htm:14
 msgid "The permission rule you have defined as your main administration permission rule (highlighted in the list below) is <strong>unlocked</strong>, which means you can currently edit it, move it or delete it. Once you have finished any operations you want to perform on it, you are recommended to go to the Permission rules manager Settings page and lock it again."
 msgstr "Die in der Konfiguration definierte generische Admin-Berechtigung (in der Liste hervorgehoben) ist <strong>nicht fixiert</strong> und kann also bearbeitet, verschoben oder gelöscht werden. In der Konfiguration sollte die Fixierung aktiviert werden, um Konfigurationsprobleme zu vermeiden."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:26
-#: system/Permissions/pntemplates/permissions_admin_view.htm:54
-#: system/Permissions/pntemplates/permissions_admin_view.htm:55
+#: system/Permissions/pntemplates/permissions_admin_view.htm:23
+#: system/Permissions/pntemplates/permissions_admin_view.htm:51
+#: system/Permissions/pntemplates/permissions_admin_view.htm:52
 msgid "Error"
 msgstr "Fehler"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:26
+#: system/Permissions/pntemplates/permissions_admin_view.htm:23
 msgid "Caution! Filter is active!"
 msgstr "Achtung! Filter ist aktiv!"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:34
-#: system/Permissions/pntemplates/permissions_admin_view.htm:55
+#: system/Permissions/pntemplates/permissions_admin_view.htm:31
+#: system/Permissions/pntemplates/permissions_admin_view.htm:52
 #: system/Permissions/pntemplates/permissions_admin_listedit.htm:24
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:12
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:29
 msgid "Component"
 msgstr "Komponente"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:40
-#: system/Permissions/pntemplates/permissions_admin_view.htm:41
+#: system/Permissions/pntemplates/permissions_admin_view.htm:37
+#: system/Permissions/pntemplates/permissions_admin_view.htm:38
 #: system/SecurityCenter/pntemplates/securitycenter_admin_view_log_event.htm:9
 msgid "Filter"
 msgstr "Filter"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:56
+#: system/Permissions/pntemplates/permissions_admin_view.htm:53
 #: system/Permissions/pntemplates/permissions_admin_listedit.htm:25
 msgid "Instance"
 msgstr "Instanz"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:57
-#: system/Permissions/pntemplates/permissions_admin_view.htm:184
+#: system/Permissions/pntemplates/permissions_admin_view.htm:54
+#: system/Permissions/pntemplates/permissions_admin_view.htm:181
 #: system/Permissions/pntemplates/permissions_admin_listedit.htm:26
 msgid "Permission level"
 msgstr "Zugriffsstufe"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:106
+#: system/Permissions/pntemplates/permissions_admin_view.htm:103
 msgid "Insert permission rule before"
 msgstr "Zugriffsrecht oberhalb einfügen"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:110
-#: system/Permissions/pntemplates/permissions_admin_view.htm:152
-#: system/Permissions/pntemplates/permissions_admin_view.htm:170
+#: system/Permissions/pntemplates/permissions_admin_view.htm:107
+#: system/Permissions/pntemplates/permissions_admin_view.htm:149
+#: system/Permissions/pntemplates/permissions_admin_view.htm:167
 msgid "User permission check"
 msgstr "Zugriffregel für Benutzer überprüfen"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:110
-#: system/Permissions/pntemplates/permissions_admin_view.htm:152
+#: system/Permissions/pntemplates/permissions_admin_view.htm:107
+#: system/Permissions/pntemplates/permissions_admin_view.htm:149
 msgid "Check a users permission"
 msgstr "Zugriffregel für bestimmten Benutzer überprüfen"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:176
+#: system/Permissions/pntemplates/permissions_admin_view.htm:173
 msgid "Component to check"
 msgstr "Zu prüfende Komponente"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:180
+#: system/Permissions/pntemplates/permissions_admin_view.htm:177
 msgid "Instance to check"
 msgstr "Zu prüfende Instanz"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:199
-#: system/Permissions/pntemplates/permissions_admin_view.htm:200
+#: system/Permissions/pntemplates/permissions_admin_view.htm:196
+#: system/Permissions/pntemplates/permissions_admin_view.htm:197
 msgid "Check permission"
 msgstr "Zugriffregel überprüfen"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:216
+#: system/Permissions/pntemplates/permissions_admin_view.htm:213
 msgid "Updating permission rule..."
 msgstr "Aktualisiere Zugriffsrecht..."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:217
+#: system/Permissions/pntemplates/permissions_admin_view.htm:214
 msgid "Deleting permission rule..."
 msgstr "Lösche Zugriffsrecht..."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:218
+#: system/Permissions/pntemplates/permissions_admin_view.htm:215
 #: system/Permissions/pntemplates/permissions_admin_delete.htm:8
 msgid "Do you really want to delete this permission rule?"
 msgstr "Soll dieses Zugriffsrecht wirklich gelöscht werden?"
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:219
+#: system/Permissions/pntemplates/permissions_admin_view.htm:216
 msgid "Testing permission..."
 msgstr "Teste Zugriffsrecht..."
 
-#: system/Permissions/pntemplates/permissions_admin_view.htm:220
+#: system/Permissions/pntemplates/permissions_admin_view.htm:217
 msgid "This permission rule has been locked. If you need to unlock it, go to the Permission rules manager Settings page."
 msgstr "Dieses Zugriffsrecht ist fixiert und muss vorweg in der Konfiguration freigeben werden."
 
@@ -9434,6 +9478,7 @@ msgid "First"
 msgstr "Erste"
 
 #: system/pnRender/pntemplates/pagerintervals.html:13
+#: system/pnRender/pntemplates/pagercss2.html:11
 #: system/pnRender/pntemplates/pageritems.html:11
 msgid "Previous"
 msgstr "Nächste"
@@ -9452,13 +9497,27 @@ msgstr "Letzte Seite"
 msgid "Last"
 msgstr "Letzte"
 
-#: system/pnRender/pntemplates/pagerimage.html:7
-msgid "First Page"
-msgstr "Erste Seite"
-
+#: system/pnRender/pntemplates/pagercss2.html:11
 #: system/pnRender/pntemplates/pagerimage.html:11
 msgid "Previous Page"
 msgstr "Vorherige Seite"
+
+#: system/pnRender/pntemplates/pagercss2.html:15
+msgid "No previous pages"
+msgstr "Keine vorherigen Seiten"
+
+#: system/pnRender/pntemplates/pagercss2.html:48
+#: system/pnRender/pntemplates/pagerimage.html:22
+msgid "Next Page"
+msgstr "Nächste Seite"
+
+#: system/pnRender/pntemplates/pagercss2.html:52
+msgid "No further pages"
+msgstr "Keine weiteren Seiten"
+
+#: system/pnRender/pntemplates/pagerimage.html:7
+msgid "First Page"
+msgstr "Erste Seite"
 
 #: system/pnRender/pntemplates/pagerimage.html:16
 msgid "Page"
@@ -9471,10 +9530,6 @@ msgstr "von"
 #: system/pnRender/pntemplates/pagerimage.html:16
 msgid "Total"
 msgstr "Gesamt"
-
-#: system/pnRender/pntemplates/pagerimage.html:22
-msgid "Next Page"
-msgstr "Nächste Seite"
 
 #: system/pnRender/pntemplates/pagerimage.html:26
 msgid "Last Page"
@@ -9508,9 +9563,13 @@ msgstr "Parameter (Format: assign=value;assign2=value2...)"
 msgid "Value"
 msgstr "Wert"
 
+#: system/Categories/pntemplates/categories_include_editattributes.html:14
+msgid "Add"
+msgstr "Hinzufügen"
+
 #: system/Categories/pntemplates/categories_user_editcategories.htm:3
 msgid "Sorry! User-owned category editing has not been enabled. This feature can be enabled by the site administrator."
-msgstr "Entschuldigung! Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
+msgstr "Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der Administrator kann diese Funktion aktivieren."
 
 #: system/Categories/pntemplates/categories_admin_registry_edit.htm:7
 msgid "Choose category"
@@ -9722,7 +9781,7 @@ msgstr "Sprachsystem"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:14
 msgid "Activate multi-lingual features"
-msgstr "Multilingualität aktivieren"
+msgstr "Mehrsprachigkeit aktivieren"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:23
 msgid "Add language to URL"
@@ -9758,7 +9817,7 @@ msgstr "Erkennung der Browser-Sprache"
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:60
 msgid "If this is set to 'Yes', Zikula try to serve the language requested by the each user's browser (if that language available and allowed by the multi-lingual settings). If users sets their personal language preference, then this setting will be overriden by their personal preference."
-msgstr "Wird diese Option aktiviert, so versucht Zikula die gewünschte Sprache anhand des Browsers des Benutzers auszuliefern. Das geht natürlich nur, wenn diese Sprache auch verfügbar ist und die Multilingualität aktiviert wurde. Hat der Benutzer in den persönlichen Einstellungen eine Sprache ausgewählt, so überschreibt dies die automatische Browsererkennung."
+msgstr "Wird diese Option aktiviert, so versucht Zikula die gewünschte Sprache anhand des Browsers des Benutzers auszuliefern. Das geht natürlich nur, wenn diese Sprache auch verfügbar ist und die Mehrsprachigkeit aktiviert wurde. Hat der Benutzer in den persönlichen Einstellungen eine Sprache ausgewählt, so überschreibt dies die automatische Browsererkennung."
 
 #: system/Settings/pntemplates/settings_admin_multilingual.htm:65
 msgid "Server"
@@ -9886,15 +9945,15 @@ msgstr "(Modul, auf das die Datei index.php verweist)"
 
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:61
 msgid "Start function type"
-msgstr "Modulfunktion (func=xyz)"
+msgstr "Funktionstyp (z.B. \"user\")"
 
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:65
 msgid "Start function"
-msgstr "Parameter für die Modulfunktion (optional)"
+msgstr "Startfunktion (z.B. \"view\")"
 
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:69
 msgid "Start function arguments"
-msgstr "Argumente für die Modulfunktion (optional)"
+msgstr "Weitere Argumente für Startfunktion (optional)"
 
 #: system/Settings/pntemplates/settings_admin_modifyconfig.htm:71
 msgid "(Comma-separated)"
@@ -9956,28 +10015,28 @@ msgstr "Hinweis: Die folgenden Einstellungen werden benötigt, um Permalinks umz
 msgid "List to search for"
 msgstr "Suchen nach"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:121
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:122
 msgid "List to replace with"
 msgstr "Ersetzen durch"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:127
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:129
 msgid "Short URL settings"
 msgstr "Short URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:129
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:131
 msgid "Enable short URLs"
 msgstr "Short URLs aktivieren"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:138
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:140
 msgid "Notice: If running PHP as CGI, you must ensure the line 'cgi.fix_pathinfo = 0' is present in your php.ini configuration file for short URLs to function correctly."
 msgstr "Hinweis: Für Short URLs muß die Apache-Option modrewrite aktiv sein. Falls PHP im CGI-Modus läuft, sollte die Option 'cgi.fix_pathinfo = 0' in der php.ini aktiv sein, damit Short URLs einwandfrei funktionieren."
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:140
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:142
 msgid "Type of URLs generated"
 msgstr "Typ der Short URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:144
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:149
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:146
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:151
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:14
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:15
 #: system/Modules/pntemplates/modules_admin_regenerate_errors.htm:36
@@ -9986,27 +10045,27 @@ msgstr "Typ der Short URLs"
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:156
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:158
 msgid "Strip entry point from directory-based URLs"
 msgstr "Einstiegspunkt aus verzeichnisbasierenden URLs entfernen"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:165
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:167
 msgid "Separator for permalink titles"
 msgstr "Trennzeichen im Permalink Titel"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:169
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:171
 msgid "Extension for file-based URLs"
 msgstr "Erweiterung für dateibasierende URLs"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:173
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:175
 msgid "Module to use when permalink contains no module name"
 msgstr "Zu benutzendes Modul, wenn Permalink keinen Modulnamen beinhaltet"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:175
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:177
 msgid "No default module"
 msgstr "Keine Standardmodul"
 
-#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:180
+#: system/Settings/pntemplates/settings_admin_modifyconfig.htm:182
 msgid "Notice: You must place an '.htaccess' file in the site root directory if you set 'Type of URLs generated' to 'File', or if you set 'Strip entry point from directory-based URLs' to 'Yes', or if a permalink title separator is used. Copies of the appropriate '.htaccess' file to use for each case can be found in the 'docs' documentation directory."
 msgstr "Hinweis: Short URLs benötigen eine .htaccess Datei im Rootverzeichnis. Entsprechende .htaccess-Vorlagen finden sich im /docs Verzeichnis"
 
@@ -10043,6 +10102,7 @@ msgstr "Art der Modulanzeige"
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:12
 #: system/SysInfo/pntemplates/sysinfo_admin_extensions.htm:31
 #: system/Theme/pntemplates/theme_admin_modify.htm:14
+#: system/Theme/pntemplates/upgrade/version.htm:15
 #: system/Theme/pntemplates/theme_admin_new.htm:17
 #: system/Theme/pntemplates/theme_admin_credits.htm:17
 msgid "Display name"
@@ -10732,7 +10792,7 @@ msgstr "Extras"
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:3
 msgid "Memberships"
-msgstr "Mitgliederliste"
+msgstr "Mitgliedschaften"
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:28
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:13
@@ -10742,7 +10802,7 @@ msgstr "Nicht verfügbar"
 #: system/Groups/pntemplates/groups_user_memberslist.htm:30
 #: system/Groups/pntemplates/groups_user_grouprow_overview.htm:15
 msgid "Sorry! You must register for a user account on this site before you can apply for membership of a group."
-msgstr "Entschuldigung! Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website erstellt werden."
+msgstr "Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website erstellt werden."
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:30
 #: system/Groups/pntemplates/groups_user_grouprow_overview.htm:15
@@ -10762,7 +10822,7 @@ msgstr "Anfragen"
 #: system/Groups/pntemplates/groups_user_memberslist.htm:45
 #: system/Groups/pntemplates/groups_user_grouprow_read.htm:24
 msgid "Sorry! This group has reached full membership."
-msgstr "Entschuldigung! Alle Mitgliedschaften in dieser Gruppe sind bereits vergeben."
+msgstr "Alle Mitgliedschaften in dieser Gruppe sind leider bereits vergeben."
 
 #: system/Groups/pntemplates/groups_user_memberslist.htm:56
 #: system/SysInfo/pntemplates/sysinfo_admin_main.htm:53
@@ -10844,11 +10904,6 @@ msgstr "Anfrage auf Mitgliedschaft"
 #: system/Groups/pntemplates/groups_admin_userpending.htm:35
 msgid "Send notification"
 msgstr "Grund/Benachrichtigung schicken"
-
-#: system/Groups/pntemplates/groups_admin_userpending.htm:45
-#: system/Groups/pntemplates/groups_admin_view.htm:204
-msgid "Deny"
-msgstr "Ablehnen"
 
 #: system/Groups/pntemplates/groups_user_membership.htm:5
 msgid "Membership resignation"
@@ -11065,7 +11120,7 @@ msgstr "Garbage collection probability"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:141
 msgid "/10000"
-msgstr "von 10000"
+msgstr "/10000"
 
 #: system/SecurityCenter/pntemplates/securitycenter_admin_modifyconfig.htm:145
 msgid "Use sessions for anonymous guests"
@@ -11454,6 +11509,22 @@ msgstr "Funktionstyp"
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:76
 msgid "Notice: This is a list of arguments found in the page URL, separated by '/'."
 msgstr "Hinweis: Liste der Argumente in der URL getrennt nach '/'."
+
+#: system/Theme/pntemplates/siteoff.htm:49
+msgid "Administrator log-in"
+msgstr "Admin-Login"
+
+#: system/Theme/pntemplates/siteoff.htm:52
+msgid "An administrator log-in is required."
+msgstr "Benutzeranmeldung über E-Mail Adresse (nur in Verbindung mit der Option für systemweit eindeutige E-Mail möglich)"
+
+#: system/Theme/pntemplates/upgrade/version.htm:14
+msgid "NAME"
+msgstr "Name"
+
+#: system/Theme/pntemplates/upgrade/version.htm:16
+msgid "Display description"
+msgstr "Beschreibung anzeigen"
 
 #: system/Theme/pntemplates/theme_admin_modifypageconfigurationassignment.htm:60
 msgid "Administration pages"
@@ -11958,46 +12029,57 @@ msgstr "Benutzerprofil"
 msgid "Copyright"
 msgstr "Copyright"
 
+#~ msgid "Yugoslavia"
+#~ msgstr "Yugoslavia"
+
 #~ msgid ""
 #~ "This module is not designed or is not currently configured to be accessed "
 #~ "in the way you attempted."
 #~ msgstr "Fehler! Auf dieses Modul kann nicht direkt zugegriffen werden."
+
 #~ msgid ""
 #~ "Error! In 'pnformdropdownrelationlist:', an '' parameter must be "
 #~ "specified."
 #~ msgstr ""
 #~ "Error! In 'pnformdropdownrelationlist:', an '' parameter must be "
 #~ "specified."
-#~ msgid "Administrator log-in"
-#~ msgstr "Admin-Login"
-#~ msgid "An administrator log-in is required."
-#~ msgstr ""
-#~ "Benutzeranmeldung über E-Mail Adresse (nur in Verbindung mit der Option "
-#~ "für systemweit eindeutige E-Mail möglich)"
+
 #~ msgid "Database version:"
 #~ msgstr "Datenbank Version:"
+
 #~ msgid "Edit your user categories"
 #~ msgstr "Persönliche Kategorien bearbeiten"
+
 #~ msgid "PHP: register_globals=on - Should be off."
 #~ msgstr "PHP: register_globals=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: allow_url_include=on - Should be off."
 #~ msgstr "PHP: allow_url_include=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: allow_url_fopen=on - Should be off."
 #~ msgstr "PHP: allow_url_fopen=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: magic_quotes_gpc=on - Should be off."
 #~ msgstr "PHP: magic_quotes_gpc=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: display_errors=on - Should be off."
 #~ msgstr "PHP: display_startup_errors=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: display_startup_errors=on - Should be off."
 #~ msgstr "PHP: display_startup_errors=on - Sollte ausgeschaltet sein."
+
 #~ msgid "PHP: magic_quotes_runtime=on - Should be off."
 #~ msgstr "PHP: magic_quotes_runtime=on - Sollte ausgeschaltet sein."
+
 #~ msgid "%s: must specify table name"
 #~ msgstr "%s: must specify table name"
+
 #~ msgid "Error! Could not send message."
 #~ msgstr "Fehler! Die Nachricht konnte nicht gesendet werden."
+
 #~ msgid "Done! Saved settings."
 #~ msgstr "Erledigt! Die Konfiguration wurde erfolgreich gespeichert."
+
 #~ msgid ""
 #~ "In order to proceed with this upgrade the duplicated Profile module in "
 #~ "system/ should be removed.  Please delete Profile from the system/ "
@@ -12006,6 +12088,7 @@ msgstr "Copyright"
 #~ "Da das Modul 'Profile' momentan doppelt vorhanden ist, kann das Upgrade "
 #~ "nicht fortgesetzt werden. Bitte das Modul im Systemverzeichnis /system "
 #~ "löschen und dieses Skript erneut starten."
+
 #~ msgid ""
 #~ "Your PHP installation does not have the multi-byte string functions "
 #~ "available. This does not prevent installation, but Zikula will not be "
@@ -12014,6 +12097,7 @@ msgstr "Copyright"
 #~ "In der PHP-Version ist die 'multibyte string' Funktion nicht verfügbar. "
 #~ "Eine Installation ist zwar dennoch möglich. Jedoch ist diese Funktion "
 #~ "eine wichtige Voraussetzung für das Zikula AJAX System."
+
 #~ msgid ""
 #~ "Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site "
 #~ "root, but must be removed before you can access the Administration panel. "
@@ -12024,6 +12108,7 @@ msgstr "Copyright"
 #~ "php') im Rootverzeichnis löschen. Hinweis am Rande: Dieses Tool ist "
 #~ "mittlerweile veraltet und wurde durch die 'Zikula Recovery "
 #~ "Console' (Datei 'zrc.php') ersetzt."
+
 #~ msgid ""
 #~ "Stop, please! The installer file 'install.php' and directory 'install' "
 #~ "are in the site root, but must be removed before you can access the "
@@ -12031,12 +12116,14 @@ msgstr "Copyright"
 #~ msgstr ""
 #~ "Warnung! Zum Fortfahren bitte die Datei install.php im Root und das "
 #~ "Installationsverzeichnis löschen."
+
 #~ msgid ""
 #~ "Installer file 'upgrade.php' is in the site root, but should be removed "
 #~ "(after a PostNuke-to-Zikula upgrade)."
 #~ msgstr ""
 #~ "Die Datei 'upgrade.php' befindet sich noch im Rootverzeichnis und sollte "
 #~ "entfernt werden."
+
 #~ msgid ""
 #~ "The file 'upgrade.php' is used by the Installer script if a legacy "
 #~ "PostNuke site is upgraded to a more-recent version. Once the new site is "
@@ -12048,70 +12135,100 @@ msgstr "Copyright"
 #~ "aktualisiert wird. Nach erfolgreicher Aktualisierung sollte diese Datei "
 #~ "gelöscht werden, da sie nicht länger benötigt wird und ein mögliches "
 #~ "Sicherheitsrisiko darstellt."
+
 #~ msgid "Add article"
 #~ msgstr "Beitrag hinzufügen"
+
 #~ msgid "Theme by"
 #~ msgstr "Theme erstellt von"
+
 #~ msgid "Search Site"
 #~ msgstr "Suchen"
+
 #~ msgid "El Salvador"
 #~ msgstr "El Salvador"
+
 #~ msgid "Done! Module has been upgraded. Its status is now 'Inactive'."
 #~ msgstr ""
 #~ "Erledigt! Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt "
 #~ "'Inaktiv'."
+
 #~ msgid "SUCCESS: updated %s"
 #~ msgstr "Erfolgreich aktualisiert %s"
+
 #~ msgid "FAILED: %s"
 #~ msgstr "FEHLGESCHLAGEN: %s"
+
 #~ msgid "SUCCESS: %s"
 #~ msgstr "Erfolgreich: %s"
+
 #~ msgid "Failed to load module %1$s (at function: \"%2$s\")"
 #~ msgstr "Failed to load module %1$s (at function: \"%2$s\")"
+
 #~ msgid "The transaction failed. Please perform a rollback."
 #~ msgstr "The transaction failed. Please perform a rollback."
+
 #~ msgid "Username"
 #~ msgstr "Benutzername"
+
 #~ msgid "Duplicate Profile module found in system/Profile"
 #~ msgstr ""
 #~ "Doppelt vorhandenes Modul 'Profile'' unter /system/Profile gefunden."
+
 #~ msgid "<div class='errormessage'>FAILED: %s</div>"
 #~ msgstr "<div class='errormessage'>Fehlgeschlagen: %s</div>"
+
 #~ msgid "Required information"
 #~ msgstr "Erforderliche Informationen"
+
 #~ msgid "Go back to the page you were visiting before"
 #~ msgstr "Zurück zur vorherigen Seite"
+
 #~ msgid "Enter additional information for your account profile"
 #~ msgstr "Optionale Angaben zum Benutzerprofil"
+
 #~ msgid "Your own site"
 #~ msgstr "Homepage"
+
 #~ msgid "All users"
 #~ msgstr "Alle Gruppen"
+
 #~ msgid "No groups"
 #~ msgstr "Keine Gruppen"
+
 #~ msgid "'Terms of use' not activated."
 #~ msgstr "Die Nutzungsbedingungen sind nicht aktiviert."
+
 #~ msgid "'Privacy policy' not activated."
 #~ msgstr "Die Hinweise zum Datenschutz sind nicht aktiviert."
+
 #~ msgid "'Accessibility statement' not activated."
 #~ msgstr "Die Hinweise zur Barrierefreiheit sind nicht aktiviert."
+
 #~ msgid "Legal info manager"
 #~ msgstr "Rechtliches"
+
 #~ msgid ""
 #~ "Provides an interface for managing the site's 'Terms of use', 'Privacy "
 #~ "statement' and 'Accessibility statement'."
 #~ msgstr ""
 #~ "Nutzungsbedingungen, Hinweise zum Datenschutz und zur Barrierefreiheit."
+
 #~ msgid "legalmod"
 #~ msgstr "rechtliches"
+
 #~ msgid "Terms of use"
 #~ msgstr "Nutzungsbedingungen"
+
 #~ msgid "Privacy policy"
 #~ msgstr "Hinweise zum Datenschutz"
+
 #~ msgid "Accessibility statement"
 #~ msgstr "Erklärung zur Barrierefreiheit"
+
 #~ msgid "Legal information"
 #~ msgstr "Rechtliche Informationen"
+
 #~ msgid ""
 #~ "<strong>Important Usage Note</strong>: The provided legal statements are "
 #~ "samples only. They need to be adapted to specific needs and locales. You "
@@ -12128,8 +12245,10 @@ msgstr "Copyright"
 #~ "findet sich in Dateien im system/legal/pntemplates/de/ Verzeichnis. Diese "
 #~ "Templates können durch <a href=\"http://community.zikula.org/Wiki-"
 #~ "TemplateOverridng.htm\">Templates im Theme-Ordner</a> überlagert werden."
+
 #~ msgid "Reset user group's acceptance of 'Terms of use'"
 #~ msgstr "Zustimmung zu den Nutzungsbedingungen zurücksetzen"
+
 #~ msgid ""
 #~ "Notice: This setting resets the acceptance of the 'Terms of use' for all "
 #~ "users in this group. Next time they want to log-in, they will have to "
@@ -12143,6 +12262,7 @@ msgstr "Copyright"
 #~ "Mitglieder der entsprechenden Gruppen erst nach erneuter Zustimmung "
 #~ "wieder anmelden. Für einzelne Benutzer kann das auch in der "
 #~ "Benutzeradministration veranlasst werden."
+
 #~ msgid ""
 #~ "The current installed version of Zikula is reporting (%1$s).  This may "
 #~ "not be accurate so if you know you have definitely upgraded to %2$s then "
@@ -12154,4 +12274,3 @@ msgstr "Copyright"
 #~ "$s definitiv schon durchgeführt wurde, so kann der Hinweis ignoriert "
 #~ "werden. Ansonsten sollte ein Upgrade auf Version %2$s unbedingt "
 #~ "durchgeführt werden."
-
