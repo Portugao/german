@@ -1,4 +1,0 @@
-Thank you Yahoo for the great YUI Grids.
-Thank you Mark West for the great themes engine.
-Thanks to the whole Zikula team for the great Webtool-Kit.
-Thank you Peter Müller for "Little Boxes".
