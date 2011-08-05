@@ -1,0 +1,1 @@
+__German translation for the Zikula Application Framework 1.3__
