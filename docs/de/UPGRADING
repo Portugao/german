@@ -8,21 +8,7 @@ Support und Hilfe bei der Aktualisierung auf diese Version gibt es auf http://su
 Serverüberlegungen
 ------------------
 
-- Zikula benötigt mindestens PHP 5.3.2 oder neuer.
-
-- Bei der Benutzung von PHP 5.3.0 oder höher sollte sichergestellt werden, dass
-  die Datei php.ini die Direktive date.timezone auf eine valide Zeitzone gesetzt
-  hat, zu Beispiel UTC, GMT+5, Europe/Berlin.
-
-- Die in der PHP-Installation genutzte Bibliothek PCRE (Perl Compatible Regular Expression)
-  muss Unicode Properties unterstützen. Für die meisten Installationen sollte dies kein
-  Problem darstellen. Das PHP-Kommando:
-
-      echo preg_match('/^\p{L}+$/u', 'TheseAreLetters');
-
-  sollte den Wert 1 oder true ohne einen Fehler zurückliefern. Wenn dies nicht zutrifft,
-  dann muss die PCRE-Bibliothek durch eine andere ersetzt werden, die mit der Option
-  '--enable-unicode-properties' kompiliert wurde.
+Bitte lesen Sie das Dokument mit den Zikula Softwareempfehlungen.
 
 
 Voraussetzungen
