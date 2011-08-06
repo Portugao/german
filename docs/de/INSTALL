@@ -37,15 +37,7 @@ jedem, unabhängig von seinen Kenntnissen - Wie man helfen kann.
 Serverüberlegungen
 ------------------
 
-Im Vergleich zu anderen Web-Frameworks stellt Zikula wenige Anforderungen an
-den Webserver. Bevor man beginnt, sollten einige Anforderungen und Richtlinien
-beachtet werden, um Installation, Betrieb und Absicherung von Zikula zu 
-vereinfachen. Bitte lesen Sie das Dokument mit den Zikula Softwareempfehlungen.
-
-Zikula benötigt PHP 5.3.2 oder größer. Weiterhin muss die Einstellung
-"date.timezone" in der php.ini des Webservers konfiguriert sein. 
-Die Minimum MySQL Version ist 5.1. Es wird nicht empfohlen Zikula im
-"MySQL STRICT mode" zu installieren.
+Bitte lesen Sie das Dokument mit den Zikula Softwareempfehlungen.
 
 
 Installation
