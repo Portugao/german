@@ -1,27 +1,14 @@
-ZIKULA UPGRADE ANLEITUNG
+ZIKULA UPGRADEANLEITUNG
+========================
 
 Detaillierte Informationen ist verfügbar im Wiki auf http://community.zikula.org/
 Support und Hilfe bei der Aktualisierung auf diese Version gibt es auf http://support.zikula.de/ im Forum.
 
-=======
-INHALTE
-=======
-1. Server Überlegungen
-2. Aktualisierung
-3. Vorsicht
-4. Finale Anmerkungen
 
+Serverüberlegungen
+------------------
 
-1. Server Überlegungen
-======================
-Zikula auf diese Version aktualisiert werden von jeder der folgenden Versionen: 1.2.x
-oder höher. Falls Ihre Installation älter ist, aktualisieren Sie bitte zuerst auf eine
-dieser Versionen, bevor Sie mit dieser Anleitung weiter arbeiten.
-
-Bevor die Aktualisierung begonnen wird, müssen einige Anforderungen und Richtlinien
-beachtet werden, um Zikula einfacher aktualisieren, installieren, betreiben und
-absichern zu können.
-Bitte lesen Sie das Dokument zur empfohlenen Software für Zikula.
+- Zikula benötigt mindestens PHP 5.3.2 oder neuer.
 
 - Bei der Benutzung von PHP 5.3.0 oder höher sollte sichergestellt werden, dass
   die Datei php.ini die Direktive date.timezone auf eine valide Zeitzone gesetzt
@@ -37,91 +24,178 @@ Bitte lesen Sie das Dokument zur empfohlenen Software für Zikula.
   dann muss die PCRE-Bibliothek durch eine andere ersetzt werden, die mit der Option
   '--enable-unicode-properties' kompiliert wurde.
 
-2. Aktualisierung
-=================
-Bitte befolgen Sie die unten stehenden Schritte in der gegebenen Reihenfolge, und lesen
-dabei Sie jeden Schritt im Detail durch, bevor Sie fortfahren.
-Sofern die Anweisungen exakt befolgt werden, sollte das Upgrade ohne Probleme durchlaufen.
 
-  2.1 Datenbank und Dateien sichern
-  2.2 Die existierende Installation vorbereiten
-  2.3 Die Aktualisierung durchführen
-  2.4 Aufräumen und zusätzliche Konfiguration
-  2.5 Nach dem Update
+Voraussetzungen
+---------------
 
-  2.1 Datenbank und Dateien sichern
-  ----------------------------------
-  Ein Backup der Datenbank und des Dateisystems ist unerlässlich, bevor mit dem Upgrade
-  fortgefahren wird. Upgrades können nicht rückgängig gemacht werden, daher ist die einzige
-  zuverlässige Lösung bei Problemen eine Wiederherstellung des alten Systems aus einem Backup.
-  Um die Datenbank-Inhalte zu sichern, kann ein Werkzeug wie mysqldumper oder phpMyAdmin verwendet werden,
-  ansonsten kann die Sicherung alternativ auch über SSH oder ein Hosting-Control-Panel erfolgen.
-  Detaillierte Anleitungen und Tutorials zur Erstellung von Datenbank-Backups finden Sie durch
-  Suche im Internet und in der Dokumentation der von Ihnen verwendeten Werkzeuge.
- 
-  2.2 Die existierende Installation vorbereiten
-  ---------------------------------------------
-  i.   Falls Sie 'Login über E-Mail-Adresse' nutzen, muss die Login-Methode in der Verwaltung
-       auf 'Login über Benutzername' zurückgestellt werden. Es wird notwendig sein, dass Sie
-       sich mit Ihrem Administrator-Benutzernamen anmelden.
+Zikula auf diese Version aktualisiert werden von jeder der folgenden Versionen: 1.2.x
+oder höher. Falls Ihre Installation älter ist, aktualisieren Sie bitte zuerst auf eine
+dieser Versionen, bevor Sie mit dieser Anleitung weiter arbeiten.
 
-  ii. Bevor irgendwelche Dateien entpackt werden, löschen Sie folgende Ordner:
+Bevor die Aktualisierung begonnen wird, müssen einige Anforderungen und Richtlinien
+beachtet werden, um Zikula einfacher aktualisieren, installieren, betreiben und
+absichern zu können. 
+
+
+Vorabeiten
+----------
+
+There are several issues to contend with before you begin the upgrade process. These
+are things that must be performed on your working 1.2.x installation before unpacking
+the upgrade files.
+
+
+Theme-Namensgebung
+------------------
+
+   Themes müssen mit einem Großbuchstaben beginnen und dürfen keine Unterstiche "_"
+   enhalten. Sollten Sie Ihr Theme umbenennen müssen, gehen Sie wie folgt vor:
+
+  - Ändern Sie den Theme Namen in der Zikula Administrationsoberfläche
+
+  - Nennen Sie den Ornder Ihres Themes um und beginnen die mit einem Großbuchstaben.
+    Auf einem Windows Windows Rechner wo Groß-/Kleinbuchstaben keine Rolle spielen,
+    benötigt man 2 Schritte zur Umbenennung:
+
+        mytheme => mythemeX
+
+    und danach
+
+        mythemeX => MyTheme
+
+    Auf einem Linux Rechner oder Mac kann man den Ordner direkt umbenennen.
+
+  - Editieren Sie die version.php Ihres Themes und geben Sie den neuen Namen an.
+
+  - Gehen Sie zurück zu Ihrem Theme und nehmen Sie falls nötig weitere Änderungen vor.
+
+
+Module
+------
+
+  Stellen Sie sicher, dass alle Module mindestens Zikula 1.2.x kompatibel sind und
+  vollständig auf "Gettext" konvertiert wurden. Andere Module werden unter Zikula 1.3 
+  nicht funktionieren.
+
+  Zikula 1.2 kompatible Module werden unter Zikula Core 1.3 immer noch korrekt funktionieren.
+
+  Sollten Sie das Modul "menutree" einsetzen, löschen Sie alle Modulverzeichnisse, 
+  da das Modul komplett in den Core aufgenommen wurde und jetzt zum Standard gehört.
+
+
+Existierende Installation vorbereiten
+-------------------------------------
+
+  - Falls Sie 'Login über E-Mail-Adresse' nutzen, muss die Login-Methode in der Verwaltung
+    auf 'Login über Benutzername' zurückgestellt werden. Es wird notwendig sein, dass Sie
+    sich mit Ihrem Administrator-Benutzernamen anmelden.
+
+
+  - Die config.php wurde um einen “legacy” Modus erweitert. Vor dem Upgrade muss diese 
+    Einstellung aktiviert werden.
+
+  - Bevor irgendwelche Dateien entpackt werden, löschen Sie folgende Ordner:
       - system/
+      - themes/
       - includes/
       - pnTemp/
+      - modules/Profile (falls existent)
+      - modules/legal   (falls existent)
 
-  iii. Entpacken Sie das heruntergeladene Archiv und laden Sie alle enthaltenen Dateien auf
-       Ihre Seite. Dabei werden einzelne Dateien überschrieben.
-       Ändern Sie manuell die NEUE Datei config/config.php und tragen Sie dort die Zugangsdaten
-       zu Ihrer Datenbank ein. Bitte beachten Sie, dass die neue config.php einige Unterschiede
-       zur alten Version aufweist. Falls Sie in der alten Datei Einstellungen verändert haben,
-       sollten Sie auch diese Definitionen in die neue Datei überführen.
-       Auf jeden Fall sollten Sie den folgenden Zeilen Aufmerksamkeit schenken:
-            Zeile 26: $ZConfig['System']['installed']
-            Zeile 28: $ZConfig['System']['prefix']
-            Zeile 46: $ZConfig['DBInfo']['default']['dsn']
-
-       Verändern Sie NICHT die Zeile mit
-            $ZConfig['System']['temp']
-
-  2.3 Die Aktualisierung durchführen
-  ----------------------------------
-  Starten Sie das Upgrade Script in der Datei upgrade.php und folgen Sie den beschriebenen Schritten.
-  Es ist keine größere Interaktion nötig als auf 'weiter' zu klicken. Alle notwendigen Datenbankänderungen
-  werden automatisch vorgenommen. Am Ende werden Sie zu Ihrem Verwaltungsbereich weitergeleitet.
-
-  2.4 Aufräumen und zusätzliche Konfiguration
-  -------------------------------------------
-  Nach einem erfolgreichen Upgrade können Sie das install-Verzeichnis sowie die Dateien
-  install.php und upgrade.php aus dem Hauptverzeichnis Ihrer Seite entfernen.
-  Wenn Sie eigene Themes einsetzen, beachten Sie bitte, dass Themes nun spezifische
-  Header-Informationen benötigen. Diese sollten Sie nachpflegen mit Hilfe der Plugins
-  lang, langdirection und charset. Als Vorlage kann das Template master.tpl im Theme
-  andreas08 angeschaut werden.
-  Falls die Seite vor dem Start der Aktualisierung deaktiviert wurde (siehe 2.2),
-  sollte sie nun wieder aktiviert werden.
-
-  2.5 Nach dem Update
-  -------------------
-  Falls Sie das Modul Menutree einsetzen, beachten Sie bitte folgende Punkte:
-  Die Funktionalität von Menutree wurde in den Zikula Core portiert, allerdings ist
-  dies nicht das gleiche wie das Menutree-Modul, denn die Implementierung im Zikula Core
-  ist substanziell anders ausgestaltet. Aus diesem Grund wird der Aktualisierungsprozess
-  keine Konfigurationen aus Ihrem Menutree-Modul 'importieren'. Die Blöcke mit
-  ihren Einstellungen müssen manuell neu erstellt werden.
+    Speichern Sie vorher die Daten in pnTemp falls Sie dort Dateiuploads haben.
 
 
-3. Vorsicht
-===========
-Es sollte beachtet werden, dass Zikula keinen Support für  Modifikationen von
-Quellcode oder Datenstrukturen im Core gibt. Zikula wurde so entworfen, dass es
-flexibel genug ist, dass keine Änderungen im Core vorgenommen werden müssen. Wenn
-Sie in dieser Hinsicht fehlende Funktionen feststellen, melden Sie diese bitte als
-Feature Request im Feature Request Tracker auf http://code.zikula.org/core
+  - Packen Sie das Zikula Installationspaket aus und kopieren Sie das Standard Theme 
+    ihrer Webseite wieder in den theme Ordner befor Sie mit dem Upgrade fortfahren.
+    Ohne diesen Schritt wird das Upgrade fehlschlagen.
+
+  - Laden Sie alle Dateien auf Ihre Seite. Dabei werden einzelne Dateien überschrieben.
+    Ändern Sie manuell die NEUE Datei config/config.php und tragen Sie dort die Zugangsdaten
+    zu Ihrer Datenbank ein. Die Daten werden müssen in Klartext eingetragen werden, da 
+    Zikula 1.3 keine verschlüsselten Werte unterstützt.
+    Bitte beachten Sie, dass die neue config.php einige Unterschiede zur alten Version aufweist.
+    Falls Sie in der alten Datei Einstellungen verändert haben, sollten Sie auch diese
+    Definitionen in die neue Datei überführen. Auf jeden Fall sollten Sie den folgenden
+    Zeilen Aufmerksamkeit schenken:
+
+           $ZConfig['System']['installed']
+           $ZConfig['System']['prefix']
+           $ZConfig['DBInfo']['databases']['default']*
+
+    Verändern Sie NICHT die Zeile mit:
+
+           $ZConfig['System']['temp']
+
+  - Da es von Zikula 1.2 zu Zikula 1.3 sehr viele Änderungen gab, sollten Sie überlegen während
+    des Upgrade Prozesses temporär die verwendeten Module (bis auf Legal & Profile) aus dem modules/
+    Ordner zu löschen. Nach dem Upgrade können Sie die Module wieder hinzufügen und eines nach dem
+    anderen über den Zikula Erweiterungsmanager upgraden.
+
+    Bitte beachten Sie dass die Module Legal & Profile in einer neuen Version vorliegen und definitv 
+    aus dem modules/ Ordner gelöscht werden müssen, bevor Sie das Upgrade starten. Das gleiche gilt 
+    für Zikula 1.3 kompatible Module.
 
 
-4. Finale Anmerkungen
-=====================
+Aktualisierung durchführen
+--------------------------
+
+WARNUNG - Sobald Sie die upgrade.php aufrufen werden tiefgreifenden Änderungen an Ihrem System 
+durchgeführt, die man nicht wieder Rückgängig machen kann. Ihr System wird erst wieder voll
+funktionsfähig sein, wenn Sie manuell alle weiteren Schritte durchgeführt haben.
+
+Starten Sie das Upgrade Script in der Datei upgrade.php und folgen Sie den beschriebenen 
+Schritten. Es ist keine größere Interaktion nötig als auf 'weiter' zu klicken. Alle notwendigen 
+Datenbankänderungen werden automatisch vorgenommen. Am Ende werden Sie zu Ihrem
+Verwaltungsbereich weitergeleitet.
+
+
+Nach dem Update
+---------------
+
+Falls Sie das Modul Menutree einsetzen, beachten Sie bitte folgende Punkte:
+Die Funktionalität von Menutree wurde in den Zikula Core portiert, allerdings ist
+dies nicht das gleiche wie das Menutree-Modul, denn die Implementierung im Zikula Core
+ist substanziell anders ausgestaltet. Aus diesem Grund wird der Aktualisierungsprozess
+keine Konfigurationen aus Ihrem Menutree-Modul 'importieren'. Die Blöcke mit
+ihren Einstellungen müssen manuell neu erstellt werden.
+
+Sie müssen die Links der Menüblöcke ebenfalls anpassen, weil sich der Standard geändert hat.
+
+Von
+
+    {Modul:Funktion&Parameter1=Wert1&Parameter2=Wert2:Typ}
+
+Zu
+
+    {Modul:Typ:Funktion:Parameter1=Wert1&Parameter2=Wert2}
+
+Bitte denken Sie daran nach einem erfolgreichen Upgrade die Anleitung UPGRADING_THEME 
+zu lesen, um auch das Theme auf den aktuellen Standard zu bringen. Es gibt nur einige
+kleine Änderungen von denen man aber stark profitiert. Solange diese Ändeungen nicht
+durchgeführt worden sind, können komische Fehler auftreten und das System nicht wie
+gewohnt arbeiten.
+
+Sollten Sie ein Standard Startmodul einsetzen, müssen im Admin-Modul "Einstellungen"
+der "starttyp" und "startfunc" definiert werden.
+
+
+Hooks
+-----
+
+In Zikula 1.3 gibt es zwei Sorten von MOdulen. Die "Legacy" getauften Module, welche
+für Zikula 1.2 geschrieben wurden und unter Zikula 1.3 funktionstüchtig sind.
+Und die Zikula 1.3 kompatieblen Module, die 2native2 genannt werden.
+
+Zikula 1.3.x bringt ein neues Hook System mit. Legacy Module können nur mit Legacy
+Modulen verbunden werden, wärend native Module nur mit native Modulen kommunizieren.
+Deshalb empfehlen wir nur Zikula 1.3 kompatieble Module im Einsatz zu haben.
+Wenn Sie ein Legacy Modul upgraden, wird es automatisch vom allen Hook System 
+abgehängt. Dies wird nach dem Upgrade angezeigt.
+
+
+Fertig
+------
+
 Herzlichen Glückwunsch! Das Upgrade ist abgeschlossen. Wir hoffen, dass Ihnen diese neue
 Zikula-Version gefällt. Für Kommentare, Fragen und Ideen nutzen Sie bitte das Forum auf
 http://support.zikula.de.
