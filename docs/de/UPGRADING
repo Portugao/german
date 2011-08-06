@@ -1,39 +1,39 @@
 ZIKULA UPGRADE ANLEITUNG
 
-Detaillierte Informationen ist verfügbar im Wiki auf http://community.zikula.org/
+Detaillierte Informationen ist verfÃ¼gbar im Wiki auf http://community.zikula.org/
 Support und Hilfe bei der Aktualisierung auf diese Version gibt es auf http://support.zikula.de/ im Forum.
 
 =======
 INHALTE
 =======
-1. Server Überlegungen
+1. Server Ãœberlegungen
 2. Aktualisierung
 3. Vorsicht
 4. Finale Anmerkungen
 
 
-1. Server Überlegungen
+1. Server Ãœberlegungen
 ======================
 Zikula auf diese Version aktualisiert werden von jeder der folgenden Versionen: 1.2.x
-oder höher. Falls Ihre Installation älter ist, aktualisieren Sie bitte zuerst auf eine
+oder hÃ¶her. Falls Ihre Installation Ã¤lter ist, aktualisieren Sie bitte zuerst auf eine
 dieser Versionen, bevor Sie mit dieser Anleitung weiter arbeiten.
 
-Bevor die Aktualisierung begonnen wird, müssen einige Anforderungen und Richtlinien
+Bevor die Aktualisierung begonnen wird, mÃ¼ssen einige Anforderungen und Richtlinien
 beachtet werden, um Zikula einfacher aktualisieren, installieren, betreiben und
-absichern zu können.
-Bitte lesen Sie das Dokument zur empfohlenen Software für Zikula.
+absichern zu kÃ¶nnen.
+Bitte lesen Sie das Dokument zur empfohlenen Software fÃ¼r Zikula.
 
-- Bei der Benutzung von PHP 5.3.0 oder höher sollte sichergestellt werden, dass
+- Bei der Benutzung von PHP 5.3.0 oder hÃ¶her sollte sichergestellt werden, dass
   die Datei php.ini die Direktive date.timezone auf eine valide Zeitzone gesetzt
   hat, zu Beispiel UTC, GMT+5, Europe/Berlin.
 
 - Die in der PHP-Installation genutzte Bibliothek PCRE (Perl Compatible Regular Expression)
-  muss Unicode Properties unterstützen. Für die meisten Installationen sollte dies kein
+  muss Unicode Properties unterstÃ¼tzen. FÃ¼r die meisten Installationen sollte dies kein
   Problem darstellen. Das PHP-Kommando:
 
       echo preg_match('/^\p{L}+$/u', 'TheseAreLetters');
 
-  sollte den Wert 1 oder true ohne einen Fehler zurückliefern. Wenn dies nicht zutrifft,
+  sollte den Wert 1 oder true ohne einen Fehler zurÃ¼ckliefern. Wenn dies nicht zutrifft,
   dann muss die PCRE-Bibliothek durch eine andere ersetzt werden, die mit der Option
   '--enable-unicode-properties' kompiliert wurde.
 
@@ -45,57 +45,57 @@ Sofern die Anweisungen exakt befolgt werden, sollte das Upgrade ohne Probleme du
 
   2.1 Datenbank und Dateien sichern
   2.2 Die existierende Installation vorbereiten
-  2.3 Die Aktualisierung durchführen
-  2.4 Aufräumen und zusätzliche Konfiguration
+  2.3 Die Aktualisierung durchfÃ¼hren
+  2.4 AufrÃ¤umen und zusÃ¤tzliche Konfiguration
   2.5 Nach dem Update
 
   2.1 Datenbank und Dateien sichern
   ----------------------------------
-  Ein Backup der Datenbank und des Dateisystems ist unerlässlich, bevor mit dem Upgrade
-  fortgefahren wird. Upgrades können nicht rückgängig gemacht werden, daher ist die einzige
-  zuverlässige Lösung bei Problemen eine Wiederherstellung des alten Systems aus einem Backup.
+  Ein Backup der Datenbank und des Dateisystems ist unerlÃ¤sslich, bevor mit dem Upgrade
+  fortgefahren wird. Upgrades kÃ¶nnen nicht rÃ¼ckgÃ¤ngig gemacht werden, daher ist die einzige
+  zuverlÃ¤ssige LÃ¶sung bei Problemen eine Wiederherstellung des alten Systems aus einem Backup.
   Um die Datenbank-Inhalte zu sichern, kann ein Werkzeug wie mysqldumper oder phpMyAdmin verwendet werden,
-  ansonsten kann die Sicherung alternativ auch über SSH oder ein Hosting-Control-Panel erfolgen.
+  ansonsten kann die Sicherung alternativ auch Ã¼ber SSH oder ein Hosting-Control-Panel erfolgen.
   Detaillierte Anleitungen und Tutorials zur Erstellung von Datenbank-Backups finden Sie durch
   Suche im Internet und in der Dokumentation der von Ihnen verwendeten Werkzeuge.
  
   2.2 Die existierende Installation vorbereiten
   ---------------------------------------------
-  i.   Falls Sie 'Login über E-Mail-Adresse' nutzen, muss die Login-Methode in der Verwaltung
-       auf 'Login über Benutzername' zurückgestellt werden. Es wird notwendig sein, dass Sie
+  i.   Falls Sie 'Login Ã¼ber E-Mail-Adresse' nutzen, muss die Login-Methode in der Verwaltung
+       auf 'Login Ã¼ber Benutzername' zurÃ¼ckgestellt werden. Es wird notwendig sein, dass Sie
        sich mit Ihrem Administrator-Benutzernamen anmelden.
 
-  ii. Bevor irgendwelche Dateien entpackt werden, löschen Sie folgende Ordner:
+  ii. Bevor irgendwelche Dateien entpackt werden, lÃ¶schen Sie folgende Ordner:
       - system/
       - includes/
       - pnTemp/
 
   iii. Entpacken Sie das heruntergeladene Archiv und laden Sie alle enthaltenen Dateien auf
-       Ihre Seite. Dabei werden einzelne Dateien überschrieben.
-       Ändern Sie manuell die NEUE Datei config/config.php und tragen Sie dort die Zugangsdaten
+       Ihre Seite. Dabei werden einzelne Dateien Ã¼berschrieben.
+       Ã„ndern Sie manuell die NEUE Datei config/config.php und tragen Sie dort die Zugangsdaten
        zu Ihrer Datenbank ein. Bitte beachten Sie, dass die neue config.php einige Unterschiede
-       zur alten Version aufweist. Falls Sie in der alten Datei Einstellungen verändert haben,
-       sollten Sie auch diese Definitionen in die neue Datei überführen.
+       zur alten Version aufweist. Falls Sie in der alten Datei Einstellungen verÃ¤ndert haben,
+       sollten Sie auch diese Definitionen in die neue Datei Ã¼berfÃ¼hren.
        Auf jeden Fall sollten Sie den folgenden Zeilen Aufmerksamkeit schenken:
             Zeile 26: $ZConfig['System']['installed']
             Zeile 28: $ZConfig['System']['prefix']
             Zeile 46: $ZConfig['DBInfo']['default']['dsn']
 
-       Verändern Sie NICHT die Zeile mit
+       VerÃ¤ndern Sie NICHT die Zeile mit
             $ZConfig['System']['temp']
 
-  2.3 Die Aktualisierung durchführen
+  2.3 Die Aktualisierung durchfÃ¼hren
   ----------------------------------
   Starten Sie das Upgrade Script in der Datei upgrade.php und folgen Sie den beschriebenen Schritten.
-  Es ist keine größere Interaktion nötig als auf 'weiter' zu klicken. Alle notwendigen Datenbankänderungen
+  Es ist keine grÃ¶ÃŸere Interaktion nÃ¶tig als auf 'weiter' zu klicken. Alle notwendigen DatenbankÃ¤nderungen
   werden automatisch vorgenommen. Am Ende werden Sie zu Ihrem Verwaltungsbereich weitergeleitet.
 
-  2.4 Aufräumen und zusätzliche Konfiguration
+  2.4 AufrÃ¤umen und zusÃ¤tzliche Konfiguration
   -------------------------------------------
-  Nach einem erfolgreichen Upgrade können Sie das install-Verzeichnis sowie die Dateien
+  Nach einem erfolgreichen Upgrade kÃ¶nnen Sie das install-Verzeichnis sowie die Dateien
   install.php und upgrade.php aus dem Hauptverzeichnis Ihrer Seite entfernen.
   Wenn Sie eigene Themes einsetzen, beachten Sie bitte, dass Themes nun spezifische
-  Header-Informationen benötigen. Diese sollten Sie nachpflegen mit Hilfe der Plugins
+  Header-Informationen benÃ¶tigen. Diese sollten Sie nachpflegen mit Hilfe der Plugins
   lang, langdirection und charset. Als Vorlage kann das Template master.tpl im Theme
   andreas08 angeschaut werden.
   Falls die Seite vor dem Start der Aktualisierung deaktiviert wurde (siehe 2.2),
@@ -104,24 +104,24 @@ Sofern die Anweisungen exakt befolgt werden, sollte das Upgrade ohne Probleme du
   2.5 Nach dem Update
   -------------------
   Falls Sie das Modul Menutree einsetzen, beachten Sie bitte folgende Punkte:
-  Die Funktionalität von Menutree wurde in den Zikula Core portiert, allerdings ist
+  Die FunktionalitÃ¤t von Menutree wurde in den Zikula Core portiert, allerdings ist
   dies nicht das gleiche wie das Menutree-Modul, denn die Implementierung im Zikula Core
   ist substanziell anders ausgestaltet. Aus diesem Grund wird der Aktualisierungsprozess
-  keine Konfigurationen aus Ihrem Menutree-Modul 'importieren'. Die Blöcke mit
-  ihren Einstellungen müssen manuell neu erstellt werden.
+  keine Konfigurationen aus Ihrem Menutree-Modul 'importieren'. Die BlÃ¶cke mit
+  ihren Einstellungen mÃ¼ssen manuell neu erstellt werden.
 
 
 3. Vorsicht
 ===========
-Es sollte beachtet werden, dass Zikula keinen Support für  Modifikationen von
+Es sollte beachtet werden, dass Zikula keinen Support fÃ¼r  Modifikationen von
 Quellcode oder Datenstrukturen im Core gibt. Zikula wurde so entworfen, dass es
-flexibel genug ist, dass keine Änderungen im Core vorgenommen werden müssen. Wenn
+flexibel genug ist, dass keine Ã„nderungen im Core vorgenommen werden mÃ¼ssen. Wenn
 Sie in dieser Hinsicht fehlende Funktionen feststellen, melden Sie diese bitte als
 Feature Request im Feature Request Tracker auf http://code.zikula.org/core
 
 
 4. Finale Anmerkungen
 =====================
-Herzlichen Glückwunsch! Das Upgrade ist abgeschlossen. Wir hoffen, dass Ihnen diese neue
-Zikula-Version gefällt. Für Kommentare, Fragen und Ideen nutzen Sie bitte das Forum auf
+Herzlichen GlÃ¼ckwunsch! Das Upgrade ist abgeschlossen. Wir hoffen, dass Ihnen diese neue
+Zikula-Version gefÃ¤llt. FÃ¼r Kommentare, Fragen und Ideen nutzen Sie bitte das Forum auf
 http://support.zikula.de.

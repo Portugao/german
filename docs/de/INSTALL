@@ -1,8 +1,8 @@
 ZIKULA INSTALLATIONSANLEITUNG
-Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application
-Framework. Bitte vor dem Fortfahren die Inhalte sorgfältig durchlesen! 
-Natürlich wurde versucht hier sämtliche Informationen für eine erfolgreiche 
-Installation aufzunehmen. Doch in unserem deutschen Wiki können Ergänzungen
+Dieses Dokument beinhaltet wichtige Informationen Ã¼ber das Zikula Application
+Framework. Bitte vor dem Fortfahren die Inhalte sorgfÃ¤ltig durchlesen! 
+NatÃ¼rlich wurde versucht hier sÃ¤mtliche Informationen fÃ¼r eine erfolgreiche 
+Installation aufzunehmen. Doch in unserem deutschen Wiki kÃ¶nnen ErgÃ¤nzungen
 schneller und aktueller gepflegt werden. Daher wird empfohlen, vor einer 
 Installation auch die dortige Installationsanleitung zu sichten. 
 Falls eine bestehende Zikula-Version aktualisiert werden soll, dann bitte 
@@ -22,24 +22,24 @@ INHALTE
 1. Zikula
 =========
 
-Zikula ist ein Open Source Application Framework für dynamische Webseiten,
-das Inhalte von Design und Technik trennt. Die Inhalte einer Internetpräsenz
-(zum Beispiel Beiträge, Links, Downloads, FAQs, Bildergalerien, Foren etc.) 
-können dabei direkt im Browser verwaltet werden. Durch die klare Aufgliederung
+Zikula ist ein Open Source Application Framework fÃ¼r dynamische Webseiten,
+das Inhalte von Design und Technik trennt. Die Inhalte einer InternetprÃ¤senz
+(zum Beispiel BeitrÃ¤ge, Links, Downloads, FAQs, Bildergalerien, Foren etc.) 
+kÃ¶nnen dabei direkt im Browser verwaltet werden. Durch die klare Aufgliederung
 in Form, Funktion, Inhalt und Gestaltung hilft das System, die Kosten und den
 Aufwand beim Betrieb einer Webseite zu reduzieren.
 
 Das Framework ist modular aufgebaut. Die zentralen Funktionen
 (Benutzermanagement, Berechtigungssystem, API) werden vom sogenannten Core
-übernommen. Der Leistungsumfang kann darüberhinaus durch Zusatzmodule
+Ã¼bernommen. Der Leistungsumfang kann darÃ¼berhinaus durch Zusatzmodule
 individuell angepasst und nahezu beliebig erweitert werden. Unter anderem 
-auch zu einem sehr leistungsfähigen Content Management System (CMS).
+auch zu einem sehr leistungsfÃ¤higen Content Management System (CMS).
 
-Das Projekt hat eine große internationale Community und bietet auch
+Das Projekt hat eine groÃŸe internationale Community und bietet auch
 ausgezeichneten Support in den Foren. Die deutsche Anlaufstelle rund
 um Dokumentation und Support findet man unter zikula.de. Ein Opensource 
-Projekt lebt darüberhinaus auch von der Beteiligung - wir begrüßen Beiträge von
-jedem, unabhängig von seinen Kenntnissen - Wie man helfen kann.
+Projekt lebt darÃ¼berhinaus auch von der Beteiligung - wir begrÃ¼ÃŸen BeitrÃ¤ge von
+jedem, unabhÃ¤ngig von seinen Kenntnissen - Wie man helfen kann.
 
 2. Vorbereitungen
 =================
@@ -50,7 +50,7 @@ vereinfachen. Bitte lesen Sie das Dokument mit den Zikula Softwareempfehlungen.
 
 3. Neue Installation
 ====================
-Es gibt zwei Installationsmethoden für Zikula:
+Es gibt zwei Installationsmethoden fÃ¼r Zikula:
 
     a. Graphische Installation im Browser (empfohlen)
        -------------------------
@@ -59,46 +59,46 @@ Es gibt zwei Installationsmethoden für Zikula:
        Falls man Zikula in ein Unterverzeichnis 'foo' installiert hat, lautet die URL
        http://www.example.com/foo/install.php
 
-       Der Installer liefert die Anleitungen auf dem Weg gleich mit. Zikula benötigt
-       eine Datenbank und es kann spätere Probleme vermeiden, wenn diese zu Beginn
-       angelegt wird, bevor die Installation gestartet wird. Während es zwar möglich ist,
-       dass der Zikula-Installer die Erstellung der Datenbank selbstständig vornimmt,
-       wird dies nicht immer erfolgreich funktionieren, da bestimmte Zugriffsrechte für
-       die Datenbank benötigt werden. In den meisten Umgebungen sind diese nicht verfügbar,
-       weswegen die Datenbank zuvor über eine spezielle Verwaltung angelegt werden muss.
+       Der Installer liefert die Anleitungen auf dem Weg gleich mit. Zikula benÃ¶tigt
+       eine Datenbank und es kann spÃ¤tere Probleme vermeiden, wenn diese zu Beginn
+       angelegt wird, bevor die Installation gestartet wird. WÃ¤hrend es zwar mÃ¶glich ist,
+       dass der Zikula-Installer die Erstellung der Datenbank selbststÃ¤ndig vornimmt,
+       wird dies nicht immer erfolgreich funktionieren, da bestimmte Zugriffsrechte fÃ¼r
+       die Datenbank benÃ¶tigt werden. In den meisten Umgebungen sind diese nicht verfÃ¼gbar,
+       weswegen die Datenbank zuvor Ã¼ber eine spezielle Verwaltung angelegt werden muss.
        Wenn man dies tut, sollte man sich den Namen der Datenbank, den Benutzernamen sowie
-       das Passwort für die Benutzung während der Installation notieren.
+       das Passwort fÃ¼r die Benutzung wÃ¤hrend der Installation notieren.
 
        Sobald der Installationsprozess abgeschlossen ist, kann man die neue Zikula
        Website durch Navigieren zu index.php besuchen, z.B. http://www.example.com/index.php
-       In der Mehrzahl aller Fälle wird dies automatisch geöffnet, wenn man den Browser auf
+       In der Mehrzahl aller FÃ¤lle wird dies automatisch geÃ¶ffnet, wenn man den Browser auf
        http://www.example.com/ lenkt.
 
     b. Manuelle Installation mit SQL Dump (nicht empfohlen)
        -----------------------------------------
-       Falls man den SQL Dump zur Installation von Zikula manuell importieren möchte,
-       kann dies über ein Werkzeug wie phpMyAdmin geschehen. Der bereitgestellte Dump ist von einer
-       MySQL 5.x Datenbank und wird unter Umständen nicht mit anderen Datenbanken oder MySQL-Versionen
+       Falls man den SQL Dump zur Installation von Zikula manuell importieren mÃ¶chte,
+       kann dies Ã¼ber ein Werkzeug wie phpMyAdmin geschehen. Der bereitgestellte Dump ist von einer
+       MySQL 5.x Datenbank und wird unter UmstÃ¤nden nicht mit anderen Datenbanken oder MySQL-Versionen
        funktionieren. Sobald der SQL Dump importiert wurde, sollte man manuell die Datei
-       config/config.php editieren und dort in dem für die 'default' Verbindung reservierten Bereich
-       die entsprechenden Details zur Datenbank-Verbindung hinzufügen.
-       Wenn man diese Installationsvariante wählt, ist der Benutzername zur Administration "admin"
-       und das Passwort lautet "Password" (ohne die Anführungsstriche).
+       config/config.php editieren und dort in dem fÃ¼r die 'default' Verbindung reservierten Bereich
+       die entsprechenden Details zur Datenbank-Verbindung hinzufÃ¼gen.
+       Wenn man diese Installationsvariante wÃ¤hlt, ist der Benutzername zur Administration "admin"
+       und das Passwort lautet "Password" (ohne die AnfÃ¼hrungsstriche).
 
 4. Abschlussbemerkung
 =====================
 Modifikationen am Code des Zikula-Kernsystems oder der Datenbank unterliegen
-keinem Support, sondern können umfangreiche Probleme verursachen, wenn das 
+keinem Support, sondern kÃ¶nnen umfangreiche Probleme verursachen, wenn das 
 System in Zukunft aktualisiert werden muss. Daher sind diese 'Hacks' nicht 
 empfohlen. Zikula hat ein flexibles Erweiterungssystem und ein System zum
-Überschreiben von Konfigurationen. Diese erlauben Anpassungen in jeglicher Hinsicht 
+Ãœberschreiben von Konfigurationen. Diese erlauben Anpassungen in jeglicher Hinsicht 
 und wir empfehlen dazu das Lesen der Entwickler-Dokumentation.
 
-Für Fragen rund um die Installation, die Einrichtung und den Betrieb steht 
+FÃ¼r Fragen rund um die Installation, die Einrichtung und den Betrieb steht 
 unter zikula.de ein Supportforum und im deutschen Dokumentations-Wiki 
-auch ein umfangreiches deutschsprachiges Handbuch zur Verfügung.
+auch ein umfangreiches deutschsprachiges Handbuch zur VerfÃ¼gung.
 
-Wir wünschen viel Spaß mit dieser Version!
+Wir wÃ¼nschen viel SpaÃŸ mit dieser Version!
 
 Das Zikula-Team
 zikula.de

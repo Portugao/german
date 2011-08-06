@@ -1,43 +1,43 @@
 ALLGEMEIN
 =========
-- Das Format der Datei config.php hat sich geändert, daher müssen die Werte in
+- Das Format der Datei config.php hat sich geÃ¤ndert, daher mÃ¼ssen die Werte in
   der bereitgestellten config.php komplettiert werden. Zu beachten ist, dass die
   Base64-Kodierung nicht mehr verwendet wird und daher alle Angaben in reiner
-  Textform zu erfolgen haben (Hintergrund ist, dass Base64 keine Verschlüsselung
+  Textform zu erfolgen haben (Hintergrund ist, dass Base64 keine VerschlÃ¼sselung
   beinhaltet).
 
 TEMPLATES
 =========
-- Die Plugin-Delimiter in den Modul-Templates müssen auf { und } geändert werden.
-  Für Aufrufe von Variablen und Plugins innerhalb von JavaScript-Blöcken
-  (<script></script>) oder CSS-Blöcken (<style></style>) gibt es die Alternativ-
+- Die Plugin-Delimiter in den Modul-Templates mÃ¼ssen auf { und } geÃ¤ndert werden.
+  FÃ¼r Aufrufe von Variablen und Plugins innerhalb von JavaScript-BlÃ¶cken
+  (<script></script>) oder CSS-BlÃ¶cken (<style></style>) gibt es die Alternativ-
   Varianten {{ und }}.
 
-- Das pn-Präfix wurde bei allen Render- und Theme-Plugins entfernt. Das pndebug-
-  Plugin wurde umbenannt in zdebug. Alle veralteten Plugins können im Verzeichnis
+- Das pn-PrÃ¤fix wurde bei allen Render- und Theme-Plugins entfernt. Das pndebug-
+  Plugin wurde umbenannt in zdebug. Alle veralteten Plugins kÃ¶nnen im Verzeichnis
   lib/legacy/plugins angesehen werden. Bitte alle eigenen Templates entsprechend
   anpassen.
 
-- Um einen einfachen Übergang zu den neuen Templates zu gewährleisten verwendet
+- Um einen einfachen Ãœbergang zu den neuen Templates zu gewÃ¤hrleisten verwendet
   Zikula einen Prefilter, der die alten Delimiter in die neuen konvertiert und
-  auch das pn-Präfix aus den Plugin-Aufrufen entfernt. Dies betrifft auch Module
-  von Drittpartien, daher muss das pn-Präfix aus eigenen Plugins entfernt werden,
+  auch das pn-PrÃ¤fix aus den Plugin-Aufrufen entfernt. Dies betrifft auch Module
+  von Drittpartien, daher muss das pn-PrÃ¤fix aus eigenen Plugins entfernt werden,
   damit selbige gefunden werden. Als Workaround kann man die Plugin-Datei kopieren
   und sie zusammen mit dem Funktionsnamen darin umbenennen.
 
-- Das Plugin {gt} benötigt nun kein domain="" mehr, die Domain wird automatisch ermittelt.
+- Das Plugin {gt} benÃ¶tigt nun kein domain="" mehr, die Domain wird automatisch ermittelt.
 
 - Statt dem Modifier 'pndate_format' muss nun 'dateformat' verwendet werden.
 
 - Ausgabefilterung wird nun mit den Modifiern safetext und safehtml erledigt.
 
 - Die Verwendung von pnML() und {ml} ist nun veraltet und wird nicht mehr funktionieren,
-  da Zikula Define-basierte Sprachpakete nicht mehr unterstützt.
-  Themes und Module müssen nun aktualisiert werden und Gettext nutzen.
+  da Zikula Define-basierte Sprachpakete nicht mehr unterstÃ¼tzt.
+  Themes und Module mÃ¼ssen nun aktualisiert werden und Gettext nutzen.
 
 - Template-Dateien sollten von *.htm umbenannt werden in *.tpl
 
-- Wenn man Conditional Comments für Browserhacks nutzen muss, kann man nun einen Smarty-Block
+- Wenn man Conditional Comments fÃ¼r Browserhacks nutzen muss, kann man nun einen Smarty-Block
   dazu verwenden, zum Beispiel
   {browserhack condition="if lte IE 7"}foo{/browserback}
   Dieser Block versteht auch den Parameter assign="var", damit man die Ausgabe zuweisen statt
@@ -46,24 +46,24 @@ TEMPLATES
 - Das Plugin {addition_headers} funktioniert nicht mehr und muss daher aus allen Themes
   entfernt werden.
 
-- Alle Vorkommen von "javascript/style.css" müssen ersetzt werden durch "styles/core.css".
+- Alle Vorkommen von "javascript/style.css" mÃ¼ssen ersetzt werden durch "styles/core.css".
 
-- Das Plugin {pager} benötigt nun den Parameter shift nicht mehr.
+- Das Plugin {pager} benÃ¶tigt nun den Parameter shift nicht mehr.
 
-- Es gibt nun eine Variable $metatags für allgemeine SEO-Zwecke.
+- Es gibt nun eine Variable $metatags fÃ¼r allgemeine SEO-Zwecke.
 
 - Themes sollten aktualisiert werden, damit sie {$metatags.description} und {$metatags.keywords}
   einsetzen.
 
 - Der Titel einer Seite kommt nun von {pagegetvar name="title"} und nicht mehr {title}.
 
-- Es gibt nun eine Variable $coredata für verschiedene Daten, die in Templates relevant sind.
+- Es gibt nun eine Variable $coredata fÃ¼r verschiedene Daten, die in Templates relevant sind.
 
 - Es gibt nun eine Variable $modvars mit allen Modulvariablen.
 
 - Die Variable $pncore ist veraltet, statt dessen ist $coredata zu nutzen.
 
-- Die folgenden Variablen sind für die Klasse Zikula_View reserviert und dürfen nicht zugewiesen werden.
+- Die folgenden Variablen sind fÃ¼r die Klasse Zikula_View reserviert und dÃ¼rfen nicht zugewiesen werden.
   - servicemanager
   - eventmanager
   - metatags
@@ -74,36 +74,36 @@ TEMPLATES
 
 - Das Plugin {configgetvar} ist veraltet, statt dessen kann {$modvars.ZConfig.<name>} verwendet werden.
 
-- Das Plugin {blockshow} benötigt nun den Parameter "position".
+- Das Plugin {blockshow} benÃ¶tigt nun den Parameter "position".
 
-- Die Page Variables für Themes wurden ein wenig verändern. Alle Metatags können aus dem Array
-  {$metatags.foo} gewonnen werden, das in allen Templates verfügbar ist. Metatags können nach Belieben
-  im Template verändert werden über {setmetatag name='foo' value='bar'}. In Controllern geht es
+- Die Page Variables fÃ¼r Themes wurden ein wenig verÃ¤ndern. Alle Metatags kÃ¶nnen aus dem Array
+  {$metatags.foo} gewonnen werden, das in allen Templates verfÃ¼gbar ist. Metatags kÃ¶nnen nach Belieben
+  im Template verÃ¤ndert werden Ã¼ber {setmetatag name='foo' value='bar'}. In Controllern geht es
   mit `$this->serviceManager['zikula_view.metatags][$foo] = $bar;`, eine spezielle API ist nicht
   notwendig.
 
 
 MODULE
 ======
-- Die Ordnerstruktur in Modulen hat sich geändert. Zunächst sollte man daher einen Ordner lib/$modname
-  innerhalb des Modulordners erstellen. Zum Beispiel für das Modul MyModule fügt man die Ordner lib/
+- Die Ordnerstruktur in Modulen hat sich geÃ¤ndert. ZunÃ¤chst sollte man daher einen Ordner lib/$modname
+  innerhalb des Modulordners erstellen. Zum Beispiel fÃ¼r das Modul MyModule fÃ¼gt man die Ordner lib/
   und lib/MyModule/ hinzu.
 
-    Die alten Ordner sind immer noch in der Abwärtskompatibilität unterstützt, allerdings ist die neue
+    Die alten Ordner sind immer noch in der AbwÃ¤rtskompatibilitÃ¤t unterstÃ¼tzt, allerdings ist die neue
     wesentlich effizienter, weil das Dateisystem nicht gescannt werden muss.
 
     - Das Verzeichnis pndocs in docs umbenennen
-    - Das Verzeichnis pnincludes in lib/ umbenennen, oder lib/vendor/ für 3rd Party Bibliotheken
+    - Das Verzeichnis pnincludes in lib/ umbenennen, oder lib/vendor/ fÃ¼r 3rd Party Bibliotheken
     - Das Verzeichnis pnstyle in style umbenennen
     - Das Verzeichnis pnjavascript in javascript umbenennen
     - Das Verzeichnis pntemplates in templates umbenennen
 
-- Die Datei pntables.php umbenennen in tables.php. Den Namen der Funktion ändern in $modulename_tables().
+- Die Datei pntables.php umbenennen in tables.php. Den Namen der Funktion Ã¤ndern in $modulename_tables().
 
-- Der Hauptordner des Moduls MUSS nun mit einem Großbuchstaben beginnen.
+- Der Hauptordner des Moduls MUSS nun mit einem GroÃŸbuchstaben beginnen.
 
 - Die Datei pnversion.php umbenennen in lib/MyModule/Version.php.
-  Den Inhalt ändern wie folgt:
+  Den Inhalt Ã¤ndern wie folgt:
 
     class MyModule_Version extends Zikula_Version
     {
@@ -121,21 +121,21 @@ MODULE
         }
     }
 
-  HINWEIS: Versionsnummern müssen die Form 'a.b.c' haben, z.B. '1.0.0'.
+  HINWEIS: Versionsnummern mÃ¼ssen die Form 'a.b.c' haben, z.B. '1.0.0'.
 
   Zu beachten ist die neue Eigenschaft capabilities. Dies ist ein indiziertes Array mit Arrays.
-  Es dient der Angabe, ob und welche besonderen Fähigkeiten ein Modul unterstützt.
+  Es dient der Angabe, ob und welche besonderen FÃ¤higkeiten ein Modul unterstÃ¼tzt.
   array('profile' => array('version' => '1.0', 'anotherkey' => 'anothervalue')
         'message' => array('version' => '1.0', 'anotherkey' => 'anothervalue'));
 
-  Die folgenden APIs können in dem Zusammenhang verwendet werden.
+  Die folgenden APIs kÃ¶nnen in dem Zusammenhang verwendet werden.
     ModUtil::getModulesCapableOf()
     ModUtil::isCapable()
     ModUtil::getCapabilitiesOf()
     {html_select_modules capability='...'}
 
-(Man beachte in den folgenden Beispielen, dass $type immer mit einem Großbuchstaben anfangen muss
- und alle weiteren Buchstaben klein sein müssen).
+(Man beachte in den folgenden Beispielen, dass $type immer mit einem GroÃŸbuchstaben anfangen muss
+ und alle weiteren Buchstaben klein sein mÃ¼ssen).
 
 - Die Modul-Controller (pnuser.php, pnadmin.php etc) werden verschoben nach lib/$modname/Controller/$type
   z.B.
@@ -160,11 +160,11 @@ MODULE
   z.B.
     class MyModule_Api_User extends Zikula_Api
 
-  Alle Funktionen, die über ModUtil::apiFunc() erreichbar sein sollen, werden auf public gestellt.
-  Interne Methoden, die nicht außerhalb der Klasse aufgerufen werden sollen, sollten als protected
+  Alle Funktionen, die Ã¼ber ModUtil::apiFunc() erreichbar sein sollen, werden auf public gestellt.
+  Interne Methoden, die nicht auÃŸerhalb der Klasse aufgerufen werden sollen, sollten als protected
   oder private markiert werden.
 
-- Die Blöcke des Modules (pnblocks/foo.php etc) verschieben nach lib/$modname/$type
+- Die BlÃ¶cke des Modules (pnblocks/foo.php etc) verschieben nach lib/$modname/$type
   z.B.
     blocks/foo.php => lib/MyModule/Block/Foo.php
 
@@ -173,11 +173,11 @@ MODULE
   z.B.
     class MyModule_Block_Foo extends Zikula_Block
 
-  Alle Funktionen, die außerhalb der Klasse erreichbar sein sollen, werden auf public gestellt.
-  Interne Methoden, die nicht außerhalb der Klasse aufgerufen werden sollen, sollten als protected
+  Alle Funktionen, die auÃŸerhalb der Klasse erreichbar sein sollen, werden auf public gestellt.
+  Interne Methoden, die nicht auÃŸerhalb der Klasse aufgerufen werden sollen, sollten als protected
   oder private markiert werden.
 
-- In allen Controllern, APIs und Blöcken werden ferner die Gettext-Funktionsaufrufe geändert.
+- In allen Controllern, APIs und BlÃ¶cken werden ferner die Gettext-Funktionsaufrufe geÃ¤ndert.
   Module mit der objektorientierten Struktur haben Zugriff auf einfache Methoden, bei deren
   Verwendung die Domain automatisch berechnet wird.
 
@@ -186,11 +186,11 @@ MODULE
     $this->_n($singular, $plural, $count)
     $this->_fn($sin, $plu, $n, $params)
 
-  Alle Aufrufe von $dom = ZLanguage::getModuleDomain() können entfernt werden, außer in der
+  Alle Aufrufe von $dom = ZLanguage::getModuleDomain() kÃ¶nnen entfernt werden, auÃŸer in der
   Datei version.php
 
-- In allen Controllern und Blöcken können Aufrufe von pnRender::getInstance() komplett entfernt
-  werden. Das Objekt $this->view ist automatisch verfügbar und man kann es wie gewohnt nutzen:
+- In allen Controllern und BlÃ¶cken kÃ¶nnen Aufrufe von pnRender::getInstance() komplett entfernt
+  werden. Das Objekt $this->view ist automatisch verfÃ¼gbar und man kann es wie gewohnt nutzen:
   $this->view->assign(), $this->view->fetch() etc.
 
 - Die Datei pninit.php umbenennen und nach lib/MyModule/Installer.php verschieben.
@@ -202,11 +202,11 @@ MODULE
   Die Methode init() umbenennen in install().
   Die Methode delete() umbenennen in uninstall().
 
-  Alle Funktionen, die von außerhalb der Klasse erreichbar sein sollen, werden auf public gestellt, die übrigen
+  Alle Funktionen, die von auÃŸerhalb der Klasse erreichbar sein sollen, werden auf public gestellt, die Ã¼brigen
   protected oder private. Allgemein sollten nur install(), upgrade() und uninstall() mit public versehen werden.
 
-  Wenn ein Modul nicht konform zu den vorherigen Standards ist, muss man folgende Schritte durchführen
-  - In Version.php hinzufügen: $meta['oldnames'] = array(oldnames,....);
+  Wenn ein Modul nicht konform zu den vorherigen Standards ist, muss man folgende Schritte durchfÃ¼hren
+  - In Version.php hinzufÃ¼gen: $meta['oldnames'] = array(oldnames,....);
   - Bestehende Modulvariablen migrieren mit
 
         $modvars = ModUtil::getVar($oldname);
@@ -218,29 +218,29 @@ MODULE
         }
 
 - Interaktive Installation/Aktualisierung/Deinstallation
-  Falls es interaktive Installationsmethoden gibt, sollten diese hinzugefügt werden zu lib/$modname/Controller/Interactiveinstaller.php
+  Falls es interaktive Installationsmethoden gibt, sollten diese hinzugefÃ¼gt werden zu lib/$modname/Controller/Interactiveinstaller.php
   z.B.
     lib/MyModule/Controller/Interactiveinstaller.php
     beinhaltet class MyModule_Controller_Interactiveinstaller extends Zikula_InteractiveInstaller
-    (man beachte die Groß- und Kleinschreibung dabei).
+    (man beachte die GroÃŸ- und Kleinschreibung dabei).
 
-  Falls ein interaktiver Installer über eine Methode namens install()/upgrade()/uninstall() verfügt,
-  überschreibt dies die gleichnamigen Methoden in der primären Installer.php.  Man beachte, dass dieses
-  Override nur für die initiale Installation, Aktualisierung und Deinstallation geschieht, wenn der Benutzer
+  Falls ein interaktiver Installer Ã¼ber eine Methode namens install()/upgrade()/uninstall() verfÃ¼gt,
+  Ã¼berschreibt dies die gleichnamigen Methoden in der primÃ¤ren Installer.php.  Man beachte, dass dieses
+  Override nur fÃ¼r die initiale Installation, Aktualisierung und Deinstallation geschieht, wenn der Benutzer
   auf den entsprechenden Button geklickt hat. Im letzten Schritt des interaktiven Prozesses ruft der
-  Installer die Methoden von Installer.php auf um den finalen Prozess durchzuführen.
+  Installer die Methoden von Installer.php auf um den finalen Prozess durchzufÃ¼hren.
 
-  Nachfolgende Schritte können beliebig in der interaktiven Installer-Klasse benannt werden. Zum Beispiel könnte
+  Nachfolgende Schritte kÃ¶nnen beliebig in der interaktiven Installer-Klasse benannt werden. Zum Beispiel kÃ¶nnte
   man folgende Methoden haben:
     upgrade_step1()
     upgrade_step2()
     etc.
 
-  Aus Sicherheitsgründen wird eine Session-Variable namens 'interactive_process' gesetzt, sobald ein interaktiver
+  Aus SicherheitsgrÃ¼nden wird eine Session-Variable namens 'interactive_process' gesetzt, sobald ein interaktiver
   Prozess startet. Wenn der interaktive Installer beendet wird, entweder erfolgreich oder auf Grund eines Fehlers,
   muss diese Variable wieder entfernt werden mit SessionUtil::delVar('interactive_process');
 
-- Falls man irgendwelche allgemeinen Initialisierungsarbeiten durchführen möchte, wie zum Beispiel die Bereit-
+- Falls man irgendwelche allgemeinen Initialisierungsarbeiten durchfÃ¼hren mÃ¶chte, wie zum Beispiel die Bereit-
   stellung einer Bibliothek, kann man eine Datei bootstrap.php erstellen. Diese wird inkludiert, wenn das Modul
   das erste mal 'geladen' wird.
 
@@ -252,10 +252,10 @@ MODULE
 
     Alle Referenzen zu Loader::loadClassFromModule und Loader::loadClassFromModuleArray() sind zu entfernen.
 
-- Falls man irgendwelche Filter für FilterUtil hat, darin alle Vorkommen von $this->pntable ersetzen durch
+- Falls man irgendwelche Filter fÃ¼r FilterUtil hat, darin alle Vorkommen von $this->pntable ersetzen durch
   $this->dbtable.
 
-- FilterUtil kann mit Doctrine zusammen arbeiten, wenn es den Namen der Record-Klasse im Konstruktor übergeben
+- FilterUtil kann mit Doctrine zusammen arbeiten, wenn es den Namen der Record-Klasse im Konstruktor Ã¼bergeben
   bekommt. Zum Beispiel:
 
     [php]
@@ -268,8 +268,8 @@ MODULE
     $query->where($where)
           ->addWhere($fwhere);
 
-    Um FilterUtil über in der Doctrine Query vorhandene JOINs zu unterrichten, kann man das Alias der
-    Haupttabelle sowie die Join-Informationen in $args übergeben:
+    Um FilterUtil Ã¼ber in der Doctrine Query vorhandene JOINs zu unterrichten, kann man das Alias der
+    Haupttabelle sowie die Join-Informationen in $args Ã¼bergeben:
 
     [php]
     $joinInfo[] = array('join_table'         =>  'MyModule_Model_AnotherModel',
@@ -307,8 +307,8 @@ MODULE
 
 HOOKS
 =====
-Hooks in Zikula 1.3.0 sind nicht kompatibel mit dem Legacy Hook-System aus früheren Zikula-Versionen.
-Allgemein werden Module, die für Zikula 1.3.0 geschrieben wurden, das alte Hook-System nicht mehr aufrufen.
+Hooks in Zikula 1.3.0 sind nicht kompatibel mit dem Legacy Hook-System aus frÃ¼heren Zikula-Versionen.
+Allgemein werden Module, die fÃ¼r Zikula 1.3.0 geschrieben wurden, das alte Hook-System nicht mehr aufrufen.
 Das alte Hook-System wird auch nicht mehr funktionieren, wenn der Legacy-Modus ausgeschaltet ist. Mehr
 Informationen lassen sich der HOOKS-Dokumentation entnehmen.
 
@@ -319,25 +319,25 @@ DBOBJECT
     MyModule_DBObject_Payments und verschieben nach lib/MyModule/DBObject/Payments.php
     MyModule_DBObject_PaymentsArray und verschieben nach lib/MyModule/DBObject/PaymentsArray.php
 
-- Den Konstruktor der DBObjects (früher PNObject) von ClassName() zu __construct() ändern und den Konstruktor
-  der Oberklasse aufrufen. Außerdem $this->PNObject() ändern in parent::__construct().
+- Den Konstruktor der DBObjects (frÃ¼her PNObject) von ClassName() zu __construct() Ã¤ndern und den Konstruktor
+  der Oberklasse aufrufen. AuÃŸerdem $this->PNObject() Ã¤ndern in parent::__construct().
 
-- Die Methode Loader::loadClassFromModule nicht mehr verwenden um Klassennamen für DBObjects zu erhalten.
+- Die Methode Loader::loadClassFromModule nicht mehr verwenden um Klassennamen fÃ¼r DBObjects zu erhalten.
   Einfach den Klassennamen bauen oder hartkodieren.
 
 DBUTIL
 ======
-- DBUtil::executeSQL hat früher ein ADODB-Objekt zurückgeliefert, gibt nun aber ein PHP PDO Objekt zurück.
-  Das heißt, dass Code, der früher über das ADODB-Objekt iteriert hat, nun nicht mehr funktioniert.
-  Man sollte DBUtil::marshallObjects() nach einem manuellen SELECT über DBUtil::executeSQL() nutzen, z.B.:
+- DBUtil::executeSQL hat frÃ¼her ein ADODB-Objekt zurÃ¼ckgeliefert, gibt nun aber ein PHP PDO Objekt zurÃ¼ck.
+  Das heiÃŸt, dass Code, der frÃ¼her Ã¼ber das ADODB-Objekt iteriert hat, nun nicht mehr funktioniert.
+  Man sollte DBUtil::marshallObjects() nach einem manuellen SELECT Ã¼ber DBUtil::executeSQL() nutzen, z.B.:
 
     [php]
     $res = DBUtil::executeSql ($sql);
     $objectArray = DBUtil::marshallObjects ($res, $ca, ...);
 
-  Alternativ kann man das PDO-Rückgabeobjekt nutzen. PDO ist in PHP eingebaut, daher kann der Zugriff auf
+  Alternativ kann man das PDO-RÃ¼ckgabeobjekt nutzen. PDO ist in PHP eingebaut, daher kann der Zugriff auf
   ein PDO-Objekt als API-konform angesehen werden. Die Dokumentation zu PDO ist unter http://php.net/PDO
-  verfügbar.
+  verfÃ¼gbar.
 
 
 VERSCHIEDENES
@@ -347,147 +347,147 @@ VERSCHIEDENES
   Bitte nun Zikula_View::clear_compiled(), Zikula_View::clear_cache() und
   Theme::clear_compiled(), Theme::clear_cache() nutzen.
 
-- Man kann nun einen Requirement Check für Blöcke einbauen, so dass eine Nachricht im Admin-Bereich
+- Man kann nun einen Requirement Check fÃ¼r BlÃ¶cke einbauen, so dass eine Nachricht im Admin-Bereich
   eingeblendet wird, falls notwendig. Zum Beispiel wird der Language Block nur sichtbar sein, sofern
-  die Mehrsprachigkeit aktiviert ist. Daher wurde für diesen Block eine Requirement Nachricht hinzu-
-  gefügt um den Admin zu informieren, dass dieser Block nicht sichtbar sein wird, bis die Mehrsprachig-
+  die Mehrsprachigkeit aktiviert ist. Daher wurde fÃ¼r diesen Block eine Requirement Nachricht hinzu-
+  gefÃ¼gt um den Admin zu informieren, dass dieser Block nicht sichtbar sein wird, bis die Mehrsprachig-
   keit aktiviert wurde.
 
-- Man kann nun den Core mit Event Handlern anpassen. Diese können in config/EventHandlers geladen werden.
-  Die Klassen sollten genauso heißen wie der Dateiname und die Oberklasse CustomEventHandler erweitern.
+- Man kann nun den Core mit Event Handlern anpassen. Diese kÃ¶nnen in config/EventHandlers geladen werden.
+  Die Klassen sollten genauso heiÃŸen wie der Dateiname und die Oberklasse CustomEventHandler erweitern.
 
 - In Modulen kann man Event Handler automatisch laden durch Aufruf von
   EventManagerUtil::attachCustomHandlers($path), das ein Ordner mit Event Handlern sein sollte.
-  Falls man statische Methoden hat, können sie direkt mit EventManagerUtil::attach($name, $callable)
+  Falls man statische Methoden hat, kÃ¶nnen sie direkt mit EventManagerUtil::attach($name, $callable)
   geladen werden [siehe ** unten].
-  Diese Methode könnte benutzt werden um Event Handler dynamisch von einer ConfigVar() Methode zu laden,
-  die ein array('name' => $name, 'callable' => $callable) enthält.
+  Diese Methode kÃ¶nnte benutzt werden um Event Handler dynamisch von einer ConfigVar() Methode zu laden,
+  die ein array('name' => $name, 'callable' => $callable) enthÃ¤lt.
 
   ** Man beachte, dass ein Callable in dem folgenden Format vorliegen muss:
        Foo::bar() = array('Foo', 'bar')
        $foo->bar = array($foo, 'bar')
        myfunction() = 'myfunction'
 
-- Der Name der Klassen lautet Modulename_$type (Groß- und Kleinschreibung beachten).
+- Der Name der Klassen lautet Modulename_$type (GroÃŸ- und Kleinschreibung beachten).
   Das Argument $func entspricht den public-Methoden in den Klassen.
   Auch anschauen sollte man sich den Ordner EventHandlers, welcher zeigt, wie eine Methode
-  zu einem Controller hinzugefügt werden kann über notifyUntil() für Events namens
-  'controller.method_not_found' und 'controllerapi.method_not_found' für APIs.
+  zu einem Controller hinzugefÃ¼gt werden kann Ã¼ber notifyUntil() fÃ¼r Events namens
+  'controller.method_not_found' und 'controllerapi.method_not_found' fÃ¼r APIs.
 
 - OO-Module initialisieren automatisch einen AutoLoader, so dass ein Aufruf der Klasse
-  Example_DBObject_Users die Datei module/Example/lib/Example/DBObject/Users.php lädt -
-  die enthaltene Klasse sollte Example_DBObject_Users heißen.
+  Example_DBObject_Users die Datei module/Example/lib/Example/DBObject/Users.php lÃ¤dt -
+  die enthaltene Klasse sollte Example_DBObject_Users heiÃŸen.
 
   Zu beachten ist, dass durch die Nutzung von ModUtil::func() und ModUtil::apiFunc()
   die Benennung von Controller- und API-Klassen mit Camel Case erfolgen muss.
   Z.B. type = adminform bedeutet, dass die Datei Adminform genannt werden *muss* und
-  NICHT AdminForm. Der Klassenname wäre dann Modulename_Adminform.
+  NICHT AdminForm. Der Klassenname wÃ¤re dann Modulename_Adminform.
 
 - Man kann nun optional eine Datei namens bootstrap.php im Hauptordner des Moduls anlegen.
   Diese wird beim Laden des Moduls mit ModUtil::load/ModUtil::loadGeneric() automatisch
   eingebunden.
 
-- Man kann zusätzliche AutoLoader mit ZLoader::addAutoloader($namespace, $path) registrieren,
+- Man kann zusÃ¤tzliche AutoLoader mit ZLoader::addAutoloader($namespace, $path) registrieren,
   wobei $namespace der erste Teil des PEAR-Klassennamens und $path der Pfad zu dem
-  beinhaltenden Ordner ist. Der geeignete Ort für solche Initialisierungen ist bootstrap.php.
+  beinhaltenden Ordner ist. Der geeignete Ort fÃ¼r solche Initialisierungen ist bootstrap.php.
 
 
-API ÄNDERUNGEN
+API Ã„NDERUNGEN
 ==============
 Es gibt ein Shell-Skript im SVN-Verzeichnis tool/, mit dem man diese Umbenennungen automatisch
-und präzise vornehmen kann.
+und prÃ¤zise vornehmen kann.
 
 - pnMod* ist veraltet, siehe ModUtil::*
 - pnUser* ist veraltet, siehe UserUtil::*
 - pnBlock ist veraltet, siehe BlockUtil::*
 - pn* ist veraltet, siehe System::*
-- Die Legacy-APIs zur Abwärtskompatibilität liegen in legacy/Compat.php und legacy/Api.php.
+- Die Legacy-APIs zur AbwÃ¤rtskompatibilitÃ¤t liegen in legacy/Compat.php und legacy/Api.php.
 
-- Die Präfixe sind NICHT verschwunden für funktionsbasierte Controller wie pnadmin etc.
+- Die PrÃ¤fixe sind NICHT verschwunden fÃ¼r funktionsbasierte Controller wie pnadmin etc.
   Dies ist beabsichtigt um den Wechsel zu den neuen Klassen schmackhafter zu machen.
 
 
-WORKFLOW ÄNDERUNGEN
+WORKFLOW Ã„NDERUNGEN
 ===================
-- Wenn man WorkflowUtil benutzt, gibt es vier Änderungen für Zikula 1.3:
+- Wenn man WorkflowUtil benutzt, gibt es vier Ã„nderungen fÃ¼r Zikula 1.3:
    - getActionsByStateArray:
        ist nun veraltet.
    - getActionsByState:
        liefert nun alle Action-Daten als array($action.id => $action),
        nicht mehr als array(id => id).
    - getActionTitlesByState:
-       nützliche Methode zur Erstellung der Buttons für den aktuellen Zustand,
+       nÃ¼tzliche Methode zur Erstellung der Buttons fÃ¼r den aktuellen Zustand,
        liefert die erlaubten Actions als array($action.id => $action.title).
    - getActionsForObject:
        liefert nun das Ergebnis von getActionsByState.
    Wenn man Werte verwendet hat, ersetzt man diese mit den Result Keys, und
    kann die Vorteile nutzen, die sich daraus ergeben, dass die Daten der Actions
-   nun verfügbar sind.
-- Workflow-Actions können zusätzliche Parameter im XML definieren:
+   nun verfÃ¼gbar sind.
+- Workflow-Actions kÃ¶nnen zusÃ¤tzliche Parameter im XML definieren:
   <parameter className="z-bt-ok" titleText="Klick mich">Button</parameter>
-  Dabei wird Groß- und Kleinschreibung berücksichtigt.
+  Dabei wird GroÃŸ- und Kleinschreibung berÃ¼cksichtigt.
 
 
-AJAX WORKFLOW ÄNDERUNGEN
+AJAX WORKFLOW Ã„NDERUNGEN
 ========================
 
 Der Ajax-Workflow hat sich in Zikula 1.3 sowohl auf Seite von PHP als auch JavaScript
-verändert.
+verÃ¤ndert.
 
 Auf der JavaScript-Seite:
-- Alle Requests sollten mit Zikula.Ajax.Request durchgeführt werden. Diese Klasse ist
+- Alle Requests sollten mit Zikula.Ajax.Request durchgefÃ¼hrt werden. Diese Klasse ist
   eine Erweiterung von dem Prototype Ajax.Request und erbt alle dessen Methoden,
   Optionen und Properties.
-- Für durch Zikula.Ajax.Request versendete Requests wurde ein neuer Parameter "authid"
-  eingeführt. Wenn man die ID eines Elementes angibt, das den authid-Token enthält,
-  wird dieser automatisch zum Request hinzugefügt und auch aktualisiert, nachdem die
+- FÃ¼r durch Zikula.Ajax.Request versendete Requests wurde ein neuer Parameter "authid"
+  eingefÃ¼hrt. Wenn man die ID eines Elementes angibt, das den authid-Token enthÃ¤lt,
+  wird dieser automatisch zum Request hinzugefÃ¼gt und auch aktualisiert, nachdem die
   Antwort empfangen wurde. Dies ist die empfohlene Methode zur Behandlung der
-  Authentifizierungsschlüssel in Ajax-Requests.
-- Die von Zikula.Ajax.Request zurückgelieferte Response hat nun neue Methoden für die
+  AuthentifizierungsschlÃ¼ssel in Ajax-Requests.
+- Die von Zikula.Ajax.Request zurÃ¼ckgelieferte Response hat nun neue Methoden fÃ¼r die
   Daten-Kollektion:
-    - getAuthid - liefert den neuen authid-Token - üblicherweise muss man diese Methode
+    - getAuthid - liefert den neuen authid-Token - Ã¼blicherweise muss man diese Methode
       nicht manuell ansprechen, da die authid automatisch aktualisiert werden sollte.
     - getMessage - liefert die Fehler oder Status Nachricht (oder Liste von Nachrichten),
       die im Modul-Controller durch LogUtil registriert wurde.
     - getData - liefert die Hauptdaten, die durch den Modul-Controller bereitgestellt werden.
-    - isSuccess - prüft, ob der Request erfolgreich war oder nicht.
+    - isSuccess - prÃ¼ft, ob der Request erfolgreich war oder nicht.
 - Die Verwendung dieser Methoden ist der einzige empfohlene Weg zum Auslesen der Response.
-  Natürlich hat die Response immer noch alle Methode und Properties des originalen
+  NatÃ¼rlich hat die Response immer noch alle Methode und Properties des originalen
   Ajax.Response-Objektes.
-- In einigen Fällen werden Ajax-Aufrufe ohne Zikula.Ajax.Request durchgeführt (z.B. einige
-  vordefinierte Skripte, wie etwa Ajax.InPlaceEditor etc.) und die zurückgelieferte
+- In einigen FÃ¤llen werden Ajax-Aufrufe ohne Zikula.Ajax.Request durchgefÃ¼hrt (z.B. einige
+  vordefinierte Skripte, wie etwa Ajax.InPlaceEditor etc.) und die zurÃ¼ckgelieferte
   Response wurde nicht mit den Methoden von Zikula.Ajax.Response erweitert.
-  In solchen Fällen nutzt man die Methode Zikula.Ajax.Response.extend um die Response
+  In solchen FÃ¤llen nutzt man die Methode Zikula.Ajax.Response.extend um die Response
   manuell zu erweitern.
 
 Auf der PHP-Seite:
-- Es wurde eine ganze Reihe von Klassen entwickelt, die Antworten an Ajax-Requests unterstützen.
-  Auch die Fehlerbehandlung wurde dabei verändert.
+- Es wurde eine ganze Reihe von Klassen entwickelt, die Antworten an Ajax-Requests unterstÃ¼tzen.
+  Auch die Fehlerbehandlung wurde dabei verÃ¤ndert.
 - Modul-Controller sollten im Erfolgsfall als Response immer einen oder zwei Typen von Objekten
-  zurückliefern: Zikula_Response_Ajax_Base oder Zikula_Response_Ajax_Plain.
+  zurÃ¼ckliefern: Zikula_Response_Ajax_Base oder Zikula_Response_Ajax_Plain.
 - Zikula_Response_Ajax_Base hat 3 Argumente:
       - $data - akzeptiert als Argument jeden Wert - eine einfache Variable oder ein Array,
         das Argument kann dann auf JS-Seite mit der Methode getData gelesen werden.
-      - $message - optionaler Parameter, der die Übergabe einer Nachricht (oder eines Arrays
-        mit Nachrichten) an die Response erlaubt; diese Nachricht werden als nächstes mit
-        möglichen Nachrichten aus LogUtil verschmolzen.
-      - $options - optionaler Parameter, der das Hinzufügen zusätzlicher Daten zur Response
+      - $message - optionaler Parameter, der die Ãœbergabe einer Nachricht (oder eines Arrays
+        mit Nachrichten) an die Response erlaubt; diese Nachricht werden als nÃ¤chstes mit
+        mÃ¶glichen Nachrichten aus LogUtil verschmolzen.
+      - $options - optionaler Parameter, der das HinzufÃ¼gen zusÃ¤tzlicher Daten zur Response
         erlaubt.
-  In den meisten Fällen sollte das Modul eine Antwort von diesem Typ zurückliefern. Außerdem
+  In den meisten FÃ¤llen sollte das Modul eine Antwort von diesem Typ zurÃ¼ckliefern. AuÃŸerdem
   wird diese Art von Response angenommen, wenn ein neuer authid-Token generiert wird.
-- Falls es notwendig ist eine Response zu senden, die nur reinen Plain Text oder HTML enthält
-  (zum Beispiel benötigen Ajax.Autocompleter von Scriptaculous solch eine Response), muss der
-  Modul-Controller als Response ein Objekt der Klasse Zikula_Response_Ajax_Plain zurückgeben.
-  Diese Klasse akzeptiert als $data Argument reinen Text. Für diesen Response-Typ wird kein
+- Falls es notwendig ist eine Response zu senden, die nur reinen Plain Text oder HTML enthÃ¤lt
+  (zum Beispiel benÃ¶tigen Ajax.Autocompleter von Scriptaculous solch eine Response), muss der
+  Modul-Controller als Response ein Objekt der Klasse Zikula_Response_Ajax_Plain zurÃ¼ckgeben.
+  Diese Klasse akzeptiert als $data Argument reinen Text. FÃ¼r diesen Response-Typ wird kein
   neuer authid-Token generiert.
-- Mögliche Fehler (nicht bezogen auf Datenvalidierung) im Modul-Controller müssen mit Exceptions
+- MÃ¶gliche Fehler (nicht bezogen auf Datenvalidierung) im Modul-Controller mÃ¼ssen mit Exceptions
   behandelt werden. Man kann zuerst eine Fehlermeldung mit LogUtil registrieren und dann eine
   Exception werfen (z.B. Zikula_Exception_Forbidden bei fehlenden Zugriffsrechten oder
-  Zikula_Exception_Fatal für ungültige authid-Tokens). Man kann auch eine Fehlermeldung direkt
-  an die Exception übergeben.
+  Zikula_Exception_Fatal fÃ¼r ungÃ¼ltige authid-Tokens). Man kann auch eine Fehlermeldung direkt
+  an die Exception Ã¼bergeben.
 - Falls der Modul-Controller einen Fehler auf Grund von Datenvalidierung deklarieren muss und/oder
   einige Daten an JS senden muss, dann sollte das Modul keine Exception werfen, sondern ein Objekt
-  vom Typ Zikula_Response_Ajax_BadData zurückliefern. Diese Klasse erlaubt die Übergabe der gleichen
+  vom Typ Zikula_Response_Ajax_BadData zurÃ¼ckliefern. Diese Klasse erlaubt die Ãœbergabe der gleichen
   Argumente wie die anderen Ajax-Response-Typen.
 
 Beispiel (aus dem Permissions-Modul):
@@ -546,11 +546,11 @@ Die Response in JS einlesen:
     transport.getData();
 
 
-PAGEADDVAR ÄNDERUNGEN
+PAGEADDVAR Ã„NDERUNGEN
 =====================
-Diese API wurde mit verschiedenen Funktionen erweitert. Die Änderungen sind komplett
-abwärtskompatibel, aber man wird bemerken, dass die inkludierten Dateien sich verändert
-haben im Vergleich zu früheren Referenzen.
+Diese API wurde mit verschiedenen Funktionen erweitert. Die Ã„nderungen sind komplett
+abwÃ¤rtskompatibel, aber man wird bemerken, dass die inkludierten Dateien sich verÃ¤ndert
+haben im Vergleich zu frÃ¼heren Referenzen.
 
 Prototype und Scriptaculous wurden in eine gemeinsame komprimierte Datei kombiniert.
 Nur validation.js und unittest.js wurden nicht mit einbezogen.
@@ -559,15 +559,15 @@ Das einfache Einbinden von Prototype inkludiert diese kombinierte Version. Man m
 Ajax, Prototype und Scriptaculous nicht mehr separat angeben, sondern spezifiziert nur
 noch 'prototype'.
 
-Um Livepipe hinzuzufügen, gibt man einfach 'livepipe' an. Alle Livepipe-Dateien wurden in
+Um Livepipe hinzuzufÃ¼gen, gibt man einfach 'livepipe' an. Alle Livepipe-Dateien wurden in
 eine einzige komprimiert.
 
-Um jQuery hinzuzufügen, gibt man einfach 'jquery' an. Dies setzt auch jQuery.noConflict()
-automatisch, um die parallele Nutzung mit Prototype zu ermöglichen.
+Um jQuery hinzuzufÃ¼gen, gibt man einfach 'jquery' an. Dies setzt auch jQuery.noConflict()
+automatisch, um die parallele Nutzung mit Prototype zu ermÃ¶glichen.
 
 Seit Zikula 1.3 ist es empfohlen Core-Skripte mit definierten Shortcuts zu laden.
-Auf diesem Weg werden alle Abhängigkeiten aufgelöst (und auch benötigte Stylesheets
-werden geladen). Hier ist eine Liste der aktuell unterstützten Shortcuts:
+Auf diesem Weg werden alle AbhÃ¤ngigkeiten aufgelÃ¶st (und auch benÃ¶tigte Stylesheets
+werden geladen). Hier ist eine Liste der aktuell unterstÃ¼tzten Shortcuts:
 - prototype,
 - livepipe,
 - zikula,
@@ -581,12 +581,12 @@ werden geladen). Hier ist eine Liste der aktuell unterstützten Shortcuts:
 
 ZIKULA_VIEW / ZIKULA_THEME KLASSEN
 ==================================
-Dutzende von Getter- und Setter-Funktionen wurden hinzugefügt um einige Dinge besser zu kapseln
+Dutzende von Getter- und Setter-Funktionen wurden hinzugefÃ¼gt um einige Dinge besser zu kapseln
 und eines Tages eine einfache Migration weg von Smarty 2 zu erlauben. Man sollte von direkten
 Zugriffen auf Eigenschaften ablassen und immer die Getter/Setter verwenden.
 
 Zikula_View (und damit auch Zikula_Theme, Form_View etc.) benutzen nun alle Zikula_Translatable,
-was bedeutet, dass die Methoden zur Übersetzung immer verfügbar und für die korrekte Domain
+was bedeutet, dass die Methoden zur Ãœbersetzung immer verfÃ¼gbar und fÃ¼r die korrekte Domain
 vorkonfiguriert sind (z.B. $this->__() usw.).
 
 Innerhalb eines Template-Plugins nutzt man einfach $view->__() etc.
@@ -594,25 +594,25 @@ Innerhalb eines Template-Plugins nutzt man einfach $view->__() etc.
 
 FORMS
 =====
-Es gab einige sehr wichtige und mächtige Änderungen im Forms-Framework.
+Es gab einige sehr wichtige und mÃ¤chtige Ã„nderungen im Forms-Framework.
 
 Form-Handler
 ------------
-Das Interface Form_Handler wird nun erzwungen, daher müssen Handler von Form_Handler erben.
+Das Interface Form_Handler wird nun erzwungen, daher mÃ¼ssen Handler von Form_Handler erben.
 
-Die Klasse Form_Handler wurde mit einigen praktischen Zusätzen versehen.
+Die Klasse Form_Handler wurde mit einigen praktischen ZusÃ¤tzen versehen.
   - Form_View::execute() konfiguriert nun den Handler
     - Injiziert die Form_View in die view-Property des Handlers
     - Konfiguriert den Handler mit der Domain der Form_View.
     - Ruft den setup()-Hook im Handler auf.
-    - Der Handler führt nun preInitialize() und postInitialize() vor und nach der Methode
+    - Der Handler fÃ¼hrt nun preInitialize() und postInitialize() vor und nach der Methode
       initialize() aus.
     - Form-Handler implementieren nun Zikula_Translatable, daher kann man einfach
       $this->__() etc. nutzen. Die Methoden werden mit der Domain des Handlers konfiguriert.
   
 Plugins
 -------
-Das Interface Form_Plugin wird nun erzwungen, daher müssen Plugins von Form_Plugin erben.
+Das Interface Form_Plugin wird nun erzwungen, daher mÃ¼ssen Plugins von Form_Plugin erben.
 
 Die Klasse Form_Plugin hat ebenfalls neue Erweiterungen bekommen.
     - Form_View::registerPlugin() konfiguriert die Plugins nach Instantiierung.
@@ -624,13 +624,13 @@ Die Klasse Form_Plugin hat ebenfalls neue Erweiterungen bekommen.
     - Form-Plugins implementieren nun Zikula_Translatable, daher kann man auch hier
       die Gettext-Funktionen einfach nutzen. Sie werden mit der Domain des Plugins konfiguriert.
 
-In einigen Fällen, in denen Plugins wiederverwendet werden, ist zu beachten, dass sie mit
-ihrer eigenen Domain konfiguriert werden müssen, hartkodiert in setup() wie etwa
+In einigen FÃ¤llen, in denen Plugins wiederverwendet werden, ist zu beachten, dass sie mit
+ihrer eigenen Domain konfiguriert werden mÃ¼ssen, hartkodiert in setup() wie etwa
 `$this->domain = 'foo';`. Hintergrund ist, dass sie per Standard die Charakteristika der
-View, von der sie aufgerufen wurden, übernehmen.
+View, von der sie aufgerufen wurden, Ã¼bernehmen.
 
 Plugins, Handler und Template-Plugins sollten nun alle separiert voneinander sein. Alles wird
-über AutoLoading geladen.
+Ã¼ber AutoLoading geladen.
 
 Beispiel-Layout:
 
@@ -639,12 +639,12 @@ lib/Foo/Form/Handler/User/View.php         Foo_Form_Handler_User_Config
 lib/Foo/Form/Plugin/Youtube.php            Foo_Form_Plugin_Youtube
 templates/plugins/function.formyoutube.php Das eigentliche Template-Plugin.
 
-Ein Parameter 'zparameters' wurde hinzugefügt und stellt einen direkten Weg bereit, um die Werte
+Ein Parameter 'zparameters' wurde hinzugefÃ¼gt und stellt einen direkten Weg bereit, um die Werte
 der Attribute der Form-Plugins zuzuweisen. Zum Beispiel:
 $attributes = {class:z-bt-ok; confirmMessage:Sind Sie sicher?}
-{formbutton commandName='delete' __text='Löschen' zparameters=$attributes}
+{formbutton commandName='delete' __text='LÃ¶schen' zparameters=$attributes}
 
-Der {linkbutton} unterstützt nun ein Bild (durch das {img}-Plugin) und nutzt dabei die
+Der {linkbutton} unterstÃ¼tzt nun ein Bild (durch das {img}-Plugin) und nutzt dabei die
 neuen Parameter 'imgset' und 'imgsrc'. imgset ist per Standard 'icons/extrasmall'.
 Beispiele:
 {linkbutton commandName='edit' __text='Edit' imgsrc='edit.gif'}
@@ -652,28 +652,28 @@ oder mit dem Core-CSS:
 {linkbutton commandName='edit' __text='Edit' class='z-icon-es-edit'}
 {button commandName='cancel' __text='Cancel' class='z-bt-cancel'}
 
-API KONFORMITÄT
+API KONFORMITÃ„T
 ===============
 Die folgende Liste von Dingen werden als nicht Zikula-API-konform angesehen. Falls man sich auf
-sie verlässt, gibt es keine Garantie, dass sie weiter so funktionieren, sogar bei kleinen Upgrades
+sie verlÃ¤sst, gibt es keine Garantie, dass sie weiter so funktionieren, sogar bei kleinen Upgrades
 zwischen Bugfix-Releases.
 
   - Zugriff auf Klasseneigenschaften der Klassen Smarty, Zikula_View, Zikula_View_* ist komplett
-verboten, aber immer noch möglich, da Smarty viele Zugriffe erlaubt. Wir haben Getter und Setter
-sowie neue Methoden in Zikula_View hinzugefügt um Einstellungen verändern zu können.
-  - Die gleichen Regeln gelten für das Forms-Framework. Bitte alles über die bereitgestellten
+verboten, aber immer noch mÃ¶glich, da Smarty viele Zugriffe erlaubt. Wir haben Getter und Setter
+sowie neue Methoden in Zikula_View hinzugefÃ¼gt um Einstellungen verÃ¤ndern zu kÃ¶nnen.
+  - Die gleichen Regeln gelten fÃ¼r das Forms-Framework. Bitte alles Ã¼ber die bereitgestellten
     Getter und Setter ansprechen.
   - $GLOBALS['ZConfig'] und $GLOBALS['ZRuntime'].
-  - Das von DBUtil::executeSQL() zurückgelieferte Zikula_Adapter_AdodbStatement.
+  - Das von DBUtil::executeSQL() zurÃ¼ckgelieferte Zikula_Adapter_AdodbStatement.
 
 VERSCHIEDENES
 =============
 Wenn man irgendwelche Front-Controller hat, sollte man beachten, dass der Bootstrapping-Prozess
-sich geändert hat. Siehe index.php für ein Beispiel.
+sich geÃ¤ndert hat. Siehe index.php fÃ¼r ein Beispiel.
 
 SICHERHEIT
 ==========
 Man MUSS Eingabe-Variablen validieren und reinigen. Bitte NIE annehmen, dass etwas valide oder sicher
-ist, nur weil es über FormUtil::getPassedValues() erhalten wurde.
+ist, nur weil es Ã¼ber FormUtil::getPassedValues() erhalten wurde.
 FormUtil::getPassedValues() kann nun Filter und Bereinigungen mit den nativen PHP filter_* Funktionen
 vornehmen oder man kann es auch manuell machen.
