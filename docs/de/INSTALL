@@ -1,4 +1,6 @@
 ZIKULA INSTALLATIONSANLEITUNG
+=============================
+
 Dieses Dokument beinhaltet wichtige Informationen über das Zikula Application
 Framework. Bitte vor dem Fortfahren die Inhalte sorgfältig durchlesen! 
 Natürlich wurde versucht hier sämtliche Informationen für eine erfolgreiche 
@@ -8,19 +10,9 @@ Installation auch die dortige Installationsanleitung zu sichten.
 Falls eine bestehende Zikula-Version aktualisiert werden soll, dann bitte 
 einen Blick in die Upgradeanleitung werfen.
 
-========
-INHALTE
-========
-1. Zikula
-2. Vorbereitungen
-3. Neue Installation
-   a. Graphische Installation im Browser (empfohlen)
-   b. Manuelle Installation mit SQL Dump
-4. Abschlussbemerkung
 
-
-1. Zikula
-=========
+Zikula
+------
 
 Zikula ist ein Open Source Application Framework für dynamische Webseiten,
 das Inhalte von Design und Technik trennt. Die Inhalte einer Internetpräsenz
@@ -41,8 +33,10 @@ um Dokumentation und Support findet man unter zikula.de. Ein Opensource
 Projekt lebt darüberhinaus auch von der Beteiligung - wir begrüßen Beiträge von
 jedem, unabhängig von seinen Kenntnissen - Wie man helfen kann.
 
-2. Vorbereitungen
-=================
+
+Serverüberlegungen
+------------------
+
 Im Vergleich zu anderen Web-Frameworks stellt Zikula wenige Anforderungen an
 den Webserver. Bevor man beginnt, sollten einige Anforderungen und Richtlinien
 beachtet werden, um Installation, Betrieb und Absicherung von Zikula zu 
@@ -53,12 +47,15 @@ Zikula benötigt PHP 5.3.2 oder größer. Weiterhin muss die Einstellung
 Die Minimum MySQL Version ist 5.1. Es wird nicht empfohlen Zikula im
 "MySQL STRICT mode" zu installieren.
 
-3. Neue Installation
-====================
+
+Installation
+------------
+
 Es gibt zwei Installationsmethoden für Zikula:
 
-    a. Graphische Installation im Browser (empfohlen)
-       -------------------------
+    -  Graphische Installation im Browser (empfohlen)
+       ----------------------------------------------
+
        Um den Installer zu benutzen, besucht man einfach install.php im Zikula-Verzeichnis
        mit dem Webbrowser, z.B. http://www.example.com/install.php
        Falls man Zikula in ein Unterverzeichnis 'foo' installiert hat, lautet die URL
@@ -79,8 +76,10 @@ Es gibt zwei Installationsmethoden für Zikula:
        In der Mehrzahl aller Fälle wird dies automatisch geöffnet, wenn man den Browser auf
        http://www.example.com/ lenkt.
 
-    b. Manuelle Installation mit SQL Dump (nicht empfohlen)
-       -----------------------------------------
+
+    -  Manuelle Installation mit SQL Dump (nicht empfohlen)
+       ----------------------------------------------------
+
        Falls man den SQL Dump zur Installation von Zikula manuell importieren möchte,
        kann dies über ein Werkzeug wie phpMyAdmin geschehen. Der bereitgestellte Dump ist von einer
        MySQL 5.x Datenbank und wird unter Umständen nicht mit anderen Datenbanken oder MySQL-Versionen
@@ -90,8 +89,10 @@ Es gibt zwei Installationsmethoden für Zikula:
        Wenn man diese Installationsvariante wählt, ist der Benutzername zur Administration "admin"
        und das Passwort lautet "Password" (ohne die Anführungsstriche).
 
-4. Abschlussbemerkung
-=====================
+
+Abschlussbemerkung
+------------------
+
 Modifikationen am Code des Zikula-Kernsystems oder der Datenbank unterliegen
 keinem Support, sondern können umfangreiche Probleme verursachen, wenn das 
 System in Zukunft aktualisiert werden muss. Daher sind diese 'Hacks' nicht 
