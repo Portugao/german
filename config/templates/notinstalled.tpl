@@ -106,7 +106,7 @@
                     <h2>Das System ist nicht installiert!</h2>
                     <p>
                         Diese Nachricht erscheint, da das Zikula Application Framework noch nicht installiert ist. Die Installation kann über das <a href="install.php">Installationsskript</a> gestartet werden. 
-                        Bitte vorab einen Blick in die deutsche <a href="docs/de/README">Installationsbeschreibung</a> werfen. Weitere Anleitungen befinden sich im <a href="http://code.zikula.org/community-german">deutschen Dokumentationsprojekt</a> oder im <a href="http://community.zikula.org/Wiki-UserDocs.htm">internationalem Dokumentations-Wiki</a>.
+                        Bitte vorab einen Blick in die deutsche <a href="docs/de/README">Installationsbeschreibung</a> werfen. Weitere Anleitungen können online in der <a href="http://wiki.zikula.de">deutschen Dokumentation</a> oder im <a href="http://community.zikula.org/Wiki-UserDocs.htm">internationalem Dokumentations-Wiki</a> eingesehen werden.
                     </p>
                     <p>
                         <a href="install.php?lang=de" class="button-install">
