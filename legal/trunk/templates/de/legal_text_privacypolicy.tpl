@@ -1,7 +1,4 @@
-<!--[include file=legal_user_menu.htm]-->
-<!--[pnpagesetvar name=title value='Erklärung zum Datenschutz']-->
-<h1>Erklärung zum Datenschutz (§ 4 Abs. 1 TDDSG) (Version 1.05)</h1>
-<p><em>für das Onlineangebot <!--[pnconfiggetvar name=sitename]--></em></p>
+<p><em>für das Onlineangebot {$modvars.ZConfig.sitename}</em></p>
 
 <p>
   Wir speichern auf Ihrer Festplatte Cookies, die lediglich eine eindeutige Nummer enthalten
@@ -13,7 +10,7 @@
 </p>
 
 <p>
-  Das Angebot unter <!--[pnconfiggetvar name=sitename]--> können Sie grundsätzlich ohne die Eingabe
+  Das Angebot unter {configgetvar name='sitename'} können Sie grundsätzlich ohne die Eingabe
   personenbezogener Daten nutzen, soweit auf unserem Angebot die Möglichkeit besteht,
   personenbezogene Daten einzugeben, so geschieht dies freiwillig. Sie können ggfs. Beiträge
   veröffentlichen und auch eigene Inhalte zur Veröffentlichung auf dem Angebot unter einem selbst gewählten Pseudonym einreichen. Dazu
@@ -54,5 +51,5 @@
 
 <p>
   Sollten Sie weiter Fragen zum Datenschutz haben, so wenden Sie sich bitte an den
-  <a href="mailto:<!--[pnconfiggetvar name=adminmail]-->">Seitenbetreiber</a>.
+  <a href="mailto:{$modvars.ZConfig.adminmail}">Seitenbetreiber</a>.
 </p>

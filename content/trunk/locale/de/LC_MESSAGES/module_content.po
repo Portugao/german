@@ -9,6 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: Germany\n"
@@ -115,11 +116,11 @@ msgstr "Übersetzen"
 
 #: pntemplates/plugins/function.contenthtmleditor.php:40
 msgid "Please install Scribite to get a real HTML editor."
-msgstr "Bitte das Modul scribite! installieren, wenn ein echter HTML-Editor benötigt wird."
+msgstr "Bitte das Modul Scribite installieren, um einen richtigen HTML-Editor benutzen zu können."
 
 #: pntemplates/plugins/function.contenthtmleditor.php:52
 msgid "Please install the hook BBCode to enable bbcode filtering."
-msgstr "Bitte den BBCode-Hook für das Content-Modul aktivieren, wenn der BBCode-Ausgabefilter genutzt werden soll."
+msgstr "Bitte das Modul BBCode installieren, um die BBCode-Anzeige zu aktivieren."
 
 #: pntemplates/plugins/function.contentinsertlink.php:22
 msgid "Add new content here"
@@ -175,7 +176,7 @@ msgstr "1 Spalte mit Kopfzeile"
 
 #: pnlayouttypesapi/column1.php:40
 msgid "Single 100% wide column"
-msgstr "Eine Spalte über die ganze Breite. Mit Kopfzeile."
+msgstr "Eine Spalte mit 100% Breite"
 
 #: pnlayouttypesapi/column1woheader.php:34
 msgid "1 column w/o header"
@@ -385,7 +386,7 @@ msgstr "Inhaltsverzeichnis"
 
 #: pncontenttypesapi/directory.php:33
 msgid "A table of contents of headings and subpages (build from this module's pages)."
-msgstr "Inhaltsverzeichnis mit Überschriften und Unterseiten."
+msgstr "Ein Inhaltsverzeichnis mit Überschriften und Unterseiten auf Basis der angelegten Seiten im Modul."
 
 #: pncontenttypesapi/directory.php:114
 #, php-format
@@ -418,7 +419,7 @@ msgstr "RSS Feed"
 
 #: pncontenttypesapi/rss.php:40
 msgid "Display list of items in an RSS feed."
-msgstr "Zeigt Inhalte eines RSS Feeds an."
+msgstr "Zeigt eine Liste mit Einträgen in einem RSS-Feed an."
 
 #: pnuser.php:87
 #, php-format
@@ -527,7 +528,7 @@ msgstr "Platziert hinter:"
 
 #: pnedit.php:166
 msgid "Error! You have not been granted access to this page."
-msgstr "Fehler! Es ist kein Zugriffsrecht auf diese Seite vorhanden."
+msgstr "Fehler! Es ist kein Zugriffsrecht für diese Seite vorhanden."
 
 #: pnedit.php:228
 #: pntemplates/content_edit_editpage.html:3
@@ -670,7 +671,7 @@ msgstr "Online"
 
 #: pntemplates/content_edit_editpage.html:77
 msgid "You can set the page online/offline as well as supply a date interval for the page to be online. The checkbox overrides the dates."
-msgstr "Die Seite kann durch Setzen eines Intervalls oder der Checkbox offline bzw. online gestellt werden. Die Checkbox überschreibt das Datum."
+msgstr "Die Seite kann auf online/offline gesetzt werden. Außerdem kann ein Zeitintervall für die Publikation angegeben werden. Die Checkbox überschreibt die Datumswerte."
 
 #: pntemplates/content_edit_editpage.html:80
 msgid "Start date"
@@ -838,7 +839,7 @@ msgstr "Seite offline und nicht im Menü"
 
 #: pntemplates/content_include_tocedit.html:70
 msgid "No page available."
-msgstr "Keine Seiten verfügbar."
+msgstr "Keine Seite verfügbar."
 
 #: pntemplates/content_user_extlist.html:1
 msgid "Extended page list"
@@ -971,7 +972,7 @@ msgstr "\"BBCode (von engl. Bulletin Board Code) ist eine sehr eng an HTML angel
 
 #: pntemplates/content_edit_main.html:18
 msgid "This is where you manage all your pages. You can add/edit/delete pages as well as drag them around to get the content structure right."
-msgstr "Hier werden alle Seiten verwaltet. Es können Seiten hinzugefügt, geändert bzw. gelöscht werden. Außerdem können sie zu einer beliebigen Inhaltsstruktur verschoben werden."
+msgstr "Hier werden alle Seiten verwaltet. Es können Seiten hinzugefügt, geändert, gelöscht bzw. übersetzt werden. Außerdem können sie zu einer beliebigen Inhaltsstruktur verschoben werden."
 
 #: pntemplates/content_edit_main.html:23
 msgid "To drag and drop a page you must select the icon left of the title and drop it on the title of another page."
@@ -992,11 +993,11 @@ msgstr "Seiten ID"
 
 #: pntemplates/contenttype/directory_edit.html:7
 msgid "Include headings into table"
-msgstr "Überschriften im Verzeichnis aufnehmen"
+msgstr "Überschriften im Inhaltsverzeichnis aufnehmen"
 
 #: pntemplates/contenttype/directory_edit.html:12
 msgid "Include subpages into table"
-msgstr "Folgende Unterseiten aufnehmen"
+msgstr "Unterseiten im Inhaltsverzeichnis aufnehmen"
 
 #: pntemplates/contenttype/heading_edit.html:9
 msgid "Header size"
@@ -1089,7 +1090,7 @@ msgstr "Von"
 
 #: pntemplates/contenttype/flickr_edit.html:4
 msgid "No Flickr API key available! You must specify a Flickr API key to use this feature. You can get a key from <a href=\"http://www.flickr.com/api\">flickr.com</a>."
-msgstr "Kein Flickr API-Key verfügbar! Es muss ein Flickr API-Key für dieses Feature eingegeben werden, der unter <a href=\"http://www.flickr.com/api\">flickr.com</a> bezogen werden kann."
+msgstr "Kein Flickr API-Key verfügbar! Es muss ein Flickr API-Key für dieses Feature eingegeben werden, der von <a href=\"http://www.flickr.com/api\">flickr.com</a> bezogen werden kann."
 
 #: pntemplates/contenttype/flickr_edit.html:8
 msgid "Display photos from this user"
@@ -1105,7 +1106,7 @@ msgstr "Anzahl Fotos, die angezeigt werden sollen"
 
 #: pntemplates/contenttype/googlemap_edit.html:14
 msgid "Select geographic position either by point and click or writing the position directly. You can drag the map with your mouse, and double-click to zoom and select position."
-msgstr "Position entweder durch Klicken in der Karte oder durch Direkteingabe wählen. Die Karte kann mit der Maus verschoben werden. Doppelklick zoomt in die Karte ein."
+msgstr "Position entweder durch Klicken in der Karte oder durch Direkteingabe der Koordinaten auswählen. Die Karte kann mit der Maus verschoben werden. Doppelklick zoomt in die Karte und wählt die Position aus."
 
 #: pntemplates/contenttype/googlemap_edit.html:17
 msgid "No Google API key available! You must specify a Google maps API key to use this feature. Get a key from <a href="
@@ -1310,6 +1311,767 @@ msgstr "Wiederherstellen"
 #: pntemplates/content_edit_history.html:39
 msgid "No history data recorded."
 msgstr "Keine Historie aufgezeichnet."
+
+#~ msgid "Click to edit this content item"
+#~ msgstr "Klicken um das Content-Element zu bearbeiten"
+
+#~ msgid "%s area"
+#~ msgstr "%s Bereich"
+
+#~ msgid "Unable to locate original translation template."
+#~ msgstr "Das originale Übersetzungstemplate konnte nicht gefunden werden."
+
+#~ msgid "Unable to locate new translation template."
+#~ msgstr "Das neue Übersetzungstemplate konnte nicht gefunden werden."
+
+#~ msgid "2 columns (50|50)"
+#~ msgstr "2 Spalten (50|50)"
+
+#~ msgid "Header + two columns (50|50) + footer"
+#~ msgstr "Zwei Spalten (50|50) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (30|70)"
+#~ msgstr "2 Spalten (30|70)"
+
+#~ msgid "Header + two columns (30|70) + footer"
+#~ msgstr "Zwei Spalten (30|70) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (38|62)"
+#~ msgstr "2 Spalten (38|62)"
+
+#~ msgid "Header + two columns (38|62) + footer"
+#~ msgstr "Zwei Spalten (38|62) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (25|75)"
+#~ msgstr "2 Spalten (25|75)"
+
+#~ msgid "Header + two columns (25|75) + footer"
+#~ msgstr "Zwei Spalten (25|75) mit Kopf- und Fußzeile"
+
+#~ msgid "3 columns (25|50|25)"
+#~ msgstr "3 Spalten (25|50|25)"
+
+#~ msgid "Header + three columns (25|50|25) + footer"
+#~ msgstr "Drei Spalten (25|50|25) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (75|25)"
+#~ msgstr "2 Spalten (75|25)"
+
+#~ msgid "Header + two columns (75|25) + footer"
+#~ msgstr "Zwei Spalten (75|25) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (66|33)"
+#~ msgstr "2 Spalten (66|33)"
+
+#~ msgid "Header + two columns (66|33) + footer"
+#~ msgstr "Zwei Spalten (66|33) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (62|38)"
+#~ msgstr "2 Spalten (62|38)"
+
+#~ msgid "Header + two columns (62|38) + footer"
+#~ msgstr "Zwei Spalten (62|38) mit Kopf- und Fußzeile"
+
+#~ msgid "2 columns (70|30)"
+#~ msgstr "2 Spalten (70|30)"
+
+#~ msgid "Header + two columns (70|30) + footer"
+#~ msgstr "Zwei Spalten (70|30) mit Kopf- und Fußzeile"
+
+#~ msgid "3 columns (33|33|33)"
+#~ msgstr "3 Spalten (33|33|33)"
+
+#~ msgid "Header + three columns (33|33|33) + footer"
+#~ msgstr "Drei Spalten (33|33|33) mit Kopf- und Fußzeile"
+
+#~ msgid "Left column1"
+#~ msgstr "Linke Spalte 1"
+
+#~ msgid "Right column1"
+#~ msgstr "Rechte Spalte 1"
+
+#~ msgid "center1"
+#~ msgstr "Center 1"
+
+#~ msgid "Left column2"
+#~ msgstr "Linke Spalte 2"
+
+#~ msgid "Right column2"
+#~ msgstr "Rechte Spalte 2"
+
+#~ msgid "2-1-2 columns (50|50)"
+#~ msgstr "2-1-2 Spalten (50|50)"
+
+#~ msgid "Header + two-one-two columns (50|50) + footer"
+#~ msgstr "2-1-2 Spalten (50|50) mit Kopf- und Fußzeile"
+
+#~ msgid "3 columns (25|25|50)"
+#~ msgstr "3 Spalten (25|25|50)"
+
+#~ msgid "Header + three columns (25|25|50) + footer"
+#~ msgstr "Drei Spalten (25|25|50) mit Kopf- und Fußzeile"
+
+#~ msgid "Header above page headline"
+#~ msgstr "Kopfzeile über Seitentitel"
+
+#~ msgid "1 column, header above page headline"
+#~ msgstr "1 Spalte, Kopfzeile über Seitentitel"
+
+#~ msgid ""
+#~ "Single 100% wide column and a top-header above the page headline (for e."
+#~ "g. breadcrumbs or author-information above the title)"
+#~ msgstr ""
+#~ "Eine Spalte über die ganze Breite mit Kopfzeile über dem Seitentitel (z. "
+#~ "B. Breadcrumbs oder Autor-Informationen über dem Titel)"
+
+#~ msgid "2 columns (33|66)"
+#~ msgstr "2 Spalten (33|66)"
+
+#~ msgid "Header + two columns (33|66) + footer"
+#~ msgstr "Zwei Spalten (33|66) mit Kopf- und Fußzeile"
+
+#~ msgid "3 columns (50|25|25)"
+#~ msgstr "3 Spalten (50|25|25)"
+
+#~ msgid "Header + three columns (50|25|25) + footer"
+#~ msgstr "Drei Spalten (50|25|25) mit Kopf- und Fußzeile"
+
+#~ msgid "Extended"
+#~ msgstr "Erweitert"
+
+#~ msgid "Complete"
+#~ msgstr "Komplett"
+
+#~ msgid "Category list"
+#~ msgstr "Kategorienliste"
+
+#~ msgid "Error! The indentation of this page cannot be increased."
+#~ msgstr "Fehler! Die Seite konnte nicht weiter eingerückt werden."
+
+#~ msgid "Add a new page"
+#~ msgstr "Neue Seite hinzufügen"
+
+#~ msgid "Restore pages"
+#~ msgstr "Seiten wiederherstellen"
+
+#~ msgid "Upgrade ContentTypes"
+#~ msgstr "Content-Typen aktualisieren"
+
+#~ msgid "disabled plugin"
+#~ msgstr "deaktiviertes Plugin"
+
+#~ msgid "Disabled: Inaccessible plugin output (%1$s, %2$s)."
+#~ msgstr "Deaktiviert: Nicht zugängliche Plugin-Ausgabe (%1$s, %2$s)."
+
+#~ msgid ""
+#~ "Error! Unable to load plugin [%1$s] in module [%2$s] since the class is "
+#~ "not defined. Upgrade of %2$s module required."
+#~ msgstr ""
+#~ "Fehler! Plugin [%1$s] in Modul [%2$s] konnte nicht geladen werden, da die "
+#~ "Klasse nicht definiert ist. Upgrade des %2$s-Moduls ist erforderlich."
+
+#~ msgid "Page cloned from page [%s]"
+#~ msgstr "Seite dupliziert von Seite [%s]"
+
+#~ msgid "Page deleted"
+#~ msgstr "Seite gelöscht"
+
+#~ msgid "Error! Could not reinsert page"
+#~ msgstr "Fehler! Die Seite konnte nicht wieder eingefügt werden"
+
+#~ msgid "Page navigation"
+#~ msgstr "Seitennavigation"
+
+#~ msgid "Allows to navigate within pages on the same level."
+#~ msgstr "Erlaubt das Navigieren innerhalb von Seiten derselben Ebene."
+
+#~ msgid "Video-ID : %1$s<br />Size in pixels: %2$s x %3$s"
+#~ msgstr "Video-ID : %1$s<br />Größe in Pixeln: %2$s x %3$s"
+
+#~ msgid "Slideshare: %s"
+#~ msgstr "Slideshare: %s"
+
+#~ msgid "OpenStreetMap map"
+#~ msgstr "OpenStreetMap Karte"
+
+#~ msgid "Display OpenStreetMap map position."
+#~ msgstr "OpenStreetMap Kartenposition anzeigen."
+
+#~ msgid ""
+#~ "If you want to add OpenStreetMap maps to your content you don't need an "
+#~ "API key."
+#~ msgstr ""
+#~ "Um OpenStreetMap Karten in den Inhalt einzubinden, ist kein API-Key "
+#~ "notwendig."
+
+#~ msgid "Join Position"
+#~ msgstr "Reset Textfluss"
+
+#~ msgid ""
+#~ "Joins different positions, e.g. if you used position: top-right then this "
+#~ "can fix the layout/textflow."
+#~ msgstr ""
+#~ "Fügt verschiedene Positionen zusammen. Wenn z. B.  position: top-right "
+#~ "verwendet wurde, dann kann dies das Layout bzw. den Textfluss korrigieren."
+
+#~ msgid ""
+#~ "A Google maps API key is not needed any more in the new version 3 of the "
+#~ "Javascript API."
+#~ msgstr ""
+#~ "Ein GoogleMaps API-Key wird in der neuen Version 3 des Javascript API "
+#~ "nicht mehr benötigt."
+
+#~ msgid "camtasia-Flash video"
+#~ msgstr "Camtasia-Flash Video"
+
+#~ msgid "Display camtasia-Flash video."
+#~ msgstr "Camtasia-Flash Video anzeigen."
+
+#~ msgid "BreadCrumb"
+#~ msgstr "BreadCrumb"
+
+#~ msgid "Show breadcrumbs for hierarchical pages"
+#~ msgstr "Breadcrumbs für hierarchische Seiten anzeigen."
+
+#~ msgid ""
+#~ "Warning! Could not create the default Content category tree. If you want "
+#~ "to use categorisation with Content, register at least one property for "
+#~ "the module in the Category Registry."
+#~ msgstr ""
+#~ "Warnung! Konnte den Standard-Kategorienbaum für Content nicht anlegen. "
+#~ "Zur Nutzung von Kategorisierung in Content, muss mindestens eine "
+#~ "Eigenschaft für das Modul in der Category-Registry registriert werden."
+
+#~ msgid "Content introduction page"
+#~ msgstr "Content Einführungsseite"
+
+#~ msgid "content-introduction-page"
+#~ msgstr "content-einfuehrungsseite"
+
+#~ msgid "Warning! Could not create the default Content introductory page."
+#~ msgstr "Warnung! Konnte die Standard-Einführungsseite nicht erstellen."
+
+#~ msgid "A Content page consists of various content items in a chosen layout"
+#~ msgstr ""
+#~ "Eine Content-Seite besteht aus verschiedenen Content-Elementen in einem "
+#~ "ausgewählten Layout."
+
+#~ msgid ""
+#~ "<p>Each created page has a specific layout, like 1 column with and "
+#~ "without a header, 2 columns, 3 columns. The chosen layout contains "
+#~ "various content areas. In each area you can place 1 or more content items "
+#~ "of various kinds like:</p> <ul> <li>HTML text;</li> <li>YouTube videos;</"
+#~ "li> <li>Google maps;</li> <li>Flickr photos;</li> <li>RSS feeds;</li> "
+#~ "<li>Computer Code;</li> <li>the output of another Zikula module.</li> </"
+#~ "ul> <p>Within these content areas you can sort the content items by means "
+#~ "of drag & drop.<br /> You can make an unlimited number of pages and "
+#~ "structure them hierarchical. Your page structure can be displayed in a "
+#~ "multi level menu in your website.</p>"
+#~ msgstr ""
+#~ "<p>Jede erstellte Seite hat ein spezielles Layout, wie 1 Spalte mit oder "
+#~ "ohne Kopfzeile, 2 Spalten, 3 Spalten. Das gewählte Layout enthält "
+#~ "verschiedene Content-Zonen. Jede Zone kann 1 oder mehrere Content-"
+#~ "Elemente mit unterschiedlichen Inhalten enthalten, wie:</p> <ul> <li>HTML-"
+#~ "Text;</li> <li>YouTube >Videos;</li> <li>Google Maps;</li> <li>Flickr "
+#~ "Fotos;</li> <li>RSS-Feeds;</li> <li>Computer Code;</li> <li>Inhalte "
+#~ "anderer Zikula Module.</li> </ul> <p>Mittels Drag & Drop können die "
+#~ "Content-Elemente verschoben und sortiert werden.<br />Es kann eine "
+#~ "beliebige Anzahl Seiten angelegt und diese hierarchisch strukturiert "
+#~ "werden. Die Seitenstruktur kann als ein Menü mit mehreren Ebenen auf der "
+#~ "Webseite angezeigt werden.</p>"
+
+#~ msgid ""
+#~ "<p><strong>This is a second HTML text content item in the left column</"
+#~ "strong><br /> Content is an extendible module. You can create your own "
+#~ "content plugins and layouts and other Zikula modules can also offer "
+#~ "content items. The News published module for instance has a Content "
+#~ "plugin for a list of the latest articles.</p>"
+#~ msgstr ""
+#~ "<p><strong>Dies ist ein zweites Content-Element mit HTML-Text in der "
+#~ "linken Spalte.</strong><br /> Content ist ein erweiterbares Modul. Es "
+#~ "können eigene Content-Plugins und -Layouts erstellt werden. Manche Zikula-"
+#~ "Module bieten auch Content-Elemente an. Beispielsweise bietet das News-"
+#~ "Modul ein Content-Plugin für eine Liste mit den neuesten Artikeln an.</p>"
+
+#~ msgid "No matter what your needs, Zikula can provide the solution."
+#~ msgstr "Egal welches Problem, Zikula kann die Lösung bieten."
+
+#~ msgid "$this->doAction($var); // just some code"
+#~ msgstr "$this->doAction($var); // nur etwas Code"
+
+#~ msgid ""
+#~ "<p>So you see that you can place all kinds of content on the page in your "
+#~ "own style and liking. This makes Content a really powerful module.</p> "
+#~ "<p>This page uses the <strong>2 column (62|38) layout</strong> which has "
+#~ "a header, 2 colums with 62% width on the left and 38% width on the right "
+#~ "and a footer</p>"
+#~ msgstr ""
+#~ "<p>Dieses Beispiel zeigt, dass jede Art von Inhalt mit dem gewünschten "
+#~ "Aussehen auf der Seite eingebunden werden kann.  Dies macht Content zu "
+#~ "einem so leistungsfähigen Modul.</p> <p>Diese Seite verwendet das Layout "
+#~ "mit <strong>2 Spalten (62|38)</strong> welches eine Kopfzeile, 2 Spalten "
+#~ "mit 62% Breite auf der linken Seite und 38% Breite auf der rechten Seite, "
+#~ "sowie einen Fußbereich enthält.</p>"
+
+#~ msgid ""
+#~ "This <strong>footer</strong> finishes of this introduction page. Good "
+#~ "luck with using Content. The <a href=\"index.php?module=content&type=admin"
+#~ "\">Edit Contents</a> interface lets you edit or delete this introduction "
+#~ "page. In the <a href=\"index.php?module=content&type=admin"
+#~ "\">administration</a> interface you can further control the Content "
+#~ "module."
+#~ msgstr ""
+#~ "Die <strong>Fußzeile</strong> beendet diese Einführungsseite. Viel Spaß "
+#~ "bei der Verwendung von Content. Unter <a href=\"index.php?"
+#~ "module=content&type=admin\">Inhalte bearbeiten</a> kann diese "
+#~ "Einführungsseite bearbeitet oder gelöscht werden. In der <a href=\"index."
+#~ "php?module=content&type=admin\">Administration</a> kann das Content-Modul "
+#~ "weiterführend verwaltet werden."
+
+#~ msgid "%1$s ContentTypes upgraded for %2$s"
+#~ msgstr "%1$s Content-Typen aktualisiert für %2$s"
+
+#~ msgid "Missing page ID (pid) in URL"
+#~ msgstr "Fehlende Seiten (page) ID (pid) in URL"
+
+#~ msgid "Missing content area index (cai) in URL"
+#~ msgstr "Fehlender Content Area Index (cai) in URL"
+
+#~ msgid "Restore deleted pages"
+#~ msgstr "Gelöschte Seiten wiederherstellen"
+
+#~ msgid ""
+#~ "Sorry, you cannot translate an item to the same language as it's default "
+#~ "language (\"%1$s\"). Change the current site language (\"%1$s\") to some "
+#~ "other language on the <a href=\"%2$s\">localisation settings</a> page."
+#~ "<br /> Another way is to add, for instance, <strong>&amp;lang=de</strong> "
+#~ "to the url for changing the current site language to German and after "
+#~ "that the item can be translated to German."
+#~ msgstr ""
+#~ "Inhalte können nicht in die Ursprungssprache (\"%1$s\") übersetzt werden. "
+#~ "Ändere die aktuelle Seitensprache (\"%1$s\") in eine andere Sprache mit "
+#~ "den <a href=\"%2$s\">Lokalisierungseinstellungen</a>.<br /> Ein anderer "
+#~ "Weg ist zum Beispiel das Hinzufügen von <strong>&amp;lang=es</strong> zur "
+#~ "URL, um die Sprache der aktuellen Seite (hier Spanisch) zu ändern. "
+#~ "Anschließend können die Inhalte übersetzt werden."
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Unknown plugin - requires upgrade"
+#~ msgstr "Unbekanntes Plugin - erfordert Upgrade"
+
+#~ msgid "Disabled plugin - requires upgrade"
+#~ msgstr "Deaktiviertes Plugin - erfordert Upgrade"
+
+#~ msgid "public (all)"
+#~ msgstr "öffentlich (alle)"
+
+#~ msgid "only logged in members"
+#~ msgstr "nur angemeldete Mitglieder"
+
+#~ msgid "only not logged in people"
+#~ msgstr "nur unangemeldete Besucher"
+
+#~ msgid "Use 2 category levels (1st level single, 2nd level multi selection)"
+#~ msgstr ""
+#~ "2 Kategorie-Ebenen verwenden (erste Ebene mit Einfach-, zweite Ebene mit "
+#~ "Mehrfach-Auswahl)"
+
+#~ msgid "Use 2 category levels (both single selection)"
+#~ msgstr "2 Kategorie-Ebenen verwenden (beide mit Einfach-Auswahl)"
+
+#~ msgid "Use 1 category level"
+#~ msgstr "1 Kategorie-Ebene verwenden"
+
+#~ msgid "Don't use Categories at all"
+#~ msgstr "Keine Kategorien verwenden"
+
+#~ msgid "New pages will be active and available in the menu"
+#~ msgstr "Neue Seiten sind aktiv und verfügbar im Menü"
+
+#~ msgid "New pages will be inactive and available in the menu"
+#~ msgstr "Neue Seiten sind inaktiv und verfügbar im Menü"
+
+#~ msgid "New pages will be active and not available in the menu"
+#~ msgstr "Neue Seiten sind aktiv und nicht verfügbar im Menü"
+
+#~ msgid "New pages will be inactive and not available in the menu"
+#~ msgstr "Neue Seiten sind inaktiv und nicht verfügbar im Menü"
+
+#~ msgid "Failed to set configuration variables"
+#~ msgstr "Fehler! Konnte Konfigurationseinstellungen nicht speichern."
+
+#~ msgid "Main category property does not exist."
+#~ msgstr "Eigenschaft der Hauptkategorie existiert nicht."
+
+#~ msgid "Second category property does not exist."
+#~ msgstr "Eigenschaft der zweiten Kategorie existiert nicht."
+
+#~ msgid "Page not found"
+#~ msgstr "Seite nicht gefunden"
+
+#~ msgid "Clone page"
+#~ msgstr "Seite duplizieren"
+
+#~ msgid ""
+#~ "Warning! %1$s is deprecated. Please use the Admin controller instead."
+#~ msgstr ""
+#~ "Warnung! %1$s ist veraltet. Bitte stattdessen den Admin-Controller "
+#~ "verwenden."
+
+#~ msgid "No ContentTypes upgraded (there were no matches found)."
+#~ msgstr ""
+#~ "Keine Content-Typen aktualisiert (es wurden keine Einträge gefunden)."
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "Error! No page ID passed."
+#~ msgstr "Fehler! Unbekannte Seite."
+
+#~ msgid "Error! Could not update state."
+#~ msgstr "Fehler! Der Status kann nicht geändert werden."
+
+#~ msgid "Content Display Hooks"
+#~ msgstr "Content Display Hooks"
+
+#~ msgid "Content Filter Hooks"
+#~ msgstr "Content Filter Hooks"
+
+#~ msgid "Content onepage"
+#~ msgstr "Content OnePage"
+
+#~ msgid "Content onepage block"
+#~ msgstr "Content OnePage-Block"
+
+#~ msgid "Select a page"
+#~ msgstr "Eine Seite auswählen"
+
+#~ msgid "State of new pages"
+#~ msgstr "Zustand neuer Seiten"
+
+#~ msgid "Count page views"
+#~ msgstr "Seitenansichten zählen"
+
+#~ msgid ""
+#~ "A Google Maps API key is no longer needed for including maps with the "
+#~ "Javascript API v3. More information at <a href=\"http://code.google.com/"
+#~ "apis/maps/documentation/javascript/basics.html\">Google</a>."
+#~ msgstr ""
+#~ "Ein GoogleMaps API-Key ist nicht mehr notwendig, um Karten mit dem "
+#~ "Javascript API v3 zu integrieren. Mehr Informationen bei <a href=\"http://"
+#~ "code.google.com/apis/maps/documentation/javascript/basics.html\">Google</"
+#~ "a>."
+
+#~ msgid "Category usage"
+#~ msgstr "Kategoriennutzung"
+
+#~ msgid "Category Property for the first category selection"
+#~ msgstr "Kategorie-Eigenschaft für die erste Kategorie-Auswahl"
+
+#~ msgid ""
+#~ "(In the <a href=\"%s\">category registry</a> you can set the property to "
+#~ "use for the first category)"
+#~ msgstr ""
+#~ "(In der <a href=\"%s\">Category-Registry</a> kann die für die erste "
+#~ "Kategorie verwendete Eigenschaft definiert werden.)"
+
+#~ msgid "Category Property for the second category selection"
+#~ msgstr "Kategorie-Eigenschaft für die zweite Kategorie-Auswahl"
+
+#~ msgid ""
+#~ "(In the <a href=\"%s\">category registry</a> you can set the property to "
+#~ "use for the second category if being used)"
+#~ msgstr ""
+#~ "(In der <a href=\"%s\">Category-Registry</a> kann die für die zweite "
+#~ "Kategorie - falls vorhanden - verwendete Eigenschaft definiert werden.)"
+
+#~ msgid "Available Plugins"
+#~ msgstr "Verfügbare Plugins"
+
+#~ msgid "(Used in shorturl mode and generated automatically if left blank)"
+#~ msgstr ""
+#~ "(Wird im Short-URL-Modus verwendet und automatisch generiert, wenn das "
+#~ "Feld leer gelassen wird."
+
+#~ msgid "Layout preview and description"
+#~ msgstr "Layout Vorschau und Beschreibung"
+
+#~ msgid "Revision #"
+#~ msgstr "Revision #"
+
+#~ msgid "Clone content"
+#~ msgstr "Inhalt duplizieren"
+
+#~ msgid ""
+#~ "Here you manage the content of this page. You can add/edit/delete content "
+#~ "as well as drag the content boxes around to get the layout right. Click "
+#~ "on the icon next to the title for the options of that content item."
+#~ msgstr ""
+#~ "Hier wird der Inhalt dieser Seite verwaltet. Es kann Inhalt hinzugefügt, "
+#~ "geändert bzw. gelöscht werden. Außerdem können Inhaltselemente verschoben "
+#~ "werden. Auf das Icon neben dem Titel klicken, um die Optionen der Content-"
+#~ "Elemente anzuzeigen."
+
+#~ msgid ""
+#~ "You can include/exclude the page in the menu. The page is only shown when "
+#~ "it is also Online."
+#~ msgstr ""
+#~ "Die Seite kann im Menü eingebunden/entfernt werden. Die Seite wird nur "
+#~ "angezeigt, wenn sie auch Online ist."
+
+#~ msgid "Do not display hooks on this page"
+#~ msgstr "Keine Hooks auf dieser Seite anzeigen"
+
+#~ msgid ""
+#~ "Checking this option will just ignore all the hooks for this page, it "
+#~ "does not replace permissions."
+#~ msgstr ""
+#~ "Die Auswahl dieser Option ignoriert lediglich alle Hooks für diese Seite, "
+#~ "sie ersetzt keine Zugriffsrechte."
+
+#~ msgid "Created"
+#~ msgstr "Erstellt"
+
+#~ msgid "on %1$s by %2$s"
+#~ msgstr "am %1$s von %2$s"
+
+#~ msgid "Updated"
+#~ msgstr "Aktualisiert"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "Secondary category"
+#~ msgstr "Zweite Kategorie"
+
+#~ msgid "Clone Page"
+#~ msgstr "Seite duplizieren"
+
+#~ msgid "Clone translations"
+#~ msgstr "Übersetzungen duplizieren"
+
+#~ msgid "Clone"
+#~ msgstr "Duplizieren"
+
+#~ msgid "Edit %s"
+#~ msgstr "%s bearbeiten"
+
+#~ msgid "Visible for"
+#~ msgstr "Sichtbar für"
+
+#~ msgid "Content manager"
+#~ msgstr "Contentverwaltung"
+
+#~ msgid "Click to activate this page"
+#~ msgstr "Klicken um die Seite zu aktivieren"
+
+#~ msgid "Click to deactivate this page"
+#~ msgstr "Klicken um die Seite zu deaktivieren"
+
+#~ msgid "Click to put this page in the menu"
+#~ msgstr "Klicken um diese Seite in das Menü aufzunehmen"
+
+#~ msgid "Click to pull this page from the menu"
+#~ msgstr "Klicken um diese Seite aus dem Menü zu entfernen"
+
+#~ msgid "Page title [id]"
+#~ msgstr "Seitentitel [id]"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Menu"
+#~ msgstr "Menü"
+
+#~ msgid "Last updated (revision)"
+#~ msgstr "Zuletzt geändert (Revision)"
+
+#~ msgid "Click to hide sub-pages"
+#~ msgstr "Klicken um Unterseiten auszublenden"
+
+#~ msgid "Click to show sub-pages"
+#~ msgstr "Klicken um Unterseiten anzuzeigen"
+
+#~ msgid "Page draggable"
+#~ msgstr "Seite bewegbar"
+
+#~ msgid "In"
+#~ msgstr "Ja"
+
+#~ msgid "Out"
+#~ msgstr "Nein"
+
+#~ msgid "%1$s (%2$s original)"
+#~ msgstr "%1$s (%2$s Original)"
+
+#~ msgid "%s original used"
+#~ msgstr "%s Original verwendet"
+
+#~ msgid ""
+#~ "Click on the arrow right of a page title for the options of that page. To "
+#~ "drag and drop a page you must select the folder icon left of the title "
+#~ "and drop it on the title of another page. A page with sub-pages can be "
+#~ "expanded or contracted by clicking on the plus or minus left of the page "
+#~ "title. To activate/deactive pages or make pages (not) available in the "
+#~ "menu click on the led icons."
+#~ msgstr ""
+#~ "Klicke auf den Pfeil rechts neben dem Seitentitel für die Optionen zu "
+#~ "dieser Seite. Um eine Seite zu verschieben wird das Ordnericon links vom "
+#~ "Titel ausgewählt und über den Titel einer anderen Seite fallen gelassen. "
+#~ "Eine Seite, welche Unterseiten enthält, kann aus- oder eingeklappt "
+#~ "werden, indem auf das Plus oder Minus links vom Seitentitel geklickt "
+#~ "wird. Mithilft der LED-Icons können Seiten aktiviert/deaktivert oder im "
+#~ "Menü sichtbar/unsichtbar gemacht werden."
+
+#~ msgid "Properties"
+#~ msgstr "Eigenschaften"
+
+#~ msgid ""
+#~ "Copy Slideshare's Wordpress embed code here (including square brackets "
+#~ "and all). Click on Embed and Customize to show the wordpress embed code. "
+#~ "It should look something like [slideshare id=145849&doc=prototype-jquery-"
+#~ "going-from-one-to-the-other-1193346036472971-5]"
+#~ msgstr ""
+#~ "Hier den Embed-Code von Slideshares Wordpress reinkopieren (inklusive "
+#~ "eckige Klammern usw.). Klicke auf Embed and Customize um den Embed-Code "
+#~ "anzuzeigen. Er sollte aussehen, wie [slideshare id=145849&doc=prototype-"
+#~ "jquery-going-from-one-to-the-other-1193346036472971-5]"
+
+#~ msgid "Slideshare's embedded player width"
+#~ msgstr "Slideshare eingebetteter Player Breite"
+
+#~ msgid "Slideshare's embedded player height"
+#~ msgstr "Slideshare eingebetteter Player Höhe"
+
+#~ msgid "Include subpages that are not in the menus"
+#~ msgstr "Unterseiten einbeziehen, die nicht in Menüs sind"
+
+#~ msgid "both"
+#~ msgstr "beide"
+
+#~ msgid "left"
+#~ msgstr "links"
+
+#~ msgid "right"
+#~ msgstr "rechts"
+
+#~ msgid "Name of the Camtasia-Flash video"
+#~ msgstr "Name des Camtasia-Flash Videos"
+
+#~ msgid ""
+#~ "You have to upload your camtasia project in the folder defined below "
+#~ "<folder>/project/project.mp4 first. Here you have to give only the name "
+#~ "of your project without path and file extension."
+#~ msgstr ""
+#~ "Das Camtasia-Projekt muss zuerst in den unten angegebenen Ordner <Ordner>/"
+#~ "project/project.mp4 hochgeladen werden. Hier muss nur der Name des "
+#~ "Projektes ohne Pfad und Dateiendung eingegeben werden."
+
+#~ msgid "Video display width [in pixels]"
+#~ msgstr "Video-Anzeige Breite [in Pixeln]"
+
+#~ msgid "Video display height [in pixels]"
+#~ msgstr "Video-Anzeige Höhe [in Pixeln]"
+
+#~ msgid "Folder where the files are uploaded"
+#~ msgstr "Ordner in den die Dateien hinein geladen werden."
+
+#~ msgid "Path to the Shockwave-Flash video"
+#~ msgstr "Pfad zum Shockwave-Flash Video"
+
+#~ msgid "Get directions from start address"
+#~ msgstr "Routenplanung von Startadresse"
+
+#~ msgid "Show Directions"
+#~ msgstr "Routen anzeigen"
+
+#~ msgid "Clear Directions"
+#~ msgstr "Routen löschen"
+
+#~ msgid "Get directions to this location"
+#~ msgstr "Routenplanung zu diesem Ort"
+
+#~ msgid "Show information on the map"
+#~ msgstr "Informationen auf der Karte anzeigen"
+
+#~ msgid "Hide information on the map"
+#~ msgstr "Informationen auf der Karte verstecken"
+
+#~ msgid "Description to be shown below the map"
+#~ msgstr "Beschreibung, die unter der Karte angezeigt wird."
+
+#~ msgid "Text to be shown in the popup window of the marker"
+#~ msgstr "Text, der im Popup-Fenster des Markers angezeigt wird."
+
+#~ msgid ""
+#~ "(a comma-separated numeral that has a precision to 6 decimal places. For "
+#~ "example, 40.714728)"
+#~ msgstr ""
+#~ "(eine mit Punkt getrennte Zahl mit bis zu 6 Nachstellen. Zum Beispiel, "
+#~ "40.714728)"
+
+#~ msgid "(from 0 for the entire world to 21 for individual buildings)"
+#~ msgstr "(von 0 für die ganze Welt bis 21 für einzelne Gebäude)"
+
+#~ msgid "Height of the displayed map in pixels"
+#~ msgstr "Höhe der angezeigten Karte in Pixel"
+
+#~ msgid "(below 350 pixels the navigation controls will be small)"
+#~ msgstr ""
+#~ "(bei weniger als 350 Pixeln werden die Navigationselemente klein "
+#~ "angezeigt)"
+
+#~ msgid "Display the streetview control"
+#~ msgstr "Streetview-Element anzeigen"
+
+#~ msgid "Display a link to directions to this location in Google Maps "
+#~ msgstr "Einen Link zur Route zu diesem Ort in GoogleMaps anzeigen."
+
+#~ msgid ""
+#~ "(can contain HTML markup. Leave this field empty for disabling the popup "
+#~ "window."
+#~ msgstr ""
+#~ "(kann HTML-Markup enthalten. Das Feld leerlassen um das Popup-Fenster "
+#~ "anzuzeigen."
+
+#~ msgid "<- Back"
+#~ msgstr "<- Zurück"
+
+#~ msgid "Overview"
+#~ msgstr "Übersicht"
+
+#~ msgid "Forward ->"
+#~ msgstr "Weiter ->"
+
+#~ msgid "Use native code filter"
+#~ msgstr "Nativen Code-Filter verwenden"
+
+#~ msgid "Use BBCode filter"
+#~ msgstr "BBCode-Filter verwenden"
+
+#~ msgid ""
+#~ "If the BBCode module is available, you can filter your code with BBCode "
+#~ "instead."
+#~ msgstr ""
+#~ "Falls das BBCode-Modul verfügbar ist, kann Quellcode stattdessen mit "
+#~ "BBCode gefiltert werden."
+
+#~ msgid "There is no need to 'hook' BBCode to Content for this functionality."
+#~ msgstr "Es ist nicht nötig den Hook von BBCode für Content zu aktivieren."
+
+#~ msgid "Item not Active"
+#~ msgstr "Eintrag nicht Aktiv"
+
+#~ msgid "ID %d"
+#~ msgstr "ID %d"
+
+#~ msgid "Include the following page"
+#~ msgstr "Die folgende Seite einfügen"
+
+#~ msgid "Use caching in the menu block"
+#~ msgstr "Caching im Menü-Block benutzen"
 
 #~ msgid "From (YYYY-MM-DD)"
 #~ msgstr "Startdatum (YYYY-MM-DD)"

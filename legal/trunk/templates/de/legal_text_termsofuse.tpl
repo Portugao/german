@@ -1,7 +1,4 @@
-<!--[include file=legal_user_menu.htm]-->
-<!--[pnpagesetvar name=title value='Allgemeine Nutzungsbedingungen']-->
-<h1>Allgemeine Nutzungsbedingungen (Version 1.06)</h1>
-<p><em>für das Onlineangebot <!--[pnconfiggetvar name=sitename]--> - nachfolgend: "Das Angebot"</em></p>
+<p><em>für das Onlineangebot {$modvars.ZConfig.sitename} - nachfolgend: "Das Angebot"</em></p>
 
 <p>
   Mit der Eingabe der dazu notwendigen Daten (E-Mail-Adresse), der Einwilligung in diese
@@ -17,7 +14,7 @@
     <ol>
       <li><strong>Inhalt des Nutzungsverhältnisses</strong><br />
         Mit der Einwilligung in die Nutzungsbedingungen wird dem Nutzer die Nutzung solcher
-        Funktionen auf <!--[pnconfiggetvar name=sitename]--> gestattet, für deren Nutzung eine Registrierung
+        Funktionen auf {$modvars.ZConfig.sitename} gestattet, für deren Nutzung eine Registrierung
         vorgesehen ist ("Community-Bereich"). Für die Nutzung erhebt der Betreiber keinerlei
         Entgelt. Ein Anspruch auf die Nutzung des Community-Bereichs entsteht dem Nutzer auf
         Grund dieser Nutzungsvereinbarung nicht.
@@ -29,8 +26,8 @@
         vom Betreiber auf Grund grober Fahrlässigkeit oder Vorsatz verursacht werden. Der
         Schadensersatz ist grundsätzlich auf den typischerweise vorhersehbaren Schaden begrenzt.<br />
         Dies gilt nicht für Schäden, die aus der Verletzung von Leben, Körper oder Gesundheit
-        entstehen.
-      </li>
+        entstehen
+      .</li>
       <li><strong>Sorgfaltspflichten des Nutzers</strong><br />
         Der Nutzer erhält nach der Registrierung ein Kennwort, mit dem es ihm möglich ist, auf
         die Community-Funktionen zuzugreifen (Log-In). Er verpflichtet sich dazu, dieses vertraulich

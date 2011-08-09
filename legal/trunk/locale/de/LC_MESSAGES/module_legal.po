@@ -9,10 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Germay\n"
-"X-Poedit-Country: Germany\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.5.1\n"
+"X-Poedit-Language: Germay\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Country: Germany\n"
 
 #: pnadmin.php:64
 msgid "All users"
@@ -32,7 +34,7 @@ msgstr "Die Nutzungsbedingungen sind nicht aktiviert."
 
 #: pnuser.php:89
 msgid "'Privacy policy' not activated."
-msgstr "Die Hinweise zum Datenschutz sind nicht aktiviert."
+msgstr "\"Hinweise zum Datenschutz\" nicht aktiviert"
 
 #: pnuser.php:128
 msgid "'Accessibility statement' not activated."
@@ -100,3 +102,183 @@ msgstr "Speichern"
 msgid "Cancel"
 msgstr "Abbrechen"
 
+#~ msgid ""
+#~ "Your log-in request was not completed. You must review and confirm your "
+#~ "acceptance of one or more site policies prior to logging in."
+#~ msgstr ""
+#~ "Die Login-Anfrage ist noch nicht abgeschlossen. Vor der Anmeldung müssen "
+#~ "eine oder mehrere Richtlinien dieser Seite bestätigt werden."
+
+#~ msgid "In order to log in, you must accept this site's Terms of Use."
+#~ msgstr ""
+#~ "Um die Anmeldung abzuschließen, müssen die Nutzungsbedingungen der Seite "
+#~ "akzeptiert werden."
+
+#~ msgid "In order to log in, you must accept this site's Privacy Policy."
+#~ msgstr ""
+#~ "Um die Anmeldung abzuschließen, müssen die Hinweise zum Datenschutz der "
+#~ "Seite akzeptiert werden."
+
+#~ msgid ""
+#~ "In order to log in, you must confirm that you meet the requirements of "
+#~ "this site's Minimum Age Policy. If you are not %1$s years of age or "
+#~ "older, and you do not have a parent's permission to use this site, then "
+#~ "please ask your parent to contact a site administrator."
+#~ msgstr ""
+#~ "Um die Anmeldung abzuschließen, muss bestätigt werden, dass die "
+#~ "Voraussetzungen der Richtlinie zum Minimalen Alter erfüllt werden. Wenn "
+#~ "Sie nicht %1$s Jahre oder älter sind (und keine Erlaubnis der "
+#~ "Erziehungsberechtigten haben diese Seite zu benutzen), dürfen Sie die "
+#~ "Registrierung nicht fortführen und die Seite nicht betreten."
+
+#~ msgid ""
+#~ "Sorry! You changed your authentication information, and one or more items "
+#~ "displayed on the login screen may not have been applicable for your "
+#~ "account. Please try logging in again."
+#~ msgstr "Entschuldigung! "
+
+#~ msgid ""
+#~ "In order to register for a new account, you must accept this site's Terms "
+#~ "of Use."
+#~ msgstr ""
+#~ "Um ein neues Konto zu registrieren, müssen die Nutzungsbedingungen der "
+#~ "Seite akzeptiert werden."
+
+#~ msgid ""
+#~ "In order to register for a new account, you must accept this site's "
+#~ "Privacy Policy."
+#~ msgstr ""
+#~ "Um ein neues Konto zu registrieren, müssen die Hinweise zum Datenschutz "
+#~ "der Seite akzeptiert werden."
+
+#~ msgid ""
+#~ "In order to register for a new account, you must confirm that you meet "
+#~ "the requirements of this site's Minimum Age Policy. If you are not %1$s "
+#~ "years of age or older, and you do not have a parent's permission to use "
+#~ "this site, then you should not continue registering for access to this "
+#~ "site."
+#~ msgstr ""
+#~ "Um ein neues Konto zu registrieren, muss bestätigt werden, dass die "
+#~ "Voraussetzungen der Richtlinie zum Minimalen Alter erfüllt werden. Wenn "
+#~ "Sie nicht %1$s Jahre oder älter sind (und keine Erlaubnis der "
+#~ "Erziehungsberechtigten haben diese Seite zu benutzen), dürfen Sie die "
+#~ "Registrierung nicht fortführen und die Seite nicht betreten."
+
+#~ msgid "A user account or registration does not exist for the specified uid."
+#~ msgstr ""
+#~ "Ein Benutzerkonto oder eine Registrierung für diese uid existiert nicht."
+
+#~ msgid ""
+#~ "Upgrading the Legal module from version %1$s to %2$s is not supported."
+#~ msgstr ""
+#~ "Ein Upgrade des Legal-Moduls von Version %1$s zu %2$s wird nicht "
+#~ "unterstützt."
+
+#~ msgid "You must accept this site's Terms of Use in order to proceed."
+#~ msgstr ""
+#~ "Um fortzusetzen, müssen die Nutzungsbedingungen der Seite akzeptiert "
+#~ "werden."
+
+#~ msgid "You must accept this site's Privacy Policy in order to proceed."
+#~ msgstr ""
+#~ "Um fortzusetzen, müssen die Hinweise zum Datenschutz der Seite akzeptiert "
+#~ "werden."
+
+#~ msgid "Legal policies user acceptance login hook provider."
+#~ msgstr ""
+#~ "Hook-Provider für benutzerseitige Akzeptanz der rechtlichen Hinweise."
+
+#~ msgid "Site policies"
+#~ msgstr "Richtlinien der Seite"
+
+#~ msgid "Terms of Use"
+#~ msgstr "Nutzungsbedingungen"
+
+#~ msgid "%1$s accepted."
+#~ msgstr "%1$s akzeptiert."
+
+#~ msgid "Accepted."
+#~ msgstr "Akzeptiert."
+
+#~ msgid "Not accepted."
+#~ msgstr "Nicht akzeptiert."
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Hinweise zum Datenschutz"
+
+#~ msgid "Minimum Age"
+#~ msgstr "Minimales Alter"
+
+#~ msgid "Confirmed minimum age requirement (%1$s years of age) met."
+#~ msgstr ""
+#~ "Bestätigt die Erfüllung der Voraussetzungen zum minimalen Alter (%1$s "
+#~ "Jahre)."
+
+#~ msgid "Minimum age requirement not confirmed."
+#~ msgstr "Voraussetzungen zum minimalen Alter nicht bestätigt."
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Check this box to indicate your acceptance of this site's %1$s."
+#~ msgstr "Feld ankreuzen, um die %1$s der Seite zu akzeptieren."
+
+#~ msgid "Check this box to indicate that you are %1$s years of age or older."
+#~ msgstr ""
+#~ "Feld ankreuzen, um das eigene Alter von %1$s Jahren oder mehr zu "
+#~ "bestätigen."
+
+#~ msgid ""
+#~ "Information on our minimum age policy, and on how we handle personally "
+#~ "identifiable information can be found in our %1$s and in our %2$s."
+#~ msgstr ""
+#~ "Informationen über unsere Richtlinie zum Minimalen Alter und wie wir "
+#~ "persönliche Daten behandeln, können in unseren %1$s und in unseren %2$s "
+#~ "nachgelesen werden."
+
+#~ msgid ""
+#~ "In order to log in you must accept this site's policies. If you have "
+#~ "accepted the site's policies in the past, then they have been updated and "
+#~ "we ask that you review the changes."
+#~ msgstr ""
+#~ "Um die Anmeldung abzuschließen, müssen die Richtlinien der Seite "
+#~ "akzeptiert werden. Wenn diese Abfrage erscheint, obwohl die Richtlinien "
+#~ "bereits früher akzeptiert wurden, dann hat es Änderungen gegeben, die nun "
+#~ "akzeptiert werden müssen."
+
+#~ msgid "Minimum age permitted to register"
+#~ msgstr "Minimales zugelassenes Alter für die Registrierung"
+
+#~ msgid "Enter a positive integer, or 0 for no age check."
+#~ msgstr "Eine positive Zahl eingeben, oder 0 für keine Alterskontrolle."
+
+#~ msgid "Accessibility Statement"
+#~ msgstr "Erklärung zur Barrierefreiheit"
+
+#~ msgid "(POLICY TYPE NOT FOUND!)"
+#~ msgstr "(RICHTLINIEN-TYP NICHT GEFUNDEN!)"
+
+#~ msgid "Policy not available"
+#~ msgstr "Richtlinie nicht verfügbar"
+
+#~ msgid "The selected policy is not available."
+#~ msgstr "Die ausgewählte Richtlinie nicht verfügbar"
+
+#~ msgid ""
+#~ "If you leave this page without successfully accepting the policies, then "
+#~ "you will not be logged in."
+#~ msgstr ""
+#~ "Vor Verlassen dieser Seite müssen die Richtlinien akzeptiert werden, "
+#~ "damit die Anmeldung erfolgreich durchgeführt werden kann."
+
+#~ msgid "Save and continue logging in"
+#~ msgstr "Speichern und Anmeldung weiterführen"
+
+#~ msgid "Terms of Use:"
+#~ msgstr "Nutzungsbedingungen:"
+
+#~ msgid "%1$s not accepted."
+#~ msgstr "%1$s nicht akzeptiert."
+
+#~ msgid "Privacy Policy:"
+#~ msgstr "Hinweise zum Datenschutz:"
