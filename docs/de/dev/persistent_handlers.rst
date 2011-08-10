@@ -1,3 +1,10 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
+
 PERSISTENTE EVENT HANDLER
 -------------------------
 Zikula lädt normalerweise nur Module, auf die zugegriffen werden muss. Daher würden die

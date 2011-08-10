@@ -1,3 +1,10 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
+
 ZIKULA HOOKS
 ============
 Dieses Dokument beschreibt das Zikula Hook System.

@@ -1,3 +1,10 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
+
 Man kann Event Listener registrieren mit EventUtil::attach($name, $handler);
 
 Man kann Ereignisse auslösen mit

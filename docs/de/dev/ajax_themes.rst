@@ -1,3 +1,9 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
 PURES AJAX IN THEMES
 ====================
 Es ist nun möglich Ajax direkt innerhalb eines Themes zu verarbeiten. Um einen Ajax Controller

@@ -1,3 +1,10 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
+
 ZWECK
 -----------------
 Das Modul "menutree" hat keine Funktionalität - es dient nur als ein "Container" für den Block. Die folgende Beschreibung betrifft daher nur die Funktionalität des Blockes.

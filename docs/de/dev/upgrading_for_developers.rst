@@ -1,3 +1,9 @@
+==========================================================================================
+WICHTIG
+Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
+aktueller, als das hier vorliegende Material.
+==========================================================================================
+
 ALLGEMEIN
 =========
 - Das Format der Datei config.php hat sich geändert, daher müssen die Werte in
