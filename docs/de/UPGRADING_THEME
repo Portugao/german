@@ -1,74 +1,86 @@
-UPGRADING THEMES
-================
-The model example for a theme is the Andreas08 theme which is shipped with this
-package.  You should only attempt the following changes in Zikula 1.3.x after
-either a new installation or a successful upgrade, see UPGRADING.
+THEMES AKTUALISIEREN
+====================
+Diese Anleitung basiert exemplarisch auf dem Theme 'Andreas08', welches mit
+Zikula 1.3.x ausgeliefert wird. 
+Die folgenden Änderungen sollten nur nach einer neuen Installation oder einem
+erfolgreichem Update ausprobiert werden. 
 
-Theme Naming
-============
-The rule for a theme's name is that the folder must begin with a capital letter
-and must not contain any underscore, or dash.  The name can only contain letters
-and numbers (and cannot start with a number).  The version.php must be updated to
-reflect this.
 
-Template delimiters
-===================
-Please search and replace all the old tags and replace with the new ones
-<!--[ should be replaced with {
-]--> should be replaced with }
+Namensgebung
+------------
+Die wichtigsten Regeln für die Theme-Namen sind, dass das Verzeichnis mit einem 
+Großbuchstaben anfangen muss und das keine Unterstriche und keine Bindestricher 
+erlaubt sind. Der Name darf nur Buchstaben und Zahlen beinhalten und darf auch
+nicht mit einer Zahl anfangen. 
+Passend zum Verzeichnisnamen muss die version.php auch entsprechend angepasst werden.
 
-Please note that if you use browserhacks in your theme you should now use the
-{browserhack} plugin.  You can see the documentation for this plugin in
-lib/view/plugins/block.browserhack.php - an example might look like this:
+
+Template Delimiter
+------------------
+Bitte die folgenden Tags mit Suchen&Ersetzen überarbeiten:
+<!--[ sollte ersetzt werden durch {
+]--> sollte ersetzt werden durch }
+
+Falls bisher irgendwelche Browserhacks im Theme verwendet wurden, so sollte dies
+nun besser über das Plugin {browserhack} umgesetzt werden. Eine Dokumentation
+des Plugins befindet sich in lib/view/plugins/block.browserhack.php 
+
+So könnte ein Beispiel aussehen:
 
     {browserhack condition="if IE 6" assign="ieconditional"}<link rel="stylesheet" type="text/css" href="{$stylepath}/fluid960gs/ie6.css" media="screen" />{/browserhack}
     {pageaddvar name='rawtext' value=$ieconditional}
 
+Falls in den Templates eingebettetes Javascript oder Plugins wie auch Templates 
+innerhalb eines <script></script>-Blocks eingesetzt werden, so muss man nun doppelte
+geschwungene Klammern {{ und }} nutzen.
 
-If you use embedded javascript in any templates and require to use any plugins
-or templating inside the <script></script> block, please use double brackets,
-{{ and }} instead.
 
-Plugin names
-============
-Remove the prefix from any plugin names.
+Plugin-Namen
+------------
+Bitte das alte "pn"-Präfix aus allen Plugin-Namen entfernen.
 
-Multi-lingual themes
-====================
-You must specify the language in the HTML tag.  This should also include the
-language direction.  An example is like this for an XHTML theme.
+
+Mehrsprachige Themes
+--------------------
+Man sollte die Sprache im HTML Tag angeben. Weiterhin wäre es auch sinnvoll, dort
+die Leserichtung anzugeben. Ein Beispiel für ein XHTML-Theme würde so aussehen:
 
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang}" dir="{langdirection}">
 
-Title and Meta-tags
-==================
-The title and meta-tags are controlled by a different mechanism.  Please use the
-following:
+
+Title und Meta-Tags
+-------------------
+Die Titel und Meta-Tags werden nun über andere Mechanismen gesteuert. 
+Bitte nun die folgende Umsetzung im eigenen Theme anwenden:
 
     <meta http-equiv="Content-Type" content="text/html; charset={charset}" />
     <title>{pagegetvar name='title'}</title>
     <meta name="description" content="{$metatags.description}" />
     <meta name="keywords" content="{$metatags.keywords}" />
 
-$metatags.description and $metatags.keywords are both controlled from the General setting
-in the administration panel.
+$metatags.description und $metatags.keywords werden beide über die Hauptkonfiguration (Modul: 
+Allgemeine Einstellungen) konfiguriert.
 
-System and module variables
-===========================
-You may now address system configuration variables directly with
+
+System- und Modul-Variablen
+---------------------------
+Es ist nun möglich, die Systemkonfigurationsvariablen folgendermaßen zu erreichen:
 
     {$modvars.ZConfig.slogan}
 
-And a module like this:
+Und die Variablen eines Moduls wie folgt:
 
     {$modvars.MyModule.foo}
 
-Block configuration files
-=========================
-The theme configuration files in themes/<Themename>/config
-Please update these to point to the relative path of the block templates.
-This will vastly increase the speed it takes Zikula to find the requested
-template when a block is loaded.  An example might look like this:
+
+Block Konfigurationsdateien
+---------------------------
+Es wäre von Vorteil, wenn in den Konfigurationsdateien themes/<Themename>/config 
+die relativen Pfade für die Block-Templates angepasst werden würden.
+Das sorgt für einen enormen Geschwindigkeitszuwachs, da Zikula nun nicht mehr
+so lange nach den Templates suchen muss.
+
+So könnte es aussehen:
 
     [blockpositions]
     left = blocks/block.tpl
@@ -77,23 +89,25 @@ template when a block is loaded.  An example might look like this:
     topnav = blocks/topnavblock.tpl
     search = blocks/searchblock.tpl
 
-Theme overrides
-===============
-In order to override a template in a theme it is now necessary to specically
-tell Zikula about it.  You can do it by adding a file called 'overrides.yml'
-directly in your themes/<Themename>/ folder.  This file is in YAML format.
 
-Simply specify the relative path of the template you want to override on the left
-followed by a colon and space, then the relative path to the overriden template.
-There is one warning here.  The path and template name specificed in the module,
-block or theme must exist in the override.
+Templates auslagern
+-------------------
+Um ein Template im Theme auszulagern, ist es nun notwendig dem System mitzuteilen,
+wo sich das Template befindet. Dies kann durch eine neu zu erstellende Datei
+namens 'overrides.yml' im Verzeichnis themes/<Themename>/ erreicht werden. Die
+Datei liegt im YAML Format vor.
 
-So if a module calls template.tpl, then you can have <pathto>/template.tpl
-but if a module calls user/template.tpl, then you have to override
-with <pathto>/user/template.tpl
+Dazu muss links einfach der relative Pfad des auszulagernden Templates hinterlegt werden,
+gefolgt von einem Doppelpunkt oder Leerzeichen und dann dahinter der relative Pfad des 
+neuen Templates.
+Ein wichtiger Hinweis: Der angegebene Pfad und Templatename des Moduls, Block oder
+Theme muss im dann im Thema auch unbedingt existieren.
 
-An example is kept in the Andreas08 theme shipped with this package and looks like
-this:
+Wenn ein Modul ein Template namens template.tpl aufruft, so lautet der Pfad dazu 
+<pathto>/template.tpl. Wenn das Modul aber das Template jedoch user/template.tpl aufruft,
+so muss in der 'overrides.yml' der Pfad auch <pathto>/user/template.tpl lauten.
+
+Ein Beispiel dazu befindet sich im Andreas08-Theme und das sieht folgendermaßen aus:
 
     ## original/file.tpl: override/file.tpl
     ---
