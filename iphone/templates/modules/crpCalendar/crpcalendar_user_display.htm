@@ -1,0 +1,18 @@
+<div title="Termin">
+    <h2><!--[ $event.title|utf8_encode ]--></h2>
+	
+	<h3>Wann?</h3>
+	<p><abbr class="dtstart nounderline" title="<!--[$event.start_date|pndate_format:"%Y%m%dT%H%MZ"]-->"><!--[$event.start_date|pndate_format:"datetimelong"]--></abbr></p>
+	<!--[if $event.location]-->
+	<h3>Wo?</h3>
+	<!--[if $enable_locations && pnModAvailable('locations') && is_numeric($event.location.locationid)]-->
+	<!--[include file="locations/crpcalendar_user_location_card.htm"]-->
+	<!--[else]-->
+	<p class="location"><!--[$event.location|utf8_encode]--></p>
+	<!--[/if]-->
+	<!--[/if]-->
+        <!--[if $event.event_text]-->
+	<h3>Was?</h3>
+        <!--[$event.event_text|default:"&nbsp;"|nl2br|pnmodcallhooks:"crpCalendar"|nl2br|utf8_encode|paragraph]-->
+        <!--[/if]-->
+</div>s

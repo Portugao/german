@@ -1,0 +1,22 @@
+<ul title="Heute">
+<!--[foreach from=$events key=kcategory item=category name=singlecat]-->
+	<li>
+		<!--[$kcategory|utf8_encode]-->
+	</li>
+			<!--[foreach from=$category key=kevent item=event name=single]-->
+				<li>
+					<a href="<!--[pnmodurl modname="crpCalendar" type="user" func="display" eventid=$event.eventid]-->"><!--[$event.start_date|pndate_format:"%H:%M"]-->  Uhr <!--[$event.title|utf8_encode|pnvarprephtmldisplay]-->,
+					<!--[if $event.location]-->
+					<!--[pnmodgetvar module="crpCalendar" name="enable_locations" assign="enable_locations"]-->
+					<!--[if $enable_locations && $event.location|is_numeric]-->
+					<!--[pnmodapifunc modname="locations" type="user" func="getLocationByID" locationid=$event.location assign="location"]-->
+						<!--[$location.name|utf8_encode]-->
+					<!--[else]-->
+						<!--[$event.location|utf8_encode]-->
+					<!--[/if]-->
+					<!--[/if]-->
+					</a>
+				</li>
+			<!--[/foreach]-->
+	<!--[/foreach]-->	
+</ul>

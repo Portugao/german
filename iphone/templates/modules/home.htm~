@@ -1,0 +1,71 @@
+<!--[iphoneOff]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title><!--[title]--></title>
+  <meta name="AUTHOR" content="Steffen Voss kaffeeringe.de" />
+  <meta http-equiv="Content-Type" content="text/html; charset=8859-15" />
+  <name="viewport" id="iphone-viewport" content="width=480, maximum-scale=0.6667" />
+  <link rel="stylesheet" type="text/css" href="<!--[$themepath]-->/iui/iui.css" />
+  <script type="application/x-javascript" src="<!--[$themepath]-->/iui/iui.js"></script>
+  <script type="application/x-javascript">
+	if (navigator.userAgent.indexOf('iPhone') != -1) {
+		addEventListener("load", function() {
+			setTimeout(hideURLbar, 0);
+		}, false);
+	}
+	
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+  </script>
+</head>
+<body>
+<div class="toolbar">
+        <h1 id="pageTitle">Fördeflüsterer</h1>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+
+<ul id="main" title="Startseite" selected="true">
+<li><a href="<!--[pnmodurl modname="pagesetter" type="user" func="viewpub" tid="2" pid="1" ]-->">Top Stories</a></li>
+<li><a href="<!--[pnmodurl modname="pagesetter" type="user" func="view" tid="1" filter="category:sub:3"]-->">Nachrichten</a></li>
+<li><a href="<!--[pnmodurl modname="pagesetter" type="user" func="view" tid="1" filter="category:sub:6"]-->">Szene</a></li>
+<li><a href="<!--[pnmodurl modname="pagesetter" type="user" func="view" tid="1" filter="category:sub:5"]-->">Kultur</a></li>
+<li><a href="<!--[pnmodurl modname="pagesetter" type="user" func="view" tid="1" filter="category:sub:4"]-->">Sport</a></li>
+<!--[today assign="today"]-->
+<li><a href="<!--[pnmodurl modname="crpCalendar" type="user" func="day_view" t=$today]-->">Termine</a></li>
+<li><a href="<!--[pngetbaseurl]-->index.php?normal=on" target="_self">Normale Ansicht</a></li>
+</ul>
+
+<form id="searchForm" class="dialog" action="<!--[pnmodurl modname="Search" type="user" func="search" theme="iphone"]-->">
+        <fieldset>
+            <h1>Music Search</h1>
+            <a class="button leftButton" type="cancel">Cancel</a>
+
+            <a class="button blueButton" type="submit">Search</a>
+            
+            <input id="search_q" name="q" type="text">
+
+		<label >Suche</label>
+		<input name="active[crpCalendar]" value="1" type="hidden">
+		<input name="active[pagesetter]" value="1" type="hidden">
+		<input name="active[Users]" value="1" type="hidden">
+		<input name="modvar[disable_Admin_Messages]" value="1" type="hidden">
+		<input name="modvar[disable_crpTag]" value="1" type="hidden">
+		<input name="modvar[disable_ezcomments]" value="1" type="hidden">
+		<input name="modvar[disable_Feeds]" value="1" type="hidden">
+		<input name="modvar[disable_mediashare]" value="1" type="hidden">
+		<input name="modvar[disable_Pages]" value="1" type="hidden">
+		<input name="modvar[disable_pnForum]" value="1" type="hidden">
+		<input name="modvar[disable_Users]" value="1" type="hidden">
+		<input name="modvar[itemsperpage]" value="10" type="hidden">
+		<input name="modvar[limitsummary]" value="255" type="hidden">
+
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

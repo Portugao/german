@@ -1,0 +1,5 @@
+<!--[pnvarcleanfrominput name="filter" assign="filter"]-->
+<!--[assign var="check" value=":"|explode:$filter ]-->
+<!--[assign var="cid" value=$filter|replace:"category:sub:":"" ]-->
+<!--[pagesetter_getCategoryItem id=$cid assign="category"]-->
+<ul title="<!--[$category.title]-->">
