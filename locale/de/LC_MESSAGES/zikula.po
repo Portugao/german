@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-07-13 08:15-0400\n"
-"PO-Revision-Date: 2011-08-11 14:56+0100\n"
+"PO-Revision-Date: 2011-09-14 10:53+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -4654,7 +4654,7 @@ msgstr "Es ist ein unbekannter Fehler aufgetreten. Die folgende Fehlermeldung wu
 #: system/Errors/lib/Errors/Controller/User.php:72
 #, php-format
 msgid "Exception thrown in %1$s, line %2$s."
-msgstr "Aufnahmefehler in %1$s, Zeile %2$s"
+msgstr "Ausnahmefehler in %1$s, Zeile %2$s"
 
 #: system/Errors/lib/Errors/Version.php:20
 msgid "Errors"
