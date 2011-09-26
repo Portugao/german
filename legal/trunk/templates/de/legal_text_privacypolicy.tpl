@@ -10,7 +10,7 @@
 </p>
 
 <p>
-  Das Angebot unter {configgetvar name='sitename'} können Sie grundsätzlich ohne die Eingabe
+  Das Angebot unter {$modvars.ZConfig.sitename} können Sie grundsätzlich ohne die Eingabe
   personenbezogener Daten nutzen, soweit auf unserem Angebot die Möglichkeit besteht,
   personenbezogene Daten einzugeben, so geschieht dies freiwillig. Sie können ggfs. Beiträge
   veröffentlichen und auch eigene Inhalte zur Veröffentlichung auf dem Angebot unter einem selbst gewählten Pseudonym einreichen. Dazu
