@@ -1,10 +1,10 @@
 # Carsten Volmer <carsten@zikula.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zikula Core 1.3.0\n"
+"Project-Id-Version: Zikula Core 1.3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-02 06:36+0000\n"
-"PO-Revision-Date: 2011-12-02 20:00+0100\n"
+"POT-Creation-Date: 2011-12-16 10:29+0000\n"
+"PO-Revision-Date: 2011-12-18 12:16+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -828,8 +828,8 @@ msgstr "E-Mail Adresse"
 #: upgrade.php:236
 #: install/templates/installer_createadmin.tpl:24
 #: install/templates/installer_dbinformation.tpl:36
-#: system/Permissions/templates/permissions_admin_view.tpl:200
-#: system/Groups/templates/groups_admin_view.tpl:207
+#: system/Permissions/templates/permissions_admin_view.tpl:202
+#: system/Groups/templates/groups_admin_view.tpl:215
 #: system/Groups/templates/groups_admin_userpending.tpl:23
 #: system/Groups/templates/groups_admin_groupmembership.tpl:13
 #: system/Groups/templates/groups_user_memberslist.tpl:55
@@ -1342,16 +1342,16 @@ msgstr "Fehler! Der Wert muss %s oder weniger sein."
 #: system/Categories/templates/categories_user_list.tpl:58
 #: system/Categories/templates/categories_admin_edit.tpl:123
 #: system/Categories/templates/categories_admin_registry_edit.tpl:47
-#: system/Permissions/templates/permissions_admin_view.tpl:135
 #: system/Permissions/templates/permissions_admin_view.tpl:137
-#: system/Permissions/templates/permissions_admin_view.tpl:179
-#: system/Groups/templates/groups_admin_view.tpl:111
-#: system/Groups/templates/groups_admin_view.tpl:112
-#: system/Groups/templates/groups_admin_view.tpl:185
+#: system/Permissions/templates/permissions_admin_view.tpl:139
+#: system/Permissions/templates/permissions_admin_view.tpl:181
+#: system/Groups/templates/groups_admin_view.tpl:119
+#: system/Groups/templates/groups_admin_view.tpl:120
+#: system/Groups/templates/groups_admin_view.tpl:193
 #: system/Admin/templates/admin_admin_help.tpl:22
 #: system/Theme/templates/theme_admin_pageconfigurations.tpl:21
 #: system/Theme/templates/theme_admin_pageconfigurations.tpl:45
-#: system/Theme/templates/theme_admin_view.tpl:52
+#: system/Theme/templates/theme_admin_view.tpl:60
 #: system/Users/templates/users_admin_displayregistration.tpl:25
 #: system/Users/templates/users_admin_search_results.tpl:60
 #: system/Users/templates/users_admin_view.tpl:23
@@ -1639,18 +1639,18 @@ msgstr "Log-Konsole"
 #: system/Extensions/templates/extensions_admin_view.tpl:86
 #: system/Extensions/templates/extensions_admin_viewPlugins.tpl:97
 #: system/Search/templates/search_user_recent.tpl:21
-#: system/Groups/templates/groups_admin_view.tpl:226
+#: system/Groups/templates/groups_admin_view.tpl:234
 #: system/Groups/templates/groups_admin_groupmembership.tpl:33
 #: system/Admin/templates/admin_admin_view.tpl:33
 #: system/Theme/templates/theme_admin_variables.tpl:47
-#: system/Theme/templates/theme_admin_view.tpl:63
+#: system/Theme/templates/theme_admin_view.tpl:71
 #: system/Blocks/templates/blocks_admin_view.tpl:114
 #: system/Blocks/templates/blocks_admin_view.tpl:144
 msgid "No items found."
 msgstr "Keine Einträge gefunden"
 
 #: lib/Zikula/DebugToolbar/Panel/Log.php:92
-#: system/Groups/templates/groups_admin_view.tpl:41
+#: system/Groups/templates/groups_admin_view.tpl:43
 #: system/Groups/templates/groups_user_view.tpl:11
 #: system/Groups/templates/groups_admin_modify.tpl:20
 #: system/Groups/templates/groups_admin_new.tpl:19
@@ -1881,8 +1881,8 @@ msgstr "ID"
 #: system/Categories/templates/categories_admin_move.tpl:14
 #: system/Categories/templates/categories_admin_copy.tpl:14
 #: system/Categories/templates/categories_include_editattributes.tpl:4
-#: system/Groups/templates/groups_admin_view.tpl:40
-#: system/Groups/templates/groups_admin_view.tpl:208
+#: system/Groups/templates/groups_admin_view.tpl:42
+#: system/Groups/templates/groups_admin_view.tpl:216
 #: system/Groups/templates/groups_user_view.tpl:9
 #: system/Groups/templates/groups_admin_modify.tpl:16
 #: system/Groups/templates/groups_admin_new.tpl:15
@@ -1928,7 +1928,7 @@ msgstr "Anzeigename"
 #: system/Categories/templates/categories_adminajax_edit.tpl:61
 #: system/Categories/templates/categories_user_edit.tpl:90
 #: system/Categories/templates/categories_admin_edit.tpl:74
-#: system/Groups/templates/groups_admin_view.tpl:42
+#: system/Groups/templates/groups_admin_view.tpl:44
 #: system/Groups/templates/groups_user_view.tpl:10
 #: system/Groups/templates/groups_admin_modify.tpl:36
 #: system/Groups/templates/groups_admin_new.tpl:35
@@ -2434,7 +2434,7 @@ msgstr "Privat"
 #: lib/util/HtmlUtil.php:593
 #: system/Permissions/lib/Permissions/Controller/Admin.php:337
 #: system/Permissions/templates/permissions_admin_view.tpl:51
-#: system/Permissions/templates/permissions_admin_view.tpl:82
+#: system/Permissions/templates/permissions_admin_view.tpl:84
 #: system/Users/templates/users_admin_modify.tpl:183
 msgid "Group"
 msgstr "Gruppe"
@@ -6153,6 +6153,7 @@ msgstr "Kategorienverwaltung"
 #: system/Blocks/lib/Blocks/Installer.php:152
 #: system/Blocks/lib/Blocks/Installer.php:161
 #: system/Blocks/lib/Blocks/Installer.php:330
+#: system/Search/templates/search_user_form.tpl:2
 #: system/Search/templates/search_user_menu.tpl:2
 #: themes/SeaBreeze/templates/includes/userheader.tpl:13
 msgid "Site search"
@@ -6176,11 +6177,11 @@ msgstr "Fehler! Es wurden keine Suchbegriffe eingegeben."
 msgid "Error! '%1$s' module returned false in search function '%2$s'."
 msgstr "Fehler! Modul '%1$s' lieferte einen Fehler in der Suchfunktion '%2$s'."
 
-#: system/Search/lib/Search/Api/User.php:437
+#: system/Search/lib/Search/Api/User.php:438
 msgid "New search"
 msgstr "Neue Suche"
 
-#: system/Search/lib/Search/Api/User.php:438
+#: system/Search/lib/Search/Api/User.php:440
 msgid "Recent searches list"
 msgstr "Letzte Suchvorgänge"
 
@@ -6278,7 +6279,7 @@ msgstr "Zugriffsrecht bearbeiten"
 #: system/Permissions/lib/Permissions/Controller/Admin.php:373
 #: system/Permissions/lib/Permissions/Controller/Admin.php:382
 #: system/Permissions/lib/Permissions/Api/Admin.php:505
-#: system/Permissions/templates/permissions_admin_view.tpl:73
+#: system/Permissions/templates/permissions_admin_view.tpl:74
 msgid "Create new permission rule"
 msgstr "Zugriffsrecht hinzufügen"
 
@@ -6341,7 +6342,7 @@ msgid "Error! Could not delete permission rule with ID %s."
 msgstr "Fehler! Das Zugriffsrecht mit der ID %s konnte nicht gelöscht werden."
 
 #: system/Permissions/lib/Permissions/Controller/Ajax.php:185
-#: system/Permissions/templates/permissions_admin_view.tpl:220
+#: system/Permissions/templates/permissions_admin_view.tpl:222
 msgid "Permission check result:"
 msgstr "Ergebnis der Überprüfung:"
 
@@ -6443,12 +6444,12 @@ msgstr "gruppen"
 #: system/Categories/templates/categories_include_editattributes.tpl:19
 #: system/Categories/templates/categories_admin_registry_edit.tpl:48
 #: system/Permissions/templates/permissions_admin_delete.tpl:18
-#: system/Permissions/templates/permissions_admin_view.tpl:136
-#: system/Permissions/templates/permissions_admin_view.tpl:142
-#: system/Permissions/templates/permissions_admin_view.tpl:184
-#: system/Groups/templates/groups_admin_view.tpl:113
-#: system/Groups/templates/groups_admin_view.tpl:118
-#: system/Groups/templates/groups_admin_view.tpl:189
+#: system/Permissions/templates/permissions_admin_view.tpl:138
+#: system/Permissions/templates/permissions_admin_view.tpl:144
+#: system/Permissions/templates/permissions_admin_view.tpl:186
+#: system/Groups/templates/groups_admin_view.tpl:121
+#: system/Groups/templates/groups_admin_view.tpl:126
+#: system/Groups/templates/groups_admin_view.tpl:197
 #: system/Groups/templates/groups_admin_delete.tpl:5
 #: system/Groups/templates/groups_admin_delete.tpl:18
 #: system/SecurityCenter/templates/securitycenter_admin_purgeidslog.tpl:22
@@ -6458,7 +6459,7 @@ msgstr "gruppen"
 #: system/Theme/templates/theme_admin_delete.tpl:22
 #: system/Theme/templates/theme_admin_deletepageconfigurationassignment.tpl:17
 #: system/Theme/templates/theme_admin_pageconfigurations.tpl:22
-#: system/Theme/templates/theme_admin_view.tpl:54
+#: system/Theme/templates/theme_admin_view.tpl:62
 #: system/Blocks/templates/blocks_admin_deleteposition.tpl:17
 #: system/Blocks/templates/blocks_admin_modify.tpl:55
 #: system/Blocks/templates/blocks_admin_modify.tpl:72
@@ -6475,7 +6476,7 @@ msgid "Delete"
 msgstr "Löschen"
 
 #: system/Groups/lib/Groups/Controller/Admin.php:118
-#: system/Groups/templates/groups_admin_view.tpl:114
+#: system/Groups/templates/groups_admin_view.tpl:122
 #: system/Groups/templates/groups_admin_groupmembership.tpl:7
 #: system/Users/templates/users_admin_modify.tpl:179
 #: system/Users/templates/users_admin_search.tpl:28
@@ -6678,7 +6679,7 @@ msgid "Groups list"
 msgstr "Gruppenliste"
 
 #: system/Groups/lib/Groups/Api/Admin.php:500
-#: system/Groups/templates/groups_admin_view.tpl:32
+#: system/Groups/templates/groups_admin_view.tpl:33
 #: system/Groups/templates/groups_admin_new.tpl:6
 msgid "Create new group"
 msgstr "Gruppe hinzufügen"
@@ -10166,10 +10167,10 @@ msgstr "Kann bestehende indizierte URLs zerstören."
 #: system/Categories/templates/categories_admin_preferences.tpl:38
 #: system/Search/templates/search_admin_modifyconfig.tpl:35
 #: system/Permissions/templates/permissions_admin_modifyconfig.tpl:57
-#: system/Permissions/templates/permissions_admin_view.tpl:141
-#: system/Permissions/templates/permissions_admin_view.tpl:183
-#: system/Groups/templates/groups_admin_view.tpl:117
-#: system/Groups/templates/groups_admin_view.tpl:188
+#: system/Permissions/templates/permissions_admin_view.tpl:143
+#: system/Permissions/templates/permissions_admin_view.tpl:185
+#: system/Groups/templates/groups_admin_view.tpl:125
+#: system/Groups/templates/groups_admin_view.tpl:196
 #: system/Groups/templates/groups_admin_modify.tpl:42
 #: system/Groups/templates/groups_admin_new.tpl:41
 #: system/Groups/templates/groups_user_membership.tpl:38
@@ -10226,10 +10227,10 @@ msgstr "Speichern"
 #: system/Search/templates/search_admin_modifyconfig.tpl:36
 #: system/Permissions/templates/permissions_admin_modifyconfig.tpl:58
 #: system/Permissions/templates/permissions_admin_delete.tpl:19
-#: system/Permissions/templates/permissions_admin_view.tpl:143
-#: system/Permissions/templates/permissions_admin_view.tpl:185
-#: system/Groups/templates/groups_admin_view.tpl:119
-#: system/Groups/templates/groups_admin_view.tpl:190
+#: system/Permissions/templates/permissions_admin_view.tpl:145
+#: system/Permissions/templates/permissions_admin_view.tpl:187
+#: system/Groups/templates/groups_admin_view.tpl:127
+#: system/Groups/templates/groups_admin_view.tpl:198
 #: system/Groups/templates/groups_admin_modify.tpl:43
 #: system/Groups/templates/groups_admin_new.tpl:42
 #: system/Groups/templates/groups_user_grouprow_read.tpl:14
@@ -10323,8 +10324,8 @@ msgid "Error! Required dependencies are not present. To install this module, ple
 msgstr "Fehler! Benötigte Abhängigkeiten sind nicht vorhanden. Um dieses Modul zu installieren, bitte die Abhängigkeiten hochladen."
 
 #: system/Extensions/templates/extensions_admin_initialise.tpl:62
-#: system/Groups/templates/groups_admin_view.tpl:221
-#: system/Groups/templates/groups_admin_view.tpl:222
+#: system/Groups/templates/groups_admin_view.tpl:229
+#: system/Groups/templates/groups_admin_view.tpl:230
 #: system/Groups/templates/groups_admin_userpending.tpl:48
 #: system/Theme/templates/theme_admin_setasdefault.tpl:22
 msgid "Accept"
@@ -10380,7 +10381,7 @@ msgstr "Version"
 
 #: system/Extensions/templates/extensions_admin_view.tpl:36
 #: system/Extensions/templates/extensions_admin_viewPlugins.tpl:50
-#: system/Groups/templates/groups_admin_view.tpl:43
+#: system/Groups/templates/groups_admin_view.tpl:45
 #: system/Groups/templates/groups_user_view.tpl:12
 #: system/Groups/templates/groups_admin_modify.tpl:26
 #: system/Groups/templates/groups_admin_new.tpl:25
@@ -10395,9 +10396,9 @@ msgstr "Status"
 #: system/Extensions/templates/extensions_admin_view.tpl:53
 #: system/Extensions/templates/extensions_admin_viewPlugins.tpl:61
 #: system/Categories/templates/categories_admin_registry_edit.tpl:27
-#: system/Permissions/templates/permissions_admin_view.tpl:86
-#: system/Groups/templates/groups_admin_view.tpl:46
-#: system/Groups/templates/groups_admin_view.tpl:210
+#: system/Permissions/templates/permissions_admin_view.tpl:88
+#: system/Groups/templates/groups_admin_view.tpl:48
+#: system/Groups/templates/groups_admin_view.tpl:218
 #: system/Groups/templates/groups_admin_groupmembership.tpl:15
 #: system/SecurityCenter/templates/securitycenter_admin_viewidslog.tpl:62
 #: system/Admin/templates/admin_admin_view.tpl:18
@@ -10953,7 +10954,7 @@ msgstr "Meta-Daten"
 #: system/Categories/templates/categories_user_list.tpl:6
 #: system/Categories/templates/categories_user_edit.tpl:111
 #: system/Categories/templates/categories_admin_edit.tpl:94
-#: system/Groups/templates/groups_admin_view.tpl:39
+#: system/Groups/templates/groups_admin_view.tpl:41
 #: system/Theme/templates/theme_admin_credits.tpl:16
 #: system/Users/templates/users_admin_view.tpl:41
 msgid "Internal ID"
@@ -11122,11 +11123,11 @@ msgstr "Keyword suchen"
 msgid "Search now"
 msgstr "Suchen"
 
-#: system/Search/templates/search_user_noplugins.tpl:2
+#: system/Search/templates/search_user_noplugins.tpl:1
 msgid "No search plug-ins found"
 msgstr "Es konnten keine Plugins für das Suchmodul gefunden werden."
 
-#: system/Search/templates/search_user_noplugins.tpl:3
+#: system/Search/templates/search_user_noplugins.tpl:4
 msgid "Error! Could not find any search plug-ins to use."
 msgstr "Fehler! Es konnten keine nutzbaren Plugins für das Suchmodul gefunden werden."
 
@@ -11135,7 +11136,7 @@ msgid "Recent searches"
 msgstr "Letzte Suchvorgänge"
 
 #: system/Search/templates/search_user_recent.tpl:8
-#: system/Search/templates/search_user_form.tpl:2
+#: system/Search/templates/search_user_form.tpl:8
 msgid "Search keywords"
 msgstr "Suchbegriffe"
 
@@ -11293,18 +11294,18 @@ msgstr "Sequenz"
 
 #: system/Permissions/templates/permissions_admin_listedit.tpl:28
 #: system/Permissions/templates/permissions_admin_view.tpl:56
-#: system/Permissions/templates/permissions_admin_view.tpl:83
+#: system/Permissions/templates/permissions_admin_view.tpl:85
 msgid "Component"
 msgstr "Komponente"
 
 #: system/Permissions/templates/permissions_admin_listedit.tpl:29
-#: system/Permissions/templates/permissions_admin_view.tpl:84
+#: system/Permissions/templates/permissions_admin_view.tpl:86
 msgid "Instance"
 msgstr "Instanz"
 
 #: system/Permissions/templates/permissions_admin_listedit.tpl:30
-#: system/Permissions/templates/permissions_admin_view.tpl:85
-#: system/Permissions/templates/permissions_admin_view.tpl:212
+#: system/Permissions/templates/permissions_admin_view.tpl:87
+#: system/Permissions/templates/permissions_admin_view.tpl:214
 msgid "Permission level"
 msgstr "Zugriffsstufe"
 
@@ -11352,39 +11353,39 @@ msgstr "Filter auswählen"
 msgid "Filter"
 msgstr "Filter"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:74
+#: system/Permissions/templates/permissions_admin_view.tpl:75
 msgid "Caution! Filter is active!"
 msgstr "Achtung! Filter ist aktiv!"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:134
+#: system/Permissions/templates/permissions_admin_view.tpl:136
 msgid "Insert permission rule before"
 msgstr "Zugriffsrecht oberhalb einfügen"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:138
-#: system/Permissions/templates/permissions_admin_view.tpl:180
-#: system/Permissions/templates/permissions_admin_view.tpl:198
+#: system/Permissions/templates/permissions_admin_view.tpl:140
+#: system/Permissions/templates/permissions_admin_view.tpl:182
+#: system/Permissions/templates/permissions_admin_view.tpl:200
 msgid "User permission check"
 msgstr "Zugriffregel für Benutzer überprüfen"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:138
-#: system/Permissions/templates/permissions_admin_view.tpl:180
+#: system/Permissions/templates/permissions_admin_view.tpl:140
+#: system/Permissions/templates/permissions_admin_view.tpl:182
 msgid "Check a users permission"
 msgstr "Zugriffregel für bestimmten Benutzer überprüfen"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:204
+#: system/Permissions/templates/permissions_admin_view.tpl:206
 msgid "Component to check"
 msgstr "Zu prüfende Komponente"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:208
+#: system/Permissions/templates/permissions_admin_view.tpl:210
 msgid "Instance to check"
 msgstr "Zu prüfende Instanz"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:227
-#: system/Permissions/templates/permissions_admin_view.tpl:228
+#: system/Permissions/templates/permissions_admin_view.tpl:229
+#: system/Permissions/templates/permissions_admin_view.tpl:230
 msgid "Check permission"
 msgstr "Zugriffregel überprüfen"
 
-#: system/Permissions/templates/permissions_admin_view.tpl:229
+#: system/Permissions/templates/permissions_admin_view.tpl:231
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -11401,13 +11402,13 @@ msgstr "Gruppe wird gelöscht"
 msgid "Do you really want to delete this group?"
 msgstr "Soll die Gruppe wirklich gelöscht werden?"
 
-#: system/Groups/templates/groups_admin_view.tpl:44
+#: system/Groups/templates/groups_admin_view.tpl:46
 #: system/Groups/templates/groups_user_view.tpl:13
 #: system/Groups/templates/groups_user_memberslist.tpl:11
 msgid "Members"
 msgstr "Mitglieder"
 
-#: system/Groups/templates/groups_admin_view.tpl:45
+#: system/Groups/templates/groups_admin_view.tpl:47
 #: system/Groups/templates/groups_user_view.tpl:14
 #: system/Groups/templates/groups_admin_modify.tpl:32
 #: system/Groups/templates/groups_admin_new.tpl:31
@@ -11415,32 +11416,60 @@ msgstr "Mitglieder"
 msgid "Maximum membership"
 msgstr "Max. Benutzer"
 
-#: system/Groups/templates/groups_admin_view.tpl:189
+#: system/Groups/templates/groups_admin_view.tpl:112
+#: system/Theme/templates/theme_admin_view.tpl:55
+#, php-format
+msgid "Edit: %s"
+msgstr "Bearbeiten: %s"
+
+#: system/Groups/templates/groups_admin_view.tpl:113
+#: system/Groups/templates/groups_admin_view.tpl:116
+#: system/Theme/templates/theme_admin_view.tpl:56
+#, php-format
+msgid "Delete: %s"
+msgstr "Löschen: %s"
+
+#: system/Groups/templates/groups_admin_view.tpl:114
+#, php-format
+msgid "Membership of: %s"
+msgstr "Mitgliedschaften von: %s"
+
+#: system/Groups/templates/groups_admin_view.tpl:115
+#, php-format
+msgid "Save: %s"
+msgstr "Speichern: %s"
+
+#: system/Groups/templates/groups_admin_view.tpl:117
+#, php-format
+msgid "Cancel: %s"
+msgstr "Abbrechen: %s"
+
+#: system/Groups/templates/groups_admin_view.tpl:197
 msgid "Delete:"
 msgstr "Löschen:"
 
-#: system/Groups/templates/groups_admin_view.tpl:198
+#: system/Groups/templates/groups_admin_view.tpl:206
 msgid "Default user group. Cannot be deleted."
 msgstr "Standardbenutzergruppe. Kann nicht gelöscht werden."
 
-#: system/Groups/templates/groups_admin_view.tpl:199
+#: system/Groups/templates/groups_admin_view.tpl:207
 msgid "Primary administrators group. Cannot be deleted."
 msgstr "Primäre Administratorengruppe. Kann nicht gelöscht werden."
 
-#: system/Groups/templates/groups_admin_view.tpl:202
+#: system/Groups/templates/groups_admin_view.tpl:210
 msgid "Pending applications"
 msgstr "Ausstehende Anfragen"
 
-#: system/Groups/templates/groups_admin_view.tpl:206
+#: system/Groups/templates/groups_admin_view.tpl:214
 #: system/Groups/templates/groups_admin_groupmembership.tpl:14
 msgid "User ID"
 msgstr "Benutzer-ID"
 
-#: system/Groups/templates/groups_admin_view.tpl:209
+#: system/Groups/templates/groups_admin_view.tpl:217
 msgid "Comment"
 msgstr "Kommentar"
 
-#: system/Groups/templates/groups_admin_view.tpl:222
+#: system/Groups/templates/groups_admin_view.tpl:230
 #: system/Groups/templates/groups_admin_userpending.tpl:46
 #: system/Users/templates/users_admin_displayregistration.tpl:22
 msgid "Deny"
@@ -12941,11 +12970,11 @@ msgstr "Das aktuelle Theme ist '%s'."
 msgid "Your chosen theme is not the current site default. You can <a href=\"%1$s\">reset</a> your chosen theme to site default of <a href=\"?theme=%2$s\">%3$s</a>."
 msgstr "Beim ausgewählten Theme handelt es sich nicht um das Standardtheme <a href=\"?theme=%2$s\">%3$s</a> der Seite. Diese Auswahl kann jederzeit wieder <a href=\"%1$s\">zurückgesetzt</a> werden."
 
-#: system/Theme/templates/theme_user_main.tpl:26
+#: system/Theme/templates/theme_user_main.tpl:34
 msgid "Preview theme"
 msgstr "Theme-Vorschau"
 
-#: system/Theme/templates/theme_user_main.tpl:27
+#: system/Theme/templates/theme_user_main.tpl:35
 msgid "Use theme"
 msgstr "Theme benutzen"
 
@@ -13224,7 +13253,7 @@ msgid "System theme"
 msgstr "System-Theme"
 
 #: system/Theme/templates/theme_admin_credits.tpl:31
-#: system/Theme/templates/theme_admin_view.tpl:59
+#: system/Theme/templates/theme_admin_view.tpl:67
 msgid "Credits"
 msgstr "Credits"
 
@@ -13266,16 +13295,31 @@ msgstr "Neue Seitenvariable hinzufügen"
 msgid "Themes control the visual presentation of a site. Zikula ships with a small selection of themes, but many more are available from the %s."
 msgstr "Themes bestimmen das Aussehen der Website. Im Zikula-Core ist eine Standardauswahl bereits enthalten. Weitere Themes stehen in der %s zur Verfügung."
 
-#: system/Theme/templates/theme_admin_view.tpl:41
-#: system/Theme/templates/theme_admin_view.tpl:68
+#: system/Theme/templates/theme_admin_view.tpl:44
+#: system/Theme/templates/theme_admin_view.tpl:76
 msgid "Default theme"
 msgstr "Standardtheme"
 
-#: system/Theme/templates/theme_admin_view.tpl:51
+#: system/Theme/templates/theme_admin_view.tpl:54
+#, php-format
+msgid "Preview: %s"
+msgstr "Vorschau: %s"
+
+#: system/Theme/templates/theme_admin_view.tpl:57
+#, php-format
+msgid "Set as default: %s"
+msgstr "Als Standard setzen: %s"
+
+#: system/Theme/templates/theme_admin_view.tpl:58
+#, php-format
+msgid "Credits: %s"
+msgstr "Credits: %s"
+
+#: system/Theme/templates/theme_admin_view.tpl:59
 msgid "Preview"
 msgstr "Vorschau"
 
-#: system/Theme/templates/theme_admin_view.tpl:57
+#: system/Theme/templates/theme_admin_view.tpl:65
 msgid "Set as default"
 msgstr "Als Standard setzen"
 
