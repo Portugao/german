@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: News\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-21 21:08+0000\n"
-"PO-Revision-Date: 2011-08-11 12:29+0100\n"
+"POT-Creation-Date: 2011-12-27 04:07-0500\n"
+"PO-Revision-Date: 2011-12-27 10:24+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,50 +20,6 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: German\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-
-#: javascript/news_admin.js:40
-msgid "delete"
-msgstr "löschen"
-
-#: javascript/news_admin.js:41
-msgid "archive"
-msgstr "archivieren"
-
-#: javascript/news_admin.js:42
-msgid "publish"
-msgstr "veröffentlichen"
-
-#: javascript/news_admin.js:43
-msgid "reject"
-msgstr "zurückziehen"
-
-#: javascript/news_admin.js:44
-msgid "change categories for"
-msgstr "Kategorien ändern für"
-
-#: javascript/news_admin.js:47
-msgid "You cannot undo this operation!"
-msgstr "Diese Aktion kann nicht rückgängig gemacht werden!"
-
-#: javascript/news_admin.js:65
-#, php-format
-msgid "Are you sure you want to %s the following article"
-msgid_plural "Are you sure you want to %s the following articles"
-msgstr[0] "Beitrag %s. Soll wirklich fortgefahren werden"
-msgstr[1] "Beiträge %s. Soll wirklich fortgefahren werden"
-
-#: javascript/news_admin.js:70
-msgid "Confirm Bulk Action"
-msgstr "Massenänderung bestätigen"
-
-#: javascript/news_admin.js:87
-#, php-format
-msgid "Please select at least one article to %s."
-msgstr "Bitte mindestens einen Beitrag zum %s auswählen."
-
-#: javascript/news_admin.js:88
-msgid "Bulk action error"
-msgstr "Fehler bei der Massenänderung"
 
 #: javascript/news.js:121
 msgid "Picture/file operations not supported in 'Quick edit' mode. You must click the 'Save full edit' button to complete these operations."
@@ -121,4 +77,48 @@ msgstr "verbergen"
 #: javascript/news.js:562
 msgid "Author updated"
 msgstr "Autor aktualisiert"
+
+#: javascript/news_admin.js:40
+msgid "delete"
+msgstr "löschen"
+
+#: javascript/news_admin.js:41
+msgid "archive"
+msgstr "archivieren"
+
+#: javascript/news_admin.js:42
+msgid "publish"
+msgstr "veröffentlichen"
+
+#: javascript/news_admin.js:43
+msgid "reject"
+msgstr "zurückziehen"
+
+#: javascript/news_admin.js:44
+msgid "change categories for"
+msgstr "Kategorien ändern für"
+
+#: javascript/news_admin.js:47
+msgid "You cannot undo this operation!"
+msgstr "Diese Aktion kann nicht rückgängig gemacht werden!"
+
+#: javascript/news_admin.js:65
+#, php-format
+msgid "Are you sure you want to %s the following article"
+msgid_plural "Are you sure you want to %s the following articles"
+msgstr[0] "Beitrag %s. Soll wirklich fortgefahren werden"
+msgstr[1] "Beiträge %s. Soll wirklich fortgefahren werden"
+
+#: javascript/news_admin.js:70
+msgid "Confirm Bulk Action"
+msgstr "Massenänderung bestätigen"
+
+#: javascript/news_admin.js:87
+#, php-format
+msgid "Please select at least one article to %s."
+msgstr "Bitte mindestens einen Beitrag zum %s auswählen."
+
+#: javascript/news_admin.js:88
+msgid "Bulk action error"
+msgstr "Fehler bei der Massenänderung"
 
