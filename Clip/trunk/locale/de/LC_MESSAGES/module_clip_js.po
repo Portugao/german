@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Clip\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-19 00:38-0500\n"
+"PO-Revision-Date: 2012-02-20 20:01+0100\n"
+"Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
+"Language-Team: Carsten Volmer <carsten@zikula.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: German\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: javascript/Zikula.Clip.Container.js:410
+#: javascript/Zikula.Clip.Container.js:447
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: javascript/Zikula.Clip.Container.js:419
+#: javascript/Zikula.Clip.Container.js:645
+msgid "Delete"
+msgstr "Löschen"
+
+#: javascript/Zikula.Clip.Container.js:428
+msgid "Add group after selected"
+msgstr ""
+
+#: javascript/Zikula.Clip.Container.js:437
+msgid "Add subgroup into selected"
+msgstr ""
+
+#: javascript/Zikula.Clip.Container.js:458
+msgid "Fields"
+msgstr "Felder"
+
+#: javascript/Zikula.Clip.Container.js:469
+#, fuzzy
+msgid "Relations"
+msgstr "Optionen"
+
+#: javascript/Zikula.Clip.Container.js:480
+#, fuzzy
+msgid "Code"
+msgstr "Keine Prüfung"
+
+#: javascript/Zikula.Clip.Container.js:492
+#, fuzzy
+msgid "Editor list"
+msgstr "Formular bearbeiten"
+
+#: javascript/Zikula.Clip.Container.js:503
+#, fuzzy
+msgid "New publication"
+msgstr "Neuer Publikationstyp"
+
+#: javascript/Zikula.Clip.Container.js:613
+msgid "Submit"
+msgstr "Absenden"
+
+#: javascript/Zikula.Clip.Container.js:614
+#: javascript/Zikula.Clip.Container.js:646
+#: javascript/Clip.Pubfields.js:59
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: javascript/Zikula.Clip.Container.js:642
+#, fuzzy
+msgid "Do you really want to delete this group?"
+msgstr "Fehler! Publikation konnte nicht gelöscht werden."
+
+#: javascript/Zikula.Clip.Container.js:652
+msgid "Confirmation prompt"
+msgstr ""
+
+#: javascript/Clip.Pubfields.js:54
+msgid "Save"
+msgstr "Speichern"
+
+#: javascript/Clip.Pubfields.js:65
+#, fuzzy
+msgid "Plugin configuration"
+msgstr "Plugin nicht konfiguriert."
+
