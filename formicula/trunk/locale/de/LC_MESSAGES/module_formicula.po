@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: formicula 2.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-21 06:39-0500\n"
+"POT-Creation-Date: 2012-02-21 07:18-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
@@ -40,7 +40,7 @@ msgstr "Kontakt hinzufügen"
 #: lib/Formicula/Api/Admin.php:251
 #: templates/admin/viewsubmits.tpl:4
 msgid "View form submits"
-msgstr "Formulareinreichungen anzeigen"
+msgstr "Formulareinreichungen"
 
 #: lib/Formicula/Api/Admin.php:253
 #: lib/Formicula/Api/Admin.php:257
@@ -58,7 +58,7 @@ msgid "Error! No contacts defined."
 msgstr "Fehler! Keine Kontakte definiert."
 
 #: lib/Formicula/Api/User.php:194
-msgid "Contact Form"
+msgid "Contact form"
 msgstr "Kontaktformular"
 
 #: lib/Formicula/Api/User.php:274
@@ -67,24 +67,24 @@ msgid "Error! Could not store data submitted by form %s."
 msgstr "Fehler! Die Daten des eingereichten Formulars %s konnte nicht gespeichert werden."
 
 #: lib/Formicula/Api/User.php:296
-msgid "Error! No or incorrect email address supplied"
-msgstr "Fehler! Keine oder ungültige E-Mail Adresse angegeben"
+msgid "Error! No or incorrect email address supplied."
+msgstr "Fehler! Keine oder ungültige E-Mail Adresse angegeben."
 
 #: lib/Formicula/Api/User.php:300
-msgid "Error! No or invalid username given"
-msgstr "Fehler! Keinen oder ungültigen Benutzername angegeben"
+msgid "Error! No or invalid username given."
+msgstr "Fehler! Keinen oder ungültigen Benutzername angegeben."
 
 #: lib/Formicula/Api/User.php:305
-msgid "Error! No or invalid comment supplied (no HTML!)"
-msgstr "Fehler! Keinen oder ungültigen Kommentar abgegeben (kein HTML!)"
+msgid "Error! No or invalid comment supplied (no HTML!)."
+msgstr "Fehler! Keinen oder ungültigen Kommentar abgegeben (kein HTML!)."
 
 #: lib/Formicula/Api/User.php:311
 msgid "Error! Mandatory field:"
 msgstr "Fehler! Folgendes Pflichtfeld fehlt:"
 
 #: lib/Formicula/Api/User.php:314
-msgid "Error! Upload error"
-msgstr "Fehler! Uploadfehler"
+msgid "Error! Upload error."
+msgstr "Fehler! Uploadfehler."
 
 #: lib/Formicula/ContentType/Form.php:23
 msgid "Formicula form"
@@ -138,21 +138,21 @@ msgid "There was an error sending the email."
 msgstr "Beim Versenden der E-Mail ist ein Fehler aufgetreten"
 
 #: lib/Formicula/Form/Handler/Admin/Edit.php:69
-msgid "Error! No contact name"
-msgstr "Fehler! Kein Kontaktname"
+msgid "Error! No contact name."
+msgstr "Fehler! Kein Kontaktname."
 
 #: lib/Formicula/Form/Handler/Admin/Edit.php:74
-msgid "Error! No email address supplied"
+msgid "Error! No email address supplied."
 msgstr "Fehler! Keine E-Mail Adresse angegeben."
 
 #: lib/Formicula/Form/Handler/Admin/Edit.php:83
 #, php-format
-msgid "Error! Incorrect email address [%s] supplied"
-msgstr "Fehler! Ungültige E-Mail Adresse [%s] angegeben"
+msgid "Error! Incorrect email address [%s] supplied."
+msgstr "Fehler! Ungültige E-Mail Adresse [%s] angegeben."
 
 #: lib/Formicula/Form/Handler/Admin/Edit.php:91
-msgid "Error! Incorrect email address supplied"
-msgstr "Fehler! Ungültige E-Mail Adresse angegeben"
+msgid "Error! Incorrect email address supplied."
+msgstr "Fehler! Ungültige E-Mail Adresse angegeben."
 
 #: lib/Formicula/Form/Handler/Admin/Edit.php:103
 msgid "Contact created"
@@ -173,7 +173,7 @@ msgstr "Fehler beim Aktualisieren des Kontakts!"
 #: lib/Formicula/Form/Handler/Admin/ModifyConfig.php:39
 #, php-format
 msgid "Form #%1$s that contains %2$s templates"
-msgstr "Formular #%1$s mit %2$s enthaltenen Templates"
+msgstr "Formular #%1$s mit %2$s Templates"
 
 #: lib/Formicula/Form/Handler/Admin/ModifyConfig.php:59
 msgid "The webserver cannot write into this directory!"
@@ -371,25 +371,28 @@ msgid "Contact ID"
 msgstr "Kontakt ID"
 
 #: templates/admin/deletesubmit.tpl:21
-msgid "Submitted on"
-msgstr "Gesendet am"
-
-#: templates/admin/deletesubmit.tpl:25
-msgid "Submitted by"
-msgstr "Gesendet von"
-
-#: templates/admin/displaysubmit.tpl:4
-msgid "View submitted form data"
-msgstr "Formulareinreichungen anzeigen"
-
 #: templates/admin/displaysubmit.tpl:10
+#: templates/admin/viewsubmits.tpl:13
 msgid "Date"
 msgstr "Datum"
 
+#: templates/admin/deletesubmit.tpl:25
 #: templates/admin/displaysubmit.tpl:11
 #: templates/admin/view.tpl:11
+#: templates/admin/viewsubmits.tpl:14
 msgid "Name"
 msgstr "Name"
+
+#: templates/admin/deletesubmit.tpl:26
+#: templates/admin/displaysubmit.tpl:20
+#: templates/admin/viewsubmits.tpl:25
+#, php-format
+msgid "Email: %1$s - UID: %2$s"
+msgstr "E-Mail: %1$s - UID: %2$s"
+
+#: templates/admin/displaysubmit.tpl:4
+msgid "View submitted form data"
+msgstr "Eingereichte Formualrdaten anzeigen"
 
 #: templates/admin/displaysubmit.tpl:12
 msgid "IP address"
@@ -546,7 +549,7 @@ msgstr "Standardformular"
 
 #: templates/admin/modifyconfig.tpl:16
 msgid "(used when no form is specified)"
-msgstr "(wird verwendet, wenn keine Formular-ID form=xxx im Aufruf übergeben wird)"
+msgstr "(Wird verwendet, wenn keine Formular-ID form=xxx im Aufruf übergeben wird)"
 
 #: templates/admin/modifyconfig.tpl:19
 msgid "Show phone number"
@@ -574,11 +577,11 @@ msgstr "Bestätigungsmail an Benutzer senden"
 
 #: templates/admin/modifyconfig.tpl:43
 msgid "directory for uploaded file(s)"
-msgstr "Verzeichnis für Dateiupload"
+msgstr "Upload-Verzeichnis"
 
 #: templates/admin/modifyconfig.tpl:47
 msgid "Delete uploaded file(s) after sending"
-msgstr "Datei nach dem Versand löschen"
+msgstr "Uploaddateien nach dem Versand löschen"
 
 #: templates/admin/modifyconfig.tpl:53
 msgid "Spam check settings"
@@ -625,6 +628,7 @@ msgid "Comma separated list of form ids or leave empty for storing all forms."
 msgstr "Kommaseparierte Liste an Formular-IDs oder leerlassen, wenn alle Formulare abgepseichert werden sollen."
 
 #: templates/admin/view.tpl:10
+#: templates/admin/viewsubmits.tpl:10
 msgid "ID"
 msgstr "ID"
 
@@ -648,18 +652,6 @@ msgstr "Nein"
 #: templates/admin/viewsubmits.tpl:32
 msgid "No items found."
 msgstr "Keine Einträge gefunden"
-
-#: templates/admin/viewsubmits.tpl:10
-msgid "Submit ID"
-msgstr "Datensatz ID"
-
-#: templates/admin/viewsubmits.tpl:13
-msgid "On"
-msgstr "Am"
-
-#: templates/admin/viewsubmits.tpl:14
-msgid "By"
-msgstr "Von"
 
 #: templates/admin/viewsubmits.tpl:27
 msgid "View form submit"
@@ -782,11 +774,14 @@ msgstr "Es liegt ein Fehler in diesem Formular vor."
 #: templates/forms/1_usererror.html:6
 #: templates/forms/2_usererror.html:6
 #: templates/forms/3_usererror.html:6
-msgid "Back to Contact Form"
+msgid "Back to the contact form"
 msgstr "Zurück zum Kontaktformular"
 
 #: templates/forms/0_userform.html:8
-msgid "Mandatory fields are indicated by a"
+#: templates/forms/1_userform.html:17
+#: templates/forms/2_userform.html:15
+#: templates/forms/3_userform.html:24
+msgid "Mandatory fields are indicated with a"
 msgstr "Notwendige Felder sind gekennzeichnet mit einem"
 
 #: templates/forms/0_userform.html:18
@@ -921,12 +916,6 @@ msgstr "Folgende Daten wurden gesendet:"
 msgid "Thanks for applying, we will keep your data strictly confidential"
 msgstr "Vielen Dank für Ihre Bewerbung. Die Daten werden selbstverständlich streng vertraulich behandelt"
 
-#: templates/forms/1_userform.html:17
-#: templates/forms/2_userform.html:15
-#: templates/forms/3_userform.html:24
-msgid "Mandatory fields are indicated with a"
-msgstr "Notwendige Felder sind gekennzeichnet mit einem"
-
 #: templates/forms/1_userform.html:21
 #: templates/forms/1_userform.html:22
 msgid "Apply as"
@@ -1054,7 +1043,7 @@ msgstr "Bitte eine Auswahl treffen"
 
 #: templates/forms/3_userform.html:118
 #: templates/forms/3_userform.html:119
-msgid "Number of Persons"
+msgid "Number of persons"
 msgstr "Anzahl der Personen"
 
 #: templates/forms/3_userform.html:123
@@ -1143,6 +1132,24 @@ msgstr "Danke für die Reservierung"
 #: templates/forms/3_usermail.txt:5
 msgid "Kind regards"
 msgstr "Mit freundlichen Grüßen"
+
+#~ msgid "Submitted on"
+#~ msgstr "Gesendet am"
+
+#~ msgid "Submitted by"
+#~ msgstr "Gesendet von"
+
+#~ msgid "Submit ID"
+#~ msgstr "Datensatz ID"
+
+#~ msgid "On"
+#~ msgstr "Am"
+
+#~ msgid "By"
+#~ msgstr "Von"
+
+#~ msgid "Mandatory fields are indicated by a"
+#~ msgstr "Notwendige Felder sind gekennzeichnet mit einem"
 
 #~ msgid "Error! No or incorrect E-Mail address supplied"
 #~ msgstr "Fehler! Keine oder feherhafte E-Mail Adresse angegeben"
