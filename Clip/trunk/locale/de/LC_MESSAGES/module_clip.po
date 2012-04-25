@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Clip\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-30 18:33-0400\n"
-"PO-Revision-Date: 2012-04-24 18:17+0100\n"
+"PO-Revision-Date: 2012-04-25 12:20+0100\n"
 "Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "MIME-Version: 1.0\n"
@@ -186,7 +186,7 @@ msgstr "Der übermittelte Wert existiert bereits. Bitte wähle eine anderen Wert
 
 #: lib/Clip/Form/Handler/Admin/Pubtypes.php:138
 msgid "Done! Publication type created. Now you can proceed to define its fields."
-msgstr "Erledigt! Der Publikationstyp wurde erstellt. Jetzt kannst du mit der Erstellung der Felder beginnen."
+msgstr "Erledigt! Der Publikationstyp wurde angelegt. Jetzt kann mit der Erstellung der Felder begonnen werden."
 
 #: lib/Clip/Form/Handler/Admin/Pubtypes.php:142
 msgid "Done! Publication type updated."
@@ -2209,6 +2209,8 @@ msgid ""
 "            </ol>\n"
 "            "
 msgstr ""
+"\n"
+"<p>Clip ist sicherlich eines der wichtigsten Zikula Module. Damit lassen sich beliebige strukturierte Inhalte und Medien auf einer Zikula Website verwalten.</p><p>Um das ganze Potential zu nutzen, sollte man sich vorab einen Detailplan erstellen. Angenommen es wird ein News-System benötigt. Dann kann der Name des Publikationstyps \"News\" lauten und die dazugehörigen <em>Publikationen</em> werden so zu Beiträgen. Für jeden Beitrag wird ein Titel, eine Zusammenfassung, der Haupttext und sicherlich eine Kategorie benötigt.</p><p>Der Konfigurationsvorgang für diesen \"News\" Publikationstyp ist relativ einfach:</p><ol><li>Bitte den Button <em>Publikationstyp anlegen</em> anklicken, den gewünschten Namen eingeben, einen Verzeichnisnamen für die Inhalte festlegen und den eigenen Anforderungen entsprechend, die weiteren Einstellungen konfigurieren.</li><li>Nach dem Speichern wird man zu einer Seite weitergeleitet, wo die <em>Publikationsfelder</em> eingerichtet werden können. Hier können nun die benötigten Felder für die Beiträge hinzugefügt werden:<br />Für jedes Feld bitte einen Namen auswählen (wird intern von Clip benutzt), einen Anzeigenamen (zur Anzeige im Eingabeformular und möglicherweise auch im Beitrag selbst) und weitere.</li><li>Als Nächstes können bei Bedarf die Beiträge über <em>Verknüpfungen</em> mit anderen <em>Publikationstypen</em> verbunden werden.</li><li>Zum Schluss müssen nur noch die <em>Templates</em> für die Daten angelegt werden. Als Grundlage kann hier der - von Clip generierte - Code genommen werden. Mit etwas HTML und Smarty Wissen, wird man in der Lage sein, vieles umzusetzen. Die Templates können an den eigenen Bedürfnissen angepasst und in das angegebene Verzeichnis abgelegt werden.</li><li>Fertig! Nun können Beiträge hinzugefügt, Listen gefiltert und Zugriffsrechte für Beitragseinreichungen angepasst werden.</li><li>Viel Spaß!</li></ol>"
 
 #: templates/clip_admin_main.tpl:42
 msgid "About this Index"
@@ -2221,6 +2223,8 @@ msgid ""
 "            <p>By clicking a <em>Publication Type</em> you will get its details and available options loaded dynamically. You can right click the elements of the tree to see their options too.</p>\n"
 "            "
 msgstr ""
+"\n"
+"            <p>Clip ermöglicht es, die Publikationstypen in Gruppen zu organisieren. Auf der linken Seiten können diese verwaltet und nach Belieben geordnet werden.</p>             <p>Durch das Anklicken eines <em>Publikationstyps</em> werden die entsprechenden Details angezeigt und zusätzliche Optionen dynamisch nachgeladen. Mittels Rechtsklick auf den Einträg hat man Zugriff auf weitere Optionen.</p>"
 
 #: templates/generic_edit.tpl:7
 #: templates/clip_base_pubtypeinfo.tpl:40
