@@ -112,14 +112,17 @@ Existierende Installation vorbereiten
 
            $ZConfig['System']['temp']
 
-  - Da es von Zikula 1.2 zu Zikula 1.3 sehr viele Änderungen gab, sollten Sie überlegen während
-    des Upgrade Prozesses temporär die verwendeten Module (bis auf Legal & Profile) aus dem modules/
-    Ordner zu löschen. Nach dem Upgrade können Sie die Module wieder hinzufügen und eines nach dem
-    anderen über den Zikula Erweiterungsmanager upgraden.
+  - Da es von Zikula 1.2 zu Zikula 1.3 sehr viele Änderungen gibt, sollte man vorsichtshalber
+    vor dem Ausführen des Upgradeskripts (upgrade.php) alle Module mit Ausnahme von "Legal" 
+    und "Profile" aus dem Modulverzeichnis /modules verschieben. Mit einem FTP-Client wie
+    beispielsweise FileZilla können mehrere Ordner einfach mit Drag und Drop verschoben werden.
+    Nach dem Upgrade können die Module wieder hinzugefügt werden, so dass dann die einzelnen
+    Modulupgrades über die Zikula Administration -> Erweiterungen durchgeführt werden können.
 
-    Bitte beachten Sie dass die Module Legal & Profile in einer neuen Version vorliegen und definitv 
-    aus dem modules/ Ordner gelöscht werden müssen, bevor Sie das Upgrade starten. Das gleiche gilt 
-    für Zikula 1.3 kompatible Module.
+    Bitte beachten Sie dass die Module "Legal" und "Profile" in einer neuen Version vorliegen 
+    und die vorherigen Versionen vorher definitv aus dem Modulverzeichnis modules/ gelöscht 
+    werden müssen, bevor das Upgrade gestartet wird. Das gilt natürlich auch für andere 
+    Zikula 1.3-kompatible Module.
 
 
 Aktualisierung durchführen
