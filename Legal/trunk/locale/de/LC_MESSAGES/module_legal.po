@@ -1,0 +1,456 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Legal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-10 06:55-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
+"Language-Team: Carsten Volmer <carsten@zikula.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.5.1\n"
+"X-Poedit-Language: Germay\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Country: Germany\n"
+
+#: lib/Legal/Api/Admin.php:100
+#: templates/legal_admin_modifyconfig.tpl:4
+msgid "Settings"
+msgstr "Konfiguration"
+
+#: lib/Legal/Controller/Admin.php:52
+msgid "All users"
+msgstr "Alle Benutzer"
+
+#: lib/Legal/Controller/Admin.php:55
+msgid "No groups"
+msgstr "Keine Gruppen"
+
+#: lib/Legal/Controller/Admin.php:131
+msgid "Done! Saved module configuration."
+msgstr "Erledigt! Die Modulkonfiguration wurde aktualisiert."
+
+#: lib/Legal/Controller/User.php:229
+msgid "You must accept this site's Terms of Use in order to proceed."
+msgstr "Um fortzusetzen, müssen die Nutzungsbedingungen der Seite akzeptiert werden."
+
+#: lib/Legal/Controller/User.php:233
+msgid "You must accept this site's Privacy Policy in order to proceed."
+msgstr "Um fortzusetzen, müssen die Hinweise zum Datenschutz der Seite akzeptiert werden."
+
+#: lib/Legal/Controller/User.php:237
+#: lib/Legal/Listener/UsersUiHandler.php:349
+#, php-format
+msgid "In order to log in, you must confirm that you meet the requirements of this site's Minimum Age Policy. If you are not %1$s years of age or older, and you do not have a parent's permission to use this site, then please ask your parent to contact a site administrator."
+msgstr "Um die Anmeldung abzuschließen, muss bestätigt werden, dass die Voraussetzungen der Richtlinie zum Minimalen Alter erfüllt werden. Wenn Sie nicht %1$s Jahre oder älter sind (und keine Erlaubnis der Erziehungsberechtigten haben diese Seite zu benutzen), dürfen Sie die Registrierung nicht fortführen und die Seite nicht betreten."
+
+#: lib/Legal/Controller/User.php:241
+msgid "You must accept our cancellation right policy in order to proceed."
+msgstr "Um fortzusetzen, muss unsere Widerrufsbelehrung akzeptiert werden."
+
+#: lib/Legal/Controller/User.php:245
+msgid "You must accept our general terms and conditions of trade in order to proceed."
+msgstr "Um fortzusetzen, müssen unsere Allgemeinen Geschäftsbedingungen akzeptiert werden."
+
+#: lib/Legal/Installer.php:116
+#, php-format
+msgid "Upgrading the Legal module from version %1$s to %2$s is not supported."
+msgstr "Ein Upgrade des Legal-Moduls von Version %1$s zu %2$s wird nicht unterstützt."
+
+#: lib/Legal/Listener/UsersLoginVeto.php:97
+msgid "Your log-in request was not completed. You must review and confirm your acceptance of one or more site policies prior to logging in."
+msgstr "Die Login-Anfrage ist noch nicht abgeschlossen. Vor der Anmeldung müssen eine oder mehrere Richtlinien dieser Seite bestätigt werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:317
+msgid "Sorry! You changed your authentication information, and one or more items displayed on the login screen may not have been applicable for your account. Please try logging in again."
+msgstr "Entschuldigung! "
+
+#: lib/Legal/Listener/UsersUiHandler.php:329
+msgid "In order to register for a new account, you must accept this site's Terms of Use."
+msgstr "Um ein neues Konto zu registrieren, müssen die Nutzungsbedingungen der Seite akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:331
+msgid "In order to log in, you must accept this site's Terms of Use."
+msgstr "Um die Anmeldung abzuschließen, müssen die Nutzungsbedingungen der Seite akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:338
+msgid "In order to register for a new account, you must accept this site's Privacy Policy."
+msgstr "Um ein neues Konto zu registrieren, müssen die Hinweise zum Datenschutz der Seite akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:340
+msgid "In order to log in, you must accept this site's Privacy Policy."
+msgstr "Um die Anmeldung abzuschließen, müssen die Hinweise zum Datenschutz der Seite akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:347
+#, php-format
+msgid "In order to register for a new account, you must confirm that you meet the requirements of this site's Minimum Age Policy. If you are not %1$s years of age or older, and you do not have a parent's permission to use this site, then you should not continue registering for access to this site."
+msgstr "Um ein neues Konto zu registrieren, muss bestätigt werden, dass die Voraussetzungen der Richtlinie zum Minimalen Alter erfüllt werden. Wenn Sie nicht %1$s Jahre oder älter sind (und keine Erlaubnis der Erziehungsberechtigten haben diese Seite zu benutzen), dürfen Sie die Registrierung nicht fortführen und die Seite nicht betreten."
+
+#: lib/Legal/Listener/UsersUiHandler.php:356
+msgid "In order to register for a new account, you must accept our cancellation right policy."
+msgstr "Um ein neues Konto zu registrieren, muss unsere Widerrufsbelehrung akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:358
+msgid "In order to log in, you must accept our cancellation right policy."
+msgstr "Um die Anmeldung abzuschließen, muss unsere Widerrufsbelehrung akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:365
+msgid "In order to register for a new account, you must accept our general terms and conditions of trade."
+msgstr "Um ein neues Konto zu registrieren, müssen unsere Allgemeinen Geschäftsbedingungen akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:367
+msgid "In order to log in, you must accept our general terms and conditions of trade."
+msgstr "Um die Anmeldung abzuschließen, müssen unsere Allgemeinen Geschäftsbedingungen akzeptiert werden."
+
+#: lib/Legal/Listener/UsersUiHandler.php:480
+#: lib/Legal/Listener/UsersUiHandler.php:516
+msgid "A user account or registration does not exist for the specified uid."
+msgstr "Ein Benutzerkonto oder eine Registrierung für diese uid existiert nicht."
+
+#: lib/Legal/Version.php:29
+msgid "Legal info manager"
+msgstr "Rechtliches"
+
+#: lib/Legal/Version.php:30
+msgid "Provides an interface for managing the site's legal documents."
+msgstr "Bietet eine Schnittstelle zur Verwaltung rechtlich relevanter Dokumente."
+
+#. ! module name that appears in URL
+#: lib/Legal/Version.php:32
+msgid "legalmod"
+msgstr "rechtliches"
+
+#: templates/plugins/function.legaluserlinks.php:45
+#: templates/legal_admin_modifyconfig.tpl:15
+#: templates/legal_admin_modifyconfig.tpl:49
+#: templates/plugins/legal_function_legalinlinelink_legalnotice.tpl:5
+msgid "Legal notice"
+msgstr "Impressum"
+
+#: templates/plugins/function.legaluserlinks.php:53
+#: templates/legal_admin_modifyconfig.tpl:20
+#: templates/legal_admin_modifyconfig.tpl:54
+msgid "Terms of use"
+msgstr "Nutzungsbedingungen"
+
+#: templates/plugins/function.legaluserlinks.php:61
+#: templates/legal_admin_modifyconfig.tpl:25
+#: templates/legal_admin_modifyconfig.tpl:59
+msgid "Privacy policy"
+msgstr "Hinweise zum Datenschutz"
+
+#: templates/plugins/function.legaluserlinks.php:69
+msgid "Trade conditions"
+msgstr "AGB"
+
+#: templates/plugins/function.legaluserlinks.php:77
+msgid "Cancellation right"
+msgstr "Widerrufsbelehrung"
+
+#: templates/plugins/function.legaluserlinks.php:85
+#: templates/legal_admin_modifyconfig.tpl:40
+#: templates/legal_admin_modifyconfig.tpl:74
+msgid "Accessibility statement"
+msgstr "Erklärung zur Barrierefreiheit"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:4
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:2
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:4
+#: templates/legal_acceptpolicies_ui_view.tpl:3
+#: templates/legal_user_acceptpolicies.tpl:2
+msgid "Site policies"
+msgstr "Richtlinien der Seite"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:14
+#: templates/legal_acceptpolicies_ui_edit.tpl:17
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:18
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:21
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:58
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:14
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:17
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:54
+#: templates/legal_acceptpolicies_ui_view.tpl:11
+#: templates/legal_user_acceptpolicies.tpl:27
+#: templates/legal_user_acceptpolicies.tpl:30
+#: templates/legal_user_acceptpolicies.tpl:66
+#: templates/plugins/legal_function_legalinlinelink_termsofuse.tpl:5
+msgid "Terms of Use"
+msgstr "Nutzungsbedingungen"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:21
+#: templates/legal_acceptpolicies_ui_edit.tpl:49
+#: templates/legal_acceptpolicies_ui_edit.tpl:97
+#: templates/legal_acceptpolicies_ui_edit.tpl:125
+#: templates/legal_acceptpolicies_ui_view.tpl:15
+#: templates/legal_acceptpolicies_ui_view.tpl:29
+#: templates/legal_acceptpolicies_ui_view.tpl:49
+#: templates/legal_acceptpolicies_ui_view.tpl:63
+#, php-format
+msgid "%1$s accepted."
+msgstr "%1$s akzeptiert."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:25
+#: templates/legal_acceptpolicies_ui_edit.tpl:53
+#: templates/legal_acceptpolicies_ui_edit.tpl:101
+#: templates/legal_acceptpolicies_ui_edit.tpl:129
+msgid "Policy not accepted."
+msgstr "Nicht akzeptiert."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:31
+#: templates/legal_acceptpolicies_ui_edit.tpl:59
+#: templates/legal_acceptpolicies_ui_edit.tpl:107
+#: templates/legal_acceptpolicies_ui_edit.tpl:135
+msgid "Accepted."
+msgstr "Akzeptiert."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:31
+#: templates/legal_acceptpolicies_ui_edit.tpl:59
+#: templates/legal_acceptpolicies_ui_edit.tpl:107
+#: templates/legal_acceptpolicies_ui_edit.tpl:135
+msgid "Not accepted."
+msgstr "Nicht akzeptiert."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:42
+#: templates/legal_acceptpolicies_ui_edit.tpl:45
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:38
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:41
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:67
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:34
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:37
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:63
+#: templates/legal_acceptpolicies_ui_view.tpl:25
+#: templates/legal_user_acceptpolicies.tpl:46
+#: templates/legal_user_acceptpolicies.tpl:49
+#: templates/legal_user_acceptpolicies.tpl:75
+#: templates/plugins/legal_function_legalinlinelink_privacypolicy.tpl:5
+msgid "Privacy Policy"
+msgstr "Hinweise zum Datenschutz"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:65
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:71
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:67
+#: templates/legal_acceptpolicies_ui_view.tpl:34
+#: templates/legal_user_acceptpolicies.tpl:79
+msgid "Minimum Age"
+msgstr "Minimales Alter"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:69
+#: templates/legal_acceptpolicies_ui_edit.tpl:79
+#: templates/legal_acceptpolicies_ui_view.tpl:35
+#, php-format
+msgid "Confirmed minimum age requirement (%1$s years of age) met."
+msgstr "Bestätigt die Erfüllung der Voraussetzungen zum minimalen Alter (%1$s Jahre)."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:73
+#: templates/legal_acceptpolicies_ui_edit.tpl:79
+#: templates/legal_acceptpolicies_ui_view.tpl:35
+msgid "Minimum age requirement not confirmed."
+msgstr "Voraussetzungen zum minimalen Alter nicht bestätigt."
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:90
+#: templates/legal_acceptpolicies_ui_edit.tpl:93
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:89
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:92
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:85
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:88
+#: templates/legal_acceptpolicies_ui_view.tpl:45
+#: templates/legal_admin_modifyconfig.tpl:30
+#: templates/legal_admin_modifyconfig.tpl:64
+#: templates/legal_user_acceptpolicies.tpl:96
+#: templates/legal_user_acceptpolicies.tpl:99
+#: templates/plugins/legal_function_legalinlinelink_tradeconditions.tpl:5
+msgid "General Terms and Conditions of Trade"
+msgstr "Allgemeine Geschäftsbedingungen"
+
+#: templates/legal_acceptpolicies_ui_edit.tpl:118
+#: templates/legal_acceptpolicies_ui_edit.tpl:121
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:109
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:112
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:105
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:108
+#: templates/legal_acceptpolicies_ui_view.tpl:59
+#: templates/legal_admin_modifyconfig.tpl:35
+#: templates/legal_admin_modifyconfig.tpl:69
+#: templates/legal_user_acceptpolicies.tpl:115
+#: templates/legal_user_acceptpolicies.tpl:118
+#: templates/plugins/legal_function_legalinlinelink_cancellationrightpolicy.tpl:5
+msgid "Cancellation Right Policy"
+msgstr "Widerrufsbelehrung"
+
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:7
+#: templates/legal_user_acceptpolicies.tpl:10
+msgid "In order to log in you must accept this site's policies. If you have accepted the site's policies in the past, then they have been updated and we ask that you review the changes."
+msgstr "Um die Anmeldung abzuschließen, müssen die Richtlinien der Seite akzeptiert werden. Wenn diese Abfrage erscheint, obwohl die Richtlinien bereits früher akzeptiert wurden, dann hat es Änderungen gegeben, die nun akzeptiert werden müssen."
+
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:24
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:44
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:95
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:115
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:20
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:40
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:91
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:111
+#: templates/legal_user_acceptpolicies.tpl:33
+#: templates/legal_user_acceptpolicies.tpl:52
+#: templates/legal_user_acceptpolicies.tpl:102
+#: templates/legal_user_acceptpolicies.tpl:121
+#, php-format
+msgid "Check this box to indicate your acceptance of this site's %1$s."
+msgstr "Feld ankreuzen, um die %1$s der Seite zu akzeptieren."
+
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:74
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:70
+#: templates/legal_user_acceptpolicies.tpl:82
+#, php-format
+msgid "Check this box to indicate that you are %1$s years of age or older."
+msgstr "Feld ankreuzen, um das eigene Alter von %1$s Jahren oder mehr zu bestätigen."
+
+#: templates/legal_acceptpolicies_ui_edit_login.tpl:76
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:72
+#: templates/legal_user_acceptpolicies.tpl:84
+#, php-format
+msgid "Information on our minimum age policy, and on how we handle personally identifiable information can be found in our %1$s and in our %2$s."
+msgstr "Informationen über unsere Richtlinie zum Minimalen Alter und wie wir persönliche Daten behandeln, können in unseren %1$s und in unseren %2$s nachgelesen werden."
+
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:17
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:37
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:67
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:88
+#: templates/legal_acceptpolicies_ui_edit_registration.tpl:108
+#: templates/legal_admin_modifyconfig.tpl:82
+msgid "*"
+msgstr "*"
+
+#: templates/legal_acceptpolicies_ui_view.tpl:14
+msgid "Terms of Use:"
+msgstr "Nutzungsbedingungen:"
+
+#: templates/legal_acceptpolicies_ui_view.tpl:15
+#: templates/legal_acceptpolicies_ui_view.tpl:29
+#: templates/legal_acceptpolicies_ui_view.tpl:49
+#: templates/legal_acceptpolicies_ui_view.tpl:63
+#, php-format
+msgid "%1$s not accepted."
+msgstr "%1$s nicht akzeptiert."
+
+#: templates/legal_acceptpolicies_ui_view.tpl:28
+msgid "Privacy Policy:"
+msgstr "Hinweise zum Datenschutz:"
+
+#: templates/legal_acceptpolicies_ui_view.tpl:48
+msgid "General Terms and Conditions of Trade:"
+msgstr "Allgemeine Geschäftsbedingungen:"
+
+#: templates/legal_acceptpolicies_ui_view.tpl:62
+msgid "Cancellation Right Policy:"
+msgstr "Widerrufsbelehrung:"
+
+#: templates/legal_admin_modifyconfig.tpl:7
+msgid "<strong>Important Usage Note</strong>: The provided legal statements are samples only. They need to be adapted to specific needs and locales. You will find the content of the statements in files in the \"modules/legal/pntemplates/en\" directory. These templates can be <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">overridden</a> by theme templates, or by global templates you would create in the \"config/templates/legal/\" directory (in the appropriate sub-directory for the language you are writing for)."
+msgstr "<strong>Wichtige Nutzungshinweise</strong>: Die bereitgestellten Nutzungsbedingungen sind nur Beispiele. Sie erfordern eine Anpassung an besondere Anforderungen und den Einsatzort. Der Inhalt der Bedingungen findet sich in Dateien im modules/legal/pntemplates/de/ Verzeichnis. Diese Templates können durch <a href=\"http://community.zikula.org/Wiki-TemplateOverridng.htm\">Templates im Theme-Ordner</a> überlagert werden."
+
+#: templates/legal_admin_modifyconfig.tpl:12
+msgid "Legal document types"
+msgstr "Rechtliche Dokumente"
+
+#: templates/legal_admin_modifyconfig.tpl:45
+msgid "Custom urls"
+msgstr "Eigene URLs"
+
+#: templates/legal_admin_modifyconfig.tpl:46
+msgid "The following fields allow to reference any custom url. As soon as an url is given it will be used instead of the normal Legal templates. So you can now use any page you want for displaying and managing your legal data."
+msgstr "Die folgenden Felder erlauben die Referenzierung beliebiger URLs. Sobald eine URL gegeben ist, wird diese anstatt der normalen Legal-Templates verwendet. So kann man nun jede gewünschte Seite zur Anzeige und Verwaltung der rechtlichen Daten verwenden."
+
+#: templates/legal_admin_modifyconfig.tpl:79
+msgid "Further settings"
+msgstr "Weitere Einstellungen"
+
+#: templates/legal_admin_modifyconfig.tpl:82
+msgid "Minimum age permitted to register"
+msgstr "Minimales zugelassenes Alter für die Registrierung"
+
+#: templates/legal_admin_modifyconfig.tpl:84
+msgid "Enter a positive integer, or 0 for no age check."
+msgstr "Eine positive Zahl eingeben, oder 0 für keine Alterskontrolle."
+
+#: templates/legal_admin_modifyconfig.tpl:87
+msgid "Reset user group's acceptance of 'Terms of use'"
+msgstr "Zustimmung zu den Nutzungsbedingungen zurücksetzen"
+
+#: templates/legal_admin_modifyconfig.tpl:93
+msgid "Notice: This setting resets the acceptance of the 'Terms of use' for all users in this group. Next time they want to log-in, they will have to acknowledge their acceptance of them again, and will not be able to log-in if they do not. This action does not affect the main administrator account. You can perform the same operation for individual users by visiting the Users manager in the site admin panel."
+msgstr "Hinweis: Bei Aktualisierung der Nutzungsbedingungen kann die Zustimmung zurückgesetzt werden. Abgesehen von den Administratoren können sich die Mitglieder der entsprechenden Gruppen erst nach erneuter Zustimmung wieder anmelden. Für einzelne Benutzer kann das auch in der Benutzeradministration veranlasst werden."
+
+#: templates/legal_admin_modifyconfig.tpl:97
+#: templates/legal_user_acceptpolicies.tpl:133
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/legal_admin_modifyconfig.tpl:98
+#: templates/legal_user_acceptpolicies.tpl:135
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/legal_user_acceptpolicies.tpl:12
+msgid "If you leave this page without successfully accepting the policies, then you will not be logged in."
+msgstr "Vor Verlassen dieser Seite müssen die Richtlinien akzeptiert werden, damit die Anmeldung erfolgreich durchgeführt werden kann."
+
+#: templates/legal_user_acceptpolicies.tpl:131
+msgid "Save and continue logging in"
+msgstr "Speichern und Anmeldung weiterführen"
+
+#: templates/legal_user_accessibilitystatement.tpl:1
+#, php-format
+msgid "Accessibility statement for %s"
+msgstr "Erklärung zur Barrierefreiheit für %s"
+
+#: templates/legal_user_cancellationrightpolicy.tpl:1
+#, php-format
+msgid "Cancellation right policy for %s"
+msgstr "Widerrufsbelehrung für %s"
+
+#: templates/legal_user_legalnotice.tpl:1
+#, php-format
+msgid "Legal notice for %s"
+msgstr "Impressum für %s"
+
+#: templates/legal_user_menu.tpl:2
+msgid "Legal information"
+msgstr "Rechtliche Informationen"
+
+#: templates/legal_user_policynotactive.tpl:1
+msgid "Policy not available"
+msgstr "Richtlinie nicht verfügbar"
+
+#: templates/legal_user_policynotactive.tpl:3
+msgid "The selected policy is not available."
+msgstr "Die ausgewählte Richtlinie nicht verfügbar"
+
+#: templates/legal_user_privacypolicy.tpl:1
+#, php-format
+msgid "Privacy policy for %s"
+msgstr "Hinweise zum Datenschutz für %s"
+
+#: templates/legal_user_termsofuse.tpl:1
+#, php-format
+msgid "Terms of use for %s"
+msgstr "Nutzungsbedingungen für %s"
+
+#: templates/legal_user_tradeconditions.tpl:1
+#, php-format
+msgid "Trade conditions for %s"
+msgstr "AGB für %s"
+
+#: templates/plugins/legal_function_legalinlinelink_accessibilitystatement.tpl:5
+msgid "Accessibility Statement"
+msgstr "Erklärung zur Barrierefreiheit"
+
+#: templates/plugins/legal_function_legalinlinelink_notfound.tpl:1
+msgid "(POLICY TYPE NOT FOUND!)"
+msgstr "(RICHTLINIEN-TYP NICHT GEFUNDEN!)"
+
+#~ msgid "Policy"
+#~ msgstr "Richtlinie"
