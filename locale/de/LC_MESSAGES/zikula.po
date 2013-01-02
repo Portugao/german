@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-26 17:44+0000\n"
-"PO-Revision-Date: 2012-12-16 12:27+0100\n"
+"PO-Revision-Date: 2013-01-02 19:36+0100\n"
 "Last-Translator: Ralf Köster <ralf@zikula.org>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "Language: de\n"
@@ -11952,7 +11952,7 @@ msgstr "Beschreibung"
 
 #: system/Settings/templates/settings_admin_modifyconfig.tpl:22
 msgid "Page title structure"
-msgstr "Ungültige Setienstruktur"
+msgstr "Ungültige Seitenstruktur"
 
 #: system/Settings/templates/settings_admin_modifyconfig.tpl:24
 msgid "Possible tags: %pagetitle%, %sitename%, %modulename%"
