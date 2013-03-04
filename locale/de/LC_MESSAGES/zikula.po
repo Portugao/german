@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-26 17:44+0000\n"
-"PO-Revision-Date: 2013-03-04 21:15+0100\n"
-"Last-Translator: Dominik Mayer <workspace99@gmai.com>\n"
+"PO-Revision-Date: 2013-03-04 21:38+0100\n"
+"Last-Translator: Dominik Mayer <workspace99@gmail.com>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: themes/Printer/version.php:16
 msgid "Printer"
-msgstr "Printer"
+msgstr "Drucker"
 
 #: themes/Printer/version.php:17
 msgid ""
@@ -185,7 +185,7 @@ msgstr "Fehler! Datei '%s' kann nicht geladen werden."
 
 #: lib/legacy/Loader.php:108
 msgid "Error! Invalid file array specification."
-msgstr "Error! Invalid file array specification."
+msgstr "Fehler! Ungültige Dateianordnung."
 
 #: lib/legacy/Loader.php:146 lib/legacy/Loader.php:180
 #: lib/legacy/Loader.php:249 lib/legacy/Api.php:111 lib/legacy/Api.php:128
@@ -269,22 +269,22 @@ msgstr "Error! Invalid file array specification."
 #: lib/util/DataUtil.php:774
 #, php-format
 msgid "Warning! Function %1$s is deprecated. Please use %2$s instead."
-msgstr "Warning! Function %1$s is deprecated. Please use %2$s instead."
+msgstr "Warnung! Funktion %1$s ist veraltet. Bitte Funktion %2$s verwenden."
 
 #: lib/legacy/Loader.php:148
 #, php-format
 msgid "Error! Invalid class specification '%s'."
-msgstr "Error! Invalid class specification '%s'."
+msgstr "Fehler! Ungültige Klassen Spezifikation '%s'."
 
 #: lib/legacy/Loader.php:182
 #, php-format
 msgid "Error! Invalid module specification '%s'."
-msgstr "Error! Invalid module specification '%s'."
+msgstr "Fehler! Ungültige Modul Spezifikation '%s'."
 
 #: lib/legacy/Loader.php:186
 #, php-format
 msgid "Error! Invalid 'base_obj_type' specification '%s'."
-msgstr "Error! Invalid 'base_obj_type' specification '%s'."
+msgstr "Fehler! Ungültige 'base_obj_type' Spezifikation '%s'."
 
 #: lib/legacy/Loader.php:226
 #, php-format
@@ -451,7 +451,7 @@ msgstr ""
 #: install/templates/plugins/function.html_select_locales.php:38
 #, php-format
 msgid "Error! in %1$s: the %2$s parameter must be specified."
-msgstr "Error! in %1$s: the %2$s parameter must be specified."
+msgstr "Fehler! In %1$s: Der %2$s Parameter muss gesetzt werden."
 
 #: lib/legacy/plugins/function.configgetvar.php:46
 #: lib/legacy/plugins/function.adminonlinemanual.php:28
@@ -7140,9 +7140,8 @@ msgid "SMTP mail transfer protocol"
 msgstr "SMTP Mail Transfer Protokoll"
 
 #: system/Mailer/lib/Mailer/Form/Handler/ModifyConfig.php:31
-#, fuzzy
 msgid "Development/debug mode (Redirect e-mails to LogUtil)"
-msgstr "Entwicklungs- bzw. Debug-Modus (Redirect e-mails zu LogUtil)"
+msgstr "Entwicklungs- bzw. Debug-Modus (Leitet e-mails zu LogUtil um)"
 
 #: system/Mailer/lib/Mailer/Form/Handler/TestConfig.php:73
 msgid "Done! Message sent."
