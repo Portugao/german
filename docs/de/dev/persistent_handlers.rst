@@ -1,39 +1,31 @@
-==========================================================================================
-WICHTIG
-Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
-aktueller, als das hier vorliegende Material.
-==========================================================================================
-
-
-PERSISTENTE EVENT HANDLER
--------------------------
-Zikula lädt normalerweise nur Module, auf die zugegriffen werden muss. Daher würden die
-Event Listener von Modulen nicht allgemein bzw. immer registriert.
-Allerdings gibt es Momente, in denen ein Modul oder ein Plugin eines Modules auf ein Ereignis
-warten/horchen muss, das irgendwo anders im System aufgetreten ist. Zum Beispiel ist 'user.delete'
-solch ein Ereignis, ein Modul kann im Handler Referenzen zu einer gelöschten Benutzer-ID auflösen.
-
-Module können daher persistente Event Handler registrieren mit der API EventUtil::register*():
+PERSISTENT EVENTHANDLERS
+------------------------
+Zikula normally only loads modules which need to be accessed, so modules would
+not generally register their event listeners  However, there are times when a module
+or module's plugin needs to listen for an event that occured somewhere else in the
+system.  For example, 'user.delete' so a module can handle any reference to a
+delete users ID.  Modules can register persistent event handlers with the
+EventUtil::register*() API:
 
     EventUtil::registerPersistentModuleHandler($moduleName, $eventName, $callable)
     EventUtil::unregisterPersistentModuleHandler($moduleName, $eventName, $callable)
     EventUtil::registerPersistentPluginHandler($moduleName, $pluginName, $eventName, $callable)
     EventUtil::unregisterPersistentPluginHandler($moduleName, $pluginName, $eventName, $callable)
 
-Callables sollten aussehen wie `array('ClassName', 'methodName')`, was nichts anderes darstellt als
-eine Repräsentation von ClassName::MethodName($event).
+Callables should look like this `array('ClassName', 'methodName')` which represents ClassName::MethodName($event)
 
-Die einzige Einschränkung ist, dass die Handler PHP Callables von statischen Klassenmethoden sein müssen.
+The only restriction is the handlers must be PHP callables of static class methods.
 
-Diese Methodik kann auch als besserer Weg benutzt werden um ältere 'API Plugins' bereitzustellen, zum Beispiel
-Needles in Multihook. Hier ein fiktives Beispiel als Alternative mit MultiHook:
+This methodology can also be used as a better way of providing the legacy
+'API plugins' once seen, like Multihook needles.  Imagine the following alternative
+with MultiHook (this example is fictitous):
 
-Normalerweise scannt MultiHook das komplette Dateisystem und sucht nach Modulen, die multihookapis implementieren.
-Statt dessen kann MultiHook einfach ein Ereignis namens 'multihook.get_providers' vorgeben.
-Listener können dann einfach ein Array mit Klassennamen oder Callables zurückliefern, die alle
-das Interface bzw. die abstrakte Klasse der MultiHook Needles implementieren.
-MultiHook kann dann diese instantiieren (und bei jeder Instanz über Reflection sicherstellen, dass es sich
-um eine Instanz von Multihook_NeedleApi handelt).
+Multihook normally scans the entire file system looking for modules that implement
+multihookapis.  Instead of this, Multihook can just issue a 'multihook.get_providers'
+event.  Listeners would simply return an array of class names or callables all of
+which should implement the Mutlihook Needle Interface/Abstract.  Multihook can then
+instanciate these (checking each instance through reflection to ensure it is an
+instanceof Multihook_NeedleApi).
 
 abstract class Multihook_NeedleApi
 {
@@ -47,12 +39,12 @@ abstract class Multihook_NeedleApi
     abstract public function filter($input);
 }
 
-MyModule sollte nun einen persistenten Listener für 'module.multihook.get_providers' registrieren, mit dem folgenden
-Code in Installer.php
+MyModule should now register a persistent listener for 'module.multihook.get_providers'
+using the following code in Installer.php
 
     EventUtil::registerPersistentModuleHandler('MyModule', 'module.multihook.get_providers', array('MyModule_Listeners', 'getProvider'));
 
-In einer separaten Datei lib/MyModule/Listeners.php wird der folgende Code platziert (zum Empfangen der $events).
+In a separate file lib/MyModule/Listeners.php you place the following code (this is what receives the $events).
 
     class MyModule_Listeners
     {
@@ -62,11 +54,11 @@ In einer separaten Datei lib/MyModule/Listeners.php wird der folgende Code platz
         }
     }
 
-Zurück zum MultiHook-Module. Die Implementierung könnte in etwa so aussehen:
+Back to the Multihook module.  It's implementation could look something like this:
 
     // create and dispatch the event
-    $event = Zikula_Event('module.multihook.get_providers');
-    $classes = $eventManager->notify($event)->getData();
+    $event = \Zikula\Core\Event\GenericEvent();
+    $classes = $eventManager->dispatch('module.multihook.get_providers', $event)->getData();
 
     // now we got back any results we can process them like this
     foreach ($classes as $class) {
@@ -77,4 +69,5 @@ Zurück zum MultiHook-Module. Die Implementierung könnte in etwa so aussehen:
 
         $output = $needle->filter($output);
     }
+
 

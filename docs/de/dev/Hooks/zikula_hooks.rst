@@ -1,222 +1,385 @@
-==========================================================================================
-WICHTIG
-Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
-aktueller, als das hier vorliegende Material.
-==========================================================================================
-
-
-ZIKULA HOOKS
+Zikula Hooks
 ============
-Dieses Dokument beschreibt das Zikula Hook System.
 
-Was ist ein Hook?
------------------
-Ein Hook ist eine andere Art von Ereignis, das in Zikula auftreten kann und als 'Hookable Event'
-bezeichnet wird. Im Gegensatz zu Events werden Hookable Events benutzt um Module/Plugins an
-andere Module anzuhängen, so dass sie UI-Funktionalität anreichern können. Sie sind komplett
-durch den Seitenadministrator konfigurierbar, so dass der Administrator wählen kann, welche
-Module Hooks für welche anderen sind, und in welcher Reihenfolge sie ausgeführt werden.
-Ein Kommentar-Modul könnte beispielsweise Kommentare an ein Blog-Modul anhängen. Auf ähnliche
-Weise könnte ein Ratings-Modul an ein Blog-Modul angehängt werden, damit alle Artikel
-Bewertungen haben.
+This document describes how HookManager is implemented in Zikula.  It outlines
+the conventions and expected implementation patterns with code examples.
 
-Ein weiteres mögliches Beispiel ist das Hinzufügen von Extra-Feldern zu Formularen zur
-Abfrage zusätzlicher Informationen.
 
-Anbieter und Abonnenten
------------------------
-In diesem Dokument benutzen wir "Hook Providers" und "Hook Subscribers". Ein Provider ist
-ein Modul/Plugin, das eine Funktionalität bietet, die an die Ausgabe anderer Module angehängt
-werden kann/soll.
+What is a hook?
+---------------
 
-Ein Subscriber ist ein Modul, das Hooks versteht. Es kann Hooks verarbeiten, die von anderen
-Modulen angeboten werden.
+A hook another kind of event that occurs in execution life-cycle and should really be called
+'hookable events'.  Unlike generic events, display hookable events are used to create a
+dynamic relation to an object.  It may be 1:1 or 1:n.
 
-Bereiche
---------
-Dies ist ein erweitertes Feature für komplexe Module. Allgemein beziehen sich Modules als
-Provider oder Subscriber auf eine Area. Areas erlauben Subscriber und Provider eine Gruppierung
-ihrer Features.
-Damit können Module verschiedene Gruppen von Hooks anbieten. Ein Provider könnte verschiedene
-Hook-Features anbieten. Aus Subscriber-Sicht erlaubt es einem Modul Hooks zu einem Teil des
-Moduls zuzuweisen, während ein anderer Teil diese Hooks nicht bekommt.
+In the case of 1:n relations, they attach to an object's view.  In the case of 1:1 relations
+they intercept the objects entire lifecycle (create, validate, edit, view and delete).
 
-Areas müssen alle eindeutig sein, daher sollte dieses Format verwendet werden:
+Hook relations are entirely configurable by the site administrator and not controlled by
+the programmer.
 
-    modulehook_area.mymodule.<areaname>
-    modulehook_area.comments.general (the provider area)
-    modulehook_area.news.articles    (the subscriber area)
+Example uses of 1:n relations: adding comments to a blog article view, or maybe ratings.
+Example uses of 1:1 relations: generally to gather extra information on a form for example
+adding an age verification field to a form.
 
-Subscriber-Module
------------------
-Modules, die Hooks verstehen, müssen dies dem Zikula-Framework in der Datei Version.php bekannt machen.
-Dies erfolgt durch Hinzufügen einer Methode:
+There are some more esoteric uses of hookable events which may not add any relation to
+forms but instead allow the creation of a blog article ping.
 
-    protected function setupHookBundles()
-    {
-        $bundle = new Zikula_Version_HookSubscriberBundle('modulehook_area.news.articles', $this->__('News Display Hooks'));
-        $bundle->addType('ui.view', 'news.hook.ui.view');
-        $bundle->addType('ui.create', 'news.hook.ui.create');
-        $this->registerHookSubscriberBundle($bundle);
-    }
+The other kind of hookable events are hook filters which allow the site administrator
+to selectively filter content.
 
-Während der Installation oder Aktualisierung des Modules müssen diese Bundles mit
-dem Persistence Layer registriert werden:
 
-    HookUtil::registerHookSubscriberBundles($this->version);
+General Naming Convention
+-------------------------
 
-Ein komplexes Modul kann mehrere Bereiche haben, bei denen das Anhängen von Hooks passend oder
-unpassend sein kann, oder unterschiedliche Hooks für verschiedene Bereiche anfordern.
-Aus diesem Grund kann man verschiedene Areas in der API spezifizieren. Jeder Bereich
-benötigt sein eigenes Set eindeutiger Event-Namen.
+By convention we are use lower case letter and number, with full-stop and underscore
+characters only.  The full-stop is used to separate out logically separate items,
+a kind of namespacing, while the underscore is used in place of a space character
+to punctuate logically connected items.
 
-Die Methode addType() benötigt einige Erklärungen. Der erste Parameter ist der Hook-Typ;
-der zweite Parameter ist der Name des Events, das von *DIESEM* Modul ausgelöst wird.
-Wenn also das Modul etwa ein News-Modul ist, dann sind dies die eindeutigen Namen, die nur
-*dieses* News-Modul triggert. Wenn der Benutzer z.B. ein Kommentar-Modul anhängt (Provider),
-wird unter der Oberfläche der Hook-Handler des Kommentar-Moduls an den EventManager angehängt
-unter Benutzung des Event-Namens, der vom Subscriber-Modul (News) angegeben wurde. Zum Beispiel
-wird news.ui.view an comments.handler.ui.view gehängt, was der Name eines Callable Handlers ist,
-registriert durch den Hook-Provider (News).
 
-Es ist auch notwendig die folgende Zeile zur Methode getMetaData() in der Datei Version.php hinzuzufügen,
-um Zikula wissen zu lassen, dass das Modul Hooks versteht und diese abonnieren (subscriben) kann.
-Zikula fügt dann ein Konfigurationsmenü zum Verwaltungsbereich des Modules hinzu. Aus diesem Grund
-*muss* man einen Admin Controller im Modul haben.
+Area Naming
+-----------
+
+Areas should all be unique, so please use this format:
+
+    <type>.<name>.<category>.<areaname>
+
+Type can be 'subscriber' or 'provider'
+
+For example:
+
+    provider.ratings.ui_hooks.rating (the provider area in 'ui_hooks' category)
+    subscriber.blog.ui_hooks.articles  (the subscriber area in 'ui_hooks' category)
+
+    provider.ratings.filter_hooks.rating (the provider area in 'filter_hooks' category)
+    subscriber.blog.filter_hooks.articles  (the subscriber area in 'filter_hooks' category)
+
+
+Hook Types
+----------
+The following is a list of valid hook types.
+
+### 'ui_hooks' category
+
+    display_view    - Display hook for view/display templates.
+
+    form_edit       - Display hook for create/edit forms.
+    form_delete     - Display hook for delete dialogues.
+
+    validate_edit   - Used to validate input from a create/edit form.
+    validate_delete - Used to validate input from a delete form.
+
+    process_edit    - Perform the final update actions for a create/edit form.
+    process_delete  - Perform the final delete actions for a delete form.
+
+
+### 'filter_hooks' category
+
+    filter          - Filter's content in a template.
+
+
+Subscriber Capability
+---------------------
+
+Modules that may subscriber to hook providers must advertise this capability
+in the Version.php using
 
     $meta['capabilities'] = array(HookUtil::SUBSCRIBER_CAPABLE => array('enabled' => true));
 
-Provider-Module
----------------
-Provider-Module müssen ihre verfügbaren Hook-Handler Zikula bekannt machen. Dazu muss man drei Aufgaben durchführen:
+Zikula will add a configuration menu to the administration area of the module.  For
+this reason you *must* have an admin controller in the module.
 
-Zuerst wird die hook_provider Capability zur Datei Version.php in der Methode getMetaData() hinzugefügt.
 
-    $meta['capabilities'] = array(HookUtil::PROVIDER_CAPABLE => array('enabled' => true));
+Subscriber Bundles
+------------------
 
-Als zweites müssen Provider Bundles konfiguriert werden, indem die folgende Methode in Version.php eingebaut wird.
+Modules that are subscriber hook capable must advertise their areas and events
+using "Subscriber Bundles".  This is done in the Version.php
 
     protected function setupHookBundles()
     {
-        $bundle = new Zikula_Version_HookProviderBundle('modulehook_area.ratings.item', $this->__('Ratings Hook Poviders'));
-        $bundle->addHook('hookhandler.ratings.ui.view', 'Ratings', 'ui.view', 'Ratings_Hooks', 'uiview');
-        //...
-        $this->registerHookProviderBundle($bundle);
+        $bundle = new Zikula_HookManager_SubscriberBundle($this->name, 'subscriber.blog.ui_hooks.articles', 'ui_hooks', $this->__('blog Article UI Hooks'));
+        $bundle->addEvent('display_view', 'blog.ui_hooks.articles.display_view');
+        $bundle->addEvent('form_edit', 'blog.ui_hooks.articles.form_edit');
+        $bundle->addEvent('form_delete', 'blog.ui_hooks.articles.form_delete');
+        $bundle->addEvent('validate_edit', 'blog.ui_hooks.articles.validate_edit');
+        $bundle->addEvent('validate_delete', 'blog.ui_hooks.articles.validate_delete');
+        $bundle->addEvent('process_edit', 'blog.ui_hooks.articles.process_edit');
+        $bundle->addEvent('process_delete', 'blog.ui_hooks.articles.process_delete');
+        $this->registerHookSubscriberBundle($bundle);
 
-        //... repeat as many times as necessary
+        $bundle = new Zikula_HookManager_SubscriberBundle($this->name, 'subscriber.blog.filter_hooks.articles', 'filter_hooks', $this->__('blog Article Filter Hooks'));
+        $bundle->addEvent('filter', 'blog.filter_hooks.articles.filter');
+        $this->registerHookSubscriberBundle($bundle);
     }
 
-Der dritte Schritt ist das Registrieren dieser Bundles während der Installation oder Aktualisierung des Moduls.
-Dies erfolgt unter Verwendung des Persistence Layers:
+During installation of the module you must register the bundles with the
+persistence layer using:
 
-    HookUtil::registerHookProviderBundles($this->version);
+    HookUtil::registerSubscriberBundles($this->version->getHookSubscriberBundles());
 
-Dies registriert die Hook Event Handler (bzw. die eigentlichen PHP Klassen/Methoden), die auf Hook-Events,
-die von Subscriber-Modulen ausgelöst werden, reagieren und antworten.
+The `addEvent()` method used in setting up hook bundles is how a subscriber
+indicates what hookable events are available (understood) by the module.
+The first parameter is the hook type (e.g., `'display_view'`). The second parameter
+is the event name that is triggered by *THIS* module (e.g., `'blog.ui_hooks.articles.display_view'`).
 
-Ein Modul kann entweder statische Klassenmethoden registrieren, wie Foo::Bar($event) oder
-Services (welche instantiierte Klassenobjekte sind). Bei der Benutzung von Services müssen
-diese Instanzen von Zikula_EventHandler sein. Wir verwenden eine API für die Registrierung.
+So if this module was a blog module, then the second parameter is the unique
+name of a hookable event that only *this* blog module actually triggers.  Under
+the hood, when a user attaches, say, a comment module (a hook provider), then
+the hook handler of the comment module will be attached to the HookManager
+using the event name supplied by the blog module (the hook subscriber).
 
-Wenn $serviceId = null ist, heißt dies für Zikula, dass das Callable eine statische Klassenmethode ist.
-Wenn man eine $serviceId angibt, dann wird diese Klasse instantiiert und benutzt. Das bedeutet, dass
-man die gleiche $serviceId nutzen und mehrere Methoden haben kann, wenn man dies möchte.
 
-Der $name des Hooks ist der Name des Handlers - ein gemeinsamer Name. Dies ist NICHT ein Event-Name.
+Provider Capability
+-------------------
 
-    $bundle->addHook($name, $owner, $type, $className, $method, $serviceId, $weight);
+Provider modules must make their available hook handlers known to Zikula provider
+capability to the provider's `Version.php` in the `getMetaData()` method:
 
-    // registering a static method handler.
-    $bundle->addHook('hookhandler.ratings.ui.view', 'Ratings', 'ui.view', 'Ratings_Hooks', 'uiview');
+    $meta['capabilities'] = array(HookUtil::PROVIDER_CAPABLE => array('enabled' => true));
 
-    // registering a service
-    $bundle->addHook('hookhandler.ratings.ui.view', 'Ratings', 'ui.view', 'Ratings_Hooks', 'uiview', 'module.ratings_hooks');
+Zikula will add a configuration menu to the administration area of the module.  For
+this reason you *must* have an admin controller in the module.
 
-Der Parameter $weight kann verwendet werden um die Standardgewichtungen für Handler festzulegen, die eventuell
-an den EventManager angehängt werden. Allgemein kann dieser Parameter auch unterdrückt werden.
 
-Hook-Typen
-----------
-Das folgende ist eine Liste valider Hook-Typen. Nicht alle müssen verwendet werden, aber allgeein sollte
-ein HookBundle zuindest die ui.* und process.* Handler implementieren, um eine Action valide zu komplettieren.
+Provider Bundles
+----------------
 
-ui.view          - Display-Hook für View- un Display-Templates.
-ui.edit          - Display-Hook für Create- und Edit-Formulare.
-validate.update  - Zur Validierung von Eingaben aus einem Create-/Edit-Form.
-process.update   - Führt die finalen Update-Aktionen für ein Create-/Edit-Form durch.
-process.delete   - Führt die finalen Delete-Aktionen für ein Formular aus.
+You must configure the Version.php with the provider bundle information.  This tells HookManager
+what areas are supported and describes the hook handlers.
 
-Hookable Events
----------------
-In diesem Abschnitt geht es um das eigentliche "hookable event", das von einem
-Subscriber-Modul ausgelöst wird.
-
-Das Event kapselt Informationen über das Hookable Event. Prinzipiell benötigen wir
-den Namen des Hook Events, z.B. 'news.hook.ui.create'. Der Name des Event-Eigners
-(des besitzenden Moduls) wird allgemein als Prefix vorangestellt.
-
-Als nächstes benötigen wir das Subjekt des Ereignisses. Dies ist ein Objekt oder Array mit Daten.
-Wenn es zum Beispiel um einen Blog-Beitrag geht, dann wäre es entsprechend das Objekt mit diesem
-Beitrag (wenn Doctrine benutzt wird, oder ein Array mit den gleichen Daten). Zu beachten ist, das
-man dies in allen Fällen braucht außer bei Create (wo es noch keine Daten oder nur ein leeres
-Objekt gibt). Dies gilt auch für Delete-Operationen, was zwar auf den ersten Blick nicht viel
-Sinn macht, aber sogar Delete-Operationen kommen normalerweise von einem Formular, das das zu löschende
-Objekt angezeigt hat, und somit ist das Objekt bereits verfügbar.
-
-In den Argumenten eines Events können wir auch ein Array einbinden in der Form
-'module' => $moduleName,
-'id'     => das ID-Feld dieses Arrays, oder ID-Property des Objektes
-
-Das kann dann zum Beispiel so aussehen:
-
-    new Zikula_Event('news.hook.process.update', $article, array('module' => 'News', 'id' => 'id'));
-
-Allgemein können Hook-Provider annehmen, dass die ID 'id' ist, falls kein 'id'-Key angegeben wurde.
-
-Hooks von der Subscriber-Seite implementieren
----------------------------------------------
-Der wichtigste Zweck für Hooks ist es, dass ein Modul an ein anderes angehängt werden kann,
-wie Bewertungen für Blog-Beiträge. In diesem Abschnitt wird die Implementierung von Hooks
-auf Seite des Subscribers behandelt. In unserem Beispiel wäre dies das Blog-Modul.
-
-Wir müssen uns nicht um das Anhängen der Hooks an Module kümmern, dies wird automatisch von
-der UI in der Administration erledigt.
-
-Das Anhängen von Display-Hooks ist sehr einfach. Innerhalb des Templates fügt man einfach so etwas hinzu:
-
-    {notifydisplayhooks eventname='news.hook.ui.view' subject=$subject module=$module assign='display_hooks'}
-
-$module wird automatisch (basierend auf dem Wert in der Zikula_View Instanz) hinzugefügt, wenn man es nicht
-explizit angibt.
-
-Das Plugin liefert alle Display-Hooks, sortiert entsprechend der Einstellungen in der Administration.
-Die Rückgabe ist ein Array in der Form
-
-    array('moduleName1' => 'output1',
-          'moduleName2' => 'output2');
-
-In den Controller-Klassen des Moduls müssen die Hook-Typen für "Process" und/oder "Validation" implementiert werden.
-Dies kann wie folgt erledigt werden:
-
-    // the long way
-    $event = new Zikula_Event('news.hook.process.create', $subject, array('module' => $moduleName));
-    $this->eventManager->notify($event);
-
-   // the short way, provided in instances of Zikula_Base (controllers, APIs etc).
-   $this->notifyHooks('news.hook.process.create', $subject);
-
-HOOK ANTWORTEN VOM PROVIDER
----------------------------
-Ein Hook-Handler sollte mit einem Zikula_Response_DisplayHook Object auf folgende Weise antworten.
-
-    public function hookHandler(Zikula_Event $event)
+    protected function setupHookBundles()
     {
-        $name = 'Foo'; // this module's name.
+        $bundle = new Zikula_HookManager_ProviderBundle($this->name, 'provider.ui_hooks.ratings.rating', 'ui_hooks', $this->__('Ratings Hook Poviders'));
+        $bundle->addServiceHandler('display_view', 'Ratings_HookHandler', 'displayView', 'ratings.rating');
+        // add other hook handlers as needed
+
+        $this->registerHookProviderBundle($bundle);
+    }
+
+During installation of the module you must register the bundles with the
+persistence layer using:
+
+    HookUtil::registerProviderBundles($this->version->getHookProviderBundles());
+
+You may register static class methods as hook handlers or services.  Use the appropriate
+method `bundle->addServiceHandler()` and `bundle->addStaticHandler()` as required.
+
+Service handlers must be an instance of Zikula_Hook_AbstractHandler.  This is preferred
+when the hook workflow requires some kind of runtime persistence for validation. When doing
+so you should specify the same service ID for all handlers in the bundle - this will ensure
+the same object is used throughout the runtime session which thus provides the persistence
+for the duration of the request cycle.
+
+Examples:
+    // registering a static method handler.
+    $bundle->addStaticHandler('display_view', 'Ratings_Hooks', 'displayView', 'ratings.rating');
+
+    // registering a service (preferred - class must be an instance of Zikula_Hook_AbstractHandler)
+    $bundle->addServiceHandler('display_.view', 'Ratings_Hooks', 'displayView', 'ratings.rating');
+
+
+Hook Events
+-----------
+
+In this section we will discuss the actual hookable event that is triggered by
+a subscriber module.  The hook event object encapsulates information about the
+hookable event. First, we need the hook event name, e.g. `<module>.<category>.<area>.<type>`
+
+### Naming Convention
+
+Hook events should be named as follows:
+
+    `<module>.<category>.<area>.<type>`
+
+### Event Trigger
+
+To create a hookable event, create an appropriate hook object and then notify that
+hook using HookManager's notify() method.
+
+
+Subscriber Implementation
+-------------------------
+
+Hooks are only for use with the UI, and with UI-related processing like validation.
+
+Their main purpose it so one module can be attached to another at the UI layer,
+like attaching the ability to rate blog posts. In this section we cover the
+implementation of hooks from the subscriber's side. In our example, that
+would mean the Blogging module.
+
+We don't need to be concerned with attaching hooks to modules, that is handled
+automatically by the administration UI and is under the control of the administrator.
+
+Attaching display hooks is very simple.  Inside the template simply add
+
+    {notifydisplayhooks eventname='blog.ui_hooks.articles.display_view' id=$id}
+
+The plugin will return all display hooks handler that respondes, sorted according to
+the administration settings.  The return is an array of
+
+    array(
+        'providerarea1' => `Zikula_Response_DisplayHook`, // object
+        'providerarea2' => `Zikula_Response_DisplayHook`, // object
+    );
+
+In the module controllers, you will need to implement the process and or validation
+hook types.  This can be done as follows (example of a process hook).
+
+    $url = new Zikula_ModUrl(....); // describes how to retrieve this object by URL metadata
+    $hook = new \Zikula\Core\Hook\ProcessHook($id, $url);
+    $this->notifyHooks()->dispatch('blog.ui_hooks.articles.process_edit', $hook);
+
+
+Provider Display Hooks
+----------------------
+
+A hook handler should respond to a hookable event with a `Zikula_Response_DisplayHook`
+instance in the following manner.
+
+    // example of a static handler (static handlers are *not* the preferred handlers
+    // for edit/validate handlers which should be Zikula_Hook_AbstractHandler instances instead)
+    public static function hookHandler(Zikula_DisplayHook $event)
+    {
         $template = 'template_name.tpl'; // the name of the module's template
-        $view = Zikula_View::getInstance($name);
+        $view = Zikula_View::getInstance($module);
 
         // do stuff...
 
         // add this response to the event stack
-        $event->data[$name] = new Zikula_Response_DisplayHook($name, $view, $template);
+        $hook->setResponse(new Zikula_Response_DisplayHook('subscriber.ui_hooks.modname.area', $view, $template));
     }
+
+
+WORKFLOW OF HOOKS
+-----------------
+
+The general workflow of hooks is as follows.
+
+### Displaying an item
+
+When viewing an item of some sort, we want to allow other modules to attach some form of
+content to the display view.  We simply notify `display_view` hooks with the item being displayed
+(the subject), the id and the module name as arguments.
+
+In the template we simply use something like this, using the `display_view` hook type.
+
+    {notifydisplayhooks eventname='<module>.ui_hooks.<area>.display_view' id=$id}
+
+
+Introduction to new/edit/delete types
+-------------------------------------
+
+The next two hook types, 'creating new items and editing existing items' are considered to be
+all part of the same workflow.  There is little point duplicating the bulk of code required
+to process create and edit, therefore we should combine them into a single controller and view.
+This is because whether creating a new item, or editing an existing item, we're using
+essentially the same form.  In 'create' the form starts out empty, and in 'edit' the form
+is populated by a database query.  We know if we should validate and commit any input data
+if the form was submitted or not.  And lastly, when we process the form on submit, again,
+it's the same process that is used to update, the only difference is we might use an
+SQL INSERT over an SQL UPDATE.  This is why we can use one controller method and view
+for both create and edit actions.
+
+For this reason also, there is no need for separate display and processing methods.  For example
+`edit()` to display edit form, and `update()` to validate and update the record, followed by a
+redirect simply do not make sense when it can be done easily in one controller method.
+
+
+### Creating a new item
+
+When we create an item, essentially, we visit an edit page with no id in the request.
+From this we know that the action is not an edit, but a 'create new'.  We can determine
+if it's a brand new form or a submitted form by reading the form submit property.
+Accordingly, we can notify the system of the hook events.
+
+When displaying a new empty form, we simply trigger a `form_edit` in the template with
+{notifydisplayhooks} using a null id.
+
+    {notifydisplayhooks eventname='<module>.ui_hooks.<area>.form_edit' id=null}
+
+When we come to validate a new create form, this means we have received a submit command
+in the form.  We can then validate our form and then trigger a `validate_edit` hook with
+
+    $hook = new \Zikula\Core\Hook\ValidationHook(new Zikula_Hook_ValidationProviders());
+    $this->dispatchHooks('...validate_edit', $hook);
+    $validators = $hook->getValidators();
+
+The validator collection can then be tested for the presence of validation errors or not
+with `$validators->hasErrors()`.  Together with the form submit the method can decide
+if it's safe to commit the data to the database or, if the form needs to be redisplayed with
+validation errors.
+
+If it's ok simply commit the form data, then trigger a `process_edit` Zikula_ProcessHook with
+
+    new \Zikula\Core\Hook\ProcessHook($name, $id, $url);
+
+The URL should be an instance of Zikula_ModUrl which describes how to get the newly created object.
+For this reason you must determine the ID of the object before you issue a Zikula_ProcessHook.
+
+If the data is not ok, then simply redisplay the template.  The triggered hook event will pick up
+the validation problems automatically as the validation of each handler will persist in
+the `Zikula_HookHandler` instances unless using an outdated workflow where the validation method
+redirects to display methods, in which case you will have to do validation again.
+
+`form_edit` hooks are displayed in the template with
+
+    {notifydisplayhooks eventname='<module>.ui_hooks.<area>.form_edit' id=$id}
+
+
+### Editing an existing item
+
+When when we edit an item, we visit an edit page with an id in the request and the
+controller will retrieve the item to be edited from the database.
+
+We can determine if we should validate and commit the item or just display the item for
+editing by reading the form submit property.
+Accordingly, we can notify the system of the hook events.
+
+When displaying an edit form, we simply trigger a `form_edit` hook with with
+
+     {notifydisplayhooks eventname='<module>.ui_hooks.<area>.form_edit' id=$id}
+
+When we come to validate an edit form, this means we have received a submit command
+in the form.  We can then validate our form and then trigger a `validate_edit` event with
+
+    $hook = new \Zikula\Core\Hook\ValidationHook(new Zikula_Hook_ValidationProviders());
+    $this->DispatchHooks('...validate_edit', $hook);
+    $validators = $hook->getValidators();
+
+The validator collection can then be tested for the presence of validation errors or not
+with `$validators->hasErrors()`.  Together with the form submit the method can decide
+if it's safe to commit the data to the database or, if the form needs to be redisplayed with
+validation errors.
+
+If it's ok simply commit the form data, then trigger a `process_edit` event with
+
+    new \Zikula\Core\Hook\ProcessHook($name, $id, $url);
+
+If the data is not ok, then simply redisplay the template.  The triggered event will pick up
+the validation problems automatically as the validation of each handler will persist in
+the `Zikula_Hook_AbstractHandler` instances unless using an outdated workflow where the validation method
+redirects to display methods, in which case you will have to do validation again.
+
+`form_edit` hooks are displayed in the template with
+
+    {notifydisplayhooks eventname='<module>.ui_hooks.<area>.form_edit' id=$id}
+
+
+### Deleting an item
+
+There are many different approaches that can be taken to deleting an item. For example we
+can add a delete button to an edit form.  We usually would have a confirmation screen
+or we might just use a javascript confirmation.  Generally, we would not want to add
+anything extra to a delete confirmation page, but we certainly need to process a delete
+action.  Ultimately when a controller (that makes use of hooks) deletes an item, it
+must notify the attached modules to prevent orphaned records.  This is done simply by
+triggering a hookable event with
+
+    new \Zikula\Core\Hook\ProcessHook($name, $id, $url);
+
+`form_delete` hooks are displayed in the template with
+
+    {notifydisplayhooks eventname='<module>.ui_hook.<area>.form_delete' id=$id}
+
