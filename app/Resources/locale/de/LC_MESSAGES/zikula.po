@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 10:11+0100\n"
-"PO-Revision-Date: 2014-12-29 18:59+0100\n"
+"PO-Revision-Date: 2014-12-29 20:17+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "Language: de\n"
@@ -12141,38 +12141,45 @@ msgstr ""
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:38
 msgid "<strong>Edit</strong>: opens the edit form"
-msgstr ""
+msgstr "<strong>Bearbeiten</strong>: Öffnet das Bearbeitungsformular"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:39
 msgid "<strong>Delete</strong>: removes the selected element and all its subelements"
-msgstr ""
+msgstr "<strong>Löschen</strong>: entfernt das ausgewählte Element und seine Unterelemente"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:41
 msgid "<strong>Add new...</strong>"
-msgstr ""
+msgstr "<strong>neu hinzufügen...</strong>"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:43
 msgid "<strong>before</strong>: opens a create form and adds the new item before the selected element"
 msgstr ""
+"<strong>vor</strong>: öffnet ein Formular und fügt das neue Element vor dem ausgewählten Element hinzu"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:44
 msgid "<strong>after</strong>: opens a create form and adds the new item after the selected element"
 msgstr ""
+"<strong>nach</strong>: öffnet ein Formular und fügt das neue Element nach dem ausgewählten Element hinzu"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:45
 msgid ""
 "<strong>as child</strong>: opens a create form and adds the new item as a child of the selected element"
 msgstr ""
+"<strong>als Kind</strong>: öffnet ein Formular und fügt das neue Element als untergeordnetes Element des "
+"ausgewählten Elements hinzu"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:48
 msgid "<strong>Expand/Collapse this node</strong>: expands or collapses the selected node"
 msgstr ""
+"<strong>Erweitern/reduzieren diesen Knoten</strong>: erweitert oder reduziert den ausgewählten Knoten"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:49
 msgid ""
 "<strong>Deactivate/Activate</strong>: turns on or off the selected element (and all its subitems) for the "
 "current language"
 msgstr ""
+"<strong>Deaktivieren/aktivieren</strong>: aktiviert oder deaktiviert das ausgewählte Element (und alle "
+"seine Unterelemente) für die aktuelle Sprache"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:51
 #, fuzzy
@@ -12184,39 +12191,52 @@ msgid ""
 "<strong>Activate for all languages</strong>: turns on the selected element (and all its subitems) for all "
 "the languages"
 msgstr ""
+"<strong>Aktivieren für alle Sprachen</strong>: aktivier ausgewählte Element (und alle seine "
+"Unterelemente) für alle Sprachen"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:54
 msgid ""
 "<strong>Deactivate for all languages</strong>: turns off the selected element (and all its subitems) for "
 "all the languages"
 msgstr ""
+"<strong>Deactivate für alle Sprachen</strong>: deaktiviert das ausgewählte Element (und alle seine "
+"Unterelemente) für alle Sprachen"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:59
 msgid "Multilingual options"
-msgstr ""
+msgstr "Mehrsprachige Optionen"
 
+# bekannt = common. Richtig übersetzt?
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:62
+#, fuzzy
 msgid ""
 "If the site has many languages installed - the menu will include all language versions. Each menu element "
 "can a have separated name and title for each language. The URL address and css class may (but not need) "
 "be common for all languages."
 msgstr ""
+"Wenn die Seite viele Sprachen installiert hat - wird das Menü alle Sprachversionen enthalten. Jedes Menü-"
+"Element kann einen Namen und einen Titel für jede Sprache getrennt haben. Die URL-Adresse und Css-Klasse "
+"kann (muss aber nicht) für alle Sprachen bekannt sein."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:66
 msgid ""
 "The list of available languages is displayed above the menu (current language is marked). By clicking any "
 "language name you can change the displayed language."
 msgstr ""
+"Die Liste der verfügbaren Sprachen wird über das Menü angezeigt (aktuelle Sprache ist markiert). Indem "
+"Sie auf einen Sprachnamen klicken kann die angezeigte Sprache geändert werden."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:69
 msgid "Dynamic elements"
-msgstr ""
+msgstr "Dynamische Elemente"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:72
 msgid ""
 "Dynamic elements are menutree plugins that allows the use of automatically generated list in the menu. It "
 "may be a list of all modules, the list of categories, etc."
 msgstr ""
+"Dynamische Elemente sind Menutree-Plugins, die die Verwendung von automatisch generierten Listen im Menü "
+"ermöglicht. Es kann z.B. eine Liste aller Module, die Liste der Kategorien, etc. sein."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:76
 msgid ""
@@ -12224,6 +12244,10 @@ msgid ""
 "that the url must use proper syntax, which looks like: (ext:Modulename:PluginName:AdditionalParams). The "
 "list generated by the plugin replaces the original menu item."
 msgstr ""
+"Dynamische Elemente werden auf die gleiche Weise wie jedes andere Element des Menüs eingefügt. Der "
+"einzige Unterschied ist, dass man einen speziellen Syntax verwenden muss, welche wie folgt aussieht: (Ext:"
+"Modulename:PluginName:AdditionalParams). Die Liste die durch das Plugin generiert  wird, ersetzt den "
+"ursprünglichen Menüpunkt."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:79
 msgid "Adminlinks"
@@ -12231,17 +12255,22 @@ msgstr "Adminlinks"
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:82
 msgid "This plugin generates a list of admin modules - similar to adminnav block."
-msgstr ""
+msgstr "Dieses Plugin erzeugt eine Liste der Admin Module - ähnlich wie der adminnav Block ."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:91
 msgid "Last parameter is optional. It can be flat and/or category separated by a comma."
 msgstr ""
+"Letzter Parameter ist optional. Es ist flach und/oder eine Kategorie sein, die durch ein Komma getrennt."
 
+# flat oder flach?
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:93
+#, fuzzy
 msgid ""
 "<strong>flat</strong> - will add the admin links in the current menu. Without flat the links are grouped "
 "one level down."
 msgstr ""
+"<strong>flach</strong> - wird den Administratorlink im aktuellen Menü hinzufügen. Ohne flach werden die "
+"Links eine Ebene nach unten gruppiert."
 
 #: system/Zikula/Module/BlocksModule/Resources/views/Block/Menutree/help.tpl:94
 msgid "<strong>category</strong> - additionally groups the admin links by their category."
