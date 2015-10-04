@@ -1,71 +1,71 @@
-==========================================================================================
-WICHTIG
-Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
-aktueller, als das hier vorliegende Material.
-==========================================================================================
-
-
 Zikula Plugin System
 --------------------
 
-Das Plugin-System in Zikula basiert auf dem System Zikula_EventManager.
+The Zikula plugins system is based on the Zikula_EventManager system.
 
-Plugins können für verschiedene Zwecke eingesetzt werden. Zum Beispiel könnten sie
-ganz simpel zur Registrierung eines Klassen-Namensraums oder zum Hinzufügen einiger
-Suchpfade für Smarty-Plugins verwendet werden. Sie können auch benutzt werden, um
-Features zu bestehenden Modulen hinzuzufügen. Damit können Module noch einmal modularisiert
-werden, ein Beispiel wäre das Hinzufügen von Versandmethoden zu einem Shop-System.
+Plugins can be used for a diverse number of purposes.  For example they could be
+as simple as to register a class namespace, or add some plugin search paths for
+Smarty.  They can be used to add features to existing modules.  They can be used
+to make your modules pluggable, like adding shipping methods to a shopping cart.
 
-Es gibt zwei Arten von Plugins:
+There are two kinds of plugins:
 
-1.  System Plugins (nicht verwechseln mit Modulen in system/).
-    Diese liegen im Verzeichnis plugins/
-    Die Klassen heißen SystemPlugin_$PluginName_Plugin
-    z.B. plugins/Example/Plugin.php (beinhaltet class SystemPlugin_Example_Plugin extends Zikula_Plugin)
+1.  System Plugins (don't confuse with system/ modules).
+    These are located in plugins/
+    Classes are named SystemPlugin_$PluginName_Plugin
+    e.g. plugins/Example/Plugin.php (contains
+    class SystemPlugin_Example_Plugin extends Zikula_AbstractPlugin
 
-    System Plugins werden nach System::init() aufgerufen, bevor die System Hooks initialisiert werden.
+    System plugins are invoked post System::init() before system hooks are
+    initialised.
 
-    System Plugins können benutzt werden zum Hinzufügen von Template Plugins oder JS-Bibliotheken
-    für die komplette Zikula-Installation.
+    System plugins might be used for adding template plugins or js libraries
+    to be available for then entire Zikula installation.
 
-2.  Modul Plugins
-    Diese können sich in system/$modname/plugins oder modules/$modame/plugins befinden.
-    Die Klassen heißen ModulePlugin_$Modname_$PluginName_Plugin
-    z.B. modules/News/plugins/Example/Plugin.php (beinhaltet class ModulePlugin_News_Example_Plugin extends Zikula_Plugin)
+2.  Module Plugins
+    These can be located in system/$modname/plugins or modules/$modame/plugins
+    Classes are named ModulePlugin_$Modname_$PluginName_Plugin
+    e.g. modules/News/plugins/Example/Plugin.php (contains
+    class ModulePlugin_News_Example_Plugin extends Zikula_AbstractPlugin
 
-    Modul Plugins werden nur geladen, wenn die Methode ModUtil::loadGeneric für dieses Modul aufgerufen wurde.
+    Module plugins are only loaded when the ModUtil::loadGeneric is invoked for 
+    that module.
 
-    Modul Plugins erlauben Drittpartien ein Modul zu erweitern oder Funktionalität hinzuzufügen.
-    Modul Plugins bieten lokale Funktionalität für das Modul und zielen (allgemein) nicht auf das komplette
-    Zikula-System, da sie nur initialisiert werden, wenn das Modul, oder eine API davon, aufgerufen werden.
+    Module plugins are there to allow 3rd parties to extend a module or add
+    expected functionality.  E.g. a shopping cart could add additional
+    shipping methods, or payment gateways using plugins.  Module plugins provide
+    local functionality to the module, and (in general) are not aimed at the
+    whole Zikula system because they are only initialised when the module, or
+    module api is invoked.
 
-Plugin-Klassen sind wie Event-Handler, aber erben von der Klasse Zikula_Plugin,
-aber am Ende erben sie von der gleichen abstrakten Oberklasse Zikula_EventHandler.
-Der Unterschied ist, dass ein Plugin eine konkrete Dateihierarchie besitzt, in der man
-relevante Dateien und Bibliotheken speichern kann.
+Plugin classes are just like event handlers, but inherit from Zikula_AbstractPlugin,
+although ultimately they inherit from the same Zikula_AbstractEventHandler abstract.
+However the difference is the plugin is a discrete file heirachy where you may
+store related files and libraries.
 
-Plugins unterscheiden sich von reinen Event-Handlern (Instanzen von Zikula_EventHandler),
-da Zikula_EventHandlers nicht aktiviert oder deaktiviert werden können und nur aus einer Datei bestehen.
-Reine Handler sind also immer aktiv und mehr low level als Plugins.
+Plugins differ from pure event handlers (instances of Zikula_AbstractEventHandler) in
+because Zikula_AbstractEventHandlers cannot be enabled or disabled and consist of just on
+file, they are always on and are more low level.
 
-Instanzen von Zikula_Plugin können ihren Zustand verändern. Die abstrakte Oberklasse Zikula_Plugin bietet
-viele nützliche Funktionen, wie Übersetzung, automatisches Domain-Binding, usw.
+Zikula_AbstractPlugin instances can change state and have a discrete folder space.  The
+Zikula_AbstractPlugin abstract class provides many useful conveniences like translation,
+automatic domain binding etc.
 
-Nutzung für Plugins
--------------------
-Bereitstellung von Bibliotheken für PHP, JS, CSS, usw.
-Erweiterung von Funktionalität, sowohl systemweit (kompletter Zikula Core) oder für individuelle Module.
+Uses for plugins
+----------------
+Providing php, js, css or image libraries.
+Extending functionality of the zikula core system wide or of modules individually.
 
-Architektur
------------
-Plugins bieten ein ziemlich freies System. Man braucht nur das zu tun, was man benötigt. Das Herz eines
-Plugins ist die Klasse in Plugin.php.
+Architecture
+------------
+Plugins provide a rather free system.  You only need what you need.  The only
+compulsory aspect is the Plugin.php which is the heart of the plugin.
 
-Plugins bieten die folgenden Methoden:
+Plugins provide the following methods:
 
 initialize()
 
-get*() Methoden.
+get*() methods.
 
 install()
 upgrade()
@@ -73,7 +73,7 @@ uninstall()
 enable()
 disable()
 
-Die Plugin Klasse bietet die folgenden Hooks:
+The Plugin class provides the following hooks
 preInitialize()
 postInitialize()
 
@@ -90,39 +90,36 @@ postEnable()
 
 postDisable()
 
-Wenn ein Plugin Lokalisierung benötigt, wird die übliche Ordnerstruktur innerhalb des Plugins benötigt.
-Die Gettext-Domain dafür lautet:
+If your plugin requires localisation, the usual folder structure is required inside
+the plugin.  Please note the required domain is:
 systemplugin_$name or
 moduleplugin_$modname_$pluginname
 
-Per Standard ist die protected Eigenschaft $gettextEnabled = true; und daher werden diese Domain-relevanten
-Dinge automatisch erledigt. Ausgeschaltet werden kann dies einfach durch Setzen der Eigenschaft auf false
-in einer Unterklasse.
+To access translation just use the shortcuts `$this->__()` etc.
 
-Zum Zugriff auf die Übersetzung kann man die Shortcuts `$this->__()` etc. nutzen.
-
-Die POT-Datei wäre dann vom Hauptordner des Plugins aus gesehen in
+So the POT file would be located in the plugin's main folder in
 locale/$domain.pot
 
-Plugins unterstützen NICHT DBUtil oder die alten Datenbank-Definitionen in tables.php. Man MUSS also Doctrine-Modelle
-nutzen, falls man Persistenz benötigt.
+Plugins DO NOT support DBUtil or the legacy tables.php based DB modelling.  You MUST
+use Doctrine models if you require persistence.
 
-PLUGIN (modvar) VARIABLEN
--------------------------
-Um die korrekten Namen für ModVars zu erhalten, nutzt man $this->serviceId. Dies führt dann automatisch zu
-den richtigen Bezeichnern.
+PLUGIN (modvar) VARIABLES
+----------------
+Please use $this->serviceId to get the correct name for modvars. It will
+produce the following results automatically
     ModUtil::set/getVar("systemplugin.$pluginname", ...);
     ModUtil::set/getVar("moduleplugin.$modname.$pluginname", ...);
 
-Zum Beispiel:
-    ModUtil::set/getVar($this->serviceId, 'myvar');
+e.g.
+
+ModUtil::set/getVar($this->serviceId, 'myvar');
 
 RENDERING
 ---------
-Wenn an Ausgaben aus Templates produzieren muss, erstellt man einen Ordner templates/ und speichert dort die
-Template-Dateien. Man muss in dem Fall den Ort explizit angeben:
+If you need to produce templated output, please create a templates/ folder
+and store templates there.  You will need to specify the location directly:
 
-z.B.
+e.g.
     // module plugin
     $view = Zikula_View_Plugin::getModulePluginInstance($this->moduleName, $this->pluginName);
     $view->fetch('myview.tpl');
@@ -131,50 +128,50 @@ z.B.
     $view = Zikula_View_Plugin::getSystemPluginInstance($this->pluginName);
     $view->fetch('myview.tpl');
 
-    Dies setzt die korrekte Domains, aber in den Templates braucht man daher NICHT domain= innerhalb
-    der Gettext-Aufrufe.
+    Please note this will set the correct domain, in templates you
+    DO NOT NEED domain= inside gettext calls.
 
-Wenn man eine Render-Instanz erhält, wird der Plugin-Pfad automatisch als templates/plugins innerhalb
-des Plugin-Verzeichnisses hinzugefügt.
+If you get a render instance, the plugin path will be automatically added as
+templates/plugins inside the plugin directory.
 
-Hinweis: man kann auch eine Controller-Instanz (Controller.php) nutzen, um an die View zu gelangen. Controller haben
-Zugriff auf alle Convenience-Methoden aus der Klasse Zikula_Controller. Die Controller-Methode liefert
-dann die fertige Ausgabe, die man dann weiterleiten kann.
+Please note you can also use a Controller.php instance to get the view.  Controllers
+(explained below) has access to all the nice Zikula_AbstractController conveniences.  The
+controller method would return the renderer output which you can pass back.
 
-Anstatt:
+instead of:
     $event->setData($view->fetch('anotherfunction.tpl'));
-    $event->setNotified();
+    $event->stopPropagation();
 
-Kann man tun:
+One could do:
     $controller = new SystemPlugin_Example_Controller($this->serviceManager);
     $event->setData($controller->someview());
-    $event->setNotified();
+    $event->stopPropagation();
 
-Das ist deswegen schön, weil alle Renderer-Domains usw. vorkonfiguriert sind und man viele hilfreiche Funktionen
-verwenden kann, wie etwa $this->__().
+This is nice because all renderer domains etc are preconfigured and you have access
+to the same Zikula_AbstractController conveniences like $this->__().
 
-KONFIGURATION DER PLUGIN-ADMINISTRATION
----------------------------------------
-Manchmal ist es notwendig eine Seite für die Konfiguration eines Plugins bereitzustellen.
-Diese Verwaltung ist verfügbar, wenn an auf das Settings-Icon in der Liste von Plugins klickt,
-verfügbar unter Admin -> Modules -> Module Plugins/System Plugins.
+PLUGIN ADMINISTRATIVE CONFIGURATION
+-----------------------------------
+Sometimes is it necessary to provide a configuration screen for plugins.  This admin
+will be available when clicking the settings icon in the list of plugins available at
+Admin -> Modules -> Module Plugins/System Plugins.
 
-Als erstes, um ein Plugin konfigurierbar zu machen, muss das Interface Zikula_Plugin_Configurable
-implementiert werden, das eine Methode namens getConfigurationController() erfordert. Diese Methode
-sollte eine Instanz des Controllers zurückliefern, im DocBlock des Interface gibt es ein entsprechendes
-Beispiel.
+Firstly, in order to make your plugin configurable, you must implement the
+Zikula_Plugin_ConfigurableInterface interface which will requires one method called
+getConfigurationController() which should return an instance of the controller
+there is an example in the DocBlock of the interface.
 
-Als nächstes wird der Controller erstellt innerhalb des lib-Verzeichnisses des Plugins lib/$PluginName/Controller.php
+Next create a controller an place in the plugins lib/$PluginName/Controller.php
 
-    class SystemPlugin_Example_Controller extends Zikula_Plugin_Controller
+    class SystemPlugin_Example_Controller extends Zikula_Controller_AbstractPlugin
 
-oder für Modul-Plugins so etwas wie
+or for module plugins something like
 
-    class ModulePlugin_ExampleMod_ExamplePlugin_Controller extends Zikula_Plugin_Controller
+    class ModulePlugin_ExampleMod_ExamplePlugin_Controller extends Zikula_Controller_AbstractPlugin
 
-Die zu integrierende Methode heißt 'configure()':
+The method that will be is 'configure()':
 
-    class SystemPlugin_SwiftMailer_Controller extends Zikula_Plugin_Controller
+    class SystemPlugin_SwiftMailer_Controller extends Zikula_Controller_AbstractPlugin
     {
         public function configure()
         {
@@ -182,11 +179,12 @@ Die zu integrierende Methode heißt 'configure()':
         }
     }
 
-Es gibt keine Notwendigkeit für einen Security-Check an dieser Stelle, da man diese Funktionalität nur aus
-der Administration heraus erreichen kann.
+There is no need for a security check here because this is only accessible from inside the
+administration interface in the first place.
 
-Wenn man mehrere Seiten zur Administration benötigt, kann man das durch die Erstellung von Links erreichen:
-Für System Plugins:
+If you need multiple administration screens this can be accomplished by creating links:
+For System Plugins:
  ?module=Modules&type=adminplugin&func=dispatch&_plugin=<PLUGINNAME>&_action=<ACTIONNAME>
-Für Modul Plugins:
+For Module Plugins:
  ?module=Modules&type=adminplugin&func=dispatch&_module=<MODULENAME>&_plugin=<PLUGINNAME>&_action=<ACTIONNAME>
+

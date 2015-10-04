@@ -1,20 +1,14 @@
-==========================================================================================
-WICHTIG
-Zur Kenntnisnahme: Die englischsprachigen Dateien im Verzeichnis docs/en/dev/ sind 
-aktueller, als das hier vorliegende Material.
-==========================================================================================
-
-
 PENDING CONTENT
 ===============
 
-Dieses Dokument beschreibt das Event get.pending_content, das benutzt wird um Informationen
-von Modulen über wartende Inhalte (wie z.B. eingereichte News-Artikel) zu sammeln.
+This document details the get.pending_content event which is used to collect
+information from modules about pending content items like news submissions or
+similar.
 
-Module, die diese Informationen publizieren möchten, sollten einen persistenten Handler
-für 'get.pending_content' erstellen.
+Modules that wish to publish this information should create a persistent handler
+for 'get.pending_content'
 
-Hier ist ein Beispiel für solch einen Handler:
+Here is an exmaple handler:
 
     [php]
     // event handler
@@ -23,21 +17,22 @@ Hier ist ein Beispiel für solch einen Handler:
         public static function handler(Zikula_Event $event)
         {
             $collection = new Zikula_Collection_Container('News');
-            $collection->add(new Zikula_Provider_AggregateItem('submission', __('pending news'), 5, 'Admin', 'viewsubmissions'));
-            $collection->add(new Zikula_Provider_AggregateItem('comments', __('pending comments'), 7, 'Admin', 'viewcomments'));
+            $collection->add(new Zikula_Provider_AggregateItem('submission', __('pending news'), 5, 'ZikulaAdminModule', 'viewsubmissions'));
+            $collection->add(new Zikula_Provider_AggregateItem('comments', __('pending comments'), 7, 'ZikulaAdminModule', 'viewcomments'));
             $event->getSubject()->add($collection);
         }
     }
 
 
-Auch wenn man dies nicht insbesondere wissen muss, solange man diese Informationen nicht
-verarbeiten möchte, ist hier eine Beispiel-Implementierung, welche die Daten
-sammelt und eine Liste von Links zu den wartenden Inhalten jedes Moduls erstellt:
+While you don't particularly need to know about this unless you want to collect
+this information and process it, here is an example implementaion which will
+collect the data and create a list of links to the pending content views of
+each module:
 
     [php]
     // trigger event
-    $event = new Zikula_Event('get.pending_content', new Zikula_Collection_Container('pending_content'));
-    $pendingCollection = EventUtil::getManager()->notify($event)->getSubject();
+    $event = new \Zikula\Core\Event\GenericEvent(new Zikula_Collection_Container('pending_content'));
+    $pendingCollection = EventUtil::getManager()->dispatch('get.pending_content', $event)->getSubject();
 
     // process results
     foreach ($pendingCollection as $collection) {
@@ -48,8 +43,7 @@ sammelt und eine Liste von Links zu den wartenden Inhalten jedes Moduls erstellt
         }
     }
 
-Nachfolgend ein komplettes Beispiel, das benutzt und ausgeführt werden kann, um zu sehen, wie dies in
-der Praxis funktioniert:
+The following is a full example you can use to run and see how this would work in practice:
 
     [php]
     include 'lib/ZLoader.php';
@@ -60,8 +54,8 @@ der Praxis funktioniert:
     EventUtil::getManager()->attach('get.pending_content', array('News_Handlers', 'handler'));
 
     // trigger event
-    $event = new Zikula_Event('get.pending_content', new Zikula_Collection_Container('pending_content'));
-    $pendingCollection = EventUtil::getManager()->notify($event)->getSubject();
+    $event = new \Zikula\Core\Event\GenericEvent(new Zikula_Collection_Container('pending_content'));
+    $pendingCollection = EventUtil::getManager()->dispatch('get.pending_content', $event)->getSubject();
 
     // process results
     foreach ($pendingCollection as $collection) {
@@ -78,8 +72,9 @@ der Praxis funktioniert:
         public function handler(Zikula_Event $event)
         {
             $collection = new Zikula_Collection_Container('News');
-            $collection->add(new Zikula_Provider_AggregateItem('submission', __('pending news'), 5, 'Admin', 'viewsubmissions'));
-            $collection->add(new Zikula_Provider_AggregateItem('comments', __('pending comments'), 7, 'Admin', 'viewcomments'));
+            $collection->add(new Zikula_Provider_AggregateItem('submission', __('pending news'), 5, 'ZikulaAdminModule', 'viewsubmissions'));
+            $collection->add(new Zikula_Provider_AggregateItem('comments', __('pending comments'), 7, 'ZikulaAdminModule', 'viewcomments'));
             $event->getSubject()->add($collection);
         }
     }
+
