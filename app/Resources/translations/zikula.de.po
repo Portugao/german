@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.4.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-12-04 14:58+0100\n"
+"PO-Revision-Date: 2016-12-04 16:31+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: team@zikula.de <team@zikula.de>\n"
 "Language: de\n"
@@ -175,7 +175,6 @@ msgid ""
 "your browser: %sub% )"
 msgstr ""
 
-#, fuzzy
 msgid "(Modification not supported.)"
 msgstr "(Veränderung nicht unterstützt.)"
 
@@ -198,7 +197,6 @@ msgstr ""
 "(Das Kennwort wird nur dieses eine mal versendet. Bitte an einem sicheren "
 "Ort aufbewahren.)"
 
-#, fuzzy
 msgid "(in milliseconds, default 5000 = 5 seconds)"
 msgstr "(in Millisekunden, Standard 5000 = 5 Sekunden)"
 
@@ -315,11 +313,9 @@ msgstr ""
 "A,A,A,A,A,a,a,a,a,a,O,O,O,O,O,o,o,o,o,o,E,E,E,E,e,e,e,e,C,c,I,I,I,I,i,i,i,i,"
 "U,U,U,u,u,u,y,N,n,ss,ae,Ae,oe,Oe,ue,Ue"
 
-#, fuzzy
 msgid "About \"&lt;%s&gt;\""
 msgstr "Info \"&lt;%s&gt;\""
 
-#, fuzzy
 msgid "About the CSV file"
 msgstr "Über die CSV-Datei"
 
@@ -333,9 +329,8 @@ msgstr "Benutzername"
 msgid "Access forbidden."
 msgstr "Zugang verboten."
 
-#, fuzzy
 msgid "Account Information"
-msgstr "Informationen zum Konto"
+msgstr "Kontoinformationen"
 
 #, fuzzy
 msgid "Account Page Settings"
@@ -344,9 +339,8 @@ msgstr "Benutzerkonto"
 msgid "Account Settings"
 msgstr "Kontoeinstellungen"
 
-#, fuzzy
 msgid "Account information"
-msgstr "Informationen zum Konto"
+msgstr "Kontoinformationen"
 
 #, fuzzy
 msgid "Account information recovery"
@@ -387,25 +381,21 @@ msgstr "Aktiviere das System Modul"
 msgid "Active"
 msgstr "Aktiv"
 
-#, fuzzy
 msgid "Active modules"
-msgstr "Aktiviere das System Modul"
+msgstr "Aktive Module"
 
 msgid "Activity status"
 msgstr "Aktivitätsstatus"
 
-#, fuzzy
 msgid "Add"
 msgstr "Hinzufügen"
 
-#, fuzzy
 msgid "Add Option"
-msgstr "Zusätzlich"
+msgstr "Option hinzufügen"
 
 msgid "Add access"
 msgstr "Hinzufügen"
 
-#, fuzzy
 msgid "Add users to group"
 msgstr "Benutzer zur Gruppe hinzufügen"
 
@@ -442,20 +432,17 @@ msgstr "Administration"
 msgid "Administration panel"
 msgstr "Admin-Panel"
 
-#, fuzzy
 msgid "Administration settings"
-msgstr "Administration"
+msgstr "Administrationseinstellungen"
 
 msgid "Administrator"
 msgstr "Administrator"
 
-#, fuzzy
 msgid "Administrator approval:"
 msgstr "Administrator-Freigabe:"
 
-#, fuzzy
 msgid "Administrator log-in"
-msgstr "Admin-Login"
+msgstr "Administrator Log-in"
 
 msgid "Administrators"
 msgstr "Administratoren"
@@ -525,9 +512,8 @@ msgstr ""
 "Es können nicht alle Methoden deaktiviert werden. Mindestens eine Methode "
 "muss aktiviert bleiben. (%m wurde aktiviert)."
 
-#, fuzzy
 msgid "All words"
-msgstr "Alle Begriffe [UND]"
+msgstr "Alle Wörter"
 
 msgid "Allow IDN domain names"
 msgstr "IDN Domains erlauben"
@@ -555,18 +541,15 @@ msgstr "Registrierungen von neuen Benutzer ermöglichen"
 msgid "Allow users to edit their own categories"
 msgstr "Benutzer erlauben, die eigenen Kategorien bearbeiten zu dürfen"
 
-#, fuzzy
 msgid "Allowed"
 msgstr "Erlaubt"
 
 msgid "Allowed HTML settings"
 msgstr "HTML-Einstellungen"
 
-#, fuzzy
 msgid "Allowed with attributes"
 msgstr "Erlaubt mit Attributen"
 
-#, fuzzy
 msgid "Alphabetical"
 msgstr "Alphabetisch"
 
@@ -589,7 +572,6 @@ msgstr ""
 "Während des Entfernens gespeicherter Objekt Arbeitsabläufe für das Modul %s "
 "ist ein Fehler aufgetreten."
 
-#, fuzzy
 msgid "An example of a valid CSV file"
 msgstr "Beispiel einer gültigen CSV-Datei"
 
@@ -598,20 +580,17 @@ msgstr ""
 "Anonyme Benutzer sind Gäste dieser Website, die keine Anmeldung durchgeführt "
 "haben."
 
-#, fuzzy
 msgid "Another example of a valid CSV file"
 msgstr "Weiteres Beispiel einer gültigen CSV-Datei"
 
-#, fuzzy
 msgid "Answer the security question"
 msgstr "Bitte die Sicherheitsfrage beantworten"
 
 msgid "Any group"
 msgstr "Alle Gruppen"
 
-#, fuzzy
 msgid "Any words"
-msgstr "Einzelne Begriffe [ODER]"
+msgstr "Irgendein Wort"
 
 msgid "Apply"
 msgstr "Anfragen"
@@ -660,18 +639,15 @@ msgstr ""
 msgid "Assets installed"
 msgstr "Anlagen installiert"
 
-#, fuzzy
 msgid "Attached areas"
 msgstr "Angehängte Bereiche"
 
-#, fuzzy
 msgid "Attributes"
 msgstr "Attribute"
 
 msgid "Authentication methods"
 msgstr "Authentifizierungs Methoden"
 
-#, fuzzy
 msgid "Author"
 msgstr "Autor"
 
@@ -692,11 +668,9 @@ msgstr "Erkennung der Browser-Sprache"
 msgid "Automatically log user out after"
 msgstr "Automatische Benutzerabmeldung nach"
 
-#, fuzzy
 msgid "Available areas"
 msgstr "Verfügbare Bereiche"
 
-#, fuzzy
 msgid "Back"
 msgstr "Zurück"
 
@@ -739,13 +713,11 @@ msgstr ""
 "erfolgt sein. Sobald die unten stehenden Angaben abgesendet wurden, wird "
 "eine E-Mail zur Bestätigung versendet."
 
-#, fuzzy
 msgid "Begin Installer"
-msgstr "Installieren"
+msgstr "Installations-Skript"
 
-#, fuzzy
 msgid "Begin Upgrader"
-msgstr "Upgrade"
+msgstr "Zikula Upgrade Script"
 
 msgid ""
 "Below you see your current routing configuration (see %s for configuration "
@@ -758,7 +730,6 @@ msgstr "AuthKey an UserAgent binden"
 msgid "Block"
 msgstr "Block"
 
-#, fuzzy
 msgid "Block ID"
 msgstr "Block ID"
 
@@ -777,9 +748,8 @@ msgstr "Aktion blocken"
 msgid "Block placements"
 msgstr "Blockinhalt"
 
-#, fuzzy
 msgid "Block positions list"
-msgstr "Blockpositionen"
+msgstr "Blockpositionen Liste"
 
 msgid "Block saved!"
 msgstr "Block gespeichert!"
@@ -802,7 +772,6 @@ msgstr "Blogging"
 msgid "Bottom navigation block"
 msgstr "Navigationsblock im Fußbereich"
 
-#, fuzzy
 msgid "Browser"
 msgstr "Browser"
 
@@ -8075,18 +8044,15 @@ msgstr "Module aktualisiert"
 msgid "Zikula is upgrading!"
 msgstr "Zikula Administration"
 
-#, fuzzy
 msgid "active"
-msgstr "Aktiv"
+msgstr "aktiv"
 
 msgid "adm"
 msgstr "adm"
 
-#, fuzzy
 msgid "albert,12secure09,albert@example.org"
 msgstr "axel,12sicher09,axel@example.org"
 
-#, fuzzy
 msgid "albert,12secure09,albert@example.org,1,1,2"
 msgstr "axel,12sicher09,axel@example.org,1,1,2"
 
