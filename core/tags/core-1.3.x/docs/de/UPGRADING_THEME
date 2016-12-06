@@ -1,0 +1,115 @@
+THEMES AKTUALISIEREN
+====================
+Diese Anleitung basiert exemplarisch auf dem Theme 'Andreas08', welches mit
+Zikula 1.3.x ausgeliefert wird. 
+Die folgenden Änderungen sollten nur nach einer neuen Installation oder einem
+erfolgreichem Update ausprobiert werden. 
+
+
+Namensgebung
+------------
+Die wichtigsten Regeln für die Theme-Namen sind, dass das Verzeichnis mit einem 
+Großbuchstaben anfangen muss und das keine Unterstriche und keine Bindestricher 
+erlaubt sind. Der Name darf nur Buchstaben und Zahlen beinhalten und darf auch
+nicht mit einer Zahl anfangen. 
+Passend zum Verzeichnisnamen muss die version.php auch entsprechend angepasst werden.
+
+
+Template Delimiter
+------------------
+Bitte die folgenden Tags mit Suchen&Ersetzen überarbeiten:
+<!--[ sollte ersetzt werden durch {
+]--> sollte ersetzt werden durch }
+
+Falls bisher irgendwelche Browserhacks im Theme verwendet wurden, so sollte dies
+nun besser über das Plugin {browserhack} umgesetzt werden. Eine Dokumentation
+des Plugins befindet sich in lib/view/plugins/block.browserhack.php 
+
+So könnte ein Beispiel aussehen:
+
+    {browserhack condition="if IE 6" assign="ieconditional"}<link rel="stylesheet" type="text/css" href="{$stylepath}/fluid960gs/ie6.css" media="screen" />{/browserhack}
+    {pageaddvar name='rawtext' value=$ieconditional}
+
+Falls in den Templates eingebettetes Javascript oder Plugins wie auch Templates 
+innerhalb eines <script></script>-Blocks eingesetzt werden, so muss man nun doppelte
+geschwungene Klammern {{ und }} nutzen.
+
+
+Plugin-Namen
+------------
+Bitte das alte "pn"-Präfix aus allen Plugin-Namen entfernen.
+
+
+Mehrsprachige Themes
+--------------------
+Man sollte die Sprache im HTML Tag angeben. Weiterhin wäre es auch sinnvoll, dort
+die Leserichtung anzugeben. Ein Beispiel für ein XHTML-Theme würde so aussehen:
+
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang}" dir="{langdirection}">
+
+
+Title und Meta-Tags
+-------------------
+Die Titel und Meta-Tags werden nun über andere Mechanismen gesteuert. 
+Bitte nun die folgende Umsetzung im eigenen Theme anwenden:
+
+    <meta http-equiv="Content-Type" content="text/html; charset={charset}" />
+    <title>{pagegetvar name='title'}</title>
+    <meta name="description" content="{$metatags.description}" />
+    <meta name="keywords" content="{$metatags.keywords}" />
+
+$metatags.description und $metatags.keywords werden beide über die Hauptkonfiguration (Modul: 
+Allgemeine Einstellungen) konfiguriert.
+
+
+System- und Modul-Variablen
+---------------------------
+Es ist nun möglich, die Systemkonfigurationsvariablen folgendermaßen zu erreichen:
+
+    {$modvars.ZConfig.slogan}
+
+Und die Variablen eines Moduls wie folgt:
+
+    {$modvars.MyModule.foo}
+
+
+Block Konfigurationsdateien
+---------------------------
+Es wäre von Vorteil, wenn in den Konfigurationsdateien themes/<Themename>/config 
+die relativen Pfade für die Block-Templates angepasst werden würden.
+Das sorgt für einen enormen Geschwindigkeitszuwachs, da Zikula nun nicht mehr
+so lange nach den Templates suchen muss.
+
+So könnte es aussehen:
+
+    [blockpositions]
+    left = blocks/block.tpl
+    right = blocks/block.tpl
+    center = blocks/block.tpl
+    topnav = blocks/topnavblock.tpl
+    search = blocks/searchblock.tpl
+
+
+Templates auslagern
+-------------------
+Um ein Template im Theme auszulagern, ist es nun notwendig dem System mitzuteilen,
+wo sich das Template befindet. Dies kann durch eine neu zu erstellende Datei
+namens 'overrides.yml' im Verzeichnis themes/<Themename>/ erreicht werden. Die
+Datei liegt im YAML Format vor.
+
+Dazu muss links einfach der relative Pfad des auszulagernden Templates hinterlegt werden,
+gefolgt von einem Doppelpunkt oder Leerzeichen und dann dahinter der relative Pfad des 
+neuen Templates.
+Ein wichtiger Hinweis: Der angegebene Pfad und Templatename des Moduls, Block oder
+Theme muss im dann im Thema auch unbedingt existieren.
+
+Wenn ein Modul ein Template namens template.tpl aufruft, so lautet der Pfad dazu 
+<pathto>/template.tpl. Wenn das Modul aber das Template jedoch user/template.tpl aufruft,
+so muss in der 'overrides.yml' der Pfad auch <pathto>/user/template.tpl lauten.
+
+Ein Beispiel dazu befindet sich im Andreas08-Theme und das sieht folgendermaßen aus:
+
+    ## original/file.tpl: override/file.tpl
+    ---
+    system/Search/templates/search_block_search.tpl: themes/Andreas08/templates/modules/Search/search_block_search.tpl
+
