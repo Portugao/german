@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.4.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-12-04 16:31+0100\n"
+"PO-Revision-Date: 2016-12-12 21:48+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: team@zikula.de <team@zikula.de>\n"
 "Language: de\n"
@@ -15,7 +15,6 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#, fuzzy
 msgid ""
 " (mandatory) - The user email. If the validation method is based on the user "
 "email this value must be unique."
@@ -23,7 +22,6 @@ msgstr ""
 " (notwendig) - Die E-Mail Adresse. Falls die Authentifizierungsmethode auf "
 "Mailadressen basiert, dann muss dieser Wert eindeutig sein."
 
-#, fuzzy
 msgid " (mandatory) - The user name. This value must be unique."
 msgstr " (notwendig) - Der Benutzername. Dieser Wert muss eindeutig sein."
 
@@ -1110,11 +1108,9 @@ msgstr "Bestätige Löschung"
 msgid "Confirm sending code"
 msgstr "Bestätige Sende Code"
 
-#, fuzzy
 msgid "Confirm verification code"
 msgstr "Bestätigungscode"
 
-#, fuzzy
 msgid "Confirm verification code is to be sent to %sub%"
 msgstr "Erledigt! Bestätigungs Code an %sub% gesendet."
 
@@ -1130,7 +1126,6 @@ msgstr "Herzlichen Glückwunsch! Zikula wurde erfolgreich installiert."
 msgid "Connect %sub% to other modules"
 msgstr ""
 
-#, fuzzy
 msgid "Connections"
 msgstr "Verbindungen"
 
@@ -1140,25 +1135,21 @@ msgstr "Inhalt"
 msgid "Content has been approved and is available online."
 msgstr "Inhalt wurde geprüft und ist online verfügbar."
 
-#, fuzzy
 msgid "Continue"
 msgstr "Fortfahren"
 
 msgid "Controller"
 msgstr "Kontroller"
 
-#, fuzzy
 msgid "Cookies settings"
 msgstr "Cookie Einstellungen"
 
 msgid "Copy"
 msgstr "Kopieren"
 
-#, fuzzy
 msgid "Copy category"
 msgstr "Kategorie kopieren"
 
-#, fuzzy
 msgid "Copy this category and all sub-categories of this category"
 msgstr ""
 "Diese Kategorie inkl. der dazugehörigen Unterkategorien unter folgende "
@@ -1167,7 +1158,6 @@ msgstr ""
 msgid "Core"
 msgstr "Core"
 
-#, fuzzy
 msgid "Core Extension"
 msgstr "Erweiterungen Liste"
 
@@ -1186,43 +1176,35 @@ msgstr "Datein konnte nicht wie gewünscht gelöscht werden."
 msgid "Could not send mail."
 msgstr "Mail konnte nicht verschickt werden."
 
-#, fuzzy
 msgid "Create a new account"
-msgstr "Erstelle Administrator Account"
+msgstr "Neuen Account erstellen"
 
-#, fuzzy
 msgid "Create a new password."
-msgstr ""
-"Mit diesem Bestätigungscode kann ein neues Kennwort unter %s vergeben werden."
+msgstr "Neues Passwort erstellen"
 
-#, fuzzy
 msgid "Create a password"
 msgstr "Kennwort erstellen"
 
 msgid "Create admin account"
 msgstr "Erstelle Administrator Account"
 
-#, fuzzy
 msgid "Create administrator's account"
-msgstr "Administrator anlegen"
+msgstr "Administrator Account erstellen"
 
 msgid "Create another item after save"
 msgstr "Nach dem speichern einen neuen Eintrag erstellen"
 
-#, fuzzy
 msgid "Create block"
-msgstr "Erstelle Blöcke"
+msgstr "Block erstellen"
 
-#, fuzzy
 msgid "Create block position"
 msgstr "Blockposition anlegen"
 
 msgid "Create blocks"
 msgstr "Erstelle Blöcke"
 
-#, fuzzy
 msgid "Create new account"
-msgstr "Erstelle Administrator Account"
+msgstr "Neuen Account erstellen"
 
 msgid "Create new block"
 msgstr "Block anlegen"
@@ -1233,9 +1215,8 @@ msgstr "Blockposition anlegen"
 msgid "Create new category"
 msgstr "Kategorie anlegen"
 
-#, fuzzy
 msgid "Create new group"
-msgstr "Gruppe hinzufügen"
+msgstr "Neue Gruppe anlegen"
 
 msgid "Create new module category"
 msgstr "Modulkategorie anlegen"
@@ -1252,23 +1233,18 @@ msgstr "Benutzer anlegen"
 msgid "Create or Edit Root Node"
 msgstr ""
 
-#, fuzzy
 msgid "Create route"
-msgstr "Benutzer anlegen"
+msgstr "Route erstellen"
 
-#, fuzzy
 msgid "Created by %user"
-msgstr "Benutzer anlegen"
+msgstr "Erstellt von %user"
 
-#, fuzzy
 msgid "Created by %user on %date"
-msgstr "Erstellungsdatum"
+msgstr "Erstellt von %user am %date"
 
-#, fuzzy
 msgid "Created on %date"
-msgstr "Erstellungsdatum"
+msgstr "Erstellt am %date"
 
-#, fuzzy
 msgid "Created on %s."
 msgstr "Erstellt am %s."
 
@@ -1278,11 +1254,9 @@ msgstr "Erstelle Administrator Account"
 msgid "Creating default blocks"
 msgstr "Erstelle Standard Blöcke"
 
-#, fuzzy
 msgid "Creation"
 msgstr "Erstellung"
 
-#, fuzzy
 msgid "Creation and update"
 msgstr "Erstellung und Aktualisierung"
 
@@ -1292,20 +1266,17 @@ msgstr "Erstellungsdatum"
 msgid "Creator"
 msgstr "Ersteller"
 
-#, fuzzy
 msgid "Credits"
 msgstr "Credits"
 
-#, fuzzy
 msgid "Credits for"
-msgstr "Credits"
+msgstr "Credits für"
 
 msgid "Current Core version is %version%"
 msgstr ""
 
-#, fuzzy
 msgid "Current settings from"
-msgstr "Konfiguration testen"
+msgstr "Aktuellen Einstellungen aus"
 
 msgid "Currently used version"
 msgstr ""
@@ -1340,7 +1311,6 @@ msgstr "Datenbank Passwort"
 msgid "Database Username"
 msgstr "Datenbank Benutzername"
 
-#, fuzzy
 msgid "Database information"
 msgstr "Datenankinformationen"
 
@@ -1350,25 +1320,21 @@ msgstr "Datenbanktyp"
 msgid "Date"
 msgstr "Datum"
 
-#, fuzzy
 msgid "Date of last search"
 msgstr "Datum der letzten Suche"
 
-#, fuzzy
+# richtig übersetzt? In welchem Zusammenhang?
 msgid "Date operators"
 msgstr "Datumsauswahl"
 
-#, fuzzy
 msgid "Dates"
 msgstr "Datum"
 
-#, fuzzy
 msgid "De-select all"
 msgstr "Auswahl aufheben"
 
-#, fuzzy
 msgid "De/Select all"
-msgstr "Auswählen"
+msgstr "Auswählen/Auswahl aufheben"
 
 msgid "Deactivate"
 msgstr "Deaktivieren"
@@ -1403,14 +1369,12 @@ msgstr "Standard Meta-Keywords"
 msgid "Default page title"
 msgstr "Standard Seitentitel"
 
-#, fuzzy
 msgid "Default theme"
 msgstr "Standardtheme"
 
 msgid "Default user category"
 msgstr "Persönliche Standardkategorie"
 
-#, fuzzy
 msgid "Default user group. Cannot be deleted."
 msgstr "Standardbenutzergruppe. Kann nicht gelöscht werden."
 
@@ -1450,20 +1414,17 @@ msgstr "Definiere, welche Felder nicht beobachtet werden sollen"
 msgid "Delete"
 msgstr "Löschen"
 
-#, fuzzy
 msgid "Delete %n"
-msgstr "Löschen"
+msgstr "Löschen %n"
 
 msgid "Delete %sub%"
 msgstr "Lösche %sub%"
 
-#, fuzzy
 msgid "Delete Block"
-msgstr "Löschen"
+msgstr "Block löschen"
 
-#, fuzzy
 msgid "Delete Root"
-msgstr "Löschen"
+msgstr "Root löschen"
 
 msgid "Delete access"
 msgstr "Zugriff löschen"
