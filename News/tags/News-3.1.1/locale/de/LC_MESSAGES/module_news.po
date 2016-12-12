@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: News 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-18 10:08+0200\n"
-"PO-Revision-Date: 2016-10-18 10:43+0200\n"
-"Last-Translator: Carsten Volmer <carsten@zikula.org>\n"
+"PO-Revision-Date: 2016-12-12 22:07+0100\n"
+"Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: Carsten Volmer <carsten@zikula.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.10\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: lib/News/Api/Account.php:35 lib/News/Api/User.php:965
@@ -505,7 +505,7 @@ msgstr "Es sind momentan keine Beiträge veröffentlicht."
 #: lib/News/Controller/User.php:598
 #, php-format
 msgid "page %s"
-msgstr ""
+msgstr "Seite %s"
 
 #: lib/News/Controller/User.php:676
 msgid ""
@@ -1026,6 +1026,8 @@ msgid ""
 "You must enter either <strong>teaser text</strong> or <strong>body text</"
 "strong>."
 msgstr ""
+"Sie müssen entweder <strong>Teasertext</strong> oder <strong>Body-Text</"
+"strong>eingeben."
 
 #: templates/admin/modify_subform.tpl:61 templates/user/create.tpl:84
 msgid "Index page teaser text"
@@ -1071,12 +1073,12 @@ msgstr ""
 #: templates/admin/modify_subform.tpl:97 templates/admin/view.tpl:67
 #: templates/user/create.tpl:126
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 #: templates/admin/modify_subform.tpl:99 templates/user/create.tpl:128
 #, php-format
 msgid "Select a picture (max. %s kB per picture)"
-msgstr ""
+msgstr "Wählen Sie ein Bild (max. %s kB pro Bild)"
 
 #: templates/admin/modify_subform.tpl:106 templates/user/create.tpl:135
 #, php-format
@@ -1087,12 +1089,12 @@ msgstr ""
 
 #: templates/admin/modify_subform.tpl:120 templates/user/create.tpl:159
 msgid "news picture"
-msgstr ""
+msgstr "News Bild"
 
 #: templates/admin/modify_subform.tpl:122 templates/user/create.tpl:151
 #: templates/user/create.tpl:161
 msgid "Delete this picture"
-msgstr ""
+msgstr "Lösche dieses Bild"
 
 #: templates/admin/modify_subform.tpl:130 templates/user/create.tpl:170
 msgid "Publishing options"
@@ -1100,7 +1102,7 @@ msgstr "Freigabeoptionen"
 
 #: templates/admin/modify_subform.tpl:133 templates/user/create.tpl:173
 msgid "Display on news index page"
-msgstr ""
+msgstr "Anzeigen auf Startseite"
 
 #: templates/admin/modify_subform.tpl:143 templates/user/create.tpl:183
 msgid "No time limit"
@@ -1132,7 +1134,7 @@ msgstr "Meta-Daten"
 
 #: templates/admin/modify_subform.tpl:205
 msgid "Contributed by"
-msgstr ""
+msgstr "Beigetragen von"
 
 #: templates/admin/modify_subform.tpl:205
 msgid "on"
@@ -1140,7 +1142,7 @@ msgstr ""
 
 #: templates/admin/modify_subform.tpl:213
 msgid "Last edited"
-msgstr ""
+msgstr "Zuletzt bearbeitet"
 
 #: templates/admin/modify_subform.tpl:216
 #, php-format
@@ -1159,7 +1161,7 @@ msgstr "Beitrags-ID: %s"
 
 #: templates/admin/modifyconfig.tpl:6
 msgid "Module settings"
-msgstr ""
+msgstr "Modul-Einstellungen"
 
 #: templates/admin/modifyconfig.tpl:9
 msgid ""
@@ -1413,7 +1415,7 @@ msgstr ""
 
 #: templates/admin/modifyconfig.tpl:184
 msgid "Picture uploading"
-msgstr ""
+msgstr "Lädt hoch..."
 
 #: templates/admin/modifyconfig.tpl:186
 msgid "Allow article picture(s) uploading"
@@ -1588,19 +1590,19 @@ msgstr ""
 
 #: templates/admin/publisheddata.tpl:3
 msgid "Article unpublished"
-msgstr ""
+msgstr "Unveröffentlichter Artikel"
 
 #: templates/admin/publisheddata.tpl:5
 msgid "forever"
-msgstr ""
+msgstr "immer"
 
 #: templates/admin/publisheddata.tpl:7
 msgid "Approved/Rejected By"
-msgstr ""
+msgstr "Genehmigt/abgelehnt durch"
 
 #: templates/admin/publisheddata.tpl:8
 msgid "Created By"
-msgstr ""
+msgstr "Erstellt von"
 
 #: templates/admin/publisheddata.tpl:8 templates/admin/publisheddata.tpl:9
 msgid "On"
@@ -1608,11 +1610,11 @@ msgstr ""
 
 #: templates/admin/publisheddata.tpl:9
 msgid "Last Updated By"
-msgstr ""
+msgstr "Zuletzt aktualisiert durch"
 
 #: templates/admin/publisheddata.tpl:10
 msgid "Publish From"
-msgstr ""
+msgstr "Veröffentlichet von"
 
 #: templates/admin/publisheddata.tpl:10
 msgid "To"
@@ -1644,11 +1646,11 @@ msgstr ""
 
 #: templates/admin/view.tpl:13
 msgid "active"
-msgstr ""
+msgstr "aktiv"
 
 #: templates/admin/view.tpl:13
 msgid "inactive"
-msgstr ""
+msgstr "inaktiv"
 
 #: templates/admin/view.tpl:14
 #, php-format
@@ -1755,7 +1757,7 @@ msgstr "Suche starten"
 
 #: templates/admin/view.tpl:161
 msgid "Select a Category"
-msgstr ""
+msgstr "Kategorie auswählen"
 
 #: templates/ajax/modify.tpl:9
 msgid "Save quick edit"
@@ -1771,7 +1773,7 @@ msgstr ""
 
 #: templates/ajax/modify.tpl:10
 msgid "Save all changes"
-msgstr ""
+msgstr "Alle Änderungen speichern"
 
 #: templates/ajax/modify.tpl:11
 msgid "Mark as pending"
@@ -1786,7 +1788,7 @@ msgstr "Als 'wartend' kennzeichnen"
 #: templates/user/index.tpl:9 templates/user/index.tpl:11
 #, php-format
 msgid "Picture %1$s for %2$s"
-msgstr ""
+msgstr "Bild %1$s von %2$s"
 
 #: templates/block/big.tpl:1
 msgid "Today's most-read article is:"
@@ -2196,11 +2198,11 @@ msgstr "Es wurden keine neuen Beiträge veröffentlicht."
 #: templates/user/archives.tpl:56 templates/user/articlecontent.tpl:26
 #: templates/user/articlepdf.tpl:3 templates/user/index.tpl:3
 msgid "Contributed"
-msgstr ""
+msgstr "Beigetragen"
 
 #: templates/printer/article.tpl:32 templates/user/articlecontent.tpl:52
 msgid "Picture gallery"
-msgstr ""
+msgstr "Bildergalerie"
 
 #: templates/printer/article.tpl:52 templates/user/article.tpl:23
 msgid "More articles in category "
@@ -2303,6 +2305,8 @@ msgid ""
 "You must enter a <strong>title</strong> and either <strong>teaser text</"
 "strong> or <strong>body text</strong>."
 msgstr ""
+"Sie müssen einen <strong>Titel</strong> und <strong>Teasertext</strong> oder "
+"<strong>Body-Text</strong>eingeben."
 
 #: templates/user/create.tpl:209
 msgid "(EZComments must be hooked to News to enable commenting.)"
@@ -2318,7 +2322,7 @@ msgstr ""
 
 #: templates/user/create.tpl:264
 msgid "Save full draft"
-msgstr ""
+msgstr "Vollständigen Entwurf speichern"
 
 #: templates/user/preview_pics.tpl:4
 msgid "Temp images resized to 150 width until publishing."
