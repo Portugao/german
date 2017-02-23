@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Zikula Core 1.4.X\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-12-12 21:48+0100\n"
+"PO-Revision-Date: 2017-02-12 21:11+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: team@zikula.de <team@zikula.de>\n"
 "Language: de\n"
@@ -29,13 +29,18 @@ msgid ""
 " (mandatory) - The user password. It must have %sub% characters or more. "
 "Preferentially containing letters and numbers."
 msgstr ""
+" (notwendig) - Das Benutzerkennwort muss länger als %sub% Zeichen sein. "
+"Vorzugsweise aus Zahlen und Buchstaben."
 
 msgid ""
 " - The identities of the groups where the user must belong separated by the "
 "character |. If you do not specify any group, the default group is %sub%."
 msgstr ""
+"- Die Identitäten der Gruppen, denen der Benutzer angehören muss, getrennt "
+"durch das |-Zeichen. Falls keine Gruppen angegeben werden, ist die Standard-"
+"Gruppe %sub%\n"
+"."
 
-#, fuzzy
 msgid ""
 " - Type 0 if user is not active, 1 if the user must be active. The default "
 "value is 1."
@@ -43,48 +48,52 @@ msgstr ""
 " - Typ 0 falls der Benutzer nicht aktiv ist, 1 falls der Benutzer aktiv sein "
 "muss. Der Standardwert ist 1."
 
-#, fuzzy
 msgid ""
 " - Type 1 if the system must send the password to the user via email and 0 "
 "otherwise. The default value is 1. The module Mailer must be active and "
 "correctly configured. The email is sent only if user activated value is "
 "upper than 0."
 msgstr ""
-" - Typ 1 falls das System das Kennwort via E-Mail zum Benutzer senden muss, "
+" - Typ 1 falls das System das Passwort via E-Mail zum Benutzer senden muss, "
 "ansonsten 0. Der Standardwert ist 1. Das Mailer-Modul muss aktiv und korrekt "
 "konfiguriert sein. Die E-Mail wird nur versendet, falls der Aktivitätswert "
 "des Benutzers größer als 0 ist."
 
-#, fuzzy
 msgid ""
 "\"%bar\" will match \"FOObar\", \"Blubbar\" and so on, but not \"BarFoo\"."
 msgstr ""
-"\"); ?>bar\" wird \"FOObar\", \"Blubbar\" usw. entsprechen, aber nicht "
-"\"BarFoo\"."
+"\"%bar\" wird \"FOObar\", \"Blubbar\" usw. entsprechen, aber nicht \"BarFoo"
+"\"."
 
 msgid "% (0 to disable)"
 msgstr "% (0 = deaktiviert)"
 
-#, fuzzy
 msgid "%1$s and %2$s online since %time."
-msgstr "%1$s: %2$s ist nicht gesetzt."
+msgstr "%1$s und %2$s online seit %time."
 
-#, fuzzy
 msgid "%1$s module can't connect to %2$s module. No connections are supported"
 msgstr ""
 "Modul %1$s kann sich nicht mit Modul %2$s verbinden. Es werden keine "
 "Verbindungen unterstützt"
 
+msgid "%action application for %user to %group group"
+msgstr "%action Anwendung für %user %group Gruppe"
+
 msgid "%c direct child|%c direct children"
-msgstr ""
+msgstr "%c direktes Kind|%c direkte Kinder"
 
 msgid ""
 "%linkStart OpenSearch %linkEnd makes it possible for your site's users to "
 "use your site's search function as a search engine."
 msgstr ""
+"%linkStart OpenSearch %linkEnd macht es möglich, dass die Nutzer Ihrer "
+"Website Ihre Website-Suchfunktion als Suchmaschine verwenden."
 
 msgid "%modulename%"
 msgstr "%modulename%"
+
+msgid "%n Pending applications"
+msgstr "%n ausstehende Anwendungen"
 
 msgid "%name% upgraded to new version and activated."
 msgstr "%name% aktualisiert und aktiviert."
@@ -96,9 +105,11 @@ msgid ""
 "%s is either not present or not writable. This is not correct! Please read "
 "the upgrade instructions."
 msgstr ""
+"%s ist entweder nicht vorhanden oder nicht beschreibbar. Dies ist nicht "
+"korrekt! Bitte lesen Sie die Upgrade-Anweisungen."
 
 msgid "%s is present and writeable.  This is correct."
-msgstr ""
+msgstr "%s ist vorhanden und beschreibbar.  Das ist richtig."
 
 msgid ""
 "%s must be an instance of Zikula_AbstractInstaller or implement "
@@ -120,13 +131,13 @@ msgid "%sitename%"
 msgstr "%sitename%"
 
 msgid "%sub% anonymous guest|%sub% anonymous guests"
-msgstr ""
+msgstr "%sub% Anonymer Gast|%sub% anonyme Gäste"
 
 msgid "%sub% module provides the following area:"
-msgstr ""
+msgstr "%sub% Modul bietet den folgenden Bereich:"
 
 msgid "%sub% registered user|%sub% registered users"
-msgstr ""
+msgstr "%sub% registrierter Benutzer |%sub% registrierte Benutzer"
 
 msgid "%theme% has no configuration."
 msgstr "%theme% hat keine Konfiguration"
@@ -148,11 +159,9 @@ msgstr "(Modul, auf das die Datei index.php verweist)"
 msgid "(Admin credentials have been encoded to make them json-safe.)"
 msgstr "(Admin Ameldedaten wurden verschlüsselt um sie json sicher zu machen.)"
 
-#, fuzzy
 msgid "(Default: index.php)"
 msgstr "Datei, über die der Seiteneinstieg erfolgt (Standard: index.php)"
 
-#, fuzzy
 msgid ""
 "(If you cannot click on the link above, you can copy this URL into your "
 "browser:"
@@ -160,7 +169,6 @@ msgstr ""
 "(Falls der obige Link nicht per Mausklick geöffnet werden kann, bitte diese "
 "URL kopieren und in den Browser einfügen: "
 
-#, fuzzy
 msgid ""
 "(If you cannot click on the link, you can copy the URL and paste it into "
 "your browser.)"
@@ -172,6 +180,8 @@ msgid ""
 "(If you cannot click on the link, you can copy this URL and paste it into "
 "your browser: %sub% )"
 msgstr ""
+"(Wenn Sie nicht auf den Link klicken können, können Sie Sie diese URL "
+"kopieren und ihn in Ihren Browser einfügen: %sub% )"
 
 msgid "(Modification not supported.)"
 msgstr "(Veränderung nicht unterstützt.)"
@@ -179,7 +189,6 @@ msgstr "(Veränderung nicht unterstützt.)"
 msgid "(Place each value on a separate line.)"
 msgstr "(Jeden Wert in eine eigene Zeile eintragen.)"
 
-#, fuzzy
 msgid ""
 "(Separate each key-value pair with a colon (e.g., key:value). Place each key-"
 "value pair on a separate line.)"
@@ -187,18 +196,16 @@ msgstr ""
 "(Schlüssel- und Wertepaare mit Doppelpunkt trennen (z.B. key:value) und "
 "jedes Paar in eine eigene Zeile eintragen.)"
 
-#, fuzzy
 msgid ""
 "(This is the only time you will receive your password. Please keep it in a "
 "safe place.)"
 msgstr ""
-"(Das Kennwort wird nur dieses eine mal versendet. Bitte an einem sicheren "
+"(Das Passwort wird nur dieses eine mal versendet. Bitte an einem sicheren "
 "Ort aufbewahren.)"
 
 msgid "(in milliseconds, default 5000 = 5 seconds)"
 msgstr "(in Millisekunden, Standard 5000 = 5 Sekunden)"
 
-#, fuzzy
 msgid "(or approval was not required when the registration was completed)"
 msgstr ""
 "(oder eine Freigabe wurde nicht benötigt wenn die Registrierung vollständig "
@@ -215,6 +222,27 @@ msgstr "--Neuer Link--"
 
 msgid "/10000"
 msgstr "/10000"
+
+msgid "10"
+msgstr "10"
+
+msgid "100"
+msgstr "100"
+
+msgid "15"
+msgstr "15"
+
+msgid "20"
+msgstr "20"
+
+msgid "30"
+msgstr "30"
+
+msgid "5"
+msgstr "5"
+
+msgid "50"
+msgstr "50"
 
 msgid ""
 "<p><a href=\"http://zikula.org/\">Zikula</a> is a content management system "
@@ -272,13 +300,21 @@ msgstr ""
 "bearbeitet werden.</em></p>"
 
 msgid "A filter consists of several statements."
-msgstr ""
+msgstr "Ein Filter besteht aus mehreren Anweisungen."
 
 msgid "A message from %s."
 msgstr "Eine Nachricht von %s."
 
 msgid "A message from %s..."
 msgstr "Eine Nachricht von %s..."
+
+#, fuzzy
+msgid ""
+"A new application has been created by %user to %group. Please attend to this "
+"request at %url"
+msgstr ""
+"Eine neue Anwendung wurde von% Benutzer% Gruppe erstellt. Bitte beachten Sie "
+"folgenden Antrag an% url"
 
 msgid "A new user account has been activated on %s."
 msgstr "Ein neues Benutzerkonto wurde auf %s aktiviert."
@@ -320,9 +356,8 @@ msgstr "Über die CSV-Datei"
 msgid "Accept"
 msgstr "Akzeptieren"
 
-#, fuzzy
 msgid "Accept %username"
-msgstr "Benutzername"
+msgstr "Akzeptiere %username"
 
 msgid "Access forbidden."
 msgstr "Zugang verboten."
@@ -330,26 +365,26 @@ msgstr "Zugang verboten."
 msgid "Account Information"
 msgstr "Kontoinformationen"
 
-#, fuzzy
 msgid "Account Page Settings"
-msgstr "Benutzerkonto"
-
-msgid "Account Settings"
-msgstr "Kontoeinstellungen"
+msgstr "Benutzerkonto Einstellungen"
 
 msgid "Account information"
 msgstr "Kontoinformationen"
 
-#, fuzzy
 msgid "Account information recovery"
 msgstr "Zugangsdaten wiederherstellen"
 
-#, fuzzy
+msgid "Account menu"
+msgstr "Konto-Menu"
+
 msgid "Account verification"
-msgstr "Kontoeinstellungen"
+msgstr "Kontobestätigung"
 
 msgid "Action"
 msgstr "Aktion"
+
+msgid "Action for sub-categories"
+msgstr "Aktion für Unterkategorien"
 
 msgid "Actions"
 msgstr "Aktionen"
@@ -360,9 +395,8 @@ msgstr "Aktivieren"
 msgid "Activate %s"
 msgstr "Aktiviere %s"
 
-#, fuzzy
 msgid "Activate %theme%"
-msgstr "Aktiviere %s"
+msgstr "Aktiviere %theme%"
 
 msgid "Activate compression"
 msgstr "GZip-Kompression aktivieren"
@@ -394,8 +428,8 @@ msgstr "Option hinzufügen"
 msgid "Add access"
 msgstr "Hinzufügen"
 
-msgid "Add users to group"
-msgstr "Benutzer zur Gruppe hinzufügen"
+msgid "Add user to this group"
+msgstr "Benutzer zu dieser Gruppe hinzufügen"
 
 msgid "Additional"
 msgstr "Zusätzlich"
@@ -424,6 +458,9 @@ msgstr "Admin-Panel-Theme"
 msgid "Admin's e-mail address"
 msgstr "E-Mail Adresse des Administrators"
 
+msgid "Administrate membership application"
+msgstr "Mitgliedsantrag administrieren"
+
 msgid "Administration"
 msgstr "Administration"
 
@@ -448,7 +485,12 @@ msgstr "Administratoren"
 msgid "Advanced setting, see %s"
 msgstr "Erweiterte Einstellungen, siehe %s"
 
-#, fuzzy
+msgid "Affected parameters: %s"
+msgstr "Betroffene Parameter: %s"
+
+msgid "Affected tags: %s"
+msgstr "Betroffene Tags: %s"
+
 msgid ""
 "After completing the installation process, it is very important to delete "
 "the Installer's file 'install.php' and directory 'install' from the site "
@@ -468,16 +510,19 @@ msgid ""
 "After creating this block position, blocks can be assigned to it and the "
 "order they are to be displayed can be adjusted."
 msgstr ""
+"Nach dem Erstellen dieser Blockposition, können Blöcke zugewiesen werden und "
+"die Reihenfolge, in der sie angezeigt werden sollen, kann eingestellt werden."
 
 msgid "All"
 msgstr "Alle"
 
 msgid "All additional joined tables can be referenced by \"tblFoo\"."
 msgstr ""
+"Alle zusätzlichen verknüpfte Tabellen können durch \"tblFoo\" refferenziert "
+"werden."
 
-#, fuzzy
 msgid "All blocks placed."
-msgstr "Keine Block ID übergeben."
+msgstr "Alle Blöcke platziert."
 
 msgid "All components"
 msgstr "Alle Komponenten"
@@ -487,6 +532,9 @@ msgstr "Alle außer freigegebene"
 
 msgid "All groups"
 msgstr "Alle Gruppen"
+
+msgid "All instances of LangBlock have been converted to LocaleBlock."
+msgstr "Alle Instanzen des LangBlock wurden zu LocaleBlock konvertiert."
 
 msgid "All items with a date in July 2016."
 msgstr "Alle Elemente mit einem Datum im Jahr 2016."
@@ -501,7 +549,7 @@ msgid "All items with date of today."
 msgstr "Alle Elemente mit Datum von heute."
 
 msgid "All items with date up from 24 hours ago."
-msgstr ""
+msgstr "Alle Artikel der letzten 24 Stunden."
 
 msgid ""
 "All methods cannot be inactive. At least one methods must be enabled. (%m "
@@ -555,20 +603,24 @@ msgid "Also delete theme files, if possible"
 msgstr "Falls möglich, die Theme-Dateien löschen"
 
 msgid "Also you can use \"%\" as placeholder."
-msgstr ""
+msgstr "Sie können auch \"%\" als Platzhalter verwenden."
 
 msgid "Always"
 msgstr "Immer"
 
+msgid "An error occured during executing PHPIDS: %s"
+msgstr "Während der Ausführung von PHPIDS ist ein Fehler aufgetreten: %s"
+
 msgid "An error occurred while creating HTML Purifier cache directory at %path"
 msgstr ""
+"Fehler beim erstellen des HTML Purifier Cache-Verzeichnises im Pfad %path"
 
 msgid ""
-"An error was encountered while removing stored object workflows for the %s "
-"extension."
+"An error was encountered while removing stored object workflows for the "
+"%extension% extension."
 msgstr ""
-"Während des Entfernens gespeicherter Objekt Arbeitsabläufe für das Modul %s "
-"ist ein Fehler aufgetreten."
+"Während des Entfernens des gespeicherten Workflow-Objektes für das Modul "
+"%extension% ist ein Fehler aufgetreten."
 
 msgid "An example of a valid CSV file"
 msgstr "Beispiel einer gültigen CSV-Datei"
@@ -590,8 +642,26 @@ msgstr "Alle Gruppen"
 msgid "Any words"
 msgstr "Irgendein Wort"
 
+msgid "Application cancelled."
+msgstr "Antrag abgelehnt."
+
+msgid "Application comments"
+msgstr "Antragskommentare"
+
+msgid "Application processed (%action %user)"
+msgstr "Antrag verarbeitet (%action %user)"
+
+msgid "Applied!"
+msgstr "Stattgegeben!"
+
 msgid "Apply"
 msgstr "Anfragen"
+
+msgid "Apply to membership of \":name\" group"
+msgstr "Bewerbung für die Mitgliedschaft \":name\" Gruppe"
+
+msgid "Applying to group"
+msgstr "Anwendung auf Gruppe"
 
 msgid "Approve"
 msgstr "Freigeben"
@@ -599,25 +669,24 @@ msgstr "Freigeben"
 msgid "Approve %sub%"
 msgstr "Genehmige %sub%"
 
-#, fuzzy
 msgid "Approve registration"
-msgstr "Registrierung von '%1$s' freigeben"
+msgstr "Registrierung genehmigen"
 
-#, fuzzy
 msgid "Approve registration of %sub%"
-msgstr "Neue Registrierung: %s"
+msgstr "Registrierung von %sub% genehmigen"
 
 msgid "Approved"
 msgstr "Freigegeben"
 
 msgid "Are you sure you want to delete the user (%un)?"
-msgstr ""
+msgstr "Wollen Sie den Benutzer wirklich löschen (%un)?"
 
 msgid ""
 "Are you sure you want to delete this menu (%menu%) AND ALL ITS CHILDREN?"
 msgstr ""
+"Sind Sie sicher, dass Sie dieses Menü (%menu%) löschen möchten INKLUSIVE "
+"ALLER SEINER KINDER?"
 
-#, fuzzy
 msgid "Are you sure you want to rebuild all the internal paths for categories?"
 msgstr "Soll die Kategoriepfade wirklich neu erstellt werden?"
 
@@ -649,7 +718,6 @@ msgstr "Authentifizierungs Methoden"
 msgid "Author"
 msgstr "Autor"
 
-#, fuzzy
 msgid "Automatic update settings"
 msgstr "Automatische Updateprüfung"
 
@@ -684,14 +752,12 @@ msgstr "Gesperrte E-Mail Domains"
 msgid "Banned user agents"
 msgstr "Gesperrte User-Agents"
 
-#, fuzzy
 msgid ""
 "Before logging in, the site administrator has asked that you change the "
 "password for your account."
 msgstr ""
-"Vor der Anmeldung muss das Kennwort für das Benutzerkonto geändert werden."
+"Vor der Anmeldung muss das Passwort für das Benutzerkonto geändert werden."
 
-#, fuzzy
 msgid ""
 "Before you will be able to log in, an administrator must approve your "
 "registration request. You will receive an e-mail after an administrator has "
@@ -701,7 +767,6 @@ msgstr ""
 "durch einen Administrator erfolgt sein. Sobald die Angaben durch einen "
 "Administrator geprüft wurden, wird eine E-Mail zur Bestätigung versendet."
 
-#, fuzzy
 msgid ""
 "Before you will be able to log in, you must verify your e-mail address. You "
 "will receive an e-mail asking to verify your e-mail address after submitting "
@@ -721,6 +786,8 @@ msgid ""
 "Below you see your current routing configuration (see %s for configuration "
 "reference)."
 msgstr ""
+"Unten sehen Sie Ihre aktuelle routing-Konfiguration (siehe %s "
+"Konfigurationsübersicht)."
 
 msgid "Bind authkey to user agent ('UserAgent')"
 msgstr "AuthKey an UserAgent binden"
@@ -731,20 +798,17 @@ msgstr "Block"
 msgid "Block ID"
 msgstr "Block ID"
 
-#, fuzzy
 msgid "Block Type"
-msgstr "Blocktemplate"
+msgstr "Block-Typ"
 
-#, fuzzy
 msgid "Block View"
-msgstr "Blocktitel"
+msgstr "Blockansicht"
 
 msgid "Block action"
 msgstr "Aktion blocken"
 
-#, fuzzy
 msgid "Block placements"
-msgstr "Blockinhalt"
+msgstr "Block-Platzierungen"
 
 msgid "Block positions list"
 msgstr "Blockpositionen Liste"
@@ -759,10 +823,10 @@ msgid "Blocks list"
 msgstr "Blockliste"
 
 msgid "Blocks not placed in '%name%' position"
-msgstr ""
+msgstr "Blöcke, die nicht in '%name%' Position platziert"
 
 msgid "Blocks placed in the '%name%' position"
-msgstr ""
+msgstr "Blöcke in der '%name%' Position platziert"
 
 msgid "Blogging"
 msgstr "Blogging"
@@ -785,11 +849,9 @@ msgstr "Standardgruppe für Benutzer"
 msgid "CSRF Token"
 msgstr "CSRF-Token"
 
-#, fuzzy
 msgid "CSS/JS combination is disabled"
-msgstr "CSS/JS Combination aktivieren"
+msgstr "CSS/JS-Kombination ist deaktiviert"
 
-#, fuzzy
 msgid "CSS/JS combination is enabled"
 msgstr "CSS/JS Combination ist aktiviert"
 
@@ -811,19 +873,21 @@ msgstr "Caching"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#, fuzzy
 msgid "Cancel forced password change"
-msgstr "Erzwingen der Kennwortänderung für %1$s abbrechen"
+msgstr "Erzwungene Passwortänderung abbrechen"
 
-#, fuzzy
 msgid "Cancel forced password change for %1s"
-msgstr "Benötigte Passwortänderung für %sub% abbrechen"
+msgstr "Erzwungene Passwortänderung für %1s abbrechen"
 
 msgid "Cancel required change of password for %sub%"
 msgstr "Benötigte Passwortänderung für %sub% abbrechen"
 
+msgid "Cannot join the requested group"
+msgstr "Kann nicht der angeforderte Gruppe beitreten"
+
 msgid "Cannot load %extension because the composer file is invalid."
 msgstr ""
+"%extension kann nicht geladen werden, da die Composer-Datei ungültig ist."
 
 msgid "Cannot write parameters to %s file."
 msgstr "Fehler! Kann die Parameter nicht in die Datei '%s' schreiben."
@@ -846,11 +910,19 @@ msgstr "Kategorie"
 msgid "Category \"%s\" was successfully made default."
 msgstr "Die Kategorie \"%s\" wurde erfolgreich als Standard gesetzt."
 
+msgid "Category %s must be unique under parent"
+msgstr ""
+"Die Kategorie %s muss innerhalb ihrer übergeordneten Kategorie eindeutig "
+"sein."
+
 msgid "Category is a leaf node"
 msgstr "Kategorie ist ein Endknoten"
 
 msgid "Category is locked"
 msgstr "Kategorie ist gesperrt"
+
+msgid "Category not found."
+msgstr "Die Kategorie wurde nicht gefunden"
 
 msgid "Category registry"
 msgstr "Kategoriezuweisung"
@@ -865,14 +937,14 @@ msgid "Change log"
 msgstr "Änderungsprotokoll"
 
 msgid "Change password"
-msgstr "Kennwort ändern"
+msgstr "Passwort ändern"
 
 msgid ""
 "Changing this setting will affect all password change requests currently "
 "pending verification."
 msgstr ""
-"Eine Änderung dieser EInstellung betrifft alle Anfragen zum Rücksetzen des "
-"Kennwortes, die aktuell noch im System warten."
+"Eine Änderung dieser Einstellung betrifft alle Anfragen zum Rücksetzen des "
+"Passwortes, die aktuell noch im System warten."
 
 msgid ""
 "Changing this setting will affect all requests to change e-mail addresses "
@@ -887,15 +959,12 @@ msgstr "Zeichensatz"
 msgid "Characters allowed: a-z, A-Z, 0-9, dash (-) and underscore (_)."
 msgstr "Erlaubte Zeichen: a-z, A-Z, 0-9, Bindestrich (-) und Unterstrich (_)."
 
-#, fuzzy
 msgid "Check a users permission"
 msgstr "Zugriffregel für bestimmten Benutzer überprüfen"
 
-#, fuzzy
 msgid "Check again"
 msgstr "Erneut überprüfen"
 
-#, fuzzy
 msgid "Check all"
 msgstr "Alle auswählen"
 
@@ -903,72 +972,61 @@ msgid "Check for updates"
 msgstr "Auf Updates prüfen"
 
 msgid "Check interval"
-msgstr ""
+msgstr "Überprüfungs-Intervall"
 
-#, fuzzy
 msgid "Check now"
-msgstr "Geprüft"
+msgstr "Jetzt prüfen"
 
-#, fuzzy
 msgid "Check permission"
 msgstr "Zugriffregel überprüfen"
 
-#, fuzzy
 msgid "Check requirements"
 msgstr "Anforderungen prüfen"
 
-#, fuzzy
 msgid "Check requirements again"
-msgstr "Anforderungen"
+msgstr "Anforderungen erneut prüfen"
 
 msgid "Check that you spelled all words correctly."
-msgstr ""
+msgstr "Überprüfen Sie, ob Sie alle Wörter richtig geschrieben haben."
 
 msgid "Check the methods you wish to activate."
-msgstr ""
+msgstr "Überprüfen Sie die Methoden, die Sie aktivieren möchten."
 
 msgid "Checked"
 msgstr "Geprüft"
 
-#, fuzzy
 msgid "Children"
-msgstr "Chile"
+msgstr "Kinder"
 
 msgid "Choose"
 msgstr "Wähle"
 
-msgid "Choose a language"
-msgstr "Sprache auswählen"
+msgid "Choose a category"
+msgstr "Kategorie auswählen"
 
-#, fuzzy
 msgid "Choose a user name"
 msgstr "Benutzernamen wählen"
 
-#, fuzzy
 msgid "Choose action"
 msgstr "Aktion wählen"
 
-#, fuzzy
 msgid "Choose an authentication method"
-msgstr "Authentifizierungs Methoden"
+msgstr "Wählen Sie eine Authentifizierungsmethode"
 
-#, fuzzy
+msgid "Choose categories"
+msgstr "Kategorie auswählen"
+
 msgid "Choose category"
 msgstr "Kategorie auswählen"
 
-#, fuzzy
 msgid "Choose entity"
-msgstr "Menü auswählen"
+msgstr "wählen Sie ein Objekt"
 
 msgid "Choose language"
 msgstr "Sprache wählen"
 
-#, fuzzy
 msgid "Choose module"
 msgstr "Modul auswählen"
-
-msgid "Choose one"
-msgstr "Auswählen"
 
 msgid "Choose the methods"
 msgstr "Wähle die Methoden"
@@ -979,18 +1037,15 @@ msgstr "Wähle deinen Route Typ"
 msgid "Choose the schemes"
 msgstr "Wähle die Schemata"
 
-#, fuzzy
 msgid "Clear"
 msgstr "Zurücksetzen"
 
-#, fuzzy
 msgid "Clear all cache and compile directories"
 msgstr "Alle Cache- und Kompilierungsverzeichnisse leeren"
 
 msgid "Clear caches"
 msgstr "Leere Caches"
 
-#, fuzzy
 msgid "Clear filter"
 msgstr "Filter entfernen"
 
@@ -998,29 +1053,30 @@ msgid "Clearing caches"
 msgstr "Leere gerade die Caches"
 
 msgid "Click here to visit your homepage"
-msgstr ""
+msgstr "Klicken Sie hier, um Ihre Homepage zu besuchen"
 
-msgid "Click the user's name to view his/her complete profile."
-msgstr "Auf den Benutzernamen klicken, um das vollständige Profil anzuzeigen."
-
-#, fuzzy
 msgid "Click to activate block"
-msgstr "Fehler! Der Block konnte nicht aktiviert werden."
+msgstr "Klicken Sie zum Aktivieren des Blockes"
 
-#, fuzzy
 msgid "Click to deactivate block"
-msgstr "Fehler! Der Block konnte nicht deaktiviert werden."
+msgstr "Klicken Sie zum Deaktiviren des Blockes"
 
-#, fuzzy
 msgid "Click to deactivate this block"
 msgstr "Hier klicken, um den Block zu deaktivieren"
 
-#, fuzzy
 msgid "Close"
 msgstr "Schließen"
 
 msgid "Closed"
 msgstr "Geschlossen"
+
+msgid ""
+"Closed: only the core or administrator (ACCESS_EDIT) may add users. closed "
+"groups may be hidden by config setting"
+msgstr ""
+"Geschlossen: nur der Core oder Administrator (ACCESS_EDIT) können Benutzer "
+"hinzufügen. Geschlossene Gruppen können durch Konfigurationseinstellung "
+"ausgeblendet werden."
 
 msgid "Collapse all"
 msgstr "Alle einklappen"
@@ -1028,14 +1084,12 @@ msgstr "Alle einklappen"
 msgid "Colon"
 msgstr "Doppelpunkt"
 
-#, fuzzy
 msgid "Combining statements"
-msgstr "Installation gestartet"
+msgstr "Kombination von Aussagen"
 
 msgid "Comma"
 msgstr "Komma"
 
-#, fuzzy
 msgid "Comment"
 msgstr "Kommentar"
 
@@ -1051,21 +1105,18 @@ msgstr "Kommunikation und Medien"
 msgid "Compile check"
 msgstr "Aktualisierungen prüfen"
 
-#, fuzzy
 msgid "Component"
 msgstr "Komponente"
 
-#, fuzzy
 msgid "Component to check"
 msgstr "Zu prüfende Komponente"
-
-msgid "Concerning your %s group membership application"
-msgstr "Anfrage auf Mitgliedschaft in die Gruppe %s"
 
 msgid "Condition"
 msgstr "Kondition"
 
-#, fuzzy
+msgid "Configuration"
+msgstr "Konfiguration"
+
 msgid ""
 "Configuration file 'config/config.php' is writeable, but should be read-only "
 "(chmod 400, 440 or at worst 444)."
@@ -1074,7 +1125,6 @@ msgstr ""
 "jedoch besser nur lesbar sein (ggfs. mit chmod 400, 440 oder notfalls 444 "
 "anpassen)."
 
-#, fuzzy
 msgid ""
 "Configuration file 'config/config.php' is writeable, but should be read-only "
 "(please set to chmod 400, or 440 or last resort 444)."
@@ -1085,9 +1135,8 @@ msgstr ""
 msgid "Configuration file not found"
 msgstr "Konfigurationsdatei gefunden"
 
-#, fuzzy
 msgid "Configuration files"
-msgstr "Schütze Konfigurationsdateien"
+msgstr "Konfigurationsdateien"
 
 msgid "Configuration files protected"
 msgstr "Konfigurationsdateien wurden geschützt"
@@ -1112,7 +1161,7 @@ msgid "Confirm verification code"
 msgstr "Bestätigungscode"
 
 msgid "Confirm verification code is to be sent to %sub%"
-msgstr "Erledigt! Bestätigungs Code an %sub% gesendet."
+msgstr "Bestätigungs Code wird an %sub% gesendet."
 
 msgid "Confirmation prompt"
 msgstr "Sicherheitsabfrage"
@@ -1120,11 +1169,19 @@ msgstr "Sicherheitsabfrage"
 msgid "Congratulations! Upgrade Complete."
 msgstr "Glückwunsch! Aktualisierung abgeschlossen."
 
+msgid ""
+"Congratulations! Your group application has been accepted. You have been "
+"granted all the privileges assigned to the group of which you are now member."
+msgstr ""
+"Gratulation! Ihr Antrag auf Gruppenmitgliedschaft wurde akzeptiert. Sie "
+"haben nun alle Rechte, die der Gruppe zugewiesen wurden, der Sie jetzt "
+"angehören."
+
 msgid "Congratulations! Zikula has been successfully installed."
 msgstr "Herzlichen Glückwunsch! Zikula wurde erfolgreich installiert."
 
 msgid "Connect %sub% to other modules"
-msgstr ""
+msgstr "%sub% an andere Module anschließen"
 
 msgid "Connections"
 msgstr "Verbindungen"
@@ -1150,7 +1207,7 @@ msgstr "Kopieren"
 msgid "Copy category"
 msgstr "Kategorie kopieren"
 
-msgid "Copy this category and all sub-categories of this category"
+msgid "Copy this category and all sub-categories of this category into"
 msgstr ""
 "Diese Kategorie inkl. der dazugehörigen Unterkategorien unter folgende "
 "Kategorie kopieren"
@@ -1159,13 +1216,20 @@ msgid "Core"
 msgstr "Core"
 
 msgid "Core Extension"
-msgstr "Erweiterungen Liste"
+msgstr "Core Erweiterungsliste"
 
 msgid "Core compatibility information: %s"
 msgstr "Core Kompatibiltäts Informationen: %s"
 
 msgid "Core modules at the heart of operation of the site."
 msgstr "Systemmodule sind Teil der Kern-Funktionalität dieser Website."
+
+msgid ""
+"Core: Users can only be added by an administrator (ACCESS_EDIT) - groups are "
+"not visible to users in public list"
+msgstr ""
+"Core: Der Benutzer kann nur von einem Administrator (ACCESS_EDIT) "
+"hinzugefügt werden - Gruppen sind für Benutzer öffentlich nicht sichtbar."
 
 msgid "Could not find user to update."
 msgstr "Konnte Benutzer zum aktualisieren nicht finden."
@@ -1176,6 +1240,21 @@ msgstr "Datein konnte nicht wie gewünscht gelöscht werden."
 msgid "Could not send mail."
 msgstr "Mail konnte nicht verschickt werden."
 
+msgid ""
+"Could not set %1$s to the value of %2$s. The install or upgrade process may "
+"fail at your current setting of %3$s."
+msgstr ""
+"Konnte %1$s nicht auf Wert %2$s setzen. Die Installation oder Upgrade könnte "
+"wegen der Einstellgung %3$s fehl schlagen."
+
+msgid ""
+"Could not use %1$s to set the %2$s to the value of %3$s. The install or "
+"upgrade process may fail at your current setting of %4$s."
+msgstr ""
+"Konnte nicht %1$s benutzen um %2$s auf den Wert %3$s zu setzen. Die "
+"Installation oder das Upgrade können wegen der aktuellen Einstellung %4$s "
+"fehl schlagen."
+
 msgid "Create a new account"
 msgstr "Neuen Account erstellen"
 
@@ -1183,13 +1262,13 @@ msgid "Create a new password."
 msgstr "Neues Passwort erstellen"
 
 msgid "Create a password"
-msgstr "Kennwort erstellen"
+msgstr "Passwort erstellen"
 
 msgid "Create admin account"
 msgstr "Erstelle Administrator Account"
 
 msgid "Create administrator's account"
-msgstr "Administrator Account erstellen"
+msgstr "Administrator anlegen"
 
 msgid "Create another item after save"
 msgstr "Nach dem speichern einen neuen Eintrag erstellen"
@@ -1216,7 +1295,7 @@ msgid "Create new category"
 msgstr "Kategorie anlegen"
 
 msgid "Create new group"
-msgstr "Neue Gruppe anlegen"
+msgstr "Gruppe hinzufügen"
 
 msgid "Create new module category"
 msgstr "Modulkategorie anlegen"
@@ -1231,7 +1310,7 @@ msgid "Create new user"
 msgstr "Benutzer anlegen"
 
 msgid "Create or Edit Root Node"
-msgstr ""
+msgstr "Erstellen oder Bearbeiten von Root-Knoten"
 
 msgid "Create route"
 msgstr "Route erstellen"
@@ -1273,13 +1352,13 @@ msgid "Credits for"
 msgstr "Credits für"
 
 msgid "Current Core version is %version%"
-msgstr ""
+msgstr "Aktuelle Core-Version ist %version%"
 
 msgid "Current settings from"
 msgstr "Aktuellen Einstellungen aus"
 
 msgid "Currently used version"
-msgstr ""
+msgstr "Derzeit verwendete Version"
 
 msgid "Custom rendering engine block"
 msgstr "Renderer-Block"
@@ -1293,8 +1372,9 @@ msgstr "DELETE"
 msgid "Daily"
 msgstr "Täglich"
 
+#, fuzzy
 msgid "Data provided was inappropriate."
-msgstr ""
+msgstr "Zur Verfügung gestellten Daten war unangemessen."
 
 msgid "Database (recommended)"
 msgstr "Datenbank (empfohlen)"
@@ -1323,9 +1403,12 @@ msgstr "Datum"
 msgid "Date of last search"
 msgstr "Datum der letzten Suche"
 
-# richtig übersetzt? In welchem Zusammenhang?
+#, fuzzy
 msgid "Date operators"
 msgstr "Datumsauswahl"
+
+msgid "Date: %s"
+msgstr "Datum: %s"
 
 msgid "Dates"
 msgstr "Datum"
@@ -1334,7 +1417,7 @@ msgid "De-select all"
 msgstr "Auswahl aufheben"
 
 msgid "De/Select all"
-msgstr "Auswählen/Auswahl aufheben"
+msgstr "Auswählen"
 
 msgid "Deactivate"
 msgstr "Deaktivieren"
@@ -1343,7 +1426,7 @@ msgid "Deactivate %s"
 msgstr "'%s' deaktivieren"
 
 msgid "Debug enabled"
-msgstr ""
+msgstr "Debug-Modus ist eingeschaltet"
 
 msgid "Default"
 msgstr "Standard"
@@ -1414,8 +1497,11 @@ msgstr "Definiere, welche Felder nicht beobachtet werden sollen"
 msgid "Delete"
 msgstr "Löschen"
 
+msgid "Delete \":name\" group"
+msgstr "Gruppe \":name\" löschen"
+
 msgid "Delete %n"
-msgstr "Löschen %n"
+msgstr "Lösche %n"
 
 msgid "Delete %sub%"
 msgstr "Lösche %sub%"
@@ -1429,75 +1515,59 @@ msgstr "Root löschen"
 msgid "Delete access"
 msgstr "Zugriff löschen"
 
-#, fuzzy
 msgid "Delete all children"
-msgstr "Zwischenspeicher löschen"
+msgstr "Alle Kinder löschen"
 
-#, fuzzy
 msgid "Delete all sub-categories"
 msgstr "Alle Unterkategorien löschen"
 
-#, fuzzy
 msgid "Delete block"
-msgstr "Erstelle Blöcke"
+msgstr "Block löschen"
 
-#, fuzzy
 msgid "Delete block position"
 msgstr "Blockposition löschen"
 
-#, fuzzy
 msgid "Delete category"
 msgstr "Kategorie löschen"
 
-#, fuzzy
 msgid "Delete confirmation"
-msgstr "Theme-Konfigurationen löschen"
+msgstr "Löschen bestätigen"
 
 msgid "Delete content permanently."
 msgstr "Inhalt dauerhaft löschen."
 
-#, fuzzy
 msgid "Delete group"
-msgstr "Lösche %sub%"
+msgstr "Gruppe löschen"
 
-#, fuzzy
 msgid "Delete module category"
 msgstr "Modulkategorie löschen"
 
-#, fuzzy
 msgid "Delete or deactivate"
-msgstr "Deaktivieren"
+msgstr "Löschen oder deaktivieren"
 
-#, fuzzy
 msgid "Delete permission %s"
-msgstr "Erledigt! Das Zugriffsrecht wurde angelegt."
+msgstr "Berechtigung %s löschen"
 
-#, fuzzy
 msgid "Delete registry entry"
 msgstr "Registry-Eintrag löschen"
 
-#, fuzzy
 msgid "Delete route"
-msgstr "Lösche %sub%"
+msgstr "Route löschen"
 
 msgid "Delete selected users"
 msgstr "Ausgewählte Benutzer löschen"
 
-#, fuzzy
 msgid "Delete the entire log"
 msgstr "Alle Protokolle löschen"
 
-#, fuzzy
 msgid "Delete the entire log."
 msgstr "Alle Protokolle löschen"
 
-#, fuzzy
-msgid "Delete user account"
-msgstr "Erledigt! Das neue Benutzerkonto wurde erfolgreich angelegt."
+msgid "Delete this route"
+msgstr "Diese Route löschen"
 
-#, fuzzy
-msgid "Delete: %s"
-msgstr "Löschen: %s"
+msgid "Delete user account"
+msgstr "Benutzerkonto löschen"
 
 msgid "Deleted"
 msgstr "Gelöscht"
@@ -1505,9 +1575,8 @@ msgstr "Gelöscht"
 msgid "Deny"
 msgstr "Ablehnen"
 
-#, fuzzy
 msgid "Deny %username"
-msgstr "Benutzername"
+msgstr "%username ablehnen"
 
 msgid "Descending"
 msgstr "Aufwärts"
@@ -1518,29 +1587,24 @@ msgstr "Beschreibung"
 msgid "Description line"
 msgstr "Beschreibung"
 
-#, fuzzy
 msgid "Detach"
 msgstr "Trennen"
 
 msgid "Details"
 msgstr "Details"
 
-#, fuzzy
 msgid "Dev mode status"
-msgstr "Benutzerstatus"
+msgstr "Dev Modus Status"
 
-#, fuzzy
 msgid "Developer notices (development mode on)"
 msgstr "Entwicklerinformationen (Entwicklungsmodus ist aktiviert)"
 
 msgid "Development/debug mode (Do not send any email)"
 msgstr "Entwicklungs- bzw. Debug-Modus (Keine Emails versenden)"
 
-#, fuzzy
 msgid "Directory"
 msgstr "Verzeichnis"
 
-#, fuzzy
 msgid "Disable search plug-ins"
 msgstr "Such-Plugins deaktivieren"
 
@@ -1559,11 +1623,9 @@ msgstr "Symbole anzeigen"
 msgid "Display name"
 msgstr "Anzeigename"
 
-#, fuzzy
 msgid "Display settings"
 msgstr "Anzeigeeinstellungen"
 
-#, fuzzy
 msgid ""
 "Displays the list view of module categories included within the category tab "
 "menu. In the 'Actions' column on the right, you can choose to edit or delete "
@@ -1573,82 +1635,67 @@ msgstr "Zeigt eine Liste aller Kategorien an, die das Tab-Menü enthält."
 msgid "Do not display module name in short URLs for"
 msgstr "Modulname in Short-URLs nicht anzeigen für"
 
-#, fuzzy
 msgid "Do you really want to delete block '%title%'?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Wollen Sie wirklich den Block '%title%' löschen?"
 
-#, fuzzy
 msgid "Do you really want to delete group '%s'?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Wollen Sie wirklich die Gruppe '%s' löschen?"
 
-#, fuzzy
 msgid "Do you really want to delete module category '%s'?"
 msgstr "Soll die Modulkategorie '%s' wirklich gelöscht werden?"
 
-#, fuzzy
 msgid "Do you really want to delete position '%name%'?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Wollen Sie wirklich die Position \"%name%\" löschen?"
 
-#, fuzzy
 msgid "Do you really want to delete the category '%catName'?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Wollen Sie wirklich die Kategorie '%catName' löschen?"
 
-#, fuzzy
 msgid "Do you really want to delete the entire IDS log?"
 msgstr "Sollen wirklich alle IDS-Protokolle gelöscht werden?"
 
-#, fuzzy
 msgid "Do you really want to delete this category?"
 msgstr "Soll die Kategorie wirklich gelöscht werden?"
 
-#, fuzzy
-msgid "Do you really want to delete this group?"
-msgstr "Soll die Gruppe wirklich gelöscht werden?"
-
-#, fuzzy
 msgid "Do you really want to delete this item?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Wollen Sie wirklich dieses Objekt löschen?"
 
-#, fuzzy
 msgid "Do you really want to delete this permission rule?"
 msgstr "Soll dieses Zugriffsrecht wirklich gelöscht werden?"
 
-#, fuzzy
 msgid "Do you really want to delete this registry entry?"
 msgstr "Soll diese Registrierung wirklich gelöscht werden?"
 
-#, fuzzy
 msgid "Do you really want to delete this route: \"%name%\" ?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Soll diese Route wirklich gelöscht werden: \"%name%\" ?"
 
-#, fuzzy
 msgid "Do you really want to remove the %name% theme?"
-msgstr "Soll die Zuordnung der Seitenkonfiguration wirklich gelöscht werden?"
+msgstr "Möchten Sie das Theme %name% wirklich entfernen?"
 
 msgid ""
 "Do you really want to remove user \"%username\" from group \"%groupname\"?"
 msgstr ""
+"Wollen Sie wirklich den Benutzer \"%username\" aus der Gruppe \"%groupname\" "
+"entfernen?"
 
 msgid "Do you really want to set %sub% as the active theme for all site users?"
 msgstr ""
+"Wollen Sie wirklich %sub% als aktives Theme für alle Besucher der Website "
+"festlegen?"
 
 msgid "Do you really want to uninstall '%title%'?"
-msgstr ""
+msgstr "Wollen Sie wirklich '%title%' deinstallieren?"
 
 msgid "Do you want to cancel the forced password change for %1s?"
-msgstr ""
+msgstr "Möchten Sie die erzwungene Passwortänderung für %1s abbrechen?"
 
 msgid ""
 "Do you want to force a password change during the next login attempt for %1s?"
 msgstr ""
+"Möchten Sie eine Passwortänderung bei dem nächsten Login-Versuch für %1s "
+"erzwingen?"
 
 msgid "Doctrine Exception"
 msgstr "Doctrine Fehler"
-
-#, fuzzy
-msgid ""
-"Done! %s user was added to the group.|Done! %s users were added to the group."
-msgstr "Erledigt! Benutzer %s wurde der Gruppe hinzugefügt."
 
 msgid "Done! %sub% has been approved."
 msgstr "Erledigt! %sub% wurde genehmigt."
@@ -1730,9 +1777,6 @@ msgstr ""
 msgid "Done! Deleted the %s category."
 msgstr "Erledigt! Die Kategorie %s wurde gelöscht."
 
-msgid "Done! Deleted the category registry entry."
-msgstr "Erledigt! Die Kategoriezuweisung wurde gelöscht."
-
 msgid "Done! Deleted the theme."
 msgstr "Erledigt! Theme gelöscht."
 
@@ -1799,6 +1843,9 @@ msgstr "Erledigt! IDS-Protokoll geleert."
 msgid "Done! Rebuilt the category paths."
 msgstr "Erledigt! Der Kategoriepfad wurde erfolgreich neu erstellt."
 
+msgid "Done! Registry entry deleted."
+msgstr "Fertig! Registry-Eintrag gelöscht."
+
 msgid "Done! Route created."
 msgstr "Erledigt! Route erstellt."
 
@@ -1826,9 +1873,6 @@ msgstr "Erledigt! Die Modulkonfiguration wurde aktualisiert."
 msgid "Done! Saved the %s category."
 msgstr "Erledigt! Die Kategorie %s wurde gespeichert."
 
-msgid "Done! Saved the action."
-msgstr "Erledigt! Aktion gespeichert."
-
 msgid "Done! Saved the category registry entry."
 msgstr "Erledigt! Die Kategoriezuweisung wurde gespeichert."
 
@@ -1842,20 +1886,22 @@ msgstr "Erledigt! Die Änderungen wurden erfolgreich gespeichert."
 msgid "Done! The account information for %s has been sent via e-mail."
 msgstr "Erledigt! Die Konto-Informationen für %s wurden per E-Mail verschickt."
 
-#, fuzzy
-msgid "Done! The confirmation link for %s has been sent via e-mail."
-msgstr "Erledigt! Der Bestätigungscode für %s wurde per Mail verschickt."
+msgid ""
+"Done! The application has been sent. You will be notified by email when the "
+"application is processed."
+msgstr ""
+"Erledigt! Der Antrag wurde gesendet. Sie werden per E-Mail benachrichtigt "
+"werden, wenn der Antrag bearbeitet wurde."
 
-#, fuzzy
+msgid "Done! The confirmation link for %s has been sent via e-mail."
+msgstr "Fertig! Der Bestätigungs Link für %s wurde per E-mail versandt."
+
 msgid ""
 "Done! The password recovery verification link for %s has been sent via e-"
 "mail."
 msgstr ""
-"Erledigt! Der Bestätigungscode für die Kennwortwiederherstellung für %s "
+"Erledigt! Der Bestätigungscode für die Passwortwiederherstellung für %s "
 "wurde per E-Mail verschickt."
-
-msgid "Done! The user has been added to the %s group."
-msgstr "Erledigt! Der Benutzer wurde zur Gruppe %s hinzugefügt."
 
 msgid "Done! The user name for %s has been sent via e-mail."
 msgstr "Erledigt! Der Nutzer Name für %s wurde per Email gesendet."
@@ -1865,10 +1911,6 @@ msgstr "Erledigt! Der Benutzer wurde zur Gruppe hinzugefügt."
 
 msgid "Done! The user was removed from the group."
 msgstr "Erledigt! Der Benutzer wurde aus der Gruppe gelöscht."
-
-msgid "Done! The user's application for group membership has been rejected."
-msgstr ""
-"Erledigt! Die Anfrage auf Mitgliedschaft in die Gruppe %s wurde abgelehnt."
 
 msgid "Done! Theme configuration updated to default values."
 msgstr "Erledigt! Theme Konfiguration auf Standard gesetzt"
@@ -1927,7 +1969,7 @@ msgstr "Erledigt! Dein Konto wurde geprüft."
 msgid "Done! Your account has been verified. You may now log in."
 msgstr ""
 "Erledigt! Das Konto wurde bestätigt. Eine Anmeldung mit Benutzername und "
-"Kennwort ist nun möglich."
+"Passwort ist nun möglich."
 
 msgid ""
 "Done! Your account has been verified. Your registration request is still "
@@ -1937,13 +1979,6 @@ msgstr ""
 "Erledigt! Das Konto wurde bestätigt. Die Registrierungsanfrage ist noch "
 "nicht komplett. Bitte den Administrator für weitere Informationen "
 "kontaktieren."
-
-msgid ""
-"Done! Your application has been accepted. You have been granted all the "
-"privileges assigned to the group of which you are now member."
-msgstr ""
-"Erledigt! Die Anfrage für die Gruppe wurde akzeptiert und die entsprechenden "
-"Rechte sind zugewiesen."
 
 msgid ""
 "Done! Your registration request has been saved and is pending. Please check "
@@ -1958,25 +1993,21 @@ msgstr "Runter"
 msgid "Download"
 msgstr "Download"
 
-#, fuzzy
 msgid "Download the entire log to a CSV file."
-msgstr "Das komplette Protokoll als CSV-Datei herunterladen"
+msgstr "Speichern Sie das Protokoll in einer CSV-Datei."
 
-#, fuzzy
 msgid "Download the entire log to a csv file"
 msgstr "Das komplette Protokoll als CSV-Datei herunterladen"
 
 msgid "Dr."
 msgstr "Dr."
 
-#, fuzzy
 msgid "Drag and drop into a new module category"
 msgstr "Drag und Drop auf neue Modulkategorie"
 
 msgid "Dump exposed js routes to file"
 msgstr "offene JS Routen in eine Datei exportieren"
 
-#, fuzzy
 msgid ""
 "During your visits, we recommended that you set your browser to accept "
 "cookies from this site. Various features of the site use cookies, and may "
@@ -1995,7 +2026,6 @@ msgstr "E-Mail Adresse für Benachrichtigungen bei neuen Registrierungen"
 msgid "E-mail address verifications expire in"
 msgstr "Bestätigungen von E-Mail Adressen verfallen in"
 
-#, fuzzy
 msgid "E-mail address:"
 msgstr "E-Mail-Adresse:"
 
@@ -2013,6 +2043,8 @@ msgid ""
 "Each statement is a set of field name, operator and value connected by a "
 "colon."
 msgstr ""
+"Jede Aussage ist ein Satz von Feldnamen, Operator und Wert durch einen "
+"Doppelpunkt verbunden."
 
 msgid ""
 "Each user name on this list is not allowed to be chosen by someone "
@@ -2024,70 +2056,72 @@ msgstr ""
 msgid "Edit"
 msgstr "Bearbeiten"
 
+msgid "Edit \":name\" group"
+msgstr "Gruppe \":name\" bearbeiten"
+
 msgid "Edit %s"
 msgstr "'%s' bearbeiten"
 
 msgid "Edit %sub%"
 msgstr "Ändere %sub%"
 
+msgid "Edit Children"
+msgstr "Kinder bearbeiten"
+
+msgid "Edit Menu Root"
+msgstr "Menü Root bearbeiten"
+
 msgid "Edit access"
 msgstr "Bearbeiten"
 
-#, fuzzy
 msgid "Edit block placements"
-msgstr "Bestehende Blockinstanzen"
+msgstr "Block-Platzierungen bearbeiten"
 
-#, fuzzy
 msgid "Edit block position"
 msgstr "Blockpositionen bearbeiten"
 
-#, fuzzy
 msgid "Edit category"
 msgstr "Kategorie bearbeiten"
 
-#, fuzzy
 msgid "Edit category registry"
-msgstr "Kategoriezuweisung"
+msgstr "Kategorie-Registy bearbeiten"
 
-#, fuzzy
 msgid "Edit group"
 msgstr "Gruppe bearbeiten"
 
-#, fuzzy
 msgid "Edit item"
-msgstr "Theme bearbeiten"
+msgstr "Element bearbeiten"
 
-#, fuzzy
 msgid "Edit module category"
 msgstr "Modulkategorie bearbeiten"
 
-#, fuzzy
 msgid "Edit permission %s"
-msgstr "Zugriffsrecht bearbeiten"
+msgstr "Berechtigung %s Bearbeiten"
 
-#, fuzzy
 msgid "Edit route"
 msgstr "Route bearbeiten"
 
-#, fuzzy
+msgid "Edit this route"
+msgstr "Diese Route bearbeiten"
+
 msgid "Edit user account"
-msgstr "Benutzerkonto von %s bearbeiten"
+msgstr "Benutzerkonto bearbeiten"
 
 msgid "Edit user account of %uname"
-msgstr ""
-
-#, fuzzy
-msgid "Edit: %s"
-msgstr "Bearbeiten: %s"
+msgstr "Benutzerkonto von %uname bearbeiten"
 
 msgid "Editor panel pages"
 msgstr "Editor-Panel Seiten"
 
+#, fuzzy
 msgid ""
 "Either the first name is Peter and the house number of any address is below "
 "100 or the first name is Chris and the house number of any address is below "
 "150."
 msgstr ""
+"Entweder der erste Name ist Peter und die Hausnummer an jede beliebige "
+"Adresse ist unter 100 oder der erste Name ist Chris und die Hausnummer an "
+"jede beliebige Adresse ist unter 150."
 
 msgid "Email"
 msgstr "Email"
@@ -2098,9 +2132,11 @@ msgstr "Email Adresse"
 msgid "Email address"
 msgstr "E-Mail-Adresse"
 
-#, fuzzy
 msgid "Email address manager"
-msgstr "E-Mail-Adresse"
+msgstr "E-Mail-Adress-Manager"
+
+msgid "Email content"
+msgstr "E-Mail Inhalt"
 
 msgid "Email settings are not yet configured. Please configure them below."
 msgstr ""
@@ -2108,7 +2144,7 @@ msgstr ""
 "konfigurieren."
 
 msgid "Email verified"
-msgstr ""
+msgstr "E-Mail verifiziert"
 
 msgid "Empty argument at"
 msgstr "Leeres Argument bei"
@@ -2128,11 +2164,9 @@ msgstr "Filterung der Rechte ermöglichen"
 msgid "Enable logging of sent mail"
 msgstr "Logging für Emails anschalten."
 
-#, fuzzy
 msgid "Enabled Template settings"
 msgstr "Aktivierte Template-Einstellungen"
 
-#, fuzzy
 msgid "Enabled Theme settings"
 msgstr "Aktivierte Theme-Einstellungen"
 
@@ -2140,9 +2174,11 @@ msgid "Encoding"
 msgstr "Verschlüsselung"
 
 msgid "Ensure the database is in UTF-8 format."
-msgstr ""
+msgstr "Stellen Sie sicher, dass die Datenbank im UTF-8-Format ist."
 
-#, fuzzy
+msgid "Enter a part of the user name to search"
+msgstr "Zum Suchen geben Sie einen Teil des Benutzernamens ein"
+
 msgid ""
 "Enter a whole number for the number of modules to be displayed on each line "
 "of the Administration panel."
@@ -2150,7 +2186,6 @@ msgstr ""
 "Die Anzahl der Module eingeben, die pro Reihe im Admin-Panel angezeigt "
 "werden sollen."
 
-#, fuzzy
 msgid ""
 "Enter a whole number for the number of modules to be displayed on each page "
 "of the Administration panel."
@@ -2158,7 +2193,6 @@ msgstr ""
 "Die Anzahl der Module eingeben, die auf einer Seite im Admin-Panel angezeigt "
 "werden sollen."
 
-#, fuzzy
 msgid ""
 "Enter an informative description to be displayed after the category name, "
 "when this category is displayed in the Administration panel."
@@ -2187,7 +2221,6 @@ msgstr "Gib die Gruppe der Route ein"
 msgid "Enter the host of the route"
 msgstr "Gib den Host eine Route ein"
 
-#, fuzzy
 msgid "Enter the name to be displayed within the categories tab menu."
 msgstr ""
 "Bitte den Namen eingeben, der in den Kategorien-Tabs angezeigt werden soll."
@@ -2218,27 +2251,30 @@ msgstr "Gib den Pfad der Route ein"
 msgid "Enter the replaced route name of the route"
 msgstr "Gib den ersetzenden Namen der Route ein"
 
-msgid "Enter the sort of the route. Only digits are allowed."
-msgstr "Gib den Wert der Route ein. Nur Zahlen sind erlaubt."
+msgid "Enter the route entries per page."
+msgstr "Geben Sie die Routen Einträge pro Seite an."
+
+msgid "Enter the sort of the route."
+msgstr "Geben Sie die Sortierung der Routen."
 
 msgid "Enter the translation prefix of the route"
 msgstr "Gib den Übersetzungs-Präfix der Route ein"
 
-#, fuzzy
 msgid "Enter your e-mail address"
 msgstr "E-Mail-Adresse eingeben"
 
-#, fuzzy
 msgid "Entity"
-msgstr "Fehler! Es muss ein Objekt ausgewählt werden."
+msgstr "Einheit"
 
 msgid "Entity/Table"
-msgstr ""
+msgstr "Einheit/Tabelle"
 
 msgid ""
 "Error found in composer file of %component% (%filePath%) in property "
 "\"%property%\": %error%."
 msgstr ""
+"Fehler in Composer Datei der Komponente %component% (%filePath%)  in der "
+"Eigenschaft \"%property%\": %error%."
 
 msgid "Error! %s is not compatible with this version of Zikula."
 msgstr "Fehler! %s ist nicht kompatibel mit dieser Zikula-Version."
@@ -2248,12 +2284,6 @@ msgstr ""
 "Fehler! %s ist noch nicht installiert. Deshalb kann es auch nicht "
 "deinstalliert werden."
 
-#, fuzzy
-msgid ""
-"Error! %s user was not added to the group.|Error! %s users were not added to "
-"the group."
-msgstr "Erledigt! Der Benutzer wurde zur Gruppe hinzugefügt."
-
 msgid "Error! %sub% cannot be approved."
 msgstr "Fehler! %sub% cann nicht genehmigt werden."
 
@@ -2262,18 +2292,6 @@ msgstr "Fehler! Modul '%1$s' lieferte einen Fehler in der Suchfunktion '%2$s'."
 
 msgid "Error! A category by this name already exists."
 msgstr "Fehler! Eine Kategorie mit diesem Namen existiert bereits."
-
-msgid "Error! A problem occurred and the user was not added to the group."
-msgstr ""
-"Fehler! Es ist ein Fehler aufgetreten. Der Benutzer wurde nicht zur Gruppe "
-"hinzugefügt."
-
-msgid ""
-"Error! A problem occurred while attempting to remove the user. The user has "
-"not been removed from the group."
-msgstr ""
-"Fehler! Beim Entfernen des Benutzers ist ein Fehler aufgetreten. Der "
-"Benutzer wurde nicht aus der Gruppe entfernt."
 
 msgid "Error! Activation of module %s not allowed."
 msgstr "Fehler! Aktivierung des Moduls %s nicht zulässig."
@@ -2327,9 +2345,6 @@ msgstr ""
 msgid "Error! Could not activate the block."
 msgstr "Fehler! Der Block konnte nicht aktiviert werden."
 
-msgid "Error! Could not add module to module category."
-msgstr "Fehler! Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
-
 msgid "Error! Could not add the user to the group."
 msgstr "Fehler! Der Benutzer konnte nicht zur Gruppe hinzugefügt werden."
 
@@ -2343,14 +2358,8 @@ msgstr ""
 "Fehler! Es konnte keine Verbindung zur Datenbank aufgebaut werden. Bitte die "
 "Angaben zur Datenbank kontrollieren und erneut versuchen."
 
-msgid "Error! Could not create the new group."
-msgstr "Fehler! Die neue Gruppe konnte nicht angelegt werden."
-
 msgid "Error! Could not deactivate the block."
 msgstr "Fehler! Der Block konnte nicht deaktiviert werden."
-
-msgid "Error! Could not delete the '%s' group."
-msgstr "Fehler! Die Gruppe '%s' konnte nicht gelöscht werden."
 
 msgid "Error! Could not determine the user root node."
 msgstr ""
@@ -2360,13 +2369,6 @@ msgstr ""
 msgid "Error! Could not determine workflow actions."
 msgstr "Fehler! Kann den zugeordneten Workflow nicht erkennen."
 
-msgid "Error! Could not execute 'Accept' action."
-msgstr "Fehler! Die Aktion 'Akzeptieren' konnte nicht ausgeführt werden."
-
-msgid "Error! Could not execute 'Reject' action."
-msgstr "Fehler! Die Aktion 'Ablehnen' konnte nicht ausgeführt werden."
-
-#, fuzzy
 msgid "Error! Could not find any search plug-ins to use."
 msgstr ""
 "Fehler! Es konnten keine nutzbaren Plugins für das Suchmodul gefunden werden."
@@ -2393,9 +2395,6 @@ msgstr "Fehler! Konnte diese Kategorie nicht als Standard setzen."
 
 msgid "Error! Could not open file so that it could be written to: %s"
 msgstr "Fehler! Die Datei konnte nicht im Schreibzugriff geöffnet werden: %s"
-
-msgid "Error! Could not perform the deletion."
-msgstr "Fehler! Der Löschvorgang konnte nicht durchgeführt werden."
 
 msgid "Error! Could not remove stored workflow. Deletion has been aborted."
 msgstr ""
@@ -2489,6 +2488,9 @@ msgstr ""
 msgid "Error! Invalid module state transition."
 msgstr "Fehler! Ungültiger Statuswechsel des Moduls."
 
+msgid "Error! Invalid object type received."
+msgstr "Fehler! Ungültigen Objekttyp erhalten."
+
 msgid "Error! It has not been possible to read the import file."
 msgstr "Fehler! Es war leider nicht möglich, die Importdatei einzulesen."
 
@@ -2516,9 +2518,8 @@ msgstr "Fehler! Kein Kategoriename vergeben."
 msgid "Error! No permission to install %s."
 msgstr "Fehler! Keine Berechtigung zum Installieren von %s."
 
-#, fuzzy
 msgid "Error! No permission to uninstall %s."
-msgstr "Fehler! Keine Berechtigung zum Installieren von %s."
+msgstr "Fehler! Keine Berechtigung %s deinstallieren."
 
 msgid "Error! No permission to upgrade %s."
 msgstr "Fehler! Keine Berechtigung zum Aktualisieren von %s."
@@ -2528,6 +2529,9 @@ msgstr "Fehler! Keine entsprechende Kategorie gefunden."
 
 msgid "Error! No such module ID exists."
 msgstr "Fehler! Es konnte keine entsprechende Modul-ID gefunden werden."
+
+msgid "Error! Non-existing root category '%s' received"
+msgstr "Error! Non-existing root category '%s' received"
 
 msgid "Error! Not allowed to upgrade %s."
 msgstr "Fehler: Nicht erlaubtes Upgrade von %s."
@@ -2543,14 +2547,17 @@ msgstr "Fehler! Bitte die Datenbank Zugangsdaten eingeben."
 msgid "Error! Received a non-numeric object ID '%s'."
 msgstr "Error! Received a non-numeric object ID '%s'."
 
+msgid "Error! Received invalid parameter '%s'"
+msgstr "Error! Received invalid parameter '%s'"
+
+msgid "Error! Received invalid specifications %1$s, %2$s."
+msgstr "Fehler! Ungültige Spezifikation erhalten %1$s, %2$s."
+
 msgid "Error! Removed unknown '%type%': '%leftovers%'."
 msgstr "Fehler! Unbekannte '%type%': '%leftovers%' gelöscht."
 
 msgid "Error! Session path not writeable!"
 msgstr "Fehler! Der Session Pfad ist nicht beschreibbar!"
-
-msgid "Error! That group does not exist."
-msgstr "Fehler! Diese Gruppe existiert nicht."
 
 msgid ""
 "Error! The CSV is not valid: the \"activated\" column must contain 0 or 1 "
@@ -2587,9 +2594,6 @@ msgstr "Fehler! Der 'Document Root' ist ungültig."
 
 msgid "Error! The file was not found in the Zikula root directory."
 msgstr "Fehler! Die Datei wurde nicht im Zikula Root Verzeichnis gefunden."
-
-msgid "Error! The group name is missing."
-msgstr "Fehler! Der Name der Gruppe fehlt."
 
 msgid ""
 "Error! The import file does not have the expected field %s in the first row. "
@@ -2660,9 +2664,8 @@ msgstr ""
 "Fehler! Es gab ein Problem beim Speichern der neuen E-Mail-Adresse oder beim "
 "Versenden einer Bestätigungsnachricht."
 
-#, fuzzy
 msgid "Error! There was a problem with the database connection."
-msgstr "Fehler! Es gab ein Problem beim einloggen."
+msgstr "Fehler! Es gab ein Problem mit der Datenbank-Verbindung."
 
 msgid "Error! There was an error dumping exposed JS Routes: %s"
 msgstr "Fehler! Es gab einen Fehler beim exportieren der offenen JS Routen: %s"
@@ -2721,11 +2724,17 @@ msgstr "Fehler! Die Standardgruppe für Benutzer kann nicht gelöscht werden."
 msgid "Error! You cannot delete the primary administration group."
 msgstr "Fehler! Man kann die primäre Administrator Gruppe nicht löschen."
 
+msgid "Error! You did not enter a name for the category."
+msgstr "Fehler! Es wurde kein Name für die Kategorie eingeben."
+
 msgid "Error! You did not enter a property name."
 msgstr "Fehler! Es muss ein Name der Eigenschaft angegeben werden."
 
 msgid "Error! You did not enter any keywords to search for."
 msgstr "Fehler! Es wurden keine Suchbegriffe eingegeben."
+
+msgid "Error! You did not provide a parent for the category."
+msgstr "Fehler! Es wurde keine übergeordnete Kategorie ausgewählt."
 
 msgid "Error! You did not select a category."
 msgstr "Fehler! Es muss eine Kategorie ausgewählt werden."
@@ -2763,6 +2772,9 @@ msgstr ""
 "Fehler! Deine Email Adresse wurde nicht gefunden. Nach deiner Anfrage hast "
 "du %s Tage um deine Email Adresse zu bestätigen."
 
+msgid "Error: Could not delete '%path' because %msg"
+msgstr "Fehler! Kann '%path' wegen %msg nicht löschen"
+
 msgid "Error: Could not uninstall dependent extensions."
 msgstr "Fehler: Konnte abhängige Erweiterung nicht deinstallieren."
 
@@ -2773,15 +2785,13 @@ msgid ""
 "Even if you choose to not send the user's password via e-mail, other e-mail "
 "messages may be sent to the user as part of the registration process."
 msgstr ""
-"Auch wenn man das Kennwort dem Benutzer nicht via E-Mail sendet, können "
+"Auch wenn man das Passwort dem Benutzer nicht via E-Mail sendet, können "
 "andere E-Mail-Nachrichten an den Benutzer geschickt werden als Teil des "
 "Registrierungsvorgangs."
 
-#, fuzzy
 msgid "Exact phrase"
 msgstr "Exakte Phrase"
 
-#, fuzzy
 msgid "Example"
 msgstr "Beispiel"
 
@@ -2794,14 +2804,12 @@ msgstr "Session läuft ab nach"
 msgid "Export"
 msgstr "Export"
 
-#, fuzzy
 msgid "Export IDS Log"
 msgstr "IDS-Protokolle exportieren"
 
 msgid "Export IDS log"
 msgstr "IDS Logfile exportieren"
 
-#, fuzzy
 msgid "Export Options"
 msgstr "Export-Optionen"
 
@@ -2817,7 +2825,6 @@ msgstr "Exportiere Gruppen Mitgliedschaften"
 msgid "Export last login date"
 msgstr "Letztes Login Datum exportieren"
 
-#, fuzzy
 msgid "Export options"
 msgstr "Export-Optionen"
 
@@ -2845,9 +2852,8 @@ msgstr ""
 "Löschen der Erweiterung fehlgeschlagen! (Notiz: Blöcke und Abhängigkeiten "
 "könnten gelöscht worden sein)"
 
-#, fuzzy
 msgid "Extension settings"
-msgstr "Erweiterungen Liste"
+msgstr "Erweiterungseinstellungen"
 
 msgid "Extension upgrade failed!"
 msgstr "Extension Upgrade fehlgeschlagen!"
@@ -2868,17 +2874,7 @@ msgid "Failed to install dependency %s!"
 msgstr "Fehler! Abhängigkeit %s konnte nicht installiert werden!"
 
 msgid ""
-"Fatal Error: Two extensions share the same displayname. [%ext1%] and [%ext2%]"
-msgstr ""
-"Fataler Fehler: Zwei Erweiterungen haben den gleichen Display-Namen: "
-"[%ext1%] und [%ext2%]"
-
-msgid "Fatal Error: Two extensions share the same name. [%ext1%] and [%ext2%]"
-msgstr ""
-"Fataler Fehler: Zwei Erweiterungen haben den gleichen Namen: [%ext1%] und "
-"[%ext2%]"
-
-msgid "Fatal Error: Two extensions share the same url. [%ext1%] and [%ext2%]"
+"Fatal Error: Two extensions share the same %field. [%ext1%] and [%ext2%]"
 msgstr ""
 "Fataler Fehler: Zwei Erweiterungen haben die gleiche URL: [%ext1%] und "
 "[%ext2%]"
@@ -2892,13 +2888,17 @@ msgstr "Datei"
 msgid "File Include"
 msgstr "Datei mit einbeziehen"
 
-#, fuzzy
-msgid "File options"
-msgstr "Übersetzungsoptionen"
+msgid "File Path"
+msgstr "Datei Pfad"
 
-#, fuzzy
+msgid "File options"
+msgstr "Datei-Optionen"
+
 msgid "File system permissions"
 msgstr "Rechte im Dateisystem"
+
+msgid "File type"
+msgstr "Dateityp"
 
 msgid "Files missing"
 msgstr "Dateien fehlen"
@@ -2909,26 +2909,27 @@ msgstr "Dateien wie gewünscht gelöscht"
 msgid "Filter"
 msgstr "Filter"
 
-#, fuzzy
 msgid "Filter %active%"
-msgstr "Filtereinstellungen"
+msgstr "Filter %active%"
 
-#, fuzzy
 msgid "Filter search by type"
 msgstr "Suche nach Typen gruppieren"
 
-#, fuzzy
 msgid "Filter statements"
-msgstr "Filtereinstellungen"
+msgstr "Filter Statements"
 
 msgid "Filter syntax explained"
-msgstr ""
+msgstr "Filtersyntax erklärt"
 
 msgid ""
 "Filtering of allowed HTML occurs when a template string or variable is "
 "modified with the 'safeHtml' filter, or when a module asks for similar "
 "processing from within its functions."
 msgstr ""
+"Filterung der erlaubten HTML findet Anwendung, wenn eine "
+"Templatezeichenfolge oder eine Variable mit dem Filter \"SafeHtml\" geändert "
+"wird, oder wenn ein Modul für ähnliche Anwendung innerhalb seiner Funktionen "
+"nutzt."
 
 msgid "Filters"
 msgstr "Filter"
@@ -2937,9 +2938,8 @@ msgid "Finalize parameters"
 msgstr "Fertigstellen der Parameter"
 
 msgid "Finalizing parameters"
-msgstr "Dabei die Parameter fertig zu stellen"
+msgstr "Parameter fertig stellen"
 
-#, fuzzy
 msgid "Find users"
 msgstr "Benutzer suchen"
 
@@ -2972,38 +2972,44 @@ msgid "Footer block"
 msgstr "Footer Block"
 
 msgid "For more information, please visit %link%."
-msgstr ""
+msgstr "Weitere Informationen finden Sie unter %link%."
 
 msgid ""
 "For time periods: Begin of the given period. \"Date:ge:today\" matches all "
 "items with date of today or later."
 msgstr ""
+"Für Zeiträume: Anfang der gegeben Periode. \"Date:ge:today\" betrift alle "
+"Items mit dem Datum von heute oder später."
 
 msgid ""
 "For time periods: Begin of the given period. \"Date:lt:today\" matches all "
 "items with date of yesterday or before."
 msgstr ""
+"Für Zeiträume: Anfang der gegeben Periode. \"Date:lt:today\" betrift alle "
+"Items mit dem Datum von gestern oder früher."
 
 msgid ""
 "For time periods: End of the given period. \"Date:gt:today\" matches all "
 "items with date of tomorrow or later."
 msgstr ""
+"Für Zeiträume: Ende der gegeben Periode. \"Date:gt:today\" betrift alle "
+"Items mit dem Datum von morgen oder später."
 
 msgid ""
 "For time periods: End of the given period. \"Date:le:today\" matches all "
 "items with date of today or before."
 msgstr ""
+"Für Zeiträume: Ende der gegeben Periode. \"Date:le:today\" betrift alle "
+"Items mit dem Datum von heute oder früher."
 
-#, fuzzy
 msgid "Force a change of password for %1s"
-msgstr "Benötigte Passwortänderung für %sub% abbrechen"
+msgstr "Erzwingen Sie eine Änderung des Passworts für %1s"
 
 msgid "Force compile"
 msgstr "Kompilierung erzwingen"
 
-#, fuzzy
 msgid "Force password change"
-msgstr "Passwort jetzt setzen"
+msgstr "Passwortänderung erzwingen"
 
 msgid "Form of display for module names"
 msgstr "Art der Modulanzeige"
@@ -3011,9 +3017,8 @@ msgstr "Art der Modulanzeige"
 msgid "Format"
 msgstr "Format"
 
-#, fuzzy
 msgid "Front Controller settings"
-msgstr "Filtereinstellungen"
+msgstr "Front-Controller-Einstellungen"
 
 msgid "Frontend"
 msgstr "Frontend"
@@ -3021,19 +3026,17 @@ msgstr "Frontend"
 msgid "Function does not exist or is not callable."
 msgstr "Funktion existiert nicht oder kann nicht aufgerufen werden."
 
-#, fuzzy
 msgid "Functions"
 msgstr "Funktionen"
 
-#, fuzzy
 msgid "Further information"
-msgstr "'%s' Account Informationen"
+msgstr "Weitere Informationen"
 
 msgid "Further information can be found in the %s."
-msgstr ""
+msgstr "Mehr Informationen finden Sie in %s"
 
 msgid "Furthermore you can use brackets to group statements."
-msgstr ""
+msgstr "Desweiteren können Klammern genutzt werden um Aussagen zu gruppieren."
 
 msgid "G e t"
 msgstr "GET"
@@ -3047,16 +3050,14 @@ msgstr "Geschlecht"
 msgid "General"
 msgstr "Allgemein"
 
-#, fuzzy
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
 msgid "General settings"
 msgstr "Allgemeine Einstellungen"
 
-#, fuzzy
 msgid "General syntax"
-msgstr "Allgemeine Einstellungen"
+msgstr "Allgemeine Syntax"
 
 msgid "Global"
 msgstr "Global"
@@ -3064,18 +3065,12 @@ msgstr "Global"
 msgid "Gmail password"
 msgstr "Gmail Passwort"
 
-#, fuzzy
 msgid "Gmail settings"
-msgstr "Hauptkonfiguration"
+msgstr "Google Mail-Einstellungen"
 
 msgid "Gmail user name"
 msgstr "Gmail Benutzername"
 
-#, fuzzy
-msgid "Go to groups index page"
-msgstr "Zur Gruppenübersicht"
-
-#, fuzzy
 msgid "Go to the module's administration panel"
 msgstr "Gehe zur Moduladministration"
 
@@ -3085,16 +3080,11 @@ msgstr "Google Mail"
 msgid "Group"
 msgstr "Gruppe"
 
-msgid "Group %s"
-msgstr "Gruppe %s"
-
-#, fuzzy
 msgid "Group data"
-msgstr "Gruppenname"
+msgstr "Gruppieren von Daten"
 
-#, fuzzy
-msgid "Group has reached its maximum capacity"
-msgstr "Gruppe hat ihre maximale Kapazität erreicht"
+msgid "Group list"
+msgstr "Gruppenliste"
 
 msgid "Group membership"
 msgstr "Gruppenmitgliedschaft"
@@ -3102,23 +3092,17 @@ msgstr "Gruppenmitgliedschaft"
 msgid "Group membership application registered"
 msgstr "Neue Anfrage auf Mitgliedschaft in einer Gruppe"
 
-msgid "Group name"
-msgstr "Gruppenname"
-
-#, fuzzy
-msgid "Group name to join"
-msgstr "Gruppenname"
-
 msgid "Group of administrators of this site."
 msgstr "Gruppe von Administratoren dieser Seite."
 
-#, fuzzy
 msgid "Group settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "Gruppen-Einstellungen"
 
-#, fuzzy
 msgid "Groups"
 msgstr "Gruppen"
+
+msgid "Groups admin"
+msgstr "Gruppen-admin"
 
 msgid "Groups list"
 msgstr "Gruppenliste"
@@ -3138,14 +3122,12 @@ msgstr "HTML Block Inhalt Hook"
 msgid "HTML block"
 msgstr "HTML Block"
 
-#, fuzzy
 msgid "HTML entities"
 msgstr "HTML Entitäten"
 
 msgid "HTML mail hook"
 msgstr "HTML Mail Hook"
 
-#, fuzzy
 msgid "HTML tags"
 msgstr "HTML Tags"
 
@@ -3155,11 +3137,9 @@ msgstr "HTML-formatiert"
 msgid "HTML-formatted messages"
 msgstr "HTML-formatierte Nachricht"
 
-#, fuzzy
 msgid "HTMLPurifier '%s' configuration directives"
 msgstr " HTML Purifier '%s' Konfigurationsdirektiven"
 
-#, fuzzy
 msgid ""
 "HTMLPurifier filtering occurs when a template string or variable is modified "
 "with the 'safehtml' modifier, or when a module asks for similar processing "
@@ -3176,11 +3156,9 @@ msgstr "HTML Purifier Einstellungen"
 msgid "Header block"
 msgstr "Header Block"
 
-#, fuzzy
 msgid "Hello!"
 msgstr "Hallo!"
 
-#, fuzzy
 msgid ""
 "Hello! This e-mail address ('%1$s') has been used to register an account on "
 "the '%2$s' site."
@@ -3192,16 +3170,33 @@ msgid ""
 "Hello! This e-mail address ('%email') has been used to register an account "
 "on '%site' (%url)."
 msgstr ""
+"Hallo! Diese e-Mail-Adresse (\"%email\") wurde verwendet, um ein Konto auf "
+"'%site' (%url) zu registrieren."
 
 msgid ""
 "Hello! You requested to change your e-mail address for user account '%uname' "
 "at %site from %email to %newemail."
 msgstr ""
+"Hallo! Ihre e-Mail-Adresse für Benutzer-Account '%uname' wurde verwendet, um "
+"auf %site aus %email zu %newemail zu wechseln."
 
 msgid "Help"
 msgstr "Hilfe"
 
+msgid "Here you can choose a custom creation date"
+msgstr "Hier kann ein benutzerdefiniertes Erstellungsdatum gewählt werden"
+
+msgid "Here you can choose a user which will be set as creator"
+msgstr ""
+"Hier können Sie einen Benutzer wählen, die als Ersteller festgelegt wird"
+
+msgid "Here you can configure parameters for list views."
+msgstr "Hier können Sie Parameter für die Listenansichten konfigurieren."
+
 msgid "Hide closed groups"
+msgstr "Geschlossene Gruppen verstecken"
+
+msgid "Hide private groups"
 msgstr "Geschlossene Gruppen verstecken"
 
 msgid "High (user is logged-out after X minutes of inactivity)"
@@ -3219,7 +3214,6 @@ msgstr "Hooks"
 msgid "Host"
 msgstr "Host"
 
-#, fuzzy
 msgid "Host settings"
 msgstr "Host Einstellungen"
 
@@ -3240,7 +3234,7 @@ msgstr ""
 "Ich habe meine Zugangsdaten vergessen (zum Beispiel meinen Benutzernamen)."
 
 msgid "I have forgotten my password."
-msgstr "Ich habe mein Kennwort vergessen."
+msgstr "Ich habe mein Passwort vergessen."
 
 msgid "I would like to create a new account."
 msgstr "Ich möchte ein neues Konto erstellen"
@@ -3248,7 +3242,6 @@ msgstr "Ich möchte ein neues Konto erstellen"
 msgid "I would like to login."
 msgstr "Ich möchte mich einloggen."
 
-#, fuzzy
 msgid "I-path"
 msgstr "I-Pfad"
 
@@ -3274,8 +3267,8 @@ msgid "IP checks on session (may cause problems for AOL users)"
 msgstr ""
 "IP Überprüfung für Session (eventuell Probleme mit AOL und Proxy-Benutzern)"
 
-msgid "Id"
-msgstr "ID"
+msgid "IP: %s"
+msgstr "IP: %s"
 
 msgid ""
 "If checked, the log-in error message will indicate that the registration is "
@@ -3305,6 +3298,7 @@ msgstr ""
 "Falls Login Methode Email ist, dann muss dieser Wert für die Seite eindeutig "
 "sein."
 
+#, fuzzy
 msgid ""
 "If properly installed, a site will include an '.htaccess' file in the site's "
 "'app' folder. However, some methods used for transferring the package's "
@@ -3312,6 +3306,12 @@ msgid ""
 "case, you are strongly recommended to create one (and to ensure that '."
 "htaccess' files exist in certain other directories, too)."
 msgstr ""
+"Wenn ordnungsgemäß installiert, wird eine Website eine \".htaccess\" Datei "
+"in der Website \"app\" Ordner enthalten. Jedoch führen einige Methoden für "
+"das Paket Dateien auf einem Webspace übertragen zu dieser Datei nicht "
+"übertragen. In diesem Fall sind Sie dringend empfohlen, um eines zu "
+"erstellen (und um sicherzustellen, dass \".htaccess\"-Dateien auch in "
+"bestimmten anderen Verzeichnissen vorhanden sind)."
 
 msgid ""
 "If registration is moderated and applications must be approved before "
@@ -3322,7 +3322,6 @@ msgstr ""
 "freigegeben werden müssen, dann verfallen die Registrierungen nicht, bevor "
 "die angegebene Anzahl von Tagen nach der Freigabe verstrichen ist."
 
-#, fuzzy
 msgid ""
 "If the request was not made by you then you don't need to take any action."
 msgstr ""
@@ -3331,9 +3330,13 @@ msgstr ""
 
 msgid "If the request was not made by you then you don't need to worry."
 msgstr ""
+"Wenn die Anfrage nicht von Ihnen gemacht wurde, dann brauchen Sie nichts "
+"weiter zu unternehmen."
 
 msgid "If the request was not made by you you don't need to worry."
 msgstr ""
+"Wenn die Anfrage nicht von Ihnen gemacht wurde, dann brauchen Sie nichts "
+"weiter zu unternehmen."
 
 msgid ""
 "If the system cannot write on any .ini file, the changes will be saved on "
@@ -3360,7 +3363,6 @@ msgstr ""
 "Wenn nicht angehakt wird die Benutzer Email addresse bestätigt. Der Benutzer "
 "wird zu diesem Zeitpunkt ein Passwort festlegen."
 
-#, fuzzy
 msgid ""
 "If you are not able to click on the above link, you can copy it into your "
 "browser."
@@ -3368,7 +3370,6 @@ msgstr ""
 "Falls der obige Link nicht per Mausklick geöffnet werden kann, bitte die URL "
 "kopieren und in den Browser einfügen."
 
-#, fuzzy
 msgid ""
 "If you are not able to click on the above link, you can copy the following "
 "URL into your browser:"
@@ -3376,14 +3377,12 @@ msgstr ""
 "Falls der obige Link nicht per Mausklick geöffnet werden kann, bitte den "
 "folgenden URL kopieren und in den Browser einfügen:"
 
-#, fuzzy
 msgid ""
 "If you did not make this request then you do not need to take any action."
 msgstr ""
 "Falls diese Anfrage nicht aus Absicht ausgelöst worden sein, muss nichts "
 "weiter getan werden."
 
-#, fuzzy
 msgid ""
 "If you did not request a new user account at this web site, please either "
 "contact our site administrator, or simply disregard this message."
@@ -3392,7 +3391,6 @@ msgstr ""
 "unseren Administrator kontaktieren oder diese Nachricht einfach unbeachtet "
 "lassen."
 
-#, fuzzy
 msgid ""
 "If you did request a new user account, then your request is waiting for you "
 "to verify your e-mail address with us."
@@ -3404,19 +3402,19 @@ msgid ""
 "If you do not confirm this change within the %sub% day(s), the request will "
 "be deleted from our system."
 msgstr ""
+"Wenn Sie diese Veränderung in %sub% Tag(en) nicht bestätigen, wird die "
+"Anfrage aus unserem System gelöscht."
 
-#, fuzzy
 msgid ""
 "If you leave this page without successfully changing your password, then you "
 "will not be logged in."
 msgstr ""
-"Falls diese Seite ohne erfolgreiches Ändern des Kennworts verlassen wird, "
+"Falls diese Seite ohne erfolgreiches Ändern des Passworts verlassen wird, "
 "wird die Anmeldung nicht durchgeführt."
 
 msgid "Ignore check for installer"
 msgstr "Prüfung auf Installationsskript deaktivieren"
 
-#, fuzzy
 msgid "Ignore lock"
 msgstr "Sperre ignorieren"
 
@@ -3431,8 +3429,11 @@ msgid ""
 "multilingual routing settings\" in the menu above to reload installed "
 "languages."
 msgstr ""
+"Für den Fall, dass eine oder mehrere installierte Sprachen nicht unten "
+"aufgeführt sind, klicken Sie auf \"Neu laden mehrsprachige Routing-"
+"Einstellungen (Reload multilingual routing settings)\" im Menü oben, um "
+"installierte Sprachen neu zu laden."
 
-#, fuzzy
 msgid ""
 "In some hosting environments, the PHP setting 'magic_quotes_gpc' may be set "
 "to ON. However, this creates an opportunity for security breaches. If the "
@@ -3444,19 +3445,6 @@ msgstr ""
 "bedeuten. Es wird empfohlen, dass diese Einstellung für 'magic_quotes_gpc' "
 "deaktiviert ist."
 
-#, fuzzy
-msgid ""
-"In some hosting environments, the PHP setting 'register_globals' may be set "
-"to ON. However, this can create an opportunity for security breaches. If the "
-"site is accessible from the Internet, you are strongly recommended to ensure "
-"that 'register_globals' is set to OFF."
-msgstr ""
-"In einigen Hostingumgebungen ist die PHP-Einstellung 'register_globals' "
-"aktiv. Dies stellt jedoch ein erhebliches Sicherheitsrisiko dar. Falls das "
-"Web über das Internet verfügbar ist, wird dringend empfohlen, sicher zu "
-"stellen, dass die Einstellung für 'register_globals' deaktiviert ist."
-
-#, fuzzy
 msgid ""
 "In the Administration panel, you will see security warnings displayed if the "
 "Security analyser detects potential security vulnerabilities in your site's "
@@ -3468,30 +3456,29 @@ msgstr ""
 "erkennt, werden Sicherheitswarnungen angezeigt. Falls kein solcher Hinweis "
 "angezeigt wird, wurden keine Sicherheitsrisiken entdeckt."
 
-#, fuzzy
 msgid "In the Modules categorisation section, you can choose two things:"
 msgstr "Im Abschnitt Modulkategorisierung können zwei Optionen gewählt werden:"
 
 msgid "Inactive"
 msgstr "Inaktiv"
 
+msgid "Inbox"
+msgstr "Posteingang"
+
 msgid "Incompatible"
 msgstr "Inkompatibel"
 
-#, fuzzy
 msgid "Incompatible version"
-msgstr "Inkompatible Version: '%s'"
+msgstr "Inkompatible Version"
 
-#, fuzzy
 msgid "Incompatible version with the core"
 msgstr "Version nicht kompatibel it Core"
 
 msgid "Incorrect password"
 msgstr "Falsches Passwort"
 
-#, fuzzy
 msgid "Indicator"
-msgstr "India"
+msgstr "Indikator"
 
 msgid "Initial"
 msgstr "Anfang"
@@ -3518,9 +3505,8 @@ msgstr ""
 "Gib die Beschreibung ein Route ein, die erklärt warum sie erstellt wurde. "
 "Wird nur im Admin Interface angezeigt."
 
-#, fuzzy
 msgid "Insert permission rule before %s"
-msgstr "Erledigt! Das Zugriffsrecht wurde angelegt."
+msgstr "Legen Sie die Permissions-Regel vor %s"
 
 msgid ""
 "Insert the name of the action, which was called \"func\" in earlier versions "
@@ -3545,41 +3531,35 @@ msgstr "Installiere %s"
 msgid "Install Zikula Routes Module"
 msgstr "Installiere das Zikula Routes Modul"
 
-#, fuzzy
 msgid "Install Zikula!"
 msgstr "Zikula installieren!"
 
 msgid "Install assets"
 msgstr "Installiere Anlagen"
 
-#, fuzzy
 msgid "Install module"
-msgstr "Startmodul"
+msgstr "Modul installieren"
 
 msgid "Installation aborted"
 msgstr "Installation abgebrochen"
 
-#, fuzzy
 msgid "Installation guide"
-msgstr "Anleitung"
+msgstr "Installationsanleitung"
 
 msgid "Installed dependency %s."
 msgstr "Abhängigkeit %s installiert."
 
-#, fuzzy
 msgid ""
 "Installer file 'upgrade.php' is in the site root, but should be removed."
 msgstr ""
 "Die Datei 'upgrade.php' befindet sich noch im Rootverzeichnis und sollte "
 "entfernt werden."
 
-#, fuzzy
 msgid "Installer script"
 msgstr "Installations-Skript"
 
-#, fuzzy
 msgid "Installing Modules and Helpers"
-msgstr "Installiere das Zikula Benutzer Modul"
+msgstr "Installation von Modulen und Helfern"
 
 msgid "Installing System Plugins"
 msgstr "Installiere System Plugins"
@@ -3602,9 +3582,8 @@ msgstr "Installiere das Zikula Gruppen Modul"
 msgid "Installing Zikula Mailer Module"
 msgstr "Installiere das Zikula Mailer Modul"
 
-#, fuzzy
 msgid "Installing Zikula Menu Module"
-msgstr "Installiere das Zikula Mailer Modul"
+msgstr "Zikula Menü-Modul installieren"
 
 msgid "Installing Zikula Permissions Module"
 msgstr "Installiere das Zikula Berechigungs Modul"
@@ -3633,19 +3612,15 @@ msgstr "Installiere das Zikula ZAuth Modul"
 msgid "Installing assets to /web"
 msgstr "Installiere Anlagen nach /web"
 
-#, fuzzy
 msgid "Instance"
 msgstr "Instanz"
 
-#, fuzzy
 msgid "Instance template"
 msgstr "Instanz"
 
-#, fuzzy
 msgid "Instance to check"
 msgstr "Zu prüfende Instanz"
 
-#, fuzzy
 msgid "Internal ID"
 msgstr "ID"
 
@@ -3655,9 +3630,11 @@ msgstr "Interne PHP 'mail()' Funktion"
 msgid "Internal name"
 msgstr "Interner Name"
 
-#, fuzzy
 msgid "Intrusion Detection System"
 msgstr "Einbruchdetektierungssystem"
+
+msgid "Intrusion attempt detected by PHPIDS"
+msgstr "Einbruchsversuch erkannt durch PHPIDS"
 
 msgid "Invalid"
 msgstr "Ungültig"
@@ -3665,14 +3642,14 @@ msgstr "Ungültig"
 msgid "Invalid Group ID or User ID."
 msgstr "Ungültige Gruppen-ID oder Benutzer-ID."
 
-msgid "Invalid Group ID received"
-msgstr "Ungültige Gruppen ID erhalten"
-
 msgid "Invalid Group ID."
 msgstr "Ungültige Gruppen-ID"
 
-msgid "Invalid arguments received"
-msgstr "Ungültiges Argument erhalten"
+msgid "Invalid User ID."
+msgstr "Ungültige Benutzer-ID"
+
+msgid "Invalid arguments array received"
+msgstr "Fehlerhaftes Argument im Array erhalten."
 
 msgid "Invalid authentication method."
 msgstr "Ungültige Authentifizierungsmethode."
@@ -3692,7 +3669,9 @@ msgstr "Fehler! Ungültiger Benutzer Bezeichner aufgerufen."
 msgid "Invalid username."
 msgstr "Ungültiger Benutzername."
 
-#, fuzzy
+msgid "Invalid value provided"
+msgstr "Ungültigen Wert erhalten"
+
 msgid "It contains %s direct sub-categories."
 msgstr "Diese Kategorie enthält %s direkte Unterkategorien."
 
@@ -3700,11 +3679,16 @@ msgid ""
 "It is now moved here because it is also used with core-1.4.x routing. This "
 "feature is deprecated."
 msgstr ""
+"Es ist jetzt hierher verschoben, da sie auch mit Core-1.4.x Routing "
+"verwendet wird. Diese Funktion ist veraltet."
 
 msgid ""
 "It is possible to filter the list of retrieved items by specifying arbitrary "
 "filter expressions. This page shows how to create these expressions."
 msgstr ""
+"Es ist möglich, die Liste der gefundenen Elemente zu filtern durch Angabe "
+"frei wählbarer Filterausdrücke. Diese Seite zeigt, wie Sie diese Ausdrücke "
+"erstellen."
 
 msgid "It is recommended to force users to verify their email address."
 msgstr "Es wird empfohlen Benutzer Ihre Email Adresse bestätigen zu lassen."
@@ -3729,7 +3713,12 @@ msgstr "Einträge pro Seite"
 msgid "JSON"
 msgstr "JSON"
 
-#, fuzzy
+msgid "Join \":name\" group"
+msgstr "Betrete \":name\" Gruppe"
+
+msgid "Joined the \"%group\" group"
+msgstr "\"%group\" Gruppe betreten"
+
 msgid "Keyword settings"
 msgstr "Suchkriterien"
 
@@ -3739,36 +3728,26 @@ msgstr "Sprache"
 msgid "Language changed to %lang"
 msgstr "Sprache auf %lang geändert"
 
-msgid "Language selector block"
-msgstr "Sprachenauswahl"
-
-msgid "Language set to site default."
-msgstr "Sprache aus Seiten Standard gesetzt."
-
 msgid "Language switcher"
 msgstr "Sprache wechseln"
 
-#, fuzzy
 msgid "Language system"
 msgstr "Sprachsystem"
 
-#, fuzzy
 msgid "Last checked"
-msgstr "Geprüft"
+msgstr "Letztes Prüfdatum"
 
-#, fuzzy
 msgid "Last login"
 msgstr "Letzte Anmeldung"
 
 msgid "Last page"
 msgstr "Letzte Seite"
 
-#, fuzzy
 msgid "Last update"
 msgstr "Letzte Aktualisierung"
 
 msgid "Latest stable relese"
-msgstr ""
+msgstr "Neueste stabile Version"
 
 msgid "Layout"
 msgstr "Layout"
@@ -3776,16 +3755,23 @@ msgstr "Layout"
 msgid "Layout modules for controlling the site's look and feel."
 msgstr "Layout-Module bestimmen das Aussehen der Website."
 
+msgid "Leaf"
+msgstr "Endknoten"
+
+msgid "Leave \":name\" group"
+msgstr "Gruppe \":name\" verlassen"
+
 msgid "Left blocks"
 msgstr "Linke Blöcke"
 
-#, fuzzy
+msgid "Left the \"%group\" group"
+msgstr "die \"%group\" Gruppe verlassen"
+
 msgid "Legacy module support is enabled, but preferably should be disabled."
 msgstr ""
 "Die 'Legacy-Unterstützung' ist aktiv. Es wird empfohlen, diesen Modus zu "
 "deaktivieren."
 
-#, fuzzy
 msgid ""
 "Lets you add a new category to the module categories tab list. You can edit "
 "the following:"
@@ -3793,7 +3779,6 @@ msgstr ""
 "Hier können neue Kategorien zu den bestehenden Kategorien-Tabs hinzugefügt "
 "werden. Es können folgende Felder bearbeitet werden:"
 
-#, fuzzy
 msgid ""
 "Lets you delete a module category from the tab menu. You will be prompted "
 "for confirmation before the category is deleted."
@@ -3801,16 +3786,13 @@ msgstr ""
 "Hier kann eine Kategorie aus dem Tab-Menü gelöscht werden. Vor dem "
 "endgültigen Löschen muss diese Aktion bestätigt werden."
 
-#, fuzzy
 msgid "Lets you edit the name and description of an existing module category."
 msgstr ""
 "Hier können Name und Beschreibung einer Modulkategorie bearbeitet werden."
 
-#, fuzzy
 msgid "Level"
 msgstr "Level"
 
-#, fuzzy
 msgid "License"
 msgstr "Lizenz"
 
@@ -3820,39 +3802,39 @@ msgstr "Ersetzen durch"
 msgid "List to search for"
 msgstr "Suchen nach"
 
+msgid "List views"
+msgstr "Listenansichten"
+
 msgid "Localisation settings"
 msgstr "Mehrsprachigkeit"
 
-#, fuzzy
 msgid "Localised output"
 msgstr "Lokalisierte Ausgabe"
 
 msgid "Lock main administration permission rule"
 msgstr "Generische Admin-Berechtigung fixieren"
 
-#, fuzzy
 msgid "Lock/Unlock editing"
-msgstr "Block-Einstellungen"
+msgstr "Bearbeitung sperren/entsperren"
 
-#, fuzzy
+msgid "Locked"
+msgstr "Gesperrt"
+
 msgid "Locked by %s."
 msgstr "Gesperrt durch %s."
 
 msgid "Log in"
 msgstr "Anmelden"
 
-#, fuzzy
 msgid "Log in or register"
 msgstr "Anmelden oder registrieren"
 
-#, fuzzy
 msgid "Log in page"
 msgstr "Anmelden"
 
 msgid "Log out"
 msgstr "Abmelden"
 
-#, fuzzy
 msgid "Log-in information"
 msgstr "Anmeldeinformationen"
 
@@ -3877,21 +3859,18 @@ msgstr "Hooks für Login-Formular und -Block"
 msgid "Login method"
 msgstr "Login Methode"
 
-#, fuzzy
 msgid "Login with"
-msgstr "Login Methode"
+msgstr "Einloggen mit"
 
-#, fuzzy
 msgid "Login with ..."
-msgstr "Login Methode"
+msgstr "Einloggen mit ..."
 
 msgid "Low (user stays logged-in until he logs-out)"
 msgstr ""
 "Niedrig (Benutzer bleiben bis zur manuellen Abmeldung dauerhaft angemeldet)"
 
-#, fuzzy
 msgid "Mail selected users"
-msgstr "Ausgewählte Benutzer löschen"
+msgstr "Mail an Ausgewählte Benutzer"
 
 msgid "Mail sent!"
 msgstr "Mail verschickt!"
@@ -3911,13 +3890,11 @@ msgstr ""
 "neu kompilieren. Danach starte deinen Webserver neu."
 
 msgid "Mailer relies on %swiftmailer"
-msgstr ""
+msgstr "Mailer stützt sich auf %swiftmailer"
 
-#, fuzzy
 msgid "Mailer settings"
-msgstr "Filtereinstellungen"
+msgstr "Mailer-Einstellungen"
 
-#, fuzzy
 msgid "Main info"
 msgstr "Hauptinfo"
 
@@ -3930,19 +3907,37 @@ msgstr "Hauptkonfiguration"
 msgid "Main theme file not found!"
 msgstr "Haupt-Theme Datei nicht gefunden!"
 
-#, fuzzy
 msgid "Make default category"
 msgstr "Als Standardkategorie setzen"
 
 msgid "Male"
 msgstr "männlich"
 
-#, fuzzy
+msgid ""
+"Malicious request code / a hacking attempt was detected. This request has "
+"NOT been blocked!"
+msgstr ""
+"Bösartiger Code bzw. Einbruchsversuch festgestellt. Die Anfrage wurde NICHT "
+"geblockt!"
+
+msgid ""
+"Malicious request code / a hacking attempt was detected. Thus this request "
+"has been blocked."
+msgstr ""
+"Bösartiger Code bzw. Einbruchsversuch festgestellt. Aus diesem Grund wurde "
+"die Anfrage geblockt."
+
+msgid "Manage settings for this application"
+msgstr "Einstellungen für diese Anwendung"
+
+msgid "Manage user"
+msgstr "Benutzer verwalten"
+
 msgid "Marked for deletion"
-msgstr "Inaktiv, zum Löschen markiert"
+msgstr "Zum Löschen markiert"
 
 msgid "Marked positions are not available in the current default theme."
-msgstr ""
+msgstr "Markierte Positions gibt es nicht im aktuellen Standard-Theme."
 
 msgid "Master"
 msgstr "Master"
@@ -3957,32 +3952,14 @@ msgstr ""
 "Mittel (Benutzer werden nach x Minuten Inaktivität abgemeldet. Es sei denn, "
 "die Checkbox \"Anmeldung speichern\" wurde aktiviert)"
 
-#, fuzzy
 msgid "Member"
 msgstr "Mitglied"
 
-#, fuzzy
 msgid "Members"
 msgstr "Mitglieder"
 
-#, fuzzy
-msgid "Members list"
-msgstr "Mitgliederliste"
-
 msgid "Membership application"
 msgstr "Anfrage auf Mitgliedschaft"
-
-#, fuzzy
-msgid "Membership application cancellation"
-msgstr "Anfrage auf Mitgliedschaft abbrechen"
-
-#, fuzzy
-msgid "Membership resignation"
-msgstr "Aus Gruppe austreten"
-
-#, fuzzy
-msgid "Memberships"
-msgstr "Mitgliedschaften"
 
 msgid "Menu"
 msgstr "Menü"
@@ -3990,17 +3967,14 @@ msgstr "Menü"
 msgid "Menu block"
 msgstr "Einfacher Menüblock"
 
-#, fuzzy
 msgid "Menu list"
-msgstr "Modulliste"
+msgstr "Menüliste"
 
-#, fuzzy
 msgid "Menu removed!"
-msgstr "Menutree"
+msgstr "Das Menü entfernt!"
 
-#, fuzzy
 msgid "Menus"
-msgstr "Menü"
+msgstr "Menüs"
 
 msgid "Menutree"
 msgstr "Menutree"
@@ -4011,25 +3985,23 @@ msgstr "Mitteilung"
 msgid "Message type"
 msgstr "Nachrichten Typ"
 
-#, fuzzy
+msgid "Messages inbox"
+msgstr "Nachrichteneingang"
+
 msgid "Messages you might see"
 msgstr "Mögliche Mitteilungen"
 
-#, fuzzy
 msgid "Meta"
-msgstr "Standard Meta-Description"
+msgstr "Meta"
 
-#, fuzzy
 msgid "Meta data"
 msgstr "Meta-Daten"
 
-#, fuzzy
 msgid "Meta tag settings"
 msgstr "Meta-Keywords"
 
-#, fuzzy
 msgid "Method"
-msgstr "Ungültige Authentifizierungsmethode."
+msgstr "Methode"
 
 msgid "Methods"
 msgstr "Methoden"
@@ -4049,7 +4021,7 @@ msgstr ""
 "Minimaler Schweregrad für Protokollierung des Vorfalls in der Datenbank"
 
 msgid "Minimum length for user passwords"
-msgstr "Mindestlänge für Kennwort"
+msgstr "Mindestlänge für Passwort"
 
 msgid "Minimum row height for permission rules list view (in pixels)"
 msgstr "Mindestzeilenhöhe im Ansichtsmodus (Pixel)"
@@ -4064,18 +4036,19 @@ msgid "Miss"
 msgstr "Miss"
 
 msgid "Mode"
-msgstr ""
+msgstr "Modus"
 
 msgid "Moderate access"
 msgstr "Moderieren"
 
-#, fuzzy
-msgid "Modify block"
-msgstr "Login Block"
+msgid "Moderation"
+msgstr "Moderation"
 
-#, fuzzy
+msgid "Modify block"
+msgstr "Block ändern"
+
 msgid "Modify block position"
-msgstr "Bestehende Blockpositionen"
+msgstr "Blockposition ändern"
 
 msgid "Module"
 msgstr "Modul"
@@ -4086,7 +4059,6 @@ msgstr "Das Modul \"%s\" ist kein gültiger Servicegeber."
 msgid "Module \"%s\" is not a valid subscriber."
 msgstr "Das Modul \"%s\" ist kein gültiger Servicenehmer."
 
-#, fuzzy
 msgid ""
 "Module Services are functions provided by the core or other modules for this "
 "module."
@@ -4100,21 +4072,17 @@ msgstr "Modulkategorien anzeigen"
 msgid "Module categorization"
 msgstr "Modulkategorisierung"
 
-#, fuzzy
 msgid "Module category"
 msgstr "Modulkategorie"
 
-#, fuzzy
 msgid "Module name"
 msgstr "Modulname"
 
-#, fuzzy
 msgid "Module services"
 msgstr "Modul-Dienste"
 
-#, fuzzy
 msgid "Module settings"
-msgstr "Filtereinstellungen"
+msgstr "Modul-Einstellungen"
 
 msgid "Module used for managing user profiles"
 msgstr "Modul für die Benutzerprofilverwaltung"
@@ -4125,7 +4093,6 @@ msgstr "Modul für den internen Mitteilungensversand"
 msgid "Modules"
 msgstr "Module"
 
-#, fuzzy
 msgid "Modules categorisation"
 msgstr "Modulkategorisierung"
 
@@ -4144,14 +4111,12 @@ msgstr "Modulliste"
 msgid "Modules moved to their default categories"
 msgstr "Modul in ihre Standard Kategorien bewegt"
 
-#, fuzzy
 msgid "Modules per page"
 msgstr "Module pro Seite"
 
 msgid "Modules per page in module categories list"
 msgstr "Module pro Seite in der Kategorienliste"
 
-#, fuzzy
 msgid "Modules per row"
 msgstr "Module pro Reihe"
 
@@ -4192,28 +4157,27 @@ msgstr ""
 "Weitere Informationen: http://www.php.net/manual/en/session.configuration."
 "php#ini.session.save-path"
 
-#, fuzzy
 msgid "Move"
 msgstr "Verschieben"
 
 msgid "Move all children"
-msgstr ""
+msgstr "Alle Kinder bewegen"
 
-#, fuzzy
 msgid "Move all sub-categories"
 msgstr "Alle Unterkategorien verschieben"
 
-#, fuzzy
-msgid "Move all sub-categories to next category"
-msgstr "Unterkategorien in folgende Kategorie verschieben"
+msgid "Move all sub-categories into"
+msgstr "Alle Unterkategorien verschieben"
 
-#, fuzzy
 msgid "Move and delete"
-msgstr "Reisen und Kultur"
+msgstr "Verschieben und löschen"
 
-#, fuzzy
 msgid "Move category"
 msgstr "Kategorie verschieben"
+
+msgid "Move this category and all sub-categories of this category into"
+msgstr ""
+"Verschieben Sie diese Kategorie und alle Unterkategorien in dieser Kategorie"
 
 msgid "Moving modules to their default categories"
 msgstr "Bewege Module in ihre Standard Kategorien"
@@ -4228,7 +4192,7 @@ msgid "Ms."
 msgstr "Ms."
 
 msgid "Multilingual features are deactivated."
-msgstr ""
+msgstr "Mehrsprachige Funktionen sind deaktiviert."
 
 msgid "Music and audio"
 msgstr "Musik und Audio"
@@ -4236,8 +4200,11 @@ msgstr "Musik und Audio"
 msgid "My account"
 msgstr "Benutzerkonto"
 
+msgid "My routes"
+msgstr "Meine Routen"
+
 msgid "MyModuleName:Controller:method"
-msgstr ""
+msgstr "MyModuleName:Controller:method"
 
 msgid "Name"
 msgstr "Name"
@@ -4251,14 +4218,12 @@ msgstr "Native Email"
 msgid "Native Uname"
 msgstr "Nativer Benutzername"
 
-#, fuzzy
 msgid "Native authorisation settings"
-msgstr "Mehrsprachigkeit"
+msgstr "Native Genehmigungseinstellungen"
 
 msgid "New account"
 msgstr "Benutzer registrieren"
 
-#, fuzzy
 msgid "New account registration"
 msgstr "Neues Benutzerkonto anlegen"
 
@@ -4268,20 +4233,20 @@ msgstr "Neue Email Adresse"
 msgid "New group"
 msgstr "Neue Gruppe"
 
-#, fuzzy
-msgid "New menu"
-msgstr "Menü auswählen"
+msgid "New group application"
+msgstr "Neue Gruppenanwendung"
 
-#, fuzzy
+msgid "New menu"
+msgstr "Neues Menü"
+
 msgid "New module category"
 msgstr "Neue Modulkategorie"
 
-#, fuzzy
 msgid "New parent category for sub-categories"
 msgstr "Neue Überkategorie für die Unterkategorien"
 
 msgid "New password"
-msgstr "Neues Kennwort"
+msgstr "Neues Passwort"
 
 msgid "New registration pending approval"
 msgstr "Freigabe einer neuen Registrierung benötigt"
@@ -4355,9 +4320,6 @@ msgstr "Es haben keine Event-Handler geantwortet."
 msgid "No further pages"
 msgstr "Keine weiteren Seiten"
 
-msgid "No group members found."
-msgstr "Es konnten keine Gruppenmitglieder gefunden werden."
-
 msgid "No items found."
 msgstr "Keine Einträge gefunden"
 
@@ -4391,6 +4353,9 @@ msgstr "Kein Servicegeberbereich übergeben."
 msgid "No records found."
 msgstr "keine Einträge gefunden"
 
+msgid "No results found!"
+msgstr "Keine Ergebnisse gefunden!"
+
 msgid "No routes found."
 msgstr "Keine Routen gefunden."
 
@@ -4406,8 +4371,8 @@ msgstr "Kein Startmodul (statische Startseite)"
 msgid "No subscriber area passed."
 msgstr "Kein Servicenehmerbereich übergeben."
 
-msgid "No such item."
-msgstr "Kein solches Element"
+msgid "No such item found."
+msgstr "Der entsprechende Eintrag konnte leider nicht gefunden werden."
 
 msgid "No users found."
 msgstr "Keine Benutzer gefunden."
@@ -4433,9 +4398,6 @@ msgstr "Im System nicht verfügbar"
 msgid "Not allowed"
 msgstr "Nicht erlaubt"
 
-msgid "Not available"
-msgstr "Nicht verfügbar"
-
 msgid "Not installed"
 msgstr "Nicht installiert"
 
@@ -4443,7 +4405,7 @@ msgid "Not yet approved"
 msgstr "Noch nicht freigegeben"
 
 msgid "Note: User selection of themes is a deprecated feature."
-msgstr ""
+msgstr "Hinweis: Benutzer-Auswahl der Themen ist eine veraltete Funktion."
 
 msgid ""
 "Notice: If you change 'Where to save sessions' to 'File' then you must enter "
@@ -4479,7 +4441,6 @@ msgstr ""
 "Session verwendet wird. Bitte auch eine Adresse bei 'Secure Hostname' "
 "angeben und auf das zusätzliche Slash am Ende der Adresse achten."
 
-#, fuzzy
 msgid ""
 "Notice: Increase this value if mobile appliances experience problems with "
 "using the site."
@@ -4492,6 +4453,10 @@ msgid ""
 "mail (when you request a new password, for instance). Your currently-"
 "recorded e-mail address is %email%."
 msgstr ""
+"Hinweis: Bitte geben Sie Ihre neue e-Mail-Adressean, die gleiche Adresse "
+"wieder zur Überprüfung, und dann klicken Sie auf speichern. Die Website "
+"verwendet diese Adresse um Emails zu senden (wenn Sie z.B. ein neues "
+"Passwort anfordern). Derzeit erfasst Emailadresse ist %email%."
 
 msgid ""
 "Notice: Please make sure you type an entry in every field. Your palette "
@@ -4499,15 +4464,6 @@ msgid ""
 msgstr ""
 "Hinweis: Bitte sicherstellen, dass alle einzelnen Felder gefüllt sind. "
 "Ansonsten kann die Farbpalette nicht gespeichert werden."
-
-#, fuzzy
-msgid ""
-"Notice: Please select one or more users to add to the group. To select "
-"multiple users, use 'Shift-Click' or 'Control-Click'."
-msgstr ""
-"Hinweis: Zum Hinzufügen in einer Gruppe bitte einen oder mehrere Benutzer "
-"auswählen. Eine Mehrfachauswahl ist mittels 'UMSCHALT+Click' oder 'STRG"
-"+Click' möglich."
 
 msgid ""
 "Notice: Seems that your %theme%'s .ini files are writable. Be sure that "
@@ -4522,6 +4478,8 @@ msgid ""
 "Notice: The PHP Zlib extension is not enabled on your host. This setting "
 "will not do anything in this case."
 msgstr ""
+"Hinweis: Die PHP Zlib Erweiterung ist nicht auf Ihrem Rechner aktiviert. "
+"Diese Einstellung wird in diesem Fall nichts ändern."
 
 msgid ""
 "Notice: The administrator has locked the category '%category' (ID '%id'). "
@@ -4538,7 +4496,6 @@ msgstr ""
 "gespeichert weil anscheinened die .ini Dateien in '%tpath%' nicht schreibbar "
 "sind."
 
-#, fuzzy
 msgid ""
 "Notice: The entry point file must be present in the Zikula root directory "
 "before you set it here as your site's start page."
@@ -4546,7 +4503,6 @@ msgstr ""
 "Hinweis: Der Seiteneinstieg muss vor der Änderung im Zikula-Rootverzeichnis "
 "existieren."
 
-#, fuzzy
 msgid ""
 "Notice: The following settings will rewrite your permalinks. Sometimes, "
 "international characters like 'ñ' and 'ß' may be re-encoded by your browser. "
@@ -4577,13 +4533,9 @@ msgid ""
 "may have a mixture of modules of both types; those capable of using the old "
 "functionality, and those using routing."
 msgstr ""
-
-msgid ""
-"Notice: This language block will not be display until you enable the "
-"multilanguage, you can enable/disable this into into the settings of Zikula."
-msgstr ""
-"Hinweis: Der Sprachenblock wird nicht angezeigt, wenn die Mehrsprachigkeit "
-"in der Zikula Hauptkonfiguration deaktiviert ist."
+"Hinweis: Dieses Feature ist veraltet, zu Gunsten des Symfony-Routings. Diese "
+"Website könnte eine Mischung aus alten und neuen Modulen haben; die alten "
+"Module, die Routing noch nicht verwenden und diejenigen mit Routing."
 
 msgid ""
 "Notice: This overrides the 'Verify e-mail address during registration' "
@@ -4601,7 +4553,6 @@ msgstr ""
 "generell keine Themes auswählen dürfen. Diese Einstellung kann in der "
 "Konfiguration des  <a href=\"%s\">Theme-Moduls</a> angepasst werden."
 
-#, fuzzy
 msgid ""
 "Notice: Use drag and drop to arrange the blocks in this position into your "
 "desired order. The new block order will be saved automatically."
@@ -4627,14 +4578,12 @@ msgstr "Informiere den Administrator"
 msgid "Number of characters to display in item summaries"
 msgstr "Anzahl der angezeigten Zeichen in den Textauszügen der Ergebnisse"
 
-#, fuzzy
 msgid "Number of hits: %s"
 msgstr "Anzahl der Suchtreffer: %s"
 
 msgid "Number of links per page"
 msgstr "Anzahl der Links pro Seite"
 
-#, fuzzy
 msgid "Number of searches"
 msgstr "Anzahl der Suchvorgänge"
 
@@ -4648,13 +4597,14 @@ msgid "OK"
 msgstr "OK"
 
 msgid "OR"
-msgstr ""
+msgstr "ODER"
 
-#, fuzzy
 msgid "Official"
 msgstr "Offiziell"
 
-#, fuzzy
+msgid "Offline"
+msgstr "Offline"
+
 msgid "Ok"
 msgstr "Ok"
 
@@ -4664,14 +4614,12 @@ msgstr "Altes Passwort"
 msgid "Old password is incorrect."
 msgstr "Altes Passwort nicht korrekt."
 
-#, fuzzy
 msgid "Oldest first"
 msgstr "Älteste zuerst"
 
 msgid "On-line"
 msgstr "Online"
 
-#, fuzzy
 msgid ""
 "Once both this verification step is complete and an administrator has "
 "approved your request, you will be able to log in with your user name."
@@ -4679,7 +4627,6 @@ msgstr ""
 "Sobald diese Bestätigung komplett ist und ein Administrator die Anfrage "
 "freigegeben hat, ist eine Anmeldung mit dem Benutzernamen möglich."
 
-#, fuzzy
 msgid ""
 "Once verified and your account has been approved, then you will be able to "
 "log in."
@@ -4687,7 +4634,6 @@ msgstr ""
 "Sobald das Benutzerkonto bestätigt und freigegeben wurde, ist eine Anmeldung "
 "auf der Seite möglich."
 
-#, fuzzy
 msgid "Once verified, you will be able to log in."
 msgstr ""
 "Sobald die Bestätigung erfolgt ist, ist die Anmeldung auf der Seite möglich."
@@ -4696,6 +4642,8 @@ msgid ""
 "Once you have successfully changed your password, the log-in process will "
 "complete."
 msgstr ""
+"Wenn Sie Ihr Passwort erfolgreich geändert haben, ist die Anmeldung "
+"abgeschlossen."
 
 msgid ""
 "One time CSRF protection may affect the browser back button but is more "
@@ -4706,6 +4654,12 @@ msgstr ""
 
 msgid "One time use"
 msgstr "Einmalige Nutzung"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Only digits are allowed."
+msgstr "Nur Ziffern sind erlaubt."
 
 msgid "Only for non-default languages"
 msgstr "Nicht bei der Standardsprache"
@@ -4719,7 +4673,9 @@ msgstr "Nur Titel"
 msgid "Open"
 msgstr "Offen"
 
-#, fuzzy
+msgid "Open preview page"
+msgstr "Vorschau öffnen"
+
 msgid ""
 "Open the dropdown list and choose the module category in which to put all "
 "newly-installed and activated modules."
@@ -4727,7 +4683,6 @@ msgstr ""
 "Im Auswahlfeld die Modulkategorie auswählen, die für alle neu installierten "
 "und aktivierten Module gelten soll."
 
-#, fuzzy
 msgid ""
 "Open the dropdown list and choose the modules category to be shown when the "
 "Administration panel first displays."
@@ -4735,7 +4690,6 @@ msgstr ""
 "Im Auswahlfeld die Modulkategorie auswählen, die beim Erstaufruf des Admin-"
 "Panels angezeigt werden soll."
 
-#, fuzzy
 msgid ""
 "Open the dropdown list and choose the theme to be applied to the "
 "Administration panel."
@@ -4743,34 +4697,36 @@ msgstr ""
 "Im Auswahlfeld das Theme auswählen, das dem Admin-Panel zugewiesen werden "
 "soll."
 
+msgid "Open: Users may apply/add themselves"
+msgstr "Offen: Die Benutzer können anwenden / addieren sich"
+
 msgid "Operation cancelled."
 msgstr "Vorgang abgelehnt."
 
-#, fuzzy
 msgid "Operators"
-msgstr "Esperanto"
+msgstr "Operatoren"
 
+#, fuzzy
 msgid ""
 "Options with an asterisk (*) must have a value of a json_encoded string of "
 "option key-value pairs. Options with a plus (+) must have a boolean value."
 msgstr ""
+"Optionen mit einem Stern (*) müssen einen Wert eines json_encoded Reihe von "
+"Option Schlüssel-Wert-Paare haben. Optionen mit einem Plus ( ) muss einen "
+"Booleschen Wert haben."
 
-#, fuzzy
 msgid "Order of results"
 msgstr "Reihenfolge der Suchergebnisse"
 
-#, fuzzy
 msgid "Other actions for %s"
 msgstr "Andere Aktionen für %s"
 
-#, fuzzy
 msgid "Output filter settings"
 msgstr "Ausgabefilter"
 
 msgid "Override users' theme settings"
 msgstr "individuelle Benutzerthemes übersteuern"
 
-#, fuzzy
 msgid "Overview"
 msgstr "Übersicht"
 
@@ -4783,33 +4739,24 @@ msgstr "POST"
 msgid "P u t"
 msgstr "PUT"
 
-#, fuzzy
 msgid "PDO extension loaded."
 msgstr "PDO-Erweiterung geladen."
 
-#, fuzzy
 msgid "PHP"
 msgstr "PHP"
 
-#, fuzzy
 msgid "PHP 'magic_quotes_gpc' setting is ON, but should be OFF."
 msgstr "Die PHP 'magic_quotes_gpc' Einstellung ist ON, sollte jedoch OFF sein"
-
-#, fuzzy
-msgid "PHP 'register_globals' setting is ON, but should be OFF."
-msgstr "Die PHP 'register_globals' Einstellung ist ON, sollte jedoch OFF sein."
 
 msgid "PHP configuration"
 msgstr "PHP Einstellungen"
 
-#, fuzzy
 msgid "PHPIDS filter %s"
 msgstr "PHPIDS Filter %s"
 
 msgid "PHPIDS filters used"
 msgstr "Verwendete PHPIDS-Filter"
 
-#, fuzzy
 msgid ""
 "PHPIDS is a feature of the Security center module that enhances the security "
 "of a site, and the Security analyser has detected that it is not enabled. "
@@ -4824,11 +4771,9 @@ msgstr ""
 "das Security-Center Modul nicht installiert oder nicht aktiviert ist. "
 "Weitere Informationen dazu in der Onlinehilfe des Security-Centers."
 
-#, fuzzy
 msgid "PHPIDS is activated, but requests are NOT blocked."
 msgstr "PHPIDS ist aktiviert, aber Requests werden NICHT geblockt."
 
-#, fuzzy
 msgid ""
 "PHPIDS is enabled and you have set the Block action to 'Warn only'. Thus "
 "requests are not blocked. This is useful only for debugging the PHPIDS "
@@ -4838,7 +4783,6 @@ msgstr ""
 "Daher werden Requests nicht geblockt. Dies ist nur nützlich zum Debugging "
 "des PHP-Regelwerks um die korrekte Funktionsweise zu prüfen."
 
-#, fuzzy
 msgid ""
 "PHPIDS performs many different checks which return an impact value for "
 "scoring the treated request. Depending on the sum of all impacts performed "
@@ -4849,7 +4793,6 @@ msgstr ""
 "Abhängig von der Summe aller Punkte aller ausgeführten Schweregrad-Prüfungen "
 "werden die Aktionen zur weiteren Behandlung ausgewählt."
 
-#, fuzzy
 msgid ""
 "PHPIDS with the Security Center is not activated, but preferably should be."
 msgstr ""
@@ -4874,12 +4817,11 @@ msgstr "Parameter"
 msgid "Parameters finalized"
 msgstr "Parameter sind fertig gestellt"
 
-#, fuzzy
 msgid "Parent"
 msgstr "Parent"
 
 msgid "Password"
-msgstr "Kennwort"
+msgstr "Passwort"
 
 msgid "Password hashing method"
 msgstr "Verschlüsselungsmethode der Kennwörter"
@@ -4890,13 +4832,11 @@ msgstr "Anfragen zum Rücksetzen von Kennwörtern verfallen in"
 msgid "Password successfully changed."
 msgstr "Passwort erfolgreich geändert."
 
-#, fuzzy
 msgid "Password:  %sub%"
-msgstr "Kennwort"
+msgstr "Passwort: %sub%"
 
-#, fuzzy
 msgid "Password: %sub%"
-msgstr "Kennwort"
+msgstr "Passwort: %sub%"
 
 msgid "Path"
 msgstr "Pfad"
@@ -4916,9 +4856,8 @@ msgstr "Wartend"
 msgid "Pending Content"
 msgstr "Freizugebende Inhalte"
 
-#, fuzzy
 msgid "Pending applications"
-msgstr "Anfrage auf Mitgliedschaft"
+msgstr "Ausstehende Anträge"
 
 msgid "Per session"
 msgstr "Pro Sitzung"
@@ -4926,25 +4865,21 @@ msgstr "Pro Sitzung"
 msgid "Periodically regenerate session ID"
 msgstr "Session ID periodisch neu erzeugen"
 
-#, fuzzy
 msgid "Permalinks settings"
 msgstr "Permalinks"
 
 msgid "Permanent redirect"
 msgstr "Permanente Weiterleitung"
 
-#, fuzzy
 msgid "Permission"
-msgstr "No permission to execute action: %s [permission]"
+msgstr "Berechtigung"
 
 msgid "Permission check result:"
 msgstr "Ergebnis der Überprüfung:"
 
-#, fuzzy
 msgid "Permission level"
 msgstr "Zugriffsstufe"
 
-#, fuzzy
 msgid "Permission rule information"
 msgstr "Informationen über die Zugriffsrechte"
 
@@ -4954,9 +4889,8 @@ msgstr "Informationen zu den Zugriffsrechten"
 msgid "Permission rules list"
 msgstr "Zugriffsrechte"
 
-#, fuzzy
 msgid "Permission settings"
-msgstr "Zugriffsrechte"
+msgstr "Berechtigungseinstellungen"
 
 msgid "Persisting Symfony Bundles"
 msgstr "Speichere Symfony Bundles"
@@ -4965,22 +4899,20 @@ msgid "Plain-text message"
 msgstr "Einfache Textnachricht"
 
 msgid "Please Login with Admin credentials"
-msgstr ""
+msgstr "Melden Sie sich mit Administratorrechten an"
 
-#, fuzzy
 msgid "Please also choose what to do with this category's sub-categories:"
 msgstr "Bitte auswählen, was mit den Unterkategorien passieren soll?"
 
-#, fuzzy
 msgid ""
 "Please click on the following link to complete the e-mail address check: "
 msgstr "Bitte über den folgenden Link die Registrierung abzuschließen."
 
 msgid "Please complete the form below to reset your password."
-msgstr ""
+msgstr "Bitte füllen Sie das Formular aus, um Ihr Passwort zurückzusetzen."
 
 msgid "Please enter at least 3 characters"
-msgstr ""
+msgstr "Bitte geben Sie mindestens 3 Zeichen ein"
 
 msgid ""
 "Please enter the scheme of where you install Zikula, can be either \"http\" "
@@ -4996,26 +4928,26 @@ msgstr ""
 "Bitte die URL Pfad zur Zikula Installation eingeben. Leer lassen wenn Zikula "
 "im Wurzelverzeichnis installiert wird. Beispiel: /mein/unterverzeichnis"
 
-#, fuzzy
 msgid ""
 "Please enter your e-mail address below and click the submit button. You will "
 "be sent an e-mail with your account information."
 msgstr ""
 "Bitte die eigene E-Mail Adresse unten eingeben und mit der 'Absenden'-"
-"Schaltfläche bestätigen. Deine Zugangsdaten werden dann per E-Mail "
-"zugestellt."
+"Schaltfläche bestätigen. Die Zugangsdaten werden dann per E-Mail zugestellt."
 
 msgid ""
 "Please enter your user name or e-mail address below and click the submit "
 "button. You will be sent an e-mail with further instructions."
 msgstr ""
+"Bitte geben Sie Ihren Benutzernamen oder die e-Mail-Adresse unten ein und "
+"klicken Sie auf die Schaltfläche \"senden\". Sie erhalten eine E-mail mit "
+"weiteren Anweisungen."
 
 msgid "Please follow the instructions to install Zikula %version%."
 msgstr "Bitte den Instruktionen folgen um Zikula %version% zu installieren."
 
-#, fuzzy
 msgid "Please refer to the %s during the process."
-msgstr "Bitte einen Eintrag aus der Liste auswählen."
+msgstr "Bitte beachten Sie %s während des Prozesses."
 
 msgid "Please select one of the following:"
 msgstr "Bitte eine der folgenden Möglichkeiten auswählen:"
@@ -5026,19 +4958,17 @@ msgstr "Plugins für %s"
 msgid "Plugins list"
 msgstr "Pluginliste"
 
-#, fuzzy
 msgid "Position"
-msgstr "Position/en"
+msgstr "Position"
 
 msgid "Position not available in current default theme."
-msgstr ""
+msgstr "Position im aktuellen Standard-Theme nicht verfügbar."
 
 msgid "Position saved!"
 msgstr "Position gespeichert!"
 
-#, fuzzy
 msgid "Positions"
-msgstr "Position gespeichert!"
+msgstr "Positionen"
 
 msgid "Possible tags: %pagetitle%, %sitename%, %modulename%"
 msgstr "Mögliche Platzhalter sind %pagetitle%, %sitename% und %modulename%"
@@ -5053,31 +4983,38 @@ msgid ""
 "Prepend one of the keywords \"year\", \"month\", \"week\", \"day\", \"hour"
 "\", \"min\" followed by a colon to search for a time period."
 msgstr ""
+"Voranstellen eines der Schlüsselwörter \"Jahr\", \"Monat\", \"Woche\", \"Tag"
+"\", \"Stunde\", \"min\" gefolgt von einem Doppelpunkt, um für einen "
+"bestimmten Zeitraum zu suchen."
 
-#, fuzzy
 msgid "Preview"
 msgstr "Vorschau"
 
 msgid "Previous page"
 msgstr "Vorherige Seite"
 
-#, fuzzy
 msgid "Primary administrators group. Cannot be deleted."
 msgstr "Primäre Administratorengruppe. Kann nicht gelöscht werden."
 
 msgid "Private"
 msgstr "Privat"
 
+msgid ""
+"Private: Users must apply for membership - groups are not visible to users "
+"in public list"
+msgstr ""
+"Privat: Der Benutzer muss die Mitgliedschaft beantragen - Gruppen sind für "
+"Benutzer öffentliche nicht sichtbar"
+
+msgid "Profile"
+msgstr "Profil"
+
 msgid "Progress bar"
-msgstr ""
+msgstr "Fortschrittsbalken"
 
-#, fuzzy
 msgid "Properties"
-msgstr ""
-"Capabilities-Eigenschaften müssen ein Array sein in der Form "
-"array(capability => array(version => string, ... => ... in %s"
+msgstr "Eigenschaften"
 
-#, fuzzy
 msgid "Property name"
 msgstr "Name der Eigenschaft"
 
@@ -5096,7 +5033,6 @@ msgstr "Servicegebermodul \"%s\" ist nicht verfügbar."
 msgid "Providers' areas order is not an array."
 msgstr "Die Reihenfolge der Servicegeberbereiche ist kein Array."
 
-#, fuzzy
 msgid "Provision"
 msgstr "Servicegeber"
 
@@ -5111,26 +5047,30 @@ msgstr ""
 msgid "Public"
 msgstr "Öffentlich"
 
+msgid ""
+"Public: Users can add themselves with no moderation - groups are visible in "
+"public list"
+msgstr ""
+"Öffentlich: Die Benutzer können sich ohne Moderation hinzufügen - Gruppen "
+"sind öffentliche sichtbar"
+
 msgid "Publication status (basic)"
 msgstr "Veröffentlichungsstatus (einfach)"
 
 msgid "Publication status (extended)"
 msgstr "Veröffentlichungsstatus (erweitert)"
 
-#, fuzzy
 msgid "Purge IDS Log"
 msgstr "IDS-Protokolle bereinigen"
 
 msgid "Purge IDS log"
 msgstr "IDS Logfile leeren"
 
-#, fuzzy
 msgid "Quick navigation"
 msgstr "Schnellansicht"
 
-#, fuzzy
 msgid "Quick search"
-msgstr "Suche"
+msgstr "Schnellsuche"
 
 msgid "React on impact per request (uses the values from above)"
 msgstr "Auf Zwischenfälle pro Request reagieren (verwendet die Werte von oben)"
@@ -5150,16 +5090,12 @@ msgstr ""
 msgid "Read access"
 msgstr "Lesen"
 
-#, fuzzy
 msgid ""
 "Read more about this system on the <a href=\"http://phpids.org\" title="
 "\"PHPIDS homepage\">PHPIDS homepage</a>."
 msgstr ""
 "Mehr über dieses System kann man auf der <a href=\"http://phpids.org\" title="
 "\"PHPIDS-Homepage\">PHPIDS-Homepage</a> nachlesen."
-
-msgid "Really delete this route?"
-msgstr ""
 
 msgid "Reason"
 msgstr "Grund"
@@ -5173,7 +5109,6 @@ msgstr "Pfade neu erstellen"
 msgid "Receive e-mail alert when there are new applicants"
 msgstr "Mailbenachrichtigung bei neuen Gruppenanfragen"
 
-#, fuzzy
 msgid "Recent searches"
 msgstr "Letzte Suchvorgänge"
 
@@ -5184,6 +5119,8 @@ msgid ""
 "Recently, this e-mail address ('%email') was used to request an account on "
 "'%site' (%url)."
 msgstr ""
+"Vor kurzem wurde diese e-Mail-Adresse ('%email') verwendet, um ein Konto auf "
+"'%site' (%url) anzufordern."
 
 msgid "Recipient's e-mail address"
 msgstr "E-Mail Adresse der Empfänger"
@@ -5191,36 +5128,35 @@ msgstr "E-Mail Adresse der Empfänger"
 msgid "Recipient's name"
 msgstr "Empfängername"
 
-#, fuzzy
 msgid "Recommended"
 msgstr "Empfohlen"
 
-#, fuzzy
 msgid "Recommended."
 msgstr "Empfohlen"
 
 msgid "Recover Lost Password"
-msgstr "Kennwort wiederherstellen."
+msgstr "Passwort wiederherstellen."
 
 msgid "Recover Lost User Name"
 msgstr "Vergessenen Benutzernamen wiederherstellen"
 
 msgid "Recover account information or password"
-msgstr "Zugangsdaten oder Kennwort wiederherstellen"
+msgstr "Zugangsdaten oder Passwort wiederherstellen"
 
-#, fuzzy
 msgid "Recover lost password"
-msgstr "Kennwort wiederherstellen."
+msgstr "Passwort wiederherstellen."
 
-#, fuzzy
 msgid "Recover lost username"
-msgstr "Vergessenen Benutzernamen wiederherstellen"
+msgstr "Benutzernamen wiederherstellen"
+
+msgid "Regarding your %s group membership application"
+msgstr "In Bezug auf Ihren Mitgliedsantrag in %s Gruppe"
 
 msgid "Regenerate session ID during log-in and log-out"
 msgstr "Session ID bei An-/Abmeldung neu erzeugen"
 
 msgid "Regenerate themes"
-msgstr "Thems neu laden"
+msgstr "Themes neu laden"
 
 msgid "Regenerating themes"
 msgstr "Themes neu generieren"
@@ -5228,15 +5164,12 @@ msgstr "Themes neu generieren"
 msgid "Regeneration probability"
 msgstr "Wahrscheinlichkeit der Regeneration"
 
-#, fuzzy
 msgid "Registered component"
 msgstr "Komponente"
 
-#, fuzzy
 msgid "Registered users"
 msgstr "Registrierte Benutzer"
 
-#, fuzzy
 msgid ""
 "Registering for a user account is easy. Registration can give you access to "
 "content and to features of this site that are not available to unregistered "
@@ -5256,19 +5189,15 @@ msgstr ""
 "Frage durchführen. Diese Antwort ist erforderlich, wenn eine Spam-Schutz "
 "Frage gestellt wird."
 
-#, fuzzy
 msgid "Registration ID"
 msgstr "Registrierungs-ID"
 
-#, fuzzy
 msgid "Registration Settings"
 msgstr "Registrierungseinstellungen"
 
-#, fuzzy
 msgid "Registration Status"
 msgstr "Registrierungsstatus"
 
-#, fuzzy
 msgid "Registration date"
 msgstr "Registrierungsdatum"
 
@@ -5281,15 +5210,17 @@ msgstr "Hooks für die Registrierungsverwaltung"
 msgid "Registrations pending verification expire in"
 msgstr "Bestätigung von wartender Registrierung verfällt in"
 
+msgid "Registry entry not found."
+msgstr "Registry-Eintrag nicht gefunden."
+
 msgid "Rejected"
 msgstr "Abgelehnt"
 
 msgid "Releases"
 msgstr "Freigaben"
 
-#, fuzzy
 msgid "Reload"
-msgstr "mehrsprachige Routen neu laden"
+msgstr "Erneut laden"
 
 msgid "Reload Defaults"
 msgstr "Lade Standard Werte"
@@ -5300,13 +5231,9 @@ msgstr "mehrsprachige Routen neu laden"
 msgid "Reload routes"
 msgstr "Routen neu laden"
 
-msgid "Reloading routes (takes longer...)"
-msgstr "erneutes laden der Routen (dauert länger...)"
-
 msgid "Remember me"
 msgstr "Anmeldedaten speichern"
 
-#, fuzzy
 msgid ""
 "Remember: both this verification step and approval from an administrator "
 "must be completed before you can log in."
@@ -5362,6 +5289,12 @@ msgstr "Ersetzer Routen Name"
 msgid "Replyto email address"
 msgstr "Antworten-An Email Adresse"
 
+msgid "Request Impact: %d"
+msgstr "Request Impact: %d"
+
+msgid "Request URI: %s"
+msgstr "Request URI: %s"
+
 msgid "Require %sub% to change password at next login"
 msgstr "%sub% muss sein Passwort beim nächsten Login ändern"
 
@@ -5391,7 +5324,7 @@ msgid "Reset"
 msgstr "Zurücksetzen"
 
 msgid "Reset My Password"
-msgstr "Kennwort zurücksetzen"
+msgstr "Passwort zurücksetzen"
 
 msgid "Reset all extensions to default values"
 msgstr "Alle Erweiterungen auf Standard Werte zurück setzen"
@@ -5402,11 +5335,6 @@ msgstr "Auf Standardwerte zurücksetzen"
 msgid "Reset your password at '%s'"
 msgstr "Setze dein Passwort für '%s' zurück"
 
-#, fuzzy
-msgid "Resign"
-msgstr "Austreten"
-
-#, fuzzy
 msgid "Return control"
 msgstr "Nächster Schritt"
 
@@ -5419,21 +5347,27 @@ msgstr "Zurück zur verweisenden Seite"
 msgid "Reuse"
 msgstr "Wiederverwenden"
 
-msgid "Reuse for new item"
-msgstr "Für ein neues Element benutzen"
+msgid "Reuse for new route"
+msgstr "Wiederverwendung für neue Route"
 
 msgid "Right blocks"
 msgstr "Rechte Blöcke"
 
 msgid "Right click on selected category to open context menu."
 msgstr ""
+"Rechter Mausklick auf ausgewählte Kategorie, um Kontext-Menü zu öffnen."
+
+msgid "Root category"
+msgstr "Stammkategorie"
 
 msgid "Root category for user categories"
 msgstr "Stammkategorie für persönliche Kategorien"
 
-#, fuzzy
 msgid "Route"
-msgstr "Gib den ersetzenden Namen der Route ein"
+msgstr "Route"
+
+msgid "Route entries per page"
+msgstr "Routen Einträge pro Seite"
 
 msgid "Route list"
 msgstr "Routen Liste"
@@ -5444,6 +5378,8 @@ msgstr "Routen Typ"
 msgid ""
 "Routed modules cannot utilize this feature. Edit the routes directly instead."
 msgstr ""
+"Das Routing Modul kann dieses Feature nicht nutzen. Bearbeiten Sie "
+"statdessen die Routen direkt."
 
 msgid "Routes"
 msgstr "Routen"
@@ -5453,9 +5389,6 @@ msgstr "Korrigierte Routen am Ende der Liste:"
 
 msgid "Routes fixed to the top of the list:"
 msgstr "Korrigierte Routen am Anfang der Liste:"
-
-msgid "Routes reloaded"
-msgstr "Routen neu geladen"
 
 msgid "Rule"
 msgstr "Regel"
@@ -5473,7 +5406,7 @@ msgid "SMTP mail transfer protocol"
 msgstr "SMTP Mail Transfer Protokoll"
 
 msgid "SMTP password"
-msgstr "SMTP Kennwort"
+msgstr "SMTP Passwort"
 
 msgid "SMTP port"
 msgstr "SMTP Port"
@@ -5487,15 +5420,17 @@ msgstr "SMTP Benutzername"
 msgid "Save"
 msgstr "Speichern"
 
-#, fuzzy
 msgid "Save changes"
-msgstr "Erledigt! Die Änderungen wurden erfolgreich gespeichert."
+msgstr "Änderungen speichern"
 
 msgid "Schemes"
 msgstr "Schemen"
 
 msgid "Science and technology"
 msgstr "Wissenschaft und Technik"
+
+msgid "Seach by username"
+msgstr "Suche nach Benutzername"
 
 msgid "Search"
 msgstr "Suchen"
@@ -5507,27 +5442,25 @@ msgid "Search box"
 msgstr "Such-Block"
 
 msgid "Search data copyright %s, all rights reserved."
-msgstr ""
+msgstr "Such-Daten Copyright %s, alle Rechte vorbehalten."
 
-#, fuzzy
 msgid "Search keyword"
 msgstr "Keyword suchen"
 
-#, fuzzy
 msgid "Search keywords"
 msgstr "Suchbegriffe"
 
-#, fuzzy
 msgid "Search now"
 msgstr "Suchen"
 
-#, fuzzy
 msgid "Search results"
 msgstr "Suchergebnisse"
 
-#, fuzzy
 msgid "Search settings"
-msgstr "Filtereinstellungen"
+msgstr "Suche Einstellungen"
+
+msgid "Search user"
+msgstr "Benutzer suchen"
 
 msgid "Secure host name"
 msgstr "Secure Hostname"
@@ -5535,17 +5468,14 @@ msgstr "Secure Hostname"
 msgid "Security"
 msgstr "Sicherheit"
 
-#, fuzzy
 msgid "Security analyser warnings"
 msgstr "Warnung des Sicherheitscenters"
 
-#, fuzzy
 msgid "Security center module is not activated, but preferably should be."
 msgstr ""
 "Das SecurityCenter Modul ist nicht aktiviert. Es wird empfohlen, das Modul "
 "zu aktivieren."
 
-#, fuzzy
 msgid "Security center module is not installed, but preferably should be."
 msgstr ""
 "Das SecurityCenter Modul ist nicht installiert. Es wird empfohlen, das Modul "
@@ -5554,17 +5484,17 @@ msgstr ""
 msgid "Security level"
 msgstr "Sicherheitsstufe"
 
-#, fuzzy
 msgid "Security settings"
-msgstr "Konfiguration testen"
+msgstr "Sicherheitseinstellungen"
 
-#, fuzzy
 msgid "Security warnings"
-msgstr "Sicherheit"
+msgstr "Sicherheitswarnungen"
 
-#, fuzzy
 msgid "Select a block type."
-msgstr "Datum auswählen"
+msgstr "Wähle einen Blocktyp."
+
+msgid "Select a locale:"
+msgstr "Wähle eine Region:"
 
 msgid "Select all"
 msgstr "Alle wählen"
@@ -5587,14 +5517,14 @@ msgstr "Auswählen, wie Zikula die Schweregrad-Grenzwerte auswerten soll"
 msgid "Select your default language"
 msgstr "Wähle die Standardsprache"
 
-msgid "Select..."
-msgstr "Wählen..."
-
 msgid "Semicolon"
 msgstr "Semikolon"
 
 msgid "Send Mail"
 msgstr "Sende Mail"
+
+msgid "Send a message to this user"
+msgstr "Sende eine Willkommens-Nachricht an diesen Benutzer"
 
 msgid "Send a new e-mail verification code for %sub%"
 msgstr "Sende einen neuen Email Bestätigungscode für %sub%"
@@ -5613,6 +5543,9 @@ msgstr "Sende Passwort zurück setz Code an %sub%"
 
 msgid "Send password via email"
 msgstr "Passwort per Mail senden"
+
+msgid "Send private message to %userName%"
+msgstr "Schicke eine private Nachricht an %userName%"
 
 msgid "Send test email"
 msgstr "Verschicke Test Email"
@@ -5636,8 +5569,8 @@ msgid ""
 "Sending a password via e-mail is considered unsafe. It is recommended that "
 "you provide the password to the user using a secure method of communication."
 msgstr ""
-"Das Versenden eines Kennworts via E-Mail wird als unsicher angesehen. Es "
-"wird empfohlen, dass das Kennwort dem Benutzer mit einer sicheren "
+"Das Versenden eines Passworts via E-Mail wird als unsicher angesehen. Es "
+"wird empfohlen, dass das Passwort dem Benutzer mit einer sicheren "
 "Kommunikationsmethode bereitgestellt wird."
 
 msgid "Sendmail message transfer agent"
@@ -5672,6 +5605,12 @@ msgstr "Server"
 msgid "Server time zone"
 msgstr "Zeitzone des Servers"
 
+msgid "Services"
+msgstr "Dienste"
+
+msgid "Session Impact: %d"
+msgstr "Session Impact: %d"
+
 msgid "Session cookie name"
 msgstr "Name des Session-Cookie"
 
@@ -5687,7 +5626,7 @@ msgid "Set %theme% as site theme"
 msgstr "Setze %theme% als Seiten-Theme"
 
 msgid "Set a password"
-msgstr "Kennwort setzen"
+msgstr "Passwort setzen"
 
 msgid "Set as 0 for unlimited."
 msgstr "Für unlimitiert auf 0 setzen."
@@ -5698,7 +5637,6 @@ msgstr "Passwort jetzt setzen"
 msgid "Set to defaults"
 msgstr "Auf Standard setzen"
 
-#, fuzzy
 msgid ""
 "Setting HTMLPurifier configuration directives incorrectly can render your "
 "system unstable and inacessible. No validity checking is performed on any "
@@ -5728,6 +5666,8 @@ msgstr "Konfiguration testen"
 msgid ""
 "Several statements can be connected by a comma , (AND) or an asterisk * (OR)."
 msgstr ""
+"Mehere Ausdrücke können durch ein Komma , (AND) oder Stern * (OR) verbunden "
+"werden."
 
 msgid "Short URL settings"
 msgstr "Short URL Einstellungen"
@@ -5742,7 +5682,7 @@ msgid "Show both internal name and display name"
 msgstr "Modulname und Anzeigename anzeigen"
 
 msgid "Show password strength meter"
-msgstr "Grafische Anzeige der Kennwortkomplexität"
+msgstr "Grafische Anzeige der Passwortkomplexität"
 
 msgid "Shows all items except these which are approved"
 msgstr "Zeigt alle Einträge außer den Freigegebenen"
@@ -5753,6 +5693,9 @@ msgstr "Cookies signieren"
 msgid "Signing key"
 msgstr "Signaturschlüssel"
 
+msgid "Site Administrator"
+msgstr "Seiten-Administrator"
+
 msgid "Site default"
 msgstr "Seiten Standard"
 
@@ -5760,7 +5703,7 @@ msgid "Site description"
 msgstr "Seitenbeschreibung"
 
 msgid "Site entry point (front controller)"
-msgstr "Seiteneinstiegspunkt (Fron Controller)"
+msgstr "Seiteneinstiegspunkt (Front Controller)"
 
 msgid "Site name"
 msgstr "Seitenname"
@@ -5774,10 +5717,13 @@ msgstr "Smarty Einstellungen"
 msgid "Smarty tag"
 msgstr "Smarty-Tag"
 
+#, fuzzy
 msgid ""
 "So in our example we can reference Persons with \"tbl\" and addresses with "
 "\"tblAddresses\"."
 msgstr ""
+"So in our example we can reference Persons with \"tbl\" and addresses with "
+"\"tblAddresses\"."
 
 msgid ""
 "Someone with the IP address %1$s has just requested the account information "
@@ -5790,6 +5736,8 @@ msgid ""
 "Someone with the IP address %sub% has just requested your account password "
 "to be reset."
 msgstr ""
+"Jemand mit der IP-Adresse %sub% hat das Zurücksetzen Ihres Passwortes "
+"angefordert."
 
 msgid ""
 "Sorry! An account could not be located with that information. Correct your "
@@ -5818,20 +5766,11 @@ msgstr ""
 msgid "Sorry! New user registration is currently disabled."
 msgstr "Die Registrierung von neuen Benutzern ist momentan deaktiviert."
 
-msgid "Sorry! No such group found."
-msgstr "Es konnte keine entsprechende Gruppe gefunden werden."
-
 msgid "Sorry! No such item found."
 msgstr "Der entsprechende Eintrag konnte leider nicht gefunden werden."
 
 msgid "Sorry! No such theme found."
 msgstr "Es konnte kein entsprechendes Theme gefunden werden."
-
-msgid "Sorry! That group has reached full membership."
-msgstr "Alle Mitgliedschaften in dieser Gruppe sind leider bereits vergeben."
-
-msgid "Sorry! That group is closed."
-msgstr "Diese Gruppe ist geschlossen."
 
 msgid "Sorry! The domain of the e-mail address you specified is banned."
 msgstr "Fehler! Die Domain der angegebenen E-Mail Adresse ist gesperrt."
@@ -5858,9 +5797,11 @@ msgstr ""
 
 msgid ""
 "Sorry! This is a message to inform you with regret that your application for "
-"membership of the aforementioned private group has been rejected."
+"membership of the requested private group has been rejected."
 msgstr ""
-"Leider wurde die Anfrage auf Mitgliedschaft in die private Gruppe abgelehnt."
+"Tut mir Leid! Dies ist eine Nachricht, um Ihnen mit Bedauern mitzuteilen, "
+"dass Ihr Antrag auf Mitgliedschaft der angeforderten privaten Gruppe "
+"abgelehnt worden ist."
 
 msgid ""
 "Sorry! User-owned category editing has not been enabled. This feature can be "
@@ -5869,21 +5810,23 @@ msgstr ""
 "Die Bearbeitung von benutzereigenen Kategorien ist deaktiviert. Der "
 "Administrator kann diese Funktion aktivieren."
 
-msgid "Sorry! You cannot apply for membership of that group."
-msgstr "Für diese Gruppe kann keine Mitgliedschaft beantragt werden."
-
 msgid "Sorry! You cannot delete the default users group."
 msgstr "Fehler! Die Standardgruppe für Benutzer kann nicht gelöscht werden."
 
 msgid "Sorry! You cannot delete the primary administrators group."
 msgstr "Fehler! Die primäre Administrationsgruppe kann nicht gelöscht werden."
 
-msgid ""
-"Sorry! You must register for a user account on this site before you can "
-"apply for membership of a group."
+msgid "Sorry! You must be logged in before you can leave a group."
 msgstr ""
-"Vor der Anfrage zu einer Gruppe muss ein Benutzerkonto auf dieser Website "
-"erstellt werden."
+"Tut mir Leid! Sie müssen eingeloggt sein, bevor Sie eine Gruppe verlassen "
+"können."
+
+msgid ""
+"Sorry! You must register for a user account on this site before you can join "
+"a group."
+msgstr ""
+"Tut mir Leid! Sie müssen für ein Benutzerkonto auf dieser Seite "
+"registrieren, bevor Sie einer Gruppe beitreten können."
 
 msgid ""
 "Sorry! Your account has not completed the registration process. Please "
@@ -5899,19 +5842,20 @@ msgstr ""
 "Fehler! Das Benutzerkonto ist als inaktiv markiert. Bitte einen "
 "Administrator für weitere Informationen kontaktieren."
 
-msgid ""
-"Sorry, but an unknown error occured during the %action% action. Please apply "
-"the changes again!"
+msgid "Sorry!, You cannot apply to join the requested group"
 msgstr ""
-"Entschuldigung! Ein unbekannter Fehler trat während der Aktion %action% auf. "
-"Die Änderungen bitte erneut durchführen!"
+"Tut mir leid!, Sie können nicht der angeforderte Gruppe beitreten (z.B. weil "
+"sie eine geschlossene Gruppe ist. Wenden Sie sich ggf. an den Administrator)"
+
+msgid "Sorry, but an error occured during the %action% action."
+msgstr "Sorry, aber ein Fehler ist bei Aktion %action% aufgetreten."
 
 msgid ""
-"Sorry, but an unknown error occured during the %s action. Please apply the "
+"Sorry, but an error occured during the %action% action. Please apply the "
 "changes again!"
 msgstr ""
-"Sorry, aber ein unbekannter Fehler bei der Aktion %s aufgetreten. Bitte "
-"diese Änderungen erneut anwenden!"
+"Sorry, aber ein Fehler ist bei Aktion %action% aufgetreten. Bitte diese "
+"Änderungen erneut anwenden!"
 
 msgid ""
 "Sorry, but you can not create the route yet as other items are required "
@@ -5945,7 +5889,7 @@ msgid "Sort by type"
 msgstr "Sortieren nach Typ"
 
 msgid "Sort direction"
-msgstr "Sortierreihnfolge"
+msgstr "Sortierreihenfolge"
 
 msgid "Sort value"
 msgstr "Sortierwert"
@@ -5957,7 +5901,7 @@ msgid "Spam protection question"
 msgstr "Spam-Schutz Frage"
 
 msgid "Special field types"
-msgstr ""
+msgstr "Spezielle Feldtypen"
 
 msgid "Sport and activities"
 msgstr "Sport und Aktivitäten"
@@ -5972,6 +5916,8 @@ msgid ""
 "Start Controller will take precedence over module/type/function settings "
 "below."
 msgstr ""
+"Der Start-Controller wird die folgenden Modul/Typ/Funktion Einstellungen "
+"überschreiben."
 
 msgid "Start function (required if module is set)"
 msgstr "Start Funktion (benötigt falls Modul ausgewählt ist)"
@@ -5982,6 +5928,8 @@ msgstr "Weitere Argumente für Startfunktion (optional)"
 msgid ""
 "Start function arguments (below) can also be combined with this setting."
 msgstr ""
+"Die Start-Controller Argumente (siehe unten) können auch mit dieser "
+"Einstellung kombiniert werden."
 
 msgid "Start function type (required if module is set)"
 msgstr "Start Funktions Typ (benötigt falls Modul ausgewählt ist)"
@@ -6001,6 +5949,9 @@ msgstr "Status"
 msgid "Statement displayed if registration disabled"
 msgstr "(Falls 'Nein' können im folgenden Feld die Gründe angegeben werden)"
 
+msgid "States"
+msgstr "Status"
+
 msgid "Status"
 msgstr "Status"
 
@@ -6010,7 +5961,6 @@ msgstr "Status unbekannt"
 msgid "Stop!"
 msgstr "Stopp!"
 
-#, fuzzy
 msgid ""
 "Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site "
 "root, but must be removed before you can access the site admin panel. "
@@ -6022,7 +5972,6 @@ msgstr ""
 "veraltet und wurde durch die 'Zikula Recovery Console' (Datei 'zrc.php') "
 "ersetzt."
 
-#, fuzzy
 msgid ""
 "Stop, please! The installer file 'install.php' and directory 'install' are "
 "in the site root, but must be removed before you can access the site admin "
@@ -6038,7 +5987,7 @@ msgid "Store sessions"
 msgstr "Session-Speicherung"
 
 msgid "Strip entry point (front controller) from URLs"
-msgstr "entferne Einstiegspunkt (Fron Controller) von URLs"
+msgstr "entferne Einstiegspunkt (Front Controller) von den URLs"
 
 msgid "Subject"
 msgstr "Betreff"
@@ -6052,12 +6001,20 @@ msgstr "Inhalt bestätigen."
 msgid "Subscriber module \"%s\" is not available."
 msgstr "Servicenehmermodul \"%s\" ist nicht verfügbar."
 
-#, fuzzy
 msgid "Subscription"
 msgstr "Servicenehmer"
 
 msgid "Support forums"
 msgstr "Supportforum"
+
+msgid "Switch to administration area."
+msgstr "Wechsel zum Administrationsbereich."
+
+msgid "Switch to user area."
+msgstr "Wechsel zum Nutzerbereich."
+
+msgid "Switch to users administration"
+msgstr "Wechseln Sie in die Benutzerverwaltung."
 
 msgid "Symfony Bundles"
 msgstr "Symfony Bundles"
@@ -6084,7 +6041,7 @@ msgid "Tab"
 msgstr "Tabulator"
 
 msgid "Table aliases"
-msgstr ""
+msgstr "Tabellen Aliase"
 
 msgid "Tag"
 msgstr "Tag"
@@ -6135,7 +6092,6 @@ msgstr ""
 "Einstellungen\", \"Display-Einstellungen\" und \"Module Kategorisierung\". "
 "Jede ist unten berücksichtigt."
 
-#, fuzzy
 msgid ""
 "The Zikula recovery console tool (a file called 'zrc.php') is a useful "
 "utility for resolving certain problems, but should not be left in any "
@@ -6151,7 +6107,6 @@ msgstr ""
 "Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange verhindert, "
 "bis die Datei 'psak.php' gelöscht wurde."
 
-#, fuzzy
 msgid ""
 "The Zikula recovery console tool (file 'zrc.php') is present in the site "
 "webroot, but must be removed before you can access the site admin panel."
@@ -6164,18 +6119,22 @@ msgid "The account details are as follows:"
 msgstr " Die Details zum Benutzerkonto sind wie folgt:"
 
 msgid "The administrator at %sub% requested that reset your password."
-msgstr ""
+msgstr "Administrator von %sub% verlangt das Zurücksetzen des Passworts."
 
 msgid ""
 "The administrator at %sub% requested that you receive your user name via e-"
 "mail."
 msgstr ""
+"Der Administrator von %sub% hat angefordert, dass Sie Ihren Benutzernamen "
+"per E-mail erhalten."
 
 msgid "The administrator at %sub% requested that you reset your password."
 msgstr ""
+"Der Administrator von %sub% hat angefordert, dass Sie Ihr Passwort "
+"zurücksetzen."
 
-msgid "The category could not be created."
-msgstr "Die Kategorie konnte nicht erstellt werden."
+msgid "The amount of routes shown per page"
+msgstr "Die Anzahl der Routen, die pro Seite angezeigt werden"
 
 msgid "The code is invalid for this username."
 msgstr "Der Code für diesen Benutzer ist ungültig."
@@ -6284,16 +6243,17 @@ msgid "The files must be removed manually."
 msgstr "Die Dateien müssen manuell gelöscht werden."
 
 msgid "The first name equals either Peter or Chris"
-msgstr ""
+msgstr "Der Vorname entspricht entweder Peter oder Chris"
 
 msgid "The first name is Peter"
-msgstr ""
+msgstr "Der erste Name ist Peter"
 
+#, fuzzy
 msgid ""
 "The first name is Peter and the house number of any address is below 100."
 msgstr ""
+"The first name is Peter and the house number of any address is below 100."
 
-#, fuzzy
 msgid ""
 "The first row of the CSV file must contain the field names. It must be like "
 "this:"
@@ -6301,82 +6261,102 @@ msgstr ""
 "Die erste Zeile der CSV-Datei muss die Feldnamen enthalten. Es sollte wie "
 "folgt aussehen:"
 
+msgid "The following attack has been detected by PHPIDS"
+msgstr "Der folgende Angriff wurde von PHPIDS entdeckt"
+
+#, fuzzy
 msgid ""
 "The following filters assume that you have a list of persons whereby each "
 "person can have many addresses."
 msgstr ""
+"The following filters assume that you have a list of persons whereby each "
+"person can have many addresses."
 
 msgid "The group name you entered (%u) has already been registered."
 msgstr "Der eingegebene Gruppenname (%u) ist schon vorhanden."
 
-msgid "The house number of any address is lower than 100"
+msgid ""
+"The hook provider for area \"%parea\" of type \"%type\" could not be "
+"registered for \"%own\" because it already exists."
 msgstr ""
+"Die Hook-Anbieter für den Bereich \"%parea\" vom Typ \"%type\" konnte nicht "
+"für \"%own\" registriert werden, da er bereits vorhanden ist."
 
-#, fuzzy
+msgid ""
+"The hook subscriber \"%sub\" could not be registered for \"%own\" because it "
+"is registered already."
+msgstr ""
+"Das Hook-Abo \"%sub\"  konnte nicht für \"%own\" registriert werden, da es "
+"bereits vorhanden ist."
+
+msgid "The house number of any address is lower than 100"
+msgstr "Die Hausnummer von jeder beliebigen Adresse ist niedriger als 100"
+
 msgid "The information that was registered is as follows:"
 msgstr "Folgende Informationen wurden für die Registrierung angegeben:"
 
 msgid "The installed language could not be detected."
 msgstr "Die installierte Sprache konnte nicht erkannt werden."
 
-#, fuzzy
 msgid "The items that are marked with an asterisk ('*') are required entries."
 msgstr ""
 "Mit (*) markierte Angaben sind für die Registrierung zwingend erforderlich."
 
-#, fuzzy
 msgid "The items that are marked with an asterisk (*) are required entries."
-msgstr ""
-"Mit (*) markierte Angaben sind für die Registrierung zwingend erforderlich."
+msgstr "Mit (*) markierte Angaben sind zwingend erforderlich."
 
+#, fuzzy
 msgid ""
 "The main table, that is the entity being the primary subject of the query, "
 "is always known directly. That means, you can prepend \"tbl.\", but you do "
 "not need to."
 msgstr ""
+"The main table, that is the entity being the primary subject of the query, "
+"is always known directly. That means, you can prepend \"tbl.\", but you do "
+"not need to."
 
 msgid "The maximum version of the core that this module supports is %s"
-msgstr ""
+msgstr "Die maximale Version des Cores, die dieses Modul unterstützt ist %s"
 
 msgid "The message could not be sent properly."
 msgstr "Die Nachricht konnte nicht richtig gesendet werden."
 
-#, fuzzy
 msgid "The minimum length for user passwords is %sub% characters."
-msgstr "Mindestlänge für Kennwort"
+msgstr "Die Mindestlänge für Benutzerkennwörter ist %sub% Zeichen."
 
 msgid "The minimum version of the core that this module supports is %s"
-msgstr ""
+msgstr "Die Mindestversion des Cores, die dieses Modul unterstützt ist %s"
 
 msgid "The module '%s' is not available."
 msgstr "Das Modul '%s' ist nicht verfügbar."
 
-#, fuzzy
 msgid ""
 "The module/type/func method of setting the start page is deprecated and will "
 "be removed at Core-2.0."
 msgstr ""
-"Das Alternative Seiten Theme ist eine überholte Eigenschaft und wird im "
-"Core-2.0 entfernt."
+"Das Modul/Typ/Func-Einstellung zur Festlegung der Startseite ist veraltet "
+"und wird im Core-2.0 entfernt werden."
 
+#, fuzzy
 msgid "The operator defines the condition type (equal, lower than, etc.)."
-msgstr ""
+msgstr "The operator defines the condition type (equal, lower than, etc.)."
 
 msgid ""
 "The password cannot be the same as the user name. Please choose a different "
 "password."
 msgstr ""
-"Das Kennwort darf nicht mit dem Benutzernamen identisch sein. Bitte ein "
-"anderes Kennwort auswählen."
+"Das Passwort darf nicht mit dem Benutzernamen identisch sein. Bitte ein "
+"anderes Passwort auswählen."
 
-#, fuzzy
 msgid "The password fields must match."
-msgstr "Die Passwörter müssen übereinstimmen!"
+msgstr "Die Passwortfelder müssen übereinstimmen."
 
 msgid ""
 "The password won't be changed unless you choose a new one using the link "
 "above, and you are the only recipient of this message."
 msgstr ""
+"Das Passwort wird nicht geändert werden, es sei denn, Sie wählen ein neues "
+"über den Link oben, und Sie der einzige Empfänger dieser Nachricht sind."
 
 msgid "The passwords must match!"
 msgstr "Die Passwörter müssen übereinstimmen!"
@@ -6411,12 +6391,14 @@ msgid ""
 "The root domain where you install Zikula, e.g. \"example.com\". Do not "
 "include subdirectories."
 msgstr ""
-"Der Server auf dem Zikula installiert wird (z.B. beispiel.de). Bitte ohne "
-"Unterverzeichnisse angeben."
+"Die Stammdomäne, wo Sie Zikula, z. B. \"example.com\" installieren. "
+"Enthalten Sie keine Unterverzeichnisse."
 
-#, fuzzy
 msgid "The selected item does not exist"
-msgstr "%s existiert nicht"
+msgstr "Das ausgewählte Element ist nicht vorhanden"
+
+msgid "The selected user is already a member of this group."
+msgstr "Der ausgewählte Benutzer ist bereits ein Mitglied dieser Gruppe."
 
 msgid "The site is currently off-line."
 msgstr "Diese Website ist momentan deaktiviert."
@@ -6431,36 +6413,47 @@ msgstr ""
 "Das angegebene Templates für den Render-Block existiert nicht im Modul "
 "'%1$s'. Block ID: %2$s"
 
+#, fuzzy
 msgid ""
 "The term \"bar\" will match \"foobarthis\", but not \"foobar\" nor \"barfoo"
 "\"."
 msgstr ""
+"The term \"bar\" will match \"foobarthis\", but not \"foobar\" nor \"barfoo"
+"\"."
 
 msgid ""
 "The term \"foo\" will match \"fOo\", \"AnotherFoo\" and so on, but not "
 "\"FoObar\" or \"FooBlub\"."
 msgstr ""
+"Der Begriff \"Foo\" passt für \"fOo\", \"AnotherFoo\" und so weiter, aber "
+"nicht für \"FoObar\" oder \"FooBlub\"."
 
 msgid ""
 "The term \"foo\" will match \"fOo\", \"FOObar\", \"FooBlub\" and so on, but "
 "not \"AnotherFoo\"."
 msgstr ""
+"Der Begriff \"Foo\" passt für \"fOo\", \"FOObar\", \"FooBlub\" und so "
+"weiter, aber nicht für \"AnotherFoo\"."
 
 msgid ""
 "The theme in use must implement the block position or the assigned blocks "
 "will never be displayed."
 msgstr ""
+"Das aktive Theme  muss die Blockposition implementieren oder die "
+"zugewiesenen Blöcke werden nie angezeigt."
 
 msgid "The update check is not enabled, but preferably should be."
-msgstr ""
+msgstr "Nach Updates suchen ist nicht aktiviert, sollte aber aktiviert werden."
 
 msgid ""
 "The user account '%username%' at %sitename% has this e-mail address "
 "associated with it."
 msgstr ""
+"Das Benutzerkonto \"%username%\" auf %sitename% ist mit diese e-Mail-Adresse "
+"verbunden."
 
-msgid "The user name for your account is: %1s"
-msgstr ""
+msgid "The user name for your account is: %user%"
+msgstr "Der Benutzername für Ihr Konto ist: Benutzer %"
 
 msgid "The user name you entered (%u) has already been registered."
 msgstr "Der eingegebene Benutzer (%u) ist schon registriert."
@@ -6479,7 +6472,7 @@ msgstr ""
 "Striche."
 
 msgid "The value is scanned case insensitive."
-msgstr ""
+msgstr "Der Wert wird unabhängig von Groß- bzw. Kleinschreibung abgefragt."
 
 msgid ""
 "The value provided does not appear to be a valid list of user names. The "
@@ -6504,35 +6497,28 @@ msgstr ""
 "falls es keine zu definierenden Werte gibt, dann muss sie komplett leer sein "
 "(keine Leerzeichen, Kommas oder andere Zeichen)."
 
-#, fuzzy
 msgid ""
 "The version of this module is incompatible with the version of the core."
 msgstr ""
 "Diese Modulversion ist nicht kompatibel mit der aktuellen Core-Version."
 
-#, fuzzy
 msgid "The web site administrator has created this new account for you."
 msgstr "Der Administrator der Webseite hat dieses neue Benutzerkonto erstellt."
 
-#, fuzzy
 msgid "Theme config"
-msgstr "Theme-Konfigurationen"
+msgstr "Theme Konfiguration"
 
-#, fuzzy
 msgid "Theme configuration"
-msgstr "Theme-Konfigurationen"
+msgstr "Theme-Konfiguration"
 
-#, fuzzy
 msgid "Theme confirmation prompt"
 msgstr "Theme Sicherheitsabfrage"
 
-#, fuzzy
 msgid "Theme credits"
 msgstr "Theme-Informationen"
 
-#, fuzzy
 msgid "Theme is %sub% based"
-msgstr "Theme für die Administration"
+msgstr "Das Theme ist %sub % bezogen"
 
 msgid "Theme switcher"
 msgstr "Theme-Switcher"
@@ -6544,6 +6530,9 @@ msgid ""
 "Themes control the visual presentation of a site. Zikula ships with a small "
 "selection of themes, but many legacy themes are available from the %sub%."
 msgstr ""
+"Themes bestimmen die visuelle Darstellung einer Website. Zikula liefert eine "
+"kleinen Auswahl von Themen mit, aber viele ältere Themen sind bei %sub% "
+"verfügbar."
 
 msgid "Themes list"
 msgstr "Theme-Liste"
@@ -6551,26 +6540,25 @@ msgstr "Theme-Liste"
 msgid "Themes regenerated"
 msgstr "Themes neu generiert"
 
-#, fuzzy
 msgid "There are currently no groups that can be joined."
 msgstr ""
 "Es stehen aktuell keine offenen oder privaten Gruppen zur Verfügung, in "
 "denen man sich eintragen könnte."
 
-#, fuzzy
 msgid "There are currently no modules in this category."
 msgstr "In dieser Modulkategorie befinden sich momentan keine Module."
 
+#, fuzzy
 msgid "There are no active modules to search. Please activate at %link"
 msgstr ""
+"Es gibt keine aktiven Module zu suchen. Bitte aktivieren Sie unter % link"
 
 msgid "There are no providers available for %sub%."
-msgstr ""
+msgstr "Gibt es keine Anbieter für %sub%."
 
 msgid "There are no subscribers available for %sub%."
-msgstr ""
+msgstr "Es gibt keine Abonnenten für %sub%."
 
-#, fuzzy
 msgid "There are six display settings."
 msgstr "Es gibt sechs Anzeigeeinstellungen."
 
@@ -6581,7 +6569,6 @@ msgstr ""
 "Zu viele Benutzer mit dieser Adresse registriert. Kontaktiere den System "
 "Administrator für Hilfe."
 
-#, fuzzy
 msgid ""
 "There aren't any areas attached here.<br />Drag an area from the right and "
 "drop it here to attach it."
@@ -6589,15 +6576,12 @@ msgstr ""
 "Es sind hier keine Bereiche angehängt.<br />Diese können von der rechten "
 "Seite mittels Drag+Drop auf der linken Seite angehängt werden."
 
-#, fuzzy
 msgid "There arent any modules services available."
-msgstr "Das Modul '%s' ist nicht verfügbar."
+msgstr "Es sind keine Module-Dienste verfügbar."
 
-#, fuzzy
 msgid "There is currently no pending content."
-msgstr "Diese Website ist momentan deaktiviert."
+msgstr "Derzeit gibt es keine ausstehenden Inhalte."
 
-#, fuzzy
 msgid "There is currently only one option in the General settings section."
 msgstr "Es gibt derzeit nur eine Option in den allgemeinen Einstellungen."
 
@@ -6605,6 +6589,8 @@ msgid ""
 "There is no '.htaccess' file in the application directory '/app', but one "
 "should be present."
 msgstr ""
+"Es gibt keine \".htaccess\" Datei im Anwendungsverzeichnis \"/ app\", aber "
+"es sollte eine vorhanden sein."
 
 msgid "There was an error activating system modules"
 msgstr "Es gab einen Fehler bei der Aktivierung des System Moduls"
@@ -6646,9 +6632,8 @@ msgstr "Es gab einen Fehler bei der Installation des Zikula Gruppen Moduls"
 msgid "There was an error installing Zikula Mailer Module"
 msgstr "Es gab einen Fehler bei der Installation des Zikula Mailer Moduls"
 
-#, fuzzy
 msgid "There was an error installing Zikula Menu Module"
-msgstr "Es gab einen Fehler bei der Installation des Zikula Mailer Moduls"
+msgstr "Gab es einen Fehler bei der Installation des Zikula-Menü-Modules"
 
 msgid "There was an error installing Zikula Permissions Module"
 msgstr ""
@@ -6691,29 +6676,19 @@ msgstr "Es gab einen Fehler beim Schützen der Konfigurationsdateien"
 msgid "There was an error regenerating the themes"
 msgstr "Es gab einen Fehler beim erneuten generieren der Themes"
 
-msgid "There was an error reloading the routes"
-msgstr "Es gab einen Fehler beim erneuten Laden der Routen"
-
 msgid "There was an error upgrading the modules"
 msgstr "Es gab einen Fehler beim aktualisieren der Module"
 
-msgid "There was an error upgrading to Core 1.4.1"
-msgstr "Es gab einen Fehler bei der Aktualisierung auf Core 1.4.1"
-
-msgid "There was an error upgrading to Core 1.4.2"
-msgstr "Es gab einen Fehler bei der Aktualisieren auf Core 1.4.2"
-
-msgid "There was an error upgrading to Core 1.4.3"
-msgstr "Es gab einen Fehler bei der Aktualisierung auf Core 1.4.3"
+msgid "There was an error upgrading to Core %version%"
+msgstr "Fehler beim Upgrade auf Core %version%"
 
 #, fuzzy
-msgid "There was an error upgrading to Core 1.4.4"
-msgstr "Es gab einen Fehler bei der Aktualisierung auf Core 1.4.1"
-
 msgid ""
 "Thereby \"Foo\" does not mean the name of the joined entity, but the source "
 "or target alias of the corresponding relationship."
 msgstr ""
+"Dabei bedeutet \"Foo\" nicht der Name der verknüpften Entität, aber die "
+"Quelle oder das Ziel Alias der entsprechenden Beziehung."
 
 msgid ""
 "This affects both passwords created during registration, as well as "
@@ -6728,12 +6703,22 @@ msgid ""
 "This e-mail address ('%email') has been used to register an account on "
 "'%site' (%url)."
 msgstr ""
+"Hallo! Diese Email-Adresse (\"%email\") wurde verwendet, um ein Konto auf "
+"'%site' (%url) zu registrieren."
 
+msgid "This function requires JavaScript activated!"
+msgstr "Diese Funktion verlangt aktiviertes Javascript!"
+
+#, fuzzy
 msgid ""
 "This has the advantage that it is possible to join a certain table multiple "
 "times. For example instead of having many addresses for a person one could "
 "also create two relationships for business and home addresses this way."
 msgstr ""
+"Dies hat den Vorteil, dass es möglich ist, eine bestimmte Tabelle mehrfach "
+"zu verknüpfen. Zum Beispiel könnte anstatt viele Adressen für eine Person "
+"auch zwei Beziehungen für Geschäfts- und Privatadressen auf diese Weise "
+"entstehen."
 
 msgid ""
 "This is like a non-existing workflow. Everything is online immediately after "
@@ -6742,6 +6727,7 @@ msgstr ""
 "Dies ist wie ein nicht existierender Workflow. Alles ist nach dem Erstellen "
 "direkt online."
 
+#, fuzzy
 msgid ""
 "This is the list of block positions currently existing for your site's "
 "pages.\n"
@@ -6754,7 +6740,18 @@ msgid ""
 "To delete a block position, click on the 'Delete' icon and confirm the "
 "action in the confirmation prompt that will display."
 msgstr ""
+"This is the list of block positions currently existing for your site's "
+"pages.\n"
+"You can create a new block position by clicking 'Create block position' in "
+"the menu. To edit the settings for a block position,\n"
+"click on the 'Edit' icon beside that particular position. To reorder the "
+"blocks within a block position, click on the\n"
+"'Edit placements' (blocks) icon for that position or on the position name in "
+"the block list above.\n"
+"To delete a block position, click on the 'Delete' icon and confirm the "
+"action in the confirmation prompt that will display."
 
+#, fuzzy
 msgid ""
 "This is the list of blocks present in your system, you can use the filter to "
 "display only certain blocks.\n"
@@ -6764,9 +6761,16 @@ msgid ""
 "this table or on the 'edit block placements'\n"
 "    in the position list table below."
 msgstr ""
+"Dies ist die Liste der Blöcke in Ihrem System vorhanden, können Sie den "
+"Filter nur bestimmte Blöcke anzuzeigen.\n"
+"    Die Reihenfolge, in der Blöcke hier aufgelistet werden, ist nicht "
+"unbedingt die Reihenfolge, in der sie im Site-Seiten angezeigt werden.\n"
+"    Um die Anzeige zu verwalten Reihenfolge der Blöcke klicken Sie auf den "
+"Namen der Position in dieser Tabelle oder auf die bearbeiten-Block Praktika "
+"in der Positionstabelle Liste unten."
 
 msgid "This link expires in %amountOfDays% days."
-msgstr ""
+msgstr "Dieser Link läuft in %amountOfDays% Tagen ab."
 
 msgid ""
 "This only applies to legacy variable validation. The system itself has "
@@ -6775,7 +6779,6 @@ msgstr ""
 "Dies betrifft nur veraltete Variablen Validierung. Das System selbst hat "
 "native IDN Unterstützung."
 
-#, fuzzy
 msgid ""
 "This option enables you to disable the Security analyser's check to see if "
 "the Installer is present in your site's root directory. Preferably, you "
@@ -6790,11 +6793,9 @@ msgstr ""
 msgid "This page contains adult content"
 msgstr "Diese Seite enthält Erwachsenen-Inhalte"
 
-#, fuzzy
 msgid "This page is locked"
 msgstr "Diese Seite ist gesperrt"
 
-#, fuzzy
 msgid ""
 "This page is locked because another user is working on it. Please wait: the "
 "page will be unlocked automatically when the other user has finished, and "
@@ -6803,7 +6804,6 @@ msgstr ""
 "Diese Seite ist durch einen anderen Benutzer gesperrt. Das Fenster wird "
 "automatisch aktiv, sobald der andere Benutzer seine Bearbeitung beendet hat."
 
-#, fuzzy
 msgid ""
 "This permission rule has been locked. If you need to unlock it, go to the "
 "Permission rules manager Settings page."
@@ -6819,24 +6819,24 @@ msgid ""
 msgstr ""
 "Diese Einstellung betrifft nur Benutzer, die keine Antwort auf die "
 "Sicherheitsfrage gegeben haben. Die Anzahl von Tagen, nach denen eine "
-"Anfrage zum Rücksetzen des Kennwortes, die auf Bestätigung wartet, abläuft. "
+"Anfrage zum Rücksetzen des Passwortes, die auf Bestätigung wartet, abläuft. "
 "Null (0) eingeben für unendliche Laufzeit (keine automatische Löschung)."
 
 msgid ""
 "This setting only works with Core-1.4.x/2.0 compatible modules (with routes)."
 msgstr ""
+"Diese Einstellung funktioniert nur mit kompatiblen Core-1.4.x/2.0 Modulen "
+"(mit Routing)."
 
-#, fuzzy
 msgid ""
 "This setting was part of the 'shorturl configuration in the past (below)."
 msgstr ""
-"Email Einstellungen sind noch nicht vorhanden. Bitte hier unterhalb "
-"konfigurieren."
+"Diese Einstellung war Bestandteil der Shorturl-Konfiguration in der "
+"Vergangenheit (siehe unten)."
 
 msgid "This site is powered by Zikula!"
 msgstr "Diese Website wurde mit Zikula umgesetzt!"
 
-#, fuzzy
 msgid ""
 "This site needs to be upgraded, please contact the system administrator."
 msgstr ""
@@ -6855,30 +6855,29 @@ msgstr "Time-Out für Ajax-Verbindungen"
 msgid "Title"
 msgstr "Titel"
 
-#, fuzzy
 msgid "Title, Description"
 msgstr "Titel, Beschreibung"
 
-#, fuzzy
 msgid ""
 "To change your password, please enter your current password, and then enter "
 "a new password (you must enter the new password twice to ensure that you "
 "have typed it correctly)."
 msgstr ""
-"Für die Kennwortänderung wird das aktuelle Kennwort benötigt, sowie die "
-"Eingabe des neuen Kennworts inkl. Kennwortwiederholung."
+"Für die Passwortänderung wird das aktuelle Passwort benötigt, sowie die "
+"Eingabe des neuen Passworts inkl. Passwortwiederholung."
 
 msgid ""
 "To connect %sub% to one of the modules from the list below, click on the "
 "checkbox(es) next to the corresponding area."
 msgstr ""
+"Um eine Verbindung %sub% zu einem der anderen Module herzustellen, klicken "
+"Sie auf die Checkbox(en) neben den entsprechenden Bereichen."
 
-#, fuzzy
 msgid "To version"
-msgstr "Version"
+msgstr "auf Version"
 
 msgid "Toggle Dropdown"
-msgstr ""
+msgstr "Toggle Dropdown"
 
 msgid "Top navigation block"
 msgstr "Navigationsblock im Kopfbereich"
@@ -6886,7 +6885,6 @@ msgstr "Navigationsblock im Kopfbereich"
 msgid "Translatable"
 msgstr "Übersetzungsoptionen"
 
-#, fuzzy
 msgid "Translate embedded HTML entities into real characters"
 msgstr "HTML Entitäten in echte Zeichen übersetzen"
 
@@ -6900,18 +6898,25 @@ msgid "Tree-like menu (menutree)"
 msgstr "Verschachtelter Menüblock (Menutree)"
 
 msgid "Twig tag"
-msgstr ""
+msgstr "Twig Tag"
 
 msgid "Type"
 msgstr "Typ"
 
+msgid "Types"
+msgstr "Typen"
+
 msgid "UPGRADE COMPLETE!"
 msgstr "Upgrade abgeschlossen!"
 
+#, fuzzy
 msgid ""
 "Unable to decode composer file of %component% (%filePath%): %error%. Ensure "
 "the composer.json file has a valid syntax."
 msgstr ""
+"Nicht in der Lage, Komponist-Datei der Komponente % (FilePath %) zu "
+"entschlüsseln: Fehler %. Stellen Sie sicher, dass die composer.json-Datei "
+"eine gültige Syntax hat."
 
 msgid ""
 "Unable to send email to the requested %s. Please try your %o or contact the "
@@ -6933,11 +6938,9 @@ msgstr "Nicht kategorisiert"
 msgid "Uninstall %s"
 msgstr "Deinstalliere %s"
 
-#, fuzzy
 msgid "Uninstall module"
 msgstr "Modul deinstallieren"
 
-#, fuzzy
 msgid "Unlimited"
 msgstr "Unbegrenzt"
 
@@ -6950,13 +6953,14 @@ msgstr "Hoch"
 msgid "Update"
 msgstr "Aktualisiert"
 
-#, fuzzy
 msgid "Update checker"
-msgstr "Aktualisierungsdatum"
+msgstr "Update Checker"
 
-#, fuzzy
 msgid "Update checker is enabled"
-msgstr "Passwort Erinnerung ist aktiviert"
+msgstr "Update Checker ist aktiviert"
+
+msgid "Update configuration"
+msgstr "Update-Konfiguration"
 
 msgid "Update content."
 msgstr "Aktualisiere Inhalt."
@@ -6965,15 +6969,16 @@ msgid "Update date"
 msgstr "Aktualisierungsdatum"
 
 msgid "Updated by %user"
-msgstr ""
+msgstr "Aktualisiert von %user"
 
-#, fuzzy
 msgid "Updated by %user on %date"
-msgstr "Aktualisierungsdatum"
+msgstr "Aktualisiert von %user am %date"
 
-#, fuzzy
 msgid "Updated on %date"
-msgstr "Aktualisierungsdatum"
+msgstr "Aktualisiert am %date"
+
+msgid "Updater"
+msgstr "Aktualisieren"
 
 msgid "Upgrade"
 msgstr "Upgrade"
@@ -6981,46 +6986,23 @@ msgstr "Upgrade"
 msgid "Upgrade %s"
 msgstr "Upgrade %s"
 
-#, fuzzy
 msgid "Upgrade Zikula!"
-msgstr "Aktualisiere Module"
+msgstr "Zikula aktualisieren!"
 
-msgid "Upgrade from Core 1.4.0 to Core 1.4.1"
-msgstr "Aktualisierung von Core 1.4.0 auf Core 1.4.1"
-
-msgid "Upgrade from Core 1.4.1 to Core 1.4.2"
-msgstr "Aktualisierung von Core 1.4.1 auf Core 1.4.2"
-
-msgid "Upgrade from Core 1.4.2 to Core 1.4.3"
-msgstr "Aktualisierung von Core 1.4.2 auf Core 1.4.3"
-
-#, fuzzy
-msgid "Upgrade from Core 1.4.3 to Core 1.4.4"
-msgstr "Aktualisierung von Core 1.4.2 auf Core 1.4.3"
+msgid "Upgrade from Core %oldVersion% to Core %newVersion%"
+msgstr "Aktualisierung von Core %oldVersion% auf Core %newVersion%"
 
 msgid "Upgrade modules"
 msgstr "Aktualisiere Module"
 
-msgid "Upgraded to Core 1.4.1"
-msgstr "Aktualisierung auf Core 1.4.1"
+msgid "Upgraded to Core %version%"
+msgstr "Aktualisierung auf Core %version%"
 
-msgid "Upgraded to Core 1.4.2"
-msgstr "Aktualisiert auf Core 1.4.2"
-
-msgid "Upgraded to Core 1.4.3"
-msgstr "Aktualisiert auf Core 1.4.3"
-
-#, fuzzy
-msgid "Upgraded to Core 1.4.4"
-msgstr "Aktualisierung auf Core 1.4.1"
-
-#, fuzzy
 msgid "Upgrader script"
 msgstr "Zikula Upgrade Script"
 
-#, fuzzy
 msgid "Upgrading Modules and Helpers"
-msgstr "Aktualisiere gerade die Module"
+msgstr "Aktualisierung der Module und Helfer"
 
 msgid "Upgrading Zikula in %env% environment."
 msgstr "Aktualisierung von Zikula in der %env% Umgebung."
@@ -7028,18 +7010,8 @@ msgstr "Aktualisierung von Zikula in der %env% Umgebung."
 msgid "Upgrading modules"
 msgstr "Aktualisiere gerade die Module"
 
-msgid "Upgrading to Core 1.4.1"
-msgstr "Aktualisierung auf Core 1.4.1"
-
-msgid "Upgrading to Core 1.4.2"
-msgstr "Aktualisierung auf Core 1.4.2"
-
-msgid "Upgrading to Core 1.4.3"
-msgstr "Aktualisierung auf Core 1.4.3"
-
-#, fuzzy
-msgid "Upgrading to Core 1.4.4"
-msgstr "Aktualisierung auf Core 1.4.1"
+msgid "Upgrading to Core %version%"
+msgstr "Aktualisierung auf Core %version%"
 
 msgid "Upload"
 msgstr "Upload"
@@ -7050,54 +7022,48 @@ msgstr "'HTML Purifier' und internen Ausgabefilter benutzen"
 msgid "Use PHPIDS"
 msgstr "PHPIDS benutzen"
 
-#, fuzzy
 msgid "Use default value (if checked) or override value"
 msgstr ""
 "Standardwert benutzen (wenn Checkbox aktiviert) oder Wert überschreiben"
 
 msgid "Use different keywords."
-msgstr ""
+msgstr "Verwenden Sie andere Schlüsselwörter."
 
 msgid "Use fewer words."
-msgstr ""
+msgstr "Verwenden Sie weniger Wörter."
 
 msgid "Use internal output filter only"
 msgstr "Nur internen Ausgabefilter benutzen"
 
 msgid "Use keywords that are more general."
-msgstr ""
+msgstr "Verwenden Sie Schlüsselwörter, die allgemeiner sind."
 
 msgid "Use site's theme"
 msgstr "Theme der Website nutzen"
 
-#, fuzzy
 msgid "Useful resources"
 msgstr "Hilfreiche Informationen"
 
-#, fuzzy
 msgid "User Credential Settings"
 msgstr "Benutzeranmeldeinformationen"
 
-#, fuzzy
 msgid "User ID"
 msgstr "Benutzer-ID"
 
-#, fuzzy
 msgid "User Login Settings"
-msgstr "Kontoeinstellungen"
+msgstr "Anmeldeeinstellungen"
 
 msgid "User Name"
 msgstr "Benutzername"
 
 msgid "User deleted!|%n users deleted!"
-msgstr ""
+msgstr "Benutzer gelöscht!|%n Benutzer gelöscht!"
 
 msgid "User log-in"
 msgstr "Anmeldung"
 
-#, fuzzy
 msgid "User login"
-msgstr "Anmeldung"
+msgstr "Benutzer Login"
 
 msgid "User management hooks"
 msgstr "Hooks für die Benutzerverwaltung"
@@ -7111,13 +7077,11 @@ msgstr "Benutzername"
 msgid "User name or email"
 msgstr "Benutzername oder Email"
 
-#, fuzzy
 msgid "User name:"
 msgstr "Benutzername:"
 
-#, fuzzy
 msgid "User name: %sub%"
-msgstr "Benutzername"
+msgstr "Benutzername: %sub%"
 
 msgid ""
 "User names can contain letters, numbers, underscores, periods, spaces and/or "
@@ -7129,20 +7093,19 @@ msgstr ""
 msgid "User not found with %field %value"
 msgstr "Benutzer mit %field %value nicht gefunden"
 
-#, fuzzy
 msgid "User not found. Please contact the system administrator for assistance."
-msgstr "%s nicht gefunden. Bitte den System Administrator um Hilfe bitten."
+msgstr ""
+"Benutzer wurde nicht gefunden. Kontaktieren Sie den Systemadministrator um "
+"Hilfe."
 
-#, fuzzy
 msgid "User permission check"
 msgstr "Zugriffregel für Benutzer überprüfen"
 
 msgid "User registration is moderated"
 msgstr "Benutzerregistrierung moderieren"
 
-#, fuzzy
 msgid "User settings"
-msgstr "Filtereinstellungen"
+msgstr "Benutzereinstellungen"
 
 msgid "User status"
 msgstr "Benutzerstatus"
@@ -7150,61 +7113,57 @@ msgstr "Benutzerstatus"
 msgid "User theme"
 msgstr "Benutzer-Theme"
 
+msgid "UserID: %s"
+msgstr "Benutzer ID: %s"
+
 msgid "Users"
 msgstr "Benutzer"
 
-#, fuzzy
 msgid "Users are allowed to change their own theme."
-msgstr "Du bist nicht berechtigt deinen aktiven Status zu ändern."
+msgstr "Nutzer dürfen ihre eigenen Themes ändern."
 
 msgid ""
 "Users are not currently allowed to change their own theme, but may have "
 "previously changed them."
 msgstr ""
+"Benutzer dürfen derzeit nicht ihr eigenes Thema ändern, möglicher Weise aber "
+"haben sie es zuvor geändert."
 
 msgid "Users created by an admin are automatically considered verified."
 msgstr ""
 "Benutzer die von einem Adminstrator angelegt wurden sind automatisch als "
 "verifiziert eingestuft."
 
-#, fuzzy
 msgid "Users groups"
-msgstr "Neue Gruppe"
+msgstr "Benutzergruppen"
 
 msgid "Users list"
 msgstr "Benutzerliste"
 
-#, fuzzy
-msgid "Users to add"
-msgstr "Hinzufügender Benutzer"
+msgid "Users pending approval"
+msgstr "Der Nutzer hat eine Genehmigung ausstehen"
 
 msgid "Value"
 msgstr "Wert"
 
-#, fuzzy
 msgid "Value:"
 msgstr "Wert:"
 
-#, fuzzy
 msgid "Variable"
 msgstr "Variable"
 
-#, fuzzy
 msgid "Variable validation"
 msgstr "Variablen-Validierung"
 
-#, fuzzy
 msgid "Variable value"
 msgstr "Variable-Wert"
 
 msgid "Verification code"
 msgstr "Bestätigungscode"
 
-#, fuzzy
 msgid "Verify my e-mail address"
 msgstr "E-Mail Adresse verifizieren"
 
-#, fuzzy
 msgid "Verify my e-mail address change."
 msgstr "Änderung der E-Mail Adresse bestätigen."
 
@@ -7220,32 +7179,48 @@ msgstr "Version"
 msgid "View IDS log"
 msgstr "IDS Logfile anzeigen"
 
+msgid "View membership of \":name\" group"
+msgstr "Mitgliedschaft \":name\" Gruppe anzeigen"
+
 msgid ""
 "WARNING: The \"%name%\" block position is not available in the current "
 "default theme."
 msgstr ""
+"WARNUNG: Die Blockposition \"%name%\"\" ist nicht verfügbar in das aktuelle "
+"Standard-Theme."
+
+msgid ""
+"WARNING: The PHP Extension %ext is not loaded. All functions using this will "
+"default to %locale. Seek assistance from your provider to install."
+msgstr ""
+"WARNUNG: Die PHP-Erweiterung %ext ist nicht geladen. Alle Funktionen werden "
+"standardmäßig %locale nutzen. Bitten Sie Ihren Provider, um diese zu "
+"installieren."
 
 msgid "WARNING: You appear to be editing your OWN account."
-msgstr ""
+msgstr "Warnung: Du scheinst Dein EIGENES Konto zu bearbeiten."
 
 msgid ""
 "WARNING: You appear to be editing your OWN account. You will not be able to "
 "modify active status, some group memberships or delete yourself."
 msgstr ""
+"Warnung: Sie scheinen Ihr EIGENES Konto zu bearbeiten. Sie werden nicht in "
+"der Lage sein den eigenen aktiv-Status, einige Gruppenmitgliedschaften zu "
+"ändern oder sich selbst zu löschen."
 
 msgid ""
 "WARNING: changing the url affects SEO by breaking existing indexed search "
 "results."
 msgstr ""
+"Warnung: Ändern der Url beeinflusst SEO, indem vorhandene indizierte "
+"Suchergebnisse nicht gefunden werden können."
 
 msgid "Warn only"
 msgstr "Nur Warnungen"
 
-#, fuzzy
 msgid "Warning"
 msgstr "Warnung"
 
-#, fuzzy
 msgid ""
 "Warning! Enabling the &lt;img&gt;, &lt;span&gt;, &lt;marquee&gt;, &lt;"
 "script&gt;, &lt;embed&gt;, &lt;object&gt; or &lt;iframe&gt; tags increases "
@@ -7260,7 +7235,6 @@ msgstr ""
 "empfohlen, diese Tags nicht zu erlauben. Es sei denn, die möglichen "
 "Konsequenzen sind bekannt."
 
-#, fuzzy
 msgid ""
 "Warning! If you have a large number of categories then this action may time "
 "out, or may exceed the memory limit configured within your PHP installation."
@@ -7279,7 +7253,6 @@ msgstr ""
 msgid "Warning! Nothing to do! %sub% is already approved."
 msgstr "Warnung! Keine Aktion notwendig! %sub% ist schon genehmigt."
 
-#, fuzzy
 msgid ""
 "Warning! Only enable the above option if this site is isolated from the "
 "Internet, otherwise security could be endangered if you omit to remove the "
@@ -7294,18 +7267,21 @@ msgid ""
 "uninstall this module then these modules that require it will also be "
 "uninstalled."
 msgstr ""
+"Warnung! Andere im System vorhanden Module benötigen dieses Modul. Wenn Sie "
+"dieses Modul deinstallieren, werden diese Module, die es erfordern auch "
+"deinstalliert werden."
 
 msgid "Warning! Removing this module will also remove the following blocks"
 msgstr ""
+"Warnung! Wird dieses Modul entfernt, werden auch die folgenden Blöcke "
+"entfernt"
 
-#, fuzzy
 msgid ""
 "Warning! The notification email for the new registration could not be sent."
 msgstr ""
 "Warnung! Die E-Mail mit der Benachrichtigung für die neue Registrierung "
 "konnte nicht versendet werden."
 
-#, fuzzy
 msgid ""
 "Warning! The notification email for the newly created user could not be sent."
 msgstr ""
@@ -7336,7 +7312,6 @@ msgstr ""
 "Warnung! Diese Methode funktioniert nicht mehr. Du musst die neu "
 "registrieren."
 
-#, fuzzy
 msgid ""
 "Warning! Uninstalling this module will also permanently remove all data "
 "associated with it, including all data held by other modules that are hooked "
@@ -7346,7 +7321,6 @@ msgstr ""
 "Moduls. Außerdem werden auch die Inhalte aus anderen Modulen gelöscht, die "
 "über Hooks mit diesem Modul verbunden sind."
 
-#, fuzzy
 msgid ""
 "Warning! Using the <a href=\"%s\">HTML Purifier output filter</a> will "
 "override settings for some HTML tags (such as &lt;object&gt; and &lt;"
@@ -7367,6 +7341,8 @@ msgid ""
 "Warning: This feature is deprecated and it is not recommended to change from "
 "index.php."
 msgstr ""
+"Achtung: Dieses Feature ist veraltet und es wird nicht empfohlen, index.php "
+"zu ändern."
 
 msgid "Warning: could not install selected dependency %s"
 msgstr "Warnung: Konnte ausgewählte Abhängigkeit %s nicht installieren"
@@ -7374,7 +7350,6 @@ msgstr "Warnung: Konnte ausgewählte Abhängigkeit %s nicht installieren"
 msgid "Weekly"
 msgstr "Wöchentlich"
 
-#, fuzzy
 msgid "Welcome to %1$s (%2$s)!"
 msgstr "Willkommen auf %1$s (%2$s)!"
 
@@ -7384,14 +7359,12 @@ msgstr "Willkommen auf %1$s, %2$s!"
 msgid "Welcome to %s!"
 msgstr "Willkommen auf %s!"
 
-#, fuzzy
 msgid "Welcome to %sub%!"
-msgstr "Willkommen auf %s!"
+msgstr "Willkommen bei %sub%!"
 
 msgid "Welcome to the route section of the Routes application."
-msgstr ""
+msgstr "Willkommen beim Routing Abschnitt der Route Anwendung."
 
-#, fuzzy
 msgid ""
 "When a site is originally installed, the Installer script creates a "
 "configuration file called 'config.php' that is located in the sub-directory "
@@ -7405,7 +7378,6 @@ msgstr ""
 "dies ein Sicherheitsrisiko dar. Das Zugriffsrecht für diese Datei sollte auf "
 "nur-lesbar (chmod 400, 440 oder notfalls 444) gesetzt werden."
 
-#, fuzzy
 msgid ""
 "When a site is originally installed, the Security center is installed and "
 "activated by default. You will see the above message if the Security center "
@@ -7417,7 +7389,6 @@ msgstr ""
 "Center deaktiviert wurde. Es wird empfohlen, das Security-Center zu "
 "aktivieren, da es helfen kann, die Sicherheit der Website zu erhöhen."
 
-#, fuzzy
 msgid ""
 "When a site is originally installed, the Security center is installed and "
 "activated by default. You will see the above message if the Security center "
@@ -7429,7 +7400,6 @@ msgstr ""
 "Center entfernt wurde. Es wird empfohlen, das Security-Center zu "
 "installieren, da es helfen kann, die Sicherheit der Website zu erhöhen."
 
-#, fuzzy
 msgid ""
 "When checked, this option causes graphic icons to be displayed for each "
 "module in the Administration panel."
@@ -7441,6 +7411,8 @@ msgid ""
 "When filtering for dates you can use convenient extensions and even time "
 "periods."
 msgstr ""
+"Beim Filtern nach Datum können Sie bequeme Erweiterungen und sogar Zeiträume "
+"benutzen."
 
 msgid ""
 "When lists are displayed (for example, lists of users, lists of "
@@ -7453,9 +7425,8 @@ msgstr ""
 msgid "With description"
 msgstr "Mit Beschreibung"
 
-#, fuzzy
 msgid "With selected routes"
-msgstr "Ausgewählte Benutzer löschen"
+msgstr "Mit ausgewählten Routen"
 
 msgid "With the current setup the block is disabled."
 msgstr "Mit den aktuellen Einstellungen ist der Block deaktiviert."
@@ -7463,13 +7434,9 @@ msgstr "Mit den aktuellen Einstellungen ist der Block deaktiviert."
 msgid "Word wrap"
 msgstr "Wort Umbruch"
 
-msgid "Workflow state"
-msgstr "Workflow Status"
-
 msgid "Writing and thinking"
 msgstr "Schreiben und Denken"
 
-#, fuzzy
 msgid "XHTML-capable"
 msgstr "XHTML-fähig"
 
@@ -7480,27 +7447,32 @@ msgid "Yes"
 msgstr "Ja"
 
 msgid "Yes, cancel the change of password"
-msgstr "Ja, die Kennwort-Änderung abbrechen"
+msgstr "Ja, die Passwort-Änderung abbrechen"
 
 msgid "Yes, force the change of password"
-msgstr "Ja, die Kennwort-Änderung erzwingen"
+msgstr "Ja, die Passwort-Änderung erzwingen"
 
 msgid "Yes/No"
 msgstr "Ja/Nein"
 
-#, fuzzy
+msgid ""
+"You already have a pending application. Please wait until the administrator "
+"notifies you."
+msgstr ""
+"Sie haben bereits eine anhängige Anmeldung. Bitte warten Sie, bis der "
+"Administrator Sie benachrichtigt."
+
 msgid "You are an anonymous guest."
 msgstr "Noch nicht registriert oder angemeldet."
 
 msgid "You are currently using an unreleased version of the Zikula Core."
-msgstr ""
+msgstr "Sie verwenden derzeit eine unveröffentlichte Version von Zikula Core."
 
-#, fuzzy
 msgid "You are in:"
 msgstr "Aktuelle Position:"
 
 msgid "You are logged-in as <strong>%sub%</strong>."
-msgstr ""
+msgstr "Sie sind eingeloggt als <strong>%sub%</strong>."
 
 msgid "You are not allowed to alter your own active state."
 msgstr "Du bist nicht berechtigt deinen aktiven Status zu ändern."
@@ -7524,6 +7496,10 @@ msgid ""
 "                    on the install button, but before doing so please read "
 "the %inst%. Further information can be found in the %docs%."
 msgstr ""
+"Sie sehen diese Meldung, da Zikula noch nicht installiert ist. Sie können "
+"die Installationdurch Klicken auf die Schaltfläche \"installieren\" starten, "
+"aber bevor Sie Zikula installieren lesen Sie bitte die %inst%. Weitere "
+"Informationen finden in der %docs%."
 
 msgid ""
 "You are seeing this message because Zikula requires upgrade. You can upgrade "
@@ -7531,8 +7507,11 @@ msgid ""
 "                    on the upgrade button, but before doing so please read "
 "the %inst%. Further information can be found in the %docs%."
 msgstr ""
+"Sie sehen diese Meldung, weil Zikula ein Upgrade erfordert. Das Upgrade "
+"startet durch Klicken auf die Schaltfläche \"Upgrade\", aber bevor Sie "
+"Zikula aktualisieren lesen sie bitte %inst%. Weitere Informationen finden in "
+"der %docs%."
 
-#, fuzzy
 msgid ""
 "You are the only recipient of this message, and your user name has not been "
 "sent to any other e-mail address."
@@ -7541,29 +7520,29 @@ msgstr ""
 "nicht an irgend welche anderen E-Mail-Adressen geschickt."
 
 msgid "You are using the latest stable version of the Zikula core."
-msgstr ""
+msgstr "Sie verwenden die neueste stabile Version von Zikula Core."
 
 msgid "You can <a href=%sub%>register here</a>."
-msgstr ""
+msgstr "Hier können Sie sich <a href=%sub%>registrieren</a>."
 
 msgid ""
 "You can arrange categories list using drag and drop. New order will be saved "
 "automatically."
 msgstr ""
+"Sie können Kategorienliste per Drag & drop organisieren. Neue Reihenfolge "
+"wird automatisch gespeichert."
 
 msgid "You can change your routing configuration in the Settings module: %s."
-msgstr ""
+msgstr "Sie können Ihre routing-Konfiguration im Einstellungsmodul ändern: %s."
 
 msgid "You can choose the displayed name(s) for each module."
-msgstr ""
+msgstr "Sie können die angezeigten Namen für jedes Modul auswählen."
 
-#, fuzzy
 msgid "You can confirm the e-mail address change by clicking on this link: "
 msgstr ""
 "Die Änderung der E-Mail Adresse kann über den folgenden Link bestätigt "
 "werden:"
 
-#, fuzzy
 msgid ""
 "You can confirm the e-mail address change by going to this URL with your "
 "browser: "
@@ -7571,25 +7550,24 @@ msgstr ""
 "Die Änderung der E-Mail-Adresse kann durch den Aufruf dieser URL im Browser "
 "bestätigt werden:"
 
-#, fuzzy
 msgid ""
 "You can just delete the message and log-in with your existing password next "
 "time you visit the site."
 msgstr ""
 "Die Nachricht kann einfach gelöscht werden, in dem Fall bleibt das "
-"bestehende Kennwort für die nächste Anmeldung weiter gültig."
+"bestehende Passwort für die nächste Anmeldung weiter gültig."
 
-#, fuzzy
 msgid "You can just delete this message."
 msgstr "Diese Nachricht kann gefahrlos gelöscht werden."
 
-#, fuzzy
 msgid "You can now create a new password by clicking on this link:"
 msgstr ""
-"Mit diesem Bestätigungscode kann unter %s ein neues Kennwort vergeben werden."
+"Durch klicken auf diesen Link können Sie jetzt ein neues Passwort erstellen:"
 
 msgid "You can now create a new password by clicking on this link: %sub%"
 msgstr ""
+"Sie können nun durch Klicken auf diesen Link ein neues Passwort erstellen: "
+"%sub%"
 
 msgid ""
 "You can set a question to be answered at registration time, to protect the "
@@ -7598,7 +7576,6 @@ msgstr ""
 "Zum Schutz vor Spam-Registrierungen durch Bots oder Skripte kann der "
 "Registrierungsvorgang mit dieser Spam-Schutz Frage versehen werden."
 
-#, fuzzy
 msgid ""
 "You can use relative time information according to the GNU Date Input "
 "Formats syntax."
@@ -7616,6 +7593,8 @@ msgid ""
 "You have JavaScript disabled. Please activate it to proceed or use the CLI "
 "script instead."
 msgstr ""
+"Sie haben JavaScript deaktiviert. Bitte aktivieren Sie es um fortzufahren "
+"oder verwenden Sie das CLI-Skript."
 
 msgid ""
 "You have a problem! '%s' is not writeable. Please ensure that the "
@@ -7642,15 +7621,13 @@ msgstr ""
 "Ein Problem ist aufgetreten! die PHP version ist %actual unterstützt nicht "
 "die Zikula System Voraussetzungen von %required oder neuer."
 
-#, fuzzy
 msgid ""
 "You have got a problem! Your PHP version is %s, which does not satisfy the "
 "Zikula system requirement of version %phpmin or later."
 msgstr ""
-"Ein Problem ist aufgetreten! die PHP version ist %actual unterstützt nicht "
-"die Zikula System Voraussetzungen von %required oder neuer."
+"Sie haben ein Problem! Ihre PHP-Version ist %s, die nicht dieZikula  "
+"Systemanforderungen %phpmin oder später erfüllt."
 
-#, fuzzy
 msgid ""
 "You have the possibility of enabling support for legacy modules. However, "
 "legacy modules can contain security holes that can compromise a site's "
@@ -7667,21 +7644,17 @@ msgstr ""
 "ausgeschaltet werden (dies ist die Standardeinstellung nach der erstmaligen "
 "Installation)."
 
-#, fuzzy
 msgid "You may now log into the web site."
 msgstr ""
 "Jetzt ist eine Anmeldung auf der Website mit dem Benutzernamen und dem "
-"Kennwort möglich."
+"Passwort möglich."
 
-#, fuzzy
 msgid "You must confirm this change before it will take effect."
 msgstr "Dieser Änderung muss zugestimmt werden, bevor sie durchgeführt wird."
 
-#, fuzzy
 msgid "You see the message"
 msgstr "Mitteilung"
 
-#, fuzzy
 msgid ""
 "You will receive an additional e-mail message once an administrator has "
 "reviewed your request."
@@ -7689,14 +7662,12 @@ msgstr ""
 "Nachdem ein Administrator die Anfrage geprüft hat, wird eine Nachricht per E-"
 "Mail versendet."
 
-#, fuzzy
 msgid ""
 "You will receive an e-mail to your new e-mail address to confirm the change."
 msgstr ""
 "Es wird eine Nachricht an die neue E-Mail Adresse verschickt, um die "
 "Änderung abschließend zu bestätigen."
 
-#, fuzzy
 msgid ""
 "You will see listed all the modules currently installed and activated. Open "
 "the dropdown list beside each module and choose the module category in which "
@@ -7741,17 +7712,14 @@ msgstr ""
 "regulären Ausdrücken behandeln zu können. Die eingesetzte PCRE-Bibliothek "
 "muss mit der Option '--enable-unicode-properties' kompiliert werden."
 
-#, fuzzy
 msgid ""
 "Your PHP installation's PCRE library has Unicode property support enabled."
 msgstr ""
 "Die PCRE-Bibliothek der PHP-Installation unterstützt Unicode-Eigenschaften."
 
-#, fuzzy
 msgid "Your PHP version is %s."
 msgstr "Die verwendete PHP Version ist %s."
 
-#, fuzzy
 msgid ""
 "Your account application has been approved. Thank you for your patience "
 "during the new account application review process."
@@ -7759,7 +7727,6 @@ msgstr ""
 "Die Registrierungsanfrage wurde freigegeben. Vielen Dank für die Geduld "
 "während des Freigabeprozesses bei neue Registrierungen."
 
-#, fuzzy
 msgid "Your account details are as follows:"
 msgstr "Die Details zum Benutzerkonto sind folgende:"
 
@@ -7777,12 +7744,19 @@ msgstr ""
 "Das Benutzerkonto wurde deaktiviert. Bitte einen Administrator für weitere "
 "Informationen kontaktieren."
 
-#, fuzzy
 msgid ""
 "Your change has been successfully saved. You are now logged in with your new "
 "password."
 msgstr ""
-"Code ist bestätigt. Du bist jetzt mit deinem neuen Passwort eingeloggt."
+"Die Änderung wurde erfolgreich gespeichert. Sie sind nun mit Ihrem neuen "
+"Passwort angemeldet."
+
+msgid ""
+"Your log-in request was not completed. You must change your web site "
+"account's password first."
+msgstr ""
+"Die Anmelde-Anfrage ist nicht abgeschlossen. Zuerst muss das Passwort dieses "
+"Benutzerkontos geändert werden."
 
 msgid ""
 "Your new account is not active yet. Please contact the site administrator "
@@ -7792,27 +7766,30 @@ msgstr ""
 "Informationen kontaktieren."
 
 msgid "Your new password cannot match your current password."
-msgstr "Das neue Kennwort darf nicht mit dem alten identisch sein."
+msgstr "Das neue Passwort darf nicht mit dem alten identisch sein."
 
 msgid "Your recent request at %s."
 msgstr "Deine aktuelle Anfrage bei %s."
 
 msgid "Your request could not be processed due to invalid arguments."
 msgstr ""
+"Ihre Anfrage konnte wegen ungültiger Argumente nicht verarbeitet werden."
 
 msgid ""
 "Your request could not be processed due to invalid arguments. Maybe your "
 "link is expired?"
 msgstr ""
+"Ihre Anfrage konnte aufgrund ungültiger Argumente nicht verarbeitet werden. "
+"Vielleicht ist Ihr Link nicht mehr gültig?"
 
 msgid "Your request could not be processed due to missing arguments."
 msgstr ""
+"Ihre Anfrage konnte aufgrund der fehlenden Argumente nicht verarbeitet "
+"werden."
 
-#, fuzzy
 msgid "Your request could not be processed."
-msgstr "Die angeforderte Datei (%s) konnte nicht gefunden werden."
+msgstr "Die Anfrage konnte nicht verarbeitet werden."
 
-#, fuzzy
 msgid "Your request is also waiting for administrator approval."
 msgstr "Die Anfrage wartet auch auf Freigabe durch einen Administrator."
 
@@ -7823,7 +7800,6 @@ msgstr ""
 "Die Registrierungsanfrage für diese Seite wartet noch auch Freigabe durch "
 "einen Administrator."
 
-#, fuzzy
 msgid ""
 "Your user name is used to identify you to other users on the site. You still "
 "need to set one up, even though you will not be using it to log in."
@@ -7832,7 +7808,6 @@ msgstr ""
 "identifiziert werden zu können. Es muss auch ein Name gewäht werden, wenn "
 "dieser nicht zur Anmeldung benutzt werden soll."
 
-#, fuzzy
 msgid "Your verification code is:"
 msgstr "Der Bestätigungscode lautet:"
 
@@ -7857,15 +7832,11 @@ msgstr "Zikula Kategorie Module"
 msgid "Zikula Categories Module installed"
 msgstr "Zikula Kategorie Modul erfolgreich installiert"
 
-#, fuzzy
 msgid "Zikula Core"
-msgstr ""
-"Eine neue Version des Zikula Core steht zur Verfügung. Bitte laden Sie sich "
-"die neue Zikula Core"
+msgstr "Zikula Core"
 
-#, fuzzy
 msgid "Zikula Core Installer"
-msgstr "Zikula Installations Routine"
+msgstr "Zikula Core Installer"
 
 msgid ""
 "Zikula Core is already installed so the installer has been disabled.  If you "
@@ -7874,18 +7845,20 @@ msgid ""
 "state and clear the database tables before\n"
 "                    running the installer again."
 msgstr ""
+"Zikula Core ist bereits installiert, so dass der Installer deaktiviert "
+"wurde.  Benötigen Sie zum Ausführen des Installationsprogramms eines zweiten "
+"Mal, müssen Sie config.php auf seinen ursprünglichen Zustand zurückgesetzt "
+"und die Datenbank-Tabellen löschen, bevor Sie das Installationsprogramm "
+"erneut ausführen."
 
-#, fuzzy
 msgid "Zikula Core is already installed!"
-msgstr "Zikula Kategorie Modul erfolgreich installiert"
+msgstr "Zikula Core ist bereits installiert!"
 
-#, fuzzy
 msgid "Zikula Core is not installed!"
 msgstr "Zikula ist noch nicht installiert!"
 
-#, fuzzy
 msgid "Zikula Core requires upgrade!"
-msgstr "Zikula Kategorie Module"
+msgstr "Zikula Core Upgrade erforderlich !"
 
 msgid "Zikula Extension Module"
 msgstr "Zikula Erweiterungen Modul"
@@ -7908,13 +7881,11 @@ msgstr "Zikula Mailer Modul"
 msgid "Zikula Mailer Module installed"
 msgstr "Zikula Mailer Modul erfolgreich installiert"
 
-#, fuzzy
 msgid "Zikula Menu Module"
-msgstr "Zikula Mailer Modul"
+msgstr "Zikula Menü-Modul"
 
-#, fuzzy
 msgid "Zikula Menu Module installed"
-msgstr "Zikula Mailer Modul erfolgreich installiert"
+msgstr "Zikula-Menü-Modul installiert"
 
 msgid "Zikula Permissions Module"
 msgstr "Zikula Zugriffsrechte Modul"
@@ -7952,12 +7923,11 @@ msgstr "Zikula Theme Modul"
 msgid "Zikula Theme Module installed"
 msgstr "Zikula Theme Module wurde installiert"
 
-#, fuzzy
 msgid "Zikula Themes Repository"
-msgstr "Zikula Theme Modul"
+msgstr "Zikula Themes Repository"
 
 msgid "Zikula Upgrader Script"
-msgstr "Zikula Upgrade Script"
+msgstr "Zikula Altualisierungs Skript"
 
 msgid "Zikula Users Module"
 msgstr "Zikula Benutzer Modul"
@@ -7974,36 +7944,29 @@ msgstr "Zikula ZAuth Modul installiert"
 msgid "Zikula already appears to be installed."
 msgstr "Es scheint als wäre Zikula schon installiert."
 
-#, fuzzy
 msgid "Zikula documentation"
 msgstr "Dokumentation"
 
 msgid "Zikula installation completed!"
 msgstr "Zikula Installation fertig gestellt!"
 
-#, fuzzy
 msgid "Zikula is already installed!"
 msgstr "Zikula ist bereits installiert!"
 
-#, fuzzy
 msgid "Zikula is free software released under the GPL license!"
 msgstr "Zikula ist freie Software, veröffentlicht unter der LGPL-Lizenz!"
 
-#, fuzzy
 msgid "Zikula is installing!"
-msgstr "Zikula Installation fertig gestellt!"
+msgstr "Zikula wird installiert!"
 
-#, fuzzy
 msgid "Zikula is not installed!"
 msgstr "Zikula ist nicht installiert!"
 
-#, fuzzy
 msgid "Zikula is not upgraded!"
-msgstr "Module aktualisiert"
+msgstr "Zikula ist nicht aktualisiert!"
 
-#, fuzzy
 msgid "Zikula is upgrading!"
-msgstr "Zikula Administration"
+msgstr "Zikula wird aktualisiert!"
 
 msgid "active"
 msgstr "aktiv"
@@ -8018,7 +7981,7 @@ msgid "albert,12secure09,albert@example.org,1,1,2"
 msgstr "axel,12sicher09,axel@example.org,1,1,2"
 
 msgid "be patient!"
-msgstr ""
+msgstr "Haben Sie Geduld!"
 
 msgid ""
 "date.timezone is currently not set.  It needs to be set to a valid timezone "
@@ -8037,69 +8000,63 @@ msgstr "Tage (wenn 'Anmeldung speichern' aktiviert wurde)"
 msgid "email address"
 msgstr "Email Adresse"
 
-#, fuzzy
 msgid "filtered"
-msgstr "Filter"
+msgstr "gefiltert"
 
-#, fuzzy
 msgid "george,lesssecure,george@example.org"
 msgstr "frank,hohesicherheit,frank@example.org"
 
-#, fuzzy
 msgid "george,lesssecure,george@example.org,1,0,1|5"
 msgstr "frank,hohesicherheit,frank@example.org,1,0,1|5"
 
-#, fuzzy
+msgid "group"
+msgstr "Gruppe"
+
 msgid "inactive"
-msgstr "Inaktiv"
+msgstr "inaktiv"
 
-#, fuzzy
 msgid "installation guide"
-msgstr "Anleitung"
+msgstr "Installationsanleitung"
 
-#, fuzzy
 msgid "installation instructions"
-msgstr "Installation abgebrochen"
+msgstr "Installationsanleitung"
+
+msgid "invalid route"
+msgstr "Ungültige Route"
 
 msgid "is Empty or NULL."
-msgstr ""
-
-msgid "is any middle coincidence."
-msgstr ""
+msgstr "ist leer oder NULL."
 
 #, fuzzy
+msgid "is any middle coincidence."
+msgstr "is any middle coincidence."
+
 msgid "is equal."
 msgstr "ist gleich."
 
-#, fuzzy
 msgid "is greater or equal than."
 msgstr "ist größer oder gleich als."
 
-#, fuzzy
 msgid "is greater than."
 msgstr "ist größer als."
 
-#, fuzzy
 msgid "is like."
 msgstr "Ist wie."
 
-#, fuzzy
 msgid "is lower or equal than."
 msgstr "ist niedriger oder gleich als."
 
-#, fuzzy
 msgid "is lower than."
 msgstr "ist kleiner als."
 
 msgid "is not empty and not NULL."
-msgstr ""
+msgstr "ist nicht leer und nicht NULL."
 
-#, fuzzy
 msgid "is not equal."
 msgstr "ist ungleich"
 
 msgid "lang"
-msgstr ""
+msgstr "Sprache"
 
 msgid "localhost"
 msgstr "localhost"
@@ -8110,14 +8067,8 @@ msgstr "Minuten ohne Aktivität"
 msgid "no name"
 msgstr "ohne Namen"
 
-msgid "off-line"
-msgstr "offline"
-
-msgid "on-line"
-msgstr "online"
-
 msgid "online documentation"
-msgstr ""
+msgstr "Online Dokumentation"
 
 msgid "permission granted."
 msgstr "Zugriff gewährt."
@@ -8149,12 +8100,11 @@ msgstr "Unbekannter Benutzer."
 msgid "unregistered user"
 msgstr "Unregistrierter Benutzer"
 
-#, fuzzy
 msgid "upgrade guide"
-msgstr "Aktualisiere Module"
+msgstr "Upgrade-Anleitung"
 
 msgid "upgrade instructions"
-msgstr ""
+msgstr "Upgrade-Anweisungen"
 
 msgid "username"
 msgstr "Benutzername"
@@ -8162,11 +8112,9 @@ msgstr "Benutzername"
 msgid "usr"
 msgstr "usr"
 
-#, fuzzy
 msgid "where:"
 msgstr "Feldbeschreibung:"
 
-#, fuzzy
 msgid "will be applied after HTMLPurifier processing is completed."
 msgstr ""
 "wird angewandt, nachdem die Verarbeitung durch HTML Purifier abgeschlossen "
@@ -8188,16 +8136,294 @@ msgstr ""
 "À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,"
 "Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 
-#~ msgid "Error! You did not enter a name for the category."
-#~ msgstr "Fehler! Es wurde kein Name für die Kategorie eingeben."
-
-#~ msgid "Error! You did not provide a parent for the category."
-#~ msgstr "Fehler! Es wurde keine übergeordnete Kategorie ausgewählt."
-
-#~ msgid "Category %s must be unique under parent"
+#~ msgid "Click the user's name to view his/her complete profile."
 #~ msgstr ""
-#~ "Die Kategorie %s muss innerhalb ihrer übergeordneten Kategorie eindeutig "
-#~ "sein."
+#~ "Auf den Benutzernamen klicken, um das vollständige Profil anzuzeigen."
+
+#, fuzzy
+#~ msgid "Enter the route entries per page. Only digits are allowed."
+#~ msgstr "Gib den Wert der Route ein. Nur Zahlen sind erlaubt."
+
+#~ msgid "No such item."
+#~ msgstr "Kein solches Element"
+
+#~ msgid "There was an error upgrading to Core 1.4.2"
+#~ msgstr "Es gab einen Fehler bei der Aktualisieren auf Core 1.4.2"
+
+#~ msgid "There was an error upgrading to Core 1.4.3"
+#~ msgstr "Es gab einen Fehler bei der Aktualisierung auf Core 1.4.3"
+
+#~ msgid "There was an error upgrading to Core 1.4.4"
+#~ msgstr "Fehler beim Upgrade auf Core 1.4.4"
+
+#~ msgid "There was an error upgrading to Core 1.4.5"
+#~ msgstr "Fehler beim Upgrade auf Core 1.4.5"
+
+#~ msgid "There was an error upgrading to Core 1.4.6"
+#~ msgstr "Fehler beim Upgrade auf Core 1.4.6"
+
+#~ msgid "Upgrade from Core 1.4.1 to Core 1.4.2"
+#~ msgstr "Aktualisierung von Core 1.4.1 auf Core 1.4.2"
+
+#~ msgid "Upgrade from Core 1.4.2 to Core 1.4.3"
+#~ msgstr "Aktualisierung von Core 1.4.2 auf Core 1.4.3"
+
+#~ msgid "Upgrade from Core 1.4.3 to Core 1.4.4"
+#~ msgstr "Upgrade von Core 1.4.3 auf Core 1.4.4"
+
+#~ msgid "Upgrade from Core 1.4.4 to Core 1.4.5"
+#~ msgstr "Upgrade von Core 1.4.4 auf Core 1.4.5"
+
+#~ msgid "Upgrade from Core 1.4.5 to Core 1.4.6"
+#~ msgstr "Upgrade von Core 1.4.5 auf Core 1.4.6"
+
+#~ msgid "Upgraded to Core 1.4.2"
+#~ msgstr "Aktualisiert auf Core 1.4.2"
+
+#~ msgid "Upgraded to Core 1.4.3"
+#~ msgstr "Aktualisiert auf Core 1.4.3"
+
+#~ msgid "Upgraded to Core 1.4.4"
+#~ msgstr "Upgrade auf Core 1.4.4"
+
+#~ msgid "Upgraded to Core 1.4.5"
+#~ msgstr "Upgrade auf Core 1.4.5"
+
+#~ msgid "Upgraded to Core 1.4.6"
+#~ msgstr "Upgrade auf Core 1.4.6"
+
+#~ msgid "Upgrading to Core 1.4.2"
+#~ msgstr "Aktualisierung auf Core 1.4.2"
+
+#~ msgid "Upgrading to Core 1.4.3"
+#~ msgstr "Aktualisierung auf Core 1.4.3"
+
+#, fuzzy
+#~ msgid "Upgrading to Core 1.4.4"
+#~ msgstr "Upgrade auf Kern 1.4.4"
+
+#, fuzzy
+#~ msgid "Upgrading to Core 1.4.5"
+#~ msgstr "Aktualisierung auf Core 1.4.1"
+
+#, fuzzy
+#~ msgid "Upgrading to Core 1.4.6"
+#~ msgstr "Aktualisierung auf Core 1.4.1"
+
+#~ msgid "Choose a language"
+#~ msgstr "Sprache auswählen"
+
+#~ msgid ""
+#~ "Fatal Error: Two extensions share the same displayname. [%ext1%] and "
+#~ "[%ext2%]"
+#~ msgstr ""
+#~ "Fataler Fehler: Zwei Erweiterungen haben den gleichen Display-Namen: "
+#~ "[%ext1%] und [%ext2%]"
+
+#~ msgid ""
+#~ "Fatal Error: Two extensions share the same name. [%ext1%] and [%ext2%]"
+#~ msgstr ""
+#~ "Fataler Fehler: Zwei Erweiterungen haben den gleichen Namen: [%ext1%] und "
+#~ "[%ext2%]"
+
+#~ msgid ""
+#~ "In some hosting environments, the PHP setting 'register_globals' may be "
+#~ "set to ON. However, this can create an opportunity for security breaches. "
+#~ "If the site is accessible from the Internet, you are strongly recommended "
+#~ "to ensure that 'register_globals' is set to OFF."
+#~ msgstr ""
+#~ "In einigen Hostingumgebungen ist die PHP-Einstellung 'register_globals' "
+#~ "aktiv. Dies stellt jedoch ein erhebliches Sicherheitsrisiko dar. Falls "
+#~ "das Web über das Internet verfügbar ist, wird dringend empfohlen, sicher "
+#~ "zu stellen, dass die Einstellung für 'register_globals' deaktiviert ist."
+
+#~ msgid "Language selector block"
+#~ msgstr "Sprachenauswahl"
+
+#~ msgid "Language set to site default."
+#~ msgstr "Sprache aus Seiten Standard gesetzt."
+
+#~ msgid ""
+#~ "Notice: This language block will not be display until you enable the "
+#~ "multilanguage, you can enable/disable this into into the settings of "
+#~ "Zikula."
+#~ msgstr ""
+#~ "Hinweis: Der Sprachenblock wird nicht angezeigt, wenn die "
+#~ "Mehrsprachigkeit in der Zikula Hauptkonfiguration deaktiviert ist."
+
+#~ msgid "PHP 'register_globals' setting is ON, but should be OFF."
+#~ msgstr ""
+#~ "Die PHP 'register_globals' Einstellung ist ON, sollte jedoch OFF sein."
+
+#, fuzzy
+#~ msgid "Really delete this route?"
+#~ msgstr "Wirklich löschen diese Route?"
+
+#~ msgid "Choose one"
+#~ msgstr "Auswählen"
+
+#~ msgid "Delete: %s"
+#~ msgstr "Löschen: %s"
+
+#~ msgid "Do you really want to delete this group?"
+#~ msgstr "Soll die Gruppe wirklich gelöscht werden?"
+
+#, fuzzy
+#~ msgid ""
+#~ "Done! %s user was added to the group.|Done! %s users were added to the "
+#~ "group."
+#~ msgstr ""
+#~ "Fertig! %s Benutzer wurde hinzugefügt, um die Gruppe. | Fertig! die "
+#~ "Gruppe wurden %s Benutzer hinzugefügt."
+
+#~ msgid "Done! Deleted the category registry entry."
+#~ msgstr "Erledigt! Die Kategoriezuweisung wurde gelöscht."
+
+#~ msgid "Done! Saved the action."
+#~ msgstr "Erledigt! Aktion gespeichert."
+
+#~ msgid "Done! The user has been added to the %s group."
+#~ msgstr "Erledigt! Der Benutzer wurde zur Gruppe %s hinzugefügt."
+
+#~ msgid "Done! The user's application for group membership has been rejected."
+#~ msgstr ""
+#~ "Erledigt! Die Anfrage auf Mitgliedschaft in die Gruppe %s wurde abgelehnt."
+
+#~ msgid "Edit: %s"
+#~ msgstr "Bearbeiten: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Error! %s user was not added to the group.|Error! %s users were not added "
+#~ "to the group."
+#~ msgstr ""
+#~ "Fehler! Benutzer %s wurde nicht hinzugefügt, um die Gruppe. | Fehler! %s "
+#~ "Benutzer wurden nicht zur Gruppe hinzugefügt."
+
+#~ msgid "Error! A problem occurred and the user was not added to the group."
+#~ msgstr ""
+#~ "Fehler! Es ist ein Fehler aufgetreten. Der Benutzer wurde nicht zur "
+#~ "Gruppe hinzugefügt."
+
+#~ msgid ""
+#~ "Error! A problem occurred while attempting to remove the user. The user "
+#~ "has not been removed from the group."
+#~ msgstr ""
+#~ "Fehler! Beim Entfernen des Benutzers ist ein Fehler aufgetreten. Der "
+#~ "Benutzer wurde nicht aus der Gruppe entfernt."
+
+#~ msgid "Error! Could not add module to module category."
+#~ msgstr ""
+#~ "Fehler! Das Modul konnte zu dieser Kategorie nicht hinzugefügt werden."
+
+#~ msgid "Error! Could not create the new group."
+#~ msgstr "Fehler! Die neue Gruppe konnte nicht angelegt werden."
+
+#~ msgid "Error! Could not delete the '%s' group."
+#~ msgstr "Fehler! Die Gruppe '%s' konnte nicht gelöscht werden."
+
+#~ msgid "Error! Could not execute 'Accept' action."
+#~ msgstr "Fehler! Die Aktion 'Akzeptieren' konnte nicht ausgeführt werden."
+
+#~ msgid "Error! Could not execute 'Reject' action."
+#~ msgstr "Fehler! Die Aktion 'Ablehnen' konnte nicht ausgeführt werden."
+
+#~ msgid "Error! Could not perform the deletion."
+#~ msgstr "Fehler! Der Löschvorgang konnte nicht durchgeführt werden."
+
+#~ msgid "Error! That group does not exist."
+#~ msgstr "Fehler! Diese Gruppe existiert nicht."
+
+#~ msgid "Error! The group name is missing."
+#~ msgstr "Fehler! Der Name der Gruppe fehlt."
+
+#~ msgid "Go to groups index page"
+#~ msgstr "Zur Gruppenübersicht"
+
+#~ msgid "Group %s"
+#~ msgstr "Gruppe %s"
+
+#~ msgid "Group has reached its maximum capacity"
+#~ msgstr "Gruppe hat ihre maximale Kapazität erreicht"
+
+#, fuzzy
+#~ msgid "Group name to join"
+#~ msgstr "Name der Gruppe beitreten"
+
+#~ msgid "Id"
+#~ msgstr "ID"
+
+#~ msgid "Invalid Group ID received"
+#~ msgstr "Ungültige Gruppen ID erhalten"
+
+#~ msgid "Invalid arguments received"
+#~ msgstr "Ungültiges Argument erhalten"
+
+#~ msgid "Members list"
+#~ msgstr "Mitgliederliste"
+
+#~ msgid "Membership application cancellation"
+#~ msgstr "Anfrage auf Mitgliedschaft abbrechen"
+
+#~ msgid "Membership resignation"
+#~ msgstr "Aus Gruppe austreten"
+
+#~ msgid "Memberships"
+#~ msgstr "Mitgliedschaften"
+
+#~ msgid "Move all sub-categories to next category"
+#~ msgstr "Unterkategorien in folgende Kategorie verschieben"
+
+#~ msgid "No group members found."
+#~ msgstr "Es konnten keine Gruppenmitglieder gefunden werden."
+
+#~ msgid "Not available"
+#~ msgstr "Nicht verfügbar"
+
+#~ msgid ""
+#~ "Notice: Please select one or more users to add to the group. To select "
+#~ "multiple users, use 'Shift-Click' or 'Control-Click'."
+#~ msgstr ""
+#~ "Hinweis: Zum Hinzufügen in einer Gruppe bitte einen oder mehrere Benutzer "
+#~ "auswählen. Eine Mehrfachauswahl ist mittels 'UMSCHALT+Click' oder 'STRG"
+#~ "+Click' möglich."
+
+#~ msgid "Reloading routes (takes longer...)"
+#~ msgstr "erneutes laden der Routen (dauert länger...)"
+
+#~ msgid "Resign"
+#~ msgstr "Austreten"
+
+#~ msgid "Routes reloaded"
+#~ msgstr "Routen neu geladen"
+
+#~ msgid "Select..."
+#~ msgstr "Wählen..."
+
+#~ msgid "Sorry! No such group found."
+#~ msgstr "Es konnte keine entsprechende Gruppe gefunden werden."
+
+#~ msgid "Sorry! That group has reached full membership."
+#~ msgstr ""
+#~ "Alle Mitgliedschaften in dieser Gruppe sind leider bereits vergeben."
+
+#~ msgid "Sorry! That group is closed."
+#~ msgstr "Diese Gruppe ist geschlossen."
+
+#~ msgid "The category could not be created."
+#~ msgstr "Die Kategorie konnte nicht erstellt werden."
+
+#~ msgid "There was an error reloading the routes"
+#~ msgstr "Es gab einen Fehler beim erneuten Laden der Routen"
+
+#~ msgid "Users to add"
+#~ msgstr "Hinzufügender Benutzer"
+
+#~ msgid "Workflow state"
+#~ msgstr "Workflow Status"
+
+#~ msgid "on-line"
+#~ msgstr "online"
 
 #~ msgid "The \"kernel\" attribute is NULL. "
 #~ msgstr "Das \"Kernel\" Attribut ist NULL."
@@ -8210,22 +8436,10 @@ msgstr ""
 #~ msgid "If so, retrieve it instead directly from the container"
 #~ msgstr "Falls ja, beziehe es statt dessen direkt vom Container"
 
-#~ msgid "Invalid arguments array received"
-#~ msgstr "Fehlerhaftes Argument im Array erhalten."
-
-#~ msgid "Users pending approval"
-#~ msgstr "Der Nutzer hat eine Genehmigung ausstehen"
-
 #~ msgid "User deleted!"
 #~ msgid_plural "%n users deleted!"
 #~ msgstr[0] "Benutzer gelöscht!"
 #~ msgstr[1] "%n Benutzer gelöscht!"
-
-#~ msgid "Invalid value provided"
-#~ msgstr "Ungültigen Wert erhalten"
-
-#~ msgid "Error: Could not delete '%s' because %s"
-#~ msgstr "Fehler! Die Gruppe '%s' konnte wegen %s nicht gelöscht werden"
 
 #~ msgid "%1$s threw an exception reporting: \"%2$s\""
 #~ msgstr "%1$s hat eine Ausnahme geworfen: \"%2$s\""
@@ -8242,66 +8456,12 @@ msgstr ""
 #~ msgid "%s must be an instance of Zikula_AbstractInstaller."
 #~ msgstr "%s muss eine Instanz von Zikula_AbstractInstaller sein."
 
-#~ msgid "An error occured during executing PHPIDS: %s"
-#~ msgstr "Während der Ausführung von PHPIDS ist ein Fehler aufgetreten: %s"
-
-#~ msgid "The following attack has been detected by PHPIDS"
-#~ msgstr "Der folgende Angriff wurde von PHPIDS entdeckt"
-
-#~ msgid "IP: %s"
-#~ msgstr "IP: %s"
-
-#~ msgid "UserID: %s"
-#~ msgstr "Benutzer ID: %s"
-
 # _DATEBRIEF
 #~ msgid "%b %d, %Y"
 #~ msgstr "%d. %b %Y"
 
-#~ msgid "Date: %s"
-#~ msgstr "Datum: %s"
-
-#~ msgid "Request Impact: %d"
-#~ msgstr "Request Impact: %d"
-
-#~ msgid "Session Impact: %d"
-#~ msgstr "Session Impact: %d"
-
-#~ msgid "Affected tags: %s"
-#~ msgstr "Betroffene Tags: %s"
-
-#~ msgid "Affected parameters: %s"
-#~ msgstr "Betroffene Parameter: %s"
-
-#~ msgid "Request URI: %s"
-#~ msgstr "Request URI: %s"
-
-#~ msgid "Intrusion attempt detected by PHPIDS"
-#~ msgstr "Einbruchsversuch erkannt durch PHPIDS"
-
-#~ msgid ""
-#~ "Malicious request code / a hacking attempt was detected. This request has "
-#~ "NOT been blocked!"
-#~ msgstr ""
-#~ "Bösartiger Code bzw. Einbruchsversuch festgestellt. Die Anfrage wurde "
-#~ "NICHT geblockt!"
-
-#~ msgid ""
-#~ "Malicious request code / a hacking attempt was detected. Thus this "
-#~ "request has been blocked."
-#~ msgstr ""
-#~ "Bösartiger Code bzw. Einbruchsversuch festgestellt. Aus diesem Grund "
-#~ "wurde die Anfrage geblockt."
-
 #~ msgid "Invalid field name received for distinct values selection!"
 #~ msgstr "Ungültiger Feld Name für eindeutige Werte Auswahl angegeben"
-
-#~ msgid ""
-#~ "Your log-in request was not completed. You must change your web site "
-#~ "account's password first."
-#~ msgstr ""
-#~ "Die Anmelde-Anfrage ist nicht abgeschlossen. Zuerst muss das Kennwort "
-#~ "dieses Benutzerkontos geändert werden."
 
 #~ msgid "Invalid or expired code."
 #~ msgstr "Falscher oder abgelaufener Code."
@@ -8377,12 +8537,6 @@ msgstr ""
 #~ "Entweder die Style-Sheet URL oder der Style-Sheet Inhalt können einen "
 #~ "Wert haben, aber nicht beide."
 
-#~ msgid "File Path"
-#~ msgstr "Datei Pfad"
-
-#~ msgid "File type"
-#~ msgstr "Dateityp"
-
 #~ msgid "For Html files please select the Html file type."
 #~ msgstr "Für HTML Dateien bitte den HTML Datei Typ wählen."
 
@@ -8397,9 +8551,6 @@ msgstr ""
 
 #~ msgid "Submit news"
 #~ msgstr "Beitrag einreichen"
-
-#~ msgid "Profile"
-#~ msgstr "Profil"
 
 #~ msgid "Private messages"
 #~ msgstr "Private Nachrichten"
@@ -8729,15 +8880,6 @@ msgstr ""
 #~ msgid "An invalid uid was provided."
 #~ msgstr "Ungültige Benutzer-ID (uid) angegeben."
 
-#~ msgid "Error! Received invalid parameter '%s'"
-#~ msgstr "Error! Received invalid parameter '%s'"
-
-#~ msgid "Error! Non-existing root category '%s' received"
-#~ msgstr "Error! Non-existing root category '%s' received"
-
-#~ msgid "Leaf"
-#~ msgstr "Endknoten"
-
 #~ msgid "Plugin %s is not installed"
 #~ msgstr "Plugin %s ist nicht installiert"
 
@@ -8800,9 +8942,6 @@ msgstr ""
 #~ msgid "Error! No such module exists."
 #~ msgstr "Fehler! Es konnte kein entsprechendes Modul gefunden werden."
 
-#~ msgid "Error! Received invalid specifications %1$s, %2$s."
-#~ msgstr "Fehler! Ungültige Spezifikation erhalten %1$s, %2$s."
-
 #~ msgid "Warning! Function %1$s is deprecated. Please use %2$s instead."
 #~ msgstr "Warning! Function %1$s is deprecated. Please use %2$s instead."
 
@@ -8818,21 +8957,6 @@ msgstr ""
 
 #~ msgid "Access denied"
 #~ msgstr "Zugriff verweigert"
-
-#~ msgid ""
-#~ "Could not use %1$s to set the %2$s to the value of %3$s. The install or "
-#~ "upgrade process may fail at your current setting of %4$s."
-#~ msgstr ""
-#~ "Konnte nicht %1$s benutzen um %2$s auf den Wert %3$s zu setzen. Die "
-#~ "Installation oder das Upgrade können wegen der aktuellen Einstellung %4$s "
-#~ "fehl schlagen."
-
-#~ msgid ""
-#~ "Could not set %1$s to the value of %2$s. The install or upgrade process "
-#~ "may fail at your current setting of %3$s."
-#~ msgstr ""
-#~ "Konnte %1$s nicht auf Wert %2$s setzen. Die Installation oder Upgrade "
-#~ "könnte wegen der Einstellgung %3$s fehl schlagen."
 
 #~ msgid "InnoDB"
 #~ msgstr "InnoDB"
@@ -8871,25 +8995,11 @@ msgstr ""
 #~ msgstr "Übersetzbarer Titel"
 
 #~ msgid ""
-#~ "The hook subscriber \"%1$s\" could not be registered for \"%2$s\" because "
-#~ "it is registered already."
-#~ msgstr ""
-#~ "Der Hook Anforderer \"%1$s\"  konnte nicht für \"%2$s\" registriert "
-#~ "werden, da er bereits registriert ist."
-
-#~ msgid ""
 #~ "Hook subscribers could not be registered for \"%1$s\" because they are "
 #~ "registered already."
 #~ msgstr ""
 #~ "Hook Bezieher für \"%1$s\" konnte nicht angelegt werden, weil er schon "
 #~ "angelegt ist."
-
-#~ msgid ""
-#~ "The hook provider for area \"%1$s\" of type \"%2$s\" could not be "
-#~ "registered for \"%3$s\" because it already exists."
-#~ msgstr ""
-#~ "Der Hook Bereitsteller für den Bereich %1$s\" des Typs %2$s\"  konnte für "
-#~ "%3$s\" nicht angelegt werden, weil er schon angelegt ist."
 
 #~ msgid ""
 #~ "Hook providers could not be registered for \"%1$s\" because they already "
@@ -8903,9 +9013,6 @@ msgstr ""
 
 #~ msgid "Error! \"%1$s\" must be an instance of %2$s"
 #~ msgstr "Fehler! \"%1$s\" muss eine Instanz von %2$s sein"
-
-#~ msgid "Page not found."
-#~ msgstr "Seite konnte nicht gefunden werden."
 
 #~ msgid "You do not have permission. You must login first."
 #~ msgstr "Keine Berechtigung. Bitte erst anmelden."
@@ -11247,9 +11354,6 @@ msgstr ""
 #~ msgid "%1$s: invalid direction [%2$s] supplied."
 #~ msgstr "%1$s: invalid direction [%2$s] supplied."
 
-#~ msgid "Root Category"
-#~ msgstr "Stammkategorie"
-
 #~ msgid "Invalid object in %s"
 #~ msgstr "Invalid object in %s"
 
@@ -11552,9 +11656,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Das angegebene Modul für die Zuordnung [%s] scheint im System nicht "
 #~ "verfügbar zu sein."
-
-#~ msgid "Page configurations"
-#~ msgstr "Seitenkonfigurationen"
 
 #~ msgid "Colour palettes"
 #~ msgstr "Farbpaletten"
@@ -12068,9 +12169,6 @@ msgstr ""
 #~ "Sei sicher dass du deine Änderung durch drücken des \"Speichern\" Buttons "
 #~ "speicherst."
 
-#~ msgid "Edit menu item"
-#~ msgstr "Menüeintrag bearbeiten"
-
 #~ msgid "Field Name is required."
 #~ msgstr "Der Feldname ist eine Pflichtangabe."
 
@@ -12420,9 +12518,6 @@ msgstr ""
 
 #~ msgid "Dropdown menu"
 #~ msgstr "Auswahlmenü"
-
-#~ msgid "List"
-#~ msgstr "Liste"
 
 #~ msgid "CSS styling"
 #~ msgstr "CSS Styling"
