@@ -1,10 +1,10 @@
 # Carsten Volmer <carsten@zikula.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zikula Core 1.4.X\n"
+"Project-Id-Version: Zikula Core 2.0.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2017-08-05 18:55+0200\n"
+"PO-Revision-Date: 2017-08-05 20:12+0200\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: team@zikula.de <team@zikula.de>\n"
 "Language: de\n"
@@ -73,19 +73,15 @@ msgstr ""
 msgid "%action application for %user to %group group"
 msgstr "%action Anwendung für %user %group Gruppe"
 
-msgid "%b must be instance of %a and not null."
-msgstr "%b muss Instanz von %a sein und nicht null."
-
 msgid "%c direct child|%c direct children"
 msgstr "%c direktes Kind|%c direkte Kinder"
 
-msgid ""
-"%complete of %count users migrated. Failed to migrate all due to validation "
-"errors. See the log for more information."
+msgid "%k must be either (string) \"%t\" or \"%f\")."
+msgstr "%k muss entweder (String) \"%t\" oder \"%f\") sein."
+
+msgid "%k must have a value that can be json_decoded."
 msgstr ""
-"%complete von %count Benutzer migriert. Nicht alle konnten aufgrund "
-"Validierungsfehler migriert werden. Für weitere Informationen siehe "
-"Ereignisprotokoll."
+"%k muss einen Wert enthalten, der sich dekodieren (json_decoded) lässt."
 
 msgid ""
 "%linkStart OpenSearch %linkEnd makes it possible for your site's users to "
@@ -109,31 +105,11 @@ msgstr "%pagetitle%"
 msgid "%path% (%sort%)"
 msgstr "%path% (%sort%)"
 
-msgid ""
-"%s is either not present or not writable. This is not correct! Please read "
-"the upgrade instructions."
-msgstr ""
-"%s ist entweder nicht vorhanden oder nicht beschreibbar. Dies ist nicht "
-"korrekt! Bitte lesen Sie die Upgrade-Anweisungen."
-
-msgid "%s is present and writeable.  This is correct."
-msgstr "%s ist vorhanden und beschreibbar.  Das ist richtig."
-
-msgid ""
-"%s must be an instance of Zikula_AbstractInstaller or implement "
-"ExtensionInstallerInterface"
-msgstr ""
-"%s muss eine Instanz von Zikula_AbstractInstaller sein oder eine "
-"Implementation von ExtensionInstallerInterface"
-
 msgid "%s must implement ExtensionInstallerInterface"
 msgstr "%s muss ExtensionInstallerInterface implemetieren"
 
 msgid "%s not found. Please contact the system administrator for assistance."
 msgstr "%s nicht gefunden. Bitte den System Administrator um Hilfe bitten."
-
-msgid "%s type pages"
-msgstr "%s Seitentyp"
 
 msgid "%sitename%"
 msgstr "%sitename%"
@@ -161,14 +137,8 @@ msgid ""
 "continuing the installation process."
 msgstr "'%s' wurde gefunden. Vor dem Fortfahren die Datei bitte umbenennen."
 
-msgid "('index.php' points to this)"
-msgstr "(Modul, auf das die Datei index.php verweist)"
-
 msgid "(Admin credentials have been encoded to make them json-safe.)"
 msgstr "(Admin Ameldedaten wurden verschlüsselt um sie json sicher zu machen.)"
-
-msgid "(Default: index.php)"
-msgstr "Datei, über die der Seiteneinstieg erfolgt (Standard: index.php)"
 
 msgid ""
 "(If you cannot click on the link above, you can copy this URL into your "
@@ -224,9 +194,6 @@ msgstr "*** Installiere ***"
 
 msgid "*** UPGRADING TO ZIKULA CORE %version% ***"
 msgstr "*** Aktualisierung auf Zikula Core %version% ***"
-
-msgid "--New link--"
-msgstr "--Neuer Link--"
 
 msgid "/10000"
 msgstr "/10000"
@@ -384,9 +351,6 @@ msgstr "Aktion"
 msgid "Actions"
 msgstr "Aktionen"
 
-msgid "Activate"
-msgstr "Aktivieren"
-
 msgid "Activate %s"
 msgstr "Aktiviere %s"
 
@@ -452,9 +416,6 @@ msgstr ""
 "Admin-Anmeldeinformationen erforderlich sind, wenn die Website deaktiviert "
 "ist."
 
-msgid "Admin panel pages"
-msgstr "Admin-Panel Seiten"
-
 msgid "Admin panel theme"
 msgstr "Admin-Panel-Theme"
 
@@ -472,9 +433,6 @@ msgstr "Admin-Panel"
 
 msgid "Administration settings"
 msgstr "Administrationseinstellungen"
-
-msgid "Administrator"
-msgstr "Administrator"
 
 msgid "Administrator approval:"
 msgstr "Administrator-Freigabe:"
@@ -546,12 +504,6 @@ msgid ""
 msgstr ""
 "Es können nicht alle Methoden deaktiviert werden. Mindestens eine Methode "
 "muss aktiviert bleiben. (%m wurde aktiviert)."
-
-msgid "All users have been migrated already."
-msgstr "Alle Benutzer wurden bereits migriert."
-
-msgid "All users migrated."
-msgstr "Alle Benutzer migriert."
 
 msgid "Allow IDN domain names"
 msgstr "IDN Domains erlauben"
@@ -690,6 +642,14 @@ msgstr "Anlagen installiert"
 msgid "Attached areas"
 msgstr "Angehängte Bereiche"
 
+#, fuzzy
+msgid ""
+"Attempt to copy files from `userdata` to `web/uploads` failed. You must "
+"manually copy the contents."
+msgstr ""
+"Versuchen Sie, Dateien \"Userdata\" auf \"Web/Uploads\" Fehler beim "
+"Kopieren. Sie müssen manuell den Inhalt kopieren."
+
 msgid "Attributes"
 msgstr "Attribute"
 
@@ -765,6 +725,9 @@ msgstr "Migration beginnen"
 msgid "Begin Upgrader"
 msgstr "Zikula Upgrade Script"
 
+msgid "Beginning user migration..."
+msgstr "Migration der Benutzer beginnen..."
+
 #, fuzzy
 msgid ""
 "Below you see your current routing configuration (see %s for reference)."
@@ -838,12 +801,6 @@ msgstr "ACHTUNG"
 msgid "CSRF Token"
 msgstr "CSRF-Token"
 
-msgid "CSS/JS combination is disabled"
-msgstr "CSS/JS-Kombination ist deaktiviert"
-
-msgid "CSS/JS combination is enabled"
-msgstr "CSS/JS Combination ist aktiviert"
-
 msgid "CSV delimiter"
 msgstr "CSV Trennzeichen"
 
@@ -871,9 +828,6 @@ msgstr "Erzwungene Passwortänderung für %1s abbrechen"
 msgid "Cancel required change of password for %sub%"
 msgstr "Benötigte Passwortänderung für %sub% abbrechen"
 
-msgid "Cannot join the requested group"
-msgstr "Kann nicht der angeforderte Gruppe beitreten"
-
 msgid "Cannot load %extension because the composer file is invalid."
 msgstr ""
 "%extension kann nicht geladen werden, da die Composer-Datei ungültig ist."
@@ -886,9 +840,6 @@ msgstr "Kategorien"
 
 msgid "Categories list"
 msgstr "Kategorienliste"
-
-msgid "Categories manager"
-msgstr "Kategorienverwaltung"
 
 msgid "Category"
 msgstr "Kategorie"
@@ -909,9 +860,6 @@ msgstr "Kategorie ist ein Endknoten"
 
 msgid "Category is locked"
 msgstr "Kategorie ist gesperrt"
-
-msgid "Category paths no longer need to be rebuilt."
-msgstr "Kategorie-Pfade müssen nicht mehr wieder aufgebaut werden."
 
 msgid "Category registry"
 msgstr "Kategoriezuweisung"
@@ -1023,9 +971,6 @@ msgstr "Wähle die Schemata"
 msgid "Clear"
 msgstr "Zurücksetzen"
 
-msgid "Clear all cache and compile directories"
-msgstr "Alle Cache- und Kompilierungsverzeichnisse leeren"
-
 msgid "Clear caches"
 msgstr "Leere Caches"
 
@@ -1121,28 +1066,12 @@ msgstr ""
 "jedoch besser nur lesbar sein (ggfs. mit chmod 400, 440 oder notfalls 444 "
 "anpassen)."
 
-msgid ""
-"Configuration file 'config/config.php' is writeable, but should be read-only "
-"(please set to chmod 400, or 440 or last resort 444)."
-msgstr ""
-"Die Konfigurationsdatei 'config/config.php' ist beschreibbar und sollte "
-"jedoch nur lesbar sein (ggfs. mit chmod 400, 440 oder notfalls 444 anpassen)."
-
-msgid "Configuration file not found"
-msgstr "Konfigurationsdatei gefunden"
-
-msgid "Configuration files"
-msgstr "Konfigurationsdateien"
-
 msgid "Configuration files protected"
 msgstr "Konfigurationsdateien wurden geschützt"
 
 msgid "Configuration successful. Please verify your parameters below:"
 msgstr ""
 "Konfiguration erfolgreich. Überprüfe die unten aufgeführten Einstellungen:"
-
-msgid "Configure plugin"
-msgstr "Plugin konfigurieren"
 
 msgid "Configuring Zikula installation in %env% environment."
 msgstr "Konfiguriere Zikula Installation in der  %env% Umgebung."
@@ -1345,9 +1274,6 @@ msgstr "Aktuellen Einstellungen aus"
 msgid "Currently used version"
 msgstr "Derzeit verwendete Version"
 
-msgid "Custom rendering engine block"
-msgstr "Renderer-Block"
-
 msgid "Custom routes list"
 msgstr "Eigene Routen-Liste"
 
@@ -1399,12 +1325,6 @@ msgstr "Datum: %s"
 msgid "De-select all"
 msgstr "Auswahl aufheben"
 
-msgid "De/Select all"
-msgstr "Auswählen"
-
-msgid "Deactivate"
-msgstr "Deaktivieren"
-
 msgid "Deactivate %s"
 msgstr "'%s' deaktivieren"
 
@@ -1428,9 +1348,6 @@ msgstr "Standardsprache für diese Website"
 
 msgid "Default meta description"
 msgstr "Standard Meta-Description"
-
-msgid "Default meta keywords"
-msgstr "Standard Meta-Keywords"
 
 msgid "Default page title"
 msgstr "Standard Seitentitel"
@@ -1612,9 +1529,6 @@ msgid ""
 "a module category"
 msgstr "Zeigt eine Liste aller Kategorien an, die das Tab-Menü enthält."
 
-msgid "Do not display module name in short URLs for"
-msgstr "Modulname in Short-URLs nicht anzeigen für"
-
 msgid "Do you really want to delete block '%title%'?"
 msgstr "Wollen Sie wirklich den Block '%title%' löschen?"
 
@@ -1694,9 +1608,6 @@ msgstr "Erledigt! Die Passwort Änderung wird für %uname nicht mehr benötigt."
 msgid "Done! Activated %s module."
 msgstr "Fertig! Aktivierte %s Modul."
 
-msgid "Done! Activated plugin."
-msgstr "Erledigt! Plugin wurde aktiviert."
-
 msgid "Done! Block deleted."
 msgstr "Erledigt! Block wurde gelöscht."
 
@@ -1708,11 +1619,6 @@ msgstr "Erledigt! Das Standardtheme wurde geändert."
 
 msgid "Done! Changed your e-mail address."
 msgstr "Erledigt! Die E-Mail Adresse wurde erfolgreich geändert."
-
-msgid "Done! Cleared all cache and compile directories."
-msgstr ""
-"Erledigt! Es wurden alle kompilierten und zwischengespeicherten Dateien "
-"erfolgreich gelöscht."
 
 msgid "Done! Configuration updated."
 msgstr "Erledigt! Konfiguration aktualisiert."
@@ -1729,43 +1635,14 @@ msgstr "Erledigt! Das neue Benutzerkonto wurde erfolgreich angelegt."
 msgid "Done! Created the group."
 msgstr "Erledigt! Die Gruppe wurde erfolgreich angelegt."
 
-msgid "Done! De-installed plugin."
-msgstr "Erledigt! Plugin wurde deinstalliert."
-
 msgid "Done! Deactivated module."
 msgstr "Erledigt! Das Modul wurde deaktiviert."
-
-msgid "Done! Deactivated plugin."
-msgstr "Erledigt! Plugin wurde deaktiviert."
 
 msgid "Done! Deactivated the theme."
 msgstr "Erledigt! Theme deaktiviert"
 
-msgid "Done! Deleted CSS/JS combination cached files."
-msgstr "Erledigt! Der CSS/JS Combine-Cache wurde erfolgreich gelöscht."
-
-msgid "Done! Deleted it."
-msgstr "Erledigt! Erfolgreich gelöscht."
-
-msgid "Done! Deleted rendering engine cached pages."
-msgstr "Erledigt! Der Seitencache der Rendering-Engine wurde gelöscht."
-
-msgid "Done! Deleted rendering engine compiled templates."
-msgstr ""
-"Erledigt! Die kompilierten Templates der Rendering-Engine wurde gelöscht."
-
 msgid "Done! Deleted the theme."
 msgstr "Erledigt! Theme gelöscht."
-
-msgid "Done! Deleted theme engine cached templates."
-msgstr ""
-"Erledigt! Die kompilierten Templates der Rendering-Engine wurden gelöscht."
-
-msgid "Done! Deleted theme engine compiled templates."
-msgstr "Erledigt! Die kompilierten Templates der Theme-Engine wurden gelöscht."
-
-msgid "Done! Deleted theme engine configurations."
-msgstr "Erledigt! Die Konfigurationen der Theme-Engine wurden gelöscht."
 
 msgid "Done! Exposed JS Routes dumped to %s."
 msgstr "Erledigt! Offene JS Routen nach %s exportiert."
@@ -1778,9 +1655,6 @@ msgstr "Erledigt! Gruppe gelöscht."
 
 msgid "Done! Installed %s."
 msgstr "Fertig! Installierte %s."
-
-msgid "Done! Installed plugin."
-msgstr "Erledigt! Plugin wurde installiert."
 
 msgid "Done! Item created."
 msgstr "Erledigt! Element erstellt."
@@ -1799,11 +1673,6 @@ msgstr "Erledigt! Die Nachricht wurde verschickt."
 
 msgid "Done! Module configuration updated."
 msgstr "Erledigt! Modul Konfiguration aktualisiert."
-
-msgid "Done! Module has been upgraded. Its status is now 'Active'."
-msgstr ""
-"Erledigt! Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt "
-"'Aktiv'."
 
 msgid "Done! Position deleted."
 msgstr "Erledigt! Position gelöscht."
@@ -1835,15 +1704,9 @@ msgstr "Erledigt! Die HTMLPurifier-Konfiguration wurde aktualisiert."
 msgid "Done! Saved category."
 msgstr "Erledigt! Die Kategorie wurde gespeichert."
 
-msgid "Done! Saved module configuration."
-msgstr "Erledigt! Die Modulkonfiguration wurde aktualisiert."
-
 msgid "Done! Saved user's account information."
 msgstr ""
 "Erledigt! Die Informationen zum Benutzerkonto wurde erfolgreich gespeichert."
-
-msgid "Done! Saved your changes."
-msgstr "Erledigt! Die Änderungen wurden erfolgreich gespeichert."
 
 msgid "Done! The account information for %s has been sent via e-mail."
 msgstr "Erledigt! Die Konto-Informationen für %s wurden per E-Mail verschickt."
@@ -1880,20 +1743,11 @@ msgstr "Erledigt! Theme Konfiguration auf Standard gesetzt"
 msgid "Done! Theme configuration updated."
 msgstr "Erledigt! Die Theme Konfiguration wurde aktualisiert."
 
-msgid "Done! Theme has been reset to the default site theme."
-msgstr "Erledigt! Das Theme wurde auf das Standardtheme zurückgesetzt."
-
 msgid "Done! Uninstalled extension."
 msgstr "Erledigt! Erweiterung deinstalliert."
 
 msgid "Done! Updated the group."
 msgstr "Erledigt! Gruppe aktualisiert."
-
-msgid "Done! Updated theme settings."
-msgstr "Erledigt! Theme-Einstellungen wurden aktualisiert."
-
-msgid "Done! Upgraded plugin."
-msgstr "Erledigt! Plugin wurde aktualisiert."
 
 msgid "Done! Users imported."
 msgstr "Erledigt! Benutzer importiert."
@@ -2084,9 +1938,6 @@ msgstr "Benutzerkonto von %uname bearbeiten"
 msgid "Edit?"
 msgstr "Bearbeiten?"
 
-msgid "Editor panel pages"
-msgstr "Editor-Panel Seiten"
-
 msgid "Email"
 msgstr "Email"
 
@@ -2119,20 +1970,11 @@ msgstr "Aktiviere OpenSearch"
 msgid "Enable block collapse icons"
 msgstr "Aktiviere zusammenklappbare Icons in Blöcken"
 
-msgid "Enable directory-based short URLs"
-msgstr "Verzeichnisbasierte Short URLs aktivieren"
-
 msgid "Enable filtering of group permissions"
 msgstr "Filterung der Rechte ermöglichen"
 
 msgid "Enable logging of sent mail"
 msgstr "Logging für Emails anschalten."
-
-msgid "Enabled Template settings"
-msgstr "Aktivierte Template-Einstellungen"
-
-msgid "Enabled Theme settings"
-msgstr "Aktivierte Theme-Einstellungen"
 
 msgid "Encoding"
 msgstr "Verschlüsselung"
@@ -2257,9 +2099,6 @@ msgstr ""
 msgid "Error! %sub% cannot be approved."
 msgstr "Fehler! %sub% cann nicht genehmigt werden."
 
-msgid "Error! '%1$s' module returned false in search function '%2$s'."
-msgstr "Fehler! Modul '%1$s' lieferte einen Fehler in der Suchfunktion '%2$s'."
-
 msgid "Error! A category by this name already exists."
 msgstr "Fehler! Eine Kategorie mit diesem Namen existiert bereits."
 
@@ -2267,42 +2106,11 @@ msgid "Error! Activation of module %s not allowed."
 msgstr "Fehler! Aktivierung des Moduls %s nicht zulässig."
 
 msgid ""
-"Error! Cannot write any configuration changes. Make sure that the .ini files "
-"on '%tpath%' or '%zpath%', and the folder itself, are writable."
-msgstr ""
-"Fehler! Konfigurationsänderung konnte nicht geschrieben werden. Bitte "
-"sicherstellen, dass .ini Dateien in '%tpath%' oder '%zpath%' geschrieben "
-"werden können."
-
-msgid ""
-"Error! Cannot write in \"%1$s\" or \"%2$s\" to store the contents of \"%3$s\""
-msgstr ""
-"Fehler! Kann nicht in \"%1$s\" oder \"%2$s\" schreiben um den Inhalt von "
-"\"%3$s\" zu speichern"
-
-msgid "Error! Category %s can not be deleted, because it is already used."
-msgstr ""
-"Fehler! Die Kategorie %s kann nicht gelöscht werden da sie schon in "
-"Benutzung ist"
-
-msgid "Error! Could not activate the block."
-msgstr "Fehler! Der Block konnte nicht aktiviert werden."
-
-msgid "Error! Could not add the user to the group."
-msgstr "Fehler! Der Benutzer konnte nicht zur Gruppe hinzugefügt werden."
-
-msgid "Error! Could not change module state."
-msgstr "Fehler! Der Modulstatus konnte nicht geändert werden."
-
-msgid ""
 "Error! Could not connect to the database. Please check that you have entered "
 "the correct database information and try again. "
 msgstr ""
 "Fehler! Es konnte keine Verbindung zur Datenbank aufgebaut werden. Bitte die "
 "Angaben zur Datenbank kontrollieren und erneut versuchen."
-
-msgid "Error! Could not deactivate the block."
-msgstr "Fehler! Der Block konnte nicht deaktiviert werden."
 
 msgid "Error! Could not determine workflow actions."
 msgstr "Fehler! Kann den zugeordneten Workflow nicht erkennen."
@@ -2313,9 +2121,6 @@ msgstr "Error! Could not get module name for id %s."
 msgid "Error! Could not load data for module %s."
 msgstr "Fehler! Daten für Modul %s konnten nicht geladen werden."
 
-msgid "Error! Could not load data."
-msgstr "Fehler! Daten können nicht geladen werden."
-
 msgid "Error! Could not login with provided credentials. Please try again."
 msgstr ""
 "Fehler! Konnte nicht mit den angegebenen Benutzerdaten einloggen. Bitte noch "
@@ -2324,27 +2129,8 @@ msgstr ""
 msgid "Error! Could not make this category default."
 msgstr "Fehler! Konnte diese Kategorie nicht als Standard setzen."
 
-msgid "Error! Could not open file so that it could be written to: %s"
-msgstr "Fehler! Die Datei konnte nicht im Schreibzugriff geöffnet werden: %s"
-
-msgid "Error! Could not remove the user from the group."
-msgstr "Fehler! Der Benutzer konnte nicht aus der Gruppe entfernt werden."
-
 msgid "Error! Could not save configuration: unknown permission rule ID."
 msgstr "Fehler beim Speichern der Konfiguration: unbekannte Zugriffsrecht-ID."
-
-msgid ""
-"Error! Could not save the module URL information. A duplicate module URL was "
-"detected."
-msgstr ""
-"Fehler! Die Modulinformationen konnten nicht gespeichert werden, da der URL-"
-"Name des Moduls bereits existiert."
-
-msgid "Error! Could not save your changes."
-msgstr "Fehler! Die Änderungen konnte nicht gespeichert werden."
-
-msgid "Error! Could not write to file: %s"
-msgstr "Fehler! In die Datei '%s' konnte nicht geschrieben werden."
 
 msgid "Error! Creation attempt failed."
 msgstr "Fehler! Erstellung fehlgeschlagen."
@@ -2354,36 +2140,6 @@ msgstr "Fehler! Löschen fehlgeschlagen."
 
 msgid "Error! Determination existing tables failed."
 msgstr "Fehler! Konnte existierende Tabellen nicht ermitteln."
-
-msgid "Error! Display name is a required field, please enter a unique name."
-msgstr ""
-"Fehler! Anzeigename ist ein Pflichtfeld, bitte geben Sie einen eindeutigen "
-"Namen ein."
-
-msgid "Error! Failed to clear rendering engine cached pages."
-msgstr ""
-"Fehler! Die zwischengespeicherten Templates der Rendering-Engine konnten "
-"leider nicht gelöscht werden"
-
-msgid "Error! Failed to clear rendering engine compiled templates."
-msgstr ""
-"Fehler! Die kompilierten Templates der Rendering-Engine konnten leider nicht "
-"gelöscht werden."
-
-msgid "Error! Failed to clear theme engine cached templates."
-msgstr ""
-"Fehler! Die zwischengespeicherten Templates der Theme-Engine konnten leider "
-"nicht gelöscht werden"
-
-msgid "Error! Failed to clear theme engine compiled templates."
-msgstr ""
-"Fehler! Die kompilierten Templates der Theme-Engine konnten leider nicht "
-"gelöscht werden."
-
-msgid "Error! Failed to clear theme engine configurations."
-msgstr ""
-"Fehler! Die Konfigurationen der Theme-Engine konnten leider nicht gelöscht "
-"werden."
 
 msgid ""
 "Error! In your permalink settings, strings cannot be terminated with a comma."
@@ -2405,9 +2161,6 @@ msgstr ""
 msgid "Error! Invalid %s received."
 msgstr "Error! Invalid %s received."
 
-msgid "Error! Invalid arguments array received."
-msgstr "Fehler! Ungültiges Argument im Array erhalten."
-
 msgid ""
 "Error! Invalid database name. Please use only letters, numbers, \"-\" or \"_"
 "\"."
@@ -2427,11 +2180,6 @@ msgstr "Fehler! Es war leider nicht möglich, die Importdatei einzulesen."
 msgid "Error! It is not allowed to delete this route."
 msgstr "Fehler! Es ist nicht erlaubt, diese Route zu löschen."
 
-msgid "Error! Module URL is a required field, please enter a unique name."
-msgstr ""
-"Fehler! Die Eingabe der Module URL ist zwingend erforderlich. Bitte einen "
-"eindeutigen Namen eingeben."
-
 msgid "Error! No category name given."
 msgstr "Fehler! Kein Kategoriename vergeben."
 
@@ -2441,17 +2189,8 @@ msgstr "Fehler! Keine Berechtigung zum Installieren von %s."
 msgid "Error! No permission to uninstall %s."
 msgstr "Fehler! Keine Berechtigung %s deinstallieren."
 
-msgid "Error! No permission to upgrade %s."
-msgstr "Fehler! Keine Berechtigung zum Aktualisieren von %s."
-
 msgid "Error! No such category found."
 msgstr "Fehler! Keine entsprechende Kategorie gefunden."
-
-msgid "Error! No such module ID exists."
-msgstr "Fehler! Es konnte keine entsprechende Modul-ID gefunden werden."
-
-msgid "Error! Non-existing root category '%s' received"
-msgstr "Error! Non-existing root category '%s' received"
 
 msgid "Error! Not allowed to upgrade %s."
 msgstr "Fehler: Nicht erlaubtes Upgrade von %s."
@@ -2466,15 +2205,6 @@ msgstr "Fehler! Bitte die Datenbank Zugangsdaten eingeben."
 
 msgid "Error! Received a non-numeric object ID '%s'."
 msgstr "Error! Received a non-numeric object ID '%s'."
-
-msgid "Error! Received invalid parameter '%s'"
-msgstr "Error! Received invalid parameter '%s'"
-
-msgid "Error! Received invalid specifications %1$s, %2$s."
-msgstr "Fehler! Ungültige Spezifikation erhalten %1$s, %2$s."
-
-msgid "Error! Removed unknown '%type%': '%leftovers%'."
-msgstr "Fehler! Unbekannte '%type%': '%leftovers%' gelöscht."
 
 msgid "Error! Session path not writeable!"
 msgstr "Fehler! Der Session Pfad ist nicht beschreibbar!"
@@ -2503,9 +2233,6 @@ msgstr ""
 "Fehler! Die Datenbank existiert und beinhaltet Tabellen. Bitte vor dem "
 "Fortfahren die Tabellen löschen oder andere Datenbank wählen."
 
-msgid "Error! The file was not found in the Zikula root directory."
-msgstr "Fehler! Die Datei wurde nicht im Zikula Root Verzeichnis gefunden."
-
 msgid ""
 "Error! The import file does not have the expected field %s in the first row. "
 "Please check your import file."
@@ -2529,12 +2256,6 @@ msgid ""
 msgstr ""
 "Fehler: Die ausgewählte Erweiterung kann nicht deinstalliert werden weil "
 "Dateien fehlen!"
-
-msgid "Error! There is already a block position with the name you entered."
-msgstr "Fehler! Es existiert bereits eine Blockposition mit dem Namen."
-
-msgid "Error! There is already a group with that name."
-msgstr "Fehler! Es existiert bereits eine Gruppe mit diesem Namen."
 
 msgid ""
 "Error! There was a problem saving your new e-mail address or sending you a "
@@ -2570,15 +2291,6 @@ msgstr ""
 "Fehler! Benutzernamen können nur aus einer Kombination von Buchstaben und "
 "Zahlen bestehen, und können nur die Symbole . und _ enthalten."
 
-msgid ""
-"Error! When setting a startpage, starttype and startfunc are required fields."
-msgstr ""
-"Fehler! Wenn eine Startseite konfiguriert werden soll, dann sind Eingaben in "
-"den Feldern Start-Typ und Start-Funktion notwendig."
-
-msgid "Error! You are already a member of this group."
-msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
-
 msgid "Error! You can't edit the guest account."
 msgstr "Fehler! Das Benutzerkonto des Gastes kann nicht bearbeitet werden."
 
@@ -2604,12 +2316,6 @@ msgstr "Fehler! Man kann die primäre Administrator Gruppe nicht löschen."
 
 msgid "Error! You did not enter any keywords to search for."
 msgstr "Fehler! Es wurden keine Suchbegriffe eingegeben."
-
-msgid "Error! You entered an invalid entry point."
-msgstr "Fehler! Ein falscher Einstiegspunkt wurde eingeben."
-
-msgid "Error! You have already applied for membership of this group."
-msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
 
 msgid "Error! You have not been logged out."
 msgstr "Fehler! Die Abmeldung konnte nicht durchgeführt werden."
@@ -2696,12 +2402,6 @@ msgstr "Titelzeile exportieren"
 
 msgid "Export users"
 msgstr "Exportieren"
-
-msgid "Extended menu"
-msgstr "Erweitertes Menu"
-
-msgid "Extended menu block"
-msgstr "Erweiterter Menüblock"
 
 msgid "Extension List"
 msgstr "Erweiterungen Liste"
@@ -2831,6 +2531,9 @@ msgstr ""
 msgid "Footer block"
 msgstr "Footer Block"
 
+msgid "For Html files please select the Html file type."
+msgstr "Für HTML Dateien bitte den HTML Datei Typ wählen."
+
 msgid "For more information, please visit %link%."
 msgstr "Weitere Informationen finden Sie unter %link%."
 
@@ -2848,9 +2551,6 @@ msgstr "Art der Modulanzeige"
 
 msgid "Format"
 msgstr "Format"
-
-msgid "Front Controller settings"
-msgstr "Front-Controller-Einstellungen"
 
 msgid "Frontend"
 msgstr "Frontend"
@@ -2914,9 +2614,6 @@ msgstr "Gruppenliste"
 
 msgid "Group membership"
 msgstr "Gruppenmitgliedschaft"
-
-msgid "Group membership application registered"
-msgstr "Neue Anfrage auf Mitgliedschaft in einer Gruppe"
 
 msgid "Group of administrators of this site."
 msgstr "Gruppe von Administratoren dieser Seite."
@@ -3032,9 +2729,6 @@ msgid "High (user is logged-out after X minutes of inactivity)"
 msgstr "Hoch (Benutzer werden nach x Minuten Inaktivität abgemeldet)"
 
 msgid "Home"
-msgstr "Startseite"
-
-msgid "Homepage"
 msgstr "Startseite"
 
 msgid "Hooks"
@@ -3166,13 +2860,6 @@ msgid "If the request was not made by you you don't need to worry."
 msgstr ""
 "Wenn die Anfrage nicht von Ihnen gemacht wurde, dann brauchen Sie nichts "
 "weiter zu unternehmen."
-
-msgid ""
-"If the system cannot write on any .ini file, the changes will be saved on "
-"'%zpath%' and the Theme Engine will use it."
-msgstr ""
-"Wenn das System die .ini Dateien nicht schreiben kann, werden die Änderungen "
-"in  '%zpath%'  gespeichert und von dort genutzt."
 
 msgid ""
 "If this is checked, Zikula tries to serve the language requested by browser "
@@ -3309,14 +2996,8 @@ msgstr "Anfang"
 msgid "Initial user group"
 msgstr "Startgruppe für Benutzer"
 
-msgid "Initialization complete"
-msgstr "Initialisierung komplett"
-
 msgid "Initialization of %s failed!"
 msgstr "Initialisierung von %s fehlgeschlagen!"
-
-msgid "Initializing upgrade..."
-msgstr "Initialisiere Upgrade..."
 
 msgid "Initially selected category"
 msgstr "Initial ausgewählte Kategorie"
@@ -3351,9 +3032,6 @@ msgstr "Installieren"
 msgid "Install %s"
 msgstr "Installiere %s"
 
-msgid "Install Zikula Routes Module"
-msgstr "Installiere das Zikula Routes Modul"
-
 msgid "Install Zikula!"
 msgstr "Zikula installieren!"
 
@@ -3383,9 +3061,6 @@ msgstr "Installations-Skript"
 
 msgid "Installing Modules and Helpers"
 msgstr "Installation von Modulen und Helfern"
-
-msgid "Installing System Plugins"
-msgstr "Installiere System Plugins"
 
 msgid "Installing Zikula Administration Module"
 msgstr "Installiere das Zikula Administrations Modul"
@@ -3471,9 +3146,6 @@ msgstr "Ungültige Gruppen-ID"
 msgid "Invalid User ID."
 msgstr "Ungültige Benutzer-ID"
 
-msgid "Invalid arguments array received"
-msgstr "Fehlerhaftes Argument im Array erhalten."
-
 msgid "Invalid authentication method."
 msgstr "Ungültige Authentifizierungsmethode."
 
@@ -3493,13 +3165,6 @@ msgid ""
 msgstr ""
 "Ungültiger Benutzer können nicht migriert werden, es sei denn, ihre Daten "
 "manuell korrigiert werden. Die Fehler sind in das Logfile geschrieben."
-
-msgid ""
-"It is now moved here because it is also used with core-1.4.x routing. This "
-"feature is deprecated."
-msgstr ""
-"Es ist jetzt hierher verschoben, da sie auch mit Core-1.4.x Routing "
-"verwendet wird. Diese Funktion ist veraltet."
 
 msgid "It is recommended to force users to verify their email address."
 msgstr "Es wird empfohlen Benutzer Ihre Email Adresse bestätigen zu lassen."
@@ -3577,9 +3242,6 @@ msgstr "Linke Blöcke"
 
 msgid "Left the \"%group\" group"
 msgstr "die \"%group\" Gruppe verlassen"
-
-msgid "Legacy filter options"
-msgstr "Legacy Filteroptionen"
 
 msgid "Legacy module support is enabled, but preferably should be disabled."
 msgstr ""
@@ -3740,9 +3402,6 @@ msgstr "Hauptmenü"
 msgid "Main settings"
 msgstr "Hauptkonfiguration"
 
-msgid "Main theme file not found!"
-msgstr "Haupt-Theme Datei nicht gefunden!"
-
 msgid "Make default category"
 msgstr "Als Standardkategorie setzen"
 
@@ -3776,9 +3435,6 @@ msgstr "Markierte Positions gibt es nicht im aktuellen Standard-Theme."
 msgid "Marking store"
 msgstr "Markierung speichern"
 
-msgid "Master"
-msgstr "Master"
-
 msgid "Maximum membership"
 msgstr "Max. Benutzer"
 
@@ -3801,9 +3457,6 @@ msgstr "Anfrage auf Mitgliedschaft"
 msgid "Menu"
 msgstr "Menü"
 
-msgid "Menu block"
-msgstr "Einfacher Menüblock"
-
 msgid "Menu list"
 msgstr "Menüliste"
 
@@ -3816,9 +3469,6 @@ msgstr "MenuItemName (MenuItemId). Die Id wird für Berechtigungen benötigt."
 
 msgid "Menus"
 msgstr "Menüs"
-
-msgid "Menutree"
-msgstr "Menutree"
 
 msgid "Message"
 msgstr "Mitteilung"
@@ -3847,8 +3497,8 @@ msgstr "Methoden"
 msgid "Migrate Users to ZAuth"
 msgstr "Migrieren von Benutzern zu ZAuth"
 
-msgid "Migrate to ZAuth"
-msgstr "Migration zu ZAuth"
+msgid "Migrating Users..."
+msgstr "Migration von Benutzern..."
 
 msgid "Minimum impact to block the request"
 msgstr "Minimaler Schweregrad für Blocken des Requests"
@@ -3872,9 +3522,6 @@ msgstr "Mindestzeilenhöhe im Ansichtsmodus (Pixel)"
 
 msgid "Minimum row height for rule editing view (in pixels)"
 msgstr "Mindestzeilenhöhe im Bearbeitungsmodus (Pixel)"
-
-msgid "Misconfigured block. ID: %s"
-msgstr "Fehlerhaft konfigurierter Block. ID: %s"
 
 msgid "Mode"
 msgstr "Modus"
@@ -4157,9 +3804,6 @@ msgstr "Kategorien-Name oder -ID nicht gesetzt."
 msgid "No custom routes found."
 msgstr "Keine benutzerdefinierte Routen gefunden."
 
-msgid "No event handlers responded."
-msgstr "Es haben keine Event-Handler geantwortet."
-
 msgid "No further pages"
 msgstr "Keine weiteren Seiten"
 
@@ -4197,9 +3841,6 @@ msgstr "keine Einträge gefunden"
 msgid "No search results found."
 msgstr "Nichts gefunden …"
 
-msgid "No start module (static frontpage)"
-msgstr "Kein Startmodul (statische Startseite)"
-
 msgid "No subscriber area passed."
 msgstr "Kein Servicenehmerbereich übergeben."
 
@@ -4226,9 +3867,6 @@ msgstr "Nicht installiert"
 
 msgid "Not yet approved"
 msgstr "Noch nicht freigegeben"
-
-msgid "Note: User selection of themes is a deprecated feature."
-msgstr "Hinweis: Benutzer-Auswahl der Themen ist eine veraltete Funktion."
 
 #, fuzzy
 msgid ""
@@ -4285,42 +3923,11 @@ msgstr ""
 "Passwort anfordern). Derzeit erfasst Emailadresse ist %email%."
 
 msgid ""
-"Notice: Please make sure you type an entry in every field. Your palette "
-"cannot be saved if you do not."
-msgstr ""
-"Hinweis: Bitte sicherstellen, dass alle einzelnen Felder gefüllt sind. "
-"Ansonsten kann die Farbpalette nicht gespeichert werden."
-
-msgid ""
-"Notice: Seems that your %theme%'s .ini files are writable. Be sure that "
-"there are no .ini files on '%zpath%' because if so, the Theme Engine will "
-"consider them and not your %theme%'s ones."
-msgstr ""
-"Info: Scheint so als ob deine %theme%'s .ini beschreibbar wäre. Bitte "
-"sicherstellen dass in '%zpath%' keine .ini Datein sind, sonst wird die Theme "
-"Engine diese und nicht deine  %theme% Dateien benutzen."
-
-msgid ""
 "Notice: The PHP Zlib extension is not enabled on your host. This setting "
 "will not do anything in this case."
 msgstr ""
 "Hinweis: Die PHP Zlib Erweiterung ist nicht auf Ihrem Rechner aktiviert. "
 "Diese Einstellung wird in diesem Fall nichts ändern."
-
-msgid ""
-"Notice: The changes made via Admin Panel will be saved on '%zpath%' because "
-"it seems that the .ini files on '%tpath%' are not writable."
-msgstr ""
-"Info: Die im Admin Panel gemachten Änderungen werden in '%zpath%' "
-"gespeichert weil anscheinened die .ini Dateien in '%tpath%' nicht schreibbar "
-"sind."
-
-msgid ""
-"Notice: The entry point file must be present in the Zikula root directory "
-"before you set it here as your site's start page."
-msgstr ""
-"Hinweis: Der Seiteneinstieg muss vor der Änderung im Zikula-Rootverzeichnis "
-"existieren."
 
 msgid ""
 "Notice: The following settings will rewrite your permalinks. Sometimes, "
@@ -4344,33 +3951,12 @@ msgstr ""
 "diese Umschreibung nicht gewünscht ist, sollten die Inhalte beider Listen "
 "einfach gelöscht werden."
 
-msgid "Notice: Theme switching is currently disabled."
-msgstr "Hinweis: Das Wechseln von Themes ist momentan deaktiviert."
-
-msgid ""
-"Notice: This feature is deprecated in favor of Symfony routing. This site "
-"may have a mixture of modules of both types; those capable of using the old "
-"functionality, and those using routing."
-msgstr ""
-"Hinweis: Dieses Feature ist veraltet, zu Gunsten des Symfony-Routings. Diese "
-"Website könnte eine Mischung aus alten und neuen Modulen haben; die alten "
-"Module, die Routing noch nicht verwenden und diejenigen mit Routing."
-
 msgid ""
 "Notice: This overrides the 'Verify e-mail address during registration' "
 "setting in 'Settings'."
 msgstr ""
 "Hinweis: Dies überschreibt die Option 'E-Mail Adresse während der "
 "Registrierung verifizieren' in den Grundeinstellungen."
-
-msgid ""
-"Notice: This theme switcher block will not be displayed until you allow "
-"users to change themes. You can enable/disable this from the <a href=\"%s"
-"\">settings</a> of the Theme module."
-msgstr ""
-"Hinweis: Der Theme-Switcher-Block wird nicht angezeigt, wenn die Benutzer "
-"generell keine Themes auswählen dürfen. Diese Einstellung kann in der "
-"Konfiguration des  <a href=\"%s\">Theme-Moduls</a> angepasst werden."
 
 msgid ""
 "Notice: Use drag and drop to arrange the blocks in this position into your "
@@ -4486,9 +4072,6 @@ msgstr "Nur Ziffern sind erlaubt."
 msgid "Only for non-default languages"
 msgstr "Nicht bei der Standardsprache"
 
-msgid "Only in some themes"
-msgstr "Nur in einigen Themes"
-
 msgid "Only item titles"
 msgstr "Nur Titel"
 
@@ -4545,9 +4128,6 @@ msgstr "Andere Aktionen für %s"
 
 msgid "Output filter settings"
 msgstr "Ausgabefilter"
-
-msgid "Override users' theme settings"
-msgstr "individuelle Benutzerthemes übersteuern"
 
 msgid "Overview"
 msgstr "Übersicht"
@@ -4783,12 +4363,6 @@ msgstr "Bitte beachten Sie %s während des Prozesses."
 msgid "Please select one of the following:"
 msgstr "Bitte eine der folgenden Möglichkeiten auswählen:"
 
-msgid "Plugins for %s"
-msgstr "Plugins für %s"
-
-msgid "Plugins list"
-msgstr "Pluginliste"
-
 msgid "Position"
 msgstr "Position"
 
@@ -4943,9 +4517,6 @@ msgstr "Empfängername"
 msgid "Recommended"
 msgstr "Empfohlen"
 
-msgid "Recommended."
-msgstr "Empfohlen"
-
 msgid "Recover Lost Password"
 msgstr "Passwort wiederherstellen."
 
@@ -5057,9 +4628,6 @@ msgstr "Entfernen"
 msgid "Remove %s"
 msgstr "Lösche %s"
 
-msgid "Remove plugin"
-msgstr "Plugin entfernen"
-
 msgid "Remove theme"
 msgstr "Theme entfernen"
 
@@ -5071,9 +4639,6 @@ msgstr "Benutzer aus Gruppe entfernen"
 
 msgid "Rename category"
 msgstr "Kategorie umbenennen"
-
-msgid "Rendering engine"
-msgstr "Renderer"
 
 msgid "Renew"
 msgstr "Erneuern"
@@ -5166,12 +4731,6 @@ msgstr "Routen Liste"
 #, fuzzy
 msgid "Route scope"
 msgstr "Strecke Bereich"
-
-msgid ""
-"Routed modules cannot utilize this feature. Edit the routes directly instead."
-msgstr ""
-"Das Routing Modul kann dieses Feature nicht nutzen. Bearbeiten Sie "
-"statdessen die Routen direkt."
 
 msgid "Routes"
 msgstr "Routen"
@@ -5385,9 +4944,6 @@ msgstr "Jeden Benutzernamen mit einem Komma trennen."
 msgid "Separate with & for example:"
 msgstr "Zum Beispiel mit & trennen:"
 
-msgid "Separator for permalink titles"
-msgstr "Trennzeichen im Permalink Titel"
-
 msgid "Server time zone is %tz"
 msgstr "Zeitzone des Servers ist %tz"
 
@@ -5458,9 +5014,6 @@ msgstr "Konfiguration"
 msgid "Settings test"
 msgstr "Konfiguration testen"
 
-msgid "Short URL settings"
-msgstr "Short URL Einstellungen"
-
 msgid "Show 'Search now' button"
 msgstr "Suchschaltfläche anzeigen"
 
@@ -5498,9 +5051,6 @@ msgstr "Seiten Standard"
 msgid "Site description"
 msgstr "Seitenbeschreibung"
 
-msgid "Site entry point (front controller)"
-msgstr "Seiteneinstiegspunkt (Front Controller)"
-
 msgid "Site name"
 msgstr "Seitenname"
 
@@ -5510,12 +5060,6 @@ msgstr "Suche"
 #, fuzzy
 msgid "Site unsearchable"
 msgstr "Website durchsuchbar"
-
-msgid "Smarty engine settings"
-msgstr "Smarty Einstellungen"
-
-msgid "Smarty tag"
-msgstr "Smarty-Tag"
 
 msgid ""
 "Someone with the IP address %1$s has just requested the account information "
@@ -5591,12 +5135,6 @@ msgstr ""
 "Tut mir Leid! Dies ist eine Nachricht, um Ihnen mit Bedauern mitzuteilen, "
 "dass Ihr Antrag auf Mitgliedschaft der angeforderten privaten Gruppe "
 "abgelehnt worden ist."
-
-msgid "Sorry! You cannot delete the default users group."
-msgstr "Fehler! Die Standardgruppe für Benutzer kann nicht gelöscht werden."
-
-msgid "Sorry! You cannot delete the primary administrators group."
-msgstr "Fehler! Die primäre Administrationsgruppe kann nicht gelöscht werden."
 
 msgid "Sorry! You must be logged in before you can leave a group."
 msgstr ""
@@ -5691,33 +5229,11 @@ msgstr "Stabiler Zikula-Core verfügbar"
 msgid "Start Controller"
 msgstr "Start Controller"
 
-msgid ""
-"Start Controller will take precedence over module/type/function settings "
-"below."
-msgstr ""
-"Der Start-Controller wird die folgenden Modul/Typ/Funktion Einstellungen "
-"überschreiben."
-
-msgid "Start function (required if module is set)"
-msgstr "Start Funktion (benötigt falls Modul ausgewählt ist)"
-
 msgid "Start function arguments"
 msgstr "Weitere Argumente für Startfunktion (optional)"
 
-msgid ""
-"Start function arguments (below) can also be combined with this setting."
-msgstr ""
-"Die Start-Controller Argumente (siehe unten) können auch mit dieser "
-"Einstellung kombiniert werden."
-
-msgid "Start function type (required if module is set)"
-msgstr "Start Funktions Typ (benötigt falls Modul ausgewählt ist)"
-
 msgid "Start installation?"
 msgstr "Installations Start?"
-
-msgid "Start module"
-msgstr "Startmodul"
 
 msgid "Start page settings"
 msgstr "Startseite Einstellungen"
@@ -5749,17 +5265,6 @@ msgid "Stop!"
 msgstr "Stopp!"
 
 msgid ""
-"Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site "
-"root, but must be removed before you can access the site admin panel. "
-"Moreover, for your information, this tool is now deprecated in favor of the "
-"Zikula recovery console ('zrc.php')."
-msgstr ""
-"Stopp! Zum Fortfahren bitte das 'Swiss army knife tool' (Datei 'psak.php') "
-"im Rootverzeichnis löschen. Hinweis am Rande: Dieses Tool ist mittlerweile "
-"veraltet und wurde durch die 'Zikula Recovery Console' (Datei 'zrc.php') "
-"ersetzt."
-
-msgid ""
 "Stop, please! The installer file 'install.php' and directory 'install' are "
 "in the site root, but must be removed before you can access the site admin "
 "panel."
@@ -5772,9 +5277,6 @@ msgstr "Speicher System"
 
 msgid "Store sessions"
 msgstr "Session-Speicherung"
-
-msgid "Strip entry point (front controller) from URLs"
-msgstr "entferne Einstiegspunkt (Front Controller) von den URLs"
 
 msgid "Style sheet URL"
 msgstr "Stylesheet URL"
@@ -5818,12 +5320,6 @@ msgstr "Symfony Bundles gespeichert"
 
 msgid "System"
 msgstr "System"
-
-msgid "System Plugins"
-msgstr "System Plugins"
-
-msgid "System Plugins installed"
-msgstr "System Plugins installiert"
 
 msgid "System modules activated"
 msgstr "System Modul wurde aktiviert"
@@ -5880,21 +5376,6 @@ msgstr ""
 "Die Seite \"Einstellungen\" enthält drei Abschnitte: \"Allgemeine "
 "Einstellungen\", \"Display-Einstellungen\" und \"Module Kategorisierung\". "
 "Jede ist unten berücksichtigt."
-
-msgid ""
-"The Zikula recovery console tool (a file called 'zrc.php') is a useful "
-"utility for resolving certain problems, but should not be left in any "
-"directory accessible from the Internet, because this leaves an easy "
-"opportunity for a security breach. If the Security analyser detects this "
-"vulnerability, you will have to remove 'zrc.php' before you can access the "
-"Administration panel."
-msgstr ""
-"Das Tool Swiss Army Knife ('psak.php') ist ein nützliches Werkzeug, um "
-"bestimmte Probleme zu lösen, aber es sollte niemals innerhalb eines "
-"Verzeichnis bleiben, auf das über das Internet zugegriffen werden kann, weil "
-"dies ein Sicherheitsrisiko darstellt. Wenn die Sicherheitsanalyse diese "
-"Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange verhindert, "
-"bis die Datei 'psak.php' gelöscht wurde."
 
 msgid ""
 "The Zikula recovery console tool (file 'zrc.php') is present in the site "
@@ -6052,20 +5533,6 @@ msgstr "Der folgende Angriff wurde von PHPIDS entdeckt"
 msgid "The group name you entered (%u) has already been registered."
 msgstr "Der eingegebene Gruppenname (%u) ist schon vorhanden."
 
-msgid ""
-"The hook provider for area \"%parea\" of type \"%type\" could not be "
-"registered for \"%own\" because it already exists."
-msgstr ""
-"Die Hook-Anbieter für den Bereich \"%parea\" vom Typ \"%type\" konnte nicht "
-"für \"%own\" registriert werden, da er bereits vorhanden ist."
-
-msgid ""
-"The hook subscriber \"%sub\" could not be registered for \"%own\" because it "
-"is registered already."
-msgstr ""
-"Das Hook-Abo \"%sub\"  konnte nicht für \"%own\" registriert werden, da es "
-"bereits vorhanden ist."
-
 msgid "The information that was registered is as follows:"
 msgstr "Folgende Informationen wurden für die Registrierung angegeben:"
 
@@ -6090,16 +5557,6 @@ msgstr "Die Mindestlänge für Benutzerkennwörter ist %sub% Zeichen."
 
 msgid "The minimum version of the core that this module supports is %s"
 msgstr "Die Mindestversion des Cores, die dieses Modul unterstützt ist %s"
-
-msgid "The module '%s' is not available."
-msgstr "Das Modul '%s' ist nicht verfügbar."
-
-msgid ""
-"The module/type/func method of setting the start page is deprecated and will "
-"be removed at Core-2.0."
-msgstr ""
-"Das Modul/Typ/Func-Einstellung zur Festlegung der Startseite ist veraltet "
-"und wird im Core-2.0 entfernt werden."
 
 msgid ""
 "The password cannot be the same as the user name. Please choose a different "
@@ -6136,13 +5593,6 @@ msgstr ""
 "Der Pfad der neu erstellen oder aktualisierten Route sieht der nachfolgenden "
 "Route sehr ähnlich: %s Bist du sicher keinen Konflikt erstellt zu haben?"
 
-msgid ""
-"The registered user %1$s has applied for membership of a group. The details "
-"of the application are as follows: %2$s"
-msgstr ""
-"Der Benutzer %1$s bittet um Mitgliedschaft in einer Gruppe. Folgende Details "
-"wurde der Anfrage hinzugefügt: %2$s"
-
 msgid "The registration process failed."
 msgstr "Der Registrierungsprozess ist Fehl geschlagen."
 
@@ -6171,18 +5621,8 @@ msgstr "Der Site-Administrator hat keine Daten als durchsuchbare konfiguriert."
 msgid "The site is currently off-line."
 msgstr "Diese Website ist momentan deaktiviert."
 
-msgid "The specified template does not exist on the '%s' module."
-msgstr "Das angegebene Template existiert nicht im Modul '%s'."
-
-msgid ""
-"The specified template for the render block doesn't exists for the '%1$s' "
-"module. Block ID: %2$s"
-msgstr ""
-"Das angegebene Templates für den Render-Block existiert nicht im Modul "
-"'%1$s'. Block ID: %2$s"
-
-msgid "The start module was reset to a static frontpage."
-msgstr "Das Startmodul wurde auf \"Statische Startseite\" zurück gesetzt."
+msgid "The startController was reset to a static frontpage."
+msgstr "Die StartController wurde auf eine statische Startseite zurückgesetzt."
 
 msgid ""
 "The theme in use must implement the block position or the assigned blocks "
@@ -6268,22 +5708,11 @@ msgstr "Theme Sicherheitsabfrage"
 msgid "Theme credits"
 msgstr "Theme-Informationen"
 
-msgid "Theme is %sub% based"
-msgstr "Das Theme ist %sub % bezogen"
-
-msgid "Theme switcher"
-msgstr "Theme-Switcher"
-
 msgid "Theme to use"
 msgstr "Theme für die Administration"
 
-msgid ""
-"Themes control the visual presentation of a site. Zikula ships with a small "
-"selection of themes, but many legacy themes are available from the %sub%."
-msgstr ""
-"Themes bestimmen die visuelle Darstellung einer Website. Zikula liefert eine "
-"kleinen Auswahl von Themen mit, aber viele ältere Themen sind bei %sub% "
-"verfügbar."
+msgid "Themes control the visual presentation of a site."
+msgstr "Themen bestimmen die visuelle Darstellung einer Website."
 
 msgid "Themes list"
 msgstr "Theme-Liste"
@@ -6373,9 +5802,6 @@ msgstr "Es gab einen Fehler beim Starten der Installation"
 msgid "There was an error firing the upgrade event"
 msgstr "Fehler beim Upgrade Ereignis ausgelöst"
 
-msgid "There was an error installing System Plugins"
-msgstr "Es gab einen Fehler bei der Installation des Zikula System Plugins"
-
 msgid "There was an error installing Zikula Administration Module"
 msgstr ""
 "Es gab einen Fehler bei der Installation des Zikula Administrations Moduls"
@@ -6445,6 +5871,9 @@ msgstr "Es gab einen Fehler beim aktualisieren der Module"
 msgid "There was an error upgrading to Core %version%"
 msgstr "Fehler beim Upgrade auf Core %version%"
 
+msgid "There was no need to migrate any users."
+msgstr "Es gab keine Notwendigkeit, einen Benutzer zu migrieren."
+
 #, fuzzy
 msgid "This action MUST be complete before upgrading to Core-2.0."
 msgstr ""
@@ -6482,6 +5911,18 @@ msgstr ""
 
 msgid "This function requires JavaScript activated!"
 msgstr "Diese Funktion verlangt aktiviertes Javascript!"
+
+msgid "This group is a core-only group"
+msgstr "Diese Gruppe ist eine nur-Core-Gruppe"
+
+msgid "This group is a private group"
+msgstr "Dies ist eine private Gruppe"
+
+msgid "This group is closed."
+msgstr "Diese Gruppe ist geschlossen."
+
+msgid "This group is has reached its membership limit."
+msgstr "Alle Mitgliedschaften in dieser Gruppe sind leider bereits vergeben."
 
 #, fuzzy
 msgid ""
@@ -6556,10 +5997,6 @@ msgstr ""
 "Dieses Zugriffsrecht ist fixiert und muss vorweg in der Konfiguration "
 "freigeben werden."
 
-#, fuzzy
-msgid "This route no longer functions."
-msgstr "Diese route nicht mehr Funktionen."
-
 msgid ""
 "This setting only affects users who have not established security question "
 "responses. Enter the number of days a user's request to reset a password "
@@ -6571,26 +6008,8 @@ msgstr ""
 "Anfrage zum Rücksetzen des Passwortes, die auf Bestätigung wartet, abläuft. "
 "Null (0) eingeben für unendliche Laufzeit (keine automatische Löschung)."
 
-msgid ""
-"This setting only works with Core-1.4.x/2.0 compatible modules (with routes)."
-msgstr ""
-"Diese Einstellung funktioniert nur mit kompatiblen Core-1.4.x/2.0 Modulen "
-"(mit Routing)."
-
-msgid ""
-"This setting was part of the 'shorturl configuration in the past (below)."
-msgstr ""
-"Diese Einstellung war Bestandteil der Shorturl-Konfiguration in der "
-"Vergangenheit (siehe unten)."
-
 msgid "This site is powered by Zikula!"
 msgstr "Diese Website wurde mit Zikula umgesetzt!"
-
-msgid ""
-"This site needs to be upgraded, please contact the system administrator."
-msgstr ""
-"Diese Website benötigt eine Aktualisierung. Bitte den Systemadministrator "
-"kontaktieren."
 
 #, fuzzy
 msgid ""
@@ -6600,6 +6019,13 @@ msgstr ""
 "Dieser Benutzer kann nicht bearbeitet werden. Mitgliedschaften in "
 "Sicherheitsgruppen können in die Gruppen-Modul bearbeitet werden. Klicken "
 "Sie hier."
+
+msgid ""
+"This will migrate all VALID users from the old Users table to the new ZAuth "
+"table."
+msgstr ""
+"Dadurch werden alle gültigen Benutzer aus der alten Benutzer-Tabelle in die "
+"neue ZAuth Tabelle migriert."
 
 #, fuzzy
 msgid ""
@@ -6664,9 +6090,6 @@ msgstr "Übersetzungs Präfix"
 
 msgid "Travel and culture"
 msgstr "Reisen und Kultur"
-
-msgid "Tree-like menu (menutree)"
-msgstr "Verschachtelter Menüblock (Menutree)"
 
 msgid "Twig tag"
 msgstr "Twig Tag"
@@ -6745,9 +6168,6 @@ msgstr "Aktualisiert am %date"
 msgid "Updater"
 msgstr "Aktualisieren"
 
-msgid "Upgrade"
-msgstr "Upgrade"
-
 msgid "Upgrade %s"
 msgstr "Upgrade %s"
 
@@ -6809,9 +6229,6 @@ msgstr "Theme der Website nutzen"
 msgid "Useful resources"
 msgstr "Hilfreiche Informationen"
 
-msgid "User Categories feature has been removed."
-msgstr "User-Kategorien-Funktion wurde entfernt."
-
 msgid "User Credential Settings"
 msgstr "Benutzeranmeldeinformationen"
 
@@ -6835,6 +6252,9 @@ msgstr "Benutzer Login"
 
 msgid "User management hooks"
 msgstr "Hooks für die Benutzerverwaltung"
+
+msgid "User migration complete!"
+msgstr "Benutzermigration abgeschlossen!"
 
 msgid "User must verify email address"
 msgstr "Benutzer muss Email Adresse bestätigen"
@@ -6890,16 +6310,6 @@ msgstr "Benutzer ID: %s"
 
 msgid "Users"
 msgstr "Benutzer"
-
-msgid "Users are allowed to change their own theme."
-msgstr "Nutzer dürfen ihre eigenen Themes ändern."
-
-msgid ""
-"Users are not currently allowed to change their own theme, but may have "
-"previously changed them."
-msgstr ""
-"Benutzer dürfen derzeit nicht ihr eigenes Thema ändern, möglicher Weise aber "
-"haben sie es zuvor geändert."
 
 #, fuzzy
 msgid ""
@@ -7087,11 +6497,6 @@ msgstr ""
 "Warnung! Die Willkommens-E-Mail für den neu erstellten Benutzer konnte nicht "
 "versendet werden."
 
-msgid "Warning! This method is no longer functional. You must re-register."
-msgstr ""
-"Warnung! Diese Methode funktioniert nicht mehr. Du musst die neu "
-"registrieren."
-
 msgid ""
 "Warning! Uninstalling this module will also permanently remove all data "
 "associated with it, including all data held by other modules that are hooked "
@@ -7116,13 +6521,6 @@ msgid ""
 msgstr ""
 "Warnung: Block Template Ablageort geändert, Unter Umständen müssen die "
 "Template Overrides angepasst werden, falls welche existieren."
-
-msgid ""
-"Warning: This feature is deprecated and it is not recommended to change from "
-"index.php."
-msgstr ""
-"Achtung: Dieses Feature ist veraltet und es wird nicht empfohlen, index.php "
-"zu ändern."
 
 msgid "Warning: could not install selected dependency %s"
 msgstr "Warnung: Konnte ausgewählte Abhängigkeit %s nicht installieren"
@@ -7201,9 +6599,6 @@ msgstr "Mit Beschreibung"
 msgid "With selected routes"
 msgstr "Mit ausgewählten Routen"
 
-msgid "With the current setup the block is disabled."
-msgstr "Mit den aktuellen Einstellungen ist der Block deaktiviert."
-
 msgid "Word wrap"
 msgstr "Wort Umbruch"
 
@@ -7246,6 +6641,9 @@ msgid ""
 msgstr ""
 "Sie haben bereits eine anhängige Anmeldung. Bitte warten Sie, bis der "
 "Administrator Sie benachrichtigt."
+
+msgid "You are already a member of this group."
+msgstr "Sie sind bereits Mitglied dieser Gruppe."
 
 msgid "You are an anonymous guest."
 msgstr "Noch nicht registriert oder angemeldet."
@@ -7390,10 +6788,6 @@ msgid ""
 msgstr ""
 "Fehler! '%s' ist nicht beschreibbar. Bitte die Zugriffsrechte kontrollieren "
 "und entsprechend korrigieren."
-
-msgid "You have attempted to select an invalid name (it is a subdirectory)."
-msgstr ""
-"Du hast versucht einen ungültigen Namen (oder Unterverzeichnis) auszuwählen"
 
 msgid ""
 "You have got a problem! Your PHP installation does not have the token "
@@ -7690,9 +7084,6 @@ msgstr "Zikula Theme Modul"
 msgid "Zikula Theme Module installed"
 msgstr "Zikula Theme Module wurde installiert"
 
-msgid "Zikula Themes Repository"
-msgstr "Zikula Themes Repository"
-
 msgid "Zikula Upgrader Script"
 msgstr "Zikula Altualisierungs Skript"
 
@@ -7803,9 +7194,6 @@ msgstr "localhost"
 msgid "minutes of inactivity"
 msgstr "Minuten ohne Aktivität"
 
-msgid "no name"
-msgstr "ohne Namen"
-
 msgid "online documentation"
 msgstr "Online Dokumentation"
 
@@ -7875,20 +7263,701 @@ msgstr ""
 "ist."
 
 msgid ""
-"zikula, portal, open source, web site, website, weblog, blog, content "
-"management system, cms, application framework"
+"À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,"
+"Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 msgstr ""
-"zikula, portal, portal web, open source, web site, website, weblog, blog, "
-"content management, content management system, web content management, web "
-"content management system, enterprise web content management, cms, "
-"application framework"
+"À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,"
+"Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
 
-msgid ""
-"À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,"
-"Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
-msgstr ""
-"À,Á,Â,Ã,Å,à,á,â,ã,å,Ò,Ó,Ô,Õ,Ø,ò,ó,ô,õ,ø,È,É,Ê,Ë,è,é,ê,ë,Ç,ç,Ì,Í,Î,Ï,ì,í,î,ï,"
-"Ù,Ú,Û,ù,ú,û,ÿ,Ñ,ñ,ß,ä,Ä,ö,Ö,ü,Ü"
+#~ msgid "%b must be instance of %a and not null."
+#~ msgstr "%b muss Instanz von %a sein und nicht null."
+
+#~ msgid ""
+#~ "%complete of %count users migrated. Failed to migrate all due to "
+#~ "validation errors. See the log for more information."
+#~ msgstr ""
+#~ "%complete von %count Benutzer migriert. Nicht alle konnten aufgrund "
+#~ "Validierungsfehler migriert werden. Für weitere Informationen siehe "
+#~ "Ereignisprotokoll."
+
+#~ msgid ""
+#~ "%s is either not present or not writable. This is not correct! Please "
+#~ "read the upgrade instructions."
+#~ msgstr ""
+#~ "%s ist entweder nicht vorhanden oder nicht beschreibbar. Dies ist nicht "
+#~ "korrekt! Bitte lesen Sie die Upgrade-Anweisungen."
+
+#~ msgid "%s is present and writeable.  This is correct."
+#~ msgstr "%s ist vorhanden und beschreibbar.  Das ist richtig."
+
+#~ msgid ""
+#~ "%s must be an instance of Zikula_AbstractInstaller or implement "
+#~ "ExtensionInstallerInterface"
+#~ msgstr ""
+#~ "%s muss eine Instanz von Zikula_AbstractInstaller sein oder eine "
+#~ "Implementation von ExtensionInstallerInterface"
+
+#~ msgid "%s type pages"
+#~ msgstr "%s Seitentyp"
+
+#~ msgid "('index.php' points to this)"
+#~ msgstr "(Modul, auf das die Datei index.php verweist)"
+
+#~ msgid "(Default: index.php)"
+#~ msgstr "Datei, über die der Seiteneinstieg erfolgt (Standard: index.php)"
+
+#~ msgid "--New link--"
+#~ msgstr "--Neuer Link--"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivieren"
+
+#~ msgid "Admin panel pages"
+#~ msgstr "Admin-Panel Seiten"
+
+#~ msgid "Administrator"
+#~ msgstr "Administrator"
+
+#~ msgid "All users have been migrated already."
+#~ msgstr "Alle Benutzer wurden bereits migriert."
+
+#~ msgid "All users migrated."
+#~ msgstr "Alle Benutzer migriert."
+
+#~ msgid "CSS/JS combination is disabled"
+#~ msgstr "CSS/JS-Kombination ist deaktiviert"
+
+#~ msgid "CSS/JS combination is enabled"
+#~ msgstr "CSS/JS Combination ist aktiviert"
+
+#~ msgid "Cannot join the requested group"
+#~ msgstr "Kann nicht der angeforderte Gruppe beitreten"
+
+#~ msgid "Categories manager"
+#~ msgstr "Kategorienverwaltung"
+
+#~ msgid "Category paths no longer need to be rebuilt."
+#~ msgstr "Kategorie-Pfade müssen nicht mehr wieder aufgebaut werden."
+
+#~ msgid "Clear all cache and compile directories"
+#~ msgstr "Alle Cache- und Kompilierungsverzeichnisse leeren"
+
+#~ msgid ""
+#~ "Configuration file 'config/config.php' is writeable, but should be read-"
+#~ "only (please set to chmod 400, or 440 or last resort 444)."
+#~ msgstr ""
+#~ "Die Konfigurationsdatei 'config/config.php' ist beschreibbar und sollte "
+#~ "jedoch nur lesbar sein (ggfs. mit chmod 400, 440 oder notfalls 444 "
+#~ "anpassen)."
+
+#~ msgid "Configuration file not found"
+#~ msgstr "Konfigurationsdatei gefunden"
+
+#~ msgid "Configuration files"
+#~ msgstr "Konfigurationsdateien"
+
+#~ msgid "Configure plugin"
+#~ msgstr "Plugin konfigurieren"
+
+#~ msgid "Custom rendering engine block"
+#~ msgstr "Renderer-Block"
+
+#~ msgid "De/Select all"
+#~ msgstr "Auswählen"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktivieren"
+
+#~ msgid "Default meta keywords"
+#~ msgstr "Standard Meta-Keywords"
+
+#~ msgid "Do not display module name in short URLs for"
+#~ msgstr "Modulname in Short-URLs nicht anzeigen für"
+
+#~ msgid "Done! Activated plugin."
+#~ msgstr "Erledigt! Plugin wurde aktiviert."
+
+#~ msgid "Done! Cleared all cache and compile directories."
+#~ msgstr ""
+#~ "Erledigt! Es wurden alle kompilierten und zwischengespeicherten Dateien "
+#~ "erfolgreich gelöscht."
+
+#~ msgid "Done! De-installed plugin."
+#~ msgstr "Erledigt! Plugin wurde deinstalliert."
+
+#~ msgid "Done! Deactivated plugin."
+#~ msgstr "Erledigt! Plugin wurde deaktiviert."
+
+#~ msgid "Done! Deleted CSS/JS combination cached files."
+#~ msgstr "Erledigt! Der CSS/JS Combine-Cache wurde erfolgreich gelöscht."
+
+#~ msgid "Done! Deleted it."
+#~ msgstr "Erledigt! Erfolgreich gelöscht."
+
+#~ msgid "Done! Deleted rendering engine cached pages."
+#~ msgstr "Erledigt! Der Seitencache der Rendering-Engine wurde gelöscht."
+
+#~ msgid "Done! Deleted rendering engine compiled templates."
+#~ msgstr ""
+#~ "Erledigt! Die kompilierten Templates der Rendering-Engine wurde gelöscht."
+
+#~ msgid "Done! Deleted theme engine cached templates."
+#~ msgstr ""
+#~ "Erledigt! Die kompilierten Templates der Rendering-Engine wurden gelöscht."
+
+#~ msgid "Done! Deleted theme engine compiled templates."
+#~ msgstr ""
+#~ "Erledigt! Die kompilierten Templates der Theme-Engine wurden gelöscht."
+
+#~ msgid "Done! Deleted theme engine configurations."
+#~ msgstr "Erledigt! Die Konfigurationen der Theme-Engine wurden gelöscht."
+
+#~ msgid "Done! Installed plugin."
+#~ msgstr "Erledigt! Plugin wurde installiert."
+
+#~ msgid "Done! Module has been upgraded. Its status is now 'Active'."
+#~ msgstr ""
+#~ "Erledigt! Das Modul wurde erfolgreich aktualisiert. Der Status ist jetzt "
+#~ "'Aktiv'."
+
+#~ msgid "Done! Saved module configuration."
+#~ msgstr "Erledigt! Die Modulkonfiguration wurde aktualisiert."
+
+#~ msgid "Done! Saved your changes."
+#~ msgstr "Erledigt! Die Änderungen wurden erfolgreich gespeichert."
+
+#~ msgid "Done! Theme has been reset to the default site theme."
+#~ msgstr "Erledigt! Das Theme wurde auf das Standardtheme zurückgesetzt."
+
+#~ msgid "Done! Updated theme settings."
+#~ msgstr "Erledigt! Theme-Einstellungen wurden aktualisiert."
+
+#~ msgid "Done! Upgraded plugin."
+#~ msgstr "Erledigt! Plugin wurde aktualisiert."
+
+#~ msgid "Editor panel pages"
+#~ msgstr "Editor-Panel Seiten"
+
+#~ msgid "Enable directory-based short URLs"
+#~ msgstr "Verzeichnisbasierte Short URLs aktivieren"
+
+#~ msgid "Enabled Template settings"
+#~ msgstr "Aktivierte Template-Einstellungen"
+
+#~ msgid "Enabled Theme settings"
+#~ msgstr "Aktivierte Theme-Einstellungen"
+
+#~ msgid "Error! '%1$s' module returned false in search function '%2$s'."
+#~ msgstr ""
+#~ "Fehler! Modul '%1$s' lieferte einen Fehler in der Suchfunktion '%2$s'."
+
+#~ msgid ""
+#~ "Error! Cannot write any configuration changes. Make sure that the .ini "
+#~ "files on '%tpath%' or '%zpath%', and the folder itself, are writable."
+#~ msgstr ""
+#~ "Fehler! Konfigurationsänderung konnte nicht geschrieben werden. Bitte "
+#~ "sicherstellen, dass .ini Dateien in '%tpath%' oder '%zpath%' geschrieben "
+#~ "werden können."
+
+#~ msgid ""
+#~ "Error! Cannot write in \"%1$s\" or \"%2$s\" to store the contents of "
+#~ "\"%3$s\""
+#~ msgstr ""
+#~ "Fehler! Kann nicht in \"%1$s\" oder \"%2$s\" schreiben um den Inhalt von "
+#~ "\"%3$s\" zu speichern"
+
+#~ msgid "Error! Category %s can not be deleted, because it is already used."
+#~ msgstr ""
+#~ "Fehler! Die Kategorie %s kann nicht gelöscht werden da sie schon in "
+#~ "Benutzung ist"
+
+#~ msgid "Error! Could not activate the block."
+#~ msgstr "Fehler! Der Block konnte nicht aktiviert werden."
+
+#~ msgid "Error! Could not add the user to the group."
+#~ msgstr "Fehler! Der Benutzer konnte nicht zur Gruppe hinzugefügt werden."
+
+#~ msgid "Error! Could not change module state."
+#~ msgstr "Fehler! Der Modulstatus konnte nicht geändert werden."
+
+#~ msgid "Error! Could not deactivate the block."
+#~ msgstr "Fehler! Der Block konnte nicht deaktiviert werden."
+
+#~ msgid "Error! Could not load data."
+#~ msgstr "Fehler! Daten können nicht geladen werden."
+
+#~ msgid "Error! Could not open file so that it could be written to: %s"
+#~ msgstr ""
+#~ "Fehler! Die Datei konnte nicht im Schreibzugriff geöffnet werden: %s"
+
+#~ msgid "Error! Could not remove the user from the group."
+#~ msgstr "Fehler! Der Benutzer konnte nicht aus der Gruppe entfernt werden."
+
+#~ msgid ""
+#~ "Error! Could not save the module URL information. A duplicate module URL "
+#~ "was detected."
+#~ msgstr ""
+#~ "Fehler! Die Modulinformationen konnten nicht gespeichert werden, da der "
+#~ "URL-Name des Moduls bereits existiert."
+
+#~ msgid "Error! Could not save your changes."
+#~ msgstr "Fehler! Die Änderungen konnte nicht gespeichert werden."
+
+#~ msgid "Error! Could not write to file: %s"
+#~ msgstr "Fehler! In die Datei '%s' konnte nicht geschrieben werden."
+
+#~ msgid "Error! Display name is a required field, please enter a unique name."
+#~ msgstr ""
+#~ "Fehler! Anzeigename ist ein Pflichtfeld, bitte geben Sie einen "
+#~ "eindeutigen Namen ein."
+
+#~ msgid "Error! Failed to clear rendering engine cached pages."
+#~ msgstr ""
+#~ "Fehler! Die zwischengespeicherten Templates der Rendering-Engine konnten "
+#~ "leider nicht gelöscht werden"
+
+#~ msgid "Error! Failed to clear rendering engine compiled templates."
+#~ msgstr ""
+#~ "Fehler! Die kompilierten Templates der Rendering-Engine konnten leider "
+#~ "nicht gelöscht werden."
+
+#~ msgid "Error! Failed to clear theme engine cached templates."
+#~ msgstr ""
+#~ "Fehler! Die zwischengespeicherten Templates der Theme-Engine konnten "
+#~ "leider nicht gelöscht werden"
+
+#~ msgid "Error! Failed to clear theme engine compiled templates."
+#~ msgstr ""
+#~ "Fehler! Die kompilierten Templates der Theme-Engine konnten leider nicht "
+#~ "gelöscht werden."
+
+#~ msgid "Error! Failed to clear theme engine configurations."
+#~ msgstr ""
+#~ "Fehler! Die Konfigurationen der Theme-Engine konnten leider nicht "
+#~ "gelöscht werden."
+
+#~ msgid "Error! Invalid arguments array received."
+#~ msgstr "Fehler! Ungültiges Argument im Array erhalten."
+
+#~ msgid "Error! Module URL is a required field, please enter a unique name."
+#~ msgstr ""
+#~ "Fehler! Die Eingabe der Module URL ist zwingend erforderlich. Bitte einen "
+#~ "eindeutigen Namen eingeben."
+
+#~ msgid "Error! No permission to upgrade %s."
+#~ msgstr "Fehler! Keine Berechtigung zum Aktualisieren von %s."
+
+#~ msgid "Error! No such module ID exists."
+#~ msgstr "Fehler! Es konnte keine entsprechende Modul-ID gefunden werden."
+
+#~ msgid "Error! Non-existing root category '%s' received"
+#~ msgstr "Error! Non-existing root category '%s' received"
+
+#~ msgid "Error! Received invalid parameter '%s'"
+#~ msgstr "Error! Received invalid parameter '%s'"
+
+#~ msgid "Error! Received invalid specifications %1$s, %2$s."
+#~ msgstr "Fehler! Ungültige Spezifikation erhalten %1$s, %2$s."
+
+#~ msgid "Error! Removed unknown '%type%': '%leftovers%'."
+#~ msgstr "Fehler! Unbekannte '%type%': '%leftovers%' gelöscht."
+
+#~ msgid "Error! The file was not found in the Zikula root directory."
+#~ msgstr "Fehler! Die Datei wurde nicht im Zikula Root Verzeichnis gefunden."
+
+#~ msgid "Error! There is already a block position with the name you entered."
+#~ msgstr "Fehler! Es existiert bereits eine Blockposition mit dem Namen."
+
+#~ msgid "Error! There is already a group with that name."
+#~ msgstr "Fehler! Es existiert bereits eine Gruppe mit diesem Namen."
+
+#~ msgid ""
+#~ "Error! When setting a startpage, starttype and startfunc are required "
+#~ "fields."
+#~ msgstr ""
+#~ "Fehler! Wenn eine Startseite konfiguriert werden soll, dann sind Eingaben "
+#~ "in den Feldern Start-Typ und Start-Funktion notwendig."
+
+#~ msgid "Error! You are already a member of this group."
+#~ msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
+
+#~ msgid "Error! You entered an invalid entry point."
+#~ msgstr "Fehler! Ein falscher Einstiegspunkt wurde eingeben."
+
+#~ msgid "Error! You have already applied for membership of this group."
+#~ msgstr "Fehler! Es besteht bereits eine Mitgliedschaft in dieser Gruppe."
+
+#~ msgid "Extended menu"
+#~ msgstr "Erweitertes Menu"
+
+#~ msgid "Extended menu block"
+#~ msgstr "Erweiterter Menüblock"
+
+#~ msgid "Front Controller settings"
+#~ msgstr "Front-Controller-Einstellungen"
+
+#~ msgid "Group membership application registered"
+#~ msgstr "Neue Anfrage auf Mitgliedschaft in einer Gruppe"
+
+#~ msgid "Homepage"
+#~ msgstr "Startseite"
+
+#~ msgid ""
+#~ "If the system cannot write on any .ini file, the changes will be saved on "
+#~ "'%zpath%' and the Theme Engine will use it."
+#~ msgstr ""
+#~ "Wenn das System die .ini Dateien nicht schreiben kann, werden die "
+#~ "Änderungen in  '%zpath%'  gespeichert und von dort genutzt."
+
+#~ msgid "Initialization complete"
+#~ msgstr "Initialisierung komplett"
+
+#~ msgid "Initializing upgrade..."
+#~ msgstr "Initialisiere Upgrade..."
+
+#~ msgid "Install Zikula Routes Module"
+#~ msgstr "Installiere das Zikula Routes Modul"
+
+#~ msgid "Installing System Plugins"
+#~ msgstr "Installiere System Plugins"
+
+#~ msgid "Invalid arguments array received"
+#~ msgstr "Fehlerhaftes Argument im Array erhalten."
+
+#~ msgid ""
+#~ "It is now moved here because it is also used with core-1.4.x routing. "
+#~ "This feature is deprecated."
+#~ msgstr ""
+#~ "Es ist jetzt hierher verschoben, da sie auch mit Core-1.4.x Routing "
+#~ "verwendet wird. Diese Funktion ist veraltet."
+
+#~ msgid "Legacy filter options"
+#~ msgstr "Legacy Filteroptionen"
+
+#~ msgid "Main theme file not found!"
+#~ msgstr "Haupt-Theme Datei nicht gefunden!"
+
+#~ msgid "Master"
+#~ msgstr "Master"
+
+#~ msgid "Menu block"
+#~ msgstr "Einfacher Menüblock"
+
+#~ msgid "Menutree"
+#~ msgstr "Menutree"
+
+#~ msgid "Migrate to ZAuth"
+#~ msgstr "Migration zu ZAuth"
+
+#~ msgid "Misconfigured block. ID: %s"
+#~ msgstr "Fehlerhaft konfigurierter Block. ID: %s"
+
+#~ msgid "No event handlers responded."
+#~ msgstr "Es haben keine Event-Handler geantwortet."
+
+#~ msgid "No start module (static frontpage)"
+#~ msgstr "Kein Startmodul (statische Startseite)"
+
+#~ msgid "Note: User selection of themes is a deprecated feature."
+#~ msgstr "Hinweis: Benutzer-Auswahl der Themen ist eine veraltete Funktion."
+
+#~ msgid ""
+#~ "Notice: Please make sure you type an entry in every field. Your palette "
+#~ "cannot be saved if you do not."
+#~ msgstr ""
+#~ "Hinweis: Bitte sicherstellen, dass alle einzelnen Felder gefüllt sind. "
+#~ "Ansonsten kann die Farbpalette nicht gespeichert werden."
+
+#~ msgid ""
+#~ "Notice: Seems that your %theme%'s .ini files are writable. Be sure that "
+#~ "there are no .ini files on '%zpath%' because if so, the Theme Engine will "
+#~ "consider them and not your %theme%'s ones."
+#~ msgstr ""
+#~ "Info: Scheint so als ob deine %theme%'s .ini beschreibbar wäre. Bitte "
+#~ "sicherstellen dass in '%zpath%' keine .ini Datein sind, sonst wird die "
+#~ "Theme Engine diese und nicht deine  %theme% Dateien benutzen."
+
+#~ msgid ""
+#~ "Notice: The changes made via Admin Panel will be saved on '%zpath%' "
+#~ "because it seems that the .ini files on '%tpath%' are not writable."
+#~ msgstr ""
+#~ "Info: Die im Admin Panel gemachten Änderungen werden in '%zpath%' "
+#~ "gespeichert weil anscheinened die .ini Dateien in '%tpath%' nicht "
+#~ "schreibbar sind."
+
+#~ msgid ""
+#~ "Notice: The entry point file must be present in the Zikula root directory "
+#~ "before you set it here as your site's start page."
+#~ msgstr ""
+#~ "Hinweis: Der Seiteneinstieg muss vor der Änderung im Zikula-"
+#~ "Rootverzeichnis existieren."
+
+#~ msgid "Notice: Theme switching is currently disabled."
+#~ msgstr "Hinweis: Das Wechseln von Themes ist momentan deaktiviert."
+
+#~ msgid ""
+#~ "Notice: This feature is deprecated in favor of Symfony routing. This site "
+#~ "may have a mixture of modules of both types; those capable of using the "
+#~ "old functionality, and those using routing."
+#~ msgstr ""
+#~ "Hinweis: Dieses Feature ist veraltet, zu Gunsten des Symfony-Routings. "
+#~ "Diese Website könnte eine Mischung aus alten und neuen Modulen haben; die "
+#~ "alten Module, die Routing noch nicht verwenden und diejenigen mit Routing."
+
+#~ msgid ""
+#~ "Notice: This theme switcher block will not be displayed until you allow "
+#~ "users to change themes. You can enable/disable this from the <a href=\"%s"
+#~ "\">settings</a> of the Theme module."
+#~ msgstr ""
+#~ "Hinweis: Der Theme-Switcher-Block wird nicht angezeigt, wenn die Benutzer "
+#~ "generell keine Themes auswählen dürfen. Diese Einstellung kann in der "
+#~ "Konfiguration des  <a href=\"%s\">Theme-Moduls</a> angepasst werden."
+
+#~ msgid "Only in some themes"
+#~ msgstr "Nur in einigen Themes"
+
+#~ msgid "Override users' theme settings"
+#~ msgstr "individuelle Benutzerthemes übersteuern"
+
+#~ msgid "Plugins for %s"
+#~ msgstr "Plugins für %s"
+
+#~ msgid "Plugins list"
+#~ msgstr "Pluginliste"
+
+#~ msgid "Recommended."
+#~ msgstr "Empfohlen"
+
+#~ msgid "Remove plugin"
+#~ msgstr "Plugin entfernen"
+
+#~ msgid "Rendering engine"
+#~ msgstr "Renderer"
+
+#~ msgid ""
+#~ "Routed modules cannot utilize this feature. Edit the routes directly "
+#~ "instead."
+#~ msgstr ""
+#~ "Das Routing Modul kann dieses Feature nicht nutzen. Bearbeiten Sie "
+#~ "statdessen die Routen direkt."
+
+#~ msgid "Separator for permalink titles"
+#~ msgstr "Trennzeichen im Permalink Titel"
+
+#~ msgid "Short URL settings"
+#~ msgstr "Short URL Einstellungen"
+
+#~ msgid "Site entry point (front controller)"
+#~ msgstr "Seiteneinstiegspunkt (Front Controller)"
+
+#~ msgid "Smarty engine settings"
+#~ msgstr "Smarty Einstellungen"
+
+#~ msgid "Smarty tag"
+#~ msgstr "Smarty-Tag"
+
+#~ msgid "Sorry! You cannot delete the default users group."
+#~ msgstr "Fehler! Die Standardgruppe für Benutzer kann nicht gelöscht werden."
+
+#~ msgid "Sorry! You cannot delete the primary administrators group."
+#~ msgstr ""
+#~ "Fehler! Die primäre Administrationsgruppe kann nicht gelöscht werden."
+
+#~ msgid ""
+#~ "Start Controller will take precedence over module/type/function settings "
+#~ "below."
+#~ msgstr ""
+#~ "Der Start-Controller wird die folgenden Modul/Typ/Funktion Einstellungen "
+#~ "überschreiben."
+
+#~ msgid "Start function (required if module is set)"
+#~ msgstr "Start Funktion (benötigt falls Modul ausgewählt ist)"
+
+#~ msgid ""
+#~ "Start function arguments (below) can also be combined with this setting."
+#~ msgstr ""
+#~ "Die Start-Controller Argumente (siehe unten) können auch mit dieser "
+#~ "Einstellung kombiniert werden."
+
+#~ msgid "Start function type (required if module is set)"
+#~ msgstr "Start Funktions Typ (benötigt falls Modul ausgewählt ist)"
+
+#~ msgid "Start module"
+#~ msgstr "Startmodul"
+
+#~ msgid ""
+#~ "Stop, please! The Swiss Army Knife tool ('psak.php' file) is in the site "
+#~ "root, but must be removed before you can access the site admin panel. "
+#~ "Moreover, for your information, this tool is now deprecated in favor of "
+#~ "the Zikula recovery console ('zrc.php')."
+#~ msgstr ""
+#~ "Stopp! Zum Fortfahren bitte das 'Swiss army knife tool' (Datei 'psak."
+#~ "php') im Rootverzeichnis löschen. Hinweis am Rande: Dieses Tool ist "
+#~ "mittlerweile veraltet und wurde durch die 'Zikula Recovery "
+#~ "Console' (Datei 'zrc.php') ersetzt."
+
+#~ msgid "Strip entry point (front controller) from URLs"
+#~ msgstr "entferne Einstiegspunkt (Front Controller) von den URLs"
+
+#~ msgid "System Plugins"
+#~ msgstr "System Plugins"
+
+#~ msgid "System Plugins installed"
+#~ msgstr "System Plugins installiert"
+
+#~ msgid ""
+#~ "The Zikula recovery console tool (a file called 'zrc.php') is a useful "
+#~ "utility for resolving certain problems, but should not be left in any "
+#~ "directory accessible from the Internet, because this leaves an easy "
+#~ "opportunity for a security breach. If the Security analyser detects this "
+#~ "vulnerability, you will have to remove 'zrc.php' before you can access "
+#~ "the Administration panel."
+#~ msgstr ""
+#~ "Das Tool Swiss Army Knife ('psak.php') ist ein nützliches Werkzeug, um "
+#~ "bestimmte Probleme zu lösen, aber es sollte niemals innerhalb eines "
+#~ "Verzeichnis bleiben, auf das über das Internet zugegriffen werden kann, "
+#~ "weil dies ein Sicherheitsrisiko darstellt. Wenn die Sicherheitsanalyse "
+#~ "diese Gefährdung erkennt, wird der Zugriff aufs Admin-Panel solange "
+#~ "verhindert, bis die Datei 'psak.php' gelöscht wurde."
+
+#~ msgid ""
+#~ "The hook provider for area \"%parea\" of type \"%type\" could not be "
+#~ "registered for \"%own\" because it already exists."
+#~ msgstr ""
+#~ "Die Hook-Anbieter für den Bereich \"%parea\" vom Typ \"%type\" konnte "
+#~ "nicht für \"%own\" registriert werden, da er bereits vorhanden ist."
+
+#~ msgid ""
+#~ "The hook subscriber \"%sub\" could not be registered for \"%own\" because "
+#~ "it is registered already."
+#~ msgstr ""
+#~ "Das Hook-Abo \"%sub\"  konnte nicht für \"%own\" registriert werden, da "
+#~ "es bereits vorhanden ist."
+
+#~ msgid "The module '%s' is not available."
+#~ msgstr "Das Modul '%s' ist nicht verfügbar."
+
+#~ msgid ""
+#~ "The module/type/func method of setting the start page is deprecated and "
+#~ "will be removed at Core-2.0."
+#~ msgstr ""
+#~ "Das Modul/Typ/Func-Einstellung zur Festlegung der Startseite ist veraltet "
+#~ "und wird im Core-2.0 entfernt werden."
+
+#~ msgid ""
+#~ "The registered user %1$s has applied for membership of a group. The "
+#~ "details of the application are as follows: %2$s"
+#~ msgstr ""
+#~ "Der Benutzer %1$s bittet um Mitgliedschaft in einer Gruppe. Folgende "
+#~ "Details wurde der Anfrage hinzugefügt: %2$s"
+
+#~ msgid "The specified template does not exist on the '%s' module."
+#~ msgstr "Das angegebene Template existiert nicht im Modul '%s'."
+
+#~ msgid ""
+#~ "The specified template for the render block doesn't exists for the '%1$s' "
+#~ "module. Block ID: %2$s"
+#~ msgstr ""
+#~ "Das angegebene Templates für den Render-Block existiert nicht im Modul "
+#~ "'%1$s'. Block ID: %2$s"
+
+#~ msgid "The start module was reset to a static frontpage."
+#~ msgstr "Das Startmodul wurde auf \"Statische Startseite\" zurück gesetzt."
+
+#~ msgid "Theme is %sub% based"
+#~ msgstr "Das Theme ist %sub % bezogen"
+
+#~ msgid "Theme switcher"
+#~ msgstr "Theme-Switcher"
+
+#~ msgid ""
+#~ "Themes control the visual presentation of a site. Zikula ships with a "
+#~ "small selection of themes, but many legacy themes are available from the "
+#~ "%sub%."
+#~ msgstr ""
+#~ "Themes bestimmen die visuelle Darstellung einer Website. Zikula liefert "
+#~ "eine kleinen Auswahl von Themen mit, aber viele ältere Themen sind bei "
+#~ "%sub% verfügbar."
+
+#~ msgid "There was an error installing System Plugins"
+#~ msgstr "Es gab einen Fehler bei der Installation des Zikula System Plugins"
+
+#, fuzzy
+#~ msgid "This route no longer functions."
+#~ msgstr "Diese route nicht mehr Funktionen."
+
+#~ msgid ""
+#~ "This setting only works with Core-1.4.x/2.0 compatible modules (with "
+#~ "routes)."
+#~ msgstr ""
+#~ "Diese Einstellung funktioniert nur mit kompatiblen Core-1.4.x/2.0 Modulen "
+#~ "(mit Routing)."
+
+#~ msgid ""
+#~ "This setting was part of the 'shorturl configuration in the past (below)."
+#~ msgstr ""
+#~ "Diese Einstellung war Bestandteil der Shorturl-Konfiguration in der "
+#~ "Vergangenheit (siehe unten)."
+
+#~ msgid ""
+#~ "This site needs to be upgraded, please contact the system administrator."
+#~ msgstr ""
+#~ "Diese Website benötigt eine Aktualisierung. Bitte den Systemadministrator "
+#~ "kontaktieren."
+
+#~ msgid "Tree-like menu (menutree)"
+#~ msgstr "Verschachtelter Menüblock (Menutree)"
+
+#~ msgid "Upgrade"
+#~ msgstr "Upgrade"
+
+#~ msgid "User Categories feature has been removed."
+#~ msgstr "User-Kategorien-Funktion wurde entfernt."
+
+#~ msgid "Users are allowed to change their own theme."
+#~ msgstr "Nutzer dürfen ihre eigenen Themes ändern."
+
+#~ msgid ""
+#~ "Users are not currently allowed to change their own theme, but may have "
+#~ "previously changed them."
+#~ msgstr ""
+#~ "Benutzer dürfen derzeit nicht ihr eigenes Thema ändern, möglicher Weise "
+#~ "aber haben sie es zuvor geändert."
+
+#~ msgid "Warning! This method is no longer functional. You must re-register."
+#~ msgstr ""
+#~ "Warnung! Diese Methode funktioniert nicht mehr. Du musst die neu "
+#~ "registrieren."
+
+#~ msgid ""
+#~ "Warning: This feature is deprecated and it is not recommended to change "
+#~ "from index.php."
+#~ msgstr ""
+#~ "Achtung: Dieses Feature ist veraltet und es wird nicht empfohlen, index."
+#~ "php zu ändern."
+
+#~ msgid "With the current setup the block is disabled."
+#~ msgstr "Mit den aktuellen Einstellungen ist der Block deaktiviert."
+
+#~ msgid "You have attempted to select an invalid name (it is a subdirectory)."
+#~ msgstr ""
+#~ "Du hast versucht einen ungültigen Namen (oder Unterverzeichnis) "
+#~ "auszuwählen"
+
+#~ msgid "Zikula Themes Repository"
+#~ msgstr "Zikula Themes Repository"
+
+#~ msgid "no name"
+#~ msgstr "ohne Namen"
+
+#~ msgid ""
+#~ "zikula, portal, open source, web site, website, weblog, blog, content "
+#~ "management system, cms, application framework"
+#~ msgstr ""
+#~ "zikula, portal, portal web, open source, web site, website, weblog, blog, "
+#~ "content management, content management system, web content management, "
+#~ "web content management system, enterprise web content management, cms, "
+#~ "application framework"
 
 #~ msgid ""
 #~ "\"%bar\" will match \"FOObar\", \"Blubbar\" and so on, but not \"BarFoo\"."
@@ -9173,9 +9242,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Entweder die Style-Sheet URL oder der Style-Sheet Inhalt können einen "
 #~ "Wert haben, aber nicht beide."
-
-#~ msgid "For Html files please select the Html file type."
-#~ msgstr "Für HTML Dateien bitte den HTML Datei Typ wählen."
 
 #~ msgid "Error! in %1$s: the %2$s parameter must be specified."
 #~ msgstr "Error! in %1$s: the %2$s parameter must be specified."

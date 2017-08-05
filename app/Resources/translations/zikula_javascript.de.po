@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Zikula 2.0.x\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
@@ -12,51 +12,17 @@ msgstr ""
 "X-Generator: Poedit 2.0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Activate"
-msgstr "Aktivieren"
-
-msgid "Activate for all langs"
-msgstr "Für alle Sprachen aktivieren"
-
-msgid "Active?"
-msgstr "Aktiv?"
-
 msgid "Add connection"
 msgstr "Verbindung hinzufügen"
-
-msgid "Add new..."
-msgstr "Neu hinzufügen..."
 
 msgid "Add node"
 msgstr "Knoten hinzufügen"
 
-msgid "Cancel"
-msgstr "Abbrechen"
-
-msgid "Collapse this node"
-msgstr "Diesen Knoten einklappen"
-
 msgid "Create"
 msgstr "Erstellen"
 
-msgid "Deactivate"
-msgstr "Deaktivieren"
-
-msgid "Deactivate for all langs"
-msgstr "Für alle Sprachen deaktivieren"
-
-msgid "Delete"
-msgstr "Löschen"
-
 msgid "Do you really want to delete this entry?"
 msgstr "Wollen Sie diesen Eintrag wirklich löschen?"
-
-msgid "Do you really want to delete this node and all of it child nodes?"
-msgstr ""
-"Soll dieser Knoten inklusive aller Kindknoten wirklich gelöscht werden?"
-
-msgid "Edit"
-msgstr "Bearbeiten"
 
 msgid "Edit state"
 msgstr "Status bearbeiten"
@@ -64,35 +30,11 @@ msgstr "Status bearbeiten"
 msgid "Edit transition"
 msgstr "Übergang bearbeiten"
 
-msgid "Expand this node"
-msgstr "Diesen Knoten aufklappen"
-
 #, fuzzy
 msgid "It contains %count% direct child.|It contains %count% direct children."
 msgstr ""
 "Es enthält % Anzahl % direkt untergeordneten. | % Anzahl % direkte "
 "untergeordnete Elemente enthält."
-
-msgid "Language"
-msgstr "Sprache"
-
-msgid "Link URL"
-msgstr "Link-URL"
-
-msgid "Link class"
-msgstr "Link-Klasse"
-
-msgid "Link name"
-msgstr "Link-Name"
-
-msgid "Link title"
-msgstr "Link-Titel"
-
-msgid "Marked fields are required"
-msgstr "Die markierten Felder sind Pflichtangaben"
-
-msgid "Maximum depth reached. Limit is: "
-msgstr "Maximale Tiefe erreicht. Das Limit ist: "
 
 msgid "No"
 msgstr "Nein"
@@ -114,23 +56,11 @@ msgstr ""
 "Bitte wählen Sie was zu tun mit diesem Kind Element. | Bitte wählen Sie was "
 "mit diesen Kinder Elementen zu tun."
 
-msgid "Please fill required fields"
-msgstr "Bitte die Pflichtfelder ausfüllen"
-
 msgid "Remove element"
 msgstr "Element entfernen"
 
-msgid "Save"
-msgstr "Speichern"
-
-msgid "Select class"
-msgstr "Klasse auswählen"
-
 msgid "States may only lead to transitions."
 msgstr "Stati führen möglicherweise nur zu Überleitungen."
-
-msgid "Status"
-msgstr "Status"
 
 msgid "Strong"
 msgstr "Stark"
@@ -153,9 +83,6 @@ msgstr "Überleitungen führen möglicherweise nur zu Stati."
 msgid "Update"
 msgstr "Update"
 
-msgid "Use one for all langs"
-msgstr "Einen für alle Sprachen verwenden"
-
 msgid "Very Strong"
 msgstr "Sehr stark"
 
@@ -165,23 +92,96 @@ msgstr "Schwach"
 msgid "Yes"
 msgstr "Ja"
 
-msgid "You have unsaved changes!"
-msgstr "Es gibt ungespeicherte Änderungen!"
-
-msgid "after"
-msgstr "danach"
-
 msgid "array"
 msgstr "array"
 
-msgid "as child"
-msgstr "als Kind"
-
-msgid "before"
-msgstr "Davor"
-
 msgid "string"
 msgstr "Zeichenkette"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivieren"
+
+#~ msgid "Activate for all langs"
+#~ msgstr "Für alle Sprachen aktivieren"
+
+#~ msgid "Active?"
+#~ msgstr "Aktiv?"
+
+#~ msgid "Add new..."
+#~ msgstr "Neu hinzufügen..."
+
+#~ msgid "Cancel"
+#~ msgstr "Abbrechen"
+
+#~ msgid "Collapse this node"
+#~ msgstr "Diesen Knoten einklappen"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktivieren"
+
+#~ msgid "Deactivate for all langs"
+#~ msgstr "Für alle Sprachen deaktivieren"
+
+#~ msgid "Delete"
+#~ msgstr "Löschen"
+
+#~ msgid "Do you really want to delete this node and all of it child nodes?"
+#~ msgstr ""
+#~ "Soll dieser Knoten inklusive aller Kindknoten wirklich gelöscht werden?"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Expand this node"
+#~ msgstr "Diesen Knoten aufklappen"
+
+#~ msgid "Language"
+#~ msgstr "Sprache"
+
+#~ msgid "Link URL"
+#~ msgstr "Link-URL"
+
+#~ msgid "Link class"
+#~ msgstr "Link-Klasse"
+
+#~ msgid "Link name"
+#~ msgstr "Link-Name"
+
+#~ msgid "Link title"
+#~ msgstr "Link-Titel"
+
+#~ msgid "Marked fields are required"
+#~ msgstr "Die markierten Felder sind Pflichtangaben"
+
+#~ msgid "Maximum depth reached. Limit is: "
+#~ msgstr "Maximale Tiefe erreicht. Das Limit ist: "
+
+#~ msgid "Please fill required fields"
+#~ msgstr "Bitte die Pflichtfelder ausfüllen"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Select class"
+#~ msgstr "Klasse auswählen"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Use one for all langs"
+#~ msgstr "Einen für alle Sprachen verwenden"
+
+#~ msgid "You have unsaved changes!"
+#~ msgstr "Es gibt ungespeicherte Änderungen!"
+
+#~ msgid "after"
+#~ msgstr "danach"
+
+#~ msgid "as child"
+#~ msgstr "als Kind"
+
+#~ msgid "before"
+#~ msgstr "Davor"
 
 #~ msgid "Are you sure you want to break this lock?"
 #~ msgstr "Soll diese Sperre wirklich ignoriert werden?"

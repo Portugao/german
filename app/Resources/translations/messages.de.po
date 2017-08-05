@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Zikula 2.0.x\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
@@ -50,6 +50,9 @@ msgstr ">"
 msgid ">="
 msgstr ">="
 
+msgid "All"
+msgstr "Alle"
+
 msgid "Block type"
 msgstr "Block-Typ"
 
@@ -76,6 +79,9 @@ msgstr "HTML-formatierte Nachricht"
 
 msgid "InnoDB"
 msgstr "InnoDB"
+
+msgid "Locale"
+msgstr "Sprache"
 
 msgid "Login"
 msgstr "Login"
@@ -128,9 +134,6 @@ msgstr "base64"
 msgid "binary"
 msgstr "binary"
 
-msgid "en"
-msgstr "en"
-
 msgid "http"
 msgstr "http"
 
@@ -151,6 +154,9 @@ msgstr "quoted-printable"
 
 msgid "tab"
 msgstr "tab"
+
+#~ msgid "en"
+#~ msgstr "en"
 
 #~ msgid "1"
 #~ msgstr "1"
