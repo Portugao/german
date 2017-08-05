@@ -9,10 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 
 msgid "Could not json_decode the string you entered."
-msgstr "Die Zeichenfolge konnte nicht json_decode werden."
+msgstr "Die Zeichenfolge konnte nicht dekodiert (json_decode) werden."
 
 msgid "Length of field value must not be higher than 11."
 msgstr "Feldlänge darf nicht höher als 11 sein."
