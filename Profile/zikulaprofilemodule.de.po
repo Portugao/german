@@ -1,0 +1,522 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-12-11 21:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%1$s and %2$s on-line."
+msgstr "%1$s und %2$s online."
+
+msgid "%s anonymous guest|%s anonymous guests"
+msgstr "%s anonyme Gäste|%s anonyme Gäste"
+
+msgid "%s on-line."
+msgstr "%s on-line."
+
+msgid "%s registered user|%s registered users"
+msgstr "%s registrierter Benutzer|%s registrierte Benutzer"
+
+msgid "&quot;%1$s: %2$s&quot; is required. Please select an option."
+msgstr ""
+"&quot;%1$s: %2$s&quot; ist erforderlich. Bitte wählen Sie eine Option aus."
+
+msgid "About Profile"
+msgstr "Über Profil"
+
+msgid "About the property labels"
+msgstr "Über die Eigenschaftsschilder"
+
+msgid "About the property values"
+msgstr "Über die Eigenschaftswerte"
+
+msgid "Actions"
+msgstr "Aktionen"
+
+msgid "Activate"
+msgstr "Aktivieren"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid ""
+"After you create a new property label (such as _MYDUDLABEL), you must add "
+"the msgid to your catalog (POT file). You will need two lines per label: "
+"<strong>msgid '_MYDUDLABEL'</strong> then one line after the <strong>msgstr "
+"''</strong> (study the default catalog content)."
+msgstr ""
+"Nachdem Sie eine neue Eigenschaftsbezeichnung (z.B. _MYDUDLABEL) erstellt "
+"haben, müssen Sie die msgid in Ihren Katalog (POT-Datei) aufnehmen. Sie "
+"werden zwei Zeilen pro Etikett benötigen: <strong>msgid ' _MYDUDLABEL'</"
+"strong>> dann eine Zeile nach der <strong>msgstr '</strong> (studieren Sie "
+"den Standardkataloginhalt)."
+
+msgid "Attribute name"
+msgstr "Name der Eigenschaft"
+
+msgid "Block content"
+msgstr "Block Inhalt"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid ""
+"Check the <strong><a href=\"%s\">help page</a></strong> to get more "
+"information about labels and translatable stuff."
+msgstr ""
+"Überprüfen Sie die <strong><a href=\"%s\">Hilfe-Seite</a></strong>, um mehr "
+"Informationen über Labels und übersetzbares Zeug zu erhalten."
+
+msgid "Confirmation prompt"
+msgstr "Confirmation prompt"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid ""
+"Copy all the files of the modules/zikula/profile-module/Resources/locale "
+"directory to /config/locale. There you will customize the catalog "
+"module_zikulaprofilemodule.pot and the translations afterwards."
+msgstr ""
+"Kopieren Sie alle Dateien des Verzeichnisses modules/zikula/profile-module/"
+"Resources/locale nach /config/locale. Dort werden Sie den Katalog "
+"module_zikulaprofilemodule.pot und die Übersetzungen anschließend anpassen."
+
+msgid "Create new field"
+msgstr "Neuen Feld erstellen"
+
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+msgid "Delete personal info item"
+msgstr "Persönliches Infoelement löschen"
+
+msgid "Do you really want to delete this personal info item?"
+msgstr "Wollen Sie dieses persönliche Infoelement wirklich löschen?"
+
+msgid ""
+"Each option can be added in the catalog to be translated. Also, if you use a "
+"custom date format that needs translation, it can be added to the catalog "
+"too.<br />Enjoy!"
+msgstr ""
+"Jede Option kann in den zu übersetzenden Katalog aufgenommen werden. Wenn "
+"Sie ein benutzerdefiniertes Datumsformat verwenden, das übersetzt werden "
+"muss, kann es auch in den Katalog aufgenommen werden."
+
+msgid "Edit field"
+msgstr "Feld bearbeiten"
+
+msgid "Edit profile"
+msgstr "Profil bearbeiten"
+
+msgid "Fields list"
+msgstr "Liste der Felder"
+
+msgid "Fieldset"
+msgstr "Feldsatz"
+
+msgid ""
+"First of all, it's recommended to move the translation files of Profile to "
+"the /config directory to custom them there."
+msgstr ""
+"Zuerst wird empfohlen, die Übersetzungsdateien von Profile in das "
+"Verzeichnis /config zu verschieben, um sie dort anzupassen."
+
+msgid ""
+"In the .PO file you will be able to translate _MYDUDLABEL to the "
+"corresponding text for each specific language, to provide a legible display "
+"string like 'My DUD Label'."
+msgstr ""
+"In der PO-Datei können Sie _MYDUDLABEL in den entsprechenden Text für jede "
+"spezifische Sprache übersetzen, um eine lesbare Zeichenfolge wie 'My DUD "
+"Label' zu erhalten."
+
+msgid "Inactive"
+msgstr "inaktiv"
+
+msgid ""
+"It's recommended to use unique words for the labels, for that reason we use "
+"the format: _DUDLABEL and translate them for each available language in the "
+"site to a readable text."
+msgstr ""
+"Aus diesem Grund verwenden wir das Format: _DUDLABEL und übersetzen sie für "
+"jede verfügbare Sprache auf der Website in einen lesbaren Text."
+
+msgid "Item"
+msgstr "Element"
+
+msgid "Items marked with an asterisk (*) are required entries."
+msgstr "Mit (*) markierte Angaben sind zwingend erforderlich."
+
+msgid "Label"
+msgstr "Etikett"
+
+msgid "Last %s registered users"
+msgstr "Letzte %s registrierte Benutzer"
+
+msgid "Latest articles of %s"
+msgstr "Neueste Artikel von %s"
+
+msgid "Latest comments of %s"
+msgstr "letzte Kommentare von %s"
+
+msgid "Latest submissions of %s"
+msgstr "Letzte Einreichungen von %s"
+
+msgid "Make this a 'required' item"
+msgstr "Zu einem erforderlichen Element machen"
+
+msgid "Messages"
+msgstr "Nachrichten"
+
+msgid "Newest user:"
+msgstr "Neuster Nutzer:"
+
+msgid "No recent articles found."
+msgstr "Keine aktuellen Artikel gefunden."
+
+msgid "No recent comments found."
+msgstr "Keine neuen Kommentare gefunden."
+
+msgid "No recently registered users found."
+msgstr "Keine neu registrierten Nutzer gefunden."
+
+msgid "No registered users are currently online."
+msgstr "Keine registrierten Nutzer sind derzeit online."
+
+msgid "No users found."
+msgstr "Keine Benutzer gefunden."
+
+msgid "Notice to display with personal info item"
+msgstr "Hinweis zur Anzeige mit persönlichem Infoelement"
+
+msgid ""
+"Notice: Entering an ID is optional. If you do not specify an ID, the option "
+"position will be used for the ID (starting from zero), instead of the user-"
+"defined ID you can enter here. You are recommended to choose an ID that is "
+"unique, and to avoid subsequently modifying it."
+msgstr ""
+"Hinweis: Die Eingabe einer ID ist optional. Wenn Sie keine ID angeben, wird "
+"für die ID (beginnend bei Null) die Option Position verwendet, anstelle der "
+"benutzerdefinierten ID, die Sie hier eingeben können. Es wird empfohlen, "
+"eine eindeutige ID zu wählen und eine nachträgliche Änderung zu vermeiden."
+
+msgid ""
+"Notice: No special characters or spaces are allowed in the personal info "
+"item's label or attribute name."
+msgstr ""
+"Hinweis: Sonderzeichen oder Leerzeichen sind im Label- oder Attributnamen "
+"des persönlichen Infoelements nicht erlaubt."
+
+msgid ""
+"Notice: Precede output options by '@@'. Example: '@@No@@Yes', "
+"'@@Disabled@@Enabled'. The order is important. If you want to have a "
+"different label in the edit form, you can use the following format: "
+"'EditLabel@@DisplayNo@@DisplayYes'. All the values are translatable."
+msgstr ""
+"Anmerkung: Die Ausgabeoptionen werden durch '@@' vorangestellt. Beispiel: "
+"'@@@No@@@Yes', '@@@Disabled@@@Enabled'. Die Reihenfolge ist wichtig. Wenn "
+"Sie ein anderes Label im Editierformular haben möchten, können Sie das "
+"folgende Format verwenden: 'EditLabel@@@DisplayNo@@@@DisplayYes'. Alle Werte "
+"sind übersetzbar, Hinweis: Vorangestellte Ausgabeoptionen sind mit '@@' "
+"gekennzeichnet. Beispiel: '@@@No@@@Yes', '@@@Disabled@@@Enabled'. Die "
+"Reihenfolge ist wichtig. Wenn Sie ein anderes Label im Editierformular haben "
+"möchten, können Sie das folgende Format verwenden: "
+"'EditLabel@@@DisplayNo@@@@DisplayYes'. Alle Werte sind übersetzbar."
+
+msgid ""
+"Notice: The attribute name you enter cannot be changed afterwards, so you "
+"should choose it carefully."
+msgstr ""
+"Hinweis: Der von Ihnen eingegebene Attributname kann nachträglich nicht mehr "
+"geändert werden, deshalb sollten Sie ihn sorgfältig auswählen."
+
+msgid ""
+"Notice: This version does not support upgrades from versions less than 1.6. "
+"Please upgrade before upgrading again to this version."
+msgstr ""
+"Hinweis: Diese Version unterstützt keine Upgrades von Versionen unter 1.6. "
+"Bitte aktualisieren Sie vor einem erneuten Upgrade auf diese Version."
+
+msgid ""
+"Notice: Use drag and drop to arrange the personal info items into your "
+"desired order. The new order will be saved automatically when you drop the "
+"item into place."
+msgstr ""
+"Hinweis: Per Drag&Drop ordnen Sie die persönlichen Infos in der gewünschten "
+"Reihenfolge an. Die neue Bestellung wird automatisch gespeichert, wenn Sie "
+"den Artikel in Position bringen."
+
+msgid ""
+"Notice: Use the following format for each option: '@@label@id'. Example for "
+"a simple list: '@@option 1@id1@@option 2@id2@@option 3@id3'. Example for a "
+"multiple checkbox set: '1@@option 1@id1@@option 2@id2@@option 3@id3'. The "
+"options are translatable."
+msgstr ""
+"Hinweis: Benutzen Sie für jede Option das folgende Format: '@@label@id'. "
+"Beispiel für eine einfache Liste: '@@option 1@id1@@option 2@id2@@option "
+"3@id3'. Beispiel für ein Set mit mehreren Kontrollkästchen: '1@@option "
+"1@id1@@option 2@id2@@option 3@id3'. Die Optionen sind übersetzbar."
+
+msgid ""
+"Notice: Use the following format for each option: '@@label@id'. Example: "
+"'@@radio option 1@id1@@radio option 2@id2@@radio option 3@id3'. The options "
+"are translatable."
+msgstr ""
+"Hinweis: Benutzen Sie für jede Option das folgende Format: '@@label@id'. "
+"Beispiel: '@@radio option 1@id1@@radio option 2@id2@@radio option 3@id3'. "
+"Die Optionen sind übersetzbar."
+
+msgid ""
+"Notice: Use the following format for each option: 'id,label;'. Example: 'id1,"
+"label1;id2,label2;id3,label3'. Each property should be separated with a "
+"semicolon (';'). The ID and label of each property should be separated by a "
+"comma (','). The labels are translatable."
+msgstr ""
+"Hinweis: Benutzen Sie für jede Option das folgende Format: 'id,label;'. "
+"Beispiel: 'id1,label1;id2,label2;id3,label3,label3'. Jede Eigenschaft sollte "
+"durch ein Semikolon (';') getrennt werden. Die ID und der Bezeichner jeder "
+"Eigenschaft sollten durch ein Komma (',') getrennt werden. Die Etiketten "
+"sind übersetzbar."
+
+msgid ""
+"Notice: You can choose the date format to use: 'EUR' (day month year, "
+"default), 'US' (month day, year) or 'DB' (YYYY-MM-DD). Month names are "
+"automatically translated."
+msgstr ""
+"Hinweis: Sie können das Datumsformat wählen, das Sie verwenden möchten: "
+"'EUR' (Tag, Monat, Jahr, Standard), 'US' (Monat, Tag, Jahr) oder "
+"'DB' (JJJJJJ-MM-TT). Monatsnamen werden automatisch übersetzt."
+
+msgid ""
+"Notice: Your personal custom block is a special block that will display in "
+"site pages when you are logged-in to the site. It is only displayed for you, "
+"and you choose what content it contains. One example of what you can do with "
+"the block is to use HTML code to include links to Web pages on this site or "
+"another site. Are there site pages that you frequently visit but that don't "
+"have links in the main menu? You can insert a link to them here, so that "
+"they are easily accessible for you. To see this block during your visits, "
+"don't forget to activate the 'Enable your personal custom block' checkbox. "
+"Afterwards, click 'Save' to save your changes."
+msgstr ""
+"Hinweis: Ihr persönlicher benutzerdefinierter Block ist ein spezieller "
+"Block, der auf den Seiten der Website angezeigt wird, wenn Sie sich bei der "
+"Website angemeldet haben. Es wird nur für Sie angezeigt, und Sie bestimmen, "
+"welche Inhalte es enthält. Ein Beispiel dafür, was Sie mit dem Block tun "
+"können, ist die Verwendung von HTML-Code, um Links zu Webseiten auf dieser "
+"oder einer anderen Website einzubinden. Gibt es Seiten, die Sie häufig "
+"besuchen, die aber keine Links im Hauptmenü haben? Sie können hier einen "
+"Link zu ihnen einfügen, so dass sie für Sie leicht zugänglich sind. Um "
+"diesen Block während Ihrer Besuche zu sehen, vergessen Sie nicht, das "
+"Kontrollkästchen\"Aktivieren Sie Ihren persönlichen benutzerdefinierten Block"
+"\" zu aktivieren. Klicken Sie anschließend auf\"Speichern\", um Ihre "
+"Änderungen zu speichern."
+
+msgid "On %s"
+msgstr "Am %s"
+
+msgid "Online:"
+msgstr "Online:"
+
+msgid "Pattern"
+msgstr "Muster"
+
+msgid "Personal custom block"
+msgstr "Persönlicher benutzerdefinierter Block"
+
+msgid "Personal info items to include in user registration form"
+msgstr ""
+"Persönliche Informationen, die in das Benutzerregistrierungsformular "
+"aufgenommen werden sollen"
+
+msgid "Personal information"
+msgstr "Persönliche Informationen"
+
+msgid "Please select an item in the list."
+msgstr "Bitte wählen Sie einen Punkt in der Liste aus."
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Profile manager"
+msgstr "Profil-Manager"
+
+msgid "Profile settings"
+msgstr "Profil Einstellungen"
+
+msgid "Real name"
+msgstr "Realer Name"
+
+msgid "Registered on %s"
+msgstr "Registriert am %s"
+
+msgid "Registered users"
+msgstr "Registrierte Benutzer"
+
+msgid "Registered users list settings"
+msgstr "Einstellungen der Liste der registrierten Benutzer"
+
+msgid "Registered:"
+msgstr "Registriert:"
+
+msgid "Registration date"
+msgstr "Registrierungsdatum"
+
+msgid "Registration date:"
+msgstr "Registrierungsdatum:"
+
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Search"
+msgstr "Suchen"
+
+msgid "Search in real names"
+msgstr "In Realnamen suchen"
+
+msgid "Search in sites"
+msgstr "In Seiten suchen"
+
+msgid "Search in user names"
+msgstr "In Benutzernamen suchen"
+
+msgid "Select"
+msgstr "Auswählen"
+
+msgid "Send private message to %s"
+msgstr "Eine private Nachricht an %s senden"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Site"
+msgstr "Seite"
+
+msgid ""
+"Some display types like checkboxes, radio buttons, dropdown lists and "
+"multicheckboxes, allows to define a specific set of options to show."
+msgstr ""
+"Einige Darstellungsarten wie Checkboxen, Auswahlknöpfe, Dropdown-Listen und "
+"Multicheckboxen erlauben es, einen bestimmten Satz von Optionen zu "
+"definieren, die angezeigt werden sollen."
+
+msgid ""
+"Sorry! A required personal info item is missing. Please correct and try "
+"again."
+msgstr ""
+"Entschuldigung! Eine erforderliche persönliches Information fehlt. Bitte "
+"korrigieren Sie und versuchen Sie es erneut."
+
+msgid "Statistics"
+msgstr "Statistiken"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Submit"
+msgstr "Absenden"
+
+msgid ""
+"The personal info items that you activate below will be displayed in the "
+"user registration form if the 'Users' module is configured to display "
+"personal info items during user registration, and if the 'Profile' module is "
+"specified in the 'General settings manager' as the module to provide the "
+"site's user profile management functionality. Personal info items that are "
+"configured as 'Required' will always be displayed in the user registration "
+"form."
+msgstr ""
+"Die persönlichen Informationen, die Sie unten aktivieren, werden im "
+"Benutzerregistrierungsformular angezeigt, wenn das Modul\"Benutzer\" so "
+"konfiguriert ist, dass persönliche Informationen während der "
+"Benutzerregistrierung angezeigt werden, und wenn das Modul\"Profil\" im Modul"
+"\"Allgemeine Einstellungen\" als Modul für die Verwaltung der "
+"Benutzerprofile der Website angegeben ist. Persönliche Informationen, die als"
+"\"Erforderlich\" konfiguriert sind, werden immer im "
+"Benutzerregistrierungsformular angezeigt."
+
+msgid ""
+"There are some details that you may know about Profile and how it let you "
+"translate the account properties labels and values of your site."
+msgstr ""
+"Es gibt einige Details, die Sie vielleicht über Profil kennen und wie es "
+"Ihnen erlaubt, die Bezeichnungen und Werte der Kontoeigenschaften Ihrer "
+"Website zu übersetzen."
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Type of control to display"
+msgstr "Typ"
+
+msgid "User information"
+msgstr "Benutzer Information"
+
+msgid "User name"
+msgstr "Benutzername"
+
+msgid "User name:"
+msgstr "Benutzername:"
+
+msgid "User registration form settings"
+msgstr "Zeige im Benutzer Anmeldevorgang"
+
+msgid "Users online"
+msgstr "Benutzer online"
+
+msgid "View profile of %uname%"
+msgstr "Profil anzeigen von %uname%"
+
+msgid "View users online"
+msgstr "Benutzer online anzeigen"
+
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+msgid ""
+"Warning! If you want to edit the ID of an option without losing associated "
+"user data in the database, its label must not be renamed simultaneously. "
+"Also, do not assign IDs and labels the same naming. You are recommended to "
+"give each option an unique ID and a unique name, and to try to avoid "
+"renaming an ID once it has been created."
+msgstr ""
+"Achtung! Wenn Sie die ID einer Option bearbeiten möchten, ohne die "
+"zugehörigen Benutzerdaten in der Datenbank zu verlieren, darf deren Label "
+"nicht gleichzeitig umbenannt werden. Weisen Sie IDs und Labels nicht die "
+"gleiche Benennung zu. Es wird empfohlen, jeder Option eine eindeutige ID und "
+"einen eindeutigen Namen zu geben und zu vermeiden, dass eine einmal "
+"erstellte ID umbenannt wird."
+
+msgid ""
+"With the updated POT, you can syncronize the translations (.PO files) for "
+"each available language, or even create a new .PO from the catalog with a "
+"tool like poEdit."
+msgstr ""
+"Mit dem aktualisierten POT können Sie die Übersetzungen (.PO-Dateien) für "
+"jede verfügbare Sprache synchronisieren oder sogar eine neue PO-Datei aus "
+"dem Katalog mit einem Tool wie poEdit erstellen."
+
+msgid "click to"
+msgstr "Klicken Sie hier, um Ihre Homepage zu besuchen"
+
+msgid "offline"
+msgstr "Offline"
+
+msgid "online"
+msgstr "Online"
+
+msgid "total"
+msgstr "total"
+
+msgid "unread"
+msgstr "ungelesen"
